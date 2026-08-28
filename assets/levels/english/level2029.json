@@ -1,0 +1,78 @@
+﻿{
+    "id":  2029,
+    "width":  3,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "BEE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "RUB",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BEER",
+                             "type":  0
+                         },
+                         {
+                             "word":  "GERM",
+                             "type":  0
+                         },
+                         {
+                             "word":  "GRUB",
+                             "type":  2
+                         },
+                         {
+                             "word":  "URGE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "MERGE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BURGER",
+                             "type":  0
+                         },
+                         {
+                             "word":  "EMERGE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "MERGER",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "BERG",
+                            "type":  0
+                        }
+                    ],
+    "letters":  "EMR,BEE,URG",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  6,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  2,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

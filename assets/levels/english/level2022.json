@@ -1,0 +1,94 @@
+﻿{
+    "id":  2022,
+    "width":  3,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "DAY",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LAD",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LAY",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ALAS",
+                             "type":  0
+                         },
+                         {
+                             "word":  "CLAN",
+                             "type":  0
+                         },
+                         {
+                             "word":  "CLAY",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SLAY",
+                             "type":  2
+                         },
+                         {
+                             "word":  "CLASS",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SALAD",
+                             "type":  2
+                         },
+                         {
+                             "word":  "CLASSY",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "ASS",
+                            "type":  0
+                        },
+                        {
+                            "word":  "CLAD",
+                            "type":  0
+                        },
+                        {
+                            "word":  "DAYS",
+                            "type":  0
+                        },
+                        {
+                            "word":  "LASS",
+                            "type":  1
+                        },
+                        {
+                            "word":  "LAYS",
+                            "type":  0
+                        }
+                    ],
+    "letters":  "DAY,CLS,NAS",
+    "obstacles":  [
+                      {
+                          "required_words":  4,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  2,
+                                            "y":  2
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  7,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

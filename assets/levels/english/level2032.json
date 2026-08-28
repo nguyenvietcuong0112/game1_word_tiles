@@ -1,0 +1,94 @@
+﻿{
+    "id":  2032,
+    "width":  3,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "ILL",
+                             "type":  0
+                         },
+                         {
+                             "word":  "RAW",
+                             "type":  0
+                         },
+                         {
+                             "word":  "RIG",
+                             "type":  0
+                         },
+                         {
+                             "word":  "WIG",
+                             "type":  0
+                         },
+                         {
+                             "word":  "DRAW",
+                             "type":  2
+                         },
+                         {
+                             "word":  "TWIG",
+                             "type":  2
+                         },
+                         {
+                             "word":  "WARD",
+                             "type":  0
+                         },
+                         {
+                             "word":  "WILD",
+                             "type":  0
+                         },
+                         {
+                             "word":  "WILL",
+                             "type":  0
+                         },
+                         {
+                             "word":  "DRILL",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "GILD",
+                            "type":  0
+                        },
+                        {
+                            "word":  "GILL",
+                            "type":  0
+                        },
+                        {
+                            "word":  "GIRD",
+                            "type":  1
+                        },
+                        {
+                            "word":  "RILL",
+                            "type":  1
+                        },
+                        {
+                            "word":  "WAR",
+                            "type":  0
+                        }
+                    ],
+    "letters":  "TGL,WIL,ARD",
+    "obstacles":  [
+                      {
+                          "required_words":  4,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  7,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  2,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

@@ -1,0 +1,90 @@
+﻿{
+    "id":  1908,
+    "width":  3,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "BEE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "EEL",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ELK",
+                             "type":  0
+                         },
+                         {
+                             "word":  "INK",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LIE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BEEP",
+                             "type":  0
+                         },
+                         {
+                             "word":  "KEEL",
+                             "type":  2
+                         },
+                         {
+                             "word":  "KEEP",
+                             "type":  2
+                         },
+                         {
+                             "word":  "LEEK",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LINK",
+                             "type":  0
+                         },
+                         {
+                             "word":  "PEEK",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BLINK",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "NIL",
+                            "type":  0
+                        },
+                        {
+                            "word":  "PEE",
+                            "type":  0
+                        }
+                    ],
+    "letters":  "PEL,BEK,LIN",
+    "obstacles":  [
+                      {
+                          "required_words":  6,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  2,
+                                            "y":  2
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  9,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

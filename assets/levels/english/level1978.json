@@ -1,0 +1,86 @@
+﻿{
+    "id":  1978,
+    "width":  3,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "ICE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LOG",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ORE",
+                             "type":  2
+                         },
+                         {
+                             "word":  "RIG",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LORE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LYRE",
+                             "type":  2
+                         },
+                         {
+                             "word":  "RICE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "VERY",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LOGIC",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LYRIC",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "GIRO",
+                            "type":  1
+                        },
+                        {
+                            "word":  "GORE",
+                            "type":  0
+                        },
+                        {
+                            "word":  "GORY",
+                            "type":  1
+                        }
+                    ],
+    "letters":  "GIC,ORE,LYV",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  6,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  2,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

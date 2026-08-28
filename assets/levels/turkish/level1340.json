@@ -1,0 +1,98 @@
+﻿{
+    "id":  1340,
+    "width":  4,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "ATA",
+                             "type":  0
+                         },
+                         {
+                             "word":  "HAT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "İYİ",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LEŞ",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ŞEY",
+                             "type":  0
+                         },
+                         {
+                             "word":  "YEL",
+                             "type":  0
+                         },
+                         {
+                             "word":  "AİLE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "EŞEK",
+                             "type":  0
+                         },
+                         {
+                             "word":  "HATA",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TAHLİYE",
+                             "type":  2
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "HAİLE",
+                            "type":  0
+                        },
+                        {
+                            "word":  "İLE",
+                            "type":  0
+                        }
+                    ],
+    "letters":  "TAİK,AİYE,HLEŞ",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  7,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  3,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

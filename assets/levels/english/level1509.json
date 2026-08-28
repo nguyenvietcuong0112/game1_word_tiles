@@ -1,0 +1,110 @@
+﻿{
+    "id":  1509,
+    "width":  4,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "FOE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LIT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "OAT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SAT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "FLAT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LAST",
+                             "type":  0
+                         },
+                         {
+                             "word":  "OATH",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LIGHT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TIGHT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "FLIGHT",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "ALIGHT",
+                            "type":  1
+                        },
+                        {
+                            "word":  "FLIT",
+                            "type":  0
+                        },
+                        {
+                            "word":  "FOAL",
+                            "type":  1
+                        },
+                        {
+                            "word":  "FOES",
+                            "type":  0
+                        },
+                        {
+                            "word":  "LAT",
+                            "type":  0
+                        }
+                    ],
+    "letters":  "ESTT,OATH,FLIG",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  6,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  3,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

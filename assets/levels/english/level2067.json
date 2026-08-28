@@ -1,0 +1,110 @@
+﻿{
+    "id":  2067,
+    "width":  5,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "BEG",
+                             "type":  0
+                         },
+                         {
+                             "word":  "EGO",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LIT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "OAK",
+                             "type":  0
+                         },
+                         {
+                             "word":  "OIL",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BEAK",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BOOK",
+                             "type":  0
+                         },
+                         {
+                             "word":  "COOK",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SOIL",
+                             "type":  0
+                         },
+                         {
+                             "word":  "COOKBOOK",
+                             "type":  2
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "BOG",
+                            "type":  0
+                        },
+                        {
+                            "word":  "EBOOK",
+                            "type":  0
+                        },
+                        {
+                            "word":  "GOO",
+                            "type":  0
+                        },
+                        {
+                            "word":  "OILS",
+                            "type":  0
+                        },
+                        {
+                            "word":  "SLIT",
+                            "type":  0
+                        }
+                    ],
+    "letters":  "LITKO,SOKBO,COAEG",
+    "obstacles":  [
+                      {
+                          "required_words":  4,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  1,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  7,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  4,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        },
+                                        {
+                                            "x":  4,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

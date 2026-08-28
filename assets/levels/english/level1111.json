@@ -1,0 +1,134 @@
+﻿{
+    "id":  1111,
+    "width":  4,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "AND",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ANT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "END",
+                             "type":  0
+                         },
+                         {
+                             "word":  "RAN",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ANTI",
+                             "type":  0
+                         },
+                         {
+                             "word":  "NEXT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "RANT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "RENT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SAND",
+                             "type":  2
+                         },
+                         {
+                             "word":  "SANE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "STIR",
+                             "type":  0
+                         },
+                         {
+                             "word":  "DRASTIC",
+                             "type":  2
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "ANTICS",
+                            "type":  0
+                        },
+                        {
+                            "word":  "ANTS",
+                            "type":  0
+                        },
+                        {
+                            "word":  "NERD",
+                            "type":  0
+                        },
+                        {
+                            "word":  "RAND",
+                            "type":  0
+                        },
+                        {
+                            "word":  "RANTS",
+                            "type":  0
+                        },
+                        {
+                            "word":  "REND",
+                            "type":  1
+                        },
+                        {
+                            "word":  "RENTS",
+                            "type":  0
+                        },
+                        {
+                            "word":  "SANER",
+                            "type":  2
+                        },
+                        {
+                            "word":  "TSAR",
+                            "type":  2
+                        }
+                    ],
+    "letters":  "REXR,DNTI,RASC",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  9,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  3,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

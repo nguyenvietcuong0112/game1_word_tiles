@@ -1,0 +1,130 @@
+﻿{
+    "id":  1316,
+    "width":  4,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "CAT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "CUE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "EAT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LOT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SUE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TOO",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LOON",
+                             "type":  2
+                         },
+                         {
+                             "word":  "SLOT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LOTION",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LOCATION",
+                             "type":  2
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "CATION",
+                            "type":  1
+                        },
+                        {
+                            "word":  "COL",
+                            "type":  0
+                        },
+                        {
+                            "word":  "COON",
+                            "type":  1
+                        },
+                        {
+                            "word":  "COT",
+                            "type":  0
+                        },
+                        {
+                            "word":  "ION",
+                            "type":  0
+                        },
+                        {
+                            "word":  "LOCUS",
+                            "type":  2
+                        },
+                        {
+                            "word":  "SCAT",
+                            "type":  1
+                        },
+                        {
+                            "word":  "SCOT",
+                            "type":  0
+                        },
+                        {
+                            "word":  "TACO",
+                            "type":  0
+                        },
+                        {
+                            "word":  "TOON",
+                            "type":  0
+                        }
+                    ],
+    "letters":  "EATI,UCOO,SSLN",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  6,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  3,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

@@ -1,0 +1,110 @@
+﻿{
+    "id":  1973,
+    "width":  4,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "APP",
+                             "type":  0
+                         },
+                         {
+                             "word":  "APT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "HAS",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SIR",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TRY",
+                             "type":  0
+                         },
+                         {
+                             "word":  "PAST",
+                             "type":  0
+                         },
+                         {
+                             "word":  "HAPPY",
+                             "type":  0
+                         },
+                         {
+                             "word":  "HASTY",
+                             "type":  0
+                         },
+                         {
+                             "word":  "PASTRY",
+                             "type":  2
+                         },
+                         {
+                             "word":  "UNHAPPY",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "HAP",
+                            "type":  0
+                        },
+                        {
+                            "word":  "HAST",
+                            "type":  0
+                        },
+                        {
+                            "word":  "PASTY",
+                            "type":  0
+                        },
+                        {
+                            "word":  "SAPPY",
+                            "type":  0
+                        },
+                        {
+                            "word":  "TRIS",
+                            "type":  1
+                        }
+                    ],
+    "letters":  "UIRY,NSTY,HAPP",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  3,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  6,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

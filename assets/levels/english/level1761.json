@@ -1,0 +1,114 @@
+﻿{
+    "id":  1761,
+    "width":  5,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "BEE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "CRY",
+                             "type":  0
+                         },
+                         {
+                             "word":  "DYE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ORE",
+                             "type":  2
+                         },
+                         {
+                             "word":  "ROT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "RYE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TORE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TOTE",
+                             "type":  2
+                         },
+                         {
+                             "word":  "CRYPTO",
+                             "type":  0
+                         },
+                         {
+                             "word":  "DECREE",
+                             "type":  2
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "BEY",
+                            "type":  0
+                        },
+                        {
+                            "word":  "CREE",
+                            "type":  0
+                        },
+                        {
+                            "word":  "CRYPT",
+                            "type":  1
+                        },
+                        {
+                            "word":  "RET",
+                            "type":  0
+                        },
+                        {
+                            "word":  "ROTE",
+                            "type":  1
+                        },
+                        {
+                            "word":  "TOR",
+                            "type":  0
+                        }
+                    ],
+    "letters":  "BEECE,RYDRE,CPTOT",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  1,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  6,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  4,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        },
+                                        {
+                                            "x":  4,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

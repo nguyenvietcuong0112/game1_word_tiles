@@ -1,0 +1,122 @@
+﻿{
+    "id":  1986,
+    "width":  4,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "BAR",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BEE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "EAR",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ERA",
+                             "type":  0
+                         },
+                         {
+                             "word":  "URN",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BARE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BARN",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BEAR",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BEER",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BEET",
+                             "type":  0
+                         },
+                         {
+                             "word":  "EARN",
+                             "type":  0
+                         },
+                         {
+                             "word":  "NEAR",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TURN",
+                             "type":  0
+                         },
+                         {
+                             "word":  "RETURN",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "ARE",
+                            "type":  0
+                        },
+                        {
+                            "word":  "RET",
+                            "type":  0
+                        },
+                        {
+                            "word":  "RUT",
+                            "type":  0
+                        },
+                        {
+                            "word":  "TERN",
+                            "type":  1
+                        }
+                    ],
+    "letters":  "NBNR,EARU,BEET",
+    "obstacles":  [
+                      {
+                          "required_words":  6,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  3,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  9,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

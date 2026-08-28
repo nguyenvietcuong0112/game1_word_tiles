@@ -1,0 +1,118 @@
+﻿{
+    "id":  2025,
+    "width":  5,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "EAT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ICY",
+                             "type":  0
+                         },
+                         {
+                             "word":  "OAT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TOO",
+                             "type":  0
+                         },
+                         {
+                             "word":  "CITY",
+                             "type":  0
+                         },
+                         {
+                             "word":  "DUST",
+                             "type":  0
+                         },
+                         {
+                             "word":  "RUST",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TOSS",
+                             "type":  0
+                         },
+                         {
+                             "word":  "CRUDE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "CRUST",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TRUST",
+                             "type":  0
+                         },
+                         {
+                             "word":  "CITRUS",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "CRUD",
+                            "type":  0
+                        },
+                        {
+                            "word":  "EATS",
+                            "type":  2
+                        },
+                        {
+                            "word":  "OATS",
+                            "type":  2
+                        },
+                        {
+                            "word":  "RUDE",
+                            "type":  0
+                        },
+                        {
+                            "word":  "TRUSS",
+                            "type":  0
+                        }
+                    ],
+    "letters":  "TYSOO,ICSTA,TRUDE",
+    "obstacles":  [
+                      {
+                          "required_words":  5,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  3,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  4,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  4,
+                                            "y":  1
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  9,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        },
+                                        {
+                                            "x":  1,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

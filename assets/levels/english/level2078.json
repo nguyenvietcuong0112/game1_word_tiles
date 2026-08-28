@@ -1,0 +1,110 @@
+﻿{
+    "id":  2078,
+    "width":  4,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "ANT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "CUT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "NET",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SET",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TOE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "USE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "CUTE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SANE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TENT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SAUCE",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "ANTE",
+                            "type":  0
+                        },
+                        {
+                            "word":  "SAUCES",
+                            "type":  2
+                        },
+                        {
+                            "word":  "SECS",
+                            "type":  0
+                        },
+                        {
+                            "word":  "TEN",
+                            "type":  0
+                        },
+                        {
+                            "word":  "TOES",
+                            "type":  2
+                        }
+                    ],
+    "letters":  "ESEO,CUTT,SANE",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  6,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  3,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

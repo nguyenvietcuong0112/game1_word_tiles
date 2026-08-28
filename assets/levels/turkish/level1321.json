@@ -1,0 +1,98 @@
+﻿{
+    "id":  1321,
+    "width":  4,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "DEM",
+                             "type":  0
+                         },
+                         {
+                             "word":  "KET",
+                             "type":  0
+                         },
+                         {
+                             "word":  "KEZ",
+                             "type":  2
+                         },
+                         {
+                             "word":  "KİR",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TEZ",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TİZ",
+                             "type":  0
+                         },
+                         {
+                             "word":  "EZME",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ZEKİ",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TEKİR",
+                             "type":  0
+                         },
+                         {
+                             "word":  "HİZMET",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "METRİK",
+                            "type":  0
+                        },
+                        {
+                            "word":  "TEK",
+                            "type":  0
+                        }
+                    ],
+    "letters":  "HMET,İZDR,TEKİ",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  6,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  3,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

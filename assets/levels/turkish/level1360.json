@@ -1,0 +1,114 @@
+﻿{
+    "id":  1360,
+    "width":  4,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "AST",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ATA",
+                             "type":  0
+                         },
+                         {
+                             "word":  "MAT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TAÇ",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TAT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "VAR",
+                             "type":  0
+                         },
+                         {
+                             "word":  "STAT",
+                             "type":  2
+                         },
+                         {
+                             "word":  "USTA",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SUNTA",
+                             "type":  2
+                         },
+                         {
+                             "word":  "SAVUNMA",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "ASTAT",
+                            "type":  0
+                        },
+                        {
+                            "word":  "AVUNMA",
+                            "type":  0
+                        },
+                        {
+                            "word":  "RAST",
+                            "type":  0
+                        },
+                        {
+                            "word":  "SAV",
+                            "type":  0
+                        },
+                        {
+                            "word":  "SUNMA",
+                            "type":  0
+                        },
+                        {
+                            "word":  "TAM",
+                            "type":  0
+                        }
+                    ],
+    "letters":  "RÇAT,ASTA,VUNM",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  3,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  7,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

@@ -1,0 +1,102 @@
+﻿{
+    "id":  1347,
+    "width":  3,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "ДОК",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ДУБ",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ОДР",
+                             "type":  0
+                         },
+                         {
+                             "word":  "РОМ",
+                             "type":  0
+                         },
+                         {
+                             "word":  "РОТ",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ТОМ",
+                             "type":  0
+                         },
+                         {
+                             "word":  "БРОМ",
+                             "type":  2
+                         },
+                         {
+                             "word":  "КРОТ",
+                             "type":  0
+                         },
+                         {
+                             "word":  "РОМБ",
+                             "type":  2
+                         },
+                         {
+                             "word":  "ДОКТОР",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "КОД",
+                            "type":  0
+                        },
+                        {
+                            "word":  "КРОМ",
+                            "type":  1
+                        },
+                        {
+                            "word":  "КТО",
+                            "type":  0
+                        },
+                        {
+                            "word":  "МОР",
+                            "type":  0
+                        },
+                        {
+                            "word":  "МОТ",
+                            "type":  0
+                        },
+                        {
+                            "word":  "ТОР",
+                            "type":  0
+                        },
+                        {
+                            "word":  "ТОРК",
+                            "type":  1
+                        }
+                    ],
+    "letters":  "УБМ,ДРО,ОКТ",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  6,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  2,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

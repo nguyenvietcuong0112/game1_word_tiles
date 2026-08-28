@@ -1,0 +1,110 @@
+﻿{
+    "id":  2060,
+    "width":  4,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "MOD",
+                             "type":  0
+                         },
+                         {
+                             "word":  "NUN",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ODD",
+                             "type":  0
+                         },
+                         {
+                             "word":  "AUNT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "UNDO",
+                             "type":  0
+                         },
+                         {
+                             "word":  "MOUND",
+                             "type":  0
+                         },
+                         {
+                             "word":  "MOUNT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SOUND",
+                             "type":  0
+                         },
+                         {
+                             "word":  "AMOUNT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "MOUNTAIN",
+                             "type":  2
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "DOS",
+                            "type":  0
+                        },
+                        {
+                            "word":  "NUNS",
+                            "type":  0
+                        },
+                        {
+                            "word":  "SOMA",
+                            "type":  0
+                        },
+                        {
+                            "word":  "TAU",
+                            "type":  0
+                        },
+                        {
+                            "word":  "UNI",
+                            "type":  0
+                        }
+                    ],
+    "letters":  "DDNI,MOUA,ASNT",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  6,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  3,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

@@ -1,0 +1,110 @@
+﻿{
+    "id":  1896,
+    "width":  4,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "BOW",
+                             "type":  0
+                         },
+                         {
+                             "word":  "GUM",
+                             "type":  0
+                         },
+                         {
+                             "word":  "JUG",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ROB",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ROW",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TOW",
+                             "type":  0
+                         },
+                         {
+                             "word":  "COMB",
+                             "type":  0
+                         },
+                         {
+                             "word":  "GROW",
+                             "type":  0
+                         },
+                         {
+                             "word":  "WORM",
+                             "type":  2
+                         },
+                         {
+                             "word":  "COMBO",
+                             "type":  0
+                         },
+                         {
+                             "word":  "JUMBO",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ROBOT",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "BOT",
+                            "type":  0
+                        },
+                        {
+                            "word":  "MUG",
+                            "type":  0
+                        },
+                        {
+                            "word":  "ROBO",
+                            "type":  0
+                        }
+                    ],
+    "letters":  "GROW,UMBO,JOCT",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  6,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  3,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

@@ -1,0 +1,98 @@
+﻿{
+    "id":  1266,
+    "width":  4,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "HIT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "RYE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "THE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "HIRE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SUIT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TIRE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TYRE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SUITE",
+                             "type":  2
+                         },
+                         {
+                             "word":  "THIRST",
+                             "type":  0
+                         },
+                         {
+                             "word":  "THIRSTY",
+                             "type":  2
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "RET",
+                            "type":  0
+                        },
+                        {
+                            "word":  "RITE",
+                            "type":  2
+                        }
+                    ],
+    "letters":  "ETEE,HIRY,TUST",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  6,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  3,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

@@ -1,0 +1,114 @@
+﻿{
+    "id":  1205,
+    "width":  4,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "MET",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ORE",
+                             "type":  2
+                         },
+                         {
+                             "word":  "ROE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "MINT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "ROSE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SORE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SORT",
+                             "type":  2
+                         },
+                         {
+                             "word":  "INTRO",
+                             "type":  0
+                         },
+                         {
+                             "word":  "METRO",
+                             "type":  0
+                         },
+                         {
+                             "word":  "IMMERSE",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "EROS",
+                            "type":  1
+                        },
+                        {
+                            "word":  "MEIN",
+                            "type":  0
+                        },
+                        {
+                            "word":  "METRE",
+                            "type":  0
+                        },
+                        {
+                            "word":  "METRES",
+                            "type":  0
+                        },
+                        {
+                            "word":  "METROS",
+                            "type":  1
+                        },
+                        {
+                            "word":  "TRES",
+                            "type":  1
+                        }
+                    ],
+    "letters":  "NTRE,IEOS,MMER",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  3,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  7,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

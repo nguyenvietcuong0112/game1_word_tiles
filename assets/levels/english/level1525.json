@@ -1,0 +1,106 @@
+﻿{
+    "id":  1525,
+    "width":  4,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "EAT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "EYE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "FEE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SEA",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SEE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "YES",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SAFE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SEAT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SEEN",
+                             "type":  0
+                         },
+                         {
+                             "word":  "FALSE",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "ASS",
+                            "type":  0
+                        },
+                        {
+                            "word":  "EYES",
+                            "type":  0
+                        },
+                        {
+                            "word":  "LASS",
+                            "type":  1
+                        },
+                        {
+                            "word":  "YEN",
+                            "type":  0
+                        }
+                    ],
+    "letters":  "FEEN,ASYT,LSEA",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  6,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  3,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

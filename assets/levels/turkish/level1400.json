@@ -1,0 +1,102 @@
+﻿{
+    "id":  1400,
+    "width":  4,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "ELA",
+                             "type":  0
+                         },
+                         {
+                             "word":  "HAL",
+                             "type":  0
+                         },
+                         {
+                             "word":  "LAV",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SIK",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TÜL",
+                             "type":  0
+                         },
+                         {
+                             "word":  "HALK",
+                             "type":  0
+                         },
+                         {
+                             "word":  "HAVA",
+                             "type":  0
+                         },
+                         {
+                             "word":  "VALE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "VALS",
+                             "type":  0
+                         },
+                         {
+                             "word":  "HAVALE",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "AVAL",
+                            "type":  0
+                        },
+                        {
+                            "word":  "SLAV",
+                            "type":  0
+                        },
+                        {
+                            "word":  "ISLAH",
+                            "type":  2
+                        }
+                    ],
+    "letters":  "TSIE,ÜLKL,HAVA",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  6,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  3,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

@@ -1,0 +1,102 @@
+﻿{
+    "id":  1277,
+    "width":  4,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "BİN",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BİR",
+                             "type":  0
+                         },
+                         {
+                             "word":  "EGE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "GEN",
+                             "type":  0
+                         },
+                         {
+                             "word":  "KAN",
+                             "type":  0
+                         },
+                         {
+                             "word":  "GERİ",
+                             "type":  0
+                         },
+                         {
+                             "word":  "İNEK",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TREN",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BİNEK",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TRİBÜN",
+                             "type":  2
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "BİGANE",
+                            "type":  0
+                        },
+                        {
+                            "word":  "ERİGEN",
+                            "type":  2
+                        },
+                        {
+                            "word":  "KAGİR",
+                            "type":  2
+                        }
+                    ],
+    "letters":  "ÜNEK,BİGA,TREN",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  6,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  3,
+                                            "y":  2
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  1
+                                        },
+                                        {
+                                            "x":  3,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

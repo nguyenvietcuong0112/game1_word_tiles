@@ -1,0 +1,75 @@
+﻿{
+    "id":  2019,
+    "width":  3,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "DOT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "OWN",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TOW",
+                             "type":  0
+                         },
+                         {
+                             "word":  "WHY",
+                             "type":  0
+                         },
+                         {
+                             "word":  "WIN",
+                             "type":  0
+                         },
+                         {
+                             "word":  "DOWN",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TOWN",
+                             "type":  0
+                         },
+                         {
+                             "word":  "WIND",
+                             "type":  0
+                         },
+                         {
+                             "word":  "WINDY",
+                             "type":  0
+                         },
+                         {
+                             "word":  "WINDOW",
+                             "type":  2
+                         }
+                     ],
+    "extra_words":  [
+
+                    ],
+    "letters":  "INW,WDO,HYT",
+    "obstacles":  [
+                      {
+                          "required_words":  3,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  2,
+                                            "y":  2
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  6,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}

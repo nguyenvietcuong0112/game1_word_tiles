@@ -1,0 +1,94 @@
+﻿{
+    "id":  2097,
+    "width":  3,
+    "height":  3,
+    "target_words":  [
+                         {
+                             "word":  "LIE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SHE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "SUE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BLUE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BLUR",
+                             "type":  2
+                         },
+                         {
+                             "word":  "LUSH",
+                             "type":  0
+                         },
+                         {
+                             "word":  "RUSH",
+                             "type":  0
+                         },
+                         {
+                             "word":  "RUST",
+                             "type":  0
+                         },
+                         {
+                             "word":  "TRUE",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BLURT",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BLUSH",
+                             "type":  0
+                         },
+                         {
+                             "word":  "BRUSH",
+                             "type":  0
+                         }
+                     ],
+    "extra_words":  [
+                        {
+                            "word":  "LIEU",
+                            "type":  0
+                        },
+                        {
+                            "word":  "LUST",
+                            "type":  0
+                        },
+                        {
+                            "word":  "RUE",
+                            "type":  0
+                        }
+                    ],
+    "letters":  "IEH,LUS,BRT",
+    "obstacles":  [
+                      {
+                          "required_words":  4,
+                          "id":  1,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  0,
+                                            "y":  2
+                                        }
+                                    ]
+                      },
+                      {
+                          "required_words":  7,
+                          "id":  2,
+                          "type":  0,
+                          "cells":  [
+                                        {
+                                            "x":  2,
+                                            "y":  0
+                                        }
+                                    ]
+                      }
+                  ]
+}
