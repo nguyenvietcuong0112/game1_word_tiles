@@ -1,58 +1,203 @@
-﻿{
-    "id":  1570,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AXE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEARD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOARD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EXTRA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-
-                    ],
-    "letters":  "DRT,EAX,BOE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1570,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BOD",
+      "type": 0
+    },
+    {
+      "word": "DUI",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "CURE",
+      "type": 0
+    },
+    {
+      "word": "DECK",
+      "type": 0
+    },
+    {
+      "word": "REDUCE",
+      "type": 0
+    },
+    {
+      "word": "REDUCED",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "CUD",
+      "type": 0
+    },
+    {
+      "word": "CUR",
+      "type": 0
+    },
+    {
+      "word": "ECU",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "UDO",
+      "type": 0
+    },
+    {
+      "word": "BODE",
+      "type": 0
+    },
+    {
+      "word": "CERE",
+      "type": 0
+    },
+    {
+      "word": "CETE",
+      "type": 0
+    },
+    {
+      "word": "DERE",
+      "type": 0
+    },
+    {
+      "word": "DREK",
+      "type": 0
+    },
+    {
+      "word": "DUCE",
+      "type": 0
+    },
+    {
+      "word": "DUCK",
+      "type": 0
+    },
+    {
+      "word": "DURE",
+      "type": 0
+    },
+    {
+      "word": "RECK",
+      "type": 0
+    },
+    {
+      "word": "REDO",
+      "type": 0
+    },
+    {
+      "word": "RETE",
+      "type": 0
+    },
+    {
+      "word": "RUCK",
+      "type": 0
+    },
+    {
+      "word": "RUDE",
+      "type": 0
+    },
+    {
+      "word": "SIKE",
+      "type": 0
+    },
+    {
+      "word": "CERED",
+      "type": 0
+    },
+    {
+      "word": "CURED",
+      "type": 0
+    },
+    {
+      "word": "CURET",
+      "type": 0
+    },
+    {
+      "word": "DETER",
+      "type": 0
+    },
+    {
+      "word": "EDUCE",
+      "type": 0
+    },
+    {
+      "word": "SIKER",
+      "type": 0
+    },
+    {
+      "word": "UREDO",
+      "type": 0
+    },
+    {
+      "word": "DECKER",
+      "type": 0
+    },
+    {
+      "word": "DUCKER",
+      "type": 0
+    },
+    {
+      "word": "DUIKER",
+      "type": 0
+    },
+    {
+      "word": "EDUCED",
+      "type": 0
+    },
+    {
+      "word": "TEREDO",
+      "type": 0
+    }
+  ],
+  "letters": "TERE,ECUD,DKIO,RESB",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

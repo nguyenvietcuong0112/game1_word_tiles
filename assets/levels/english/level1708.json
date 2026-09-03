@@ -1,87 +1,211 @@
-﻿{
-    "id":  1708,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "END",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GUY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MENU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENEMY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "TEEM",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "ENDY,MENU,YETG",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1708,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "FIT",
+      "type": 0
+    },
+    {
+      "word": "REF",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "BEAT",
+      "type": 0
+    },
+    {
+      "word": "CRIME",
+      "type": 0
+    },
+    {
+      "word": "TREAT",
+      "type": 0
+    },
+    {
+      "word": "CREATE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "EFT",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "FEM",
+      "type": 0
+    },
+    {
+      "word": "FER",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TAT",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "EASE",
+      "type": 0
+    },
+    {
+      "word": "EMIR",
+      "type": 0
+    },
+    {
+      "word": "ETAS",
+      "type": 0
+    },
+    {
+      "word": "FERE",
+      "type": 0
+    },
+    {
+      "word": "MERE",
+      "type": 0
+    },
+    {
+      "word": "MIRE",
+      "type": 0
+    },
+    {
+      "word": "REBS",
+      "type": 0
+    },
+    {
+      "word": "REFT",
+      "type": 0
+    },
+    {
+      "word": "RIME",
+      "type": 0
+    },
+    {
+      "word": "SATE",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SETT",
+      "type": 0
+    },
+    {
+      "word": "TATE",
+      "type": 0
+    },
+    {
+      "word": "TREF",
+      "type": 0
+    },
+    {
+      "word": "TRIM",
+      "type": 0
+    },
+    {
+      "word": "MERER",
+      "type": 0
+    },
+    {
+      "word": "REFIT",
+      "type": 0
+    },
+    {
+      "word": "RIMER",
+      "type": 0
+    },
+    {
+      "word": "SETAE",
+      "type": 0
+    },
+    {
+      "word": "TATES",
+      "type": 0
+    },
+    {
+      "word": "BEREFT",
+      "type": 0
+    },
+    {
+      "word": "BERIME",
+      "type": 0
+    },
+    {
+      "word": "CREASE",
+      "type": 0
+    },
+    {
+      "word": "CREATES",
+      "type": 0
+    }
+  ],
+  "letters": "ITTE,FTAS,EREB,MIRC",
+  "obstacles": []
 }

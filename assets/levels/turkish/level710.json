@@ -1,53 +1,291 @@
-﻿{
-    "id":  710,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ÇİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇİLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MERT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇEREZ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ERİL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MERİÇ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ÇERİ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LEZŞ,İRTA,ÇEML",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 710,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "KIZ",
+      "type": 0
+    },
+    {
+      "word": "LİZ",
+      "type": 0
+    },
+    {
+      "word": "MİL",
+      "type": 0
+    },
+    {
+      "word": "SİN",
+      "type": 0
+    },
+    {
+      "word": "AMİN",
+      "type": 0
+    },
+    {
+      "word": "BLOK",
+      "type": 0
+    },
+    {
+      "word": "EMİN",
+      "type": 0
+    },
+    {
+      "word": "KIZA",
+      "type": 0
+    },
+    {
+      "word": "ALKOL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "AZI",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BAO",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "KAZ",
+      "type": 0
+    },
+    {
+      "word": "KOL",
+      "type": 0
+    },
+    {
+      "word": "KOZ",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "LİM",
+      "type": 0
+    },
+    {
+      "word": "LİN",
+      "type": 0
+    },
+    {
+      "word": "LİS",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MİN",
+      "type": 0
+    },
+    {
+      "word": "MİZ",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "NİL",
+      "type": 0
+    },
+    {
+      "word": "NİM",
+      "type": 0
+    },
+    {
+      "word": "NİZ",
+      "type": 0
+    },
+    {
+      "word": "SİL",
+      "type": 0
+    },
+    {
+      "word": "ZAK",
+      "type": 0
+    },
+    {
+      "word": "ZAM",
+      "type": 0
+    },
+    {
+      "word": "ZİL",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "İNİ",
+      "type": 0
+    },
+    {
+      "word": "AMEN",
+      "type": 0
+    },
+    {
+      "word": "AZİM",
+      "type": 0
+    },
+    {
+      "word": "EMİL",
+      "type": 0
+    },
+    {
+      "word": "KAZI",
+      "type": 0
+    },
+    {
+      "word": "KOLİ",
+      "type": 0
+    },
+    {
+      "word": "KOZA",
+      "type": 0
+    },
+    {
+      "word": "LİMA",
+      "type": 0
+    },
+    {
+      "word": "LİME",
+      "type": 0
+    },
+    {
+      "word": "LİNE",
+      "type": 0
+    },
+    {
+      "word": "LİZA",
+      "type": 0
+    },
+    {
+      "word": "MAZİ",
+      "type": 0
+    },
+    {
+      "word": "MENİ",
+      "type": 0
+    },
+    {
+      "word": "MİLO",
+      "type": 0
+    },
+    {
+      "word": "MİLİ",
+      "type": 0
+    },
+    {
+      "word": "MİNE",
+      "type": 0
+    },
+    {
+      "word": "MİNİ",
+      "type": 0
+    },
+    {
+      "word": "OKLA",
+      "type": 0
+    },
+    {
+      "word": "SİNE",
+      "type": 0
+    },
+    {
+      "word": "SİNİ",
+      "type": 0
+    },
+    {
+      "word": "ZİLİ",
+      "type": 0
+    },
+    {
+      "word": "İNİZ",
+      "type": 0
+    },
+    {
+      "word": "KAMİL",
+      "type": 0
+    },
+    {
+      "word": "KAZIK",
+      "type": 0
+    },
+    {
+      "word": "KIZAK",
+      "type": 0
+    },
+    {
+      "word": "MİLİS",
+      "type": 0
+    },
+    {
+      "word": "SİLİN",
+      "type": 0
+    },
+    {
+      "word": "SİNİZ",
+      "type": 0
+    },
+    {
+      "word": "SİNEMA",
+      "type": 0
+    }
+  ],
+  "letters": "KAME,IZİN,KOLİ,LABS",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

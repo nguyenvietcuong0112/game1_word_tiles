@@ -1,130 +1,215 @@
-﻿{
-    "id":  1970,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "URN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SNUG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHARK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SNARE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GUNS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KHAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUNS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SHARED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SNARED",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KRND,HARE,SNUG",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  8,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1970,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADD",
+      "type": 0
+    },
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "VIA",
+      "type": 0
+    },
+    {
+      "word": "ADDS",
+      "type": 0
+    },
+    {
+      "word": "DRAG",
+      "type": 0
+    },
+    {
+      "word": "HEAR",
+      "type": 0
+    },
+    {
+      "word": "RING",
+      "type": 0
+    },
+    {
+      "word": "DRIVE",
+      "type": 0
+    },
+    {
+      "word": "RINGS",
+      "type": 0
+    },
+    {
+      "word": "HEARING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "NAE",
+      "type": 0
+    },
+    {
+      "word": "RAG",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "AIRS",
+      "type": 0
+    },
+    {
+      "word": "ANGA",
+      "type": 0
+    },
+    {
+      "word": "ANIS",
+      "type": 0
+    },
+    {
+      "word": "DANG",
+      "type": 0
+    },
+    {
+      "word": "GARS",
+      "type": 0
+    },
+    {
+      "word": "GNAR",
+      "type": 0
+    },
+    {
+      "word": "RAGS",
+      "type": 0
+    },
+    {
+      "word": "RAIA",
+      "type": 0
+    },
+    {
+      "word": "RANG",
+      "type": 0
+    },
+    {
+      "word": "RANI",
+      "type": 0
+    },
+    {
+      "word": "RHEA",
+      "type": 0
+    },
+    {
+      "word": "RIVE",
+      "type": 0
+    },
+    {
+      "word": "SING",
+      "type": 0
+    },
+    {
+      "word": "DANGS",
+      "type": 0
+    },
+    {
+      "word": "DRAGS",
+      "type": 0
+    },
+    {
+      "word": "NAEVI",
+      "type": 0
+    },
+    {
+      "word": "NAIAD",
+      "type": 0
+    },
+    {
+      "word": "NAIVE",
+      "type": 0
+    },
+    {
+      "word": "NARIS",
+      "type": 0
+    },
+    {
+      "word": "RANIS",
+      "type": 0
+    },
+    {
+      "word": "EARING",
+      "type": 0
+    },
+    {
+      "word": "EARINGS",
+      "type": 0
+    },
+    {
+      "word": "HEARINGS",
+      "type": 0
+    }
+  ],
+  "letters": "SRAGS,DDANI,MRIAR,ISVEH",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

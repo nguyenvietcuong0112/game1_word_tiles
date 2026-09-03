@@ -1,98 +1,307 @@
-﻿{
-    "id":  1937,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FRAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROOF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SORT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FROST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STRAW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STRAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FROSTY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARTS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "FRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WARTS",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "STY,ORA,OFW",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  2
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1937,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "HIS",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "MALE",
+      "type": 0
+    },
+    {
+      "word": "MATH",
+      "type": 0
+    },
+    {
+      "word": "MEET",
+      "type": 0
+    },
+    {
+      "word": "SLOT",
+      "type": 0
+    },
+    {
+      "word": "STEP",
+      "type": 0
+    },
+    {
+      "word": "THIS",
+      "type": 0
+    },
+    {
+      "word": "TILL",
+      "type": 0
+    },
+    {
+      "word": "CLOSE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIS",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "CHI",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "HIE",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "LEI",
+      "type": 0
+    },
+    {
+      "word": "LIT",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "SOT",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TIL",
+      "type": 0
+    },
+    {
+      "word": "ALEE",
+      "type": 0
+    },
+    {
+      "word": "ALPS",
+      "type": 0
+    },
+    {
+      "word": "CHIA",
+      "type": 0
+    },
+    {
+      "word": "CHIS",
+      "type": 0
+    },
+    {
+      "word": "CLOT",
+      "type": 0
+    },
+    {
+      "word": "ILLS",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "LAME",
+      "type": 0
+    },
+    {
+      "word": "LEES",
+      "type": 0
+    },
+    {
+      "word": "LEET",
+      "type": 0
+    },
+    {
+      "word": "LEIS",
+      "type": 0
+    },
+    {
+      "word": "LOSE",
+      "type": 0
+    },
+    {
+      "word": "LOTS",
+      "type": 0
+    },
+    {
+      "word": "PEEL",
+      "type": 0
+    },
+    {
+      "word": "PESO",
+      "type": 0
+    },
+    {
+      "word": "PETS",
+      "type": 0
+    },
+    {
+      "word": "SEEL",
+      "type": 0
+    },
+    {
+      "word": "SEEM",
+      "type": 0
+    },
+    {
+      "word": "SETS",
+      "type": 0
+    },
+    {
+      "word": "SOLS",
+      "type": 0
+    },
+    {
+      "word": "SOTS",
+      "type": 0
+    },
+    {
+      "word": "TAME",
+      "type": 0
+    },
+    {
+      "word": "TEEL",
+      "type": 0
+    },
+    {
+      "word": "TEEM",
+      "type": 0
+    },
+    {
+      "word": "CHIEL",
+      "type": 0
+    },
+    {
+      "word": "CLOTS",
+      "type": 0
+    },
+    {
+      "word": "LEETS",
+      "type": 0
+    },
+    {
+      "word": "LITAI",
+      "type": 0
+    },
+    {
+      "word": "MEETS",
+      "type": 0
+    },
+    {
+      "word": "SLOTS",
+      "type": 0
+    },
+    {
+      "word": "SPEEL",
+      "type": 0
+    },
+    {
+      "word": "STEEL",
+      "type": 0
+    },
+    {
+      "word": "TAMAL",
+      "type": 0
+    },
+    {
+      "word": "TILLS",
+      "type": 0
+    },
+    {
+      "word": "CLOSET",
+      "type": 0
+    },
+    {
+      "word": "HIEMAL",
+      "type": 0
+    },
+    {
+      "word": "LITHIA",
+      "type": 0
+    },
+    {
+      "word": "TAMALE",
+      "type": 0
+    },
+    {
+      "word": "CLOSETS",
+      "type": 0
+    }
+  ],
+  "letters": "STOLS,PESCL,LEIHL,AMATI",
+  "obstacles": []
 }

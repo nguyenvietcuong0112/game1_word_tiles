@@ -1,85 +1,311 @@
-﻿{
-    "id":  1093,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LUZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AZUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GADO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GULA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LADO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TODO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "VOGAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AZULADO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADVOGADO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DOTAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LATO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VOGA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZULU",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OVODO,ADGAT,AZULU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1093,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "LEO",
+      "type": 0
+    },
+    {
+      "word": "LOS",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "GELO",
+      "type": 0
+    },
+    {
+      "word": "LOJA",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "GEORGE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "AJO",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ELO",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "ESE",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GEO",
+      "type": 0
+    },
+    {
+      "word": "GRO",
+      "type": 0
+    },
+    {
+      "word": "JAG",
+      "type": 0
+    },
+    {
+      "word": "JAS",
+      "type": 0
+    },
+    {
+      "word": "JOS",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "SEO",
+      "type": 0
+    },
+    {
+      "word": "AGRA",
+      "type": 0
+    },
+    {
+      "word": "ARAR",
+      "type": 0
+    },
+    {
+      "word": "ARAS",
+      "type": 0
+    },
+    {
+      "word": "ELOS",
+      "type": 0
+    },
+    {
+      "word": "GAJO",
+      "type": 0
+    },
+    {
+      "word": "GALE",
+      "type": 0
+    },
+    {
+      "word": "GALO",
+      "type": 0
+    },
+    {
+      "word": "GEAR",
+      "type": 0
+    },
+    {
+      "word": "GELA",
+      "type": 0
+    },
+    {
+      "word": "JASE",
+      "type": 0
+    },
+    {
+      "word": "JOSE",
+      "type": 0
+    },
+    {
+      "word": "LOSE",
+      "type": 0
+    },
+    {
+      "word": "OLEG",
+      "type": 0
+    },
+    {
+      "word": "ORAR",
+      "type": 0
+    },
+    {
+      "word": "ORAS",
+      "type": 0
+    },
+    {
+      "word": "RARA",
+      "type": 0
+    },
+    {
+      "word": "RARO",
+      "type": 0
+    },
+    {
+      "word": "SAGE",
+      "type": 0
+    },
+    {
+      "word": "SELA",
+      "type": 0
+    },
+    {
+      "word": "SELO",
+      "type": 0
+    },
+    {
+      "word": "SOJA",
+      "type": 0
+    },
+    {
+      "word": "SOLA",
+      "type": 0
+    },
+    {
+      "word": "SOLE",
+      "type": 0
+    },
+    {
+      "word": "ARGEL",
+      "type": 0
+    },
+    {
+      "word": "GAJOS",
+      "type": 0
+    },
+    {
+      "word": "GALES",
+      "type": 0
+    },
+    {
+      "word": "GALOS",
+      "type": 0
+    },
+    {
+      "word": "GEORG",
+      "type": 0
+    },
+    {
+      "word": "LOJAS",
+      "type": 0
+    },
+    {
+      "word": "RARAS",
+      "type": 0
+    },
+    {
+      "word": "RASGA",
+      "type": 0
+    },
+    {
+      "word": "SARAR",
+      "type": 0
+    },
+    {
+      "word": "SEGAL",
+      "type": 0
+    },
+    {
+      "word": "ALEGRA",
+      "type": 0
+    },
+    {
+      "word": "ALEGRO",
+      "type": 0
+    },
+    {
+      "word": "ALEGRAR",
+      "type": 0
+    },
+    {
+      "word": "GEORGES",
+      "type": 0
+    }
+  ],
+  "letters": "ARAS,ROEG,GESA,ALOJ",
+  "obstacles": []
 }

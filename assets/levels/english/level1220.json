@@ -1,102 +1,183 @@
-﻿{
-    "id":  1220,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MILE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SLID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SLIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SLIDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SLIME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SMILE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SMILEY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AYE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DEMS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MID",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EYA,LID,SME",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1220,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "LOG",
+      "type": 0
+    },
+    {
+      "word": "OLD",
+      "type": 0
+    },
+    {
+      "word": "GOLD",
+      "type": 0
+    },
+    {
+      "word": "HELD",
+      "type": 0
+    },
+    {
+      "word": "HOLD",
+      "type": 0
+    },
+    {
+      "word": "HOPE",
+      "type": 0
+    },
+    {
+      "word": "TIME",
+      "type": 0
+    },
+    {
+      "word": "HELLO",
+      "type": 0
+    },
+    {
+      "word": "COMMIT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "COL",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "ELD",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "HEM",
+      "type": 0
+    },
+    {
+      "word": "HEP",
+      "type": 0
+    },
+    {
+      "word": "HOG",
+      "type": 0
+    },
+    {
+      "word": "HOP",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MOC",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "OHO",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "PEH",
+      "type": 0
+    },
+    {
+      "word": "PIT",
+      "type": 0
+    },
+    {
+      "word": "POH",
+      "type": 0
+    },
+    {
+      "word": "TIP",
+      "type": 0
+    },
+    {
+      "word": "DOLL",
+      "type": 0
+    },
+    {
+      "word": "EMIT",
+      "type": 0
+    },
+    {
+      "word": "HELO",
+      "type": 0
+    },
+    {
+      "word": "HOLE",
+      "type": 0
+    },
+    {
+      "word": "LOCO",
+      "type": 0
+    },
+    {
+      "word": "MELD",
+      "type": 0
+    },
+    {
+      "word": "MELL",
+      "type": 0
+    },
+    {
+      "word": "GOLEM",
+      "type": 0
+    },
+    {
+      "word": "HOLLO",
+      "type": 0
+    }
+  ],
+  "letters": "COLG,ODLO,MMEH,TIPO",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

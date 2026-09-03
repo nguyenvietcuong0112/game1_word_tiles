@@ -1,73 +1,235 @@
-﻿{
-    "id":  189,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BIDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIAL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "HALO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "IDEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLOOD",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BLAH",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DEAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DIB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAID",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OODD,LAHA,BIDE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 189,
+  "width": 4,
+  "height": 3,
+  "target_words": [
+    {
+      "word": "CUT",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "RULE",
+      "type": 0
+    },
+    {
+      "word": "SCALE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "CUR",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "ETH",
+      "type": 0
+    },
+    {
+      "word": "LAC",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "RUT",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "ALEE",
+      "type": 0
+    },
+    {
+      "word": "CURE",
+      "type": 0
+    },
+    {
+      "word": "CURS",
+      "type": 0
+    },
+    {
+      "word": "CUTE",
+      "type": 0
+    },
+    {
+      "word": "ETHS",
+      "type": 0
+    },
+    {
+      "word": "HEEL",
+      "type": 0
+    },
+    {
+      "word": "LACS",
+      "type": 0
+    },
+    {
+      "word": "LURE",
+      "type": 0
+    },
+    {
+      "word": "LUTE",
+      "type": 0
+    },
+    {
+      "word": "RESH",
+      "type": 0
+    },
+    {
+      "word": "RETE",
+      "type": 0
+    },
+    {
+      "word": "RUTH",
+      "type": 0
+    },
+    {
+      "word": "SCUT",
+      "type": 0
+    },
+    {
+      "word": "SERS",
+      "type": 0
+    },
+    {
+      "word": "TELA",
+      "type": 0
+    },
+    {
+      "word": "THEE",
+      "type": 0
+    },
+    {
+      "word": "TULE",
+      "type": 0
+    },
+    {
+      "word": "ACUTE",
+      "type": 0
+    },
+    {
+      "word": "CULET",
+      "type": 0
+    },
+    {
+      "word": "CURES",
+      "type": 0
+    },
+    {
+      "word": "CURET",
+      "type": 0
+    },
+    {
+      "word": "CUTER",
+      "type": 0
+    },
+    {
+      "word": "CUTES",
+      "type": 0
+    },
+    {
+      "word": "ELUTE",
+      "type": 0
+    },
+    {
+      "word": "LETHE",
+      "type": 0
+    },
+    {
+      "word": "LURES",
+      "type": 0
+    },
+    {
+      "word": "LUTES",
+      "type": 0
+    },
+    {
+      "word": "RUTHS",
+      "type": 0
+    },
+    {
+      "word": "SCUTE",
+      "type": 0
+    },
+    {
+      "word": "SHEET",
+      "type": 0
+    },
+    {
+      "word": "ACUTER",
+      "type": 0
+    },
+    {
+      "word": "ACUTES",
+      "type": 0
+    },
+    {
+      "word": "ELUTES",
+      "type": 0
+    },
+    {
+      "word": "SCUTES",
+      "type": 0
+    },
+    {
+      "word": "SHEETER",
+      "type": 0
+    },
+    {
+      "word": "SHEETERS",
+      "type": 0
+    }
+  ],
+  "letters": "ALEE,CUTH,SRES",
+  "obstacles": []
 }

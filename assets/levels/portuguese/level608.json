@@ -1,69 +1,291 @@
-﻿{
-    "id":  608,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MELÊ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "META",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TELÊ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MELOA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "METAL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TALO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TAG,ELÊ,MOA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 608,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "RIR",
+      "type": 0
+    },
+    {
+      "word": "TOC",
+      "type": 0
+    },
+    {
+      "word": "NOTA",
+      "type": 0
+    },
+    {
+      "word": "PENA",
+      "type": 0
+    },
+    {
+      "word": "PERCA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "ENA",
+      "type": 0
+    },
+    {
+      "word": "EPA",
+      "type": 0
+    },
+    {
+      "word": "EPI",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NEN",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "RIP",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "ACRE",
+      "type": 0
+    },
+    {
+      "word": "CONE",
+      "type": 0
+    },
+    {
+      "word": "COTA",
+      "type": 0
+    },
+    {
+      "word": "ETON",
+      "type": 0
+    },
+    {
+      "word": "NATE",
+      "type": 0
+    },
+    {
+      "word": "NATO",
+      "type": 0
+    },
+    {
+      "word": "NENA",
+      "type": 0
+    },
+    {
+      "word": "NENE",
+      "type": 0
+    },
+    {
+      "word": "NERI",
+      "type": 0
+    },
+    {
+      "word": "NETA",
+      "type": 0
+    },
+    {
+      "word": "NETO",
+      "type": 0
+    },
+    {
+      "word": "NOTE",
+      "type": 0
+    },
+    {
+      "word": "OTAN",
+      "type": 0
+    },
+    {
+      "word": "PANE",
+      "type": 0
+    },
+    {
+      "word": "PARI",
+      "type": 0
+    },
+    {
+      "word": "PERI",
+      "type": 0
+    },
+    {
+      "word": "PETA",
+      "type": 0
+    },
+    {
+      "word": "PIRA",
+      "type": 0
+    },
+    {
+      "word": "PIRE",
+      "type": 0
+    },
+    {
+      "word": "RANA",
+      "type": 0
+    },
+    {
+      "word": "RENE",
+      "type": 0
+    },
+    {
+      "word": "RENO",
+      "type": 0
+    },
+    {
+      "word": "TANA",
+      "type": 0
+    },
+    {
+      "word": "TONE",
+      "type": 0
+    },
+    {
+      "word": "APENA",
+      "type": 0
+    },
+    {
+      "word": "ATENA",
+      "type": 0
+    },
+    {
+      "word": "CREAM",
+      "type": 0
+    },
+    {
+      "word": "CREPE",
+      "type": 0
+    },
+    {
+      "word": "IRENE",
+      "type": 0
+    },
+    {
+      "word": "PARIR",
+      "type": 0
+    },
+    {
+      "word": "TENMA",
+      "type": 0
+    },
+    {
+      "word": "TONER",
+      "type": 0
+    },
+    {
+      "word": "PERCAM",
+      "type": 0
+    }
+  ],
+  "letters": "COTA,MNEN,AEPA,CRIR",
+  "obstacles": []
 }

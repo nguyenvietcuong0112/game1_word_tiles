@@ -1,102 +1,255 @@
-﻿{
-    "id":  1868,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CITE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KNEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LICK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SLIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TICK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SLICK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPIRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STICK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIPSTICK",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ILK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIPS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIPS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SLIT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PIREE,SLKNT,TICCI",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1868,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "OWN",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "BARS",
+      "type": 0
+    },
+    {
+      "word": "DAWN",
+      "type": 0
+    },
+    {
+      "word": "DOWN",
+      "type": 0
+    },
+    {
+      "word": "SIDE",
+      "type": 0
+    },
+    {
+      "word": "RADIO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABO",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "AWN",
+      "type": 0
+    },
+    {
+      "word": "BOD",
+      "type": 0
+    },
+    {
+      "word": "BOW",
+      "type": 0
+    },
+    {
+      "word": "DAB",
+      "type": 0
+    },
+    {
+      "word": "DAW",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "DOW",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RID",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SOD",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "WAD",
+      "type": 0
+    },
+    {
+      "word": "ARID",
+      "type": 0
+    },
+    {
+      "word": "ARSE",
+      "type": 0
+    },
+    {
+      "word": "DIES",
+      "type": 0
+    },
+    {
+      "word": "DOSE",
+      "type": 0
+    },
+    {
+      "word": "IDES",
+      "type": 0
+    },
+    {
+      "word": "NOSE",
+      "type": 0
+    },
+    {
+      "word": "ODES",
+      "type": 0
+    },
+    {
+      "word": "REDE",
+      "type": 0
+    },
+    {
+      "word": "REDO",
+      "type": 0
+    },
+    {
+      "word": "WADI",
+      "type": 0
+    },
+    {
+      "word": "ADIOS",
+      "type": 0
+    },
+    {
+      "word": "ADOWN",
+      "type": 0
+    },
+    {
+      "word": "DIODE",
+      "type": 0
+    },
+    {
+      "word": "DOSER",
+      "type": 0
+    },
+    {
+      "word": "NOSED",
+      "type": 0
+    },
+    {
+      "word": "REDED",
+      "type": 0
+    },
+    {
+      "word": "REDES",
+      "type": 0
+    },
+    {
+      "word": "REDOS",
+      "type": 0
+    },
+    {
+      "word": "RESOD",
+      "type": 0
+    },
+    {
+      "word": "SEDER",
+      "type": 0
+    },
+    {
+      "word": "SIDED",
+      "type": 0
+    },
+    {
+      "word": "ARIOSE",
+      "type": 0
+    },
+    {
+      "word": "ARIOSO",
+      "type": 0
+    },
+    {
+      "word": "BODIED",
+      "type": 0
+    },
+    {
+      "word": "BODIES",
+      "type": 0
+    },
+    {
+      "word": "DIODES",
+      "type": 0
+    },
+    {
+      "word": "RADIOS",
+      "type": 0
+    },
+    {
+      "word": "WADIES",
+      "type": 0
+    }
+  ],
+  "letters": "BARSI,ODIED,WAODR,NOSER",
+  "obstacles": []
 }

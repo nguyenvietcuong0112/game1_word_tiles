@@ -1,77 +1,135 @@
-﻿{
-    "id":  1804,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AYI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KLAS",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SALI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAYI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YALI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KANLI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANLAYIŞ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKLAYIŞ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AKSAYIŞ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ALKAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ALIŞ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAYIŞ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "YIŞ,ALN,SKA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1804,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "ROY",
+      "type": 0
+    },
+    {
+      "word": "RUH",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "UYU",
+      "type": 0
+    },
+    {
+      "word": "YUH",
+      "type": 0
+    },
+    {
+      "word": "ÇÖL",
+      "type": 0
+    },
+    {
+      "word": "ETSE",
+      "type": 0
+    },
+    {
+      "word": "ÇÖLE",
+      "type": 0
+    },
+    {
+      "word": "REESE",
+      "type": 0
+    },
+    {
+      "word": "UYUYOR",
+      "type": 0
+    },
+    {
+      "word": "MAJESTE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMT",
+      "type": 0
+    },
+    {
+      "word": "ESE",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "HUY",
+      "type": 0
+    },
+    {
+      "word": "JAM",
+      "type": 0
+    },
+    {
+      "word": "OYU",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "YEL",
+      "type": 0
+    },
+    {
+      "word": "YOR",
+      "type": 0
+    },
+    {
+      "word": "HUYU",
+      "type": 0
+    },
+    {
+      "word": "JEST",
+      "type": 0
+    },
+    {
+      "word": "UYUR",
+      "type": 0
+    },
+    {
+      "word": "REÇEL",
+      "type": 0
+    },
+    {
+      "word": "YORMA",
+      "type": 0
+    }
+  ],
+  "letters": "LÖESE,EÇETJ,YORMA,UYUHK",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

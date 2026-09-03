@@ -1,69 +1,239 @@
-﻿{
-    "id":  896,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOZO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JUGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCHO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOCHO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHOCLO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CHO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CHOCO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CHOZO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CLOC",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HOZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZOCO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UGOZ,JLCO,MOCH",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 896,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "VER",
+      "type": 0
+    },
+    {
+      "word": "VEZ",
+      "type": 0
+    },
+    {
+      "word": "AMOR",
+      "type": 0
+    },
+    {
+      "word": "MANO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ERO",
+      "type": 0
+    },
+    {
+      "word": "EVO",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "OVE",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SEO",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "TRE",
+      "type": 0
+    },
+    {
+      "word": "VEA",
+      "type": 0
+    },
+    {
+      "word": "VON",
+      "type": 0
+    },
+    {
+      "word": "ZAR",
+      "type": 0
+    },
+    {
+      "word": "ZEV",
+      "type": 0
+    },
+    {
+      "word": "AREA",
+      "type": 0
+    },
+    {
+      "word": "ASEO",
+      "type": 0
+    },
+    {
+      "word": "MORA",
+      "type": 0
+    },
+    {
+      "word": "MORE",
+      "type": 0
+    },
+    {
+      "word": "MORT",
+      "type": 0
+    },
+    {
+      "word": "ORAR",
+      "type": 0
+    },
+    {
+      "word": "OVER",
+      "type": 0
+    },
+    {
+      "word": "RARO",
+      "type": 0
+    },
+    {
+      "word": "REZA",
+      "type": 0
+    },
+    {
+      "word": "ROMA",
+      "type": 0
+    },
+    {
+      "word": "SEON",
+      "type": 0
+    },
+    {
+      "word": "TREV",
+      "type": 0
+    },
+    {
+      "word": "VEAN",
+      "type": 0
+    },
+    {
+      "word": "VEAS",
+      "type": 0
+    },
+    {
+      "word": "VERA",
+      "type": 0
+    },
+    {
+      "word": "ZERO",
+      "type": 0
+    },
+    {
+      "word": "AMORE",
+      "type": 0
+    },
+    {
+      "word": "ANTRO",
+      "type": 0
+    },
+    {
+      "word": "AREAS",
+      "type": 0
+    },
+    {
+      "word": "AROMA",
+      "type": 0
+    },
+    {
+      "word": "REZAR",
+      "type": 0
+    },
+    {
+      "word": "ROMAN",
+      "type": 0
+    },
+    {
+      "word": "VERAZ",
+      "type": 0
+    },
+    {
+      "word": "MANTRA",
+      "type": 0
+    },
+    {
+      "word": "ROMANO",
+      "type": 0
+    },
+    {
+      "word": "ROMANOV",
+      "type": 0
+    }
+  ],
+  "letters": "EONA,SVTM,AERO,NZAR",
+  "obstacles": []
 }

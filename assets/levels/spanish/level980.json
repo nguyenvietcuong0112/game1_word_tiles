@@ -1,113 +1,195 @@
-﻿{
-    "id":  980,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASÍ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NIÑA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TILA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TINA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NALGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GELATINA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AÑIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GLAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LATINA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LITINA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LIÑA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LÍA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SALGA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TIÑA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LAÑGA,ETILÍ,GINAS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 980,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "ANN",
+      "type": 0
+    },
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "PON",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "DEDO",
+      "type": 0
+    },
+    {
+      "word": "PONGA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "ASN",
+      "type": 0
+    },
+    {
+      "word": "COP",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DEO",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GAO",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MOE",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "NAO",
+      "type": 0
+    },
+    {
+      "word": "NOP",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "ONG",
+      "type": 0
+    },
+    {
+      "word": "ONN",
+      "type": 0
+    },
+    {
+      "word": "OSA",
+      "type": 0
+    },
+    {
+      "word": "SOG",
+      "type": 0
+    },
+    {
+      "word": "AGOS",
+      "type": 0
+    },
+    {
+      "word": "AMOS",
+      "type": 0
+    },
+    {
+      "word": "ASCO",
+      "type": 0
+    },
+    {
+      "word": "ASNO",
+      "type": 0
+    },
+    {
+      "word": "CONG",
+      "type": 0
+    },
+    {
+      "word": "CONS",
+      "type": 0
+    },
+    {
+      "word": "GOMA",
+      "type": 0
+    },
+    {
+      "word": "PONG",
+      "type": 0
+    },
+    {
+      "word": "SOGA",
+      "type": 0
+    },
+    {
+      "word": "SOMA",
+      "type": 0
+    },
+    {
+      "word": "CONGA",
+      "type": 0
+    },
+    {
+      "word": "CONGO",
+      "type": 0
+    },
+    {
+      "word": "DAMOS",
+      "type": 0
+    },
+    {
+      "word": "GOMAS",
+      "type": 0
+    },
+    {
+      "word": "PONGO",
+      "type": 0
+    },
+    {
+      "word": "PONGAN",
+      "type": 0
+    }
+  ],
+  "letters": "DEDO,MOGA,ASNN,DCOP",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

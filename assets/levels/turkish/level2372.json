@@ -1,89 +1,187 @@
-﻿{
-    "id":  2372,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SANAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKSTRA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TRANSİT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NARTEKS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RAST",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SANA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OLAAL,KSANS,ETRTİ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2372,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "DİR",
+      "type": 0
+    },
+    {
+      "word": "HOP",
+      "type": 0
+    },
+    {
+      "word": "KAP",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "SİR",
+      "type": 0
+    },
+    {
+      "word": "AKSİ",
+      "type": 0
+    },
+    {
+      "word": "RİSK",
+      "type": 0
+    },
+    {
+      "word": "MEDYA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "AİR",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "DEM",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "HAA",
+      "type": 0
+    },
+    {
+      "word": "HAİ",
+      "type": 0
+    },
+    {
+      "word": "KAİ",
+      "type": 0
+    },
+    {
+      "word": "OHA",
+      "type": 0
+    },
+    {
+      "word": "PAK",
+      "type": 0
+    },
+    {
+      "word": "PAİ",
+      "type": 0
+    },
+    {
+      "word": "POD",
+      "type": 0
+    },
+    {
+      "word": "RİA",
+      "type": 0
+    },
+    {
+      "word": "YAA",
+      "type": 0
+    },
+    {
+      "word": "YAD",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "İRV",
+      "type": 0
+    },
+    {
+      "word": "ADDY",
+      "type": 0
+    },
+    {
+      "word": "ARİA",
+      "type": 0
+    },
+    {
+      "word": "AİDA",
+      "type": 0
+    },
+    {
+      "word": "DARP",
+      "type": 0
+    },
+    {
+      "word": "DEMO",
+      "type": 0
+    },
+    {
+      "word": "MODE",
+      "type": 0
+    },
+    {
+      "word": "DEVRİ",
+      "type": 0
+    },
+    {
+      "word": "PRİYA",
+      "type": 0
+    },
+    {
+      "word": "İDARİ",
+      "type": 0
+    }
+  ],
+  "letters": "KAPOM,SİYDE,PRADV,OHAİR",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

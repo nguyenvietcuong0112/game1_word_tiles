@@ -1,77 +1,219 @@
-﻿{
-    "id":  890,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLÉ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LONA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NORA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PENA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZONA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PENAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEZENA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARILO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DEPENAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DÉLI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IRAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEZ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PENA,EZOR,DÉLI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 890,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BOA",
+      "type": 0
+    },
+    {
+      "word": "DEU",
+      "type": 0
+    },
+    {
+      "word": "UMA",
+      "type": 0
+    },
+    {
+      "word": "VIM",
+      "type": 0
+    },
+    {
+      "word": "ADAM",
+      "type": 0
+    },
+    {
+      "word": "DAVA",
+      "type": 0
+    },
+    {
+      "word": "VIDA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "AOI",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "AVI",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "BOI",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "DIM",
+      "type": 0
+    },
+    {
+      "word": "DIO",
+      "type": 0
+    },
+    {
+      "word": "EBA",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "MIO",
+      "type": 0
+    },
+    {
+      "word": "OBA",
+      "type": 0
+    },
+    {
+      "word": "VAM",
+      "type": 0
+    },
+    {
+      "word": "VAO",
+      "type": 0
+    },
+    {
+      "word": "ABED",
+      "type": 0
+    },
+    {
+      "word": "ABOU",
+      "type": 0
+    },
+    {
+      "word": "DAMA",
+      "type": 0
+    },
+    {
+      "word": "DIMA",
+      "type": 0
+    },
+    {
+      "word": "DIVA",
+      "type": 0
+    },
+    {
+      "word": "MADA",
+      "type": 0
+    },
+    {
+      "word": "MADI",
+      "type": 0
+    },
+    {
+      "word": "ADAMA",
+      "type": 0
+    },
+    {
+      "word": "ADIOU",
+      "type": 0
+    },
+    {
+      "word": "AMADA",
+      "type": 0
+    },
+    {
+      "word": "AMAVA",
+      "type": 0
+    },
+    {
+      "word": "DAVAM",
+      "type": 0
+    },
+    {
+      "word": "VADIM",
+      "type": 0
+    },
+    {
+      "word": "VADIO",
+      "type": 0
+    },
+    {
+      "word": "AMAVAM",
+      "type": 0
+    }
+  ],
+  "letters": "DAAV,EBDA,UOIM,MAVA",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

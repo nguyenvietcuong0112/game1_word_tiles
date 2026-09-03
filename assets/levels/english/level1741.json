@@ -1,81 +1,211 @@
-﻿{
-    "id":  1741,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MILD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LINGO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MANGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INDIGO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANIL",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LIMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LING",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MANI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MINA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LDI,ING,MAO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1741,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "SAW",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "WAS",
+      "type": 0
+    },
+    {
+      "word": "MORE",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    },
+    {
+      "word": "SEEN",
+      "type": 0
+    },
+    {
+      "word": "CENTRE",
+      "type": 0
+    },
+    {
+      "word": "RECENT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "CEE",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "ORC",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "ORT",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "CEES",
+      "type": 0
+    },
+    {
+      "word": "CENT",
+      "type": 0
+    },
+    {
+      "word": "CERO",
+      "type": 0
+    },
+    {
+      "word": "CESS",
+      "type": 0
+    },
+    {
+      "word": "EROS",
+      "type": 0
+    },
+    {
+      "word": "MESA",
+      "type": 0
+    },
+    {
+      "word": "MESS",
+      "type": 0
+    },
+    {
+      "word": "MORT",
+      "type": 0
+    },
+    {
+      "word": "OMER",
+      "type": 0
+    },
+    {
+      "word": "ORES",
+      "type": 0
+    },
+    {
+      "word": "REMS",
+      "type": 0
+    },
+    {
+      "word": "ROMS",
+      "type": 0
+    },
+    {
+      "word": "SAWS",
+      "type": 0
+    },
+    {
+      "word": "SECT",
+      "type": 0
+    },
+    {
+      "word": "SERS",
+      "type": 0
+    },
+    {
+      "word": "SORE",
+      "type": 0
+    },
+    {
+      "word": "MORES",
+      "type": 0
+    },
+    {
+      "word": "RESAW",
+      "type": 0
+    },
+    {
+      "word": "TRESS",
+      "type": 0
+    },
+    {
+      "word": "RESAWS",
+      "type": 0
+    },
+    {
+      "word": "CENTRES",
+      "type": 0
+    },
+    {
+      "word": "NECROSE",
+      "type": 0
+    }
+  ],
+  "letters": "NTRO,ECEM,ERSS,SOAW",
+  "obstacles": []
 }

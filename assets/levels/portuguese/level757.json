@@ -1,69 +1,231 @@
-﻿{
-    "id":  757,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "FIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IMÃ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FACA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MACA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIFAMAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AFIM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMÃ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAMAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAMI",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "DÃR,IMA,FAC",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 757,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "LOS",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "TAL",
+      "type": 0
+    },
+    {
+      "word": "CEDO",
+      "type": 0
+    },
+    {
+      "word": "DOCE",
+      "type": 0
+    },
+    {
+      "word": "TACO",
+      "type": 0
+    },
+    {
+      "word": "TOCA",
+      "type": 0
+    },
+    {
+      "word": "SENHA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "AHN",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "CEO",
+      "type": 0
+    },
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "COE",
+      "type": 0
+    },
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "DOH",
+      "type": 0
+    },
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "ECA",
+      "type": 0
+    },
+    {
+      "word": "ECO",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "HOT",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "NHA",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "TAC",
+      "type": 0
+    },
+    {
+      "word": "TOC",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "TTA",
+      "type": 0
+    },
+    {
+      "word": "TTO",
+      "type": 0
+    },
+    {
+      "word": "ATOL",
+      "type": 0
+    },
+    {
+      "word": "ATOS",
+      "type": 0
+    },
+    {
+      "word": "CALO",
+      "type": 0
+    },
+    {
+      "word": "CATO",
+      "type": 0
+    },
+    {
+      "word": "CODE",
+      "type": 0
+    },
+    {
+      "word": "COHN",
+      "type": 0
+    },
+    {
+      "word": "DOCA",
+      "type": 0
+    },
+    {
+      "word": "ESTO",
+      "type": 0
+    },
+    {
+      "word": "LOSE",
+      "type": 0
+    },
+    {
+      "word": "LOST",
+      "type": 0
+    },
+    {
+      "word": "OTTO",
+      "type": 0
+    },
+    {
+      "word": "SOLA",
+      "type": 0
+    },
+    {
+      "word": "TALO",
+      "type": 0
+    },
+    {
+      "word": "TOLA",
+      "type": 0
+    },
+    {
+      "word": "CALOS",
+      "type": 0
+    },
+    {
+      "word": "SENTO",
+      "type": 0
+    },
+    {
+      "word": "TALOS",
+      "type": 0
+    }
+  ],
+  "letters": "LACO,OTDE,STOC,ENHA",
+  "obstacles": []
 }

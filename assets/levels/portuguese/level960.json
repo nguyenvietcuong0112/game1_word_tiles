@@ -1,89 +1,255 @@
-﻿{
-    "id":  960,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRAU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CULTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FATOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EVACUAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACUAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CULTOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GROTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ULTOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VACU",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EGRO,VFAT,ACUL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 960,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "MIL",
+      "type": 0
+    },
+    {
+      "word": "SAI",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "VAI",
+      "type": 0
+    },
+    {
+      "word": "VIM",
+      "type": 0
+    },
+    {
+      "word": "SAIA",
+      "type": 0
+    },
+    {
+      "word": "VIVA",
+      "type": 0
+    },
+    {
+      "word": "ASSIM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "AVI",
+      "type": 0
+    },
+    {
+      "word": "IAM",
+      "type": 0
+    },
+    {
+      "word": "IAS",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "ISA",
+      "type": 0
+    },
+    {
+      "word": "ISS",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "LIM",
+      "type": 0
+    },
+    {
+      "word": "MAI",
+      "type": 0
+    },
+    {
+      "word": "MIA",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "SAV",
+      "type": 0
+    },
+    {
+      "word": "VAM",
+      "type": 0
+    },
+    {
+      "word": "VIS",
+      "type": 0
+    },
+    {
+      "word": "VIV",
+      "type": 0
+    },
+    {
+      "word": "AMIS",
+      "type": 0
+    },
+    {
+      "word": "ARIA",
+      "type": 0
+    },
+    {
+      "word": "ASIM",
+      "type": 0
+    },
+    {
+      "word": "ASMA",
+      "type": 0
+    },
+    {
+      "word": "ASSA",
+      "type": 0
+    },
+    {
+      "word": "AVIV",
+      "type": 0
+    },
+    {
+      "word": "ISSA",
+      "type": 0
+    },
+    {
+      "word": "LIAM",
+      "type": 0
+    },
+    {
+      "word": "LIRA",
+      "type": 0
+    },
+    {
+      "word": "MAAR",
+      "type": 0
+    },
+    {
+      "word": "MAIL",
+      "type": 0
+    },
+    {
+      "word": "MILI",
+      "type": 0
+    },
+    {
+      "word": "MISA",
+      "type": 0
+    },
+    {
+      "word": "MISS",
+      "type": 0
+    },
+    {
+      "word": "RAIA",
+      "type": 0
+    },
+    {
+      "word": "RIAM",
+      "type": 0
+    },
+    {
+      "word": "SAVI",
+      "type": 0
+    },
+    {
+      "word": "SIMA",
+      "type": 0
+    },
+    {
+      "word": "SIMI",
+      "type": 0
+    },
+    {
+      "word": "SIMS",
+      "type": 0
+    },
+    {
+      "word": "VAIL",
+      "type": 0
+    },
+    {
+      "word": "VISA",
+      "type": 0
+    },
+    {
+      "word": "AVISA",
+      "type": 0
+    },
+    {
+      "word": "MAARI",
+      "type": 0
+    },
+    {
+      "word": "MAVIS",
+      "type": 0
+    },
+    {
+      "word": "MISSA",
+      "type": 0
+    },
+    {
+      "word": "VIVAM",
+      "type": 0
+    },
+    {
+      "word": "VIVAS",
+      "type": 0
+    }
+  ],
+  "letters": "RAIA,IAMS,LVIS,IMVA",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

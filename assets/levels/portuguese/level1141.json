@@ -1,77 +1,219 @@
-﻿{
-    "id":  1141,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "TIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GARI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAGU",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RUGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRIGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIGAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUGIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MASTIGAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ITU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUGAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RUGAI,STIRH,AMLBC",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1141,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "IHE",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "IRV",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "NUM",
+      "type": 0
+    },
+    {
+      "word": "RIR",
+      "type": 0
+    },
+    {
+      "word": "IREM",
+      "type": 0
+    },
+    {
+      "word": "KARI",
+      "type": 0
+    },
+    {
+      "word": "UNIR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKI",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "EMI",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "HAR",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "HIM",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KIN",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "MIN",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "MUN",
+      "type": 0
+    },
+    {
+      "word": "NIK",
+      "type": 0
+    },
+    {
+      "word": "NIM",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "UMI",
+      "type": 0
+    },
+    {
+      "word": "UNI",
+      "type": 0
+    },
+    {
+      "word": "EMIR",
+      "type": 0
+    },
+    {
+      "word": "EREN",
+      "type": 0
+    },
+    {
+      "word": "ERIN",
+      "type": 0
+    },
+    {
+      "word": "HARE",
+      "type": 0
+    },
+    {
+      "word": "HARI",
+      "type": 0
+    },
+    {
+      "word": "HERA",
+      "type": 0
+    },
+    {
+      "word": "HERE",
+      "type": 0
+    },
+    {
+      "word": "MERE",
+      "type": 0
+    },
+    {
+      "word": "MERV",
+      "type": 0
+    },
+    {
+      "word": "MINI",
+      "type": 0
+    },
+    {
+      "word": "MIRE",
+      "type": 0
+    },
+    {
+      "word": "NERI",
+      "type": 0
+    },
+    {
+      "word": "NIKA",
+      "type": 0
+    },
+    {
+      "word": "REMI",
+      "type": 0
+    },
+    {
+      "word": "IKARI",
+      "type": 0
+    },
+    {
+      "word": "RAHIM",
+      "type": 0
+    },
+    {
+      "word": "HIKARI",
+      "type": 0
+    },
+    {
+      "word": "UNIREM",
+      "type": 0
+    }
+  ],
+  "letters": "IRAK,REHI,VRIN,NEMU",
+  "obstacles": []
 }

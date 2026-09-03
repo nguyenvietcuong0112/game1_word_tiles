@@ -1,77 +1,115 @@
-﻿{
-    "id":  1495,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KEÇİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PLAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALAKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANTİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANTİKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LASTİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PLASTİK",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKALA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ANLAK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ATİK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LASTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SALPA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TAKA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇEKİK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇİTA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ALAKA,PNTİK,LASÇE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1495,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "BİG",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "FBİ",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "AZAT",
+      "type": 0
+    },
+    {
+      "word": "DEFA",
+      "type": 0
+    },
+    {
+      "word": "FEDA",
+      "type": 0
+    },
+    {
+      "word": "VEDA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "AZA",
+      "type": 0
+    },
+    {
+      "word": "DEF",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "FAT",
+      "type": 0
+    },
+    {
+      "word": "FAZ",
+      "type": 0
+    },
+    {
+      "word": "GİA",
+      "type": 0
+    },
+    {
+      "word": "TAA",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAİ",
+      "type": 0
+    },
+    {
+      "word": "DATA",
+      "type": 0
+    },
+    {
+      "word": "VEFAT",
+      "type": 0
+    }
+  ],
+  "letters": "ANAP,ATAD,ZAFE,GİBV",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

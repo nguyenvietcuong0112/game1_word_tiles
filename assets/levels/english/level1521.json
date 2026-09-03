@@ -1,69 +1,279 @@
-﻿{
-    "id":  1521,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "APP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AUNT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUNT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAPPY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAUNT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "UNHAPPY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "HAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PUNY",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TONY",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PPYR,AUNT,HNOT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1521,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "ALSO",
+      "type": 0
+    },
+    {
+      "word": "LOSE",
+      "type": 0
+    },
+    {
+      "word": "CROSS",
+      "type": 0
+    },
+    {
+      "word": "ACROSS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "DOE",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "LAC",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "ODS",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "ORC",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SOD",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "ACRE",
+      "type": 0
+    },
+    {
+      "word": "DOER",
+      "type": 0
+    },
+    {
+      "word": "DORE",
+      "type": 0
+    },
+    {
+      "word": "DOSS",
+      "type": 0
+    },
+    {
+      "word": "EROS",
+      "type": 0
+    },
+    {
+      "word": "LACE",
+      "type": 0
+    },
+    {
+      "word": "ODES",
+      "type": 0
+    },
+    {
+      "word": "OLES",
+      "type": 0
+    },
+    {
+      "word": "ORCA",
+      "type": 0
+    },
+    {
+      "word": "ORES",
+      "type": 0
+    },
+    {
+      "word": "OSSA",
+      "type": 0
+    },
+    {
+      "word": "REDO",
+      "type": 0
+    },
+    {
+      "word": "REDS",
+      "type": 0
+    },
+    {
+      "word": "RODE",
+      "type": 0
+    },
+    {
+      "word": "RODS",
+      "type": 0
+    },
+    {
+      "word": "SARD",
+      "type": 0
+    },
+    {
+      "word": "SODS",
+      "type": 0
+    },
+    {
+      "word": "SOLE",
+      "type": 0
+    },
+    {
+      "word": "SORE",
+      "type": 0
+    },
+    {
+      "word": "ACRED",
+      "type": 0
+    },
+    {
+      "word": "ACRES",
+      "type": 0
+    },
+    {
+      "word": "ARDOR",
+      "type": 0
+    },
+    {
+      "word": "ARLES",
+      "type": 0
+    },
+    {
+      "word": "CEORL",
+      "type": 0
+    },
+    {
+      "word": "CREDO",
+      "type": 0
+    },
+    {
+      "word": "DOERS",
+      "type": 0
+    },
+    {
+      "word": "LACER",
+      "type": 0
+    },
+    {
+      "word": "LOSER",
+      "type": 0
+    },
+    {
+      "word": "REDOS",
+      "type": 0
+    },
+    {
+      "word": "SOLED",
+      "type": 0
+    },
+    {
+      "word": "SOREL",
+      "type": 0
+    },
+    {
+      "word": "SORES",
+      "type": 0
+    },
+    {
+      "word": "CEORLS",
+      "type": 0
+    },
+    {
+      "word": "CREDOS",
+      "type": 0
+    },
+    {
+      "word": "CRESOL",
+      "type": 0
+    },
+    {
+      "word": "LACERS",
+      "type": 0
+    },
+    {
+      "word": "RECROSS",
+      "type": 0
+    }
+  ],
+  "letters": "ACER,LROS,SEDS,OLRA",
+  "obstacles": []
 }

@@ -1,85 +1,263 @@
-﻿{
-    "id":  1353,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YES",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALLY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GLAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SELL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YELL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALLY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GLADLY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DALE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DALLY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LYE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TALES",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DLY,ALE,TGS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1353,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CUP",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "POP",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "UPS",
+      "type": 0
+    },
+    {
+      "word": "HERE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "CEP",
+      "type": 0
+    },
+    {
+      "word": "CUR",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "ECU",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "LAP",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "PEC",
+      "type": 0
+    },
+    {
+      "word": "POD",
+      "type": 0
+    },
+    {
+      "word": "PUR",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "REP",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "UPO",
+      "type": 0
+    },
+    {
+      "word": "ALPS",
+      "type": 0
+    },
+    {
+      "word": "CEPS",
+      "type": 0
+    },
+    {
+      "word": "CERE",
+      "type": 0
+    },
+    {
+      "word": "CUPS",
+      "type": 0
+    },
+    {
+      "word": "CURE",
+      "type": 0
+    },
+    {
+      "word": "DOPE",
+      "type": 0
+    },
+    {
+      "word": "DORE",
+      "type": 0
+    },
+    {
+      "word": "HERS",
+      "type": 0
+    },
+    {
+      "word": "PALP",
+      "type": 0
+    },
+    {
+      "word": "POPE",
+      "type": 0
+    },
+    {
+      "word": "POPS",
+      "type": 0
+    },
+    {
+      "word": "PORE",
+      "type": 0
+    },
+    {
+      "word": "PUCE",
+      "type": 0
+    },
+    {
+      "word": "PURE",
+      "type": 0
+    },
+    {
+      "word": "REDO",
+      "type": 0
+    },
+    {
+      "word": "REPO",
+      "type": 0
+    },
+    {
+      "word": "REPS",
+      "type": 0
+    },
+    {
+      "word": "RODE",
+      "type": 0
+    },
+    {
+      "word": "ROPE",
+      "type": 0
+    },
+    {
+      "word": "SPEC",
+      "type": 0
+    },
+    {
+      "word": "SPUR",
+      "type": 0
+    },
+    {
+      "word": "CURED",
+      "type": 0
+    },
+    {
+      "word": "DOPER",
+      "type": 0
+    },
+    {
+      "word": "EPODE",
+      "type": 0
+    },
+    {
+      "word": "PALPS",
+      "type": 0
+    },
+    {
+      "word": "POPPA",
+      "type": 0
+    },
+    {
+      "word": "PORED",
+      "type": 0
+    },
+    {
+      "word": "RECUR",
+      "type": 0
+    },
+    {
+      "word": "ROPER",
+      "type": 0
+    },
+    {
+      "word": "SPODE",
+      "type": 0
+    },
+    {
+      "word": "SPORE",
+      "type": 0
+    },
+    {
+      "word": "UREDO",
+      "type": 0
+    },
+    {
+      "word": "DOPERS",
+      "type": 0
+    },
+    {
+      "word": "ROPERS",
+      "type": 0
+    },
+    {
+      "word": "SPORED",
+      "type": 0
+    }
+  ],
+  "letters": "EHLA,RSPP,EPOD,CURE",
+  "obstacles": []
 }

@@ -1,85 +1,191 @@
-﻿{
-    "id":  990,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KINA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANKEN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKNE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AKI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANKA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAMAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KINAMA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ANEK,UKIN,DAMA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 990,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GİY",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TİM",
+      "type": 0
+    },
+    {
+      "word": "AMİN",
+      "type": 0
+    },
+    {
+      "word": "MARY",
+      "type": 0
+    },
+    {
+      "word": "İNŞA",
+      "type": 0
+    },
+    {
+      "word": "MARTY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "ANY",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "GİA",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MAY",
+      "type": 0
+    },
+    {
+      "word": "MAİ",
+      "type": 0
+    },
+    {
+      "word": "MİN",
+      "type": 0
+    },
+    {
+      "word": "MİT",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NİM",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAİ",
+      "type": 0
+    },
+    {
+      "word": "TİN",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "YİM",
+      "type": 0
+    },
+    {
+      "word": "YİN",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "İNİ",
+      "type": 0
+    },
+    {
+      "word": "İTİ",
+      "type": 0
+    },
+    {
+      "word": "ANTİ",
+      "type": 0
+    },
+    {
+      "word": "ANYA",
+      "type": 0
+    },
+    {
+      "word": "ARTA",
+      "type": 0
+    },
+    {
+      "word": "AYNA",
+      "type": 0
+    },
+    {
+      "word": "AYİN",
+      "type": 0
+    },
+    {
+      "word": "MART",
+      "type": 0
+    },
+    {
+      "word": "MİNİ",
+      "type": 0
+    },
+    {
+      "word": "İTİN",
+      "type": 0
+    },
+    {
+      "word": "ARTAN",
+      "type": 0
+    },
+    {
+      "word": "AYİNİ",
+      "type": 0
+    },
+    {
+      "word": "MARTA",
+      "type": 0
+    },
+    {
+      "word": "RAYNA",
+      "type": 0
+    },
+    {
+      "word": "TANYA",
+      "type": 0
+    }
+  ],
+  "letters": "ANTİ,TYİN,RAMŞ,YİGA",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

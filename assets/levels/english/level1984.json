@@ -1,103 +1,183 @@
-﻿{
-    "id":  1984,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOAST",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BOAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BOTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EATS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MATS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STOAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOME",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "JEBT,AMOA,EATS",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1984,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "WHO",
+      "type": 0
+    },
+    {
+      "word": "BOOK",
+      "type": 0
+    },
+    {
+      "word": "OOPS",
+      "type": 0
+    },
+    {
+      "word": "WRITE",
+      "type": 0
+    },
+    {
+      "word": "WRITES",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BOP",
+      "type": 0
+    },
+    {
+      "word": "CAW",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "HET",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "MAW",
+      "type": 0
+    },
+    {
+      "word": "OOH",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SOD",
+      "type": 0
+    },
+    {
+      "word": "BOOS",
+      "type": 0
+    },
+    {
+      "word": "BOPS",
+      "type": 0
+    },
+    {
+      "word": "CAWS",
+      "type": 0
+    },
+    {
+      "word": "HOOP",
+      "type": 0
+    },
+    {
+      "word": "IRES",
+      "type": 0
+    },
+    {
+      "word": "MACS",
+      "type": 0
+    },
+    {
+      "word": "MAWS",
+      "type": 0
+    },
+    {
+      "word": "POOH",
+      "type": 0
+    },
+    {
+      "word": "RITE",
+      "type": 0
+    },
+    {
+      "word": "SCAM",
+      "type": 0
+    },
+    {
+      "word": "SWAM",
+      "type": 0
+    },
+    {
+      "word": "TIRE",
+      "type": 0
+    },
+    {
+      "word": "WHET",
+      "type": 0
+    },
+    {
+      "word": "WRIT",
+      "type": 0
+    },
+    {
+      "word": "HOOPS",
+      "type": 0
+    },
+    {
+      "word": "RITES",
+      "type": 0
+    },
+    {
+      "word": "SPOOK",
+      "type": 0
+    },
+    {
+      "word": "TIRES",
+      "type": 0
+    },
+    {
+      "word": "WHOOP",
+      "type": 0
+    },
+    {
+      "word": "WHOOPS",
+      "type": 0
+    }
+  ],
+  "letters": "MAWRI,DCSET,OSPHW,OBOOK",
+  "obstacles": []
 }

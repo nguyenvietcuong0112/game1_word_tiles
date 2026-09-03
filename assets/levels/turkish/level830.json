@@ -1,53 +1,111 @@
-﻿{
-    "id":  830,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EŞİK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "VAHŞİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BİLEŞİK",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "HAVSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LİBAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SABİ",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "EŞİK,LHAV,İBAS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 830,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "DAĞ",
+      "type": 0
+    },
+    {
+      "word": "GİR",
+      "type": 0
+    },
+    {
+      "word": "MUZ",
+      "type": 0
+    },
+    {
+      "word": "OMUZ",
+      "type": 0
+    },
+    {
+      "word": "UZAN",
+      "type": 0
+    },
+    {
+      "word": "UÇAN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AZA",
+      "type": 0
+    },
+    {
+      "word": "AĞA",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "NAZ",
+      "type": 0
+    },
+    {
+      "word": "RİM",
+      "type": 0
+    },
+    {
+      "word": "UZA",
+      "type": 0
+    },
+    {
+      "word": "ZAN",
+      "type": 0
+    },
+    {
+      "word": "ZUM",
+      "type": 0
+    },
+    {
+      "word": "ÇAN",
+      "type": 0
+    },
+    {
+      "word": "AĞAM",
+      "type": 0
+    },
+    {
+      "word": "DAMA",
+      "type": 0
+    },
+    {
+      "word": "DAĞA",
+      "type": 0
+    },
+    {
+      "word": "OMUZA",
+      "type": 0
+    }
+  ],
+  "letters": "NAÇO,AZUM,AMGİ,ĞADR",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

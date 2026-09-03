@@ -1,114 +1,195 @@
-﻿{
-    "id":  2038,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEZ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MUZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KREM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TERK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YETER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MERKEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEMMUZ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ETER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MERET",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZULMET",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "YKEZ,ERLU,TEMM",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  8,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2038,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "BİR",
+      "type": 0
+    },
+    {
+      "word": "EVİ",
+      "type": 0
+    },
+    {
+      "word": "TEK",
+      "type": 0
+    },
+    {
+      "word": "VER",
+      "type": 0
+    },
+    {
+      "word": "BENİ",
+      "type": 0
+    },
+    {
+      "word": "BİRA",
+      "type": 0
+    },
+    {
+      "word": "GERİ",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SERT",
+      "type": 0
+    },
+    {
+      "word": "YİNE",
+      "type": 0
+    },
+    {
+      "word": "ERKEN",
+      "type": 0
+    },
+    {
+      "word": "GÜVERTE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABİ",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "BEK",
+      "type": 0
+    },
+    {
+      "word": "EBE",
+      "type": 0
+    },
+    {
+      "word": "ERİ",
+      "type": 0
+    },
+    {
+      "word": "GER",
+      "type": 0
+    },
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "RAB",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "YİN",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "BARİ",
+      "type": 0
+    },
+    {
+      "word": "BİRE",
+      "type": 0
+    },
+    {
+      "word": "EBEN",
+      "type": 0
+    },
+    {
+      "word": "ERER",
+      "type": 0
+    },
+    {
+      "word": "GERE",
+      "type": 0
+    },
+    {
+      "word": "GÜVE",
+      "type": 0
+    },
+    {
+      "word": "SERİ",
+      "type": 0
+    },
+    {
+      "word": "TEKE",
+      "type": 0
+    },
+    {
+      "word": "VERA",
+      "type": 0
+    },
+    {
+      "word": "VERİ",
+      "type": 0
+    },
+    {
+      "word": "İNEK",
+      "type": 0
+    },
+    {
+      "word": "BENSE",
+      "type": 0
+    },
+    {
+      "word": "BİRER",
+      "type": 0
+    },
+    {
+      "word": "ESNEK",
+      "type": 0
+    },
+    {
+      "word": "REVİR",
+      "type": 0
+    },
+    {
+      "word": "RİVER",
+      "type": 0
+    },
+    {
+      "word": "REVİRE",
+      "type": 0
+    }
+  ],
+  "letters": "BARYİ,İRESN,VERKE,ÜGTEB",
+  "obstacles": []
 }

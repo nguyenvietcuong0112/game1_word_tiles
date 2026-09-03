@@ -1,65 +1,259 @@
-﻿{
-    "id":  666,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CITE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CODE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CIDER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CODER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COULD",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CITED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REDO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ULR,ODE,CIT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 666,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "PUT",
+      "type": 0
+    },
+    {
+      "word": "TIP",
+      "type": 0
+    },
+    {
+      "word": "WAR",
+      "type": 0
+    },
+    {
+      "word": "WAS",
+      "type": 0
+    },
+    {
+      "word": "TYPE",
+      "type": 0
+    },
+    {
+      "word": "TYPES",
+      "type": 0
+    },
+    {
+      "word": "STUPID",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMP",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "DIP",
+      "type": 0
+    },
+    {
+      "word": "DIT",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "MAW",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "PIT",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "RAW",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SAW",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TUP",
+      "type": 0
+    },
+    {
+      "word": "TWA",
+      "type": 0
+    },
+    {
+      "word": "UTS",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "ARSE",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "MARE",
+      "type": 0
+    },
+    {
+      "word": "MARS",
+      "type": 0
+    },
+    {
+      "word": "MAST",
+      "type": 0
+    },
+    {
+      "word": "MAWS",
+      "type": 0
+    },
+    {
+      "word": "PITY",
+      "type": 0
+    },
+    {
+      "word": "PUTS",
+      "type": 0
+    },
+    {
+      "word": "RAMP",
+      "type": 0
+    },
+    {
+      "word": "RASE",
+      "type": 0
+    },
+    {
+      "word": "RAWS",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "SAMP",
+      "type": 0
+    },
+    {
+      "word": "SAWS",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SERS",
+      "type": 0
+    },
+    {
+      "word": "SWAM",
+      "type": 0
+    },
+    {
+      "word": "TIDY",
+      "type": 0
+    },
+    {
+      "word": "TSAR",
+      "type": 0
+    },
+    {
+      "word": "TWAS",
+      "type": 0
+    },
+    {
+      "word": "WARE",
+      "type": 0
+    },
+    {
+      "word": "WARS",
+      "type": 0
+    },
+    {
+      "word": "WAST",
+      "type": 0
+    },
+    {
+      "word": "MARES",
+      "type": 0
+    },
+    {
+      "word": "MARSE",
+      "type": 0
+    },
+    {
+      "word": "MASER",
+      "type": 0
+    },
+    {
+      "word": "RESAW",
+      "type": 0
+    },
+    {
+      "word": "SWAMP",
+      "type": 0
+    },
+    {
+      "word": "SWARE",
+      "type": 0
+    },
+    {
+      "word": "TSARS",
+      "type": 0
+    },
+    {
+      "word": "WARES",
+      "type": 0
+    },
+    {
+      "word": "MASERS",
+      "type": 0
+    },
+    {
+      "word": "RESAWS",
+      "type": 0
+    }
+  ],
+  "letters": "DYPE,ITWS,PMAR,UTSE",
+  "obstacles": []
 }

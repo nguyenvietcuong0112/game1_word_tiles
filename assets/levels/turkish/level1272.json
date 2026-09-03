@@ -1,106 +1,219 @@
-﻿{
-    "id":  1272,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ABA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KABA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KANO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KONSEY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKONT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESBAK",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KONT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KONTES",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "LTEY,ONSR,KABA",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1272,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AİT",
+      "type": 0
+    },
+    {
+      "word": "BİN",
+      "type": 0
+    },
+    {
+      "word": "YEM",
+      "type": 0
+    },
+    {
+      "word": "BANA",
+      "type": 0
+    },
+    {
+      "word": "BLUE",
+      "type": 0
+    },
+    {
+      "word": "ETTİ",
+      "type": 0
+    },
+    {
+      "word": "NEYİ",
+      "type": 0
+    },
+    {
+      "word": "NİYE",
+      "type": 0
+    },
+    {
+      "word": "YENİ",
+      "type": 0
+    },
+    {
+      "word": "YİNE",
+      "type": 0
+    },
+    {
+      "word": "EMANET",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABİ",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAİ",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MEİ",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "NAİ",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "NEY",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "TİA",
+      "type": 0
+    },
+    {
+      "word": "YEN",
+      "type": 0
+    },
+    {
+      "word": "YİN",
+      "type": 0
+    },
+    {
+      "word": "İAN",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "ABİN",
+      "type": 0
+    },
+    {
+      "word": "AMEN",
+      "type": 0
+    },
+    {
+      "word": "ANAM",
+      "type": 0
+    },
+    {
+      "word": "ANAN",
+      "type": 0
+    },
+    {
+      "word": "ANTİ",
+      "type": 0
+    },
+    {
+      "word": "BANE",
+      "type": 0
+    },
+    {
+      "word": "BANT",
+      "type": 0
+    },
+    {
+      "word": "BİNA",
+      "type": 0
+    },
+    {
+      "word": "BİNE",
+      "type": 0
+    },
+    {
+      "word": "EMEN",
+      "type": 0
+    },
+    {
+      "word": "MANA",
+      "type": 0
+    },
+    {
+      "word": "MANİ",
+      "type": 0
+    },
+    {
+      "word": "MENİ",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "NANA",
+      "type": 0
+    },
+    {
+      "word": "NANE",
+      "type": 0
+    },
+    {
+      "word": "TİAN",
+      "type": 0
+    },
+    {
+      "word": "YEME",
+      "type": 0
+    },
+    {
+      "word": "İNAN",
+      "type": 0
+    },
+    {
+      "word": "ABİNE",
+      "type": 0
+    }
+  ],
+  "letters": "EİTT,MANE,ENAU,YİBL",
+  "obstacles": []
 }

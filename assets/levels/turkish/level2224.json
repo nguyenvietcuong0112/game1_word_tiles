@@ -1,93 +1,191 @@
-﻿{
-    "id":  2224,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AYA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AÇMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AYAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EĞRİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAYAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAYDAM",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AÇMAZ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MAÇ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAY",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ZAMAÇ,SDÇİE,AYARĞ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2224,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACİ",
+      "type": 0
+    },
+    {
+      "word": "BAK",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "KUM",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "BUNA",
+      "type": 0
+    },
+    {
+      "word": "BUNU",
+      "type": 0
+    },
+    {
+      "word": "CAMI",
+      "type": 0
+    },
+    {
+      "word": "KABA",
+      "type": 0
+    },
+    {
+      "word": "KURU",
+      "type": 0
+    },
+    {
+      "word": "UFAK",
+      "type": 0
+    },
+    {
+      "word": "BAKMA",
+      "type": 0
+    },
+    {
+      "word": "SACİT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABU",
+      "type": 0
+    },
+    {
+      "word": "AKU",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ANU",
+      "type": 0
+    },
+    {
+      "word": "ASI",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BUM",
+      "type": 0
+    },
+    {
+      "word": "BUN",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "KUN",
+      "type": 0
+    },
+    {
+      "word": "KUR",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MUN",
+      "type": 0
+    },
+    {
+      "word": "RUM",
+      "type": 0
+    },
+    {
+      "word": "UMU",
+      "type": 0
+    },
+    {
+      "word": "UNA",
+      "type": 0
+    },
+    {
+      "word": "UNU",
+      "type": 0
+    },
+    {
+      "word": "ABUK",
+      "type": 0
+    },
+    {
+      "word": "KUMU",
+      "type": 0
+    },
+    {
+      "word": "MACK",
+      "type": 0
+    },
+    {
+      "word": "KABUK",
+      "type": 0
+    },
+    {
+      "word": "KUMUN",
+      "type": 0
+    },
+    {
+      "word": "KURUM",
+      "type": 0
+    },
+    {
+      "word": "SAMBA",
+      "type": 0
+    },
+    {
+      "word": "KURUMU",
+      "type": 0
+    },
+    {
+      "word": "BAKMASI",
+      "type": 0
+    },
+    {
+      "word": "KURUMUN",
+      "type": 0
+    },
+    {
+      "word": "KURUMUNA",
+      "type": 0
+    }
+  ],
+  "letters": "İTFUR,CKAKU,AMBUM,SIANU",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

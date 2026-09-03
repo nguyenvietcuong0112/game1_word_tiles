@@ -1,69 +1,123 @@
-﻿{
-    "id":  1968,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GENÇ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LOGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEON",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KENAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MONOLOG",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EGLOG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LONGA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ONGEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ÇNARA,KEGLO,MONOG",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1968,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "ELE",
+      "type": 0
+    },
+    {
+      "word": "GİY",
+      "type": 0
+    },
+    {
+      "word": "KÖK",
+      "type": 0
+    },
+    {
+      "word": "VAY",
+      "type": 0
+    },
+    {
+      "word": "YAT",
+      "type": 0
+    },
+    {
+      "word": "YEM",
+      "type": 0
+    },
+    {
+      "word": "NEYE",
+      "type": 0
+    },
+    {
+      "word": "TAVUK",
+      "type": 0
+    },
+    {
+      "word": "TAVUKLU",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AVİ",
+      "type": 0
+    },
+    {
+      "word": "EYE",
+      "type": 0
+    },
+    {
+      "word": "GUK",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "MEİ",
+      "type": 0
+    },
+    {
+      "word": "NEY",
+      "type": 0
+    },
+    {
+      "word": "TAU",
+      "type": 0
+    },
+    {
+      "word": "TAY",
+      "type": 0
+    },
+    {
+      "word": "YAV",
+      "type": 0
+    },
+    {
+      "word": "YEL",
+      "type": 0
+    },
+    {
+      "word": "YEN",
+      "type": 0
+    },
+    {
+      "word": "TAVA",
+      "type": 0
+    },
+    {
+      "word": "GİYME",
+      "type": 0
+    },
+    {
+      "word": "GİYMEYE",
+      "type": 0
+    }
+  ],
+  "letters": "MEYEL,YİGNE,AVUKÖ,TAULK",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

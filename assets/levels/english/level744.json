@@ -1,105 +1,203 @@
-﻿{
-    "id":  744,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPICE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACED",
-                            "type":  1
-                        },
-                        {
-                            "word":  "CAPS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DIE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DIES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DIPS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DOES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ICED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PACED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PIES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SPACED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SPICED",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ACE,PID,SEO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 744,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "YET",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "APT",
+      "type": 0
+    },
+    {
+      "word": "DAP",
+      "type": 0
+    },
+    {
+      "word": "DEY",
+      "type": 0
+    },
+    {
+      "word": "DYE",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "EYE",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LEY",
+      "type": 0
+    },
+    {
+      "word": "LYE",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MOA",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NOM",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "ALLY",
+      "type": 0
+    },
+    {
+      "word": "ANOA",
+      "type": 0
+    },
+    {
+      "word": "DYED",
+      "type": 0
+    },
+    {
+      "word": "DYER",
+      "type": 0
+    },
+    {
+      "word": "EYED",
+      "type": 0
+    },
+    {
+      "word": "EYER",
+      "type": 0
+    },
+    {
+      "word": "MANO",
+      "type": 0
+    },
+    {
+      "word": "MARE",
+      "type": 0
+    },
+    {
+      "word": "MELL",
+      "type": 0
+    },
+    {
+      "word": "NOMA",
+      "type": 0
+    },
+    {
+      "word": "NOME",
+      "type": 0
+    },
+    {
+      "word": "OMER",
+      "type": 0
+    },
+    {
+      "word": "RALE",
+      "type": 0
+    },
+    {
+      "word": "YELL",
+      "type": 0
+    },
+    {
+      "word": "ADMAN",
+      "type": 0
+    },
+    {
+      "word": "LEMAN",
+      "type": 0
+    },
+    {
+      "word": "LEMON",
+      "type": 0
+    },
+    {
+      "word": "NAMER",
+      "type": 0
+    },
+    {
+      "word": "RALLY",
+      "type": 0
+    },
+    {
+      "word": "REMAN",
+      "type": 0
+    },
+    {
+      "word": "RALLYE",
+      "type": 0
+    }
+  ],
+  "letters": "DLLA,EYER,TDMA,PAON",
+  "obstacles": []
 }

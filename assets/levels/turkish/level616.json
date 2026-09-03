@@ -1,69 +1,275 @@
-﻿{
-    "id":  616,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARKOD",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BARKA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DOLAK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DOLAM",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MAL,RKO,ABD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 616,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "NİN",
+      "type": 0
+    },
+    {
+      "word": "ÇEK",
+      "type": 0
+    },
+    {
+      "word": "EMİN",
+      "type": 0
+    },
+    {
+      "word": "ETME",
+      "type": 0
+    },
+    {
+      "word": "ÇETE",
+      "type": 0
+    },
+    {
+      "word": "MİNİK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "AMT",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "ETE",
+      "type": 0
+    },
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "KİN",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAÇ",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MİN",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NİK",
+      "type": 0
+    },
+    {
+      "word": "NİM",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "ÇAL",
+      "type": 0
+    },
+    {
+      "word": "ÇAM",
+      "type": 0
+    },
+    {
+      "word": "ÇAN",
+      "type": 0
+    },
+    {
+      "word": "İKE",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "İNÇ",
+      "type": 0
+    },
+    {
+      "word": "İNİ",
+      "type": 0
+    },
+    {
+      "word": "ALEM",
+      "type": 0
+    },
+    {
+      "word": "AMİN",
+      "type": 0
+    },
+    {
+      "word": "EKİN",
+      "type": 0
+    },
+    {
+      "word": "KİNİ",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "MALT",
+      "type": 0
+    },
+    {
+      "word": "MANİ",
+      "type": 0
+    },
+    {
+      "word": "MİNA",
+      "type": 0
+    },
+    {
+      "word": "MİNE",
+      "type": 0
+    },
+    {
+      "word": "MİNİ",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "NAMİ",
+      "type": 0
+    },
+    {
+      "word": "NİKE",
+      "type": 0
+    },
+    {
+      "word": "NİNA",
+      "type": 0
+    },
+    {
+      "word": "NİNE",
+      "type": 0
+    },
+    {
+      "word": "ÇEKİ",
+      "type": 0
+    },
+    {
+      "word": "İKEN",
+      "type": 0
+    },
+    {
+      "word": "İMAL",
+      "type": 0
+    },
+    {
+      "word": "İMAN",
+      "type": 0
+    },
+    {
+      "word": "İNEK",
+      "type": 0
+    },
+    {
+      "word": "İNİN",
+      "type": 0
+    },
+    {
+      "word": "ALEMİ",
+      "type": 0
+    },
+    {
+      "word": "LANİE",
+      "type": 0
+    },
+    {
+      "word": "MANİK",
+      "type": 0
+    },
+    {
+      "word": "ÇEKİN",
+      "type": 0
+    },
+    {
+      "word": "İNİNE",
+      "type": 0
+    },
+    {
+      "word": "ÇEKİNİ",
+      "type": 0
+    },
+    {
+      "word": "MELANİE",
+      "type": 0
+    }
+  ],
+  "letters": "ÇNİK,EİNE,TMAÇ,EELT",
+  "obstacles": []
 }

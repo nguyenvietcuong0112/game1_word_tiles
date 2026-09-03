@@ -1,65 +1,155 @@
-﻿{
-    "id":  910,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DRY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRIBE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DERBY",
-                             "type":  2
-                         },
-                         {
-                             "word":  "FERRY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BEY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DERRY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REDO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "YIBE,BRRY,FEDO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 910,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "NEED",
+      "type": 0
+    },
+    {
+      "word": "ONCE",
+      "type": 0
+    },
+    {
+      "word": "NEEDS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "CEE",
+      "type": 0
+    },
+    {
+      "word": "COO",
+      "type": 0
+    },
+    {
+      "word": "COT",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "NOO",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "OOT",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "ACED",
+      "type": 0
+    },
+    {
+      "word": "CANT",
+      "type": 0
+    },
+    {
+      "word": "COON",
+      "type": 0
+    },
+    {
+      "word": "COOT",
+      "type": 0
+    },
+    {
+      "word": "NAOS",
+      "type": 0
+    },
+    {
+      "word": "OTTO",
+      "type": 0
+    },
+    {
+      "word": "SCAN",
+      "type": 0
+    },
+    {
+      "word": "TOON",
+      "type": 0
+    },
+    {
+      "word": "TOOT",
+      "type": 0
+    },
+    {
+      "word": "CANTO",
+      "type": 0
+    },
+    {
+      "word": "SCANT",
+      "type": 0
+    },
+    {
+      "word": "TONNE",
+      "type": 0
+    },
+    {
+      "word": "COTTON",
+      "type": 0
+    },
+    {
+      "word": "DECANT",
+      "type": 0
+    }
+  ],
+  "letters": "NNTT,OAOO,SCCN,DEEN",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

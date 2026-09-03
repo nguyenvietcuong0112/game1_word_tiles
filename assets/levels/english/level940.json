@@ -1,65 +1,259 @@
-﻿{
-    "id":  940,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUCID",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AILS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "DIE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OILS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAILS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SLUE,OICI,RADD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 940,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "DEAF",
+      "type": 0
+    },
+    {
+      "word": "SAVE",
+      "type": 0
+    },
+    {
+      "word": "SIDE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "DOE",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "FAS",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "LID",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "SAD",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SOD",
+      "type": 0
+    },
+    {
+      "word": "VAS",
+      "type": 0
+    },
+    {
+      "word": "ADOS",
+      "type": 0
+    },
+    {
+      "word": "DEIL",
+      "type": 0
+    },
+    {
+      "word": "DELI",
+      "type": 0
+    },
+    {
+      "word": "DELS",
+      "type": 0
+    },
+    {
+      "word": "DEVA",
+      "type": 0
+    },
+    {
+      "word": "DISS",
+      "type": 0
+    },
+    {
+      "word": "DORP",
+      "type": 0
+    },
+    {
+      "word": "EIDE",
+      "type": 0
+    },
+    {
+      "word": "LEVA",
+      "type": 0
+    },
+    {
+      "word": "LIDO",
+      "type": 0
+    },
+    {
+      "word": "LIED",
+      "type": 0
+    },
+    {
+      "word": "PROD",
+      "type": 0
+    },
+    {
+      "word": "PROS",
+      "type": 0
+    },
+    {
+      "word": "RODE",
+      "type": 0
+    },
+    {
+      "word": "SADE",
+      "type": 0
+    },
+    {
+      "word": "SADI",
+      "type": 0
+    },
+    {
+      "word": "SLED",
+      "type": 0
+    },
+    {
+      "word": "SLID",
+      "type": 0
+    },
+    {
+      "word": "SODA",
+      "type": 0
+    },
+    {
+      "word": "SORD",
+      "type": 0
+    },
+    {
+      "word": "ASIDE",
+      "type": 0
+    },
+    {
+      "word": "DEILS",
+      "type": 0
+    },
+    {
+      "word": "DELIS",
+      "type": 0
+    },
+    {
+      "word": "DEVAS",
+      "type": 0
+    },
+    {
+      "word": "DORPS",
+      "type": 0
+    },
+    {
+      "word": "EIDOS",
+      "type": 0
+    },
+    {
+      "word": "LIDOS",
+      "type": 0
+    },
+    {
+      "word": "SADIS",
+      "type": 0
+    },
+    {
+      "word": "SAVED",
+      "type": 0
+    },
+    {
+      "word": "SLIDE",
+      "type": 0
+    },
+    {
+      "word": "DEASIL",
+      "type": 0
+    }
+  ],
+  "letters": "FDRP,AEOS,SIDA,SLEV",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,85 +1,123 @@
-﻿{
-    "id":  1215,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞIK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALIK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EĞİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKŞİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KENE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KALIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEĞİŞKEN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AKIŞ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ALINIŞ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DEĞİŞ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DEĞİŞKE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KIŞ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EKŞIN,NEİKI,DEĞAL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1215,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BİN",
+      "type": 0
+    },
+    {
+      "word": "BİZ",
+      "type": 0
+    },
+    {
+      "word": "JAM",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LER",
+      "type": 0
+    },
+    {
+      "word": "ALMA",
+      "type": 0
+    },
+    {
+      "word": "BİZE",
+      "type": 0
+    },
+    {
+      "word": "NEAL",
+      "type": 0
+    },
+    {
+      "word": "ALMAM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARZ",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "NİZ",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "ZEN",
+      "type": 0
+    },
+    {
+      "word": "İBM",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "BİNE",
+      "type": 0
+    },
+    {
+      "word": "EZRA",
+      "type": 0
+    },
+    {
+      "word": "REAL",
+      "type": 0
+    }
+  ],
+  "letters": "NEAL,İZRE,BJGA,MAML",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

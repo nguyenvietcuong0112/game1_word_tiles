@@ -1,73 +1,323 @@
-﻿{
-    "id":  2271,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BURY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EARL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEARL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARLEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIBRARY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BARB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BILE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BRA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "URYE,BARL,PEBI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2271,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "AREA",
+      "type": 0
+    },
+    {
+      "word": "HARE",
+      "type": 0
+    },
+    {
+      "word": "LAST",
+      "type": 0
+    },
+    {
+      "word": "TEEN",
+      "type": 0
+    },
+    {
+      "word": "AREAS",
+      "type": 0
+    },
+    {
+      "word": "GREEN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "AAL",
+      "type": 0
+    },
+    {
+      "word": "AAS",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "AIT",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERG",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "NAE",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "NIT",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "AINS",
+      "type": 0
+    },
+    {
+      "word": "ALTS",
+      "type": 0
+    },
+    {
+      "word": "ANAS",
+      "type": 0
+    },
+    {
+      "word": "ANES",
+      "type": 0
+    },
+    {
+      "word": "ARSE",
+      "type": 0
+    },
+    {
+      "word": "CANE",
+      "type": 0
+    },
+    {
+      "word": "CASA",
+      "type": 0
+    },
+    {
+      "word": "ERST",
+      "type": 0
+    },
+    {
+      "word": "GREE",
+      "type": 0
+    },
+    {
+      "word": "LASE",
+      "type": 0
+    },
+    {
+      "word": "LEES",
+      "type": 0
+    },
+    {
+      "word": "LETS",
+      "type": 0
+    },
+    {
+      "word": "NEST",
+      "type": 0
+    },
+    {
+      "word": "NITE",
+      "type": 0
+    },
+    {
+      "word": "REES",
+      "type": 0
+    },
+    {
+      "word": "SAIN",
+      "type": 0
+    },
+    {
+      "word": "SALT",
+      "type": 0
+    },
+    {
+      "word": "SANE",
+      "type": 0
+    },
+    {
+      "word": "SEEL",
+      "type": 0
+    },
+    {
+      "word": "SEER",
+      "type": 0
+    },
+    {
+      "word": "SNIT",
+      "type": 0
+    },
+    {
+      "word": "TEAS",
+      "type": 0
+    },
+    {
+      "word": "TEES",
+      "type": 0
+    },
+    {
+      "word": "TINS",
+      "type": 0
+    },
+    {
+      "word": "AARGH",
+      "type": 0
+    },
+    {
+      "word": "CANES",
+      "type": 0
+    },
+    {
+      "word": "GRAAL",
+      "type": 0
+    },
+    {
+      "word": "GREES",
+      "type": 0
+    },
+    {
+      "word": "NITER",
+      "type": 0
+    },
+    {
+      "word": "REEST",
+      "type": 0
+    },
+    {
+      "word": "RETIA",
+      "type": 0
+    },
+    {
+      "word": "SANES",
+      "type": 0
+    },
+    {
+      "word": "TERSE",
+      "type": 0
+    },
+    {
+      "word": "INSANE",
+      "type": 0
+    },
+    {
+      "word": "NITERS",
+      "type": 0
+    },
+    {
+      "word": "SANEST",
+      "type": 0
+    },
+    {
+      "word": "GREENLET",
+      "type": 0
+    },
+    {
+      "word": "INSANEST",
+      "type": 0
+    }
+  ],
+  "letters": "LTELC,ASENA,AREAS,HGTIN",
+  "obstacles": []
 }

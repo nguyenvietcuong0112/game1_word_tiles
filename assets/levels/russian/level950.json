@@ -1,41 +1,127 @@
-﻿{
-    "id":  950,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ИВА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛИС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ХИТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВИТЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛИСТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СТИХ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ВАХ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "СТЬ,ИИВ,ЛХА",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 950,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ЕТО",
+      "type": 0
+    },
+    {
+      "word": "МАК",
+      "type": 0
+    },
+    {
+      "word": "ПОЛ",
+      "type": 0
+    },
+    {
+      "word": "ПОР",
+      "type": 0
+    },
+    {
+      "word": "СТО",
+      "type": 0
+    },
+    {
+      "word": "ТОМ",
+      "type": 0
+    },
+    {
+      "word": "ВРЕТ",
+      "type": 0
+    },
+    {
+      "word": "ПОЛУ",
+      "type": 0
+    },
+    {
+      "word": "ТОЧКА",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АУЧ",
+      "type": 0
+    },
+    {
+      "word": "ЕТС",
+      "type": 0
+    },
+    {
+      "word": "ЛОР",
+      "type": 0
+    },
+    {
+      "word": "ЛУЧ",
+      "type": 0
+    },
+    {
+      "word": "ОРУ",
+      "type": 0
+    },
+    {
+      "word": "ТЕР",
+      "type": 0
+    },
+    {
+      "word": "ЧУР",
+      "type": 0
+    },
+    {
+      "word": "ЛОРУ",
+      "type": 0
+    },
+    {
+      "word": "МАУЧ",
+      "type": 0
+    },
+    {
+      "word": "МОЧУ",
+      "type": 0
+    },
+    {
+      "word": "ОЧКА",
+      "type": 0
+    },
+    {
+      "word": "ПОРУ",
+      "type": 0
+    },
+    {
+      "word": "СТЕР",
+      "type": 0
+    },
+    {
+      "word": "СТОМ",
+      "type": 0
+    },
+    {
+      "word": "ВПОРУ",
+      "type": 0
+    },
+    {
+      "word": "ЛУЧОМ",
+      "type": 0
+    },
+    {
+      "word": "РУЧКА",
+      "type": 0
+    }
+  ],
+  "letters": "ЕРВП,ТСЛО,ОЧУР,МКАМ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

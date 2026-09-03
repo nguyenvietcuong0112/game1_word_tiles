@@ -1,77 +1,115 @@
-﻿{
-    "id":  1775,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ABOVE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AVER",
-                            "type":  1
-                        },
-                        {
-                            "word":  "NAB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAVE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "VANE",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ENN,BAR,OVE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1775,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "FIN",
+      "type": 0
+    },
+    {
+      "word": "ION",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "VAN",
+      "type": 0
+    },
+    {
+      "word": "VAR",
+      "type": 0
+    },
+    {
+      "word": "NOVA",
+      "type": 0
+    },
+    {
+      "word": "FLAIR",
+      "type": 0
+    },
+    {
+      "word": "WHARF",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARF",
+      "type": 0
+    },
+    {
+      "word": "AVO",
+      "type": 0
+    },
+    {
+      "word": "IFF",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "OVA",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "WHA",
+      "type": 0
+    },
+    {
+      "word": "ARIA",
+      "type": 0
+    },
+    {
+      "word": "LAIR",
+      "type": 0
+    },
+    {
+      "word": "RIAL",
+      "type": 0
+    },
+    {
+      "word": "VARIA",
+      "type": 0
+    },
+    {
+      "word": "NARIAL",
+      "type": 0
+    },
+    {
+      "word": "OVARIAL",
+      "type": 0
+    }
+  ],
+  "letters": "NWHA,IFFR,OVLA,NARI",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

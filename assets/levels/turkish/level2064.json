@@ -1,94 +1,239 @@
-﻿{
-    "id":  2064,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARTI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KURA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KURT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TURA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TURŞU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KARTUŞ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TUŞ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TŞU,URT,KAI",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2064,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "DUR",
+      "type": 0
+    },
+    {
+      "word": "KOZ",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "MİL",
+      "type": 0
+    },
+    {
+      "word": "RİO",
+      "type": 0
+    },
+    {
+      "word": "VUR",
+      "type": 0
+    },
+    {
+      "word": "ERİC",
+      "type": 0
+    },
+    {
+      "word": "GERİ",
+      "type": 0
+    },
+    {
+      "word": "MADS",
+      "type": 0
+    },
+    {
+      "word": "RİCA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ACİ",
+      "type": 0
+    },
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DUM",
+      "type": 0
+    },
+    {
+      "word": "DİL",
+      "type": 0
+    },
+    {
+      "word": "DİM",
+      "type": 0
+    },
+    {
+      "word": "DİO",
+      "type": 0
+    },
+    {
+      "word": "DİR",
+      "type": 0
+    },
+    {
+      "word": "ERİ",
+      "type": 0
+    },
+    {
+      "word": "GEC",
+      "type": 0
+    },
+    {
+      "word": "GER",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LİM",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "RUM",
+      "type": 0
+    },
+    {
+      "word": "RİC",
+      "type": 0
+    },
+    {
+      "word": "UMA",
+      "type": 0
+    },
+    {
+      "word": "İCE",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "İRK",
+      "type": 0
+    },
+    {
+      "word": "ALİM",
+      "type": 0
+    },
+    {
+      "word": "CAMİ",
+      "type": 0
+    },
+    {
+      "word": "DİRK",
+      "type": 0
+    },
+    {
+      "word": "LİMA",
+      "type": 0
+    },
+    {
+      "word": "MACE",
+      "type": 0
+    },
+    {
+      "word": "MALT",
+      "type": 0
+    },
+    {
+      "word": "MALİ",
+      "type": 0
+    },
+    {
+      "word": "RUDİ",
+      "type": 0
+    },
+    {
+      "word": "RİCE",
+      "type": 0
+    },
+    {
+      "word": "İDAM",
+      "type": 0
+    },
+    {
+      "word": "İMAL",
+      "type": 0
+    },
+    {
+      "word": "ADİCE",
+      "type": 0
+    },
+    {
+      "word": "ERİCA",
+      "type": 0
+    },
+    {
+      "word": "RİCAM",
+      "type": 0
+    }
+  ],
+  "letters": "KOZVU,RİDSR,ECAMU,GTLİD",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

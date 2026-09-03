@@ -1,99 +1,83 @@
-﻿{
-    "id":  1070,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "АКТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БОА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БОГ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КУБ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КУШ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ГУБА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КАША",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ШУБА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "АЗБУКА",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АШУГ",
-                            "type":  1
-                        },
-                        {
-                            "word":  "БАШ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "БУГ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "БУК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "БУКА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ГТК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЗАО",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАШ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КУБА",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "АЗБА,ОГУШ,БТКА",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1070,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ДИТ",
+      "type": 0
+    },
+    {
+      "word": "ДОВ",
+      "type": 0
+    },
+    {
+      "word": "ДЮК",
+      "type": 0
+    },
+    {
+      "word": "ПИО",
+      "type": 0
+    },
+    {
+      "word": "ПРЮ",
+      "type": 0
+    },
+    {
+      "word": "РЕЙ",
+      "type": 0
+    },
+    {
+      "word": "РЮЙ",
+      "type": 0
+    },
+    {
+      "word": "ЛЕЙН",
+      "type": 0
+    },
+    {
+      "word": "ВОДИТ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ВОД",
+      "type": 0
+    },
+    {
+      "word": "ЛЕЙ",
+      "type": 0
+    },
+    {
+      "word": "ОДИ",
+      "type": 0
+    },
+    {
+      "word": "КЮРЕ",
+      "type": 0
+    },
+    {
+      "word": "РЕЙН",
+      "type": 0
+    }
+  ],
+  "letters": "ИОДИ,ПВКТ,НЙЮД,ЛЕРП",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

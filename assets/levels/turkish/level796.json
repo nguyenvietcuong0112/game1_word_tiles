@@ -1,69 +1,259 @@
-﻿{
-    "id":  796,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AHİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HİLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAHİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SELE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HASAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAHİL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "HELE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REHA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ARE,SEL,AHİ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 796,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "SİZ",
+      "type": 0
+    },
+    {
+      "word": "YER",
+      "type": 0
+    },
+    {
+      "word": "İSA",
+      "type": 0
+    },
+    {
+      "word": "İSE",
+      "type": 0
+    },
+    {
+      "word": "KİNG",
+      "type": 0
+    },
+    {
+      "word": "OLUN",
+      "type": 0
+    },
+    {
+      "word": "YANİ",
+      "type": 0
+    },
+    {
+      "word": "YERİ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANU",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "ASİ",
+      "type": 0
+    },
+    {
+      "word": "ERİ",
+      "type": 0
+    },
+    {
+      "word": "KİN",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "NİK",
+      "type": 0
+    },
+    {
+      "word": "OLU",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "REY",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SAR",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SEY",
+      "type": 0
+    },
+    {
+      "word": "SİK",
+      "type": 0
+    },
+    {
+      "word": "SİN",
+      "type": 0
+    },
+    {
+      "word": "SİR",
+      "type": 0
+    },
+    {
+      "word": "UNA",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "YAS",
+      "type": 0
+    },
+    {
+      "word": "YES",
+      "type": 0
+    },
+    {
+      "word": "YUN",
+      "type": 0
+    },
+    {
+      "word": "YİZ",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "İSİ",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "KİSA",
+      "type": 0
+    },
+    {
+      "word": "KİSİ",
+      "type": 0
+    },
+    {
+      "word": "LUNA",
+      "type": 0
+    },
+    {
+      "word": "LUNG",
+      "type": 0
+    },
+    {
+      "word": "RANİ",
+      "type": 0
+    },
+    {
+      "word": "RİSA",
+      "type": 0
+    },
+    {
+      "word": "SANG",
+      "type": 0
+    },
+    {
+      "word": "SARİ",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SERİ",
+      "type": 0
+    },
+    {
+      "word": "SEYİ",
+      "type": 0
+    },
+    {
+      "word": "SİNG",
+      "type": 0
+    },
+    {
+      "word": "UYAN",
+      "type": 0
+    },
+    {
+      "word": "UYAR",
+      "type": 0
+    },
+    {
+      "word": "YANG",
+      "type": 0
+    },
+    {
+      "word": "YUNA",
+      "type": 0
+    },
+    {
+      "word": "İRAN",
+      "type": 0
+    },
+    {
+      "word": "İSİN",
+      "type": 0
+    },
+    {
+      "word": "UYARİ",
+      "type": 0
+    },
+    {
+      "word": "ZİYAN",
+      "type": 0
+    },
+    {
+      "word": "SERİSİ",
+      "type": 0
+    },
+    {
+      "word": "SİYASİ",
+      "type": 0
+    },
+    {
+      "word": "YANİSİ",
+      "type": 0
+    }
+  ],
+  "letters": "SİZO,EYUL,RANG,İSİK",
+  "obstacles": []
 }

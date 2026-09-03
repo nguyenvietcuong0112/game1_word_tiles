@@ -1,81 +1,287 @@
-﻿{
-    "id":  2009,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞAH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAŞA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SİTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUNİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YETİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ŞAHSİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TENİS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAYSİYET",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "HAY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HAŞYET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SİNE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YAŞA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "İYETE,SŞAİN,YAHSU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2009,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "AİT",
+      "type": 0
+    },
+    {
+      "word": "BAE",
+      "type": 0
+    },
+    {
+      "word": "BAM",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "KAÇ",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "ÇABA",
+      "type": 0
+    },
+    {
+      "word": "ŞAKA",
+      "type": 0
+    },
+    {
+      "word": "ÇALIŞAN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "AÇI",
+      "type": 0
+    },
+    {
+      "word": "AŞI",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "KAŞ",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAİ",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "MAİ",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NBA",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "TİA",
+      "type": 0
+    },
+    {
+      "word": "ÇAK",
+      "type": 0
+    },
+    {
+      "word": "ÇAL",
+      "type": 0
+    },
+    {
+      "word": "ÇAN",
+      "type": 0
+    },
+    {
+      "word": "ŞAK",
+      "type": 0
+    },
+    {
+      "word": "ŞAN",
+      "type": 0
+    },
+    {
+      "word": "AKAN",
+      "type": 0
+    },
+    {
+      "word": "ALIŞ",
+      "type": 0
+    },
+    {
+      "word": "ALTA",
+      "type": 0
+    },
+    {
+      "word": "ALTİ",
+      "type": 0
+    },
+    {
+      "word": "ANLA",
+      "type": 0
+    },
+    {
+      "word": "ATLA",
+      "type": 0
+    },
+    {
+      "word": "AÇAN",
+      "type": 0
+    },
+    {
+      "word": "AÇIL",
+      "type": 0
+    },
+    {
+      "word": "AŞAN",
+      "type": 0
+    },
+    {
+      "word": "BAAL",
+      "type": 0
+    },
+    {
+      "word": "BALA",
+      "type": 0
+    },
+    {
+      "word": "KANA",
+      "type": 0
+    },
+    {
+      "word": "KATİ",
+      "type": 0
+    },
+    {
+      "word": "KAÇA",
+      "type": 0
+    },
+    {
+      "word": "KAÇI",
+      "type": 0
+    },
+    {
+      "word": "KAŞI",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "MALA",
+      "type": 0
+    },
+    {
+      "word": "MALT",
+      "type": 0
+    },
+    {
+      "word": "ÇALI",
+      "type": 0
+    },
+    {
+      "word": "ANLAM",
+      "type": 0
+    },
+    {
+      "word": "AÇANA",
+      "type": 0
+    },
+    {
+      "word": "BALTA",
+      "type": 0
+    },
+    {
+      "word": "KANAT",
+      "type": 0
+    },
+    {
+      "word": "KANLA",
+      "type": 0
+    },
+    {
+      "word": "KATLA",
+      "type": 0
+    },
+    {
+      "word": "KATİA",
+      "type": 0
+    },
+    {
+      "word": "KAÇIŞ",
+      "type": 0
+    },
+    {
+      "word": "MALTA",
+      "type": 0
+    },
+    {
+      "word": "TAKAN",
+      "type": 0
+    },
+    {
+      "word": "ÇALIŞ",
+      "type": 0
+    },
+    {
+      "word": "ÇANAK",
+      "type": 0
+    },
+    {
+      "word": "ANLAMA",
+      "type": 0
+    },
+    {
+      "word": "ATLAMA",
+      "type": 0
+    },
+    {
+      "word": "TANAKA",
+      "type": 0
+    }
+  ],
+  "letters": "EABAL,MABÇI,ALNAŞ,İTAKA",
+  "obstacles": []
 }

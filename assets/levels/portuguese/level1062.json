@@ -1,97 +1,267 @@
-﻿{
-    "id":  1062,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÓPERA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PRATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PROJETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PROJETAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARETO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ATER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEJO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PETAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEJO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOPE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "IATO,PREP,ROJÓ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1062,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "NUM",
+      "type": 0
+    },
+    {
+      "word": "SUV",
+      "type": 0
+    },
+    {
+      "word": "USS",
+      "type": 0
+    },
+    {
+      "word": "USAR",
+      "type": 0
+    },
+    {
+      "word": "MUNDO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ADN",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "ASU",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "DOE",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "ERM",
+      "type": 0
+    },
+    {
+      "word": "MEA",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MUN",
+      "type": 0
+    },
+    {
+      "word": "NEO",
+      "type": 0
+    },
+    {
+      "word": "OSS",
+      "type": 0
+    },
+    {
+      "word": "OSU",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SAD",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SOE",
+      "type": 0
+    },
+    {
+      "word": "SOS",
+      "type": 0
+    },
+    {
+      "word": "SUS",
+      "type": 0
+    },
+    {
+      "word": "SVU",
+      "type": 0
+    },
+    {
+      "word": "UND",
+      "type": 0
+    },
+    {
+      "word": "UNE",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "USO",
+      "type": 0
+    },
+    {
+      "word": "ARME",
+      "type": 0
+    },
+    {
+      "word": "DARE",
+      "type": 0
+    },
+    {
+      "word": "DERA",
+      "type": 0
+    },
+    {
+      "word": "DOEM",
+      "type": 0
+    },
+    {
+      "word": "ENDO",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "MEAD",
+      "type": 0
+    },
+    {
+      "word": "MENU",
+      "type": 0
+    },
+    {
+      "word": "MUNE",
+      "type": 0
+    },
+    {
+      "word": "NEAR",
+      "type": 0
+    },
+    {
+      "word": "RASO",
+      "type": 0
+    },
+    {
+      "word": "SADE",
+      "type": 0
+    },
+    {
+      "word": "SAEM",
+      "type": 0
+    },
+    {
+      "word": "SODA",
+      "type": 0
+    },
+    {
+      "word": "SOEM",
+      "type": 0
+    },
+    {
+      "word": "SOSA",
+      "type": 0
+    },
+    {
+      "word": "UNEM",
+      "type": 0
+    },
+    {
+      "word": "USOS",
+      "type": 0
+    },
+    {
+      "word": "MEADE",
+      "type": 0
+    },
+    {
+      "word": "RASOS",
+      "type": 0
+    },
+    {
+      "word": "USADO",
+      "type": 0
+    },
+    {
+      "word": "MUNDOS",
+      "type": 0
+    },
+    {
+      "word": "USADOS",
+      "type": 0
+    }
+  ],
+  "letters": "ADNU,SOEM,USAR,VSDE",
+  "obstacles": []
 }

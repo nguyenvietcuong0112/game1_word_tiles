@@ -1,113 +1,95 @@
-﻿{
-    "id":  1670,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "БОТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВОЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЗЕВ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛЕВ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛОТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВЕТО",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВОЛЯ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛЕВО",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛЕТО",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ОБЕД",
-                             "type":  0
-                         },
-                         {
-                             "word":  "УЗЕЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЦВЕТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ОТЛЕТ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ОДЕЯЛО",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "БЛОТ",
-                            "type":  1
-                        },
-                        {
-                            "word":  "БОД",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ВОТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛЕТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛОВ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОБЕ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОБЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТОВ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТОД",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТОЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТОЛЯ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ЦВОЛЯ,ЗЕТБЕ,УЛТОД",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1670,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ВИК",
+      "type": 0
+    },
+    {
+      "word": "ЕТА",
+      "type": 0
+    },
+    {
+      "word": "КИМ",
+      "type": 0
+    },
+    {
+      "word": "МИК",
+      "type": 0
+    },
+    {
+      "word": "ПЕЛ",
+      "type": 0
+    },
+    {
+      "word": "СУП",
+      "type": 0
+    },
+    {
+      "word": "ТАЙ",
+      "type": 0
+    },
+    {
+      "word": "УСЫ",
+      "type": 0
+    },
+    {
+      "word": "ВЫПУСК",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ПАЙ",
+      "type": 0
+    },
+    {
+      "word": "ПАТ",
+      "type": 0
+    },
+    {
+      "word": "ПЫС",
+      "type": 0
+    },
+    {
+      "word": "СЫТ",
+      "type": 0
+    },
+    {
+      "word": "ТЫС",
+      "type": 0
+    },
+    {
+      "word": "ЕЛКИ",
+      "type": 0
+    },
+    {
+      "word": "ПУСК",
+      "type": 0
+    },
+    {
+      "word": "СУПА",
+      "type": 0
+    },
+    {
+      "word": "СЫТА",
+      "type": 0
+    }
+  ],
+  "letters": "УПАЙ,СЫТЕ,КВПЕ,МИКЛ",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,93 +1,343 @@
-﻿{
-    "id":  1290,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OPOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PORO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PORTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PORTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PORTAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TROPEÇO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ATOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LATO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORTO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TALO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TROPO",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ORTA,POOL,EÇGA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1290,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "LEI",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "ABRA",
+      "type": 0
+    },
+    {
+      "word": "GOSTA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "DAT",
+      "type": 0
+    },
+    {
+      "word": "ELO",
+      "type": 0
+    },
+    {
+      "word": "ISO",
+      "type": 0
+    },
+    {
+      "word": "IST",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LOS",
+      "type": 0
+    },
+    {
+      "word": "MBA",
+      "type": 0
+    },
+    {
+      "word": "OIE",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RDA",
+      "type": 0
+    },
+    {
+      "word": "RIG",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "SIG",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "TAB",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "TRI",
+      "type": 0
+    },
+    {
+      "word": "ABRO",
+      "type": 0
+    },
+    {
+      "word": "AROS",
+      "type": 0
+    },
+    {
+      "word": "ARTS",
+      "type": 0
+    },
+    {
+      "word": "BATS",
+      "type": 0
+    },
+    {
+      "word": "BRAM",
+      "type": 0
+    },
+    {
+      "word": "BROS",
+      "type": 0
+    },
+    {
+      "word": "ELAM",
+      "type": 0
+    },
+    {
+      "word": "ELOS",
+      "type": 0
+    },
+    {
+      "word": "LAMB",
+      "type": 0
+    },
+    {
+      "word": "LEIO",
+      "type": 0
+    },
+    {
+      "word": "LORA",
+      "type": 0
+    },
+    {
+      "word": "LOST",
+      "type": 0
+    },
+    {
+      "word": "MART",
+      "type": 0
+    },
+    {
+      "word": "ORAL",
+      "type": 0
+    },
+    {
+      "word": "ORAM",
+      "type": 0
+    },
+    {
+      "word": "RALO",
+      "type": 0
+    },
+    {
+      "word": "RISO",
+      "type": 0
+    },
+    {
+      "word": "ROLA",
+      "type": 0
+    },
+    {
+      "word": "ROLE",
+      "type": 0
+    },
+    {
+      "word": "SIGO",
+      "type": 0
+    },
+    {
+      "word": "SOLA",
+      "type": 0
+    },
+    {
+      "word": "SOLE",
+      "type": 0
+    },
+    {
+      "word": "SORA",
+      "type": 0
+    },
+    {
+      "word": "TRIS",
+      "type": 0
+    },
+    {
+      "word": "TROI",
+      "type": 0
+    },
+    {
+      "word": "ABRAM",
+      "type": 0
+    },
+    {
+      "word": "BADRI",
+      "type": 0
+    },
+    {
+      "word": "ISOLA",
+      "type": 0
+    },
+    {
+      "word": "ISOLE",
+      "type": 0
+    },
+    {
+      "word": "LAMBA",
+      "type": 0
+    },
+    {
+      "word": "MARTA",
+      "type": 0
+    },
+    {
+      "word": "OSTRA",
+      "type": 0
+    },
+    {
+      "word": "RALEI",
+      "type": 0
+    },
+    {
+      "word": "ROLAM",
+      "type": 0
+    },
+    {
+      "word": "SOLAR",
+      "type": 0
+    },
+    {
+      "word": "TRIGO",
+      "type": 0
+    },
+    {
+      "word": "ISOLAR",
+      "type": 0
+    },
+    {
+      "word": "ISOLEI",
+      "type": 0
+    },
+    {
+      "word": "STRIGOI",
+      "type": 0
+    }
+  ],
+  "letters": "MBAD,ARTR,LOSI,EIOG",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

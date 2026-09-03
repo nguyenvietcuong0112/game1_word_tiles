@@ -1,89 +1,291 @@
-﻿{
-    "id":  1334,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CADA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LONA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NABO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PULO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SACA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APUPO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BANCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PANCADA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "APO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LUPO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PANCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POPA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PUPA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LONCA,UPAAD,POBSE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1334,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ATM",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "VIM",
+      "type": 0
+    },
+    {
+      "word": "CENA",
+      "type": 0
+    },
+    {
+      "word": "ESTA",
+      "type": 0
+    },
+    {
+      "word": "ANTES",
+      "type": 0
+    },
+    {
+      "word": "MENTE",
+      "type": 0
+    },
+    {
+      "word": "TANTA",
+      "type": 0
+    },
+    {
+      "word": "TANTAS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "AVI",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "CEM",
+      "type": 0
+    },
+    {
+      "word": "ECA",
+      "type": 0
+    },
+    {
+      "word": "EMI",
+      "type": 0
+    },
+    {
+      "word": "ENA",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "ESE",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "MCA",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MIN",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NIM",
+      "type": 0
+    },
+    {
+      "word": "SAA",
+      "type": 0
+    },
+    {
+      "word": "SAS",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "TAC",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TSA",
+      "type": 0
+    },
+    {
+      "word": "VIN",
+      "type": 0
+    },
+    {
+      "word": "ANTA",
+      "type": 0
+    },
+    {
+      "word": "ANTE",
+      "type": 0
+    },
+    {
+      "word": "ASES",
+      "type": 0
+    },
+    {
+      "word": "CANE",
+      "type": 0
+    },
+    {
+      "word": "CATS",
+      "type": 0
+    },
+    {
+      "word": "CENT",
+      "type": 0
+    },
+    {
+      "word": "ENTE",
+      "type": 0
+    },
+    {
+      "word": "MECA",
+      "type": 0
+    },
+    {
+      "word": "MINA",
+      "type": 0
+    },
+    {
+      "word": "MINE",
+      "type": 0
+    },
+    {
+      "word": "MINT",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "STAN",
+      "type": 0
+    },
+    {
+      "word": "TESE",
+      "type": 0
+    },
+    {
+      "word": "VIME",
+      "type": 0
+    },
+    {
+      "word": "VINE",
+      "type": 0
+    },
+    {
+      "word": "ANIME",
+      "type": 0
+    },
+    {
+      "word": "CANTA",
+      "type": 0
+    },
+    {
+      "word": "CANTE",
+      "type": 0
+    },
+    {
+      "word": "ENTES",
+      "type": 0
+    },
+    {
+      "word": "MENTA",
+      "type": 0
+    },
+    {
+      "word": "MINTA",
+      "type": 0
+    },
+    {
+      "word": "SESTA",
+      "type": 0
+    },
+    {
+      "word": "SETAS",
+      "type": 0
+    },
+    {
+      "word": "STACE",
+      "type": 0
+    },
+    {
+      "word": "VINTE",
+      "type": 0
+    },
+    {
+      "word": "MENTES",
+      "type": 0
+    },
+    {
+      "word": "ESTANTE",
+      "type": 0
+    },
+    {
+      "word": "ESTANTES",
+      "type": 0
+    }
+  ],
+  "letters": "AESE,VTAS,INAT,MECM",
+  "obstacles": []
 }

@@ -1,73 +1,295 @@
-﻿{
-    "id":  1078,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KITE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MITE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PAIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STAIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KETCHUP",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CHRIST",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ETCH",
-                            "type":  1
-                        },
-                        {
-                            "word":  "KRIS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MIKE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PATS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SMITE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PUHCT,AIRKE,TSMIT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1078,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "HIT",
+      "type": 0
+    },
+    {
+      "word": "LOW",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "DATE",
+      "type": 0
+    },
+    {
+      "word": "LATE",
+      "type": 0
+    },
+    {
+      "word": "LOSS",
+      "type": 0
+    },
+    {
+      "word": "LOST",
+      "type": 0
+    },
+    {
+      "word": "RATE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LAT",
+      "type": 0
+    },
+    {
+      "word": "LIT",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "ROW",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "SOW",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TIL",
+      "type": 0
+    },
+    {
+      "word": "WOS",
+      "type": 0
+    },
+    {
+      "word": "ALIT",
+      "type": 0
+    },
+    {
+      "word": "ALOW",
+      "type": 0
+    },
+    {
+      "word": "ALTS",
+      "type": 0
+    },
+    {
+      "word": "DARN",
+      "type": 0
+    },
+    {
+      "word": "HILA",
+      "type": 0
+    },
+    {
+      "word": "HILT",
+      "type": 0
+    },
+    {
+      "word": "LADE",
+      "type": 0
+    },
+    {
+      "word": "LATI",
+      "type": 0
+    },
+    {
+      "word": "LITE",
+      "type": 0
+    },
+    {
+      "word": "LORN",
+      "type": 0
+    },
+    {
+      "word": "LOWS",
+      "type": 0
+    },
+    {
+      "word": "ORAD",
+      "type": 0
+    },
+    {
+      "word": "ORAL",
+      "type": 0
+    },
+    {
+      "word": "ROWS",
+      "type": 0
+    },
+    {
+      "word": "SOLA",
+      "type": 0
+    },
+    {
+      "word": "SOLI",
+      "type": 0
+    },
+    {
+      "word": "SORA",
+      "type": 0
+    },
+    {
+      "word": "SORN",
+      "type": 0
+    },
+    {
+      "word": "SOWS",
+      "type": 0
+    },
+    {
+      "word": "TALI",
+      "type": 0
+    },
+    {
+      "word": "TARN",
+      "type": 0
+    },
+    {
+      "word": "TARO",
+      "type": 0
+    },
+    {
+      "word": "TILT",
+      "type": 0
+    },
+    {
+      "word": "WORM",
+      "type": 0
+    },
+    {
+      "word": "WORN",
+      "type": 0
+    },
+    {
+      "word": "WOST",
+      "type": 0
+    },
+    {
+      "word": "ATILT",
+      "type": 0
+    },
+    {
+      "word": "HILAR",
+      "type": 0
+    },
+    {
+      "word": "HILTS",
+      "type": 0
+    },
+    {
+      "word": "LATED",
+      "type": 0
+    },
+    {
+      "word": "ORATE",
+      "type": 0
+    },
+    {
+      "word": "RATED",
+      "type": 0
+    },
+    {
+      "word": "SOLAR",
+      "type": 0
+    },
+    {
+      "word": "SWORN",
+      "type": 0
+    },
+    {
+      "word": "TAROS",
+      "type": 0
+    },
+    {
+      "word": "TILTH",
+      "type": 0
+    },
+    {
+      "word": "TILTS",
+      "type": 0
+    },
+    {
+      "word": "ORATED",
+      "type": 0
+    },
+    {
+      "word": "SOLATE",
+      "type": 0
+    },
+    {
+      "word": "MANDATE",
+      "type": 0
+    },
+    {
+      "word": "SOLATED",
+      "type": 0
+    }
+  ],
+  "letters": "HITE,TLAD,SORN,SWMA",
+  "obstacles": []
 }

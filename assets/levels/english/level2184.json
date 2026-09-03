@@ -1,101 +1,227 @@
-﻿{
-    "id":  2184,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "END",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RISE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AHEAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASIDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DESIRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RESIDE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AIDES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ASIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAIS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "DESI",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SIDES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SIRE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NDDEA,EAISE,HASIR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2184,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "GAY",
+      "type": 0
+    },
+    {
+      "word": "JAR",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "ELSE",
+      "type": 0
+    },
+    {
+      "word": "PLAN",
+      "type": 0
+    },
+    {
+      "word": "TREK",
+      "type": 0
+    },
+    {
+      "word": "CYCLE",
+      "type": 0
+    },
+    {
+      "word": "PLANS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LEK",
+      "type": 0
+    },
+    {
+      "word": "NAE",
+      "type": 0
+    },
+    {
+      "word": "PEA",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "RAJ",
+      "type": 0
+    },
+    {
+      "word": "SAG",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "AGES",
+      "type": 0
+    },
+    {
+      "word": "ANES",
+      "type": 0
+    },
+    {
+      "word": "GENS",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "PEAL",
+      "type": 0
+    },
+    {
+      "word": "PEAN",
+      "type": 0
+    },
+    {
+      "word": "PEAR",
+      "type": 0
+    },
+    {
+      "word": "RALE",
+      "type": 0
+    },
+    {
+      "word": "SAGE",
+      "type": 0
+    },
+    {
+      "word": "SAGS",
+      "type": 0
+    },
+    {
+      "word": "SEAL",
+      "type": 0
+    },
+    {
+      "word": "SEAR",
+      "type": 0
+    },
+    {
+      "word": "SEGS",
+      "type": 0
+    },
+    {
+      "word": "ALERT",
+      "type": 0
+    },
+    {
+      "word": "LANES",
+      "type": 0
+    },
+    {
+      "word": "PEALS",
+      "type": 0
+    },
+    {
+      "word": "PEANS",
+      "type": 0
+    },
+    {
+      "word": "PEART",
+      "type": 0
+    },
+    {
+      "word": "PLANE",
+      "type": 0
+    },
+    {
+      "word": "SENSE",
+      "type": 0
+    },
+    {
+      "word": "CYCLER",
+      "type": 0
+    },
+    {
+      "word": "PLANES",
+      "type": 0
+    },
+    {
+      "word": "SEALER",
+      "type": 0
+    }
+  ],
+  "letters": "TREKC,JALCY,PESGA,LANES",
+  "obstacles": []
 }

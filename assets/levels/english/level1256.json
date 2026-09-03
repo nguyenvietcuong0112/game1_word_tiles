@@ -1,57 +1,219 @@
-﻿{
-    "id":  1256,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEACON",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AEON",
-                            "type":  1
-                        },
-                        {
-                            "word":  "CON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EON",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ANE,COE,AEB",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1256,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "INN",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "ELSE",
+      "type": 0
+    },
+    {
+      "word": "ENDS",
+      "type": 0
+    },
+    {
+      "word": "LEGS",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "SEND",
+      "type": 0
+    },
+    {
+      "word": "TRIP",
+      "type": 0
+    },
+    {
+      "word": "TRIPS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "NIP",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "RIP",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "GELS",
+      "type": 0
+    },
+    {
+      "word": "GENS",
+      "type": 0
+    },
+    {
+      "word": "INNS",
+      "type": 0
+    },
+    {
+      "word": "IRES",
+      "type": 0
+    },
+    {
+      "word": "NIPS",
+      "type": 0
+    },
+    {
+      "word": "PINS",
+      "type": 0
+    },
+    {
+      "word": "PINT",
+      "type": 0
+    },
+    {
+      "word": "RINS",
+      "type": 0
+    },
+    {
+      "word": "RIPS",
+      "type": 0
+    },
+    {
+      "word": "SEGS",
+      "type": 0
+    },
+    {
+      "word": "SNIP",
+      "type": 0
+    },
+    {
+      "word": "SPIN",
+      "type": 0
+    },
+    {
+      "word": "LEGES",
+      "type": 0
+    },
+    {
+      "word": "PINTS",
+      "type": 0
+    },
+    {
+      "word": "RESTS",
+      "type": 0
+    },
+    {
+      "word": "SENDS",
+      "type": 0
+    },
+    {
+      "word": "SERIN",
+      "type": 0
+    },
+    {
+      "word": "SPIRE",
+      "type": 0
+    },
+    {
+      "word": "SPIRT",
+      "type": 0
+    },
+    {
+      "word": "STRIP",
+      "type": 0
+    },
+    {
+      "word": "ESTRIN",
+      "type": 0
+    },
+    {
+      "word": "LEGEND",
+      "type": 0
+    },
+    {
+      "word": "SERINS",
+      "type": 0
+    },
+    {
+      "word": "SPIRES",
+      "type": 0
+    },
+    {
+      "word": "SPIRTS",
+      "type": 0
+    },
+    {
+      "word": "STRIPS",
+      "type": 0
+    },
+    {
+      "word": "ESTRINS",
+      "type": 0
+    },
+    {
+      "word": "LEGENDS",
+      "type": 0
+    }
+  ],
+  "letters": "EGES,LSND,STNS,ERIP",
+  "obstacles": []
 }

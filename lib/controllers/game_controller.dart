@@ -20,12 +20,18 @@ class GameController extends ChangeNotifier {
   String currentWord = '';
 
   bool isWon = false;
+  bool isWinning = false;
   int starsEarned = 0;
   int coinsReward = 10;
   String victoryCelebrationText = 'LEVEL COMPLETE!';
 
+  int invalidAttemptsCount = 0;
+  int boostersUsedCount = 0;
+  final DateTime levelStartTime = DateTime.now();
+
   List<Point<int>>? highlightedHintPath;
   Timer? _hintTimer;
+  Timer? _victoryTimer;
 
   String? feedbackMessage;
   Color? feedbackColor;
@@ -64,7 +70,7 @@ class GameController extends ChangeNotifier {
 
   /// Start dragging from a tile at (row, col)
   void startSwipe(int row, int col) {
-    if (isWon) return;
+    if (isWon || isWinning) return;
     if (row < 0 || row >= grid.length || col < 0 || col >= grid[0].length) return;
 
     final tile = grid[row][col];
@@ -83,13 +89,13 @@ class GameController extends ChangeNotifier {
     currentPath.add(Point(col, row));
     currentWord = tile.letter;
     highlightedHintPath = null;
-    AudioManager.playTileSelect();
+    AudioManager.playTileSelect(pitchIndex: 1);
     notifyListeners();
   }
 
   /// Update swipe dragging to a tile at (row, col)
   void updateSwipe(int row, int col) {
-    if (isWon || currentPath.isEmpty) return;
+    if (isWon || isWinning || currentPath.isEmpty) return;
     if (row < 0 || row >= grid.length || col < 0 || col >= grid[0].length) return;
 
     final pt = Point(col, row);
@@ -101,7 +107,7 @@ class GameController extends ChangeNotifier {
     if (currentPath.length > 1 && currentPath[currentPath.length - 2] == pt) {
       currentPath.removeLast();
       _recalculateCurrentWord();
-      AudioManager.playTileSelect();
+      AudioManager.playTileSelect(pitchIndex: currentPath.length);
       notifyListeners();
       return;
     }
@@ -123,14 +129,14 @@ class GameController extends ChangeNotifier {
     if (dx + dy == 1) {
       currentPath.add(pt);
       currentWord += tile.letter;
-      AudioManager.playTileSelect();
+      AudioManager.playTileSelect(pitchIndex: currentPath.length);
       notifyListeners();
     }
   }
 
   /// End swipe and evaluate word
   void endSwipe() {
-    if (isWon || currentPath.isEmpty) {
+    if (isWon || isWinning || currentPath.isEmpty) {
       currentPath.clear();
       currentWord = '';
       notifyListeners();
@@ -155,69 +161,87 @@ class GameController extends ChangeNotifier {
     currentWord = sb.toString();
   }
 
-  void _evaluateWord(String word) {
+  void _evaluateWord(String rawWord) {
+    final word = rawWord.trim().toUpperCase();
+
     // 1. Target word
-    final isTarget = level.targetWords.any((tw) => tw.word == word);
-    if (isTarget) {
-      if (solvedTargetWords.contains(word)) {
-        _showFeedback('Already found "$word"!', Colors.amber);
+    TargetWord? matchedTarget;
+    for (final tw in level.targetWords) {
+      if (tw.word.trim().toUpperCase() == word) {
+        matchedTarget = tw;
+        break;
+      }
+    }
+
+    if (matchedTarget != null) {
+      final targetKey = matchedTarget.word;
+      if (solvedTargetWords.contains(targetKey)) {
+        _showFeedback('Already found "$targetKey"!', Colors.amber);
         AudioManager.playInvalid();
         return;
       }
 
       // Solved new target word!
-      solvedTargetWords.add(word);
+      solvedTargetWords.add(targetKey);
       AudioManager.playWordMatch();
-      _showFeedback('Awesome! "$word"', const Color(0xFF69F0AE));
+      _showFeedback('Awesome! "$targetKey"', const Color(0xFF69F0AE));
 
-      // Decrement tile badge counts
-      for (final pt in currentPath) {
-        final tile = grid[pt.y][pt.x];
-        tile.count--;
-        if (tile.count <= 0) {
-          tile.isCleared = true;
-        }
-      }
+      // Decrement optimal tile badge counts with 0-leftover guarantee
+      _decrementWordTiles(targetKey, currentPath);
 
-      // Check obstacle unlocks
+      // Unlock any obstacles requiring this word count
       _checkObstacleUnlocks();
 
-      // Check win condition
+      // Check win condition (500ms delay for last tile shatter animation to complete)
       if (solvedTargetWords.length >= level.targetWords.length) {
-        _handleVictory();
+        for (final row in grid) {
+          for (final tile in row) {
+            tile.count = 0;
+            tile.isCleared = true;
+          }
+        }
+        _victoryTimer?.cancel();
+        _victoryTimer = Timer(const Duration(milliseconds: 500), () {
+          _handleVictory();
+          notifyListeners();
+        });
       }
       return;
     }
 
     // 2. Extra / Bonus word
-    final isExtra = level.extraWords.any((ew) => ew.word == word);
-    if (isExtra) {
-      if (foundExtraWords.contains(word)) {
-        _showFeedback('Extra word "$word" already found!', Colors.amber);
+    TargetWord? matchedExtra;
+    for (final ew in level.extraWords) {
+      if (ew.word.trim().toUpperCase() == word) {
+        matchedExtra = ew;
+        break;
+      }
+    }
+
+    if (matchedExtra != null) {
+      final extraKey = matchedExtra.word;
+      if (foundExtraWords.contains(extraKey)) {
+        _showFeedback('Extra word "$extraKey" already found!', Colors.amber);
         AudioManager.playInvalid();
       } else {
-        foundExtraWords.add(word);
-        var chestCount = GameStorage.getExtraWordsChestCount() + 1;
+        foundExtraWords.add(extraKey);
+        final bankCount = GameStorage.addExtraWordToBank();
 
-        if (chestCount >= 5) {
-          // Chest opened!
-          GameStorage.setExtraWordsChestCount(0);
-          GameStorage.addCoins(25);
+        if (bankCount >= 10) {
           AudioManager.playVictory();
-          _showFeedback('🎁 Star Chest Opened! +25 🪙', Colors.amberAccent);
+          _showFeedback('🎁 Extra Words Bank Full! (10/10)', const Color(0xFFFFD54F));
         } else {
-          GameStorage.setExtraWordsChestCount(chestCount);
-          GameStorage.addCoins(2);
           AudioManager.playExtraWord();
-          _showFeedback('Bonus Word! "$word" ($chestCount/5 🎁 +2 🪙)', const Color(0xFFFFD54F));
+          _showFeedback('✨ Extra Word: "$extraKey"! ($bankCount/10)', const Color(0xFFFFD54F));
         }
       }
       return;
     }
 
     // 3. Invalid word
+    invalidAttemptsCount++;
     AudioManager.playInvalid();
-    _showFeedback('"$word" is not on the board', Colors.redAccent.shade100);
+    _showFeedback('"$rawWord" is not on the board', Colors.redAccent.shade100);
   }
 
   void _checkObstacleUnlocks() {
@@ -244,27 +268,93 @@ class GameController extends ChangeNotifier {
   }
 
   void _handleVictory() {
+    isWinning = false;
     isWon = true;
-    starsEarned = 3;
-    // Milestone level check (e.g. every 5th or 10th level gives 25 coins, regular gives 10 coins)
-    coinsReward = (levelNumber % 5 == 0) ? 25 : 10;
-    GameStorage.addCoins(coinsReward);
 
-    // Random celebration text
-    final random = Random();
-    victoryCelebrationText = celebrationPhrases[random.nextInt(celebrationPhrases.length)];
+    // Dynamic Star Rating Calculation:
+    // Flawless (<= 1 error/hint) -> 3 Stars ⭐⭐⭐
+    // Great (2-3 errors/hints) -> 2 Stars ⭐⭐
+    // Cleared (4+ errors/hints) -> 1 Star ⭐
+    final penalty = invalidAttemptsCount + (boostersUsedCount * 1.5) - (foundExtraWords.length * 0.5);
+    final isMilestone = (levelNumber % 5 == 0);
+
+    if (penalty <= 1.0) {
+      starsEarned = 3;
+      coinsReward = isMilestone ? 35 : 15;
+      victoryCelebrationText = const [
+        'PERFECT SOLVE!',
+        'MASTERFUL!',
+        'GENIUS!',
+        'FLAWLESS!',
+        'WORD MASTER!',
+      ][Random().nextInt(5)];
+    } else if (penalty <= 3.0) {
+      starsEarned = 2;
+      coinsReward = isMilestone ? 25 : 10;
+      victoryCelebrationText = const [
+        'GREAT JOB!',
+        'SMOOTH SOLVE!',
+        'WELL PLAYED!',
+        'NICE FINISH!',
+      ][Random().nextInt(4)];
+    } else {
+      starsEarned = 1;
+      coinsReward = isMilestone ? 15 : 6;
+      victoryCelebrationText = const [
+        'LEVEL COMPLETED!',
+        'GOOD EFFORT!',
+        'STAGE CLEARED!',
+      ][Random().nextInt(3)];
+    }
+
+    GameStorage.addCoins(coinsReward);
 
     // Save progress
     GameStorage.saveLevelStars(language, levelId, starsEarned);
     GameStorage.setMaxUnlockedLevelIndex(language, levelNumber);
+    if (levelNumber == 1) {
+      GameStorage.setTutorialCompleted(true);
+    }
 
     AudioManager.playVictory();
     _showFeedback('🎉 $victoryCelebrationText +$coinsReward 🪙', Colors.amberAccent);
   }
 
+  /// Get next unsolved target word for tutorial
+  String? getNextUnsolvedTargetWord() {
+    for (final target in level.targetWords) {
+      if (!solvedTargetWords.contains(target.word)) {
+        return target.word;
+      }
+    }
+    return null;
+  }
+
+  /// Get valid path for tutorial word
+  List<Point<int>>? getTutorialPathForWord(String word) {
+    return _findValidActivePath(word);
+  }
+
+  /// Check if board contains any active tile with count > 1
+  Point<int>? getFirstTileWithCountGreaterThanOne() {
+    final height = grid.length;
+    final width = height > 0 ? grid[0].length : 0;
+    for (int r = 0; r < height; r++) {
+      for (int c = 0; c < width; c++) {
+        final tile = grid[r][c];
+        if (!tile.isCleared && !tile.isObstacleLocked && tile.count > 1) {
+          return Point(c, r);
+        }
+      }
+    }
+    return null;
+  }
+
   /// Use 💡 Lightbulb Hint booster (Costs 80 Coins)
   Future<bool> useHint() async {
-    if (isWon) return false;
+    if (isWon || isWinning) return false;
+
+    boostersUsedCount++;
 
     // Try using inventory item first
     final hasItem = await GameStorage.useHintItem();
@@ -288,7 +378,8 @@ class GameController extends ChangeNotifier {
             highlightedHintPath = null;
             notifyListeners();
           });
-          _showFeedback('💡 Hint: "${target.word}" (-80 🪙)', Colors.yellowAccent);
+          final costStr = hasItem ? ' (Free Item)' : ' (-80 🪙)';
+          _showFeedback('💡 Hint: "${target.word}"$costStr', const Color(0xFF69F0AE));
           AudioManager.playWordMatch();
           notifyListeners();
           return true;
@@ -302,7 +393,9 @@ class GameController extends ChangeNotifier {
 
   /// Use 🚀 Rocket / Firework booster (Costs 240 Coins - Instantly Solves a Word!)
   Future<bool> useRocket() async {
-    if (isWon) return false;
+    if (isWon || isWinning) return false;
+
+    boostersUsedCount++;
 
     // Try using inventory item first
     final hasItem = await GameStorage.useRocketItem();
@@ -332,25 +425,23 @@ class GameController extends ChangeNotifier {
       final word = targetToSolve.word;
       solvedTargetWords.add(word);
 
-      // Decrement tile counts on board
-      final path = _findValidActivePath(word);
-      if (path != null) {
-        for (final pt in path) {
-          final tile = grid[pt.y][pt.x];
-          tile.count--;
-          if (tile.count <= 0) {
-            tile.isCleared = true;
-          }
-        }
-      }
+      // Decrement tile counts on board with 0-leftover guarantee
+      final path = _findValidActivePath(word) ?? [];
+      _decrementWordTiles(word, path);
 
-      AudioManager.playVictory();
-      _showFeedback('🚀 Rocket Cleared: "$word"! (-240 🪙)', const Color(0xFF69F0AE));
+      AudioManager.playBooster();
+      final costStr = hasItem ? ' (Free Item)' : ' (-240 🪙)';
+      _showFeedback('🚀 Rocket Cleared: "$word"!$costStr', const Color(0xFF69F0AE));
 
       _checkObstacleUnlocks();
 
       if (solvedTargetWords.length >= level.targetWords.length) {
-        _handleVictory();
+        _victoryTimer?.cancel();
+        _victoryTimer = Timer(const Duration(milliseconds: 500), () {
+          _handleVictory();
+          notifyListeners();
+        });
+        return true;
       }
 
       notifyListeners();
@@ -359,6 +450,94 @@ class GameController extends ChangeNotifier {
 
     _showFeedback('All target words are already solved!', Colors.white70);
     return false;
+  }
+
+  /// Checks if all remaining unsolved target words have at least one valid path on the board
+  bool _areAllRemainingWordsSolvable(Set<String> solvedWords) {
+    for (final tw in level.targetWords) {
+      if (!solvedWords.contains(tw.word)) {
+        if (_findValidActivePath(tw.word) == null) {
+          return false;
+        }
+      }
+    }
+    return true;
+  }
+
+  /// Decrements tile counts with Solvability Protection, ensuring remaining words stay connected
+  void _decrementWordTiles(String word, List<Point<int>> swipedPath) {
+    final futureSolved = Set<String>.from(solvedTargetWords);
+
+    for (int i = 0; i < word.length; i++) {
+      final ch = word[i];
+      final swipedPt = (i < swipedPath.length) ? swipedPath[i] : null;
+
+      // Find all tiles on the board with this letter and count > 0
+      final candidateTiles = <LetterTile>[];
+      for (final row in grid) {
+        for (final tile in row) {
+          if (!tile.isCleared && tile.letter == ch && tile.count > 0) {
+            candidateTiles.add(tile);
+          }
+        }
+      }
+
+      if (candidateTiles.isEmpty) continue;
+
+      // Prefer the tile on the swiped path if available
+      LetterTile chosenTile = candidateTiles.first;
+      if (swipedPt != null) {
+        final onPathTile = grid[swipedPt.y][swipedPt.x];
+        if (candidateTiles.contains(onPathTile)) {
+          chosenTile = onPathTile;
+        }
+      }
+
+      // Decrement chosenTile
+      chosenTile.count--;
+      final wasCleared = chosenTile.count <= 0;
+      if (wasCleared) chosenTile.isCleared = true;
+
+      // If clearing chosenTile breaks any remaining word, search for a safer alternative tile
+      if (!_areAllRemainingWordsSolvable(futureSolved) && candidateTiles.length > 1) {
+        // Revert chosenTile
+        if (wasCleared) chosenTile.isCleared = false;
+        chosenTile.count++;
+
+        LetterTile? safeTile;
+        for (final altTile in candidateTiles) {
+          if (altTile == chosenTile) continue;
+          altTile.count--;
+          final altCleared = altTile.count <= 0;
+          if (altCleared) altTile.isCleared = true;
+
+          if (_areAllRemainingWordsSolvable(futureSolved)) {
+            safeTile = altTile;
+            break;
+          }
+
+          // Revert altTile
+          if (altCleared) altTile.isCleared = false;
+          altTile.count++;
+        }
+
+        // If no safe tile was found, re-apply decrement on chosenTile
+        if (safeTile == null) {
+          chosenTile.count--;
+          if (chosenTile.count <= 0) chosenTile.isCleared = true;
+        }
+      }
+    }
+
+    // Mark all tiles with count <= 0 as cleared immediately
+    for (final row in grid) {
+      for (final tile in row) {
+        if (tile.count <= 0) {
+          tile.count = 0;
+          tile.isCleared = true;
+        }
+      }
+    }
   }
 
   /// Search for a path for a word using 4 directions
@@ -437,6 +616,7 @@ class GameController extends ChangeNotifier {
   void dispose() {
     _hintTimer?.cancel();
     _feedbackTimer?.cancel();
+    _victoryTimer?.cancel();
     super.dispose();
   }
 }

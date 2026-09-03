@@ -1,93 +1,163 @@
-﻿{
-    "id":  2252,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMEL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "EKİP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PİKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKLEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KELLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKİPMAN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CELP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CEMAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PİK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "İPMA,KLEN,ELCA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2252,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "TIP",
+      "type": 0
+    },
+    {
+      "word": "DOĞU",
+      "type": 0
+    },
+    {
+      "word": "KAPA",
+      "type": 0
+    },
+    {
+      "word": "KAPI",
+      "type": 0
+    },
+    {
+      "word": "SUDA",
+      "type": 0
+    },
+    {
+      "word": "KAĞIT",
+      "type": 0
+    },
+    {
+      "word": "PANİK",
+      "type": 0
+    },
+    {
+      "word": "KAPANIK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "AĞI",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "KAP",
+      "type": 0
+    },
+    {
+      "word": "KİN",
+      "type": 0
+    },
+    {
+      "word": "KİP",
+      "type": 0
+    },
+    {
+      "word": "NİK",
+      "type": 0
+    },
+    {
+      "word": "PAK",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PİN",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "KAPİ",
+      "type": 0
+    },
+    {
+      "word": "KINA",
+      "type": 0
+    },
+    {
+      "word": "NAPA",
+      "type": 0
+    },
+    {
+      "word": "SODA",
+      "type": 0
+    },
+    {
+      "word": "TIPA",
+      "type": 0
+    },
+    {
+      "word": "KAPAN",
+      "type": 0
+    },
+    {
+      "word": "DOĞUDA",
+      "type": 0
+    },
+    {
+      "word": "KAPANI",
+      "type": 0
+    }
+  ],
+  "letters": "ITDOĞ,ĞIASU,APAAD,KİNIK",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

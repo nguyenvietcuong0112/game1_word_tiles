@@ -1,93 +1,247 @@
-﻿{
-    "id":  1166,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "IMÃ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MÃE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SETA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIRAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIRAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RETIRAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "REJEITAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ATER",
-                            "type":  2
-                        },
-                        {
-                            "word":  "EIRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IRAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IRITE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "IRÃ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ITA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SETAR,RRIRI,EJEÃM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1166,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "CAI",
+      "type": 0
+    },
+    {
+      "word": "CEM",
+      "type": 0
+    },
+    {
+      "word": "CID",
+      "type": 0
+    },
+    {
+      "word": "VAI",
+      "type": 0
+    },
+    {
+      "word": "AMEI",
+      "type": 0
+    },
+    {
+      "word": "DICA",
+      "type": 0
+    },
+    {
+      "word": "MEIA",
+      "type": 0
+    },
+    {
+      "word": "NOTA",
+      "type": 0
+    },
+    {
+      "word": "TOCA",
+      "type": 0
+    },
+    {
+      "word": "TONI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "AIE",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "AVC",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "CEO",
+      "type": 0
+    },
+    {
+      "word": "COE",
+      "type": 0
+    },
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "DAT",
+      "type": 0
+    },
+    {
+      "word": "ECA",
+      "type": 0
+    },
+    {
+      "word": "EIA",
+      "type": 0
+    },
+    {
+      "word": "EMA",
+      "type": 0
+    },
+    {
+      "word": "IAM",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "INC",
+      "type": 0
+    },
+    {
+      "word": "INO",
+      "type": 0
+    },
+    {
+      "word": "ITA",
+      "type": 0
+    },
+    {
+      "word": "ITO",
+      "type": 0
+    },
+    {
+      "word": "MAI",
+      "type": 0
+    },
+    {
+      "word": "MCA",
+      "type": 0
+    },
+    {
+      "word": "MEI",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ONI",
+      "type": 0
+    },
+    {
+      "word": "TAC",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "TOC",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "VAM",
+      "type": 0
+    },
+    {
+      "word": "ACID",
+      "type": 0
+    },
+    {
+      "word": "ACME",
+      "type": 0
+    },
+    {
+      "word": "CAIA",
+      "type": 0
+    },
+    {
+      "word": "CAIE",
+      "type": 0
+    },
+    {
+      "word": "CATO",
+      "type": 0
+    },
+    {
+      "word": "CEIA",
+      "type": 0
+    },
+    {
+      "word": "COTA",
+      "type": 0
+    },
+    {
+      "word": "DICO",
+      "type": 0
+    },
+    {
+      "word": "INCA",
+      "type": 0
+    },
+    {
+      "word": "MAIA",
+      "type": 0
+    },
+    {
+      "word": "MECA",
+      "type": 0
+    },
+    {
+      "word": "NITA",
+      "type": 0
+    },
+    {
+      "word": "ONCE",
+      "type": 0
+    },
+    {
+      "word": "TACO",
+      "type": 0
+    },
+    {
+      "word": "TINO",
+      "type": 0
+    },
+    {
+      "word": "VAIA",
+      "type": 0
+    },
+    {
+      "word": "CAIAM",
+      "type": 0
+    }
+  ],
+  "letters": "DICV,ACMA,TOEI,INCA",
+  "obstacles": []
 }

@@ -1,41 +1,107 @@
-﻿{
-    "id":  1290,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "RET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TURP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YURT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TURTA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "TER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "YPA,URT,TEZ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1290,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GİT",
+      "type": 0
+    },
+    {
+      "word": "KOT",
+      "type": 0
+    },
+    {
+      "word": "KÖK",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "TİM",
+      "type": 0
+    },
+    {
+      "word": "STAN",
+      "type": 0
+    },
+    {
+      "word": "TANE",
+      "type": 0
+    },
+    {
+      "word": "TANK",
+      "type": 0
+    },
+    {
+      "word": "USTA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "GUS",
+      "type": 0
+    },
+    {
+      "word": "MİT",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "TOK",
+      "type": 0
+    },
+    {
+      "word": "İTO",
+      "type": 0
+    },
+    {
+      "word": "NANE",
+      "type": 0
+    },
+    {
+      "word": "NATSU",
+      "type": 0
+    },
+    {
+      "word": "KÖKTEN",
+      "type": 0
+    }
+  ],
+  "letters": "TANE,SNKT,UMÖK,GİTO",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

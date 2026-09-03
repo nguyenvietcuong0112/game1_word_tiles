@@ -1,111 +1,151 @@
-﻿{
-    "id":  1735,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEG",
-                             "type":  2
-                         },
-                         {
-                             "word":  "NIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KNIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONFETTI",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GETTIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TING",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TINGE",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ANFET,COEGT,SFKNI",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1735,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EAU",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "OUT",
+      "type": 0
+    },
+    {
+      "word": "PUT",
+      "type": 0
+    },
+    {
+      "word": "TOE",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "FILE",
+      "type": 0
+    },
+    {
+      "word": "FILM",
+      "type": 0
+    },
+    {
+      "word": "LIFT",
+      "type": 0
+    },
+    {
+      "word": "LIST",
+      "type": 0
+    },
+    {
+      "word": "OUTPUT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ELM",
+      "type": 0
+    },
+    {
+      "word": "FIL",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "MOT",
+      "type": 0
+    },
+    {
+      "word": "TUP",
+      "type": 0
+    },
+    {
+      "word": "TUT",
+      "type": 0
+    },
+    {
+      "word": "UTS",
+      "type": 0
+    },
+    {
+      "word": "FIST",
+      "type": 0
+    },
+    {
+      "word": "ILEA",
+      "type": 0
+    },
+    {
+      "word": "MOTT",
+      "type": 0
+    },
+    {
+      "word": "PUTS",
+      "type": 0
+    },
+    {
+      "word": "PUTT",
+      "type": 0
+    },
+    {
+      "word": "SIFT",
+      "type": 0
+    },
+    {
+      "word": "TOEA",
+      "type": 0
+    },
+    {
+      "word": "TOUT",
+      "type": 0
+    },
+    {
+      "word": "TUTS",
+      "type": 0
+    },
+    {
+      "word": "LIFTS",
+      "type": 0
+    },
+    {
+      "word": "PUTOUT",
+      "type": 0
+    },
+    {
+      "word": "OUTPUTS",
+      "type": 0
+    }
+  ],
+  "letters": "AEAE,UOML,TTFI,PUTS",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

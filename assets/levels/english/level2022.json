@@ -1,94 +1,159 @@
-﻿{
-    "id":  2022,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CLAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CLAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SLAY",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CLASS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALAD",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CLASSY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CLAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAYS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LASS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LAYS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DAY,CLS,NAS",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2022,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "GNU",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "OUR",
+      "type": 0
+    },
+    {
+      "word": "WIT",
+      "type": 0
+    },
+    {
+      "word": "CUNT",
+      "type": 0
+    },
+    {
+      "word": "FOUR",
+      "type": 0
+    },
+    {
+      "word": "LINE",
+      "type": 0
+    },
+    {
+      "word": "LINES",
+      "type": 0
+    },
+    {
+      "word": "GARLIC",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "FOU",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "RAG",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "SAG",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SOU",
+      "type": 0
+    },
+    {
+      "word": "URN",
+      "type": 0
+    },
+    {
+      "word": "CINE",
+      "type": 0
+    },
+    {
+      "word": "FOSS",
+      "type": 0
+    },
+    {
+      "word": "LINS",
+      "type": 0
+    },
+    {
+      "word": "NESS",
+      "type": 0
+    },
+    {
+      "word": "NILS",
+      "type": 0
+    },
+    {
+      "word": "SOUR",
+      "type": 0
+    },
+    {
+      "word": "SOUS",
+      "type": 0
+    },
+    {
+      "word": "SURA",
+      "type": 0
+    },
+    {
+      "word": "SUSS",
+      "type": 0
+    },
+    {
+      "word": "CINES",
+      "type": 0
+    },
+    {
+      "word": "SURAS",
+      "type": 0
+    }
+  ],
+  "letters": "FSAGC,OURNU,SSLTI,ENICW",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

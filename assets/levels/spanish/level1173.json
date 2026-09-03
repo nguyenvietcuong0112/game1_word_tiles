@@ -1,137 +1,327 @@
-﻿{
-    "id":  1173,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RATO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RIZO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SOTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTADO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENTAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENTADO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AZO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ENTADO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ESTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESTAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESTOZAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "IZA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IZAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OTAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIZA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIZADO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RODA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOTAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOZAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SOZI,STAR,ENDO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1173,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ESE",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "DATE",
+      "type": 0
+    },
+    {
+      "word": "ECHA",
+      "type": 0
+    },
+    {
+      "word": "ERAN",
+      "type": 0
+    },
+    {
+      "word": "REAL",
+      "type": 0
+    },
+    {
+      "word": "CARTA",
+      "type": 0
+    },
+    {
+      "word": "ESPERA",
+      "type": 0
+    },
+    {
+      "word": "ESPERE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "CHA",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DES",
+      "type": 0
+    },
+    {
+      "word": "DET",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ESP",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "HAE",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "SED",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TES",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "TRE",
+      "type": 0
+    },
+    {
+      "word": "AREA",
+      "type": 0
+    },
+    {
+      "word": "ARTE",
+      "type": 0
+    },
+    {
+      "word": "CANE",
+      "type": 0
+    },
+    {
+      "word": "CARE",
+      "type": 0
+    },
+    {
+      "word": "CERA",
+      "type": 0
+    },
+    {
+      "word": "CHAE",
+      "type": 0
+    },
+    {
+      "word": "CHAL",
+      "type": 0
+    },
+    {
+      "word": "DESE",
+      "type": 0
+    },
+    {
+      "word": "EREN",
+      "type": 0
+    },
+    {
+      "word": "HALE",
+      "type": 0
+    },
+    {
+      "word": "NACE",
+      "type": 0
+    },
+    {
+      "word": "PECA",
+      "type": 0
+    },
+    {
+      "word": "PERA",
+      "type": 0
+    },
+    {
+      "word": "RACE",
+      "type": 0
+    },
+    {
+      "word": "RACH",
+      "type": 0
+    },
+    {
+      "word": "READ",
+      "type": 0
+    },
+    {
+      "word": "RENA",
+      "type": 0
+    },
+    {
+      "word": "SEDA",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "TRAN",
+      "type": 0
+    },
+    {
+      "word": "TREN",
+      "type": 0
+    },
+    {
+      "word": "AEREA",
+      "type": 0
+    },
+    {
+      "word": "ARTES",
+      "type": 0
+    },
+    {
+      "word": "HALES",
+      "type": 0
+    },
+    {
+      "word": "NACER",
+      "type": 0
+    },
+    {
+      "word": "PECAR",
+      "type": 0
+    },
+    {
+      "word": "RACHA",
+      "type": 0
+    },
+    {
+      "word": "READE",
+      "type": 0
+    },
+    {
+      "word": "TRACE",
+      "type": 0
+    },
+    {
+      "word": "TRENA",
+      "type": 0
+    },
+    {
+      "word": "ACEPTA",
+      "type": 0
+    },
+    {
+      "word": "ACEPTE",
+      "type": 0
+    },
+    {
+      "word": "ECHALE",
+      "type": 0
+    },
+    {
+      "word": "REALES",
+      "type": 0
+    },
+    {
+      "word": "RENACE",
+      "type": 0
+    },
+    {
+      "word": "ACEPTES",
+      "type": 0
+    },
+    {
+      "word": "ESPERAN",
+      "type": 0
+    },
+    {
+      "word": "ESPEREN",
+      "type": 0
+    }
+  ],
+  "letters": "DAEN,ETRA,SPEC,ELAH",
+  "obstacles": []
 }

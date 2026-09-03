@@ -1,105 +1,291 @@
-﻿{
-    "id":  2385,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CLEAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PHASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELEPHANT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANTE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEANT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "PEAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TELE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ETNE,LEAS,CPHU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2385,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "BUT",
+      "type": 0
+    },
+    {
+      "word": "GOT",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "LOG",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "SELL",
+      "type": 0
+    },
+    {
+      "word": "WELL",
+      "type": 0
+    },
+    {
+      "word": "AGILE",
+      "type": 0
+    },
+    {
+      "word": "BETWEEN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BET",
+      "type": 0
+    },
+    {
+      "word": "BUS",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "GAT",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "SOT",
+      "type": 0
+    },
+    {
+      "word": "SUB",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "TOG",
+      "type": 0
+    },
+    {
+      "word": "TUB",
+      "type": 0
+    },
+    {
+      "word": "UTA",
+      "type": 0
+    },
+    {
+      "word": "WEE",
+      "type": 0
+    },
+    {
+      "word": "EELS",
+      "type": 0
+    },
+    {
+      "word": "ELLS",
+      "type": 0
+    },
+    {
+      "word": "ELSE",
+      "type": 0
+    },
+    {
+      "word": "GILL",
+      "type": 0
+    },
+    {
+      "word": "ILLS",
+      "type": 0
+    },
+    {
+      "word": "LEES",
+      "type": 0
+    },
+    {
+      "word": "LOSE",
+      "type": 0
+    },
+    {
+      "word": "LOTA",
+      "type": 0
+    },
+    {
+      "word": "OLES",
+      "type": 0
+    },
+    {
+      "word": "SEEL",
+      "type": 0
+    },
+    {
+      "word": "SLEW",
+      "type": 0
+    },
+    {
+      "word": "SOLE",
+      "type": 0
+    },
+    {
+      "word": "SOLI",
+      "type": 0
+    },
+    {
+      "word": "TOGA",
+      "type": 0
+    },
+    {
+      "word": "TOLE",
+      "type": 0
+    },
+    {
+      "word": "TOLL",
+      "type": 0
+    },
+    {
+      "word": "TUBE",
+      "type": 0
+    },
+    {
+      "word": "TWEE",
+      "type": 0
+    },
+    {
+      "word": "WEEL",
+      "type": 0
+    },
+    {
+      "word": "WEEN",
+      "type": 0
+    },
+    {
+      "word": "WEES",
+      "type": 0
+    },
+    {
+      "word": "WELT",
+      "type": 0
+    },
+    {
+      "word": "ATOLL",
+      "type": 0
+    },
+    {
+      "word": "BESOT",
+      "type": 0
+    },
+    {
+      "word": "ETWEE",
+      "type": 0
+    },
+    {
+      "word": "GILLS",
+      "type": 0
+    },
+    {
+      "word": "LOTUS",
+      "type": 0
+    },
+    {
+      "word": "SEELS",
+      "type": 0
+    },
+    {
+      "word": "SELLE",
+      "type": 0
+    },
+    {
+      "word": "SELLS",
+      "type": 0
+    },
+    {
+      "word": "SOLES",
+      "type": 0
+    },
+    {
+      "word": "TOLES",
+      "type": 0
+    },
+    {
+      "word": "TOLLS",
+      "type": 0
+    },
+    {
+      "word": "TUBES",
+      "type": 0
+    },
+    {
+      "word": "TWEEN",
+      "type": 0
+    },
+    {
+      "word": "ATOLLS",
+      "type": 0
+    },
+    {
+      "word": "ETWEES",
+      "type": 0
+    }
+  ],
+  "letters": "NWTEB,EELSU,SELOT,ELIGA",
+  "obstacles": []
 }

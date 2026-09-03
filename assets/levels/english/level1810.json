@@ -1,99 +1,179 @@
-﻿{
-    "id":  1810,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAG",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RING",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SING",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WRIST",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SPRING",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRISTINE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "GEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SINGE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SINN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TINE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "WRING",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TINE,SING,PRWA",
-    "obstacles":  [
-                      {
-                          "required_words":  9,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1810,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "DREW",
+      "type": 0
+    },
+    {
+      "word": "HERE",
+      "type": 0
+    },
+    {
+      "word": "HIRE",
+      "type": 0
+    },
+    {
+      "word": "LEST",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "SORT",
+      "type": 0
+    },
+    {
+      "word": "WERE",
+      "type": 0
+    },
+    {
+      "word": "THERE",
+      "type": 0
+    },
+    {
+      "word": "RESORT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "EWE",
+      "type": 0
+    },
+    {
+      "word": "HEW",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "ORT",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "EWER",
+      "type": 0
+    },
+    {
+      "word": "HERD",
+      "type": 0
+    },
+    {
+      "word": "LEWD",
+      "type": 0
+    },
+    {
+      "word": "ORTS",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    },
+    {
+      "word": "SERE",
+      "type": 0
+    },
+    {
+      "word": "SORI",
+      "type": 0
+    },
+    {
+      "word": "THEW",
+      "type": 0
+    },
+    {
+      "word": "THIR",
+      "type": 0
+    },
+    {
+      "word": "WERT",
+      "type": 0
+    },
+    {
+      "word": "HERES",
+      "type": 0
+    },
+    {
+      "word": "HEWER",
+      "type": 0
+    },
+    {
+      "word": "HIRER",
+      "type": 0
+    },
+    {
+      "word": "SERER",
+      "type": 0
+    },
+    {
+      "word": "STREW",
+      "type": 0
+    },
+    {
+      "word": "REHIRE",
+      "type": 0
+    },
+    {
+      "word": "THERES",
+      "type": 0
+    },
+    {
+      "word": "STREWER",
+      "type": 0
+    }
+  ],
+  "letters": "DRER,WEHI,ERTR,LESO",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

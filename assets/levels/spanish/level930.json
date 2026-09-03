@@ -1,93 +1,151 @@
-﻿{
-    "id":  930,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "PAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AULA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PIPA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "YATE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BULLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PINTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALUBIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PANTALLA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AETA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BULA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIPA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PINA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ETALL,ANYUA,PIPBI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 930,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASI",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "TIM",
+      "type": 0
+    },
+    {
+      "word": "JUGO",
+      "type": 0
+    },
+    {
+      "word": "MISA",
+      "type": 0
+    },
+    {
+      "word": "LUGAR",
+      "type": 0
+    },
+    {
+      "word": "ULTIMO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "GOA",
+      "type": 0
+    },
+    {
+      "word": "GUL",
+      "type": 0
+    },
+    {
+      "word": "ISA",
+      "type": 0
+    },
+    {
+      "word": "JAG",
+      "type": 0
+    },
+    {
+      "word": "JAR",
+      "type": 0
+    },
+    {
+      "word": "MIT",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "OMI",
+      "type": 0
+    },
+    {
+      "word": "OSA",
+      "type": 0
+    },
+    {
+      "word": "RAJ",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "SIT",
+      "type": 0
+    },
+    {
+      "word": "SIU",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "UGO",
+      "type": 0
+    },
+    {
+      "word": "GUAO",
+      "type": 0
+    },
+    {
+      "word": "MISO",
+      "type": 0
+    },
+    {
+      "word": "RAJU",
+      "type": 0
+    },
+    {
+      "word": "TIMO",
+      "type": 0
+    },
+    {
+      "word": "GUISO",
+      "type": 0
+    },
+    {
+      "word": "ULTIMOS",
+      "type": 0
+    }
+  ],
+  "letters": "RTGO,AJUA,GTIS,ULMO",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

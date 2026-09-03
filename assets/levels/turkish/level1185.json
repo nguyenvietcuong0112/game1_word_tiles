@@ -1,110 +1,131 @@
-﻿{
-    "id":  1185,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "İLK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İRİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İLİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKRİLİK",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKİL",
-                            "type":  1
-                        },
-                        {
-                            "word":  "AKLİ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İRİLİK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KATRAK",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "İİRT,RKAA,İLİK",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1185,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "CAZ",
+      "type": 0
+    },
+    {
+      "word": "NAZ",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "ANCA",
+      "type": 0
+    },
+    {
+      "word": "AŞAR",
+      "type": 0
+    },
+    {
+      "word": "NASA",
+      "type": 0
+    },
+    {
+      "word": "OLMA",
+      "type": 0
+    },
+    {
+      "word": "OLMAZ",
+      "type": 0
+    },
+    {
+      "word": "OLMAZSA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "AZA",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "ZAC",
+      "type": 0
+    },
+    {
+      "word": "ZAM",
+      "type": 0
+    },
+    {
+      "word": "ZAN",
+      "type": 0
+    },
+    {
+      "word": "ŞER",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "ASAN",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SAZAN",
+      "type": 0
+    },
+    {
+      "word": "OLMAZSAN",
+      "type": 0
+    }
+  ],
+  "letters": "LOAC,MAZN,RESA,AŞAZ",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

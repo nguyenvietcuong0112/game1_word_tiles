@@ -1,61 +1,187 @@
-﻿{
-    "id":  1730,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INCH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOCHA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PINCH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COMPLEX",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "COMP",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NIP",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LEXT,PINA,MOCH",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1730,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "HIM",
+      "type": 0
+    },
+    {
+      "word": "HIP",
+      "type": 0
+    },
+    {
+      "word": "OFF",
+      "type": 0
+    },
+    {
+      "word": "BOAT",
+      "type": 0
+    },
+    {
+      "word": "FOAM",
+      "type": 0
+    },
+    {
+      "word": "FORM",
+      "type": 0
+    },
+    {
+      "word": "FORMS",
+      "type": 0
+    },
+    {
+      "word": "FORMAT",
+      "type": 0
+    },
+    {
+      "word": "REFORM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "BOA",
+      "type": 0
+    },
+    {
+      "word": "EFF",
+      "type": 0
+    },
+    {
+      "word": "FER",
+      "type": 0
+    },
+    {
+      "word": "FOB",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "OAT",
+      "type": 0
+    },
+    {
+      "word": "OFT",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "REF",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "BOFF",
+      "type": 0
+    },
+    {
+      "word": "BORE",
+      "type": 0
+    },
+    {
+      "word": "FORE",
+      "type": 0
+    },
+    {
+      "word": "HIPS",
+      "type": 0
+    },
+    {
+      "word": "MATS",
+      "type": 0
+    },
+    {
+      "word": "OATS",
+      "type": 0
+    },
+    {
+      "word": "PIMA",
+      "type": 0
+    },
+    {
+      "word": "ROAM",
+      "type": 0
+    },
+    {
+      "word": "TAMS",
+      "type": 0
+    },
+    {
+      "word": "BOATS",
+      "type": 0
+    },
+    {
+      "word": "BORER",
+      "type": 0
+    },
+    {
+      "word": "FERMI",
+      "type": 0
+    },
+    {
+      "word": "FOAMS",
+      "type": 0
+    },
+    {
+      "word": "ROAMS",
+      "type": 0
+    },
+    {
+      "word": "FORMATS",
+      "type": 0
+    },
+    {
+      "word": "REFORMS",
+      "type": 0
+    },
+    {
+      "word": "REFORMAT",
+      "type": 0
+    }
+  ],
+  "letters": "PSTF,IMAO,HROB,REFF",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

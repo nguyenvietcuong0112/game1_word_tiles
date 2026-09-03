@@ -1,81 +1,219 @@
-﻿{
-    "id":  2208,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FREE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REEF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIFE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "FINER",
-                             "type":  2
-                         },
-                         {
-                             "word":  "REFINE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "YEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "FEEYE,RENTO,IFIKW",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2208,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "EYE",
+      "type": 0
+    },
+    {
+      "word": "MOB",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "YES",
+      "type": 0
+    },
+    {
+      "word": "ARTS",
+      "type": 0
+    },
+    {
+      "word": "EYES",
+      "type": 0
+    },
+    {
+      "word": "GREY",
+      "type": 0
+    },
+    {
+      "word": "MESA",
+      "type": 0
+    },
+    {
+      "word": "RING",
+      "type": 0
+    },
+    {
+      "word": "SEAL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "BEG",
+      "type": 0
+    },
+    {
+      "word": "BEY",
+      "type": 0
+    },
+    {
+      "word": "BOA",
+      "type": 0
+    },
+    {
+      "word": "EGG",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERG",
+      "type": 0
+    },
+    {
+      "word": "GEY",
+      "type": 0
+    },
+    {
+      "word": "MOA",
+      "type": 0
+    },
+    {
+      "word": "OBE",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "RYE",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "YEA",
+      "type": 0
+    },
+    {
+      "word": "BERG",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "EYER",
+      "type": 0
+    },
+    {
+      "word": "GRAT",
+      "type": 0
+    },
+    {
+      "word": "OBES",
+      "type": 0
+    },
+    {
+      "word": "OBEY",
+      "type": 0
+    },
+    {
+      "word": "RASE",
+      "type": 0
+    },
+    {
+      "word": "RYES",
+      "type": 0
+    },
+    {
+      "word": "TARE",
+      "type": 0
+    },
+    {
+      "word": "TART",
+      "type": 0
+    },
+    {
+      "word": "TREY",
+      "type": 0
+    },
+    {
+      "word": "TSAR",
+      "type": 0
+    },
+    {
+      "word": "YEGG",
+      "type": 0
+    },
+    {
+      "word": "ERASE",
+      "type": 0
+    },
+    {
+      "word": "GREBE",
+      "type": 0
+    },
+    {
+      "word": "TARTS",
+      "type": 0
+    },
+    {
+      "word": "GREBES",
+      "type": 0
+    },
+    {
+      "word": "OBEYER",
+      "type": 0
+    },
+    {
+      "word": "RINGER",
+      "type": 0
+    }
+  ],
+  "letters": "LAOME,SEBTS,RYERA,INGGT",
+  "obstacles": []
 }

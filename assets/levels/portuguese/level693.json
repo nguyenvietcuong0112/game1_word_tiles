@@ -1,57 +1,287 @@
-﻿{
-    "id":  693,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LEI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TREM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CREME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRELA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RELA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CME,REI,TLA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 693,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "TEM",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "UMA",
+      "type": 0
+    },
+    {
+      "word": "AQUI",
+      "type": 0
+    },
+    {
+      "word": "ARTE",
+      "type": 0
+    },
+    {
+      "word": "LUTE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "AQU",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "DIR",
+      "type": 0
+    },
+    {
+      "word": "DOG",
+      "type": 0
+    },
+    {
+      "word": "EGO",
+      "type": 0
+    },
+    {
+      "word": "EMA",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "ERM",
+      "type": 0
+    },
+    {
+      "word": "GEM",
+      "type": 0
+    },
+    {
+      "word": "GER",
+      "type": 0
+    },
+    {
+      "word": "GET",
+      "type": 0
+    },
+    {
+      "word": "GOD",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "IRO",
+      "type": 0
+    },
+    {
+      "word": "MAG",
+      "type": 0
+    },
+    {
+      "word": "MEG",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "MUI",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ORI",
+      "type": 0
+    },
+    {
+      "word": "ORM",
+      "type": 0
+    },
+    {
+      "word": "QUI",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "RIU",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "ROG",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "TUM",
+      "type": 0
+    },
+    {
+      "word": "UID",
+      "type": 0
+    },
+    {
+      "word": "AGEM",
+      "type": 0
+    },
+    {
+      "word": "DOGE",
+      "type": 0
+    },
+    {
+      "word": "DORI",
+      "type": 0
+    },
+    {
+      "word": "GAME",
+      "type": 0
+    },
+    {
+      "word": "GEMA",
+      "type": 0
+    },
+    {
+      "word": "GERI",
+      "type": 0
+    },
+    {
+      "word": "GERO",
+      "type": 0
+    },
+    {
+      "word": "GORE",
+      "type": 0
+    },
+    {
+      "word": "IREM",
+      "type": 0
+    },
+    {
+      "word": "IRMA",
+      "type": 0
+    },
+    {
+      "word": "MAGO",
+      "type": 0
+    },
+    {
+      "word": "MART",
+      "type": 0
+    },
+    {
+      "word": "MEGA",
+      "type": 0
+    },
+    {
+      "word": "MERO",
+      "type": 0
+    },
+    {
+      "word": "MUIR",
+      "type": 0
+    },
+    {
+      "word": "QUID",
+      "type": 0
+    },
+    {
+      "word": "RAMU",
+      "type": 0
+    },
+    {
+      "word": "REGO",
+      "type": 0
+    },
+    {
+      "word": "REMA",
+      "type": 0
+    },
+    {
+      "word": "RIDO",
+      "type": 0
+    },
+    {
+      "word": "ROGE",
+      "type": 0
+    },
+    {
+      "word": "TEMA",
+      "type": 0
+    },
+    {
+      "word": "TERI",
+      "type": 0
+    },
+    {
+      "word": "LUTEM",
+      "type": 0
+    },
+    {
+      "word": "MARTE",
+      "type": 0
+    },
+    {
+      "word": "LUTERO",
+      "type": 0
+    }
+  ],
+  "letters": "LRAQ,UTMU,MERI,AGOD",
+  "obstacles": []
 }

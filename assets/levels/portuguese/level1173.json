@@ -1,97 +1,215 @@
-﻿{
-    "id":  1173,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "SOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PESO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RASO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROSA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SISO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GESSO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PEGAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PESAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOSSEGAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "MOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MUS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MUSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEGAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOSSEGA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SUMO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ISGAR,SSESO,OSPUM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1173,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "BUD",
+      "type": 0
+    },
+    {
+      "word": "DAI",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "TIA",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "USO",
+      "type": 0
+    },
+    {
+      "word": "ANOS",
+      "type": 0
+    },
+    {
+      "word": "CAIR",
+      "type": 0
+    },
+    {
+      "word": "BUSCA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABU",
+      "type": 0
+    },
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ASU",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BUS",
+      "type": 0
+    },
+    {
+      "word": "CAI",
+      "type": 0
+    },
+    {
+      "word": "CNA",
+      "type": 0
+    },
+    {
+      "word": "CSU",
+      "type": 0
+    },
+    {
+      "word": "DUB",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "OSU",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "SAA",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAD",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "SOS",
+      "type": 0
+    },
+    {
+      "word": "SUB",
+      "type": 0
+    },
+    {
+      "word": "SUS",
+      "type": 0
+    },
+    {
+      "word": "USC",
+      "type": 0
+    },
+    {
+      "word": "ARCA",
+      "type": 0
+    },
+    {
+      "word": "ARIA",
+      "type": 0
+    },
+    {
+      "word": "BUDA",
+      "type": 0
+    },
+    {
+      "word": "BUDD",
+      "type": 0
+    },
+    {
+      "word": "CRIA",
+      "type": 0
+    },
+    {
+      "word": "NCAA",
+      "type": 0
+    },
+    {
+      "word": "SONA",
+      "type": 0
+    },
+    {
+      "word": "SOSA",
+      "type": 0
+    },
+    {
+      "word": "SUBA",
+      "type": 0
+    },
+    {
+      "word": "TIRA",
+      "type": 0
+    },
+    {
+      "word": "USOS",
+      "type": 0
+    },
+    {
+      "word": "ABUSO",
+      "type": 0
+    },
+    {
+      "word": "SONAR",
+      "type": 0
+    },
+    {
+      "word": "ABUSOS",
+      "type": 0
+    },
+    {
+      "word": "TIRANO",
+      "type": 0
+    },
+    {
+      "word": "TIRANOS",
+      "type": 0
+    }
+  ],
+  "letters": "UDDT,BAAI,USCR,SONA",
+  "obstacles": []
 }

@@ -1,83 +1,131 @@
-﻿{
-    "id":  1445,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TÜR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÜTÜ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KRİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÜRK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇÜRÜK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÜRKEK",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KÜR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TÜRK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KKEK,ÜRİZ,ÇÜTÜ",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1445,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "HOP",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "ARAR",
+      "type": 0
+    },
+    {
+      "word": "HERB",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "KİERA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "REİ",
+      "type": 0
+    },
+    {
+      "word": "SAR",
+      "type": 0
+    },
+    {
+      "word": "SKİ",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "ARSA",
+      "type": 0
+    },
+    {
+      "word": "CARA",
+      "type": 0
+    },
+    {
+      "word": "CARE",
+      "type": 0
+    },
+    {
+      "word": "HECK",
+      "type": 0
+    },
+    {
+      "word": "HERA",
+      "type": 0
+    },
+    {
+      "word": "SARAR",
+      "type": 0
+    }
+  ],
+  "letters": "RAYP,SKİO,ACEH,RARB",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

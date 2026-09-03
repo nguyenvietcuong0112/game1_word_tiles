@@ -1,113 +1,407 @@
-﻿{
-    "id":  1099,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CENA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMPO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACENTO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CENTAVO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CANTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CANTE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CEE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CENT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PETO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOVA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VATE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MPOV,ANTA,CEEP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1099,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AHH",
+      "type": 0
+    },
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "HAN",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "HACE",
+      "type": 0
+    },
+    {
+      "word": "FROTA",
+      "type": 0
+    },
+    {
+      "word": "METER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "DAH",
+      "type": 0
+    },
+    {
+      "word": "ERO",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "HAC",
+      "type": 0
+    },
+    {
+      "word": "HAD",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "ONO",
+      "type": 0
+    },
+    {
+      "word": "OSO",
+      "type": 0
+    },
+    {
+      "word": "OTA",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "TAC",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TOS",
+      "type": 0
+    },
+    {
+      "word": "ANOS",
+      "type": 0
+    },
+    {
+      "word": "CANA",
+      "type": 0
+    },
+    {
+      "word": "CATE",
+      "type": 0
+    },
+    {
+      "word": "CATO",
+      "type": 0
+    },
+    {
+      "word": "DANA",
+      "type": 0
+    },
+    {
+      "word": "DANO",
+      "type": 0
+    },
+    {
+      "word": "DONA",
+      "type": 0
+    },
+    {
+      "word": "DONO",
+      "type": 0
+    },
+    {
+      "word": "EROS",
+      "type": 0
+    },
+    {
+      "word": "ETON",
+      "type": 0
+    },
+    {
+      "word": "HANA",
+      "type": 0
+    },
+    {
+      "word": "MECA",
+      "type": 0
+    },
+    {
+      "word": "MERO",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "METE",
+      "type": 0
+    },
+    {
+      "word": "METO",
+      "type": 0
+    },
+    {
+      "word": "NACE",
+      "type": 0
+    },
+    {
+      "word": "NADO",
+      "type": 0
+    },
+    {
+      "word": "NATE",
+      "type": 0
+    },
+    {
+      "word": "NATO",
+      "type": 0
+    },
+    {
+      "word": "NOTA",
+      "type": 0
+    },
+    {
+      "word": "NOTE",
+      "type": 0
+    },
+    {
+      "word": "OTAN",
+      "type": 0
+    },
+    {
+      "word": "RETA",
+      "type": 0
+    },
+    {
+      "word": "RETO",
+      "type": 0
+    },
+    {
+      "word": "ROTA",
+      "type": 0
+    },
+    {
+      "word": "SODA",
+      "type": 0
+    },
+    {
+      "word": "SONA",
+      "type": 0
+    },
+    {
+      "word": "SONO",
+      "type": 0
+    },
+    {
+      "word": "SOTA",
+      "type": 0
+    },
+    {
+      "word": "TANA",
+      "type": 0
+    },
+    {
+      "word": "TANO",
+      "type": 0
+    },
+    {
+      "word": "TECH",
+      "type": 0
+    },
+    {
+      "word": "TEME",
+      "type": 0
+    },
+    {
+      "word": "TONO",
+      "type": 0
+    },
+    {
+      "word": "ANOTA",
+      "type": 0
+    },
+    {
+      "word": "ANOTE",
+      "type": 0
+    },
+    {
+      "word": "DANOS",
+      "type": 0
+    },
+    {
+      "word": "FROTE",
+      "type": 0
+    },
+    {
+      "word": "MEROS",
+      "type": 0
+    },
+    {
+      "word": "METAN",
+      "type": 0
+    },
+    {
+      "word": "RETOS",
+      "type": 0
+    },
+    {
+      "word": "TEMER",
+      "type": 0
+    },
+    {
+      "word": "TONOS",
+      "type": 0
+    },
+    {
+      "word": "CANOSO",
+      "type": 0
+    },
+    {
+      "word": "DONATO",
+      "type": 0
+    },
+    {
+      "word": "METANO",
+      "type": 0
+    },
+    {
+      "word": "SONADO",
+      "type": 0
+    },
+    {
+      "word": "SORETE",
+      "type": 0
+    },
+    {
+      "word": "SOTANA",
+      "type": 0
+    },
+    {
+      "word": "SOTANO",
+      "type": 0
+    },
+    {
+      "word": "ACETONA",
+      "type": 0
+    },
+    {
+      "word": "METEROS",
+      "type": 0
+    },
+    {
+      "word": "TEMEROSO",
+      "type": 0
+    }
+  ],
+  "letters": "HHAD,CANO,ETOS,MERF",
+  "obstacles": []
 }

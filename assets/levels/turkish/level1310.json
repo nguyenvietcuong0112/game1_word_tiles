@@ -1,38 +1,111 @@
-﻿{
-    "id":  1310,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRAM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CÜMLE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-
-                    ],
-    "letters":  "AOLE,MGMÜ,ARZC",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1310,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "BİL",
+      "type": 0
+    },
+    {
+      "word": "CEM",
+      "type": 0
+    },
+    {
+      "word": "CHİ",
+      "type": 0
+    },
+    {
+      "word": "CSİ",
+      "type": 0
+    },
+    {
+      "word": "TİR",
+      "type": 0
+    },
+    {
+      "word": "NCİS",
+      "type": 0
+    },
+    {
+      "word": "ONCE",
+      "type": 0
+    },
+    {
+      "word": "RİTA",
+      "type": 0
+    },
+    {
+      "word": "STAR",
+      "type": 0
+    },
+    {
+      "word": "TARİH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "HİT",
+      "type": 0
+    },
+    {
+      "word": "NCİ",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "İCE",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "CEBİ",
+      "type": 0
+    },
+    {
+      "word": "İCHİ",
+      "type": 0
+    },
+    {
+      "word": "CİSCO",
+      "type": 0
+    },
+    {
+      "word": "TARİHLİ",
+      "type": 0
+    }
+  ],
+  "letters": "CONM,SİCE,TİHB,ARLİ",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

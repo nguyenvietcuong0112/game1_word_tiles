@@ -1,118 +1,207 @@
-﻿{
-    "id":  1105,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KİT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PES",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KESE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KURT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SERT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PERUK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÜRPERTİ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KESER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KİTRE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PERT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SURE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TİK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PERT,RSUİ,ÜEKK",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1105,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "NUN",
+      "type": 0
+    },
+    {
+      "word": "NİN",
+      "type": 0
+    },
+    {
+      "word": "ONU",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "ŞEY",
+      "type": 0
+    },
+    {
+      "word": "BUNU",
+      "type": 0
+    },
+    {
+      "word": "EDEN",
+      "type": 0
+    },
+    {
+      "word": "YENİ",
+      "type": 0
+    },
+    {
+      "word": "ŞUNU",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BON",
+      "type": 0
+    },
+    {
+      "word": "BUN",
+      "type": 0
+    },
+    {
+      "word": "BUT",
+      "type": 0
+    },
+    {
+      "word": "BUY",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "EBU",
+      "type": 0
+    },
+    {
+      "word": "ETE",
+      "type": 0
+    },
+    {
+      "word": "NED",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "NEY",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "UNU",
+      "type": 0
+    },
+    {
+      "word": "UYU",
+      "type": 0
+    },
+    {
+      "word": "YEN",
+      "type": 0
+    },
+    {
+      "word": "YUN",
+      "type": 0
+    },
+    {
+      "word": "YUT",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "ŞEN",
+      "type": 0
+    },
+    {
+      "word": "NEDE",
+      "type": 0
+    },
+    {
+      "word": "NOBU",
+      "type": 0
+    },
+    {
+      "word": "NİNE",
+      "type": 0
+    },
+    {
+      "word": "TENİ",
+      "type": 0
+    },
+    {
+      "word": "UNUT",
+      "type": 0
+    },
+    {
+      "word": "UYUN",
+      "type": 0
+    },
+    {
+      "word": "YUNE",
+      "type": 0
+    },
+    {
+      "word": "BEDEN",
+      "type": 0
+    },
+    {
+      "word": "BUTUN",
+      "type": 0
+    },
+    {
+      "word": "EDENİ",
+      "type": 0
+    },
+    {
+      "word": "ENİNE",
+      "type": 0
+    },
+    {
+      "word": "TENİN",
+      "type": 0
+    },
+    {
+      "word": "BEDENİ",
+      "type": 0
+    },
+    {
+      "word": "EDENİN",
+      "type": 0
+    },
+    {
+      "word": "UNUTUN",
+      "type": 0
+    },
+    {
+      "word": "BEDENİN",
+      "type": 0
+    },
+    {
+      "word": "BEDENİNE",
+      "type": 0
+    }
+  ],
+  "letters": "ONUŞ,BUYE,ETUN,DENİ",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

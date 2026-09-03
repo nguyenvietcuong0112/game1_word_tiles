@@ -1,101 +1,239 @@
-﻿{
-    "id":  2180,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HERD",
-                             "type":  2
-                         },
-                         {
-                             "word":  "HERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "READ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CREED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OTHER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORNEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORNER",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "COT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CREE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HEED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NERD",
-                            "type":  2
-                        },
-                        {
-                            "word":  "REED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "THEE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UEDAS,HEREN,TOCOR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2180,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIM",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "HIM",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "RUN",
+      "type": 0
+    },
+    {
+      "word": "HARD",
+      "type": 0
+    },
+    {
+      "word": "HIRE",
+      "type": 0
+    },
+    {
+      "word": "THAT",
+      "type": 0
+    },
+    {
+      "word": "TREE",
+      "type": 0
+    },
+    {
+      "word": "TRIM",
+      "type": 0
+    },
+    {
+      "word": "THIRD",
+      "type": 0
+    },
+    {
+      "word": "TRIBUNE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIT",
+      "type": 0
+    },
+    {
+      "word": "BUN",
+      "type": 0
+    },
+    {
+      "word": "BUR",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "MIB",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "NUB",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "RIB",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "RUB",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "VEE",
+      "type": 0
+    },
+    {
+      "word": "DEER",
+      "type": 0
+    },
+    {
+      "word": "DRAT",
+      "type": 0
+    },
+    {
+      "word": "DREE",
+      "type": 0
+    },
+    {
+      "word": "EMIR",
+      "type": 0
+    },
+    {
+      "word": "HARE",
+      "type": 0
+    },
+    {
+      "word": "IRED",
+      "type": 0
+    },
+    {
+      "word": "MERE",
+      "type": 0
+    },
+    {
+      "word": "MIRE",
+      "type": 0
+    },
+    {
+      "word": "REED",
+      "type": 0
+    },
+    {
+      "word": "RIME",
+      "type": 0
+    },
+    {
+      "word": "RUNE",
+      "type": 0
+    },
+    {
+      "word": "TARE",
+      "type": 0
+    },
+    {
+      "word": "THIR",
+      "type": 0
+    },
+    {
+      "word": "VEER",
+      "type": 0
+    },
+    {
+      "word": "HAREM",
+      "type": 0
+    },
+    {
+      "word": "HIRER",
+      "type": 0
+    },
+    {
+      "word": "MERDE",
+      "type": 0
+    },
+    {
+      "word": "MIRED",
+      "type": 0
+    },
+    {
+      "word": "RIMER",
+      "type": 0
+    },
+    {
+      "word": "HARDEN",
+      "type": 0
+    },
+    {
+      "word": "HARDER",
+      "type": 0
+    },
+    {
+      "word": "HATRED",
+      "type": 0
+    }
+  ],
+  "letters": "TIMIB,HATRU,IRDEN,MEREV",
+  "obstacles": []
 }

@@ -1,82 +1,99 @@
-﻿{
-    "id":  1530,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞAH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAŞERE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EREN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NERE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ŞER,ANE,HOB",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1530,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GAZ",
+      "type": 0
+    },
+    {
+      "word": "GÜZ",
+      "type": 0
+    },
+    {
+      "word": "JAE",
+      "type": 0
+    },
+    {
+      "word": "JAY",
+      "type": 0
+    },
+    {
+      "word": "SAG",
+      "type": 0
+    },
+    {
+      "word": "ALAY",
+      "type": 0
+    },
+    {
+      "word": "ASLA",
+      "type": 0
+    },
+    {
+      "word": "ASYA",
+      "type": 0
+    },
+    {
+      "word": "CLAY",
+      "type": 0
+    },
+    {
+      "word": "YÜCE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "CLA",
+      "type": 0
+    },
+    {
+      "word": "LAY",
+      "type": 0
+    },
+    {
+      "word": "ÜYE",
+      "type": 0
+    },
+    {
+      "word": "AJAY",
+      "type": 0
+    },
+    {
+      "word": "ALSA",
+      "type": 0
+    },
+    {
+      "word": "ECZA",
+      "type": 0
+    },
+    {
+      "word": "YALA",
+      "type": 0
+    }
+  ],
+  "letters": "YÜAG,ECZÜ,ALSA,JAYG",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

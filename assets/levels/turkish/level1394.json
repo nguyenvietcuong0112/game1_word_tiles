@@ -1,71 +1,219 @@
-﻿{
-    "id":  1394,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ABLA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DUBA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MALİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUBLÖR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "İMAL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "İBÖR,MALİ,DUBA",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1394,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "BİN",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "SİR",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "YAT",
+      "type": 0
+    },
+    {
+      "word": "YER",
+      "type": 0
+    },
+    {
+      "word": "DİNİ",
+      "type": 0
+    },
+    {
+      "word": "ODAMA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "BOT",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "DİB",
+      "type": 0
+    },
+    {
+      "word": "DİN",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MAY",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "REY",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAY",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "YAD",
+      "type": 0
+    },
+    {
+      "word": "YEM",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "İNİ",
+      "type": 0
+    },
+    {
+      "word": "BOTA",
+      "type": 0
+    },
+    {
+      "word": "BİNİ",
+      "type": 0
+    },
+    {
+      "word": "DAMA",
+      "type": 0
+    },
+    {
+      "word": "DAME",
+      "type": 0
+    },
+    {
+      "word": "DATA",
+      "type": 0
+    },
+    {
+      "word": "DAYS",
+      "type": 0
+    },
+    {
+      "word": "MADS",
+      "type": 0
+    },
+    {
+      "word": "MATA",
+      "type": 0
+    },
+    {
+      "word": "MAYS",
+      "type": 0
+    },
+    {
+      "word": "ODAM",
+      "type": 0
+    },
+    {
+      "word": "ODİN",
+      "type": 0
+    },
+    {
+      "word": "TAMA",
+      "type": 0
+    },
+    {
+      "word": "YAMA",
+      "type": 0
+    },
+    {
+      "word": "İDAM",
+      "type": 0
+    },
+    {
+      "word": "ADİNİ",
+      "type": 0
+    },
+    {
+      "word": "DAMAT",
+      "type": 0
+    },
+    {
+      "word": "MAYER",
+      "type": 0
+    },
+    {
+      "word": "MERRY",
+      "type": 0
+    },
+    {
+      "word": "TOBİN",
+      "type": 0
+    },
+    {
+      "word": "TODAY",
+      "type": 0
+    },
+    {
+      "word": "İDAMA",
+      "type": 0
+    },
+    {
+      "word": "YAMATO",
+      "type": 0
+    }
+  ],
+  "letters": "AMER,TAYR,ODSİ,BİNİ",
+  "obstacles": []
 }

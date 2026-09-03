@@ -1,69 +1,207 @@
-﻿{
-    "id":  690,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AVÔ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRÊS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VILA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VALIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTIMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FESTIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FESTIVAL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ESTIVAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IAÔ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RÊS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ÊRMAL,STIVI,EFGÔA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 690,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "SEM",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "ABRE",
+      "type": 0
+    },
+    {
+      "word": "EAST",
+      "type": 0
+    },
+    {
+      "word": "ESTE",
+      "type": 0
+    },
+    {
+      "word": "TIRO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BAE",
+      "type": 0
+    },
+    {
+      "word": "BRE",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "ESE",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "IRO",
+      "type": 0
+    },
+    {
+      "word": "IRS",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "MEE",
+      "type": 0
+    },
+    {
+      "word": "MES",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "ORI",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TSA",
+      "type": 0
+    },
+    {
+      "word": "BREA",
+      "type": 0
+    },
+    {
+      "word": "BREE",
+      "type": 0
+    },
+    {
+      "word": "BRET",
+      "type": 0
+    },
+    {
+      "word": "ESME",
+      "type": 0
+    },
+    {
+      "word": "ESMO",
+      "type": 0
+    },
+    {
+      "word": "MORI",
+      "type": 0
+    },
+    {
+      "word": "ROME",
+      "type": 0
+    },
+    {
+      "word": "SEEM",
+      "type": 0
+    },
+    {
+      "word": "ASTER",
+      "type": 0
+    },
+    {
+      "word": "BASTE",
+      "type": 0
+    },
+    {
+      "word": "ESTER",
+      "type": 0
+    },
+    {
+      "word": "MORSE",
+      "type": 0
+    },
+    {
+      "word": "SABRE",
+      "type": 0
+    },
+    {
+      "word": "TERES",
+      "type": 0
+    },
+    {
+      "word": "RETIRO",
+      "type": 0
+    },
+    {
+      "word": "SABRES",
+      "type": 0
+    }
+  ],
+  "letters": "TIRO,STSM,AEEE,BRES",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

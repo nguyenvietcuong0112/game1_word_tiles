@@ -1,81 +1,263 @@
-﻿{
-    "id":  1034,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "PIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LINO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NIÑO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PINO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PONI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TILA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TINO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VETA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VINO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALIÑO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VITAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATINO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PON",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ALIÑ,TINO,EVIP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1034,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "AMOR",
+      "type": 0
+    },
+    {
+      "word": "EAST",
+      "type": 0
+    },
+    {
+      "word": "MANO",
+      "type": 0
+    },
+    {
+      "word": "RARO",
+      "type": 0
+    },
+    {
+      "word": "TOMA",
+      "type": 0
+    },
+    {
+      "word": "TOMÉ",
+      "type": 0
+    },
+    {
+      "word": "BROMA",
+      "type": 0
+    },
+    {
+      "word": "TOMAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMÉ",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "BAM",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BEA",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "STO",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TSA",
+      "type": 0
+    },
+    {
+      "word": "AMÉN",
+      "type": 0
+    },
+    {
+      "word": "ARON",
+      "type": 0
+    },
+    {
+      "word": "ASMA",
+      "type": 0
+    },
+    {
+      "word": "BANO",
+      "type": 0
+    },
+    {
+      "word": "BRAM",
+      "type": 0
+    },
+    {
+      "word": "BRAN",
+      "type": 0
+    },
+    {
+      "word": "MANA",
+      "type": 0
+    },
+    {
+      "word": "MONA",
+      "type": 0
+    },
+    {
+      "word": "MORA",
+      "type": 0
+    },
+    {
+      "word": "NORA",
+      "type": 0
+    },
+    {
+      "word": "OMAR",
+      "type": 0
+    },
+    {
+      "word": "ORAR",
+      "type": 0
+    },
+    {
+      "word": "RAMO",
+      "type": 0
+    },
+    {
+      "word": "RANA",
+      "type": 0
+    },
+    {
+      "word": "ROMA",
+      "type": 0
+    },
+    {
+      "word": "TORA",
+      "type": 0
+    },
+    {
+      "word": "AROMA",
+      "type": 0
+    },
+    {
+      "word": "ASTOR",
+      "type": 0
+    },
+    {
+      "word": "BEAST",
+      "type": 0
+    },
+    {
+      "word": "MANOR",
+      "type": 0
+    },
+    {
+      "word": "MORAN",
+      "type": 0
+    },
+    {
+      "word": "ROMAN",
+      "type": 0
+    },
+    {
+      "word": "TOMAN",
+      "type": 0
+    },
+    {
+      "word": "ÉBANO",
+      "type": 0
+    },
+    {
+      "word": "ROMANA",
+      "type": 0
+    },
+    {
+      "word": "ROMANO",
+      "type": 0
+    },
+    {
+      "word": "TOMARON",
+      "type": 0
+    }
+  ],
+  "letters": "TORB,SMAR,AÉNO,EBAM",
+  "obstacles": []
 }

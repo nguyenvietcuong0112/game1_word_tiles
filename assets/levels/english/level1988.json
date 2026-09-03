@@ -1,131 +1,159 @@
-﻿{
-    "id":  1988,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OWE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAISE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARSE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "IRAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LIARS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MARS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OWES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SIAM",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "ESIL,WRAN,OIMY",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1988,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "HAS",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "LIB",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "BILL",
+      "type": 0
+    },
+    {
+      "word": "FORM",
+      "type": 0
+    },
+    {
+      "word": "ROCK",
+      "type": 0
+    },
+    {
+      "word": "SAME",
+      "type": 0
+    },
+    {
+      "word": "BILLING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "FOE",
+      "type": 0
+    },
+    {
+      "word": "HAM",
+      "type": 0
+    },
+    {
+      "word": "HEM",
+      "type": 0
+    },
+    {
+      "word": "ICH",
+      "type": 0
+    },
+    {
+      "word": "ICK",
+      "type": 0
+    },
+    {
+      "word": "ILK",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "AHEM",
+      "type": 0
+    },
+    {
+      "word": "BILK",
+      "type": 0
+    },
+    {
+      "word": "CHAM",
+      "type": 0
+    },
+    {
+      "word": "CORK",
+      "type": 0
+    },
+    {
+      "word": "CORM",
+      "type": 0
+    },
+    {
+      "word": "FOCI",
+      "type": 0
+    },
+    {
+      "word": "FORK",
+      "type": 0
+    },
+    {
+      "word": "HAME",
+      "type": 0
+    },
+    {
+      "word": "LIBS",
+      "type": 0
+    },
+    {
+      "word": "LICH",
+      "type": 0
+    },
+    {
+      "word": "LICK",
+      "type": 0
+    },
+    {
+      "word": "LING",
+      "type": 0
+    },
+    {
+      "word": "NILL",
+      "type": 0
+    },
+    {
+      "word": "LINGS",
+      "type": 0
+    },
+    {
+      "word": "BILLINGS",
+      "type": 0
+    }
+  ],
+  "letters": "MMASG,AEHBN,FOCII,MRKLL",
+  "obstacles": []
 }

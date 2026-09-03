@@ -1,81 +1,199 @@
-﻿{
-    "id":  2388,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEV",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAV",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EVRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VADE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VEDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEVRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CEVHER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MÜCEVHER",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ADEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CEMRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DEMRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ÜMRE,CEVH,ODAL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2388,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AŞK",
+      "type": 0
+    },
+    {
+      "word": "GUK",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "KIZ",
+      "type": 0
+    },
+    {
+      "word": "KASA",
+      "type": 0
+    },
+    {
+      "word": "KAZA",
+      "type": 0
+    },
+    {
+      "word": "KIZA",
+      "type": 0
+    },
+    {
+      "word": "KIZI",
+      "type": 0
+    },
+    {
+      "word": "SAAT",
+      "type": 0
+    },
+    {
+      "word": "KIZIM",
+      "type": 0
+    },
+    {
+      "word": "TAKIM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "AZA",
+      "type": 0
+    },
+    {
+      "word": "AZI",
+      "type": 0
+    },
+    {
+      "word": "IMI",
+      "type": 0
+    },
+    {
+      "word": "KAS",
+      "type": 0
+    },
+    {
+      "word": "KAZ",
+      "type": 0
+    },
+    {
+      "word": "MIZ",
+      "type": 0
+    },
+    {
+      "word": "TAA",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "ZAK",
+      "type": 0
+    },
+    {
+      "word": "AAAA",
+      "type": 0
+    },
+    {
+      "word": "AKIM",
+      "type": 0
+    },
+    {
+      "word": "ATAK",
+      "type": 0
+    },
+    {
+      "word": "AZAT",
+      "type": 0
+    },
+    {
+      "word": "AŞKA",
+      "type": 0
+    },
+    {
+      "word": "IMIZ",
+      "type": 0
+    },
+    {
+      "word": "KAST",
+      "type": 0
+    },
+    {
+      "word": "KATA",
+      "type": 0
+    },
+    {
+      "word": "KAZI",
+      "type": 0
+    },
+    {
+      "word": "SAKA",
+      "type": 0
+    },
+    {
+      "word": "TAKI",
+      "type": 0
+    },
+    {
+      "word": "TAZI",
+      "type": 0
+    },
+    {
+      "word": "AKIMI",
+      "type": 0
+    },
+    {
+      "word": "AŞKTA",
+      "type": 0
+    },
+    {
+      "word": "KAZAK",
+      "type": 0
+    },
+    {
+      "word": "KAZIK",
+      "type": 0
+    },
+    {
+      "word": "KIZAK",
+      "type": 0
+    },
+    {
+      "word": "SAKIZ",
+      "type": 0
+    },
+    {
+      "word": "SAKIZI",
+      "type": 0
+    },
+    {
+      "word": "TAKIMI",
+      "type": 0
+    },
+    {
+      "word": "TAKIMIZ",
+      "type": 0
+    }
+  ],
+  "letters": "ŞKTSA,AAAAK,GTAZI,UKKIM",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

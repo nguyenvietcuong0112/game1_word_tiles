@@ -1,114 +1,183 @@
-﻿{
-    "id":  1895,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "NAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATEŞ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "İBRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İBRET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞERİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİBRİT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TİRAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TİRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TUŞ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ŞERİR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BRİR,İETA,KŞUN",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1895,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ISI",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "YLA",
+      "type": 0
+    },
+    {
+      "word": "AKLI",
+      "type": 0
+    },
+    {
+      "word": "ASLI",
+      "type": 0
+    },
+    {
+      "word": "KARA",
+      "type": 0
+    },
+    {
+      "word": "KARL",
+      "type": 0
+    },
+    {
+      "word": "KASA",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "ŞAPKA",
+      "type": 0
+    },
+    {
+      "word": "AKLIMA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "KAS",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "SAR",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "ŞAL",
+      "type": 0
+    },
+    {
+      "word": "ŞAM",
+      "type": 0
+    },
+    {
+      "word": "AKLA",
+      "type": 0
+    },
+    {
+      "word": "ALIM",
+      "type": 0
+    },
+    {
+      "word": "ASAR",
+      "type": 0
+    },
+    {
+      "word": "AYLA",
+      "type": 0
+    },
+    {
+      "word": "ISKA",
+      "type": 0
+    },
+    {
+      "word": "LAPA",
+      "type": 0
+    },
+    {
+      "word": "MALI",
+      "type": 0
+    },
+    {
+      "word": "PAŞA",
+      "type": 0
+    },
+    {
+      "word": "AKLIM",
+      "type": 0
+    },
+    {
+      "word": "KARLI",
+      "type": 0
+    },
+    {
+      "word": "KARMA",
+      "type": 0
+    },
+    {
+      "word": "KAYLA",
+      "type": 0
+    },
+    {
+      "word": "PAŞAM",
+      "type": 0
+    },
+    {
+      "word": "SARMA",
+      "type": 0
+    },
+    {
+      "word": "SARMAL",
+      "type": 0
+    },
+    {
+      "word": "YAKLAŞ",
+      "type": 0
+    },
+    {
+      "word": "KARMAŞA",
+      "type": 0
+    }
+  ],
+  "letters": "AISKA,SLILY,ARMAŞ,SAKPA",
+  "obstacles": []
 }

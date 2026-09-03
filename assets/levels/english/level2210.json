@@ -1,73 +1,167 @@
-﻿{
-    "id":  2210,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REVEAL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TERRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VEAL",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "RRAAL,EAOEV,TIERE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2210,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GUN",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "CREW",
+      "type": 0
+    },
+    {
+      "word": "GUNS",
+      "type": 0
+    },
+    {
+      "word": "SEEK",
+      "type": 0
+    },
+    {
+      "word": "SEEM",
+      "type": 0
+    },
+    {
+      "word": "SEEMS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "CEE",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "ERN",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "GIN",
+      "type": 0
+    },
+    {
+      "word": "MIG",
+      "type": 0
+    },
+    {
+      "word": "NIM",
+      "type": 0
+    },
+    {
+      "word": "UNS",
+      "type": 0
+    },
+    {
+      "word": "EMIC",
+      "type": 0
+    },
+    {
+      "word": "ERNS",
+      "type": 0
+    },
+    {
+      "word": "GENS",
+      "type": 0
+    },
+    {
+      "word": "GENU",
+      "type": 0
+    },
+    {
+      "word": "GINS",
+      "type": 0
+    },
+    {
+      "word": "MIGS",
+      "type": 0
+    },
+    {
+      "word": "NIMS",
+      "type": 0
+    },
+    {
+      "word": "REGS",
+      "type": 0
+    },
+    {
+      "word": "SKEE",
+      "type": 0
+    },
+    {
+      "word": "SNUG",
+      "type": 0
+    },
+    {
+      "word": "SCREW",
+      "type": 0
+    },
+    {
+      "word": "SEEKS",
+      "type": 0
+    },
+    {
+      "word": "SKEES",
+      "type": 0
+    },
+    {
+      "word": "REGIME",
+      "type": 0
+    },
+    {
+      "word": "UNSCREW",
+      "type": 0
+    }
+  ],
+  "letters": "KSNRE,EMICW,ECGSG,SRENU",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,105 +1,115 @@
-﻿{
-    "id":  2428,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İKİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ETİK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ETKİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FANİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MÜLK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YETİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ETKİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YETKİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YETKİN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MÜLKİYET",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "İFA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MÜLKİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MÜLKİYE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NAFİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEKFİN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TİK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YETİK",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "KİTKİ,LYEİN,ÜMKFA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2428,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "BEY",
+      "type": 0
+    },
+    {
+      "word": "BEZ",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "KIL",
+      "type": 0
+    },
+    {
+      "word": "KYU",
+      "type": 0
+    },
+    {
+      "word": "SİN",
+      "type": 0
+    },
+    {
+      "word": "YIL",
+      "type": 0
+    },
+    {
+      "word": "ÇİN",
+      "type": 0
+    },
+    {
+      "word": "KIYI",
+      "type": 0
+    },
+    {
+      "word": "YILDIZ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "LIK",
+      "type": 0
+    },
+    {
+      "word": "NIZ",
+      "type": 0
+    },
+    {
+      "word": "YIK",
+      "type": 0
+    },
+    {
+      "word": "ZEB",
+      "type": 0
+    },
+    {
+      "word": "ZED",
+      "type": 0
+    },
+    {
+      "word": "ÇAN",
+      "type": 0
+    },
+    {
+      "word": "ÇANI",
+      "type": 0
+    },
+    {
+      "word": "KILDI",
+      "type": 0
+    },
+    {
+      "word": "YILDI",
+      "type": 0
+    }
+  ],
+  "letters": "ANIZU,ÇTDEY,İNLBK,SKIYI",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

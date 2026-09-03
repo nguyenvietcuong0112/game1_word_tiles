@@ -1,77 +1,211 @@
-﻿{
-    "id":  2240,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TÜY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REİS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SİTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TESİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TURİST",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ESTER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İSTER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SETİR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "URRMA,TİEAM,ESTÜY",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2240,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "HAK",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KİM",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "KARA",
+      "type": 0
+    },
+    {
+      "word": "KREP",
+      "type": 0
+    },
+    {
+      "word": "ARAMA",
+      "type": 0
+    },
+    {
+      "word": "DOBRA",
+      "type": 0
+    },
+    {
+      "word": "DRAMA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "HAM",
+      "type": 0
+    },
+    {
+      "word": "HİM",
+      "type": 0
+    },
+    {
+      "word": "KAS",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SAR",
+      "type": 0
+    },
+    {
+      "word": "İHA",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "AKAR",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "BRAM",
+      "type": 0
+    },
+    {
+      "word": "DRAM",
+      "type": 0
+    },
+    {
+      "word": "KAKA",
+      "type": 0
+    },
+    {
+      "word": "KAMA",
+      "type": 0
+    },
+    {
+      "word": "MAHİ",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "SAKA",
+      "type": 0
+    },
+    {
+      "word": "SAMİ",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "AMARA",
+      "type": 0
+    },
+    {
+      "word": "KİMDE",
+      "type": 0
+    },
+    {
+      "word": "MAKAS",
+      "type": 0
+    },
+    {
+      "word": "RAKAM",
+      "type": 0
+    },
+    {
+      "word": "RAMAK",
+      "type": 0
+    },
+    {
+      "word": "SAKAR",
+      "type": 0
+    },
+    {
+      "word": "ARAMAK",
+      "type": 0
+    },
+    {
+      "word": "KASPER",
+      "type": 0
+    },
+    {
+      "word": "MAKARA",
+      "type": 0
+    }
+  ],
+  "letters": "ACPER,OBSDK,DRAMİ,KAKAH",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

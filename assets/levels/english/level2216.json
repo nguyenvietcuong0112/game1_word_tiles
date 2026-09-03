@@ -1,105 +1,243 @@
-﻿{
-    "id":  2216,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OWE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DULL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOUD",
-                             "type":  2
-                         },
-                         {
-                             "word":  "NEED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YELL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELUDE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "YELLOW",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DELL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EWE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EYED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OUD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WEE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WEED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NEWEW,OEDUO,NYELL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2216,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "FUN",
+      "type": 0
+    },
+    {
+      "word": "GET",
+      "type": 0
+    },
+    {
+      "word": "HOP",
+      "type": 0
+    },
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SUN",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "GETS",
+      "type": 0
+    },
+    {
+      "word": "LESS",
+      "type": 0
+    },
+    {
+      "word": "SNAKE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "EKE",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "FEN",
+      "type": 0
+    },
+    {
+      "word": "HAE",
+      "type": 0
+    },
+    {
+      "word": "KAE",
+      "type": 0
+    },
+    {
+      "word": "KEA",
+      "type": 0
+    },
+    {
+      "word": "KEF",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LEK",
+      "type": 0
+    },
+    {
+      "word": "NAE",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "NUS",
+      "type": 0
+    },
+    {
+      "word": "POH",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SKA",
+      "type": 0
+    },
+    {
+      "word": "TEG",
+      "type": 0
+    },
+    {
+      "word": "ANTE",
+      "type": 0
+    },
+    {
+      "word": "ANTS",
+      "type": 0
+    },
+    {
+      "word": "ARSE",
+      "type": 0
+    },
+    {
+      "word": "EARS",
+      "type": 0
+    },
+    {
+      "word": "EKES",
+      "type": 0
+    },
+    {
+      "word": "ETNA",
+      "type": 0
+    },
+    {
+      "word": "HAES",
+      "type": 0
+    },
+    {
+      "word": "KANE",
+      "type": 0
+    },
+    {
+      "word": "KELP",
+      "type": 0
+    },
+    {
+      "word": "KENT",
+      "type": 0
+    },
+    {
+      "word": "LEAR",
+      "type": 0
+    },
+    {
+      "word": "LEKE",
+      "type": 0
+    },
+    {
+      "word": "LEKS",
+      "type": 0
+    },
+    {
+      "word": "LENT",
+      "type": 0
+    },
+    {
+      "word": "NANS",
+      "type": 0
+    },
+    {
+      "word": "PLEA",
+      "type": 0
+    },
+    {
+      "word": "SEAR",
+      "type": 0
+    },
+    {
+      "word": "TEAK",
+      "type": 0
+    },
+    {
+      "word": "ANELE",
+      "type": 0
+    },
+    {
+      "word": "LEARS",
+      "type": 0
+    },
+    {
+      "word": "PLENA",
+      "type": 0
+    },
+    {
+      "word": "SKELP",
+      "type": 0
+    },
+    {
+      "word": "STEAK",
+      "type": 0
+    },
+    {
+      "word": "TEAKS",
+      "type": 0
+    },
+    {
+      "word": "ANELES",
+      "type": 0
+    },
+    {
+      "word": "SNAKES",
+      "type": 0
+    },
+    {
+      "word": "STEAKS",
+      "type": 0
+    }
+  ],
+  "letters": "OPFUS,HLENT,AEKAE,RSSNG",
+  "obstacles": []
 }

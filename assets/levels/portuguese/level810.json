@@ -1,85 +1,351 @@
-﻿{
-    "id":  810,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DUO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUNA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MENU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUDE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "URRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DURAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORRAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORTURA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORTURAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MENAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OURA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OURAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "URU",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MENAR,MDURU,ATORT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 810,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "HAN",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "ALMA",
+      "type": 0
+    },
+    {
+      "word": "ANEL",
+      "type": 0
+    },
+    {
+      "word": "LADO",
+      "type": 0
+    },
+    {
+      "word": "LIGA",
+      "type": 0
+    },
+    {
+      "word": "MARIA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "AGI",
+      "type": 0
+    },
+    {
+      "word": "AHM",
+      "type": 0
+    },
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "DAG",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DOA",
+      "type": 0
+    },
+    {
+      "word": "ELI",
+      "type": 0
+    },
+    {
+      "word": "ELO",
+      "type": 0
+    },
+    {
+      "word": "ENA",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GIL",
+      "type": 0
+    },
+    {
+      "word": "HAI",
+      "type": 0
+    },
+    {
+      "word": "HON",
+      "type": 0
+    },
+    {
+      "word": "IAN",
+      "type": 0
+    },
+    {
+      "word": "IGA",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "LIL",
+      "type": 0
+    },
+    {
+      "word": "LOL",
+      "type": 0
+    },
+    {
+      "word": "LON",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NAI",
+      "type": 0
+    },
+    {
+      "word": "NEL",
+      "type": 0
+    },
+    {
+      "word": "NOH",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OLI",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "RHO",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "ARIA",
+      "type": 0
+    },
+    {
+      "word": "DALI",
+      "type": 0
+    },
+    {
+      "word": "DOAM",
+      "type": 0
+    },
+    {
+      "word": "DOAR",
+      "type": 0
+    },
+    {
+      "word": "ELON",
+      "type": 0
+    },
+    {
+      "word": "GADO",
+      "type": 0
+    },
+    {
+      "word": "GALO",
+      "type": 0
+    },
+    {
+      "word": "GILA",
+      "type": 0
+    },
+    {
+      "word": "HAIR",
+      "type": 0
+    },
+    {
+      "word": "HANE",
+      "type": 0
+    },
+    {
+      "word": "HOLA",
+      "type": 0
+    },
+    {
+      "word": "HOLE",
+      "type": 0
+    },
+    {
+      "word": "HOLI",
+      "type": 0
+    },
+    {
+      "word": "HOLM",
+      "type": 0
+    },
+    {
+      "word": "IRAM",
+      "type": 0
+    },
+    {
+      "word": "LENA",
+      "type": 0
+    },
+    {
+      "word": "LENO",
+      "type": 0
+    },
+    {
+      "word": "LILA",
+      "type": 0
+    },
+    {
+      "word": "LILO",
+      "type": 0
+    },
+    {
+      "word": "LOLA",
+      "type": 0
+    },
+    {
+      "word": "LOLI",
+      "type": 0
+    },
+    {
+      "word": "LONA",
+      "type": 0
+    },
+    {
+      "word": "LONE",
+      "type": 0
+    },
+    {
+      "word": "MARI",
+      "type": 0
+    },
+    {
+      "word": "NOLA",
+      "type": 0
+    },
+    {
+      "word": "ALOHA",
+      "type": 0
+    },
+    {
+      "word": "ALONE",
+      "type": 0
+    },
+    {
+      "word": "ILONA",
+      "type": 0
+    },
+    {
+      "word": "LOHAN",
+      "type": 0
+    },
+    {
+      "word": "ARIANE",
+      "type": 0
+    },
+    {
+      "word": "ARIANO",
+      "type": 0
+    },
+    {
+      "word": "LIGADO",
+      "type": 0
+    },
+    {
+      "word": "MARIAH",
+      "type": 0
+    },
+    {
+      "word": "MARIAN",
+      "type": 0
+    },
+    {
+      "word": "MARIANO",
+      "type": 0
+    }
+  ],
+  "letters": "ODAG,AMLI,RHOL,IANE",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

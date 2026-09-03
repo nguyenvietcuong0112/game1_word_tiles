@@ -1,101 +1,223 @@
-﻿{
-    "id":  2213,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLOG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOOT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MOTTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOMATO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BLOC",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ECO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOAM",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOTT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "OTTO",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TOOT",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "BLTOY,GOAOT,ECMOT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2213,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GOT",
+      "type": 0
+    },
+    {
+      "word": "HIT",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LAW",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "ALMA",
+      "type": 0
+    },
+    {
+      "word": "LAST",
+      "type": 0
+    },
+    {
+      "word": "THAT",
+      "type": 0
+    },
+    {
+      "word": "TOGGLE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAL",
+      "type": 0
+    },
+    {
+      "word": "AAS",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "HAW",
+      "type": 0
+    },
+    {
+      "word": "LAT",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "SOT",
+      "type": 0
+    },
+    {
+      "word": "TAW",
+      "type": 0
+    },
+    {
+      "word": "TET",
+      "type": 0
+    },
+    {
+      "word": "TOG",
+      "type": 0
+    },
+    {
+      "word": "WAT",
+      "type": 0
+    },
+    {
+      "word": "WIT",
+      "type": 0
+    },
+    {
+      "word": "ALAS",
+      "type": 0
+    },
+    {
+      "word": "ALTS",
+      "type": 0
+    },
+    {
+      "word": "GOSH",
+      "type": 0
+    },
+    {
+      "word": "HALM",
+      "type": 0
+    },
+    {
+      "word": "HALT",
+      "type": 0
+    },
+    {
+      "word": "HITS",
+      "type": 0
+    },
+    {
+      "word": "LETS",
+      "type": 0
+    },
+    {
+      "word": "SALT",
+      "type": 0
+    },
+    {
+      "word": "SHAT",
+      "type": 0
+    },
+    {
+      "word": "SHAW",
+      "type": 0
+    },
+    {
+      "word": "SOTH",
+      "type": 0
+    },
+    {
+      "word": "STET",
+      "type": 0
+    },
+    {
+      "word": "TALA",
+      "type": 0
+    },
+    {
+      "word": "TETS",
+      "type": 0
+    },
+    {
+      "word": "THAW",
+      "type": 0
+    },
+    {
+      "word": "TOSH",
+      "type": 0
+    },
+    {
+      "word": "TOST",
+      "type": 0
+    },
+    {
+      "word": "WATT",
+      "type": 0
+    },
+    {
+      "word": "WITS",
+      "type": 0
+    },
+    {
+      "word": "HALMA",
+      "type": 0
+    },
+    {
+      "word": "HALTS",
+      "type": 0
+    },
+    {
+      "word": "LATTE",
+      "type": 0
+    },
+    {
+      "word": "SHALT",
+      "type": 0
+    },
+    {
+      "word": "SHAWM",
+      "type": 0
+    },
+    {
+      "word": "TALAS",
+      "type": 0
+    },
+    {
+      "word": "WATTS",
+      "type": 0
+    }
+  ],
+  "letters": "GGLET,OTTTS,SHALA,TIWMA",
+  "obstacles": []
 }

@@ -1,65 +1,163 @@
-﻿{
-    "id":  920,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ELE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MENÚ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUELDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CEMENTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELEMENTO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "FIE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FUE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FUEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SUELE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "FIDOT,UELÚN,SCEME",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 920,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANN",
+      "type": 0
+    },
+    {
+      "word": "CIA",
+      "type": 0
+    },
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "IAN",
+      "type": 0
+    },
+    {
+      "word": "JAE",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "UDS",
+      "type": 0
+    },
+    {
+      "word": "ANNA",
+      "type": 0
+    },
+    {
+      "word": "SUBA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABC",
+      "type": 0
+    },
+    {
+      "word": "ABU",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "BAI",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BUS",
+      "type": 0
+    },
+    {
+      "word": "CSU",
+      "type": 0
+    },
+    {
+      "word": "ICE",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "INN",
+      "type": 0
+    },
+    {
+      "word": "JAI",
+      "type": 0
+    },
+    {
+      "word": "JUD",
+      "type": 0
+    },
+    {
+      "word": "NAI",
+      "type": 0
+    },
+    {
+      "word": "NIA",
+      "type": 0
+    },
+    {
+      "word": "NIC",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "SUB",
+      "type": 0
+    },
+    {
+      "word": "USC",
+      "type": 0
+    },
+    {
+      "word": "USS",
+      "type": 0
+    },
+    {
+      "word": "DANI",
+      "type": 0
+    },
+    {
+      "word": "JAAN",
+      "type": 0
+    },
+    {
+      "word": "NICE",
+      "type": 0
+    },
+    {
+      "word": "NAINA",
+      "type": 0
+    },
+    {
+      "word": "SUBAN",
+      "type": 0
+    }
+  ],
+  "letters": "DUJD,SEAA,SCIN,UBAN",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,121 +1,267 @@
-﻿{
-    "id":  2168,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCAM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SLATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACTUAL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LETS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MACS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "NET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STATS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAUT",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TESTA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NESTE,MTUAL,ACSTS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2168,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "JEW",
+      "type": 0
+    },
+    {
+      "word": "PIC",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "WAN",
+      "type": 0
+    },
+    {
+      "word": "ARMS",
+      "type": 0
+    },
+    {
+      "word": "COLE",
+      "type": 0
+    },
+    {
+      "word": "COPY",
+      "type": 0
+    },
+    {
+      "word": "POLE",
+      "type": 0
+    },
+    {
+      "word": "RELY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "AWE",
+      "type": 0
+    },
+    {
+      "word": "CIS",
+      "type": 0
+    },
+    {
+      "word": "COL",
+      "type": 0
+    },
+    {
+      "word": "COP",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "LIP",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "LOP",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "NAW",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "PIS",
+      "type": 0
+    },
+    {
+      "word": "POL",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SIC",
+      "type": 0
+    },
+    {
+      "word": "SIP",
+      "type": 0
+    },
+    {
+      "word": "ARSE",
+      "type": 0
+    },
+    {
+      "word": "COLY",
+      "type": 0
+    },
+    {
+      "word": "LOCI",
+      "type": 0
+    },
+    {
+      "word": "LYRE",
+      "type": 0
+    },
+    {
+      "word": "NANA",
+      "type": 0
+    },
+    {
+      "word": "NANS",
+      "type": 0
+    },
+    {
+      "word": "OLES",
+      "type": 0
+    },
+    {
+      "word": "PILE",
+      "type": 0
+    },
+    {
+      "word": "PILY",
+      "type": 0
+    },
+    {
+      "word": "POLY",
+      "type": 0
+    },
+    {
+      "word": "PYRE",
+      "type": 0
+    },
+    {
+      "word": "REMS",
+      "type": 0
+    },
+    {
+      "word": "SERS",
+      "type": 0
+    },
+    {
+      "word": "SILO",
+      "type": 0
+    },
+    {
+      "word": "SNAW",
+      "type": 0
+    },
+    {
+      "word": "WANS",
+      "type": 0
+    },
+    {
+      "word": "YLEM",
+      "type": 0
+    },
+    {
+      "word": "ARMER",
+      "type": 0
+    },
+    {
+      "word": "COLES",
+      "type": 0
+    },
+    {
+      "word": "LYRES",
+      "type": 0
+    },
+    {
+      "word": "MELIC",
+      "type": 0
+    },
+    {
+      "word": "MESIC",
+      "type": 0
+    },
+    {
+      "word": "PILES",
+      "type": 0
+    },
+    {
+      "word": "POLER",
+      "type": 0
+    },
+    {
+      "word": "POLES",
+      "type": 0
+    },
+    {
+      "word": "POLIS",
+      "type": 0
+    },
+    {
+      "word": "PYRES",
+      "type": 0
+    },
+    {
+      "word": "RELIC",
+      "type": 0
+    },
+    {
+      "word": "YLEMS",
+      "type": 0
+    },
+    {
+      "word": "ARMERS",
+      "type": 0
+    },
+    {
+      "word": "POLERS",
+      "type": 0
+    }
+  ],
+  "letters": "SMRAN,RESNA,YLIPW,POCJE",
+  "obstacles": []
 }

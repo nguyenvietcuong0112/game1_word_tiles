@@ -1,62 +1,235 @@
-﻿{
-    "id":  1192,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OBRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODOR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RAMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RODO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOBRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMÊNDOA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-
-                    ],
-    "letters":  "AMAR,MROB,ÊNDO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1192,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "FUI",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "TIM",
+      "type": 0
+    },
+    {
+      "word": "TUA",
+      "type": 0
+    },
+    {
+      "word": "TUI",
+      "type": 0
+    },
+    {
+      "word": "FORA",
+      "type": 0
+    },
+    {
+      "word": "LAGO",
+      "type": 0
+    },
+    {
+      "word": "TUAS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGI",
+      "type": 0
+    },
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "ALF",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "FOG",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "GIM",
+      "type": 0
+    },
+    {
+      "word": "GOT",
+      "type": 0
+    },
+    {
+      "word": "IGA",
+      "type": 0
+    },
+    {
+      "word": "IRO",
+      "type": 0
+    },
+    {
+      "word": "ITO",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "MIG",
+      "type": 0
+    },
+    {
+      "word": "MIT",
+      "type": 0
+    },
+    {
+      "word": "ORI",
+      "type": 0
+    },
+    {
+      "word": "ROG",
+      "type": 0
+    },
+    {
+      "word": "STU",
+      "type": 0
+    },
+    {
+      "word": "TIG",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TSA",
+      "type": 0
+    },
+    {
+      "word": "TUM",
+      "type": 0
+    },
+    {
+      "word": "UMI",
+      "type": 0
+    },
+    {
+      "word": "UTI",
+      "type": 0
+    },
+    {
+      "word": "AGIU",
+      "type": 0
+    },
+    {
+      "word": "ARIF",
+      "type": 0
+    },
+    {
+      "word": "AUTO",
+      "type": 0
+    },
+    {
+      "word": "FIRA",
+      "type": 0
+    },
+    {
+      "word": "FLAG",
+      "type": 0
+    },
+    {
+      "word": "GARO",
+      "type": 0
+    },
+    {
+      "word": "IGOR",
+      "type": 0
+    },
+    {
+      "word": "MITO",
+      "type": 0
+    },
+    {
+      "word": "MUTO",
+      "type": 0
+    },
+    {
+      "word": "ORAL",
+      "type": 0
+    },
+    {
+      "word": "RALF",
+      "type": 0
+    },
+    {
+      "word": "STIG",
+      "type": 0
+    },
+    {
+      "word": "TOGA",
+      "type": 0
+    },
+    {
+      "word": "TORA",
+      "type": 0
+    },
+    {
+      "word": "TORI",
+      "type": 0
+    },
+    {
+      "word": "AGITO",
+      "type": 0
+    },
+    {
+      "word": "ASTOR",
+      "type": 0
+    },
+    {
+      "word": "AUTOR",
+      "type": 0
+    },
+    {
+      "word": "AUTORA",
+      "type": 0
+    }
+  ],
+  "letters": "ASFI,UTOR,MIGA,TUFL",
+  "obstacles": []
 }

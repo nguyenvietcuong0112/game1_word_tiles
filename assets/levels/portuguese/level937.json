@@ -1,65 +1,259 @@
-﻿{
-    "id":  937,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ILHA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RALI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIXA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAXI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALHA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRINTA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ITA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LITAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TILAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TRALHA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "XIRA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ILHA,TAXT,TRIN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 937,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "CARA",
+      "type": 0
+    },
+    {
+      "word": "CARO",
+      "type": 0
+    },
+    {
+      "word": "COCA",
+      "type": 0
+    },
+    {
+      "word": "CARAS",
+      "type": 0
+    },
+    {
+      "word": "PARIS",
+      "type": 0
+    },
+    {
+      "word": "RISCO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "CSI",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "IRO",
+      "type": 0
+    },
+    {
+      "word": "ISO",
+      "type": 0
+    },
+    {
+      "word": "ISS",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ORI",
+      "type": 0
+    },
+    {
+      "word": "OSS",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RIC",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "SIS",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "SRA",
+      "type": 0
+    },
+    {
+      "word": "ARAS",
+      "type": 0
+    },
+    {
+      "word": "ARIS",
+      "type": 0
+    },
+    {
+      "word": "AROS",
+      "type": 0
+    },
+    {
+      "word": "CANO",
+      "type": 0
+    },
+    {
+      "word": "CARS",
+      "type": 0
+    },
+    {
+      "word": "CIRO",
+      "type": 0
+    },
+    {
+      "word": "ISCA",
+      "type": 0
+    },
+    {
+      "word": "ISCO",
+      "type": 0
+    },
+    {
+      "word": "ISSA",
+      "type": 0
+    },
+    {
+      "word": "NARA",
+      "type": 0
+    },
+    {
+      "word": "PARI",
+      "type": 0
+    },
+    {
+      "word": "PARO",
+      "type": 0
+    },
+    {
+      "word": "RICA",
+      "type": 0
+    },
+    {
+      "word": "RISO",
+      "type": 0
+    },
+    {
+      "word": "ROSS",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "SCAN",
+      "type": 0
+    },
+    {
+      "word": "SCAR",
+      "type": 0
+    },
+    {
+      "word": "SIRA",
+      "type": 0
+    },
+    {
+      "word": "SIRO",
+      "type": 0
+    },
+    {
+      "word": "SISO",
+      "type": 0
+    },
+    {
+      "word": "SORA",
+      "type": 0
+    },
+    {
+      "word": "ASSIS",
+      "type": 0
+    },
+    {
+      "word": "CAROS",
+      "type": 0
+    },
+    {
+      "word": "CISCO",
+      "type": 0
+    },
+    {
+      "word": "RISCA",
+      "type": 0
+    },
+    {
+      "word": "RISCAR",
+      "type": 0
+    },
+    {
+      "word": "CARISSA",
+      "type": 0
+    }
+  ],
+  "letters": "ORAP,SICC,SSCO,ARAN",
+  "obstacles": []
 }

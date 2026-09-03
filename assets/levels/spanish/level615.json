@@ -1,77 +1,287 @@
-﻿{
-    "id":  615,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LÍO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OTRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TONO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TONTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIESTRO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ESTRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOTRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORTO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OÍL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOJO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TON",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DONTO,IJOOÍ,ESTRL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 615,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "VER",
+      "type": 0
+    },
+    {
+      "word": "ALLI",
+      "type": 0
+    },
+    {
+      "word": "BILL",
+      "type": 0
+    },
+    {
+      "word": "CALOR",
+      "type": 0
+    },
+    {
+      "word": "LIBRE",
+      "type": 0
+    },
+    {
+      "word": "LLENA",
+      "type": 0
+    },
+    {
+      "word": "OLIVER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACA",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "CIL",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ELI",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ERO",
+      "type": 0
+    },
+    {
+      "word": "EVO",
+      "type": 0
+    },
+    {
+      "word": "ILA",
+      "type": 0
+    },
+    {
+      "word": "IVO",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "LIL",
+      "type": 0
+    },
+    {
+      "word": "LIV",
+      "type": 0
+    },
+    {
+      "word": "LLA",
+      "type": 0
+    },
+    {
+      "word": "NEL",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "OLI",
+      "type": 0
+    },
+    {
+      "word": "OVE",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "VIC",
+      "type": 0
+    },
+    {
+      "word": "VIL",
+      "type": 0
+    },
+    {
+      "word": "BREN",
+      "type": 0
+    },
+    {
+      "word": "CALE",
+      "type": 0
+    },
+    {
+      "word": "CALI",
+      "type": 0
+    },
+    {
+      "word": "CALL",
+      "type": 0
+    },
+    {
+      "word": "CANE",
+      "type": 0
+    },
+    {
+      "word": "ELLI",
+      "type": 0
+    },
+    {
+      "word": "EVIL",
+      "type": 0
+    },
+    {
+      "word": "LACA",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "LENA",
+      "type": 0
+    },
+    {
+      "word": "LILA",
+      "type": 0
+    },
+    {
+      "word": "LILL",
+      "type": 0
+    },
+    {
+      "word": "LIVE",
+      "type": 0
+    },
+    {
+      "word": "LORE",
+      "type": 0
+    },
+    {
+      "word": "LOVE",
+      "type": 0
+    },
+    {
+      "word": "NACI",
+      "type": 0
+    },
+    {
+      "word": "NELL",
+      "type": 0
+    },
+    {
+      "word": "OVER",
+      "type": 0
+    },
+    {
+      "word": "RENA",
+      "type": 0
+    },
+    {
+      "word": "VILA",
+      "type": 0
+    },
+    {
+      "word": "VILO",
+      "type": 0
+    },
+    {
+      "word": "ALIVE",
+      "type": 0
+    },
+    {
+      "word": "ALLIE",
+      "type": 0
+    },
+    {
+      "word": "ELLIE",
+      "type": 0
+    },
+    {
+      "word": "LILLI",
+      "type": 0
+    },
+    {
+      "word": "LOVER",
+      "type": 0
+    },
+    {
+      "word": "OLIVE",
+      "type": 0
+    },
+    {
+      "word": "RENAL",
+      "type": 0
+    },
+    {
+      "word": "CALLIE",
+      "type": 0
+    },
+    {
+      "word": "LILLIE",
+      "type": 0
+    },
+    {
+      "word": "NELLIE",
+      "type": 0
+    }
+  ],
+  "letters": "BREN,ILLA,EVIC,ROLA",
+  "obstacles": []
 }

@@ -1,85 +1,135 @@
-﻿{
-    "id":  960,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ESO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RES",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RITO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORSO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESPÍRITU",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "OSERO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEROS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SORO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SRI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TORSOR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "URO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "IEROS,PSOOR,ÍRITU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 960,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "OOH",
+      "type": 0
+    },
+    {
+      "word": "PEG",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "UDS",
+      "type": 0
+    },
+    {
+      "word": "PUDO",
+      "type": 0
+    },
+    {
+      "word": "PASTA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DOO",
+      "type": 0
+    },
+    {
+      "word": "DUO",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "HOO",
+      "type": 0
+    },
+    {
+      "word": "OOD",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PUG",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TSA",
+      "type": 0
+    },
+    {
+      "word": "UPS",
+      "type": 0
+    },
+    {
+      "word": "APTA",
+      "type": 0
+    },
+    {
+      "word": "ASTA",
+      "type": 0
+    },
+    {
+      "word": "LAST",
+      "type": 0
+    },
+    {
+      "word": "OPAL",
+      "type": 0
+    },
+    {
+      "word": "POOH",
+      "type": 0
+    },
+    {
+      "word": "SAPO",
+      "type": 0
+    },
+    {
+      "word": "SPUD",
+      "type": 0
+    },
+    {
+      "word": "PLASTA",
+      "type": 0
+    }
+  ],
+  "letters": "PLAS,EGPT,PUOA,SDOH",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

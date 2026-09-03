@@ -1,105 +1,235 @@
-﻿{
-    "id":  2202,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AĞA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AŞI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AĞDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATIK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DARI",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KITA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAŞA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AŞAMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ŞARKI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAĞDUR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARIK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AŞAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AŞIM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DUR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KIRAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ŞARK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "IŞARK,MAURI,AĞDAT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2202,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AİT",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "TİM",
+      "type": 0
+    },
+    {
+      "word": "ÇOK",
+      "type": 0
+    },
+    {
+      "word": "EDER",
+      "type": 0
+    },
+    {
+      "word": "EMİR",
+      "type": 0
+    },
+    {
+      "word": "EĞER",
+      "type": 0
+    },
+    {
+      "word": "MEME",
+      "type": 0
+    },
+    {
+      "word": "RİTA",
+      "type": 0
+    },
+    {
+      "word": "DEĞER",
+      "type": 0
+    },
+    {
+      "word": "PEDER",
+      "type": 0
+    },
+    {
+      "word": "EDERİM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "EPİ",
+      "type": 0
+    },
+    {
+      "word": "ERİ",
+      "type": 0
+    },
+    {
+      "word": "KAİ",
+      "type": 0
+    },
+    {
+      "word": "KOÇ",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "MİT",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "PİA",
+      "type": 0
+    },
+    {
+      "word": "PİT",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "RİM",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TİA",
+      "type": 0
+    },
+    {
+      "word": "TİP",
+      "type": 0
+    },
+    {
+      "word": "TİR",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "İPE",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "İRİ",
+      "type": 0
+    },
+    {
+      "word": "İTİ",
+      "type": 0
+    },
+    {
+      "word": "DEOK",
+      "type": 0
+    },
+    {
+      "word": "DERE",
+      "type": 0
+    },
+    {
+      "word": "DERİ",
+      "type": 0
+    },
+    {
+      "word": "DEĞİ",
+      "type": 0
+    },
+    {
+      "word": "EMER",
+      "type": 0
+    },
+    {
+      "word": "ERİR",
+      "type": 0
+    },
+    {
+      "word": "EĞİM",
+      "type": 0
+    },
+    {
+      "word": "MİRA",
+      "type": 0
+    },
+    {
+      "word": "REMİ",
+      "type": 0
+    },
+    {
+      "word": "TİME",
+      "type": 0
+    },
+    {
+      "word": "TİPE",
+      "type": 0
+    },
+    {
+      "word": "İTİP",
+      "type": 0
+    },
+    {
+      "word": "AİTİM",
+      "type": 0
+    },
+    {
+      "word": "DERİM",
+      "type": 0
+    },
+    {
+      "word": "ERİME",
+      "type": 0
+    },
+    {
+      "word": "DEĞERİ",
+      "type": 0
+    },
+    {
+      "word": "DEĞERİM",
+      "type": 0
+    }
+  ],
+  "letters": "EREDÇ,MİĞEO,ERAPK,MİTİA",
+  "obstacles": []
 }

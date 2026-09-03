@@ -1,73 +1,223 @@
-﻿{
-    "id":  1332,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKOR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ARKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATLI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KARLI",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KARLIK",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KATLI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AKI,ORL,KAT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1332,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABİ",
+      "type": 0
+    },
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "AYI",
+      "type": 0
+    },
+    {
+      "word": "BAY",
+      "type": 0
+    },
+    {
+      "word": "BİL",
+      "type": 0
+    },
+    {
+      "word": "KÖR",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "SIK",
+      "type": 0
+    },
+    {
+      "word": "İSA",
+      "type": 0
+    },
+    {
+      "word": "KISA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ASI",
+      "type": 0
+    },
+    {
+      "word": "ASİ",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "DİR",
+      "type": 0
+    },
+    {
+      "word": "KIS",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LAY",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "SİD",
+      "type": 0
+    },
+    {
+      "word": "SİR",
+      "type": 0
+    },
+    {
+      "word": "YAS",
+      "type": 0
+    },
+    {
+      "word": "YIK",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "ALAY",
+      "type": 0
+    },
+    {
+      "word": "ASAL",
+      "type": 0
+    },
+    {
+      "word": "ASIK",
+      "type": 0
+    },
+    {
+      "word": "AYIK",
+      "type": 0
+    },
+    {
+      "word": "BALA",
+      "type": 0
+    },
+    {
+      "word": "BALİ",
+      "type": 0
+    },
+    {
+      "word": "BASA",
+      "type": 0
+    },
+    {
+      "word": "BAYA",
+      "type": 0
+    },
+    {
+      "word": "KÖRİ",
+      "type": 0
+    },
+    {
+      "word": "RİSA",
+      "type": 0
+    },
+    {
+      "word": "SABA",
+      "type": 0
+    },
+    {
+      "word": "SAYI",
+      "type": 0
+    },
+    {
+      "word": "YALA",
+      "type": 0
+    },
+    {
+      "word": "YASA",
+      "type": 0
+    },
+    {
+      "word": "ABAYI",
+      "type": 0
+    },
+    {
+      "word": "ALAYI",
+      "type": 0
+    },
+    {
+      "word": "ASABİ",
+      "type": 0
+    },
+    {
+      "word": "LAYIK",
+      "type": 0
+    },
+    {
+      "word": "BALAYI",
+      "type": 0
+    },
+    {
+      "word": "SAYISAL",
+      "type": 0
+    }
+  ],
+  "letters": "İBAD,LASİ,AYNR,SIKÖ",
+  "obstacles": []
 }

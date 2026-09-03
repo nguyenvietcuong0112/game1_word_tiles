@@ -1,89 +1,239 @@
-﻿{
-    "id":  2192,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "END",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FLU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DRUG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEND",
-                             "type":  2
-                         },
-                         {
-                             "word":  "FEUD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUNE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "UNDUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FLUENT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "FLUE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NERD",
-                            "type":  2
-                        },
-                        {
-                            "word":  "REND",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RUNT",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "LUDNI,FENTG,DRUGA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2192,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "OIL",
+      "type": 0
+    },
+    {
+      "word": "BEAR",
+      "type": 0
+    },
+    {
+      "word": "HEAR",
+      "type": 0
+    },
+    {
+      "word": "HELD",
+      "type": 0
+    },
+    {
+      "word": "PASS",
+      "type": 0
+    },
+    {
+      "word": "ROLL",
+      "type": 0
+    },
+    {
+      "word": "TILL",
+      "type": 0
+    },
+    {
+      "word": "HELLO",
+      "type": 0
+    },
+    {
+      "word": "ROLLING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAL",
+      "type": 0
+    },
+    {
+      "word": "AAS",
+      "type": 0
+    },
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "ELD",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "LIT",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "NIT",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "ORT",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "SAP",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "TIL",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "BRAE",
+      "type": 0
+    },
+    {
+      "word": "DELI",
+      "type": 0
+    },
+    {
+      "word": "DELL",
+      "type": 0
+    },
+    {
+      "word": "HEAL",
+      "type": 0
+    },
+    {
+      "word": "LING",
+      "type": 0
+    },
+    {
+      "word": "LOIN",
+      "type": 0
+    },
+    {
+      "word": "NILL",
+      "type": 0
+    },
+    {
+      "word": "ROIL",
+      "type": 0
+    },
+    {
+      "word": "SAPS",
+      "type": 0
+    },
+    {
+      "word": "SPAS",
+      "type": 0
+    },
+    {
+      "word": "TILE",
+      "type": 0
+    },
+    {
+      "word": "TING",
+      "type": 0
+    },
+    {
+      "word": "ALOIN",
+      "type": 0
+    },
+    {
+      "word": "HELIO",
+      "type": 0
+    },
+    {
+      "word": "NITRO",
+      "type": 0
+    },
+    {
+      "word": "OILED",
+      "type": 0
+    },
+    {
+      "word": "TILED",
+      "type": 0
+    },
+    {
+      "word": "TROLL",
+      "type": 0
+    },
+    {
+      "word": "BEHELD",
+      "type": 0
+    },
+    {
+      "word": "ROILED",
+      "type": 0
+    },
+    {
+      "word": "ROLLED",
+      "type": 0
+    },
+    {
+      "word": "TROLLED",
+      "type": 0
+    },
+    {
+      "word": "HELLOING",
+      "type": 0
+    },
+    {
+      "word": "TROLLING",
+      "type": 0
+    }
+  ],
+  "letters": "DEHEB,DLLAR,NIOAP,GTRSS",
+  "obstacles": []
 }

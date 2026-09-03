@@ -1,65 +1,223 @@
-﻿{
-    "id":  660,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AÇÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAÇÃ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MELÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RELAÇÃO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELAÇÃO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAÇÃO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RELA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RVO,ELÃ,MAÇ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 660,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "ERRO",
+      "type": 0
+    },
+    {
+      "word": "ESSA",
+      "type": 0
+    },
+    {
+      "word": "HORA",
+      "type": 0
+    },
+    {
+      "word": "REAL",
+      "type": 0
+    },
+    {
+      "word": "BANHO",
+      "type": 0
+    },
+    {
+      "word": "ERROU",
+      "type": 0
+    },
+    {
+      "word": "CEREAL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "AHN",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BEA",
+      "type": 0
+    },
+    {
+      "word": "BLA",
+      "type": 0
+    },
+    {
+      "word": "EBA",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "HAE",
+      "type": 0
+    },
+    {
+      "word": "HAR",
+      "type": 0
+    },
+    {
+      "word": "HOU",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "NHA",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "ROU",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "ALBA",
+      "type": 0
+    },
+    {
+      "word": "ARRE",
+      "type": 0
+    },
+    {
+      "word": "BEAL",
+      "type": 0
+    },
+    {
+      "word": "BEAR",
+      "type": 0
+    },
+    {
+      "word": "ERRA",
+      "type": 0
+    },
+    {
+      "word": "LASS",
+      "type": 0
+    },
+    {
+      "word": "RAAB",
+      "type": 0
+    },
+    {
+      "word": "REBA",
+      "type": 0
+    },
+    {
+      "word": "ALBAN",
+      "type": 0
+    },
+    {
+      "word": "BANHA",
+      "type": 0
+    },
+    {
+      "word": "BERRA",
+      "type": 0
+    },
+    {
+      "word": "BERRO",
+      "type": 0
+    },
+    {
+      "word": "LASSE",
+      "type": 0
+    },
+    {
+      "word": "RECUO",
+      "type": 0
+    },
+    {
+      "word": "SERRA",
+      "type": 0
+    },
+    {
+      "word": "BANHAR",
+      "type": 0
+    },
+    {
+      "word": "REBANHO",
+      "type": 0
+    }
+  ],
+  "letters": "UCES,ORRS,HAEA,NABL",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

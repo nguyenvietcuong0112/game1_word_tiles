@@ -1,105 +1,155 @@
-﻿{
-    "id":  1075,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RETO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SETE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SONO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SERRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TERRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SABONETE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ABONO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETENO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETOS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RETOS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SETEAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TESO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TONO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TOSA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ONEA,BOTR,ASER",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1075,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAI",
+      "type": 0
+    },
+    {
+      "word": "DIA",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "SUA",
+      "type": 0
+    },
+    {
+      "word": "UVE",
+      "type": 0
+    },
+    {
+      "word": "VIA",
+      "type": 0
+    },
+    {
+      "word": "CARO",
+      "type": 0
+    },
+    {
+      "word": "FRACO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "SIA",
+      "type": 0
+    },
+    {
+      "word": "SID",
+      "type": 0
+    },
+    {
+      "word": "SRA",
+      "type": 0
+    },
+    {
+      "word": "SUV",
+      "type": 0
+    },
+    {
+      "word": "USB",
+      "type": 0
+    },
+    {
+      "word": "BORA",
+      "type": 0
+    },
+    {
+      "word": "CAIO",
+      "type": 0
+    },
+    {
+      "word": "CARS",
+      "type": 0
+    },
+    {
+      "word": "DORA",
+      "type": 0
+    },
+    {
+      "word": "DORF",
+      "type": 0
+    },
+    {
+      "word": "FRAU",
+      "type": 0
+    },
+    {
+      "word": "RAIO",
+      "type": 0
+    },
+    {
+      "word": "RAUS",
+      "type": 0
+    },
+    {
+      "word": "ROBS",
+      "type": 0
+    },
+    {
+      "word": "SUAR",
+      "type": 0
+    }
+  ],
+  "letters": "DBOD,ISRF,AUAC,EVIO",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

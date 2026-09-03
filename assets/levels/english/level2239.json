@@ -1,105 +1,243 @@
-﻿{
-    "id":  2239,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "FOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FORT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COMET",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CRUST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "METRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RETRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COMFORT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "COME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COMETS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COMFORTS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "FORTE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FORTS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROME",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "USTR,RREO,COMF",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2239,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIM",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "HEAT",
+      "type": 0
+    },
+    {
+      "word": "MISS",
+      "type": 0
+    },
+    {
+      "word": "SITE",
+      "type": 0
+    },
+    {
+      "word": "MANIA",
+      "type": 0
+    },
+    {
+      "word": "EATING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABA",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "AIS",
+      "type": 0
+    },
+    {
+      "word": "AIT",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "NAE",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NIT",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "SIT",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "TIS",
+      "type": 0
+    },
+    {
+      "word": "ALAE",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "BALM",
+      "type": 0
+    },
+    {
+      "word": "GNAT",
+      "type": 0
+    },
+    {
+      "word": "HEAL",
+      "type": 0
+    },
+    {
+      "word": "MATE",
+      "type": 0
+    },
+    {
+      "word": "NITE",
+      "type": 0
+    },
+    {
+      "word": "SEIS",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SIAL",
+      "type": 0
+    },
+    {
+      "word": "TANG",
+      "type": 0
+    },
+    {
+      "word": "TING",
+      "type": 0
+    },
+    {
+      "word": "ISSEI",
+      "type": 0
+    },
+    {
+      "word": "MATES",
+      "type": 0
+    },
+    {
+      "word": "MATIN",
+      "type": 0
+    },
+    {
+      "word": "NATES",
+      "type": 0
+    },
+    {
+      "word": "NITES",
+      "type": 0
+    },
+    {
+      "word": "SETAE",
+      "type": 0
+    },
+    {
+      "word": "MATING",
+      "type": 0
+    },
+    {
+      "word": "MISSET",
+      "type": 0
+    },
+    {
+      "word": "SITING",
+      "type": 0
+    },
+    {
+      "word": "HEATING",
+      "type": 0
+    }
+  ],
+  "letters": "GMHBA,NAEAL,ITEIM,AISSI",
+  "obstacles": []
 }

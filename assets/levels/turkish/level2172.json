@@ -1,81 +1,143 @@
-﻿{
-    "id":  2172,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEZ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZEKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZEKİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİLEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BORNOZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KABİLE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKİL",
-                            "type":  1
-                        },
-                        {
-                            "word":  "BAKİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERZEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KABİL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KOZEL,BNRKİ,OREAB",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2172,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AİT",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "ONA",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "KATA",
+      "type": 0
+    },
+    {
+      "word": "MYKA",
+      "type": 0
+    },
+    {
+      "word": "STAN",
+      "type": 0
+    },
+    {
+      "word": "YİNE",
+      "type": 0
+    },
+    {
+      "word": "KATTA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "AİN",
+      "type": 0
+    },
+    {
+      "word": "KAİ",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "TAT",
+      "type": 0
+    },
+    {
+      "word": "TAİ",
+      "type": 0
+    },
+    {
+      "word": "TİA",
+      "type": 0
+    },
+    {
+      "word": "TİN",
+      "type": 0
+    },
+    {
+      "word": "YİN",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "ATAK",
+      "type": 0
+    },
+    {
+      "word": "EAST",
+      "type": 0
+    },
+    {
+      "word": "GENİ",
+      "type": 0
+    },
+    {
+      "word": "ATTAN",
+      "type": 0
+    },
+    {
+      "word": "KATTAN",
+      "type": 0
+    }
+  ],
+  "letters": "KTANO,ATTSA,TAİNE,AKYMG",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

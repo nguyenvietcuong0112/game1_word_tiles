@@ -1,65 +1,183 @@
-﻿{
-    "id":  1110,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALAY",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KRAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YALAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARSLAN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GOLT,KRSN,YALA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1110,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DİŞ",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "MİL",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "TİM",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "İŞİ",
+      "type": 0
+    },
+    {
+      "word": "ACİL",
+      "type": 0
+    },
+    {
+      "word": "HUNT",
+      "type": 0
+    },
+    {
+      "word": "İŞİM",
+      "type": 0
+    },
+    {
+      "word": "İŞİMİ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACİ",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "HUN",
+      "type": 0
+    },
+    {
+      "word": "HİC",
+      "type": 0
+    },
+    {
+      "word": "HİM",
+      "type": 0
+    },
+    {
+      "word": "LEİ",
+      "type": 0
+    },
+    {
+      "word": "LİM",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MUN",
+      "type": 0
+    },
+    {
+      "word": "MİT",
+      "type": 0
+    },
+    {
+      "word": "MİŞ",
+      "type": 0
+    },
+    {
+      "word": "NUH",
+      "type": 0
+    },
+    {
+      "word": "UMA",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "İMİ",
+      "type": 0
+    },
+    {
+      "word": "CAMİ",
+      "type": 0
+    },
+    {
+      "word": "DİŞİ",
+      "type": 0
+    },
+    {
+      "word": "ELİM",
+      "type": 0
+    },
+    {
+      "word": "HİLE",
+      "type": 0
+    },
+    {
+      "word": "LİMA",
+      "type": 0
+    },
+    {
+      "word": "MİLE",
+      "type": 0
+    },
+    {
+      "word": "TİMİ",
+      "type": 0
+    },
+    {
+      "word": "İMİŞ",
+      "type": 0
+    },
+    {
+      "word": "İŞLE",
+      "type": 0
+    },
+    {
+      "word": "ACİLE",
+      "type": 0
+    },
+    {
+      "word": "CİLDİ",
+      "type": 0
+    },
+    {
+      "word": "DİŞLİ",
+      "type": 0
+    },
+    {
+      "word": "DİŞİM",
+      "type": 0
+    },
+    {
+      "word": "DİŞİMİ",
+      "type": 0
+    }
+  ],
+  "letters": "AMUN,CİHT,DLEİ,İŞİM",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

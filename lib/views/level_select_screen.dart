@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
 import '../theme/app_theme.dart';
@@ -6,8 +8,13 @@ import 'game_screen.dart';
 
 class LevelSelectScreen extends StatefulWidget {
   final String language;
+  final bool isFromGame;
 
-  const LevelSelectScreen({super.key, required this.language});
+  const LevelSelectScreen({
+    super.key,
+    required this.language,
+    this.isFromGame = false,
+  });
 
   @override
   State<LevelSelectScreen> createState() => _LevelSelectScreenState();
@@ -39,7 +46,7 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (_scrollController.hasClients && _maxUnlockedIndex > 10) {
         final row = _maxUnlockedIndex ~/ 5;
-        final targetOffset = row * 84.0;
+        final targetOffset = row * 84.0.h;
         _scrollController.jumpTo(targetOffset.clamp(0.0, _scrollController.position.maxScrollExtent));
       }
     });
@@ -50,15 +57,19 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
       return;
     }
 
-    Navigator.push(
-      context,
-      MaterialPageRoute(
-        builder: (_) => GameScreen(
-          language: widget.language,
-          levelIndex: index,
+    if (widget.isFromGame) {
+      Navigator.of(context).pop(index);
+    } else {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (_) => GameScreen(
+            language: widget.language,
+            levelIndex: index,
+          ),
         ),
-      ),
-    ).then((_) => _loadLevels());
+      );
+    }
   }
 
   @override
@@ -72,73 +83,127 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
           children: [
             // Header
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+              padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 12.h),
               child: Row(
                 children: [
+                  // 3D Cocoa-Caramel Back Button (Matching Reference Image)
                   InkWell(
                     onTap: () => Navigator.pop(context),
-                    borderRadius: BorderRadius.circular(24),
+                    borderRadius: BorderRadius.circular(24.r),
                     child: Container(
-                      width: 46,
-                      height: 46,
+                      width: 44.r,
+                      height: 44.r,
                       decoration: BoxDecoration(
-                        color: AppColors.cardPeachLight,
+                        color: AppColors.btnRingBg,
                         shape: BoxShape.circle,
-                        border: Border.all(color: AppColors.borderDark, width: 2.0),
-                        boxShadow: [
+                        border: Border.all(color: AppColors.btnRingBorder, width: 1.5),
+                        boxShadow: const [
                           BoxShadow(
-                            color: AppColors.borderDark.withOpacity(0.12),
-                            offset: const Offset(0, 2),
+                            color: AppColors.btnRingShadow,
+                            offset: Offset(0, 2.0),
                             blurRadius: 0,
                           ),
                         ],
                       ),
-                      child: const Icon(Icons.arrow_back_rounded, color: AppColors.textDark, size: 24),
+                      padding: const EdgeInsets.all(4.0),
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: AppColors.btnFaceBrown,
+                          shape: BoxShape.circle,
+                          border: Border.all(color: AppColors.btnBorderBrown, width: 1.5),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: AppColors.btnShadowBrown,
+                              offset: Offset(0, 1.5),
+                              blurRadius: 0,
+                            ),
+                          ],
+                        ),
+                        child: const Center(
+                          child: Icon(
+                            Icons.chevron_left_rounded,
+                            color: Colors.white,
+                            size: 26,
+                          ),
+                        ),
+                      ),
                     ),
                   ),
-                  const SizedBox(width: 14),
+                  SizedBox(width: 14.w),
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text(
+                        Text(
                           'SELECT LEVEL',
-                          style: TextStyle(
-                            fontSize: 20,
+                          style: GoogleFonts.fredoka(
+                            fontSize: 20.sp,
                             fontWeight: FontWeight.w900,
-                            letterSpacing: 1.0,
-                            color: AppColors.textDark,
+                            letterSpacing: 0.8,
+                            color: AppColors.headerBrown,
                           ),
                         ),
                         Text(
-                          '$langName • ${_levelIds.length} Levels',
-                          style: const TextStyle(fontSize: 13, color: AppColors.textMuted, fontWeight: FontWeight.w500),
+                          langName,
+                          style: GoogleFonts.fredoka(
+                            fontSize: 14.sp,
+                            color: AppColors.subHeaderBrown,
+                            fontWeight: FontWeight.w700,
+                          ),
                         ),
                       ],
                     ),
                   ),
-                  // Coins Pill
+                  // Stars Pill
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 7),
+                    padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 7.h),
                     decoration: BoxDecoration(
-                      color: AppColors.cardPeachLight,
-                      borderRadius: BorderRadius.circular(20),
-                      border: Border.all(color: AppColors.borderDark, width: 2.0),
-                      boxShadow: [
+                      color: AppColors.cardWhite,
+                      borderRadius: BorderRadius.circular(20.r),
+                      border: Border.all(color: AppColors.borderSubtle, width: 1.5),
+                      boxShadow: const [
                         BoxShadow(
-                          color: AppColors.borderDark.withOpacity(0.12),
-                          offset: const Offset(0, 2),
+                          color: Color(0xFFE8DAC8),
+                          offset: Offset(0, 1.5),
                           blurRadius: 0,
                         ),
                       ],
                     ),
                     child: Row(
                       children: [
-                        const Text('🪙', style: TextStyle(fontSize: 16)),
-                        const SizedBox(width: 6),
+                        const Icon(Icons.star_rounded, color: Color(0xFFF59E0B), size: 18),
+                        SizedBox(width: 4.w),
+                        Text(
+                          '${_starsMap.values.fold<int>(0, (sum, s) => sum + s)}',
+                          style: GoogleFonts.fredoka(fontWeight: FontWeight.w900, color: AppColors.textDark, fontSize: 14.sp),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(width: 8.w),
+
+                  // Coins Pill
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 7.h),
+                    decoration: BoxDecoration(
+                      color: AppColors.cardWhite,
+                      borderRadius: BorderRadius.circular(20.r),
+                      border: Border.all(color: AppColors.borderSubtle, width: 1.5),
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Color(0xFFE8DAC8),
+                          offset: Offset(0, 1.5),
+                          blurRadius: 0,
+                        ),
+                      ],
+                    ),
+                    child: Row(
+                      children: [
+                        const Text('🪙', style: TextStyle(fontSize: 14)),
+                        SizedBox(width: 4.w),
                         Text(
                           '${GameStorage.getCoins()}',
-                          style: const TextStyle(fontWeight: FontWeight.w900, color: AppColors.textDark, fontSize: 15),
+                          style: GoogleFonts.fredoka(fontWeight: FontWeight.w900, color: AppColors.textDark, fontSize: 14.sp),
                         ),
                       ],
                     ),
@@ -153,11 +218,11 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
                   ? const Center(child: CircularProgressIndicator(color: AppColors.terracotta))
                   : GridView.builder(
                       controller: _scrollController,
-                      padding: const EdgeInsets.all(16),
-                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      padding: EdgeInsets.all(16.w),
+                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 5,
-                        crossAxisSpacing: 10,
-                        mainAxisSpacing: 12,
+                        crossAxisSpacing: 8.w,
+                        mainAxisSpacing: 10.h,
                         childAspectRatio: 0.84,
                       ),
                       itemCount: _levelIds.length,
@@ -201,60 +266,81 @@ class _LevelCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bgColor = isCurrent
-        ? AppColors.terracotta
-        : (isUnlocked ? AppColors.cardPeach : AppColors.cardPeachLight.withOpacity(0.5));
+    final theme = AppColors.getTileThemeForPosition(levelNumber ~/ 5, levelNumber % 5);
 
-    final textColor = isCurrent ? Colors.white : AppColors.textDark;
+    final Color faceColor = isCurrent
+        ? AppColors.btnFaceBrown
+        : (isUnlocked ? theme.face : const Color(0xFFF2E8DC));
+
+    final Color bevelColor = isCurrent
+        ? AppColors.btnShadowBrown
+        : (isUnlocked ? theme.bevel : const Color(0xFFDECFC0));
+
+    final textColor = isCurrent ? Colors.white : (isUnlocked ? AppColors.textDark : AppColors.textMuted);
 
     return InkWell(
       onTap: isUnlocked ? onTap : null,
-      borderRadius: BorderRadius.circular(16),
+      borderRadius: BorderRadius.circular(18.r),
       child: Container(
         decoration: BoxDecoration(
-          color: bgColor,
-          borderRadius: BorderRadius.circular(16),
+          color: faceColor,
+          borderRadius: BorderRadius.circular(18.r),
           border: Border.all(
-            color: AppColors.borderDark, // Crisp 2px dark border
-            width: 2.0,
+            color: isCurrent ? AppColors.btnBorderBrown : (isUnlocked ? theme.bevel : const Color(0xFFDECFC0)),
+            width: 1.8,
           ),
           boxShadow: [
             BoxShadow(
-              color: AppColors.borderDark.withOpacity(isCurrent ? 0.25 : 0.12),
-              offset: const Offset(0, 3),
+              color: bevelColor,
+              offset: const Offset(0, 2.0),
               blurRadius: 0,
             ),
           ],
         ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            if (!isUnlocked)
-              const Icon(Icons.lock_rounded, size: 20, color: AppColors.textMuted)
-            else ...[
-              Text(
-                '$levelNumber',
-                style: TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w900,
-                  color: textColor,
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              if (!isUnlocked)
+                const Icon(Icons.lock_rounded, size: 20, color: Color(0xFFA6907E))
+              else ...[
+                Text(
+                  '$levelNumber',
+                  style: GoogleFonts.fredoka(
+                    fontSize: 18.sp,
+                    fontWeight: FontWeight.w900,
+                    color: textColor,
+                    height: 1.0,
+                    shadows: isCurrent
+                        ? const [
+                            Shadow(
+                              color: AppColors.btnShadowBrown,
+                              offset: Offset(0, 1.5),
+                            ),
+                          ]
+                        : null,
+                  ),
                 ),
-              ),
-              const SizedBox(height: 2),
-              // Stars
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: List.generate(3, (i) {
-                  final hasStar = isCurrent ? false : (i < (stars > 0 ? stars : 3));
-                  return Icon(
-                    Icons.star_rounded,
-                    size: 11,
-                    color: hasStar ? AppColors.goldAccent : AppColors.textDark.withOpacity(0.2),
-                  );
-                }),
-              ),
+                SizedBox(height: 4.h),
+                // Stars (Reflects exact stars earned: 1, 2, or 3)
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: List.generate(3, (i) {
+                    final hasStar = isUnlocked && (i < stars);
+                    return Icon(
+                      Icons.star_rounded,
+                      size: 13.r,
+                      color: hasStar
+                          ? AppColors.honeyGold
+                          : (isCurrent
+                              ? Colors.white.withValues(alpha: 0.35)
+                              : const Color(0xFFD6C8B8)),
+                    );
+                  }),
+                ),
+              ],
             ],
-          ],
+          ),
         ),
       ),
     );

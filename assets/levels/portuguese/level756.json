@@ -1,93 +1,295 @@
-﻿{
-    "id":  756,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LEI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SELO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEMI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SISO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIMPLES",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DELE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEDO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LESO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MESO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ODE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PODEI,USELO,SIMPÃ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 756,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "BEM",
+      "type": 0
+    },
+    {
+      "word": "MIL",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "CASA",
+      "type": 0
+    },
+    {
+      "word": "CASO",
+      "type": 0
+    },
+    {
+      "word": "HEIN",
+      "type": 0
+    },
+    {
+      "word": "SALA",
+      "type": 0
+    },
+    {
+      "word": "SECA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "BEC",
+      "type": 0
+    },
+    {
+      "word": "BEE",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "CEE",
+      "type": 0
+    },
+    {
+      "word": "CEM",
+      "type": 0
+    },
+    {
+      "word": "CIL",
+      "type": 0
+    },
+    {
+      "word": "ECA",
+      "type": 0
+    },
+    {
+      "word": "EIN",
+      "type": 0
+    },
+    {
+      "word": "EIS",
+      "type": 0
+    },
+    {
+      "word": "EMI",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "HEE",
+      "type": 0
+    },
+    {
+      "word": "HEI",
+      "type": 0
+    },
+    {
+      "word": "ICE",
+      "type": 0
+    },
+    {
+      "word": "INO",
+      "type": 0
+    },
+    {
+      "word": "ISA",
+      "type": 0
+    },
+    {
+      "word": "ISO",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LIM",
+      "type": 0
+    },
+    {
+      "word": "MIC",
+      "type": 0
+    },
+    {
+      "word": "ONI",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAS",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SIE",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "SOS",
+      "type": 0
+    },
+    {
+      "word": "ALAS",
+      "type": 0
+    },
+    {
+      "word": "ASAS",
+      "type": 0
+    },
+    {
+      "word": "BECA",
+      "type": 0
+    },
+    {
+      "word": "CALA",
+      "type": 0
+    },
+    {
+      "word": "CALI",
+      "type": 0
+    },
+    {
+      "word": "CASE",
+      "type": 0
+    },
+    {
+      "word": "EMIL",
+      "type": 0
+    },
+    {
+      "word": "LACE",
+      "type": 0
+    },
+    {
+      "word": "LICA",
+      "type": 0
+    },
+    {
+      "word": "MECA",
+      "type": 0
+    },
+    {
+      "word": "MICA",
+      "type": 0
+    },
+    {
+      "word": "MILA",
+      "type": 0
+    },
+    {
+      "word": "NISA",
+      "type": 0
+    },
+    {
+      "word": "NOSE",
+      "type": 0
+    },
+    {
+      "word": "SINO",
+      "type": 0
+    },
+    {
+      "word": "SOSA",
+      "type": 0
+    },
+    {
+      "word": "ACESO",
+      "type": 0
+    },
+    {
+      "word": "ALICE",
+      "type": 0
+    },
+    {
+      "word": "CASAL",
+      "type": 0
+    },
+    {
+      "word": "CASOS",
+      "type": 0
+    },
+    {
+      "word": "SALAS",
+      "type": 0
+    },
+    {
+      "word": "SALIM",
+      "type": 0
+    },
+    {
+      "word": "SECAS",
+      "type": 0
+    },
+    {
+      "word": "SINOS",
+      "type": 0
+    },
+    {
+      "word": "ACESOS",
+      "type": 0
+    },
+    {
+      "word": "CASINO",
+      "type": 0
+    },
+    {
+      "word": "CASINOS",
+      "type": 0
+    }
+  ],
+  "letters": "ASON,LASI,ICEE,MEBH",
+  "obstacles": []
 }

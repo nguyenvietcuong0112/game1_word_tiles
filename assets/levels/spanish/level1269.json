@@ -1,109 +1,211 @@
-﻿{
-    "id":  1269,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DÍA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAÍZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MORA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAÍZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEDIO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DEMORA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEDIODÍA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FEMAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MARO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAFE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RAÍDO",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ODÍZ,IFAR,DEMO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1269,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BOK",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "TAL",
+      "type": 0
+    },
+    {
+      "word": "TUS",
+      "type": 0
+    },
+    {
+      "word": "BALA",
+      "type": 0
+    },
+    {
+      "word": "BOLA",
+      "type": 0
+    },
+    {
+      "word": "PATA",
+      "type": 0
+    },
+    {
+      "word": "SALA",
+      "type": 0
+    },
+    {
+      "word": "BALAS",
+      "type": 0
+    },
+    {
+      "word": "PALMER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "BOL",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "KOL",
+      "type": 0
+    },
+    {
+      "word": "LOK",
+      "type": 0
+    },
+    {
+      "word": "MEO",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "REO",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "USB",
+      "type": 0
+    },
+    {
+      "word": "ALAS",
+      "type": 0
+    },
+    {
+      "word": "ATAS",
+      "type": 0
+    },
+    {
+      "word": "BATA",
+      "type": 0
+    },
+    {
+      "word": "LATA",
+      "type": 0
+    },
+    {
+      "word": "LOBA",
+      "type": 0
+    },
+    {
+      "word": "OLAS",
+      "type": 0
+    },
+    {
+      "word": "PALA",
+      "type": 0
+    },
+    {
+      "word": "PALM",
+      "type": 0
+    },
+    {
+      "word": "PALO",
+      "type": 0
+    },
+    {
+      "word": "TALA",
+      "type": 0
+    },
+    {
+      "word": "TAPA",
+      "type": 0
+    },
+    {
+      "word": "TUSK",
+      "type": 0
+    },
+    {
+      "word": "BATAS",
+      "type": 0
+    },
+    {
+      "word": "BOLAS",
+      "type": 0
+    },
+    {
+      "word": "LATAS",
+      "type": 0
+    },
+    {
+      "word": "PALAS",
+      "type": 0
+    },
+    {
+      "word": "PALME",
+      "type": 0
+    },
+    {
+      "word": "PALMS",
+      "type": 0
+    },
+    {
+      "word": "PATAS",
+      "type": 0
+    }
+  ],
+  "letters": "ATAS,PALM,TBOE,USKR",
+  "obstacles": []
 }

@@ -1,65 +1,251 @@
-﻿{
-    "id":  1286,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DITO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MICO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MITO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIMIDEZ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EDITO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EDEZ,MICO,ITOF",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1286,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "FAE",
+      "type": 0
+    },
+    {
+      "word": "NAO",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "TOA",
+      "type": 0
+    },
+    {
+      "word": "CENA",
+      "type": 0
+    },
+    {
+      "word": "NETO",
+      "type": 0
+    },
+    {
+      "word": "NINA",
+      "type": 0
+    },
+    {
+      "word": "PENA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "CEP",
+      "type": 0
+    },
+    {
+      "word": "ECA",
+      "type": 0
+    },
+    {
+      "word": "ENA",
+      "type": 0
+    },
+    {
+      "word": "EPI",
+      "type": 0
+    },
+    {
+      "word": "FAA",
+      "type": 0
+    },
+    {
+      "word": "FAR",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "INO",
+      "type": 0
+    },
+    {
+      "word": "NEN",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "NIN",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "ONI",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAF",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "ACTO",
+      "type": 0
+    },
+    {
+      "word": "CANE",
+      "type": 0
+    },
+    {
+      "word": "ETON",
+      "type": 0
+    },
+    {
+      "word": "FARO",
+      "type": 0
+    },
+    {
+      "word": "NEAR",
+      "type": 0
+    },
+    {
+      "word": "NENA",
+      "type": 0
+    },
+    {
+      "word": "NENE",
+      "type": 0
+    },
+    {
+      "word": "NINE",
+      "type": 0
+    },
+    {
+      "word": "NINO",
+      "type": 0
+    },
+    {
+      "word": "NOTE",
+      "type": 0
+    },
+    {
+      "word": "PECA",
+      "type": 0
+    },
+    {
+      "word": "PINA",
+      "type": 0
+    },
+    {
+      "word": "PINE",
+      "type": 0
+    },
+    {
+      "word": "PINO",
+      "type": 0
+    },
+    {
+      "word": "ROAN",
+      "type": 0
+    },
+    {
+      "word": "TEAR",
+      "type": 0
+    },
+    {
+      "word": "TONE",
+      "type": 0
+    },
+    {
+      "word": "TONI",
+      "type": 0
+    },
+    {
+      "word": "TORA",
+      "type": 0
+    },
+    {
+      "word": "ACENE",
+      "type": 0
+    },
+    {
+      "word": "ACTOR",
+      "type": 0
+    },
+    {
+      "word": "PINOT",
+      "type": 0
+    },
+    {
+      "word": "CANINO",
+      "type": 0
+    }
+  ],
+  "letters": "CFTO,RAEN,OANI,TCEP",
+  "obstacles": []
 }

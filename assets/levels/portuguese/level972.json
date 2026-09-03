@@ -1,97 +1,235 @@
-﻿{
-    "id":  972,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MAPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MESA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASSAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MASSA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PASSAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMASSAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMEAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EMASSAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PASSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAMEAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEMA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SSAR,AMEL,PASA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 972,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABI",
+      "type": 0
+    },
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "DIA",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "ESTA",
+      "type": 0
+    },
+    {
+      "word": "FALE",
+      "type": 0
+    },
+    {
+      "word": "BESTA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BEA",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DIL",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "EBA",
+      "type": 0
+    },
+    {
+      "word": "ELI",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "FAA",
+      "type": 0
+    },
+    {
+      "word": "FAB",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "LIL",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAI",
+      "type": 0
+    },
+    {
+      "word": "AIDA",
+      "type": 0
+    },
+    {
+      "word": "ALEM",
+      "type": 0
+    },
+    {
+      "word": "ALIA",
+      "type": 0
+    },
+    {
+      "word": "BALE",
+      "type": 0
+    },
+    {
+      "word": "BALI",
+      "type": 0
+    },
+    {
+      "word": "BALL",
+      "type": 0
+    },
+    {
+      "word": "BEAT",
+      "type": 0
+    },
+    {
+      "word": "BEST",
+      "type": 0
+    },
+    {
+      "word": "DALE",
+      "type": 0
+    },
+    {
+      "word": "DALI",
+      "type": 0
+    },
+    {
+      "word": "DILL",
+      "type": 0
+    },
+    {
+      "word": "ELIA",
+      "type": 0
+    },
+    {
+      "word": "FALL",
+      "type": 0
+    },
+    {
+      "word": "LIDA",
+      "type": 0
+    },
+    {
+      "word": "LILA",
+      "type": 0
+    },
+    {
+      "word": "LILL",
+      "type": 0
+    },
+    {
+      "word": "MLLE",
+      "type": 0
+    },
+    {
+      "word": "TAIL",
+      "type": 0
+    },
+    {
+      "word": "DALIA",
+      "type": 0
+    },
+    {
+      "word": "FALEM",
+      "type": 0
+    },
+    {
+      "word": "BALELA",
+      "type": 0
+    },
+    {
+      "word": "DALILA",
+      "type": 0
+    },
+    {
+      "word": "FALIDA",
+      "type": 0
+    }
+  ],
+  "letters": "MELA,LLID,FAAT,IBES",
+  "obstacles": []
 }

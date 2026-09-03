@@ -1,93 +1,319 @@
-﻿{
-    "id":  2124,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "URN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CITE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GENE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUIT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TRUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUITE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CITRUS",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CATE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "GEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GENE,ATRU,CIUS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2124,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "ARTS",
+      "type": 0
+    },
+    {
+      "word": "CART",
+      "type": 0
+    },
+    {
+      "word": "ORAL",
+      "type": 0
+    },
+    {
+      "word": "TEAM",
+      "type": 0
+    },
+    {
+      "word": "TEXT",
+      "type": 0
+    },
+    {
+      "word": "EXTRA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AXE",
+      "type": 0
+    },
+    {
+      "word": "COO",
+      "type": 0
+    },
+    {
+      "word": "COT",
+      "type": 0
+    },
+    {
+      "word": "LAC",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MOL",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "NOO",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "OOT",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORC",
+      "type": 0
+    },
+    {
+      "word": "ORT",
+      "type": 0
+    },
+    {
+      "word": "RAX",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "ALAR",
+      "type": 0
+    },
+    {
+      "word": "ALOE",
+      "type": 0
+    },
+    {
+      "word": "ARCO",
+      "type": 0
+    },
+    {
+      "word": "CALO",
+      "type": 0
+    },
+    {
+      "word": "COON",
+      "type": 0
+    },
+    {
+      "word": "COOS",
+      "type": 0
+    },
+    {
+      "word": "COTE",
+      "type": 0
+    },
+    {
+      "word": "COTS",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "MAAR",
+      "type": 0
+    },
+    {
+      "word": "MOLA",
+      "type": 0
+    },
+    {
+      "word": "MORA",
+      "type": 0
+    },
+    {
+      "word": "MORT",
+      "type": 0
+    },
+    {
+      "word": "OOTS",
+      "type": 0
+    },
+    {
+      "word": "ORTS",
+      "type": 0
+    },
+    {
+      "word": "SONS",
+      "type": 0
+    },
+    {
+      "word": "SOOT",
+      "type": 0
+    },
+    {
+      "word": "TOON",
+      "type": 0
+    },
+    {
+      "word": "ALAMO",
+      "type": 0
+    },
+    {
+      "word": "AMORT",
+      "type": 0
+    },
+    {
+      "word": "AROMA",
+      "type": 0
+    },
+    {
+      "word": "CAROL",
+      "type": 0
+    },
+    {
+      "word": "CAROM",
+      "type": 0
+    },
+    {
+      "word": "CARTE",
+      "type": 0
+    },
+    {
+      "word": "CARTS",
+      "type": 0
+    },
+    {
+      "word": "COONS",
+      "type": 0
+    },
+    {
+      "word": "MALAR",
+      "type": 0
+    },
+    {
+      "word": "MOLAR",
+      "type": 0
+    },
+    {
+      "word": "MORAL",
+      "type": 0
+    },
+    {
+      "word": "MORTS",
+      "type": 0
+    },
+    {
+      "word": "SNOOT",
+      "type": 0
+    },
+    {
+      "word": "STEAM",
+      "type": 0
+    },
+    {
+      "word": "TEXTS",
+      "type": 0
+    },
+    {
+      "word": "TOONS",
+      "type": 0
+    },
+    {
+      "word": "AMORAL",
+      "type": 0
+    },
+    {
+      "word": "NOSTOC",
+      "type": 0
+    },
+    {
+      "word": "SNOOTS",
+      "type": 0
+    },
+    {
+      "word": "STROMA",
+      "type": 0
+    },
+    {
+      "word": "CARTOON",
+      "type": 0
+    },
+    {
+      "word": "OSTEOMA",
+      "type": 0
+    },
+    {
+      "word": "RACCOON",
+      "type": 0
+    },
+    {
+      "word": "STROMAL",
+      "type": 0
+    },
+    {
+      "word": "CARTOONS",
+      "type": 0
+    },
+    {
+      "word": "RACCOONS",
+      "type": 0
+    }
+  ],
+  "letters": "RAAMA,TXEOL,SSTRA,NOOCC",
+  "obstacles": []
 }

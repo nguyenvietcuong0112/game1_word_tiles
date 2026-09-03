@@ -1,77 +1,359 @@
-﻿{
-    "id":  1109,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TREE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TYRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STARRY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RATS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TARE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TARRY",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TERRA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TERRE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ARE,TRE,SYT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1109,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "FAR",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "EVER",
+      "type": 0
+    },
+    {
+      "word": "SEED",
+      "type": 0
+    },
+    {
+      "word": "GLASS",
+      "type": 0
+    },
+    {
+      "word": "LEAVE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ELF",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERG",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "VAR",
+      "type": 0
+    },
+    {
+      "word": "VEE",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "AVER",
+      "type": 0
+    },
+    {
+      "word": "AVES",
+      "type": 0
+    },
+    {
+      "word": "DEER",
+      "type": 0
+    },
+    {
+      "word": "DEES",
+      "type": 0
+    },
+    {
+      "word": "DREE",
+      "type": 0
+    },
+    {
+      "word": "EAVE",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "EVES",
+      "type": 0
+    },
+    {
+      "word": "FARE",
+      "type": 0
+    },
+    {
+      "word": "FAVE",
+      "type": 0
+    },
+    {
+      "word": "FLEA",
+      "type": 0
+    },
+    {
+      "word": "FLEE",
+      "type": 0
+    },
+    {
+      "word": "GREE",
+      "type": 0
+    },
+    {
+      "word": "LASE",
+      "type": 0
+    },
+    {
+      "word": "LASS",
+      "type": 0
+    },
+    {
+      "word": "LEAF",
+      "type": 0
+    },
+    {
+      "word": "LEAR",
+      "type": 0
+    },
+    {
+      "word": "LEER",
+      "type": 0
+    },
+    {
+      "word": "RASE",
+      "type": 0
+    },
+    {
+      "word": "RAVE",
+      "type": 0
+    },
+    {
+      "word": "REED",
+      "type": 0
+    },
+    {
+      "word": "REEL",
+      "type": 0
+    },
+    {
+      "word": "REES",
+      "type": 0
+    },
+    {
+      "word": "SEER",
+      "type": 0
+    },
+    {
+      "word": "SEES",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "VARA",
+      "type": 0
+    },
+    {
+      "word": "VEES",
+      "type": 0
+    },
+    {
+      "word": "VERA",
+      "type": 0
+    },
+    {
+      "word": "EAVES",
+      "type": 0
+    },
+    {
+      "word": "FARES",
+      "type": 0
+    },
+    {
+      "word": "FAVES",
+      "type": 0
+    },
+    {
+      "word": "FLEER",
+      "type": 0
+    },
+    {
+      "word": "GLARE",
+      "type": 0
+    },
+    {
+      "word": "GRASS",
+      "type": 0
+    },
+    {
+      "word": "GRAVE",
+      "type": 0
+    },
+    {
+      "word": "GREED",
+      "type": 0
+    },
+    {
+      "word": "GREES",
+      "type": 0
+    },
+    {
+      "word": "LAREE",
+      "type": 0
+    },
+    {
+      "word": "LARES",
+      "type": 0
+    },
+    {
+      "word": "LASER",
+      "type": 0
+    },
+    {
+      "word": "RAVER",
+      "type": 0
+    },
+    {
+      "word": "RAVES",
+      "type": 0
+    },
+    {
+      "word": "SAREE",
+      "type": 0
+    },
+    {
+      "word": "SERAL",
+      "type": 0
+    },
+    {
+      "word": "SEVER",
+      "type": 0
+    },
+    {
+      "word": "VARAS",
+      "type": 0
+    },
+    {
+      "word": "GLARES",
+      "type": 0
+    },
+    {
+      "word": "GRAVER",
+      "type": 0
+    },
+    {
+      "word": "GRAVES",
+      "type": 0
+    },
+    {
+      "word": "LAREES",
+      "type": 0
+    },
+    {
+      "word": "LEAVER",
+      "type": 0
+    },
+    {
+      "word": "LEAVES",
+      "type": 0
+    },
+    {
+      "word": "SAREES",
+      "type": 0
+    },
+    {
+      "word": "GLASSED",
+      "type": 0
+    },
+    {
+      "word": "GRASSED",
+      "type": 0
+    },
+    {
+      "word": "VERGLAS",
+      "type": 0
+    }
+  ],
+  "letters": "LEER,FAVD,GREE,LASS",
+  "obstacles": []
 }

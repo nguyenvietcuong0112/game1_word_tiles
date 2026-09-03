@@ -1,85 +1,251 @@
-﻿{
-    "id":  603,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CEDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HUMOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOÇÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MORTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OPÇÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DECEPÇÃO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CEPO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DOPE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HUMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ODE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORTO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PECO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEÃ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ECEÃO,DOPÇT,HUMOR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 603,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AOS",
+      "type": 0
+    },
+    {
+      "word": "NAO",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "SOA",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "TIA",
+      "type": 0
+    },
+    {
+      "word": "KATE",
+      "type": 0
+    },
+    {
+      "word": "ROXY",
+      "type": 0
+    },
+    {
+      "word": "NIKITA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKI",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "ITA",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "KAO",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "KIA",
+      "type": 0
+    },
+    {
+      "word": "KIN",
+      "type": 0
+    },
+    {
+      "word": "KIT",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NIK",
+      "type": 0
+    },
+    {
+      "word": "OAK",
+      "type": 0
+    },
+    {
+      "word": "OXY",
+      "type": 0
+    },
+    {
+      "word": "RNA",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "ROX",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "SOX",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "KAOS",
+      "type": 0
+    },
+    {
+      "word": "KATI",
+      "type": 0
+    },
+    {
+      "word": "KITA",
+      "type": 0
+    },
+    {
+      "word": "KITE",
+      "type": 0
+    },
+    {
+      "word": "KITS",
+      "type": 0
+    },
+    {
+      "word": "NATE",
+      "type": 0
+    },
+    {
+      "word": "NATI",
+      "type": 0
+    },
+    {
+      "word": "NIKA",
+      "type": 0
+    },
+    {
+      "word": "NIKI",
+      "type": 0
+    },
+    {
+      "word": "PROA",
+      "type": 0
+    },
+    {
+      "word": "PROS",
+      "type": 0
+    },
+    {
+      "word": "ROAN",
+      "type": 0
+    },
+    {
+      "word": "ROSY",
+      "type": 0
+    },
+    {
+      "word": "SHEA",
+      "type": 0
+    },
+    {
+      "word": "STAN",
+      "type": 0
+    },
+    {
+      "word": "TAKI",
+      "type": 0
+    },
+    {
+      "word": "THEA",
+      "type": 0
+    },
+    {
+      "word": "TIKI",
+      "type": 0
+    },
+    {
+      "word": "KATIA",
+      "type": 0
+    },
+    {
+      "word": "PROXY",
+      "type": 0
+    },
+    {
+      "word": "THETA",
+      "type": 0
+    }
+  ],
+  "letters": "AEHT,ITSY,KAOX,INRP",
+  "obstacles": []
 }

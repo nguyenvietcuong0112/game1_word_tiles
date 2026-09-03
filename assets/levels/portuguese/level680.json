@@ -1,77 +1,339 @@
-﻿{
-    "id":  680,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BOI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOIS",
-                             "type":  2
-                         },
-                         {
-                             "word":  "JOIA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SEBO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PASSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASSEIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PASSEIO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EIDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ISSO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PASTIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAIO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "IOJBO,ASSEI,PTIOD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 680,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DIA",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "MIM",
+      "type": 0
+    },
+    {
+      "word": "SUA",
+      "type": 0
+    },
+    {
+      "word": "AIDS",
+      "type": 0
+    },
+    {
+      "word": "CARA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "AIE",
+      "type": 0
+    },
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ASU",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "CSU",
+      "type": 0
+    },
+    {
+      "word": "DOA",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "EIA",
+      "type": 0
+    },
+    {
+      "word": "EID",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LIM",
+      "type": 0
+    },
+    {
+      "word": "LUA",
+      "type": 0
+    },
+    {
+      "word": "MIL",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "MOL",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "OLI",
+      "type": 0
+    },
+    {
+      "word": "OMI",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "SUL",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "USC",
+      "type": 0
+    },
+    {
+      "word": "AULA",
+      "type": 0
+    },
+    {
+      "word": "CARE",
+      "type": 0
+    },
+    {
+      "word": "DOAR",
+      "type": 0
+    },
+    {
+      "word": "IDOL",
+      "type": 0
+    },
+    {
+      "word": "LIMA",
+      "type": 0
+    },
+    {
+      "word": "LIMO",
+      "type": 0
+    },
+    {
+      "word": "LUAR",
+      "type": 0
+    },
+    {
+      "word": "MALI",
+      "type": 0
+    },
+    {
+      "word": "MILA",
+      "type": 0
+    },
+    {
+      "word": "MILO",
+      "type": 0
+    },
+    {
+      "word": "MILU",
+      "type": 0
+    },
+    {
+      "word": "MIMA",
+      "type": 0
+    },
+    {
+      "word": "MIMO",
+      "type": 0
+    },
+    {
+      "word": "MODI",
+      "type": 0
+    },
+    {
+      "word": "MOLA",
+      "type": 0
+    },
+    {
+      "word": "ODIE",
+      "type": 0
+    },
+    {
+      "word": "RAID",
+      "type": 0
+    },
+    {
+      "word": "RAUL",
+      "type": 0
+    },
+    {
+      "word": "RAUS",
+      "type": 0
+    },
+    {
+      "word": "REID",
+      "type": 0
+    },
+    {
+      "word": "SAMI",
+      "type": 0
+    },
+    {
+      "word": "SCAR",
+      "type": 0
+    },
+    {
+      "word": "SUAR",
+      "type": 0
+    },
+    {
+      "word": "USAM",
+      "type": 0
+    },
+    {
+      "word": "AREIA",
+      "type": 0
+    },
+    {
+      "word": "AULAS",
+      "type": 0
+    },
+    {
+      "word": "CAUSA",
+      "type": 0
+    },
+    {
+      "word": "LASCA",
+      "type": 0
+    },
+    {
+      "word": "MOLAS",
+      "type": 0
+    },
+    {
+      "word": "ODIAR",
+      "type": 0
+    },
+    {
+      "word": "SALIM",
+      "type": 0
+    },
+    {
+      "word": "CAUSAM",
+      "type": 0
+    },
+    {
+      "word": "LASCAR",
+      "type": 0
+    },
+    {
+      "word": "MASCAR",
+      "type": 0
+    },
+    {
+      "word": "MASCARA",
+      "type": 0
+    }
+  ],
+  "letters": "SDIE,MOAR,ILUA,MASC",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

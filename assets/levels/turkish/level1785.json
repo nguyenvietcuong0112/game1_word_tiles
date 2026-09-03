@@ -1,38 +1,143 @@
-﻿{
-    "id":  1785,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AĞIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AĞIZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOLA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-
-                    ],
-    "letters":  "ĞIZ,ALR,MOA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1785,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LİN",
+      "type": 0
+    },
+    {
+      "word": "LİV",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "ULU",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "ALAY",
+      "type": 0
+    },
+    {
+      "word": "ALIN",
+      "type": 0
+    },
+    {
+      "word": "ALANI",
+      "type": 0
+    },
+    {
+      "word": "YALAN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "LAU",
+      "type": 0
+    },
+    {
+      "word": "LAY",
+      "type": 0
+    },
+    {
+      "word": "LİL",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NUR",
+      "type": 0
+    },
+    {
+      "word": "NİL",
+      "type": 0
+    },
+    {
+      "word": "RUN",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "İVY",
+      "type": 0
+    },
+    {
+      "word": "LİLİ",
+      "type": 0
+    },
+    {
+      "word": "LİNE",
+      "type": 0
+    },
+    {
+      "word": "YALA",
+      "type": 0
+    },
+    {
+      "word": "İNER",
+      "type": 0
+    },
+    {
+      "word": "YALIN",
+      "type": 0
+    },
+    {
+      "word": "YALANI",
+      "type": 0
+    }
+  ],
+  "letters": "LİVY,İLUA,NUIL,ERNA",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,83 +1,187 @@
-﻿{
-    "id":  2000,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GÖZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÖK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÖRS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KENE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ÖZEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÖZERK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GÖRENEK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GÖZENEK",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "GÖRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GÖZENE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GÖZER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KÖS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÖREN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ZENE,ÖRSK,GKÖK",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2000,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "AİT",
+      "type": 0
+    },
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "ADIN",
+      "type": 0
+    },
+    {
+      "word": "DAİR",
+      "type": 0
+    },
+    {
+      "word": "TREN",
+      "type": 0
+    },
+    {
+      "word": "ADINI",
+      "type": 0
+    },
+    {
+      "word": "TATİL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "AYI",
+      "type": 0
+    },
+    {
+      "word": "AİR",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "DAİ",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "INI",
+      "type": 0
+    },
+    {
+      "word": "PAİ",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "REİ",
+      "type": 0
+    },
+    {
+      "word": "RİA",
+      "type": 0
+    },
+    {
+      "word": "TAT",
+      "type": 0
+    },
+    {
+      "word": "TİA",
+      "type": 0
+    },
+    {
+      "word": "YAD",
+      "type": 0
+    },
+    {
+      "word": "İRV",
+      "type": 0
+    },
+    {
+      "word": "ADLİ",
+      "type": 0
+    },
+    {
+      "word": "AYIN",
+      "type": 0
+    },
+    {
+      "word": "AYIR",
+      "type": 0
+    },
+    {
+      "word": "DANE",
+      "type": 0
+    },
+    {
+      "word": "DAYI",
+      "type": 0
+    },
+    {
+      "word": "VEDA",
+      "type": 0
+    },
+    {
+      "word": "YANI",
+      "type": 0
+    },
+    {
+      "word": "YIRT",
+      "type": 0
+    },
+    {
+      "word": "AYINI",
+      "type": 0
+    },
+    {
+      "word": "AYIRT",
+      "type": 0
+    },
+    {
+      "word": "DAYIN",
+      "type": 0
+    },
+    {
+      "word": "DEVRİ",
+      "type": 0
+    }
+  ],
+  "letters": "YIRTA,ANEPT,DIİAİ,EVRDL",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

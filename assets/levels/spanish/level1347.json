@@ -1,113 +1,275 @@
-﻿{
-    "id":  1347,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUNA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NATAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NATURAL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ATTO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MATAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NATURA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RUNA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TALO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TURA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UNA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UTA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RALO,UTTO,NAMZ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1347,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "ABRA",
+      "type": 0
+    },
+    {
+      "word": "AIRE",
+      "type": 0
+    },
+    {
+      "word": "ALTA",
+      "type": 0
+    },
+    {
+      "word": "PLAN",
+      "type": 0
+    },
+    {
+      "word": "PIANO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "BLA",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "IAN",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "LAI",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LBA",
+      "type": 0
+    },
+    {
+      "word": "NAI",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PIA",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "RIP",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "ABRO",
+      "type": 0
+    },
+    {
+      "word": "ALBA",
+      "type": 0
+    },
+    {
+      "word": "AREA",
+      "type": 0
+    },
+    {
+      "word": "ARIA",
+      "type": 0
+    },
+    {
+      "word": "ARON",
+      "type": 0
+    },
+    {
+      "word": "BRAN",
+      "type": 0
+    },
+    {
+      "word": "CAPI",
+      "type": 0
+    },
+    {
+      "word": "CARE",
+      "type": 0
+    },
+    {
+      "word": "CARI",
+      "type": 0
+    },
+    {
+      "word": "LANA",
+      "type": 0
+    },
+    {
+      "word": "NORA",
+      "type": 0
+    },
+    {
+      "word": "ORAL",
+      "type": 0
+    },
+    {
+      "word": "PARE",
+      "type": 0
+    },
+    {
+      "word": "PARI",
+      "type": 0
+    },
+    {
+      "word": "PIRA",
+      "type": 0
+    },
+    {
+      "word": "RANA",
+      "type": 0
+    },
+    {
+      "word": "SCAR",
+      "type": 0
+    },
+    {
+      "word": "ABRAN",
+      "type": 0
+    },
+    {
+      "word": "BLAIR",
+      "type": 0
+    },
+    {
+      "word": "PARIA",
+      "type": 0
+    },
+    {
+      "word": "PLANA",
+      "type": 0
+    },
+    {
+      "word": "PLANO",
+      "type": 0
+    },
+    {
+      "word": "TABLA",
+      "type": 0
+    },
+    {
+      "word": "ARIANA",
+      "type": 0
+    },
+    {
+      "word": "BLAIRE",
+      "type": 0
+    },
+    {
+      "word": "CAPLAN",
+      "type": 0
+    }
+  ],
+  "letters": "CSTA,APLB,RIAR,EANO",
+  "obstacles": []
 }

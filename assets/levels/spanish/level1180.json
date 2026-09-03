@@ -1,97 +1,191 @@
-﻿{
-    "id":  1180,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ABAJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRABA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TRABAJO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "JARA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "OJAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "OTRA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RABA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REV",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOKIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TREO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VAREO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VERA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BAJO,ARTI,VEOK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1180,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADN",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "DAVE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARN",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "DRA",
+      "type": 0
+    },
+    {
+      "word": "EPA",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "NED",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "VEE",
+      "type": 0
+    },
+    {
+      "word": "ARDE",
+      "type": 0
+    },
+    {
+      "word": "ARNE",
+      "type": 0
+    },
+    {
+      "word": "ARRE",
+      "type": 0
+    },
+    {
+      "word": "BARN",
+      "type": 0
+    },
+    {
+      "word": "DARA",
+      "type": 0
+    },
+    {
+      "word": "NEAR",
+      "type": 0
+    },
+    {
+      "word": "PARR",
+      "type": 0
+    },
+    {
+      "word": "PAVA",
+      "type": 0
+    },
+    {
+      "word": "RAVE",
+      "type": 0
+    },
+    {
+      "word": "VARA",
+      "type": 0
+    },
+    {
+      "word": "ARDEN",
+      "type": 0
+    },
+    {
+      "word": "ARDER",
+      "type": 0
+    },
+    {
+      "word": "DERRAPE",
+      "type": 0
+    }
+  ],
+  "letters": "PARR,EVNE,EARD,NDAB",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

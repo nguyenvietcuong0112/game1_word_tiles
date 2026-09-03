@@ -1,101 +1,95 @@
-﻿{
-    "id":  1745,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "БЕС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ДУШ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ОДР",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПОЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПУД",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КАРЕ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СЕРА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ДУШКА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛОДКА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПУДРА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПУШКА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ОПУШКА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПОДУШКА",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АРЕ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "БЕР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ДОЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАРЛО",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛОД",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ПОД",
-                            "type":  0
-                        },
-                        {
-                            "word":  "РЕС",
-                            "type":  0
-                        },
-                        {
-                            "word":  "САК",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ШКАС,УДРЕ,ПОЛБ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1745,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "БОГ",
+      "type": 0
+    },
+    {
+      "word": "ГАВ",
+      "type": 0
+    },
+    {
+      "word": "ИМЯ",
+      "type": 0
+    },
+    {
+      "word": "ЛЖИ",
+      "type": 0
+    },
+    {
+      "word": "МИР",
+      "type": 0
+    },
+    {
+      "word": "МОГ",
+      "type": 0
+    },
+    {
+      "word": "ОБА",
+      "type": 0
+    },
+    {
+      "word": "РИМ",
+      "type": 0
+    },
+    {
+      "word": "БОГА",
+      "type": 0
+    },
+    {
+      "word": "ВЕРЬ",
+      "type": 0
+    },
+    {
+      "word": "ПЕРЬЯ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "БАГ",
+      "type": 0
+    },
+    {
+      "word": "БОМ",
+      "type": 0
+    },
+    {
+      "word": "ВЕР",
+      "type": 0
+    },
+    {
+      "word": "ЖИР",
+      "type": 0
+    },
+    {
+      "word": "ПЕР",
+      "type": 0
+    },
+    {
+      "word": "РЕВ",
+      "type": 0
+    },
+    {
+      "word": "ПЕРЬЯМИ",
+      "type": 0
+    }
+  ],
+  "letters": "ЛГАВ,ЖОБВ,ИМРЕ,РЯЬП",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

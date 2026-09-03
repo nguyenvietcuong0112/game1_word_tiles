@@ -1,101 +1,195 @@
-﻿{
-    "id":  2320,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKOR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ARAK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAŞA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARAMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AŞAMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KARADUT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AŞAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DARA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RAKOR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ŞAMAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RMART,OAŞAU,KARAD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2320,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "JOE",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "LEO",
+      "type": 0
+    },
+    {
+      "word": "ONU",
+      "type": 0
+    },
+    {
+      "word": "KARA",
+      "type": 0
+    },
+    {
+      "word": "KONU",
+      "type": 0
+    },
+    {
+      "word": "TARA",
+      "type": 0
+    },
+    {
+      "word": "DAKKA",
+      "type": 0
+    },
+    {
+      "word": "ELLEN",
+      "type": 0
+    },
+    {
+      "word": "KONUDA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DAO",
+      "type": 0
+    },
+    {
+      "word": "DUN",
+      "type": 0
+    },
+    {
+      "word": "EKO",
+      "type": 0
+    },
+    {
+      "word": "JAR",
+      "type": 0
+    },
+    {
+      "word": "KEL",
+      "type": 0
+    },
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "KON",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "NEO",
+      "type": 0
+    },
+    {
+      "word": "OAK",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "RAJ",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "TAJ",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "ADAK",
+      "type": 0
+    },
+    {
+      "word": "EKLE",
+      "type": 0
+    },
+    {
+      "word": "ELLE",
+      "type": 0
+    },
+    {
+      "word": "ETLE",
+      "type": 0
+    },
+    {
+      "word": "JOEL",
+      "type": 0
+    },
+    {
+      "word": "NELL",
+      "type": 0
+    },
+    {
+      "word": "RAJA",
+      "type": 0
+    },
+    {
+      "word": "TELL",
+      "type": 0
+    },
+    {
+      "word": "KARAT",
+      "type": 0
+    },
+    {
+      "word": "KELLE",
+      "type": 0
+    },
+    {
+      "word": "NELLE",
+      "type": 0
+    },
+    {
+      "word": "ONUDA",
+      "type": 0
+    },
+    {
+      "word": "TARAK",
+      "type": 0
+    },
+    {
+      "word": "KARATE",
+      "type": 0
+    }
+  ],
+  "letters": "CRATE,KAJLL,KAOEK,ADUNO",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

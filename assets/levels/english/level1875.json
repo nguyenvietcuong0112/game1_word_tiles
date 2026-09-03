@@ -1,87 +1,235 @@
-﻿{
-    "id":  1875,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARC",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARCH",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GAME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAGE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RAGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARCH",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CRAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEGA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GEU,AMC,RCH",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1875,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "DALE",
+      "type": 0
+    },
+    {
+      "word": "RAPE",
+      "type": 0
+    },
+    {
+      "word": "TILE",
+      "type": 0
+    },
+    {
+      "word": "SERVE",
+      "type": 0
+    },
+    {
+      "word": "TIDAL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DIT",
+      "type": 0
+    },
+    {
+      "word": "ENG",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GIT",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LIT",
+      "type": 0
+    },
+    {
+      "word": "NEB",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PEG",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "SAP",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "TIL",
+      "type": 0
+    },
+    {
+      "word": "ADIT",
+      "type": 0
+    },
+    {
+      "word": "ALES",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "BEAD",
+      "type": 0
+    },
+    {
+      "word": "BEND",
+      "type": 0
+    },
+    {
+      "word": "BENT",
+      "type": 0
+    },
+    {
+      "word": "BRAS",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "ESES",
+      "type": 0
+    },
+    {
+      "word": "PARE",
+      "type": 0
+    },
+    {
+      "word": "PASE",
+      "type": 0
+    },
+    {
+      "word": "RASE",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "VEAL",
+      "type": 0
+    },
+    {
+      "word": "VEND",
+      "type": 0
+    },
+    {
+      "word": "VENT",
+      "type": 0
+    },
+    {
+      "word": "DALES",
+      "type": 0
+    },
+    {
+      "word": "LEGIT",
+      "type": 0
+    },
+    {
+      "word": "PARES",
+      "type": 0
+    },
+    {
+      "word": "PARVE",
+      "type": 0
+    },
+    {
+      "word": "PASES",
+      "type": 0
+    },
+    {
+      "word": "RASES",
+      "type": 0
+    },
+    {
+      "word": "VENGE",
+      "type": 0
+    },
+    {
+      "word": "SERAPE",
+      "type": 0
+    }
+  ],
+  "letters": "LEPAS,IGBRE,TNEVS,IDALE",
+  "obstacles": []
 }

@@ -1,85 +1,235 @@
-﻿{
-    "id":  657,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "RIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGIR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ANCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GARI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIXA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GARÇA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TANGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARIOCA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ATRIGAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CRAXI",
-                            "type":  2
-                        },
-                        {
-                            "word":  "OCRA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RIXAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TANGAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TRIGA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TRIGAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "XIRA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RIXIO,TGARC,ANCÇA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 657,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "LER",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "TAL",
+      "type": 0
+    },
+    {
+      "word": "ALTO",
+      "type": 0
+    },
+    {
+      "word": "LAGO",
+      "type": 0
+    },
+    {
+      "word": "LUTA",
+      "type": 0
+    },
+    {
+      "word": "OLHA",
+      "type": 0
+    },
+    {
+      "word": "VOLTA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "ELO",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GAO",
+      "type": 0
+    },
+    {
+      "word": "GOL",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "HAO",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "LOG",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "RUT",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TOA",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "URE",
+      "type": 0
+    },
+    {
+      "word": "ALMA",
+      "type": 0
+    },
+    {
+      "word": "ALTA",
+      "type": 0
+    },
+    {
+      "word": "ATOL",
+      "type": 0
+    },
+    {
+      "word": "ATOR",
+      "type": 0
+    },
+    {
+      "word": "GALO",
+      "type": 0
+    },
+    {
+      "word": "GALT",
+      "type": 0
+    },
+    {
+      "word": "GOLA",
+      "type": 0
+    },
+    {
+      "word": "HALO",
+      "type": 0
+    },
+    {
+      "word": "HALT",
+      "type": 0
+    },
+    {
+      "word": "LORE",
+      "type": 0
+    },
+    {
+      "word": "LUTO",
+      "type": 0
+    },
+    {
+      "word": "MATO",
+      "type": 0
+    },
+    {
+      "word": "ROLE",
+      "type": 0
+    },
+    {
+      "word": "ROTA",
+      "type": 0
+    },
+    {
+      "word": "TORE",
+      "type": 0
+    },
+    {
+      "word": "TULA",
+      "type": 0
+    },
+    {
+      "word": "VOLM",
+      "type": 0
+    },
+    {
+      "word": "LUTAM",
+      "type": 0
+    },
+    {
+      "word": "ROLHA",
+      "type": 0
+    },
+    {
+      "word": "VOGAL",
+      "type": 0
+    },
+    {
+      "word": "VOLTO",
+      "type": 0
+    },
+    {
+      "word": "ORELHA",
+      "type": 0
+    },
+    {
+      "word": "VOLTAM",
+      "type": 0
+    }
+  ],
+  "letters": "ERUL,LOTA,HALM,AGOV",
+  "obstacles": []
 }

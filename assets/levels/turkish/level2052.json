@@ -1,93 +1,139 @@
-﻿{
-    "id":  2052,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İYOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VANA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAVAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VERSİYON",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "İYON",
-                            "type":  1
-                        },
-                        {
-                            "word":  "NOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OLMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ONAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAV",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YOLMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YONMA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EVLMA,RYONA,SİTAV",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2052,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ATI",
+      "type": 0
+    },
+    {
+      "word": "AŞK",
+      "type": 0
+    },
+    {
+      "word": "BOŞ",
+      "type": 0
+    },
+    {
+      "word": "MAW",
+      "type": 0
+    },
+    {
+      "word": "ASLA",
+      "type": 0
+    },
+    {
+      "word": "ATTI",
+      "type": 0
+    },
+    {
+      "word": "AÇTI",
+      "type": 0
+    },
+    {
+      "word": "BOŞA",
+      "type": 0
+    },
+    {
+      "word": "AKŞAM",
+      "type": 0
+    },
+    {
+      "word": "DAİMA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "AÇI",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "DAİ",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "MİA",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "ÇIT",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "ŞAM",
+      "type": 0
+    },
+    {
+      "word": "ADAK",
+      "type": 0
+    },
+    {
+      "word": "ALSA",
+      "type": 0
+    },
+    {
+      "word": "ASLI",
+      "type": 0
+    },
+    {
+      "word": "AŞKA",
+      "type": 0
+    },
+    {
+      "word": "DAİM",
+      "type": 0
+    },
+    {
+      "word": "SATTI",
+      "type": 0
+    }
+  ],
+  "letters": "IÇAİW,TTDMA,AIAKŞ,SLABO",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

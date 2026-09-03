@@ -1,65 +1,267 @@
-﻿{
-    "id":  957,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AXÉ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AÇÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOJA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAÇÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DURAÇÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUDAÇÃO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAÇÃO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SUDÃO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ÇÃOAX,ADÃJÉ,RUSOM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 957,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "POR",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "IREI",
+      "type": 0
+    },
+    {
+      "word": "LORI",
+      "type": 0
+    },
+    {
+      "word": "ABRIR",
+      "type": 0
+    },
+    {
+      "word": "CAMPO",
+      "type": 0
+    },
+    {
+      "word": "PERDI",
+      "type": 0
+    },
+    {
+      "word": "PERTO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "BAI",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "BRI",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "CID",
+      "type": 0
+    },
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "DRE",
+      "type": 0
+    },
+    {
+      "word": "EID",
+      "type": 0
+    },
+    {
+      "word": "EPI",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "IRO",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "ORI",
+      "type": 0
+    },
+    {
+      "word": "PEI",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "PIA",
+      "type": 0
+    },
+    {
+      "word": "POL",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "RIP",
+      "type": 0
+    },
+    {
+      "word": "RIR",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "TAB",
+      "type": 0
+    },
+    {
+      "word": "TAI",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "TRE",
+      "type": 0
+    },
+    {
+      "word": "TRI",
+      "type": 0
+    },
+    {
+      "word": "ABRI",
+      "type": 0
+    },
+    {
+      "word": "ABRO",
+      "type": 0
+    },
+    {
+      "word": "ACID",
+      "type": 0
+    },
+    {
+      "word": "AIPO",
+      "type": 0
+    },
+    {
+      "word": "BATO",
+      "type": 0
+    },
+    {
+      "word": "BRIA",
+      "type": 0
+    },
+    {
+      "word": "CAMP",
+      "type": 0
+    },
+    {
+      "word": "DICA",
+      "type": 0
+    },
+    {
+      "word": "LOPE",
+      "type": 0
+    },
+    {
+      "word": "ODIE",
+      "type": 0
+    },
+    {
+      "word": "PERI",
+      "type": 0
+    },
+    {
+      "word": "PIRE",
+      "type": 0
+    },
+    {
+      "word": "REID",
+      "type": 0
+    },
+    {
+      "word": "TRIP",
+      "type": 0
+    },
+    {
+      "word": "BAIRD",
+      "type": 0
+    },
+    {
+      "word": "DREAM",
+      "type": 0
+    },
+    {
+      "word": "PEIDO",
+      "type": 0
+    },
+    {
+      "word": "PIREI",
+      "type": 0
+    },
+    {
+      "word": "PORIA",
+      "type": 0
+    },
+    {
+      "word": "REPOR",
+      "type": 0
+    },
+    {
+      "word": "ROPER",
+      "type": 0
+    },
+    {
+      "word": "TAIPEI",
+      "type": 0
+    },
+    {
+      "word": "ABRIREI",
+      "type": 0
+    }
+  ],
+  "letters": "CIDO,AERT,MPIA,LORB",
+  "obstacles": []
 }

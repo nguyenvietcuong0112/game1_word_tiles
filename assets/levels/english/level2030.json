@@ -1,126 +1,251 @@
-﻿{
-    "id":  2030,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACHE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CASH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EACH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SINK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHEESE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASKS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CASK",
-                            "type":  1
-                        },
-                        {
-                            "word":  "INKS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEEKS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SINE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SINKS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CHEE,ASKS,EINE",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2030,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BIG",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "LIB",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SKI",
+      "type": 0
+    },
+    {
+      "word": "COED",
+      "type": 0
+    },
+    {
+      "word": "DESK",
+      "type": 0
+    },
+    {
+      "word": "DOSE",
+      "type": 0
+    },
+    {
+      "word": "RIDE",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "GIB",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "RID",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SOD",
+      "type": 0
+    },
+    {
+      "word": "DINE",
+      "type": 0
+    },
+    {
+      "word": "DIRE",
+      "type": 0
+    },
+    {
+      "word": "ESES",
+      "type": 0
+    },
+    {
+      "word": "GIBS",
+      "type": 0
+    },
+    {
+      "word": "GILD",
+      "type": 0
+    },
+    {
+      "word": "IDES",
+      "type": 0
+    },
+    {
+      "word": "IRED",
+      "type": 0
+    },
+    {
+      "word": "IRES",
+      "type": 0
+    },
+    {
+      "word": "LIBS",
+      "type": 0
+    },
+    {
+      "word": "NIDE",
+      "type": 0
+    },
+    {
+      "word": "ODES",
+      "type": 0
+    },
+    {
+      "word": "OSES",
+      "type": 0
+    },
+    {
+      "word": "REDE",
+      "type": 0
+    },
+    {
+      "word": "RODE",
+      "type": 0
+    },
+    {
+      "word": "DINES",
+      "type": 0
+    },
+    {
+      "word": "DOSED",
+      "type": 0
+    },
+    {
+      "word": "DOSES",
+      "type": 0
+    },
+    {
+      "word": "NIDED",
+      "type": 0
+    },
+    {
+      "word": "NIDES",
+      "type": 0
+    },
+    {
+      "word": "REDED",
+      "type": 0
+    },
+    {
+      "word": "REDES",
+      "type": 0
+    },
+    {
+      "word": "RIDES",
+      "type": 0
+    },
+    {
+      "word": "ROSED",
+      "type": 0
+    },
+    {
+      "word": "ROSES",
+      "type": 0
+    },
+    {
+      "word": "SEDER",
+      "type": 0
+    },
+    {
+      "word": "SERIN",
+      "type": 0
+    },
+    {
+      "word": "GILDED",
+      "type": 0
+    },
+    {
+      "word": "SERINE",
+      "type": 0
+    },
+    {
+      "word": "ESERINE",
+      "type": 0
+    },
+    {
+      "word": "SERINES",
+      "type": 0
+    },
+    {
+      "word": "ESERINES",
+      "type": 0
+    }
+  ],
+  "letters": "COKIG,RESBI,IDEDL,NESOR",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

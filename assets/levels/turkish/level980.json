@@ -1,61 +1,163 @@
-﻿{
-    "id":  980,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÜRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PARK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PARKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUMBARA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARAP",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KÜR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÜRE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UMER,KBKÜ,PARA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 980,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACI",
+      "type": 0
+    },
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "CEP",
+      "type": 0
+    },
+    {
+      "word": "İSE",
+      "type": 0
+    },
+    {
+      "word": "ESİR",
+      "type": 0
+    },
+    {
+      "word": "HAVA",
+      "type": 0
+    },
+    {
+      "word": "SEAN",
+      "type": 0
+    },
+    {
+      "word": "SİLAH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "AVI",
+      "type": 0
+    },
+    {
+      "word": "CLA",
+      "type": 0
+    },
+    {
+      "word": "HAC",
+      "type": 0
+    },
+    {
+      "word": "HAE",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "HAV",
+      "type": 0
+    },
+    {
+      "word": "LAV",
+      "type": 0
+    },
+    {
+      "word": "LİS",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SİL",
+      "type": 0
+    },
+    {
+      "word": "SİR",
+      "type": 0
+    },
+    {
+      "word": "VAH",
+      "type": 0
+    },
+    {
+      "word": "VAL",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "ANLA",
+      "type": 0
+    },
+    {
+      "word": "AVAL",
+      "type": 0
+    },
+    {
+      "word": "CIVA",
+      "type": 0
+    },
+    {
+      "word": "HACI",
+      "type": 0
+    },
+    {
+      "word": "HALİ",
+      "type": 0
+    },
+    {
+      "word": "LİSE",
+      "type": 0
+    },
+    {
+      "word": "VALİ",
+      "type": 0
+    },
+    {
+      "word": "AHALİ",
+      "type": 0
+    },
+    {
+      "word": "HAVACI",
+      "type": 0
+    },
+    {
+      "word": "SİLAHA",
+      "type": 0
+    }
+  ],
+  "letters": "PECR,HALİ,AVNS,CIAE",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

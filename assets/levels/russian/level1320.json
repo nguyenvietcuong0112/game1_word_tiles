@@ -1,135 +1,91 @@
-﻿{
-    "id":  1320,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "БУК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БЫТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КУШ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РАЗ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТУЗ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ШАР",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ШУТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ИКАР",
-                             "type":  1
-                         },
-                         {
-                             "word":  "КАРИ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КАРП",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТУША",
-                             "type":  0
-                         },
-                         {
-                             "word":  "УКАЗ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ШАРИК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПРИКАЗ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АЗУ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "БУКА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЗАК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЗАР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ИРАК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАШ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КИР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КУБ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ПРА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ПРИ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "РАШ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "УЗА",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ТУЗП,ЫШАР,БУКИ",
-    "obstacles":  [
-                      {
-                          "required_words":  8,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1320,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ВРИ",
+      "type": 0
+    },
+    {
+      "word": "ДИН",
+      "type": 0
+    },
+    {
+      "word": "ЕДУ",
+      "type": 0
+    },
+    {
+      "word": "ИДУ",
+      "type": 0
+    },
+    {
+      "word": "ПРИ",
+      "type": 0
+    },
+    {
+      "word": "РИЗ",
+      "type": 0
+    },
+    {
+      "word": "РИК",
+      "type": 0
+    },
+    {
+      "word": "ИДЕЮ",
+      "type": 0
+    },
+    {
+      "word": "ПРИЗ",
+      "type": 0
+    },
+    {
+      "word": "ЭНРИКЕ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ВЭН",
+      "type": 0
+    },
+    {
+      "word": "ИДЕ",
+      "type": 0
+    },
+    {
+      "word": "НИЗ",
+      "type": 0
+    },
+    {
+      "word": "РИН",
+      "type": 0
+    },
+    {
+      "word": "ДИНУ",
+      "type": 0
+    },
+    {
+      "word": "ПРИН",
+      "type": 0
+    }
+  ],
+  "letters": "ВЭЗП,РНИР,ИЮУН,КЕДИ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

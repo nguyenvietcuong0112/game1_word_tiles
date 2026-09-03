@@ -1,49 +1,175 @@
-﻿{
-    "id":  1095,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ABLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MELT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TABLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EMBLEM",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "TAB",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OME,MBL,EAT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1095,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "RUG",
+      "type": 0
+    },
+    {
+      "word": "SAW",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "WAS",
+      "type": 0
+    },
+    {
+      "word": "WET",
+      "type": 0
+    },
+    {
+      "word": "SHEET",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "AWA",
+      "type": 0
+    },
+    {
+      "word": "HEP",
+      "type": 0
+    },
+    {
+      "word": "HET",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PAW",
+      "type": 0
+    },
+    {
+      "word": "PEH",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAP",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TEW",
+      "type": 0
+    },
+    {
+      "word": "UGH",
+      "type": 0
+    },
+    {
+      "word": "WAE",
+      "type": 0
+    },
+    {
+      "word": "WAP",
+      "type": 0
+    },
+    {
+      "word": "WEE",
+      "type": 0
+    },
+    {
+      "word": "GHEE",
+      "type": 0
+    },
+    {
+      "word": "HEAP",
+      "type": 0
+    },
+    {
+      "word": "PASH",
+      "type": 0
+    },
+    {
+      "word": "SHEA",
+      "type": 0
+    },
+    {
+      "word": "TEPA",
+      "type": 0
+    },
+    {
+      "word": "THEE",
+      "type": 0
+    },
+    {
+      "word": "WASH",
+      "type": 0
+    },
+    {
+      "word": "WHEE",
+      "type": 0
+    },
+    {
+      "word": "AWASH",
+      "type": 0
+    },
+    {
+      "word": "SHEEP",
+      "type": 0
+    },
+    {
+      "word": "TEPAS",
+      "type": 0
+    },
+    {
+      "word": "WHEEP",
+      "type": 0
+    }
+  ],
+  "letters": "AWRU,SAPG,HEEH,WETT",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

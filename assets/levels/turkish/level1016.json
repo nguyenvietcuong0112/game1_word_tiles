@@ -1,77 +1,219 @@
-﻿{
-    "id":  1016,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİST",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KLAS",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ESMEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KESME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KESMEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İSTASYON",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALYON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OYSA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SONSAL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SOYSAL",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "TASNK,SLYOE,İKESM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1016,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "ALF",
+      "type": 0
+    },
+    {
+      "word": "KAL",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "SES",
+      "type": 0
+    },
+    {
+      "word": "DAKİ",
+      "type": 0
+    },
+    {
+      "word": "EMİR",
+      "type": 0
+    },
+    {
+      "word": "ESPRİ",
+      "type": 0
+    },
+    {
+      "word": "MADEM",
+      "type": 0
+    },
+    {
+      "word": "SELAM",
+      "type": 0
+    },
+    {
+      "word": "SLADE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DEM",
+      "type": 0
+    },
+    {
+      "word": "DİK",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ELF",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "KİD",
+      "type": 0
+    },
+    {
+      "word": "LAK",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "RİM",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SRİ",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "İRS",
+      "type": 0
+    },
+    {
+      "word": "ADEM",
+      "type": 0
+    },
+    {
+      "word": "AMİR",
+      "type": 0
+    },
+    {
+      "word": "DALE",
+      "type": 0
+    },
+    {
+      "word": "DAME",
+      "type": 0
+    },
+    {
+      "word": "DEMİ",
+      "type": 0
+    },
+    {
+      "word": "KALE",
+      "type": 0
+    },
+    {
+      "word": "MADE",
+      "type": 0
+    },
+    {
+      "word": "MAKİ",
+      "type": 0
+    },
+    {
+      "word": "PRİM",
+      "type": 0
+    },
+    {
+      "word": "İDAM",
+      "type": 0
+    },
+    {
+      "word": "İMAL",
+      "type": 0
+    },
+    {
+      "word": "DEMİR",
+      "type": 0
+    },
+    {
+      "word": "KADEM",
+      "type": 0
+    },
+    {
+      "word": "PRİME",
+      "type": 0
+    },
+    {
+      "word": "MEDİKAL",
+      "type": 0
+    }
+  ],
+  "letters": "PRİM,SSME,ELAD,SFKİ",
+  "obstacles": []
 }

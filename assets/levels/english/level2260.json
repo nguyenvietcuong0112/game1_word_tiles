@@ -1,109 +1,307 @@
-﻿{
-    "id":  2260,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IVY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRIT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VASE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GRACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRAVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRAVY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAVITY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRAVITY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAVES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GRACES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "GRAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GRAVES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RACES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIVE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SARI",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "ESEE,CAVY,GRIT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2260,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "MAP",
+      "type": 0
+    },
+    {
+      "word": "POP",
+      "type": 0
+    },
+    {
+      "word": "ABLE",
+      "type": 0
+    },
+    {
+      "word": "CHAP",
+      "type": 0
+    },
+    {
+      "word": "ELSE",
+      "type": 0
+    },
+    {
+      "word": "HOPE",
+      "type": 0
+    },
+    {
+      "word": "MALE",
+      "type": 0
+    },
+    {
+      "word": "PAPA",
+      "type": 0
+    },
+    {
+      "word": "SAVE",
+      "type": 0
+    },
+    {
+      "word": "SELL",
+      "type": 0
+    },
+    {
+      "word": "LEAVE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BAM",
+      "type": 0
+    },
+    {
+      "word": "BEE",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "HAP",
+      "type": 0
+    },
+    {
+      "word": "HEP",
+      "type": 0
+    },
+    {
+      "word": "HOP",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "PAH",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "PAP",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "PEH",
+      "type": 0
+    },
+    {
+      "word": "POH",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "VAS",
+      "type": 0
+    },
+    {
+      "word": "VEE",
+      "type": 0
+    },
+    {
+      "word": "ALES",
+      "type": 0
+    },
+    {
+      "word": "ALLS",
+      "type": 0
+    },
+    {
+      "word": "BALE",
+      "type": 0
+    },
+    {
+      "word": "BALL",
+      "type": 0
+    },
+    {
+      "word": "CHOP",
+      "type": 0
+    },
+    {
+      "word": "EASE",
+      "type": 0
+    },
+    {
+      "word": "EAVE",
+      "type": 0
+    },
+    {
+      "word": "EELS",
+      "type": 0
+    },
+    {
+      "word": "ELLS",
+      "type": 0
+    },
+    {
+      "word": "EPEE",
+      "type": 0
+    },
+    {
+      "word": "HEEL",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "LEAS",
+      "type": 0
+    },
+    {
+      "word": "MABE",
+      "type": 0
+    },
+    {
+      "word": "MALL",
+      "type": 0
+    },
+    {
+      "word": "OPAH",
+      "type": 0
+    },
+    {
+      "word": "PEEL",
+      "type": 0
+    },
+    {
+      "word": "POPE",
+      "type": 0
+    },
+    {
+      "word": "VASE",
+      "type": 0
+    },
+    {
+      "word": "ALLEE",
+      "type": 0
+    },
+    {
+      "word": "BALES",
+      "type": 0
+    },
+    {
+      "word": "BALLS",
+      "type": 0
+    },
+    {
+      "word": "BLEEP",
+      "type": 0
+    },
+    {
+      "word": "EASEL",
+      "type": 0
+    },
+    {
+      "word": "HEELS",
+      "type": 0
+    },
+    {
+      "word": "LEASE",
+      "type": 0
+    },
+    {
+      "word": "LLAMA",
+      "type": 0
+    },
+    {
+      "word": "MALES",
+      "type": 0
+    },
+    {
+      "word": "MALLS",
+      "type": 0
+    },
+    {
+      "word": "PEELS",
+      "type": 0
+    },
+    {
+      "word": "SELLE",
+      "type": 0
+    },
+    {
+      "word": "SLEEP",
+      "type": 0
+    },
+    {
+      "word": "ASLEEP",
+      "type": 0
+    },
+    {
+      "word": "MALLEE",
+      "type": 0
+    },
+    {
+      "word": "SLEAVE",
+      "type": 0
+    }
+  ],
+  "letters": "VEPOP,AEEHA,SLBCP,ELAMA",
+  "obstacles": []
 }

@@ -1,65 +1,175 @@
-﻿{
-    "id":  1485,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SKI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KISS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TASK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUSK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ISSUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STATUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STATUS",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SKIS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STAT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TUE,ASK,TSI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1485,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "TOY",
+      "type": 0
+    },
+    {
+      "word": "BOOT",
+      "type": 0
+    },
+    {
+      "word": "ROOT",
+      "type": 0
+    },
+    {
+      "word": "BOARD",
+      "type": 0
+    },
+    {
+      "word": "BOOTY",
+      "type": 0
+    },
+    {
+      "word": "ABOARD",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABO",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BOA",
+      "type": 0
+    },
+    {
+      "word": "BOD",
+      "type": 0
+    },
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "MOO",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "OAR",
+      "type": 0
+    },
+    {
+      "word": "OOT",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "AMBO",
+      "type": 0
+    },
+    {
+      "word": "BOAR",
+      "type": 0
+    },
+    {
+      "word": "BORA",
+      "type": 0
+    },
+    {
+      "word": "DORY",
+      "type": 0
+    },
+    {
+      "word": "MOOT",
+      "type": 0
+    },
+    {
+      "word": "MORA",
+      "type": 0
+    },
+    {
+      "word": "ODOR",
+      "type": 0
+    },
+    {
+      "word": "ORDO",
+      "type": 0
+    },
+    {
+      "word": "RYOT",
+      "type": 0
+    },
+    {
+      "word": "TOOM",
+      "type": 0
+    },
+    {
+      "word": "ARDOR",
+      "type": 0
+    },
+    {
+      "word": "ROOTY",
+      "type": 0
+    }
+  ],
+  "letters": "ARYY,MOOT,BDOB,ORAA",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

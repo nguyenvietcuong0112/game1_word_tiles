@@ -1,117 +1,275 @@
-﻿{
-    "id":  986,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BECA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOYA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CADA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CELO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALOYA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AYO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BECADA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BOYAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CALE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CEBO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CELADA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DALA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DALE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DALO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LADA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YOLA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CAD,ELA,BOY",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 986,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "IAN",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "BALA",
+      "type": 0
+    },
+    {
+      "word": "BOLA",
+      "type": 0
+    },
+    {
+      "word": "GATO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ANG",
+      "type": 0
+    },
+    {
+      "word": "ATI",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "BAM",
+      "type": 0
+    },
+    {
+      "word": "BOA",
+      "type": 0
+    },
+    {
+      "word": "BOL",
+      "type": 0
+    },
+    {
+      "word": "BOM",
+      "type": 0
+    },
+    {
+      "word": "GAO",
+      "type": 0
+    },
+    {
+      "word": "GIA",
+      "type": 0
+    },
+    {
+      "word": "ITO",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LOA",
+      "type": 0
+    },
+    {
+      "word": "MOB",
+      "type": 0
+    },
+    {
+      "word": "NAI",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "OSA",
+      "type": 0
+    },
+    {
+      "word": "OTA",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TIA",
+      "type": 0
+    },
+    {
+      "word": "TIG",
+      "type": 0
+    },
+    {
+      "word": "TOS",
+      "type": 0
+    },
+    {
+      "word": "ALGA",
+      "type": 0
+    },
+    {
+      "word": "ASMA",
+      "type": 0
+    },
+    {
+      "word": "BOAT",
+      "type": 0
+    },
+    {
+      "word": "GITA",
+      "type": 0
+    },
+    {
+      "word": "LANA",
+      "type": 0
+    },
+    {
+      "word": "LANG",
+      "type": 0
+    },
+    {
+      "word": "LOBA",
+      "type": 0
+    },
+    {
+      "word": "LOMA",
+      "type": 0
+    },
+    {
+      "word": "MOLA",
+      "type": 0
+    },
+    {
+      "word": "NAPA",
+      "type": 0
+    },
+    {
+      "word": "OLGA",
+      "type": 0
+    },
+    {
+      "word": "PALA",
+      "type": 0
+    },
+    {
+      "word": "PALO",
+      "type": 0
+    },
+    {
+      "word": "PANA",
+      "type": 0
+    },
+    {
+      "word": "PANG",
+      "type": 0
+    },
+    {
+      "word": "SATO",
+      "type": 0
+    },
+    {
+      "word": "SOTA",
+      "type": 0
+    },
+    {
+      "word": "TIAN",
+      "type": 0
+    },
+    {
+      "word": "TOSA",
+      "type": 0
+    },
+    {
+      "word": "AGITO",
+      "type": 0
+    },
+    {
+      "word": "ALABA",
+      "type": 0
+    },
+    {
+      "word": "ALANA",
+      "type": 0
+    },
+    {
+      "word": "ALGAS",
+      "type": 0
+    },
+    {
+      "word": "GATOS",
+      "type": 0
+    },
+    {
+      "word": "MOLAN",
+      "type": 0
+    },
+    {
+      "word": "NALGA",
+      "type": 0
+    },
+    {
+      "word": "NALGAS",
+      "type": 0
+    },
+    {
+      "word": "PALOMA",
+      "type": 0
+    }
+  ],
+  "letters": "OSMA,TAOB,IGLA,ANAP",
+  "obstacles": []
 }

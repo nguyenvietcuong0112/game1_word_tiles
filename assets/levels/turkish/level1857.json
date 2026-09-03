@@ -1,93 +1,211 @@
-﻿{
-    "id":  1857,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EBE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ETEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KETE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BETER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEKER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REKABET",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BEKA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ETER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KERE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEBER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEREK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AKE,BER,ETU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1857,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AYI",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "MAÇ",
+      "type": 0
+    },
+    {
+      "word": "YAT",
+      "type": 0
+    },
+    {
+      "word": "AKLI",
+      "type": 0
+    },
+    {
+      "word": "AMMA",
+      "type": 0
+    },
+    {
+      "word": "BATI",
+      "type": 0
+    },
+    {
+      "word": "AKLIMA",
+      "type": 0
+    },
+    {
+      "word": "AKLIMI",
+      "type": 0
+    },
+    {
+      "word": "MIYMIŞ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ATI",
+      "type": 0
+    },
+    {
+      "word": "AŞI",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "IMI",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MIŞ",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "TAA",
+      "type": 0
+    },
+    {
+      "word": "TAY",
+      "type": 0
+    },
+    {
+      "word": "YIM",
+      "type": 0
+    },
+    {
+      "word": "ÇAM",
+      "type": 0
+    },
+    {
+      "word": "ŞAM",
+      "type": 0
+    },
+    {
+      "word": "AKLA",
+      "type": 0
+    },
+    {
+      "word": "ALIM",
+      "type": 0
+    },
+    {
+      "word": "ATIM",
+      "type": 0
+    },
+    {
+      "word": "AYIM",
+      "type": 0
+    },
+    {
+      "word": "AÇMA",
+      "type": 0
+    },
+    {
+      "word": "KLAN",
+      "type": 0
+    },
+    {
+      "word": "MALI",
+      "type": 0
+    },
+    {
+      "word": "NAMI",
+      "type": 0
+    },
+    {
+      "word": "YATI",
+      "type": 0
+    },
+    {
+      "word": "YMIŞ",
+      "type": 0
+    },
+    {
+      "word": "AKLIM",
+      "type": 0
+    },
+    {
+      "word": "ALIMI",
+      "type": 0
+    },
+    {
+      "word": "ATIMI",
+      "type": 0
+    },
+    {
+      "word": "AYIMI",
+      "type": 0
+    },
+    {
+      "word": "AÇMAN",
+      "type": 0
+    },
+    {
+      "word": "MALIM",
+      "type": 0
+    },
+    {
+      "word": "TAYIM",
+      "type": 0
+    },
+    {
+      "word": "ATAYIM",
+      "type": 0
+    },
+    {
+      "word": "BATIMI",
+      "type": 0
+    },
+    {
+      "word": "BATIYA",
+      "type": 0
+    },
+    {
+      "word": "MALIMI",
+      "type": 0
+    }
+  ],
+  "letters": "ŞIMYA,AMMIT,ÇMIBA,NALKA",
+  "obstacles": []
 }

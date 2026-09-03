@@ -1,69 +1,255 @@
-﻿{
-    "id":  607,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZÔO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGIR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DONO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRIGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DROGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GORDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIGOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRIGAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OBRIGAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARNO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ODE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RIGAO,BÔORN,OZEDO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 607,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AOS",
+      "type": 0
+    },
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "OUI",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "SOU",
+      "type": 0
+    },
+    {
+      "word": "BATE",
+      "type": 0
+    },
+    {
+      "word": "TENS",
+      "type": 0
+    },
+    {
+      "word": "TENTOU",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "ABU",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "BAO",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "BET",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "BOT",
+      "type": 0
+    },
+    {
+      "word": "DOA",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "ISO",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "OAB",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SIU",
+      "type": 0
+    },
+    {
+      "word": "SOA",
+      "type": 0
+    },
+    {
+      "word": "TAB",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "TOU",
+      "type": 0
+    },
+    {
+      "word": "TTA",
+      "type": 0
+    },
+    {
+      "word": "TTE",
+      "type": 0
+    },
+    {
+      "word": "TTO",
+      "type": 0
+    },
+    {
+      "word": "ATOS",
+      "type": 0
+    },
+    {
+      "word": "BATO",
+      "type": 0
+    },
+    {
+      "word": "BENS",
+      "type": 0
+    },
+    {
+      "word": "BENT",
+      "type": 0
+    },
+    {
+      "word": "BETA",
+      "type": 0
+    },
+    {
+      "word": "BETO",
+      "type": 0
+    },
+    {
+      "word": "BOTA",
+      "type": 0
+    },
+    {
+      "word": "BOTE",
+      "type": 0
+    },
+    {
+      "word": "NETA",
+      "type": 0
+    },
+    {
+      "word": "NETO",
+      "type": 0
+    },
+    {
+      "word": "OTTO",
+      "type": 0
+    },
+    {
+      "word": "SATO",
+      "type": 0
+    },
+    {
+      "word": "SOBE",
+      "type": 0
+    },
+    {
+      "word": "TABU",
+      "type": 0
+    },
+    {
+      "word": "TOBE",
+      "type": 0
+    },
+    {
+      "word": "TOSA",
+      "type": 0
+    },
+    {
+      "word": "BENTO",
+      "type": 0
+    },
+    {
+      "word": "BOTAS",
+      "type": 0
+    },
+    {
+      "word": "NETAS",
+      "type": 0
+    },
+    {
+      "word": "NETOS",
+      "type": 0
+    },
+    {
+      "word": "NETTO",
+      "type": 0
+    },
+    {
+      "word": "TENSO",
+      "type": 0
+    },
+    {
+      "word": "TENTO",
+      "type": 0
+    },
+    {
+      "word": "ATENTO",
+      "type": 0
+    },
+    {
+      "word": "ATENTOS",
+      "type": 0
+    }
+  ],
+  "letters": "BOSD,ETAO,NTBS,SOUI",
+  "obstacles": []
 }

@@ -1,81 +1,147 @@
-﻿{
-    "id":  1710,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARC",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LARD",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SURE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RURAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUSTIC",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DRASTIC",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CUTS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ERAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PERU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TSAR",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "RUSTI,ERAUC,PDLAR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1710,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BET",
+      "type": 0
+    },
+    {
+      "word": "BIO",
+      "type": 0
+    },
+    {
+      "word": "BIT",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "HOSE",
+      "type": 0
+    },
+    {
+      "word": "INVITE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "HET",
+      "type": 0
+    },
+    {
+      "word": "HOB",
+      "type": 0
+    },
+    {
+      "word": "MOT",
+      "type": 0
+    },
+    {
+      "word": "NIT",
+      "type": 0
+    },
+    {
+      "word": "OBE",
+      "type": 0
+    },
+    {
+      "word": "OBI",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "BITE",
+      "type": 0
+    },
+    {
+      "word": "HEBE",
+      "type": 0
+    },
+    {
+      "word": "OBES",
+      "type": 0
+    },
+    {
+      "word": "OBIT",
+      "type": 0
+    },
+    {
+      "word": "TOIT",
+      "type": 0
+    },
+    {
+      "word": "VEIN",
+      "type": 0
+    },
+    {
+      "word": "VIBE",
+      "type": 0
+    },
+    {
+      "word": "EVITE",
+      "type": 0
+    },
+    {
+      "word": "HEBES",
+      "type": 0
+    },
+    {
+      "word": "VEINS",
+      "type": 0
+    },
+    {
+      "word": "VIBES",
+      "type": 0
+    },
+    {
+      "word": "BIOTIN",
+      "type": 0
+    }
+  ],
+  "letters": "HOSN,EBEI,TIVN,MOTI",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

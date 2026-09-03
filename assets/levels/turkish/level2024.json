@@ -1,79 +1,115 @@
-﻿{
-    "id":  2024,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AĞA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAĞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İLİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MİDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİLİM",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ADEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LİME",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "EMİ,DİL,AĞA",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2024,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BOY",
+      "type": 0
+    },
+    {
+      "word": "BYE",
+      "type": 0
+    },
+    {
+      "word": "BİR",
+      "type": 0
+    },
+    {
+      "word": "CEO",
+      "type": 0
+    },
+    {
+      "word": "LEO",
+      "type": 0
+    },
+    {
+      "word": "ALEC",
+      "type": 0
+    },
+    {
+      "word": "BİRD",
+      "type": 0
+    },
+    {
+      "word": "ERİK",
+      "type": 0
+    },
+    {
+      "word": "ŞERİF",
+      "type": 0
+    },
+    {
+      "word": "KOVBOY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ERİ",
+      "type": 0
+    },
+    {
+      "word": "KOV",
+      "type": 0
+    },
+    {
+      "word": "KİR",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "RİO",
+      "type": 0
+    },
+    {
+      "word": "YEL",
+      "type": 0
+    },
+    {
+      "word": "YEO",
+      "type": 0
+    },
+    {
+      "word": "ŞER",
+      "type": 0
+    },
+    {
+      "word": "FİRE",
+      "type": 0
+    },
+    {
+      "word": "RİKO",
+      "type": 0
+    }
+  ],
+  "letters": "ERİKO,ŞCFBV,LEYOD,AOBİR",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

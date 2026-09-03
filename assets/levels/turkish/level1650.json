@@ -1,61 +1,131 @@
-﻿{
-    "id":  1650,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CADI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CİLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELİT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ETİL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ITE,DİL,ACA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1650,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "DİR",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "ARTI",
+      "type": 0
+    },
+    {
+      "word": "MART",
+      "type": 0
+    },
+    {
+      "word": "THEO",
+      "type": 0
+    },
+    {
+      "word": "AMASI",
+      "type": 0
+    },
+    {
+      "word": "ŞEHRİ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMT",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASI",
+      "type": 0
+    },
+    {
+      "word": "DOE",
+      "type": 0
+    },
+    {
+      "word": "HEO",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "ORİ",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "TİR",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "MARTI",
+      "type": 0
+    },
+    {
+      "word": "MARTİ",
+      "type": 0
+    },
+    {
+      "word": "SAMAR",
+      "type": 0
+    },
+    {
+      "word": "ARTMASI",
+      "type": 0
+    }
+  ],
+  "letters": "DOEŞ,İRHI,TRTS,IAMA",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

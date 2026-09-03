@@ -1,53 +1,179 @@
-﻿{
-    "id":  1695,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HIGH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EIGHT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "NEIGH",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "HAT,IEN,GHT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1695,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "GAME",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "TEEN",
+      "type": 0
+    },
+    {
+      "word": "AGENT",
+      "type": 0
+    },
+    {
+      "word": "AGENDA",
+      "type": 0
+    },
+    {
+      "word": "FIFTEEN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "GAM",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GEM",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "MAG",
+      "type": 0
+    },
+    {
+      "word": "NAG",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "AMEN",
+      "type": 0
+    },
+    {
+      "word": "FIAT",
+      "type": 0
+    },
+    {
+      "word": "GANE",
+      "type": 0
+    },
+    {
+      "word": "GENT",
+      "type": 0
+    },
+    {
+      "word": "MAGE",
+      "type": 0
+    },
+    {
+      "word": "MANE",
+      "type": 0
+    },
+    {
+      "word": "MEND",
+      "type": 0
+    },
+    {
+      "word": "NEEP",
+      "type": 0
+    },
+    {
+      "word": "NEMA",
+      "type": 0
+    },
+    {
+      "word": "PEEN",
+      "type": 0
+    },
+    {
+      "word": "AMEND",
+      "type": 0
+    },
+    {
+      "word": "AMENT",
+      "type": 0
+    },
+    {
+      "word": "MENTA",
+      "type": 0
+    },
+    {
+      "word": "MAGENTA",
+      "type": 0
+    },
+    {
+      "word": "TEENAGE",
+      "type": 0
+    }
+  ],
+  "letters": "FTEE,IFPN,ADGA,TNEM",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

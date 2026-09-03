@@ -1,89 +1,215 @@
-﻿{
-    "id":  2376,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAINY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARTIST",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ARTISTRY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARTS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ROAN",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ROTS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TORT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TROT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "STRY,IOAN,TRAI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2376,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "GRAD",
+      "type": 0
+    },
+    {
+      "word": "HONG",
+      "type": 0
+    },
+    {
+      "word": "IRON",
+      "type": 0
+    },
+    {
+      "word": "RING",
+      "type": 0
+    },
+    {
+      "word": "WEAR",
+      "type": 0
+    },
+    {
+      "word": "GRADE",
+      "type": 0
+    },
+    {
+      "word": "MINOR",
+      "type": 0
+    },
+    {
+      "word": "RINGS",
+      "type": 0
+    },
+    {
+      "word": "WRONG",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "HAE",
+      "type": 0
+    },
+    {
+      "word": "HON",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "NIM",
+      "type": 0
+    },
+    {
+      "word": "NOH",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TEW",
+      "type": 0
+    },
+    {
+      "word": "WET",
+      "type": 0
+    },
+    {
+      "word": "DEET",
+      "type": 0
+    },
+    {
+      "word": "HAET",
+      "type": 0
+    },
+    {
+      "word": "HORA",
+      "type": 0
+    },
+    {
+      "word": "NORI",
+      "type": 0
+    },
+    {
+      "word": "SING",
+      "type": 0
+    },
+    {
+      "word": "TEAR",
+      "type": 0
+    },
+    {
+      "word": "TEED",
+      "type": 0
+    },
+    {
+      "word": "ADEPT",
+      "type": 0
+    },
+    {
+      "word": "HONGS",
+      "type": 0
+    },
+    {
+      "word": "NORIS",
+      "type": 0
+    },
+    {
+      "word": "WRING",
+      "type": 0
+    },
+    {
+      "word": "EARING",
+      "type": 0
+    },
+    {
+      "word": "HARING",
+      "type": 0
+    },
+    {
+      "word": "WRINGS",
+      "type": 0
+    },
+    {
+      "word": "WRONGS",
+      "type": 0
+    },
+    {
+      "word": "EARINGS",
+      "type": 0
+    },
+    {
+      "word": "TEARING",
+      "type": 0
+    },
+    {
+      "word": "WEARING",
+      "type": 0
+    },
+    {
+      "word": "MISGRADE",
+      "type": 0
+    }
+  ],
+  "letters": "GSGRA,NIMGD,ORWPE,HAETE",
+  "obstacles": []
 }

@@ -1,75 +1,123 @@
-﻿{
-    "id":  1235,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ЛУГ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПАЙ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПУЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "САД",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛУПА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПАПА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СЛУГА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЗАСЛУГА",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АЙДА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ГУЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЗАД",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛУП",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ПАПА,УГЗЙ,ЛСАД",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1235,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "АДА",
+      "type": 0
+    },
+    {
+      "word": "ВОУ",
+      "type": 0
+    },
+    {
+      "word": "ДАЛ",
+      "type": 0
+    },
+    {
+      "word": "ДИН",
+      "type": 0
+    },
+    {
+      "word": "ДНО",
+      "type": 0
+    },
+    {
+      "word": "ЛОУ",
+      "type": 0
+    },
+    {
+      "word": "ЧЕН",
+      "type": 0
+    },
+    {
+      "word": "ДАЛО",
+      "type": 0
+    },
+    {
+      "word": "ОДНО",
+      "type": 0
+    },
+    {
+      "word": "УЧЕНИЯ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АДИ",
+      "type": 0
+    },
+    {
+      "word": "АЛО",
+      "type": 0
+    },
+    {
+      "word": "ВОД",
+      "type": 0
+    },
+    {
+      "word": "ДОВ",
+      "type": 0
+    },
+    {
+      "word": "ДОУ",
+      "type": 0
+    },
+    {
+      "word": "ИДА",
+      "type": 0
+    },
+    {
+      "word": "ЛАД",
+      "type": 0
+    },
+    {
+      "word": "ЛАУ",
+      "type": 0
+    },
+    {
+      "word": "ЛОН",
+      "type": 0
+    },
+    {
+      "word": "ОЛА",
+      "type": 0
+    },
+    {
+      "word": "ОЛД",
+      "type": 0
+    },
+    {
+      "word": "ВЛАД",
+      "type": 0
+    },
+    {
+      "word": "ЛОНДО",
+      "type": 0
+    },
+    {
+      "word": "УОЛДО",
+      "type": 0
+    }
+  ],
+  "letters": "НЕЧУ,ИЯВО,ДАЛД,АУОН",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

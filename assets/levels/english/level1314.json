@@ -1,106 +1,187 @@
-﻿{
-    "id":  1314,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YES",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PREY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MERRY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EYES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MERE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PRES",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ARYE,EREA,MPSL",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1314,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "BUS",
+      "type": 0
+    },
+    {
+      "word": "SUB",
+      "type": 0
+    },
+    {
+      "word": "VAN",
+      "type": 0
+    },
+    {
+      "word": "DEAN",
+      "type": 0
+    },
+    {
+      "word": "GIVE",
+      "type": 0
+    },
+    {
+      "word": "SAVE",
+      "type": 0
+    },
+    {
+      "word": "GIVEN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "GIE",
+      "type": 0
+    },
+    {
+      "word": "NAE",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "VAS",
+      "type": 0
+    },
+    {
+      "word": "VEG",
+      "type": 0
+    },
+    {
+      "word": "VIE",
+      "type": 0
+    },
+    {
+      "word": "VIG",
+      "type": 0
+    },
+    {
+      "word": "BASH",
+      "type": 0
+    },
+    {
+      "word": "BEDS",
+      "type": 0
+    },
+    {
+      "word": "DEBS",
+      "type": 0
+    },
+    {
+      "word": "EAVE",
+      "type": 0
+    },
+    {
+      "word": "GIED",
+      "type": 0
+    },
+    {
+      "word": "NAVE",
+      "type": 0
+    },
+    {
+      "word": "NEVI",
+      "type": 0
+    },
+    {
+      "word": "SANE",
+      "type": 0
+    },
+    {
+      "word": "SUBA",
+      "type": 0
+    },
+    {
+      "word": "SUED",
+      "type": 0
+    },
+    {
+      "word": "VANE",
+      "type": 0
+    },
+    {
+      "word": "VASA",
+      "type": 0
+    },
+    {
+      "word": "VENA",
+      "type": 0
+    },
+    {
+      "word": "VIED",
+      "type": 0
+    },
+    {
+      "word": "BEIGE",
+      "type": 0
+    },
+    {
+      "word": "DEASH",
+      "type": 0
+    },
+    {
+      "word": "DEAVE",
+      "type": 0
+    },
+    {
+      "word": "SUBAS",
+      "type": 0
+    },
+    {
+      "word": "SUEDE",
+      "type": 0
+    },
+    {
+      "word": "VEGIE",
+      "type": 0
+    },
+    {
+      "word": "VENAE",
+      "type": 0
+    }
+  ],
+  "letters": "BUSB,AEDE,SAVI,HNEG",
+  "obstacles": []
 }

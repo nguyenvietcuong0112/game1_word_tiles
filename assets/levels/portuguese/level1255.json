@@ -1,77 +1,255 @@
-﻿{
-    "id":  1255,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CADA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TACO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOCADA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOCADO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MINHOCA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "IODATO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIMBO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TOCADO",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "TADA,OCOH,BMIN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1255,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "RIO",
+      "type": 0
+    },
+    {
+      "word": "VOE",
+      "type": 0
+    },
+    {
+      "word": "JACK",
+      "type": 0
+    },
+    {
+      "word": "NOME",
+      "type": 0
+    },
+    {
+      "word": "RACH",
+      "type": 0
+    },
+    {
+      "word": "MENOS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACH",
+      "type": 0
+    },
+    {
+      "word": "AJO",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "DIO",
+      "type": 0
+    },
+    {
+      "word": "DIR",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "INO",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "IRO",
+      "type": 0
+    },
+    {
+      "word": "JAR",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "NEO",
+      "type": 0
+    },
+    {
+      "word": "NID",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "ONI",
+      "type": 0
+    },
+    {
+      "word": "ORI",
+      "type": 0
+    },
+    {
+      "word": "RAJ",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "SOM",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "CARO",
+      "type": 0
+    },
+    {
+      "word": "DINO",
+      "type": 0
+    },
+    {
+      "word": "DORA",
+      "type": 0
+    },
+    {
+      "word": "DORI",
+      "type": 0
+    },
+    {
+      "word": "ENID",
+      "type": 0
+    },
+    {
+      "word": "ENOS",
+      "type": 0
+    },
+    {
+      "word": "JODI",
+      "type": 0
+    },
+    {
+      "word": "MONI",
+      "type": 0
+    },
+    {
+      "word": "NEMO",
+      "type": 0
+    },
+    {
+      "word": "NIRO",
+      "type": 0
+    },
+    {
+      "word": "ODIN",
+      "type": 0
+    },
+    {
+      "word": "ORIN",
+      "type": 0
+    },
+    {
+      "word": "RACK",
+      "type": 0
+    },
+    {
+      "word": "RIDO",
+      "type": 0
+    },
+    {
+      "word": "RINO",
+      "type": 0
+    },
+    {
+      "word": "SOME",
+      "type": 0
+    },
+    {
+      "word": "VOEM",
+      "type": 0
+    },
+    {
+      "word": "JACKS",
+      "type": 0
+    },
+    {
+      "word": "JAROD",
+      "type": 0
+    },
+    {
+      "word": "RODIN",
+      "type": 0
+    },
+    {
+      "word": "JACKSON",
+      "type": 0
+    }
+  ],
+  "letters": "VOEM,DINO,ORHS,JACK",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

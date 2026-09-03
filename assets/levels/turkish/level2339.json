@@ -1,89 +1,251 @@
-﻿{
-    "id":  2339,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OJE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOKU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OKUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OKUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLUK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RULO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "JOKER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİLER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKOLOJİK",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EKOLOJİ",
-                            "type":  1
-                        },
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "JİLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOJİK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OLUR,KOKE,EJİL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2339,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AMY",
+      "type": 0
+    },
+    {
+      "word": "BAM",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "YAT",
+      "type": 0
+    },
+    {
+      "word": "ALIR",
+      "type": 0
+    },
+    {
+      "word": "ALMA",
+      "type": 0
+    },
+    {
+      "word": "GRAM",
+      "type": 0
+    },
+    {
+      "word": "MARY",
+      "type": 0
+    },
+    {
+      "word": "RALPH",
+      "type": 0
+    },
+    {
+      "word": "YASAL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAR",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TAY",
+      "type": 0
+    },
+    {
+      "word": "YAS",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "ARTA",
+      "type": 0
+    },
+    {
+      "word": "ARYA",
+      "type": 0
+    },
+    {
+      "word": "ASAL",
+      "type": 0
+    },
+    {
+      "word": "ASAR",
+      "type": 0
+    },
+    {
+      "word": "ASMA",
+      "type": 0
+    },
+    {
+      "word": "GRAS",
+      "type": 0
+    },
+    {
+      "word": "KART",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "LARI",
+      "type": 0
+    },
+    {
+      "word": "MALI",
+      "type": 0
+    },
+    {
+      "word": "MASA",
+      "type": 0
+    },
+    {
+      "word": "MYRA",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "RAPH",
+      "type": 0
+    },
+    {
+      "word": "SALI",
+      "type": 0
+    },
+    {
+      "word": "SARI",
+      "type": 0
+    },
+    {
+      "word": "YASA",
+      "type": 0
+    },
+    {
+      "word": "AKSAM",
+      "type": 0
+    },
+    {
+      "word": "KARTA",
+      "type": 0
+    },
+    {
+      "word": "SALMA",
+      "type": 0
+    },
+    {
+      "word": "SARIL",
+      "type": 0
+    },
+    {
+      "word": "SAYMA",
+      "type": 0
+    },
+    {
+      "word": "TASMA",
+      "type": 0
+    },
+    {
+      "word": "TASARI",
+      "type": 0
+    },
+    {
+      "word": "YASAMA",
+      "type": 0
+    },
+    {
+      "word": "SARILMA",
+      "type": 0
+    }
+  ],
+  "letters": "HIRGB,PLAMA,AMSKA,RYATR",
+  "obstacles": []
 }

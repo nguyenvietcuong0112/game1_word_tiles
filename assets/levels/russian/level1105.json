@@ -1,61 +1,83 @@
-﻿{
-    "id":  1105,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "МАТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "МАХ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СОМ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТОМ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "АТОМ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СОТА",
-                             "type":  2
-                         },
-                         {
-                             "word":  "СОТЫ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "СОТНЯ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "МОТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СОМА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТАМ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ХАМ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "МАХ,ОТЫ,СНЯ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1105,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ДАВ",
+      "type": 0
+    },
+    {
+      "word": "ЕЦЫ",
+      "type": 0
+    },
+    {
+      "word": "ЗАД",
+      "type": 0
+    },
+    {
+      "word": "ЗОВ",
+      "type": 0
+    },
+    {
+      "word": "ЛИА",
+      "type": 0
+    },
+    {
+      "word": "МДА",
+      "type": 0
+    },
+    {
+      "word": "МИА",
+      "type": 0
+    },
+    {
+      "word": "МИЛ",
+      "type": 0
+    },
+    {
+      "word": "ХОЗ",
+      "type": 0
+    },
+    {
+      "word": "ЦЕВ",
+      "type": 0
+    },
+    {
+      "word": "ПЫЛИ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ВОЗ",
+      "type": 0
+    },
+    {
+      "word": "ЛИМ",
+      "type": 0
+    },
+    {
+      "word": "ПЫЛ",
+      "type": 0
+    },
+    {
+      "word": "МИЛЫ",
+      "type": 0
+    }
+  ],
+  "letters": "ХОЗМ,ЫВАИ,ЦМДЛ,ЕВПЫ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

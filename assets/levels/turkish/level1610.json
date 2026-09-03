@@ -1,69 +1,135 @@
-﻿{
-    "id":  1610,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOBİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İNCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LİNK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LOBİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİTKİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BİLMECE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BİLME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BİNME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İNME",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "İKTKE,LBİNC,HOLME",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1610,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "KOŞ",
+      "type": 0
+    },
+    {
+      "word": "OKU",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "SUS",
+      "type": 0
+    },
+    {
+      "word": "TAŞ",
+      "type": 0
+    },
+    {
+      "word": "ŞOK",
+      "type": 0
+    },
+    {
+      "word": "OKUL",
+      "type": 0
+    },
+    {
+      "word": "ROTA",
+      "type": 0
+    },
+    {
+      "word": "TALK",
+      "type": 0
+    },
+    {
+      "word": "OKULA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMT",
+      "type": 0
+    },
+    {
+      "word": "ATM",
+      "type": 0
+    },
+    {
+      "word": "KOR",
+      "type": 0
+    },
+    {
+      "word": "LUK",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "ŞAL",
+      "type": 0
+    },
+    {
+      "word": "ATMA",
+      "type": 0
+    },
+    {
+      "word": "KORK",
+      "type": 0
+    },
+    {
+      "word": "KORO",
+      "type": 0
+    },
+    {
+      "word": "TORO",
+      "type": 0
+    },
+    {
+      "word": "ULAŞ",
+      "type": 0
+    },
+    {
+      "word": "ŞATO",
+      "type": 0
+    },
+    {
+      "word": "ŞOKU",
+      "type": 0
+    },
+    {
+      "word": "SUSAM",
+      "type": 0
+    },
+    {
+      "word": "ULAŞMA",
+      "type": 0
+    }
+  ],
+  "letters": "ŞMAS,ATOU,LKRS,UKOŞ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

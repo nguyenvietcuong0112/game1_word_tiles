@@ -1,109 +1,163 @@
-﻿{
-    "id":  2454,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AWAIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EATER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WATER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEAWATER",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "NIB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEATER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SWAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TERN",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TOES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "WAITIN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ATERN,WAITI,SEOTB",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2454,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BUD",
+      "type": 0
+    },
+    {
+      "word": "CUE",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "PIE",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "PUB",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "PEER",
+      "type": 0
+    },
+    {
+      "word": "PUBS",
+      "type": 0
+    },
+    {
+      "word": "INTER",
+      "type": 0
+    },
+    {
+      "word": "DECREE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DUB",
+      "type": 0
+    },
+    {
+      "word": "DUP",
+      "type": 0
+    },
+    {
+      "word": "ECU",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "NIP",
+      "type": 0
+    },
+    {
+      "word": "PUD",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "BUDS",
+      "type": 0
+    },
+    {
+      "word": "CUES",
+      "type": 0
+    },
+    {
+      "word": "DREE",
+      "type": 0
+    },
+    {
+      "word": "DUBS",
+      "type": 0
+    },
+    {
+      "word": "PEES",
+      "type": 0
+    },
+    {
+      "word": "PIER",
+      "type": 0
+    },
+    {
+      "word": "PINT",
+      "type": 0
+    },
+    {
+      "word": "PREE",
+      "type": 0
+    },
+    {
+      "word": "PUDS",
+      "type": 0
+    },
+    {
+      "word": "REIN",
+      "type": 0
+    },
+    {
+      "word": "SEEP",
+      "type": 0
+    },
+    {
+      "word": "CREEP",
+      "type": 0
+    },
+    {
+      "word": "SPEER",
+      "type": 0
+    },
+    {
+      "word": "CREEPS",
+      "type": 0
+    }
+  ],
+  "letters": "SEUCE,PEERD,TERDS,NIPUB",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

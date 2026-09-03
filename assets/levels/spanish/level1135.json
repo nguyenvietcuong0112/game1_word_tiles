@@ -1,117 +1,167 @@
-﻿{
-    "id":  1135,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CEPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PECA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PECAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SECAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIRAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTIRAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ADIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARPAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DARSE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESTIRA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PARRA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PARRAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SECA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SRI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DARR,IRPA,TSEC",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1135,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "VEA",
+      "type": 0
+    },
+    {
+      "word": "VON",
+      "type": 0
+    },
+    {
+      "word": "DORF",
+      "type": 0
+    },
+    {
+      "word": "GIRO",
+      "type": 0
+    },
+    {
+      "word": "TODO",
+      "type": 0
+    },
+    {
+      "word": "VEAS",
+      "type": 0
+    },
+    {
+      "word": "FRODO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "DOV",
+      "type": 0
+    },
+    {
+      "word": "EVO",
+      "type": 0
+    },
+    {
+      "word": "IVO",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "ODO",
+      "type": 0
+    },
+    {
+      "word": "ORI",
+      "type": 0
+    },
+    {
+      "word": "OVE",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "STO",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TSA",
+      "type": 0
+    },
+    {
+      "word": "VIR",
+      "type": 0
+    },
+    {
+      "word": "DORI",
+      "type": 0
+    },
+    {
+      "word": "DOVE",
+      "type": 0
+    },
+    {
+      "word": "EAST",
+      "type": 0
+    },
+    {
+      "word": "GIVE",
+      "type": 0
+    },
+    {
+      "word": "IRON",
+      "type": 0
+    },
+    {
+      "word": "NODO",
+      "type": 0
+    },
+    {
+      "word": "RIGE",
+      "type": 0
+    },
+    {
+      "word": "ASTOR",
+      "type": 0
+    }
+  ],
+  "letters": "FNFR,RODO,IVST,GEAD",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

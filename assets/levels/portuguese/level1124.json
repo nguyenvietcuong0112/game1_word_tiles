@@ -1,77 +1,243 @@
-﻿{
-    "id":  1124,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RITO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIFO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LESMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LESTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTÔMAGO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FITO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FOG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAGOTE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AAGOF,LMÔTI,ESTER",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1124,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "CSI",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "TAL",
+      "type": 0
+    },
+    {
+      "word": "APÓS",
+      "type": 0
+    },
+    {
+      "word": "NELA",
+      "type": 0
+    },
+    {
+      "word": "TAIS",
+      "type": 0
+    },
+    {
+      "word": "TELA",
+      "type": 0
+    },
+    {
+      "word": "TENS",
+      "type": 0
+    },
+    {
+      "word": "LISTA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ELI",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "ISS",
+      "type": 0
+    },
+    {
+      "word": "IST",
+      "type": 0
+    },
+    {
+      "word": "LAP",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "NEL",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "NIA",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "PÓS",
+      "type": 0
+    },
+    {
+      "word": "SIA",
+      "type": 0
+    },
+    {
+      "word": "SIL",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "TAI",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "ALIA",
+      "type": 0
+    },
+    {
+      "word": "ELIA",
+      "type": 0
+    },
+    {
+      "word": "ELIN",
+      "type": 0
+    },
+    {
+      "word": "LATE",
+      "type": 0
+    },
+    {
+      "word": "LENI",
+      "type": 0
+    },
+    {
+      "word": "LINE",
+      "type": 0
+    },
+    {
+      "word": "LIST",
+      "type": 0
+    },
+    {
+      "word": "NETA",
+      "type": 0
+    },
+    {
+      "word": "SINS",
+      "type": 0
+    },
+    {
+      "word": "TAIL",
+      "type": 0
+    },
+    {
+      "word": "TALI",
+      "type": 0
+    },
+    {
+      "word": "ALINE",
+      "type": 0
+    },
+    {
+      "word": "PALIN",
+      "type": 0
+    },
+    {
+      "word": "PATEL",
+      "type": 0
+    },
+    {
+      "word": "PÓLEN",
+      "type": 0
+    },
+    {
+      "word": "TALIA",
+      "type": 0
+    },
+    {
+      "word": "TENIS",
+      "type": 0
+    },
+    {
+      "word": "TENISTA",
+      "type": 0
+    }
+  ],
+  "letters": "CPAT,SÓLE,IAIN,ATSS",
+  "obstacles": []
 }

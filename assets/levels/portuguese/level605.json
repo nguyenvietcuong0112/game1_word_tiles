@@ -1,69 +1,271 @@
-﻿{
-    "id":  605,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RALI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RALO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "POLAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POLIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOPAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLHEIRA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "APO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARILO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "EIRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OPAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PAR,OLI,THE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 605,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "HUM",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "PARE",
+      "type": 0
+    },
+    {
+      "word": "SIDO",
+      "type": 0
+    },
+    {
+      "word": "PAREM",
+      "type": 0
+    },
+    {
+      "word": "PARIS",
+      "type": 0
+    },
+    {
+      "word": "SUMMER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "APA",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ARU",
+      "type": 0
+    },
+    {
+      "word": "DIR",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "HAP",
+      "type": 0
+    },
+    {
+      "word": "HAR",
+      "type": 0
+    },
+    {
+      "word": "HIS",
+      "type": 0
+    },
+    {
+      "word": "HUR",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "IRO",
+      "type": 0
+    },
+    {
+      "word": "ISS",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "MME",
+      "type": 0
+    },
+    {
+      "word": "ORI",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "RUM",
+      "type": 0
+    },
+    {
+      "word": "RUS",
+      "type": 0
+    },
+    {
+      "word": "SID",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SUH",
+      "type": 0
+    },
+    {
+      "word": "SUM",
+      "type": 0
+    },
+    {
+      "word": "SUR",
+      "type": 0
+    },
+    {
+      "word": "UMM",
+      "type": 0
+    },
+    {
+      "word": "URE",
+      "type": 0
+    },
+    {
+      "word": "USS",
+      "type": 0
+    },
+    {
+      "word": "ARIS",
+      "type": 0
+    },
+    {
+      "word": "DORA",
+      "type": 0
+    },
+    {
+      "word": "DORI",
+      "type": 0
+    },
+    {
+      "word": "HARE",
+      "type": 0
+    },
+    {
+      "word": "HARI",
+      "type": 0
+    },
+    {
+      "word": "HARU",
+      "type": 0
+    },
+    {
+      "word": "HIRO",
+      "type": 0
+    },
+    {
+      "word": "HISS",
+      "type": 0
+    },
+    {
+      "word": "HUME",
+      "type": 0
+    },
+    {
+      "word": "HUMM",
+      "type": 0
+    },
+    {
+      "word": "MERA",
+      "type": 0
+    },
+    {
+      "word": "PARI",
+      "type": 0
+    },
+    {
+      "word": "PARO",
+      "type": 0
+    },
+    {
+      "word": "RAPA",
+      "type": 0
+    },
+    {
+      "word": "RIDO",
+      "type": 0
+    },
+    {
+      "word": "RUSS",
+      "type": 0
+    },
+    {
+      "word": "SIRA",
+      "type": 0
+    },
+    {
+      "word": "SIRO",
+      "type": 0
+    },
+    {
+      "word": "SURE",
+      "type": 0
+    },
+    {
+      "word": "DORIS",
+      "type": 0
+    },
+    {
+      "word": "REMUS",
+      "type": 0
+    },
+    {
+      "word": "HUMMUS",
+      "type": 0
+    }
+  ],
+  "letters": "ERAP,MUHA,MSIR,USDO",
+  "obstacles": []
 }

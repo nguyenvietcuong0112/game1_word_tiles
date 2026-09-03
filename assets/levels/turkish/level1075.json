@@ -1,83 +1,87 @@
-﻿{
-    "id":  1075,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAFA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MUAF",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MUTFAK",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AFAKİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AFT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MUTKİ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AAFA,DUTK,AMNİ",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1075,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DOZ",
+      "type": 0
+    },
+    {
+      "word": "DUR",
+      "type": 0
+    },
+    {
+      "word": "DİK",
+      "type": 0
+    },
+    {
+      "word": "DİZ",
+      "type": 0
+    },
+    {
+      "word": "KUR",
+      "type": 0
+    },
+    {
+      "word": "VAY",
+      "type": 0
+    },
+    {
+      "word": "ÇİZ",
+      "type": 0
+    },
+    {
+      "word": "KURT",
+      "type": 0
+    },
+    {
+      "word": "YAVRU",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "KİD",
+      "type": 0
+    },
+    {
+      "word": "KİZ",
+      "type": 0
+    },
+    {
+      "word": "TRU",
+      "type": 0
+    },
+    {
+      "word": "YAV",
+      "type": 0
+    },
+    {
+      "word": "ZOD",
+      "type": 0
+    },
+    {
+      "word": "ODUR",
+      "type": 0
+    },
+    {
+      "word": "RUDİ",
+      "type": 0
+    }
+  ],
+  "letters": "AVRU,YRTK,ZUDİ,İÇOZ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

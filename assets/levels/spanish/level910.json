@@ -1,61 +1,115 @@
-﻿{
-    "id":  910,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TÍA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REJA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "URNA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BANDEJA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AJE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DEJA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TES",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BDEJA,ANRSÍ,URDET",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 910,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "FIN",
+      "type": 0
+    },
+    {
+      "word": "VEN",
+      "type": 0
+    },
+    {
+      "word": "ANDY",
+      "type": 0
+    },
+    {
+      "word": "CAFÉ",
+      "type": 0
+    },
+    {
+      "word": "RYAN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "FAN",
+      "type": 0
+    },
+    {
+      "word": "FAY",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "NIC",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "CAFE",
+      "type": 0
+    },
+    {
+      "word": "FANE",
+      "type": 0
+    },
+    {
+      "word": "FINA",
+      "type": 0
+    },
+    {
+      "word": "NANA",
+      "type": 0
+    },
+    {
+      "word": "VENA",
+      "type": 0
+    },
+    {
+      "word": "ANAND",
+      "type": 0
+    },
+    {
+      "word": "ENANA",
+      "type": 0
+    }
+  ],
+  "letters": "VDYR,ENAN,FÉFA,ACIN",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

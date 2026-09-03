@@ -1,117 +1,215 @@
-﻿{
-    "id":  1012,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASÍ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VARA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CASAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BASURA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ABASÍ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARABA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ASUR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AVARA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "BASA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BASAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAVURA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PURA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RABA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RASA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RUS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UPA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BARA,ASUV,CÍPA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1012,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BRI",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "PON",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "UNA",
+      "type": 0
+    },
+    {
+      "word": "UNO",
+      "type": 0
+    },
+    {
+      "word": "WES",
+      "type": 0
+    },
+    {
+      "word": "ALGO",
+      "type": 0
+    },
+    {
+      "word": "LADO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "ANU",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DAO",
+      "type": 0
+    },
+    {
+      "word": "DES",
+      "type": 0
+    },
+    {
+      "word": "DEW",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "ESP",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GOA",
+      "type": 0
+    },
+    {
+      "word": "GON",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "NOA",
+      "type": 0
+    },
+    {
+      "word": "NOG",
+      "type": 0
+    },
+    {
+      "word": "NOP",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "ONU",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "SED",
+      "type": 0
+    },
+    {
+      "word": "UPS",
+      "type": 0
+    },
+    {
+      "word": "ALGA",
+      "type": 0
+    },
+    {
+      "word": "DALO",
+      "type": 0
+    },
+    {
+      "word": "GANO",
+      "type": 0
+    },
+    {
+      "word": "GLAD",
+      "type": 0
+    },
+    {
+      "word": "OLAS",
+      "type": 0
+    },
+    {
+      "word": "OLGA",
+      "type": 0
+    },
+    {
+      "word": "SADE",
+      "type": 0
+    },
+    {
+      "word": "SEDA",
+      "type": 0
+    },
+    {
+      "word": "UPON",
+      "type": 0
+    },
+    {
+      "word": "SALGA",
+      "type": 0
+    },
+    {
+      "word": "SALGO",
+      "type": 0
+    },
+    {
+      "word": "SEDAL",
+      "type": 0
+    },
+    {
+      "word": "GLADES",
+      "type": 0
+    },
+    {
+      "word": "SALGAN",
+      "type": 0
+    }
+  ],
+  "letters": "OLGA,DAON,ESPU,WBRI",
+  "obstacles": []
 }

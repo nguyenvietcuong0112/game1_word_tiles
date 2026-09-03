@@ -1,115 +1,271 @@
-﻿{
-    "id":  1832,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANIMAL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MALI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MANA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MANI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MINA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIP",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ILAD,EAND,SMIP",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1832,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "SAIL",
+      "type": 0
+    },
+    {
+      "word": "TUNE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "AIL",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "CEL",
+      "type": 0
+    },
+    {
+      "word": "DUN",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "ETH",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NUT",
+      "type": 0
+    },
+    {
+      "word": "SAG",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TUN",
+      "type": 0
+    },
+    {
+      "word": "UNS",
+      "type": 0
+    },
+    {
+      "word": "UTS",
+      "type": 0
+    },
+    {
+      "word": "ACED",
+      "type": 0
+    },
+    {
+      "word": "ANSA",
+      "type": 0
+    },
+    {
+      "word": "CANE",
+      "type": 0
+    },
+    {
+      "word": "CANS",
+      "type": 0
+    },
+    {
+      "word": "CATE",
+      "type": 0
+    },
+    {
+      "word": "DENS",
+      "type": 0
+    },
+    {
+      "word": "DUNE",
+      "type": 0
+    },
+    {
+      "word": "DUNS",
+      "type": 0
+    },
+    {
+      "word": "GASH",
+      "type": 0
+    },
+    {
+      "word": "GAST",
+      "type": 0
+    },
+    {
+      "word": "HATE",
+      "type": 0
+    },
+    {
+      "word": "HATH",
+      "type": 0
+    },
+    {
+      "word": "HERL",
+      "type": 0
+    },
+    {
+      "word": "NUTS",
+      "type": 0
+    },
+    {
+      "word": "SHAT",
+      "type": 0
+    },
+    {
+      "word": "SNED",
+      "type": 0
+    },
+    {
+      "word": "STUD",
+      "type": 0
+    },
+    {
+      "word": "STUN",
+      "type": 0
+    },
+    {
+      "word": "TACE",
+      "type": 0
+    },
+    {
+      "word": "TAHR",
+      "type": 0
+    },
+    {
+      "word": "TANS",
+      "type": 0
+    },
+    {
+      "word": "TUNA",
+      "type": 0
+    },
+    {
+      "word": "TUNS",
+      "type": 0
+    },
+    {
+      "word": "CANED",
+      "type": 0
+    },
+    {
+      "word": "CANST",
+      "type": 0
+    },
+    {
+      "word": "ENATE",
+      "type": 0
+    },
+    {
+      "word": "ETHER",
+      "type": 0
+    },
+    {
+      "word": "HANSA",
+      "type": 0
+    },
+    {
+      "word": "LETHE",
+      "type": 0
+    },
+    {
+      "word": "SHRED",
+      "type": 0
+    },
+    {
+      "word": "SNATH",
+      "type": 0
+    },
+    {
+      "word": "TUNED",
+      "type": 0
+    },
+    {
+      "word": "CETANE",
+      "type": 0
+    },
+    {
+      "word": "HATRED",
+      "type": 0
+    },
+    {
+      "word": "SNATHE",
+      "type": 0
+    }
+  ],
+  "letters": "LECED,HTANU,ERHST,DLIAG",
+  "obstacles": []
 }

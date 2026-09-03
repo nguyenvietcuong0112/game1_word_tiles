@@ -1,113 +1,227 @@
-﻿{
-    "id":  1098,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ECA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CENA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FACA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CASCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CASPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CETRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RASPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SORTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TENSO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANETA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CENSOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASCENSOR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ASCENSO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ASCETA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ASPA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CENSO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FRASCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NACA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PATENA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RASCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TACA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TENSOR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CPATR,ASCEO,RFANS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1098,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "ELI",
+      "type": 0
+    },
+    {
+      "word": "LEI",
+      "type": 0
+    },
+    {
+      "word": "LER",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "SRA",
+      "type": 0
+    },
+    {
+      "word": "LEIA",
+      "type": 0
+    },
+    {
+      "word": "CREIA",
+      "type": 0
+    },
+    {
+      "word": "ABRIGO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIE",
+      "type": 0
+    },
+    {
+      "word": "AIG",
+      "type": 0
+    },
+    {
+      "word": "AII",
+      "type": 0
+    },
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "BAI",
+      "type": 0
+    },
+    {
+      "word": "BRI",
+      "type": 0
+    },
+    {
+      "word": "EIA",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "GIA",
+      "type": 0
+    },
+    {
+      "word": "IEI",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "IRO",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "ORI",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "RIE",
+      "type": 0
+    },
+    {
+      "word": "RIG",
+      "type": 0
+    },
+    {
+      "word": "ROG",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "ABRI",
+      "type": 0
+    },
+    {
+      "word": "ARGO",
+      "type": 0
+    },
+    {
+      "word": "AROS",
+      "type": 0
+    },
+    {
+      "word": "BRIA",
+      "type": 0
+    },
+    {
+      "word": "BRIE",
+      "type": 0
+    },
+    {
+      "word": "BRIG",
+      "type": 0
+    },
+    {
+      "word": "ELIA",
+      "type": 0
+    },
+    {
+      "word": "GIRA",
+      "type": 0
+    },
+    {
+      "word": "GIRO",
+      "type": 0
+    },
+    {
+      "word": "IGOR",
+      "type": 0
+    },
+    {
+      "word": "SORA",
+      "type": 0
+    },
+    {
+      "word": "ARGOS",
+      "type": 0
+    },
+    {
+      "word": "ARIEL",
+      "type": 0
+    },
+    {
+      "word": "BRIAR",
+      "type": 0
+    },
+    {
+      "word": "BRIGO",
+      "type": 0
+    },
+    {
+      "word": "GIROS",
+      "type": 0
+    },
+    {
+      "word": "LEIGO",
+      "type": 0
+    },
+    {
+      "word": "RIGOR",
+      "type": 0
+    },
+    {
+      "word": "SOGRA",
+      "type": 0
+    },
+    {
+      "word": "LEIGOS",
+      "type": 0
+    },
+    {
+      "word": "ABRIGOS",
+      "type": 0
+    }
+  ],
+  "letters": "BRRC,AIEL,RGII,SORA",
+  "obstacles": []
 }

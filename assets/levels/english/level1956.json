@@ -1,107 +1,195 @@
-﻿{
-    "id":  1956,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FELT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FILE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIFE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PILE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VITAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FESTIVAL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BITS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FEST",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FILES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEST",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PILES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VITA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "FESL,ILTA,PBIV",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1956,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "OUT",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "VIS",
+      "type": 0
+    },
+    {
+      "word": "ACTS",
+      "type": 0
+    },
+    {
+      "word": "MALE",
+      "type": 0
+    },
+    {
+      "word": "MARC",
+      "type": 0
+    },
+    {
+      "word": "MACRO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "AMU",
+      "type": 0
+    },
+    {
+      "word": "CEL",
+      "type": 0
+    },
+    {
+      "word": "LAC",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "MOA",
+      "type": 0
+    },
+    {
+      "word": "MOL",
+      "type": 0
+    },
+    {
+      "word": "MUT",
+      "type": 0
+    },
+    {
+      "word": "OAR",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORC",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "UTS",
+      "type": 0
+    },
+    {
+      "word": "ALEC",
+      "type": 0
+    },
+    {
+      "word": "CALO",
+      "type": 0
+    },
+    {
+      "word": "CRAM",
+      "type": 0
+    },
+    {
+      "word": "LOAM",
+      "type": 0
+    },
+    {
+      "word": "LOUT",
+      "type": 0
+    },
+    {
+      "word": "MARL",
+      "type": 0
+    },
+    {
+      "word": "MOLA",
+      "type": 0
+    },
+    {
+      "word": "MOLE",
+      "type": 0
+    },
+    {
+      "word": "MUTS",
+      "type": 0
+    },
+    {
+      "word": "OLEO",
+      "type": 0
+    },
+    {
+      "word": "ORAD",
+      "type": 0
+    },
+    {
+      "word": "ORCA",
+      "type": 0
+    },
+    {
+      "word": "OUTS",
+      "type": 0
+    },
+    {
+      "word": "ROAM",
+      "type": 0
+    },
+    {
+      "word": "STUM",
+      "type": 0
+    },
+    {
+      "word": "AMOLE",
+      "type": 0
+    },
+    {
+      "word": "CELOM",
+      "type": 0
+    },
+    {
+      "word": "LOUTS",
+      "type": 0
+    },
+    {
+      "word": "MARCEL",
+      "type": 0
+    }
+  ],
+  "letters": "AROEC,DCALR,VTMOA,ISTUM",
+  "obstacles": []
 }

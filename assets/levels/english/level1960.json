@@ -1,126 +1,215 @@
-﻿{
-    "id":  1960,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOOT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MUSHROOM",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "MOAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOOR",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOTE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MOTO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MUSH",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ROM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SUMO",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TOOT",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "ROOMI,HMTOA,SUEOT",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1960,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "HAD",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "NEW",
+      "type": 0
+    },
+    {
+      "word": "PEG",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SOY",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "THY",
+      "type": 0
+    },
+    {
+      "word": "STEP",
+      "type": 0
+    },
+    {
+      "word": "WANT",
+      "type": 0
+    },
+    {
+      "word": "WENT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "AWE",
+      "type": 0
+    },
+    {
+      "word": "DAH",
+      "type": 0
+    },
+    {
+      "word": "HAO",
+      "type": 0
+    },
+    {
+      "word": "HEP",
+      "type": 0
+    },
+    {
+      "word": "NAW",
+      "type": 0
+    },
+    {
+      "word": "PEH",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "PEW",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "TEW",
+      "type": 0
+    },
+    {
+      "word": "TWA",
+      "type": 0
+    },
+    {
+      "word": "WAN",
+      "type": 0
+    },
+    {
+      "word": "WEN",
+      "type": 0
+    },
+    {
+      "word": "WET",
+      "type": 0
+    },
+    {
+      "word": "ANEW",
+      "type": 0
+    },
+    {
+      "word": "DAHS",
+      "type": 0
+    },
+    {
+      "word": "NETS",
+      "type": 0
+    },
+    {
+      "word": "NETT",
+      "type": 0
+    },
+    {
+      "word": "NEWT",
+      "type": 0
+    },
+    {
+      "word": "PENT",
+      "type": 0
+    },
+    {
+      "word": "PETS",
+      "type": 0
+    },
+    {
+      "word": "SHAD",
+      "type": 0
+    },
+    {
+      "word": "SPEW",
+      "type": 0
+    },
+    {
+      "word": "STEW",
+      "type": 0
+    },
+    {
+      "word": "TENT",
+      "type": 0
+    },
+    {
+      "word": "TRET",
+      "type": 0
+    },
+    {
+      "word": "WANE",
+      "type": 0
+    },
+    {
+      "word": "WEPT",
+      "type": 0
+    },
+    {
+      "word": "WETS",
+      "type": 0
+    },
+    {
+      "word": "SHADY",
+      "type": 0
+    },
+    {
+      "word": "SPENT",
+      "type": 0
+    },
+    {
+      "word": "TENTH",
+      "type": 0
+    },
+    {
+      "word": "NETTER",
+      "type": 0
+    },
+    {
+      "word": "PETTER",
+      "type": 0
+    },
+    {
+      "word": "PEWTER",
+      "type": 0
+    },
+    {
+      "word": "WETTER",
+      "type": 0
+    }
+  ],
+  "letters": "YHTNA,GEPEW,YOSTT,DAHRE",
+  "obstacles": []
 }

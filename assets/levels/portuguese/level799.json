@@ -1,65 +1,271 @@
-﻿{
-    "id":  799,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIVÃ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GADO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VODCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALGADO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DIVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OVIL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SALGADOR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ALGAA,SDÃDC,LIVOR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 799,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ELE",
+      "type": 0
+    },
+    {
+      "word": "LHE",
+      "type": 0
+    },
+    {
+      "word": "MEU",
+      "type": 0
+    },
+    {
+      "word": "CENA",
+      "type": 0
+    },
+    {
+      "word": "DELE",
+      "type": 0
+    },
+    {
+      "word": "LEME",
+      "type": 0
+    },
+    {
+      "word": "NELE",
+      "type": 0
+    },
+    {
+      "word": "OLHE",
+      "type": 0
+    },
+    {
+      "word": "ROMEU",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "ECA",
+      "type": 0
+    },
+    {
+      "word": "ELO",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "ENA",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "LEU",
+      "type": 0
+    },
+    {
+      "word": "MEA",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MOL",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "NED",
+      "type": 0
+    },
+    {
+      "word": "NEL",
+      "type": 0
+    },
+    {
+      "word": "OLD",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "ADEN",
+      "type": 0
+    },
+    {
+      "word": "ANEL",
+      "type": 0
+    },
+    {
+      "word": "CADE",
+      "type": 0
+    },
+    {
+      "word": "CAEM",
+      "type": 0
+    },
+    {
+      "word": "CANE",
+      "type": 0
+    },
+    {
+      "word": "DANE",
+      "type": 0
+    },
+    {
+      "word": "DENA",
+      "type": 0
+    },
+    {
+      "word": "EDEN",
+      "type": 0
+    },
+    {
+      "word": "ENEL",
+      "type": 0
+    },
+    {
+      "word": "LEAD",
+      "type": 0
+    },
+    {
+      "word": "LEAN",
+      "type": 0
+    },
+    {
+      "word": "LEDA",
+      "type": 0
+    },
+    {
+      "word": "LENA",
+      "type": 0
+    },
+    {
+      "word": "MEAD",
+      "type": 0
+    },
+    {
+      "word": "MEAN",
+      "type": 0
+    },
+    {
+      "word": "MELO",
+      "type": 0
+    },
+    {
+      "word": "MOLE",
+      "type": 0
+    },
+    {
+      "word": "NADE",
+      "type": 0
+    },
+    {
+      "word": "ROLE",
+      "type": 0
+    },
+    {
+      "word": "ROME",
+      "type": 0
+    },
+    {
+      "word": "ACENE",
+      "type": 0
+    },
+    {
+      "word": "ADELE",
+      "type": 0
+    },
+    {
+      "word": "ELENA",
+      "type": 0
+    },
+    {
+      "word": "HELEN",
+      "type": 0
+    },
+    {
+      "word": "MEADE",
+      "type": 0
+    },
+    {
+      "word": "MOLDA",
+      "type": 0
+    },
+    {
+      "word": "MOLDE",
+      "type": 0
+    },
+    {
+      "word": "MOLHE",
+      "type": 0
+    },
+    {
+      "word": "HELENA",
+      "type": 0
+    },
+    {
+      "word": "HELENE",
+      "type": 0
+    }
+  ],
+  "letters": "ROME,HLEU,EDAC,LENE",
+  "obstacles": []
 }

@@ -1,49 +1,159 @@
-﻿{
-    "id":  740,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OZON",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MAYDANOZ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "NOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ONAT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "İZON,TOTA,MAYD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 740,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GİR",
+      "type": 0
+    },
+    {
+      "word": "HAH",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "İŞİ",
+      "type": 0
+    },
+    {
+      "word": "HALE",
+      "type": 0
+    },
+    {
+      "word": "HİLE",
+      "type": 0
+    },
+    {
+      "word": "GELİR",
+      "type": 0
+    },
+    {
+      "word": "GİRİŞ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GİL",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "HEH",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LİG",
+      "type": 0
+    },
+    {
+      "word": "İHA",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "İRİ",
+      "type": 0
+    },
+    {
+      "word": "ŞAH",
+      "type": 0
+    },
+    {
+      "word": "ŞAL",
+      "type": 0
+    },
+    {
+      "word": "GALE",
+      "type": 0
+    },
+    {
+      "word": "HAHA",
+      "type": 0
+    },
+    {
+      "word": "HALİ",
+      "type": 0
+    },
+    {
+      "word": "LİGE",
+      "type": 0
+    },
+    {
+      "word": "LİGİ",
+      "type": 0
+    },
+    {
+      "word": "AHALİ",
+      "type": 0
+    },
+    {
+      "word": "GELİRİ",
+      "type": 0
+    },
+    {
+      "word": "GİRİŞİ",
+      "type": 0
+    }
+  ],
+  "letters": "İLEH,ŞAHA,İGEH,RİLİ",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

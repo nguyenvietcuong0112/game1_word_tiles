@@ -1,69 +1,271 @@
-﻿{
-    "id":  739,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LİG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MASAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAMİMİ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AGAMİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ASAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MİLAS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SALİM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SAL,AGİ,MİM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 739,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANNE",
+      "type": 0
+    },
+    {
+      "word": "EDİN",
+      "type": 0
+    },
+    {
+      "word": "EMİN",
+      "type": 0
+    },
+    {
+      "word": "GEMİ",
+      "type": 0
+    },
+    {
+      "word": "ANNEM",
+      "type": 0
+    },
+    {
+      "word": "ANNİE",
+      "type": 0
+    },
+    {
+      "word": "HANGİ",
+      "type": 0
+    },
+    {
+      "word": "HAYDİ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ANN",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "AİN",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "DİE",
+      "type": 0
+    },
+    {
+      "word": "DİM",
+      "type": 0
+    },
+    {
+      "word": "DİN",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "GEM",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "HAN",
+      "type": 0
+    },
+    {
+      "word": "HAY",
+      "type": 0
+    },
+    {
+      "word": "HAİ",
+      "type": 0
+    },
+    {
+      "word": "HEE",
+      "type": 0
+    },
+    {
+      "word": "MEG",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MİN",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NAİ",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "NİM",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "YDİ",
+      "type": 0
+    },
+    {
+      "word": "İAN",
+      "type": 0
+    },
+    {
+      "word": "İDİ",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "İNN",
+      "type": 0
+    },
+    {
+      "word": "İNİ",
+      "type": 0
+    },
+    {
+      "word": "ANDY",
+      "type": 0
+    },
+    {
+      "word": "ANDİ",
+      "type": 0
+    },
+    {
+      "word": "ANGE",
+      "type": 0
+    },
+    {
+      "word": "DİNE",
+      "type": 0
+    },
+    {
+      "word": "DİNİ",
+      "type": 0
+    },
+    {
+      "word": "EDİE",
+      "type": 0
+    },
+    {
+      "word": "ENİD",
+      "type": 0
+    },
+    {
+      "word": "GENİ",
+      "type": 0
+    },
+    {
+      "word": "HAND",
+      "type": 0
+    },
+    {
+      "word": "HANG",
+      "type": 0
+    },
+    {
+      "word": "HAİN",
+      "type": 0
+    },
+    {
+      "word": "MENİ",
+      "type": 0
+    },
+    {
+      "word": "MİDE",
+      "type": 0
+    },
+    {
+      "word": "MİNE",
+      "type": 0
+    },
+    {
+      "word": "MİNİ",
+      "type": 0
+    },
+    {
+      "word": "YANG",
+      "type": 0
+    },
+    {
+      "word": "İDİM",
+      "type": 0
+    },
+    {
+      "word": "AİDİM",
+      "type": 0
+    },
+    {
+      "word": "GEMİN",
+      "type": 0
+    },
+    {
+      "word": "HAİNİ",
+      "type": 0
+    },
+    {
+      "word": "HEİDİ",
+      "type": 0
+    },
+    {
+      "word": "ANNEMİ",
+      "type": 0
+    },
+    {
+      "word": "GEMİDE",
+      "type": 0
+    },
+    {
+      "word": "GEMİNİ",
+      "type": 0
+    }
+  ],
+  "letters": "İDYA,GNAH,ENİE,MİDE",
+  "obstacles": []
 }

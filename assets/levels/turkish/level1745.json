@@ -1,110 +1,123 @@
-﻿{
-    "id":  1745,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "IRK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BATI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EBAT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "EKİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KATI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HIRKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIHTIM",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ATIM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BEKA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "KATIM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TABİ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "HTIM,IABİ,RKEK",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1745,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABİ",
+      "type": 0
+    },
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "BAK",
+      "type": 0
+    },
+    {
+      "word": "BAY",
+      "type": 0
+    },
+    {
+      "word": "CEO",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "AYDA",
+      "type": 0
+    },
+    {
+      "word": "ISKA",
+      "type": 0
+    },
+    {
+      "word": "ROAD",
+      "type": 0
+    },
+    {
+      "word": "İADE",
+      "type": 0
+    },
+    {
+      "word": "KAYDI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BAO",
+      "type": 0
+    },
+    {
+      "word": "BAİ",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "DAO",
+      "type": 0
+    },
+    {
+      "word": "DAİ",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "YDI",
+      "type": 0
+    },
+    {
+      "word": "BROAD",
+      "type": 0
+    },
+    {
+      "word": "KAYDA",
+      "type": 0
+    }
+  ],
+  "letters": "KSIC,AYDE,BİAO,ROBR",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

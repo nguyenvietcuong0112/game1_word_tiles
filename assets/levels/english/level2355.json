@@ -1,97 +1,191 @@
-﻿{
-    "id":  2355,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARP",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PEER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCORPIO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CORP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PROC",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OIPEO,HOREG,SCAEH",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2355,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "BULL",
+      "type": 0
+    },
+    {
+      "word": "CELL",
+      "type": 0
+    },
+    {
+      "word": "HOLE",
+      "type": 0
+    },
+    {
+      "word": "NULL",
+      "type": 0
+    },
+    {
+      "word": "SEEK",
+      "type": 0
+    },
+    {
+      "word": "SELL",
+      "type": 0
+    },
+    {
+      "word": "CELLS",
+      "type": 0
+    },
+    {
+      "word": "CLOCK",
+      "type": 0
+    },
+    {
+      "word": "BULLOCK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BUN",
+      "type": 0
+    },
+    {
+      "word": "CEE",
+      "type": 0
+    },
+    {
+      "word": "CEL",
+      "type": 0
+    },
+    {
+      "word": "COL",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "LEK",
+      "type": 0
+    },
+    {
+      "word": "NUB",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "BUNK",
+      "type": 0
+    },
+    {
+      "word": "CLON",
+      "type": 0
+    },
+    {
+      "word": "CONK",
+      "type": 0
+    },
+    {
+      "word": "ECHO",
+      "type": 0
+    },
+    {
+      "word": "ELLS",
+      "type": 0
+    },
+    {
+      "word": "KEEL",
+      "type": 0
+    },
+    {
+      "word": "LECH",
+      "type": 0
+    },
+    {
+      "word": "LEEK",
+      "type": 0
+    },
+    {
+      "word": "LEES",
+      "type": 0
+    },
+    {
+      "word": "LEKS",
+      "type": 0
+    },
+    {
+      "word": "LOCK",
+      "type": 0
+    },
+    {
+      "word": "LUNK",
+      "type": 0
+    },
+    {
+      "word": "NOCK",
+      "type": 0
+    },
+    {
+      "word": "SEEL",
+      "type": 0
+    },
+    {
+      "word": "SKEE",
+      "type": 0
+    },
+    {
+      "word": "SLUB",
+      "type": 0
+    },
+    {
+      "word": "CELLO",
+      "type": 0
+    },
+    {
+      "word": "CLONK",
+      "type": 0
+    },
+    {
+      "word": "KNOLL",
+      "type": 0
+    },
+    {
+      "word": "LEECH",
+      "type": 0
+    },
+    {
+      "word": "LEEKS",
+      "type": 0
+    },
+    {
+      "word": "SLUNK",
+      "type": 0
+    }
+  ],
+  "letters": "BULSK,KNLEE,COLCL,BULHO",
+  "obstacles": []
 }

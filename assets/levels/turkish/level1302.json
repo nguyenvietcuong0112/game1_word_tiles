@@ -1,57 +1,283 @@
-﻿{
-    "id":  1302,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SERT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TERS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LİTRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STERLİN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ESTER",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TERLİ",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "İLİNT,TRERR,KITSE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1302,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "SES",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "İLK",
+      "type": 0
+    },
+    {
+      "word": "İSE",
+      "type": 0
+    },
+    {
+      "word": "ARAP",
+      "type": 0
+    },
+    {
+      "word": "BİLE",
+      "type": 0
+    },
+    {
+      "word": "PARA",
+      "type": 0
+    },
+    {
+      "word": "PETE",
+      "type": 0
+    },
+    {
+      "word": "SESİ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "BİL",
+      "type": 0
+    },
+    {
+      "word": "BİT",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "EPİ",
+      "type": 0
+    },
+    {
+      "word": "ETE",
+      "type": 0
+    },
+    {
+      "word": "ETİ",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LER",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "LİS",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "PİS",
+      "type": 0
+    },
+    {
+      "word": "PİT",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "SİL",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "TİP",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "İPE",
+      "type": 0
+    },
+    {
+      "word": "İSİ",
+      "type": 0
+    },
+    {
+      "word": "İTİ",
+      "type": 0
+    },
+    {
+      "word": "ALET",
+      "type": 0
+    },
+    {
+      "word": "BİTİ",
+      "type": 0
+    },
+    {
+      "word": "ELİT",
+      "type": 0
+    },
+    {
+      "word": "ETER",
+      "type": 0
+    },
+    {
+      "word": "LARA",
+      "type": 0
+    },
+    {
+      "word": "LİSE",
+      "type": 0
+    },
+    {
+      "word": "SETE",
+      "type": 0
+    },
+    {
+      "word": "SETİ",
+      "type": 0
+    },
+    {
+      "word": "SİTE",
+      "type": 0
+    },
+    {
+      "word": "TELİ",
+      "type": 0
+    },
+    {
+      "word": "TİPE",
+      "type": 0
+    },
+    {
+      "word": "İLET",
+      "type": 0
+    },
+    {
+      "word": "İTER",
+      "type": 0
+    },
+    {
+      "word": "İTİP",
+      "type": 0
+    },
+    {
+      "word": "ALETE",
+      "type": 0
+    },
+    {
+      "word": "ALETİ",
+      "type": 0
+    },
+    {
+      "word": "BİLET",
+      "type": 0
+    },
+    {
+      "word": "BİTER",
+      "type": 0
+    },
+    {
+      "word": "BİTİP",
+      "type": 0
+    },
+    {
+      "word": "ELİSE",
+      "type": 0
+    },
+    {
+      "word": "KLARA",
+      "type": 0
+    },
+    {
+      "word": "SİLER",
+      "type": 0
+    },
+    {
+      "word": "SİPER",
+      "type": 0
+    },
+    {
+      "word": "İLETİ",
+      "type": 0
+    },
+    {
+      "word": "BİLETİ",
+      "type": 0
+    },
+    {
+      "word": "LİSESİ",
+      "type": 0
+    },
+    {
+      "word": "SİTESİ",
+      "type": 0
+    },
+    {
+      "word": "TERAPİ",
+      "type": 0
+    }
+  ],
+  "letters": "APİS,RETE,ALİS,PKBİ",
+  "obstacles": []
 }

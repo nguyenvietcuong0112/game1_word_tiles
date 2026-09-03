@@ -1,83 +1,155 @@
-﻿{
-    "id":  1460,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SİS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPOT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SPONSOR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "TON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOP",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "POTA,SNRA,İSOD",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1460,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AYI",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "YIL",
+      "type": 0
+    },
+    {
+      "word": "YLE",
+      "type": 0
+    },
+    {
+      "word": "YASA",
+      "type": 0
+    },
+    {
+      "word": "SAYIN",
+      "type": 0
+    },
+    {
+      "word": "SAYILIR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "ESE",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "YAS",
+      "type": 0
+    },
+    {
+      "word": "AMES",
+      "type": 0
+    },
+    {
+      "word": "ASAN",
+      "type": 0
+    },
+    {
+      "word": "AYIN",
+      "type": 0
+    },
+    {
+      "word": "NASA",
+      "type": 0
+    },
+    {
+      "word": "SAYI",
+      "type": 0
+    },
+    {
+      "word": "YANI",
+      "type": 0
+    },
+    {
+      "word": "YILI",
+      "type": 0
+    },
+    {
+      "word": "SAYAN",
+      "type": 0
+    },
+    {
+      "word": "SAYILI",
+      "type": 0
+    }
+  ],
+  "letters": "AESA,SAEM,AYLR,NILI",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

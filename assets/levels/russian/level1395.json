@@ -1,87 +1,107 @@
-﻿{
-    "id":  1395,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "БИТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БОК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЕДА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КЕД",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТИК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БИТА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ДАТА",
-                             "type":  2
-                         },
-                         {
-                             "word":  "БАТИК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ОБИДА",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АТА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "БАТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ДИКО",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ИБО",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КИТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КОБ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОБА",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "АТА,БИД,ОКЕ",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1395,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ЛЕО",
+      "type": 0
+    },
+    {
+      "word": "ПЭТ",
+      "type": 0
+    },
+    {
+      "word": "ТОТ",
+      "type": 0
+    },
+    {
+      "word": "ЧАЯ",
+      "type": 0
+    },
+    {
+      "word": "ЭТА",
+      "type": 0
+    },
+    {
+      "word": "ЭТО",
+      "type": 0
+    },
+    {
+      "word": "ЭТАЖ",
+      "type": 0
+    },
+    {
+      "word": "ЭТОТ",
+      "type": 0
+    },
+    {
+      "word": "ЭТАЖЕ",
+      "type": 0
+    },
+    {
+      "word": "ГОРЯЧАЯ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АЛЕ",
+      "type": 0
+    },
+    {
+      "word": "ГОР",
+      "type": 0
+    },
+    {
+      "word": "ЕЛА",
+      "type": 0
+    },
+    {
+      "word": "ЛАТ",
+      "type": 0
+    },
+    {
+      "word": "РОГ",
+      "type": 0
+    },
+    {
+      "word": "ЯГО",
+      "type": 0
+    },
+    {
+      "word": "ГОРЯ",
+      "type": 0
+    },
+    {
+      "word": "ЛЕЖА",
+      "type": 0
+    },
+    {
+      "word": "ГОРЯЧ",
+      "type": 0
+    },
+    {
+      "word": "ЛЕЖАТ",
+      "type": 0
+    },
+    {
+      "word": "ГОРЯЧА",
+      "type": 0
+    }
+  ],
+  "letters": "ОТЯА,ТЭПЧ,АЖГЯ,ЛЕОР",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

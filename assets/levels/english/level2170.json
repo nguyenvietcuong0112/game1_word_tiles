@@ -1,113 +1,163 @@
-﻿{
-    "id":  2170,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AWAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MANY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SLAY",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SWAM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SWAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SWAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANYWAY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANEW",
-                            "type":  1
-                        },
-                        {
-                            "word":  "EWE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAWS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WANE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "WEE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LAYLT,SWYEE,MANEW",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2170,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "WHY",
+      "type": 0
+    },
+    {
+      "word": "EVER",
+      "type": 0
+    },
+    {
+      "word": "OVER",
+      "type": 0
+    },
+    {
+      "word": "TONS",
+      "type": 0
+    },
+    {
+      "word": "OTHER",
+      "type": 0
+    },
+    {
+      "word": "THEORY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "OAR",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "ROT",
+      "type": 0
+    },
+    {
+      "word": "SHY",
+      "type": 0
+    },
+    {
+      "word": "TOE",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TOT",
+      "type": 0
+    },
+    {
+      "word": "VOE",
+      "type": 0
+    },
+    {
+      "word": "WRY",
+      "type": 0
+    },
+    {
+      "word": "HERO",
+      "type": 0
+    },
+    {
+      "word": "ROTO",
+      "type": 0
+    },
+    {
+      "word": "ROVE",
+      "type": 0
+    },
+    {
+      "word": "SNOT",
+      "type": 0
+    },
+    {
+      "word": "TORR",
+      "type": 0
+    },
+    {
+      "word": "TORY",
+      "type": 0
+    },
+    {
+      "word": "HERRY",
+      "type": 0
+    },
+    {
+      "word": "WROTH",
+      "type": 0
+    },
+    {
+      "word": "TOTHER",
+      "type": 0
+    }
+  ],
+  "letters": "SHYRE,NWRRO,OTOEV,ARTHE",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,109 +1,219 @@
-﻿{
-    "id":  2425,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LURE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MULE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RULE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARENA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALUMINUM",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELAN",
-                            "type":  1
-                        },
-                        {
-                            "word":  "EMU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IMAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MANI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MINA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UNI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UMENA,NALEN,IMURA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2425,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BUT",
+      "type": 0
+    },
+    {
+      "word": "CUT",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "OIL",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "BALL",
+      "type": 0
+    },
+    {
+      "word": "RICH",
+      "type": 0
+    },
+    {
+      "word": "TELL",
+      "type": 0
+    },
+    {
+      "word": "ORDER",
+      "type": 0
+    },
+    {
+      "word": "ORDERS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABO",
+      "type": 0
+    },
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "COB",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "CUB",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "ETH",
+      "type": 0
+    },
+    {
+      "word": "HOB",
+      "type": 0
+    },
+    {
+      "word": "ICH",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LOB",
+      "type": 0
+    },
+    {
+      "word": "NAB",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "THO",
+      "type": 0
+    },
+    {
+      "word": "TUB",
+      "type": 0
+    },
+    {
+      "word": "BANS",
+      "type": 0
+    },
+    {
+      "word": "BOIL",
+      "type": 0
+    },
+    {
+      "word": "BOLA",
+      "type": 0
+    },
+    {
+      "word": "BOLL",
+      "type": 0
+    },
+    {
+      "word": "BUTE",
+      "type": 0
+    },
+    {
+      "word": "CORD",
+      "type": 0
+    },
+    {
+      "word": "CUTE",
+      "type": 0
+    },
+    {
+      "word": "HOBS",
+      "type": 0
+    },
+    {
+      "word": "LABS",
+      "type": 0
+    },
+    {
+      "word": "LICH",
+      "type": 0
+    },
+    {
+      "word": "LOBS",
+      "type": 0
+    },
+    {
+      "word": "NABS",
+      "type": 0
+    },
+    {
+      "word": "ABOIL",
+      "type": 0
+    },
+    {
+      "word": "BORIC",
+      "type": 0
+    },
+    {
+      "word": "CHOIR",
+      "type": 0
+    },
+    {
+      "word": "LICHT",
+      "type": 0
+    },
+    {
+      "word": "BALLET",
+      "type": 0
+    },
+    {
+      "word": "BORDER",
+      "type": 0
+    },
+    {
+      "word": "CORDER",
+      "type": 0
+    },
+    {
+      "word": "BORDERS",
+      "type": 0
+    },
+    {
+      "word": "CORDERS",
+      "type": 0
+    }
+  ],
+  "letters": "EDROB,RLICU,SBOHT,NALLE",
+  "obstacles": []
 }

@@ -1,101 +1,159 @@
-﻿{
-    "id":  1120,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GARFO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GERAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INTRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEGAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REGAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REGER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENTRAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GARAGE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TRAGAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENTREGA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ENTREGAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AGAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ENTRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FRAGA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TRAGER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "INEGE,NTRAR,EOFGA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1120,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "EIS",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "CECE",
+      "type": 0
+    },
+    {
+      "word": "ISCA",
+      "type": 0
+    },
+    {
+      "word": "REIS",
+      "type": 0
+    },
+    {
+      "word": "TECH",
+      "type": 0
+    },
+    {
+      "word": "TEIA",
+      "type": 0
+    },
+    {
+      "word": "TENTA",
+      "type": 0
+    },
+    {
+      "word": "TEREI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "AIE",
+      "type": 0
+    },
+    {
+      "word": "CSI",
+      "type": 0
+    },
+    {
+      "word": "ECA",
+      "type": 0
+    },
+    {
+      "word": "EIA",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "HAI",
+      "type": 0
+    },
+    {
+      "word": "IST",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "SIA",
+      "type": 0
+    },
+    {
+      "word": "SIE",
+      "type": 0
+    },
+    {
+      "word": "TEC",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "CENT",
+      "type": 0
+    },
+    {
+      "word": "ISHA",
+      "type": 0
+    },
+    {
+      "word": "STEN",
+      "type": 0
+    },
+    {
+      "word": "TECA",
+      "type": 0
+    },
+    {
+      "word": "AISHA",
+      "type": 0
+    },
+    {
+      "word": "TECER",
+      "type": 0
+    }
+  ],
+  "letters": "AHAA,ISCT,ETEN,RECH",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

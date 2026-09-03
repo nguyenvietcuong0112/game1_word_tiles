@@ -1,97 +1,223 @@
-﻿{
-    "id":  2210,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CİLA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STAT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "YASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TATİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NETİCE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASTAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETİL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TALİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TECİL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ROLİC,YTATE,ASAEN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2210,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "KAL",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "YLA",
+      "type": 0
+    },
+    {
+      "word": "ŞAM",
+      "type": 0
+    },
+    {
+      "word": "ABLA",
+      "type": 0
+    },
+    {
+      "word": "AYAK",
+      "type": 0
+    },
+    {
+      "word": "AYDA",
+      "type": 0
+    },
+    {
+      "word": "ANLAMA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "BLA",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "LAK",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NBA",
+      "type": 0
+    },
+    {
+      "word": "YAA",
+      "type": 0
+    },
+    {
+      "word": "YAD",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "YAY",
+      "type": 0
+    },
+    {
+      "word": "ŞAL",
+      "type": 0
+    },
+    {
+      "word": "ADDY",
+      "type": 0
+    },
+    {
+      "word": "AKAN",
+      "type": 0
+    },
+    {
+      "word": "ALBA",
+      "type": 0
+    },
+    {
+      "word": "ALLY",
+      "type": 0
+    },
+    {
+      "word": "ANLA",
+      "type": 0
+    },
+    {
+      "word": "AYLA",
+      "type": 0
+    },
+    {
+      "word": "DAMA",
+      "type": 0
+    },
+    {
+      "word": "DANA",
+      "type": 0
+    },
+    {
+      "word": "DAYA",
+      "type": 0
+    },
+    {
+      "word": "KAYA",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "LYLA",
+      "type": 0
+    },
+    {
+      "word": "YAKA",
+      "type": 0
+    },
+    {
+      "word": "YANA",
+      "type": 0
+    },
+    {
+      "word": "YAYA",
+      "type": 0
+    },
+    {
+      "word": "ANLAM",
+      "type": 0
+    },
+    {
+      "word": "DAYAK",
+      "type": 0
+    },
+    {
+      "word": "DAYAN",
+      "type": 0
+    },
+    {
+      "word": "KANLA",
+      "type": 0
+    },
+    {
+      "word": "KAYAN",
+      "type": 0
+    },
+    {
+      "word": "KAYLA",
+      "type": 0
+    },
+    {
+      "word": "YAYAN",
+      "type": 0
+    },
+    {
+      "word": "KAYAYA",
+      "type": 0
+    },
+    {
+      "word": "ANLAMDA",
+      "type": 0
+    }
+  ],
+  "letters": "AKANŞ,LLYLA,BNADM,AAYDA",
+  "obstacles": []
 }

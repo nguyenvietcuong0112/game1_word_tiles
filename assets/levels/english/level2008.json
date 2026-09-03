@@ -1,73 +1,343 @@
-﻿{
-    "id":  2008,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIDE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DIGIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIGITAL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AEGIS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AILS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAILS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AESLT,EGIII,DITAL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2008,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "GOT",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "OLD",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "BASE",
+      "type": 0
+    },
+    {
+      "word": "LAND",
+      "type": 0
+    },
+    {
+      "word": "OTHER",
+      "type": 0
+    },
+    {
+      "word": "CLOTHES",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAL",
+      "type": 0
+    },
+    {
+      "word": "ABA",
+      "type": 0
+    },
+    {
+      "word": "ALB",
+      "type": 0
+    },
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "LAP",
+      "type": 0
+    },
+    {
+      "word": "LOG",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "NAB",
+      "type": 0
+    },
+    {
+      "word": "NAP",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "REP",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TOG",
+      "type": 0
+    },
+    {
+      "word": "AALS",
+      "type": 0
+    },
+    {
+      "word": "ABAS",
+      "type": 0
+    },
+    {
+      "word": "ALBA",
+      "type": 0
+    },
+    {
+      "word": "APER",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "BAAL",
+      "type": 0
+    },
+    {
+      "word": "BARE",
+      "type": 0
+    },
+    {
+      "word": "BAST",
+      "type": 0
+    },
+    {
+      "word": "CLAN",
+      "type": 0
+    },
+    {
+      "word": "CLAP",
+      "type": 0
+    },
+    {
+      "word": "CLOG",
+      "type": 0
+    },
+    {
+      "word": "CLOT",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "GOLD",
+      "type": 0
+    },
+    {
+      "word": "HEST",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "LOTH",
+      "type": 0
+    },
+    {
+      "word": "LOTS",
+      "type": 0
+    },
+    {
+      "word": "NAAN",
+      "type": 0
+    },
+    {
+      "word": "NAPE",
+      "type": 0
+    },
+    {
+      "word": "NERD",
+      "type": 0
+    },
+    {
+      "word": "PALS",
+      "type": 0
+    },
+    {
+      "word": "PANE",
+      "type": 0
+    },
+    {
+      "word": "PEND",
+      "type": 0
+    },
+    {
+      "word": "RASE",
+      "type": 0
+    },
+    {
+      "word": "REND",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SLAP",
+      "type": 0
+    },
+    {
+      "word": "TOLD",
+      "type": 0
+    },
+    {
+      "word": "TSAR",
+      "type": 0
+    },
+    {
+      "word": "ABASE",
+      "type": 0
+    },
+    {
+      "word": "ALBAS",
+      "type": 0
+    },
+    {
+      "word": "BAALS",
+      "type": 0
+    },
+    {
+      "word": "BARES",
+      "type": 0
+    },
+    {
+      "word": "BASER",
+      "type": 0
+    },
+    {
+      "word": "BLAND",
+      "type": 0
+    },
+    {
+      "word": "CLOTH",
+      "type": 0
+    },
+    {
+      "word": "CLOTS",
+      "type": 0
+    },
+    {
+      "word": "PENAL",
+      "type": 0
+    },
+    {
+      "word": "RENAL",
+      "type": 0
+    },
+    {
+      "word": "ABASER",
+      "type": 0
+    },
+    {
+      "word": "BAREST",
+      "type": 0
+    },
+    {
+      "word": "CLOTHE",
+      "type": 0
+    },
+    {
+      "word": "REPAND",
+      "type": 0
+    }
+  ],
+  "letters": "RDLOG,ENCTH,PALSE,NABAR",
+  "obstacles": []
 }

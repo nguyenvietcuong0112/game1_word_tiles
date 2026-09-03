@@ -1,77 +1,103 @@
-﻿{
-    "id":  1250,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDLY",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LOAD",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MAID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MILD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAILY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COLI",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LIMA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MILO",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "AIDA,MILY,DAOC",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1250,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GNU",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "PEG",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "HELP",
+      "type": 0
+    },
+    {
+      "word": "HUNG",
+      "type": 0
+    },
+    {
+      "word": "PUSH",
+      "type": 0
+    },
+    {
+      "word": "WRONG",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "HUN",
+      "type": 0
+    },
+    {
+      "word": "LEU",
+      "type": 0
+    },
+    {
+      "word": "NUN",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "PEW",
+      "type": 0
+    },
+    {
+      "word": "PUS",
+      "type": 0
+    },
+    {
+      "word": "SUP",
+      "type": 0
+    },
+    {
+      "word": "UNS",
+      "type": 0
+    },
+    {
+      "word": "HUNS",
+      "type": 0
+    },
+    {
+      "word": "NUNS",
+      "type": 0
+    },
+    {
+      "word": "SHUN",
+      "type": 0
+    }
+  ],
+  "letters": "PHUN,USNO,EHGR,LPEW",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

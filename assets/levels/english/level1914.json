@@ -1,139 +1,291 @@
-﻿{
-    "id":  1914,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MACE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CREED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GLIDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MALICE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GLAMOUR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACED",
-                            "type":  1
-                        },
-                        {
-                            "word":  "AMOUR",
-                            "type":  1
-                        },
-                        {
-                            "word":  "CAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAMO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "CREE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DECAL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "GLAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ICED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LACED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LICE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MALI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REED",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OURE,MACE,GLID",
-    "obstacles":  [
-                      {
-                          "required_words":  9,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1914,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BIT",
+      "type": 0
+    },
+    {
+      "word": "BUT",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "MAY",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "WIT",
+      "type": 0
+    },
+    {
+      "word": "MADE",
+      "type": 0
+    },
+    {
+      "word": "PORT",
+      "type": 0
+    },
+    {
+      "word": "PUMA",
+      "type": 0
+    },
+    {
+      "word": "BURST",
+      "type": 0
+    },
+    {
+      "word": "TODAY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "AMU",
+      "type": 0
+    },
+    {
+      "word": "BUR",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "OPT",
+      "type": 0
+    },
+    {
+      "word": "ORT",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "RUB",
+      "type": 0
+    },
+    {
+      "word": "RUT",
+      "type": 0
+    },
+    {
+      "word": "SAD",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "TOY",
+      "type": 0
+    },
+    {
+      "word": "TUB",
+      "type": 0
+    },
+    {
+      "word": "UTS",
+      "type": 0
+    },
+    {
+      "word": "YAM",
+      "type": 0
+    },
+    {
+      "word": "YOD",
+      "type": 0
+    },
+    {
+      "word": "YUM",
+      "type": 0
+    },
+    {
+      "word": "YUP",
+      "type": 0
+    },
+    {
+      "word": "BITS",
+      "type": 0
+    },
+    {
+      "word": "BURR",
+      "type": 0
+    },
+    {
+      "word": "BURS",
+      "type": 0
+    },
+    {
+      "word": "BUTS",
+      "type": 0
+    },
+    {
+      "word": "DOTE",
+      "type": 0
+    },
+    {
+      "word": "MAST",
+      "type": 0
+    },
+    {
+      "word": "MAYO",
+      "type": 0
+    },
+    {
+      "word": "OPED",
+      "type": 0
+    },
+    {
+      "word": "OPTS",
+      "type": 0
+    },
+    {
+      "word": "ORTS",
+      "type": 0
+    },
+    {
+      "word": "ROPE",
+      "type": 0
+    },
+    {
+      "word": "RUTS",
+      "type": 0
+    },
+    {
+      "word": "SADE",
+      "type": 0
+    },
+    {
+      "word": "STUB",
+      "type": 0
+    },
+    {
+      "word": "TROP",
+      "type": 0
+    },
+    {
+      "word": "URSA",
+      "type": 0
+    },
+    {
+      "word": "WITS",
+      "type": 0
+    },
+    {
+      "word": "ADEPT",
+      "type": 0
+    },
+    {
+      "word": "BURRO",
+      "type": 0
+    },
+    {
+      "word": "BURSA",
+      "type": 0
+    },
+    {
+      "word": "PORTS",
+      "type": 0
+    },
+    {
+      "word": "PUMAS",
+      "type": 0
+    },
+    {
+      "word": "ROPED",
+      "type": 0
+    },
+    {
+      "word": "STROP",
+      "type": 0
+    },
+    {
+      "word": "TROPE",
+      "type": 0
+    },
+    {
+      "word": "TSADE",
+      "type": 0
+    },
+    {
+      "word": "ADEPTS",
+      "type": 0
+    },
+    {
+      "word": "DEPORT",
+      "type": 0
+    },
+    {
+      "word": "DEPORTS",
+      "type": 0
+    }
+  ],
+  "letters": "BURRO,ITSTP,WMADE,PUYOT",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

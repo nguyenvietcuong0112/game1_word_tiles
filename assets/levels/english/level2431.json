@@ -1,105 +1,263 @@
-﻿{
-    "id":  2431,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CLOG",
-                             "type":  2
-                         },
-                         {
-                             "word":  "COAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOLL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CLOTH",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SCOLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THING",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CLOTHING",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALMS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "CLOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GOTH",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HIND",
-                            "type":  1
-                        },
-                        {
-                            "word":  "INGOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LADNI,MOLGH,SCLOT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2431,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "CORE",
+      "type": 0
+    },
+    {
+      "word": "OPEN",
+      "type": 0
+    },
+    {
+      "word": "EPOCH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "COP",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "NOD",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "REP",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "BREN",
+      "type": 0
+    },
+    {
+      "word": "COPE",
+      "type": 0
+    },
+    {
+      "word": "DERE",
+      "type": 0
+    },
+    {
+      "word": "DOLE",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "LODE",
+      "type": 0
+    },
+    {
+      "word": "MALL",
+      "type": 0
+    },
+    {
+      "word": "NODE",
+      "type": 0
+    },
+    {
+      "word": "OPED",
+      "type": 0
+    },
+    {
+      "word": "PORE",
+      "type": 0
+    },
+    {
+      "word": "REDO",
+      "type": 0
+    },
+    {
+      "word": "REPO",
+      "type": 0
+    },
+    {
+      "word": "ROPE",
+      "type": 0
+    },
+    {
+      "word": "ALDER",
+      "type": 0
+    },
+    {
+      "word": "ALDOL",
+      "type": 0
+    },
+    {
+      "word": "COPED",
+      "type": 0
+    },
+    {
+      "word": "COPEN",
+      "type": 0
+    },
+    {
+      "word": "COPER",
+      "type": 0
+    },
+    {
+      "word": "CORER",
+      "type": 0
+    },
+    {
+      "word": "LEPER",
+      "type": 0
+    },
+    {
+      "word": "OPERA",
+      "type": 0
+    },
+    {
+      "word": "PELON",
+      "type": 0
+    },
+    {
+      "word": "PENAL",
+      "type": 0
+    },
+    {
+      "word": "REDON",
+      "type": 0
+    },
+    {
+      "word": "RENAL",
+      "type": 0
+    },
+    {
+      "word": "REPEL",
+      "type": 0
+    },
+    {
+      "word": "RERAN",
+      "type": 0
+    },
+    {
+      "word": "ROPED",
+      "type": 0
+    },
+    {
+      "word": "ROPER",
+      "type": 0
+    }
+  ],
+  "letters": "NOLHC,MDEPO,ALRER,DLANB",
+  "obstacles": []
 }

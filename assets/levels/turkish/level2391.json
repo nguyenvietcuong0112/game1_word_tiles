@@ -1,97 +1,215 @@
-﻿{
-    "id":  2391,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İLAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YANİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YENİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LANET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAALİYET",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALFA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AYET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ENAYİ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "FAAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLZAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İNAYET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "FAİLM,LANZA,İYETB",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2391,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ELE",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "KEK",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "DAHİ",
+      "type": 0
+    },
+    {
+      "word": "ESKİ",
+      "type": 0
+    },
+    {
+      "word": "HADİ",
+      "type": 0
+    },
+    {
+      "word": "İDAM",
+      "type": 0
+    },
+    {
+      "word": "GAULLE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DEM",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "GED",
+      "type": 0
+    },
+    {
+      "word": "HAD",
+      "type": 0
+    },
+    {
+      "word": "HAM",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SKİ",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "İHA",
+      "type": 0
+    },
+    {
+      "word": "İKE",
+      "type": 0
+    },
+    {
+      "word": "ADEM",
+      "type": 0
+    },
+    {
+      "word": "ALEM",
+      "type": 0
+    },
+    {
+      "word": "DAME",
+      "type": 0
+    },
+    {
+      "word": "DELL",
+      "type": 0
+    },
+    {
+      "word": "GİDE",
+      "type": 0
+    },
+    {
+      "word": "KEKİ",
+      "type": 0
+    },
+    {
+      "word": "LALE",
+      "type": 0
+    },
+    {
+      "word": "MADE",
+      "type": 0
+    },
+    {
+      "word": "MAHİ",
+      "type": 0
+    },
+    {
+      "word": "ADELE",
+      "type": 0
+    },
+    {
+      "word": "DEEKS",
+      "type": 0
+    },
+    {
+      "word": "MEEKS",
+      "type": 0
+    },
+    {
+      "word": "SALEM",
+      "type": 0
+    }
+  ],
+  "letters": "AULLE,GELAS,İDEEK,HAMKİ",
+  "obstacles": []
 }

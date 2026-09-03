@@ -1,93 +1,239 @@
-﻿{
-    "id":  1163,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SETE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIÇÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRETO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SETOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SELETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SELEÇÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SELETOR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PROTEÇÃO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ELE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELISÃO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PRELE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PREÇÃO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RELES",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ÃORPO,NTEÇÃ,SELIS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1163,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "AOS",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "CALE",
+      "type": 0
+    },
+    {
+      "word": "DELA",
+      "type": 0
+    },
+    {
+      "word": "IRÃO",
+      "type": 0
+    },
+    {
+      "word": "ISSO",
+      "type": 0
+    },
+    {
+      "word": "LADO",
+      "type": 0
+    },
+    {
+      "word": "OSSOS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DAO",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DES",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "IRS",
+      "type": 0
+    },
+    {
+      "word": "IRÃ",
+      "type": 0
+    },
+    {
+      "word": "ISO",
+      "type": 0
+    },
+    {
+      "word": "ISS",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OSS",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "ROO",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SOA",
+      "type": 0
+    },
+    {
+      "word": "SOO",
+      "type": 0
+    },
+    {
+      "word": "SOS",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "CADE",
+      "type": 0
+    },
+    {
+      "word": "CAOS",
+      "type": 0
+    },
+    {
+      "word": "DALE",
+      "type": 0
+    },
+    {
+      "word": "DOSE",
+      "type": 0
+    },
+    {
+      "word": "LAOS",
+      "type": 0
+    },
+    {
+      "word": "LEDA",
+      "type": 0
+    },
+    {
+      "word": "OSSO",
+      "type": 0
+    },
+    {
+      "word": "RISO",
+      "type": 0
+    },
+    {
+      "word": "ROCA",
+      "type": 0
+    },
+    {
+      "word": "SEDA",
+      "type": 0
+    },
+    {
+      "word": "SELA",
+      "type": 0
+    },
+    {
+      "word": "SODA",
+      "type": 0
+    },
+    {
+      "word": "CORÃO",
+      "type": 0
+    },
+    {
+      "word": "LADOS",
+      "type": 0
+    },
+    {
+      "word": "RISOS",
+      "type": 0
+    },
+    {
+      "word": "SELADO",
+      "type": 0
+    },
+    {
+      "word": "SELADOS",
+      "type": 0
+    }
+  ],
+  "letters": "ROCT,ÃOAL,RSDE,ISOS",
+  "obstacles": []
 }

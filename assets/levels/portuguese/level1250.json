@@ -1,77 +1,119 @@
-﻿{
-    "id":  1250,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ECA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALÇA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GULA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CALÇA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAGOA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LICENÇA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CALE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UGOA,LALÇ,ICEN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1250,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "HAS",
+      "type": 0
+    },
+    {
+      "word": "HEI",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LHE",
+      "type": 0
+    },
+    {
+      "word": "RÃS",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "ALHO",
+      "type": 0
+    },
+    {
+      "word": "ROSS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "LHO",
+      "type": 0
+    },
+    {
+      "word": "OIE",
+      "type": 0
+    },
+    {
+      "word": "OSS",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "SHO",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "HORS",
+      "type": 0
+    },
+    {
+      "word": "HOSS",
+      "type": 0
+    },
+    {
+      "word": "LASS",
+      "type": 0
+    },
+    {
+      "word": "ORLA",
+      "type": 0
+    },
+    {
+      "word": "ALHEIO",
+      "type": 0
+    },
+    {
+      "word": "ALHEIOS",
+      "type": 0
+    }
+  ],
+  "letters": "IOSH,EHÃA,ALRS,SSOH",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

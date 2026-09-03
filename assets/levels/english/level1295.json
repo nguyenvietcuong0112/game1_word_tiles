@@ -1,41 +1,83 @@
-﻿{
-    "id":  1295,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "PINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SWIPE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "SWINE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "APE,OIN,SWD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1295,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "CAB",
+      "type": 0
+    },
+    {
+      "word": "EAU",
+      "type": 0
+    },
+    {
+      "word": "GNU",
+      "type": 0
+    },
+    {
+      "word": "ICE",
+      "type": 0
+    },
+    {
+      "word": "JUN",
+      "type": 0
+    },
+    {
+      "word": "FACE",
+      "type": 0
+    },
+    {
+      "word": "IDEA",
+      "type": 0
+    },
+    {
+      "word": "GUIDE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ECU",
+      "type": 0
+    },
+    {
+      "word": "CEDI",
+      "type": 0
+    },
+    {
+      "word": "DEAF",
+      "type": 0
+    },
+    {
+      "word": "DICE",
+      "type": 0
+    },
+    {
+      "word": "GUID",
+      "type": 0
+    },
+    {
+      "word": "ICED",
+      "type": 0
+    }
+  ],
+  "letters": "UGNU,IDFJ,CEAB,UACE",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

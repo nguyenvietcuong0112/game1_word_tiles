@@ -1,109 +1,167 @@
-﻿{
-    "id":  1090,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AÑO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RÍA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATEO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TABÚ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BATEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAREA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BATERÍA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AETA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ATERÍ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ATERÍA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ERÍA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "YAOÑ,ÚTEA,BARÍ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1090,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADN",
+      "type": 0
+    },
+    {
+      "word": "ASI",
+      "type": 0
+    },
+    {
+      "word": "BLA",
+      "type": 0
+    },
+    {
+      "word": "IAS",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "ÉSA",
+      "type": 0
+    },
+    {
+      "word": "PENSÉ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ASN",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DNI",
+      "type": 0
+    },
+    {
+      "word": "EPA",
+      "type": 0
+    },
+    {
+      "word": "EPI",
+      "type": 0
+    },
+    {
+      "word": "ISA",
+      "type": 0
+    },
+    {
+      "word": "ISN",
+      "type": 0
+    },
+    {
+      "word": "LOA",
+      "type": 0
+    },
+    {
+      "word": "NIA",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "PAI",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "PIS",
+      "type": 0
+    },
+    {
+      "word": "PIÉ",
+      "type": 0
+    },
+    {
+      "word": "SAI",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "SIP",
+      "type": 0
+    },
+    {
+      "word": "DALO",
+      "type": 0
+    },
+    {
+      "word": "PAIN",
+      "type": 0
+    },
+    {
+      "word": "PINE",
+      "type": 0
+    },
+    {
+      "word": "PISA",
+      "type": 0
+    },
+    {
+      "word": "PENSÉIS",
+      "type": 0
+    }
+  ],
+  "letters": "ENSA,PIÉO,ASBL,INDA",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

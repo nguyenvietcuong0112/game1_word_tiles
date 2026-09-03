@@ -1,57 +1,199 @@
-﻿{
-    "id":  1580,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POET",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PORT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPORT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POETRY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "MORT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "PORTE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LET,POR,SMY",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1580,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "GET",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "DEAL",
+      "type": 0
+    },
+    {
+      "word": "LAND",
+      "type": 0
+    },
+    {
+      "word": "RING",
+      "type": 0
+    },
+    {
+      "word": "DEALING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "TEG",
+      "type": 0
+    },
+    {
+      "word": "ANIL",
+      "type": 0
+    },
+    {
+      "word": "DEIL",
+      "type": 0
+    },
+    {
+      "word": "DERE",
+      "type": 0
+    },
+    {
+      "word": "GRIN",
+      "type": 0
+    },
+    {
+      "word": "LANG",
+      "type": 0
+    },
+    {
+      "word": "LIED",
+      "type": 0
+    },
+    {
+      "word": "LING",
+      "type": 0
+    },
+    {
+      "word": "RIND",
+      "type": 0
+    },
+    {
+      "word": "ALDER",
+      "type": 0
+    },
+    {
+      "word": "ALTER",
+      "type": 0
+    },
+    {
+      "word": "ANGER",
+      "type": 0
+    },
+    {
+      "word": "DRIED",
+      "type": 0
+    },
+    {
+      "word": "GLAND",
+      "type": 0
+    },
+    {
+      "word": "GRIND",
+      "type": 0
+    },
+    {
+      "word": "REGNA",
+      "type": 0
+    },
+    {
+      "word": "ALDRIN",
+      "type": 0
+    },
+    {
+      "word": "ERRING",
+      "type": 0
+    },
+    {
+      "word": "LINGER",
+      "type": 0
+    },
+    {
+      "word": "REGNAL",
+      "type": 0
+    },
+    {
+      "word": "RINGER",
+      "type": 0
+    },
+    {
+      "word": "ALTERED",
+      "type": 0
+    },
+    {
+      "word": "ANGERED",
+      "type": 0
+    },
+    {
+      "word": "REDRIED",
+      "type": 0
+    },
+    {
+      "word": "REGRIND",
+      "type": 0
+    },
+    {
+      "word": "LINGERED",
+      "type": 0
+    }
+  ],
+  "letters": "AEDL,LINA,DRGL,ERET",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

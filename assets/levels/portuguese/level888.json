@@ -1,61 +1,235 @@
-﻿{
-    "id":  888,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IMÃ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÍMÃ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MÍNI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOÇÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOMÍNIO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "IMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MÍNIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NÍMIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OMÃ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NIO,ÍMÃ,DOÇ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 888,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "CAPA",
+      "type": 0
+    },
+    {
+      "word": "ESTA",
+      "type": 0
+    },
+    {
+      "word": "SACA",
+      "type": 0
+    },
+    {
+      "word": "SECO",
+      "type": 0
+    },
+    {
+      "word": "CESTA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "ANS",
+      "type": 0
+    },
+    {
+      "word": "APA",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "APO",
+      "type": 0
+    },
+    {
+      "word": "ASN",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "CEP",
+      "type": 0
+    },
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "COP",
+      "type": 0
+    },
+    {
+      "word": "ECO",
+      "type": 0
+    },
+    {
+      "word": "EPA",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "NOA",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "PON",
+      "type": 0
+    },
+    {
+      "word": "SAA",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "TAC",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TSA",
+      "type": 0
+    },
+    {
+      "word": "ASNO",
+      "type": 0
+    },
+    {
+      "word": "CATS",
+      "type": 0
+    },
+    {
+      "word": "CEPA",
+      "type": 0
+    },
+    {
+      "word": "CONS",
+      "type": 0
+    },
+    {
+      "word": "COPA",
+      "type": 0
+    },
+    {
+      "word": "ECOA",
+      "type": 0
+    },
+    {
+      "word": "NOPE",
+      "type": 0
+    },
+    {
+      "word": "PANO",
+      "type": 0
+    },
+    {
+      "word": "PATS",
+      "type": 0
+    },
+    {
+      "word": "SNAP",
+      "type": 0
+    },
+    {
+      "word": "TAPA",
+      "type": 0
+    },
+    {
+      "word": "CASTA",
+      "type": 0
+    },
+    {
+      "word": "COAST",
+      "type": 0
+    },
+    {
+      "word": "PACAS",
+      "type": 0
+    },
+    {
+      "word": "CONSTA",
+      "type": 0
+    },
+    {
+      "word": "ESTACA",
+      "type": 0
+    },
+    {
+      "word": "ESTACAS",
+      "type": 0
+    }
+  ],
+  "letters": "SEPA,TCON,ACAS,PAAT",
+  "obstacles": []
 }

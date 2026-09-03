@@ -1,77 +1,259 @@
-﻿{
-    "id":  770,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PECA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TETA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PISTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACEPTAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACEPTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ATETAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PECTAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PISTAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TETAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AARA,CTET,EPIS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 770,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "VAS",
+      "type": 0
+    },
+    {
+      "word": "CASA",
+      "type": 0
+    },
+    {
+      "word": "PASA",
+      "type": 0
+    },
+    {
+      "word": "CERCA",
+      "type": 0
+    },
+    {
+      "word": "ACERCA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACA",
+      "type": 0
+    },
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "CAE",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "CRE",
+      "type": 0
+    },
+    {
+      "word": "EPA",
+      "type": 0
+    },
+    {
+      "word": "FOA",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "ACRE",
+      "type": 0
+    },
+    {
+      "word": "ARCA",
+      "type": 0
+    },
+    {
+      "word": "AREA",
+      "type": 0
+    },
+    {
+      "word": "CAER",
+      "type": 0
+    },
+    {
+      "word": "CAPE",
+      "type": 0
+    },
+    {
+      "word": "CARE",
+      "type": 0
+    },
+    {
+      "word": "CEPA",
+      "type": 0
+    },
+    {
+      "word": "CERA",
+      "type": 0
+    },
+    {
+      "word": "CREA",
+      "type": 0
+    },
+    {
+      "word": "ORCA",
+      "type": 0
+    },
+    {
+      "word": "PACE",
+      "type": 0
+    },
+    {
+      "word": "PECA",
+      "type": 0
+    },
+    {
+      "word": "PERA",
+      "type": 0
+    },
+    {
+      "word": "RACE",
+      "type": 0
+    },
+    {
+      "word": "ACERA",
+      "type": 0
+    },
+    {
+      "word": "ARCAS",
+      "type": 0
+    },
+    {
+      "word": "AREAS",
+      "type": 0
+    },
+    {
+      "word": "CASPA",
+      "type": 0
+    },
+    {
+      "word": "CREAS",
+      "type": 0
+    },
+    {
+      "word": "ORCAS",
+      "type": 0
+    },
+    {
+      "word": "PECAR",
+      "type": 0
+    },
+    {
+      "word": "SACRO",
+      "type": 0
+    },
+    {
+      "word": "SPACE",
+      "type": 0
+    },
+    {
+      "word": "CASPAR",
+      "type": 0
+    },
+    {
+      "word": "CASPER",
+      "type": 0
+    },
+    {
+      "word": "CERCAS",
+      "type": 0
+    },
+    {
+      "word": "ACERCAS",
+      "type": 0
+    },
+    {
+      "word": "CARCASA",
+      "type": 0
+    }
+  ],
+  "letters": "RVAP,APSF,CEAO,ARCR",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

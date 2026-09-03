@@ -1,38 +1,103 @@
-﻿{
-    "id":  1195,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AWAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAWN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUNE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "YAWN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PRUNE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUNWAY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-
-                    ],
-    "letters":  "YAE,AWN,PRU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1195,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "FEE",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "CAME",
+      "type": 0
+    },
+    {
+      "word": "EACH",
+      "type": 0
+    },
+    {
+      "word": "HEMP",
+      "type": 0
+    },
+    {
+      "word": "BUNCH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BUN",
+      "type": 0
+    },
+    {
+      "word": "EFS",
+      "type": 0
+    },
+    {
+      "word": "FEH",
+      "type": 0
+    },
+    {
+      "word": "HEM",
+      "type": 0
+    },
+    {
+      "word": "NUB",
+      "type": 0
+    },
+    {
+      "word": "ACME",
+      "type": 0
+    },
+    {
+      "word": "FEHS",
+      "type": 0
+    },
+    {
+      "word": "MACH",
+      "type": 0
+    },
+    {
+      "word": "NUBS",
+      "type": 0
+    },
+    {
+      "word": "SHEA",
+      "type": 0
+    }
+  ],
+  "letters": "FEEM,SHEA,BPMC,UNCH",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

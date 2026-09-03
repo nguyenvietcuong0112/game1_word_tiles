@@ -1,95 +1,211 @@
-﻿{
-    "id":  1922,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATLI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SARI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRAVMA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "SAV",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAVMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VARTA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MATL,VARI,ASKT",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1922,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "HOT",
+      "type": 0
+    },
+    {
+      "word": "JİM",
+      "type": 0
+    },
+    {
+      "word": "KİM",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "TEK",
+      "type": 0
+    },
+    {
+      "word": "YAZ",
+      "type": 0
+    },
+    {
+      "word": "AYAK",
+      "type": 0
+    },
+    {
+      "word": "AŞIK",
+      "type": 0
+    },
+    {
+      "word": "MİKE",
+      "type": 0
+    },
+    {
+      "word": "TEKİ",
+      "type": 0
+    },
+    {
+      "word": "ORAYA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "AŞI",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "JİA",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "KAZ",
+      "type": 0
+    },
+    {
+      "word": "KAİ",
+      "type": 0
+    },
+    {
+      "word": "KIŞ",
+      "type": 0
+    },
+    {
+      "word": "KOR",
+      "type": 0
+    },
+    {
+      "word": "KİŞ",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "MİŞ",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "ZAK",
+      "type": 0
+    },
+    {
+      "word": "ZAR",
+      "type": 0
+    },
+    {
+      "word": "İKE",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "ŞAL",
+      "type": 0
+    },
+    {
+      "word": "ŞIK",
+      "type": 0
+    },
+    {
+      "word": "AKAR",
+      "type": 0
+    },
+    {
+      "word": "ALİA",
+      "type": 0
+    },
+    {
+      "word": "AYAR",
+      "type": 0
+    },
+    {
+      "word": "EKİM",
+      "type": 0
+    },
+    {
+      "word": "KARO",
+      "type": 0
+    },
+    {
+      "word": "KAYA",
+      "type": 0
+    },
+    {
+      "word": "KİME",
+      "type": 0
+    },
+    {
+      "word": "OKAY",
+      "type": 0
+    },
+    {
+      "word": "YAKA",
+      "type": 0
+    },
+    {
+      "word": "YMİŞ",
+      "type": 0
+    },
+    {
+      "word": "İMZA",
+      "type": 0
+    },
+    {
+      "word": "İŞIK",
+      "type": 0
+    },
+    {
+      "word": "AZTEK",
+      "type": 0
+    },
+    {
+      "word": "KAYAR",
+      "type": 0
+    },
+    {
+      "word": "KİMYA",
+      "type": 0
+    },
+    {
+      "word": "YAKAR",
+      "type": 0
+    }
+  ],
+  "letters": "IKETO,ŞİMZH,AJYAR,LİAKO",
+  "obstacles": []
 }

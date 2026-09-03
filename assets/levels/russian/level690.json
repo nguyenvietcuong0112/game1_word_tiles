@@ -1,41 +1,139 @@
-﻿{
-    "id":  690,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ВЕК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ИКС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КЕД",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВЕКИ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КУРС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ДЕВИЗ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "УЗИ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ДСР,ЕКУ,ВИЗ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 690,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ВОТ",
+      "type": 0
+    },
+    {
+      "word": "ИДИ",
+      "type": 0
+    },
+    {
+      "word": "СТО",
+      "type": 0
+    },
+    {
+      "word": "СВОЕ",
+      "type": 0
+    },
+    {
+      "word": "СЛОВ",
+      "type": 0
+    },
+    {
+      "word": "ВОЛОС",
+      "type": 0
+    },
+    {
+      "word": "ИДИТЕ",
+      "type": 0
+    },
+    {
+      "word": "СЛОВО",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ВОЛ",
+      "type": 0
+    },
+    {
+      "word": "ДИТ",
+      "type": 0
+    },
+    {
+      "word": "ЕТИ",
+      "type": 0
+    },
+    {
+      "word": "ЕТС",
+      "type": 0
+    },
+    {
+      "word": "ИСТ",
+      "type": 0
+    },
+    {
+      "word": "ЛОС",
+      "type": 0
+    },
+    {
+      "word": "СЕТ",
+      "type": 0
+    },
+    {
+      "word": "СИД",
+      "type": 0
+    },
+    {
+      "word": "СОВ",
+      "type": 0
+    },
+    {
+      "word": "СОЛ",
+      "type": 0
+    },
+    {
+      "word": "ТЕО",
+      "type": 0
+    },
+    {
+      "word": "ТОВ",
+      "type": 0
+    },
+    {
+      "word": "ВОЕТ",
+      "type": 0
+    },
+    {
+      "word": "ВОСС",
+      "type": 0
+    },
+    {
+      "word": "ДИТЕ",
+      "type": 0
+    },
+    {
+      "word": "СЕТИ",
+      "type": 0
+    },
+    {
+      "word": "СИДИ",
+      "type": 0
+    },
+    {
+      "word": "СОЛО",
+      "type": 0
+    },
+    {
+      "word": "СИДИТ",
+      "type": 0
+    },
+    {
+      "word": "СИДИТЕ",
+      "type": 0
+    }
+  ],
+  "letters": "СТОВ,ИСВО,ДСОЛ,ИТЕС",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

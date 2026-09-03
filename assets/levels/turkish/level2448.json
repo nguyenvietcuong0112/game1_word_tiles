@@ -1,77 +1,131 @@
-﻿{
-    "id":  2448,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AYI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ISI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAYI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUBA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SAYI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIRIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AYKIRI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YILDIRIM",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "YAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YILDIRI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ISILD,DAYMI,UBKIR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2448,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EEE",
+      "type": 0
+    },
+    {
+      "word": "GEÇ",
+      "type": 0
+    },
+    {
+      "word": "GİR",
+      "type": 0
+    },
+    {
+      "word": "KIZ",
+      "type": 0
+    },
+    {
+      "word": "KOY",
+      "type": 0
+    },
+    {
+      "word": "KUM",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "YOK",
+      "type": 0
+    },
+    {
+      "word": "ÇIK",
+      "type": 0
+    },
+    {
+      "word": "GERİ",
+      "type": 0
+    },
+    {
+      "word": "GEÇER",
+      "type": 0
+    },
+    {
+      "word": "GEÇSE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "EEG",
+      "type": 0
+    },
+    {
+      "word": "ERİ",
+      "type": 0
+    },
+    {
+      "word": "GER",
+      "type": 0
+    },
+    {
+      "word": "KIR",
+      "type": 0
+    },
+    {
+      "word": "KIÇ",
+      "type": 0
+    },
+    {
+      "word": "MUZ",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "RİO",
+      "type": 0
+    },
+    {
+      "word": "ZUM",
+      "type": 0
+    },
+    {
+      "word": "GERE",
+      "type": 0
+    },
+    {
+      "word": "GEÇE",
+      "type": 0
+    },
+    {
+      "word": "KIÇI",
+      "type": 0
+    },
+    {
+      "word": "YOKMU",
+      "type": 0
+    },
+    {
+      "word": "GEÇERİZ",
+      "type": 0
+    }
+  ],
+  "letters": "GIKUM,EÇIZK,EERİO,SÇEGY",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

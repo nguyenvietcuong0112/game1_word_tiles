@@ -1,70 +1,271 @@
-﻿{
-    "id":  2294,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AYA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AYAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAST",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KAYA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YASAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VARDİYA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-
-                    ],
-    "letters":  "DİYA,RAAS,ŞVKT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2294,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "HAY",
+      "type": 0
+    },
+    {
+      "word": "KUŞ",
+      "type": 0
+    },
+    {
+      "word": "TUT",
+      "type": 0
+    },
+    {
+      "word": "TZU",
+      "type": 0
+    },
+    {
+      "word": "YAZ",
+      "type": 0
+    },
+    {
+      "word": "AYAK",
+      "type": 0
+    },
+    {
+      "word": "AĞIR",
+      "type": 0
+    },
+    {
+      "word": "UZAK",
+      "type": 0
+    },
+    {
+      "word": "ŞAKA",
+      "type": 0
+    },
+    {
+      "word": "AYAĞA",
+      "type": 0
+    },
+    {
+      "word": "KARIM",
+      "type": 0
+    },
+    {
+      "word": "TUTAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "AKU",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "AMT",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ATM",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "AĞA",
+      "type": 0
+    },
+    {
+      "word": "AĞI",
+      "type": 0
+    },
+    {
+      "word": "HAA",
+      "type": 0
+    },
+    {
+      "word": "HAM",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "KAZ",
+      "type": 0
+    },
+    {
+      "word": "KAŞ",
+      "type": 0
+    },
+    {
+      "word": "KIR",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "TAA",
+      "type": 0
+    },
+    {
+      "word": "UZA",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "YAĞ",
+      "type": 0
+    },
+    {
+      "word": "ZAK",
+      "type": 0
+    },
+    {
+      "word": "ŞAK",
+      "type": 0
+    },
+    {
+      "word": "AKAR",
+      "type": 0
+    },
+    {
+      "word": "AKIM",
+      "type": 0
+    },
+    {
+      "word": "ATMA",
+      "type": 0
+    },
+    {
+      "word": "AĞAM",
+      "type": 0
+    },
+    {
+      "word": "IRAK",
+      "type": 0
+    },
+    {
+      "word": "KARI",
+      "type": 0
+    },
+    {
+      "word": "KART",
+      "type": 0
+    },
+    {
+      "word": "KAYA",
+      "type": 0
+    },
+    {
+      "word": "KUŞA",
+      "type": 0
+    },
+    {
+      "word": "TRAŞ",
+      "type": 0
+    },
+    {
+      "word": "UZAY",
+      "type": 0
+    },
+    {
+      "word": "UŞAK",
+      "type": 0
+    },
+    {
+      "word": "YAKA",
+      "type": 0
+    },
+    {
+      "word": "YAĞI",
+      "type": 0
+    },
+    {
+      "word": "ŞART",
+      "type": 0
+    },
+    {
+      "word": "AYAĞI",
+      "type": 0
+    },
+    {
+      "word": "TUTMA",
+      "type": 0
+    },
+    {
+      "word": "UZAYA",
+      "type": 0
+    },
+    {
+      "word": "UZAĞA",
+      "type": 0
+    },
+    {
+      "word": "YAKAR",
+      "type": 0
+    },
+    {
+      "word": "AYAĞIM",
+      "type": 0
+    },
+    {
+      "word": "KARIMA",
+      "type": 0
+    },
+    {
+      "word": "KAYAĞI",
+      "type": 0
+    },
+    {
+      "word": "UZAĞIM",
+      "type": 0
+    },
+    {
+      "word": "ŞAKAYA",
+      "type": 0
+    },
+    {
+      "word": "AYAĞIMA",
+      "type": 0
+    },
+    {
+      "word": "YAKARIM",
+      "type": 0
+    }
+  ],
+  "letters": "TYAHR,ZAĞAA,UKIMT,ŞARTU",
+  "obstacles": []
 }

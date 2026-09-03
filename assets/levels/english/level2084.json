@@ -1,98 +1,191 @@
-﻿{
-    "id":  2084,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "IVY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VEIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIRTUE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "RIVE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "YVEIN,TIOEE,SRTUS",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2084,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "BOOT",
+      "type": 0
+    },
+    {
+      "word": "CAST",
+      "type": 0
+    },
+    {
+      "word": "DEEP",
+      "type": 0
+    },
+    {
+      "word": "RIDE",
+      "type": 0
+    },
+    {
+      "word": "BOOTS",
+      "type": 0
+    },
+    {
+      "word": "COAST",
+      "type": 0
+    },
+    {
+      "word": "SPEED",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "COO",
+      "type": 0
+    },
+    {
+      "word": "COT",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "OBE",
+      "type": 0
+    },
+    {
+      "word": "OOT",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "REP",
+      "type": 0
+    },
+    {
+      "word": "RID",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "ACME",
+      "type": 0
+    },
+    {
+      "word": "COTS",
+      "type": 0
+    },
+    {
+      "word": "DEED",
+      "type": 0
+    },
+    {
+      "word": "DEEM",
+      "type": 0
+    },
+    {
+      "word": "DIRE",
+      "type": 0
+    },
+    {
+      "word": "MEED",
+      "type": 0
+    },
+    {
+      "word": "OAST",
+      "type": 0
+    },
+    {
+      "word": "OOTS",
+      "type": 0
+    },
+    {
+      "word": "PEED",
+      "type": 0
+    },
+    {
+      "word": "PEEP",
+      "type": 0
+    },
+    {
+      "word": "PERI",
+      "type": 0
+    },
+    {
+      "word": "REPP",
+      "type": 0
+    },
+    {
+      "word": "SCOT",
+      "type": 0
+    },
+    {
+      "word": "SPED",
+      "type": 0
+    },
+    {
+      "word": "ASCOT",
+      "type": 0
+    },
+    {
+      "word": "DEEPS",
+      "type": 0
+    },
+    {
+      "word": "PEEPS",
+      "type": 0
+    },
+    {
+      "word": "REPPS",
+      "type": 0
+    },
+    {
+      "word": "REBOOT",
+      "type": 0
+    },
+    {
+      "word": "REPPED",
+      "type": 0
+    },
+    {
+      "word": "REBOOTS",
+      "type": 0
+    }
+  ],
+  "letters": "IREBO,DDPTO,EEPSC,PMCAO",
+  "obstacles": []
 }

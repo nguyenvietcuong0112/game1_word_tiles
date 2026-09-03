@@ -1,89 +1,203 @@
-﻿{
-    "id":  2146,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "NOD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EVIL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SILO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "VINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLIVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VINYL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIVELY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LONELY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DOS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TDYL,SONE,ILIV",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2146,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "LAT",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "BUCK",
+      "type": 0
+    },
+    {
+      "word": "CUBE",
+      "type": 0
+    },
+    {
+      "word": "LENS",
+      "type": 0
+    },
+    {
+      "word": "TIER",
+      "type": 0
+    },
+    {
+      "word": "BUCKS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIT",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ARK",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "CUB",
+      "type": 0
+    },
+    {
+      "word": "ECU",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "ALAR",
+      "type": 0
+    },
+    {
+      "word": "ALES",
+      "type": 0
+    },
+    {
+      "word": "ARCS",
+      "type": 0
+    },
+    {
+      "word": "ARKS",
+      "type": 0
+    },
+    {
+      "word": "BECK",
+      "type": 0
+    },
+    {
+      "word": "LARK",
+      "type": 0
+    },
+    {
+      "word": "RAIA",
+      "type": 0
+    },
+    {
+      "word": "RALE",
+      "type": 0
+    },
+    {
+      "word": "RECK",
+      "type": 0
+    },
+    {
+      "word": "TALA",
+      "type": 0
+    },
+    {
+      "word": "TALI",
+      "type": 0
+    },
+    {
+      "word": "BECKS",
+      "type": 0
+    },
+    {
+      "word": "CUBER",
+      "type": 0
+    },
+    {
+      "word": "KRAIT",
+      "type": 0
+    },
+    {
+      "word": "LARKS",
+      "type": 0
+    },
+    {
+      "word": "RALES",
+      "type": 0
+    },
+    {
+      "word": "RECKS",
+      "type": 0
+    },
+    {
+      "word": "TALAR",
+      "type": 0
+    },
+    {
+      "word": "BUCKRA",
+      "type": 0
+    }
+  ],
+  "letters": "TALIS,TIALE,BERCN,UCKSS",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

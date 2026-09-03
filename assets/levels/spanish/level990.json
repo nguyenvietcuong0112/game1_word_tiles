@@ -1,97 +1,87 @@
-﻿{
-    "id":  990,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AJÁ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CEJA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÓLEO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEJA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEONA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEJANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FESTEJAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AJE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CEJAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESTÁ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESTÁN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "JARO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RANO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEJAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CEJAR,STÁNO,EFÓLE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 990,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "KIM",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "VER",
+      "type": 0
+    },
+    {
+      "word": "VIO",
+      "type": 0
+    },
+    {
+      "word": "WOW",
+      "type": 0
+    },
+    {
+      "word": "VERLA",
+      "type": 0
+    },
+    {
+      "word": "REGLAS",
+      "type": 0
+    },
+    {
+      "word": "VERLAS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "SAS",
+      "type": 0
+    },
+    {
+      "word": "VIK",
+      "type": 0
+    },
+    {
+      "word": "MIKI",
+      "type": 0
+    },
+    {
+      "word": "VIKI",
+      "type": 0
+    },
+    {
+      "word": "REGLA",
+      "type": 0
+    }
+  ],
+  "letters": "WOIV,SWKI,ALGM,SREV",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

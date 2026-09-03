@@ -1,5 +1,4 @@
 import 'dart:convert';
-import 'dart:io';
 import 'dart:math';
 import 'package:flutter/services.dart';
 import '../models/level_model.dart';
@@ -7,22 +6,34 @@ import '../models/level_model.dart';
 class LevelLoader {
   static const List<String> supportedLanguages = [
     'english',
-    'turkish',
-    'russian',
+    'vietnamese',
+    'german',
+    'french',
+    'italian',
     'spanish',
     'portuguese',
+    'russian',
+    'turkish',
   ];
 
   static final Map<String, String> languageDisplayNames = {
     'english': 'English 🇺🇸',
-    'turkish': 'Türkçe 🇹🇷',
-    'russian': 'Русский 🇷🇺',
+    'vietnamese': 'Tiếng Việt 🇻🇳',
+    'german': 'Deutsch 🇩🇪',
+    'french': 'Français 🇫🇷',
+    'italian': 'Italiano 🇮🇹',
     'spanish': 'Español 🇪🇸',
     'portuguese': 'Português 🇵🇹',
+    'russian': 'Русский 🇷🇺',
+    'turkish': 'Türkçe 🇹🇷',
   };
 
   static const Map<String, int> totalLevelsPerLanguage = {
-    'english': 2461,
+    'english': 2471,
+    'vietnamese': 1500,
+    'german': 1500,
+    'french': 1500,
+    'italian': 1500,
     'turkish': 2448,
     'russian': 1927,
     'spanish': 1361,
@@ -36,13 +47,15 @@ class LevelLoader {
   }
 
   /// Load a specific level by language and level Number (e.g. level1.json, level2.json, ...)
+  /// Load a specific level by language and level Number (e.g. level1.json, level2.json, ...)
   static Future<LevelModel?> loadLevel(String language, int levelNumber) async {
     // 1. Try level{levelNumber}.json (e.g. assets/levels/english/level1.json)
     try {
       final jsonPath = 'assets/levels/$language/level$levelNumber.json';
       final jsonString = await rootBundle.loadString(jsonPath);
       final jsonMap = jsonDecode(jsonString) as Map<String, dynamic>;
-      return LevelModel.fromJson(jsonMap);
+      final raw = LevelModel.fromJson(jsonMap);
+      return harmonizeLevel(raw);
     } catch (_) {}
 
     // 2. Try {levelNumber}.json
@@ -50,10 +63,76 @@ class LevelLoader {
       final jsonPath = 'assets/levels/$language/$levelNumber.json';
       final jsonString = await rootBundle.loadString(jsonPath);
       final jsonMap = jsonDecode(jsonString) as Map<String, dynamic>;
-      return LevelModel.fromJson(jsonMap);
+      final raw = LevelModel.fromJson(jsonMap);
+      return harmonizeLevel(raw);
     } catch (_) {}
 
     return null;
+  }
+
+  /// Automatically harmonizes level so that all tiles on the board belong to target words
+  static LevelModel harmonizeLevel(LevelModel level) {
+    final height = level.letterGrid.length;
+    final width = height > 0 ? level.letterGrid[0].length : 0;
+    final grid = level.letterGrid;
+    if (height == 0 || width == 0) return level;
+
+    // 1. Validate existing target words and calculate covered cells
+    final validTargetWords = <TargetWord>[];
+    final coveredCells = <Point<int>>{};
+
+    for (final tw in level.targetWords) {
+      final paths = _findAllWordPaths(tw.word, grid, width, height);
+      if (paths.isNotEmpty) {
+        validTargetWords.add(tw);
+        coveredCells.addAll(paths.first);
+      }
+    }
+
+    // 2. Collect all cells present on the board
+    final allCells = <Point<int>>{};
+    for (int r = 0; r < height; r++) {
+      if (r >= grid.length) continue;
+      for (int c = 0; c < width; c++) {
+        if (c < grid[r].length && grid[r][c].isNotEmpty) {
+          allCells.add(Point(c, r));
+        }
+      }
+    }
+
+    final uncovered = allCells.difference(coveredCells);
+    if (uncovered.isEmpty && validTargetWords.length == level.targetWords.length) {
+      return level; // Already 100% covered!
+    }
+
+    // 3. Promote extra words that cover uncovered cells into targetWords
+    final newTargetWords = List<TargetWord>.from(validTargetWords);
+    final remainingExtra = <TargetWord>[];
+
+    for (final ew in level.extraWords) {
+      final paths = _findAllWordPaths(ew.word, grid, width, height);
+      if (paths.isNotEmpty) {
+        final coversNewCell = paths.any((p) => p.any((pt) => uncovered.contains(pt)));
+        if (coversNewCell && !newTargetWords.any((t) => t.word == ew.word)) {
+          newTargetWords.add(ew);
+          for (final p in paths) {
+            uncovered.removeAll(p);
+          }
+          continue;
+        }
+      }
+      remainingExtra.add(ew);
+    }
+
+    return LevelModel(
+      id: level.id,
+      width: level.width,
+      height: level.height,
+      targetWords: newTargetWords.isNotEmpty ? newTargetWords : level.targetWords,
+      extraWords: remainingExtra,
+      letterGrid: level.letterGrid,
+      obstacles: level.obstacles,
+    );
   }
 
   /// Compute the initial tile counts and obstacle states for the board
@@ -81,7 +160,7 @@ class LevelLoader {
         final letter = r < level.letterGrid.length && c < level.letterGrid[r].length
             ? level.letterGrid[r][c]
             : '';
-        final count = cellUsageCounts[Point(c, r)] ?? 1;
+        final count = cellUsageCounts[Point(c, r)] ?? 0;
         final obsReq = obstacleMap['$r,$c'] ?? obstacleMap['$c,$r'];
         final isLocked = obsReq != null && obsReq > 0;
 
@@ -93,7 +172,7 @@ class LevelLoader {
           initialCount: count,
           isObstacleLocked: isLocked,
           obstacleRequiredWords: obsReq,
-          isCleared: letter.isEmpty,
+          isCleared: letter.isEmpty || count == 0,
         ));
       }
       grid.add(rowList);
@@ -106,88 +185,109 @@ class LevelLoader {
   static Map<Point<int>, int> _calculateCellUsageCounts(LevelModel level) {
     final height = level.letterGrid.length;
     final width = height > 0 ? level.letterGrid[0].length : 0;
-    final cellCounts = <Point<int>, int>{};
+    final grid = level.letterGrid;
 
-    // Initialize all cells with 0
-    for (int r = 0; r < height; r++) {
-      for (int c = 0; c < width; c++) {
-        cellCounts[Point(c, r)] = 0;
-      }
-    }
-
-    // Collect all tile positions for each letter
-    final letterToCells = <String, List<Point<int>>>{};
-    for (int r = 0; r < height; r++) {
-      for (int c = 0; c < width; c++) {
-        final ch = level.letterGrid[r][c];
-        if (ch.isNotEmpty) {
-          letterToCells.putIfAbsent(ch, () => []).add(Point(c, r));
+    // Find locked cells
+    final lockedCells = <Point<int>>{};
+    for (final obs in level.obstacles) {
+      if (obs.requiredWords > 0) {
+        for (final c in obs.cells) {
+          lockedCells.add(Point(c.x, c.y));
         }
       }
     }
 
-    // For each target word, find the best matching adjacent path in the grid
-    for (final target in level.targetWords) {
-      final word = target.word;
-      final path = _findWordPath(word, level.letterGrid, width, height);
-
-      if (path != null && path.isNotEmpty) {
-        for (final pt in path) {
-          cellCounts[pt] = (cellCounts[pt] ?? 0) + 1;
-        }
-      } else {
-        // Fallback: distribute count to cells matching the letters
-        for (int i = 0; i < word.length; i++) {
-          final ch = word[i];
-          final cells = letterToCells[ch];
-          if (cells != null && cells.isNotEmpty) {
-            // Pick cell with lowest count so far to balance
-            cells.sort((a, b) => (cellCounts[a] ?? 0).compareTo(cellCounts[b] ?? 0));
-            final best = cells.first;
-            cellCounts[best] = (cellCounts[best] ?? 0) + 1;
-          }
-        }
-      }
+    final wordAllPaths = <String, List<List<Point<int>>>>{};
+    for (int i = 0; i < level.targetWords.length; i++) {
+      final tw = level.targetWords[i];
+      final all = _findAllWordPaths(tw.word, grid, width, height);
+      // Prefer paths not using locked cells
+      all.sort((a, b) {
+        final lockA = a.where((p) => lockedCells.contains(p)).length;
+        final lockB = b.where((p) => lockedCells.contains(p)).length;
+        return lockA.compareTo(lockB);
+      });
+      wordAllPaths[tw.word] = all;
     }
 
-    // Ensure every non-empty tile has at least count 1
-    for (int r = 0; r < height; r++) {
-      for (int c = 0; c < width; c++) {
-        final pt = Point(c, r);
-        if (level.letterGrid[r][c].isNotEmpty && (cellCounts[pt] ?? 0) == 0) {
-          cellCounts[pt] = 1;
-        }
-      }
-    }
+    // Joint backtrack to find simultaneous path assignments
+    final assignedCounts = <Point<int>, int>{};
+    _backtrackCounts(0, level.targetWords, wordAllPaths, <Point<int>, int>{}, assignedCounts);
 
-    return cellCounts;
+    return assignedCounts;
   }
 
-  /// Search for a valid adjacent path for a given word on the board
-  static List<Point<int>>? _findWordPath(
+  static bool _backtrackCounts(
+    int wordIdx,
+    List<TargetWord> targetWords,
+    Map<String, List<List<Point<int>>>> wordAllPaths,
+    Map<Point<int>, int> currentUsage,
+    Map<Point<int>, int> bestUsage,
+  ) {
+    if (wordIdx >= targetWords.length) {
+      bestUsage.clear();
+      bestUsage.addAll(currentUsage);
+      return true;
+    }
+
+    final word = targetWords[wordIdx].word;
+    final paths = wordAllPaths[word] ?? [];
+    if (paths.isEmpty) {
+      return _backtrackCounts(wordIdx + 1, targetWords, wordAllPaths, currentUsage, bestUsage);
+    }
+
+    for (final path in paths) {
+      // Temporarily add path usage
+      for (final pt in path) {
+        currentUsage[pt] = (currentUsage[pt] ?? 0) + 1;
+      }
+
+      if (_backtrackCounts(wordIdx + 1, targetWords, wordAllPaths, currentUsage, bestUsage)) {
+        return true;
+      }
+
+      // Rollback
+      for (final pt in path) {
+        final count = currentUsage[pt] ?? 1;
+        if (count <= 1) {
+          currentUsage.remove(pt);
+        } else {
+          currentUsage[pt] = count - 1;
+        }
+      }
+    }
+
+    return false;
+  }
+
+  /// Finds all 4-way orthogonal paths spelling a word on the letter grid
+  static List<List<Point<int>>> _findAllWordPaths(
     String word,
     List<List<String>> grid,
     int width,
     int height,
   ) {
-    if (word.isEmpty || height == 0 || width == 0) return null;
+    final actualHeight = grid.length;
+    final actualWidth = actualHeight > 0 ? grid[0].length : 0;
+    if (word.isEmpty || actualHeight == 0 || actualWidth == 0) return [];
 
+    final allPaths = <List<Point<int>>>[];
     final firstChar = word[0];
-    for (int r = 0; r < height; r++) {
-      for (int c = 0; c < width; c++) {
-        if (grid[r][c] == firstChar) {
+    for (int r = 0; r < actualHeight; r++) {
+      if (r >= grid.length) continue;
+      for (int c = 0; c < actualWidth; c++) {
+        if (c < grid[r].length && grid[r][c] == firstChar) {
           final visited = <Point<int>>{Point(c, r)};
           final path = <Point<int>>[Point(c, r)];
-          if (_dfsWord(word, 1, Point(c, r), grid, width, height, visited, path)) {
-            return path;
-          }
+          _dfsAllWordPaths(word, 1, Point(c, r), grid, actualWidth, actualHeight, visited, path, allPaths);
         }
       }
     }
-    return null;
+
+    return allPaths;
   }
 
-  static bool _dfsWord(
+  static void _dfsAllWordPaths(
     String word,
     int index,
     Point<int> current,
@@ -196,8 +296,12 @@ class LevelLoader {
     int height,
     Set<Point<int>> visited,
     List<Point<int>> path,
+    List<List<Point<int>>> allPaths,
   ) {
-    if (index >= word.length) return true;
+    if (index >= word.length) {
+      allPaths.add(List.from(path));
+      return;
+    }
 
     final targetChar = word[index];
     // 4 adjacent directions (Horizontal & Vertical only)
@@ -208,18 +312,17 @@ class LevelLoader {
       final ny = current.y + dr[i];
 
       if (nx >= 0 && nx < width && ny >= 0 && ny < height) {
-        final nextPt = Point(nx, ny);
-        if (!visited.contains(nextPt) && grid[ny][nx] == targetChar) {
-          visited.add(nextPt);
-          path.add(nextPt);
-          if (_dfsWord(word, index + 1, nextPt, grid, width, height, visited, path)) {
-            return true;
+        if (ny < grid.length && nx < grid[ny].length) {
+          final nextPt = Point(nx, ny);
+          if (!visited.contains(nextPt) && grid[ny][nx] == targetChar) {
+            visited.add(nextPt);
+            path.add(nextPt);
+            _dfsAllWordPaths(word, index + 1, nextPt, grid, width, height, visited, path, allPaths);
+            path.removeLast();
+            visited.remove(nextPt);
           }
-          path.removeLast();
-          visited.remove(nextPt);
         }
       }
     }
-    return false;
   }
 }

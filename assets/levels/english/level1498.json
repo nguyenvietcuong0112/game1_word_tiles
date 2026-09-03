@@ -1,89 +1,235 @@
-﻿{
-    "id":  1498,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GORGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GROOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GORGEOUS",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "GOUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GROG",
-                            "type":  2
-                        },
-                        {
-                            "word":  "GROUT",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MEG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOOR",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOME",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ATOM,SUOE,GORG",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1498,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "VAR",
+      "type": 0
+    },
+    {
+      "word": "BOMB",
+      "type": 0
+    },
+    {
+      "word": "CARS",
+      "type": 0
+    },
+    {
+      "word": "ROOM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABO",
+      "type": 0
+    },
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "BAM",
+      "type": 0
+    },
+    {
+      "word": "BOA",
+      "type": 0
+    },
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MOA",
+      "type": 0
+    },
+    {
+      "word": "MOB",
+      "type": 0
+    },
+    {
+      "word": "MOO",
+      "type": 0
+    },
+    {
+      "word": "OAR",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "VAC",
+      "type": 0
+    },
+    {
+      "word": "VEE",
+      "type": 0
+    },
+    {
+      "word": "AMBO",
+      "type": 0
+    },
+    {
+      "word": "AVES",
+      "type": 0
+    },
+    {
+      "word": "BOAR",
+      "type": 0
+    },
+    {
+      "word": "BOOB",
+      "type": 0
+    },
+    {
+      "word": "BOOM",
+      "type": 0
+    },
+    {
+      "word": "BOOR",
+      "type": 0
+    },
+    {
+      "word": "BORA",
+      "type": 0
+    },
+    {
+      "word": "CAVE",
+      "type": 0
+    },
+    {
+      "word": "LEES",
+      "type": 0
+    },
+    {
+      "word": "MAES",
+      "type": 0
+    },
+    {
+      "word": "MOBS",
+      "type": 0
+    },
+    {
+      "word": "MOOR",
+      "type": 0
+    },
+    {
+      "word": "OARS",
+      "type": 0
+    },
+    {
+      "word": "RAVE",
+      "type": 0
+    },
+    {
+      "word": "SCAR",
+      "type": 0
+    },
+    {
+      "word": "SEAM",
+      "type": 0
+    },
+    {
+      "word": "SEEL",
+      "type": 0
+    },
+    {
+      "word": "VACS",
+      "type": 0
+    },
+    {
+      "word": "VARS",
+      "type": 0
+    },
+    {
+      "word": "BOARS",
+      "type": 0
+    },
+    {
+      "word": "BOORS",
+      "type": 0
+    },
+    {
+      "word": "CAROB",
+      "type": 0
+    },
+    {
+      "word": "CAVES",
+      "type": 0
+    },
+    {
+      "word": "ELVES",
+      "type": 0
+    },
+    {
+      "word": "MOORS",
+      "type": 0
+    },
+    {
+      "word": "OAVES",
+      "type": 0
+    },
+    {
+      "word": "RAVES",
+      "type": 0
+    },
+    {
+      "word": "BAMBOO",
+      "type": 0
+    },
+    {
+      "word": "ORACLE",
+      "type": 0
+    },
+    {
+      "word": "VAROOM",
+      "type": 0
+    }
+  ],
+  "letters": "EESE,LVBA,CAOM,SROB",
+  "obstacles": []
 }

@@ -1,89 +1,99 @@
-﻿{
-    "id":  860,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CANASTA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANAFRE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "CAFRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ENASTAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ESA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SANA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SENA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ERAT,CFAS,CANE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 860,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "CHA",
+      "type": 0
+    },
+    {
+      "word": "BILL",
+      "type": 0
+    },
+    {
+      "word": "CHAD",
+      "type": 0
+    },
+    {
+      "word": "CRÍA",
+      "type": 0
+    },
+    {
+      "word": "ÚTIL",
+      "type": 0
+    },
+    {
+      "word": "ACTÚA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "BIC",
+      "type": 0
+    },
+    {
+      "word": "CIL",
+      "type": 0
+    },
+    {
+      "word": "DAH",
+      "type": 0
+    },
+    {
+      "word": "DCI",
+      "type": 0
+    },
+    {
+      "word": "HAD",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "RÍA",
+      "type": 0
+    },
+    {
+      "word": "TIA",
+      "type": 0
+    },
+    {
+      "word": "TIL",
+      "type": 0
+    },
+    {
+      "word": "TILL",
+      "type": 0
+    }
+  ],
+  "letters": "ÍAIL,RÚTL,CACI,HADB",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

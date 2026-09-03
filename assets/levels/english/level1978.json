@@ -1,86 +1,175 @@
-﻿{
-    "id":  1978,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LYRE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VERY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOGIC",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LYRIC",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "GIRO",
-                            "type":  1
-                        },
-                        {
-                            "word":  "GORE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GORY",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "GIC,ORE,LYV",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1978,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "FUR",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "OUR",
+      "type": 0
+    },
+    {
+      "word": "RUN",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "SUN",
+      "type": 0
+    },
+    {
+      "word": "URN",
+      "type": 0
+    },
+    {
+      "word": "VAN",
+      "type": 0
+    },
+    {
+      "word": "HOUR",
+      "type": 0
+    },
+    {
+      "word": "OVAL",
+      "type": 0
+    },
+    {
+      "word": "RUSH",
+      "type": 0
+    },
+    {
+      "word": "SHED",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABA",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "AVO",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "HOD",
+      "type": 0
+    },
+    {
+      "word": "LAV",
+      "type": 0
+    },
+    {
+      "word": "NAB",
+      "type": 0
+    },
+    {
+      "word": "NUS",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OVA",
+      "type": 0
+    },
+    {
+      "word": "URD",
+      "type": 0
+    },
+    {
+      "word": "DOUR",
+      "type": 0
+    },
+    {
+      "word": "FLAB",
+      "type": 0
+    },
+    {
+      "word": "LAVA",
+      "type": 0
+    },
+    {
+      "word": "LOUR",
+      "type": 0
+    },
+    {
+      "word": "NURD",
+      "type": 0
+    },
+    {
+      "word": "SUNN",
+      "type": 0
+    },
+    {
+      "word": "SURD",
+      "type": 0
+    },
+    {
+      "word": "URUS",
+      "type": 0
+    },
+    {
+      "word": "FLOUR",
+      "type": 0
+    },
+    {
+      "word": "NAVAL",
+      "type": 0
+    },
+    {
+      "word": "SUNNA",
+      "type": 0
+    },
+    {
+      "word": "RUSHED",
+      "type": 0
+    },
+    {
+      "word": "VALOUR",
+      "type": 0
+    },
+    {
+      "word": "FLAVOUR",
+      "type": 0
+    }
+  ],
+  "letters": "HFLAB,OUOVA,DRUNN,EHSUR",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

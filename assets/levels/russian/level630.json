@@ -1,45 +1,139 @@
-﻿{
-    "id":  630,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ИНЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВИНА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВЫТЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "НЫТЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТЬМА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЮАНЬ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "НАМ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТЫН",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ЮАМ,ИНЬ,ВЫТ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 630,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ЙЕН",
+      "type": 0
+    },
+    {
+      "word": "НЕЙ",
+      "type": 0
+    },
+    {
+      "word": "ТАЙ",
+      "type": 0
+    },
+    {
+      "word": "ЧЕЙ",
+      "type": 0
+    },
+    {
+      "word": "ЧЖУ",
+      "type": 0
+    },
+    {
+      "word": "НЕЙТ",
+      "type": 0
+    },
+    {
+      "word": "ЧЖУН",
+      "type": 0
+    },
+    {
+      "word": "ФАНАТ",
+      "type": 0
+    },
+    {
+      "word": "ФАНАТЫ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АНА",
+      "type": 0
+    },
+    {
+      "word": "АНУ",
+      "type": 0
+    },
+    {
+      "word": "ЕНА",
+      "type": 0
+    },
+    {
+      "word": "ЖАН",
+      "type": 0
+    },
+    {
+      "word": "ЖУЙ",
+      "type": 0
+    },
+    {
+      "word": "НАЙ",
+      "type": 0
+    },
+    {
+      "word": "НАТ",
+      "type": 0
+    },
+    {
+      "word": "ТАН",
+      "type": 0
+    },
+    {
+      "word": "УНА",
+      "type": 0
+    },
+    {
+      "word": "ФАН",
+      "type": 0
+    },
+    {
+      "word": "ФАТ",
+      "type": 0
+    },
+    {
+      "word": "ЧЕН",
+      "type": 0
+    },
+    {
+      "word": "ЧЖА",
+      "type": 0
+    },
+    {
+      "word": "ЖАНА",
+      "type": 0
+    },
+    {
+      "word": "ЙЕНА",
+      "type": 0
+    },
+    {
+      "word": "НАЙТ",
+      "type": 0
+    },
+    {
+      "word": "ТАНА",
+      "type": 0
+    },
+    {
+      "word": "ЧЕНА",
+      "type": 0
+    },
+    {
+      "word": "ЧЖАН",
+      "type": 0
+    },
+    {
+      "word": "ЧЖУНА",
+      "type": 0
+    }
+  ],
+  "letters": "НЕЧЫ,АЙТТ,ТУНА,ЧЖАФ",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

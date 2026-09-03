@@ -1,77 +1,279 @@
-﻿{
-    "id":  1763,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JOY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OATH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VENT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ENJOY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ENJOYS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "JOYS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SYNTH",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OATH,VENJ,USYO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1763,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "HERE",
+      "type": 0
+    },
+    {
+      "word": "ISLE",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "STAR",
+      "type": 0
+    },
+    {
+      "word": "START",
+      "type": 0
+    },
+    {
+      "word": "WHERE",
+      "type": 0
+    },
+    {
+      "word": "INSERT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "EME",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "HEM",
+      "type": 0
+    },
+    {
+      "word": "HET",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "ISM",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "EMES",
+      "type": 0
+    },
+    {
+      "word": "HEME",
+      "type": 0
+    },
+    {
+      "word": "HEMS",
+      "type": 0
+    },
+    {
+      "word": "MELS",
+      "type": 0
+    },
+    {
+      "word": "MERE",
+      "type": 0
+    },
+    {
+      "word": "RATS",
+      "type": 0
+    },
+    {
+      "word": "REIN",
+      "type": 0
+    },
+    {
+      "word": "REIS",
+      "type": 0
+    },
+    {
+      "word": "REMS",
+      "type": 0
+    },
+    {
+      "word": "SEIS",
+      "type": 0
+    },
+    {
+      "word": "SEME",
+      "type": 0
+    },
+    {
+      "word": "SERE",
+      "type": 0
+    },
+    {
+      "word": "SINS",
+      "type": 0
+    },
+    {
+      "word": "TART",
+      "type": 0
+    },
+    {
+      "word": "TRET",
+      "type": 0
+    },
+    {
+      "word": "WHET",
+      "type": 0
+    },
+    {
+      "word": "HEMES",
+      "type": 0
+    },
+    {
+      "word": "HERES",
+      "type": 0
+    },
+    {
+      "word": "MERES",
+      "type": 0
+    },
+    {
+      "word": "REHEM",
+      "type": 0
+    },
+    {
+      "word": "REINS",
+      "type": 0
+    },
+    {
+      "word": "REMET",
+      "type": 0
+    },
+    {
+      "word": "SEISM",
+      "type": 0
+    },
+    {
+      "word": "TARRE",
+      "type": 0
+    },
+    {
+      "word": "TERRA",
+      "type": 0
+    },
+    {
+      "word": "ARREST",
+      "type": 0
+    },
+    {
+      "word": "HEREIN",
+      "type": 0
+    },
+    {
+      "word": "INSTAR",
+      "type": 0
+    },
+    {
+      "word": "MEREST",
+      "type": 0
+    },
+    {
+      "word": "REHEMS",
+      "type": 0
+    },
+    {
+      "word": "SIERRA",
+      "type": 0
+    },
+    {
+      "word": "SIESTA",
+      "type": 0
+    },
+    {
+      "word": "TARRES",
+      "type": 0
+    },
+    {
+      "word": "TARTER",
+      "type": 0
+    },
+    {
+      "word": "WHERES",
+      "type": 0
+    },
+    {
+      "word": "RESTART",
+      "type": 0
+    },
+    {
+      "word": "STARTER",
+      "type": 0
+    },
+    {
+      "word": "WHEREIN",
+      "type": 0
+    }
+  ],
+  "letters": "WHEL,TEMS,RREI,ATSN",
+  "obstacles": []
 }

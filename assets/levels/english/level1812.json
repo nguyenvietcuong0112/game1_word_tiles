@@ -1,83 +1,327 @@
-﻿{
-    "id":  1812,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LENS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VEER",
-                             "type":  2
-                         },
-                         {
-                             "word":  "VINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOGIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SERVE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "GINS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "INS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LEVR,ONSE,GIVE",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1812,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "CAMS",
+      "type": 0
+    },
+    {
+      "word": "CARL",
+      "type": 0
+    },
+    {
+      "word": "CARS",
+      "type": 0
+    },
+    {
+      "word": "TEAM",
+      "type": 0
+    },
+    {
+      "word": "TOYS",
+      "type": 0
+    },
+    {
+      "word": "STREAM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TOY",
+      "type": 0
+    },
+    {
+      "word": "ARSE",
+      "type": 0
+    },
+    {
+      "word": "EARL",
+      "type": 0
+    },
+    {
+      "word": "EARS",
+      "type": 0
+    },
+    {
+      "word": "EATS",
+      "type": 0
+    },
+    {
+      "word": "FORA",
+      "type": 0
+    },
+    {
+      "word": "MACS",
+      "type": 0
+    },
+    {
+      "word": "MAES",
+      "type": 0
+    },
+    {
+      "word": "MARL",
+      "type": 0
+    },
+    {
+      "word": "MARS",
+      "type": 0
+    },
+    {
+      "word": "MATS",
+      "type": 0
+    },
+    {
+      "word": "MORA",
+      "type": 0
+    },
+    {
+      "word": "MORS",
+      "type": 0
+    },
+    {
+      "word": "RAMS",
+      "type": 0
+    },
+    {
+      "word": "REAM",
+      "type": 0
+    },
+    {
+      "word": "ROMS",
+      "type": 0
+    },
+    {
+      "word": "SCAM",
+      "type": 0
+    },
+    {
+      "word": "SCAR",
+      "type": 0
+    },
+    {
+      "word": "SEAM",
+      "type": 0
+    },
+    {
+      "word": "SEAR",
+      "type": 0
+    },
+    {
+      "word": "SEAT",
+      "type": 0
+    },
+    {
+      "word": "TAMS",
+      "type": 0
+    },
+    {
+      "word": "TEAT",
+      "type": 0
+    },
+    {
+      "word": "TRET",
+      "type": 0
+    },
+    {
+      "word": "ARSES",
+      "type": 0
+    },
+    {
+      "word": "CARLS",
+      "type": 0
+    },
+    {
+      "word": "CAROM",
+      "type": 0
+    },
+    {
+      "word": "CARSE",
+      "type": 0
+    },
+    {
+      "word": "EARLS",
+      "type": 0
+    },
+    {
+      "word": "ESCAR",
+      "type": 0
+    },
+    {
+      "word": "FORAM",
+      "type": 0
+    },
+    {
+      "word": "MARLS",
+      "type": 0
+    },
+    {
+      "word": "MARSE",
+      "type": 0
+    },
+    {
+      "word": "MORAE",
+      "type": 0
+    },
+    {
+      "word": "MORSE",
+      "type": 0
+    },
+    {
+      "word": "REAMS",
+      "type": 0
+    },
+    {
+      "word": "SCAMS",
+      "type": 0
+    },
+    {
+      "word": "SCARS",
+      "type": 0
+    },
+    {
+      "word": "SEAMS",
+      "type": 0
+    },
+    {
+      "word": "SEAMY",
+      "type": 0
+    },
+    {
+      "word": "SEARS",
+      "type": 0
+    },
+    {
+      "word": "SEATS",
+      "type": 0
+    },
+    {
+      "word": "TEAMS",
+      "type": 0
+    },
+    {
+      "word": "TEATS",
+      "type": 0
+    },
+    {
+      "word": "CAROMS",
+      "type": 0
+    },
+    {
+      "word": "CARSES",
+      "type": 0
+    },
+    {
+      "word": "ESCARS",
+      "type": 0
+    },
+    {
+      "word": "FORAMS",
+      "type": 0
+    },
+    {
+      "word": "MARSES",
+      "type": 0
+    },
+    {
+      "word": "STREAMS",
+      "type": 0
+    },
+    {
+      "word": "STREAMY",
+      "type": 0
+    }
+  ],
+  "letters": "RTSCS,EAEAM,TMSRO,OYSLF",
+  "obstacles": []
 }

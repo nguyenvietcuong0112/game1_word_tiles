@@ -1,73 +1,267 @@
-﻿{
-    "id":  1689,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MASK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MASS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMERA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CAME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CASK",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ERAS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MACS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SACS",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "KME,SAR,SCA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1689,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "LAST",
+      "type": 0
+    },
+    {
+      "word": "LATE",
+      "type": 0
+    },
+    {
+      "word": "MALE",
+      "type": 0
+    },
+    {
+      "word": "ROAD",
+      "type": 0
+    },
+    {
+      "word": "SALE",
+      "type": 0
+    },
+    {
+      "word": "TROY",
+      "type": 0
+    },
+    {
+      "word": "SAMPLE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADS",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "AMP",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LAT",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "OAT",
+      "type": 0
+    },
+    {
+      "word": "ORT",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "YOM",
+      "type": 0
+    },
+    {
+      "word": "ATMA",
+      "type": 0
+    },
+    {
+      "word": "BEDS",
+      "type": 0
+    },
+    {
+      "word": "DEBS",
+      "type": 0
+    },
+    {
+      "word": "DEBT",
+      "type": 0
+    },
+    {
+      "word": "ETAS",
+      "type": 0
+    },
+    {
+      "word": "LAMP",
+      "type": 0
+    },
+    {
+      "word": "MAST",
+      "type": 0
+    },
+    {
+      "word": "MATE",
+      "type": 0
+    },
+    {
+      "word": "MORT",
+      "type": 0
+    },
+    {
+      "word": "OATS",
+      "type": 0
+    },
+    {
+      "word": "ORTS",
+      "type": 0
+    },
+    {
+      "word": "PLAT",
+      "type": 0
+    },
+    {
+      "word": "ROMP",
+      "type": 0
+    },
+    {
+      "word": "SALP",
+      "type": 0
+    },
+    {
+      "word": "SAMP",
+      "type": 0
+    },
+    {
+      "word": "SATE",
+      "type": 0
+    },
+    {
+      "word": "TADS",
+      "type": 0
+    },
+    {
+      "word": "TALE",
+      "type": 0
+    },
+    {
+      "word": "TAMP",
+      "type": 0
+    },
+    {
+      "word": "TELA",
+      "type": 0
+    },
+    {
+      "word": "AMORT",
+      "type": 0
+    },
+    {
+      "word": "AMPLE",
+      "type": 0
+    },
+    {
+      "word": "ATMAS",
+      "type": 0
+    },
+    {
+      "word": "MORTS",
+      "type": 0
+    },
+    {
+      "word": "PLATE",
+      "type": 0
+    },
+    {
+      "word": "ROADS",
+      "type": 0
+    },
+    {
+      "word": "STADE",
+      "type": 0
+    },
+    {
+      "word": "STROY",
+      "type": 0
+    },
+    {
+      "word": "TROMP",
+      "type": 0
+    },
+    {
+      "word": "STROMA",
+      "type": 0
+    },
+    {
+      "word": "STROMAL",
+      "type": 0
+    }
+  ],
+  "letters": "OADE,RTSB,OMAT,YPLE",
+  "obstacles": []
 }

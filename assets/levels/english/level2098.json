@@ -1,127 +1,211 @@
-﻿{
-    "id":  2098,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANTI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OMIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PINT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOTOR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "MOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOTO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PINTO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TORI",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "IROO,ANTI,PIOM",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2098,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FUR",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAW",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "WAR",
+      "type": 0
+    },
+    {
+      "word": "DEAR",
+      "type": 0
+    },
+    {
+      "word": "DRAW",
+      "type": 0
+    },
+    {
+      "word": "GRAN",
+      "type": 0
+    },
+    {
+      "word": "LOSE",
+      "type": 0
+    },
+    {
+      "word": "RANG",
+      "type": 0
+    },
+    {
+      "word": "AWARD",
+      "type": 0
+    },
+    {
+      "word": "FIGURE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AWA",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "ERG",
+      "type": 0
+    },
+    {
+      "word": "FIG",
+      "type": 0
+    },
+    {
+      "word": "FUG",
+      "type": 0
+    },
+    {
+      "word": "GED",
+      "type": 0
+    },
+    {
+      "word": "NAW",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "RUG",
+      "type": 0
+    },
+    {
+      "word": "SOD",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "URD",
+      "type": 0
+    },
+    {
+      "word": "WAE",
+      "type": 0
+    },
+    {
+      "word": "WAN",
+      "type": 0
+    },
+    {
+      "word": "DOSE",
+      "type": 0
+    },
+    {
+      "word": "FURL",
+      "type": 0
+    },
+    {
+      "word": "GNAR",
+      "type": 0
+    },
+    {
+      "word": "GNAW",
+      "type": 0
+    },
+    {
+      "word": "LODE",
+      "type": 0
+    },
+    {
+      "word": "NARD",
+      "type": 0
+    },
+    {
+      "word": "ODEA",
+      "type": 0
+    },
+    {
+      "word": "ODES",
+      "type": 0
+    },
+    {
+      "word": "SEAR",
+      "type": 0
+    },
+    {
+      "word": "WAES",
+      "type": 0
+    },
+    {
+      "word": "WARD",
+      "type": 0
+    },
+    {
+      "word": "LODES",
+      "type": 0
+    },
+    {
+      "word": "SEAWAN",
+      "type": 0
+    },
+    {
+      "word": "FIGURED",
+      "type": 0
+    },
+    {
+      "word": "SEAWARD",
+      "type": 0
+    }
+  ],
+  "letters": "DGNAW,ERGRA,GURDE,IFLOS",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,121 +1,255 @@
-﻿{
-    "id":  2255,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İKİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "NAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EĞİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ETİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TERK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERKEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ETMEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İTMEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEMAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EĞİTMEK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "EĞİTMEN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ETKEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETMEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EĞİTME",
-                            "type":  2
-                        },
-                        {
-                            "word":  "İTME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEKRE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NEMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TİK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RKEN,ETMA,ĞİKİ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2255,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "GİL",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "ADAM",
+      "type": 0
+    },
+    {
+      "word": "ASLA",
+      "type": 0
+    },
+    {
+      "word": "HESS",
+      "type": 0
+    },
+    {
+      "word": "LİAM",
+      "type": 0
+    },
+    {
+      "word": "SALI",
+      "type": 0
+    },
+    {
+      "word": "TESS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DAİ",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "ESE",
+      "type": 0
+    },
+    {
+      "word": "GİA",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAİ",
+      "type": 0
+    },
+    {
+      "word": "LİG",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MAİ",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "ALSA",
+      "type": 0
+    },
+    {
+      "word": "AMES",
+      "type": 0
+    },
+    {
+      "word": "ASAL",
+      "type": 0
+    },
+    {
+      "word": "ASMA",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "DALA",
+      "type": 0
+    },
+    {
+      "word": "DAMA",
+      "type": 0
+    },
+    {
+      "word": "DAME",
+      "type": 0
+    },
+    {
+      "word": "DATE",
+      "type": 0
+    },
+    {
+      "word": "GİLL",
+      "type": 0
+    },
+    {
+      "word": "LALA",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "MALA",
+      "type": 0
+    },
+    {
+      "word": "MAİL",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "TAMA",
+      "type": 0
+    },
+    {
+      "word": "TEMA",
+      "type": 0
+    },
+    {
+      "word": "İLLA",
+      "type": 0
+    },
+    {
+      "word": "İLSA",
+      "type": 0
+    },
+    {
+      "word": "ADAMS",
+      "type": 0
+    },
+    {
+      "word": "DAMAT",
+      "type": 0
+    },
+    {
+      "word": "SALAM",
+      "type": 0
+    },
+    {
+      "word": "SALSA",
+      "type": 0
+    },
+    {
+      "word": "SMALL",
+      "type": 0
+    },
+    {
+      "word": "TESSA",
+      "type": 0
+    },
+    {
+      "word": "ADAMSA",
+      "type": 0
+    },
+    {
+      "word": "ALAMET",
+      "type": 0
+    }
+  ],
+  "letters": "ASLİG,LALAD,IASMA,HESET",
+  "obstacles": []
 }

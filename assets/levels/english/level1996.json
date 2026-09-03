@@ -1,135 +1,183 @@
-﻿{
-    "id":  1996,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "NEW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEWS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SWAN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "WERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEWER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SWEET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SWOOP",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ANSWER",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANEW",
-                            "type":  1
-                        },
-                        {
-                            "word":  "EWE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EWER",
-                            "type":  1
-                        },
-                        {
-                            "word":  "NANO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NEWT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WANE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "WEE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WON",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OPETE,OWSWE,NANER",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  4,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1996,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADS",
+      "type": 0
+    },
+    {
+      "word": "OUR",
+      "type": 0
+    },
+    {
+      "word": "RID",
+      "type": 0
+    },
+    {
+      "word": "TAU",
+      "type": 0
+    },
+    {
+      "word": "COLE",
+      "type": 0
+    },
+    {
+      "word": "COST",
+      "type": 0
+    },
+    {
+      "word": "EXPO",
+      "type": 0
+    },
+    {
+      "word": "HOUR",
+      "type": 0
+    },
+    {
+      "word": "LOOP",
+      "type": 0
+    },
+    {
+      "word": "POOL",
+      "type": 0
+    },
+    {
+      "word": "COSTA",
+      "type": 0
+    },
+    {
+      "word": "LOOSE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "COL",
+      "type": 0
+    },
+    {
+      "word": "COO",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "IDS",
+      "type": 0
+    },
+    {
+      "word": "LEU",
+      "type": 0
+    },
+    {
+      "word": "LEX",
+      "type": 0
+    },
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "RHO",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "SOP",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "COIR",
+      "type": 0
+    },
+    {
+      "word": "COOP",
+      "type": 0
+    },
+    {
+      "word": "COOS",
+      "type": 0
+    },
+    {
+      "word": "DIOL",
+      "type": 0
+    },
+    {
+      "word": "DIRL",
+      "type": 0
+    },
+    {
+      "word": "LOCO",
+      "type": 0
+    },
+    {
+      "word": "LOOS",
+      "type": 0
+    },
+    {
+      "word": "POSE",
+      "type": 0
+    },
+    {
+      "word": "RIDS",
+      "type": 0
+    },
+    {
+      "word": "TADS",
+      "type": 0
+    },
+    {
+      "word": "EXPOS",
+      "type": 0
+    },
+    {
+      "word": "HOURI",
+      "type": 0
+    },
+    {
+      "word": "LOCOS",
+      "type": 0
+    },
+    {
+      "word": "SCOOP",
+      "type": 0
+    },
+    {
+      "word": "EXPOSE",
+      "type": 0
+    },
+    {
+      "word": "LOCOES",
+      "type": 0
+    },
+    {
+      "word": "SCOLEX",
+      "type": 0
+    }
+  ],
+  "letters": "ESOPX,OCOLE,SDIRU,TAUHO",
+  "obstacles": []
 }

@@ -1,73 +1,227 @@
-﻿{
-    "id":  222,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLÉ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOLO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POLO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RELOJ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOLERO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BOJ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REJO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RELÉ",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "POR,ÉLE,BOJ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 222,
+  "width": 4,
+  "height": 3,
+  "target_words": [
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "IAN",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "AIRE",
+      "type": 0
+    },
+    {
+      "word": "ERAN",
+      "type": 0
+    },
+    {
+      "word": "MIRA",
+      "type": 0
+    },
+    {
+      "word": "REINA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ARN",
+      "type": 0
+    },
+    {
+      "word": "EIN",
+      "type": 0
+    },
+    {
+      "word": "EMI",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "IME",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "MIA",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "NAI",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PRE",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "ARIA",
+      "type": 0
+    },
+    {
+      "word": "EMIR",
+      "type": 0
+    },
+    {
+      "word": "IRAN",
+      "type": 0
+    },
+    {
+      "word": "MERA",
+      "type": 0
+    },
+    {
+      "word": "MIRE",
+      "type": 0
+    },
+    {
+      "word": "NARN",
+      "type": 0
+    },
+    {
+      "word": "PARE",
+      "type": 0
+    },
+    {
+      "word": "PARI",
+      "type": 0
+    },
+    {
+      "word": "RANI",
+      "type": 0
+    },
+    {
+      "word": "REMI",
+      "type": 0
+    },
+    {
+      "word": "RENA",
+      "type": 0
+    },
+    {
+      "word": "EINAR",
+      "type": 0
+    },
+    {
+      "word": "IRENA",
+      "type": 0
+    },
+    {
+      "word": "MIRAN",
+      "type": 0
+    },
+    {
+      "word": "MIREN",
+      "type": 0
+    },
+    {
+      "word": "PAREN",
+      "type": 0
+    },
+    {
+      "word": "PARIA",
+      "type": 0
+    },
+    {
+      "word": "REINE",
+      "type": 0
+    },
+    {
+      "word": "ANEMIA",
+      "type": 0
+    },
+    {
+      "word": "REINAR",
+      "type": 0
+    }
+  ],
+  "letters": "INEM,EARI,RPNA",
+  "obstacles": []
 }

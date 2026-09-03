@@ -1,75 +1,167 @@
-﻿{
-    "id":  1715,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İLK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAİR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "EKLİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GERİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İLKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAİRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GİRDİ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-
-                    ],
-    "letters":  "GEK,İRL,ADİ",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1715,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "ONA",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "YEM",
+      "type": 0
+    },
+    {
+      "word": "ASIL",
+      "type": 0
+    },
+    {
+      "word": "DEME",
+      "type": 0
+    },
+    {
+      "word": "SARI",
+      "type": 0
+    },
+    {
+      "word": "SIRA",
+      "type": 0
+    },
+    {
+      "word": "YANI",
+      "type": 0
+    },
+    {
+      "word": "ASILI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ASI",
+      "type": 0
+    },
+    {
+      "word": "DEM",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "EYE",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "ISI",
+      "type": 0
+    },
+    {
+      "word": "MIN",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAR",
+      "type": 0
+    },
+    {
+      "word": "ANIM",
+      "type": 0
+    },
+    {
+      "word": "ASIR",
+      "type": 0
+    },
+    {
+      "word": "DONA",
+      "type": 0
+    },
+    {
+      "word": "ISIR",
+      "type": 0
+    },
+    {
+      "word": "ONAY",
+      "type": 0
+    },
+    {
+      "word": "YEME",
+      "type": 0
+    },
+    {
+      "word": "ARISI",
+      "type": 0
+    },
+    {
+      "word": "SARIL",
+      "type": 0
+    },
+    {
+      "word": "YANIM",
+      "type": 0
+    },
+    {
+      "word": "ONAYLI",
+      "type": 0
+    },
+    {
+      "word": "SARILI",
+      "type": 0
+    }
+  ],
+  "letters": "YLIR,AISA,NIME,ODEY",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

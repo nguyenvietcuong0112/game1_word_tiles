@@ -1,79 +1,239 @@
-﻿{
-    "id":  2009,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "PAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARRAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STARRY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "PARR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RATS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TARRY",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "TAY,SRR,OPA",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2009,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "DUE",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "PAY",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "YES",
+      "type": 0
+    },
+    {
+      "word": "DAYS",
+      "type": 0
+    },
+    {
+      "word": "ELSE",
+      "type": 0
+    },
+    {
+      "word": "HEEL",
+      "type": 0
+    },
+    {
+      "word": "LESS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIS",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "AYE",
+      "type": 0
+    },
+    {
+      "word": "AYS",
+      "type": 0
+    },
+    {
+      "word": "DAP",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "YAP",
+      "type": 0
+    },
+    {
+      "word": "YEP",
+      "type": 0
+    },
+    {
+      "word": "ALEE",
+      "type": 0
+    },
+    {
+      "word": "APES",
+      "type": 0
+    },
+    {
+      "word": "AYES",
+      "type": 0
+    },
+    {
+      "word": "DUES",
+      "type": 0
+    },
+    {
+      "word": "ESES",
+      "type": 0
+    },
+    {
+      "word": "IRES",
+      "type": 0
+    },
+    {
+      "word": "LAIR",
+      "type": 0
+    },
+    {
+      "word": "LEES",
+      "type": 0
+    },
+    {
+      "word": "LUES",
+      "type": 0
+    },
+    {
+      "word": "PAYS",
+      "type": 0
+    },
+    {
+      "word": "RIAL",
+      "type": 0
+    },
+    {
+      "word": "RISE",
+      "type": 0
+    },
+    {
+      "word": "SEAL",
+      "type": 0
+    },
+    {
+      "word": "SEEL",
+      "type": 0
+    },
+    {
+      "word": "SELS",
+      "type": 0
+    },
+    {
+      "word": "SIAL",
+      "type": 0
+    },
+    {
+      "word": "SIRE",
+      "type": 0
+    },
+    {
+      "word": "SLUE",
+      "type": 0
+    },
+    {
+      "word": "DULSE",
+      "type": 0
+    },
+    {
+      "word": "ESSES",
+      "type": 0
+    },
+    {
+      "word": "RESEE",
+      "type": 0
+    },
+    {
+      "word": "RISES",
+      "type": 0
+    },
+    {
+      "word": "RESEAL",
+      "type": 0
+    },
+    {
+      "word": "SERIAL",
+      "type": 0
+    },
+    {
+      "word": "YESSES",
+      "type": 0
+    }
+  ],
+  "letters": "LEEHD,AESYA,ISSEP,RELUD",
+  "obstacles": []
 }

@@ -1,6 +1,8 @@
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 import '../../controllers/game_controller.dart';
 import '../../theme/app_theme.dart';
 
@@ -40,12 +42,14 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        // Backdrop
-        Container(
-          color: Colors.black.withOpacity(0.55),
+        // 1. Hardware-Accelerated Smooth Dark Scrim
+        Positioned.fill(
+          child: Container(
+            color: Colors.black.withValues(alpha: 0.65),
+          ).animate().fadeIn(duration: 250.ms),
         ),
 
-        // Confetti Explosion
+        // 2. Celebratory Confetti Explosion
         Align(
           alignment: Alignment.topCenter,
           child: ConfettiWidget(
@@ -53,28 +57,31 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
             blastDirectionality: BlastDirectionality.explosive,
             shouldLoop: false,
             colors: const [
-              AppColors.terracotta,
-              AppColors.goldAccent,
-              AppColors.successGreen,
-              Color(0xFFE27150),
-              Color(0xFF2B2824),
+              Color(0xFFBA805D),
+              Color(0xFFE5A638),
+              Color(0xFF5B8E67),
+              Color(0xFFDEC5AE),
+              Color(0xFF5C2E14),
+              Color(0xFFFFFDF9),
             ],
+            numberOfParticles: 35,
+            gravity: 0.15,
           ),
         ),
 
-        // Victory Card (Cozy Warm Paper Card with 2px Dark Border)
+        // 3. Victory Dialog Card (Spring entrance from top)
         Center(
           child: Container(
-            margin: const EdgeInsets.symmetric(horizontal: 28),
-            padding: const EdgeInsets.all(26),
+            margin: EdgeInsets.symmetric(horizontal: 28.w),
+            padding: EdgeInsets.all(28.r),
             decoration: BoxDecoration(
               color: AppColors.cardPeach,
-              borderRadius: BorderRadius.circular(24),
-              border: Border.all(color: AppColors.borderDark, width: 2.0),
-              boxShadow: [
+              borderRadius: BorderRadius.circular(32.r),
+              border: Border.all(color: AppColors.borderSubtle, width: 2.0),
+              boxShadow: const [
                 BoxShadow(
-                  color: AppColors.borderDark.withOpacity(0.2),
-                  offset: const Offset(0, 6),
+                  color: Color(0xFFD4C2AE),
+                  offset: Offset(0, 4.0),
                   blurRadius: 0,
                 ),
               ],
@@ -82,59 +89,90 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                // Celebration Title
+                // Celebration Title (Large, Bold, Woodcraft Style)
                 Text(
                   widget.controller.victoryCelebrationText,
                   textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    fontSize: 24,
+                  style: GoogleFonts.fredoka(
+                    fontSize: 28.sp,
                     fontWeight: FontWeight.w900,
-                    color: AppColors.terracotta,
-                    letterSpacing: 1.5,
+                    color: AppColors.headerBrown,
+                    letterSpacing: 2.0,
                   ),
                 ),
-                const SizedBox(height: 6),
-                Text(
-                  'Level ${widget.controller.levelNumber} Completed',
-                  style: const TextStyle(
-                    fontSize: 15,
-                    color: AppColors.textMuted,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-                const SizedBox(height: 18),
 
-                // 3 Stars Row
+                SizedBox(height: 6.h),
+                Text(
+                  'Level ${widget.controller.levelNumber} Completed! 🎉',
+                  style: GoogleFonts.fredoka(
+                    fontSize: 16.sp,
+                    color: AppColors.textDark,
+                    fontWeight: FontWeight.w700,
+                  ),
+                ),
+                SizedBox(height: 20.h),
+
+                // 3 Stars Row (3D Glowing Gold Stars with Staggered Animation)
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: List.generate(3, (index) {
+                    final isEarned = index < widget.controller.starsEarned;
                     return Container(
-                      margin: const EdgeInsets.symmetric(horizontal: 6),
+                      margin: EdgeInsets.symmetric(horizontal: 6.w),
                       child: Icon(
                         Icons.star_rounded,
-                        size: 52,
-                        color: index < widget.controller.starsEarned
-                            ? AppColors.goldAccent
-                            : AppColors.borderDark.withOpacity(0.15),
+                        size: 58.r,
+                        color: isEarned
+                            ? const Color(0xFFF59E0B)
+                            : const Color(0xFFE2E8F0),
+                        shadows: isEarned
+                            ? [
+                                const Shadow(
+                                  color: Color(0xFFD97706),
+                                  offset: Offset(0, 2.0),
+                                  blurRadius: 0,
+                                ),
+                              ]
+                            : null,
                       ),
                     )
-                        .animate(delay: (200 * index).ms)
-                        .scale(begin: const Offset(0, 0), end: const Offset(1, 1), curve: Curves.elasticOut);
+                        .animate(delay: (150 * index).ms)
+                        .scale(begin: const Offset(0, 0), end: const Offset(1, 1), duration: 350.ms, curve: Curves.elasticOut);
                   }),
                 ),
-                const SizedBox(height: 18),
+                SizedBox(height: 8.h),
 
-                // Coins Reward Pill
+                // Star Rating Performance Label
+                Text(
+                  widget.controller.starsEarned == 3
+                      ? '⭐ ⭐ ⭐  PERFECT!'
+                      : (widget.controller.starsEarned == 2
+                          ? '⭐ ⭐  GREAT JOB!'
+                          : '⭐  LEVEL CLEARED!'),
+                  style: GoogleFonts.fredoka(
+                    fontSize: 13.sp,
+                    fontWeight: FontWeight.w900,
+                    color: widget.controller.starsEarned == 3
+                        ? const Color(0xFFD97706)
+                        : (widget.controller.starsEarned == 2
+                            ? AppColors.headerBrown
+                            : AppColors.textMuted),
+                    letterSpacing: 1.0,
+                  ),
+                ),
+                SizedBox(height: 16.h),
+
+                // Coins Reward Badge
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 8),
+                  padding: EdgeInsets.symmetric(horizontal: 22.w, vertical: 10.h),
                   decoration: BoxDecoration(
-                    color: AppColors.cardPeachLight,
-                    borderRadius: BorderRadius.circular(20),
-                    border: Border.all(color: AppColors.borderDark, width: 2.0),
-                    boxShadow: [
+                    color: AppColors.cardWhite,
+                    borderRadius: BorderRadius.circular(22.r),
+                    border: Border.all(color: AppColors.borderSubtle, width: 1.5),
+                    boxShadow: const [
                       BoxShadow(
-                        color: AppColors.borderDark.withOpacity(0.12),
-                        offset: const Offset(0, 2),
+                        color: Color(0xFFE8DAC8),
+                        offset: Offset(0, 1.5),
                         blurRadius: 0,
                       ),
                     ],
@@ -142,80 +180,115 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
+                      const Text('🪙', style: TextStyle(fontSize: 24)),
+                      SizedBox(width: 8.w),
                       Text(
-                        '+${widget.controller.coinsReward}',
-                        style: const TextStyle(
-                          fontSize: 20,
+                        '+${widget.controller.coinsReward} COINS',
+                        style: GoogleFonts.fredoka(
+                          fontSize: 18.sp,
                           fontWeight: FontWeight.w900,
                           color: AppColors.textDark,
+                          letterSpacing: 1.0,
                         ),
                       ),
-                      const SizedBox(width: 6),
-                      const Text('🪙', style: TextStyle(fontSize: 18)),
                     ],
                   ),
-                ),
-                const SizedBox(height: 24),
+                )
+                    .animate(delay: 450.ms)
+                    .scale(curve: Curves.easeOutBack),
+                SizedBox(height: 26.h),
 
-                // Action Buttons (Matching reference image "CONTINUE" button)
+                // Action Buttons
                 Row(
                   children: [
-                    // Replay Button
+                    // Replay Button (Unified 3D Cocoa-Caramel Round Button)
                     InkWell(
                       onTap: widget.onReplay,
-                      borderRadius: BorderRadius.circular(20),
+                      borderRadius: BorderRadius.circular(28.r),
                       child: Container(
-                        padding: const EdgeInsets.all(14),
+                        width: 54.r,
+                        height: 54.r,
                         decoration: BoxDecoration(
-                          color: AppColors.cardPeachLight,
-                          borderRadius: BorderRadius.circular(20),
-                          border: Border.all(color: AppColors.borderDark, width: 2.0),
-                          boxShadow: [
+                          color: AppColors.btnRingBg,
+                          shape: BoxShape.circle,
+                          border: Border.all(color: AppColors.btnRingBorder, width: 1.8),
+                          boxShadow: const [
                             BoxShadow(
-                              color: AppColors.borderDark.withOpacity(0.15),
-                              offset: const Offset(0, 3),
+                              color: AppColors.btnRingShadow,
+                              offset: Offset(0, 2.0),
                               blurRadius: 0,
                             ),
                           ],
                         ),
-                        child: const Icon(Icons.replay_rounded, size: 24, color: AppColors.textDark),
-                      ),
-                    ),
-                    const SizedBox(width: 14),
-
-                    // Next Level Button
-                    Expanded(
-                      child: InkWell(
-                        onTap: widget.onNextLevel,
-                        borderRadius: BorderRadius.circular(24),
+                        padding: const EdgeInsets.all(4.5),
                         child: Container(
-                          padding: const EdgeInsets.symmetric(vertical: 16),
                           decoration: BoxDecoration(
-                            color: AppColors.terracotta,
-                            borderRadius: BorderRadius.circular(24),
-                            border: Border.all(color: AppColors.borderDark, width: 2.0),
-                            boxShadow: [
+                            color: AppColors.btnFaceBrown,
+                            shape: BoxShape.circle,
+                            border: Border.all(color: AppColors.btnBorderBrown, width: 1.5),
+                            boxShadow: const [
                               BoxShadow(
-                                color: AppColors.borderDark.withOpacity(0.2),
-                                offset: const Offset(0, 4),
+                                color: AppColors.btnShadowBrown,
+                                offset: Offset(0, 1.5),
                                 blurRadius: 0,
                               ),
                             ],
                           ),
-                          child: const Row(
+                          child: const Center(
+                            child: Icon(
+                              Icons.replay_rounded,
+                              size: 26,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(width: 14.w),
+
+                    // Next Level Button (3D Cocoa Caramel CTA)
+                    Expanded(
+                      child: InkWell(
+                        onTap: widget.onNextLevel,
+                        borderRadius: BorderRadius.circular(26.r),
+                        child: Container(
+                          padding: EdgeInsets.symmetric(vertical: 16.h),
+                          decoration: BoxDecoration(
+                            gradient: const LinearGradient(
+                              colors: [Color(0xFFCA9370), AppColors.btnFaceBrown],
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                            ),
+                            borderRadius: BorderRadius.circular(26.r),
+                            border: Border.all(color: AppColors.btnBorderBrown, width: 2.0),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: AppColors.btnShadowBrown,
+                                offset: Offset(0, 2.5),
+                                blurRadius: 0,
+                              ),
+                            ],
+                          ),
+                          child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
                                 'CONTINUE',
-                                style: TextStyle(
-                                  fontSize: 17,
+                                style: GoogleFonts.fredoka(
+                                  fontSize: 18.sp,
                                   fontWeight: FontWeight.w900,
                                   color: Colors.white,
-                                  letterSpacing: 1.5,
+                                  letterSpacing: 1.8,
+                                  shadows: const [
+                                    Shadow(
+                                      color: AppColors.btnShadowBrown,
+                                      offset: Offset(0, 1.5),
+                                    ),
+                                  ],
                                 ),
                               ),
-                              SizedBox(width: 8),
-                              Icon(Icons.arrow_forward_rounded, size: 20, color: Colors.white),
+                              SizedBox(width: 8.w),
+                              const Icon(Icons.arrow_forward_rounded, size: 22, color: Colors.white),
                             ],
                           ),
                         ),
@@ -225,7 +298,11 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                 ),
               ],
             ),
-          ).animate().scale(duration: 250.ms, curve: Curves.easeOutBack),
+          )
+              .animate()
+              .fadeIn(duration: 250.ms)
+              .slideY(begin: -0.3, end: 0.0, duration: 400.ms, curve: Curves.easeOutBack)
+              .scale(begin: const Offset(0.85, 0.85), end: const Offset(1.0, 1.0), duration: 400.ms, curve: Curves.easeOutBack),
         ),
       ],
     );

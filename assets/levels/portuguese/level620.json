@@ -1,77 +1,239 @@
-﻿{
-    "id":  620,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "RIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PULO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PURO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OUTRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PORTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUPOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PORTAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUPORTAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LUPO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OUTAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PULSÃO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TARRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UTAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ÃOUTA,SLURR,SUPOI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 620,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "APOS",
+      "type": 0
+    },
+    {
+      "word": "DOSE",
+      "type": 0
+    },
+    {
+      "word": "FODA",
+      "type": 0
+    },
+    {
+      "word": "SOPA",
+      "type": 0
+    },
+    {
+      "word": "TEVE",
+      "type": 0
+    },
+    {
+      "word": "SAFADO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "APA",
+      "type": 0
+    },
+    {
+      "word": "APO",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "ESE",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "FAD",
+      "type": 0
+    },
+    {
+      "word": "FAE",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "POD",
+      "type": 0
+    },
+    {
+      "word": "POS",
+      "type": 0
+    },
+    {
+      "word": "SAD",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "VEE",
+      "type": 0
+    },
+    {
+      "word": "VET",
+      "type": 0
+    },
+    {
+      "word": "FADA",
+      "type": 0
+    },
+    {
+      "word": "FAES",
+      "type": 0
+    },
+    {
+      "word": "PASO",
+      "type": 0
+    },
+    {
+      "word": "PODA",
+      "type": 0
+    },
+    {
+      "word": "POSA",
+      "type": 0
+    },
+    {
+      "word": "POSE",
+      "type": 0
+    },
+    {
+      "word": "SAFA",
+      "type": 0
+    },
+    {
+      "word": "SAFE",
+      "type": 0
+    },
+    {
+      "word": "SAPO",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SODA",
+      "type": 0
+    },
+    {
+      "word": "TAPA",
+      "type": 0
+    },
+    {
+      "word": "TESE",
+      "type": 0
+    },
+    {
+      "word": "ETAPA",
+      "type": 0
+    },
+    {
+      "word": "FODAS",
+      "type": 0
+    },
+    {
+      "word": "SAFADA",
+      "type": 0
+    },
+    {
+      "word": "TAPADO",
+      "type": 0
+    },
+    {
+      "word": "SAFADOS",
+      "type": 0
+    }
+  ],
+  "letters": "TEVS,ASEE,POFA,ADAS",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

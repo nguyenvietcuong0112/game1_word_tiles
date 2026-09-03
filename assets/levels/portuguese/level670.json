@@ -1,65 +1,143 @@
-﻿{
-    "id":  670,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CIMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LONA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MICA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACIMA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AFIM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FALO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FOLA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FONA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MALO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MAL,IFO,CAN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 670,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "CRU",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "BLUE",
+      "type": 0
+    },
+    {
+      "word": "MOLE",
+      "type": 0
+    },
+    {
+      "word": "RUÍDO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABC",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARU",
+      "type": 0
+    },
+    {
+      "word": "BEE",
+      "type": 0
+    },
+    {
+      "word": "BLU",
+      "type": 0
+    },
+    {
+      "word": "DRA",
+      "type": 0
+    },
+    {
+      "word": "DRU",
+      "type": 0
+    },
+    {
+      "word": "ELO",
+      "type": 0
+    },
+    {
+      "word": "EUR",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "MOL",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "ALDO",
+      "type": 0
+    },
+    {
+      "word": "BARD",
+      "type": 0
+    },
+    {
+      "word": "CRAB",
+      "type": 0
+    },
+    {
+      "word": "DOLE",
+      "type": 0
+    },
+    {
+      "word": "LURA",
+      "type": 0
+    },
+    {
+      "word": "BARDO",
+      "type": 0
+    },
+    {
+      "word": "LARUE",
+      "type": 0
+    }
+  ],
+  "letters": "EEEB,LÍUL,ODRC,MLAB",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

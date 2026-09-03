@@ -1,69 +1,275 @@
-﻿{
-    "id":  1545,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YES",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AWAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SWAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SWAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESSAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANYWAY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WAS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SAY,SWA,EYN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1545,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "GOT",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "LOG",
+      "type": 0
+    },
+    {
+      "word": "LOW",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "SAVE",
+      "type": 0
+    },
+    {
+      "word": "SELL",
+      "type": 0
+    },
+    {
+      "word": "SLOW",
+      "type": 0
+    },
+    {
+      "word": "TELL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GAT",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LAT",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "NAG",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "TOG",
+      "type": 0
+    },
+    {
+      "word": "VAS",
+      "type": 0
+    },
+    {
+      "word": "WOG",
+      "type": 0
+    },
+    {
+      "word": "ALOW",
+      "type": 0
+    },
+    {
+      "word": "ANSA",
+      "type": 0
+    },
+    {
+      "word": "AVES",
+      "type": 0
+    },
+    {
+      "word": "GALS",
+      "type": 0
+    },
+    {
+      "word": "GANE",
+      "type": 0
+    },
+    {
+      "word": "GATE",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "LATE",
+      "type": 0
+    },
+    {
+      "word": "LENS",
+      "type": 0
+    },
+    {
+      "word": "LEVA",
+      "type": 0
+    },
+    {
+      "word": "LOGO",
+      "type": 0
+    },
+    {
+      "word": "SLAG",
+      "type": 0
+    },
+    {
+      "word": "SLAT",
+      "type": 0
+    },
+    {
+      "word": "SLOG",
+      "type": 0
+    },
+    {
+      "word": "SNAG",
+      "type": 0
+    },
+    {
+      "word": "TANS",
+      "type": 0
+    },
+    {
+      "word": "TENS",
+      "type": 0
+    },
+    {
+      "word": "TOGA",
+      "type": 0
+    },
+    {
+      "word": "VASE",
+      "type": 0
+    },
+    {
+      "word": "LATEN",
+      "type": 0
+    },
+    {
+      "word": "LENSE",
+      "type": 0
+    },
+    {
+      "word": "LOGAN",
+      "type": 0
+    },
+    {
+      "word": "OAVES",
+      "type": 0
+    },
+    {
+      "word": "SELLE",
+      "type": 0
+    },
+    {
+      "word": "SLATE",
+      "type": 0
+    },
+    {
+      "word": "SNELL",
+      "type": 0
+    },
+    {
+      "word": "TENSE",
+      "type": 0
+    },
+    {
+      "word": "LATENS",
+      "type": 0
+    },
+    {
+      "word": "LOAVES",
+      "type": 0
+    },
+    {
+      "word": "LOGANS",
+      "type": 0
+    },
+    {
+      "word": "SLOGAN",
+      "type": 0
+    }
+  ],
+  "letters": "VELL,ASNE,OLAT,WOGO",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

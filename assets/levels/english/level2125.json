@@ -1,93 +1,303 @@
-﻿{
-    "id":  2125,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LION",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CLIENT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "COL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ECO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ION",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAD",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ONTO,IEAD,LCOL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2125,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "CASH",
+      "type": 0
+    },
+    {
+      "word": "HERE",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "SHORT",
+      "type": 0
+    },
+    {
+      "word": "DELUXE",
+      "type": 0
+    },
+    {
+      "word": "DESTROY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "DEX",
+      "type": 0
+    },
+    {
+      "word": "DEY",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "HOD",
+      "type": 0
+    },
+    {
+      "word": "HOY",
+      "type": 0
+    },
+    {
+      "word": "LEX",
+      "type": 0
+    },
+    {
+      "word": "LEY",
+      "type": 0
+    },
+    {
+      "word": "LUX",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OHS",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ORT",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "THO",
+      "type": 0
+    },
+    {
+      "word": "YOD",
+      "type": 0
+    },
+    {
+      "word": "DELE",
+      "type": 0
+    },
+    {
+      "word": "DERE",
+      "type": 0
+    },
+    {
+      "word": "DEYS",
+      "type": 0
+    },
+    {
+      "word": "DORE",
+      "type": 0
+    },
+    {
+      "word": "HERO",
+      "type": 0
+    },
+    {
+      "word": "HOYS",
+      "type": 0
+    },
+    {
+      "word": "LEYS",
+      "type": 0
+    },
+    {
+      "word": "LUXE",
+      "type": 0
+    },
+    {
+      "word": "ORES",
+      "type": 0
+    },
+    {
+      "word": "ORTS",
+      "type": 0
+    },
+    {
+      "word": "REDE",
+      "type": 0
+    },
+    {
+      "word": "REDO",
+      "type": 0
+    },
+    {
+      "word": "REDS",
+      "type": 0
+    },
+    {
+      "word": "RODE",
+      "type": 0
+    },
+    {
+      "word": "SERE",
+      "type": 0
+    },
+    {
+      "word": "SHED",
+      "type": 0
+    },
+    {
+      "word": "SHOD",
+      "type": 0
+    },
+    {
+      "word": "TROD",
+      "type": 0
+    },
+    {
+      "word": "TROY",
+      "type": 0
+    },
+    {
+      "word": "YORE",
+      "type": 0
+    },
+    {
+      "word": "ERODE",
+      "type": 0
+    },
+    {
+      "word": "HEDER",
+      "type": 0
+    },
+    {
+      "word": "HERES",
+      "type": 0
+    },
+    {
+      "word": "REDED",
+      "type": 0
+    },
+    {
+      "word": "REDES",
+      "type": 0
+    },
+    {
+      "word": "SEDER",
+      "type": 0
+    },
+    {
+      "word": "SERED",
+      "type": 0
+    },
+    {
+      "word": "SHORE",
+      "type": 0
+    },
+    {
+      "word": "STROY",
+      "type": 0
+    },
+    {
+      "word": "TRODE",
+      "type": 0
+    },
+    {
+      "word": "TROYS",
+      "type": 0
+    },
+    {
+      "word": "YODEL",
+      "type": 0
+    },
+    {
+      "word": "YORES",
+      "type": 0
+    },
+    {
+      "word": "ASHORE",
+      "type": 0
+    },
+    {
+      "word": "ERODED",
+      "type": 0
+    },
+    {
+      "word": "SHORED",
+      "type": 0
+    },
+    {
+      "word": "SHORES",
+      "type": 0
+    },
+    {
+      "word": "SHORTS",
+      "type": 0
+    },
+    {
+      "word": "STRODE",
+      "type": 0
+    },
+    {
+      "word": "STROYS",
+      "type": 0
+    },
+    {
+      "word": "STROYED",
+      "type": 0
+    },
+    {
+      "word": "DESTROYS",
+      "type": 0
+    }
+  ],
+  "letters": "STHSA,EROYC,DEDEX,SHELU",
+  "obstacles": []
 }

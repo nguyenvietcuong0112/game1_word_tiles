@@ -1,93 +1,347 @@
-﻿{
-    "id":  2381,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ILL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HELD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HERD",
-                             "type":  2
-                         },
-                         {
-                             "word":  "HERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HILL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHILD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHILL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HELLO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HILLY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHILLY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DRENCH",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CHILDREN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CHILE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HELL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NERD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NERDY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OILER",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ERDY,NELL,CHIO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2381,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FAR",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "YES",
+      "type": 0
+    },
+    {
+      "word": "FAIL",
+      "type": 0
+    },
+    {
+      "word": "FAST",
+      "type": 0
+    },
+    {
+      "word": "IDEA",
+      "type": 0
+    },
+    {
+      "word": "SLIDE",
+      "type": 0
+    },
+    {
+      "word": "THESE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AFT",
+      "type": 0
+    },
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "AIL",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "FAS",
+      "type": 0
+    },
+    {
+      "word": "FAT",
+      "type": 0
+    },
+    {
+      "word": "FIE",
+      "type": 0
+    },
+    {
+      "word": "FIR",
+      "type": 0
+    },
+    {
+      "word": "FIT",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "LID",
+      "type": 0
+    },
+    {
+      "word": "RIF",
+      "type": 0
+    },
+    {
+      "word": "RYE",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "AFAR",
+      "type": 0
+    },
+    {
+      "word": "AIDE",
+      "type": 0
+    },
+    {
+      "word": "AILS",
+      "type": 0
+    },
+    {
+      "word": "DEAF",
+      "type": 0
+    },
+    {
+      "word": "DEAR",
+      "type": 0
+    },
+    {
+      "word": "EARL",
+      "type": 0
+    },
+    {
+      "word": "EYRA",
+      "type": 0
+    },
+    {
+      "word": "FARL",
+      "type": 0
+    },
+    {
+      "word": "FASH",
+      "type": 0
+    },
+    {
+      "word": "FATS",
+      "type": 0
+    },
+    {
+      "word": "FITS",
+      "type": 0
+    },
+    {
+      "word": "HEST",
+      "type": 0
+    },
+    {
+      "word": "LIAR",
+      "type": 0
+    },
+    {
+      "word": "RAFT",
+      "type": 0
+    },
+    {
+      "word": "RAID",
+      "type": 0
+    },
+    {
+      "word": "RAIL",
+      "type": 0
+    },
+    {
+      "word": "RIFT",
+      "type": 0
+    },
+    {
+      "word": "RYES",
+      "type": 0
+    },
+    {
+      "word": "SASH",
+      "type": 0
+    },
+    {
+      "word": "SATI",
+      "type": 0
+    },
+    {
+      "word": "SEIF",
+      "type": 0
+    },
+    {
+      "word": "SHES",
+      "type": 0
+    },
+    {
+      "word": "SLID",
+      "type": 0
+    },
+    {
+      "word": "STIR",
+      "type": 0
+    },
+    {
+      "word": "TEAR",
+      "type": 0
+    },
+    {
+      "word": "TIES",
+      "type": 0
+    },
+    {
+      "word": "TIRL",
+      "type": 0
+    },
+    {
+      "word": "ASHES",
+      "type": 0
+    },
+    {
+      "word": "DEARY",
+      "type": 0
+    },
+    {
+      "word": "DIARY",
+      "type": 0
+    },
+    {
+      "word": "EARLS",
+      "type": 0
+    },
+    {
+      "word": "FAILS",
+      "type": 0
+    },
+    {
+      "word": "FARLS",
+      "type": 0
+    },
+    {
+      "word": "FASTS",
+      "type": 0
+    },
+    {
+      "word": "RAFTS",
+      "type": 0
+    },
+    {
+      "word": "RAILS",
+      "type": 0
+    },
+    {
+      "word": "RIFTS",
+      "type": 0
+    },
+    {
+      "word": "STASH",
+      "type": 0
+    },
+    {
+      "word": "TASTE",
+      "type": 0
+    },
+    {
+      "word": "TEARY",
+      "type": 0
+    },
+    {
+      "word": "TIRLS",
+      "type": 0
+    },
+    {
+      "word": "DEARIE",
+      "type": 0
+    },
+    {
+      "word": "FASHES",
+      "type": 0
+    },
+    {
+      "word": "FASTED",
+      "type": 0
+    },
+    {
+      "word": "FIESTA",
+      "type": 0
+    },
+    {
+      "word": "RAFTED",
+      "type": 0
+    },
+    {
+      "word": "RIFTED",
+      "type": 0
+    },
+    {
+      "word": "SAFARI",
+      "type": 0
+    },
+    {
+      "word": "SASHES",
+      "type": 0
+    },
+    {
+      "word": "TASTED",
+      "type": 0
+    },
+    {
+      "word": "DEARIES",
+      "type": 0
+    },
+    {
+      "word": "DIARIES",
+      "type": 0
+    },
+    {
+      "word": "FIESTAS",
+      "type": 0
+    },
+    {
+      "word": "TEARIEST",
+      "type": 0
+    }
+  ],
+  "letters": "TSTED,SAFAI,HTIRL,ESEYS",
+  "obstacles": []
 }

@@ -1,113 +1,219 @@
-﻿{
-    "id":  1010,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACÁ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAYO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAYÓN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAZÓN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APOYAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AYO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAPO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OPA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POYA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POYAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROYA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÁCARO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "POYÓ,ARAN,CÁZÓ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1010,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GUS",
+      "type": 0
+    },
+    {
+      "word": "LOS",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "PASO",
+      "type": 0
+    },
+    {
+      "word": "PABLO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "APU",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "LBA",
+      "type": 0
+    },
+    {
+      "word": "LOL",
+      "type": 0
+    },
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "NOP",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "OSA",
+      "type": 0
+    },
+    {
+      "word": "PAP",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PON",
+      "type": 0
+    },
+    {
+      "word": "POS",
+      "type": 0
+    },
+    {
+      "word": "PUG",
+      "type": 0
+    },
+    {
+      "word": "PUS",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "USS",
+      "type": 0
+    },
+    {
+      "word": "ANOS",
+      "type": 0
+    },
+    {
+      "word": "APOS",
+      "type": 0
+    },
+    {
+      "word": "NAPA",
+      "type": 0
+    },
+    {
+      "word": "PANA",
+      "type": 0
+    },
+    {
+      "word": "PAPA",
+      "type": 0
+    },
+    {
+      "word": "PASS",
+      "type": 0
+    },
+    {
+      "word": "POSA",
+      "type": 0
+    },
+    {
+      "word": "SANA",
+      "type": 0
+    },
+    {
+      "word": "SANO",
+      "type": 0
+    },
+    {
+      "word": "SAPO",
+      "type": 0
+    },
+    {
+      "word": "SONA",
+      "type": 0
+    },
+    {
+      "word": "SOPA",
+      "type": 0
+    },
+    {
+      "word": "USAN",
+      "type": 0
+    },
+    {
+      "word": "PAPAS",
+      "type": 0
+    },
+    {
+      "word": "SANOS",
+      "type": 0
+    },
+    {
+      "word": "SAPOS",
+      "type": 0
+    },
+    {
+      "word": "SOPAS",
+      "type": 0
+    },
+    {
+      "word": "SOPLO",
+      "type": 0
+    },
+    {
+      "word": "GUSANO",
+      "type": 0
+    },
+    {
+      "word": "GUSANOS",
+      "type": 0
+    }
+  ],
+  "letters": "ANOS,PAPA,USLB,GSOL",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

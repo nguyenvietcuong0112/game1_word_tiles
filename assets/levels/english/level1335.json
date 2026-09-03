@@ -1,57 +1,179 @@
-﻿{
-    "id":  1335,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEG",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LICK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VENUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AVENUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PELICAN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EAVE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ILK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ICANU,LKEEE,EPGVA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1335,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "PEP",
+      "type": 0
+    },
+    {
+      "word": "POT",
+      "type": 0
+    },
+    {
+      "word": "SIP",
+      "type": 0
+    },
+    {
+      "word": "TOP",
+      "type": 0
+    },
+    {
+      "word": "POLE",
+      "type": 0
+    },
+    {
+      "word": "LEWIS",
+      "type": 0
+    },
+    {
+      "word": "SLOPE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "LOP",
+      "type": 0
+    },
+    {
+      "word": "ODS",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "PEW",
+      "type": 0
+    },
+    {
+      "word": "PIS",
+      "type": 0
+    },
+    {
+      "word": "POD",
+      "type": 0
+    },
+    {
+      "word": "POL",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "WIS",
+      "type": 0
+    },
+    {
+      "word": "LEPT",
+      "type": 0
+    },
+    {
+      "word": "LEWD",
+      "type": 0
+    },
+    {
+      "word": "LOPE",
+      "type": 0
+    },
+    {
+      "word": "PEDS",
+      "type": 0
+    },
+    {
+      "word": "PEPO",
+      "type": 0
+    },
+    {
+      "word": "PEPS",
+      "type": 0
+    },
+    {
+      "word": "PODS",
+      "type": 0
+    },
+    {
+      "word": "POLS",
+      "type": 0
+    },
+    {
+      "word": "SIPE",
+      "type": 0
+    },
+    {
+      "word": "SLEW",
+      "type": 0
+    },
+    {
+      "word": "SLOP",
+      "type": 0
+    },
+    {
+      "word": "SPED",
+      "type": 0
+    },
+    {
+      "word": "SPEW",
+      "type": 0
+    },
+    {
+      "word": "TODS",
+      "type": 0
+    },
+    {
+      "word": "WEPT",
+      "type": 0
+    },
+    {
+      "word": "WIPE",
+      "type": 0
+    },
+    {
+      "word": "SLEPT",
+      "type": 0
+    }
+  ],
+  "letters": "SIPO,DWEL,OTPS,PMED",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

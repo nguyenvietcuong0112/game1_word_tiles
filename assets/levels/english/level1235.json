@@ -1,81 +1,159 @@
-﻿{
-    "id":  1235,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DRAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHIN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SHINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GARDEN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DENS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "GAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GARDE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "GARDENS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GASH",
-                            "type":  0
-                        },
-                        {
-                            "word":  "INS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RASH",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SHINED",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GHI,ASN,RDE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1235,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "HOP",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "BECK",
+      "type": 0
+    },
+    {
+      "word": "HOOK",
+      "type": 0
+    },
+    {
+      "word": "SHOP",
+      "type": 0
+    },
+    {
+      "word": "STAR",
+      "type": 0
+    },
+    {
+      "word": "CHECK",
+      "type": 0
+    },
+    {
+      "word": "CHECKS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "OHS",
+      "type": 0
+    },
+    {
+      "word": "OKA",
+      "type": 0
+    },
+    {
+      "word": "OOH",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "POH",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "THO",
+      "type": 0
+    },
+    {
+      "word": "HECK",
+      "type": 0
+    },
+    {
+      "word": "HOPS",
+      "type": 0
+    },
+    {
+      "word": "KATS",
+      "type": 0
+    },
+    {
+      "word": "OOHS",
+      "type": 0
+    },
+    {
+      "word": "OOPS",
+      "type": 0
+    },
+    {
+      "word": "RATH",
+      "type": 0
+    },
+    {
+      "word": "RATS",
+      "type": 0
+    },
+    {
+      "word": "SHOO",
+      "type": 0
+    },
+    {
+      "word": "TARS",
+      "type": 0
+    },
+    {
+      "word": "BECKS",
+      "type": 0
+    },
+    {
+      "word": "HECKS",
+      "type": 0
+    },
+    {
+      "word": "HOOKA",
+      "type": 0
+    },
+    {
+      "word": "KARST",
+      "type": 0
+    },
+    {
+      "word": "SHOOK",
+      "type": 0
+    },
+    {
+      "word": "SPOOK",
+      "type": 0
+    }
+  ],
+  "letters": "CPOO,HSHK,ECTA,BKSR",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,89 +1,191 @@
-﻿{
-    "id":  2140,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAOS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KASK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAZI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKSAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKSAM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KAKAO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SAKIZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIZIKA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AZI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAZIM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOMAK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AOMI,KSAZ,AKKI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2140,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "BAĞ",
+      "type": 0
+    },
+    {
+      "word": "BUL",
+      "type": 0
+    },
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "İAN",
+      "type": 0
+    },
+    {
+      "word": "İNİ",
+      "type": 0
+    },
+    {
+      "word": "ŞAN",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "LADY",
+      "type": 0
+    },
+    {
+      "word": "ULAN",
+      "type": 0
+    },
+    {
+      "word": "YEMEĞİ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABU",
+      "type": 0
+    },
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ANY",
+      "type": 0
+    },
+    {
+      "word": "AĞA",
+      "type": 0
+    },
+    {
+      "word": "AİN",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DAĞ",
+      "type": 0
+    },
+    {
+      "word": "LAİ",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NAİ",
+      "type": 0
+    },
+    {
+      "word": "NBA",
+      "type": 0
+    },
+    {
+      "word": "YEM",
+      "type": 0
+    },
+    {
+      "word": "ŞAL",
+      "type": 0
+    },
+    {
+      "word": "BULA",
+      "type": 0
+    },
+    {
+      "word": "DALA",
+      "type": 0
+    },
+    {
+      "word": "DANA",
+      "type": 0
+    },
+    {
+      "word": "DAĞA",
+      "type": 0
+    },
+    {
+      "word": "EĞİN",
+      "type": 0
+    },
+    {
+      "word": "LANA",
+      "type": 0
+    },
+    {
+      "word": "MEAN",
+      "type": 0
+    },
+    {
+      "word": "ULAŞ",
+      "type": 0
+    },
+    {
+      "word": "YEME",
+      "type": 0
+    },
+    {
+      "word": "ALANA",
+      "type": 0
+    },
+    {
+      "word": "ALAİN",
+      "type": 0
+    },
+    {
+      "word": "BULAN",
+      "type": 0
+    },
+    {
+      "word": "EMEĞİ",
+      "type": 0
+    },
+    {
+      "word": "BULANA",
+      "type": 0
+    },
+    {
+      "word": "YEMEĞİN",
+      "type": 0
+    },
+    {
+      "word": "YEMEĞİNİ",
+      "type": 0
+    }
+  ],
+  "letters": "AĞADY,BULAŞ,NİANY,İĞEME",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

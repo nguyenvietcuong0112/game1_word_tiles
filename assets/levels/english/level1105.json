@@ -1,53 +1,147 @@
-﻿{
-    "id":  1105,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GANG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HANG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHANGE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CHANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAG",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UNG,GAE,CHT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1105,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADD",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "MOVE",
+      "type": 0
+    },
+    {
+      "word": "ADDING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGA",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "DAG",
+      "type": 0
+    },
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "GAD",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "MOA",
+      "type": 0
+    },
+    {
+      "word": "NAG",
+      "type": 0
+    },
+    {
+      "word": "ANIL",
+      "type": 0
+    },
+    {
+      "word": "DING",
+      "type": 0
+    },
+    {
+      "word": "GALA",
+      "type": 0
+    },
+    {
+      "word": "MOAN",
+      "type": 0
+    },
+    {
+      "word": "NADA",
+      "type": 0
+    },
+    {
+      "word": "VEIL",
+      "type": 0
+    },
+    {
+      "word": "VEIN",
+      "type": 0
+    },
+    {
+      "word": "GADDI",
+      "type": 0
+    },
+    {
+      "word": "LAGAN",
+      "type": 0
+    },
+    {
+      "word": "VEINAL",
+      "type": 0
+    }
+  ],
+  "letters": "ALIE,GANV,NDAO,IDLM",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

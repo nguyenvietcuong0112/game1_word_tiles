@@ -1,85 +1,195 @@
-﻿{
-    "id":  2108,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EBE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞAH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AHIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELEM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "EMEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MERA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "HAREM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAŞERE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "HARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIH",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REMEL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "HIME,AREL,ŞEBO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2108,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANN",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "GAİ",
+      "type": 0
+    },
+    {
+      "word": "SHİ",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TEK",
+      "type": 0
+    },
+    {
+      "word": "WAS",
+      "type": 0
+    },
+    {
+      "word": "İAN",
+      "type": 0
+    },
+    {
+      "word": "ATTI",
+      "type": 0
+    },
+    {
+      "word": "TESS",
+      "type": 0
+    },
+    {
+      "word": "SATTI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AİN",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "KIT",
+      "type": 0
+    },
+    {
+      "word": "NAİ",
+      "type": 0
+    },
+    {
+      "word": "RAİ",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TIK",
+      "type": 0
+    },
+    {
+      "word": "WAN",
+      "type": 0
+    },
+    {
+      "word": "WAİ",
+      "type": 0
+    },
+    {
+      "word": "İHA",
+      "type": 0
+    },
+    {
+      "word": "İNN",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "GAİA",
+      "type": 0
+    },
+    {
+      "word": "HARA",
+      "type": 0
+    },
+    {
+      "word": "HARİ",
+      "type": 0
+    },
+    {
+      "word": "RAİN",
+      "type": 0
+    },
+    {
+      "word": "SWAN",
+      "type": 0
+    },
+    {
+      "word": "SWAT",
+      "type": 0
+    },
+    {
+      "word": "WATT",
+      "type": 0
+    },
+    {
+      "word": "ANKET",
+      "type": 0
+    },
+    {
+      "word": "ATTIK",
+      "type": 0
+    },
+    {
+      "word": "SETTE",
+      "type": 0
+    },
+    {
+      "word": "SWANN",
+      "type": 0
+    },
+    {
+      "word": "SATTIK",
+      "type": 0
+    }
+  ],
+  "letters": "IKNNG,TEAİA,TAWİR,ESSHA",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,45 +1,327 @@
-﻿{
-    "id":  723,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ORO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOFO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FORO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FÓSFORO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ORCO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORFO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MOCO,ÓFRO,SFOF",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 723,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANN",
+      "type": 0
+    },
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "MÁS",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "VAN",
+      "type": 0
+    },
+    {
+      "word": "VES",
+      "type": 0
+    },
+    {
+      "word": "GRAN",
+      "type": 0
+    },
+    {
+      "word": "AMIGA",
+      "type": 0
+    },
+    {
+      "word": "CAMINO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "ARN",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "GAV",
+      "type": 0
+    },
+    {
+      "word": "GIM",
+      "type": 0
+    },
+    {
+      "word": "GIN",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "INN",
+      "type": 0
+    },
+    {
+      "word": "INO",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MIG",
+      "type": 0
+    },
+    {
+      "word": "MIN",
+      "type": 0
+    },
+    {
+      "word": "NIC",
+      "type": 0
+    },
+    {
+      "word": "NIM",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "NRO",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ONI",
+      "type": 0
+    },
+    {
+      "word": "ONN",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "AMIN",
+      "type": 0
+    },
+    {
+      "word": "AVES",
+      "type": 0
+    },
+    {
+      "word": "CAMI",
+      "type": 0
+    },
+    {
+      "word": "CIMA",
+      "type": 0
+    },
+    {
+      "word": "CORN",
+      "type": 0
+    },
+    {
+      "word": "EGAN",
+      "type": 0
+    },
+    {
+      "word": "EVAN",
+      "type": 0
+    },
+    {
+      "word": "GANO",
+      "type": 0
+    },
+    {
+      "word": "GAVE",
+      "type": 0
+    },
+    {
+      "word": "GINA",
+      "type": 0
+    },
+    {
+      "word": "GINO",
+      "type": 0
+    },
+    {
+      "word": "MICA",
+      "type": 0
+    },
+    {
+      "word": "MIGA",
+      "type": 0
+    },
+    {
+      "word": "MINA",
+      "type": 0
+    },
+    {
+      "word": "NARN",
+      "type": 0
+    },
+    {
+      "word": "NAVE",
+      "type": 0
+    },
+    {
+      "word": "NICO",
+      "type": 0
+    },
+    {
+      "word": "NIGE",
+      "type": 0
+    },
+    {
+      "word": "RAGE",
+      "type": 0
+    },
+    {
+      "word": "RANI",
+      "type": 0
+    },
+    {
+      "word": "RAVE",
+      "type": 0
+    },
+    {
+      "word": "ROCA",
+      "type": 0
+    },
+    {
+      "word": "VANO",
+      "type": 0
+    },
+    {
+      "word": "VARG",
+      "type": 0
+    },
+    {
+      "word": "VEGA",
+      "type": 0
+    },
+    {
+      "word": "AMINA",
+      "type": 0
+    },
+    {
+      "word": "ANIMA",
+      "type": 0
+    },
+    {
+      "word": "GRANO",
+      "type": 0
+    },
+    {
+      "word": "GRAVE",
+      "type": 0
+    },
+    {
+      "word": "MACON",
+      "type": 0
+    },
+    {
+      "word": "MINAR",
+      "type": 0
+    },
+    {
+      "word": "MINOR",
+      "type": 0
+    },
+    {
+      "word": "NAVES",
+      "type": 0
+    },
+    {
+      "word": "CAMINA",
+      "type": 0
+    },
+    {
+      "word": "GRAVES",
+      "type": 0
+    },
+    {
+      "word": "MÁGICA",
+      "type": 0
+    },
+    {
+      "word": "MÁGICO",
+      "type": 0
+    },
+    {
+      "word": "VEGANO",
+      "type": 0
+    },
+    {
+      "word": "CAMINAR",
+      "type": 0
+    }
+  ],
+  "letters": "SEVG,ÁGAR,MINN,ACOR",
+  "obstacles": []
 }

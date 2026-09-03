@@ -1,73 +1,255 @@
-﻿{
-    "id":  1011,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CIMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MICO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "VILA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CIVIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIVRE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SEIVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SERVIL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CONSERVA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EIVA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERVAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OCRE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SEIL,NRVA,OCIM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1011,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALF",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "ANJO",
+      "type": 0
+    },
+    {
+      "word": "MAYA",
+      "type": 0
+    },
+    {
+      "word": "NOTA",
+      "type": 0
+    },
+    {
+      "word": "TATE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "ELO",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAY",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "LON",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "MAY",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "TOY",
+      "type": 0
+    },
+    {
+      "word": "ALLY",
+      "type": 0
+    },
+    {
+      "word": "AMAL",
+      "type": 0
+    },
+    {
+      "word": "ATOL",
+      "type": 0
+    },
+    {
+      "word": "ELAM",
+      "type": 0
+    },
+    {
+      "word": "ELON",
+      "type": 0
+    },
+    {
+      "word": "ETON",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "LETO",
+      "type": 0
+    },
+    {
+      "word": "LONA",
+      "type": 0
+    },
+    {
+      "word": "LOTE",
+      "type": 0
+    },
+    {
+      "word": "LYON",
+      "type": 0
+    },
+    {
+      "word": "MALL",
+      "type": 0
+    },
+    {
+      "word": "MAYO",
+      "type": 0
+    },
+    {
+      "word": "NATE",
+      "type": 0
+    },
+    {
+      "word": "NATO",
+      "type": 0
+    },
+    {
+      "word": "NOLA",
+      "type": 0
+    },
+    {
+      "word": "NOTE",
+      "type": 0
+    },
+    {
+      "word": "ONLY",
+      "type": 0
+    },
+    {
+      "word": "OTAN",
+      "type": 0
+    },
+    {
+      "word": "TANO",
+      "type": 0
+    },
+    {
+      "word": "TATO",
+      "type": 0
+    },
+    {
+      "word": "TELA",
+      "type": 0
+    },
+    {
+      "word": "TOLA",
+      "type": 0
+    },
+    {
+      "word": "TONA",
+      "type": 0
+    },
+    {
+      "word": "TOYA",
+      "type": 0
+    },
+    {
+      "word": "YALE",
+      "type": 0
+    },
+    {
+      "word": "YAMA",
+      "type": 0
+    },
+    {
+      "word": "ANOTE",
+      "type": 0
+    },
+    {
+      "word": "ETANOL",
+      "type": 0
+    },
+    {
+      "word": "MALETA",
+      "type": 0
+    }
+  ],
+  "letters": "ETAT,LONJ,AYLO,MALF",
+  "obstacles": []
 }

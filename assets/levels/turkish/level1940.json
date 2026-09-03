@@ -1,81 +1,243 @@
-﻿{
-    "id":  1940,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARTI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOTA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARTI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TARTI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARATON",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "MARON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOTAM",
-                            "type":  2
-                        },
-                        {
-                            "word":  "OTAMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TON",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MAI,ART,TON",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1940,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABD",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "EVİ",
+      "type": 0
+    },
+    {
+      "word": "GRİ",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "AMİN",
+      "type": 0
+    },
+    {
+      "word": "DERT",
+      "type": 0
+    },
+    {
+      "word": "EDİN",
+      "type": 0
+    },
+    {
+      "word": "EVİN",
+      "type": 0
+    },
+    {
+      "word": "OKUL",
+      "type": 0
+    },
+    {
+      "word": "EVİNİ",
+      "type": 0
+    },
+    {
+      "word": "UHTRED",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "AOİ",
+      "type": 0
+    },
+    {
+      "word": "BAM",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BAO",
+      "type": 0
+    },
+    {
+      "word": "DİN",
+      "type": 0
+    },
+    {
+      "word": "DİO",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "KOL",
+      "type": 0
+    },
+    {
+      "word": "LUK",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "MİN",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAO",
+      "type": 0
+    },
+    {
+      "word": "NİM",
+      "type": 0
+    },
+    {
+      "word": "OKU",
+      "type": 0
+    },
+    {
+      "word": "OLU",
+      "type": 0
+    },
+    {
+      "word": "RİM",
+      "type": 0
+    },
+    {
+      "word": "RİN",
+      "type": 0
+    },
+    {
+      "word": "VİN",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "İNİ",
+      "type": 0
+    },
+    {
+      "word": "AMİR",
+      "type": 0
+    },
+    {
+      "word": "BANG",
+      "type": 0
+    },
+    {
+      "word": "DEVİ",
+      "type": 0
+    },
+    {
+      "word": "DİNA",
+      "type": 0
+    },
+    {
+      "word": "DİNG",
+      "type": 0
+    },
+    {
+      "word": "DİNİ",
+      "type": 0
+    },
+    {
+      "word": "KOLU",
+      "type": 0
+    },
+    {
+      "word": "MANİ",
+      "type": 0
+    },
+    {
+      "word": "MİNA",
+      "type": 0
+    },
+    {
+      "word": "MİNG",
+      "type": 0
+    },
+    {
+      "word": "MİNİ",
+      "type": 0
+    },
+    {
+      "word": "NAMİ",
+      "type": 0
+    },
+    {
+      "word": "OLUK",
+      "type": 0
+    },
+    {
+      "word": "RİNA",
+      "type": 0
+    },
+    {
+      "word": "RİNG",
+      "type": 0
+    },
+    {
+      "word": "İMAN",
+      "type": 0
+    },
+    {
+      "word": "DEVİN",
+      "type": 0
+    },
+    {
+      "word": "RİNGDE",
+      "type": 0
+    }
+  ],
+  "letters": "EDMİR,RBANG,TKOİD,HULVE",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

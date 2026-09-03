@@ -1,89 +1,267 @@
-﻿{
-    "id":  1265,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACNE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ANCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PENA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PANDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PENCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PESCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PESCADO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ENCAVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PANCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PANDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SENA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SENDA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SCAV,ENDO,PAZC",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1265,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CNA",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SEU",
+      "type": 0
+    },
+    {
+      "word": "VAN",
+      "type": 0
+    },
+    {
+      "word": "VIA",
+      "type": 0
+    },
+    {
+      "word": "ALVO",
+      "type": 0
+    },
+    {
+      "word": "SEUS",
+      "type": 0
+    },
+    {
+      "word": "VAZIA",
+      "type": 0
+    },
+    {
+      "word": "ALEGRE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ANS",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "AVI",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GEO",
+      "type": 0
+    },
+    {
+      "word": "GRO",
+      "type": 0
+    },
+    {
+      "word": "IVO",
+      "type": 0
+    },
+    {
+      "word": "LAI",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "LEO",
+      "type": 0
+    },
+    {
+      "word": "NAZ",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "OSS",
+      "type": 0
+    },
+    {
+      "word": "OVA",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SAV",
+      "type": 0
+    },
+    {
+      "word": "SOE",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "USS",
+      "type": 0
+    },
+    {
+      "word": "VOE",
+      "type": 0
+    },
+    {
+      "word": "VOS",
+      "type": 0
+    },
+    {
+      "word": "ZAN",
+      "type": 0
+    },
+    {
+      "word": "ALVA",
+      "type": 0
+    },
+    {
+      "word": "AZIA",
+      "type": 0
+    },
+    {
+      "word": "EROS",
+      "type": 0
+    },
+    {
+      "word": "GELA",
+      "type": 0
+    },
+    {
+      "word": "IVAN",
+      "type": 0
+    },
+    {
+      "word": "NAZI",
+      "type": 0
+    },
+    {
+      "word": "OVAS",
+      "type": 0
+    },
+    {
+      "word": "ROSA",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    },
+    {
+      "word": "ROSS",
+      "type": 0
+    },
+    {
+      "word": "SANS",
+      "type": 0
+    },
+    {
+      "word": "SAVI",
+      "type": 0
+    },
+    {
+      "word": "SOVA",
+      "type": 0
+    },
+    {
+      "word": "VANS",
+      "type": 0
+    },
+    {
+      "word": "VASO",
+      "type": 0
+    },
+    {
+      "word": "VOSS",
+      "type": 0
+    },
+    {
+      "word": "ZIVA",
+      "type": 0
+    },
+    {
+      "word": "ALVOS",
+      "type": 0
+    },
+    {
+      "word": "GROSS",
+      "type": 0
+    },
+    {
+      "word": "SERGE",
+      "type": 0
+    },
+    {
+      "word": "ALEGRO",
+      "type": 0
+    },
+    {
+      "word": "ALEGRES",
+      "type": 0
+    }
+  ],
+  "letters": "AIZC,LVAN,EOSS,GREU",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

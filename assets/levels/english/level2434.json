@@ -1,97 +1,243 @@
-﻿{
-    "id":  2434,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DINE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "IDEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NODE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NATION",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DONATION",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ION",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NANO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ONNEA,INIDR,TANOA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2434,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FLU",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "HAS",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "POP",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "UPS",
+      "type": 0
+    },
+    {
+      "word": "LOOP",
+      "type": 0
+    },
+    {
+      "word": "POOL",
+      "type": 0
+    },
+    {
+      "word": "VISA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "NOO",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "PAP",
+      "type": 0
+    },
+    {
+      "word": "PSI",
+      "type": 0
+    },
+    {
+      "word": "PUL",
+      "type": 0
+    },
+    {
+      "word": "PUN",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "UNS",
+      "type": 0
+    },
+    {
+      "word": "VIE",
+      "type": 0
+    },
+    {
+      "word": "VIS",
+      "type": 0
+    },
+    {
+      "word": "ENOL",
+      "type": 0
+    },
+    {
+      "word": "GENS",
+      "type": 0
+    },
+    {
+      "word": "GENU",
+      "type": 0
+    },
+    {
+      "word": "HASP",
+      "type": 0
+    },
+    {
+      "word": "LONE",
+      "type": 0
+    },
+    {
+      "word": "LUNE",
+      "type": 0
+    },
+    {
+      "word": "OOPS",
+      "type": 0
+    },
+    {
+      "word": "PAPS",
+      "type": 0
+    },
+    {
+      "word": "POON",
+      "type": 0
+    },
+    {
+      "word": "POPS",
+      "type": 0
+    },
+    {
+      "word": "PUNS",
+      "type": 0
+    },
+    {
+      "word": "RASP",
+      "type": 0
+    },
+    {
+      "word": "SARI",
+      "type": 0
+    },
+    {
+      "word": "SONE",
+      "type": 0
+    },
+    {
+      "word": "SONS",
+      "type": 0
+    },
+    {
+      "word": "SPUN",
+      "type": 0
+    },
+    {
+      "word": "LOOPS",
+      "type": 0
+    },
+    {
+      "word": "POONS",
+      "type": 0
+    },
+    {
+      "word": "SNOOP",
+      "type": 0
+    },
+    {
+      "word": "SPOOL",
+      "type": 0
+    },
+    {
+      "word": "SPOON",
+      "type": 0
+    },
+    {
+      "word": "SNOOPS",
+      "type": 0
+    },
+    {
+      "word": "SONSIE",
+      "type": 0
+    },
+    {
+      "word": "SPOONS",
+      "type": 0
+    }
+  ],
+  "letters": "HPULF,ASNOS,RIEOP,OVGPA",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

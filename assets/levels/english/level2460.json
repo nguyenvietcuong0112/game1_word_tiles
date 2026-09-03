@@ -1,117 +1,223 @@
-﻿{
-    "id":  2460,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LION",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CATER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LITER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VACATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VACATION",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CAIRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CATE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "CATION",
-                            "type":  1
-                        },
-                        {
-                            "word":  "CRIER",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ION",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LITE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TORI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OITER,NLAIT,VACRO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2460,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BIT",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "FEE",
+      "type": 0
+    },
+    {
+      "word": "GET",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "LIB",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "SIC",
+      "type": 0
+    },
+    {
+      "word": "VIS",
+      "type": 0
+    },
+    {
+      "word": "FEEL",
+      "type": 0
+    },
+    {
+      "word": "SITE",
+      "type": 0
+    },
+    {
+      "word": "SCALE",
+      "type": 0
+    },
+    {
+      "word": "SITES",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BIS",
+      "type": 0
+    },
+    {
+      "word": "CAB",
+      "type": 0
+    },
+    {
+      "word": "CIS",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "EFT",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LAC",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "LIT",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "SIB",
+      "type": 0
+    },
+    {
+      "word": "SIS",
+      "type": 0
+    },
+    {
+      "word": "SIT",
+      "type": 0
+    },
+    {
+      "word": "SOS",
+      "type": 0
+    },
+    {
+      "word": "TEG",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "TIL",
+      "type": 0
+    },
+    {
+      "word": "TIS",
+      "type": 0
+    },
+    {
+      "word": "ALEE",
+      "type": 0
+    },
+    {
+      "word": "ALIT",
+      "type": 0
+    },
+    {
+      "word": "BALE",
+      "type": 0
+    },
+    {
+      "word": "BILE",
+      "type": 0
+    },
+    {
+      "word": "BISE",
+      "type": 0
+    },
+    {
+      "word": "BITE",
+      "type": 0
+    },
+    {
+      "word": "IBIS",
+      "type": 0
+    },
+    {
+      "word": "LACS",
+      "type": 0
+    },
+    {
+      "word": "LIEF",
+      "type": 0
+    },
+    {
+      "word": "LITE",
+      "type": 0
+    },
+    {
+      "word": "SCAB",
+      "type": 0
+    },
+    {
+      "word": "SICS",
+      "type": 0
+    },
+    {
+      "word": "TILE",
+      "type": 0
+    },
+    {
+      "word": "ALIBI",
+      "type": 0
+    },
+    {
+      "word": "BITES",
+      "type": 0
+    },
+    {
+      "word": "COSET",
+      "type": 0
+    },
+    {
+      "word": "ELITE",
+      "type": 0
+    },
+    {
+      "word": "ALIBIS",
+      "type": 0
+    },
+    {
+      "word": "ELITES",
+      "type": 0
+    }
+  ],
+  "letters": "ELACS,EIBCI,FTISV,GESOC",
+  "obstacles": []
 }

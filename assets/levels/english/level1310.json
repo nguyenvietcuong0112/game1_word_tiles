@@ -1,69 +1,163 @@
-﻿{
-    "id":  1310,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHANT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "NIECE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CHANCE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANTE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FEINT",
-                            "type":  2
-                        },
-                        {
-                            "word":  "INTEL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LEANT",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "LETOE,HANIE,CECEF",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1310,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "ICE",
+      "type": 0
+    },
+    {
+      "word": "WIN",
+      "type": 0
+    },
+    {
+      "word": "AGED",
+      "type": 0
+    },
+    {
+      "word": "WINS",
+      "type": 0
+    },
+    {
+      "word": "IMAGE",
+      "type": 0
+    },
+    {
+      "word": "MAGIC",
+      "type": 0
+    },
+    {
+      "word": "SEISMIC",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIS",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "GAM",
+      "type": 0
+    },
+    {
+      "word": "GED",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "ISM",
+      "type": 0
+    },
+    {
+      "word": "MAG",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "MIG",
+      "type": 0
+    },
+    {
+      "word": "SAG",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "GAMS",
+      "type": 0
+    },
+    {
+      "word": "GASP",
+      "type": 0
+    },
+    {
+      "word": "ICED",
+      "type": 0
+    },
+    {
+      "word": "MAGE",
+      "type": 0
+    },
+    {
+      "word": "MAGI",
+      "type": 0
+    },
+    {
+      "word": "MICE",
+      "type": 0
+    },
+    {
+      "word": "SAGE",
+      "type": 0
+    },
+    {
+      "word": "SEIS",
+      "type": 0
+    },
+    {
+      "word": "AMICE",
+      "type": 0
+    },
+    {
+      "word": "DEGAS",
+      "type": 0
+    },
+    {
+      "word": "GAMIC",
+      "type": 0
+    },
+    {
+      "word": "SEISM",
+      "type": 0
+    },
+    {
+      "word": "DEGAMI",
+      "type": 0
+    },
+    {
+      "word": "IMAGED",
+      "type": 0
+    }
+  ],
+  "letters": "DECW,PGII,SAMN,EISS",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

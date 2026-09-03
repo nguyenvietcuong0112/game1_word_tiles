@@ -1,122 +1,199 @@
-﻿{
-    "id":  1945,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FALCI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İFADE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ADALE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ADEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AFAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ALMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DALMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İFA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAF",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAADA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "İAMI,FALC,ADEM",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1945,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "DÜN",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MİŞ",
+      "type": 0
+    },
+    {
+      "word": "ATMA",
+      "type": 0
+    },
+    {
+      "word": "DANA",
+      "type": 0
+    },
+    {
+      "word": "GRAM",
+      "type": 0
+    },
+    {
+      "word": "ASKER",
+      "type": 0
+    },
+    {
+      "word": "ATMAK",
+      "type": 0
+    },
+    {
+      "word": "DÜNYA",
+      "type": 0
+    },
+    {
+      "word": "KAMERA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMT",
+      "type": 0
+    },
+    {
+      "word": "ANY",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "ATM",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "YAA",
+      "type": 0
+    },
+    {
+      "word": "YAS",
+      "type": 0
+    },
+    {
+      "word": "ŞAN",
+      "type": 0
+    },
+    {
+      "word": "ANAM",
+      "type": 0
+    },
+    {
+      "word": "ANYA",
+      "type": 0
+    },
+    {
+      "word": "ARTA",
+      "type": 0
+    },
+    {
+      "word": "AYNA",
+      "type": 0
+    },
+    {
+      "word": "MAKE",
+      "type": 0
+    },
+    {
+      "word": "MANA",
+      "type": 0
+    },
+    {
+      "word": "MANY",
+      "type": 0
+    },
+    {
+      "word": "MART",
+      "type": 0
+    },
+    {
+      "word": "MERT",
+      "type": 0
+    },
+    {
+      "word": "RANA",
+      "type": 0
+    },
+    {
+      "word": "TREK",
+      "type": 0
+    },
+    {
+      "word": "YMİŞ",
+      "type": 0
+    },
+    {
+      "word": "MAREK",
+      "type": 0
+    },
+    {
+      "word": "MARTA",
+      "type": 0
+    },
+    {
+      "word": "KAMERAM",
+      "type": 0
+    }
+  ],
+  "letters": "İMSKA,ŞYAEM,ANART,DÜMGA",
+  "obstacles": []
 }

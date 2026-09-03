@@ -1,101 +1,167 @@
-﻿{
-    "id":  1175,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CLÃ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DADO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATADA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TOMATADA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMADA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMATO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ATADO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DATADO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DOMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DOTAL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LATO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOTA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "TADAD,OMATO,DCLÃS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1175,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "BIP",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "PRA",
+      "type": 0
+    },
+    {
+      "word": "AYLA",
+      "type": 0
+    },
+    {
+      "word": "CAPA",
+      "type": 0
+    },
+    {
+      "word": "KIRA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "ACP",
+      "type": 0
+    },
+    {
+      "word": "ALY",
+      "type": 0
+    },
+    {
+      "word": "APA",
+      "type": 0
+    },
+    {
+      "word": "APP",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "CBI",
+      "type": 0
+    },
+    {
+      "word": "IIB",
+      "type": 0
+    },
+    {
+      "word": "LAP",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "PIB",
+      "type": 0
+    },
+    {
+      "word": "PPA",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "TRI",
+      "type": 0
+    },
+    {
+      "word": "CAPP",
+      "type": 0
+    },
+    {
+      "word": "PARI",
+      "type": 0
+    },
+    {
+      "word": "PART",
+      "type": 0
+    },
+    {
+      "word": "RAPA",
+      "type": 0
+    },
+    {
+      "word": "TRAP",
+      "type": 0
+    },
+    {
+      "word": "TRAV",
+      "type": 0
+    },
+    {
+      "word": "APART",
+      "type": 0
+    },
+    {
+      "word": "TRAPP",
+      "type": 0
+    },
+    {
+      "word": "TRAVA",
+      "type": 0
+    }
+  ],
+  "letters": "AAYL,VAPA,TRPC,KIIB",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

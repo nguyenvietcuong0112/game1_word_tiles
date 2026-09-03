@@ -1,89 +1,227 @@
-﻿{
-    "id":  2411,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ELK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CROP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PORK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PROP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SINK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPRINKLE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SPRINKLER",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KRIS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RINK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NKLE,IROR,SPPC",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2411,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DIG",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "SHY",
+      "type": 0
+    },
+    {
+      "word": "BUMP",
+      "type": 0
+    },
+    {
+      "word": "BUSH",
+      "type": 0
+    },
+    {
+      "word": "EDIT",
+      "type": 0
+    },
+    {
+      "word": "FISH",
+      "type": 0
+    },
+    {
+      "word": "MUST",
+      "type": 0
+    },
+    {
+      "word": "CREDIT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BUM",
+      "type": 0
+    },
+    {
+      "word": "BUS",
+      "type": 0
+    },
+    {
+      "word": "CUB",
+      "type": 0
+    },
+    {
+      "word": "CUM",
+      "type": 0
+    },
+    {
+      "word": "DIT",
+      "type": 0
+    },
+    {
+      "word": "GID",
+      "type": 0
+    },
+    {
+      "word": "GIT",
+      "type": 0
+    },
+    {
+      "word": "HEP",
+      "type": 0
+    },
+    {
+      "word": "MUS",
+      "type": 0
+    },
+    {
+      "word": "PEH",
+      "type": 0
+    },
+    {
+      "word": "REP",
+      "type": 0
+    },
+    {
+      "word": "SUB",
+      "type": 0
+    },
+    {
+      "word": "SUM",
+      "type": 0
+    },
+    {
+      "word": "UMP",
+      "type": 0
+    },
+    {
+      "word": "BUST",
+      "type": 0
+    },
+    {
+      "word": "CUSP",
+      "type": 0
+    },
+    {
+      "word": "DERM",
+      "type": 0
+    },
+    {
+      "word": "DIGS",
+      "type": 0
+    },
+    {
+      "word": "DITS",
+      "type": 0
+    },
+    {
+      "word": "FIST",
+      "type": 0
+    },
+    {
+      "word": "GITS",
+      "type": 0
+    },
+    {
+      "word": "MUSH",
+      "type": 0
+    },
+    {
+      "word": "PEHS",
+      "type": 0
+    },
+    {
+      "word": "REPS",
+      "type": 0
+    },
+    {
+      "word": "SUMP",
+      "type": 0
+    },
+    {
+      "word": "TIDE",
+      "type": 0
+    },
+    {
+      "word": "BUSHY",
+      "type": 0
+    },
+    {
+      "word": "BUSTS",
+      "type": 0
+    },
+    {
+      "word": "CUSHY",
+      "type": 0
+    },
+    {
+      "word": "EDITS",
+      "type": 0
+    },
+    {
+      "word": "FISHY",
+      "type": 0
+    },
+    {
+      "word": "FISTS",
+      "type": 0
+    },
+    {
+      "word": "MUSHY",
+      "type": 0
+    },
+    {
+      "word": "MUSTS",
+      "type": 0
+    },
+    {
+      "word": "SUCRE",
+      "type": 0
+    },
+    {
+      "word": "USHER",
+      "type": 0
+    },
+    {
+      "word": "BUSHER",
+      "type": 0
+    },
+    {
+      "word": "FISHER",
+      "type": 0
+    },
+    {
+      "word": "MUSHER",
+      "type": 0
+    },
+    {
+      "word": "CREDITS",
+      "type": 0
+    },
+    {
+      "word": "FISHERY",
+      "type": 0
+    }
+  ],
+  "letters": "PBPER,MUSHY,RCTSI,EDIGF",
+  "obstacles": []
 }

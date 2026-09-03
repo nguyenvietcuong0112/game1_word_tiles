@@ -1,53 +1,303 @@
-﻿{
-    "id":  2005,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "APT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AUDIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AUDIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAPAYA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "PAPA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAD",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "YAAOE,APTIT,PAUDA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2005,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADS",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "DID",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "POLL",
+      "type": 0
+    },
+    {
+      "word": "READ",
+      "type": 0
+    },
+    {
+      "word": "REAL",
+      "type": 0
+    },
+    {
+      "word": "RISE",
+      "type": 0
+    },
+    {
+      "word": "SEND",
+      "type": 0
+    },
+    {
+      "word": "RAPID",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DIP",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "IDS",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LOP",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "POL",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SAD",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "ALLS",
+      "type": 0
+    },
+    {
+      "word": "ALPS",
+      "type": 0
+    },
+    {
+      "word": "DALS",
+      "type": 0
+    },
+    {
+      "word": "ENDS",
+      "type": 0
+    },
+    {
+      "word": "IRES",
+      "type": 0
+    },
+    {
+      "word": "LADS",
+      "type": 0
+    },
+    {
+      "word": "LASS",
+      "type": 0
+    },
+    {
+      "word": "LOPS",
+      "type": 0
+    },
+    {
+      "word": "NESS",
+      "type": 0
+    },
+    {
+      "word": "OLLA",
+      "type": 0
+    },
+    {
+      "word": "PARR",
+      "type": 0
+    },
+    {
+      "word": "REND",
+      "type": 0
+    },
+    {
+      "word": "SADI",
+      "type": 0
+    },
+    {
+      "word": "SALL",
+      "type": 0
+    },
+    {
+      "word": "SALP",
+      "type": 0
+    },
+    {
+      "word": "SALS",
+      "type": 0
+    },
+    {
+      "word": "SEAL",
+      "type": 0
+    },
+    {
+      "word": "SEAS",
+      "type": 0
+    },
+    {
+      "word": "SIRE",
+      "type": 0
+    },
+    {
+      "word": "APNEA",
+      "type": 0
+    },
+    {
+      "word": "ARRIS",
+      "type": 0
+    },
+    {
+      "word": "OLLAS",
+      "type": 0
+    },
+    {
+      "word": "POLLS",
+      "type": 0
+    },
+    {
+      "word": "READS",
+      "type": 0
+    },
+    {
+      "word": "REALS",
+      "type": 0
+    },
+    {
+      "word": "RENDS",
+      "type": 0
+    },
+    {
+      "word": "RISEN",
+      "type": 0
+    },
+    {
+      "word": "SALSA",
+      "type": 0
+    },
+    {
+      "word": "SEALS",
+      "type": 0
+    },
+    {
+      "word": "SENDS",
+      "type": 0
+    },
+    {
+      "word": "SIREN",
+      "type": 0
+    },
+    {
+      "word": "SIRRA",
+      "type": 0
+    },
+    {
+      "word": "APNEAL",
+      "type": 0
+    },
+    {
+      "word": "APNEAS",
+      "type": 0
+    },
+    {
+      "word": "RAPIDS",
+      "type": 0
+    },
+    {
+      "word": "SALSAS",
+      "type": 0
+    },
+    {
+      "word": "SENDAL",
+      "type": 0
+    },
+    {
+      "word": "SENDALS",
+      "type": 0
+    }
+  ],
+  "letters": "SDIPA,ASDNR,LLAER,OPSSI",
+  "obstacles": []
 }

@@ -1,97 +1,107 @@
-﻿{
-    "id":  1485,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "АЗЫ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛАЗ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТАЗ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛУЗА",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ЭТАН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "НАЛЁТ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АЗУ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЗАЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЗАЛЁТ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ЛАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛАТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛЁТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НАЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТАЗЫ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТАЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "УЗА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "УЗЫ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "УЛАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "УЛЁТ",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ЭТА",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ЭНЫ,ТАЗ,ЁЛУ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1485,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "БАЛ",
+      "type": 0
+    },
+    {
+      "word": "ДАР",
+      "type": 0
+    },
+    {
+      "word": "ЗАЛ",
+      "type": 0
+    },
+    {
+      "word": "РАД",
+      "type": 0
+    },
+    {
+      "word": "СУК",
+      "type": 0
+    },
+    {
+      "word": "УФФ",
+      "type": 0
+    },
+    {
+      "word": "ФУХ",
+      "type": 0
+    },
+    {
+      "word": "БАЗА",
+      "type": 0
+    },
+    {
+      "word": "БАЛА",
+      "type": 0
+    },
+    {
+      "word": "ЗАЛА",
+      "type": 0
+    },
+    {
+      "word": "РАДИ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АДИ",
+      "type": 0
+    },
+    {
+      "word": "АЛА",
+      "type": 0
+    },
+    {
+      "word": "АРК",
+      "type": 0
+    },
+    {
+      "word": "БАЗ",
+      "type": 0
+    },
+    {
+      "word": "ИДА",
+      "type": 0
+    },
+    {
+      "word": "ЛАУ",
+      "type": 0
+    },
+    {
+      "word": "ДАРК",
+      "type": 0
+    },
+    {
+      "word": "ЛАБС",
+      "type": 0
+    },
+    {
+      "word": "УКРАДИ",
+      "type": 0
+    }
+  ],
+  "letters": "РКЗА,АУАЛ,ДСБХ,ИФФУ",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

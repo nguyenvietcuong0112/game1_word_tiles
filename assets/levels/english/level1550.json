@@ -1,73 +1,231 @@
-﻿{
-    "id":  1550,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONIC",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MOVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVERT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INVERT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONVERT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AEON",
-                            "type":  1
-                        },
-                        {
-                            "word":  "CON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOAT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TMOAT,ICVER,WINOC",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1550,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "KIT",
+      "type": 0
+    },
+    {
+      "word": "OUT",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "BOUT",
+      "type": 0
+    },
+    {
+      "word": "ITEM",
+      "type": 0
+    },
+    {
+      "word": "MALE",
+      "type": 0
+    },
+    {
+      "word": "FEMALE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "EME",
+      "type": 0
+    },
+    {
+      "word": "FEE",
+      "type": 0
+    },
+    {
+      "word": "FEM",
+      "type": 0
+    },
+    {
+      "word": "FET",
+      "type": 0
+    },
+    {
+      "word": "FIT",
+      "type": 0
+    },
+    {
+      "word": "KIF",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SKI",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "SOU",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "UTS",
+      "type": 0
+    },
+    {
+      "word": "ALEE",
+      "type": 0
+    },
+    {
+      "word": "ALES",
+      "type": 0
+    },
+    {
+      "word": "BOSK",
+      "type": 0
+    },
+    {
+      "word": "FEME",
+      "type": 0
+    },
+    {
+      "word": "FETS",
+      "type": 0
+    },
+    {
+      "word": "FITS",
+      "type": 0
+    },
+    {
+      "word": "KITE",
+      "type": 0
+    },
+    {
+      "word": "KITS",
+      "type": 0
+    },
+    {
+      "word": "LAME",
+      "type": 0
+    },
+    {
+      "word": "OUTS",
+      "type": 0
+    },
+    {
+      "word": "SKIT",
+      "type": 0
+    },
+    {
+      "word": "SOBS",
+      "type": 0
+    },
+    {
+      "word": "SOUS",
+      "type": 0
+    },
+    {
+      "word": "STEM",
+      "type": 0
+    },
+    {
+      "word": "BOUSE",
+      "type": 0
+    },
+    {
+      "word": "BOUTS",
+      "type": 0
+    },
+    {
+      "word": "FETUS",
+      "type": 0
+    },
+    {
+      "word": "MALES",
+      "type": 0
+    },
+    {
+      "word": "OUSEL",
+      "type": 0
+    },
+    {
+      "word": "SKITE",
+      "type": 0
+    },
+    {
+      "word": "SOUSE",
+      "type": 0
+    },
+    {
+      "word": "FEMALES",
+      "type": 0
+    }
+  ],
+  "letters": "EMAL,FEEE,ITUS,KSOB",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

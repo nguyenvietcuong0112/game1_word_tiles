@@ -1,85 +1,203 @@
-﻿{
-    "id":  620,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAZE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİJİTAL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BELİT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "JİLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TALİ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ZAT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AJİT,DİLA,ABEZ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 620,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "KAL",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "KUM",
+      "type": 0
+    },
+    {
+      "word": "MAX",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "ANDA",
+      "type": 0
+    },
+    {
+      "word": "ANLAT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKU",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "LAK",
+      "type": 0
+    },
+    {
+      "word": "LUK",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NDA",
+      "type": 0
+    },
+    {
+      "word": "TAA",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "UMA",
+      "type": 0
+    },
+    {
+      "word": "AKAN",
+      "type": 0
+    },
+    {
+      "word": "ANLA",
+      "type": 0
+    },
+    {
+      "word": "ATAK",
+      "type": 0
+    },
+    {
+      "word": "ATAN",
+      "type": 0
+    },
+    {
+      "word": "DATA",
+      "type": 0
+    },
+    {
+      "word": "KAAN",
+      "type": 0
+    },
+    {
+      "word": "KAMU",
+      "type": 0
+    },
+    {
+      "word": "KANA",
+      "type": 0
+    },
+    {
+      "word": "KATA",
+      "type": 0
+    },
+    {
+      "word": "KUMA",
+      "type": 0
+    },
+    {
+      "word": "LUKA",
+      "type": 0
+    },
+    {
+      "word": "ULAK",
+      "type": 0
+    },
+    {
+      "word": "ATANA",
+      "type": 0
+    },
+    {
+      "word": "ATTAN",
+      "type": 0
+    },
+    {
+      "word": "KANDA",
+      "type": 0
+    },
+    {
+      "word": "KATTA",
+      "type": 0
+    },
+    {
+      "word": "MAKUL",
+      "type": 0
+    },
+    {
+      "word": "TAKAN",
+      "type": 0
+    },
+    {
+      "word": "KATTAN",
+      "type": 0
+    },
+    {
+      "word": "ANLATAN",
+      "type": 0
+    },
+    {
+      "word": "ANLATANA",
+      "type": 0
+    }
+  ],
+  "letters": "ATAN,DTAL,NAKU,AXAM",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,65 +1,119 @@
-﻿{
-    "id":  2184,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AHU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATKI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KORU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRAVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HURAFE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "FAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VAHEI,ORUFK,KBRAT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2184,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "KIÇ",
+      "type": 0
+    },
+    {
+      "word": "TAÇ",
+      "type": 0
+    },
+    {
+      "word": "YEM",
+      "type": 0
+    },
+    {
+      "word": "ÇIK",
+      "type": 0
+    },
+    {
+      "word": "ÇİŞ",
+      "type": 0
+    },
+    {
+      "word": "AÇIN",
+      "type": 0
+    },
+    {
+      "word": "DİYE",
+      "type": 0
+    },
+    {
+      "word": "AÇIĞA",
+      "type": 0
+    },
+    {
+      "word": "DÖVME",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AVM",
+      "type": 0
+    },
+    {
+      "word": "AÇI",
+      "type": 0
+    },
+    {
+      "word": "AĞI",
+      "type": 0
+    },
+    {
+      "word": "DÖV",
+      "type": 0
+    },
+    {
+      "word": "ÇAT",
+      "type": 0
+    },
+    {
+      "word": "ÇAĞ",
+      "type": 0
+    },
+    {
+      "word": "ÇIĞ",
+      "type": 0
+    },
+    {
+      "word": "ATKI",
+      "type": 0
+    },
+    {
+      "word": "AĞIN",
+      "type": 0
+    },
+    {
+      "word": "TAVA",
+      "type": 0
+    },
+    {
+      "word": "ÇAĞI",
+      "type": 0
+    },
+    {
+      "word": "ÇAĞIN",
+      "type": 0
+    },
+    {
+      "word": "DÖVMEYİ",
+      "type": 0
+    }
+  ],
+  "letters": "YEMDŞ,İAVÖİ,DÇATÇ,NIĞKI",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,81 +1,263 @@
-﻿{
-    "id":  2221,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALCOHOL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NET",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CONE,LHAT,AOLO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2221,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DRY",
+      "type": 0
+    },
+    {
+      "word": "PLY",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SAW",
+      "type": 0
+    },
+    {
+      "word": "WAS",
+      "type": 0
+    },
+    {
+      "word": "WEB",
+      "type": 0
+    },
+    {
+      "word": "WED",
+      "type": 0
+    },
+    {
+      "word": "BETA",
+      "type": 0
+    },
+    {
+      "word": "EAST",
+      "type": 0
+    },
+    {
+      "word": "FAST",
+      "type": 0
+    },
+    {
+      "word": "RELY",
+      "type": 0
+    },
+    {
+      "word": "SAFE",
+      "type": 0
+    },
+    {
+      "word": "SAFETY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "AWE",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "BET",
+      "type": 0
+    },
+    {
+      "word": "DEW",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "EWE",
+      "type": 0
+    },
+    {
+      "word": "FAS",
+      "type": 0
+    },
+    {
+      "word": "FET",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TAW",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TEW",
+      "type": 0
+    },
+    {
+      "word": "WAT",
+      "type": 0
+    },
+    {
+      "word": "WET",
+      "type": 0
+    },
+    {
+      "word": "WRY",
+      "type": 0
+    },
+    {
+      "word": "DEAF",
+      "type": 0
+    },
+    {
+      "word": "DEWS",
+      "type": 0
+    },
+    {
+      "word": "DREW",
+      "type": 0
+    },
+    {
+      "word": "ETAS",
+      "type": 0
+    },
+    {
+      "word": "EWER",
+      "type": 0
+    },
+    {
+      "word": "LYRE",
+      "type": 0
+    },
+    {
+      "word": "PLEB",
+      "type": 0
+    },
+    {
+      "word": "PLEW",
+      "type": 0
+    },
+    {
+      "word": "SATE",
+      "type": 0
+    },
+    {
+      "word": "STEW",
+      "type": 0
+    },
+    {
+      "word": "TEAS",
+      "type": 0
+    },
+    {
+      "word": "TEWS",
+      "type": 0
+    },
+    {
+      "word": "TYRE",
+      "type": 0
+    },
+    {
+      "word": "WAST",
+      "type": 0
+    },
+    {
+      "word": "WETS",
+      "type": 0
+    },
+    {
+      "word": "BERYL",
+      "type": 0
+    },
+    {
+      "word": "BETAS",
+      "type": 0
+    },
+    {
+      "word": "EASTS",
+      "type": 0
+    },
+    {
+      "word": "FASTS",
+      "type": 0
+    },
+    {
+      "word": "PLEBE",
+      "type": 0
+    },
+    {
+      "word": "REWET",
+      "type": 0
+    },
+    {
+      "word": "SAWER",
+      "type": 0
+    },
+    {
+      "word": "STEWS",
+      "type": 0
+    },
+    {
+      "word": "TASTE",
+      "type": 0
+    },
+    {
+      "word": "TAWER",
+      "type": 0
+    },
+    {
+      "word": "WASTE",
+      "type": 0
+    },
+    {
+      "word": "WASTS",
+      "type": 0
+    },
+    {
+      "word": "WEBER",
+      "type": 0
+    },
+    {
+      "word": "FASTED",
+      "type": 0
+    },
+    {
+      "word": "TASTED",
+      "type": 0
+    },
+    {
+      "word": "WASTED",
+      "type": 0
+    }
+  ],
+  "letters": "STSAT,AEWWE,FDREB,ETYLP",
+  "obstacles": []
 }

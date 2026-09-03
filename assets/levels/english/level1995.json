@@ -1,170 +1,247 @@
-﻿{
-    "id":  1995,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STUN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TUNE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BATON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BONUS",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BAGS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BATS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BOTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NESS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NUTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ONUS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STAB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STAG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAGS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TUNES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UNI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GSSE,ATUN,BONI",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  8,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1995,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "RAG",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "BALL",
+      "type": 0
+    },
+    {
+      "word": "BANG",
+      "type": 0
+    },
+    {
+      "word": "BRAD",
+      "type": 0
+    },
+    {
+      "word": "RARE",
+      "type": 0
+    },
+    {
+      "word": "CHANGE",
+      "type": 0
+    },
+    {
+      "word": "BARRIER",
+      "type": 0
+    },
+    {
+      "word": "CHANGED",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "BAH",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "DAG",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "GAD",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "GED",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "NAB",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "ABRI",
+      "type": 0
+    },
+    {
+      "word": "ALGA",
+      "type": 0
+    },
+    {
+      "word": "ARCH",
+      "type": 0
+    },
+    {
+      "word": "BARE",
+      "type": 0
+    },
+    {
+      "word": "BRAG",
+      "type": 0
+    },
+    {
+      "word": "BRED",
+      "type": 0
+    },
+    {
+      "word": "BRIE",
+      "type": 0
+    },
+    {
+      "word": "CRAB",
+      "type": 0
+    },
+    {
+      "word": "DARB",
+      "type": 0
+    },
+    {
+      "word": "DARE",
+      "type": 0
+    },
+    {
+      "word": "GARB",
+      "type": 0
+    },
+    {
+      "word": "HANG",
+      "type": 0
+    },
+    {
+      "word": "ANGER",
+      "type": 0
+    },
+    {
+      "word": "BARER",
+      "type": 0
+    },
+    {
+      "word": "BRIER",
+      "type": 0
+    },
+    {
+      "word": "CHANG",
+      "type": 0
+    },
+    {
+      "word": "GLARE",
+      "type": 0
+    },
+    {
+      "word": "LABRA",
+      "type": 0
+    },
+    {
+      "word": "LARCH",
+      "type": 0
+    },
+    {
+      "word": "REGNA",
+      "type": 0
+    },
+    {
+      "word": "ABRADE",
+      "type": 0
+    },
+    {
+      "word": "AGLARE",
+      "type": 0
+    },
+    {
+      "word": "BANGED",
+      "type": 0
+    },
+    {
+      "word": "BANGER",
+      "type": 0
+    },
+    {
+      "word": "HANGED",
+      "type": 0
+    },
+    {
+      "word": "HANGER",
+      "type": 0
+    },
+    {
+      "word": "BARCHAN",
+      "type": 0
+    },
+    {
+      "word": "CHANGER",
+      "type": 0
+    }
+  ],
+  "letters": "NABRI,GHCRE,ERBAR,DAGLL",
+  "obstacles": []
 }

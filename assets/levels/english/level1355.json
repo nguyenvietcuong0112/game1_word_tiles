@@ -1,77 +1,223 @@
-﻿{
-    "id":  1355,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CATER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RACER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VOICE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CATE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "IRATE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OVR,ICE,RAT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1355,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADS",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "ROW",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "SENSE",
+      "type": 0
+    },
+    {
+      "word": "WORSE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "HEM",
+      "type": 0
+    },
+    {
+      "word": "HEN",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "ODS",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "SAD",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "ANES",
+      "type": 0
+    },
+    {
+      "word": "HEMS",
+      "type": 0
+    },
+    {
+      "word": "HENS",
+      "type": 0
+    },
+    {
+      "word": "MADS",
+      "type": 0
+    },
+    {
+      "word": "MANE",
+      "type": 0
+    },
+    {
+      "word": "MANS",
+      "type": 0
+    },
+    {
+      "word": "MESA",
+      "type": 0
+    },
+    {
+      "word": "MODS",
+      "type": 0
+    },
+    {
+      "word": "OWSE",
+      "type": 0
+    },
+    {
+      "word": "ROWS",
+      "type": 0
+    },
+    {
+      "word": "SANE",
+      "type": 0
+    },
+    {
+      "word": "SANS",
+      "type": 0
+    },
+    {
+      "word": "SHES",
+      "type": 0
+    },
+    {
+      "word": "WORM",
+      "type": 0
+    },
+    {
+      "word": "MANES",
+      "type": 0
+    },
+    {
+      "word": "MANSE",
+      "type": 0
+    },
+    {
+      "word": "MENAD",
+      "type": 0
+    },
+    {
+      "word": "MENSE",
+      "type": 0
+    },
+    {
+      "word": "OWSEN",
+      "type": 0
+    },
+    {
+      "word": "WORMS",
+      "type": 0
+    },
+    {
+      "word": "MANSES",
+      "type": 0
+    },
+    {
+      "word": "MENADS",
+      "type": 0
+    },
+    {
+      "word": "MENSES",
+      "type": 0
+    },
+    {
+      "word": "SENSES",
+      "type": 0
+    },
+    {
+      "word": "WORSEN",
+      "type": 0
+    },
+    {
+      "word": "WORSENS",
+      "type": 0
+    }
+  ],
+  "letters": "ESHS,SNEM,DASR,OMWO",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

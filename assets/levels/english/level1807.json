@@ -1,103 +1,183 @@
-﻿{
-    "id":  1807,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MUST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TILE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STORM",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "COOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OILER",
-                            "type":  2
-                        },
-                        {
-                            "word":  "OUST",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ROTS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ROUST",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TILER",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TOR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MREL,UOOI,STCT",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1807,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SAGA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGA",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "DAG",
+      "type": 0
+    },
+    {
+      "word": "GAD",
+      "type": 0
+    },
+    {
+      "word": "OAT",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "SAD",
+      "type": 0
+    },
+    {
+      "word": "SAG",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "AGAS",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "DARE",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "OATS",
+      "type": 0
+    },
+    {
+      "word": "PATS",
+      "type": 0
+    },
+    {
+      "word": "SADE",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "STOA",
+      "type": 0
+    },
+    {
+      "word": "TOAD",
+      "type": 0
+    },
+    {
+      "word": "TONG",
+      "type": 0
+    },
+    {
+      "word": "TSAR",
+      "type": 0
+    },
+    {
+      "word": "DARES",
+      "type": 0
+    },
+    {
+      "word": "SADES",
+      "type": 0
+    },
+    {
+      "word": "STOAS",
+      "type": 0
+    },
+    {
+      "word": "STOAT",
+      "type": 0
+    },
+    {
+      "word": "TONGA",
+      "type": 0
+    },
+    {
+      "word": "TSADE",
+      "type": 0
+    },
+    {
+      "word": "STOATS",
+      "type": 0
+    },
+    {
+      "word": "TONGAS",
+      "type": 0
+    },
+    {
+      "word": "TSADES",
+      "type": 0
+    }
+  ],
+  "letters": "SSAR,TTDE,AOAS,PNGA",
+  "obstacles": []
 }

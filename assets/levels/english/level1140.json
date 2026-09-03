@@ -1,106 +1,167 @@
-﻿{
-    "id":  1140,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COMIC",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OLDEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DDEE,ALNC,COMI",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1140,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "BEG",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "LOW",
+      "type": 0
+    },
+    {
+      "word": "PSI",
+      "type": 0
+    },
+    {
+      "word": "WIT",
+      "type": 0
+    },
+    {
+      "word": "AGES",
+      "type": 0
+    },
+    {
+      "word": "ELSE",
+      "type": 0
+    },
+    {
+      "word": "GIVE",
+      "type": 0
+    },
+    {
+      "word": "SLOT",
+      "type": 0
+    },
+    {
+      "word": "SLOW",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "GAE",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OWE",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "TOW",
+      "type": 0
+    },
+    {
+      "word": "VEG",
+      "type": 0
+    },
+    {
+      "word": "VIG",
+      "type": 0
+    },
+    {
+      "word": "VIS",
+      "type": 0
+    },
+    {
+      "word": "WOT",
+      "type": 0
+    },
+    {
+      "word": "EGIS",
+      "type": 0
+    },
+    {
+      "word": "GLOW",
+      "type": 0
+    },
+    {
+      "word": "ISLE",
+      "type": 0
+    },
+    {
+      "word": "LOTI",
+      "type": 0
+    },
+    {
+      "word": "LOWE",
+      "type": 0
+    },
+    {
+      "word": "OLEA",
+      "type": 0
+    },
+    {
+      "word": "SLEW",
+      "type": 0
+    },
+    {
+      "word": "TOLE",
+      "type": 0
+    },
+    {
+      "word": "VIOL",
+      "type": 0
+    },
+    {
+      "word": "VISE",
+      "type": 0
+    },
+    {
+      "word": "AGLOW",
+      "type": 0
+    },
+    {
+      "word": "TOWEL",
+      "type": 0
+    },
+    {
+      "word": "VIOLS",
+      "type": 0
+    },
+    {
+      "word": "TOWELS",
+      "type": 0
+    }
+  ],
+  "letters": "BPVE,ESIG,GLOT,AEWI",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,134 +1,215 @@
-﻿{
-    "id":  1862,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "URN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BACK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RACK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "YARD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YARN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BACKYARD",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ABACK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BARD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DRAB",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DRAY",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RUDD",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KYUD,CARD,ABNO",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  10,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1862,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FAR",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "VIS",
+      "type": 0
+    },
+    {
+      "word": "DISC",
+      "type": 0
+    },
+    {
+      "word": "EDIT",
+      "type": 0
+    },
+    {
+      "word": "SIDE",
+      "type": 0
+    },
+    {
+      "word": "DRAFT",
+      "type": 0
+    },
+    {
+      "word": "INSIDE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AFT",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "DIT",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "FAS",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "OAR",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "SIT",
+      "type": 0
+    },
+    {
+      "word": "TIS",
+      "type": 0
+    },
+    {
+      "word": "ARVO",
+      "type": 0
+    },
+    {
+      "word": "DERM",
+      "type": 0
+    },
+    {
+      "word": "DORE",
+      "type": 0
+    },
+    {
+      "word": "DORM",
+      "type": 0
+    },
+    {
+      "word": "DRAM",
+      "type": 0
+    },
+    {
+      "word": "FARD",
+      "type": 0
+    },
+    {
+      "word": "MORA",
+      "type": 0
+    },
+    {
+      "word": "RAFT",
+      "type": 0
+    },
+    {
+      "word": "REDO",
+      "type": 0
+    },
+    {
+      "word": "REIN",
+      "type": 0
+    },
+    {
+      "word": "ROAM",
+      "type": 0
+    },
+    {
+      "word": "ROAR",
+      "type": 0
+    },
+    {
+      "word": "RODE",
+      "type": 0
+    },
+    {
+      "word": "SARD",
+      "type": 0
+    },
+    {
+      "word": "TIDE",
+      "type": 0
+    },
+    {
+      "word": "VIDE",
+      "type": 0
+    },
+    {
+      "word": "DERMA",
+      "type": 0
+    },
+    {
+      "word": "FARDS",
+      "type": 0
+    },
+    {
+      "word": "REINS",
+      "type": 0
+    },
+    {
+      "word": "RAMROD",
+      "type": 0
+    },
+    {
+      "word": "INSIDER",
+      "type": 0
+    }
+  ],
+  "letters": "SAFTC,DRVIS,RAODN,OMREI",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

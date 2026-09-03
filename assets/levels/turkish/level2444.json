@@ -1,65 +1,147 @@
-﻿{
-    "id":  2444,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EBAT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GECE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TESTİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TESADÜF",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TESADÜFİ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BETA",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "CESTİ,ETADİ,GEBÜF",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2444,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BAK",
+      "type": 0
+    },
+    {
+      "word": "DUR",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "KAÇ",
+      "type": 0
+    },
+    {
+      "word": "SAR",
+      "type": 0
+    },
+    {
+      "word": "YÜK",
+      "type": 0
+    },
+    {
+      "word": "ARKA",
+      "type": 0
+    },
+    {
+      "word": "HALK",
+      "type": 0
+    },
+    {
+      "word": "KABA",
+      "type": 0
+    },
+    {
+      "word": "BACAK",
+      "type": 0
+    },
+    {
+      "word": "HALKA",
+      "type": 0
+    },
+    {
+      "word": "HÜKÜM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "ARK",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DUL",
+      "type": 0
+    },
+    {
+      "word": "HAD",
+      "type": 0
+    },
+    {
+      "word": "KAC",
+      "type": 0
+    },
+    {
+      "word": "ÇAK",
+      "type": 0
+    },
+    {
+      "word": "AKLA",
+      "type": 0
+    },
+    {
+      "word": "BACA",
+      "type": 0
+    },
+    {
+      "word": "BACK",
+      "type": 0
+    },
+    {
+      "word": "SARK",
+      "type": 0
+    },
+    {
+      "word": "YÜKÜ",
+      "type": 0
+    },
+    {
+      "word": "ÇABA",
+      "type": 0
+    },
+    {
+      "word": "ALÇAK",
+      "type": 0
+    },
+    {
+      "word": "BAKSA",
+      "type": 0
+    },
+    {
+      "word": "ÇAKRA",
+      "type": 0
+    },
+    {
+      "word": "BACAKLA",
+      "type": 0
+    }
+  ],
+  "letters": "DABSA,MCAKR,ÜKÇLU,YÜHAD",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,134 +1,315 @@
-﻿{
-    "id":  1913,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAG",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BRAG",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROBE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRAIN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AGAR",
-                            "type":  1
-                        },
-                        {
-                            "word":  "BORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GARB",
-                            "type":  1
-                        },
-                        {
-                            "word":  "NIB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NUB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UNI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WAIN",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "EUNW,BBIA,ORAG",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1913,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "CASE",
+      "type": 0
+    },
+    {
+      "word": "EDGE",
+      "type": 0
+    },
+    {
+      "word": "ELSE",
+      "type": 0
+    },
+    {
+      "word": "LESS",
+      "type": 0
+    },
+    {
+      "word": "SETS",
+      "type": 0
+    },
+    {
+      "word": "SLEEP",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "CEE",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "GEE",
+      "type": 0
+    },
+    {
+      "word": "OAT",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "ACES",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "CAST",
+      "type": 0
+    },
+    {
+      "word": "CEES",
+      "type": 0
+    },
+    {
+      "word": "DEES",
+      "type": 0
+    },
+    {
+      "word": "EELS",
+      "type": 0
+    },
+    {
+      "word": "ESES",
+      "type": 0
+    },
+    {
+      "word": "ETAS",
+      "type": 0
+    },
+    {
+      "word": "GEED",
+      "type": 0
+    },
+    {
+      "word": "GEES",
+      "type": 0
+    },
+    {
+      "word": "OATS",
+      "type": 0
+    },
+    {
+      "word": "OSSA",
+      "type": 0
+    },
+    {
+      "word": "PEEL",
+      "type": 0
+    },
+    {
+      "word": "PEES",
+      "type": 0
+    },
+    {
+      "word": "SATE",
+      "type": 0
+    },
+    {
+      "word": "SEED",
+      "type": 0
+    },
+    {
+      "word": "SEEP",
+      "type": 0
+    },
+    {
+      "word": "SEES",
+      "type": 0
+    },
+    {
+      "word": "SELS",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "TAOS",
+      "type": 0
+    },
+    {
+      "word": "TASS",
+      "type": 0
+    },
+    {
+      "word": "TEES",
+      "type": 0
+    },
+    {
+      "word": "CASTE",
+      "type": 0
+    },
+    {
+      "word": "CESTA",
+      "type": 0
+    },
+    {
+      "word": "EDGES",
+      "type": 0
+    },
+    {
+      "word": "ESSES",
+      "type": 0
+    },
+    {
+      "word": "GEEST",
+      "type": 0
+    },
+    {
+      "word": "OASES",
+      "type": 0
+    },
+    {
+      "word": "PEELS",
+      "type": 0
+    },
+    {
+      "word": "SATES",
+      "type": 0
+    },
+    {
+      "word": "SEDGE",
+      "type": 0
+    },
+    {
+      "word": "SEEPS",
+      "type": 0
+    },
+    {
+      "word": "SPEEL",
+      "type": 0
+    },
+    {
+      "word": "TASSE",
+      "type": 0
+    },
+    {
+      "word": "ASLEEP",
+      "type": 0
+    },
+    {
+      "word": "CASTES",
+      "type": 0
+    },
+    {
+      "word": "CESTAS",
+      "type": 0
+    },
+    {
+      "word": "LESSEE",
+      "type": 0
+    },
+    {
+      "word": "SEDGES",
+      "type": 0
+    },
+    {
+      "word": "SLEEPS",
+      "type": 0
+    },
+    {
+      "word": "SPEELS",
+      "type": 0
+    },
+    {
+      "word": "STASES",
+      "type": 0
+    },
+    {
+      "word": "TASSEL",
+      "type": 0
+    },
+    {
+      "word": "LESSEES",
+      "type": 0
+    },
+    {
+      "word": "TASSELS",
+      "type": 0
+    }
+  ],
+  "letters": "DESPE,GESLE,CEESS,ASTAO",
+  "obstacles": []
 }

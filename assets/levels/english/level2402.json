@@ -1,93 +1,235 @@
-﻿{
-    "id":  2402,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BONY",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOBE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TINY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EBONY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOBILITY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TINE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TYNE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EAET,BONY,ILIT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2402,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CUE",
+      "type": 0
+    },
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "GUN",
+      "type": 0
+    },
+    {
+      "word": "ICE",
+      "type": 0
+    },
+    {
+      "word": "PIC",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "SAP",
+      "type": 0
+    },
+    {
+      "word": "SUN",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "CODE",
+      "type": 0
+    },
+    {
+      "word": "EXEC",
+      "type": 0
+    },
+    {
+      "word": "NICE",
+      "type": 0
+    },
+    {
+      "word": "POST",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "COP",
+      "type": 0
+    },
+    {
+      "word": "DEX",
+      "type": 0
+    },
+    {
+      "word": "GIN",
+      "type": 0
+    },
+    {
+      "word": "GIP",
+      "type": 0
+    },
+    {
+      "word": "NIP",
+      "type": 0
+    },
+    {
+      "word": "NUS",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OPT",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PIG",
+      "type": 0
+    },
+    {
+      "word": "POD",
+      "type": 0
+    },
+    {
+      "word": "PUG",
+      "type": 0
+    },
+    {
+      "word": "PUN",
+      "type": 0
+    },
+    {
+      "word": "PUS",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SOP",
+      "type": 0
+    },
+    {
+      "word": "SUP",
+      "type": 0
+    },
+    {
+      "word": "UPO",
+      "type": 0
+    },
+    {
+      "word": "CINE",
+      "type": 0
+    },
+    {
+      "word": "CUES",
+      "type": 0
+    },
+    {
+      "word": "DECO",
+      "type": 0
+    },
+    {
+      "word": "ICED",
+      "type": 0
+    },
+    {
+      "word": "OPTS",
+      "type": 0
+    },
+    {
+      "word": "OPUS",
+      "type": 0
+    },
+    {
+      "word": "PASE",
+      "type": 0
+    },
+    {
+      "word": "PICE",
+      "type": 0
+    },
+    {
+      "word": "PINE",
+      "type": 0
+    },
+    {
+      "word": "SENE",
+      "type": 0
+    },
+    {
+      "word": "UPAS",
+      "type": 0
+    },
+    {
+      "word": "CINES",
+      "type": 0
+    },
+    {
+      "word": "CODEX",
+      "type": 0
+    },
+    {
+      "word": "OPINE",
+      "type": 0
+    },
+    {
+      "word": "PINES",
+      "type": 0
+    },
+    {
+      "word": "PINUP",
+      "type": 0
+    },
+    {
+      "word": "XENIC",
+      "type": 0
+    },
+    {
+      "word": "OPINES",
+      "type": 0
+    },
+    {
+      "word": "UNIPOD",
+      "type": 0
+    },
+    {
+      "word": "PINESAP",
+      "type": 0
+    }
+  ],
+  "letters": "ASEUC,PUNEX,OGICE,STPOD",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

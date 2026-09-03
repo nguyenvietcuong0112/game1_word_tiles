@@ -1,101 +1,263 @@
-﻿{
-    "id":  1317,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SETA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TATU",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÚTIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRETA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTRELA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ATER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ITA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LATER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RELES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RETAL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UTATI,SELÚL,TREAL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1317,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ITT",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "TIA",
+      "type": 0
+    },
+    {
+      "word": "TOA",
+      "type": 0
+    },
+    {
+      "word": "CAMA",
+      "type": 0
+    },
+    {
+      "word": "CASA",
+      "type": 0
+    },
+    {
+      "word": "MEIA",
+      "type": 0
+    },
+    {
+      "word": "CASAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "AIE",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "CAI",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "EIA",
+      "type": 0
+    },
+    {
+      "word": "EMA",
+      "type": 0
+    },
+    {
+      "word": "IAM",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAI",
+      "type": 0
+    },
+    {
+      "word": "MAM",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "MEI",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "TTO",
+      "type": 0
+    },
+    {
+      "word": "ACTO",
+      "type": 0
+    },
+    {
+      "word": "AMAM",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "AMAS",
+      "type": 0
+    },
+    {
+      "word": "AMEI",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "ARAS",
+      "type": 0
+    },
+    {
+      "word": "CAIE",
+      "type": 0
+    },
+    {
+      "word": "CAME",
+      "type": 0
+    },
+    {
+      "word": "MACA",
+      "type": 0
+    },
+    {
+      "word": "MAMA",
+      "type": 0
+    },
+    {
+      "word": "MAME",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "RASA",
+      "type": 0
+    },
+    {
+      "word": "SACA",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "AMARA",
+      "type": 0
+    },
+    {
+      "word": "ARAME",
+      "type": 0
+    },
+    {
+      "word": "CAMAS",
+      "type": 0
+    },
+    {
+      "word": "CASAM",
+      "type": 0
+    },
+    {
+      "word": "MACAS",
+      "type": 0
+    },
+    {
+      "word": "MAMAR",
+      "type": 0
+    },
+    {
+      "word": "MAMAS",
+      "type": 0
+    },
+    {
+      "word": "MASAO",
+      "type": 0
+    },
+    {
+      "word": "SAMAR",
+      "type": 0
+    },
+    {
+      "word": "AMARAM",
+      "type": 0
+    },
+    {
+      "word": "CAMARA",
+      "type": 0
+    },
+    {
+      "word": "SAMARA",
+      "type": 0
+    },
+    {
+      "word": "CASARAM",
+      "type": 0
+    }
+  ],
+  "letters": "AOTT,SACT,AMAI,RAME",
+  "obstacles": []
 }

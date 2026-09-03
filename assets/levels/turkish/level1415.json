@@ -1,67 +1,219 @@
-﻿{
-    "id":  1415,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EYER",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YETER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EZİYET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TERAZİ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ETER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "İZA,YER,ETE",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1415,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "KEŞ",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "AYAK",
+      "type": 0
+    },
+    {
+      "word": "AYET",
+      "type": 0
+    },
+    {
+      "word": "EŞYA",
+      "type": 0
+    },
+    {
+      "word": "KATE",
+      "type": 0
+    },
+    {
+      "word": "YADA",
+      "type": 0
+    },
+    {
+      "word": "YATAK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "TAY",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "YAD",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "YAT",
+      "type": 0
+    },
+    {
+      "word": "YAY",
+      "type": 0
+    },
+    {
+      "word": "YEE",
+      "type": 0
+    },
+    {
+      "word": "ADAY",
+      "type": 0
+    },
+    {
+      "word": "ADET",
+      "type": 0
+    },
+    {
+      "word": "ATAK",
+      "type": 0
+    },
+    {
+      "word": "AYŞE",
+      "type": 0
+    },
+    {
+      "word": "DATA",
+      "type": 0
+    },
+    {
+      "word": "DATE",
+      "type": 0
+    },
+    {
+      "word": "DAYA",
+      "type": 0
+    },
+    {
+      "word": "KATA",
+      "type": 0
+    },
+    {
+      "word": "KAYA",
+      "type": 0
+    },
+    {
+      "word": "YAKA",
+      "type": 0
+    },
+    {
+      "word": "YAYA",
+      "type": 0
+    },
+    {
+      "word": "ADAYA",
+      "type": 0
+    },
+    {
+      "word": "ADETA",
+      "type": 0
+    },
+    {
+      "word": "DAYAK",
+      "type": 0
+    },
+    {
+      "word": "DAYAN",
+      "type": 0
+    },
+    {
+      "word": "DETAY",
+      "type": 0
+    },
+    {
+      "word": "YATAY",
+      "type": 0
+    },
+    {
+      "word": "YAYAN",
+      "type": 0
+    },
+    {
+      "word": "DETAYA",
+      "type": 0
+    },
+    {
+      "word": "KAYAYA",
+      "type": 0
+    },
+    {
+      "word": "KAYADAN",
+      "type": 0
+    }
+  ],
+  "letters": "EDAN,TAYŞ,AYEE,KATK",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

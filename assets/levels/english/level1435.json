@@ -1,77 +1,167 @@
-﻿{
-    "id":  1435,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAFE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MACE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SCAM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MOUSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAMOUS",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ECO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FEES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MACS",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "FEE,ACS,MOU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1435,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "PSI",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SIS",
+      "type": 0
+    },
+    {
+      "word": "SIDE",
+      "type": 0
+    },
+    {
+      "word": "SOON",
+      "type": 0
+    },
+    {
+      "word": "SIDES",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "COO",
+      "type": 0
+    },
+    {
+      "word": "EON",
+      "type": 0
+    },
+    {
+      "word": "ERN",
+      "type": 0
+    },
+    {
+      "word": "NOO",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SOD",
+      "type": 0
+    },
+    {
+      "word": "COED",
+      "type": 0
+    },
+    {
+      "word": "COOS",
+      "type": 0
+    },
+    {
+      "word": "IDES",
+      "type": 0
+    },
+    {
+      "word": "NOES",
+      "type": 0
+    },
+    {
+      "word": "PSIS",
+      "type": 0
+    },
+    {
+      "word": "REDE",
+      "type": 0
+    },
+    {
+      "word": "CONDO",
+      "type": 0
+    },
+    {
+      "word": "REDES",
+      "type": 0
+    },
+    {
+      "word": "RESID",
+      "type": 0
+    },
+    {
+      "word": "SEDER",
+      "type": 0
+    },
+    {
+      "word": "SISES",
+      "type": 0
+    },
+    {
+      "word": "CONDOS",
+      "type": 0
+    },
+    {
+      "word": "NOESIS",
+      "type": 0
+    },
+    {
+      "word": "RESIDE",
+      "type": 0
+    },
+    {
+      "word": "PRESIDE",
+      "type": 0
+    },
+    {
+      "word": "RESIDES",
+      "type": 0
+    },
+    {
+      "word": "NOESISES",
+      "type": 0
+    },
+    {
+      "word": "PRESIDES",
+      "type": 0
+    }
+  ],
+  "letters": "SESI,IDCS,SEOO,PRND",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,81 +1,251 @@
-﻿{
-    "id":  885,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EARN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HERO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HORN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLANK",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BLARE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "HOE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LANK",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ORAL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NNLB,ERAN,HOEK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 885,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "LIVE",
+      "type": 0
+    },
+    {
+      "word": "SAVE",
+      "type": 0
+    },
+    {
+      "word": "USES",
+      "type": 0
+    },
+    {
+      "word": "ARISE",
+      "type": 0
+    },
+    {
+      "word": "LIVES",
+      "type": 0
+    },
+    {
+      "word": "VIRUS",
+      "type": 0
+    },
+    {
+      "word": "ALUMNI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "AMU",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "LUM",
+      "type": 0
+    },
+    {
+      "word": "LUV",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "VAS",
+      "type": 0
+    },
+    {
+      "word": "VIS",
+      "type": 0
+    },
+    {
+      "word": "ALAR",
+      "type": 0
+    },
+    {
+      "word": "ALAS",
+      "type": 0
+    },
+    {
+      "word": "ALUM",
+      "type": 0
+    },
+    {
+      "word": "ARIL",
+      "type": 0
+    },
+    {
+      "word": "AVES",
+      "type": 0
+    },
+    {
+      "word": "EVIL",
+      "type": 0
+    },
+    {
+      "word": "LARI",
+      "type": 0
+    },
+    {
+      "word": "LIRA",
+      "type": 0
+    },
+    {
+      "word": "RISE",
+      "type": 0
+    },
+    {
+      "word": "RIVE",
+      "type": 0
+    },
+    {
+      "word": "RUSE",
+      "type": 0
+    },
+    {
+      "word": "SAIN",
+      "type": 0
+    },
+    {
+      "word": "SARI",
+      "type": 0
+    },
+    {
+      "word": "SURA",
+      "type": 0
+    },
+    {
+      "word": "VAIN",
+      "type": 0
+    },
+    {
+      "word": "VASE",
+      "type": 0
+    },
+    {
+      "word": "VISE",
+      "type": 0
+    },
+    {
+      "word": "ALIVE",
+      "type": 0
+    },
+    {
+      "word": "AMNIA",
+      "type": 0
+    },
+    {
+      "word": "LARIS",
+      "type": 0
+    },
+    {
+      "word": "LIRAS",
+      "type": 0
+    },
+    {
+      "word": "MALAR",
+      "type": 0
+    },
+    {
+      "word": "RISES",
+      "type": 0
+    },
+    {
+      "word": "RIVES",
+      "type": 0
+    },
+    {
+      "word": "RUSES",
+      "type": 0
+    },
+    {
+      "word": "SARIS",
+      "type": 0
+    },
+    {
+      "word": "SAVES",
+      "type": 0
+    },
+    {
+      "word": "SURAL",
+      "type": 0
+    },
+    {
+      "word": "SURAS",
+      "type": 0
+    },
+    {
+      "word": "VASES",
+      "type": 0
+    },
+    {
+      "word": "VIRAL",
+      "type": 0
+    },
+    {
+      "word": "VISES",
+      "type": 0
+    },
+    {
+      "word": "ARISES",
+      "type": 0
+    },
+    {
+      "word": "SALIVA",
+      "type": 0
+    },
+    {
+      "word": "SALIVAS",
+      "type": 0
+    },
+    {
+      "word": "VIRUSES",
+      "type": 0
+    }
+  ],
+  "letters": "SAMN,ALUI,RIVA,USES",
+  "obstacles": []
 }

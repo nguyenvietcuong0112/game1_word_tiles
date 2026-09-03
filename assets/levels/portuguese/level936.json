@@ -1,89 +1,283 @@
-﻿{
-    "id":  936,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERRE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "NACO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONVERSA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONVERSAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANGLO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CALE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RELA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RENO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "VERSAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NGAAS,ALERR,CONVE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 936,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AOS",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ELE",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "ELES",
+      "type": 0
+    },
+    {
+      "word": "SEAN",
+      "type": 0
+    },
+    {
+      "word": "VALE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ANS",
+      "type": 0
+    },
+    {
+      "word": "AOI",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "BAO",
+      "type": 0
+    },
+    {
+      "word": "EIS",
+      "type": 0
+    },
+    {
+      "word": "ENA",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "ESE",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "ISN",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LEO",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "NEI",
+      "type": 0
+    },
+    {
+      "word": "OAB",
+      "type": 0
+    },
+    {
+      "word": "OIE",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "RIE",
+      "type": 0
+    },
+    {
+      "word": "RIO",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SEO",
+      "type": 0
+    },
+    {
+      "word": "SIE",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SOA",
+      "type": 0
+    },
+    {
+      "word": "SOE",
+      "type": 0
+    },
+    {
+      "word": "VAL",
+      "type": 0
+    },
+    {
+      "word": "VEL",
+      "type": 0
+    },
+    {
+      "word": "ARIS",
+      "type": 0
+    },
+    {
+      "word": "ARRE",
+      "type": 0
+    },
+    {
+      "word": "AVES",
+      "type": 0
+    },
+    {
+      "word": "BARI",
+      "type": 0
+    },
+    {
+      "word": "BARR",
+      "type": 0
+    },
+    {
+      "word": "ERRA",
+      "type": 0
+    },
+    {
+      "word": "LAVE",
+      "type": 0
+    },
+    {
+      "word": "LEAN",
+      "type": 0
+    },
+    {
+      "word": "LEOA",
+      "type": 0
+    },
+    {
+      "word": "LEVA",
+      "type": 0
+    },
+    {
+      "word": "REIS",
+      "type": 0
+    },
+    {
+      "word": "RENA",
+      "type": 0
+    },
+    {
+      "word": "RIOS",
+      "type": 0
+    },
+    {
+      "word": "RISE",
+      "type": 0
+    },
+    {
+      "word": "SELA",
+      "type": 0
+    },
+    {
+      "word": "SELE",
+      "type": 0
+    },
+    {
+      "word": "SIRA",
+      "type": 0
+    },
+    {
+      "word": "SOAR",
+      "type": 0
+    },
+    {
+      "word": "SOIS",
+      "type": 0
+    },
+    {
+      "word": "VELA",
+      "type": 0
+    },
+    {
+      "word": "ANSEL",
+      "type": 0
+    },
+    {
+      "word": "ELEVA",
+      "type": 0
+    },
+    {
+      "word": "SIENA",
+      "type": 0
+    },
+    {
+      "word": "VALES",
+      "type": 0
+    },
+    {
+      "word": "ARREIO",
+      "type": 0
+    },
+    {
+      "word": "SIERRA",
+      "type": 0
+    },
+    {
+      "word": "ARREIOS",
+      "type": 0
+    }
+  ],
+  "letters": "AVSB,LEOA,ESIR,ANER",
+  "obstacles": []
 }

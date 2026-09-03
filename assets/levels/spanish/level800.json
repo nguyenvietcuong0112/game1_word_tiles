@@ -1,85 +1,107 @@
-﻿{
-    "id":  800,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOZA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOLO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOLOSINA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SINAGOGA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AZO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAGO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GIS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOGIS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LOS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SIG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZAGA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "NAGA,IGOZ,SOLE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 800,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BOB",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "PEZ",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "ZOO",
+      "type": 0
+    },
+    {
+      "word": "CREÓ",
+      "type": 0
+    },
+    {
+      "word": "MADERA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "CRE",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "ZED",
+      "type": 0
+    },
+    {
+      "word": "DARE",
+      "type": 0
+    },
+    {
+      "word": "MADE",
+      "type": 0
+    }
+  ],
+  "letters": "ADEP,RCZO,EÓBO,DAMB",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,77 +1,199 @@
-﻿{
-    "id":  1375,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "END",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TREE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STEER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TENDER",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TENNIS",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "NET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NETS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SINN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STEED",
-                            "type":  1
-                        },
-                        {
-                            "word":  "STEIN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RED,TEN,SIN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1375,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "TOE",
+      "type": 0
+    },
+    {
+      "word": "TOP",
+      "type": 0
+    },
+    {
+      "word": "SPOT",
+      "type": 0
+    },
+    {
+      "word": "CURVE",
+      "type": 0
+    },
+    {
+      "word": "LAPTOP",
+      "type": 0
+    },
+    {
+      "word": "LAPTOPS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "APT",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BAP",
+      "type": 0
+    },
+    {
+      "word": "CUE",
+      "type": 0
+    },
+    {
+      "word": "CUR",
+      "type": 0
+    },
+    {
+      "word": "LAP",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "POT",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "APES",
+      "type": 0
+    },
+    {
+      "word": "BALE",
+      "type": 0
+    },
+    {
+      "word": "CLAP",
+      "type": 0
+    },
+    {
+      "word": "CUED",
+      "type": 0
+    },
+    {
+      "word": "CUES",
+      "type": 0
+    },
+    {
+      "word": "CURS",
+      "type": 0
+    },
+    {
+      "word": "PALE",
+      "type": 0
+    },
+    {
+      "word": "RUED",
+      "type": 0
+    },
+    {
+      "word": "RUES",
+      "type": 0
+    },
+    {
+      "word": "SEPT",
+      "type": 0
+    },
+    {
+      "word": "TOES",
+      "type": 0
+    },
+    {
+      "word": "TOPS",
+      "type": 0
+    },
+    {
+      "word": "BALED",
+      "type": 0
+    },
+    {
+      "word": "CLAPT",
+      "type": 0
+    },
+    {
+      "word": "CURSE",
+      "type": 0
+    },
+    {
+      "word": "PALED",
+      "type": 0
+    },
+    {
+      "word": "SEPAL",
+      "type": 0
+    },
+    {
+      "word": "CURVED",
+      "type": 0
+    },
+    {
+      "word": "SEPALED",
+      "type": 0
+    }
+  ],
+  "letters": "VEDE,RUCL,SEPA,POTB",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

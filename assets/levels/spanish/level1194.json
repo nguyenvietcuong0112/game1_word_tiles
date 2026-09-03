@@ -1,109 +1,263 @@
-﻿{
-    "id":  1194,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAZA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LANA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZANJA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANZANA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ASCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SALAZ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SAMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SANA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ANZAL,MCANA,ASAJS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1194,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "GOO",
+      "type": 0
+    },
+    {
+      "word": "ORO",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "ARTE",
+      "type": 0
+    },
+    {
+      "word": "DEME",
+      "type": 0
+    },
+    {
+      "word": "RATA",
+      "type": 0
+    },
+    {
+      "word": "ADORO",
+      "type": 0
+    },
+    {
+      "word": "TRAGO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ATM",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DAG",
+      "type": 0
+    },
+    {
+      "word": "DEM",
+      "type": 0
+    },
+    {
+      "word": "DET",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "DRA",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "GAO",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "MEA",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "ROG",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "ARDE",
+      "type": 0
+    },
+    {
+      "word": "ATAR",
+      "type": 0
+    },
+    {
+      "word": "DAGA",
+      "type": 0
+    },
+    {
+      "word": "DATA",
+      "type": 0
+    },
+    {
+      "word": "DORA",
+      "type": 0
+    },
+    {
+      "word": "DRAG",
+      "type": 0
+    },
+    {
+      "word": "GATA",
+      "type": 0
+    },
+    {
+      "word": "GORO",
+      "type": 0
+    },
+    {
+      "word": "MEAD",
+      "type": 0
+    },
+    {
+      "word": "MEAT",
+      "type": 0
+    },
+    {
+      "word": "TARO",
+      "type": 0
+    },
+    {
+      "word": "TEME",
+      "type": 0
+    },
+    {
+      "word": "ADORA",
+      "type": 0
+    },
+    {
+      "word": "ATADO",
+      "type": 0
+    },
+    {
+      "word": "DRAGO",
+      "type": 0
+    },
+    {
+      "word": "EDGAR",
+      "type": 0
+    },
+    {
+      "word": "MEADA",
+      "type": 0
+    },
+    {
+      "word": "MEADO",
+      "type": 0
+    },
+    {
+      "word": "ROGAR",
+      "type": 0
+    },
+    {
+      "word": "TRAGA",
+      "type": 0
+    },
+    {
+      "word": "ROGADO",
+      "type": 0
+    },
+    {
+      "word": "TRAGAR",
+      "type": 0
+    },
+    {
+      "word": "TRAGADO",
+      "type": 0
+    }
+  ],
+  "letters": "EADO,MTAR,EDGO,TRAO",
+  "obstacles": []
 }

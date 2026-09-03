@@ -1,73 +1,219 @@
-﻿{
-    "id":  1015,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CELL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEGAL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LEER",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LEG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CELL,AGEE,LDUR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1015,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "LOW",
+      "type": 0
+    },
+    {
+      "word": "SKI",
+      "type": 0
+    },
+    {
+      "word": "LEAN",
+      "type": 0
+    },
+    {
+      "word": "LOSE",
+      "type": 0
+    },
+    {
+      "word": "POLL",
+      "type": 0
+    },
+    {
+      "word": "PULL",
+      "type": 0
+    },
+    {
+      "word": "SLOW",
+      "type": 0
+    },
+    {
+      "word": "WILL",
+      "type": 0
+    },
+    {
+      "word": "POLLS",
+      "type": 0
+    },
+    {
+      "word": "FELLOW",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "EAU",
+      "type": 0
+    },
+    {
+      "word": "EFS",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LOP",
+      "type": 0
+    },
+    {
+      "word": "NAE",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "OWE",
+      "type": 0
+    },
+    {
+      "word": "POL",
+      "type": 0
+    },
+    {
+      "word": "PUL",
+      "type": 0
+    },
+    {
+      "word": "SEW",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "SOP",
+      "type": 0
+    },
+    {
+      "word": "SOW",
+      "type": 0
+    },
+    {
+      "word": "UPO",
+      "type": 0
+    },
+    {
+      "word": "WOE",
+      "type": 0
+    },
+    {
+      "word": "WOS",
+      "type": 0
+    },
+    {
+      "word": "ELLS",
+      "type": 0
+    },
+    {
+      "word": "FELL",
+      "type": 0
+    },
+    {
+      "word": "KILO",
+      "type": 0
+    },
+    {
+      "word": "LOWE",
+      "type": 0
+    },
+    {
+      "word": "OLEA",
+      "type": 0
+    },
+    {
+      "word": "OLEO",
+      "type": 0
+    },
+    {
+      "word": "OWES",
+      "type": 0
+    },
+    {
+      "word": "POLE",
+      "type": 0
+    },
+    {
+      "word": "PULE",
+      "type": 0
+    },
+    {
+      "word": "SLOE",
+      "type": 0
+    },
+    {
+      "word": "SOLE",
+      "type": 0
+    },
+    {
+      "word": "SOLI",
+      "type": 0
+    },
+    {
+      "word": "SOLS",
+      "type": 0
+    },
+    {
+      "word": "FELLS",
+      "type": 0
+    },
+    {
+      "word": "KILOS",
+      "type": 0
+    },
+    {
+      "word": "LOWES",
+      "type": 0
+    },
+    {
+      "word": "OLEOS",
+      "type": 0
+    },
+    {
+      "word": "PULLS",
+      "type": 0
+    },
+    {
+      "word": "SKILL",
+      "type": 0
+    }
+  ],
+  "letters": "EWIK,SOLS,FELO,NAUP",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

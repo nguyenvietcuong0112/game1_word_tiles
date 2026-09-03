@@ -1,95 +1,123 @@
-﻿{
-    "id":  1720,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAZİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEZİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAZE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEGATİF",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "GEZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LENF",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEZİF",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZENNE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TİFL,AZNE,GENY",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1720,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "DEK",
+      "type": 0
+    },
+    {
+      "word": "DİN",
+      "type": 0
+    },
+    {
+      "word": "JAİ",
+      "type": 0
+    },
+    {
+      "word": "SOK",
+      "type": 0
+    },
+    {
+      "word": "SOS",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "EDİN",
+      "type": 0
+    },
+    {
+      "word": "KEDİ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AİN",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "EKO",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "LAİ",
+      "type": 0
+    },
+    {
+      "word": "LON",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "DİNO",
+      "type": 0
+    },
+    {
+      "word": "NOLA",
+      "type": 0
+    },
+    {
+      "word": "PALA",
+      "type": 0
+    },
+    {
+      "word": "ALAİN",
+      "type": 0
+    },
+    {
+      "word": "KEDİN",
+      "type": 0
+    }
+  ],
+  "letters": "AAPS,LLSO,OAJK,NİDE",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

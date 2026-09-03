@@ -1,57 +1,203 @@
-﻿{
-    "id":  830,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SKI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIFT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SOFT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOSTER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "FRET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SKIS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOFTER",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "SKRE,AIFT,ESOS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 830,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "SEED",
+      "type": 0
+    },
+    {
+      "word": "SEEN",
+      "type": 0
+    },
+    {
+      "word": "TIPS",
+      "type": 0
+    },
+    {
+      "word": "SCREEN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "ERN",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "PIT",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TIP",
+      "type": 0
+    },
+    {
+      "word": "ACRE",
+      "type": 0
+    },
+    {
+      "word": "DEER",
+      "type": 0
+    },
+    {
+      "word": "DEES",
+      "type": 0
+    },
+    {
+      "word": "ERNE",
+      "type": 0
+    },
+    {
+      "word": "PITS",
+      "type": 0
+    },
+    {
+      "word": "REED",
+      "type": 0
+    },
+    {
+      "word": "RIAS",
+      "type": 0
+    },
+    {
+      "word": "SACS",
+      "type": 0
+    },
+    {
+      "word": "SERS",
+      "type": 0
+    },
+    {
+      "word": "SINE",
+      "type": 0
+    },
+    {
+      "word": "SPIT",
+      "type": 0
+    },
+    {
+      "word": "ACRES",
+      "type": 0
+    },
+    {
+      "word": "CREED",
+      "type": 0
+    },
+    {
+      "word": "CREST",
+      "type": 0
+    },
+    {
+      "word": "DEERS",
+      "type": 0
+    },
+    {
+      "word": "REEDS",
+      "type": 0
+    },
+    {
+      "word": "RESTS",
+      "type": 0
+    },
+    {
+      "word": "SCREE",
+      "type": 0
+    },
+    {
+      "word": "SEEDS",
+      "type": 0
+    },
+    {
+      "word": "SPITS",
+      "type": 0
+    },
+    {
+      "word": "CREEDS",
+      "type": 0
+    },
+    {
+      "word": "CRESTS",
+      "type": 0
+    },
+    {
+      "word": "SCREED",
+      "type": 0
+    },
+    {
+      "word": "SCREEDS",
+      "type": 0
+    }
+  ],
+  "letters": "INED,SRES,ACST,IRPI",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

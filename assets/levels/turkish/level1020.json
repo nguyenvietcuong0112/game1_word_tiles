@@ -1,61 +1,107 @@
-﻿{
-    "id":  1020,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GÖK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YÜN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YÜZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÜZÜM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAZI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAZIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAZIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GÖKYÜZÜ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AZI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CÜZ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GCÜM,ÖAZI,KYÜN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1020,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AMY",
+      "type": 0
+    },
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "NDA",
+      "type": 0
+    },
+    {
+      "word": "ANCA",
+      "type": 0
+    },
+    {
+      "word": "MAMA",
+      "type": 0
+    },
+    {
+      "word": "DAMAK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BEA",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "DAMA",
+      "type": 0
+    },
+    {
+      "word": "KAMA",
+      "type": 0
+    },
+    {
+      "word": "KANCA",
+      "type": 0
+    },
+    {
+      "word": "MAKAM",
+      "type": 0
+    }
+  ],
+  "letters": "DAMY,NEAM,KBKA,ANCA",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

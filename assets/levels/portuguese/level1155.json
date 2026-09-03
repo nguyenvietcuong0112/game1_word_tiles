@@ -1,73 +1,151 @@
-﻿{
-    "id":  1155,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "PAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAPO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PESO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOJA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOPAPO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEGAJOSO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "APO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POPA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GAJTO,ESOPP,POPAZ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1155,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CIA",
+      "type": 0
+    },
+    {
+      "word": "DIA",
+      "type": 0
+    },
+    {
+      "word": "FAI",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "TAL",
+      "type": 0
+    },
+    {
+      "word": "UID",
+      "type": 0
+    },
+    {
+      "word": "LUTA",
+      "type": 0
+    },
+    {
+      "word": "URSO",
+      "type": 0
+    },
+    {
+      "word": "TURNO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIC",
+      "type": 0
+    },
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "CID",
+      "type": 0
+    },
+    {
+      "word": "CRU",
+      "type": 0
+    },
+    {
+      "word": "CTU",
+      "type": 0
+    },
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "INO",
+      "type": 0
+    },
+    {
+      "word": "LUI",
+      "type": 0
+    },
+    {
+      "word": "NID",
+      "type": 0
+    },
+    {
+      "word": "ONI",
+      "type": 0
+    },
+    {
+      "word": "RUI",
+      "type": 0
+    },
+    {
+      "word": "RUT",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "TAC",
+      "type": 0
+    },
+    {
+      "word": "TUI",
+      "type": 0
+    },
+    {
+      "word": "DINO",
+      "type": 0
+    },
+    {
+      "word": "TULA",
+      "type": 0
+    },
+    {
+      "word": "TURN",
+      "type": 0
+    },
+    {
+      "word": "DIURNO",
+      "type": 0
+    },
+    {
+      "word": "TURNOS",
+      "type": 0
+    }
+  ],
+  "letters": "CDIA,ATCF,LURS,DINO",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

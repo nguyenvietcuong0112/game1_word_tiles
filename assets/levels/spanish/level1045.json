@@ -1,109 +1,183 @@
-﻿{
-    "id":  1045,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AÑO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UÑA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMOR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CAÑO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUÑA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEÑA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEÑO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEÑA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PERO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PURO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROÑA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CLERO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PELUCA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CULERO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "CUÑO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAÑERO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MAÑO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOÑA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "URO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UÑERO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UROM,PEÑA,CLUC",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1045,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ETC",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "ERAN",
+      "type": 0
+    },
+    {
+      "word": "ESTE",
+      "type": 0
+    },
+    {
+      "word": "GINA",
+      "type": 0
+    },
+    {
+      "word": "LIGA",
+      "type": 0
+    },
+    {
+      "word": "LINK",
+      "type": 0
+    },
+    {
+      "word": "PUSE",
+      "type": 0
+    },
+    {
+      "word": "SUPE",
+      "type": 0
+    },
+    {
+      "word": "KRILIN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "CRE",
+      "type": 0
+    },
+    {
+      "word": "CUP",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "GIL",
+      "type": 0
+    },
+    {
+      "word": "GIN",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "INC",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "PUS",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "SEP",
+      "type": 0
+    },
+    {
+      "word": "STE",
+      "type": 0
+    },
+    {
+      "word": "SUK",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "LINA",
+      "type": 0
+    },
+    {
+      "word": "LINC",
+      "type": 0
+    },
+    {
+      "word": "RANI",
+      "type": 0
+    },
+    {
+      "word": "TERA",
+      "type": 0
+    },
+    {
+      "word": "ESTER",
+      "type": 0
+    },
+    {
+      "word": "LIGAR",
+      "type": 0
+    },
+    {
+      "word": "PESTE",
+      "type": 0
+    },
+    {
+      "word": "CUSTER",
+      "type": 0
+    }
+  ],
+  "letters": "ERAG,TCNI,SUKL,EPRI",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

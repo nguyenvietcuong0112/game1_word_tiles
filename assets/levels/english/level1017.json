@@ -1,85 +1,291 @@
-﻿{
-    "id":  1017,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HINT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOON",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MINT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RHINO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCHOOL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CHINO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COON",
-                            "type":  1
-                        },
-                        {
-                            "word":  "EON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HOE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "INTEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOCH",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "MINT,RHOE,SCOL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1017,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "HET",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "CARE",
+      "type": 0
+    },
+    {
+      "word": "CARS",
+      "type": 0
+    },
+    {
+      "word": "RARE",
+      "type": 0
+    },
+    {
+      "word": "STEP",
+      "type": 0
+    },
+    {
+      "word": "WEST",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "EWE",
+      "type": 0
+    },
+    {
+      "word": "HEP",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "PEH",
+      "type": 0
+    },
+    {
+      "word": "PEW",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SEW",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TEW",
+      "type": 0
+    },
+    {
+      "word": "WEE",
+      "type": 0
+    },
+    {
+      "word": "WET",
+      "type": 0
+    },
+    {
+      "word": "ACHE",
+      "type": 0
+    },
+    {
+      "word": "CARP",
+      "type": 0
+    },
+    {
+      "word": "EPEE",
+      "type": 0
+    },
+    {
+      "word": "ERST",
+      "type": 0
+    },
+    {
+      "word": "EWES",
+      "type": 0
+    },
+    {
+      "word": "HETS",
+      "type": 0
+    },
+    {
+      "word": "PEER",
+      "type": 0
+    },
+    {
+      "word": "PETS",
+      "type": 0
+    },
+    {
+      "word": "PEWS",
+      "type": 0
+    },
+    {
+      "word": "PREE",
+      "type": 0
+    },
+    {
+      "word": "REES",
+      "type": 0
+    },
+    {
+      "word": "RETS",
+      "type": 0
+    },
+    {
+      "word": "SEER",
+      "type": 0
+    },
+    {
+      "word": "SEWS",
+      "type": 0
+    },
+    {
+      "word": "STEW",
+      "type": 0
+    },
+    {
+      "word": "TEES",
+      "type": 0
+    },
+    {
+      "word": "TEWS",
+      "type": 0
+    },
+    {
+      "word": "WEER",
+      "type": 0
+    },
+    {
+      "word": "WEET",
+      "type": 0
+    },
+    {
+      "word": "WETS",
+      "type": 0
+    },
+    {
+      "word": "CARET",
+      "type": 0
+    },
+    {
+      "word": "ESTER",
+      "type": 0
+    },
+    {
+      "word": "PEERS",
+      "type": 0
+    },
+    {
+      "word": "PEWEE",
+      "type": 0
+    },
+    {
+      "word": "PREES",
+      "type": 0
+    },
+    {
+      "word": "REEST",
+      "type": 0
+    },
+    {
+      "word": "SEERS",
+      "type": 0
+    },
+    {
+      "word": "STEEP",
+      "type": 0
+    },
+    {
+      "word": "STEER",
+      "type": 0
+    },
+    {
+      "word": "SWEER",
+      "type": 0
+    },
+    {
+      "word": "SWEET",
+      "type": 0
+    },
+    {
+      "word": "TEPEE",
+      "type": 0
+    },
+    {
+      "word": "WEETS",
+      "type": 0
+    },
+    {
+      "word": "WESTS",
+      "type": 0
+    },
+    {
+      "word": "CARETS",
+      "type": 0
+    },
+    {
+      "word": "CARPET",
+      "type": 0
+    },
+    {
+      "word": "ESTERS",
+      "type": 0
+    },
+    {
+      "word": "RACHET",
+      "type": 0
+    },
+    {
+      "word": "REESTS",
+      "type": 0
+    },
+    {
+      "word": "STEERS",
+      "type": 0
+    },
+    {
+      "word": "SWEETS",
+      "type": 0
+    },
+    {
+      "word": "WESTER",
+      "type": 0
+    },
+    {
+      "word": "CARPETS",
+      "type": 0
+    },
+    {
+      "word": "RACHETS",
+      "type": 0
+    },
+    {
+      "word": "WESTERS",
+      "type": 0
+    }
+  ],
+  "letters": "SEWS,TEET,SRPE,RACH",
+  "obstacles": []
 }

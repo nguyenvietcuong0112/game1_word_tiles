@@ -1,122 +1,231 @@
-﻿{
-    "id":  2095,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "SAW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MASS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOSS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SWAM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TOMB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOSS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMBER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOMBER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MASSE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MAW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOTO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SOMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WAS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ESWR,OSAE,TOMB",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2095,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "GOA",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "HEAR",
+      "type": 0
+    },
+    {
+      "word": "HEAT",
+      "type": 0
+    },
+    {
+      "word": "MOST",
+      "type": 0
+    },
+    {
+      "word": "STAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "BOA",
+      "type": 0
+    },
+    {
+      "word": "BOG",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERG",
+      "type": 0
+    },
+    {
+      "word": "GOB",
+      "type": 0
+    },
+    {
+      "word": "MOA",
+      "type": 0
+    },
+    {
+      "word": "OAR",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "SOS",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "BOAR",
+      "type": 0
+    },
+    {
+      "word": "BRAE",
+      "type": 0
+    },
+    {
+      "word": "BRAT",
+      "type": 0
+    },
+    {
+      "word": "EATH",
+      "type": 0
+    },
+    {
+      "word": "EATS",
+      "type": 0
+    },
+    {
+      "word": "ERGO",
+      "type": 0
+    },
+    {
+      "word": "GREE",
+      "type": 0
+    },
+    {
+      "word": "OGRE",
+      "type": 0
+    },
+    {
+      "word": "RATH",
+      "type": 0
+    },
+    {
+      "word": "RATS",
+      "type": 0
+    },
+    {
+      "word": "REES",
+      "type": 0
+    },
+    {
+      "word": "SEAR",
+      "type": 0
+    },
+    {
+      "word": "SEER",
+      "type": 0
+    },
+    {
+      "word": "SOAR",
+      "type": 0
+    },
+    {
+      "word": "TARO",
+      "type": 0
+    },
+    {
+      "word": "BOSOM",
+      "type": 0
+    },
+    {
+      "word": "BRATS",
+      "type": 0
+    },
+    {
+      "word": "GREES",
+      "type": 0
+    },
+    {
+      "word": "HEATS",
+      "type": 0
+    },
+    {
+      "word": "RATHE",
+      "type": 0
+    },
+    {
+      "word": "TAROC",
+      "type": 0
+    }
+  ],
+  "letters": "ERGCO,EAOBR,SOSTA,OMTHE",
+  "obstacles": []
 }

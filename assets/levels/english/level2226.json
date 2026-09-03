@@ -1,89 +1,179 @@
-﻿{
-    "id":  2226,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "APE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "END",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAVE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "COVEN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AVOCADO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VAPE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OLDN,DOVE,ACAP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2226,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "DRY",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "SKI",
+      "type": 0
+    },
+    {
+      "word": "CELL",
+      "type": 0
+    },
+    {
+      "word": "DEVEL",
+      "type": 0
+    },
+    {
+      "word": "DROVE",
+      "type": 0
+    },
+    {
+      "word": "GRADE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABY",
+      "type": 0
+    },
+    {
+      "word": "CEL",
+      "type": 0
+    },
+    {
+      "word": "DAB",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "KID",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "BADE",
+      "type": 0
+    },
+    {
+      "word": "DELE",
+      "type": 0
+    },
+    {
+      "word": "DELL",
+      "type": 0
+    },
+    {
+      "word": "GRAB",
+      "type": 0
+    },
+    {
+      "word": "GRAD",
+      "type": 0
+    },
+    {
+      "word": "LEAS",
+      "type": 0
+    },
+    {
+      "word": "LEVO",
+      "type": 0
+    },
+    {
+      "word": "LEVY",
+      "type": 0
+    },
+    {
+      "word": "OSSA",
+      "type": 0
+    },
+    {
+      "word": "ROVE",
+      "type": 0
+    },
+    {
+      "word": "SKID",
+      "type": 0
+    },
+    {
+      "word": "SORD",
+      "type": 0
+    },
+    {
+      "word": "CEDAR",
+      "type": 0
+    },
+    {
+      "word": "DROSS",
+      "type": 0
+    },
+    {
+      "word": "ROVED",
+      "type": 0
+    },
+    {
+      "word": "DROVED",
+      "type": 0
+    }
+  ],
+  "letters": "IDBAR,KRYDG,SOVEC,SAELL",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

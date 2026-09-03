@@ -1,95 +1,191 @@
-﻿{
-    "id":  1933,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GANG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEAGUE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AGES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NAG",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DUEG,AGAN,SEEL",
-    "obstacles":  [
-                      {
-                          "required_words":  9,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1933,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "MAP",
+      "type": 0
+    },
+    {
+      "word": "RIB",
+      "type": 0
+    },
+    {
+      "word": "SIC",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "LIST",
+      "type": 0
+    },
+    {
+      "word": "MAIN",
+      "type": 0
+    },
+    {
+      "word": "SHIP",
+      "type": 0
+    },
+    {
+      "word": "TIPS",
+      "type": 0
+    },
+    {
+      "word": "FIRST",
+      "type": 0
+    },
+    {
+      "word": "LISTS",
+      "type": 0
+    },
+    {
+      "word": "SHIPS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "AIT",
+      "type": 0
+    },
+    {
+      "word": "APT",
+      "type": 0
+    },
+    {
+      "word": "CIS",
+      "type": 0
+    },
+    {
+      "word": "FIB",
+      "type": 0
+    },
+    {
+      "word": "FIR",
+      "type": 0
+    },
+    {
+      "word": "HIP",
+      "type": 0
+    },
+    {
+      "word": "HIT",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "NIT",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "PIT",
+      "type": 0
+    },
+    {
+      "word": "RIF",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "TIP",
+      "type": 0
+    },
+    {
+      "word": "AITS",
+      "type": 0
+    },
+    {
+      "word": "CIST",
+      "type": 0
+    },
+    {
+      "word": "FIBS",
+      "type": 0
+    },
+    {
+      "word": "FIRS",
+      "type": 0
+    },
+    {
+      "word": "HIPS",
+      "type": 0
+    },
+    {
+      "word": "HITS",
+      "type": 0
+    },
+    {
+      "word": "IAMB",
+      "type": 0
+    },
+    {
+      "word": "NITS",
+      "type": 0
+    },
+    {
+      "word": "PAIN",
+      "type": 0
+    },
+    {
+      "word": "PITS",
+      "type": 0
+    },
+    {
+      "word": "RIBS",
+      "type": 0
+    },
+    {
+      "word": "SPIT",
+      "type": 0
+    },
+    {
+      "word": "CISTS",
+      "type": 0
+    },
+    {
+      "word": "IAMBI",
+      "type": 0
+    },
+    {
+      "word": "IAMBS",
+      "type": 0
+    },
+    {
+      "word": "SHITS",
+      "type": 0
+    },
+    {
+      "word": "SPITS",
+      "type": 0
+    },
+    {
+      "word": "FIRSTS",
+      "type": 0
+    }
+  ],
+  "letters": "SPIHL,RSTSI,IBPTC,FMAIN",
+  "obstacles": []
 }

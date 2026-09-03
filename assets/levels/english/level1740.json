@@ -1,53 +1,127 @@
-﻿{
-    "id":  1740,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HUNT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THIEF",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "THINE",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "UHIN,NTEE,ELFD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1740,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DIM",
+      "type": 0
+    },
+    {
+      "word": "DUI",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "MID",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "SUM",
+      "type": 0
+    },
+    {
+      "word": "STIMULI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DIT",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "LUM",
+      "type": 0
+    },
+    {
+      "word": "MUS",
+      "type": 0
+    },
+    {
+      "word": "MUT",
+      "type": 0
+    },
+    {
+      "word": "UTS",
+      "type": 0
+    },
+    {
+      "word": "DEIL",
+      "type": 0
+    },
+    {
+      "word": "DITS",
+      "type": 0
+    },
+    {
+      "word": "LIED",
+      "type": 0
+    },
+    {
+      "word": "MUTS",
+      "type": 0
+    },
+    {
+      "word": "REDD",
+      "type": 0
+    },
+    {
+      "word": "SLUM",
+      "type": 0
+    },
+    {
+      "word": "STUM",
+      "type": 0
+    },
+    {
+      "word": "SUED",
+      "type": 0
+    },
+    {
+      "word": "SUER",
+      "type": 0
+    },
+    {
+      "word": "DEILS",
+      "type": 0
+    },
+    {
+      "word": "TUMID",
+      "type": 0
+    }
+  ],
+  "letters": "STID,LUMD,IUUE,EDSR",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,89 +1,275 @@
-﻿{
-    "id":  2335,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AUNT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OPEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACUTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAUNT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "HAIRCUT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "PEE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PENT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PONT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RCUTE,IAUNE,SHNOP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2335,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIM",
+      "type": 0
+    },
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "FED",
+      "type": 0
+    },
+    {
+      "word": "ICE",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "DOES",
+      "type": 0
+    },
+    {
+      "word": "DONE",
+      "type": 0
+    },
+    {
+      "word": "CLAIM",
+      "type": 0
+    },
+    {
+      "word": "CLAIMS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BOD",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "DOE",
+      "type": 0
+    },
+    {
+      "word": "EME",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "EON",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "FEN",
+      "type": 0
+    },
+    {
+      "word": "MEM",
+      "type": 0
+    },
+    {
+      "word": "MIM",
+      "type": 0
+    },
+    {
+      "word": "MOA",
+      "type": 0
+    },
+    {
+      "word": "NEB",
+      "type": 0
+    },
+    {
+      "word": "NOB",
+      "type": 0
+    },
+    {
+      "word": "NOD",
+      "type": 0
+    },
+    {
+      "word": "NOM",
+      "type": 0
+    },
+    {
+      "word": "OBE",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "AIMS",
+      "type": 0
+    },
+    {
+      "word": "BENE",
+      "type": 0
+    },
+    {
+      "word": "BODE",
+      "type": 0
+    },
+    {
+      "word": "BONE",
+      "type": 0
+    },
+    {
+      "word": "CIAO",
+      "type": 0
+    },
+    {
+      "word": "DEME",
+      "type": 0
+    },
+    {
+      "word": "DENE",
+      "type": 0
+    },
+    {
+      "word": "EBON",
+      "type": 0
+    },
+    {
+      "word": "EMES",
+      "type": 0
+    },
+    {
+      "word": "EMIC",
+      "type": 0
+    },
+    {
+      "word": "ICED",
+      "type": 0
+    },
+    {
+      "word": "LAIC",
+      "type": 0
+    },
+    {
+      "word": "MEMO",
+      "type": 0
+    },
+    {
+      "word": "MEMS",
+      "type": 0
+    },
+    {
+      "word": "MESS",
+      "type": 0
+    },
+    {
+      "word": "MICE",
+      "type": 0
+    },
+    {
+      "word": "MIME",
+      "type": 0
+    },
+    {
+      "word": "NEBS",
+      "type": 0
+    },
+    {
+      "word": "NOBS",
+      "type": 0
+    },
+    {
+      "word": "NODE",
+      "type": 0
+    },
+    {
+      "word": "NOES",
+      "type": 0
+    },
+    {
+      "word": "NOME",
+      "type": 0
+    },
+    {
+      "word": "SEME",
+      "type": 0
+    },
+    {
+      "word": "SEMI",
+      "type": 0
+    },
+    {
+      "word": "AIMED",
+      "type": 0
+    },
+    {
+      "word": "BONED",
+      "type": 0
+    },
+    {
+      "word": "DEMES",
+      "type": 0
+    },
+    {
+      "word": "MIMED",
+      "type": 0
+    },
+    {
+      "word": "MIMEO",
+      "type": 0
+    },
+    {
+      "word": "MIMES",
+      "type": 0
+    },
+    {
+      "word": "MONDE",
+      "type": 0
+    },
+    {
+      "word": "MONDO",
+      "type": 0
+    },
+    {
+      "word": "NOMES",
+      "type": 0
+    },
+    {
+      "word": "CLAIMED",
+      "type": 0
+    },
+    {
+      "word": "DECLAIM",
+      "type": 0
+    },
+    {
+      "word": "DECLAIMS",
+      "type": 0
+    }
+  ],
+  "letters": "FNOAL,EDMIC,NOEME,EBSSD",
+  "obstacles": []
 }

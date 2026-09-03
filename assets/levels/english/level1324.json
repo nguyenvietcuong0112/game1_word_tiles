@@ -1,123 +1,255 @@
-﻿{
-    "id":  1324,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CUP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CULT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CUTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PULSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UPSET",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CASTE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CASTES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CULTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CUPS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CUTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HUTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SETS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TESLA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UPSETS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PSEH,ULTU,CASC",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1324,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADD",
+      "type": 0
+    },
+    {
+      "word": "ADS",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "BATH",
+      "type": 0
+    },
+    {
+      "word": "DEAD",
+      "type": 0
+    },
+    {
+      "word": "EARL",
+      "type": 0
+    },
+    {
+      "word": "LEAD",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAL",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "ELD",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LAT",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "REP",
+      "type": 0
+    },
+    {
+      "word": "TAB",
+      "type": 0
+    },
+    {
+      "word": "ABED",
+      "type": 0
+    },
+    {
+      "word": "BALD",
+      "type": 0
+    },
+    {
+      "word": "BALE",
+      "type": 0
+    },
+    {
+      "word": "BEAD",
+      "type": 0
+    },
+    {
+      "word": "BEAR",
+      "type": 0
+    },
+    {
+      "word": "DARE",
+      "type": 0
+    },
+    {
+      "word": "DEAR",
+      "type": 0
+    },
+    {
+      "word": "ELDS",
+      "type": 0
+    },
+    {
+      "word": "LADE",
+      "type": 0
+    },
+    {
+      "word": "LATH",
+      "type": 0
+    },
+    {
+      "word": "LEAR",
+      "type": 0
+    },
+    {
+      "word": "PEDS",
+      "type": 0
+    },
+    {
+      "word": "RADS",
+      "type": 0
+    },
+    {
+      "word": "REDS",
+      "type": 0
+    },
+    {
+      "word": "REPS",
+      "type": 0
+    },
+    {
+      "word": "SPED",
+      "type": 0
+    },
+    {
+      "word": "TALE",
+      "type": 0
+    },
+    {
+      "word": "ALDER",
+      "type": 0
+    },
+    {
+      "word": "BALDS",
+      "type": 0
+    },
+    {
+      "word": "BALED",
+      "type": 0
+    },
+    {
+      "word": "BATHS",
+      "type": 0
+    },
+    {
+      "word": "BEADS",
+      "type": 0
+    },
+    {
+      "word": "DEADS",
+      "type": 0
+    },
+    {
+      "word": "EARED",
+      "type": 0
+    },
+    {
+      "word": "ELDER",
+      "type": 0
+    },
+    {
+      "word": "LATHS",
+      "type": 0
+    },
+    {
+      "word": "LEADS",
+      "type": 0
+    },
+    {
+      "word": "BALDER",
+      "type": 0
+    },
+    {
+      "word": "DAEDAL",
+      "type": 0
+    },
+    {
+      "word": "DEADER",
+      "type": 0
+    },
+    {
+      "word": "LEADER",
+      "type": 0
+    }
+  ],
+  "letters": "PERL,SDAA,HLED,TABD",
+  "obstacles": []
 }

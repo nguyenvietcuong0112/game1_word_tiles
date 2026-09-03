@@ -1,126 +1,171 @@
-﻿{
-    "id":  1484,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHAME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEMPO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHAMPOO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AHEM",
-                            "type":  1
-                        },
-                        {
-                            "word":  "AMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HEIST",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HEMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SHAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STOOP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEMP",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AMPO,HEIO,STST",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1484,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "NEW",
+      "type": 0
+    },
+    {
+      "word": "OWE",
+      "type": 0
+    },
+    {
+      "word": "CARD",
+      "type": 0
+    },
+    {
+      "word": "INCH",
+      "type": 0
+    },
+    {
+      "word": "PARK",
+      "type": 0
+    },
+    {
+      "word": "RAIN",
+      "type": 0
+    },
+    {
+      "word": "PARKED",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARK",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "HEN",
+      "type": 0
+    },
+    {
+      "word": "HEW",
+      "type": 0
+    },
+    {
+      "word": "IRK",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "WEN",
+      "type": 0
+    },
+    {
+      "word": "WOE",
+      "type": 0
+    },
+    {
+      "word": "ACHE",
+      "type": 0
+    },
+    {
+      "word": "ACNE",
+      "type": 0
+    },
+    {
+      "word": "ARIA",
+      "type": 0
+    },
+    {
+      "word": "CAIN",
+      "type": 0
+    },
+    {
+      "word": "CARK",
+      "type": 0
+    },
+    {
+      "word": "CHEW",
+      "type": 0
+    },
+    {
+      "word": "CINE",
+      "type": 0
+    },
+    {
+      "word": "PARD",
+      "type": 0
+    },
+    {
+      "word": "RIND",
+      "type": 0
+    },
+    {
+      "word": "WEND",
+      "type": 0
+    },
+    {
+      "word": "CAIRD",
+      "type": 0
+    },
+    {
+      "word": "CINCH",
+      "type": 0
+    },
+    {
+      "word": "IRKED",
+      "type": 0
+    },
+    {
+      "word": "WENCH",
+      "type": 0
+    },
+    {
+      "word": "CARKED",
+      "type": 0
+    },
+    {
+      "word": "RICRAC",
+      "type": 0
+    }
+  ],
+  "letters": "PACR,KRIA,EDNC,OWEH",
+  "obstacles": []
 }

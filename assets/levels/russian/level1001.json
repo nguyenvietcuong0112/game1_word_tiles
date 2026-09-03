@@ -1,95 +1,51 @@
-﻿{
-    "id":  1001,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "БОГ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛЁД",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛИК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛИС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПИК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БЛИК",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ЛИСТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПИКЕ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ОБЛИК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БЛЁСТКИ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ГЛИСТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КЕПИ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОБЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ПЕК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СИП",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ДЁСТ,БЛИК,ОГПЕ",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1001,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ВИЧ",
+      "type": 0
+    },
+    {
+      "word": "ЛИВ",
+      "type": 0
+    },
+    {
+      "word": "МЕИ",
+      "type": 0
+    },
+    {
+      "word": "МЕХ",
+      "type": 0
+    },
+    {
+      "word": "РЕЙ",
+      "type": 0
+    },
+    {
+      "word": "ЧЕТ",
+      "type": 0
+    },
+    {
+      "word": "ЮЛИ",
+      "type": 0
+    },
+    {
+      "word": "РЕЙЧ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ВИЛ",
+      "type": 0
+    },
+    {
+      "word": "РЕЙХ",
+      "type": 0
+    }
+  ],
+  "letters": "ТЛИЧ,ЕЧВЮ,ЕЙХЛ,РМЕИ",
+  "obstacles": []
 }

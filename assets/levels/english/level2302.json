@@ -1,81 +1,183 @@
-﻿{
-    "id":  2302,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARC",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCARCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VOLCANO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CARS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OARS",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "VNOE,OARC,LCSI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2302,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMP",
+      "type": 0
+    },
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "CRY",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "KEEN",
+      "type": 0
+    },
+    {
+      "word": "MAKE",
+      "type": 0
+    },
+    {
+      "word": "VISA",
+      "type": 0
+    },
+    {
+      "word": "ANGEL",
+      "type": 0
+    },
+    {
+      "word": "ANGELS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "CIS",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "ERN",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "PSI",
+      "type": 0
+    },
+    {
+      "word": "SIC",
+      "type": 0
+    },
+    {
+      "word": "VEE",
+      "type": 0
+    },
+    {
+      "word": "VIS",
+      "type": 0
+    },
+    {
+      "word": "AKEE",
+      "type": 0
+    },
+    {
+      "word": "AMAS",
+      "type": 0
+    },
+    {
+      "word": "AMPS",
+      "type": 0
+    },
+    {
+      "word": "GELS",
+      "type": 0
+    },
+    {
+      "word": "SAMP",
+      "type": 0
+    },
+    {
+      "word": "SANG",
+      "type": 0
+    },
+    {
+      "word": "ANGER",
+      "type": 0
+    },
+    {
+      "word": "MANGE",
+      "type": 0
+    },
+    {
+      "word": "REGNA",
+      "type": 0
+    },
+    {
+      "word": "ANGERS",
+      "type": 0
+    },
+    {
+      "word": "MANGEL",
+      "type": 0
+    },
+    {
+      "word": "MANGER",
+      "type": 0
+    },
+    {
+      "word": "SANGER",
+      "type": 0
+    },
+    {
+      "word": "MANGELS",
+      "type": 0
+    },
+    {
+      "word": "MANGERS",
+      "type": 0
+    }
+  ],
+  "letters": "GNAMA,ERSPK,LCIVE,SRYNE",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

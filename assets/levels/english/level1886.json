@@ -1,107 +1,191 @@
-﻿{
-    "id":  1886,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEEM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DUET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIMP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEMPO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DOPE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIMPED",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RODE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROPED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEMP",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TEMPE",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "IMET,LPEE,RODU",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1886,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "MOB",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "TWO",
+      "type": 0
+    },
+    {
+      "word": "BEAT",
+      "type": 0
+    },
+    {
+      "word": "BOOM",
+      "type": 0
+    },
+    {
+      "word": "DEBT",
+      "type": 0
+    },
+    {
+      "word": "PATH",
+      "type": 0
+    },
+    {
+      "word": "COMBO",
+      "type": 0
+    },
+    {
+      "word": "DEATH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "APT",
+      "type": 0
+    },
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "COO",
+      "type": 0
+    },
+    {
+      "word": "COT",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "HOB",
+      "type": 0
+    },
+    {
+      "word": "MOC",
+      "type": 0
+    },
+    {
+      "word": "MOO",
+      "type": 0
+    },
+    {
+      "word": "OBE",
+      "type": 0
+    },
+    {
+      "word": "OOH",
+      "type": 0
+    },
+    {
+      "word": "OOT",
+      "type": 0
+    },
+    {
+      "word": "OPT",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "POW",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "THO",
+      "type": 0
+    },
+    {
+      "word": "WOO",
+      "type": 0
+    },
+    {
+      "word": "WOP",
+      "type": 0
+    },
+    {
+      "word": "BOOT",
+      "type": 0
+    },
+    {
+      "word": "COMB",
+      "type": 0
+    },
+    {
+      "word": "EATH",
+      "type": 0
+    },
+    {
+      "word": "HOBO",
+      "type": 0
+    },
+    {
+      "word": "HOOP",
+      "type": 0
+    },
+    {
+      "word": "POOH",
+      "type": 0
+    },
+    {
+      "word": "TEAT",
+      "type": 0
+    },
+    {
+      "word": "BOOTH",
+      "type": 0
+    },
+    {
+      "word": "OPTED",
+      "type": 0
+    }
+  ],
+  "letters": "OOCOM,BTHOB,EAPOO,DETWM",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

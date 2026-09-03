@@ -1,65 +1,143 @@
-﻿{
-    "id":  750,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "APP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PLOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROACH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APPROACH",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PAIL",
-                            "type":  1
-                        },
-                        {
-                            "word":  "PAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OACH,RAIT,PPLO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 750,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "YET",
+      "type": 0
+    },
+    {
+      "word": "HAVE",
+      "type": 0
+    },
+    {
+      "word": "HEAD",
+      "type": 0
+    },
+    {
+      "word": "HEAT",
+      "type": 0
+    },
+    {
+      "word": "THEY",
+      "type": 0
+    },
+    {
+      "word": "THRU",
+      "type": 0
+    },
+    {
+      "word": "HEAVY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "AYE",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "HAY",
+      "type": 0
+    },
+    {
+      "word": "HET",
+      "type": 0
+    },
+    {
+      "word": "HEY",
+      "type": 0
+    },
+    {
+      "word": "LAV",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "YAH",
+      "type": 0
+    },
+    {
+      "word": "YEA",
+      "type": 0
+    },
+    {
+      "word": "YEH",
+      "type": 0
+    },
+    {
+      "word": "EATH",
+      "type": 0
+    },
+    {
+      "word": "HEAL",
+      "type": 0
+    },
+    {
+      "word": "TEAL",
+      "type": 0
+    },
+    {
+      "word": "YETT",
+      "type": 0
+    },
+    {
+      "word": "AHEAD",
+      "type": 0
+    },
+    {
+      "word": "HEATH",
+      "type": 0
+    }
+  ],
+  "letters": "VALU,YETR,AHTH,VEAD",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,118 +1,143 @@
-﻿{
-    "id":  1420,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ЕДА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЕЛЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЗУД",
-                             "type":  0
-                         },
-                         {
-                             "word":  "МЕЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "МЕДЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "МЕЛЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "МУЗА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "УДАВ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "УДЕЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "МЕДУЗА",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АЗУ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ВАД",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ДАВ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ДЕМ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЗАВ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЗАД",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЗАДЕЛ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ЗУМ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛЕМ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "УДА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "УЗА",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ЛЬВ,ЕДА,МУЗ",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1420,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "АРИ",
+      "type": 0
+    },
+    {
+      "word": "ДВА",
+      "type": 0
+    },
+    {
+      "word": "ЕВА",
+      "type": 0
+    },
+    {
+      "word": "ОДА",
+      "type": 0
+    },
+    {
+      "word": "РАЗ",
+      "type": 0
+    },
+    {
+      "word": "РИЗ",
+      "type": 0
+    },
+    {
+      "word": "УЗИ",
+      "type": 0
+    },
+    {
+      "word": "ФРИ",
+      "type": 0
+    },
+    {
+      "word": "ОТВЕТ",
+      "type": 0
+    },
+    {
+      "word": "ТВАРИ",
+      "type": 0
+    },
+    {
+      "word": "ОТВЕТА",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АВЕ",
+      "type": 0
+    },
+    {
+      "word": "ВЕЗ",
+      "type": 0
+    },
+    {
+      "word": "ДОТ",
+      "type": 0
+    },
+    {
+      "word": "ДОУ",
+      "type": 0
+    },
+    {
+      "word": "ЕТА",
+      "type": 0
+    },
+    {
+      "word": "ЗЕВ",
+      "type": 0
+    },
+    {
+      "word": "ЗЕТ",
+      "type": 0
+    },
+    {
+      "word": "ИРА",
+      "type": 0
+    },
+    {
+      "word": "ТОД",
+      "type": 0
+    },
+    {
+      "word": "ТОУ",
+      "type": 0
+    },
+    {
+      "word": "АВТО",
+      "type": 0
+    },
+    {
+      "word": "ЗАРИ",
+      "type": 0
+    },
+    {
+      "word": "РАЗЕ",
+      "type": 0
+    },
+    {
+      "word": "ФРАЗ",
+      "type": 0
+    },
+    {
+      "word": "ЗАВЕТ",
+      "type": 0
+    },
+    {
+      "word": "ОТВЕЗ",
+      "type": 0
+    },
+    {
+      "word": "ФРАЗЕ",
+      "type": 0
+    },
+    {
+      "word": "ЗАВЕТА",
+      "type": 0
+    }
+  ],
+  "letters": "ИРАЗ,ЗФВЕ,УОТТ,АДВА",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

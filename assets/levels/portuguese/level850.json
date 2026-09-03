@@ -1,93 +1,167 @@
-﻿{
-    "id":  850,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "PÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POLO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SELO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOLO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CULPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDOSO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEDOSO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DESCULPA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "APO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CULPOSO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DOLO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ODE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEUL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOLES",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "CULPA,SELOÃ,IDOSP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 850,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAI",
+      "type": 0
+    },
+    {
+      "word": "DIA",
+      "type": 0
+    },
+    {
+      "word": "ECA",
+      "type": 0
+    },
+    {
+      "word": "FIO",
+      "type": 0
+    },
+    {
+      "word": "TIA",
+      "type": 0
+    },
+    {
+      "word": "TIO",
+      "type": 0
+    },
+    {
+      "word": "VOS",
+      "type": 0
+    },
+    {
+      "word": "ALVO",
+      "type": 0
+    },
+    {
+      "word": "BURT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "AIE",
+      "type": 0
+    },
+    {
+      "word": "BEC",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DIO",
+      "type": 0
+    },
+    {
+      "word": "EIA",
+      "type": 0
+    },
+    {
+      "word": "EID",
+      "type": 0
+    },
+    {
+      "word": "FIT",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "TRU",
+      "type": 0
+    },
+    {
+      "word": "ADIE",
+      "type": 0
+    },
+    {
+      "word": "AIDA",
+      "type": 0
+    },
+    {
+      "word": "BECA",
+      "type": 0
+    },
+    {
+      "word": "CAIE",
+      "type": 0
+    },
+    {
+      "word": "CEIA",
+      "type": 0
+    },
+    {
+      "word": "DIOS",
+      "type": 0
+    },
+    {
+      "word": "FIOS",
+      "type": 0
+    },
+    {
+      "word": "RUBE",
+      "type": 0
+    },
+    {
+      "word": "TIOS",
+      "type": 0
+    },
+    {
+      "word": "VLAD",
+      "type": 0
+    },
+    {
+      "word": "ADIOS",
+      "type": 0
+    },
+    {
+      "word": "ADITI",
+      "type": 0
+    },
+    {
+      "word": "ALVOS",
+      "type": 0
+    }
+  ],
+  "letters": "UBEC,RTIA,FIDA,SOVL",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,107 +1,243 @@
-﻿{
-    "id":  1541,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DANS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DESEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NESNE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ADESE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LADEN",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LADES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LANSE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEDA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SENA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SONE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SEEN,ENSO,DALT",
-    "obstacles":  [
-                      {
-                          "required_words":  8,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1541,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "KES",
+      "type": 0
+    },
+    {
+      "word": "LİK",
+      "type": 0
+    },
+    {
+      "word": "NDA",
+      "type": 0
+    },
+    {
+      "word": "NDE",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "DAİR",
+      "type": 0
+    },
+    {
+      "word": "SANA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "AİN",
+      "type": 0
+    },
+    {
+      "word": "AİR",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BAİ",
+      "type": 0
+    },
+    {
+      "word": "BEA",
+      "type": 0
+    },
+    {
+      "word": "BEİ",
+      "type": 0
+    },
+    {
+      "word": "DAİ",
+      "type": 0
+    },
+    {
+      "word": "DEA",
+      "type": 0
+    },
+    {
+      "word": "KAS",
+      "type": 0
+    },
+    {
+      "word": "KİL",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "NBA",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RİA",
+      "type": 0
+    },
+    {
+      "word": "RİN",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAR",
+      "type": 0
+    },
+    {
+      "word": "SEK",
+      "type": 0
+    },
+    {
+      "word": "İKE",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "ABED",
+      "type": 0
+    },
+    {
+      "word": "AKİL",
+      "type": 0
+    },
+    {
+      "word": "ARİA",
+      "type": 0
+    },
+    {
+      "word": "ASAN",
+      "type": 0
+    },
+    {
+      "word": "ASAR",
+      "type": 0
+    },
+    {
+      "word": "BEAN",
+      "type": 0
+    },
+    {
+      "word": "DEAN",
+      "type": 0
+    },
+    {
+      "word": "KANA",
+      "type": 0
+    },
+    {
+      "word": "KASA",
+      "type": 0
+    },
+    {
+      "word": "KASE",
+      "type": 0
+    },
+    {
+      "word": "LİKE",
+      "type": 0
+    },
+    {
+      "word": "NASA",
+      "type": 0
+    },
+    {
+      "word": "RANA",
+      "type": 0
+    },
+    {
+      "word": "RANİ",
+      "type": 0
+    },
+    {
+      "word": "RİNA",
+      "type": 0
+    },
+    {
+      "word": "SAKE",
+      "type": 0
+    },
+    {
+      "word": "SAKİ",
+      "type": 0
+    },
+    {
+      "word": "SARİ",
+      "type": 0
+    },
+    {
+      "word": "İRAN",
+      "type": 0
+    },
+    {
+      "word": "NAKİL",
+      "type": 0
+    },
+    {
+      "word": "SARİN",
+      "type": 0
+    },
+    {
+      "word": "SEKİLDE",
+      "type": 0
+    }
+  ],
+  "letters": "DAİR,NBNA,DEAS,LİKE",
+  "obstacles": []
 }

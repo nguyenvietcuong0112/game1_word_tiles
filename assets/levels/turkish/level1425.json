@@ -1,41 +1,91 @@
-﻿{
-    "id":  1425,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AFET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VEFA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAVET",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALFA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "VET,AFL,DUA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1425,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "DİL",
+      "type": 0
+    },
+    {
+      "word": "EUN",
+      "type": 0
+    },
+    {
+      "word": "GÖM",
+      "type": 0
+    },
+    {
+      "word": "LAF",
+      "type": 0
+    },
+    {
+      "word": "ADİL",
+      "type": 0
+    },
+    {
+      "word": "UNUT",
+      "type": 0
+    },
+    {
+      "word": "VLAD",
+      "type": 0
+    },
+    {
+      "word": "UNUTMA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMT",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DİE",
+      "type": 0
+    },
+    {
+      "word": "FAL",
+      "type": 0
+    },
+    {
+      "word": "UNU",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    }
+  ],
+  "letters": "DİEU,ALUN,FVTM,MÖGA",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

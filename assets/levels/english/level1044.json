@@ -1,99 +1,107 @@
-﻿{
-    "id":  1044,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "RID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAVOR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AVOCADO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CASA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CASTE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STEAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEAS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RIDO,OCAE,VAST",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1044,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "BOA",
+      "type": 0
+    },
+    {
+      "word": "IVY",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "VIS",
+      "type": 0
+    },
+    {
+      "word": "FOOD",
+      "type": 0
+    },
+    {
+      "word": "SOFA",
+      "type": 0
+    },
+    {
+      "word": "VISA",
+      "type": 0
+    },
+    {
+      "word": "FOODS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAS",
+      "type": 0
+    },
+    {
+      "word": "FAS",
+      "type": 0
+    },
+    {
+      "word": "OAF",
+      "type": 0
+    },
+    {
+      "word": "OAR",
+      "type": 0
+    },
+    {
+      "word": "ODS",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "YOD",
+      "type": 0
+    },
+    {
+      "word": "AIRS",
+      "type": 0
+    },
+    {
+      "word": "ARIA",
+      "type": 0
+    },
+    {
+      "word": "BOAS",
+      "type": 0
+    },
+    {
+      "word": "OARS",
+      "type": 0
+    },
+    {
+      "word": "SOAR",
+      "type": 0
+    },
+    {
+      "word": "YODS",
+      "type": 0
+    },
+    {
+      "word": "SOFAS",
+      "type": 0
+    }
+  ],
+  "letters": "VYOD,IFOS,SAAR,BOAI",
+  "obstacles": []
 }

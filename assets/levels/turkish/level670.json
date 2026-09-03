@@ -1,65 +1,199 @@
-﻿{
-    "id":  670,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AŞK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAŞE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KESE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEŞKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AŞERME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KERMES",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EKME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KEŞKEK",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ŞAK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KESE,KKKM,AŞER",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 670,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "YAZ",
+      "type": 0
+    },
+    {
+      "word": "YÜZ",
+      "type": 0
+    },
+    {
+      "word": "AMAN",
+      "type": 0
+    },
+    {
+      "word": "CODY",
+      "type": 0
+    },
+    {
+      "word": "ZAMAN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMT",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ATM",
+      "type": 0
+    },
+    {
+      "word": "AZA",
+      "type": 0
+    },
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAO",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "TAA",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "ZAM",
+      "type": 0
+    },
+    {
+      "word": "ZAR",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "ATMA",
+      "type": 0
+    },
+    {
+      "word": "AZAR",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "RAZA",
+      "type": 0
+    },
+    {
+      "word": "YARA",
+      "type": 0
+    },
+    {
+      "word": "YAZA",
+      "type": 0
+    },
+    {
+      "word": "ZARA",
+      "type": 0
+    },
+    {
+      "word": "AMARA",
+      "type": 0
+    },
+    {
+      "word": "ARAMA",
+      "type": 0
+    },
+    {
+      "word": "ATMAN",
+      "type": 0
+    },
+    {
+      "word": "ATMAZ",
+      "type": 0
+    },
+    {
+      "word": "NAMAZ",
+      "type": 0
+    },
+    {
+      "word": "YARAM",
+      "type": 0
+    },
+    {
+      "word": "YAZAR",
+      "type": 0
+    },
+    {
+      "word": "ARAMAN",
+      "type": 0
+    }
+  ],
+  "letters": "EATN,RAMA,AZCO,YÜYD",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

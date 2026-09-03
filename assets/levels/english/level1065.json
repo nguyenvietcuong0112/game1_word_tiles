@@ -1,107 +1,183 @@
-﻿{
-    "id":  1065,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "RUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HALT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUNE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SWAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUNA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUNE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUNER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NATURE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DIE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUNS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SWAT",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TAW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WANE",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "REIDO,UNSTL,TAWHA",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1065,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "HON",
+      "type": 0
+    },
+    {
+      "word": "ION",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "SIT",
+      "type": 0
+    },
+    {
+      "word": "HAVE",
+      "type": 0
+    },
+    {
+      "word": "LEAVE",
+      "type": 0
+    },
+    {
+      "word": "BEAVER",
+      "type": 0
+    },
+    {
+      "word": "VERSION",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BAH",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "EBB",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "HAE",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "NOH",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "THO",
+      "type": 0
+    },
+    {
+      "word": "TIS",
+      "type": 0
+    },
+    {
+      "word": "ABBE",
+      "type": 0
+    },
+    {
+      "word": "AVER",
+      "type": 0
+    },
+    {
+      "word": "BAHT",
+      "type": 0
+    },
+    {
+      "word": "EAVE",
+      "type": 0
+    },
+    {
+      "word": "EBBS",
+      "type": 0
+    },
+    {
+      "word": "REMS",
+      "type": 0
+    },
+    {
+      "word": "REVS",
+      "type": 0
+    },
+    {
+      "word": "SITH",
+      "type": 0
+    },
+    {
+      "word": "THAE",
+      "type": 0
+    },
+    {
+      "word": "VERT",
+      "type": 0
+    },
+    {
+      "word": "AVERS",
+      "type": 0
+    },
+    {
+      "word": "AVERT",
+      "type": 0
+    },
+    {
+      "word": "HAVER",
+      "type": 0
+    },
+    {
+      "word": "HAVERS",
+      "type": 0
+    },
+    {
+      "word": "LEAVER",
+      "type": 0
+    },
+    {
+      "word": "BEAVERS",
+      "type": 0
+    },
+    {
+      "word": "LEAVERS",
+      "type": 0
+    },
+    {
+      "word": "AVERSION",
+      "type": 0
+    }
+  ],
+  "letters": "NLEB,OHAB,ITVS,SREM",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

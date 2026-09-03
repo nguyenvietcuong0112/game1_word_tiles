@@ -1,117 +1,283 @@
-﻿{
-    "id":  2360,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUNE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "FLEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEAF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SELF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STUN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TUNA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUNE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STUDENT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EDEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FANE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LEAFS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEANED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEST",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NUDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NUTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STUD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TIED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TUNED",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EANEN,LFUDT,ESTEI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2360,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "BUG",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "BELL",
+      "type": 0
+    },
+    {
+      "word": "CORE",
+      "type": 0
+    },
+    {
+      "word": "COST",
+      "type": 0
+    },
+    {
+      "word": "SALE",
+      "type": 0
+    },
+    {
+      "word": "SORT",
+      "type": 0
+    },
+    {
+      "word": "CORNER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "EBB",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ERN",
+      "type": 0
+    },
+    {
+      "word": "LAY",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ORT",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "RYA",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "UGH",
+      "type": 0
+    },
+    {
+      "word": "ALLS",
+      "type": 0
+    },
+    {
+      "word": "BELT",
+      "type": 0
+    },
+    {
+      "word": "BUGS",
+      "type": 0
+    },
+    {
+      "word": "CORN",
+      "type": 0
+    },
+    {
+      "word": "ELLS",
+      "type": 0
+    },
+    {
+      "word": "ERNE",
+      "type": 0
+    },
+    {
+      "word": "EROS",
+      "type": 0
+    },
+    {
+      "word": "HERN",
+      "type": 0
+    },
+    {
+      "word": "HERO",
+      "type": 0
+    },
+    {
+      "word": "HORN",
+      "type": 0
+    },
+    {
+      "word": "HOST",
+      "type": 0
+    },
+    {
+      "word": "RYAS",
+      "type": 0
+    },
+    {
+      "word": "SALL",
+      "type": 0
+    },
+    {
+      "word": "SALT",
+      "type": 0
+    },
+    {
+      "word": "SORE",
+      "type": 0
+    },
+    {
+      "word": "SORN",
+      "type": 0
+    },
+    {
+      "word": "TYRE",
+      "type": 0
+    },
+    {
+      "word": "ALERT",
+      "type": 0
+    },
+    {
+      "word": "ALTER",
+      "type": 0
+    },
+    {
+      "word": "BELAY",
+      "type": 0
+    },
+    {
+      "word": "BELLS",
+      "type": 0
+    },
+    {
+      "word": "GHOST",
+      "type": 0
+    },
+    {
+      "word": "HELLS",
+      "type": 0
+    },
+    {
+      "word": "HEROS",
+      "type": 0
+    },
+    {
+      "word": "RELAY",
+      "type": 0
+    },
+    {
+      "word": "RETRO",
+      "type": 0
+    },
+    {
+      "word": "SALTY",
+      "type": 0
+    },
+    {
+      "word": "SOREL",
+      "type": 0
+    },
+    {
+      "word": "BELTER",
+      "type": 0
+    },
+    {
+      "word": "CORNET",
+      "type": 0
+    },
+    {
+      "word": "ENCORE",
+      "type": 0
+    },
+    {
+      "word": "HORNET",
+      "type": 0
+    },
+    {
+      "word": "ORNERY",
+      "type": 0
+    },
+    {
+      "word": "RETROS",
+      "type": 0
+    },
+    {
+      "word": "SALTER",
+      "type": 0
+    },
+    {
+      "word": "SORNER",
+      "type": 0
+    },
+    {
+      "word": "SORTER",
+      "type": 0
+    },
+    {
+      "word": "ALERTER",
+      "type": 0
+    }
+  ],
+  "letters": "SLBBU,ALEHG,YTROS,RENCT",
+  "obstacles": []
 }

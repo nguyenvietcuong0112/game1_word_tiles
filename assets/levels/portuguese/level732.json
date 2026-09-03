@@ -1,54 +1,259 @@
-﻿{
-    "id":  732,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "FIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FORRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GORRO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ZORRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESPIRRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RESPIRO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-
-                    ],
-    "letters":  "ZORR,RFIO,ESPG",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 732,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "DAÍ",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "PRA",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "IREM",
+      "type": 0
+    },
+    {
+      "word": "MINA",
+      "type": 0
+    },
+    {
+      "word": "MERDA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "DEA",
+      "type": 0
+    },
+    {
+      "word": "DEI",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "DRE",
+      "type": 0
+    },
+    {
+      "word": "EIN",
+      "type": 0
+    },
+    {
+      "word": "EMI",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "MIN",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "NIM",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PRE",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RDA",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "RIE",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "SAD",
+      "type": 0
+    },
+    {
+      "word": "SAÍ",
+      "type": 0
+    },
+    {
+      "word": "AREA",
+      "type": 0
+    },
+    {
+      "word": "DARE",
+      "type": 0
+    },
+    {
+      "word": "DEAN",
+      "type": 0
+    },
+    {
+      "word": "DERA",
+      "type": 0
+    },
+    {
+      "word": "EMIR",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "ERIE",
+      "type": 0
+    },
+    {
+      "word": "ERIN",
+      "type": 0
+    },
+    {
+      "word": "MINI",
+      "type": 0
+    },
+    {
+      "word": "MIRE",
+      "type": 0
+    },
+    {
+      "word": "PRAS",
+      "type": 0
+    },
+    {
+      "word": "RASA",
+      "type": 0
+    },
+    {
+      "word": "REMI",
+      "type": 0
+    },
+    {
+      "word": "RINA",
+      "type": 0
+    },
+    {
+      "word": "SADE",
+      "type": 0
+    },
+    {
+      "word": "SAÍR",
+      "type": 0
+    },
+    {
+      "word": "ANIME",
+      "type": 0
+    },
+    {
+      "word": "DAREI",
+      "type": 0
+    },
+    {
+      "word": "DARPA",
+      "type": 0
+    },
+    {
+      "word": "MIREM",
+      "type": 0
+    },
+    {
+      "word": "PRADA",
+      "type": 0
+    },
+    {
+      "word": "REINA",
+      "type": 0
+    },
+    {
+      "word": "MERDAS",
+      "type": 0
+    },
+    {
+      "word": "PRASAD",
+      "type": 0
+    },
+    {
+      "word": "SAÍREM",
+      "type": 0
+    }
+  ],
+  "letters": "INAP,MIER,ERDA,MÍAS",
+  "obstacles": []
 }

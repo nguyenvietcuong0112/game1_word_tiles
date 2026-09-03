@@ -1,114 +1,187 @@
-﻿{
-    "id":  1047,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEZ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KIZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İPEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KELEPİR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KELE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KELEP",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KEP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KEPİR",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "RMAR,İLEZ,PEKI",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1047,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAY",
+      "type": 0
+    },
+    {
+      "word": "KOY",
+      "type": 0
+    },
+    {
+      "word": "OKU",
+      "type": 0
+    },
+    {
+      "word": "ONU",
+      "type": 0
+    },
+    {
+      "word": "YOK",
+      "type": 0
+    },
+    {
+      "word": "KONU",
+      "type": 0
+    },
+    {
+      "word": "OYUN",
+      "type": 0
+    },
+    {
+      "word": "TABİ",
+      "type": 0
+    },
+    {
+      "word": "KURDU",
+      "type": 0
+    },
+    {
+      "word": "KONUYU",
+      "type": 0
+    },
+    {
+      "word": "KURDUĞU",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABU",
+      "type": 0
+    },
+    {
+      "word": "ABİ",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "BUN",
+      "type": 0
+    },
+    {
+      "word": "BUY",
+      "type": 0
+    },
+    {
+      "word": "BİT",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "DUY",
+      "type": 0
+    },
+    {
+      "word": "KON",
+      "type": 0
+    },
+    {
+      "word": "KUR",
+      "type": 0
+    },
+    {
+      "word": "OYA",
+      "type": 0
+    },
+    {
+      "word": "OYU",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAY",
+      "type": 0
+    },
+    {
+      "word": "UYU",
+      "type": 0
+    },
+    {
+      "word": "YAD",
+      "type": 0
+    },
+    {
+      "word": "YAT",
+      "type": 0
+    },
+    {
+      "word": "YUN",
+      "type": 0
+    },
+    {
+      "word": "BATİ",
+      "type": 0
+    },
+    {
+      "word": "DUYU",
+      "type": 0
+    },
+    {
+      "word": "KOYU",
+      "type": 0
+    },
+    {
+      "word": "KUYU",
+      "type": 0
+    },
+    {
+      "word": "KUĞU",
+      "type": 0
+    },
+    {
+      "word": "OYUK",
+      "type": 0
+    },
+    {
+      "word": "UYUN",
+      "type": 0
+    },
+    {
+      "word": "BUYUK",
+      "type": 0
+    },
+    {
+      "word": "DUYUN",
+      "type": 0
+    },
+    {
+      "word": "KOYUN",
+      "type": 0
+    },
+    {
+      "word": "KURDA",
+      "type": 0
+    },
+    {
+      "word": "KONUYA",
+      "type": 0
+    },
+    {
+      "word": "KURDUK",
+      "type": 0
+    },
+    {
+      "word": "OKUYUN",
+      "type": 0
+    }
+  ],
+  "letters": "URĞU,KDUK,TAYO,İBUN",
+  "obstacles": []
 }

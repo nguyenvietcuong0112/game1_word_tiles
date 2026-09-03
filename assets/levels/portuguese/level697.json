@@ -1,101 +1,219 @@
-﻿{
-    "id":  697,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "IMÃ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AÇÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAÇÃ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIPI",
-                             "type":  2
-                         },
-                         {
-                             "word":  "URRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVAÇÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INOVAÇÃO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMÃ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AÇU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAÇÃO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOVAÇÃO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OMÃ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VON",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VAÇUR,OMÃOR,NIPIP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 697,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ELE",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "ARTE",
+      "type": 0
+    },
+    {
+      "word": "BASE",
+      "type": 0
+    },
+    {
+      "word": "ELES",
+      "type": 0
+    },
+    {
+      "word": "SETE",
+      "type": 0
+    },
+    {
+      "word": "LETRAS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "ESE",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "OBA",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAS",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TET",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "ASES",
+      "type": 0
+    },
+    {
+      "word": "BOSE",
+      "type": 0
+    },
+    {
+      "word": "EROS",
+      "type": 0
+    },
+    {
+      "word": "ROSA",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    },
+    {
+      "word": "SELE",
+      "type": 0
+    },
+    {
+      "word": "TEAR",
+      "type": 0
+    },
+    {
+      "word": "TELE",
+      "type": 0
+    },
+    {
+      "word": "TESE",
+      "type": 0
+    },
+    {
+      "word": "TRAS",
+      "type": 0
+    },
+    {
+      "word": "ARTES",
+      "type": 0
+    },
+    {
+      "word": "BASES",
+      "type": 0
+    },
+    {
+      "word": "LETRA",
+      "type": 0
+    },
+    {
+      "word": "ROSAS",
+      "type": 0
+    },
+    {
+      "word": "ROSES",
+      "type": 0
+    },
+    {
+      "word": "SABOR",
+      "type": 0
+    },
+    {
+      "word": "SETES",
+      "type": 0
+    },
+    {
+      "word": "TETRA",
+      "type": 0
+    },
+    {
+      "word": "BASEAR",
+      "type": 0
+    },
+    {
+      "word": "SABORES",
+      "type": 0
+    },
+    {
+      "word": "SABOREAR",
+      "type": 0
+    }
+  ],
+  "letters": "BORS,ASEA,SETR,ELET",
+  "obstacles": []
 }

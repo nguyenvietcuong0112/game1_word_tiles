@@ -1,93 +1,219 @@
-﻿{
-    "id":  1067,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CADÊ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAIR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DOCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JURA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARDOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DARDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JARDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RADIADOR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ADIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AIDAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AJURI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RADIADO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROCA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "JUÊR,ARDO,DIAC",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1067,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "IAN",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "TEM",
+      "type": 0
+    },
+    {
+      "word": "TIA",
+      "type": 0
+    },
+    {
+      "word": "ARTE",
+      "type": 0
+    },
+    {
+      "word": "FAIR",
+      "type": 0
+    },
+    {
+      "word": "TIRA",
+      "type": 0
+    },
+    {
+      "word": "MARIA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AII",
+      "type": 0
+    },
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ATF",
+      "type": 0
+    },
+    {
+      "word": "ELI",
+      "type": 0
+    },
+    {
+      "word": "FAI",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "ITA",
+      "type": 0
+    },
+    {
+      "word": "LAI",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "LIL",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "MNA",
+      "type": 0
+    },
+    {
+      "word": "NAI",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "TRI",
+      "type": 0
+    },
+    {
+      "word": "ALIA",
+      "type": 0
+    },
+    {
+      "word": "ARIA",
+      "type": 0
+    },
+    {
+      "word": "ELIA",
+      "type": 0
+    },
+    {
+      "word": "IRAM",
+      "type": 0
+    },
+    {
+      "word": "LIAN",
+      "type": 0
+    },
+    {
+      "word": "LILA",
+      "type": 0
+    },
+    {
+      "word": "LILI",
+      "type": 0
+    },
+    {
+      "word": "MARI",
+      "type": 0
+    },
+    {
+      "word": "MART",
+      "type": 0
+    },
+    {
+      "word": "RITA",
+      "type": 0
+    },
+    {
+      "word": "LETRA",
+      "type": 0
+    },
+    {
+      "word": "MARTE",
+      "type": 0
+    },
+    {
+      "word": "TARTE",
+      "type": 0
+    },
+    {
+      "word": "TIRAM",
+      "type": 0
+    },
+    {
+      "word": "LILIAN",
+      "type": 0
+    },
+    {
+      "word": "MARTEL",
+      "type": 0
+    }
+  ],
+  "letters": "MATF,TRIA,ELIL,MNAI",
+  "obstacles": []
 }

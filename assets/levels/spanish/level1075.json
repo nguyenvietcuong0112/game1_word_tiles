@@ -1,101 +1,183 @@
-﻿{
-    "id":  1075,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PERO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RABO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JUGAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÓPERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEGAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROBAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PROBAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGUJERO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BARO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "JERA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "JUGARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PRORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROB",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UGAB,JERO,ÓPPR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1075,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASI",
+      "type": 0
+    },
+    {
+      "word": "BLA",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "PIS",
+      "type": 0
+    },
+    {
+      "word": "SIP",
+      "type": 0
+    },
+    {
+      "word": "DALE",
+      "type": 0
+    },
+    {
+      "word": "MUDA",
+      "type": 0
+    },
+    {
+      "word": "PICO",
+      "type": 0
+    },
+    {
+      "word": "SAKE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "BLU",
+      "type": 0
+    },
+    {
+      "word": "COM",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DEA",
+      "type": 0
+    },
+    {
+      "word": "DUM",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "EPA",
+      "type": 0
+    },
+    {
+      "word": "EPI",
+      "type": 0
+    },
+    {
+      "word": "ISA",
+      "type": 0
+    },
+    {
+      "word": "KEE",
+      "type": 0
+    },
+    {
+      "word": "KEL",
+      "type": 0
+    },
+    {
+      "word": "MUD",
+      "type": 0
+    },
+    {
+      "word": "PAK",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "ALEK",
+      "type": 0
+    },
+    {
+      "word": "BLUM",
+      "type": 0
+    },
+    {
+      "word": "DEAD",
+      "type": 0
+    },
+    {
+      "word": "DEAL",
+      "type": 0
+    },
+    {
+      "word": "DEEP",
+      "type": 0
+    },
+    {
+      "word": "LEED",
+      "type": 0
+    },
+    {
+      "word": "MULA",
+      "type": 0
+    },
+    {
+      "word": "PELA",
+      "type": 0
+    },
+    {
+      "word": "PISA",
+      "type": 0
+    },
+    {
+      "word": "DALEK",
+      "type": 0
+    },
+    {
+      "word": "DEEPAK",
+      "type": 0
+    },
+    {
+      "word": "PELUDA",
+      "type": 0
+    }
+  ],
+  "letters": "DAED,ULEK,MBPA,OCIS",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

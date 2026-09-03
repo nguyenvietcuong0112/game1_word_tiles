@@ -1,61 +1,315 @@
-﻿{
-    "id":  1172,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JAB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOTH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MINI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MINT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HABIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAINT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OBTAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HABITAT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ABBOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AINT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BOT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OBTAI,TBITN,HAJMI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1172,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "HET",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "DATE",
+      "type": 0
+    },
+    {
+      "word": "EAST",
+      "type": 0
+    },
+    {
+      "word": "LAST",
+      "type": 0
+    },
+    {
+      "word": "LATE",
+      "type": 0
+    },
+    {
+      "word": "PAST",
+      "type": 0
+    },
+    {
+      "word": "BEAST",
+      "type": 0
+    },
+    {
+      "word": "LEAST",
+      "type": 0
+    },
+    {
+      "word": "PLATE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAL",
+      "type": 0
+    },
+    {
+      "word": "AAS",
+      "type": 0
+    },
+    {
+      "word": "ALB",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "APT",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LAT",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAP",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "ACHE",
+      "type": 0
+    },
+    {
+      "word": "ACTA",
+      "type": 0
+    },
+    {
+      "word": "ACTS",
+      "type": 0
+    },
+    {
+      "word": "ALTS",
+      "type": 0
+    },
+    {
+      "word": "BLAE",
+      "type": 0
+    },
+    {
+      "word": "CASA",
+      "type": 0
+    },
+    {
+      "word": "CAST",
+      "type": 0
+    },
+    {
+      "word": "DALE",
+      "type": 0
+    },
+    {
+      "word": "ETCH",
+      "type": 0
+    },
+    {
+      "word": "HETS",
+      "type": 0
+    },
+    {
+      "word": "LADE",
+      "type": 0
+    },
+    {
+      "word": "LATS",
+      "type": 0
+    },
+    {
+      "word": "LEAL",
+      "type": 0
+    },
+    {
+      "word": "LEAS",
+      "type": 0
+    },
+    {
+      "word": "PACT",
+      "type": 0
+    },
+    {
+      "word": "PLAT",
+      "type": 0
+    },
+    {
+      "word": "PLEA",
+      "type": 0
+    },
+    {
+      "word": "PLEB",
+      "type": 0
+    },
+    {
+      "word": "SALT",
+      "type": 0
+    },
+    {
+      "word": "TALE",
+      "type": 0
+    },
+    {
+      "word": "ACHED",
+      "type": 0
+    },
+    {
+      "word": "ACTED",
+      "type": 0
+    },
+    {
+      "word": "BLAST",
+      "type": 0
+    },
+    {
+      "word": "CASTE",
+      "type": 0
+    },
+    {
+      "word": "ELATE",
+      "type": 0
+    },
+    {
+      "word": "LATCH",
+      "type": 0
+    },
+    {
+      "word": "LATED",
+      "type": 0
+    },
+    {
+      "word": "PACTS",
+      "type": 0
+    },
+    {
+      "word": "PASTA",
+      "type": 0
+    },
+    {
+      "word": "PASTE",
+      "type": 0
+    },
+    {
+      "word": "PLATS",
+      "type": 0
+    },
+    {
+      "word": "PLEAS",
+      "type": 0
+    },
+    {
+      "word": "STADE",
+      "type": 0
+    },
+    {
+      "word": "STALE",
+      "type": 0
+    },
+    {
+      "word": "ELATED",
+      "type": 0
+    },
+    {
+      "word": "LASTED",
+      "type": 0
+    },
+    {
+      "word": "PASTED",
+      "type": 0
+    },
+    {
+      "word": "PLATED",
+      "type": 0
+    },
+    {
+      "word": "SACHET",
+      "type": 0
+    },
+    {
+      "word": "BELATED",
+      "type": 0
+    },
+    {
+      "word": "BLASTED",
+      "type": 0
+    },
+    {
+      "word": "LATCHED",
+      "type": 0
+    }
+  ],
+  "letters": "BLTP,EASA,LATC,PDEH",
+  "obstacles": []
 }

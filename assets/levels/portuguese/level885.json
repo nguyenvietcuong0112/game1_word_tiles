@@ -1,89 +1,207 @@
-﻿{
-    "id":  885,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GARI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RITO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALTAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEITO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LADEIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MADEIRA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DELTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EIRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EITO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEIRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MALTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MALTAR",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "DEITO,ALRCÃ,MTAGP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 885,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAI",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "CASO",
+      "type": 0
+    },
+    {
+      "word": "DOCE",
+      "type": 0
+    },
+    {
+      "word": "DOIS",
+      "type": 0
+    },
+    {
+      "word": "SACO",
+      "type": 0
+    },
+    {
+      "word": "ESCUDO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "AIE",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "CSI",
+      "type": 0
+    },
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "DOI",
+      "type": 0
+    },
+    {
+      "word": "ECA",
+      "type": 0
+    },
+    {
+      "word": "ECO",
+      "type": 0
+    },
+    {
+      "word": "EIA",
+      "type": 0
+    },
+    {
+      "word": "EIS",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LOS",
+      "type": 0
+    },
+    {
+      "word": "LUC",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ODO",
+      "type": 0
+    },
+    {
+      "word": "OIE",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SIA",
+      "type": 0
+    },
+    {
+      "word": "SIE",
+      "type": 0
+    },
+    {
+      "word": "SOC",
+      "type": 0
+    },
+    {
+      "word": "CAIE",
+      "type": 0
+    },
+    {
+      "word": "CAIO",
+      "type": 0
+    },
+    {
+      "word": "CAIS",
+      "type": 0
+    },
+    {
+      "word": "CEIA",
+      "type": 0
+    },
+    {
+      "word": "CLEA",
+      "type": 0
+    },
+    {
+      "word": "COSA",
+      "type": 0
+    },
+    {
+      "word": "DOCA",
+      "type": 0
+    },
+    {
+      "word": "ECOS",
+      "type": 0
+    },
+    {
+      "word": "IODO",
+      "type": 0
+    },
+    {
+      "word": "LODO",
+      "type": 0
+    },
+    {
+      "word": "LUDO",
+      "type": 0
+    },
+    {
+      "word": "OCAS",
+      "type": 0
+    },
+    {
+      "word": "SOCA",
+      "type": 0
+    },
+    {
+      "word": "SOIS",
+      "type": 0
+    },
+    {
+      "word": "DOCAS",
+      "type": 0
+    },
+    {
+      "word": "LEAIS",
+      "type": 0
+    },
+    {
+      "word": "ESCUDOS",
+      "type": 0
+    }
+  ],
+  "letters": "ACEC,SOIA,ODSE,LUCL",
+  "obstacles": []
 }

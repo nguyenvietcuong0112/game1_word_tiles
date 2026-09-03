@@ -1,89 +1,255 @@
-﻿{
-    "id":  1765,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BEG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ILL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BELL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BILL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SANG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SILL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ANGEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BASIL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BEGS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "BILGE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GLIB",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LEGS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAPA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PANG",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BILL,ASGE,PANB",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1765,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "ABLE",
+      "type": 0
+    },
+    {
+      "word": "DATA",
+      "type": 0
+    },
+    {
+      "word": "MADE",
+      "type": 0
+    },
+    {
+      "word": "REED",
+      "type": 0
+    },
+    {
+      "word": "ROLE",
+      "type": 0
+    },
+    {
+      "word": "VOLT",
+      "type": 0
+    },
+    {
+      "word": "TABLE",
+      "type": 0
+    },
+    {
+      "word": "MATTER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "BAM",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "TAB",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "BATT",
+      "type": 0
+    },
+    {
+      "word": "BLET",
+      "type": 0
+    },
+    {
+      "word": "DEER",
+      "type": 0
+    },
+    {
+      "word": "DEET",
+      "type": 0
+    },
+    {
+      "word": "LEES",
+      "type": 0
+    },
+    {
+      "word": "LORE",
+      "type": 0
+    },
+    {
+      "word": "MATT",
+      "type": 0
+    },
+    {
+      "word": "REES",
+      "type": 0
+    },
+    {
+      "word": "SEEL",
+      "type": 0
+    },
+    {
+      "word": "SEER",
+      "type": 0
+    },
+    {
+      "word": "TEED",
+      "type": 0
+    },
+    {
+      "word": "TEES",
+      "type": 0
+    },
+    {
+      "word": "VOLE",
+      "type": 0
+    },
+    {
+      "word": "ABLER",
+      "type": 0
+    },
+    {
+      "word": "BLEED",
+      "type": 0
+    },
+    {
+      "word": "DEERS",
+      "type": 0
+    },
+    {
+      "word": "MATTE",
+      "type": 0
+    },
+    {
+      "word": "TERSE",
+      "type": 0
+    },
+    {
+      "word": "VOLTA",
+      "type": 0
+    },
+    {
+      "word": "ABVOLT",
+      "type": 0
+    },
+    {
+      "word": "BATTER",
+      "type": 0
+    },
+    {
+      "word": "REEDED",
+      "type": 0
+    },
+    {
+      "word": "TABLET",
+      "type": 0
+    },
+    {
+      "word": "BATTERS",
+      "type": 0
+    },
+    {
+      "word": "DATABLE",
+      "type": 0
+    },
+    {
+      "word": "MATTERS",
+      "type": 0
+    },
+    {
+      "word": "TAMABLE",
+      "type": 0
+    }
+  ],
+  "letters": "EDES,DTER,ATLO,MABV",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

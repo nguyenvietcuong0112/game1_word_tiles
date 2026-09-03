@@ -1,65 +1,211 @@
-﻿{
-    "id":  1365,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOOT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SCAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCOOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SITCOM",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MACS",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "ITO,SCO,JAM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1365,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "HAS",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "CHAT",
+      "type": 0
+    },
+    {
+      "word": "HELP",
+      "type": 0
+    },
+    {
+      "word": "LESS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "AAS",
+      "type": 0
+    },
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "REP",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "HAAR",
+      "type": 0
+    },
+    {
+      "word": "HASP",
+      "type": 0
+    },
+    {
+      "word": "RASE",
+      "type": 0
+    },
+    {
+      "word": "REPS",
+      "type": 0
+    },
+    {
+      "word": "SANS",
+      "type": 0
+    },
+    {
+      "word": "SERS",
+      "type": 0
+    },
+    {
+      "word": "TASS",
+      "type": 0
+    },
+    {
+      "word": "ASPER",
+      "type": 0
+    },
+    {
+      "word": "CHASE",
+      "type": 0
+    },
+    {
+      "word": "CHESS",
+      "type": 0
+    },
+    {
+      "word": "HAARS",
+      "type": 0
+    },
+    {
+      "word": "HELPS",
+      "type": 0
+    },
+    {
+      "word": "RASER",
+      "type": 0
+    },
+    {
+      "word": "TASSE",
+      "type": 0
+    },
+    {
+      "word": "TRANS",
+      "type": 0
+    },
+    {
+      "word": "TRASS",
+      "type": 0
+    },
+    {
+      "word": "ASPERS",
+      "type": 0
+    },
+    {
+      "word": "CHASSE",
+      "type": 0
+    },
+    {
+      "word": "HELPER",
+      "type": 0
+    },
+    {
+      "word": "LESSER",
+      "type": 0
+    },
+    {
+      "word": "RASERS",
+      "type": 0
+    },
+    {
+      "word": "HELPERS",
+      "type": 0
+    },
+    {
+      "word": "SATCHEL",
+      "type": 0
+    }
+  ],
+  "letters": "RSNS,ESAR,PSAT,LEHC",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

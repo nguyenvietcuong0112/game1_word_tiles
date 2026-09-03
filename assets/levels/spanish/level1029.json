@@ -1,97 +1,275 @@
-﻿{
-    "id":  1029,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DADO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MONJA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HERIDA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ADIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HERIDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MONDA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MONDAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "OJAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ONDE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ONJO,MDAD,HERI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1029,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "FDA",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "JANE",
+      "type": 0
+    },
+    {
+      "word": "NENA",
+      "type": 0
+    },
+    {
+      "word": "DANDO",
+      "type": 0
+    },
+    {
+      "word": "DORMÍ",
+      "type": 0
+    },
+    {
+      "word": "MANDO",
+      "type": 0
+    },
+    {
+      "word": "TENER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ATF",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "DRE",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "ENE",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "JAN",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NEN",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "NRO",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAJ",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "ANDO",
+      "type": 0
+    },
+    {
+      "word": "ATAN",
+      "type": 0
+    },
+    {
+      "word": "ATEN",
+      "type": 0
+    },
+    {
+      "word": "DANE",
+      "type": 0
+    },
+    {
+      "word": "DATA",
+      "type": 0
+    },
+    {
+      "word": "DATE",
+      "type": 0
+    },
+    {
+      "word": "DORN",
+      "type": 0
+    },
+    {
+      "word": "ENDO",
+      "type": 0
+    },
+    {
+      "word": "EREN",
+      "type": 0
+    },
+    {
+      "word": "MATA",
+      "type": 0
+    },
+    {
+      "word": "MATE",
+      "type": 0
+    },
+    {
+      "word": "NATA",
+      "type": 0
+    },
+    {
+      "word": "NATE",
+      "type": 0
+    },
+    {
+      "word": "NENE",
+      "type": 0
+    },
+    {
+      "word": "NERD",
+      "type": 0
+    },
+    {
+      "word": "RENA",
+      "type": 0
+    },
+    {
+      "word": "RENE",
+      "type": 0
+    },
+    {
+      "word": "RETA",
+      "type": 0
+    },
+    {
+      "word": "TERE",
+      "type": 0
+    },
+    {
+      "word": "ANDRE",
+      "type": 0
+    },
+    {
+      "word": "DATAN",
+      "type": 0
+    },
+    {
+      "word": "JANET",
+      "type": 0
+    },
+    {
+      "word": "MATAN",
+      "type": 0
+    },
+    {
+      "word": "MATEN",
+      "type": 0
+    },
+    {
+      "word": "MATER",
+      "type": 0
+    },
+    {
+      "word": "ATANDO",
+      "type": 0
+    },
+    {
+      "word": "RENATA",
+      "type": 0
+    },
+    {
+      "word": "TENDRE",
+      "type": 0
+    },
+    {
+      "word": "RETANDO",
+      "type": 0
+    }
+  ],
+  "letters": "JANE,FTER,DAND,ÍMRO",
+  "obstacles": []
 }

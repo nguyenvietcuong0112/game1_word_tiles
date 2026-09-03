@@ -1,73 +1,219 @@
-﻿{
-    "id":  750,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AUGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AULA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GULA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEÇA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PREGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PREGUIÇA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EGO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REGO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EÇAAA,PIULM,REGOM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 750,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "CASO",
+      "type": 0
+    },
+    {
+      "word": "HEAD",
+      "type": 0
+    },
+    {
+      "word": "SACO",
+      "type": 0
+    },
+    {
+      "word": "BORDO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "ASB",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "CSI",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DIM",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "ISA",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAD",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SID",
+      "type": 0
+    },
+    {
+      "word": "SOC",
+      "type": 0
+    },
+    {
+      "word": "ASCO",
+      "type": 0
+    },
+    {
+      "word": "ASIM",
+      "type": 0
+    },
+    {
+      "word": "CORD",
+      "type": 0
+    },
+    {
+      "word": "COSA",
+      "type": 0
+    },
+    {
+      "word": "DOCA",
+      "type": 0
+    },
+    {
+      "word": "IDAS",
+      "type": 0
+    },
+    {
+      "word": "ISCO",
+      "type": 0
+    },
+    {
+      "word": "MISA",
+      "type": 0
+    },
+    {
+      "word": "OCAS",
+      "type": 0
+    },
+    {
+      "word": "ROBS",
+      "type": 0
+    },
+    {
+      "word": "SACA",
+      "type": 0
+    },
+    {
+      "word": "SOCA",
+      "type": 0
+    },
+    {
+      "word": "ACASO",
+      "type": 0
+    },
+    {
+      "word": "CASCO",
+      "type": 0
+    },
+    {
+      "word": "DISCO",
+      "type": 0
+    },
+    {
+      "word": "DOCAS",
+      "type": 0
+    },
+    {
+      "word": "MIDAS",
+      "type": 0
+    },
+    {
+      "word": "SACOS",
+      "type": 0
+    },
+    {
+      "word": "DISCORDO",
+      "type": 0
+    }
+  ],
+  "letters": "SODR,ACBO,EASC,HDIM",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

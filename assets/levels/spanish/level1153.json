@@ -1,93 +1,255 @@
-﻿{
-    "id":  1153,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMEO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GENIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MACHO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NECIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEGOCIO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CECA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CHO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ECHO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MECA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MECO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NIOH,ECEC,GOMA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1153,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "ANNE",
+      "type": 0
+    },
+    {
+      "word": "DEME",
+      "type": 0
+    },
+    {
+      "word": "DICE",
+      "type": 0
+    },
+    {
+      "word": "PIDO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ANN",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "CID",
+      "type": 0
+    },
+    {
+      "word": "DEC",
+      "type": 0
+    },
+    {
+      "word": "DEM",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "EPA",
+      "type": 0
+    },
+    {
+      "word": "EPI",
+      "type": 0
+    },
+    {
+      "word": "ICE",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "NAO",
+      "type": 0
+    },
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "NED",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "POD",
+      "type": 0
+    },
+    {
+      "word": "POM",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RIP",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "SDI",
+      "type": 0
+    },
+    {
+      "word": "CAPE",
+      "type": 0
+    },
+    {
+      "word": "CAPI",
+      "type": 0
+    },
+    {
+      "word": "CAPO",
+      "type": 0
+    },
+    {
+      "word": "CARI",
+      "type": 0
+    },
+    {
+      "word": "CEDE",
+      "type": 0
+    },
+    {
+      "word": "CEPA",
+      "type": 0
+    },
+    {
+      "word": "CEPO",
+      "type": 0
+    },
+    {
+      "word": "DEMO",
+      "type": 0
+    },
+    {
+      "word": "DIRA",
+      "type": 0
+    },
+    {
+      "word": "EDEN",
+      "type": 0
+    },
+    {
+      "word": "IPOD",
+      "type": 0
+    },
+    {
+      "word": "MECA",
+      "type": 0
+    },
+    {
+      "word": "NEMO",
+      "type": 0
+    },
+    {
+      "word": "PACE",
+      "type": 0
+    },
+    {
+      "word": "PARI",
+      "type": 0
+    },
+    {
+      "word": "PECA",
+      "type": 0
+    },
+    {
+      "word": "PEDI",
+      "type": 0
+    },
+    {
+      "word": "PIRA",
+      "type": 0
+    },
+    {
+      "word": "RACE",
+      "type": 0
+    },
+    {
+      "word": "PECAR",
+      "type": 0
+    },
+    {
+      "word": "SANNE",
+      "type": 0
+    },
+    {
+      "word": "MEDICA",
+      "type": 0
+    },
+    {
+      "word": "PARIDO",
+      "type": 0
+    },
+    {
+      "word": "RAPIDO",
+      "type": 0
+    }
+  ],
+  "letters": "NEDI,NMEC,AOPA,SDIR",
+  "obstacles": []
 }

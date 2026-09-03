@@ -1,61 +1,239 @@
-﻿{
-    "id":  737,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DRY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PHONY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SYMPHONY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "HOE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HOMES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "HON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PIES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RUSE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "USEIY,RYMPN,DEOHO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 737,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "WAY",
+      "type": 0
+    },
+    {
+      "word": "BASE",
+      "type": 0
+    },
+    {
+      "word": "BEAR",
+      "type": 0
+    },
+    {
+      "word": "LOST",
+      "type": 0
+    },
+    {
+      "word": "WAYS",
+      "type": 0
+    },
+    {
+      "word": "BASES",
+      "type": 0
+    },
+    {
+      "word": "LABEL",
+      "type": 0
+    },
+    {
+      "word": "ALWAYS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAL",
+      "type": 0
+    },
+    {
+      "word": "AAS",
+      "type": 0
+    },
+    {
+      "word": "ABO",
+      "type": 0
+    },
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "AWL",
+      "type": 0
+    },
+    {
+      "word": "AYS",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LOB",
+      "type": 0
+    },
+    {
+      "word": "OBE",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "SOS",
+      "type": 0
+    },
+    {
+      "word": "YAW",
+      "type": 0
+    },
+    {
+      "word": "ABOS",
+      "type": 0
+    },
+    {
+      "word": "BELT",
+      "type": 0
+    },
+    {
+      "word": "BOLE",
+      "type": 0
+    },
+    {
+      "word": "BOLT",
+      "type": 0
+    },
+    {
+      "word": "BRAE",
+      "type": 0
+    },
+    {
+      "word": "EARL",
+      "type": 0
+    },
+    {
+      "word": "LASE",
+      "type": 0
+    },
+    {
+      "word": "LEAR",
+      "type": 0
+    },
+    {
+      "word": "LOBE",
+      "type": 0
+    },
+    {
+      "word": "LOSE",
+      "type": 0
+    },
+    {
+      "word": "OLEA",
+      "type": 0
+    },
+    {
+      "word": "OSES",
+      "type": 0
+    },
+    {
+      "word": "SABE",
+      "type": 0
+    },
+    {
+      "word": "SOLE",
+      "type": 0
+    },
+    {
+      "word": "YAWL",
+      "type": 0
+    },
+    {
+      "word": "ALWAY",
+      "type": 0
+    },
+    {
+      "word": "BELTS",
+      "type": 0
+    },
+    {
+      "word": "BOLTS",
+      "type": 0
+    },
+    {
+      "word": "LABRA",
+      "type": 0
+    },
+    {
+      "word": "LASES",
+      "type": 0
+    },
+    {
+      "word": "LOSES",
+      "type": 0
+    },
+    {
+      "word": "SABRA",
+      "type": 0
+    },
+    {
+      "word": "BASEST",
+      "type": 0
+    }
+  ],
+  "letters": "WAYS,LASE,RBOS,AELT",
+  "obstacles": []
 }

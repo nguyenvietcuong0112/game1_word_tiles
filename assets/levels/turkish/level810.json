@@ -1,45 +1,99 @@
-﻿{
-    "id":  810,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AHİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAHİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAKİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "FİLOZOF",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "FİLO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LİF",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "HİİL,AKFO,DFOZ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 810,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABİ",
+      "type": 0
+    },
+    {
+      "word": "AİT",
+      "type": 0
+    },
+    {
+      "word": "BAY",
+      "type": 0
+    },
+    {
+      "word": "BAŞ",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "NDA",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "DİYE",
+      "type": 0
+    },
+    {
+      "word": "DONNİE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AİN",
+      "type": 0
+    },
+    {
+      "word": "DAİ",
+      "type": 0
+    },
+    {
+      "word": "DİB",
+      "type": 0
+    },
+    {
+      "word": "NBA",
+      "type": 0
+    },
+    {
+      "word": "TİA",
+      "type": 0
+    },
+    {
+      "word": "TİN",
+      "type": 0
+    },
+    {
+      "word": "YAŞ",
+      "type": 0
+    },
+    {
+      "word": "İNN",
+      "type": 0
+    },
+    {
+      "word": "İNDİ",
+      "type": 0
+    }
+  ],
+  "letters": "ADON,İNDN,TBİİ,ŞAYE",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,95 +1,195 @@
-﻿{
-    "id":  1803,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GENE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EIGHT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NIGHT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GENIE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NIGH",
-                            "type":  1
-                        },
-                        {
-                            "word":  "THEE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "THEN,AGEO,EINE",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1803,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "HAM",
+      "type": 0
+    },
+    {
+      "word": "HAS",
+      "type": 0
+    },
+    {
+      "word": "INN",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "STOCK",
+      "type": 0
+    },
+    {
+      "word": "BOSTON",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "COT",
+      "type": 0
+    },
+    {
+      "word": "HAO",
+      "type": 0
+    },
+    {
+      "word": "INK",
+      "type": 0
+    },
+    {
+      "word": "NEB",
+      "type": 0
+    },
+    {
+      "word": "NIT",
+      "type": 0
+    },
+    {
+      "word": "NOB",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "OBE",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "BENT",
+      "type": 0
+    },
+    {
+      "word": "BONE",
+      "type": 0
+    },
+    {
+      "word": "CONI",
+      "type": 0
+    },
+    {
+      "word": "CONK",
+      "type": 0
+    },
+    {
+      "word": "CONN",
+      "type": 0
+    },
+    {
+      "word": "COTS",
+      "type": 0
+    },
+    {
+      "word": "EBON",
+      "type": 0
+    },
+    {
+      "word": "HAST",
+      "type": 0
+    },
+    {
+      "word": "KNIT",
+      "type": 0
+    },
+    {
+      "word": "KNOT",
+      "type": 0
+    },
+    {
+      "word": "NOCK",
+      "type": 0
+    },
+    {
+      "word": "ONTO",
+      "type": 0
+    },
+    {
+      "word": "SONE",
+      "type": 0
+    },
+    {
+      "word": "STOA",
+      "type": 0
+    },
+    {
+      "word": "BENNI",
+      "type": 0
+    },
+    {
+      "word": "BENTS",
+      "type": 0
+    },
+    {
+      "word": "KNOTS",
+      "type": 0
+    },
+    {
+      "word": "TONNE",
+      "type": 0
+    },
+    {
+      "word": "BONNIE",
+      "type": 0
+    },
+    {
+      "word": "NOSTOC",
+      "type": 0
+    },
+    {
+      "word": "SOBEIT",
+      "type": 0
+    },
+    {
+      "word": "BONNOCK",
+      "type": 0
+    }
+  ],
+  "letters": "TIEB,KNNO,COTS,MAHA",
+  "obstacles": []
 }

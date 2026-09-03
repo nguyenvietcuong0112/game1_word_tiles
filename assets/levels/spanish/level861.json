@@ -1,45 +1,283 @@
-﻿{
-    "id":  861,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OTRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TODO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLIBRÍ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ORTO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ORÍ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BRÍUR,ILROD,COTTO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 861,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "CUBA",
+      "type": 0
+    },
+    {
+      "word": "ESTA",
+      "type": 0
+    },
+    {
+      "word": "ESTE",
+      "type": 0
+    },
+    {
+      "word": "ESTO",
+      "type": 0
+    },
+    {
+      "word": "ESTAR",
+      "type": 0
+    },
+    {
+      "word": "TAREA",
+      "type": 0
+    },
+    {
+      "word": "CUERPO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABU",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "BAE",
+      "type": 0
+    },
+    {
+      "word": "BAO",
+      "type": 0
+    },
+    {
+      "word": "BUE",
+      "type": 0
+    },
+    {
+      "word": "COP",
+      "type": 0
+    },
+    {
+      "word": "CRE",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "OTA",
+      "type": 0
+    },
+    {
+      "word": "PRE",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "SEO",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "STE",
+      "type": 0
+    },
+    {
+      "word": "STO",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TAT",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "ABUE",
+      "type": 0
+    },
+    {
+      "word": "ARCO",
+      "type": 0
+    },
+    {
+      "word": "AREA",
+      "type": 0
+    },
+    {
+      "word": "ATAN",
+      "type": 0
+    },
+    {
+      "word": "ATAR",
+      "type": 0
+    },
+    {
+      "word": "ATEA",
+      "type": 0
+    },
+    {
+      "word": "CREA",
+      "type": 0
+    },
+    {
+      "word": "ERAN",
+      "type": 0
+    },
+    {
+      "word": "NATA",
+      "type": 0
+    },
+    {
+      "word": "NATE",
+      "type": 0
+    },
+    {
+      "word": "NATO",
+      "type": 0
+    },
+    {
+      "word": "OTAN",
+      "type": 0
+    },
+    {
+      "word": "RANA",
+      "type": 0
+    },
+    {
+      "word": "RATA",
+      "type": 0
+    },
+    {
+      "word": "RATO",
+      "type": 0
+    },
+    {
+      "word": "RETA",
+      "type": 0
+    },
+    {
+      "word": "RETO",
+      "type": 0
+    },
+    {
+      "word": "STAN",
+      "type": 0
+    },
+    {
+      "word": "STAR",
+      "type": 0
+    },
+    {
+      "word": "TANA",
+      "type": 0
+    },
+    {
+      "word": "TATA",
+      "type": 0
+    },
+    {
+      "word": "TATE",
+      "type": 0
+    },
+    {
+      "word": "TERA",
+      "type": 0
+    },
+    {
+      "word": "CRETA",
+      "type": 0
+    },
+    {
+      "word": "ESTAN",
+      "type": 0
+    },
+    {
+      "word": "ESTER",
+      "type": 0
+    },
+    {
+      "word": "NARCO",
+      "type": 0
+    },
+    {
+      "word": "OESTE",
+      "type": 0
+    },
+    {
+      "word": "OPTAR",
+      "type": 0
+    },
+    {
+      "word": "TERCO",
+      "type": 0
+    },
+    {
+      "word": "ESTARE",
+      "type": 0
+    }
+  ],
+  "letters": "ANSE,TATO,PREA,OCUB",
+  "obstacles": []
 }

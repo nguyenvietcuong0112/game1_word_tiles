@@ -1,50 +1,187 @@
-﻿{
-    "id":  1350,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AIRY",
-                             "type":  2
-                         },
-                         {
-                             "word":  "HAIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAIRY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATRIUM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TRIUMPH",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-
-                    ],
-    "letters":  "TRY,AIU,HPM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1350,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "BIT",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "AREA",
+      "type": 0
+    },
+    {
+      "word": "TIPS",
+      "type": 0
+    },
+    {
+      "word": "SHARE",
+      "type": 0
+    },
+    {
+      "word": "BARRIER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "HEP",
+      "type": 0
+    },
+    {
+      "word": "PEA",
+      "type": 0
+    },
+    {
+      "word": "PEH",
+      "type": 0
+    },
+    {
+      "word": "PIT",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "TAB",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TIP",
+      "type": 0
+    },
+    {
+      "word": "AAHS",
+      "type": 0
+    },
+    {
+      "word": "BEAT",
+      "type": 0
+    },
+    {
+      "word": "HARE",
+      "type": 0
+    },
+    {
+      "word": "HEAT",
+      "type": 0
+    },
+    {
+      "word": "PEAT",
+      "type": 0
+    },
+    {
+      "word": "PEHS",
+      "type": 0
+    },
+    {
+      "word": "PITA",
+      "type": 0
+    },
+    {
+      "word": "SHEA",
+      "type": 0
+    },
+    {
+      "word": "SPIT",
+      "type": 0
+    },
+    {
+      "word": "TART",
+      "type": 0
+    },
+    {
+      "word": "TIER",
+      "type": 0
+    },
+    {
+      "word": "AREAE",
+      "type": 0
+    },
+    {
+      "word": "ARTIER",
+      "type": 0
+    },
+    {
+      "word": "PEATIER",
+      "type": 0
+    },
+    {
+      "word": "TARRIER",
+      "type": 0
+    }
+  ],
+  "letters": "TARR,IBTI,PEAE,SHAR",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

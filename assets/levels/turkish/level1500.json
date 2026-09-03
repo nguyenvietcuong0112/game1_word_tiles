@@ -1,61 +1,155 @@
-﻿{
-    "id":  1500,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALIK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ÇAKI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇAKIL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CELAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇAK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KIL,ACA,ÇEL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1500,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AYI",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "BUT",
+      "type": 0
+    },
+    {
+      "word": "SAÇ",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "AÇIN",
+      "type": 0
+    },
+    {
+      "word": "BUDA",
+      "type": 0
+    },
+    {
+      "word": "BASIN",
+      "type": 0
+    },
+    {
+      "word": "BASKI",
+      "type": 0
+    },
+    {
+      "word": "DAYIM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABU",
+      "type": 0
+    },
+    {
+      "word": "ASI",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "AÇI",
+      "type": 0
+    },
+    {
+      "word": "BUD",
+      "type": 0
+    },
+    {
+      "word": "BUY",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "DUY",
+      "type": 0
+    },
+    {
+      "word": "YAD",
+      "type": 0
+    },
+    {
+      "word": "YIK",
+      "type": 0
+    },
+    {
+      "word": "YIM",
+      "type": 0
+    },
+    {
+      "word": "ABBS",
+      "type": 0
+    },
+    {
+      "word": "ASIN",
+      "type": 0
+    },
+    {
+      "word": "ASKI",
+      "type": 0
+    },
+    {
+      "word": "AYIK",
+      "type": 0
+    },
+    {
+      "word": "AYIM",
+      "type": 0
+    },
+    {
+      "word": "DAYI",
+      "type": 0
+    },
+    {
+      "word": "SAÇI",
+      "type": 0
+    },
+    {
+      "word": "SAÇIN",
+      "type": 0
+    },
+    {
+      "word": "TUBBS",
+      "type": 0
+    },
+    {
+      "word": "ASKIYA",
+      "type": 0
+    },
+    {
+      "word": "BASKIYA",
+      "type": 0
+    }
+  ],
+  "letters": "AYIM,DUKN,TBSI,UBAÇ",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

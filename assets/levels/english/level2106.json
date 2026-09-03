@@ -1,119 +1,203 @@
-﻿{
-    "id":  2106,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ABS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAGE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SAGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAGMA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "GAB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAMMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MASA",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "MMAT,AGEA,SABS",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2106,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "FAR",
+      "type": 0
+    },
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "CARP",
+      "type": 0
+    },
+    {
+      "word": "CART",
+      "type": 0
+    },
+    {
+      "word": "FIRE",
+      "type": 0
+    },
+    {
+      "word": "FORD",
+      "type": 0
+    },
+    {
+      "word": "HAIR",
+      "type": 0
+    },
+    {
+      "word": "REFER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "AFT",
+      "type": 0
+    },
+    {
+      "word": "EFT",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "FER",
+      "type": 0
+    },
+    {
+      "word": "FIR",
+      "type": 0
+    },
+    {
+      "word": "HAE",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "REF",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "RIF",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "AIRT",
+      "type": 0
+    },
+    {
+      "word": "CAFE",
+      "type": 0
+    },
+    {
+      "word": "FART",
+      "type": 0
+    },
+    {
+      "word": "FERE",
+      "type": 0
+    },
+    {
+      "word": "HAAF",
+      "type": 0
+    },
+    {
+      "word": "HAAR",
+      "type": 0
+    },
+    {
+      "word": "ORDO",
+      "type": 0
+    },
+    {
+      "word": "RAFT",
+      "type": 0
+    },
+    {
+      "word": "REFT",
+      "type": 0
+    },
+    {
+      "word": "TIER",
+      "type": 0
+    },
+    {
+      "word": "TREF",
+      "type": 0
+    },
+    {
+      "word": "AIRER",
+      "type": 0
+    },
+    {
+      "word": "CHAIR",
+      "type": 0
+    },
+    {
+      "word": "FERIA",
+      "type": 0
+    },
+    {
+      "word": "FIRER",
+      "type": 0
+    },
+    {
+      "word": "FORDO",
+      "type": 0
+    },
+    {
+      "word": "ARTIER",
+      "type": 0
+    },
+    {
+      "word": "HAIRDO",
+      "type": 0
+    }
+  ],
+  "letters": "OFHCP,RIAAR,DREFT,OTREI",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

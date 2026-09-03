@@ -1,81 +1,219 @@
-﻿{
-    "id":  807,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MUY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AZAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAYA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAZA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MUDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAYA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RAZA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AYUDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MUDAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AYUDAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AYA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DUMA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MAYAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAZAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZAYA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ZAR,AYA,MUD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 807,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "CARA",
+      "type": 0
+    },
+    {
+      "word": "CUAL",
+      "type": 0
+    },
+    {
+      "word": "CURA",
+      "type": 0
+    },
+    {
+      "word": "HARE",
+      "type": 0
+    },
+    {
+      "word": "LIGA",
+      "type": 0
+    },
+    {
+      "word": "LAURA",
+      "type": 0
+    },
+    {
+      "word": "REINO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "AGH",
+      "type": 0
+    },
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "EIN",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "GIA",
+      "type": 0
+    },
+    {
+      "word": "GIL",
+      "type": 0
+    },
+    {
+      "word": "HAI",
+      "type": 0
+    },
+    {
+      "word": "HAR",
+      "type": 0
+    },
+    {
+      "word": "HEI",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "ILA",
+      "type": 0
+    },
+    {
+      "word": "INO",
+      "type": 0
+    },
+    {
+      "word": "LAU",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "NOA",
+      "type": 0
+    },
+    {
+      "word": "ONI",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "REO",
+      "type": 0
+    },
+    {
+      "word": "RIE",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "AGHA",
+      "type": 0
+    },
+    {
+      "word": "ALIA",
+      "type": 0
+    },
+    {
+      "word": "AURA",
+      "type": 0
+    },
+    {
+      "word": "CARE",
+      "type": 0
+    },
+    {
+      "word": "CURE",
+      "type": 0
+    },
+    {
+      "word": "HAIG",
+      "type": 0
+    },
+    {
+      "word": "HAIL",
+      "type": 0
+    },
+    {
+      "word": "HARA",
+      "type": 0
+    },
+    {
+      "word": "HARU",
+      "type": 0
+    },
+    {
+      "word": "HERA",
+      "type": 0
+    },
+    {
+      "word": "LIAR",
+      "type": 0
+    },
+    {
+      "word": "REIR",
+      "type": 0
+    },
+    {
+      "word": "RINO",
+      "type": 0
+    },
+    {
+      "word": "LAURE",
+      "type": 0
+    },
+    {
+      "word": "LIGAR",
+      "type": 0
+    }
+  ],
+  "letters": "ARIN,GHEO,IARA,LAUC",
+  "obstacles": []
 }

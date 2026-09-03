@@ -1,85 +1,323 @@
-﻿{
-    "id":  2176,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NINE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PORK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PURE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUNE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SURE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHORUS",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ONUS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "OPUS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UNI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KRENI,HORUN,CPUSO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2176,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADD",
+      "type": 0
+    },
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "BET",
+      "type": 0
+    },
+    {
+      "word": "GET",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "PART",
+      "type": 0
+    },
+    {
+      "word": "RAPE",
+      "type": 0
+    },
+    {
+      "word": "PANEL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALB",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BEG",
+      "type": 0
+    },
+    {
+      "word": "DAB",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "NAP",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "TEG",
+      "type": 0
+    },
+    {
+      "word": "ANTE",
+      "type": 0
+    },
+    {
+      "word": "APED",
+      "type": 0
+    },
+    {
+      "word": "BADE",
+      "type": 0
+    },
+    {
+      "word": "BALE",
+      "type": 0
+    },
+    {
+      "word": "BARD",
+      "type": 0
+    },
+    {
+      "word": "BARM",
+      "type": 0
+    },
+    {
+      "word": "BLAB",
+      "type": 0
+    },
+    {
+      "word": "BLED",
+      "type": 0
+    },
+    {
+      "word": "DALE",
+      "type": 0
+    },
+    {
+      "word": "DENT",
+      "type": 0
+    },
+    {
+      "word": "DRAB",
+      "type": 0
+    },
+    {
+      "word": "EGER",
+      "type": 0
+    },
+    {
+      "word": "ETNA",
+      "type": 0
+    },
+    {
+      "word": "LADE",
+      "type": 0
+    },
+    {
+      "word": "LARD",
+      "type": 0
+    },
+    {
+      "word": "LENT",
+      "type": 0
+    },
+    {
+      "word": "NAPE",
+      "type": 0
+    },
+    {
+      "word": "PANE",
+      "type": 0
+    },
+    {
+      "word": "PANT",
+      "type": 0
+    },
+    {
+      "word": "PENT",
+      "type": 0
+    },
+    {
+      "word": "RALE",
+      "type": 0
+    },
+    {
+      "word": "RANT",
+      "type": 0
+    },
+    {
+      "word": "REDD",
+      "type": 0
+    },
+    {
+      "word": "TRAP",
+      "type": 0
+    },
+    {
+      "word": "ADDER",
+      "type": 0
+    },
+    {
+      "word": "BALED",
+      "type": 0
+    },
+    {
+      "word": "BARDE",
+      "type": 0
+    },
+    {
+      "word": "BEGET",
+      "type": 0
+    },
+    {
+      "word": "BLADE",
+      "type": 0
+    },
+    {
+      "word": "BLENT",
+      "type": 0
+    },
+    {
+      "word": "LADEN",
+      "type": 0
+    },
+    {
+      "word": "PANED",
+      "type": 0
+    },
+    {
+      "word": "PEDAL",
+      "type": 0
+    },
+    {
+      "word": "RAPED",
+      "type": 0
+    },
+    {
+      "word": "BADDER",
+      "type": 0
+    },
+    {
+      "word": "DEPART",
+      "type": 0
+    },
+    {
+      "word": "ENTRAP",
+      "type": 0
+    },
+    {
+      "word": "LADDER",
+      "type": 0
+    },
+    {
+      "word": "LARDER",
+      "type": 0
+    },
+    {
+      "word": "REDDEN",
+      "type": 0
+    },
+    {
+      "word": "BLADDER",
+      "type": 0
+    }
+  ],
+  "letters": "GERBM,EBLAR,TNEDD,RAPRE",
+  "obstacles": []
 }

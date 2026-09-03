@@ -1,101 +1,155 @@
-﻿{
-    "id":  1035,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AVAL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DADO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAÑA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEÑA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEÑAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAVADO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VADE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VADO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÑAS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LAVU,AÑAD,SEDO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1035,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BIG",
+      "type": 0
+    },
+    {
+      "word": "BIN",
+      "type": 0
+    },
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "ICE",
+      "type": 0
+    },
+    {
+      "word": "JIN",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "GINA",
+      "type": 0
+    },
+    {
+      "word": "NICK",
+      "type": 0
+    },
+    {
+      "word": "SINO",
+      "type": 0
+    },
+    {
+      "word": "BEIJING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GAO",
+      "type": 0
+    },
+    {
+      "word": "GIN",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "INO",
+      "type": 0
+    },
+    {
+      "word": "ISE",
+      "type": 0
+    },
+    {
+      "word": "ISI",
+      "type": 0
+    },
+    {
+      "word": "JIE",
+      "type": 0
+    },
+    {
+      "word": "NAO",
+      "type": 0
+    },
+    {
+      "word": "NIC",
+      "type": 0
+    },
+    {
+      "word": "NOA",
+      "type": 0
+    },
+    {
+      "word": "ONG",
+      "type": 0
+    },
+    {
+      "word": "ONI",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "SIE",
+      "type": 0
+    },
+    {
+      "word": "CONG",
+      "type": 0
+    },
+    {
+      "word": "EIJI",
+      "type": 0
+    },
+    {
+      "word": "INGA",
+      "type": 0
+    },
+    {
+      "word": "JING",
+      "type": 0
+    },
+    {
+      "word": "NICE",
+      "type": 0
+    },
+    {
+      "word": "SING",
+      "type": 0
+    },
+    {
+      "word": "CONGA",
+      "type": 0
+    }
+  ],
+  "letters": "CKCE,ONIS,AGJI,NIBE",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

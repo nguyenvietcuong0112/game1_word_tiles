@@ -1,49 +1,287 @@
-﻿{
-    "id":  926,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLOG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OGRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOGRO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "GRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROB",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ROL,GBZ,OLU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 926,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "BOB",
+      "type": 0
+    },
+    {
+      "word": "NOTA",
+      "type": 0
+    },
+    {
+      "word": "OTRA",
+      "type": 0
+    },
+    {
+      "word": "OTRO",
+      "type": 0
+    },
+    {
+      "word": "TRAE",
+      "type": 0
+    },
+    {
+      "word": "BAILAR",
+      "type": 0
+    },
+    {
+      "word": "NOTADO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ARN",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "BAI",
+      "type": 0
+    },
+    {
+      "word": "BEA",
+      "type": 0
+    },
+    {
+      "word": "BLA",
+      "type": 0
+    },
+    {
+      "word": "BOA",
+      "type": 0
+    },
+    {
+      "word": "DAO",
+      "type": 0
+    },
+    {
+      "word": "DOO",
+      "type": 0
+    },
+    {
+      "word": "ILA",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LBA",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "LIO",
+      "type": 0
+    },
+    {
+      "word": "LOA",
+      "type": 0
+    },
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "NRO",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "OIL",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "OLI",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "OOD",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "OTA",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "ALBA",
+      "type": 0
+    },
+    {
+      "word": "ALIA",
+      "type": 0
+    },
+    {
+      "word": "ARNE",
+      "type": 0
+    },
+    {
+      "word": "ARNO",
+      "type": 0
+    },
+    {
+      "word": "BEAR",
+      "type": 0
+    },
+    {
+      "word": "BOBA",
+      "type": 0
+    },
+    {
+      "word": "DATO",
+      "type": 0
+    },
+    {
+      "word": "DOOR",
+      "type": 0
+    },
+    {
+      "word": "LORA",
+      "type": 0
+    },
+    {
+      "word": "NEAL",
+      "type": 0
+    },
+    {
+      "word": "NEAR",
+      "type": 0
+    },
+    {
+      "word": "ORAL",
+      "type": 0
+    },
+    {
+      "word": "ORTO",
+      "type": 0
+    },
+    {
+      "word": "ROAD",
+      "type": 0
+    },
+    {
+      "word": "TONE",
+      "type": 0
+    },
+    {
+      "word": "TROL",
+      "type": 0
+    },
+    {
+      "word": "ATRAE",
+      "type": 0
+    },
+    {
+      "word": "BAILA",
+      "type": 0
+    },
+    {
+      "word": "BAILO",
+      "type": 0
+    },
+    {
+      "word": "BLOOD",
+      "type": 0
+    },
+    {
+      "word": "LORNE",
+      "type": 0
+    },
+    {
+      "word": "TRAEN",
+      "type": 0
+    },
+    {
+      "word": "ATRAEN",
+      "type": 0
+    }
+  ],
+  "letters": "BOBA,EALI,NROO,OTAD",
+  "obstacles": []
 }

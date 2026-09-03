@@ -1,53 +1,163 @@
-﻿{
-    "id":  1520,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LEAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MILD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MILE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOLDY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LIMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MILO",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "YDA,ILE,MOV",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1520,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "EMU",
+      "type": 0
+    },
+    {
+      "word": "GEM",
+      "type": 0
+    },
+    {
+      "word": "OIL",
+      "type": 0
+    },
+    {
+      "word": "DEBT",
+      "type": 0
+    },
+    {
+      "word": "SOON",
+      "type": 0
+    },
+    {
+      "word": "STAGE",
+      "type": 0
+    },
+    {
+      "word": "STAND",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "EON",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GAT",
+      "type": 0
+    },
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "MUT",
+      "type": 0
+    },
+    {
+      "word": "NAG",
+      "type": 0
+    },
+    {
+      "word": "NOO",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "EDGE",
+      "type": 0
+    },
+    {
+      "word": "EONS",
+      "type": 0
+    },
+    {
+      "word": "GATS",
+      "type": 0
+    },
+    {
+      "word": "LOOS",
+      "type": 0
+    },
+    {
+      "word": "OLIO",
+      "type": 0
+    },
+    {
+      "word": "SNAG",
+      "type": 0
+    },
+    {
+      "word": "SOIL",
+      "type": 0
+    },
+    {
+      "word": "STAG",
+      "type": 0
+    },
+    {
+      "word": "TANS",
+      "type": 0
+    },
+    {
+      "word": "BLOND",
+      "type": 0
+    },
+    {
+      "word": "OLIOS",
+      "type": 0
+    },
+    {
+      "word": "BLONDE",
+      "type": 0
+    },
+    {
+      "word": "ONSTAGE",
+      "type": 0
+    }
+  ],
+  "letters": "TSOI,ANOL,GDEB,EMUT",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

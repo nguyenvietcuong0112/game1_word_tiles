@@ -1,49 +1,167 @@
-﻿{
-    "id":  1025,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ELF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HELP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PINE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ELFIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIP",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MEN,HFI,ELP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1025,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "BEG",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "CAPE",
+      "type": 0
+    },
+    {
+      "word": "COOP",
+      "type": 0
+    },
+    {
+      "word": "GAIN",
+      "type": 0
+    },
+    {
+      "word": "OPEN",
+      "type": 0
+    },
+    {
+      "word": "TYING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "CEP",
+      "type": 0
+    },
+    {
+      "word": "COO",
+      "type": 0
+    },
+    {
+      "word": "ENG",
+      "type": 0
+    },
+    {
+      "word": "GAT",
+      "type": 0
+    },
+    {
+      "word": "NIP",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PEC",
+      "type": 0
+    },
+    {
+      "word": "PEP",
+      "type": 0
+    },
+    {
+      "word": "PIA",
+      "type": 0
+    },
+    {
+      "word": "YIN",
+      "type": 0
+    },
+    {
+      "word": "YIP",
+      "type": 0
+    },
+    {
+      "word": "PACE",
+      "type": 0
+    },
+    {
+      "word": "PEPO",
+      "type": 0
+    },
+    {
+      "word": "PINE",
+      "type": 0
+    },
+    {
+      "word": "PING",
+      "type": 0
+    },
+    {
+      "word": "TAIN",
+      "type": 0
+    },
+    {
+      "word": "YIPE",
+      "type": 0
+    },
+    {
+      "word": "BEGAT",
+      "type": 0
+    },
+    {
+      "word": "OPINE",
+      "type": 0
+    },
+    {
+      "word": "OPING",
+      "type": 0
+    },
+    {
+      "word": "COOPING",
+      "type": 0
+    }
+  ],
+  "letters": "TAGE,YINB,OPEP,OCCA",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

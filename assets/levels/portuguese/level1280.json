@@ -1,73 +1,155 @@
-﻿{
-    "id":  1280,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÓLEO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOCORRO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CERRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OCELO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ROEL",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "OVOR,ÓLER,SOCO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1280,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BEE",
+      "type": 0
+    },
+    {
+      "word": "BON",
+      "type": 0
+    },
+    {
+      "word": "ELI",
+      "type": 0
+    },
+    {
+      "word": "ERM",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "LER",
+      "type": 0
+    },
+    {
+      "word": "WEE",
+      "type": 0
+    },
+    {
+      "word": "BREE",
+      "type": 0
+    },
+    {
+      "word": "NOBRE",
+      "type": 0
+    },
+    {
+      "word": "GEORGE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BRE",
+      "type": 0
+    },
+    {
+      "word": "EEG",
+      "type": 0
+    },
+    {
+      "word": "GEE",
+      "type": 0
+    },
+    {
+      "word": "GEO",
+      "type": 0
+    },
+    {
+      "word": "GER",
+      "type": 0
+    },
+    {
+      "word": "GRO",
+      "type": 0
+    },
+    {
+      "word": "IWO",
+      "type": 0
+    },
+    {
+      "word": "LEW",
+      "type": 0
+    },
+    {
+      "word": "ONG",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "ROW",
+      "type": 0
+    },
+    {
+      "word": "WIL",
+      "type": 0
+    },
+    {
+      "word": "BEER",
+      "type": 0
+    },
+    {
+      "word": "BONG",
+      "type": 0
+    },
+    {
+      "word": "GROW",
+      "type": 0
+    },
+    {
+      "word": "ROWE",
+      "type": 0
+    },
+    {
+      "word": "GEORG",
+      "type": 0
+    },
+    {
+      "word": "GREER",
+      "type": 0
+    },
+    {
+      "word": "WILBER",
+      "type": 0
+    }
+  ],
+  "letters": "MBLI,REEW,BGRO,ONGE",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

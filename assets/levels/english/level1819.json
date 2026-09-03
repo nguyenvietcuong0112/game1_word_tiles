@@ -1,118 +1,255 @@
-﻿{
-    "id":  1819,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OWE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACUTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUTER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUTIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WRITE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ERIE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RITE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WEIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WRIT",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "UTIE,CERW,AAIO",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  8,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1819,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "CENT",
+      "type": 0
+    },
+    {
+      "word": "DONE",
+      "type": 0
+    },
+    {
+      "word": "FACE",
+      "type": 0
+    },
+    {
+      "word": "OPEN",
+      "type": 0
+    },
+    {
+      "word": "FAULT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "CEP",
+      "type": 0
+    },
+    {
+      "word": "COL",
+      "type": 0
+    },
+    {
+      "word": "COP",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "ECU",
+      "type": 0
+    },
+    {
+      "word": "EMF",
+      "type": 0
+    },
+    {
+      "word": "LOP",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "NOD",
+      "type": 0
+    },
+    {
+      "word": "NOM",
+      "type": 0
+    },
+    {
+      "word": "OAT",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "OPT",
+      "type": 0
+    },
+    {
+      "word": "PEA",
+      "type": 0
+    },
+    {
+      "word": "PEC",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "POL",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "AMEN",
+      "type": 0
+    },
+    {
+      "word": "CAFE",
+      "type": 0
+    },
+    {
+      "word": "CAUL",
+      "type": 0
+    },
+    {
+      "word": "CEPE",
+      "type": 0
+    },
+    {
+      "word": "COAT",
+      "type": 0
+    },
+    {
+      "word": "COLT",
+      "type": 0
+    },
+    {
+      "word": "COPE",
+      "type": 0
+    },
+    {
+      "word": "CULT",
+      "type": 0
+    },
+    {
+      "word": "DAME",
+      "type": 0
+    },
+    {
+      "word": "DOME",
+      "type": 0
+    },
+    {
+      "word": "LEPT",
+      "type": 0
+    },
+    {
+      "word": "LOPE",
+      "type": 0
+    },
+    {
+      "word": "LUCE",
+      "type": 0
+    },
+    {
+      "word": "MENO",
+      "type": 0
+    },
+    {
+      "word": "NEMA",
+      "type": 0
+    },
+    {
+      "word": "NOMA",
+      "type": 0
+    },
+    {
+      "word": "NOME",
+      "type": 0
+    },
+    {
+      "word": "OMEN",
+      "type": 0
+    },
+    {
+      "word": "PEAT",
+      "type": 0
+    },
+    {
+      "word": "PELT",
+      "type": 0
+    },
+    {
+      "word": "PENT",
+      "type": 0
+    },
+    {
+      "word": "TAEL",
+      "type": 0
+    },
+    {
+      "word": "AMENT",
+      "type": 0
+    },
+    {
+      "word": "COPEN",
+      "type": 0
+    },
+    {
+      "word": "NOMAD",
+      "type": 0
+    },
+    {
+      "word": "LUCENT",
+      "type": 0
+    }
+  ],
+  "letters": "TLUAC,AOCFE,EPEMA,LTNOD",
+  "obstacles": []
 }

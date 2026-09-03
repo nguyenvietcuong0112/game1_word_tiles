@@ -1,73 +1,123 @@
-﻿{
-    "id":  1230,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YENİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YİNE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOLYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MUAYENE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "NENE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NİYE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "YENEN,ASKYİ,UMOLA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1230,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "COK",
+      "type": 0
+    },
+    {
+      "word": "HAK",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "KAL",
+      "type": 0
+    },
+    {
+      "word": "VAL",
+      "type": 0
+    },
+    {
+      "word": "VAY",
+      "type": 0
+    },
+    {
+      "word": "YEO",
+      "type": 0
+    },
+    {
+      "word": "VEYA",
+      "type": 0
+    },
+    {
+      "word": "ÜVEY",
+      "type": 0
+    },
+    {
+      "word": "FUSCO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "HYE",
+      "type": 0
+    },
+    {
+      "word": "KOL",
+      "type": 0
+    },
+    {
+      "word": "LAK",
+      "type": 0
+    },
+    {
+      "word": "LAV",
+      "type": 0
+    },
+    {
+      "word": "LAY",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "YAV",
+      "type": 0
+    },
+    {
+      "word": "COLA",
+      "type": 0
+    },
+    {
+      "word": "HALO",
+      "type": 0
+    },
+    {
+      "word": "KOLA",
+      "type": 0
+    },
+    {
+      "word": "HYEOK",
+      "type": 0
+    },
+    {
+      "word": "KAHYA",
+      "type": 0
+    }
+  ],
+  "letters": "LHAL,AYKO,VEOC,ÜFUS",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

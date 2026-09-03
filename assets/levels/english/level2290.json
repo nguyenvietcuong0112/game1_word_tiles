@@ -1,93 +1,243 @@
-﻿{
-    "id":  2290,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DEAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FILE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RILE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "VEIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEALER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RELIEVE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ERIE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LIED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MALI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RELIED",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RELIEVED",
-                            "type":  2
-                        },
-                        {
-                            "word":  "VEAL",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "MALE,VEIR,EDFO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2290,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ELF",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "NOW",
+      "type": 0
+    },
+    {
+      "word": "OWN",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "DOLL",
+      "type": 0
+    },
+    {
+      "word": "DOWN",
+      "type": 0
+    },
+    {
+      "word": "KNOW",
+      "type": 0
+    },
+    {
+      "word": "THEN",
+      "type": 0
+    },
+    {
+      "word": "TOWN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "DAP",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DOE",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "DOW",
+      "type": 0
+    },
+    {
+      "word": "HEN",
+      "type": 0
+    },
+    {
+      "word": "HEP",
+      "type": 0
+    },
+    {
+      "word": "NAP",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "PEH",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "TOW",
+      "type": 0
+    },
+    {
+      "word": "WOE",
+      "type": 0
+    },
+    {
+      "word": "WON",
+      "type": 0
+    },
+    {
+      "word": "WOT",
+      "type": 0
+    },
+    {
+      "word": "DELF",
+      "type": 0
+    },
+    {
+      "word": "DOLE",
+      "type": 0
+    },
+    {
+      "word": "FLED",
+      "type": 0
+    },
+    {
+      "word": "HENT",
+      "type": 0
+    },
+    {
+      "word": "KNOT",
+      "type": 0
+    },
+    {
+      "word": "LODE",
+      "type": 0
+    },
+    {
+      "word": "LOLL",
+      "type": 0
+    },
+    {
+      "word": "NAPE",
+      "type": 0
+    },
+    {
+      "word": "OLEO",
+      "type": 0
+    },
+    {
+      "word": "PANE",
+      "type": 0
+    },
+    {
+      "word": "PANT",
+      "type": 0
+    },
+    {
+      "word": "PENT",
+      "type": 0
+    },
+    {
+      "word": "WOAD",
+      "type": 0
+    },
+    {
+      "word": "WONK",
+      "type": 0
+    },
+    {
+      "word": "DELFT",
+      "type": 0
+    },
+    {
+      "word": "KNOWN",
+      "type": 0
+    },
+    {
+      "word": "PANTO",
+      "type": 0
+    },
+    {
+      "word": "LETDOWN",
+      "type": 0
+    }
+  ],
+  "letters": "HEPLL,TNADO,OWOEL,NKDTF",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

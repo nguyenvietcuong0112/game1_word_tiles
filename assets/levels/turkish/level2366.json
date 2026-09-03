@@ -1,105 +1,267 @@
-﻿{
-    "id":  2366,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TÜR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESKİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TERK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZATEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TENCERE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AZAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TERES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TERKİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TÜRK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TÜRKİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÜRE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ENCES,TAERK,AZTÜİ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2366,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "BİN",
+      "type": 0
+    },
+    {
+      "word": "DUY",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "UYU",
+      "type": 0
+    },
+    {
+      "word": "KARA",
+      "type": 0
+    },
+    {
+      "word": "KARİ",
+      "type": 0
+    },
+    {
+      "word": "BİTİR",
+      "type": 0
+    },
+    {
+      "word": "KARAR",
+      "type": 0
+    },
+    {
+      "word": "KAREN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "BON",
+      "type": 0
+    },
+    {
+      "word": "BOT",
+      "type": 0
+    },
+    {
+      "word": "BİT",
+      "type": 0
+    },
+    {
+      "word": "ERİ",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "RİN",
+      "type": 0
+    },
+    {
+      "word": "TAU",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "TİN",
+      "type": 0
+    },
+    {
+      "word": "TİR",
+      "type": 0
+    },
+    {
+      "word": "YUİ",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "İNİ",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "İTİ",
+      "type": 0
+    },
+    {
+      "word": "AKAR",
+      "type": 0
+    },
+    {
+      "word": "ARAR",
+      "type": 0
+    },
+    {
+      "word": "BONE",
+      "type": 0
+    },
+    {
+      "word": "BOTA",
+      "type": 0
+    },
+    {
+      "word": "BİNE",
+      "type": 0
+    },
+    {
+      "word": "BİNİ",
+      "type": 0
+    },
+    {
+      "word": "BİTİ",
+      "type": 0
+    },
+    {
+      "word": "DUYU",
+      "type": 0
+    },
+    {
+      "word": "ERİN",
+      "type": 0
+    },
+    {
+      "word": "KARE",
+      "type": 0
+    },
+    {
+      "word": "NOTA",
+      "type": 0
+    },
+    {
+      "word": "RENO",
+      "type": 0
+    },
+    {
+      "word": "TARA",
+      "type": 0
+    },
+    {
+      "word": "TENİ",
+      "type": 0
+    },
+    {
+      "word": "TERİ",
+      "type": 0
+    },
+    {
+      "word": "TONE",
+      "type": 0
+    },
+    {
+      "word": "TONİ",
+      "type": 0
+    },
+    {
+      "word": "TİNO",
+      "type": 0
+    },
+    {
+      "word": "İNER",
+      "type": 0
+    },
+    {
+      "word": "İRAK",
+      "type": 0
+    },
+    {
+      "word": "İTİN",
+      "type": 0
+    },
+    {
+      "word": "BİNER",
+      "type": 0
+    },
+    {
+      "word": "KARAT",
+      "type": 0
+    },
+    {
+      "word": "KARİN",
+      "type": 0
+    },
+    {
+      "word": "NOTER",
+      "type": 0
+    },
+    {
+      "word": "TARAK",
+      "type": 0
+    },
+    {
+      "word": "TOBİN",
+      "type": 0
+    },
+    {
+      "word": "KARARA",
+      "type": 0
+    },
+    {
+      "word": "KARATE",
+      "type": 0
+    },
+    {
+      "word": "BİTİREN",
+      "type": 0
+    }
+  ],
+  "letters": "TİRAK,İNERA,BOTAR,DUYUİ",
+  "obstacles": []
 }

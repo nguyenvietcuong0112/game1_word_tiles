@@ -1,50 +1,139 @@
-﻿{
-    "id":  1992,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAĞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKOR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOKU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SKOR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-
-                    ],
-    "letters":  "UKA,KOR,SAĞ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1992,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "FUN",
+      "type": 0
+    },
+    {
+      "word": "KOD",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "NDA",
+      "type": 0
+    },
+    {
+      "word": "ODO",
+      "type": 0
+    },
+    {
+      "word": "ONU",
+      "type": 0
+    },
+    {
+      "word": "SOK",
+      "type": 0
+    },
+    {
+      "word": "YUM",
+      "type": 0
+    },
+    {
+      "word": "KRAL",
+      "type": 0
+    },
+    {
+      "word": "ONDA",
+      "type": 0
+    },
+    {
+      "word": "ANLAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "ARK",
+      "type": 0
+    },
+    {
+      "word": "DAO",
+      "type": 0
+    },
+    {
+      "word": "DOK",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "MUN",
+      "type": 0
+    },
+    {
+      "word": "NAO",
+      "type": 0
+    },
+    {
+      "word": "UMU",
+      "type": 0
+    },
+    {
+      "word": "ANLA",
+      "type": 0
+    },
+    {
+      "word": "ARDA",
+      "type": 0
+    },
+    {
+      "word": "LARS",
+      "type": 0
+    },
+    {
+      "word": "OKLA",
+      "type": 0
+    },
+    {
+      "word": "UNDA",
+      "type": 0
+    },
+    {
+      "word": "LARDA",
+      "type": 0
+    },
+    {
+      "word": "OKLAR",
+      "type": 0
+    },
+    {
+      "word": "SODYUM",
+      "type": 0
+    },
+    {
+      "word": "ANLARDA",
+      "type": 0
+    }
+  ],
+  "letters": "FUNOD,UMDAO,YSRAA,DOKLN",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

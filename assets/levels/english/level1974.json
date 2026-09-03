@@ -1,69 +1,171 @@
-﻿{
-    "id":  1974,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TERM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "QUOTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOUQUET",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "QUO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "QUOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROTE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TOR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "QUORM,UETEI,OBLUA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1974,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "FIG",
+      "type": 0
+    },
+    {
+      "word": "GYM",
+      "type": 0
+    },
+    {
+      "word": "LAW",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "CASH",
+      "type": 0
+    },
+    {
+      "word": "THEM",
+      "type": 0
+    },
+    {
+      "word": "WITH",
+      "type": 0
+    },
+    {
+      "word": "WELCH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "AWE",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GEM",
+      "type": 0
+    },
+    {
+      "word": "HEH",
+      "type": 0
+    },
+    {
+      "word": "HEM",
+      "type": 0
+    },
+    {
+      "word": "HEW",
+      "type": 0
+    },
+    {
+      "word": "WIG",
+      "type": 0
+    },
+    {
+      "word": "WIT",
+      "type": 0
+    },
+    {
+      "word": "ACHE",
+      "type": 0
+    },
+    {
+      "word": "ASPS",
+      "type": 0
+    },
+    {
+      "word": "CHEW",
+      "type": 0
+    },
+    {
+      "word": "CLAW",
+      "type": 0
+    },
+    {
+      "word": "CLEW",
+      "type": 0
+    },
+    {
+      "word": "HEHS",
+      "type": 0
+    },
+    {
+      "word": "SASH",
+      "type": 0
+    },
+    {
+      "word": "SHEW",
+      "type": 0
+    },
+    {
+      "word": "WALE",
+      "type": 0
+    },
+    {
+      "word": "CHELA",
+      "type": 0
+    },
+    {
+      "word": "WITHE",
+      "type": 0
+    },
+    {
+      "word": "CASHEW",
+      "type": 0
+    },
+    {
+      "word": "SACHEM",
+      "type": 0
+    },
+    {
+      "word": "ALCHEMY",
+      "type": 0
+    }
+  ],
+  "letters": "SACLA,PSHEW,WHEGI,ITMYF",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

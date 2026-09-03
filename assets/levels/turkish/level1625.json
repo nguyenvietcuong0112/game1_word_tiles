@@ -1,61 +1,155 @@
-﻿{
-    "id":  1625,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EŞEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ETEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KETE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KURU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEŞE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KURUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MUHTEŞEM",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ŞEKM,ETHU,MKUR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1625,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "PEK",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "EKİP",
+      "type": 0
+    },
+    {
+      "word": "EYRE",
+      "type": 0
+    },
+    {
+      "word": "KERE",
+      "type": 0
+    },
+    {
+      "word": "PEKİ",
+      "type": 0
+    },
+    {
+      "word": "İKNA",
+      "type": 0
+    },
+    {
+      "word": "FRANK",
+      "type": 0
+    },
+    {
+      "word": "ZAFER",
+      "type": 0
+    },
+    {
+      "word": "YANKEE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARZ",
+      "type": 0
+    },
+    {
+      "word": "EPİ",
+      "type": 0
+    },
+    {
+      "word": "FAE",
+      "type": 0
+    },
+    {
+      "word": "FAZ",
+      "type": 0
+    },
+    {
+      "word": "KİP",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "YEE",
+      "type": 0
+    },
+    {
+      "word": "İKE",
+      "type": 0
+    },
+    {
+      "word": "İPE",
+      "type": 0
+    },
+    {
+      "word": "ANKİ",
+      "type": 0
+    },
+    {
+      "word": "AYKİ",
+      "type": 0
+    },
+    {
+      "word": "EPİK",
+      "type": 0
+    },
+    {
+      "word": "FRAN",
+      "type": 0
+    },
+    {
+      "word": "PİKE",
+      "type": 0
+    },
+    {
+      "word": "İPEK",
+      "type": 0
+    },
+    {
+      "word": "YANKİ",
+      "type": 0
+    },
+    {
+      "word": "FRANKY",
+      "type": 0
+    },
+    {
+      "word": "ZAFERE",
+      "type": 0
+    }
+  ],
+  "letters": "YREP,EEKİ,AFNK,ZRAY",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

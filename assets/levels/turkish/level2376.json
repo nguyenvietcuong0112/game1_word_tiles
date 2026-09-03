@@ -1,89 +1,151 @@
-﻿{
-    "id":  2376,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AŞI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AŞK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞAŞI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AŞILI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AŞIRI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAŞARI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAŞARILI",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALIŞ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AŞAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KŞARI,ETŞIL,ÇBALE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2376,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CİA",
+      "type": 0
+    },
+    {
+      "word": "KOY",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "YOK",
+      "type": 0
+    },
+    {
+      "word": "ÖLÜ",
+      "type": 0
+    },
+    {
+      "word": "ÖLEN",
+      "type": 0
+    },
+    {
+      "word": "ÖLÜM",
+      "type": 0
+    },
+    {
+      "word": "ÖLÜR",
+      "type": 0
+    },
+    {
+      "word": "NOKTA",
+      "type": 0
+    },
+    {
+      "word": "ÖLÜMÜ",
+      "type": 0
+    },
+    {
+      "word": "YOKKEN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "KON",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MAİ",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "NCİ",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "NEN",
+      "type": 0
+    },
+    {
+      "word": "TAİ",
+      "type": 0
+    },
+    {
+      "word": "ÖNE",
+      "type": 0
+    },
+    {
+      "word": "KENE",
+      "type": 0
+    },
+    {
+      "word": "KONT",
+      "type": 0
+    },
+    {
+      "word": "ÖNEM",
+      "type": 0
+    },
+    {
+      "word": "ÖLENE",
+      "type": 0
+    },
+    {
+      "word": "ÖLÜME",
+      "type": 0
+    },
+    {
+      "word": "NOKTAM",
+      "type": 0
+    },
+    {
+      "word": "ÖLÜRÜM",
+      "type": 0
+    }
+  ],
+  "letters": "ÖNEKY,LENKO,ÜMCTN,RÜİAM",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

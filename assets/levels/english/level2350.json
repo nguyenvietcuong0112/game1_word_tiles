@@ -1,81 +1,259 @@
-﻿{
-    "id":  2350,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OWL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOLT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOWL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BROW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SLOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WOOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRAIN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RAINBOW",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BOOR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NBOWL,ISLOO,ARTRB",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2350,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "POD",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "BASS",
+      "type": 0
+    },
+    {
+      "word": "EASE",
+      "type": 0
+    },
+    {
+      "word": "SEEK",
+      "type": 0
+    },
+    {
+      "word": "GRADE",
+      "type": 0
+    },
+    {
+      "word": "GRADED",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABO",
+      "type": 0
+    },
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "BOA",
+      "type": 0
+    },
+    {
+      "word": "BOD",
+      "type": 0
+    },
+    {
+      "word": "BOP",
+      "type": 0
+    },
+    {
+      "word": "DAP",
+      "type": 0
+    },
+    {
+      "word": "KAB",
+      "type": 0
+    },
+    {
+      "word": "KAS",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SKA",
+      "type": 0
+    },
+    {
+      "word": "AKEE",
+      "type": 0
+    },
+    {
+      "word": "APOD",
+      "type": 0
+    },
+    {
+      "word": "BAKE",
+      "type": 0
+    },
+    {
+      "word": "BOAS",
+      "type": 0
+    },
+    {
+      "word": "BODE",
+      "type": 0
+    },
+    {
+      "word": "BOPS",
+      "type": 0
+    },
+    {
+      "word": "DAPS",
+      "type": 0
+    },
+    {
+      "word": "DOPA",
+      "type": 0
+    },
+    {
+      "word": "GRAD",
+      "type": 0
+    },
+    {
+      "word": "KABS",
+      "type": 0
+    },
+    {
+      "word": "ODEA",
+      "type": 0
+    },
+    {
+      "word": "RAPS",
+      "type": 0
+    },
+    {
+      "word": "SABS",
+      "type": 0
+    },
+    {
+      "word": "SAKE",
+      "type": 0
+    },
+    {
+      "word": "SKAS",
+      "type": 0
+    },
+    {
+      "word": "SKEE",
+      "type": 0
+    },
+    {
+      "word": "SPAR",
+      "type": 0
+    },
+    {
+      "word": "ABODE",
+      "type": 0
+    },
+    {
+      "word": "AKEES",
+      "type": 0
+    },
+    {
+      "word": "BODED",
+      "type": 0
+    },
+    {
+      "word": "EASES",
+      "type": 0
+    },
+    {
+      "word": "OASES",
+      "type": 0
+    },
+    {
+      "word": "SEEKS",
+      "type": 0
+    },
+    {
+      "word": "SKEES",
+      "type": 0
+    },
+    {
+      "word": "SPADE",
+      "type": 0
+    },
+    {
+      "word": "SPADO",
+      "type": 0
+    },
+    {
+      "word": "SPODE",
+      "type": 0
+    },
+    {
+      "word": "ABODED",
+      "type": 0
+    },
+    {
+      "word": "SPADED",
+      "type": 0
+    }
+  ],
+  "letters": "DISEE,DEASK,GDOBA,RAPSS",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

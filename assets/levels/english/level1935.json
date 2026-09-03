@@ -1,99 +1,267 @@
-﻿{
-    "id":  1935,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BATH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOOT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "NEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TABOO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOOT",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "TOOT,NBHI,EATB",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1935,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BIS",
+      "type": 0
+    },
+    {
+      "word": "GET",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "GORE",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "RISE",
+      "type": 0
+    },
+    {
+      "word": "RESIST",
+      "type": 0
+    },
+    {
+      "word": "SURGERY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "GOR",
+      "type": 0
+    },
+    {
+      "word": "GOY",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "RIB",
+      "type": 0
+    },
+    {
+      "word": "SIB",
+      "type": 0
+    },
+    {
+      "word": "SIS",
+      "type": 0
+    },
+    {
+      "word": "TEG",
+      "type": 0
+    },
+    {
+      "word": "BISE",
+      "type": 0
+    },
+    {
+      "word": "ERRS",
+      "type": 0
+    },
+    {
+      "word": "ERST",
+      "type": 0
+    },
+    {
+      "word": "GORP",
+      "type": 0
+    },
+    {
+      "word": "IBIS",
+      "type": 0
+    },
+    {
+      "word": "IRES",
+      "type": 0
+    },
+    {
+      "word": "ORES",
+      "type": 0
+    },
+    {
+      "word": "PROG",
+      "type": 0
+    },
+    {
+      "word": "REGS",
+      "type": 0
+    },
+    {
+      "word": "RUST",
+      "type": 0
+    },
+    {
+      "word": "SIRE",
+      "type": 0
+    },
+    {
+      "word": "TEGS",
+      "type": 0
+    },
+    {
+      "word": "TYRE",
+      "type": 0
+    },
+    {
+      "word": "URGE",
+      "type": 0
+    },
+    {
+      "word": "YORE",
+      "type": 0
+    },
+    {
+      "word": "BISES",
+      "type": 0
+    },
+    {
+      "word": "ERSES",
+      "type": 0
+    },
+    {
+      "word": "GORES",
+      "type": 0
+    },
+    {
+      "word": "PREST",
+      "type": 0
+    },
+    {
+      "word": "PRISE",
+      "type": 0
+    },
+    {
+      "word": "RESTS",
+      "type": 0
+    },
+    {
+      "word": "RISER",
+      "type": 0
+    },
+    {
+      "word": "RISES",
+      "type": 0
+    },
+    {
+      "word": "RUSTS",
+      "type": 0
+    },
+    {
+      "word": "SERRY",
+      "type": 0
+    },
+    {
+      "word": "SIRES",
+      "type": 0
+    },
+    {
+      "word": "SISES",
+      "type": 0
+    },
+    {
+      "word": "SURGE",
+      "type": 0
+    },
+    {
+      "word": "TERSE",
+      "type": 0
+    },
+    {
+      "word": "URGER",
+      "type": 0
+    },
+    {
+      "word": "YORES",
+      "type": 0
+    },
+    {
+      "word": "ESTRUS",
+      "type": 0
+    },
+    {
+      "word": "IBISES",
+      "type": 0
+    },
+    {
+      "word": "PRESTS",
+      "type": 0
+    },
+    {
+      "word": "PRISES",
+      "type": 0
+    },
+    {
+      "word": "SURGER",
+      "type": 0
+    },
+    {
+      "word": "TERSER",
+      "type": 0
+    },
+    {
+      "word": "URGERS",
+      "type": 0
+    },
+    {
+      "word": "RESISTS",
+      "type": 0
+    },
+    {
+      "word": "SURGERS",
+      "type": 0
+    },
+    {
+      "word": "TERSEST",
+      "type": 0
+    }
+  ],
+  "letters": "URGET,STSRY,ISERO,BIRPG",
+  "obstacles": []
 }

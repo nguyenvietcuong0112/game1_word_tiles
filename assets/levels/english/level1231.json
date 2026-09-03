@@ -1,61 +1,243 @@
-﻿{
-    "id":  1231,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LOB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOLT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SYMBOL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BOAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOAM",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MATT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "YST,MAT,BOL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1231,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "DROP",
+      "type": 0
+    },
+    {
+      "word": "ELSE",
+      "type": 0
+    },
+    {
+      "word": "MODE",
+      "type": 0
+    },
+    {
+      "word": "ROOM",
+      "type": 0
+    },
+    {
+      "word": "SELL",
+      "type": 0
+    },
+    {
+      "word": "SOME",
+      "type": 0
+    },
+    {
+      "word": "TELL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ELM",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "MOO",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SOD",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "ALES",
+      "type": 0
+    },
+    {
+      "word": "ALLS",
+      "type": 0
+    },
+    {
+      "word": "APSE",
+      "type": 0
+    },
+    {
+      "word": "DEBT",
+      "type": 0
+    },
+    {
+      "word": "DEMO",
+      "type": 0
+    },
+    {
+      "word": "DOME",
+      "type": 0
+    },
+    {
+      "word": "DOOR",
+      "type": 0
+    },
+    {
+      "word": "DOSE",
+      "type": 0
+    },
+    {
+      "word": "ELLS",
+      "type": 0
+    },
+    {
+      "word": "LEAL",
+      "type": 0
+    },
+    {
+      "word": "LEAP",
+      "type": 0
+    },
+    {
+      "word": "MOOR",
+      "type": 0
+    },
+    {
+      "word": "OOPS",
+      "type": 0
+    },
+    {
+      "word": "ORDO",
+      "type": 0
+    },
+    {
+      "word": "POOD",
+      "type": 0
+    },
+    {
+      "word": "ROOD",
+      "type": 0
+    },
+    {
+      "word": "SPAE",
+      "type": 0
+    },
+    {
+      "word": "TEAL",
+      "type": 0
+    },
+    {
+      "word": "TELS",
+      "type": 0
+    },
+    {
+      "word": "DEMOS",
+      "type": 0
+    },
+    {
+      "word": "DROPS",
+      "type": 0
+    },
+    {
+      "word": "LEAPS",
+      "type": 0
+    },
+    {
+      "word": "ORDOS",
+      "type": 0
+    },
+    {
+      "word": "ROOSE",
+      "type": 0
+    },
+    {
+      "word": "SELLE",
+      "type": 0
+    },
+    {
+      "word": "ROOMED",
+      "type": 0
+    },
+    {
+      "word": "BEDROOM",
+      "type": 0
+    }
+  ],
+  "letters": "BTEA,EMLL,DOSE,ROPA",
+  "obstacles": []
 }

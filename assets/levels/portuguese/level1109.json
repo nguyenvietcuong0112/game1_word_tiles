@@ -1,73 +1,247 @@
-﻿{
-    "id":  1109,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JUIZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RICO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ZOAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARROZ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "FLOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LINHA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FUINHA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COZINHA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "COZINHAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CORRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NILO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "JNHAR,UIZOR,FLOCI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1109,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AOS",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "CEM",
+      "type": 0
+    },
+    {
+      "word": "DIA",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "MIM",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "ADAM",
+      "type": 0
+    },
+    {
+      "word": "CADA",
+      "type": 0
+    },
+    {
+      "word": "MODO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "ATM",
+      "type": 0
+    },
+    {
+      "word": "DAI",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DAO",
+      "type": 0
+    },
+    {
+      "word": "DAT",
+      "type": 0
+    },
+    {
+      "word": "DEM",
+      "type": 0
+    },
+    {
+      "word": "DIM",
+      "type": 0
+    },
+    {
+      "word": "DOA",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "ECA",
+      "type": 0
+    },
+    {
+      "word": "EMA",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "IAM",
+      "type": 0
+    },
+    {
+      "word": "ITA",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAI",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "MIA",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "ODO",
+      "type": 0
+    },
+    {
+      "word": "OMI",
+      "type": 0
+    },
+    {
+      "word": "SOA",
+      "type": 0
+    },
+    {
+      "word": "TAC",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "CADE",
+      "type": 0
+    },
+    {
+      "word": "CEDA",
+      "type": 0
+    },
+    {
+      "word": "DAME",
+      "type": 0
+    },
+    {
+      "word": "DOAM",
+      "type": 0
+    },
+    {
+      "word": "IDOS",
+      "type": 0
+    },
+    {
+      "word": "MADA",
+      "type": 0
+    },
+    {
+      "word": "MADE",
+      "type": 0
+    },
+    {
+      "word": "MAOS",
+      "type": 0
+    },
+    {
+      "word": "MECA",
+      "type": 0
+    },
+    {
+      "word": "MIMO",
+      "type": 0
+    },
+    {
+      "word": "MODI",
+      "type": 0
+    },
+    {
+      "word": "NITA",
+      "type": 0
+    },
+    {
+      "word": "OMNI",
+      "type": 0
+    },
+    {
+      "word": "SOAM",
+      "type": 0
+    },
+    {
+      "word": "ADAMS",
+      "type": 0
+    },
+    {
+      "word": "MODOS",
+      "type": 0
+    },
+    {
+      "word": "ODIADA",
+      "type": 0
+    },
+    {
+      "word": "SODOMIA",
+      "type": 0
+    }
+  ],
+  "letters": "SODO,MAIM,EDMN,CATI",
+  "obstacles": []
 }

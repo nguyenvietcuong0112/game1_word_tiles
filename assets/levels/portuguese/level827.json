@@ -1,57 +1,299 @@
-﻿{
-    "id":  827,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANIS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NACO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NULO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SACO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SINA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SINAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLUNA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LOCA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ECO,SAL,INU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 827,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "RIO",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "TENS",
+      "type": 0
+    },
+    {
+      "word": "TOME",
+      "type": 0
+    },
+    {
+      "word": "MENOR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AOI",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ASN",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "NOA",
+      "type": 0
+    },
+    {
+      "word": "NOI",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ORO",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TSA",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "ARAS",
+      "type": 0
+    },
+    {
+      "word": "ASNO",
+      "type": 0
+    },
+    {
+      "word": "IRAM",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "MARI",
+      "type": 0
+    },
+    {
+      "word": "MERO",
+      "type": 0
+    },
+    {
+      "word": "MORE",
+      "type": 0
+    },
+    {
+      "word": "MORO",
+      "type": 0
+    },
+    {
+      "word": "NEMO",
+      "type": 0
+    },
+    {
+      "word": "NERO",
+      "type": 0
+    },
+    {
+      "word": "NETO",
+      "type": 0
+    },
+    {
+      "word": "NOAM",
+      "type": 0
+    },
+    {
+      "word": "NOIR",
+      "type": 0
+    },
+    {
+      "word": "OMER",
+      "type": 0
+    },
+    {
+      "word": "OREN",
+      "type": 0
+    },
+    {
+      "word": "REMO",
+      "type": 0
+    },
+    {
+      "word": "RENO",
+      "type": 0
+    },
+    {
+      "word": "RION",
+      "type": 0
+    },
+    {
+      "word": "ROAR",
+      "type": 0
+    },
+    {
+      "word": "ROME",
+      "type": 0
+    },
+    {
+      "word": "SARI",
+      "type": 0
+    },
+    {
+      "word": "STEN",
+      "type": 0
+    },
+    {
+      "word": "TORE",
+      "type": 0
+    },
+    {
+      "word": "TORO",
+      "type": 0
+    },
+    {
+      "word": "ASTOR",
+      "type": 0
+    },
+    {
+      "word": "MARIO",
+      "type": 0
+    },
+    {
+      "word": "MENMA",
+      "type": 0
+    },
+    {
+      "word": "MORSA",
+      "type": 0
+    },
+    {
+      "word": "RASTO",
+      "type": 0
+    },
+    {
+      "word": "STORE",
+      "type": 0
+    },
+    {
+      "word": "TENSA",
+      "type": 0
+    },
+    {
+      "word": "MARION",
+      "type": 0
+    },
+    {
+      "word": "MORENO",
+      "type": 0
+    },
+    {
+      "word": "ROMENO",
+      "type": 0
+    }
+  ],
+  "letters": "IONE,RAST,AORO,MNEM",
+  "obstacles": []
 }

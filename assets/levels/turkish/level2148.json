@@ -1,105 +1,215 @@
-﻿{
-    "id":  2148,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FES",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EFOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TENTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENATO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANTET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESEF",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ESTET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SENA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SENT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RANT,OTEE,FEST",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2148,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "AYI",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "DUA",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "KIŞ",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "IŞIK",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "İŞIK",
+      "type": 0
+    },
+    {
+      "word": "KIŞIN",
+      "type": 0
+    },
+    {
+      "word": "YAKLAŞ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DUL",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "SAR",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "YIK",
+      "type": 0
+    },
+    {
+      "word": "ŞAL",
+      "type": 0
+    },
+    {
+      "word": "ŞIK",
+      "type": 0
+    },
+    {
+      "word": "AKIŞ",
+      "type": 0
+    },
+    {
+      "word": "AKLA",
+      "type": 0
+    },
+    {
+      "word": "AYIK",
+      "type": 0
+    },
+    {
+      "word": "AŞAR",
+      "type": 0
+    },
+    {
+      "word": "DARA",
+      "type": 0
+    },
+    {
+      "word": "IŞIN",
+      "type": 0
+    },
+    {
+      "word": "KAKA",
+      "type": 0
+    },
+    {
+      "word": "KIŞI",
+      "type": 0
+    },
+    {
+      "word": "LARA",
+      "type": 0
+    },
+    {
+      "word": "ULAŞ",
+      "type": 0
+    },
+    {
+      "word": "YAKA",
+      "type": 0
+    },
+    {
+      "word": "YIKA",
+      "type": 0
+    },
+    {
+      "word": "İŞIN",
+      "type": 0
+    },
+    {
+      "word": "AKIŞI",
+      "type": 0
+    },
+    {
+      "word": "ALKIŞ",
+      "type": 0
+    },
+    {
+      "word": "KAYIK",
+      "type": 0
+    },
+    {
+      "word": "KAYIŞ",
+      "type": 0
+    },
+    {
+      "word": "KIYAK",
+      "type": 0
+    },
+    {
+      "word": "KLARA",
+      "type": 0
+    },
+    {
+      "word": "IŞIKLA",
+      "type": 0
+    },
+    {
+      "word": "KAYIŞI",
+      "type": 0
+    },
+    {
+      "word": "IŞIKLAR",
+      "type": 0
+    },
+    {
+      "word": "İŞIKLAR",
+      "type": 0
+    }
+  ],
+  "letters": "KAUDE,AKLAR,YIŞŞA,İŞINS",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

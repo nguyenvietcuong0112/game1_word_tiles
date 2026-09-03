@@ -1,101 +1,95 @@
-﻿{
-    "id":  2232,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OYA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YOK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İKON",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KONİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KRAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YENİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZATEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAZİYE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AYET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İYON",
-                            "type":  1
-                        },
-                        {
-                            "word":  "KOY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOKRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZAT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TENİO,AYOAL,ZİKRŞ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2232,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CTU",
+      "type": 0
+    },
+    {
+      "word": "DEK",
+      "type": 0
+    },
+    {
+      "word": "DUT",
+      "type": 0
+    },
+    {
+      "word": "GUS",
+      "type": 0
+    },
+    {
+      "word": "GÖK",
+      "type": 0
+    },
+    {
+      "word": "GÖZ",
+      "type": 0
+    },
+    {
+      "word": "KEZ",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "PUT",
+      "type": 0
+    },
+    {
+      "word": "SAG",
+      "type": 0
+    },
+    {
+      "word": "STU",
+      "type": 0
+    },
+    {
+      "word": "GÖZE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "GUK",
+      "type": 0
+    },
+    {
+      "word": "KUS",
+      "type": 0
+    },
+    {
+      "word": "SUK",
+      "type": 0
+    },
+    {
+      "word": "ZED",
+      "type": 0
+    },
+    {
+      "word": "KUSMA",
+      "type": 0
+    }
+  ],
+  "letters": "PUTSO,UDCAA,TZÖGM,DEKUS",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

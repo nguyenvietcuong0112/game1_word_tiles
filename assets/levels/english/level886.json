@@ -1,77 +1,223 @@
-﻿{
-    "id":  886,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "URGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGREE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUGAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AGES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AGREES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "GAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAGES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUSE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "URGES",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "SEE,UGR,RAU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 886,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "YES",
+      "type": 0
+    },
+    {
+      "word": "YET",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "PRETTY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "EYE",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "TYE",
+      "type": 0
+    },
+    {
+      "word": "EYER",
+      "type": 0
+    },
+    {
+      "word": "EYES",
+      "type": 0
+    },
+    {
+      "word": "EYNE",
+      "type": 0
+    },
+    {
+      "word": "LEER",
+      "type": 0
+    },
+    {
+      "word": "LEES",
+      "type": 0
+    },
+    {
+      "word": "LETS",
+      "type": 0
+    },
+    {
+      "word": "LOTS",
+      "type": 0
+    },
+    {
+      "word": "MARL",
+      "type": 0
+    },
+    {
+      "word": "NETS",
+      "type": 0
+    },
+    {
+      "word": "PREE",
+      "type": 0
+    },
+    {
+      "word": "PREY",
+      "type": 0
+    },
+    {
+      "word": "REEL",
+      "type": 0
+    },
+    {
+      "word": "SEEL",
+      "type": 0
+    },
+    {
+      "word": "SEEN",
+      "type": 0
+    },
+    {
+      "word": "SERE",
+      "type": 0
+    },
+    {
+      "word": "TEES",
+      "type": 0
+    },
+    {
+      "word": "TOLE",
+      "type": 0
+    },
+    {
+      "word": "TYEE",
+      "type": 0
+    },
+    {
+      "word": "TYER",
+      "type": 0
+    },
+    {
+      "word": "TYES",
+      "type": 0
+    },
+    {
+      "word": "TYNE",
+      "type": 0
+    },
+    {
+      "word": "YETT",
+      "type": 0
+    },
+    {
+      "word": "PREEN",
+      "type": 0
+    },
+    {
+      "word": "PREST",
+      "type": 0
+    },
+    {
+      "word": "SPREE",
+      "type": 0
+    },
+    {
+      "word": "STEER",
+      "type": 0
+    },
+    {
+      "word": "STOLE",
+      "type": 0
+    },
+    {
+      "word": "PRESTO",
+      "type": 0
+    },
+    {
+      "word": "STOLEN",
+      "type": 0
+    }
+  ],
+  "letters": "OTSP,LEER,RNYE,AMTT",
+  "obstacles": []
 }

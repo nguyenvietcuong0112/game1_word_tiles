@@ -1,93 +1,103 @@
-﻿{
-    "id":  1370,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ABS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BACK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BIND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BIRD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YARD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CABIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BACKYARD",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BINS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CABINS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CABS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DRAY",
-                            "type":  1
-                        },
-                        {
-                            "word":  "INS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIBS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIND",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "YARD,KOIN,CABS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1370,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BOW",
+      "type": 0
+    },
+    {
+      "word": "COL",
+      "type": 0
+    },
+    {
+      "word": "CUM",
+      "type": 0
+    },
+    {
+      "word": "EAU",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "OWL",
+      "type": 0
+    },
+    {
+      "word": "BEAU",
+      "type": 0
+    },
+    {
+      "word": "BOWL",
+      "type": 0
+    },
+    {
+      "word": "LOCK",
+      "type": 0
+    },
+    {
+      "word": "ELBOW",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "EMU",
+      "type": 0
+    },
+    {
+      "word": "WOE",
+      "type": 0
+    },
+    {
+      "word": "BOWS",
+      "type": 0
+    },
+    {
+      "word": "MUCK",
+      "type": 0
+    },
+    {
+      "word": "SWOB",
+      "type": 0
+    },
+    {
+      "word": "LOCUM",
+      "type": 0
+    },
+    {
+      "word": "ELBOWS",
+      "type": 0
+    },
+    {
+      "word": "LOCUMS",
+      "type": 0
+    }
+  ],
+  "letters": "EOWL,LBSB,LKME,OCUA",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

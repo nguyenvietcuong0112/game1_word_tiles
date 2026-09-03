@@ -1,110 +1,183 @@
-﻿{
-    "id":  1453,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GENE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUNA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OUNCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADVANCE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DONT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NUT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VANCE,DOUEN,ANTGA",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1453,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "GET",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "KIN",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "HATE",
+      "type": 0
+    },
+    {
+      "word": "SINCE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ERN",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "GAT",
+      "type": 0
+    },
+    {
+      "word": "HAG",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "KIR",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TEG",
+      "type": 0
+    },
+    {
+      "word": "ERNS",
+      "type": 0
+    },
+    {
+      "word": "GATE",
+      "type": 0
+    },
+    {
+      "word": "GETA",
+      "type": 0
+    },
+    {
+      "word": "GRIN",
+      "type": 0
+    },
+    {
+      "word": "KHAT",
+      "type": 0
+    },
+    {
+      "word": "KINS",
+      "type": 0
+    },
+    {
+      "word": "KIRS",
+      "type": 0
+    },
+    {
+      "word": "REIN",
+      "type": 0
+    },
+    {
+      "word": "REIS",
+      "type": 0
+    },
+    {
+      "word": "RINS",
+      "type": 0
+    },
+    {
+      "word": "SEIS",
+      "type": 0
+    },
+    {
+      "word": "SING",
+      "type": 0
+    },
+    {
+      "word": "SINS",
+      "type": 0
+    },
+    {
+      "word": "TAHR",
+      "type": 0
+    },
+    {
+      "word": "GRINS",
+      "type": 0
+    },
+    {
+      "word": "REINS",
+      "type": 0
+    },
+    {
+      "word": "RINSE",
+      "type": 0
+    },
+    {
+      "word": "SINGE",
+      "type": 0
+    },
+    {
+      "word": "TAHRS",
+      "type": 0
+    },
+    {
+      "word": "INGATE",
+      "type": 0
+    },
+    {
+      "word": "RINSER",
+      "type": 0
+    }
+  ],
+  "letters": "SCET,INGA,ESRH,RNIK",
+  "obstacles": []
 }

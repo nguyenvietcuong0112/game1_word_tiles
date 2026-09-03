@@ -1,139 +1,143 @@
-﻿{
-    "id":  1251,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOTOR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "STOMP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COMPEL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "INCA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LEST",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOTO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MOTORS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ROTS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TACO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TOES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RSELE,OTOMP,INCAT",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1251,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DUO",
+      "type": 0
+    },
+    {
+      "word": "HOT",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "TELL",
+      "type": 0
+    },
+    {
+      "word": "HOTEL",
+      "type": 0
+    },
+    {
+      "word": "MOUNT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "DUN",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ELM",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MOT",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "OUD",
+      "type": 0
+    },
+    {
+      "word": "TOE",
+      "type": 0
+    },
+    {
+      "word": "TOT",
+      "type": 0
+    },
+    {
+      "word": "AMEN",
+      "type": 0
+    },
+    {
+      "word": "DUNT",
+      "type": 0
+    },
+    {
+      "word": "MANE",
+      "type": 0
+    },
+    {
+      "word": "MELL",
+      "type": 0
+    },
+    {
+      "word": "MELT",
+      "type": 0
+    },
+    {
+      "word": "MEOU",
+      "type": 0
+    },
+    {
+      "word": "NEMA",
+      "type": 0
+    },
+    {
+      "word": "TOTE",
+      "type": 0
+    },
+    {
+      "word": "UNTO",
+      "type": 0
+    },
+    {
+      "word": "LEMAN",
+      "type": 0
+    },
+    {
+      "word": "HOTELMAN",
+      "type": 0
+    },
+    {
+      "word": "HOTELMEN",
+      "type": 0
+    }
+  ],
+  "letters": "AMLE,NELT,MOTO,DUNH",
+  "obstacles": []
 }

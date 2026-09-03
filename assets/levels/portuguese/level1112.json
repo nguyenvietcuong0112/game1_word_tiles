@@ -1,141 +1,247 @@
-﻿{
-    "id":  1112,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ABA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BULA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FORA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LAPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RABO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BALDE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ERRAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LABOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUBOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DERRUBAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ABAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AFARAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AFOBAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AFORA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AFORAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "APO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "APOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ARRE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ARU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARUBA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BOFAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FARAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "FOBAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LABORAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LURAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RRARA,EUBOF,DLAPA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1112,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "IHE",
+      "type": 0
+    },
+    {
+      "word": "OBA",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "SEM",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "KEMP",
+      "type": 0
+    },
+    {
+      "word": "NERD",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARN",
+      "type": 0
+    },
+    {
+      "word": "BOK",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "DRE",
+      "type": 0
+    },
+    {
+      "word": "EKO",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "ESE",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "ESP",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "KES",
+      "type": 0
+    },
+    {
+      "word": "KOR",
+      "type": 0
+    },
+    {
+      "word": "MES",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "PHI",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RDA",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "ARNE",
+      "type": 0
+    },
+    {
+      "word": "ARRE",
+      "type": 0
+    },
+    {
+      "word": "BOSE",
+      "type": 0
+    },
+    {
+      "word": "DREN",
+      "type": 0
+    },
+    {
+      "word": "DRES",
+      "type": 0
+    },
+    {
+      "word": "EROS",
+      "type": 0
+    },
+    {
+      "word": "ERRA",
+      "type": 0
+    },
+    {
+      "word": "HERO",
+      "type": 0
+    },
+    {
+      "word": "HERR",
+      "type": 0
+    },
+    {
+      "word": "IHES",
+      "type": 0
+    },
+    {
+      "word": "INES",
+      "type": 0
+    },
+    {
+      "word": "KOBA",
+      "type": 0
+    },
+    {
+      "word": "NERO",
+      "type": 0
+    },
+    {
+      "word": "OREN",
+      "type": 0
+    },
+    {
+      "word": "BORDA",
+      "type": 0
+    },
+    {
+      "word": "BORRA",
+      "type": 0
+    },
+    {
+      "word": "HERDA",
+      "type": 0
+    },
+    {
+      "word": "HINES",
+      "type": 0
+    },
+    {
+      "word": "KORRA",
+      "type": 0
+    },
+    {
+      "word": "ROSEN",
+      "type": 0
+    },
+    {
+      "word": "SERRA",
+      "type": 0
+    },
+    {
+      "word": "SOREN",
+      "type": 0
+    },
+    {
+      "word": "ABORDA",
+      "type": 0
+    },
+    {
+      "word": "BORDAR",
+      "type": 0
+    },
+    {
+      "word": "DARREN",
+      "type": 0
+    },
+    {
+      "word": "HERDAR",
+      "type": 0
+    },
+    {
+      "word": "ABORDAR",
+      "type": 0
+    },
+    {
+      "word": "ESPHENI",
+      "type": 0
+    }
+  ],
+  "letters": "MPHI,ESEN,KORR,ABDA",
+  "obstacles": []
 }

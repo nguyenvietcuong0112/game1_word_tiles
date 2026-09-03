@@ -1,113 +1,199 @@
-﻿{
-    "id":  2205,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ABA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AHİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İKİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "HAKİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KABA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİBİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "METRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "METEOR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BAKİ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "BAKİR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BİKİR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BİRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HAKİR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İBİK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OBA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BİRME,İKAET,HABOR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2205,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "DUA",
+      "type": 0
+    },
+    {
+      "word": "KAL",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KUŞ",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "TOY",
+      "type": 0
+    },
+    {
+      "word": "VAY",
+      "type": 0
+    },
+    {
+      "word": "ŞUT",
+      "type": 0
+    },
+    {
+      "word": "KURT",
+      "type": 0
+    },
+    {
+      "word": "KUŞU",
+      "type": 0
+    },
+    {
+      "word": "KUKLA",
+      "type": 0
+    },
+    {
+      "word": "YASAL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKU",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "DUL",
+      "type": 0
+    },
+    {
+      "word": "KUR",
+      "type": 0
+    },
+    {
+      "word": "LAK",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LAU",
+      "type": 0
+    },
+    {
+      "word": "LAV",
+      "type": 0
+    },
+    {
+      "word": "RYO",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "TRU",
+      "type": 0
+    },
+    {
+      "word": "TUŞ",
+      "type": 0
+    },
+    {
+      "word": "VAL",
+      "type": 0
+    },
+    {
+      "word": "YAS",
+      "type": 0
+    },
+    {
+      "word": "YAV",
+      "type": 0
+    },
+    {
+      "word": "AKLA",
+      "type": 0
+    },
+    {
+      "word": "ALTO",
+      "type": 0
+    },
+    {
+      "word": "ASAL",
+      "type": 0
+    },
+    {
+      "word": "AVAL",
+      "type": 0
+    },
+    {
+      "word": "KART",
+      "type": 0
+    },
+    {
+      "word": "KLAS",
+      "type": 0
+    },
+    {
+      "word": "KUKU",
+      "type": 0
+    },
+    {
+      "word": "KURA",
+      "type": 0
+    },
+    {
+      "word": "RAUL",
+      "type": 0
+    },
+    {
+      "word": "TUŞU",
+      "type": 0
+    },
+    {
+      "word": "YASA",
+      "type": 0
+    },
+    {
+      "word": "KURAK",
+      "type": 0
+    },
+    {
+      "word": "KURAL",
+      "type": 0
+    },
+    {
+      "word": "OTLAR",
+      "type": 0
+    },
+    {
+      "word": "YAVAS",
+      "type": 0
+    }
+  ],
+  "letters": "DULAV,LAKSA,TRUKY,OYŞUT",
+  "obstacles": []
 }

@@ -1,121 +1,111 @@
-﻿{
-    "id":  1315,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UNO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AULA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DRON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GULA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUNA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGUAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AVIAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DROGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUGAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DIAGONAL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALUGAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ANO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARONA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AUN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DRAGO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DRAGONA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "GUA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LUGO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NULA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAGUA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAID",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UNA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DRONA,IAGUL,FIVAR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1315,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACA",
+      "type": 0
+    },
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "CACA",
+      "type": 0
+    },
+    {
+      "word": "CAFE",
+      "type": 0
+    },
+    {
+      "word": "PECA",
+      "type": 0
+    },
+    {
+      "word": "CAIGA",
+      "type": 0
+    },
+    {
+      "word": "MAGIA",
+      "type": 0
+    },
+    {
+      "word": "SAMBA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BAI",
+      "type": 0
+    },
+    {
+      "word": "CAB",
+      "type": 0
+    },
+    {
+      "word": "CAI",
+      "type": 0
+    },
+    {
+      "word": "ECG",
+      "type": 0
+    },
+    {
+      "word": "FAI",
+      "type": 0
+    },
+    {
+      "word": "GIA",
+      "type": 0
+    },
+    {
+      "word": "MAG",
+      "type": 0
+    },
+    {
+      "word": "MBA",
+      "type": 0
+    },
+    {
+      "word": "FACE",
+      "type": 0
+    },
+    {
+      "word": "GAMBA",
+      "type": 0
+    },
+    {
+      "word": "CAIGAS",
+      "type": 0
+    }
+  ],
+  "letters": "CECA,AIAF,BGCE,MASP",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

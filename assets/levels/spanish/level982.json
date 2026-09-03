@@ -1,85 +1,267 @@
-﻿{
-    "id":  982,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RES",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GESTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RESTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTUDIAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ERAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LUDIAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RAID",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GCOL,ESTU,RAID",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 982,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASÍ",
+      "type": 0
+    },
+    {
+      "word": "DIA",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "ESE",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SABE",
+      "type": 0
+    },
+    {
+      "word": "SABÍA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "BAE",
+      "type": 0
+    },
+    {
+      "word": "BAI",
+      "type": 0
+    },
+    {
+      "word": "BAM",
+      "type": 0
+    },
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "DEA",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "DES",
+      "type": 0
+    },
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "IAS",
+      "type": 0
+    },
+    {
+      "word": "INO",
+      "type": 0
+    },
+    {
+      "word": "MBA",
+      "type": 0
+    },
+    {
+      "word": "NED",
+      "type": 0
+    },
+    {
+      "word": "NIA",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "ONI",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAI",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "SDI",
+      "type": 0
+    },
+    {
+      "word": "SED",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "ABED",
+      "type": 0
+    },
+    {
+      "word": "AMAS",
+      "type": 0
+    },
+    {
+      "word": "BASE",
+      "type": 0
+    },
+    {
+      "word": "BESA",
+      "type": 0
+    },
+    {
+      "word": "BESE",
+      "type": 0
+    },
+    {
+      "word": "DEBA",
+      "type": 0
+    },
+    {
+      "word": "DESE",
+      "type": 0
+    },
+    {
+      "word": "DIAB",
+      "type": 0
+    },
+    {
+      "word": "DIAS",
+      "type": 0
+    },
+    {
+      "word": "DINO",
+      "type": 0
+    },
+    {
+      "word": "DONE",
+      "type": 0
+    },
+    {
+      "word": "EDEN",
+      "type": 0
+    },
+    {
+      "word": "ENID",
+      "type": 0
+    },
+    {
+      "word": "ONES",
+      "type": 0
+    },
+    {
+      "word": "SAID",
+      "type": 0
+    },
+    {
+      "word": "SEAS",
+      "type": 0
+    },
+    {
+      "word": "SEDE",
+      "type": 0
+    },
+    {
+      "word": "SENO",
+      "type": 0
+    },
+    {
+      "word": "AMBAS",
+      "type": 0
+    },
+    {
+      "word": "BESEN",
+      "type": 0
+    },
+    {
+      "word": "DEBAS",
+      "type": 0
+    },
+    {
+      "word": "DESEA",
+      "type": 0
+    },
+    {
+      "word": "DONES",
+      "type": 0
+    },
+    {
+      "word": "SABED",
+      "type": 0
+    },
+    {
+      "word": "SAMBA",
+      "type": 0
+    },
+    {
+      "word": "BAINES",
+      "type": 0
+    },
+    {
+      "word": "DESEAS",
+      "type": 0
+    }
+  ],
+  "letters": "BEDO,ASEN,MBAI,AÍSD",
+  "obstacles": []
 }

@@ -1,81 +1,175 @@
-﻿{
-    "id":  2374,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEIR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "THEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THEIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THING",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANYTHING",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "THINE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "YEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "URIG,NYEN,ATHI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2374,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "HAS",
+      "type": 0
+    },
+    {
+      "word": "HEP",
+      "type": 0
+    },
+    {
+      "word": "MAP",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "CASE",
+      "type": 0
+    },
+    {
+      "word": "MAMA",
+      "type": 0
+    },
+    {
+      "word": "MAPS",
+      "type": 0
+    },
+    {
+      "word": "TRUMPET",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AMP",
+      "type": 0
+    },
+    {
+      "word": "AMU",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "APT",
+      "type": 0
+    },
+    {
+      "word": "ETH",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "PEH",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "RUM",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "TET",
+      "type": 0
+    },
+    {
+      "word": "UMP",
+      "type": 0
+    },
+    {
+      "word": "VET",
+      "type": 0
+    },
+    {
+      "word": "APES",
+      "type": 0
+    },
+    {
+      "word": "ETHS",
+      "type": 0
+    },
+    {
+      "word": "PAMS",
+      "type": 0
+    },
+    {
+      "word": "PEHS",
+      "type": 0
+    },
+    {
+      "word": "RUMP",
+      "type": 0
+    },
+    {
+      "word": "SHES",
+      "type": 0
+    },
+    {
+      "word": "TETH",
+      "type": 0
+    },
+    {
+      "word": "TETHS",
+      "type": 0
+    },
+    {
+      "word": "TRUMP",
+      "type": 0
+    }
+  ],
+  "letters": "EVCAS,TETHE,RPPSP,UMAMA",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

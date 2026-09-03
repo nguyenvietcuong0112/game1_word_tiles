@@ -1,125 +1,239 @@
-﻿{
-    "id":  2222,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İKNA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YARA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AKRAN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "İNSAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SARAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SARKAÇ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANKA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KRANK",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAST",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SANKİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SARA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "UYARAN",
-                            "type":  2
-                        },
-                        {
-                            "word":  "YARAN",
-                            "type":  2
-                        },
-                        {
-                            "word":  "YARKA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇAK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇAKRA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "KNKAÇ,İARAS,NSUYT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2222,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABİ",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "KAZ",
+      "type": 0
+    },
+    {
+      "word": "NİN",
+      "type": 0
+    },
+    {
+      "word": "İKİ",
+      "type": 0
+    },
+    {
+      "word": "EMİN",
+      "type": 0
+    },
+    {
+      "word": "ETME",
+      "type": 0
+    },
+    {
+      "word": "KATE",
+      "type": 0
+    },
+    {
+      "word": "TABİ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "BİT",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "ETİ",
+      "type": 0
+    },
+    {
+      "word": "KAİ",
+      "type": 0
+    },
+    {
+      "word": "KİT",
+      "type": 0
+    },
+    {
+      "word": "KİZ",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MEİ",
+      "type": 0
+    },
+    {
+      "word": "MİN",
+      "type": 0
+    },
+    {
+      "word": "NBA",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "NİM",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TİK",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "ZAK",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "AYKİ",
+      "type": 0
+    },
+    {
+      "word": "ETİK",
+      "type": 0
+    },
+    {
+      "word": "KATİ",
+      "type": 0
+    },
+    {
+      "word": "KİTE",
+      "type": 0
+    },
+    {
+      "word": "MENİ",
+      "type": 0
+    },
+    {
+      "word": "MİNE",
+      "type": 0
+    },
+    {
+      "word": "NİNE",
+      "type": 0
+    },
+    {
+      "word": "TAKİ",
+      "type": 0
+    },
+    {
+      "word": "TETA",
+      "type": 0
+    },
+    {
+      "word": "TİKİ",
+      "type": 0
+    },
+    {
+      "word": "İBNE",
+      "type": 0
+    },
+    {
+      "word": "İKAZ",
+      "type": 0
+    },
+    {
+      "word": "İKİZ",
+      "type": 0
+    },
+    {
+      "word": "ETMEN",
+      "type": 0
+    },
+    {
+      "word": "KATİE",
+      "type": 0
+    },
+    {
+      "word": "NİNEM",
+      "type": 0
+    },
+    {
+      "word": "SABİT",
+      "type": 0
+    },
+    {
+      "word": "TETİK",
+      "type": 0
+    },
+    {
+      "word": "ETMENİ",
+      "type": 0
+    },
+    {
+      "word": "TABİKİ",
+      "type": 0
+    },
+    {
+      "word": "ETMENİN",
+      "type": 0
+    }
+  ],
+  "letters": "NSATK,İNBYA,MEİKİ,TETAZ",
+  "obstacles": []
 }

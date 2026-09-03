@@ -1,77 +1,287 @@
-﻿{
-    "id":  2076,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TOSS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OASIS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCOUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UTOPIA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOCI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOUT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "OSLO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OUTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SCOUTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOP",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "IASIS,POSCT,UTLOU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2076,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "PIE",
+      "type": 0
+    },
+    {
+      "word": "PIG",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "WAR",
+      "type": 0
+    },
+    {
+      "word": "WED",
+      "type": 0
+    },
+    {
+      "word": "CART",
+      "type": 0
+    },
+    {
+      "word": "MADE",
+      "type": 0
+    },
+    {
+      "word": "PIGS",
+      "type": 0
+    },
+    {
+      "word": "RACE",
+      "type": 0
+    },
+    {
+      "word": "RATE",
+      "type": 0
+    },
+    {
+      "word": "TERM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "AWA",
+      "type": 0
+    },
+    {
+      "word": "AWE",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "CAW",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DAW",
+      "type": 0
+    },
+    {
+      "word": "DEW",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "ERG",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "GIE",
+      "type": 0
+    },
+    {
+      "word": "GIP",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAW",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "RAW",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "WAD",
+      "type": 0
+    },
+    {
+      "word": "WAE",
+      "type": 0
+    },
+    {
+      "word": "ACED",
+      "type": 0
+    },
+    {
+      "word": "AWED",
+      "type": 0
+    },
+    {
+      "word": "CATE",
+      "type": 0
+    },
+    {
+      "word": "CEDE",
+      "type": 0
+    },
+    {
+      "word": "ERGS",
+      "type": 0
+    },
+    {
+      "word": "GIED",
+      "type": 0
+    },
+    {
+      "word": "GIES",
+      "type": 0
+    },
+    {
+      "word": "PIED",
+      "type": 0
+    },
+    {
+      "word": "PIES",
+      "type": 0
+    },
+    {
+      "word": "REAR",
+      "type": 0
+    },
+    {
+      "word": "TACE",
+      "type": 0
+    },
+    {
+      "word": "TART",
+      "type": 0
+    },
+    {
+      "word": "TEAR",
+      "type": 0
+    },
+    {
+      "word": "WADE",
+      "type": 0
+    },
+    {
+      "word": "WART",
+      "type": 0
+    },
+    {
+      "word": "CARAT",
+      "type": 0
+    },
+    {
+      "word": "CARTE",
+      "type": 0
+    },
+    {
+      "word": "CATER",
+      "type": 0
+    },
+    {
+      "word": "CAWED",
+      "type": 0
+    },
+    {
+      "word": "CEDES",
+      "type": 0
+    },
+    {
+      "word": "DEWAR",
+      "type": 0
+    },
+    {
+      "word": "MAWED",
+      "type": 0
+    },
+    {
+      "word": "RACED",
+      "type": 0
+    },
+    {
+      "word": "RATER",
+      "type": 0
+    },
+    {
+      "word": "TRACE",
+      "type": 0
+    },
+    {
+      "word": "WADES",
+      "type": 0
+    },
+    {
+      "word": "CARATE",
+      "type": 0
+    },
+    {
+      "word": "CARTER",
+      "type": 0
+    },
+    {
+      "word": "ECARTE",
+      "type": 0
+    },
+    {
+      "word": "TARTER",
+      "type": 0
+    },
+    {
+      "word": "TRACED",
+      "type": 0
+    },
+    {
+      "word": "RETRACE",
+      "type": 0
+    },
+    {
+      "word": "RETRACED",
+      "type": 0
+    }
+  ],
+  "letters": "TRATE,EACPR,RWEIG,MADES",
+  "obstacles": []
 }

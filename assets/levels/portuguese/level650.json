@@ -1,81 +1,291 @@
-﻿{
-    "id":  650,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "FIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AULA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "FILA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FULA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AFIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAMÍLIA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ALUAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FIAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LUFA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÍLIO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LUAR,AFIO,MÍLA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 650,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "TIM",
+      "type": 0
+    },
+    {
+      "word": "MATA",
+      "type": 0
+    },
+    {
+      "word": "TAIS",
+      "type": 0
+    },
+    {
+      "word": "THIS",
+      "type": 0
+    },
+    {
+      "word": "IMITAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "HIM",
+      "type": 0
+    },
+    {
+      "word": "HIS",
+      "type": 0
+    },
+    {
+      "word": "HIT",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "ISA",
+      "type": 0
+    },
+    {
+      "word": "ISI",
+      "type": 0
+    },
+    {
+      "word": "IST",
+      "type": 0
+    },
+    {
+      "word": "ITA",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "MIT",
+      "type": 0
+    },
+    {
+      "word": "NIA",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "SAA",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SIA",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "SIT",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAI",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "THI",
+      "type": 0
+    },
+    {
+      "word": "TSA",
+      "type": 0
+    },
+    {
+      "word": "AMIS",
+      "type": 0
+    },
+    {
+      "word": "AMIT",
+      "type": 0
+    },
+    {
+      "word": "ASIA",
+      "type": 0
+    },
+    {
+      "word": "ASIM",
+      "type": 0
+    },
+    {
+      "word": "ATAR",
+      "type": 0
+    },
+    {
+      "word": "ATAS",
+      "type": 0
+    },
+    {
+      "word": "EAST",
+      "type": 0
+    },
+    {
+      "word": "IATE",
+      "type": 0
+    },
+    {
+      "word": "MISA",
+      "type": 0
+    },
+    {
+      "word": "MITA",
+      "type": 0
+    },
+    {
+      "word": "NISA",
+      "type": 0
+    },
+    {
+      "word": "RAMI",
+      "type": 0
+    },
+    {
+      "word": "RATA",
+      "type": 0
+    },
+    {
+      "word": "SATI",
+      "type": 0
+    },
+    {
+      "word": "SIMA",
+      "type": 0
+    },
+    {
+      "word": "SIMI",
+      "type": 0
+    },
+    {
+      "word": "SITA",
+      "type": 0
+    },
+    {
+      "word": "TAMI",
+      "type": 0
+    },
+    {
+      "word": "AMITA",
+      "type": 0
+    },
+    {
+      "word": "IMITA",
+      "type": 0
+    },
+    {
+      "word": "MATAS",
+      "type": 0
+    },
+    {
+      "word": "ATLETA",
+      "type": 0
+    },
+    {
+      "word": "LETAIS",
+      "type": 0
+    },
+    {
+      "word": "TAMISA",
+      "type": 0
+    }
+  ],
+  "letters": "RLET,ATAA,MISI,IHTN",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

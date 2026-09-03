@@ -1,77 +1,131 @@
-﻿{
-    "id":  1225,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIRA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "NACO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CANGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VINIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORINGA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "IRAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OCAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RANI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROCA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ORIL,CANI,OAGV",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1225,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEP",
+      "type": 0
+    },
+    {
+      "word": "EYE",
+      "type": 0
+    },
+    {
+      "word": "FLY",
+      "type": 0
+    },
+    {
+      "word": "LON",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "DUCE",
+      "type": 0
+    },
+    {
+      "word": "ENTRO",
+      "type": 0
+    },
+    {
+      "word": "FRONT",
+      "type": 0
+    },
+    {
+      "word": "NORTE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DEF",
+      "type": 0
+    },
+    {
+      "word": "EDU",
+      "type": 0
+    },
+    {
+      "word": "FED",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "YEE",
+      "type": 0
+    },
+    {
+      "word": "YET",
+      "type": 0
+    },
+    {
+      "word": "ENTE",
+      "type": 0
+    },
+    {
+      "word": "LONE",
+      "type": 0
+    },
+    {
+      "word": "PROL",
+      "type": 0
+    },
+    {
+      "word": "TEEN",
+      "type": 0
+    },
+    {
+      "word": "TRON",
+      "type": 0
+    },
+    {
+      "word": "FRONTE",
+      "type": 0
+    }
+  ],
+  "letters": "LONE,PRTE,EFLY,DUCE",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

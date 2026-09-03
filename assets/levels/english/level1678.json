@@ -1,114 +1,195 @@
-﻿{
-    "id":  1678,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANTI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HINT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EVADE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "HADE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "HIND",
-                            "type":  1
-                        },
-                        {
-                            "word":  "HINDI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAVE",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "EDTI,VAND,EHIE",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1678,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "FAKE",
+      "type": 0
+    },
+    {
+      "word": "ONES",
+      "type": 0
+    },
+    {
+      "word": "THAN",
+      "type": 0
+    },
+    {
+      "word": "ETHNIC",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AFT",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "APT",
+      "type": 0
+    },
+    {
+      "word": "ETH",
+      "type": 0
+    },
+    {
+      "word": "FAS",
+      "type": 0
+    },
+    {
+      "word": "HAP",
+      "type": 0
+    },
+    {
+      "word": "KAF",
+      "type": 0
+    },
+    {
+      "word": "KAS",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NAP",
+      "type": 0
+    },
+    {
+      "word": "NIT",
+      "type": 0
+    },
+    {
+      "word": "OPT",
+      "type": 0
+    },
+    {
+      "word": "PAH",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "TIC",
+      "type": 0
+    },
+    {
+      "word": "ANES",
+      "type": 0
+    },
+    {
+      "word": "CINE",
+      "type": 0
+    },
+    {
+      "word": "HAKE",
+      "type": 0
+    },
+    {
+      "word": "KANE",
+      "type": 0
+    },
+    {
+      "word": "KENO",
+      "type": 0
+    },
+    {
+      "word": "OPAH",
+      "type": 0
+    },
+    {
+      "word": "PANE",
+      "type": 0
+    },
+    {
+      "word": "PONE",
+      "type": 0
+    },
+    {
+      "word": "SAKE",
+      "type": 0
+    },
+    {
+      "word": "TINE",
+      "type": 0
+    },
+    {
+      "word": "FAKES",
+      "type": 0
+    },
+    {
+      "word": "HAKES",
+      "type": 0
+    },
+    {
+      "word": "KANES",
+      "type": 0
+    },
+    {
+      "word": "PANES",
+      "type": 0
+    },
+    {
+      "word": "PONES",
+      "type": 0
+    },
+    {
+      "word": "THANE",
+      "type": 0
+    },
+    {
+      "word": "ETHANE",
+      "type": 0
+    },
+    {
+      "word": "HAPTEN",
+      "type": 0
+    },
+    {
+      "word": "THANES",
+      "type": 0
+    },
+    {
+      "word": "ETHANES",
+      "type": 0
+    },
+    {
+      "word": "HAPTENIC",
+      "type": 0
+    }
+  ],
+  "letters": "OPTE,NAHN,EKTI,SAFC",
+  "obstacles": []
 }

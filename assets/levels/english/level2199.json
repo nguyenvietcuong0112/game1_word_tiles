@@ -1,85 +1,251 @@
-﻿{
-    "id":  2199,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TWO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WHO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOCK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WHEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOCKET",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "COL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COLE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "HOE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OETEO,HEAKW,WLOCT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2199,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "CAD",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "SAW",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "WAS",
+      "type": 0
+    },
+    {
+      "word": "COLE",
+      "type": 0
+    },
+    {
+      "word": "ELSE",
+      "type": 0
+    },
+    {
+      "word": "LACK",
+      "type": 0
+    },
+    {
+      "word": "SUCK",
+      "type": 0
+    },
+    {
+      "word": "USES",
+      "type": 0
+    },
+    {
+      "word": "TRIAL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIL",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "COL",
+      "type": 0
+    },
+    {
+      "word": "CUE",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "LAC",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LEK",
+      "type": 0
+    },
+    {
+      "word": "LEU",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "TWA",
+      "type": 0
+    },
+    {
+      "word": "AIRT",
+      "type": 0
+    },
+    {
+      "word": "ALOE",
+      "type": 0
+    },
+    {
+      "word": "CADE",
+      "type": 0
+    },
+    {
+      "word": "CALO",
+      "type": 0
+    },
+    {
+      "word": "COLA",
+      "type": 0
+    },
+    {
+      "word": "COLS",
+      "type": 0
+    },
+    {
+      "word": "CUED",
+      "type": 0
+    },
+    {
+      "word": "DALE",
+      "type": 0
+    },
+    {
+      "word": "DALS",
+      "type": 0
+    },
+    {
+      "word": "DELS",
+      "type": 0
+    },
+    {
+      "word": "LADE",
+      "type": 0
+    },
+    {
+      "word": "LAIR",
+      "type": 0
+    },
+    {
+      "word": "LOCA",
+      "type": 0
+    },
+    {
+      "word": "RIAL",
+      "type": 0
+    },
+    {
+      "word": "SLED",
+      "type": 0
+    },
+    {
+      "word": "SLOE",
+      "type": 0
+    },
+    {
+      "word": "SUED",
+      "type": 0
+    },
+    {
+      "word": "TWAS",
+      "type": 0
+    },
+    {
+      "word": "ALOES",
+      "type": 0
+    },
+    {
+      "word": "COLED",
+      "type": 0
+    },
+    {
+      "word": "OASES",
+      "type": 0
+    },
+    {
+      "word": "RIALS",
+      "type": 0
+    },
+    {
+      "word": "SLOES",
+      "type": 0
+    },
+    {
+      "word": "TRIAC",
+      "type": 0
+    },
+    {
+      "word": "TRIAD",
+      "type": 0
+    },
+    {
+      "word": "COLEUS",
+      "type": 0
+    },
+    {
+      "word": "LACKED",
+      "type": 0
+    },
+    {
+      "word": "SUCKED",
+      "type": 0
+    },
+    {
+      "word": "TRIALS",
+      "type": 0
+    },
+    {
+      "word": "COLEUSES",
+      "type": 0
+    }
+  ],
+  "letters": "ALIRT,CDACW,KELOA,CUSES",
+  "obstacles": []
 }

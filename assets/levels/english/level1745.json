@@ -1,81 +1,227 @@
-﻿{
-    "id":  1745,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LARD",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TALK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORAL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "COL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DRAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOCO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TACO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TARO",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ORD,CAT,OLK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1745,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "CODE",
+      "type": 0
+    },
+    {
+      "word": "DOSE",
+      "type": 0
+    },
+    {
+      "word": "LOSE",
+      "type": 0
+    },
+    {
+      "word": "SOLE",
+      "type": 0
+    },
+    {
+      "word": "CODEC",
+      "type": 0
+    },
+    {
+      "word": "EXCLUDE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "CEL",
+      "type": 0
+    },
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "COL",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "CUD",
+      "type": 0
+    },
+    {
+      "word": "DEX",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "ECU",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "LEX",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SOD",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "UDO",
+      "type": 0
+    },
+    {
+      "word": "CEDE",
+      "type": 0
+    },
+    {
+      "word": "COLE",
+      "type": 0
+    },
+    {
+      "word": "DECO",
+      "type": 0
+    },
+    {
+      "word": "DELE",
+      "type": 0
+    },
+    {
+      "word": "DOLE",
+      "type": 0
+    },
+    {
+      "word": "DUCE",
+      "type": 0
+    },
+    {
+      "word": "LODE",
+      "type": 0
+    },
+    {
+      "word": "LUCE",
+      "type": 0
+    },
+    {
+      "word": "LUDE",
+      "type": 0
+    },
+    {
+      "word": "OLES",
+      "type": 0
+    },
+    {
+      "word": "UDOS",
+      "type": 0
+    },
+    {
+      "word": "CODEX",
+      "type": 0
+    },
+    {
+      "word": "COLED",
+      "type": 0
+    },
+    {
+      "word": "COLES",
+      "type": 0
+    },
+    {
+      "word": "CULEX",
+      "type": 0
+    },
+    {
+      "word": "DECOS",
+      "type": 0
+    },
+    {
+      "word": "DELES",
+      "type": 0
+    },
+    {
+      "word": "DOLES",
+      "type": 0
+    },
+    {
+      "word": "EDUCE",
+      "type": 0
+    },
+    {
+      "word": "ELUDE",
+      "type": 0
+    },
+    {
+      "word": "SOCLE",
+      "type": 0
+    },
+    {
+      "word": "SOLED",
+      "type": 0
+    }
+  ],
+  "letters": "CXLE,LECM,UDOS,CELE",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

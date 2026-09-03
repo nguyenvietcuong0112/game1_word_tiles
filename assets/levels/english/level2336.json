@@ -1,121 +1,279 @@
-﻿{
-    "id":  2336,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HIS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EATER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STORY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEATER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HISTORY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EATERY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EATS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HEATS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IOTA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MEATS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROTE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ROTS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TORY",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MIOEY,EATER,HISTO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2336,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIM",
+      "type": 0
+    },
+    {
+      "word": "ICE",
+      "type": 0
+    },
+    {
+      "word": "OIL",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SIX",
+      "type": 0
+    },
+    {
+      "word": "ROLL",
+      "type": 0
+    },
+    {
+      "word": "SEEM",
+      "type": 0
+    },
+    {
+      "word": "DOLLS",
+      "type": 0
+    },
+    {
+      "word": "TROLL",
+      "type": 0
+    },
+    {
+      "word": "SEEMED",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIS",
+      "type": 0
+    },
+    {
+      "word": "CEE",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DEX",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "EME",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "ORT",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "XIS",
+      "type": 0
+    },
+    {
+      "word": "AIMS",
+      "type": 0
+    },
+    {
+      "word": "DEES",
+      "type": 0
+    },
+    {
+      "word": "DEIL",
+      "type": 0
+    },
+    {
+      "word": "DEME",
+      "type": 0
+    },
+    {
+      "word": "DOLL",
+      "type": 0
+    },
+    {
+      "word": "DOLT",
+      "type": 0
+    },
+    {
+      "word": "DORP",
+      "type": 0
+    },
+    {
+      "word": "EMES",
+      "type": 0
+    },
+    {
+      "word": "ICES",
+      "type": 0
+    },
+    {
+      "word": "LICE",
+      "type": 0
+    },
+    {
+      "word": "LIED",
+      "type": 0
+    },
+    {
+      "word": "LODE",
+      "type": 0
+    },
+    {
+      "word": "MISE",
+      "type": 0
+    },
+    {
+      "word": "ODES",
+      "type": 0
+    },
+    {
+      "word": "OILS",
+      "type": 0
+    },
+    {
+      "word": "PROD",
+      "type": 0
+    },
+    {
+      "word": "RODE",
+      "type": 0
+    },
+    {
+      "word": "ROIL",
+      "type": 0
+    },
+    {
+      "word": "SECS",
+      "type": 0
+    },
+    {
+      "word": "SEED",
+      "type": 0
+    },
+    {
+      "word": "SEME",
+      "type": 0
+    },
+    {
+      "word": "SEMI",
+      "type": 0
+    },
+    {
+      "word": "SIMS",
+      "type": 0
+    },
+    {
+      "word": "TROD",
+      "type": 0
+    },
+    {
+      "word": "AIMED",
+      "type": 0
+    },
+    {
+      "word": "DEICE",
+      "type": 0
+    },
+    {
+      "word": "DEILS",
+      "type": 0
+    },
+    {
+      "word": "DEMES",
+      "type": 0
+    },
+    {
+      "word": "LODES",
+      "type": 0
+    },
+    {
+      "word": "ROILS",
+      "type": 0
+    },
+    {
+      "word": "ROLLS",
+      "type": 0
+    },
+    {
+      "word": "SLICE",
+      "type": 0
+    },
+    {
+      "word": "TRODE",
+      "type": 0
+    },
+    {
+      "word": "DEICES",
+      "type": 0
+    },
+    {
+      "word": "DEMISE",
+      "type": 0
+    },
+    {
+      "word": "SLICES",
+      "type": 0
+    },
+    {
+      "word": "TROLLS",
+      "type": 0
+    },
+    {
+      "word": "TROLLIED",
+      "type": 0
+    }
+  ],
+  "letters": "ASECS,IMEIL,SEDOL,IXPRT",
+  "obstacles": []
 }

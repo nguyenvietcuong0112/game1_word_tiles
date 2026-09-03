@@ -1,75 +1,87 @@
-﻿{
-    "id":  1300,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "İMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "İMAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RESMİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SERMAYE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "İMAME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SERME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YERME",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "İMAY,MYME,SERA",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1300,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "INI",
+      "type": 0
+    },
+    {
+      "word": "KÜT",
+      "type": 0
+    },
+    {
+      "word": "NIN",
+      "type": 0
+    },
+    {
+      "word": "TİR",
+      "type": 0
+    },
+    {
+      "word": "ANIM",
+      "type": 0
+    },
+    {
+      "word": "ANIN",
+      "type": 0
+    },
+    {
+      "word": "KTİR",
+      "type": 0
+    },
+    {
+      "word": "ÖPTÜ",
+      "type": 0
+    },
+    {
+      "word": "ÖPÜŞTÜK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "MIN",
+      "type": 0
+    },
+    {
+      "word": "MRİ",
+      "type": 0
+    },
+    {
+      "word": "ININ",
+      "type": 0
+    },
+    {
+      "word": "ANINI",
+      "type": 0
+    }
+  ],
+  "letters": "ÜTPÖ,KŞÜA,TMIN,İRNI",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,65 +1,119 @@
-﻿{
-    "id":  1240,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞAH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEHA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DERİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PARÇA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PADİŞAH",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HADİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REHA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ŞAD",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DİŞAH,AAÇDE,PARİR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1240,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LER",
+      "type": 0
+    },
+    {
+      "word": "LOŞ",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "BELA",
+      "type": 0
+    },
+    {
+      "word": "KERE",
+      "type": 0
+    },
+    {
+      "word": "LOCA",
+      "type": 0
+    },
+    {
+      "word": "CALEB",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "BEK",
+      "type": 0
+    },
+    {
+      "word": "BER",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "EBE",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "BERE",
+      "type": 0
+    },
+    {
+      "word": "LERE",
+      "type": 0
+    },
+    {
+      "word": "TANK",
+      "type": 0
+    },
+    {
+      "word": "TANKER",
+      "type": 0
+    }
+  ],
+  "letters": "LOCA,LŞPL,ATBE,NKER",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

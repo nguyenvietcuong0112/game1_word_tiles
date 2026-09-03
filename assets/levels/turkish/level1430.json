@@ -1,61 +1,119 @@
-﻿{
-    "id":  1430,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "FON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OYA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOYA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "OFİS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOYA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SİFON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FİYONK",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "İYON",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "İYA,FON,İSK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1430,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "KUM",
+      "type": 0
+    },
+    {
+      "word": "NEW",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAŞ",
+      "type": 0
+    },
+    {
+      "word": "ATIŞ",
+      "type": 0
+    },
+    {
+      "word": "PETE",
+      "type": 0
+    },
+    {
+      "word": "TAŞI",
+      "type": 0
+    },
+    {
+      "word": "PETER",
+      "type": 0
+    },
+    {
+      "word": "TAŞIR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATI",
+      "type": 0
+    },
+    {
+      "word": "ATM",
+      "type": 0
+    },
+    {
+      "word": "AŞI",
+      "type": 0
+    },
+    {
+      "word": "ETE",
+      "type": 0
+    },
+    {
+      "word": "IRK",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "TIR",
+      "type": 0
+    },
+    {
+      "word": "WEN",
+      "type": 0
+    },
+    {
+      "word": "ETER",
+      "type": 0
+    },
+    {
+      "word": "TEPE",
+      "type": 0
+    }
+  ],
+  "letters": "ŞIRK,ATMU,EPNE,TERW",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

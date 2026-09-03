@@ -1,81 +1,179 @@
-﻿{
-    "id":  2334,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IVY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FLIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRAIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRAVY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PETTY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRAVITY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIPID",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TEPID",
-                            "type":  2
-                        },
-                        {
-                            "word":  "VAIL",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "DIPET,FLIYT,GRAVI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2334,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "CUP",
+      "type": 0
+    },
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "COUP",
+      "type": 0
+    },
+    {
+      "word": "FOAM",
+      "type": 0
+    },
+    {
+      "word": "RANK",
+      "type": 0
+    },
+    {
+      "word": "SILK",
+      "type": 0
+    },
+    {
+      "word": "FRANK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIL",
+      "type": 0
+    },
+    {
+      "word": "AIS",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ARF",
+      "type": 0
+    },
+    {
+      "word": "COT",
+      "type": 0
+    },
+    {
+      "word": "ILK",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ORC",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "HAIL",
+      "type": 0
+    },
+    {
+      "word": "KNAR",
+      "type": 0
+    },
+    {
+      "word": "MART",
+      "type": 0
+    },
+    {
+      "word": "PROA",
+      "type": 0
+    },
+    {
+      "word": "PROF",
+      "type": 0
+    },
+    {
+      "word": "ROAM",
+      "type": 0
+    },
+    {
+      "word": "SCAT",
+      "type": 0
+    },
+    {
+      "word": "SCOT",
+      "type": 0
+    },
+    {
+      "word": "TACO",
+      "type": 0
+    },
+    {
+      "word": "TAHR",
+      "type": 0
+    },
+    {
+      "word": "TAIL",
+      "type": 0
+    },
+    {
+      "word": "TRAM",
+      "type": 0
+    },
+    {
+      "word": "ARHAT",
+      "type": 0
+    },
+    {
+      "word": "TRANK",
+      "type": 0
+    }
+  ],
+  "letters": "KNAMA,LHRFO,IATCR,SCOUP",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

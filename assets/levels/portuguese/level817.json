@@ -1,61 +1,283 @@
-﻿{
-    "id":  817,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "FIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FILA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FREI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PERFIL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AFIM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PLA,EIM,RFA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 817,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "USO",
+      "type": 0
+    },
+    {
+      "word": "ANOS",
+      "type": 0
+    },
+    {
+      "word": "HORA",
+      "type": 0
+    },
+    {
+      "word": "BLOCO",
+      "type": 0
+    },
+    {
+      "word": "TORNAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "BUS",
+      "type": 0
+    },
+    {
+      "word": "COL",
+      "type": 0
+    },
+    {
+      "word": "CSU",
+      "type": 0
+    },
+    {
+      "word": "HAN",
+      "type": 0
+    },
+    {
+      "word": "HON",
+      "type": 0
+    },
+    {
+      "word": "HUB",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "NOH",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "OCO",
+      "type": 0
+    },
+    {
+      "word": "OSU",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RNA",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "SUB",
+      "type": 0
+    },
+    {
+      "word": "SUH",
+      "type": 0
+    },
+    {
+      "word": "TOC",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "USC",
+      "type": 0
+    },
+    {
+      "word": "ARCO",
+      "type": 0
+    },
+    {
+      "word": "ARON",
+      "type": 0
+    },
+    {
+      "word": "AROS",
+      "type": 0
+    },
+    {
+      "word": "CORN",
+      "type": 0
+    },
+    {
+      "word": "HANA",
+      "type": 0
+    },
+    {
+      "word": "LOCO",
+      "type": 0
+    },
+    {
+      "word": "NANA",
+      "type": 0
+    },
+    {
+      "word": "NANO",
+      "type": 0
+    },
+    {
+      "word": "NORA",
+      "type": 0
+    },
+    {
+      "word": "ORCS",
+      "type": 0
+    },
+    {
+      "word": "OSLO",
+      "type": 0
+    },
+    {
+      "word": "RANA",
+      "type": 0
+    },
+    {
+      "word": "RONA",
+      "type": 0
+    },
+    {
+      "word": "SCOT",
+      "type": 0
+    },
+    {
+      "word": "SLOT",
+      "type": 0
+    },
+    {
+      "word": "SONA",
+      "type": 0
+    },
+    {
+      "word": "SORA",
+      "type": 0
+    },
+    {
+      "word": "TOCO",
+      "type": 0
+    },
+    {
+      "word": "AHORA",
+      "type": 0
+    },
+    {
+      "word": "BUSCO",
+      "type": 0
+    },
+    {
+      "word": "CORRA",
+      "type": 0
+    },
+    {
+      "word": "CORRO",
+      "type": 0
+    },
+    {
+      "word": "OLSON",
+      "type": 0
+    },
+    {
+      "word": "ROHAN",
+      "type": 0
+    },
+    {
+      "word": "RONAN",
+      "type": 0
+    },
+    {
+      "word": "ROSCO",
+      "type": 0
+    },
+    {
+      "word": "SONAR",
+      "type": 0
+    },
+    {
+      "word": "TORNA",
+      "type": 0
+    },
+    {
+      "word": "ARROTO",
+      "type": 0
+    },
+    {
+      "word": "COLSON",
+      "type": 0
+    },
+    {
+      "word": "OCORRA",
+      "type": 0
+    }
+  ],
+  "letters": "BUHA,LSON,OCRA,TORN",
+  "obstacles": []
 }

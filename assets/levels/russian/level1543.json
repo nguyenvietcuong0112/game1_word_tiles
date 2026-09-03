@@ -1,106 +1,139 @@
-﻿{
-    "id":  1543,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ГОЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ГУЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПОЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПУЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛУПА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПОЛА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "УГОЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ГАЛОП",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СЛУГА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПУГАЛО",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ГАЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ГАЛО",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ГОП",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛАГ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛОГ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛУГ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛУП",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ПАЛ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ПАЛ,УГО,ЛСП",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1543,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ДЕЛ",
+      "type": 0
+    },
+    {
+      "word": "ЕШЬ",
+      "type": 0
+    },
+    {
+      "word": "ЛЕО",
+      "type": 0
+    },
+    {
+      "word": "ОНИ",
+      "type": 0
+    },
+    {
+      "word": "ПОР",
+      "type": 0
+    },
+    {
+      "word": "ДЕЛУ",
+      "type": 0
+    },
+    {
+      "word": "НИТЬ",
+      "type": 0
+    },
+    {
+      "word": "ЕДЕШЬ",
+      "type": 0
+    },
+    {
+      "word": "ПОЕДЕШЬ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ЕДЕ",
+      "type": 0
+    },
+    {
+      "word": "ЕДЬ",
+      "type": 0
+    },
+    {
+      "word": "ИНЬ",
+      "type": 0
+    },
+    {
+      "word": "ЛЕД",
+      "type": 0
+    },
+    {
+      "word": "ОРУ",
+      "type": 0
+    },
+    {
+      "word": "ПЕЛ",
+      "type": 0
+    },
+    {
+      "word": "ПОН",
+      "type": 0
+    },
+    {
+      "word": "ПУЛ",
+      "type": 0
+    },
+    {
+      "word": "РОН",
+      "type": 0
+    },
+    {
+      "word": "ДЕПО",
+      "type": 0
+    },
+    {
+      "word": "НОРУ",
+      "type": 0
+    },
+    {
+      "word": "ПОЕЛ",
+      "type": 0
+    },
+    {
+      "word": "ПОНИ",
+      "type": 0
+    },
+    {
+      "word": "ПОРУ",
+      "type": 0
+    },
+    {
+      "word": "ПУЛЕ",
+      "type": 0
+    },
+    {
+      "word": "РОНИ",
+      "type": 0
+    },
+    {
+      "word": "РУЛЕ",
+      "type": 0
+    },
+    {
+      "word": "ТИНО",
+      "type": 0
+    },
+    {
+      "word": "УПОР",
+      "type": 0
+    },
+    {
+      "word": "УРОН",
+      "type": 0
+    },
+    {
+      "word": "ПОЕШЬ",
+      "type": 0
+    },
+    {
+      "word": "УРОНИ",
+      "type": 0
+    },
+    {
+      "word": "УРОНИТЬ",
+      "type": 0
+    }
+  ],
+  "letters": "ИТЬШ,НЬДЕ,ОПЕО,РУЛП",
+  "obstacles": []
 }

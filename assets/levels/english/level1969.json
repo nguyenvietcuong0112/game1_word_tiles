@@ -1,115 +1,195 @@
-﻿{
-    "id":  1969,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MUG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DORM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DRIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PREMIUM",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "GUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IMMA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MAG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PROD",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "EEEMI,IPRMU,RDOAG",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  4,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1969,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "OWN",
+      "type": 0
+    },
+    {
+      "word": "RAW",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "ROW",
+      "type": 0
+    },
+    {
+      "word": "SAW",
+      "type": 0
+    },
+    {
+      "word": "WAR",
+      "type": 0
+    },
+    {
+      "word": "WAS",
+      "type": 0
+    },
+    {
+      "word": "BORE",
+      "type": 0
+    },
+    {
+      "word": "CASA",
+      "type": 0
+    },
+    {
+      "word": "BEIGE",
+      "type": 0
+    },
+    {
+      "word": "BROWN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABO",
+      "type": 0
+    },
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "AWN",
+      "type": 0
+    },
+    {
+      "word": "BOW",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "CAW",
+      "type": 0
+    },
+    {
+      "word": "GEE",
+      "type": 0
+    },
+    {
+      "word": "GIE",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "WOE",
+      "type": 0
+    },
+    {
+      "word": "AWNS",
+      "type": 0
+    },
+    {
+      "word": "BARB",
+      "type": 0
+    },
+    {
+      "word": "BORA",
+      "type": 0
+    },
+    {
+      "word": "BRAS",
+      "type": 0
+    },
+    {
+      "word": "BRAW",
+      "type": 0
+    },
+    {
+      "word": "BROW",
+      "type": 0
+    },
+    {
+      "word": "CARB",
+      "type": 0
+    },
+    {
+      "word": "OBOE",
+      "type": 0
+    },
+    {
+      "word": "OWNS",
+      "type": 0
+    },
+    {
+      "word": "SAWN",
+      "type": 0
+    },
+    {
+      "word": "BORAS",
+      "type": 0
+    },
+    {
+      "word": "BRAWN",
+      "type": 0
+    },
+    {
+      "word": "CAROB",
+      "type": 0
+    },
+    {
+      "word": "BRAWNS",
+      "type": 0
+    },
+    {
+      "word": "BROWNS",
+      "type": 0
+    }
+  ],
+  "letters": "BABOR,BROEE,CAWGI,ASNBE",
+  "obstacles": []
 }

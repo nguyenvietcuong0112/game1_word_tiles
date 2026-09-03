@@ -1,61 +1,79 @@
-﻿{
-    "id":  1635,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEZE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EMİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İMAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEZE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BİRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İMAME",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ZEM,EMA,BİR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1635,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DUA",
+      "type": 0
+    },
+    {
+      "word": "DUY",
+      "type": 0
+    },
+    {
+      "word": "MUŞ",
+      "type": 0
+    },
+    {
+      "word": "SEV",
+      "type": 0
+    },
+    {
+      "word": "AÇMA",
+      "type": 0
+    },
+    {
+      "word": "SEVK",
+      "type": 0
+    },
+    {
+      "word": "AÇMAM",
+      "type": 0
+    },
+    {
+      "word": "AÇMAMI",
+      "type": 0
+    },
+    {
+      "word": "DUYMUŞ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "MAUD",
+      "type": 0
+    },
+    {
+      "word": "MUAD",
+      "type": 0
+    },
+    {
+      "word": "YVES",
+      "type": 0
+    }
+  ],
+  "letters": "ESIM,VYUA,KMDM,ŞUAÇ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

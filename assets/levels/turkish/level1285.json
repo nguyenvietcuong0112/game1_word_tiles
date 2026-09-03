@@ -1,89 +1,79 @@
-﻿{
-    "id":  1285,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZAAF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEKEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEFALET",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "FAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FELEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KEFAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KELE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TELEF",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TELEK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AAF,ZLE,TEK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1285,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ACI",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "FAT",
+      "type": 0
+    },
+    {
+      "word": "YAT",
+      "type": 0
+    },
+    {
+      "word": "FAYE",
+      "type": 0
+    },
+    {
+      "word": "TACI",
+      "type": 0
+    },
+    {
+      "word": "TACO",
+      "type": 0
+    },
+    {
+      "word": "COUNTRY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "FAY",
+      "type": 0
+    },
+    {
+      "word": "TAC",
+      "type": 0
+    },
+    {
+      "word": "TAY",
+      "type": 0
+    },
+    {
+      "word": "AYET",
+      "type": 0
+    }
+  ],
+  "letters": "ATNU,FRTO,AYAC,TECI",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

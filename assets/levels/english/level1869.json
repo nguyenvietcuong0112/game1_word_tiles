@@ -1,53 +1,279 @@
-﻿{
-    "id":  1869,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AREA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEAD",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EARN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DERBY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BRAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DARN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DEA,ARN,EBY",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1869,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FAR",
+      "type": 0
+    },
+    {
+      "word": "FAT",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "CAMS",
+      "type": 0
+    },
+    {
+      "word": "CASE",
+      "type": 0
+    },
+    {
+      "word": "INTO",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    },
+    {
+      "word": "SOME",
+      "type": 0
+    },
+    {
+      "word": "TIME",
+      "type": 0
+    },
+    {
+      "word": "DRAFT",
+      "type": 0
+    },
+    {
+      "word": "TIMES",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAS",
+      "type": 0
+    },
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "AFT",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "MOT",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "ROT",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "SOT",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "ACES",
+      "type": 0
+    },
+    {
+      "word": "ARSE",
+      "type": 0
+    },
+    {
+      "word": "DRAT",
+      "type": 0
+    },
+    {
+      "word": "EMIT",
+      "type": 0
+    },
+    {
+      "word": "FARD",
+      "type": 0
+    },
+    {
+      "word": "INRO",
+      "type": 0
+    },
+    {
+      "word": "INTI",
+      "type": 0
+    },
+    {
+      "word": "MAAR",
+      "type": 0
+    },
+    {
+      "word": "MACE",
+      "type": 0
+    },
+    {
+      "word": "MACS",
+      "type": 0
+    },
+    {
+      "word": "MESA",
+      "type": 0
+    },
+    {
+      "word": "MORN",
+      "type": 0
+    },
+    {
+      "word": "MORS",
+      "type": 0
+    },
+    {
+      "word": "OMIT",
+      "type": 0
+    },
+    {
+      "word": "ORRA",
+      "type": 0
+    },
+    {
+      "word": "RAFT",
+      "type": 0
+    },
+    {
+      "word": "ROTI",
+      "type": 0
+    },
+    {
+      "word": "SACS",
+      "type": 0
+    },
+    {
+      "word": "SCAM",
+      "type": 0
+    },
+    {
+      "word": "SECS",
+      "type": 0
+    },
+    {
+      "word": "SEMI",
+      "type": 0
+    },
+    {
+      "word": "SORN",
+      "type": 0
+    },
+    {
+      "word": "TARS",
+      "type": 0
+    },
+    {
+      "word": "TOME",
+      "type": 0
+    },
+    {
+      "word": "TORN",
+      "type": 0
+    },
+    {
+      "word": "TORR",
+      "type": 0
+    },
+    {
+      "word": "TORS",
+      "type": 0
+    },
+    {
+      "word": "FARDS",
+      "type": 0
+    },
+    {
+      "word": "MAARS",
+      "type": 0
+    },
+    {
+      "word": "MACES",
+      "type": 0
+    },
+    {
+      "word": "ORNIS",
+      "type": 0
+    },
+    {
+      "word": "TOMES",
+      "type": 0
+    },
+    {
+      "word": "TORSI",
+      "type": 0
+    },
+    {
+      "word": "INTIME",
+      "type": 0
+    }
+  ],
+  "letters": "IMECS,TOSAM,NRRAF,ISDTT",
+  "obstacles": []
 }

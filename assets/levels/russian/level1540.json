@@ -1,126 +1,87 @@
-﻿{
-    "id":  1540,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "БАС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БЕС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПИК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПИР",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РАЖ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ФАС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БРАК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ИКАР",
-                             "type":  1
-                         },
-                         {
-                             "word":  "КАРИ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПИКА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПИРС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ФАБРИКА",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АРБА",
-                            "type":  2
-                        },
-                        {
-                            "word":  "БРА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЖАР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ИРАК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАРБАС",
-                            "type":  2
-                        },
-                        {
-                            "word":  "КИР",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "СЕСЖ,АБРА,ФПИК",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1540,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ВОЙ",
+      "type": 0
+    },
+    {
+      "word": "ВОН",
+      "type": 0
+    },
+    {
+      "word": "ДНА",
+      "type": 0
+    },
+    {
+      "word": "КАН",
+      "type": 0
+    },
+    {
+      "word": "НОЙ",
+      "type": 0
+    },
+    {
+      "word": "ОКА",
+      "type": 0
+    },
+    {
+      "word": "ТАО",
+      "type": 0
+    },
+    {
+      "word": "ТНО",
+      "type": 0
+    },
+    {
+      "word": "ХВА",
+      "type": 0
+    },
+    {
+      "word": "ЮКО",
+      "type": 0
+    },
+    {
+      "word": "ЌДНАКО",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ЌНО",
+      "type": 0
+    },
+    {
+      "word": "НАК",
+      "type": 0
+    },
+    {
+      "word": "ВАТА",
+      "type": 0
+    },
+    {
+      "word": "ВОЙТ",
+      "type": 0
+    },
+    {
+      "word": "НОВА",
+      "type": 0
+    }
+  ],
+  "letters": "АТАО,ВХЮК,ОНЌА,ЙТДН",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

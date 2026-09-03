@@ -1,93 +1,111 @@
-﻿{
-    "id":  1832,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "АКТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "САН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЧАН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЧАС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЧИН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "САНИ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СЕЧА",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ТКАЧ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "МОЧКА",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ПАЧКА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПОЧКА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТОЧКА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ШАПОЧКА",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ИНАЧЕ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАНТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КТО",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НАС",
-                            "type":  0
-                        },
-                        {
-                            "word":  "САК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЧИНА",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ШОТНИ,АЧКАЧ,ПОМСЕ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1832,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ВЕС",
+      "type": 0
+    },
+    {
+      "word": "ЕВЫ",
+      "type": 0
+    },
+    {
+      "word": "КОЛ",
+      "type": 0
+    },
+    {
+      "word": "ЛИВ",
+      "type": 0
+    },
+    {
+      "word": "ПРИ",
+      "type": 0
+    },
+    {
+      "word": "СИЕ",
+      "type": 0
+    },
+    {
+      "word": "СИЛ",
+      "type": 0
+    },
+    {
+      "word": "ШЛИ",
+      "type": 0
+    },
+    {
+      "word": "ШЛО",
+      "type": 0
+    },
+    {
+      "word": "ШКОЛ",
+      "type": 0
+    },
+    {
+      "word": "ВЫШЛИ",
+      "type": 0
+    },
+    {
+      "word": "РУСЛО",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ВИЛ",
+      "type": 0
+    },
+    {
+      "word": "ВЛИ",
+      "type": 0
+    },
+    {
+      "word": "КОИ",
+      "type": 0
+    },
+    {
+      "word": "ЛИС",
+      "type": 0
+    },
+    {
+      "word": "ЛОК",
+      "type": 0
+    },
+    {
+      "word": "ПСУ",
+      "type": 0
+    },
+    {
+      "word": "РИО",
+      "type": 0
+    },
+    {
+      "word": "РУС",
+      "type": 0
+    },
+    {
+      "word": "СЛОИ",
+      "type": 0
+    },
+    {
+      "word": "ВЕСИЛ",
+      "type": 0
+    }
+  ],
+  "letters": "ЫВЕУР,ЕИССП,ВЛШЛР,ЫШКОИ",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

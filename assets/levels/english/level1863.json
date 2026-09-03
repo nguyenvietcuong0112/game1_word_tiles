@@ -1,102 +1,203 @@
-﻿{
-    "id":  1863,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "PEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUNT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUNSET",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "PENS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PENT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PUNE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PUNS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SENS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SUNS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PSE,ENT,SUP",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1863,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "FED",
+      "type": 0
+    },
+    {
+      "word": "NUT",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "DEAN",
+      "type": 0
+    },
+    {
+      "word": "DOES",
+      "type": 0
+    },
+    {
+      "word": "KIND",
+      "type": 0
+    },
+    {
+      "word": "MAIN",
+      "type": 0
+    },
+    {
+      "word": "NODE",
+      "type": 0
+    },
+    {
+      "word": "UNION",
+      "type": 0
+    },
+    {
+      "word": "MUTANT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "DOE",
+      "type": 0
+    },
+    {
+      "word": "EFT",
+      "type": 0
+    },
+    {
+      "word": "EON",
+      "type": 0
+    },
+    {
+      "word": "FEU",
+      "type": 0
+    },
+    {
+      "word": "ION",
+      "type": 0
+    },
+    {
+      "word": "KIN",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MUT",
+      "type": 0
+    },
+    {
+      "word": "NAE",
+      "type": 0
+    },
+    {
+      "word": "NOD",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TUN",
+      "type": 0
+    },
+    {
+      "word": "UTA",
+      "type": 0
+    },
+    {
+      "word": "AEON",
+      "type": 0
+    },
+    {
+      "word": "DEFT",
+      "type": 0
+    },
+    {
+      "word": "DONS",
+      "type": 0
+    },
+    {
+      "word": "EONS",
+      "type": 0
+    },
+    {
+      "word": "FEAT",
+      "type": 0
+    },
+    {
+      "word": "IONS",
+      "type": 0
+    },
+    {
+      "word": "MAES",
+      "type": 0
+    },
+    {
+      "word": "NOES",
+      "type": 0
+    },
+    {
+      "word": "ODEA",
+      "type": 0
+    },
+    {
+      "word": "SEAM",
+      "type": 0
+    },
+    {
+      "word": "UNDE",
+      "type": 0
+    },
+    {
+      "word": "UNDO",
+      "type": 0
+    },
+    {
+      "word": "AEONS",
+      "type": 0
+    },
+    {
+      "word": "ODEUM",
+      "type": 0
+    },
+    {
+      "word": "UNFED",
+      "type": 0
+    },
+    {
+      "word": "UNDOES",
+      "type": 0
+    },
+    {
+      "word": "UNIONS",
+      "type": 0
+    }
+  ],
+  "letters": "MKUTT,AINFN,EODEA,SNMUT",
+  "obstacles": []
 }

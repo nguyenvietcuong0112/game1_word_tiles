@@ -1,65 +1,291 @@
-﻿{
-    "id":  1379,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELLİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KRAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LİRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RALLİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İSPİRTO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLLA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLLE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "İSPİR",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ELLTO,LAİRA,KRPSİ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1379,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "KAL",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "OKUL",
+      "type": 0
+    },
+    {
+      "word": "SARI",
+      "type": 0
+    },
+    {
+      "word": "ŞAKA",
+      "type": 0
+    },
+    {
+      "word": "SOĞUK",
+      "type": 0
+    },
+    {
+      "word": "OLARAK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKU",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "AŞI",
+      "type": 0
+    },
+    {
+      "word": "DAĞ",
+      "type": 0
+    },
+    {
+      "word": "DOK",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "DUL",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KAŞ",
+      "type": 0
+    },
+    {
+      "word": "KOD",
+      "type": 0
+    },
+    {
+      "word": "KOL",
+      "type": 0
+    },
+    {
+      "word": "LAK",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LOS",
+      "type": 0
+    },
+    {
+      "word": "LUK",
+      "type": 0
+    },
+    {
+      "word": "OKU",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "OLU",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAR",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "ŞAK",
+      "type": 0
+    },
+    {
+      "word": "ŞAL",
+      "type": 0
+    },
+    {
+      "word": "AKAR",
+      "type": 0
+    },
+    {
+      "word": "AŞAR",
+      "type": 0
+    },
+    {
+      "word": "DOKU",
+      "type": 0
+    },
+    {
+      "word": "IRAK",
+      "type": 0
+    },
+    {
+      "word": "KALA",
+      "type": 0
+    },
+    {
+      "word": "KARA",
+      "type": 0
+    },
+    {
+      "word": "KARI",
+      "type": 0
+    },
+    {
+      "word": "KAŞI",
+      "type": 0
+    },
+    {
+      "word": "KODU",
+      "type": 0
+    },
+    {
+      "word": "KOLA",
+      "type": 0
+    },
+    {
+      "word": "LARA",
+      "type": 0
+    },
+    {
+      "word": "LARI",
+      "type": 0
+    },
+    {
+      "word": "LUKA",
+      "type": 0
+    },
+    {
+      "word": "OLUK",
+      "type": 0
+    },
+    {
+      "word": "OĞUL",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "SOLA",
+      "type": 0
+    },
+    {
+      "word": "SOLU",
+      "type": 0
+    },
+    {
+      "word": "ULAK",
+      "type": 0
+    },
+    {
+      "word": "ULAŞ",
+      "type": 0
+    },
+    {
+      "word": "ALAKA",
+      "type": 0
+    },
+    {
+      "word": "DOLAŞ",
+      "type": 0
+    },
+    {
+      "word": "KARIŞ",
+      "type": 0
+    },
+    {
+      "word": "KAŞAR",
+      "type": 0
+    },
+    {
+      "word": "LOKAL",
+      "type": 0
+    },
+    {
+      "word": "OKULA",
+      "type": 0
+    },
+    {
+      "word": "SALAK",
+      "type": 0
+    },
+    {
+      "word": "SOLAK",
+      "type": 0
+    },
+    {
+      "word": "SOLAR",
+      "type": 0
+    },
+    {
+      "word": "SOLUK",
+      "type": 0
+    },
+    {
+      "word": "UKALA",
+      "type": 0
+    },
+    {
+      "word": "ULAŞIR",
+      "type": 0
+    },
+    {
+      "word": "DOLAŞIR",
+      "type": 0
+    },
+    {
+      "word": "ŞAKALAR",
+      "type": 0
+    },
+    {
+      "word": "DOKULARI",
+      "type": 0
+    },
+    {
+      "word": "ŞAKALARI",
+      "type": 0
+    }
+  ],
+  "letters": "SOĞA,ALUD,RAKO,IŞAL",
+  "obstacles": []
 }

@@ -1,73 +1,179 @@
-﻿{
-    "id":  1165,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "NOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOTCH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIDER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COTTON",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "COT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OTTO",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TORE,TCHD,ONRI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1165,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "MOL",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "BOOK",
+      "type": 0
+    },
+    {
+      "word": "BOOM",
+      "type": 0
+    },
+    {
+      "word": "COME",
+      "type": 0
+    },
+    {
+      "word": "SOME",
+      "type": 0
+    },
+    {
+      "word": "COCOS",
+      "type": 0
+    },
+    {
+      "word": "SMOKE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "KOS",
+      "type": 0
+    },
+    {
+      "word": "MOB",
+      "type": 0
+    },
+    {
+      "word": "MOC",
+      "type": 0
+    },
+    {
+      "word": "MOO",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "OKE",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "BOOS",
+      "type": 0
+    },
+    {
+      "word": "COCO",
+      "type": 0
+    },
+    {
+      "word": "MOCS",
+      "type": 0
+    },
+    {
+      "word": "MOKE",
+      "type": 0
+    },
+    {
+      "word": "MOLS",
+      "type": 0
+    },
+    {
+      "word": "MOOS",
+      "type": 0
+    },
+    {
+      "word": "OMER",
+      "type": 0
+    },
+    {
+      "word": "REMS",
+      "type": 0
+    },
+    {
+      "word": "SOKE",
+      "type": 0
+    },
+    {
+      "word": "BOOMS",
+      "type": 0
+    },
+    {
+      "word": "COMER",
+      "type": 0
+    },
+    {
+      "word": "OMERS",
+      "type": 0
+    },
+    {
+      "word": "OSMOL",
+      "type": 0
+    },
+    {
+      "word": "BOOKER",
+      "type": 0
+    },
+    {
+      "word": "BOOMER",
+      "type": 0
+    },
+    {
+      "word": "COMERS",
+      "type": 0
+    },
+    {
+      "word": "SMOKER",
+      "type": 0
+    },
+    {
+      "word": "BOOKERS",
+      "type": 0
+    },
+    {
+      "word": "BOOMERS",
+      "type": 0
+    }
+  ],
+  "letters": "BKER,OOMS,MSOC,OLCO",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

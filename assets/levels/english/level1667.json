@@ -1,61 +1,279 @@
-﻿{
-    "id":  1667,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIAL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ALGAE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "EAGLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FELINE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALGA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "GLEN",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LING",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NILE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "VIA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "IALE,VAGN,FELI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1667,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "EVEN",
+      "type": 0
+    },
+    {
+      "word": "HERE",
+      "type": 0
+    },
+    {
+      "word": "READ",
+      "type": 0
+    },
+    {
+      "word": "REAL",
+      "type": 0
+    },
+    {
+      "word": "STEAL",
+      "type": 0
+    },
+    {
+      "word": "UNDER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "EDH",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "HEN",
+      "type": 0
+    },
+    {
+      "word": "HET",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "ALAE",
+      "type": 0
+    },
+    {
+      "word": "ALAR",
+      "type": 0
+    },
+    {
+      "word": "ALTS",
+      "type": 0
+    },
+    {
+      "word": "DARE",
+      "type": 0
+    },
+    {
+      "word": "ERST",
+      "type": 0
+    },
+    {
+      "word": "EVER",
+      "type": 0
+    },
+    {
+      "word": "HEAD",
+      "type": 0
+    },
+    {
+      "word": "HEAL",
+      "type": 0
+    },
+    {
+      "word": "HEAR",
+      "type": 0
+    },
+    {
+      "word": "HERS",
+      "type": 0
+    },
+    {
+      "word": "HETS",
+      "type": 0
+    },
+    {
+      "word": "LADE",
+      "type": 0
+    },
+    {
+      "word": "NEVE",
+      "type": 0
+    },
+    {
+      "word": "REAR",
+      "type": 0
+    },
+    {
+      "word": "RETS",
+      "type": 0
+    },
+    {
+      "word": "TEAL",
+      "type": 0
+    },
+    {
+      "word": "TEAR",
+      "type": 0
+    },
+    {
+      "word": "UNDE",
+      "type": 0
+    },
+    {
+      "word": "VEND",
+      "type": 0
+    },
+    {
+      "word": "ALTER",
+      "type": 0
+    },
+    {
+      "word": "EARED",
+      "type": 0
+    },
+    {
+      "word": "ENDER",
+      "type": 0
+    },
+    {
+      "word": "LADER",
+      "type": 0
+    },
+    {
+      "word": "NEVER",
+      "type": 0
+    },
+    {
+      "word": "STEAD",
+      "type": 0
+    },
+    {
+      "word": "STERE",
+      "type": 0
+    },
+    {
+      "word": "VENUE",
+      "type": 0
+    },
+    {
+      "word": "VERST",
+      "type": 0
+    },
+    {
+      "word": "ADHERE",
+      "type": 0
+    },
+    {
+      "word": "ALTERS",
+      "type": 0
+    },
+    {
+      "word": "HEADER",
+      "type": 0
+    },
+    {
+      "word": "READER",
+      "type": 0
+    },
+    {
+      "word": "REARED",
+      "type": 0
+    },
+    {
+      "word": "REHEAR",
+      "type": 0
+    },
+    {
+      "word": "TEARED",
+      "type": 0
+    },
+    {
+      "word": "VENDER",
+      "type": 0
+    },
+    {
+      "word": "VERSTE",
+      "type": 0
+    },
+    {
+      "word": "REVENUE",
+      "type": 0
+    },
+    {
+      "word": "REVENUED",
+      "type": 0
+    },
+    {
+      "word": "REVENUER",
+      "type": 0
+    }
+  ],
+  "letters": "UERA,NDAL,EHET,VERS",
+  "obstacles": []
 }

@@ -1,147 +1,107 @@
-﻿{
-    "id":  1535,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACNE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ICON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STUB",
-                             "type":  2
-                         },
-                         {
-                             "word":  "STUN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "STAIN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "COCONUT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BOTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CATS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COCAINE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "COCO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "INCA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "NUB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NUTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TACO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TUB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TUBS",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "EICON,NCOBU,IATST",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1535,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "LEI",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ALFA",
+      "type": 0
+    },
+    {
+      "word": "FACT",
+      "type": 0
+    },
+    {
+      "word": "FAIL",
+      "type": 0
+    },
+    {
+      "word": "HALF",
+      "type": 0
+    },
+    {
+      "word": "TORN",
+      "type": 0
+    },
+    {
+      "word": "ACTOR",
+      "type": 0
+    },
+    {
+      "word": "FACTOR",
+      "type": 0
+    },
+    {
+      "word": "NUCLEI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AFT",
+      "type": 0
+    },
+    {
+      "word": "AIL",
+      "type": 0
+    },
+    {
+      "word": "ERN",
+      "type": 0
+    },
+    {
+      "word": "FRO",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "ROT",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "HILA",
+      "type": 0
+    },
+    {
+      "word": "TORE",
+      "type": 0
+    }
+  ],
+  "letters": "IELC,ORNU,TFLA,CAIH",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

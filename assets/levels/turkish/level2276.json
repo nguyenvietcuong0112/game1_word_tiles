@@ -1,89 +1,319 @@
-﻿{
-    "id":  2276,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELEM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ELMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EMEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İDOL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "YELE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOLMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MELODİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MELODİK",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "İKMAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OLMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YEME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YOLMA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MEAL,ELMK,YODİ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2276,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SEY",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "DERS",
+      "type": 0
+    },
+    {
+      "word": "KAPA",
+      "type": 0
+    },
+    {
+      "word": "PARA",
+      "type": 0
+    },
+    {
+      "word": "SENE",
+      "type": 0
+    },
+    {
+      "word": "DERİN",
+      "type": 0
+    },
+    {
+      "word": "ÜCRET",
+      "type": 0
+    },
+    {
+      "word": "DERSEM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "EMP",
+      "type": 0
+    },
+    {
+      "word": "ERİ",
+      "type": 0
+    },
+    {
+      "word": "ESE",
+      "type": 0
+    },
+    {
+      "word": "ETİ",
+      "type": 0
+    },
+    {
+      "word": "KAP",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MEİ",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "NEY",
+      "type": 0
+    },
+    {
+      "word": "PAK",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "RİN",
+      "type": 0
+    },
+    {
+      "word": "SRİ",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "TİN",
+      "type": 0
+    },
+    {
+      "word": "TİR",
+      "type": 0
+    },
+    {
+      "word": "YEN",
+      "type": 0
+    },
+    {
+      "word": "YES",
+      "type": 0
+    },
+    {
+      "word": "ÜYE",
+      "type": 0
+    },
+    {
+      "word": "İRS",
+      "type": 0
+    },
+    {
+      "word": "APAR",
+      "type": 0
+    },
+    {
+      "word": "ARAN",
+      "type": 0
+    },
+    {
+      "word": "ARAP",
+      "type": 0
+    },
+    {
+      "word": "DERİ",
+      "type": 0
+    },
+    {
+      "word": "ERİN",
+      "type": 0
+    },
+    {
+      "word": "ESEN",
+      "type": 0
+    },
+    {
+      "word": "ETİN",
+      "type": 0
+    },
+    {
+      "word": "NAPA",
+      "type": 0
+    },
+    {
+      "word": "NATE",
+      "type": 0
+    },
+    {
+      "word": "RANA",
+      "type": 0
+    },
+    {
+      "word": "RANİ",
+      "type": 0
+    },
+    {
+      "word": "RİNA",
+      "type": 0
+    },
+    {
+      "word": "RİTA",
+      "type": 0
+    },
+    {
+      "word": "TARA",
+      "type": 0
+    },
+    {
+      "word": "TERS",
+      "type": 0
+    },
+    {
+      "word": "TERİ",
+      "type": 0
+    },
+    {
+      "word": "TİNA",
+      "type": 0
+    },
+    {
+      "word": "İNAT",
+      "type": 0
+    },
+    {
+      "word": "İNME",
+      "type": 0
+    },
+    {
+      "word": "İTER",
+      "type": 0
+    },
+    {
+      "word": "ANİTA",
+      "type": 0
+    },
+    {
+      "word": "ATİNA",
+      "type": 0
+    },
+    {
+      "word": "DERSE",
+      "type": 0
+    },
+    {
+      "word": "EİNAR",
+      "type": 0
+    },
+    {
+      "word": "KAPAN",
+      "type": 0
+    },
+    {
+      "word": "KAPAR",
+      "type": 0
+    },
+    {
+      "word": "PARAN",
+      "type": 0
+    },
+    {
+      "word": "YESEM",
+      "type": 0
+    },
+    {
+      "word": "DERSEN",
+      "type": 0
+    },
+    {
+      "word": "KAPANA",
+      "type": 0
+    },
+    {
+      "word": "ÜCRETİ",
+      "type": 0
+    },
+    {
+      "word": "ÜCRETİN",
+      "type": 0
+    }
+  ],
+  "letters": "RATED,ANİRC,PMESÜ,AKNEY",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

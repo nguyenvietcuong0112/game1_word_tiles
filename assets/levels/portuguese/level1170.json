@@ -1,121 +1,219 @@
-﻿{
-    "id":  1170,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FORO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOFÁ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SORO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDOSO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ILESO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEMÁFORO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DELE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "EDIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEDOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LESO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MESO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ODE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UME",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "IIDOR,ELESO,CUMÁF",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1170,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "SID",
+      "type": 0
+    },
+    {
+      "word": "SOU",
+      "type": 0
+    },
+    {
+      "word": "ISCA",
+      "type": 0
+    },
+    {
+      "word": "SEDA",
+      "type": 0
+    },
+    {
+      "word": "SYNC",
+      "type": 0
+    },
+    {
+      "word": "DISCO",
+      "type": 0
+    },
+    {
+      "word": "DISCOS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "CSI",
+      "type": 0
+    },
+    {
+      "word": "DAH",
+      "type": 0
+    },
+    {
+      "word": "DES",
+      "type": 0
+    },
+    {
+      "word": "DIO",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "ELY",
+      "type": 0
+    },
+    {
+      "word": "HAD",
+      "type": 0
+    },
+    {
+      "word": "HIS",
+      "type": 0
+    },
+    {
+      "word": "IDE",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "LYN",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "SHI",
+      "type": 0
+    },
+    {
+      "word": "SOC",
+      "type": 0
+    },
+    {
+      "word": "ASHA",
+      "type": 0
+    },
+    {
+      "word": "ASHI",
+      "type": 0
+    },
+    {
+      "word": "CACO",
+      "type": 0
+    },
+    {
+      "word": "COSA",
+      "type": 0
+    },
+    {
+      "word": "DESI",
+      "type": 0
+    },
+    {
+      "word": "DIOS",
+      "type": 0
+    },
+    {
+      "word": "HIDE",
+      "type": 0
+    },
+    {
+      "word": "ISCO",
+      "type": 0
+    },
+    {
+      "word": "LEDA",
+      "type": 0
+    },
+    {
+      "word": "NYLE",
+      "type": 0
+    },
+    {
+      "word": "SHAD",
+      "type": 0
+    },
+    {
+      "word": "SIDE",
+      "type": 0
+    },
+    {
+      "word": "SOCA",
+      "type": 0
+    },
+    {
+      "word": "SOIS",
+      "type": 0
+    },
+    {
+      "word": "ADIOS",
+      "type": 0
+    },
+    {
+      "word": "ADIOU",
+      "type": 0
+    },
+    {
+      "word": "CACOS",
+      "type": 0
+    },
+    {
+      "word": "HADES",
+      "type": 0
+    },
+    {
+      "word": "SHADE",
+      "type": 0
+    },
+    {
+      "word": "DISCOU",
+      "type": 0
+    }
+  ],
+  "letters": "AUAC,SOCN,HISY,ADEL",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,57 +1,235 @@
-﻿{
-    "id":  1755,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LADY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DECOY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CLAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DECO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ECO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIED",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DHIP,ECOY,ILAD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1755,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADS",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BID",
+      "type": 0
+    },
+    {
+      "word": "BIG",
+      "type": 0
+    },
+    {
+      "word": "BUG",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "TAB",
+      "type": 0
+    },
+    {
+      "word": "BILL",
+      "type": 0
+    },
+    {
+      "word": "COLE",
+      "type": 0
+    },
+    {
+      "word": "RISE",
+      "type": 0
+    },
+    {
+      "word": "SELL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "COL",
+      "type": 0
+    },
+    {
+      "word": "DAB",
+      "type": 0
+    },
+    {
+      "word": "DIB",
+      "type": 0
+    },
+    {
+      "word": "DIG",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "GIB",
+      "type": 0
+    },
+    {
+      "word": "GID",
+      "type": 0
+    },
+    {
+      "word": "IDS",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "LIB",
+      "type": 0
+    },
+    {
+      "word": "LID",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SIS",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "BADS",
+      "type": 0
+    },
+    {
+      "word": "BATS",
+      "type": 0
+    },
+    {
+      "word": "BIDS",
+      "type": 0
+    },
+    {
+      "word": "DILL",
+      "type": 0
+    },
+    {
+      "word": "ELLS",
+      "type": 0
+    },
+    {
+      "word": "GIDS",
+      "type": 0
+    },
+    {
+      "word": "GILL",
+      "type": 0
+    },
+    {
+      "word": "IRES",
+      "type": 0
+    },
+    {
+      "word": "LIDS",
+      "type": 0
+    },
+    {
+      "word": "OLES",
+      "type": 0
+    },
+    {
+      "word": "SIRE",
+      "type": 0
+    },
+    {
+      "word": "SLID",
+      "type": 0
+    },
+    {
+      "word": "STAB",
+      "type": 0
+    },
+    {
+      "word": "TABU",
+      "type": 0
+    },
+    {
+      "word": "TADS",
+      "type": 0
+    },
+    {
+      "word": "COLES",
+      "type": 0
+    },
+    {
+      "word": "ILLER",
+      "type": 0
+    },
+    {
+      "word": "SIRES",
+      "type": 0
+    },
+    {
+      "word": "TABID",
+      "type": 0
+    },
+    {
+      "word": "BILLER",
+      "type": 0
+    },
+    {
+      "word": "GILLER",
+      "type": 0
+    },
+    {
+      "word": "RESIST",
+      "type": 0
+    }
+  ],
+  "letters": "UBAT,GIDS,CLSI,OLER",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

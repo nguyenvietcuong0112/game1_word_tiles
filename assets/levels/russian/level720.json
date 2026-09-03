@@ -1,53 +1,151 @@
-﻿{
-    "id":  720,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ЛАД",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РЯД",
-                             "type":  0
-                         },
-                         {
-                             "word":  "САД",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ГЛАС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ГРЯДА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВЗГЛЯД",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ДАЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛАС",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛЯД",
-                            "type":  0
-                        },
-                        {
-                            "word":  "САЛ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "САД,ВЛЯ,ЗГР",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 720,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ИГР",
+      "type": 0
+    },
+    {
+      "word": "КЕМ",
+      "type": 0
+    },
+    {
+      "word": "КОМ",
+      "type": 0
+    },
+    {
+      "word": "СЛИ",
+      "type": 0
+    },
+    {
+      "word": "ИГРЕ",
+      "type": 0
+    },
+    {
+      "word": "ИМЕЛ",
+      "type": 0
+    },
+    {
+      "word": "ИМЕЛО",
+      "type": 0
+    },
+    {
+      "word": "МИЛЫМ",
+      "type": 0
+    },
+    {
+      "word": "ТЕРЯЕМ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ГИЛ",
+      "type": 0
+    },
+    {
+      "word": "ЕКО",
+      "type": 0
+    },
+    {
+      "word": "КЕЛ",
+      "type": 0
+    },
+    {
+      "word": "КОЛ",
+      "type": 0
+    },
+    {
+      "word": "ЛЕМ",
+      "type": 0
+    },
+    {
+      "word": "ЛЕЯ",
+      "type": 0
+    },
+    {
+      "word": "ЛИМ",
+      "type": 0
+    },
+    {
+      "word": "ЛИЯ",
+      "type": 0
+    },
+    {
+      "word": "ЛОК",
+      "type": 0
+    },
+    {
+      "word": "МЕЛ",
+      "type": 0
+    },
+    {
+      "word": "МИГ",
+      "type": 0
+    },
+    {
+      "word": "МИЛ",
+      "type": 0
+    },
+    {
+      "word": "МИЯ",
+      "type": 0
+    },
+    {
+      "word": "МЫЛ",
+      "type": 0
+    },
+    {
+      "word": "ОКО",
+      "type": 0
+    },
+    {
+      "word": "ОЛЕ",
+      "type": 0
+    },
+    {
+      "word": "ТЕР",
+      "type": 0
+    },
+    {
+      "word": "ИМЕЯ",
+      "type": 0
+    },
+    {
+      "word": "КОМЕ",
+      "type": 0
+    },
+    {
+      "word": "КОМЫ",
+      "type": 0
+    },
+    {
+      "word": "МИЛЫ",
+      "type": 0
+    },
+    {
+      "word": "СЛИМ",
+      "type": 0
+    }
+  ],
+  "letters": "СГРЕ,ЛИЯТ,ЫМЕЛ,МОКО",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

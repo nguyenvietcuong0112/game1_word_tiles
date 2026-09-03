@@ -1,65 +1,231 @@
-﻿{
-    "id":  1842,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MEND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OMEN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "OVEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EMPEROR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EMPERORS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PORED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REPO",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ROPED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROPER",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "VEND,OMPE,SROR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1842,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "OLD",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "HOLD",
+      "type": 0
+    },
+    {
+      "word": "POST",
+      "type": 0
+    },
+    {
+      "word": "APPEAR",
+      "type": 0
+    },
+    {
+      "word": "APPEARS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "CIS",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "EON",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "NAP",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "PEA",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "SIC",
+      "type": 0
+    },
+    {
+      "word": "SOP",
+      "type": 0
+    },
+    {
+      "word": "THO",
+      "type": 0
+    },
+    {
+      "word": "ACTS",
+      "type": 0
+    },
+    {
+      "word": "AEON",
+      "type": 0
+    },
+    {
+      "word": "ANIS",
+      "type": 0
+    },
+    {
+      "word": "CIST",
+      "type": 0
+    },
+    {
+      "word": "EARS",
+      "type": 0
+    },
+    {
+      "word": "HOLS",
+      "type": 0
+    },
+    {
+      "word": "NANA",
+      "type": 0
+    },
+    {
+      "word": "OLDS",
+      "type": 0
+    },
+    {
+      "word": "PARS",
+      "type": 0
+    },
+    {
+      "word": "PEAR",
+      "type": 0
+    },
+    {
+      "word": "PEON",
+      "type": 0
+    },
+    {
+      "word": "RAPS",
+      "type": 0
+    },
+    {
+      "word": "SOPS",
+      "type": 0
+    },
+    {
+      "word": "SPAE",
+      "type": 0
+    },
+    {
+      "word": "SPAR",
+      "type": 0
+    },
+    {
+      "word": "EOSIN",
+      "type": 0
+    },
+    {
+      "word": "HOLDS",
+      "type": 0
+    },
+    {
+      "word": "NAPPE",
+      "type": 0
+    },
+    {
+      "word": "PAEON",
+      "type": 0
+    },
+    {
+      "word": "PANIC",
+      "type": 0
+    },
+    {
+      "word": "PEARS",
+      "type": 0
+    },
+    {
+      "word": "SONIC",
+      "type": 0
+    },
+    {
+      "word": "AEONIC",
+      "type": 0
+    },
+    {
+      "word": "ONANIST",
+      "type": 0
+    }
+  ],
+  "letters": "ACTHO,NISDL,ANOPS,PPEAR",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,45 +1,371 @@
-﻿{
-    "id":  804,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÍCONO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONEJO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "COLON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NÍCOL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ZEJ,ÍNO,COL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 804,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "DURA",
+      "type": 0
+    },
+    {
+      "word": "MIRA",
+      "type": 0
+    },
+    {
+      "word": "PARA",
+      "type": 0
+    },
+    {
+      "word": "PASA",
+      "type": 0
+    },
+    {
+      "word": "PUES",
+      "type": 0
+    },
+    {
+      "word": "PUTA",
+      "type": 0
+    },
+    {
+      "word": "USAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "APU",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "IES",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MIE",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "PIE",
+      "type": 0
+    },
+    {
+      "word": "PIM",
+      "type": 0
+    },
+    {
+      "word": "PUE",
+      "type": 0
+    },
+    {
+      "word": "PUT",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "RIE",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "RIP",
+      "type": 0
+    },
+    {
+      "word": "RUS",
+      "type": 0
+    },
+    {
+      "word": "SUR",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "URI",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "AMIR",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "ARAS",
+      "type": 0
+    },
+    {
+      "word": "ASAR",
+      "type": 0
+    },
+    {
+      "word": "DARA",
+      "type": 0
+    },
+    {
+      "word": "IPAD",
+      "type": 0
+    },
+    {
+      "word": "IRAS",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "MARI",
+      "type": 0
+    },
+    {
+      "word": "MARU",
+      "type": 0
+    },
+    {
+      "word": "PARI",
+      "type": 0
+    },
+    {
+      "word": "PIES",
+      "type": 0
+    },
+    {
+      "word": "PIRA",
+      "type": 0
+    },
+    {
+      "word": "RAMI",
+      "type": 0
+    },
+    {
+      "word": "RIES",
+      "type": 0
+    },
+    {
+      "word": "RIMA",
+      "type": 0
+    },
+    {
+      "word": "RUDA",
+      "type": 0
+    },
+    {
+      "word": "RUSA",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "SARI",
+      "type": 0
+    },
+    {
+      "word": "SUDA",
+      "type": 0
+    },
+    {
+      "word": "SURI",
+      "type": 0
+    },
+    {
+      "word": "TAPA",
+      "type": 0
+    },
+    {
+      "word": "USAD",
+      "type": 0
+    },
+    {
+      "word": "AMIRA",
+      "type": 0
+    },
+    {
+      "word": "ARIES",
+      "type": 0
+    },
+    {
+      "word": "ASADA",
+      "type": 0
+    },
+    {
+      "word": "DURAS",
+      "type": 0
+    },
+    {
+      "word": "MARIE",
+      "type": 0
+    },
+    {
+      "word": "MIRAD",
+      "type": 0
+    },
+    {
+      "word": "MIRAS",
+      "type": 0
+    },
+    {
+      "word": "PARAD",
+      "type": 0
+    },
+    {
+      "word": "PASAD",
+      "type": 0
+    },
+    {
+      "word": "RAMSE",
+      "type": 0
+    },
+    {
+      "word": "SUDAR",
+      "type": 0
+    },
+    {
+      "word": "TAPAR",
+      "type": 0
+    },
+    {
+      "word": "TAPAS",
+      "type": 0
+    },
+    {
+      "word": "USADA",
+      "type": 0
+    },
+    {
+      "word": "USARA",
+      "type": 0
+    },
+    {
+      "word": "MADURA",
+      "type": 0
+    },
+    {
+      "word": "MIRADA",
+      "type": 0
+    },
+    {
+      "word": "PASADA",
+      "type": 0
+    },
+    {
+      "word": "PUTADA",
+      "type": 0
+    },
+    {
+      "word": "RAPADA",
+      "type": 0
+    },
+    {
+      "word": "TAPADA",
+      "type": 0
+    },
+    {
+      "word": "MADURAS",
+      "type": 0
+    },
+    {
+      "word": "MIRADAS",
+      "type": 0
+    }
+  ],
+  "letters": "TADA,UPAS,EIRU,SMAD",
+  "obstacles": []
 }

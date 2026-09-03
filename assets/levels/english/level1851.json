@@ -1,122 +1,203 @@
-﻿{
-    "id":  1851,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AXE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAMP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEAF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PLEA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AMPLE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "COMPLEX",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEAFED",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PLEXA,MAAEU,OCFED",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1851,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "REP",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "VAR",
+      "type": 0
+    },
+    {
+      "word": "BABE",
+      "type": 0
+    },
+    {
+      "word": "GEEK",
+      "type": 0
+    },
+    {
+      "word": "UPPER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "DAP",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "EKE",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "GED",
+      "type": 0
+    },
+    {
+      "word": "GEE",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "PEG",
+      "type": 0
+    },
+    {
+      "word": "PUS",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "SUP",
+      "type": 0
+    },
+    {
+      "word": "APED",
+      "type": 0
+    },
+    {
+      "word": "APER",
+      "type": 0
+    },
+    {
+      "word": "AVER",
+      "type": 0
+    },
+    {
+      "word": "BRED",
+      "type": 0
+    },
+    {
+      "word": "DERE",
+      "type": 0
+    },
+    {
+      "word": "EGER",
+      "type": 0
+    },
+    {
+      "word": "PREP",
+      "type": 0
+    },
+    {
+      "word": "RAVE",
+      "type": 0
+    },
+    {
+      "word": "REDE",
+      "type": 0
+    },
+    {
+      "word": "REPP",
+      "type": 0
+    },
+    {
+      "word": "REVS",
+      "type": 0
+    },
+    {
+      "word": "SUER",
+      "type": 0
+    },
+    {
+      "word": "VERB",
+      "type": 0
+    },
+    {
+      "word": "BRAVE",
+      "type": 0
+    },
+    {
+      "word": "BREDE",
+      "type": 0
+    },
+    {
+      "word": "KEBAB",
+      "type": 0
+    },
+    {
+      "word": "PEREA",
+      "type": 0
+    },
+    {
+      "word": "RAVER",
+      "type": 0
+    },
+    {
+      "word": "UPPED",
+      "type": 0
+    },
+    {
+      "word": "BRAVER",
+      "type": 0
+    },
+    {
+      "word": "SUPPED",
+      "type": 0
+    },
+    {
+      "word": "SUPPER",
+      "type": 0
+    }
+  ],
+  "letters": "SUPPA,VERED,AABGE,RBEKE",
+  "obstacles": []
 }

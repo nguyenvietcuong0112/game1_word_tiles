@@ -1,142 +1,207 @@
-﻿{
-    "id":  1856,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MESS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PASS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAUSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASSERT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACTRESS",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "APES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ASS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAMS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PASSE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "PASSER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEAMER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TRES",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TRESS",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "USER,ASMT,PEAC",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  8,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1856,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "SAYS",
+      "type": 0
+    },
+    {
+      "word": "SETS",
+      "type": 0
+    },
+    {
+      "word": "SHOE",
+      "type": 0
+    },
+    {
+      "word": "STAY",
+      "type": 0
+    },
+    {
+      "word": "TAKE",
+      "type": 0
+    },
+    {
+      "word": "SKATE",
+      "type": 0
+    },
+    {
+      "word": "STAYS",
+      "type": 0
+    },
+    {
+      "word": "TAKES",
+      "type": 0
+    },
+    {
+      "word": "ETHICS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "AYS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "ETH",
+      "type": 0
+    },
+    {
+      "word": "HIC",
+      "type": 0
+    },
+    {
+      "word": "HOE",
+      "type": 0
+    },
+    {
+      "word": "KAS",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "OHS",
+      "type": 0
+    },
+    {
+      "word": "SKA",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "ETAS",
+      "type": 0
+    },
+    {
+      "word": "ETHS",
+      "type": 0
+    },
+    {
+      "word": "HOES",
+      "type": 0
+    },
+    {
+      "word": "KATA",
+      "type": 0
+    },
+    {
+      "word": "KATS",
+      "type": 0
+    },
+    {
+      "word": "SAKE",
+      "type": 0
+    },
+    {
+      "word": "SATE",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SKAS",
+      "type": 0
+    },
+    {
+      "word": "SKAT",
+      "type": 0
+    },
+    {
+      "word": "TEDS",
+      "type": 0
+    },
+    {
+      "word": "ETHIC",
+      "type": 0
+    },
+    {
+      "word": "KATAS",
+      "type": 0
+    },
+    {
+      "word": "SAKES",
+      "type": 0
+    },
+    {
+      "word": "SATAY",
+      "type": 0
+    },
+    {
+      "word": "SATES",
+      "type": 0
+    },
+    {
+      "word": "SAYST",
+      "type": 0
+    },
+    {
+      "word": "SKATS",
+      "type": 0
+    },
+    {
+      "word": "STAKE",
+      "type": 0
+    },
+    {
+      "word": "SATAYS",
+      "type": 0
+    },
+    {
+      "word": "SKATES",
+      "type": 0
+    },
+    {
+      "word": "STAKES",
+      "type": 0
+    }
+  ],
+  "letters": "SAYSD,ATSTE,KESHS,SOHIC",
+  "obstacles": []
 }

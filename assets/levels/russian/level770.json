@@ -1,61 +1,111 @@
-﻿{
-    "id":  770,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ВЕК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЗЕВ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВАЗА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЗОНА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВАЗОН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЗАНОЗА",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ЗАВ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЗАК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЗЕК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЗЕКА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОНА",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ЗОН,АЗА,ВЕК",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 770,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ПАС",
+      "type": 0
+    },
+    {
+      "word": "СУН",
+      "type": 0
+    },
+    {
+      "word": "ЭТУ",
+      "type": 0
+    },
+    {
+      "word": "ДЖУН",
+      "type": 0
+    },
+    {
+      "word": "СПАС",
+      "type": 0
+    },
+    {
+      "word": "СПАТЬ",
+      "type": 0
+    },
+    {
+      "word": "СПАСЛА",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АСЬ",
+      "type": 0
+    },
+    {
+      "word": "АУТ",
+      "type": 0
+    },
+    {
+      "word": "ДЖУ",
+      "type": 0
+    },
+    {
+      "word": "ДНУ",
+      "type": 0
+    },
+    {
+      "word": "ЛАУ",
+      "type": 0
+    },
+    {
+      "word": "НЭТ",
+      "type": 0
+    },
+    {
+      "word": "ПАТ",
+      "type": 0
+    },
+    {
+      "word": "СПА",
+      "type": 0
+    },
+    {
+      "word": "СЭН",
+      "type": 0
+    },
+    {
+      "word": "СЭТ",
+      "type": 0
+    },
+    {
+      "word": "ЭНД",
+      "type": 0
+    },
+    {
+      "word": "ДЖУС",
+      "type": 0
+    },
+    {
+      "word": "НУЖД",
+      "type": 0
+    },
+    {
+      "word": "СЭНДС",
+      "type": 0
+    }
+  ],
+  "letters": "СЭТУ,УНЛА,ЖДСЬ,СПАТ",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,119 +1,199 @@
-﻿{
-    "id":  1991,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACHE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PACT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PASS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUCH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPINACH",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAPS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ETCH",
-                            "type":  1
-                        },
-                        {
-                            "word":  "NAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAPS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SACHET",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "INHE,PACT,SSUT",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1991,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADS",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "DAD",
+      "type": 0
+    },
+    {
+      "word": "HAD",
+      "type": 0
+    },
+    {
+      "word": "HUH",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "HEAD",
+      "type": 0
+    },
+    {
+      "word": "DANCE",
+      "type": 0
+    },
+    {
+      "word": "WOMAN",
+      "type": 0
+    },
+    {
+      "word": "SHADOW",
+      "type": 0
+    },
+    {
+      "word": "SHADOWS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "DAH",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "DOW",
+      "type": 0
+    },
+    {
+      "word": "HAM",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MOA",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "MOW",
+      "type": 0
+    },
+    {
+      "word": "NAE",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "ODS",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "AMAH",
+      "type": 0
+    },
+    {
+      "word": "AMMO",
+      "type": 0
+    },
+    {
+      "word": "DADA",
+      "type": 0
+    },
+    {
+      "word": "DADO",
+      "type": 0
+    },
+    {
+      "word": "DADS",
+      "type": 0
+    },
+    {
+      "word": "DAHS",
+      "type": 0
+    },
+    {
+      "word": "DOWS",
+      "type": 0
+    },
+    {
+      "word": "MADS",
+      "type": 0
+    },
+    {
+      "word": "MODS",
+      "type": 0
+    },
+    {
+      "word": "MOWS",
+      "type": 0
+    },
+    {
+      "word": "NADA",
+      "type": 0
+    },
+    {
+      "word": "SASH",
+      "type": 0
+    },
+    {
+      "word": "SHAD",
+      "type": 0
+    },
+    {
+      "word": "SHAM",
+      "type": 0
+    },
+    {
+      "word": "WOAD",
+      "type": 0
+    },
+    {
+      "word": "AMAHS",
+      "type": 0
+    },
+    {
+      "word": "DAMAN",
+      "type": 0
+    },
+    {
+      "word": "SHADS",
+      "type": 0
+    },
+    {
+      "word": "SHAMAN",
+      "type": 0
+    },
+    {
+      "word": "MADWOMAN",
+      "type": 0
+    }
+  ],
+  "letters": "DAMNC,WOMAE,SDADH,ASHHU",
+  "obstacles": []
 }

@@ -1,77 +1,215 @@
-﻿{
-    "id":  1431,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SICK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SING",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BASIC",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BASIN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BASING",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BASK",
-                            "type":  1
-                        },
-                        {
-                            "word":  "BUNG",
-                            "type":  1
-                        },
-                        {
-                            "word":  "NIB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NICK",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NICKS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NUB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UNI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KCG,SIN,ABU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1431,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FIT",
+      "type": 0
+    },
+    {
+      "word": "KIT",
+      "type": 0
+    },
+    {
+      "word": "KOS",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "EATS",
+      "type": 0
+    },
+    {
+      "word": "EVEN",
+      "type": 0
+    },
+    {
+      "word": "ENTER",
+      "type": 0
+    },
+    {
+      "word": "EVENT",
+      "type": 0
+    },
+    {
+      "word": "GREAT",
+      "type": 0
+    },
+    {
+      "word": "SEVEN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "ERG",
+      "type": 0
+    },
+    {
+      "word": "ERN",
+      "type": 0
+    },
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "FIE",
+      "type": 0
+    },
+    {
+      "word": "GAE",
+      "type": 0
+    },
+    {
+      "word": "GAT",
+      "type": 0
+    },
+    {
+      "word": "IFS",
+      "type": 0
+    },
+    {
+      "word": "KEA",
+      "type": 0
+    },
+    {
+      "word": "KIF",
+      "type": 0
+    },
+    {
+      "word": "OKE",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "ERNE",
+      "type": 0
+    },
+    {
+      "word": "EVES",
+      "type": 0
+    },
+    {
+      "word": "GATS",
+      "type": 0
+    },
+    {
+      "word": "KERN",
+      "type": 0
+    },
+    {
+      "word": "KIFS",
+      "type": 0
+    },
+    {
+      "word": "KITE",
+      "type": 0
+    },
+    {
+      "word": "NEVE",
+      "type": 0
+    },
+    {
+      "word": "SEIF",
+      "type": 0
+    },
+    {
+      "word": "SOKE",
+      "type": 0
+    },
+    {
+      "word": "STAG",
+      "type": 0
+    },
+    {
+      "word": "TEAT",
+      "type": 0
+    },
+    {
+      "word": "TERN",
+      "type": 0
+    },
+    {
+      "word": "TIES",
+      "type": 0
+    },
+    {
+      "word": "TIKE",
+      "type": 0
+    },
+    {
+      "word": "VENT",
+      "type": 0
+    },
+    {
+      "word": "KERNE",
+      "type": 0
+    },
+    {
+      "word": "KITER",
+      "type": 0
+    },
+    {
+      "word": "NEVES",
+      "type": 0
+    },
+    {
+      "word": "RETIE",
+      "type": 0
+    },
+    {
+      "word": "TEATS",
+      "type": 0
+    },
+    {
+      "word": "TERGA",
+      "type": 0
+    },
+    {
+      "word": "TERNE",
+      "type": 0
+    },
+    {
+      "word": "GREATS",
+      "type": 0
+    },
+    {
+      "word": "RETIES",
+      "type": 0
+    },
+    {
+      "word": "VENTER",
+      "type": 0
+    }
+  ],
+  "letters": "SFOS,EIKT,VTEA,ENRG",
+  "obstacles": []
 }

@@ -1,105 +1,395 @@
-﻿{
-    "id":  1124,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TREN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZETA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENTRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRAGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENTREGA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AGOTE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ENTREGO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OTAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "REG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REGATE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "REGATO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TEZ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ZEGO,ERAT,NTZE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1124,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGH",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "MIL",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PON",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "CAPA",
+      "type": 0
+    },
+    {
+      "word": "PAGA",
+      "type": 0
+    },
+    {
+      "word": "SALA",
+      "type": 0
+    },
+    {
+      "word": "SANO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACA",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GAP",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "ILA",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "INO",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LIM",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "LIP",
+      "type": 0
+    },
+    {
+      "word": "MIN",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "NIM",
+      "type": 0
+    },
+    {
+      "word": "NOP",
+      "type": 0
+    },
+    {
+      "word": "OMI",
+      "type": 0
+    },
+    {
+      "word": "OMO",
+      "type": 0
+    },
+    {
+      "word": "ONI",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "PIL",
+      "type": 0
+    },
+    {
+      "word": "PIM",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "POM",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "ALAS",
+      "type": 0
+    },
+    {
+      "word": "CAGA",
+      "type": 0
+    },
+    {
+      "word": "CALA",
+      "type": 0
+    },
+    {
+      "word": "CALI",
+      "type": 0
+    },
+    {
+      "word": "CAPI",
+      "type": 0
+    },
+    {
+      "word": "CAPO",
+      "type": 0
+    },
+    {
+      "word": "GALA",
+      "type": 0
+    },
+    {
+      "word": "GASA",
+      "type": 0
+    },
+    {
+      "word": "LACA",
+      "type": 0
+    },
+    {
+      "word": "LIMO",
+      "type": 0
+    },
+    {
+      "word": "LINA",
+      "type": 0
+    },
+    {
+      "word": "LINO",
+      "type": 0
+    },
+    {
+      "word": "MILA",
+      "type": 0
+    },
+    {
+      "word": "MINA",
+      "type": 0
+    },
+    {
+      "word": "MONA",
+      "type": 0
+    },
+    {
+      "word": "NAPA",
+      "type": 0
+    },
+    {
+      "word": "NASA",
+      "type": 0
+    },
+    {
+      "word": "OPAL",
+      "type": 0
+    },
+    {
+      "word": "PALA",
+      "type": 0
+    },
+    {
+      "word": "PILA",
+      "type": 0
+    },
+    {
+      "word": "PINA",
+      "type": 0
+    },
+    {
+      "word": "PINO",
+      "type": 0
+    },
+    {
+      "word": "POMO",
+      "type": 0
+    },
+    {
+      "word": "SAGA",
+      "type": 0
+    },
+    {
+      "word": "SALI",
+      "type": 0
+    },
+    {
+      "word": "ALINA",
+      "type": 0
+    },
+    {
+      "word": "ANIMO",
+      "type": 0
+    },
+    {
+      "word": "APAGA",
+      "type": 0
+    },
+    {
+      "word": "ASANO",
+      "type": 0
+    },
+    {
+      "word": "CAGAS",
+      "type": 0
+    },
+    {
+      "word": "GALAS",
+      "type": 0
+    },
+    {
+      "word": "MILAN",
+      "type": 0
+    },
+    {
+      "word": "MINAS",
+      "type": 0
+    },
+    {
+      "word": "MONAS",
+      "type": 0
+    },
+    {
+      "word": "NASAL",
+      "type": 0
+    },
+    {
+      "word": "OPINA",
+      "type": 0
+    },
+    {
+      "word": "OPINO",
+      "type": 0
+    },
+    {
+      "word": "PAGAS",
+      "type": 0
+    },
+    {
+      "word": "PALAS",
+      "type": 0
+    },
+    {
+      "word": "PALIN",
+      "type": 0
+    },
+    {
+      "word": "PILAS",
+      "type": 0
+    },
+    {
+      "word": "SALIM",
+      "type": 0
+    },
+    {
+      "word": "APAGAS",
+      "type": 0
+    },
+    {
+      "word": "MILANO",
+      "type": 0
+    },
+    {
+      "word": "NOMINO",
+      "type": 0
+    },
+    {
+      "word": "OPINAS",
+      "type": 0
+    },
+    {
+      "word": "SALINA",
+      "type": 0
+    },
+    {
+      "word": "SALINO",
+      "type": 0
+    },
+    {
+      "word": "NOMINAL",
+      "type": 0
+    }
+  ],
+  "letters": "HCAN,GAPO,ALIM,SANO",
+  "obstacles": []
 }

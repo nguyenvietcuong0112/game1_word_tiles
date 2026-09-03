@@ -1,115 +1,179 @@
-﻿{
-    "id":  1622,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LESS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALSA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DADS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DALE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DUDES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LADE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LADS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LASS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LAUD",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LEDS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DUAL,ADSL,LESA",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1622,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "DOW",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "TAB",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "BATH",
+      "type": 0
+    },
+    {
+      "word": "MISS",
+      "type": 0
+    },
+    {
+      "word": "SODA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "DAW",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "OAT",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "SOD",
+      "type": 0
+    },
+    {
+      "word": "SOW",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "WAD",
+      "type": 0
+    },
+    {
+      "word": "WOS",
+      "type": 0
+    },
+    {
+      "word": "ADOS",
+      "type": 0
+    },
+    {
+      "word": "BATS",
+      "type": 0
+    },
+    {
+      "word": "DOAT",
+      "type": 0
+    },
+    {
+      "word": "DOSS",
+      "type": 0
+    },
+    {
+      "word": "DOST",
+      "type": 0
+    },
+    {
+      "word": "OATH",
+      "type": 0
+    },
+    {
+      "word": "OATS",
+      "type": 0
+    },
+    {
+      "word": "RODE",
+      "type": 0
+    },
+    {
+      "word": "SHED",
+      "type": 0
+    },
+    {
+      "word": "SIMS",
+      "type": 0
+    },
+    {
+      "word": "STAB",
+      "type": 0
+    },
+    {
+      "word": "TAOS",
+      "type": 0
+    },
+    {
+      "word": "WOST",
+      "type": 0
+    },
+    {
+      "word": "BATHE",
+      "type": 0
+    },
+    {
+      "word": "BATHS",
+      "type": 0
+    },
+    {
+      "word": "DOATS",
+      "type": 0
+    },
+    {
+      "word": "OATHS",
+      "type": 0
+    },
+    {
+      "word": "BATHED",
+      "type": 0
+    }
+  ],
+  "letters": "EDOR,HTAB,SSOD,IMWA",
+  "obstacles": []
 }

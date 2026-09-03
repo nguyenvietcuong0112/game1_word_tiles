@@ -1,103 +1,255 @@
-﻿{
-    "id":  1859,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARC",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CRY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEEF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CRAZY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CRAM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OFZY,EEAR,BTMC",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1859,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "BID",
+      "type": 0
+    },
+    {
+      "word": "BUT",
+      "type": 0
+    },
+    {
+      "word": "ICE",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SIC",
+      "type": 0
+    },
+    {
+      "word": "ARTS",
+      "type": 0
+    },
+    {
+      "word": "SAID",
+      "type": 0
+    },
+    {
+      "word": "SECS",
+      "type": 0
+    },
+    {
+      "word": "CUBIC",
+      "type": 0
+    },
+    {
+      "word": "STUDIES",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "AIT",
+      "type": 0
+    },
+    {
+      "word": "BUD",
+      "type": 0
+    },
+    {
+      "word": "CEE",
+      "type": 0
+    },
+    {
+      "word": "CIS",
+      "type": 0
+    },
+    {
+      "word": "CUB",
+      "type": 0
+    },
+    {
+      "word": "DIB",
+      "type": 0
+    },
+    {
+      "word": "DIT",
+      "type": 0
+    },
+    {
+      "word": "DUB",
+      "type": 0
+    },
+    {
+      "word": "ECU",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "IDS",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "TUB",
+      "type": 0
+    },
+    {
+      "word": "UTS",
+      "type": 0
+    },
+    {
+      "word": "AIDS",
+      "type": 0
+    },
+    {
+      "word": "AITS",
+      "type": 0
+    },
+    {
+      "word": "BICE",
+      "type": 0
+    },
+    {
+      "word": "BIDS",
+      "type": 0
+    },
+    {
+      "word": "BUDS",
+      "type": 0
+    },
+    {
+      "word": "BUTS",
+      "type": 0
+    },
+    {
+      "word": "CEES",
+      "type": 0
+    },
+    {
+      "word": "CESS",
+      "type": 0
+    },
+    {
+      "word": "DICE",
+      "type": 0
+    },
+    {
+      "word": "DIES",
+      "type": 0
+    },
+    {
+      "word": "DITS",
+      "type": 0
+    },
+    {
+      "word": "ICES",
+      "type": 0
+    },
+    {
+      "word": "RAID",
+      "type": 0
+    },
+    {
+      "word": "RASE",
+      "type": 0
+    },
+    {
+      "word": "SEES",
+      "type": 0
+    },
+    {
+      "word": "SICE",
+      "type": 0
+    },
+    {
+      "word": "SICS",
+      "type": 0
+    },
+    {
+      "word": "STUB",
+      "type": 0
+    },
+    {
+      "word": "STUD",
+      "type": 0
+    },
+    {
+      "word": "TIES",
+      "type": 0
+    },
+    {
+      "word": "BICES",
+      "type": 0
+    },
+    {
+      "word": "DICES",
+      "type": 0
+    },
+    {
+      "word": "ISSEI",
+      "type": 0
+    },
+    {
+      "word": "RAIDS",
+      "type": 0
+    },
+    {
+      "word": "SAIDS",
+      "type": 0
+    },
+    {
+      "word": "STIES",
+      "type": 0
+    },
+    {
+      "word": "TRASS",
+      "type": 0
+    },
+    {
+      "word": "CUBICS",
+      "type": 0
+    },
+    {
+      "word": "STRASS",
+      "type": 0
+    },
+    {
+      "word": "TIDIES",
+      "type": 0
+    }
+  ],
+  "letters": "CUBUT,SCIDS,CEEIT,ISSAR",
+  "obstacles": []
 }

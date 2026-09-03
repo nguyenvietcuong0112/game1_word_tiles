@@ -1,85 +1,187 @@
-﻿{
-    "id":  1908,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATMAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BATMAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FABRİKA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AFRİKA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ATMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BATMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAADA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAKİ",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TİK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TRATA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BRİTR,AFKDA,TMAAT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1908,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "DÜN",
+      "type": 0
+    },
+    {
+      "word": "ELE",
+      "type": 0
+    },
+    {
+      "word": "JOE",
+      "type": 0
+    },
+    {
+      "word": "KAL",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "ÖNÜ",
+      "type": 0
+    },
+    {
+      "word": "KAPA",
+      "type": 0
+    },
+    {
+      "word": "RAPH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "KAP",
+      "type": 0
+    },
+    {
+      "word": "KEL",
+      "type": 0
+    },
+    {
+      "word": "LAK",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LEO",
+      "type": 0
+    },
+    {
+      "word": "LER",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "NÜN",
+      "type": 0
+    },
+    {
+      "word": "PAK",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "AKAR",
+      "type": 0
+    },
+    {
+      "word": "ALEK",
+      "type": 0
+    },
+    {
+      "word": "APAR",
+      "type": 0
+    },
+    {
+      "word": "JOEL",
+      "type": 0
+    },
+    {
+      "word": "KALE",
+      "type": 0
+    },
+    {
+      "word": "KARE",
+      "type": 0
+    },
+    {
+      "word": "LAKE",
+      "type": 0
+    },
+    {
+      "word": "LAPA",
+      "type": 0
+    },
+    {
+      "word": "LERE",
+      "type": 0
+    },
+    {
+      "word": "MAKE",
+      "type": 0
+    },
+    {
+      "word": "ODAN",
+      "type": 0
+    },
+    {
+      "word": "KAPAR",
+      "type": 0
+    },
+    {
+      "word": "LAKAP",
+      "type": 0
+    },
+    {
+      "word": "RAKAM",
+      "type": 0
+    },
+    {
+      "word": "MAKALE",
+      "type": 0
+    }
+  ],
+  "letters": "JOELE,ÖERAK,NÜNPA,ADOHM",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

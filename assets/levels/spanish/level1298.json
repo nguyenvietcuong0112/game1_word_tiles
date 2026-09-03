@@ -1,117 +1,207 @@
-﻿{
-    "id":  1298,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CLAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TILA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VETA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GENTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LANCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TECLA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AGENTE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GENTIL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "VALIENTE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANTI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GANTE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LANCETA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LAVE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VATE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LCEV,ANTA,GEIL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1298,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BOB",
+      "type": 0
+    },
+    {
+      "word": "DIA",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "BODA",
+      "type": 0
+    },
+    {
+      "word": "CARA",
+      "type": 0
+    },
+    {
+      "word": "OBRA",
+      "type": 0
+    },
+    {
+      "word": "ODIE",
+      "type": 0
+    },
+    {
+      "word": "RARA",
+      "type": 0
+    },
+    {
+      "word": "VACA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACA",
+      "type": 0
+    },
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BAE",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "CAI",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DRA",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "RDA",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "AIDA",
+      "type": 0
+    },
+    {
+      "word": "ARAR",
+      "type": 0
+    },
+    {
+      "word": "ARDA",
+      "type": 0
+    },
+    {
+      "word": "ARDO",
+      "type": 0
+    },
+    {
+      "word": "BOBA",
+      "type": 0
+    },
+    {
+      "word": "CARD",
+      "type": 0
+    },
+    {
+      "word": "CARE",
+      "type": 0
+    },
+    {
+      "word": "ODIA",
+      "type": 0
+    },
+    {
+      "word": "REID",
+      "type": 0
+    },
+    {
+      "word": "TERA",
+      "type": 0
+    },
+    {
+      "word": "VARA",
+      "type": 0
+    },
+    {
+      "word": "ARETE",
+      "type": 0
+    },
+    {
+      "word": "BODIE",
+      "type": 0
+    },
+    {
+      "word": "CAIDA",
+      "type": 0
+    },
+    {
+      "word": "CAIDO",
+      "type": 0
+    },
+    {
+      "word": "DIERA",
+      "type": 0
+    },
+    {
+      "word": "OBRAR",
+      "type": 0
+    },
+    {
+      "word": "ODIAR",
+      "type": 0
+    },
+    {
+      "word": "DIETER",
+      "type": 0
+    },
+    {
+      "word": "ODIARA",
+      "type": 0
+    }
+  ],
+  "letters": "TEAB,EIDO,RARB,ACAV",
+  "obstacles": []
 }

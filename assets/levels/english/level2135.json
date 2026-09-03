@@ -1,117 +1,251 @@
-﻿{
-    "id":  2135,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GREY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SLAY",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GLARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAYER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SLANG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SNARE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GLANCE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AYE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GRAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GRANGE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LANCE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RANCE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SLAYER",
-                            "type":  2
-                        },
-                        {
-                            "word":  "YANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YARE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EYGE,RANC,GLSI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2135,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "CARE",
+      "type": 0
+    },
+    {
+      "word": "CARS",
+      "type": 0
+    },
+    {
+      "word": "GENE",
+      "type": 0
+    },
+    {
+      "word": "PAGE",
+      "type": 0
+    },
+    {
+      "word": "MEDIA",
+      "type": 0
+    },
+    {
+      "word": "AGENCY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "AIM",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "DIM",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "GAP",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "MID",
+      "type": 0
+    },
+    {
+      "word": "PEG",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "AIDE",
+      "type": 0
+    },
+    {
+      "word": "ARSE",
+      "type": 0
+    },
+    {
+      "word": "CARR",
+      "type": 0
+    },
+    {
+      "word": "CYME",
+      "type": 0
+    },
+    {
+      "word": "DEMY",
+      "type": 0
+    },
+    {
+      "word": "DIME",
+      "type": 0
+    },
+    {
+      "word": "EGER",
+      "type": 0
+    },
+    {
+      "word": "ERRS",
+      "type": 0
+    },
+    {
+      "word": "GAPE",
+      "type": 0
+    },
+    {
+      "word": "IDEM",
+      "type": 0
+    },
+    {
+      "word": "PAID",
+      "type": 0
+    },
+    {
+      "word": "RARE",
+      "type": 0
+    },
+    {
+      "word": "SCAR",
+      "type": 0
+    },
+    {
+      "word": "SERE",
+      "type": 0
+    },
+    {
+      "word": "AGENE",
+      "type": 0
+    },
+    {
+      "word": "AIDER",
+      "type": 0
+    },
+    {
+      "word": "AIMED",
+      "type": 0
+    },
+    {
+      "word": "AIMER",
+      "type": 0
+    },
+    {
+      "word": "CARED",
+      "type": 0
+    },
+    {
+      "word": "CARSE",
+      "type": 0
+    },
+    {
+      "word": "DIMER",
+      "type": 0
+    },
+    {
+      "word": "ESCAR",
+      "type": 0
+    },
+    {
+      "word": "RARED",
+      "type": 0
+    },
+    {
+      "word": "REDIA",
+      "type": 0
+    },
+    {
+      "word": "REGES",
+      "type": 0
+    },
+    {
+      "word": "SCARE",
+      "type": 0
+    },
+    {
+      "word": "SCARY",
+      "type": 0
+    },
+    {
+      "word": "SERRY",
+      "type": 0
+    },
+    {
+      "word": "SCARED",
+      "type": 0
+    },
+    {
+      "word": "SERENE",
+      "type": 0
+    },
+    {
+      "word": "REGENCY",
+      "type": 0
+    }
+  ],
+  "letters": "PENEG,AGCRE,IMYRS,DERAC",
+  "obstacles": []
 }

@@ -1,113 +1,323 @@
-﻿{
-    "id":  2277,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MASH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MASS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MATH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MISS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASSET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOISE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONSET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MISSION",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMISH",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMISS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ASHES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ASS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ION",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IONS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ISNT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MASSE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MATHS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SHES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SION",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "THET,ASSN,MIIO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2277,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "GAY",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "TIT",
+      "type": 0
+    },
+    {
+      "word": "EVEN",
+      "type": 0
+    },
+    {
+      "word": "EVER",
+      "type": 0
+    },
+    {
+      "word": "OVER",
+      "type": 0
+    },
+    {
+      "word": "RATE",
+      "type": 0
+    },
+    {
+      "word": "NEVER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "EGO",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "GOY",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LAT",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "NAG",
+      "type": 0
+    },
+    {
+      "word": "NAY",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "VEG",
+      "type": 0
+    },
+    {
+      "word": "AGER",
+      "type": 0
+    },
+    {
+      "word": "ELAN",
+      "type": 0
+    },
+    {
+      "word": "GENE",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "LARI",
+      "type": 0
+    },
+    {
+      "word": "LATE",
+      "type": 0
+    },
+    {
+      "word": "LATI",
+      "type": 0
+    },
+    {
+      "word": "NEVE",
+      "type": 0
+    },
+    {
+      "word": "OVEN",
+      "type": 0
+    },
+    {
+      "word": "RALE",
+      "type": 0
+    },
+    {
+      "word": "RITE",
+      "type": 0
+    },
+    {
+      "word": "TALE",
+      "type": 0
+    },
+    {
+      "word": "TARE",
+      "type": 0
+    },
+    {
+      "word": "TELA",
+      "type": 0
+    },
+    {
+      "word": "TELE",
+      "type": 0
+    },
+    {
+      "word": "TIRE",
+      "type": 0
+    },
+    {
+      "word": "VELA",
+      "type": 0
+    },
+    {
+      "word": "VENA",
+      "type": 0
+    },
+    {
+      "word": "VERA",
+      "type": 0
+    },
+    {
+      "word": "YOGA",
+      "type": 0
+    },
+    {
+      "word": "AGENE",
+      "type": 0
+    },
+    {
+      "word": "ANELE",
+      "type": 0
+    },
+    {
+      "word": "ELATE",
+      "type": 0
+    },
+    {
+      "word": "ENATE",
+      "type": 0
+    },
+    {
+      "word": "IRATE",
+      "type": 0
+    },
+    {
+      "word": "RATEL",
+      "type": 0
+    },
+    {
+      "word": "RENAL",
+      "type": 0
+    },
+    {
+      "word": "TITAN",
+      "type": 0
+    },
+    {
+      "word": "VEGAN",
+      "type": 0
+    },
+    {
+      "word": "VELAR",
+      "type": 0
+    },
+    {
+      "word": "VENAL",
+      "type": 0
+    },
+    {
+      "word": "YAGER",
+      "type": 0
+    },
+    {
+      "word": "ELEVEN",
+      "type": 0
+    },
+    {
+      "word": "EVENER",
+      "type": 0
+    },
+    {
+      "word": "VELATE",
+      "type": 0
+    },
+    {
+      "word": "VERITE",
+      "type": 0
+    },
+    {
+      "word": "VOYAGE",
+      "type": 0
+    },
+    {
+      "word": "OVERATE",
+      "type": 0
+    },
+    {
+      "word": "TANAGER",
+      "type": 0
+    },
+    {
+      "word": "VOYAGER",
+      "type": 0
+    },
+    {
+      "word": "VENERATE",
+      "type": 0
+    }
+  ],
+  "letters": "ETITA,LARRN,ENEGA,VEVOY",
+  "obstacles": []
 }

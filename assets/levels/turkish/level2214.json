@@ -1,89 +1,255 @@
-﻿{
-    "id":  2214,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AKÜ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CEP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇOK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATEŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇETE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAŞE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEÇE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SİZCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEÇETE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KOÇ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KÜŞAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇAK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ŞAK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ZCETE,İEÇAŞ,SPOKÜ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2214,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "ETİ",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "İÇE",
+      "type": 0
+    },
+    {
+      "word": "BELA",
+      "type": 0
+    },
+    {
+      "word": "BİLE",
+      "type": 0
+    },
+    {
+      "word": "PLAN",
+      "type": 0
+    },
+    {
+      "word": "BİLİM",
+      "type": 0
+    },
+    {
+      "word": "GELİP",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "BİL",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ELM",
+      "type": 0
+    },
+    {
+      "word": "EPİ",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LEİ",
+      "type": 0
+    },
+    {
+      "word": "LİM",
+      "type": 0
+    },
+    {
+      "word": "LİP",
+      "type": 0
+    },
+    {
+      "word": "MİL",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "PİE",
+      "type": 0
+    },
+    {
+      "word": "PİL",
+      "type": 0
+    },
+    {
+      "word": "PİM",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "ÇİT",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "İMİ",
+      "type": 0
+    },
+    {
+      "word": "İPE",
+      "type": 0
+    },
+    {
+      "word": "AANG",
+      "type": 0
+    },
+    {
+      "word": "ALİM",
+      "type": 0
+    },
+    {
+      "word": "ALİP",
+      "type": 0
+    },
+    {
+      "word": "ANGE",
+      "type": 0
+    },
+    {
+      "word": "BELİ",
+      "type": 0
+    },
+    {
+      "word": "ELİM",
+      "type": 0
+    },
+    {
+      "word": "GALE",
+      "type": 0
+    },
+    {
+      "word": "LANG",
+      "type": 0
+    },
+    {
+      "word": "MİLE",
+      "type": 0
+    },
+    {
+      "word": "MİLİ",
+      "type": 0
+    },
+    {
+      "word": "PAGE",
+      "type": 0
+    },
+    {
+      "word": "PİLİ",
+      "type": 0
+    },
+    {
+      "word": "ANGEL",
+      "type": 0
+    },
+    {
+      "word": "BELİM",
+      "type": 0
+    },
+    {
+      "word": "BİLİP",
+      "type": 0
+    },
+    {
+      "word": "ELİMİ",
+      "type": 0
+    },
+    {
+      "word": "GALİP",
+      "type": 0
+    },
+    {
+      "word": "LANGE",
+      "type": 0
+    },
+    {
+      "word": "LEİLA",
+      "type": 0
+    },
+    {
+      "word": "ANGELA",
+      "type": 0
+    },
+    {
+      "word": "ELİMLE",
+      "type": 0
+    },
+    {
+      "word": "BİLİMLE",
+      "type": 0
+    }
+  ],
+  "letters": "İÇLAN,TEPAG,UEİLE,SLMİB",
+  "obstacles": []
 }

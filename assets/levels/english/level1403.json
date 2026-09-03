@@ -1,77 +1,219 @@
-﻿{
-    "id":  1403,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARC",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARCH",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CHAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HARD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YARD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHARD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HARDY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHARD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORCHARD",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CRAY",
-                            "type":  1
-                        },
-                        {
-                            "word":  "DRAY",
-                            "type":  1
-                        },
-                        {
-                            "word":  "HAYS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAYS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SHAY",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ORD,RAY,CHS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1403,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "ICE",
+      "type": 0
+    },
+    {
+      "word": "LUG",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "AERO",
+      "type": 0
+    },
+    {
+      "word": "LOAD",
+      "type": 0
+    },
+    {
+      "word": "RICE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "BOD",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "GAE",
+      "type": 0
+    },
+    {
+      "word": "GUL",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "OAR",
+      "type": 0
+    },
+    {
+      "word": "OBI",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "RIB",
+      "type": 0
+    },
+    {
+      "word": "BICE",
+      "type": 0
+    },
+    {
+      "word": "BODE",
+      "type": 0
+    },
+    {
+      "word": "BORA",
+      "type": 0
+    },
+    {
+      "word": "BORE",
+      "type": 0
+    },
+    {
+      "word": "CERO",
+      "type": 0
+    },
+    {
+      "word": "CIRE",
+      "type": 0
+    },
+    {
+      "word": "DARE",
+      "type": 0
+    },
+    {
+      "word": "DORE",
+      "type": 0
+    },
+    {
+      "word": "DORS",
+      "type": 0
+    },
+    {
+      "word": "GAED",
+      "type": 0
+    },
+    {
+      "word": "GUAR",
+      "type": 0
+    },
+    {
+      "word": "ODEA",
+      "type": 0
+    },
+    {
+      "word": "ORAD",
+      "type": 0
+    },
+    {
+      "word": "REDO",
+      "type": 0
+    },
+    {
+      "word": "RIBS",
+      "type": 0
+    },
+    {
+      "word": "ROBS",
+      "type": 0
+    },
+    {
+      "word": "RODE",
+      "type": 0
+    },
+    {
+      "word": "ADORE",
+      "type": 0
+    },
+    {
+      "word": "BORED",
+      "type": 0
+    },
+    {
+      "word": "BORIC",
+      "type": 0
+    },
+    {
+      "word": "DARIC",
+      "type": 0
+    },
+    {
+      "word": "ERODE",
+      "type": 0
+    },
+    {
+      "word": "IRADE",
+      "type": 0
+    },
+    {
+      "word": "LOADER",
+      "type": 0
+    },
+    {
+      "word": "AEROBIC",
+      "type": 0
+    },
+    {
+      "word": "LOADERS",
+      "type": 0
+    }
+  ],
+  "letters": "CIBS,EROR,OADE,LUGA",
+  "obstacles": []
 }

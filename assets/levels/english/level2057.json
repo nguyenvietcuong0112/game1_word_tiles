@@ -1,118 +1,171 @@
-﻿{
-    "id":  2057,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BUS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SLAB",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SLAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VISUAL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BAITS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BASAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ISLAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MASA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SALAM",
-                            "type":  2
-                        },
-                        {
-                            "word":  "STIM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VIS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VMAST,ISLAI,BUABM",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2057,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "RAW",
+      "type": 0
+    },
+    {
+      "word": "RIG",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "WAR",
+      "type": 0
+    },
+    {
+      "word": "BAND",
+      "type": 0
+    },
+    {
+      "word": "BASS",
+      "type": 0
+    },
+    {
+      "word": "DRAW",
+      "type": 0
+    },
+    {
+      "word": "RICK",
+      "type": 0
+    },
+    {
+      "word": "TOSS",
+      "type": 0
+    },
+    {
+      "word": "AWARD",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABA",
+      "type": 0
+    },
+    {
+      "word": "AWA",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "ICK",
+      "type": 0
+    },
+    {
+      "word": "NAB",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SOT",
+      "type": 0
+    },
+    {
+      "word": "WAG",
+      "type": 0
+    },
+    {
+      "word": "WIG",
+      "type": 0
+    },
+    {
+      "word": "ABAS",
+      "type": 0
+    },
+    {
+      "word": "ARCS",
+      "type": 0
+    },
+    {
+      "word": "CRAW",
+      "type": 0
+    },
+    {
+      "word": "GIRD",
+      "type": 0
+    },
+    {
+      "word": "KETO",
+      "type": 0
+    },
+    {
+      "word": "OSSA",
+      "type": 0
+    },
+    {
+      "word": "SAND",
+      "type": 0
+    },
+    {
+      "word": "WARD",
+      "type": 0
+    },
+    {
+      "word": "WICK",
+      "type": 0
+    },
+    {
+      "word": "ASSET",
+      "type": 0
+    },
+    {
+      "word": "BASSO",
+      "type": 0
+    },
+    {
+      "word": "CRICK",
+      "type": 0
+    },
+    {
+      "word": "BASSET",
+      "type": 0
+    },
+    {
+      "word": "WICKET",
+      "type": 0
+    },
+    {
+      "word": "CRICKET",
+      "type": 0
+    }
+  ],
+  "letters": "BANDR,ASCRA,OSCIW,TEKGA",
+  "obstacles": []
 }

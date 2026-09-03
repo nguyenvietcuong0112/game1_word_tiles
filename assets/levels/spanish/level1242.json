@@ -1,117 +1,219 @@
-﻿{
-    "id":  1242,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AÑO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEÑA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEÑO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMENO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MENOS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAMENTO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ELEMENTO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMENTO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ANO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAÑO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MENA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÑAME",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EÑOS,LANT,EMEO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1242,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "DCI",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "KIM",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "SOY",
+      "type": 0
+    },
+    {
+      "word": "LYON",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKI",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "IYA",
+      "type": 0
+    },
+    {
+      "word": "IYO",
+      "type": 0
+    },
+    {
+      "word": "LOA",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "MAY",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SLY",
+      "type": 0
+    },
+    {
+      "word": "YAO",
+      "type": 0
+    },
+    {
+      "word": "ANOS",
+      "type": 0
+    },
+    {
+      "word": "CANE",
+      "type": 0
+    },
+    {
+      "word": "CIMA",
+      "type": 0
+    },
+    {
+      "word": "COSE",
+      "type": 0
+    },
+    {
+      "word": "DANE",
+      "type": 0
+    },
+    {
+      "word": "DANO",
+      "type": 0
+    },
+    {
+      "word": "ENOS",
+      "type": 0
+    },
+    {
+      "word": "KAMA",
+      "type": 0
+    },
+    {
+      "word": "MAKI",
+      "type": 0
+    },
+    {
+      "word": "MAYO",
+      "type": 0
+    },
+    {
+      "word": "MICA",
+      "type": 0
+    },
+    {
+      "word": "MIKA",
+      "type": 0
+    },
+    {
+      "word": "NACI",
+      "type": 0
+    },
+    {
+      "word": "NOSE",
+      "type": 0
+    },
+    {
+      "word": "ONES",
+      "type": 0
+    },
+    {
+      "word": "OSLO",
+      "type": 0
+    },
+    {
+      "word": "SENA",
+      "type": 0
+    },
+    {
+      "word": "SENO",
+      "type": 0
+    },
+    {
+      "word": "SONA",
+      "type": 0
+    },
+    {
+      "word": "SOYA",
+      "type": 0
+    },
+    {
+      "word": "YAMA",
+      "type": 0
+    },
+    {
+      "word": "DANES",
+      "type": 0
+    },
+    {
+      "word": "DANOS",
+      "type": 0
+    },
+    {
+      "word": "OLSEN",
+      "type": 0
+    },
+    {
+      "word": "OLSON",
+      "type": 0
+    }
+  ],
+  "letters": "DDKA,ACIM,NOYA,ESLO",
+  "obstacles": []
 }

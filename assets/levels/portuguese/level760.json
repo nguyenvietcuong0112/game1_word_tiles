@@ -1,89 +1,175 @@
-﻿{
-    "id":  760,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BOI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RÉU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VÉU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VOZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRAVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VORAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BORBULHA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BORBULHAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AZO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BULHA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BULHAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OVAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ÉVORA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "IAVOZ,ORÉRA,BBULH",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 760,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CSI",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "ERRO",
+      "type": 0
+    },
+    {
+      "word": "SIDO",
+      "type": 0
+    },
+    {
+      "word": "DISSE",
+      "type": 0
+    },
+    {
+      "word": "NORTE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "CEO",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "ISS",
+      "type": 0
+    },
+    {
+      "word": "LOS",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "OSS",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "SEO",
+      "type": 0
+    },
+    {
+      "word": "SID",
+      "type": 0
+    },
+    {
+      "word": "TET",
+      "type": 0
+    },
+    {
+      "word": "ESSO",
+      "type": 0
+    },
+    {
+      "word": "IDOL",
+      "type": 0
+    },
+    {
+      "word": "IDOS",
+      "type": 0
+    },
+    {
+      "word": "LOST",
+      "type": 0
+    },
+    {
+      "word": "ONCE",
+      "type": 0
+    },
+    {
+      "word": "ROER",
+      "type": 0
+    },
+    {
+      "word": "SEON",
+      "type": 0
+    },
+    {
+      "word": "TRON",
+      "type": 0
+    },
+    {
+      "word": "RETRO",
+      "type": 0
+    },
+    {
+      "word": "SOLTE",
+      "type": 0
+    },
+    {
+      "word": "TERES",
+      "type": 0
+    },
+    {
+      "word": "DISSER",
+      "type": 0
+    },
+    {
+      "word": "STEREO",
+      "type": 0
+    }
+  ],
+  "letters": "LODI,TSSS,EREC,TRON",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

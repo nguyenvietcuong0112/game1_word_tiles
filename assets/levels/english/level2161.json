@@ -1,77 +1,219 @@
-﻿{
-    "id":  2161,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROCK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SKEW",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SOCK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SKATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROCKET",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SOCKET",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EWE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROCKS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EWET,OCKA,ROSE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2161,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "MAP",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "RIB",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "EDIT",
+      "type": 0
+    },
+    {
+      "word": "FORM",
+      "type": 0
+    },
+    {
+      "word": "OVAL",
+      "type": 0
+    },
+    {
+      "word": "SEAL",
+      "type": 0
+    },
+    {
+      "word": "BRIEF",
+      "type": 0
+    },
+    {
+      "word": "EDITOR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "APT",
+      "type": 0
+    },
+    {
+      "word": "AVO",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "DIT",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "FED",
+      "type": 0
+    },
+    {
+      "word": "LAV",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "OVA",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "ROT",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "VIE",
+      "type": 0
+    },
+    {
+      "word": "BRIE",
+      "type": 0
+    },
+    {
+      "word": "DORM",
+      "type": 0
+    },
+    {
+      "word": "DORP",
+      "type": 0
+    },
+    {
+      "word": "FEAL",
+      "type": 0
+    },
+    {
+      "word": "FORB",
+      "type": 0
+    },
+    {
+      "word": "IDES",
+      "type": 0
+    },
+    {
+      "word": "ODES",
+      "type": 0
+    },
+    {
+      "word": "PROD",
+      "type": 0
+    },
+    {
+      "word": "PROF",
+      "type": 0
+    },
+    {
+      "word": "RODE",
+      "type": 0
+    },
+    {
+      "word": "ROTI",
+      "type": 0
+    },
+    {
+      "word": "TIDE",
+      "type": 0
+    },
+    {
+      "word": "VIES",
+      "type": 0
+    },
+    {
+      "word": "BRIES",
+      "type": 0
+    },
+    {
+      "word": "OVALS",
+      "type": 0
+    },
+    {
+      "word": "RIVAL",
+      "type": 0
+    },
+    {
+      "word": "TIDES",
+      "type": 0
+    },
+    {
+      "word": "VALSE",
+      "type": 0
+    },
+    {
+      "word": "DEFORM",
+      "type": 0
+    },
+    {
+      "word": "RIVALS",
+      "type": 0
+    },
+    {
+      "word": "AMBRIES",
+      "type": 0
+    },
+    {
+      "word": "BRIEFED",
+      "type": 0
+    }
+  ],
+  "letters": "ORBMA,VIBRP,AEFOT,LSEDI",
+  "obstacles": []
 }

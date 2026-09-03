@@ -1,85 +1,123 @@
-﻿{
-    "id":  2340,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İKON",
-                             "type":  2
-                         },
-                         {
-                             "word":  "İMLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOMİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KONİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAİK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KOMİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKONOMİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "EKONOMİK",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KİMONO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KONİK",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MOLLA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NİKEL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "İNOK,KOMİ,ELLA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2340,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BİR",
+      "type": 0
+    },
+    {
+      "word": "GİR",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "VAR",
+      "type": 0
+    },
+    {
+      "word": "ŞOV",
+      "type": 0
+    },
+    {
+      "word": "BETH",
+      "type": 0
+    },
+    {
+      "word": "BİRA",
+      "type": 0
+    },
+    {
+      "word": "SETH",
+      "type": 0
+    },
+    {
+      "word": "BRAVO",
+      "type": 0
+    },
+    {
+      "word": "ÇORAK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "AVİ",
+      "type": 0
+    },
+    {
+      "word": "BES",
+      "type": 0
+    },
+    {
+      "word": "BRİ",
+      "type": 0
+    },
+    {
+      "word": "BİG",
+      "type": 0
+    },
+    {
+      "word": "EGO",
+      "type": 0
+    },
+    {
+      "word": "GET",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "KARO",
+      "type": 0
+    },
+    {
+      "word": "RAVİ",
+      "type": 0
+    },
+    {
+      "word": "ŞOVA",
+      "type": 0
+    },
+    {
+      "word": "RİGHT",
+      "type": 0
+    },
+    {
+      "word": "BRİGHT",
+      "type": 0
+    }
+  ],
+  "letters": "ŞHTKA,OGESR,VİBÇO,ARBMA",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

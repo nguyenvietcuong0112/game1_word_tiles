@@ -1,97 +1,127 @@
-﻿{
-    "id":  800,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "RIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAFE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BREGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PATRIOTA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BURI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EGO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FAGO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IOGA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IOTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ITU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REGATO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "REGO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UBRE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TRIOT,AUTGA,PBREF",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 800,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BIG",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "QUE",
+      "type": 0
+    },
+    {
+      "word": "VOU",
+      "type": 0
+    },
+    {
+      "word": "ABRE",
+      "type": 0
+    },
+    {
+      "word": "BABE",
+      "type": 0
+    },
+    {
+      "word": "BEBA",
+      "type": 0
+    },
+    {
+      "word": "ONDE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "AGI",
+      "type": 0
+    },
+    {
+      "word": "BAG",
+      "type": 0
+    },
+    {
+      "word": "BRE",
+      "type": 0
+    },
+    {
+      "word": "DUO",
+      "type": 0
+    },
+    {
+      "word": "EBA",
+      "type": 0
+    },
+    {
+      "word": "EDU",
+      "type": 0
+    },
+    {
+      "word": "GAB",
+      "type": 0
+    },
+    {
+      "word": "IGA",
+      "type": 0
+    },
+    {
+      "word": "QUO",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "BEBI",
+      "type": 0
+    },
+    {
+      "word": "BEBO",
+      "type": 0
+    },
+    {
+      "word": "DEON",
+      "type": 0
+    },
+    {
+      "word": "GABE",
+      "type": 0
+    },
+    {
+      "word": "QUEBRE",
+      "type": 0
+    }
+  ],
+  "letters": "ONQV,EDUO,RBEB,BAGI",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

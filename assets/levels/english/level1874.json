@@ -1,122 +1,215 @@
-﻿{
-    "id":  1874,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IVY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "QUIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TINY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "QUITE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "QUOTE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "NET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NITE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "QUO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "QUOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TINE",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "OTEC,UINI,QVYW",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  8,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1874,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "TOE",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "COOL",
+      "type": 0
+    },
+    {
+      "word": "FILE",
+      "type": 0
+    },
+    {
+      "word": "LAST",
+      "type": 0
+    },
+    {
+      "word": "LIFE",
+      "type": 0
+    },
+    {
+      "word": "ROLE",
+      "type": 0
+    },
+    {
+      "word": "SALE",
+      "type": 0
+    },
+    {
+      "word": "FINAL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "COO",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "FIL",
+      "type": 0
+    },
+    {
+      "word": "FIN",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "ROT",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "ALEF",
+      "type": 0
+    },
+    {
+      "word": "ALIF",
+      "type": 0
+    },
+    {
+      "word": "ANIL",
+      "type": 0
+    },
+    {
+      "word": "CECA",
+      "type": 0
+    },
+    {
+      "word": "COCA",
+      "type": 0
+    },
+    {
+      "word": "ELAN",
+      "type": 0
+    },
+    {
+      "word": "FILA",
+      "type": 0
+    },
+    {
+      "word": "LORE",
+      "type": 0
+    },
+    {
+      "word": "OCAS",
+      "type": 0
+    },
+    {
+      "word": "OLEO",
+      "type": 0
+    },
+    {
+      "word": "ORLE",
+      "type": 0
+    },
+    {
+      "word": "ROTS",
+      "type": 0
+    },
+    {
+      "word": "TORS",
+      "type": 0
+    },
+    {
+      "word": "ANILE",
+      "type": 0
+    },
+    {
+      "word": "COCAS",
+      "type": 0
+    },
+    {
+      "word": "COOLER",
+      "type": 0
+    },
+    {
+      "word": "FINALE",
+      "type": 0
+    },
+    {
+      "word": "OLEFIN",
+      "type": 0
+    },
+    {
+      "word": "COOLERS",
+      "type": 0
+    }
+  ],
+  "letters": "ECFIN,COELA,AOLRS,SREOT",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

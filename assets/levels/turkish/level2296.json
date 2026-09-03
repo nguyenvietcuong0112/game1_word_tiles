@@ -1,85 +1,199 @@
-﻿{
-    "id":  2296,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ÇAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÖR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÖY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EYER",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YÖRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YENGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YÖRÜNGE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKÖREN",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NEY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇAK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÖREN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÜRE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ÇÜNG,AREE,KÖYE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2296,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "ELE",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "EVİ",
+      "type": 0
+    },
+    {
+      "word": "GÜÇ",
+      "type": 0
+    },
+    {
+      "word": "HEE",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "BART",
+      "type": 0
+    },
+    {
+      "word": "EPEY",
+      "type": 0
+    },
+    {
+      "word": "PELT",
+      "type": 0
+    },
+    {
+      "word": "PETE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "BEE",
+      "type": 0
+    },
+    {
+      "word": "BYE",
+      "type": 0
+    },
+    {
+      "word": "ETE",
+      "type": 0
+    },
+    {
+      "word": "EYE",
+      "type": 0
+    },
+    {
+      "word": "GİL",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "LİG",
+      "type": 0
+    },
+    {
+      "word": "LİV",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "RAB",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "YEE",
+      "type": 0
+    },
+    {
+      "word": "YEL",
+      "type": 0
+    },
+    {
+      "word": "EVİL",
+      "type": 0
+    },
+    {
+      "word": "GİVE",
+      "type": 0
+    },
+    {
+      "word": "HART",
+      "type": 0
+    },
+    {
+      "word": "HARÇ",
+      "type": 0
+    },
+    {
+      "word": "HEBA",
+      "type": 0
+    },
+    {
+      "word": "LEVİ",
+      "type": 0
+    },
+    {
+      "word": "LİVE",
+      "type": 0
+    },
+    {
+      "word": "TELE",
+      "type": 0
+    },
+    {
+      "word": "TELİ",
+      "type": 0
+    },
+    {
+      "word": "TEPE",
+      "type": 0
+    },
+    {
+      "word": "VELİ",
+      "type": 0
+    },
+    {
+      "word": "İLET",
+      "type": 0
+    },
+    {
+      "word": "PETEY",
+      "type": 0
+    },
+    {
+      "word": "VELET",
+      "type": 0
+    },
+    {
+      "word": "TEPEYE",
+      "type": 0
+    }
+  ],
+  "letters": "HEETE,ABYEP,RÇTLE,TÜGİV",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

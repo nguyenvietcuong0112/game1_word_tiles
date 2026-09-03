@@ -1,85 +1,183 @@
-﻿{
-    "id":  1500,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OWN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAG",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOWN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GULP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAWN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PLUG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PLAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PENGUIN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LAGO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LUG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PENG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WAIN",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "GUIN,NLAW,EPGO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1500,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "BUG",
+      "type": 0
+    },
+    {
+      "word": "HAD",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "POT",
+      "type": 0
+    },
+    {
+      "word": "TOP",
+      "type": 0
+    },
+    {
+      "word": "THAT",
+      "type": 0
+    },
+    {
+      "word": "RIDING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "DAH",
+      "type": 0
+    },
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "DIP",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "PIU",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "RID",
+      "type": 0
+    },
+    {
+      "word": "RIP",
+      "type": 0
+    },
+    {
+      "word": "ROT",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "ARID",
+      "type": 0
+    },
+    {
+      "word": "ATOP",
+      "type": 0
+    },
+    {
+      "word": "DING",
+      "type": 0
+    },
+    {
+      "word": "GUID",
+      "type": 0
+    },
+    {
+      "word": "NIDI",
+      "type": 0
+    },
+    {
+      "word": "ORAD",
+      "type": 0
+    },
+    {
+      "word": "RATO",
+      "type": 0
+    },
+    {
+      "word": "ROTA",
+      "type": 0
+    },
+    {
+      "word": "TAIN",
+      "type": 0
+    },
+    {
+      "word": "TARO",
+      "type": 0
+    },
+    {
+      "word": "TOPI",
+      "type": 0
+    },
+    {
+      "word": "TORA",
+      "type": 0
+    },
+    {
+      "word": "TORI",
+      "type": 0
+    },
+    {
+      "word": "GUIRO",
+      "type": 0
+    },
+    {
+      "word": "TORAH",
+      "type": 0
+    },
+    {
+      "word": "HADING",
+      "type": 0
+    }
+  ],
+  "letters": "TOPB,ARIU,HADG,TAIN",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

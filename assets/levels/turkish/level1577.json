@@ -1,45 +1,323 @@
-﻿{
-    "id":  1577,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ÇİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇALI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İLAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İLGİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇALIM",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ÇİY",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "YIM,İLG,ÇAİ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1577,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "EVİ",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "AMAN",
+      "type": 0
+    },
+    {
+      "word": "HALE",
+      "type": 0
+    },
+    {
+      "word": "HATA",
+      "type": 0
+    },
+    {
+      "word": "YAHU",
+      "type": 0
+    },
+    {
+      "word": "RAHAT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "AVİ",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "HAM",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "HAV",
+      "type": 0
+    },
+    {
+      "word": "HAY",
+      "type": 0
+    },
+    {
+      "word": "HUY",
+      "type": 0
+    },
+    {
+      "word": "LAV",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TİN",
+      "type": 0
+    },
+    {
+      "word": "VAH",
+      "type": 0
+    },
+    {
+      "word": "VAL",
+      "type": 0
+    },
+    {
+      "word": "VİN",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "YUH",
+      "type": 0
+    },
+    {
+      "word": "ALEV",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "ATAN",
+      "type": 0
+    },
+    {
+      "word": "ATAR",
+      "type": 0
+    },
+    {
+      "word": "EVİN",
+      "type": 0
+    },
+    {
+      "word": "HARA",
+      "type": 0
+    },
+    {
+      "word": "HAVE",
+      "type": 0
+    },
+    {
+      "word": "LEVİ",
+      "type": 0
+    },
+    {
+      "word": "MANİ",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "MATA",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "TAMA",
+      "type": 0
+    },
+    {
+      "word": "TARA",
+      "type": 0
+    },
+    {
+      "word": "TİNA",
+      "type": 0
+    },
+    {
+      "word": "UYAR",
+      "type": 0
+    },
+    {
+      "word": "VALE",
+      "type": 0
+    },
+    {
+      "word": "YARA",
+      "type": 0
+    },
+    {
+      "word": "İNAT",
+      "type": 0
+    },
+    {
+      "word": "ALEVİ",
+      "type": 0
+    },
+    {
+      "word": "AMARA",
+      "type": 0
+    },
+    {
+      "word": "ANİTA",
+      "type": 0
+    },
+    {
+      "word": "ARAMA",
+      "type": 0
+    },
+    {
+      "word": "ATAMA",
+      "type": 0
+    },
+    {
+      "word": "ATİNA",
+      "type": 0
+    },
+    {
+      "word": "HARAM",
+      "type": 0
+    },
+    {
+      "word": "HATAM",
+      "type": 0
+    },
+    {
+      "word": "HATAN",
+      "type": 0
+    },
+    {
+      "word": "LATİN",
+      "type": 0
+    },
+    {
+      "word": "MAHAL",
+      "type": 0
+    },
+    {
+      "word": "RAHUL",
+      "type": 0
+    },
+    {
+      "word": "VATAN",
+      "type": 0
+    },
+    {
+      "word": "YARAM",
+      "type": 0
+    },
+    {
+      "word": "YARAT",
+      "type": 0
+    },
+    {
+      "word": "ARAMAN",
+      "type": 0
+    },
+    {
+      "word": "TAMARA",
+      "type": 0
+    },
+    {
+      "word": "TARAMA",
+      "type": 0
+    },
+    {
+      "word": "YARATAN",
+      "type": 0
+    }
+  ],
+  "letters": "EVİN,LATA,UHAM,YARA",
+  "obstacles": []
 }

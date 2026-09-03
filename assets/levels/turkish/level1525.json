@@ -1,49 +1,115 @@
-﻿{
-    "id":  1525,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUTAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUTUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUTUCU",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "TAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TUMAN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CUM,UTA,TUN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1525,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "AMY",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "AÇMA",
+      "type": 0
+    },
+    {
+      "word": "PARK",
+      "type": 0
+    },
+    {
+      "word": "PARKTA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "ARK",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RİP",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "İRK",
+      "type": 0
+    },
+    {
+      "word": "DARK",
+      "type": 0
+    },
+    {
+      "word": "İPAD",
+      "type": 0
+    },
+    {
+      "word": "AÇMADI",
+      "type": 0
+    }
+  ],
+  "letters": "YBAT,MÇDK,AAAR,DIPİ",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

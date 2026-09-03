@@ -1,102 +1,207 @@
-﻿{
-    "id":  1078,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAMP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIRK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAHCUP",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HAMIZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UPZK,CMIR,HAKU",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1078,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "AŞK",
+      "type": 0
+    },
+    {
+      "word": "DIŞ",
+      "type": 0
+    },
+    {
+      "word": "SAĞ",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "YEM",
+      "type": 0
+    },
+    {
+      "word": "UYAN",
+      "type": 0
+    },
+    {
+      "word": "YANA",
+      "type": 0
+    },
+    {
+      "word": "AYAĞA",
+      "type": 0
+    },
+    {
+      "word": "SAYIN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "AYI",
+      "type": 0
+    },
+    {
+      "word": "AĞA",
+      "type": 0
+    },
+    {
+      "word": "AŞI",
+      "type": 0
+    },
+    {
+      "word": "DUY",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "NEY",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "YAS",
+      "type": 0
+    },
+    {
+      "word": "YAY",
+      "type": 0
+    },
+    {
+      "word": "YAĞ",
+      "type": 0
+    },
+    {
+      "word": "YEN",
+      "type": 0
+    },
+    {
+      "word": "ŞAM",
+      "type": 0
+    },
+    {
+      "word": "ŞAN",
+      "type": 0
+    },
+    {
+      "word": "AMEN",
+      "type": 0
+    },
+    {
+      "word": "ANAM",
+      "type": 0
+    },
+    {
+      "word": "AYIN",
+      "type": 0
+    },
+    {
+      "word": "DIŞA",
+      "type": 0
+    },
+    {
+      "word": "MANA",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "SAYI",
+      "type": 0
+    },
+    {
+      "word": "SAĞA",
+      "type": 0
+    },
+    {
+      "word": "SUYA",
+      "type": 0
+    },
+    {
+      "word": "YANI",
+      "type": 0
+    },
+    {
+      "word": "YAYA",
+      "type": 0
+    },
+    {
+      "word": "YAYI",
+      "type": 0
+    },
+    {
+      "word": "DUYAN",
+      "type": 0
+    },
+    {
+      "word": "SAYAN",
+      "type": 0
+    },
+    {
+      "word": "YAYIN",
+      "type": 0
+    },
+    {
+      "word": "YAĞAN",
+      "type": 0
+    },
+    {
+      "word": "DUYANA",
+      "type": 0
+    },
+    {
+      "word": "UYANIŞ",
+      "type": 0
+    },
+    {
+      "word": "YAYINA",
+      "type": 0
+    }
+  ],
+  "letters": "AĞAS,YAYU,ENID,MAŞK",
+  "obstacles": []
 }

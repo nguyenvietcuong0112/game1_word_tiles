@@ -1,61 +1,275 @@
-﻿{
-    "id":  1677,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "END",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MELD",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MEND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEEL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SLEEP",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EELS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELMS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "PEE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SLD,MEN,LEP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1677,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "ALSO",
+      "type": 0
+    },
+    {
+      "word": "BAND",
+      "type": 0
+    },
+    {
+      "word": "LAND",
+      "type": 0
+    },
+    {
+      "word": "SONS",
+      "type": 0
+    },
+    {
+      "word": "CROSS",
+      "type": 0
+    },
+    {
+      "word": "GLASS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "NAB",
+      "type": 0
+    },
+    {
+      "word": "NEB",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "ORC",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "ANDS",
+      "type": 0
+    },
+    {
+      "word": "BALS",
+      "type": 0
+    },
+    {
+      "word": "BANE",
+      "type": 0
+    },
+    {
+      "word": "BASS",
+      "type": 0
+    },
+    {
+      "word": "BEND",
+      "type": 0
+    },
+    {
+      "word": "ENDS",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "LASS",
+      "type": 0
+    },
+    {
+      "word": "NABE",
+      "type": 0
+    },
+    {
+      "word": "OSSA",
+      "type": 0
+    },
+    {
+      "word": "REDS",
+      "type": 0
+    },
+    {
+      "word": "SABE",
+      "type": 0
+    },
+    {
+      "word": "SALS",
+      "type": 0
+    },
+    {
+      "word": "SAND",
+      "type": 0
+    },
+    {
+      "word": "SANE",
+      "type": 0
+    },
+    {
+      "word": "SLAB",
+      "type": 0
+    },
+    {
+      "word": "BANDS",
+      "type": 0
+    },
+    {
+      "word": "BASSO",
+      "type": 0
+    },
+    {
+      "word": "BENDS",
+      "type": 0
+    },
+    {
+      "word": "ENDER",
+      "type": 0
+    },
+    {
+      "word": "GLAND",
+      "type": 0
+    },
+    {
+      "word": "LANDS",
+      "type": 0
+    },
+    {
+      "word": "LASSO",
+      "type": 0
+    },
+    {
+      "word": "BANDER",
+      "type": 0
+    },
+    {
+      "word": "BENDER",
+      "type": 0
+    },
+    {
+      "word": "ENDERS",
+      "type": 0
+    },
+    {
+      "word": "GLANDS",
+      "type": 0
+    },
+    {
+      "word": "LANDER",
+      "type": 0
+    },
+    {
+      "word": "SANDER",
+      "type": 0
+    },
+    {
+      "word": "BANDERS",
+      "type": 0
+    },
+    {
+      "word": "BENDERS",
+      "type": 0
+    },
+    {
+      "word": "LANDERS",
+      "type": 0
+    },
+    {
+      "word": "NORLAND",
+      "type": 0
+    },
+    {
+      "word": "SANDERS",
+      "type": 0
+    },
+    {
+      "word": "SLANDER",
+      "type": 0
+    },
+    {
+      "word": "GLANDERS",
+      "type": 0
+    },
+    {
+      "word": "NORLANDS",
+      "type": 0
+    },
+    {
+      "word": "SLANDERS",
+      "type": 0
+    }
+  ],
+  "letters": "CRON,GLSS,BASR,ENDE",
+  "obstacles": []
 }

@@ -1,89 +1,223 @@
-﻿{
-    "id":  1300,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BOI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RÉU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ILHA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BILHA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALHA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BILHAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALHAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BATALHA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BATALHAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ABITA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ATALHAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ILHAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ITA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TABI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ALHAI,TIIRM,ABOÉU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1300,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABC",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "ELE",
+      "type": 0
+    },
+    {
+      "word": "ELI",
+      "type": 0
+    },
+    {
+      "word": "LIV",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "LICA",
+      "type": 0
+    },
+    {
+      "word": "PELE",
+      "type": 0
+    },
+    {
+      "word": "PICA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "CAB",
+      "type": 0
+    },
+    {
+      "word": "CIL",
+      "type": 0
+    },
+    {
+      "word": "EPA",
+      "type": 0
+    },
+    {
+      "word": "EPI",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "LIP",
+      "type": 0
+    },
+    {
+      "word": "MBA",
+      "type": 0
+    },
+    {
+      "word": "MNA",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PIL",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "VEL",
+      "type": 0
+    },
+    {
+      "word": "VIL",
+      "type": 0
+    },
+    {
+      "word": "VIN",
+      "type": 0
+    },
+    {
+      "word": "VIP",
+      "type": 0
+    },
+    {
+      "word": "ANIL",
+      "type": 0
+    },
+    {
+      "word": "CAPE",
+      "type": 0
+    },
+    {
+      "word": "ELIN",
+      "type": 0
+    },
+    {
+      "word": "EVIL",
+      "type": 0
+    },
+    {
+      "word": "LAMB",
+      "type": 0
+    },
+    {
+      "word": "LEVI",
+      "type": 0
+    },
+    {
+      "word": "LINA",
+      "type": 0
+    },
+    {
+      "word": "LIVE",
+      "type": 0
+    },
+    {
+      "word": "PINA",
+      "type": 0
+    },
+    {
+      "word": "ALVIN",
+      "type": 0
+    },
+    {
+      "word": "CANIL",
+      "type": 0
+    },
+    {
+      "word": "ELINA",
+      "type": 0
+    },
+    {
+      "word": "LAMBA",
+      "type": 0
+    },
+    {
+      "word": "LEVIN",
+      "type": 0
+    },
+    {
+      "word": "NIVEL",
+      "type": 0
+    },
+    {
+      "word": "PELICAN",
+      "type": 0
+    }
+  ],
+  "letters": "ALVE,MNIL,BAPE,CCIL",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

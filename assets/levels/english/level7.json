@@ -1,41 +1,31 @@
-﻿{
-    "id":  7,
-    "width":  4,
-    "height":  2,
-    "target_words":  [
-                         {
-                             "word":  "USE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOUSE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VANE",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "OUSE,HVAN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 7,
+  "width": 3,
+  "height": 3,
+  "target_words": [
+    {
+      "word": "HOT",
+      "type": 0
+    },
+    {
+      "word": "POT",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "TO",
+      "type": 0
+    },
+    {
+      "word": "NO",
+      "type": 0
+    }
+  ],
+  "letters": "HOT,POT,NOT",
+  "obstacles": []
 }

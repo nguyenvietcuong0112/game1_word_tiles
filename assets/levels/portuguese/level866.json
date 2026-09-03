@@ -1,69 +1,247 @@
-﻿{
-    "id":  866,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AÇO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAÇA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COÇA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAÇA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRAÇO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAÇAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COÇAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZEBRA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AÇA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BRAÇA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OCAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OCARA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BRA,EAÇ,ZCO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 866,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FBI",
+      "type": 0
+    },
+    {
+      "word": "JOE",
+      "type": 0
+    },
+    {
+      "word": "TEM",
+      "type": 0
+    },
+    {
+      "word": "ESTA",
+      "type": 0
+    },
+    {
+      "word": "ESTE",
+      "type": 0
+    },
+    {
+      "word": "FACA",
+      "type": 0
+    },
+    {
+      "word": "MEIA",
+      "type": 0
+    },
+    {
+      "word": "MATEI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIE",
+      "type": 0
+    },
+    {
+      "word": "AJA",
+      "type": 0
+    },
+    {
+      "word": "AJO",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "BIA",
+      "type": 0
+    },
+    {
+      "word": "CAI",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "EIA",
+      "type": 0
+    },
+    {
+      "word": "EMA",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "FAI",
+      "type": 0
+    },
+    {
+      "word": "JAI",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MEI",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "SEO",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "TAC",
+      "type": 0
+    },
+    {
+      "word": "TAI",
+      "type": 0
+    },
+    {
+      "word": "TAJ",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TET",
+      "type": 0
+    },
+    {
+      "word": "AMEI",
+      "type": 0
+    },
+    {
+      "word": "CAIA",
+      "type": 0
+    },
+    {
+      "word": "CAIE",
+      "type": 0
+    },
+    {
+      "word": "CATE",
+      "type": 0
+    },
+    {
+      "word": "CATO",
+      "type": 0
+    },
+    {
+      "word": "CATS",
+      "type": 0
+    },
+    {
+      "word": "ESME",
+      "type": 0
+    },
+    {
+      "word": "ESTO",
+      "type": 0
+    },
+    {
+      "word": "IATE",
+      "type": 0
+    },
+    {
+      "word": "JATO",
+      "type": 0
+    },
+    {
+      "word": "JOES",
+      "type": 0
+    },
+    {
+      "word": "MATE",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "METO",
+      "type": 0
+    },
+    {
+      "word": "METS",
+      "type": 0
+    },
+    {
+      "word": "OJAI",
+      "type": 0
+    },
+    {
+      "word": "TAJA",
+      "type": 0
+    },
+    {
+      "word": "TAME",
+      "type": 0
+    },
+    {
+      "word": "TEIA",
+      "type": 0
+    },
+    {
+      "word": "TEMA",
+      "type": 0
+    },
+    {
+      "word": "TETA",
+      "type": 0
+    },
+    {
+      "word": "TETO",
+      "type": 0
+    },
+    {
+      "word": "OESTE",
+      "type": 0
+    },
+    {
+      "word": "ESTACA",
+      "type": 0
+    }
+  ],
+  "letters": "ATBF,MEIA,STAC,EOJA",
+  "obstacles": []
 }

@@ -1,129 +1,311 @@
-﻿{
-    "id":  1267,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OSA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JOYA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAYO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MINA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOJA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENOJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANOJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAYONESA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AYO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "JOSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "JOYO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "JOYOSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MANES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SENA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOY",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MAYO,INOJ,ZESA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1267,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "HAN",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "MES",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "TAL",
+      "type": 0
+    },
+    {
+      "word": "MESA",
+      "type": 0
+    },
+    {
+      "word": "NANA",
+      "type": 0
+    },
+    {
+      "word": "PLATA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ESP",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TES",
+      "type": 0
+    },
+    {
+      "word": "AAAH",
+      "type": 0
+    },
+    {
+      "word": "AMES",
+      "type": 0
+    },
+    {
+      "word": "ASHA",
+      "type": 0
+    },
+    {
+      "word": "ATAS",
+      "type": 0
+    },
+    {
+      "word": "ATEA",
+      "type": 0
+    },
+    {
+      "word": "HAAS",
+      "type": 0
+    },
+    {
+      "word": "HANA",
+      "type": 0
+    },
+    {
+      "word": "LAME",
+      "type": 0
+    },
+    {
+      "word": "LATA",
+      "type": 0
+    },
+    {
+      "word": "LATE",
+      "type": 0
+    },
+    {
+      "word": "LEAN",
+      "type": 0
+    },
+    {
+      "word": "MATA",
+      "type": 0
+    },
+    {
+      "word": "MATE",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "METE",
+      "type": 0
+    },
+    {
+      "word": "SEAN",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SHAN",
+      "type": 0
+    },
+    {
+      "word": "TASH",
+      "type": 0
+    },
+    {
+      "word": "TELA",
+      "type": 0
+    },
+    {
+      "word": "TEMA",
+      "type": 0
+    },
+    {
+      "word": "ALETA",
+      "type": 0
+    },
+    {
+      "word": "LATAS",
+      "type": 0
+    },
+    {
+      "word": "MALES",
+      "type": 0
+    },
+    {
+      "word": "MATAS",
+      "type": 0
+    },
+    {
+      "word": "MATES",
+      "type": 0
+    },
+    {
+      "word": "METAL",
+      "type": 0
+    },
+    {
+      "word": "METAS",
+      "type": 0
+    },
+    {
+      "word": "METES",
+      "type": 0
+    },
+    {
+      "word": "SETAS",
+      "type": 0
+    },
+    {
+      "word": "SHANA",
+      "type": 0
+    },
+    {
+      "word": "TALES",
+      "type": 0
+    },
+    {
+      "word": "TASHA",
+      "type": 0
+    },
+    {
+      "word": "ALETAS",
+      "type": 0
+    },
+    {
+      "word": "MALETA",
+      "type": 0
+    },
+    {
+      "word": "MATASE",
+      "type": 0
+    },
+    {
+      "word": "PLATEA",
+      "type": 0
+    },
+    {
+      "word": "MALETAS",
+      "type": 0
+    },
+    {
+      "word": "METALES",
+      "type": 0
+    }
+  ],
+  "letters": "MALP,ETES,SAAN,HANA",
+  "obstacles": []
 }

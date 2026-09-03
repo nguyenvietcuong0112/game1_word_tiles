@@ -1,93 +1,311 @@
-﻿{
-    "id":  633,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LOG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FISH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RICH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAIST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WATCH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOLDFISH",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FIAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GNAT",
-                            "type":  2
-                        },
-                        {
-                            "word":  "GNAW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NATS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "STAN",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TANG",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TANGO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TAW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WAN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DFISH,LNATC,OGWRI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 633,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "VIA",
+      "type": 0
+    },
+    {
+      "word": "WED",
+      "type": 0
+    },
+    {
+      "word": "CARS",
+      "type": 0
+    },
+    {
+      "word": "SPACE",
+      "type": 0
+    },
+    {
+      "word": "SPEED",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ADS",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "AWE",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "DAW",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DEW",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "WAD",
+      "type": 0
+    },
+    {
+      "word": "WEE",
+      "type": 0
+    },
+    {
+      "word": "APES",
+      "type": 0
+    },
+    {
+      "word": "AWED",
+      "type": 0
+    },
+    {
+      "word": "AWEE",
+      "type": 0
+    },
+    {
+      "word": "BRAE",
+      "type": 0
+    },
+    {
+      "word": "CAPE",
+      "type": 0
+    },
+    {
+      "word": "CAPS",
+      "type": 0
+    },
+    {
+      "word": "CARB",
+      "type": 0
+    },
+    {
+      "word": "DEAR",
+      "type": 0
+    },
+    {
+      "word": "DEEP",
+      "type": 0
+    },
+    {
+      "word": "DEES",
+      "type": 0
+    },
+    {
+      "word": "EARS",
+      "type": 0
+    },
+    {
+      "word": "PACE",
+      "type": 0
+    },
+    {
+      "word": "PARS",
+      "type": 0
+    },
+    {
+      "word": "PEED",
+      "type": 0
+    },
+    {
+      "word": "RACE",
+      "type": 0
+    },
+    {
+      "word": "RAPE",
+      "type": 0
+    },
+    {
+      "word": "RAPS",
+      "type": 0
+    },
+    {
+      "word": "SEED",
+      "type": 0
+    },
+    {
+      "word": "SPAE",
+      "type": 0
+    },
+    {
+      "word": "SPAR",
+      "type": 0
+    },
+    {
+      "word": "VERB",
+      "type": 0
+    },
+    {
+      "word": "WADE",
+      "type": 0
+    },
+    {
+      "word": "WADS",
+      "type": 0
+    },
+    {
+      "word": "WEAR",
+      "type": 0
+    },
+    {
+      "word": "WEDS",
+      "type": 0
+    },
+    {
+      "word": "WEEP",
+      "type": 0
+    },
+    {
+      "word": "WEES",
+      "type": 0
+    },
+    {
+      "word": "ACERB",
+      "type": 0
+    },
+    {
+      "word": "AIVER",
+      "type": 0
+    },
+    {
+      "word": "BRACE",
+      "type": 0
+    },
+    {
+      "word": "CAPES",
+      "type": 0
+    },
+    {
+      "word": "DEARS",
+      "type": 0
+    },
+    {
+      "word": "DEEPS",
+      "type": 0
+    },
+    {
+      "word": "PACER",
+      "type": 0
+    },
+    {
+      "word": "RACER",
+      "type": 0
+    },
+    {
+      "word": "RAPES",
+      "type": 0
+    },
+    {
+      "word": "RECAP",
+      "type": 0
+    },
+    {
+      "word": "SPAED",
+      "type": 0
+    },
+    {
+      "word": "WAIVE",
+      "type": 0
+    },
+    {
+      "word": "WEARS",
+      "type": 0
+    },
+    {
+      "word": "WEEPS",
+      "type": 0
+    },
+    {
+      "word": "BRACER",
+      "type": 0
+    },
+    {
+      "word": "RECAPS",
+      "type": 0
+    },
+    {
+      "word": "SPACER",
+      "type": 0
+    },
+    {
+      "word": "SPEEDS",
+      "type": 0
+    },
+    {
+      "word": "WAIVER",
+      "type": 0
+    }
+  ],
+  "letters": "SEPS,DEAR,AWCB,IVER",
+  "obstacles": []
 }

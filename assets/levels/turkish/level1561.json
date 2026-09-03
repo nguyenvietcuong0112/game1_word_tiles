@@ -1,115 +1,187 @@
-﻿{
-    "id":  1561,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ETEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KETE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KURA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KURAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARKET",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EKRU",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KUMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MARK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UMAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ADET,EMAE,KURK",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1561,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "NIN",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "YIL",
+      "type": 0
+    },
+    {
+      "word": "ALIN",
+      "type": 0
+    },
+    {
+      "word": "ALIR",
+      "type": 0
+    },
+    {
+      "word": "NATE",
+      "type": 0
+    },
+    {
+      "word": "HARRY",
+      "type": 0
+    },
+    {
+      "word": "NANCY",
+      "type": 0
+    },
+    {
+      "word": "CERRAH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "AHIR",
+      "type": 0
+    },
+    {
+      "word": "ALET",
+      "type": 0
+    },
+    {
+      "word": "ANAN",
+      "type": 0
+    },
+    {
+      "word": "ANIN",
+      "type": 0
+    },
+    {
+      "word": "LANA",
+      "type": 0
+    },
+    {
+      "word": "NANA",
+      "type": 0
+    },
+    {
+      "word": "TANI",
+      "type": 0
+    },
+    {
+      "word": "YILA",
+      "type": 0
+    },
+    {
+      "word": "YILI",
+      "type": 0
+    },
+    {
+      "word": "ANANI",
+      "type": 0
+    },
+    {
+      "word": "ANINA",
+      "type": 0
+    },
+    {
+      "word": "ANIYI",
+      "type": 0
+    },
+    {
+      "word": "HARIL",
+      "type": 0
+    },
+    {
+      "word": "NANCE",
+      "type": 0
+    },
+    {
+      "word": "YILAN",
+      "type": 0
+    },
+    {
+      "word": "YILIN",
+      "type": 0
+    },
+    {
+      "word": "ALINAN",
+      "type": 0
+    },
+    {
+      "word": "YILANA",
+      "type": 0
+    },
+    {
+      "word": "YILANI",
+      "type": 0
+    },
+    {
+      "word": "YILINA",
+      "type": 0
+    },
+    {
+      "word": "CERRAHI",
+      "type": 0
+    },
+    {
+      "word": "YILANIN",
+      "type": 0
+    }
+  ],
+  "letters": "TANA,ELIN,HIYC,ARRE",
+  "obstacles": []
 }

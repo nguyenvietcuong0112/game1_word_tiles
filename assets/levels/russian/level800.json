@@ -1,57 +1,111 @@
-﻿{
-    "id":  800,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "БЕС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БИС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ГОЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СЕВ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СЛОГ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВЕСЛО",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЧИСЛО",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ВЕБ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ВЕС",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЕСИ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛОГ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ЧГО,ИСЛ,БЕВ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 800,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "НОЖ",
+      "type": 0
+    },
+    {
+      "word": "РОТ",
+      "type": 0
+    },
+    {
+      "word": "РТУ",
+      "type": 0
+    },
+    {
+      "word": "ТОМ",
+      "type": 0
+    },
+    {
+      "word": "ТРУС",
+      "type": 0
+    },
+    {
+      "word": "ФОТО",
+      "type": 0
+    },
+    {
+      "word": "ФРАУ",
+      "type": 0
+    },
+    {
+      "word": "МОТОР",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АУТ",
+      "type": 0
+    },
+    {
+      "word": "МОР",
+      "type": 0
+    },
+    {
+      "word": "ОТО",
+      "type": 0
+    },
+    {
+      "word": "РОМ",
+      "type": 0
+    },
+    {
+      "word": "РУС",
+      "type": 0
+    },
+    {
+      "word": "СУН",
+      "type": 0
+    },
+    {
+      "word": "ТОР",
+      "type": 0
+    },
+    {
+      "word": "УСТ",
+      "type": 0
+    },
+    {
+      "word": "ФУТ",
+      "type": 0
+    },
+    {
+      "word": "МОРО",
+      "type": 0
+    },
+    {
+      "word": "ТОРО",
+      "type": 0
+    },
+    {
+      "word": "ТОФУ",
+      "type": 0
+    },
+    {
+      "word": "УТРУ",
+      "type": 0
+    },
+    {
+      "word": "СТРУН",
+      "type": 0
+    }
+  ],
+  "letters": "СУНО,ТРМЖ,УФОТ,АРРО",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

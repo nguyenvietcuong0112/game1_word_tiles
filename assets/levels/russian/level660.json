@@ -1,45 +1,131 @@
-﻿{
-    "id":  660,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ЛАЙ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛЁН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЁЛКА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КЛАН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КЛЁН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЧЁЛКА",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ЛАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НАЛ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ЙАН,ЁЛЁ,ЧКА",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 660,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ДАА",
+      "type": 0
+    },
+    {
+      "word": "ДНА",
+      "type": 0
+    },
+    {
+      "word": "КАН",
+      "type": 0
+    },
+    {
+      "word": "КОП",
+      "type": 0
+    },
+    {
+      "word": "ОБЕ",
+      "type": 0
+    },
+    {
+      "word": "ПОЛ",
+      "type": 0
+    },
+    {
+      "word": "ШАР",
+      "type": 0
+    },
+    {
+      "word": "ПОКА",
+      "type": 0
+    },
+    {
+      "word": "БРАУН",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АША",
+      "type": 0
+    },
+    {
+      "word": "БЕК",
+      "type": 0
+    },
+    {
+      "word": "ДНУ",
+      "type": 0
+    },
+    {
+      "word": "ЕКО",
+      "type": 0
+    },
+    {
+      "word": "ЛОБ",
+      "type": 0
+    },
+    {
+      "word": "НАК",
+      "type": 0
+    },
+    {
+      "word": "НДА",
+      "type": 0
+    },
+    {
+      "word": "ОКА",
+      "type": 0
+    },
+    {
+      "word": "ПЕА",
+      "type": 0
+    },
+    {
+      "word": "ПЕК",
+      "type": 0
+    },
+    {
+      "word": "РАШ",
+      "type": 0
+    },
+    {
+      "word": "АРЛО",
+      "type": 0
+    },
+    {
+      "word": "НУАР",
+      "type": 0
+    },
+    {
+      "word": "РАША",
+      "type": 0
+    },
+    {
+      "word": "ОПЕКА",
+      "type": 0
+    },
+    {
+      "word": "РАУНД",
+      "type": 0
+    },
+    {
+      "word": "РАУНДА",
+      "type": 0
+    }
+  ],
+  "letters": "ОКАН,ПЕАД,ОБШН,ЛРАУ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

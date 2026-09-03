@@ -1,107 +1,219 @@
-﻿{
-    "id":  1192,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AWE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YES",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DREW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAND",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SEWER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANSWER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AYE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EWE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EWER",
-                            "type":  1
-                        },
-                        {
-                            "word":  "EYES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEWERS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEWS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WAYS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YEW",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SEWE,EYSR,WAND",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1192,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "NOW",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "SIC",
+      "type": 0
+    },
+    {
+      "word": "DATE",
+      "type": 0
+    },
+    {
+      "word": "KNOW",
+      "type": 0
+    },
+    {
+      "word": "CIGAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "CIS",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "GAE",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "GIE",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "RAG",
+      "type": 0
+    },
+    {
+      "word": "SAD",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "WON",
+      "type": 0
+    },
+    {
+      "word": "ASEA",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "ETAS",
+      "type": 0
+    },
+    {
+      "word": "GAES",
+      "type": 0
+    },
+    {
+      "word": "GIES",
+      "type": 0
+    },
+    {
+      "word": "NOWS",
+      "type": 0
+    },
+    {
+      "word": "RAGI",
+      "type": 0
+    },
+    {
+      "word": "SATE",
+      "type": 0
+    },
+    {
+      "word": "SEAR",
+      "type": 0
+    },
+    {
+      "word": "SEIS",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SNOW",
+      "type": 0
+    },
+    {
+      "word": "TASK",
+      "type": 0
+    },
+    {
+      "word": "TASS",
+      "type": 0
+    },
+    {
+      "word": "TEAR",
+      "type": 0
+    },
+    {
+      "word": "WONK",
+      "type": 0
+    },
+    {
+      "word": "WONS",
+      "type": 0
+    },
+    {
+      "word": "DATES",
+      "type": 0
+    },
+    {
+      "word": "KNOWS",
+      "type": 0
+    },
+    {
+      "word": "RAGIS",
+      "type": 0
+    },
+    {
+      "word": "TRAGI",
+      "type": 0
+    },
+    {
+      "word": "WONKS",
+      "type": 0
+    },
+    {
+      "word": "DASSIE",
+      "type": 0
+    },
+    {
+      "word": "TASSIE",
+      "type": 0
+    },
+    {
+      "word": "TRAGIC",
+      "type": 0
+    }
+  ],
+  "letters": "ONKD,WSSA,CIET,IGAR",
+  "obstacles": []
 }

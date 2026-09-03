@@ -1,53 +1,155 @@
-﻿{
-    "id":  1852,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "İMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MUZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMİR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "İMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÖZÜR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARUZ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARUZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUMİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UMAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ÖZÜ,RUR,İMA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1852,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "CİK",
+      "type": 0
+    },
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "KES",
+      "type": 0
+    },
+    {
+      "word": "KEZ",
+      "type": 0
+    },
+    {
+      "word": "KİM",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "ZAM",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "KAZA",
+      "type": 0
+    },
+    {
+      "word": "KERN",
+      "type": 0
+    },
+    {
+      "word": "KLAUS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABC",
+      "type": 0
+    },
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "AZA",
+      "type": 0
+    },
+    {
+      "word": "CLA",
+      "type": 0
+    },
+    {
+      "word": "KAZ",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LAU",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "NBA",
+      "type": 0
+    },
+    {
+      "word": "SEK",
+      "type": 0
+    },
+    {
+      "word": "USB",
+      "type": 0
+    },
+    {
+      "word": "ZAK",
+      "type": 0
+    },
+    {
+      "word": "KEZA",
+      "type": 0
+    },
+    {
+      "word": "MAKE",
+      "type": 0
+    },
+    {
+      "word": "ZEKA",
+      "type": 0
+    },
+    {
+      "word": "BALKİ",
+      "type": 0
+    },
+    {
+      "word": "CLAUS",
+      "type": 0
+    },
+    {
+      "word": "ENKAZ",
+      "type": 0
+    },
+    {
+      "word": "ENKAZA",
+      "type": 0
+    }
+  ],
+  "letters": "MKESU,AKNBA,ZERCL,AAMİK",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

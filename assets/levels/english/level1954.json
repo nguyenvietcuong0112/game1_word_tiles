@@ -1,87 +1,207 @@
-﻿{
-    "id":  1954,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADAPT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APART",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARIA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAPT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TRIAD",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "APT,DAR,DAI",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1954,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "TAB",
+      "type": 0
+    },
+    {
+      "word": "TOE",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "DEMO",
+      "type": 0
+    },
+    {
+      "word": "LAST",
+      "type": 0
+    },
+    {
+      "word": "SALT",
+      "type": 0
+    },
+    {
+      "word": "BOTTOM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABO",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "BOT",
+      "type": 0
+    },
+    {
+      "word": "MOA",
+      "type": 0
+    },
+    {
+      "word": "MOT",
+      "type": 0
+    },
+    {
+      "word": "OAT",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TOT",
+      "type": 0
+    },
+    {
+      "word": "ALTS",
+      "type": 0
+    },
+    {
+      "word": "BATT",
+      "type": 0
+    },
+    {
+      "word": "BOTA",
+      "type": 0
+    },
+    {
+      "word": "BOTT",
+      "type": 0
+    },
+    {
+      "word": "MOAT",
+      "type": 0
+    },
+    {
+      "word": "MOTS",
+      "type": 0
+    },
+    {
+      "word": "MOTT",
+      "type": 0
+    },
+    {
+      "word": "OTTO",
+      "type": 0
+    },
+    {
+      "word": "REDS",
+      "type": 0
+    },
+    {
+      "word": "STOA",
+      "type": 0
+    },
+    {
+      "word": "TOED",
+      "type": 0
+    },
+    {
+      "word": "TOME",
+      "type": 0
+    },
+    {
+      "word": "TOMS",
+      "type": 0
+    },
+    {
+      "word": "BATTS",
+      "type": 0
+    },
+    {
+      "word": "BOTTS",
+      "type": 0
+    },
+    {
+      "word": "LASTS",
+      "type": 0
+    },
+    {
+      "word": "MOTTO",
+      "type": 0
+    },
+    {
+      "word": "SALTS",
+      "type": 0
+    },
+    {
+      "word": "STOAT",
+      "type": 0
+    },
+    {
+      "word": "BOTTOMS",
+      "type": 0
+    },
+    {
+      "word": "BOTTOMED",
+      "type": 0
+    }
+  ],
+  "letters": "EMOAB,DSTTO,LTRRT,ASDEO",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

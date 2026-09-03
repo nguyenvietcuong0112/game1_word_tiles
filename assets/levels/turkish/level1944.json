@@ -1,69 +1,115 @@
-﻿{
-    "id":  1944,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FANİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "FARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FENA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NİNE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FENER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AFERİN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "FAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NENE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "REN,ANİ,FER",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1944,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "LEŞ",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "ONU",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "ŞEF",
+      "type": 0
+    },
+    {
+      "word": "SIRF",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "EŞE",
+      "type": 0
+    },
+    {
+      "word": "FDA",
+      "type": 0
+    },
+    {
+      "word": "FUN",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "ŞAL",
+      "type": 0
+    },
+    {
+      "word": "ALEM",
+      "type": 0
+    },
+    {
+      "word": "MEAD",
+      "type": 0
+    },
+    {
+      "word": "MEŞE",
+      "type": 0
+    },
+    {
+      "word": "MEŞALE",
+      "type": 0
+    }
+  ],
+  "letters": "NUFDA,OIRME,DSFEŞ,ASLLA",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

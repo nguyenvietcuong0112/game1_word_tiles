@@ -1,69 +1,203 @@
-﻿{
-    "id":  1090,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İRİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARTI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİRİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ETLİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İDARİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İSPİRTO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DİDAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İRADİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İSPİR",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "DİPSİ,İRTIL,DAOET",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1090,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "AİT",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "KÖLE",
+      "type": 0
+    },
+    {
+      "word": "TAKİ",
+      "type": 0
+    },
+    {
+      "word": "TAZE",
+      "type": 0
+    },
+    {
+      "word": "KATİL",
+      "type": 0
+    },
+    {
+      "word": "TATİL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "ARK",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "KAZ",
+      "type": 0
+    },
+    {
+      "word": "KİL",
+      "type": 0
+    },
+    {
+      "word": "KİT",
+      "type": 0
+    },
+    {
+      "word": "LİK",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAİ",
+      "type": 0
+    },
+    {
+      "word": "TAT",
+      "type": 0
+    },
+    {
+      "word": "TİA",
+      "type": 0
+    },
+    {
+      "word": "TİK",
+      "type": 0
+    },
+    {
+      "word": "TİZ",
+      "type": 0
+    },
+    {
+      "word": "ZAK",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "İTİ",
+      "type": 0
+    },
+    {
+      "word": "AKİL",
+      "type": 0
+    },
+    {
+      "word": "ARTA",
+      "type": 0
+    },
+    {
+      "word": "ATAK",
+      "type": 0
+    },
+    {
+      "word": "ELİT",
+      "type": 0
+    },
+    {
+      "word": "KATA",
+      "type": 0
+    },
+    {
+      "word": "KATİ",
+      "type": 0
+    },
+    {
+      "word": "KİTİ",
+      "type": 0
+    },
+    {
+      "word": "LALE",
+      "type": 0
+    },
+    {
+      "word": "İKAZ",
+      "type": 0
+    },
+    {
+      "word": "KATİA",
+      "type": 0
+    },
+    {
+      "word": "ÖLELİ",
+      "type": 0
+    },
+    {
+      "word": "KATİLE",
+      "type": 0
+    },
+    {
+      "word": "TATİLE",
+      "type": 0
+    },
+    {
+      "word": "KÖLELİK",
+      "type": 0
+    }
+  ],
+  "letters": "KAZE,İTİA,LATR,ELÖK",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

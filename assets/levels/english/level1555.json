@@ -1,53 +1,171 @@
-﻿{
-    "id":  1555,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FERRY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YARE",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ERR,FAY,PRO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1555,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "HIT",
+      "type": 0
+    },
+    {
+      "word": "PIE",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "EDIT",
+      "type": 0
+    },
+    {
+      "word": "GAIN",
+      "type": 0
+    },
+    {
+      "word": "HIDE",
+      "type": 0
+    },
+    {
+      "word": "MAIN",
+      "type": 0
+    },
+    {
+      "word": "GAMMA",
+      "type": 0
+    },
+    {
+      "word": "EDITING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "AIT",
+      "type": 0
+    },
+    {
+      "word": "DIT",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GAM",
+      "type": 0
+    },
+    {
+      "word": "HAM",
+      "type": 0
+    },
+    {
+      "word": "HID",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "MAG",
+      "type": 0
+    },
+    {
+      "word": "NIT",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "ALMA",
+      "type": 0
+    },
+    {
+      "word": "DITE",
+      "type": 0
+    },
+    {
+      "word": "GAIT",
+      "type": 0
+    },
+    {
+      "word": "LAIN",
+      "type": 0
+    },
+    {
+      "word": "MALM",
+      "type": 0
+    },
+    {
+      "word": "MALT",
+      "type": 0
+    },
+    {
+      "word": "NITE",
+      "type": 0
+    },
+    {
+      "word": "PIED",
+      "type": 0
+    },
+    {
+      "word": "TIDE",
+      "type": 0
+    },
+    {
+      "word": "TING",
+      "type": 0
+    },
+    {
+      "word": "ALMAH",
+      "type": 0
+    },
+    {
+      "word": "NITID",
+      "type": 0
+    },
+    {
+      "word": "PIING",
+      "type": 0
+    },
+    {
+      "word": "GAITED",
+      "type": 0
+    },
+    {
+      "word": "HAMMAL",
+      "type": 0
+    }
+  ],
+  "letters": "AHID,MMTE,LAII,TGNP",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,135 +1,75 @@
-﻿{
-    "id":  1348,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "АКТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РИФ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТИР",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЧАТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ИТАК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ОЧАГ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТАКТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ФАКТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ФАТА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТАРИФ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТАЧКА",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АТА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ИТАР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАТА",
-                            "type":  1
-                        },
-                        {
-                            "word":  "КАТАР",
-                            "type":  2
-                        },
-                        {
-                            "word":  "КАФ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "РАО",
-                            "type":  0
-                        },
-                        {
-                            "word":  "РАТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "РАТА",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ТАК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТАР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТИРА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТИФ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТЧК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ФАТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ФИРА",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "ФАКТ,ИТЧА,РАОГ",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1348,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ДИТ",
+      "type": 0
+    },
+    {
+      "word": "ДНА",
+      "type": 0
+    },
+    {
+      "word": "ИЭН",
+      "type": 0
+    },
+    {
+      "word": "РАН",
+      "type": 0
+    },
+    {
+      "word": "СЕТ",
+      "type": 0
+    },
+    {
+      "word": "СНА",
+      "type": 0
+    },
+    {
+      "word": "ТУК",
+      "type": 0
+    },
+    {
+      "word": "ЭНДИ",
+      "type": 0
+    },
+    {
+      "word": "КЭНДИ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "КЕС",
+      "type": 0
+    },
+    {
+      "word": "НАН",
+      "type": 0
+    },
+    {
+      "word": "НЭН",
+      "type": 0
+    },
+    {
+      "word": "СЕК",
+      "type": 0
+    },
+    {
+      "word": "ЭНД",
+      "type": 0
+    },
+    {
+      "word": "АНДИ",
+      "type": 0
+    },
+    {
+      "word": "ТЕКУТ",
+      "type": 0
+    }
+  ],
+  "letters": "УКЕС,ТКТН,НЭНА,ТИДР",
+  "obstacles": []
 }

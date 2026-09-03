@@ -1,69 +1,163 @@
-﻿{
-    "id":  1265,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "END",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPEND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEPEND",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EDEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEEP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SPED",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EDD,PEN,SEF",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1265,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BIT",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "RUN",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "MENU",
+      "type": 0
+    },
+    {
+      "word": "RENT",
+      "type": 0
+    },
+    {
+      "word": "TRENCH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "MOT",
+      "type": 0
+    },
+    {
+      "word": "NUT",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "RUT",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "TUN",
+      "type": 0
+    },
+    {
+      "word": "BIER",
+      "type": 0
+    },
+    {
+      "word": "METE",
+      "type": 0
+    },
+    {
+      "word": "MOTT",
+      "type": 0
+    },
+    {
+      "word": "NETT",
+      "type": 0
+    },
+    {
+      "word": "OMEN",
+      "type": 0
+    },
+    {
+      "word": "RETE",
+      "type": 0
+    },
+    {
+      "word": "RUNE",
+      "type": 0
+    },
+    {
+      "word": "TENT",
+      "type": 0
+    },
+    {
+      "word": "TIER",
+      "type": 0
+    },
+    {
+      "word": "TOME",
+      "type": 0
+    },
+    {
+      "word": "TRET",
+      "type": 0
+    },
+    {
+      "word": "TUNE",
+      "type": 0
+    },
+    {
+      "word": "ENURE",
+      "type": 0
+    },
+    {
+      "word": "METER",
+      "type": 0
+    },
+    {
+      "word": "RETEM",
+      "type": 0
+    },
+    {
+      "word": "TENCH",
+      "type": 0
+    },
+    {
+      "word": "RETUNE",
+      "type": 0
+    },
+    {
+      "word": "TENURE",
+      "type": 0
+    }
+  ],
+  "letters": "TRUN,IETE,BNTM,HCTO",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

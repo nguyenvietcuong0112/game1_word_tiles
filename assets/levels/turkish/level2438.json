@@ -1,93 +1,235 @@
-﻿{
-    "id":  2438,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "VAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LİRA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "VERİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VİZE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AVARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AVİZE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REZİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VARİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VEZİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VİZYON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REVİZYON",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERİL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEYLİ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "REVA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RİZE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZİRA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ARİLN,VEZYO,AVİEL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2438,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TEK",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "İSA",
+      "type": 0
+    },
+    {
+      "word": "İSE",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "TANE",
+      "type": 0
+    },
+    {
+      "word": "ULAN",
+      "type": 0
+    },
+    {
+      "word": "LANET",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ASİ",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "ETE",
+      "type": 0
+    },
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LİS",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "SAR",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SİL",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "YAS",
+      "type": 0
+    },
+    {
+      "word": "YİL",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "ASİL",
+      "type": 0
+    },
+    {
+      "word": "ATAN",
+      "type": 0
+    },
+    {
+      "word": "EFOR",
+      "type": 0
+    },
+    {
+      "word": "ETEK",
+      "type": 0
+    },
+    {
+      "word": "FEET",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "LİSA",
+      "type": 0
+    },
+    {
+      "word": "LİSE",
+      "type": 0
+    },
+    {
+      "word": "NATE",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "TEKE",
+      "type": 0
+    },
+    {
+      "word": "ELİSA",
+      "type": 0
+    },
+    {
+      "word": "ELİSE",
+      "type": 0
+    },
+    {
+      "word": "ESNEK",
+      "type": 0
+    },
+    {
+      "word": "KENSİ",
+      "type": 0
+    },
+    {
+      "word": "KETEN",
+      "type": 0
+    },
+    {
+      "word": "TALAN",
+      "type": 0
+    },
+    {
+      "word": "TENLİ",
+      "type": 0
+    }
+  ],
+  "letters": "NEKFO,ATEER,LANSA,UELİY",
+  "obstacles": []
 }

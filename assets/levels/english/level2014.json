@@ -1,75 +1,219 @@
-﻿{
-    "id":  2014,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "NIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PINT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SNIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INPUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INSET",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SETUP",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "INS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PINS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EPU,INT,PSE",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2014,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "WIN",
+      "type": 0
+    },
+    {
+      "word": "GRIN",
+      "type": 0
+    },
+    {
+      "word": "HEAT",
+      "type": 0
+    },
+    {
+      "word": "KING",
+      "type": 0
+    },
+    {
+      "word": "RING",
+      "type": 0
+    },
+    {
+      "word": "RISK",
+      "type": 0
+    },
+    {
+      "word": "SKIN",
+      "type": 0
+    },
+    {
+      "word": "RISKS",
+      "type": 0
+    },
+    {
+      "word": "THEIR",
+      "type": 0
+    },
+    {
+      "word": "EATING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "GIE",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "KIN",
+      "type": 0
+    },
+    {
+      "word": "NIT",
+      "type": 0
+    },
+    {
+      "word": "RIG",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SIT",
+      "type": 0
+    },
+    {
+      "word": "SKI",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "TIS",
+      "type": 0
+    },
+    {
+      "word": "EATH",
+      "type": 0
+    },
+    {
+      "word": "GIRN",
+      "type": 0
+    },
+    {
+      "word": "GRIT",
+      "type": 0
+    },
+    {
+      "word": "HEIR",
+      "type": 0
+    },
+    {
+      "word": "IRIS",
+      "type": 0
+    },
+    {
+      "word": "KINS",
+      "type": 0
+    },
+    {
+      "word": "NITS",
+      "type": 0
+    },
+    {
+      "word": "RHEA",
+      "type": 0
+    },
+    {
+      "word": "SING",
+      "type": 0
+    },
+    {
+      "word": "SINH",
+      "type": 0
+    },
+    {
+      "word": "SITS",
+      "type": 0
+    },
+    {
+      "word": "STIR",
+      "type": 0
+    },
+    {
+      "word": "TING",
+      "type": 0
+    },
+    {
+      "word": "WING",
+      "type": 0
+    },
+    {
+      "word": "WINS",
+      "type": 0
+    },
+    {
+      "word": "GIRNS",
+      "type": 0
+    },
+    {
+      "word": "GRITH",
+      "type": 0
+    },
+    {
+      "word": "IRING",
+      "type": 0
+    },
+    {
+      "word": "SKINS",
+      "type": 0
+    },
+    {
+      "word": "STING",
+      "type": 0
+    },
+    {
+      "word": "HEATING",
+      "type": 0
+    },
+    {
+      "word": "HEIRING",
+      "type": 0
+    },
+    {
+      "word": "RISKING",
+      "type": 0
+    }
+  ],
+  "letters": "WGIEA,INRHT,KSINI,SSTGR",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

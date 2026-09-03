@@ -1,75 +1,239 @@
-﻿{
-    "id":  1400,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECHO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "HOLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LORD",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHORD",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DIE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HOLT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OLDIE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TECH",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ETIE,CLDC,HORI",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1400,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "BIN",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RING",
+      "type": 0
+    },
+    {
+      "word": "BROKE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAS",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "KOR",
+      "type": 0
+    },
+    {
+      "word": "NIB",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "OKE",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "RIB",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "SAG",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "ANGA",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "GNAR",
+      "type": 0
+    },
+    {
+      "word": "IRES",
+      "type": 0
+    },
+    {
+      "word": "OKES",
+      "type": 0
+    },
+    {
+      "word": "RANG",
+      "type": 0
+    },
+    {
+      "word": "RANI",
+      "type": 0
+    },
+    {
+      "word": "RASE",
+      "type": 0
+    },
+    {
+      "word": "ROES",
+      "type": 0
+    },
+    {
+      "word": "SANG",
+      "type": 0
+    },
+    {
+      "word": "SARI",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "ANGAS",
+      "type": 0
+    },
+    {
+      "word": "NARES",
+      "type": 0
+    },
+    {
+      "word": "SANGA",
+      "type": 0
+    },
+    {
+      "word": "SARIN",
+      "type": 0
+    },
+    {
+      "word": "SERIN",
+      "type": 0
+    },
+    {
+      "word": "TRASS",
+      "type": 0
+    },
+    {
+      "word": "TRESS",
+      "type": 0
+    },
+    {
+      "word": "ASSERT",
+      "type": 0
+    },
+    {
+      "word": "GASSER",
+      "type": 0
+    },
+    {
+      "word": "SANGAS",
+      "type": 0
+    },
+    {
+      "word": "SERING",
+      "type": 0
+    },
+    {
+      "word": "SERINGA",
+      "type": 0
+    },
+    {
+      "word": "SERINGAS",
+      "type": 0
+    }
+  ],
+  "letters": "ROKE,BESS,TRAA,BING",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

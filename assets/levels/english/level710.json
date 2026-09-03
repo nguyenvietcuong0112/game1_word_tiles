@@ -1,49 +1,155 @@
-﻿{
-    "id":  710,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EARN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JEST",
-                             "type":  2
-                         },
-                         {
-                             "word":  "NEST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EARNEST",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RNES,AIJT,EEGO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 710,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "CUM",
+      "type": 0
+    },
+    {
+      "word": "GOT",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "CELL",
+      "type": 0
+    },
+    {
+      "word": "LEFT",
+      "type": 0
+    },
+    {
+      "word": "TELL",
+      "type": 0
+    },
+    {
+      "word": "ALLOY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "CEL",
+      "type": 0
+    },
+    {
+      "word": "ECU",
+      "type": 0
+    },
+    {
+      "word": "EFT",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "EMU",
+      "type": 0
+    },
+    {
+      "word": "FEM",
+      "type": 0
+    },
+    {
+      "word": "FOE",
+      "type": 0
+    },
+    {
+      "word": "FOY",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "OFT",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "TOG",
+      "type": 0
+    },
+    {
+      "word": "ALME",
+      "type": 0
+    },
+    {
+      "word": "FELL",
+      "type": 0
+    },
+    {
+      "word": "LALL",
+      "type": 0
+    },
+    {
+      "word": "LOFT",
+      "type": 0
+    },
+    {
+      "word": "MELL",
+      "type": 0
+    },
+    {
+      "word": "OLLA",
+      "type": 0
+    },
+    {
+      "word": "TELA",
+      "type": 0
+    },
+    {
+      "word": "CELLA",
+      "type": 0
+    },
+    {
+      "word": "FELLA",
+      "type": 0
+    },
+    {
+      "word": "ALMUCE",
+      "type": 0
+    }
+  ],
+  "letters": "UCTO,MEFG,LLOY,ALET",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

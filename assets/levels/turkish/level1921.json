@@ -1,118 +1,331 @@
-﻿{
-    "id":  1921,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALMAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BULMAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BULMACA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BULMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MELAL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MELUL",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "LAAC,ULMA,BEMK",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1921,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "BAY",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "MAÇ",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "ÇAY",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "AMAN",
+      "type": 0
+    },
+    {
+      "word": "SANA",
+      "type": 0
+    },
+    {
+      "word": "PATLAMA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "AMT",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ATM",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "KAS",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAY",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SAP",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "ÇAL",
+      "type": 0
+    },
+    {
+      "word": "ÇAM",
+      "type": 0
+    },
+    {
+      "word": "AKAN",
+      "type": 0
+    },
+    {
+      "word": "ALTA",
+      "type": 0
+    },
+    {
+      "word": "AMAÇ",
+      "type": 0
+    },
+    {
+      "word": "ANAM",
+      "type": 0
+    },
+    {
+      "word": "ANMA",
+      "type": 0
+    },
+    {
+      "word": "ASAN",
+      "type": 0
+    },
+    {
+      "word": "ATLA",
+      "type": 0
+    },
+    {
+      "word": "ATMA",
+      "type": 0
+    },
+    {
+      "word": "BAYA",
+      "type": 0
+    },
+    {
+      "word": "KAAN",
+      "type": 0
+    },
+    {
+      "word": "KANA",
+      "type": 0
+    },
+    {
+      "word": "KASA",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "LANA",
+      "type": 0
+    },
+    {
+      "word": "MALA",
+      "type": 0
+    },
+    {
+      "word": "MALT",
+      "type": 0
+    },
+    {
+      "word": "MANA",
+      "type": 0
+    },
+    {
+      "word": "MAYA",
+      "type": 0
+    },
+    {
+      "word": "MAÇA",
+      "type": 0
+    },
+    {
+      "word": "NASA",
+      "type": 0
+    },
+    {
+      "word": "SAKA",
+      "type": 0
+    },
+    {
+      "word": "YAMA",
+      "type": 0
+    },
+    {
+      "word": "ÇAYA",
+      "type": 0
+    },
+    {
+      "word": "ALANA",
+      "type": 0
+    },
+    {
+      "word": "ATMAN",
+      "type": 0
+    },
+    {
+      "word": "KANAT",
+      "type": 0
+    },
+    {
+      "word": "KASAP",
+      "type": 0
+    },
+    {
+      "word": "MALTA",
+      "type": 0
+    },
+    {
+      "word": "SANAT",
+      "type": 0
+    },
+    {
+      "word": "SANMA",
+      "type": 0
+    },
+    {
+      "word": "SAPMA",
+      "type": 0
+    },
+    {
+      "word": "SATMA",
+      "type": 0
+    },
+    {
+      "word": "ÇALAN",
+      "type": 0
+    },
+    {
+      "word": "ALTMAN",
+      "type": 0
+    },
+    {
+      "word": "ATLAMA",
+      "type": 0
+    },
+    {
+      "word": "ATMANA",
+      "type": 0
+    },
+    {
+      "word": "ATMAYA",
+      "type": 0
+    },
+    {
+      "word": "BAYPAS",
+      "type": 0
+    },
+    {
+      "word": "TANAKA",
+      "type": 0
+    },
+    {
+      "word": "SANATLA",
+      "type": 0
+    },
+    {
+      "word": "SATMAYA",
+      "type": 0
+    },
+    {
+      "word": "ATLAMAYA",
+      "type": 0
+    }
+  ],
+  "letters": "NALAÇ,AMTMA,ANAPY,KASBA",
+  "obstacles": []
 }

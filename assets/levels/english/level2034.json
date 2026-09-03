@@ -1,83 +1,135 @@
-﻿{
-    "id":  2034,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ICON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATTIC",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONFETTI",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TON",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CONE,ITFE,ATEY",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2034,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "POT",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "TOE",
+      "type": 0
+    },
+    {
+      "word": "TOP",
+      "type": 0
+    },
+    {
+      "word": "COMP",
+      "type": 0
+    },
+    {
+      "word": "CRIB",
+      "type": 0
+    },
+    {
+      "word": "DEBT",
+      "type": 0
+    },
+    {
+      "word": "TRIM",
+      "type": 0
+    },
+    {
+      "word": "DEBRIS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "MIB",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "MOC",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "RIB",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "TET",
+      "type": 0
+    },
+    {
+      "word": "BRIS",
+      "type": 0
+    },
+    {
+      "word": "MIBS",
+      "type": 0
+    },
+    {
+      "word": "RIBS",
+      "type": 0
+    },
+    {
+      "word": "TOED",
+      "type": 0
+    },
+    {
+      "word": "TOPE",
+      "type": 0
+    },
+    {
+      "word": "COMPO",
+      "type": 0
+    },
+    {
+      "word": "CRIBS",
+      "type": 0
+    },
+    {
+      "word": "OCTET",
+      "type": 0
+    },
+    {
+      "word": "COMPOTE",
+      "type": 0
+    }
+  ],
+  "letters": "SBIRC,IRMTC,RBTEO,DEOPM",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,77 +1,271 @@
-﻿{
-    "id":  1523,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANTI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EMPHATIC",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "NEEM",
-                            "type":  1
-                        },
-                        {
-                            "word":  "PAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEEM",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "HATI,PANC,MEET",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1523,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADS",
+      "type": 0
+    },
+    {
+      "word": "CAB",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "TOP",
+      "type": 0
+    },
+    {
+      "word": "WAR",
+      "type": 0
+    },
+    {
+      "word": "LAMP",
+      "type": 0
+    },
+    {
+      "word": "STOP",
+      "type": 0
+    },
+    {
+      "word": "AWARD",
+      "type": 0
+    },
+    {
+      "word": "AWARDS",
+      "type": 0
+    },
+    {
+      "word": "TOWARDS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAL",
+      "type": 0
+    },
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "AMP",
+      "type": 0
+    },
+    {
+      "word": "AWA",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "PAW",
+      "type": 0
+    },
+    {
+      "word": "POT",
+      "type": 0
+    },
+    {
+      "word": "POW",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RAW",
+      "type": 0
+    },
+    {
+      "word": "TOW",
+      "type": 0
+    },
+    {
+      "word": "WAP",
+      "type": 0
+    },
+    {
+      "word": "WOP",
+      "type": 0
+    },
+    {
+      "word": "WOT",
+      "type": 0
+    },
+    {
+      "word": "AALS",
+      "type": 0
+    },
+    {
+      "word": "AMPS",
+      "type": 0
+    },
+    {
+      "word": "CABS",
+      "type": 0
+    },
+    {
+      "word": "CLAD",
+      "type": 0
+    },
+    {
+      "word": "CLAM",
+      "type": 0
+    },
+    {
+      "word": "DALS",
+      "type": 0
+    },
+    {
+      "word": "DAMP",
+      "type": 0
+    },
+    {
+      "word": "DRAW",
+      "type": 0
+    },
+    {
+      "word": "LADS",
+      "type": 0
+    },
+    {
+      "word": "LAMB",
+      "type": 0
+    },
+    {
+      "word": "MAAR",
+      "type": 0
+    },
+    {
+      "word": "MADS",
+      "type": 0
+    },
+    {
+      "word": "PARA",
+      "type": 0
+    },
+    {
+      "word": "PARD",
+      "type": 0
+    },
+    {
+      "word": "POTS",
+      "type": 0
+    },
+    {
+      "word": "RAPS",
+      "type": 0
+    },
+    {
+      "word": "SLAM",
+      "type": 0
+    },
+    {
+      "word": "SPAR",
+      "type": 0
+    },
+    {
+      "word": "SPOT",
+      "type": 0
+    },
+    {
+      "word": "STOW",
+      "type": 0
+    },
+    {
+      "word": "TOPS",
+      "type": 0
+    },
+    {
+      "word": "WAPS",
+      "type": 0
+    },
+    {
+      "word": "WARD",
+      "type": 0
+    },
+    {
+      "word": "WOPS",
+      "type": 0
+    },
+    {
+      "word": "WOTS",
+      "type": 0
+    },
+    {
+      "word": "CLADS",
+      "type": 0
+    },
+    {
+      "word": "CLAMP",
+      "type": 0
+    },
+    {
+      "word": "DAMPS",
+      "type": 0
+    },
+    {
+      "word": "LAMBS",
+      "type": 0
+    },
+    {
+      "word": "LAMPS",
+      "type": 0
+    },
+    {
+      "word": "PARDS",
+      "type": 0
+    },
+    {
+      "word": "WARDS",
+      "type": 0
+    },
+    {
+      "word": "CLAMPS",
+      "type": 0
+    },
+    {
+      "word": "TOWARD",
+      "type": 0
+    }
+  ],
+  "letters": "AWOT,RAPS,DAMB,SLCA",
+  "obstacles": []
 }

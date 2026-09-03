@@ -1,122 +1,323 @@
-﻿{
-    "id":  1823,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HERB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COMPARE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PARE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "REICH",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "OMPN,CIAI,HERB",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1823,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "CLAD",
+      "type": 0
+    },
+    {
+      "word": "ELSE",
+      "type": 0
+    },
+    {
+      "word": "LESS",
+      "type": 0
+    },
+    {
+      "word": "LOSS",
+      "type": 0
+    },
+    {
+      "word": "SELL",
+      "type": 0
+    },
+    {
+      "word": "SOME",
+      "type": 0
+    },
+    {
+      "word": "USES",
+      "type": 0
+    },
+    {
+      "word": "CRIME",
+      "type": 0
+    },
+    {
+      "word": "HELLO",
+      "type": 0
+    },
+    {
+      "word": "PRIME",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAL",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "EMU",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "MEM",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "MOL",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "MUS",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "SUM",
+      "type": 0
+    },
+    {
+      "word": "AALS",
+      "type": 0
+    },
+    {
+      "word": "ACME",
+      "type": 0
+    },
+    {
+      "word": "CRIS",
+      "type": 0
+    },
+    {
+      "word": "DALS",
+      "type": 0
+    },
+    {
+      "word": "EMIR",
+      "type": 0
+    },
+    {
+      "word": "EMUS",
+      "type": 0
+    },
+    {
+      "word": "LOSE",
+      "type": 0
+    },
+    {
+      "word": "MEMO",
+      "type": 0
+    },
+    {
+      "word": "MEMS",
+      "type": 0
+    },
+    {
+      "word": "MESS",
+      "type": 0
+    },
+    {
+      "word": "MISE",
+      "type": 0
+    },
+    {
+      "word": "MOLL",
+      "type": 0
+    },
+    {
+      "word": "MOSS",
+      "type": 0
+    },
+    {
+      "word": "MUSE",
+      "type": 0
+    },
+    {
+      "word": "OSES",
+      "type": 0
+    },
+    {
+      "word": "PRIM",
+      "type": 0
+    },
+    {
+      "word": "RIME",
+      "type": 0
+    },
+    {
+      "word": "RIMS",
+      "type": 0
+    },
+    {
+      "word": "RISE",
+      "type": 0
+    },
+    {
+      "word": "SELS",
+      "type": 0
+    },
+    {
+      "word": "SEMI",
+      "type": 0
+    },
+    {
+      "word": "SIMS",
+      "type": 0
+    },
+    {
+      "word": "SUMO",
+      "type": 0
+    },
+    {
+      "word": "ACMES",
+      "type": 0
+    },
+    {
+      "word": "ESSES",
+      "type": 0
+    },
+    {
+      "word": "LOSES",
+      "type": 0
+    },
+    {
+      "word": "MEMOS",
+      "type": 0
+    },
+    {
+      "word": "MISES",
+      "type": 0
+    },
+    {
+      "word": "MOLLS",
+      "type": 0
+    },
+    {
+      "word": "MUSES",
+      "type": 0
+    },
+    {
+      "word": "PRIMS",
+      "type": 0
+    },
+    {
+      "word": "PRISE",
+      "type": 0
+    },
+    {
+      "word": "RIMES",
+      "type": 0
+    },
+    {
+      "word": "RISES",
+      "type": 0
+    },
+    {
+      "word": "SEMIS",
+      "type": 0
+    },
+    {
+      "word": "SUMOS",
+      "type": 0
+    },
+    {
+      "word": "CAPRIS",
+      "type": 0
+    },
+    {
+      "word": "CRIMES",
+      "type": 0
+    },
+    {
+      "word": "CRISES",
+      "type": 0
+    },
+    {
+      "word": "HELLOS",
+      "type": 0
+    },
+    {
+      "word": "PRIMES",
+      "type": 0
+    },
+    {
+      "word": "PRISES",
+      "type": 0
+    }
+  ],
+  "letters": "USIRP,MEMCA,OSSLA,LLEHD",
+  "obstacles": []
 }

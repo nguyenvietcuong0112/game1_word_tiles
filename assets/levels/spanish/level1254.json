@@ -1,105 +1,327 @@
-﻿{
-    "id":  1254,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ELE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FLAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LANA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TELE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TINA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VETA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BANAL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GELATINA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANAL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "BATEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LATINA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NABA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NABAL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TABA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GEBA,FLAN,VETI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1254,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "POR",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "AMOR",
+      "type": 0
+    },
+    {
+      "word": "ERAN",
+      "type": 0
+    },
+    {
+      "word": "MANO",
+      "type": 0
+    },
+    {
+      "word": "MANOS",
+      "type": 0
+    },
+    {
+      "word": "SOBRE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "BON",
+      "type": 0
+    },
+    {
+      "word": "BOP",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "GEO",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "NOP",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "ONO",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORO",
+      "type": 0
+    },
+    {
+      "word": "OSA",
+      "type": 0
+    },
+    {
+      "word": "PON",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "REO",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "ANOS",
+      "type": 0
+    },
+    {
+      "word": "ARON",
+      "type": 0
+    },
+    {
+      "word": "BONO",
+      "type": 0
+    },
+    {
+      "word": "BORA",
+      "type": 0
+    },
+    {
+      "word": "BRAN",
+      "type": 0
+    },
+    {
+      "word": "MONA",
+      "type": 0
+    },
+    {
+      "word": "MONO",
+      "type": 0
+    },
+    {
+      "word": "MORA",
+      "type": 0
+    },
+    {
+      "word": "MORO",
+      "type": 0
+    },
+    {
+      "word": "NORA",
+      "type": 0
+    },
+    {
+      "word": "OBOE",
+      "type": 0
+    },
+    {
+      "word": "OBRA",
+      "type": 0
+    },
+    {
+      "word": "PARO",
+      "type": 0
+    },
+    {
+      "word": "REOS",
+      "type": 0
+    },
+    {
+      "word": "ROBO",
+      "type": 0
+    },
+    {
+      "word": "ROMA",
+      "type": 0
+    },
+    {
+      "word": "ROPA",
+      "type": 0
+    },
+    {
+      "word": "SANO",
+      "type": 0
+    },
+    {
+      "word": "SONA",
+      "type": 0
+    },
+    {
+      "word": "SONO",
+      "type": 0
+    },
+    {
+      "word": "ARBOR",
+      "type": 0
+    },
+    {
+      "word": "AROMA",
+      "type": 0
+    },
+    {
+      "word": "BONOS",
+      "type": 0
+    },
+    {
+      "word": "MANOR",
+      "type": 0
+    },
+    {
+      "word": "MASON",
+      "type": 0
+    },
+    {
+      "word": "MONAS",
+      "type": 0
+    },
+    {
+      "word": "MONOS",
+      "type": 0
+    },
+    {
+      "word": "NOMAS",
+      "type": 0
+    },
+    {
+      "word": "POBRE",
+      "type": 0
+    },
+    {
+      "word": "ROBOS",
+      "type": 0
+    },
+    {
+      "word": "ROMAN",
+      "type": 0
+    },
+    {
+      "word": "SOBRA",
+      "type": 0
+    },
+    {
+      "word": "AROMAS",
+      "type": 0
+    },
+    {
+      "word": "ROMANO",
+      "type": 0
+    },
+    {
+      "word": "SOBRAN",
+      "type": 0
+    },
+    {
+      "word": "SONORA",
+      "type": 0
+    },
+    {
+      "word": "SONORO",
+      "type": 0
+    },
+    {
+      "word": "ROMANOS",
+      "type": 0
+    }
+  ],
+  "letters": "AROM,PONA,NBOS,AREG",
+  "obstacles": []
 }

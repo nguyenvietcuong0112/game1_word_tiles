@@ -1,95 +1,219 @@
-﻿{
-    "id":  1844,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "APP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PILE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VILE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CIVIL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LICE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEAN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CEVN,ILEA,VIPP",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1844,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADS",
+      "type": 0
+    },
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "FEW",
+      "type": 0
+    },
+    {
+      "word": "JAR",
+      "type": 0
+    },
+    {
+      "word": "RAG",
+      "type": 0
+    },
+    {
+      "word": "RAW",
+      "type": 0
+    },
+    {
+      "word": "REF",
+      "type": 0
+    },
+    {
+      "word": "WAR",
+      "type": 0
+    },
+    {
+      "word": "DRAW",
+      "type": 0
+    },
+    {
+      "word": "FELT",
+      "type": 0
+    },
+    {
+      "word": "MESS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "AWE",
+      "type": 0
+    },
+    {
+      "word": "DAG",
+      "type": 0
+    },
+    {
+      "word": "EFS",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "EWE",
+      "type": 0
+    },
+    {
+      "word": "FER",
+      "type": 0
+    },
+    {
+      "word": "GAD",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "JAG",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAJ",
+      "type": 0
+    },
+    {
+      "word": "WAG",
+      "type": 0
+    },
+    {
+      "word": "DAGS",
+      "type": 0
+    },
+    {
+      "word": "DRAG",
+      "type": 0
+    },
+    {
+      "word": "EWER",
+      "type": 0
+    },
+    {
+      "word": "GADS",
+      "type": 0
+    },
+    {
+      "word": "GARS",
+      "type": 0
+    },
+    {
+      "word": "GELT",
+      "type": 0
+    },
+    {
+      "word": "JAGS",
+      "type": 0
+    },
+    {
+      "word": "JARS",
+      "type": 0
+    },
+    {
+      "word": "RADS",
+      "type": 0
+    },
+    {
+      "word": "RAGE",
+      "type": 0
+    },
+    {
+      "word": "RAGS",
+      "type": 0
+    },
+    {
+      "word": "REFS",
+      "type": 0
+    },
+    {
+      "word": "TREF",
+      "type": 0
+    },
+    {
+      "word": "WAGE",
+      "type": 0
+    },
+    {
+      "word": "WARD",
+      "type": 0
+    },
+    {
+      "word": "WELT",
+      "type": 0
+    },
+    {
+      "word": "WERT",
+      "type": 0
+    },
+    {
+      "word": "EWERS",
+      "type": 0
+    },
+    {
+      "word": "RAWER",
+      "type": 0
+    },
+    {
+      "word": "WARDS",
+      "type": 0
+    },
+    {
+      "word": "DRAWER",
+      "type": 0
+    },
+    {
+      "word": "REWARD",
+      "type": 0
+    },
+    {
+      "word": "DRAWERS",
+      "type": 0
+    },
+    {
+      "word": "REWARDS",
+      "type": 0
+    }
+  ],
+  "letters": "TRSSE,LEFGM,EWJAR,GARDS",
+  "obstacles": []
 }

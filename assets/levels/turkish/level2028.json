@@ -1,91 +1,119 @@
-﻿{
-    "id":  2028,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DELİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STİL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BİLET",
-                             "type":  2
-                         },
-                         {
-                             "word":  "STÜDYO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BELİT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ÜDYO,TELS,SBİT",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2028,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "UMA",
+      "type": 0
+    },
+    {
+      "word": "ZAM",
+      "type": 0
+    },
+    {
+      "word": "ÇAL",
+      "type": 0
+    },
+    {
+      "word": "CEZA",
+      "type": 0
+    },
+    {
+      "word": "EZER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "CLA",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "DARA",
+      "type": 0
+    },
+    {
+      "word": "LAPA",
+      "type": 0
+    },
+    {
+      "word": "MEZE",
+      "type": 0
+    },
+    {
+      "word": "SAOL",
+      "type": 0
+    },
+    {
+      "word": "ÇAPA",
+      "type": 0
+    },
+    {
+      "word": "CEZAM",
+      "type": 0
+    }
+  ],
+  "letters": "UARAD,MAOAS,EZLAP,RECÇA",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

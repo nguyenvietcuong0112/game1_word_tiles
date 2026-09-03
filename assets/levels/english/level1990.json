@@ -1,86 +1,295 @@
-﻿{
-    "id":  1990,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BORN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOBE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OBEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROBE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOBBY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BEY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BOLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIB",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LEY,OBB,RNI",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1990,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "ARTS",
+      "type": 0
+    },
+    {
+      "word": "BOTH",
+      "type": 0
+    },
+    {
+      "word": "CLAN",
+      "type": 0
+    },
+    {
+      "word": "LAND",
+      "type": 0
+    },
+    {
+      "word": "SEMI",
+      "type": 0
+    },
+    {
+      "word": "TOLL",
+      "type": 0
+    },
+    {
+      "word": "OTHER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "BOT",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "MIL",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "OOT",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORT",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "ROT",
+      "type": 0
+    },
+    {
+      "word": "TOE",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "ALTO",
+      "type": 0
+    },
+    {
+      "word": "ALTS",
+      "type": 0
+    },
+    {
+      "word": "BOOT",
+      "type": 0
+    },
+    {
+      "word": "BORA",
+      "type": 0
+    },
+    {
+      "word": "BORT",
+      "type": 0
+    },
+    {
+      "word": "HERL",
+      "type": 0
+    },
+    {
+      "word": "LARD",
+      "type": 0
+    },
+    {
+      "word": "LIME",
+      "type": 0
+    },
+    {
+      "word": "LOOT",
+      "type": 0
+    },
+    {
+      "word": "LOTS",
+      "type": 0
+    },
+    {
+      "word": "MILL",
+      "type": 0
+    },
+    {
+      "word": "NARD",
+      "type": 0
+    },
+    {
+      "word": "OOTS",
+      "type": 0
+    },
+    {
+      "word": "ORAL",
+      "type": 0
+    },
+    {
+      "word": "ORTS",
+      "type": 0
+    },
+    {
+      "word": "RAND",
+      "type": 0
+    },
+    {
+      "word": "ROOT",
+      "type": 0
+    },
+    {
+      "word": "ROTL",
+      "type": 0
+    },
+    {
+      "word": "TOES",
+      "type": 0
+    },
+    {
+      "word": "TOOL",
+      "type": 0
+    },
+    {
+      "word": "TOOT",
+      "type": 0
+    },
+    {
+      "word": "TORA",
+      "type": 0
+    },
+    {
+      "word": "TORT",
+      "type": 0
+    },
+    {
+      "word": "TROT",
+      "type": 0
+    },
+    {
+      "word": "BOOTS",
+      "type": 0
+    },
+    {
+      "word": "BORAL",
+      "type": 0
+    },
+    {
+      "word": "BORTS",
+      "type": 0
+    },
+    {
+      "word": "CLARO",
+      "type": 0
+    },
+    {
+      "word": "DROOL",
+      "type": 0
+    },
+    {
+      "word": "LIMES",
+      "type": 0
+    },
+    {
+      "word": "ROOTS",
+      "type": 0
+    },
+    {
+      "word": "TOOTH",
+      "type": 0
+    },
+    {
+      "word": "TOOTS",
+      "type": 0
+    },
+    {
+      "word": "TORTS",
+      "type": 0
+    },
+    {
+      "word": "TROTH",
+      "type": 0
+    },
+    {
+      "word": "BOTHER",
+      "type": 0
+    },
+    {
+      "word": "ESTRAL",
+      "type": 0
+    },
+    {
+      "word": "STRAND",
+      "type": 0
+    }
+  ],
+  "letters": "CSEMI,LTOLL,AROTR,NDBHE",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

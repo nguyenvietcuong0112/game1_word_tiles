@@ -1,97 +1,251 @@
-﻿{
-    "id":  2131,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRAM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KURA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TURA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMBAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAKET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARKET",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAMBA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MARK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MBAR,ARKU,GGET",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2131,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABİ",
+      "type": 0
+    },
+    {
+      "word": "ANN",
+      "type": 0
+    },
+    {
+      "word": "BİN",
+      "type": 0
+    },
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "HYE",
+      "type": 0
+    },
+    {
+      "word": "KES",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "ONA",
+      "type": 0
+    },
+    {
+      "word": "YER",
+      "type": 0
+    },
+    {
+      "word": "NİYE",
+      "type": 0
+    },
+    {
+      "word": "TERK",
+      "type": 0
+    },
+    {
+      "word": "TEYİT",
+      "type": 0
+    },
+    {
+      "word": "YETER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARK",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BİT",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "ETE",
+      "type": 0
+    },
+    {
+      "word": "ETİ",
+      "type": 0
+    },
+    {
+      "word": "EYE",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "REY",
+      "type": 0
+    },
+    {
+      "word": "SEK",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "TİN",
+      "type": 0
+    },
+    {
+      "word": "YİN",
+      "type": 0
+    },
+    {
+      "word": "İNN",
+      "type": 0
+    },
+    {
+      "word": "ABİN",
+      "type": 0
+    },
+    {
+      "word": "BİNA",
+      "type": 0
+    },
+    {
+      "word": "DARK",
+      "type": 0
+    },
+    {
+      "word": "DATE",
+      "type": 0
+    },
+    {
+      "word": "DONA",
+      "type": 0
+    },
+    {
+      "word": "ETER",
+      "type": 0
+    },
+    {
+      "word": "ETSE",
+      "type": 0
+    },
+    {
+      "word": "ETİN",
+      "type": 0
+    },
+    {
+      "word": "EYER",
+      "type": 0
+    },
+    {
+      "word": "NATE",
+      "type": 0
+    },
+    {
+      "word": "ODAN",
+      "type": 0
+    },
+    {
+      "word": "TERS",
+      "type": 0
+    },
+    {
+      "word": "TETA",
+      "type": 0
+    },
+    {
+      "word": "TİNA",
+      "type": 0
+    },
+    {
+      "word": "İTER",
+      "type": 0
+    },
+    {
+      "word": "ANİTA",
+      "type": 0
+    },
+    {
+      "word": "ATİNA",
+      "type": 0
+    },
+    {
+      "word": "BİTER",
+      "type": 0
+    },
+    {
+      "word": "EKRAN",
+      "type": 0
+    },
+    {
+      "word": "ETSEK",
+      "type": 0
+    },
+    {
+      "word": "NİYET",
+      "type": 0
+    },
+    {
+      "word": "YERSE",
+      "type": 0
+    },
+    {
+      "word": "BİTERSE",
+      "type": 0
+    }
+  ],
+  "letters": "ONNNA,DATİB,KREYH,ESTET",
+  "obstacles": []
 }

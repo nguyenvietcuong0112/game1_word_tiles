@@ -1,89 +1,355 @@
-﻿{
-    "id":  1060,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "REI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FRIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OITO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RITO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FRITO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EFEITO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "REFRÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PREFEITO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EITO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FEITO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IRÃ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ITA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PREITO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REATO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REIO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PATO,REIO,EFRÃ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1060,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SRA",
+      "type": 0
+    },
+    {
+      "word": "CASA",
+      "type": 0
+    },
+    {
+      "word": "TIVE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ANS",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "ECA",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "ALAS",
+      "type": 0
+    },
+    {
+      "word": "ALIE",
+      "type": 0
+    },
+    {
+      "word": "AMAL",
+      "type": 0
+    },
+    {
+      "word": "AMAN",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "AMAS",
+      "type": 0
+    },
+    {
+      "word": "ANTI",
+      "type": 0
+    },
+    {
+      "word": "ANTM",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "CALA",
+      "type": 0
+    },
+    {
+      "word": "CALI",
+      "type": 0
+    },
+    {
+      "word": "CASE",
+      "type": 0
+    },
+    {
+      "word": "CERA",
+      "type": 0
+    },
+    {
+      "word": "ERAM",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "LACE",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "MALA",
+      "type": 0
+    },
+    {
+      "word": "MALI",
+      "type": 0
+    },
+    {
+      "word": "MANS",
+      "type": 0
+    },
+    {
+      "word": "MARE",
+      "type": 0
+    },
+    {
+      "word": "MARS",
+      "type": 0
+    },
+    {
+      "word": "NASA",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "RASA",
+      "type": 0
+    },
+    {
+      "word": "SALA",
+      "type": 0
+    },
+    {
+      "word": "SANS",
+      "type": 0
+    },
+    {
+      "word": "SANT",
+      "type": 0
+    },
+    {
+      "word": "SECA",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "ACESA",
+      "type": 0
+    },
+    {
+      "word": "CALAM",
+      "type": 0
+    },
+    {
+      "word": "CASAL",
+      "type": 0
+    },
+    {
+      "word": "CASAM",
+      "type": 0
+    },
+    {
+      "word": "CASAR",
+      "type": 0
+    },
+    {
+      "word": "CESAR",
+      "type": 0
+    },
+    {
+      "word": "LAMAR",
+      "type": 0
+    },
+    {
+      "word": "LASER",
+      "type": 0
+    },
+    {
+      "word": "MALAS",
+      "type": 0
+    },
+    {
+      "word": "MARES",
+      "type": 0
+    },
+    {
+      "word": "NASAL",
+      "type": 0
+    },
+    {
+      "word": "RAMAL",
+      "type": 0
+    },
+    {
+      "word": "SALAM",
+      "type": 0
+    },
+    {
+      "word": "SAMAR",
+      "type": 0
+    },
+    {
+      "word": "SANTI",
+      "type": 0
+    },
+    {
+      "word": "LASERS",
+      "type": 0
+    },
+    {
+      "word": "MANTIVE",
+      "type": 0
+    }
+  ],
+  "letters": "SREC,NASA,TMAL,IVEI",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

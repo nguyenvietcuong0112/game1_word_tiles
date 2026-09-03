@@ -1,105 +1,143 @@
-﻿{
-    "id":  1320,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOYA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YOGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENTRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GENTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VENTA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AGENTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TENDER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VENDER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENTENDER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AYO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BOGA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ENDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GOB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GOYA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VEER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "YATND,OGVEE,BENTR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1320,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "LIZ",
+      "type": 0
+    },
+    {
+      "word": "MIL",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "SDI",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SRA",
+      "type": 0
+    },
+    {
+      "word": "IRIS",
+      "type": 0
+    },
+    {
+      "word": "MIDE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "BAO",
+      "type": 0
+    },
+    {
+      "word": "DIL",
+      "type": 0
+    },
+    {
+      "word": "DIM",
+      "type": 0
+    },
+    {
+      "word": "LBA",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LIM",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "LOA",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "SIL",
+      "type": 0
+    },
+    {
+      "word": "ZED",
+      "type": 0
+    },
+    {
+      "word": "MILI",
+      "type": 0
+    },
+    {
+      "word": "MIRI",
+      "type": 0
+    },
+    {
+      "word": "SIRI",
+      "type": 0
+    },
+    {
+      "word": "SILBA",
+      "type": 0
+    },
+    {
+      "word": "SILBAR",
+      "type": 0
+    }
+  ],
+  "letters": "RIMS,ILID,SBZE,RAOL",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

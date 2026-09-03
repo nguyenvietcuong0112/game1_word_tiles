@@ -1,101 +1,183 @@
-﻿{
-    "id":  1180,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GADO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GARI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OURO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RISO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SODA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "VAGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZOAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDOSO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAGAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAGAROSO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ADIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AGAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARIDA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IROSO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VADOSO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VAGIDO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "VAGIR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ROARO,UZGIS,OVADO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1180,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ALF",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ELI",
+      "type": 0
+    },
+    {
+      "word": "FMI",
+      "type": 0
+    },
+    {
+      "word": "LOU",
+      "type": 0
+    },
+    {
+      "word": "MIL",
+      "type": 0
+    },
+    {
+      "word": "LEAL",
+      "type": 0
+    },
+    {
+      "word": "LEGAL",
+      "type": 0
+    },
+    {
+      "word": "OFELIA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ELM",
+      "type": 0
+    },
+    {
+      "word": "FEL",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GAO",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GUO",
+      "type": 0
+    },
+    {
+      "word": "IML",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LAI",
+      "type": 0
+    },
+    {
+      "word": "LAL",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "LIM",
+      "type": 0
+    },
+    {
+      "word": "MIA",
+      "type": 0
+    },
+    {
+      "word": "ELIA",
+      "type": 0
+    },
+    {
+      "word": "FELA",
+      "type": 0
+    },
+    {
+      "word": "FLAG",
+      "type": 0
+    },
+    {
+      "word": "GALA",
+      "type": 0
+    },
+    {
+      "word": "GALE",
+      "type": 0
+    },
+    {
+      "word": "GELA",
+      "type": 0
+    },
+    {
+      "word": "LALA",
+      "type": 0
+    },
+    {
+      "word": "MILE",
+      "type": 0
+    },
+    {
+      "word": "ALEGA",
+      "type": 0
+    },
+    {
+      "word": "GALLO",
+      "type": 0
+    }
+  ],
+  "letters": "FEGU,MLAO,IALL,LEFO",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

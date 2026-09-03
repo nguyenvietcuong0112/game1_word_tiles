@@ -1,61 +1,291 @@
-﻿{
-    "id":  921,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AKÜ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAV",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AYVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÜRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KLAVYE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KÜR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÜRE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VYE,AAR,LKÜ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 921,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "ALIN",
+      "type": 0
+    },
+    {
+      "word": "ALIR",
+      "type": 0
+    },
+    {
+      "word": "DOLAR",
+      "type": 0
+    },
+    {
+      "word": "YARIN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LON",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MAY",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "ARAR",
+      "type": 0
+    },
+    {
+      "word": "AYAR",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "LARA",
+      "type": 0
+    },
+    {
+      "word": "LARI",
+      "type": 0
+    },
+    {
+      "word": "LONE",
+      "type": 0
+    },
+    {
+      "word": "MALI",
+      "type": 0
+    },
+    {
+      "word": "MALT",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "MAYA",
+      "type": 0
+    },
+    {
+      "word": "NEAL",
+      "type": 0
+    },
+    {
+      "word": "NOLA",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "RENO",
+      "type": 0
+    },
+    {
+      "word": "TEAL",
+      "type": 0
+    },
+    {
+      "word": "YAMA",
+      "type": 0
+    },
+    {
+      "word": "YARA",
+      "type": 0
+    },
+    {
+      "word": "YARI",
+      "type": 0
+    },
+    {
+      "word": "ALONE",
+      "type": 0
+    },
+    {
+      "word": "AMARA",
+      "type": 0
+    },
+    {
+      "word": "ARAMA",
+      "type": 0
+    },
+    {
+      "word": "ARAYA",
+      "type": 0
+    },
+    {
+      "word": "AYARI",
+      "type": 0
+    },
+    {
+      "word": "LAMAR",
+      "type": 0
+    },
+    {
+      "word": "LARIN",
+      "type": 0
+    },
+    {
+      "word": "MALIN",
+      "type": 0
+    },
+    {
+      "word": "YARAM",
+      "type": 0
+    },
+    {
+      "word": "YARAR",
+      "type": 0
+    },
+    {
+      "word": "ARILAR",
+      "type": 0
+    },
+    {
+      "word": "DOLARA",
+      "type": 0
+    },
+    {
+      "word": "DOLARI",
+      "type": 0
+    },
+    {
+      "word": "MALONE",
+      "type": 0
+    },
+    {
+      "word": "YARALI",
+      "type": 0
+    },
+    {
+      "word": "YARARI",
+      "type": 0
+    },
+    {
+      "word": "ARAMALI",
+      "type": 0
+    },
+    {
+      "word": "DOLARIN",
+      "type": 0
+    },
+    {
+      "word": "YARAMALI",
+      "type": 0
+    }
+  ],
+  "letters": "DTEN,OLAM,NIRA,ERAY",
+  "obstacles": []
 }

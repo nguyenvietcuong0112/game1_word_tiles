@@ -1,57 +1,107 @@
-﻿{
-    "id":  1350,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AYA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OYA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AYAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOYA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SOFRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOSFOR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "FORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORAYA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RAY",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AYA,FOR,SOF",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1350,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "GAO",
+      "type": 0
+    },
+    {
+      "word": "KÖR",
+      "type": 0
+    },
+    {
+      "word": "LAV",
+      "type": 0
+    },
+    {
+      "word": "RUH",
+      "type": 0
+    },
+    {
+      "word": "VAL",
+      "type": 0
+    },
+    {
+      "word": "KORU",
+      "type": 0
+    },
+    {
+      "word": "OMURGA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AVM",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "HUA",
+      "type": 0
+    },
+    {
+      "word": "KOR",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LAU",
+      "type": 0
+    },
+    {
+      "word": "ORG",
+      "type": 0
+    },
+    {
+      "word": "RUM",
+      "type": 0
+    },
+    {
+      "word": "AVAL",
+      "type": 0
+    },
+    {
+      "word": "GALA",
+      "type": 0
+    }
+  ],
+  "letters": "AVMO,LAUH,LGRÖ,CAOK",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

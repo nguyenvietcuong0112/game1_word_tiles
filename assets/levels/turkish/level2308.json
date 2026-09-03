@@ -1,93 +1,187 @@
-﻿{
-    "id":  2308,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İLK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İRİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İYİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DERİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİZE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİZİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKLİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "İLKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İLKEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LİDER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REZİL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DİYALİZ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALİZE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İDİL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RİZE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ALKEL,YİZİA,İDERİ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2308,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "PEK",
+      "type": 0
+    },
+    {
+      "word": "TEK",
+      "type": 0
+    },
+    {
+      "word": "YOL",
+      "type": 0
+    },
+    {
+      "word": "EPEY",
+      "type": 0
+    },
+    {
+      "word": "HYUN",
+      "type": 0
+    },
+    {
+      "word": "OLAN",
+      "type": 0
+    },
+    {
+      "word": "OYSA",
+      "type": 0
+    },
+    {
+      "word": "YOLA",
+      "type": 0
+    },
+    {
+      "word": "OLAĞAN",
+      "type": 0
+    },
+    {
+      "word": "TEPEYE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "AĞA",
+      "type": 0
+    },
+    {
+      "word": "ETE",
+      "type": 0
+    },
+    {
+      "word": "EUN",
+      "type": 0
+    },
+    {
+      "word": "EYE",
+      "type": 0
+    },
+    {
+      "word": "KAS",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "OAK",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "YUN",
+      "type": 0
+    },
+    {
+      "word": "AKLA",
+      "type": 0
+    },
+    {
+      "word": "ANKA",
+      "type": 0
+    },
+    {
+      "word": "ETEK",
+      "type": 0
+    },
+    {
+      "word": "KLAN",
+      "type": 0
+    },
+    {
+      "word": "LANA",
+      "type": 0
+    },
+    {
+      "word": "PETE",
+      "type": 0
+    },
+    {
+      "word": "SAKE",
+      "type": 0
+    },
+    {
+      "word": "SAOL",
+      "type": 0
+    },
+    {
+      "word": "TEPE",
+      "type": 0
+    },
+    {
+      "word": "ANKET",
+      "type": 0
+    },
+    {
+      "word": "LANKA",
+      "type": 0
+    },
+    {
+      "word": "OLANA",
+      "type": 0
+    },
+    {
+      "word": "PETEY",
+      "type": 0
+    },
+    {
+      "word": "SAKLA",
+      "type": 0
+    },
+    {
+      "word": "SAKLAN",
+      "type": 0
+    }
+  ],
+  "letters": "YOLAĞ,SAKNA,YUETE,HNPEY",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

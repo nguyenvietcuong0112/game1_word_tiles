@@ -1,94 +1,207 @@
-﻿{
-    "id":  2032,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ILL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DRAW",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TWIG",
-                             "type":  2
-                         },
-                         {
-                             "word":  "WARD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WILD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WILL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DRILL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "GILD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GILL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GIRD",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RILL",
-                            "type":  1
-                        },
-                        {
-                            "word":  "WAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TGL,WIL,ARD",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2032,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "FUR",
+      "type": 0
+    },
+    {
+      "word": "RIG",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "AIDS",
+      "type": 0
+    },
+    {
+      "word": "ARMS",
+      "type": 0
+    },
+    {
+      "word": "FORM",
+      "type": 0
+    },
+    {
+      "word": "WIGS",
+      "type": 0
+    },
+    {
+      "word": "FORMS",
+      "type": 0
+    },
+    {
+      "word": "FORMAT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "IDS",
+      "type": 0
+    },
+    {
+      "word": "ISM",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "RID",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "RUM",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "UMM",
+      "type": 0
+    },
+    {
+      "word": "WIG",
+      "type": 0
+    },
+    {
+      "word": "AIRS",
+      "type": 0
+    },
+    {
+      "word": "AMMO",
+      "type": 0
+    },
+    {
+      "word": "FORA",
+      "type": 0
+    },
+    {
+      "word": "IRID",
+      "type": 0
+    },
+    {
+      "word": "MAAR",
+      "type": 0
+    },
+    {
+      "word": "MATS",
+      "type": 0
+    },
+    {
+      "word": "MIST",
+      "type": 0
+    },
+    {
+      "word": "MORA",
+      "type": 0
+    },
+    {
+      "word": "RAID",
+      "type": 0
+    },
+    {
+      "word": "RIDS",
+      "type": 0
+    },
+    {
+      "word": "RIGS",
+      "type": 0
+    },
+    {
+      "word": "SWIG",
+      "type": 0
+    },
+    {
+      "word": "TAMS",
+      "type": 0
+    },
+    {
+      "word": "IRIDS",
+      "type": 0
+    },
+    {
+      "word": "RAIDS",
+      "type": 0
+    },
+    {
+      "word": "RUMOR",
+      "type": 0
+    },
+    {
+      "word": "SWIGS",
+      "type": 0
+    },
+    {
+      "word": "WIRRA",
+      "type": 0
+    },
+    {
+      "word": "FORMATS",
+      "type": 0
+    }
+  ],
+  "letters": "TAAID,SMRRS,IMOIW,RUFGS",
+  "obstacles": []
 }

@@ -1,75 +1,75 @@
-﻿{
-    "id":  1005,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "РИС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТАЗ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТИР",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТИС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РИТМ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "СЕНИ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТИРЕ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЗАТМЕНИЕ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ЕСИ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "РЕС",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СЕН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СИР",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "СЕНИ,ЗМСЕ,АТИР",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1005,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ГОА",
+      "type": 0
+    },
+    {
+      "word": "ГОЛ",
+      "type": 0
+    },
+    {
+      "word": "ГУК",
+      "type": 0
+    },
+    {
+      "word": "ДОУ",
+      "type": 0
+    },
+    {
+      "word": "ОКА",
+      "type": 0
+    },
+    {
+      "word": "УГО",
+      "type": 0
+    },
+    {
+      "word": "ХАК",
+      "type": 0
+    },
+    {
+      "word": "ЧОУ",
+      "type": 0
+    },
+    {
+      "word": "УГОЛ",
+      "type": 0
+    },
+    {
+      "word": "ДЕШЕВО",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "УГОЛКАХ",
+      "type": 0
+    },
+    {
+      "word": "УГОЛКОВ",
+      "type": 0
+    }
+  ],
+  "letters": "ЛОГЧ,КАУО,ОХКД,ВЕШЕ",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

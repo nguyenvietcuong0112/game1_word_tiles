@@ -1,105 +1,231 @@
-﻿{
-    "id":  692,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAX",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RENA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIRAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASPIRAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIRAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARIAS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ASPA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ASPAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IRAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IRAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PIRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIPA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIPAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AXNE,SPAR,AIRO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 692,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "ISTO",
+      "type": 0
+    },
+    {
+      "word": "TIRO",
+      "type": 0
+    },
+    {
+      "word": "TODA",
+      "type": 0
+    },
+    {
+      "word": "TINTA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "DAT",
+      "type": 0
+    },
+    {
+      "word": "DET",
+      "type": 0
+    },
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "INC",
+      "type": 0
+    },
+    {
+      "word": "IRO",
+      "type": 0
+    },
+    {
+      "word": "ISO",
+      "type": 0
+    },
+    {
+      "word": "IST",
+      "type": 0
+    },
+    {
+      "word": "ITO",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "ITT",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "ORI",
+      "type": 0
+    },
+    {
+      "word": "PIT",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "SIT",
+      "type": 0
+    },
+    {
+      "word": "TAC",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "TIP",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TTA",
+      "type": 0
+    },
+    {
+      "word": "TTO",
+      "type": 0
+    },
+    {
+      "word": "ATOS",
+      "type": 0
+    },
+    {
+      "word": "CADE",
+      "type": 0
+    },
+    {
+      "word": "CATO",
+      "type": 0
+    },
+    {
+      "word": "DOTE",
+      "type": 0
+    },
+    {
+      "word": "INCA",
+      "type": 0
+    },
+    {
+      "word": "INTO",
+      "type": 0
+    },
+    {
+      "word": "NIRO",
+      "type": 0
+    },
+    {
+      "word": "NTAC",
+      "type": 0
+    },
+    {
+      "word": "ORIN",
+      "type": 0
+    },
+    {
+      "word": "OTIS",
+      "type": 0
+    },
+    {
+      "word": "OTTO",
+      "type": 0
+    },
+    {
+      "word": "PISO",
+      "type": 0
+    },
+    {
+      "word": "RITO",
+      "type": 0
+    },
+    {
+      "word": "SITE",
+      "type": 0
+    },
+    {
+      "word": "SODA",
+      "type": 0
+    },
+    {
+      "word": "TORI",
+      "type": 0
+    },
+    {
+      "word": "ADOTE",
+      "type": 0
+    },
+    {
+      "word": "TINTO",
+      "type": 0
+    },
+    {
+      "word": "TORSO",
+      "type": 0
+    }
+  ],
+  "letters": "CADE,NTOT,ITSI,RORP",
+  "obstacles": []
 }

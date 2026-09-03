@@ -1,93 +1,107 @@
-﻿{
-    "id":  640,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "БАК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БЫК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОМ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "МАК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РЫК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОМА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РУКА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РУНО",
-                             "type":  2
-                         },
-                         {
-                             "word":  "РЫБА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РЫБАК",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АБЫ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "БАКУН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАБ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАБЫ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КУРЫ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НОМ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НОМА",
-                            "type":  1
-                        },
-                        {
-                            "word":  "НУР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОКА",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "БАМ,ЫКО,РУН",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 640,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ВИД",
+      "type": 0
+    },
+    {
+      "word": "ГДЕ",
+      "type": 0
+    },
+    {
+      "word": "КАК",
+      "type": 0
+    },
+    {
+      "word": "МИА",
+      "type": 0
+    },
+    {
+      "word": "МОЯ",
+      "type": 0
+    },
+    {
+      "word": "РЕД",
+      "type": 0
+    },
+    {
+      "word": "ТАК",
+      "type": 0
+    },
+    {
+      "word": "ВИДЕ",
+      "type": 0
+    },
+    {
+      "word": "АТАКА",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АИД",
+      "type": 0
+    },
+    {
+      "word": "АКА",
+      "type": 0
+    },
+    {
+      "word": "ВИА",
+      "type": 0
+    },
+    {
+      "word": "ДЕР",
+      "type": 0
+    },
+    {
+      "word": "ИВИ",
+      "type": 0
+    },
+    {
+      "word": "ИДЕ",
+      "type": 0
+    },
+    {
+      "word": "ОВИ",
+      "type": 0
+    },
+    {
+      "word": "АТАК",
+      "type": 0
+    },
+    {
+      "word": "КАКА",
+      "type": 0
+    },
+    {
+      "word": "РЕДИ",
+      "type": 0
+    },
+    {
+      "word": "ТАКА",
+      "type": 0
+    }
+  ],
+  "letters": "ТАКР,АКАЕ,ИВИД,МОЯГ",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

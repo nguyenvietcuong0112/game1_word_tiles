@@ -1,53 +1,31 @@
-﻿{
-    "id":  5,
-    "width":  3,
-    "height":  2,
-    "target_words":  [
-                         {
-                             "word":  "ACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MACE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MILE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LICE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIMA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MICA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MIL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ACE,MIL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 5,
+  "width": 3,
+  "height": 3,
+  "target_words": [
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AT",
+      "type": 0
+    },
+    {
+      "word": "AN",
+      "type": 0
+    }
+  ],
+  "letters": "CAT,CAR,CAN",
+  "obstacles": []
 }

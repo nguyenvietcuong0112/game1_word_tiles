@@ -1,61 +1,107 @@
-﻿{
-    "id":  1780,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HYPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POET",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEACE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "PEAL",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "ROET,YPCE,HEAL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1780,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "ICE",
+      "type": 0
+    },
+    {
+      "word": "MOC",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "BECK",
+      "type": 0
+    },
+    {
+      "word": "BIKE",
+      "type": 0
+    },
+    {
+      "word": "COME",
+      "type": 0
+    },
+    {
+      "word": "KICK",
+      "type": 0
+    },
+    {
+      "word": "SHED",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ICK",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "BICE",
+      "type": 0
+    },
+    {
+      "word": "COED",
+      "type": 0
+    },
+    {
+      "word": "KIBE",
+      "type": 0
+    },
+    {
+      "word": "MOCK",
+      "type": 0
+    },
+    {
+      "word": "MOCS",
+      "type": 0
+    },
+    {
+      "word": "COEDS",
+      "type": 0
+    },
+    {
+      "word": "DEICE",
+      "type": 0
+    },
+    {
+      "word": "SHEIK",
+      "type": 0
+    },
+    {
+      "word": "SMOCK",
+      "type": 0
+    },
+    {
+      "word": "BEMOCK",
+      "type": 0
+    }
+  ],
+  "letters": "EBKB,KICE,DEOM,SHCS",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

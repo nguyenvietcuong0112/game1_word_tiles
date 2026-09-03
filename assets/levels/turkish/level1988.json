@@ -1,110 +1,127 @@
-﻿{
-    "id":  1988,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İYİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PİS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİRPİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAPRAK",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SİYA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "İRPA,KAİY,RASİ",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  8,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1988,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "ACI",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ATM",
+      "type": 0
+    },
+    {
+      "word": "GEY",
+      "type": 0
+    },
+    {
+      "word": "TEK",
+      "type": 0
+    },
+    {
+      "word": "YAT",
+      "type": 0
+    },
+    {
+      "word": "İLK",
+      "type": 0
+    },
+    {
+      "word": "RİTA",
+      "type": 0
+    },
+    {
+      "word": "CEKET",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "EYE",
+      "type": 0
+    },
+    {
+      "word": "GEC",
+      "type": 0
+    },
+    {
+      "word": "KEY",
+      "type": 0
+    },
+    {
+      "word": "TAA",
+      "type": 0
+    },
+    {
+      "word": "TAY",
+      "type": 0
+    },
+    {
+      "word": "TİR",
+      "type": 0
+    },
+    {
+      "word": "YAA",
+      "type": 0
+    },
+    {
+      "word": "ACIM",
+      "type": 0
+    },
+    {
+      "word": "ARTA",
+      "type": 0
+    },
+    {
+      "word": "ARYA",
+      "type": 0
+    },
+    {
+      "word": "AYET",
+      "type": 0
+    },
+    {
+      "word": "ETLİ",
+      "type": 0
+    },
+    {
+      "word": "TEKE",
+      "type": 0
+    },
+    {
+      "word": "CEKETLİ",
+      "type": 0
+    }
+  ],
+  "letters": "RTEYA,İLKEC,TRYGI,AAATM",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

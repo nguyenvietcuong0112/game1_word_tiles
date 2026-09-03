@@ -1,117 +1,175 @@
-﻿{
-    "id":  1115,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AÑO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OSA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BESO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BETA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROÑA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROSA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SETA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASTRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIETA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIESO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIESTRO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESTRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROSETA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TESO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TIESA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÑAS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DTAÑ,IESO,TBTR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1115,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "IAN",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "POR",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "VAN",
+      "type": 0
+    },
+    {
+      "word": "LIAR",
+      "type": 0
+    },
+    {
+      "word": "PARA",
+      "type": 0
+    },
+    {
+      "word": "ROPA",
+      "type": 0
+    },
+    {
+      "word": "STAN",
+      "type": 0
+    },
+    {
+      "word": "INVITA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ATI",
+      "type": 0
+    },
+    {
+      "word": "AVI",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "IVA",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "NAI",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "VII",
+      "type": 0
+    },
+    {
+      "word": "IVAN",
+      "type": 0
+    },
+    {
+      "word": "LIAN",
+      "type": 0
+    },
+    {
+      "word": "PAAN",
+      "type": 0
+    },
+    {
+      "word": "PANA",
+      "type": 0
+    },
+    {
+      "word": "PARO",
+      "type": 0
+    },
+    {
+      "word": "RANA",
+      "type": 0
+    },
+    {
+      "word": "VITA",
+      "type": 0
+    },
+    {
+      "word": "PARAN",
+      "type": 0
+    },
+    {
+      "word": "INVITAN",
+      "type": 0
+    }
+  ],
+  "letters": "OPNS,RAAT,ANVI,ILNI",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,65 +1,427 @@
-﻿{
-    "id":  838,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLÉ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RENA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TERNO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PATERNO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANELO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ATER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RELÉ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TERENA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "TERN,ANEO,PÉLO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 838,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "COM",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TEM",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "CARA",
+      "type": 0
+    },
+    {
+      "word": "CASA",
+      "type": 0
+    },
+    {
+      "word": "SCOTT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "EMA",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "MES",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "MOO",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "SEM",
+      "type": 0
+    },
+    {
+      "word": "TOC",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "TTE",
+      "type": 0
+    },
+    {
+      "word": "TTO",
+      "type": 0
+    },
+    {
+      "word": "AMES",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "ARAS",
+      "type": 0
+    },
+    {
+      "word": "ARTS",
+      "type": 0
+    },
+    {
+      "word": "CAME",
+      "type": 0
+    },
+    {
+      "word": "CASE",
+      "type": 0
+    },
+    {
+      "word": "COMA",
+      "type": 0
+    },
+    {
+      "word": "COME",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "MART",
+      "type": 0
+    },
+    {
+      "word": "MERE",
+      "type": 0
+    },
+    {
+      "word": "MESA",
+      "type": 0
+    },
+    {
+      "word": "METO",
+      "type": 0
+    },
+    {
+      "word": "MOTT",
+      "type": 0
+    },
+    {
+      "word": "OCAS",
+      "type": 0
+    },
+    {
+      "word": "OMAR",
+      "type": 0
+    },
+    {
+      "word": "OMER",
+      "type": 0
+    },
+    {
+      "word": "OTTO",
+      "type": 0
+    },
+    {
+      "word": "RAMO",
+      "type": 0
+    },
+    {
+      "word": "RASA",
+      "type": 0
+    },
+    {
+      "word": "REMA",
+      "type": 0
+    },
+    {
+      "word": "REME",
+      "type": 0
+    },
+    {
+      "word": "REMO",
+      "type": 0
+    },
+    {
+      "word": "RETO",
+      "type": 0
+    },
+    {
+      "word": "SACO",
+      "type": 0
+    },
+    {
+      "word": "SAME",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "SCOT",
+      "type": 0
+    },
+    {
+      "word": "TEMA",
+      "type": 0
+    },
+    {
+      "word": "TEME",
+      "type": 0
+    },
+    {
+      "word": "TEMO",
+      "type": 0
+    },
+    {
+      "word": "TOCA",
+      "type": 0
+    },
+    {
+      "word": "TOMA",
+      "type": 0
+    },
+    {
+      "word": "TOME",
+      "type": 0
+    },
+    {
+      "word": "TOOT",
+      "type": 0
+    },
+    {
+      "word": "TRAS",
+      "type": 0
+    },
+    {
+      "word": "ARAME",
+      "type": 0
+    },
+    {
+      "word": "CARAS",
+      "type": 0
+    },
+    {
+      "word": "CASAR",
+      "type": 0
+    },
+    {
+      "word": "CASEM",
+      "type": 0
+    },
+    {
+      "word": "COMAS",
+      "type": 0
+    },
+    {
+      "word": "COMER",
+      "type": 0
+    },
+    {
+      "word": "COMES",
+      "type": 0
+    },
+    {
+      "word": "COMET",
+      "type": 0
+    },
+    {
+      "word": "ERETO",
+      "type": 0
+    },
+    {
+      "word": "MOTTO",
+      "type": 0
+    },
+    {
+      "word": "REMAR",
+      "type": 0
+    },
+    {
+      "word": "SEREM",
+      "type": 0
+    },
+    {
+      "word": "TEMAS",
+      "type": 0
+    },
+    {
+      "word": "TEMER",
+      "type": 0
+    },
+    {
+      "word": "TEREM",
+      "type": 0
+    },
+    {
+      "word": "TERES",
+      "type": 0
+    },
+    {
+      "word": "TOCAM",
+      "type": 0
+    },
+    {
+      "word": "TOCAR",
+      "type": 0
+    },
+    {
+      "word": "TOCAS",
+      "type": 0
+    },
+    {
+      "word": "TOMAR",
+      "type": 0
+    },
+    {
+      "word": "TOMAS",
+      "type": 0
+    },
+    {
+      "word": "ARAMES",
+      "type": 0
+    },
+    {
+      "word": "COOTER",
+      "type": 0
+    },
+    {
+      "word": "RETOMA",
+      "type": 0
+    },
+    {
+      "word": "RETOME",
+      "type": 0
+    },
+    {
+      "word": "TERESA",
+      "type": 0
+    },
+    {
+      "word": "TOMARA",
+      "type": 0
+    },
+    {
+      "word": "RETOCAR",
+      "type": 0
+    },
+    {
+      "word": "RETOMAR",
+      "type": 0
+    },
+    {
+      "word": "SCOOTER",
+      "type": 0
+    }
+  ],
+  "letters": "TTER,OOME,CCAS,STRA",
+  "obstacles": []
 }

@@ -1,90 +1,203 @@
-﻿{
-    "id":  1593,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERİK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KÜRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SÜRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SÜRÜ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÜRÜN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇÜRÜK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KİREÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SİREN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SÜREÇ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KÜR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇERİ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ÜRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÜÇER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KÜN,İRE,SÜÇ",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  2
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1593,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KAZ",
+      "type": 0
+    },
+    {
+      "word": "VAR",
+      "type": 0
+    },
+    {
+      "word": "AYAK",
+      "type": 0
+    },
+    {
+      "word": "KARA",
+      "type": 0
+    },
+    {
+      "word": "MAYA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "KAC",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "MAY",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "NAZ",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "YAA",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "ZAK",
+      "type": 0
+    },
+    {
+      "word": "ZAN",
+      "type": 0
+    },
+    {
+      "word": "AKAN",
+      "type": 0
+    },
+    {
+      "word": "AKAR",
+      "type": 0
+    },
+    {
+      "word": "ANKA",
+      "type": 0
+    },
+    {
+      "word": "ANMA",
+      "type": 0
+    },
+    {
+      "word": "ARAN",
+      "type": 0
+    },
+    {
+      "word": "CAKA",
+      "type": 0
+    },
+    {
+      "word": "CANA",
+      "type": 0
+    },
+    {
+      "word": "CARA",
+      "type": 0
+    },
+    {
+      "word": "KANA",
+      "type": 0
+    },
+    {
+      "word": "KAYA",
+      "type": 0
+    },
+    {
+      "word": "RANA",
+      "type": 0
+    },
+    {
+      "word": "VAAY",
+      "type": 0
+    },
+    {
+      "word": "YAKA",
+      "type": 0
+    },
+    {
+      "word": "ANMAK",
+      "type": 0
+    },
+    {
+      "word": "ARACA",
+      "type": 0
+    },
+    {
+      "word": "KANKA",
+      "type": 0
+    },
+    {
+      "word": "KARAN",
+      "type": 0
+    },
+    {
+      "word": "KAZMA",
+      "type": 0
+    },
+    {
+      "word": "VARAN",
+      "type": 0
+    },
+    {
+      "word": "KANKAM",
+      "type": 0
+    },
+    {
+      "word": "KAZMAK",
+      "type": 0
+    },
+    {
+      "word": "VARANA",
+      "type": 0
+    },
+    {
+      "word": "KAZMAYA",
+      "type": 0
+    }
+  ],
+  "letters": "VARA,ACAK,AKNA,YAMZ",
+  "obstacles": []
 }

@@ -1,105 +1,267 @@
-﻿{
-    "id":  2438,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MILE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARGO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GRACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRACIOUS",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LICE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LUTE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MICA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MILO",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SUMO",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "RACET,GOILU,SUMOO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2438,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIM",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "BEEN",
+      "type": 0
+    },
+    {
+      "word": "NINE",
+      "type": 0
+    },
+    {
+      "word": "RENT",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "SENT",
+      "type": 0
+    },
+    {
+      "word": "TINY",
+      "type": 0
+    },
+    {
+      "word": "PRESS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BEE",
+      "type": 0
+    },
+    {
+      "word": "BEY",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "IMP",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "NIT",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "TYE",
+      "type": 0
+    },
+    {
+      "word": "AIMS",
+      "type": 0
+    },
+    {
+      "word": "BEER",
+      "type": 0
+    },
+    {
+      "word": "BEES",
+      "type": 0
+    },
+    {
+      "word": "BREE",
+      "type": 0
+    },
+    {
+      "word": "BREN",
+      "type": 0
+    },
+    {
+      "word": "CONI",
+      "type": 0
+    },
+    {
+      "word": "EYNE",
+      "type": 0
+    },
+    {
+      "word": "IMPS",
+      "type": 0
+    },
+    {
+      "word": "NESS",
+      "type": 0
+    },
+    {
+      "word": "NEST",
+      "type": 0
+    },
+    {
+      "word": "PREE",
+      "type": 0
+    },
+    {
+      "word": "ROCS",
+      "type": 0
+    },
+    {
+      "word": "TINE",
+      "type": 0
+    },
+    {
+      "word": "TINT",
+      "type": 0
+    },
+    {
+      "word": "TYEE",
+      "type": 0
+    },
+    {
+      "word": "TYNE",
+      "type": 0
+    },
+    {
+      "word": "BRENT",
+      "type": 0
+    },
+    {
+      "word": "CONIN",
+      "type": 0
+    },
+    {
+      "word": "NINES",
+      "type": 0
+    },
+    {
+      "word": "PREST",
+      "type": 0
+    },
+    {
+      "word": "RENIN",
+      "type": 0
+    },
+    {
+      "word": "RENTS",
+      "type": 0
+    },
+    {
+      "word": "SPREE",
+      "type": 0
+    },
+    {
+      "word": "TINES",
+      "type": 0
+    },
+    {
+      "word": "TINTS",
+      "type": 0
+    },
+    {
+      "word": "TYEES",
+      "type": 0
+    },
+    {
+      "word": "TYNES",
+      "type": 0
+    },
+    {
+      "word": "ASSENT",
+      "type": 0
+    },
+    {
+      "word": "BRENTS",
+      "type": 0
+    },
+    {
+      "word": "CONINE",
+      "type": 0
+    },
+    {
+      "word": "SPRENT",
+      "type": 0
+    },
+    {
+      "word": "CONINES",
+      "type": 0
+    },
+    {
+      "word": "IMPRESS",
+      "type": 0
+    },
+    {
+      "word": "IMPREST",
+      "type": 0
+    }
+  ],
+  "letters": "RONIT,OCTNY,ASSEE,IMPRB",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

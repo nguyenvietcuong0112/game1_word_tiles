@@ -1,89 +1,139 @@
-﻿{
-    "id":  1805,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MENU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIME",
-                             "type":  2
-                         },
-                         {
-                             "word":  "OMEN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ANIME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALUMINUM",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANIL",
-                            "type":  1
-                        },
-                        {
-                            "word":  "EMU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MILAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MINA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UNI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ANUN,LIME,UMOM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1805,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FLU",
+      "type": 0
+    },
+    {
+      "word": "ICE",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "OPT",
+      "type": 0
+    },
+    {
+      "word": "RUN",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "FILE",
+      "type": 0
+    },
+    {
+      "word": "UPON",
+      "type": 0
+    },
+    {
+      "word": "FULFIL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "CEL",
+      "type": 0
+    },
+    {
+      "word": "FIL",
+      "type": 0
+    },
+    {
+      "word": "LOP",
+      "type": 0
+    },
+    {
+      "word": "POL",
+      "type": 0
+    },
+    {
+      "word": "PUL",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "UPO",
+      "type": 0
+    },
+    {
+      "word": "CLON",
+      "type": 0
+    },
+    {
+      "word": "CLOP",
+      "type": 0
+    },
+    {
+      "word": "CLUE",
+      "type": 0
+    },
+    {
+      "word": "FICE",
+      "type": 0
+    },
+    {
+      "word": "FLOP",
+      "type": 0
+    },
+    {
+      "word": "FLUE",
+      "type": 0
+    },
+    {
+      "word": "LICE",
+      "type": 0
+    },
+    {
+      "word": "RUNE",
+      "type": 0
+    },
+    {
+      "word": "ENURE",
+      "type": 0
+    },
+    {
+      "word": "FILER",
+      "type": 0
+    },
+    {
+      "word": "RELIC",
+      "type": 0
+    },
+    {
+      "word": "ULCER",
+      "type": 0
+    },
+    {
+      "word": "TENURE",
+      "type": 0
+    }
+  ],
+  "letters": "LERU,ICFN,FLUE,NOPT",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,53 +1,235 @@
-﻿{
-    "id":  1420,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KREP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TERK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEPKİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TERZİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PERVAZ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "PERVA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TERKİ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PKİ,ERZ,TVA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1420,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "BİN",
+      "type": 0
+    },
+    {
+      "word": "ELE",
+      "type": 0
+    },
+    {
+      "word": "NUN",
+      "type": 0
+    },
+    {
+      "word": "ONA",
+      "type": 0
+    },
+    {
+      "word": "ONU",
+      "type": 0
+    },
+    {
+      "word": "OLAN",
+      "type": 0
+    },
+    {
+      "word": "ONUN",
+      "type": 0
+    },
+    {
+      "word": "KENDİ",
+      "type": 0
+    },
+    {
+      "word": "KENDİN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABİ",
+      "type": 0
+    },
+    {
+      "word": "ANU",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "DİN",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "KEL",
+      "type": 0
+    },
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "KUN",
+      "type": 0
+    },
+    {
+      "word": "KİN",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "LON",
+      "type": 0
+    },
+    {
+      "word": "LUK",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NBA",
+      "type": 0
+    },
+    {
+      "word": "NON",
+      "type": 0
+    },
+    {
+      "word": "NİK",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "UNA",
+      "type": 0
+    },
+    {
+      "word": "İKE",
+      "type": 0
+    },
+    {
+      "word": "İİK",
+      "type": 0
+    },
+    {
+      "word": "ABİN",
+      "type": 0
+    },
+    {
+      "word": "BALO",
+      "type": 0
+    },
+    {
+      "word": "BİNA",
+      "type": 0
+    },
+    {
+      "word": "EKİN",
+      "type": 0
+    },
+    {
+      "word": "KULE",
+      "type": 0
+    },
+    {
+      "word": "LONE",
+      "type": 0
+    },
+    {
+      "word": "LUKE",
+      "type": 0
+    },
+    {
+      "word": "LUNA",
+      "type": 0
+    },
+    {
+      "word": "NOLA",
+      "type": 0
+    },
+    {
+      "word": "NİKE",
+      "type": 0
+    },
+    {
+      "word": "İKEN",
+      "type": 0
+    },
+    {
+      "word": "ALONE",
+      "type": 0
+    },
+    {
+      "word": "BALON",
+      "type": 0
+    },
+    {
+      "word": "KUNAL",
+      "type": 0
+    },
+    {
+      "word": "NOLAN",
+      "type": 0
+    },
+    {
+      "word": "BALONU",
+      "type": 0
+    },
+    {
+      "word": "BALONUN",
+      "type": 0
+    }
+  ],
+  "letters": "LABN,ONİİ,NUKD,ELEN",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

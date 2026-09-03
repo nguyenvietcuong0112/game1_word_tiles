@@ -1,109 +1,175 @@
-﻿{
-    "id":  1195,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AÑO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EMIR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIÑA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MENTIR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TIRAJE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MENTIRA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AJE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAJO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAÑO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OJAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RAÑO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TIRAJO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÑAME",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "YEIÑO,ENRAJ,MTIME",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1195,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACA",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "CABE",
+      "type": 0
+    },
+    {
+      "word": "CERO",
+      "type": 0
+    },
+    {
+      "word": "RUTA",
+      "type": 0
+    },
+    {
+      "word": "RUTH",
+      "type": 0
+    },
+    {
+      "word": "ACABE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "BAH",
+      "type": 0
+    },
+    {
+      "word": "BAO",
+      "type": 0
+    },
+    {
+      "word": "CAB",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "CEO",
+      "type": 0
+    },
+    {
+      "word": "CUT",
+      "type": 0
+    },
+    {
+      "word": "ERO",
+      "type": 0
+    },
+    {
+      "word": "HAB",
+      "type": 0
+    },
+    {
+      "word": "HAC",
+      "type": 0
+    },
+    {
+      "word": "NEO",
+      "type": 0
+    },
+    {
+      "word": "NOO",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "REO",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "ASHA",
+      "type": 0
+    },
+    {
+      "word": "CURE",
+      "type": 0
+    },
+    {
+      "word": "CURO",
+      "type": 0
+    },
+    {
+      "word": "OREO",
+      "type": 0
+    },
+    {
+      "word": "SHAO",
+      "type": 0
+    },
+    {
+      "word": "TASH",
+      "type": 0
+    },
+    {
+      "word": "CABEN",
+      "type": 0
+    },
+    {
+      "word": "RUTAS",
+      "type": 0
+    },
+    {
+      "word": "TASHA",
+      "type": 0
+    },
+    {
+      "word": "ACABEN",
+      "type": 0
+    }
+  ],
+  "letters": "ABEN,CAOO,SHRE,ATUC",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

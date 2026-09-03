@@ -1,57 +1,135 @@
-﻿{
-    "id":  1040,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ЛАК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТОК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БУЁК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ОТЁК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ШЛАК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОТЁЛ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "КОТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛЁТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОКА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОТЁЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТЁК",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ШЛА,УЁК,БТО",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1040,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ВЕС",
+      "type": 0
+    },
+    {
+      "word": "ЕЛА",
+      "type": 0
+    },
+    {
+      "word": "ИКС",
+      "type": 0
+    },
+    {
+      "word": "КИН",
+      "type": 0
+    },
+    {
+      "word": "МЕС",
+      "type": 0
+    },
+    {
+      "word": "НИК",
+      "type": 0
+    },
+    {
+      "word": "РТА",
+      "type": 0
+    },
+    {
+      "word": "ЛЕНА",
+      "type": 0
+    },
+    {
+      "word": "НЕРВ",
+      "type": 0
+    },
+    {
+      "word": "КВАРТАЛ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АЛЕ",
+      "type": 0
+    },
+    {
+      "word": "АРТ",
+      "type": 0
+    },
+    {
+      "word": "ЕЛС",
+      "type": 0
+    },
+    {
+      "word": "ЕНА",
+      "type": 0
+    },
+    {
+      "word": "ЛАН",
+      "type": 0
+    },
+    {
+      "word": "ЛАТ",
+      "type": 0
+    },
+    {
+      "word": "ЛЕН",
+      "type": 0
+    },
+    {
+      "word": "НАТ",
+      "type": 0
+    },
+    {
+      "word": "РЕН",
+      "type": 0
+    },
+    {
+      "word": "СЕМ",
+      "type": 0
+    },
+    {
+      "word": "ТАН",
+      "type": 0
+    },
+    {
+      "word": "АЛЕН",
+      "type": 0
+    },
+    {
+      "word": "НИКС",
+      "type": 0
+    },
+    {
+      "word": "ТРАВ",
+      "type": 0
+    },
+    {
+      "word": "ВЕСЛА",
+      "type": 0
+    },
+    {
+      "word": "ТРАВКИ",
+      "type": 0
+    },
+    {
+      "word": "КВАРТАЛЕ",
+      "type": 0
+    }
+  ],
+  "letters": "НМЕВ,ИКСР,АВЛЕ,РТАН",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

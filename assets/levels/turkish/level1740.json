@@ -1,77 +1,127 @@
-﻿{
-    "id":  1740,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TREN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AYRAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LABİRENT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANTRE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ARYA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AYLA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "BALYA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERİL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "İLLA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BİREN,ALYRT,ALAAN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1740,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "TAT",
+      "type": 0
+    },
+    {
+      "word": "ZAR",
+      "type": 0
+    },
+    {
+      "word": "ATIM",
+      "type": 0
+    },
+    {
+      "word": "ATTI",
+      "type": 0
+    },
+    {
+      "word": "BARB",
+      "type": 0
+    },
+    {
+      "word": "BART",
+      "type": 0
+    },
+    {
+      "word": "BATI",
+      "type": 0
+    },
+    {
+      "word": "BAZI",
+      "type": 0
+    },
+    {
+      "word": "RAZI",
+      "type": 0
+    },
+    {
+      "word": "ATTIM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ATI",
+      "type": 0
+    },
+    {
+      "word": "AZI",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "BAZ",
+      "type": 0
+    },
+    {
+      "word": "IMI",
+      "type": 0
+    },
+    {
+      "word": "MIZ",
+      "type": 0
+    },
+    {
+      "word": "RAB",
+      "type": 0
+    },
+    {
+      "word": "IMIZ",
+      "type": 0
+    },
+    {
+      "word": "ARTTI",
+      "type": 0
+    },
+    {
+      "word": "ATIMI",
+      "type": 0
+    },
+    {
+      "word": "BATTI",
+      "type": 0
+    },
+    {
+      "word": "BATIMI",
+      "type": 0
+    },
+    {
+      "word": "BATTIM",
+      "type": 0
+    }
+  ],
+  "letters": "ZIMM,ABII,RTTT,BBAT",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

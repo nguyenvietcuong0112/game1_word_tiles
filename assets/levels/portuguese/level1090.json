@@ -1,93 +1,203 @@
-﻿{
-    "id":  1090,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AÇO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BULA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IÇAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAÇO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAJE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RALI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VILA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRAÇO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BREJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VILAREJO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BREJAL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "BULAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "JOÇA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIÇA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VILAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VIÇAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VIÇO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VIÇO,ULAJ,BBRE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1090,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "BEM",
+      "type": 0
+    },
+    {
+      "word": "CAI",
+      "type": 0
+    },
+    {
+      "word": "FAN",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "CAIR",
+      "type": 0
+    },
+    {
+      "word": "ONDE",
+      "type": 0
+    },
+    {
+      "word": "BRINCA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "BRI",
+      "type": 0
+    },
+    {
+      "word": "CNA",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "DEM",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "INC",
+      "type": 0
+    },
+    {
+      "word": "INO",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "NIA",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "NON",
+      "type": 0
+    },
+    {
+      "word": "ONI",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "ANIA",
+      "type": 0
+    },
+    {
+      "word": "ANIL",
+      "type": 0
+    },
+    {
+      "word": "BRIA",
+      "type": 0
+    },
+    {
+      "word": "CAIN",
+      "type": 0
+    },
+    {
+      "word": "CLAN",
+      "type": 0
+    },
+    {
+      "word": "INCA",
+      "type": 0
+    },
+    {
+      "word": "LANI",
+      "type": 0
+    },
+    {
+      "word": "LINA",
+      "type": 0
+    },
+    {
+      "word": "LINO",
+      "type": 0
+    },
+    {
+      "word": "NANI",
+      "type": 0
+    },
+    {
+      "word": "NANO",
+      "type": 0
+    },
+    {
+      "word": "NONA",
+      "type": 0
+    },
+    {
+      "word": "NONI",
+      "type": 0
+    },
+    {
+      "word": "RINA",
+      "type": 0
+    },
+    {
+      "word": "INCLINA",
+      "type": 0
+    },
+    {
+      "word": "INCLINO",
+      "type": 0
+    }
+  ],
+  "letters": "MEDN,RBFO,INAN,ACLI",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,97 +1,219 @@
-﻿{
-    "id":  909,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RES",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REGIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "URGIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REGRESO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERGIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GRES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OLEAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOLEAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ESOL,RGIE,UERA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 909,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMY",
+      "type": 0
+    },
+    {
+      "word": "HEY",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "ECHE",
+      "type": 0
+    },
+    {
+      "word": "PAGA",
+      "type": 0
+    },
+    {
+      "word": "LLAME",
+      "type": 0
+    },
+    {
+      "word": "LLEGA",
+      "type": 0
+    },
+    {
+      "word": "LLENA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "CHE",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "GAE",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GAP",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GEM",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "GYM",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "LLA",
+      "type": 0
+    },
+    {
+      "word": "MAM",
+      "type": 0
+    },
+    {
+      "word": "MEG",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "NEL",
+      "type": 0
+    },
+    {
+      "word": "YEH",
+      "type": 0
+    },
+    {
+      "word": "AMEN",
+      "type": 0
+    },
+    {
+      "word": "EGAN",
+      "type": 0
+    },
+    {
+      "word": "GANE",
+      "type": 0
+    },
+    {
+      "word": "GEMA",
+      "type": 0
+    },
+    {
+      "word": "LAME",
+      "type": 0
+    },
+    {
+      "word": "LEMA",
+      "type": 0
+    },
+    {
+      "word": "LENA",
+      "type": 0
+    },
+    {
+      "word": "MALL",
+      "type": 0
+    },
+    {
+      "word": "MAME",
+      "type": 0
+    },
+    {
+      "word": "MEGA",
+      "type": 0
+    },
+    {
+      "word": "NAPA",
+      "type": 0
+    },
+    {
+      "word": "NELL",
+      "type": 0
+    },
+    {
+      "word": "PAGE",
+      "type": 0
+    },
+    {
+      "word": "ALEGA",
+      "type": 0
+    },
+    {
+      "word": "MEGAN",
+      "type": 0
+    },
+    {
+      "word": "PAGAN",
+      "type": 0
+    },
+    {
+      "word": "PANEL",
+      "type": 0
+    },
+    {
+      "word": "LLAMEN",
+      "type": 0
+    },
+    {
+      "word": "LLEGAN",
+      "type": 0
+    }
+  ],
+  "letters": "MECH,AMYE,LEGA,LNAP",
+  "obstacles": []
 }

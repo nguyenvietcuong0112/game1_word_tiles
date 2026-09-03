@@ -1,130 +1,119 @@
-﻿{
-    "id":  1439,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ГОЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛОТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПОЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТОП",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЭГО",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ГОЛЬ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ИТОГ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СТОГ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "СТОЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СТОП",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТОПЬ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "СТИЛЬ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ГОП",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ГОТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ИЛОТ",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ИЛЬ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛИТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛОГ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ПОТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СТИЛО",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СТО",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СТОЛЬ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТОЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТОЛЬ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ИЛЬ,ТОП,СГЭ",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1439,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "БАК",
+      "type": 0
+    },
+    {
+      "word": "БАР",
+      "type": 0
+    },
+    {
+      "word": "ВОТ",
+      "type": 0
+    },
+    {
+      "word": "ЗОВ",
+      "type": 0
+    },
+    {
+      "word": "ОТИ",
+      "type": 0
+    },
+    {
+      "word": "РАБ",
+      "type": 0
+    },
+    {
+      "word": "РАК",
+      "type": 0
+    },
+    {
+      "word": "СТО",
+      "type": 0
+    },
+    {
+      "word": "ТВОИ",
+      "type": 0
+    },
+    {
+      "word": "БАРНИ",
+      "type": 0
+    },
+    {
+      "word": "КУЗОВ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АКС",
+      "type": 0
+    },
+    {
+      "word": "БИТ",
+      "type": 0
+    },
+    {
+      "word": "ВОЗ",
+      "type": 0
+    },
+    {
+      "word": "ИТО",
+      "type": 0
+    },
+    {
+      "word": "КАР",
+      "type": 0
+    },
+    {
+      "word": "НБА",
+      "type": 0
+    },
+    {
+      "word": "НИИ",
+      "type": 0
+    },
+    {
+      "word": "ТВО",
+      "type": 0
+    },
+    {
+      "word": "ТОВ",
+      "type": 0
+    },
+    {
+      "word": "УКА",
+      "type": 0
+    },
+    {
+      "word": "АРНИ",
+      "type": 0
+    },
+    {
+      "word": "БАКС",
+      "type": 0
+    },
+    {
+      "word": "БИТВ",
+      "type": 0
+    },
+    {
+      "word": "СБИТ",
+      "type": 0
+    },
+    {
+      "word": "КАРНИ",
+      "type": 0
+    },
+    {
+      "word": "РАБСТВО",
+      "type": 0
+    }
+  ],
+  "letters": "ВВОТ,ОТИИ,ЗСБН,УКАР",
+  "obstacles": []
 }

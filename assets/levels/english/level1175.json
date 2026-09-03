@@ -1,101 +1,155 @@
-﻿{
-    "id":  1175,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASHY",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUSH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PARTY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STRAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRASH",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PARTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PASTY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PUSHY",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RASH",
-                            "type":  0
-                        },
-                        {
-                            "word":  "THY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TRASHY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TSAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RTY,ASH,PUT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1175,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "MEM",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MOM",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "SAP",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "DUST",
+      "type": 0
+    },
+    {
+      "word": "PLUS",
+      "type": 0
+    },
+    {
+      "word": "MOMENT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "EME",
+      "type": 0
+    },
+    {
+      "word": "MOT",
+      "type": 0
+    },
+    {
+      "word": "NAP",
+      "type": 0
+    },
+    {
+      "word": "NEB",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "BENT",
+      "type": 0
+    },
+    {
+      "word": "LUST",
+      "type": 0
+    },
+    {
+      "word": "MEMO",
+      "type": 0
+    },
+    {
+      "word": "MOME",
+      "type": 0
+    },
+    {
+      "word": "MOTS",
+      "type": 0
+    },
+    {
+      "word": "NAPE",
+      "type": 0
+    },
+    {
+      "word": "OMEN",
+      "type": 0
+    },
+    {
+      "word": "PANE",
+      "type": 0
+    },
+    {
+      "word": "PANT",
+      "type": 0
+    },
+    {
+      "word": "PENT",
+      "type": 0
+    },
+    {
+      "word": "SANE",
+      "type": 0
+    },
+    {
+      "word": "TOME",
+      "type": 0
+    },
+    {
+      "word": "ULPAN",
+      "type": 0
+    }
+  ],
+  "letters": "MEBT,OMEN,TDPA,SULS",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

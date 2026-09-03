@@ -1,86 +1,87 @@
-﻿{
-    "id":  1565,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AŞK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EŞİT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BARET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REŞİT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "İBARET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İŞARET",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "İBARE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TKT,İŞE,BAR",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1565,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DUR",
+      "type": 0
+    },
+    {
+      "word": "DUY",
+      "type": 0
+    },
+    {
+      "word": "DUŞ",
+      "type": 0
+    },
+    {
+      "word": "DİE",
+      "type": 0
+    },
+    {
+      "word": "DİŞ",
+      "type": 0
+    },
+    {
+      "word": "SİD",
+      "type": 0
+    },
+    {
+      "word": "İDİ",
+      "type": 0
+    },
+    {
+      "word": "İLK",
+      "type": 0
+    },
+    {
+      "word": "İŞİ",
+      "type": 0
+    },
+    {
+      "word": "DİŞİ",
+      "type": 0
+    },
+    {
+      "word": "HOLLİS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "LİS",
+      "type": 0
+    },
+    {
+      "word": "SİL",
+      "type": 0
+    },
+    {
+      "word": "İSİ",
+      "type": 0
+    },
+    {
+      "word": "DİSK",
+      "type": 0
+    },
+    {
+      "word": "RUDİ",
+      "type": 0
+    }
+  ],
+  "letters": "İLLO,SKRH,İDUY,EİŞİ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

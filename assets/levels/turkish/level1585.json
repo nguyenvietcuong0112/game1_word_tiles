@@ -1,77 +1,207 @@
-﻿{
-    "id":  1585,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AHU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ELMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FERAH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HURMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REFAH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HURAFE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "FAHUR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FERMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAF",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "HUA,ARM,FEL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1585,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "COK",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "İKİ",
+      "type": 0
+    },
+    {
+      "word": "EZRA",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "ONLAR",
+      "type": 0
+    },
+    {
+      "word": "ONLARA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARZ",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "CİK",
+      "type": 0
+    },
+    {
+      "word": "KİL",
+      "type": 0
+    },
+    {
+      "word": "KİR",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LİK",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RİC",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAR",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "ASAL",
+      "type": 0
+    },
+    {
+      "word": "ASAR",
+      "type": 0
+    },
+    {
+      "word": "CİLA",
+      "type": 0
+    },
+    {
+      "word": "KİRA",
+      "type": 0
+    },
+    {
+      "word": "LARA",
+      "type": 0
+    },
+    {
+      "word": "LİON",
+      "type": 0
+    },
+    {
+      "word": "LİRA",
+      "type": 0
+    },
+    {
+      "word": "NEAL",
+      "type": 0
+    },
+    {
+      "word": "NESS",
+      "type": 0
+    },
+    {
+      "word": "ONLA",
+      "type": 0
+    },
+    {
+      "word": "RİCO",
+      "type": 0
+    },
+    {
+      "word": "RİKO",
+      "type": 0
+    },
+    {
+      "word": "SARİ",
+      "type": 0
+    },
+    {
+      "word": "SEAL",
+      "type": 0
+    },
+    {
+      "word": "LASSE",
+      "type": 0
+    },
+    {
+      "word": "NESSA",
+      "type": 0
+    },
+    {
+      "word": "ONLARİ",
+      "type": 0
+    },
+    {
+      "word": "SENLİK",
+      "type": 0
+    }
+  ],
+  "letters": "EZCO,ARİK,SALİ,SENO",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

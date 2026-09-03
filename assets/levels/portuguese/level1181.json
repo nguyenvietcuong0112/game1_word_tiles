@@ -1,89 +1,251 @@
-﻿{
-    "id":  1181,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIVA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RALI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VILA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARNE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDADE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VALSA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VALSAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VALIDADE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ADILAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "CLIVAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DADIVAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MEDA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VILAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RSARN,ALCME,VIDAD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1181,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "ALEX",
+      "type": 0
+    },
+    {
+      "word": "ELAS",
+      "type": 0
+    },
+    {
+      "word": "VALE",
+      "type": 0
+    },
+    {
+      "word": "ANDAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADN",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ARN",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "DAD",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "DRE",
+      "type": 0
+    },
+    {
+      "word": "ELI",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LER",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "LEX",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RDA",
+      "type": 0
+    },
+    {
+      "word": "REX",
+      "type": 0
+    },
+    {
+      "word": "RNA",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SAV",
+      "type": 0
+    },
+    {
+      "word": "TEX",
+      "type": 0
+    },
+    {
+      "word": "VAL",
+      "type": 0
+    },
+    {
+      "word": "VAN",
+      "type": 0
+    },
+    {
+      "word": "ANDA",
+      "type": 0
+    },
+    {
+      "word": "AVAL",
+      "type": 0
+    },
+    {
+      "word": "DRES",
+      "type": 0
+    },
+    {
+      "word": "EXES",
+      "type": 0
+    },
+    {
+      "word": "LAVA",
+      "type": 0
+    },
+    {
+      "word": "LEXI",
+      "type": 0
+    },
+    {
+      "word": "LIXE",
+      "type": 0
+    },
+    {
+      "word": "NASA",
+      "type": 0
+    },
+    {
+      "word": "NAVA",
+      "type": 0
+    },
+    {
+      "word": "SAND",
+      "type": 0
+    },
+    {
+      "word": "SELA",
+      "type": 0
+    },
+    {
+      "word": "ALEXI",
+      "type": 0
+    },
+    {
+      "word": "ANDRE",
+      "type": 0
+    },
+    {
+      "word": "ILESA",
+      "type": 0
+    },
+    {
+      "word": "LASER",
+      "type": 0
+    },
+    {
+      "word": "LERDA",
+      "type": 0
+    },
+    {
+      "word": "NASAL",
+      "type": 0
+    },
+    {
+      "word": "NAVAL",
+      "type": 0
+    },
+    {
+      "word": "TERES",
+      "type": 0
+    },
+    {
+      "word": "VALER",
+      "type": 0
+    },
+    {
+      "word": "VALES",
+      "type": 0
+    },
+    {
+      "word": "ANDRES",
+      "type": 0
+    },
+    {
+      "word": "DREXEL",
+      "type": 0
+    },
+    {
+      "word": "TERESA",
+      "type": 0
+    },
+    {
+      "word": "LAVANDA",
+      "type": 0
+    }
+  ],
+  "letters": "IXET,LERD,ASDA,VANR",
+  "obstacles": []
 }

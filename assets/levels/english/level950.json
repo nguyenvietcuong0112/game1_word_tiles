@@ -1,69 +1,195 @@
-﻿{
-    "id":  950,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEARD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIALOG",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARSE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "HID",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAID",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RHEA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SEAR",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "ARDG,EHIO,SRAL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 950,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DOG",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "GOD",
+      "type": 0
+    },
+    {
+      "word": "INK",
+      "type": 0
+    },
+    {
+      "word": "PUT",
+      "type": 0
+    },
+    {
+      "word": "SKI",
+      "type": 0
+    },
+    {
+      "word": "NEED",
+      "type": 0
+    },
+    {
+      "word": "TYPE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DIG",
+      "type": 0
+    },
+    {
+      "word": "ENG",
+      "type": 0
+    },
+    {
+      "word": "GID",
+      "type": 0
+    },
+    {
+      "word": "GIE",
+      "type": 0
+    },
+    {
+      "word": "KID",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "PYE",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "SKY",
+      "type": 0
+    },
+    {
+      "word": "STY",
+      "type": 0
+    },
+    {
+      "word": "TUP",
+      "type": 0
+    },
+    {
+      "word": "TYE",
+      "type": 0
+    },
+    {
+      "word": "UTS",
+      "type": 0
+    },
+    {
+      "word": "YEN",
+      "type": 0
+    },
+    {
+      "word": "GIEN",
+      "type": 0
+    },
+    {
+      "word": "INKS",
+      "type": 0
+    },
+    {
+      "word": "INKY",
+      "type": 0
+    },
+    {
+      "word": "NEEP",
+      "type": 0
+    },
+    {
+      "word": "PEEN",
+      "type": 0
+    },
+    {
+      "word": "PUTS",
+      "type": 0
+    },
+    {
+      "word": "SINK",
+      "type": 0
+    },
+    {
+      "word": "SKID",
+      "type": 0
+    },
+    {
+      "word": "STYE",
+      "type": 0
+    },
+    {
+      "word": "TYEE",
+      "type": 0
+    },
+    {
+      "word": "DOGIE",
+      "type": 0
+    },
+    {
+      "word": "INDIE",
+      "type": 0
+    },
+    {
+      "word": "SKIEY",
+      "type": 0
+    },
+    {
+      "word": "STUPE",
+      "type": 0
+    },
+    {
+      "word": "TYPED",
+      "type": 0
+    },
+    {
+      "word": "DEPUTY",
+      "type": 0
+    },
+    {
+      "word": "INDIGN",
+      "type": 0
+    },
+    {
+      "word": "INDIGO",
+      "type": 0
+    }
+  ],
+  "letters": "UPED,TYEN,SKIG,INDO",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

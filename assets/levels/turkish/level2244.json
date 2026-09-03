@@ -1,93 +1,199 @@
-﻿{
-    "id":  2244,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAST",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STİL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ANMAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAKAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BASAMAK",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BASAK",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KAAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KASTİ",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SAKA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "KAST,AMAİ,ANBL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2244,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GÜL",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SEO",
+      "type": 0
+    },
+    {
+      "word": "SEY",
+      "type": 0
+    },
+    {
+      "word": "İSA",
+      "type": 0
+    },
+    {
+      "word": "İSE",
+      "type": 0
+    },
+    {
+      "word": "AKSİ",
+      "type": 0
+    },
+    {
+      "word": "NESİ",
+      "type": 0
+    },
+    {
+      "word": "NEYİ",
+      "type": 0
+    },
+    {
+      "word": "MESAİ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "ASİ",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DOE",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NEY",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAİ",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "YEN",
+      "type": 0
+    },
+    {
+      "word": "YES",
+      "type": 0
+    },
+    {
+      "word": "AKLA",
+      "type": 0
+    },
+    {
+      "word": "ALDO",
+      "type": 0
+    },
+    {
+      "word": "AMES",
+      "type": 0
+    },
+    {
+      "word": "ANKA",
+      "type": 0
+    },
+    {
+      "word": "DAME",
+      "type": 0
+    },
+    {
+      "word": "KLAN",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "MADS",
+      "type": 0
+    },
+    {
+      "word": "ODAK",
+      "type": 0
+    },
+    {
+      "word": "ODAM",
+      "type": 0
+    },
+    {
+      "word": "SEYİ",
+      "type": 0
+    },
+    {
+      "word": "İSEN",
+      "type": 0
+    },
+    {
+      "word": "LANKA",
+      "type": 0
+    },
+    {
+      "word": "MESAİYE",
+      "type": 0
+    },
+    {
+      "word": "ODAKLAN",
+      "type": 0
+    }
+  ],
+  "letters": "YENAG,İSKLÜ,AAADO,SEMSE",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

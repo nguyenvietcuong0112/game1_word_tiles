@@ -1,97 +1,259 @@
-﻿{
-    "id":  1211,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DOS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OSA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIÑA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIÑA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÁVIDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATREVIDO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ADIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ADIVE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IDAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IDOS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REV",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÑAS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ÁÑAS,VIDO,ERTA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1211,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASI",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "NORA",
+      "type": 0
+    },
+    {
+      "word": "PASA",
+      "type": 0
+    },
+    {
+      "word": "PUDO",
+      "type": 0
+    },
+    {
+      "word": "PUTA",
+      "type": 0
+    },
+    {
+      "word": "TODA",
+      "type": 0
+    },
+    {
+      "word": "TODAS",
+      "type": 0
+    },
+    {
+      "word": "PASADO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "APU",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ASN",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "ISA",
+      "type": 0
+    },
+    {
+      "word": "ISN",
+      "type": 0
+    },
+    {
+      "word": "NAO",
+      "type": 0
+    },
+    {
+      "word": "NOI",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "OTA",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "PIO",
+      "type": 0
+    },
+    {
+      "word": "PIS",
+      "type": 0
+    },
+    {
+      "word": "POD",
+      "type": 0
+    },
+    {
+      "word": "PUT",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SIP",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "APIO",
+      "type": 0
+    },
+    {
+      "word": "ARON",
+      "type": 0
+    },
+    {
+      "word": "ASNO",
+      "type": 0
+    },
+    {
+      "word": "DATO",
+      "type": 0
+    },
+    {
+      "word": "IPAD",
+      "type": 0
+    },
+    {
+      "word": "PATO",
+      "type": 0
+    },
+    {
+      "word": "PISA",
+      "type": 0
+    },
+    {
+      "word": "PUTO",
+      "type": 0
+    },
+    {
+      "word": "SAPO",
+      "type": 0
+    },
+    {
+      "word": "SATO",
+      "type": 0
+    },
+    {
+      "word": "TASA",
+      "type": 0
+    },
+    {
+      "word": "ASADO",
+      "type": 0
+    },
+    {
+      "word": "PASAD",
+      "type": 0
+    },
+    {
+      "word": "PUTAS",
+      "type": 0
+    },
+    {
+      "word": "SAPNA",
+      "type": 0
+    },
+    {
+      "word": "PASION",
+      "type": 0
+    },
+    {
+      "word": "PISADA",
+      "type": 0
+    },
+    {
+      "word": "PISADO",
+      "type": 0
+    },
+    {
+      "word": "PUTADA",
+      "type": 0
+    }
+  ],
+  "letters": "PIOR,ASNA,DAPO,OTUD",
+  "obstacles": []
 }

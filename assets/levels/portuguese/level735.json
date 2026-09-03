@@ -1,81 +1,271 @@
-﻿{
-    "id":  735,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMENDOIM",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMIM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMIMAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "INDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAMI",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RAPA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DOMR,NIMA,EMAP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 735,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "MIA",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "SAI",
+      "type": 0
+    },
+    {
+      "word": "TAL",
+      "type": 0
+    },
+    {
+      "word": "FITA",
+      "type": 0
+    },
+    {
+      "word": "LAGO",
+      "type": 0
+    },
+    {
+      "word": "SAIA",
+      "type": 0
+    },
+    {
+      "word": "TIRA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ASN",
+      "type": 0
+    },
+    {
+      "word": "ATM",
+      "type": 0
+    },
+    {
+      "word": "FAI",
+      "type": 0
+    },
+    {
+      "word": "FAR",
+      "type": 0
+    },
+    {
+      "word": "FIT",
+      "type": 0
+    },
+    {
+      "word": "GAI",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "GOL",
+      "type": 0
+    },
+    {
+      "word": "IAS",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "ITA",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LAI",
+      "type": 0
+    },
+    {
+      "word": "LOG",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "RAF",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "TAI",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "ARAS",
+      "type": 0
+    },
+    {
+      "word": "ARIF",
+      "type": 0
+    },
+    {
+      "word": "FARA",
+      "type": 0
+    },
+    {
+      "word": "FIRA",
+      "type": 0
+    },
+    {
+      "word": "GAIA",
+      "type": 0
+    },
+    {
+      "word": "GALA",
+      "type": 0
+    },
+    {
+      "word": "GALO",
+      "type": 0
+    },
+    {
+      "word": "GOLA",
+      "type": 0
+    },
+    {
+      "word": "IAGO",
+      "type": 0
+    },
+    {
+      "word": "LAIA",
+      "type": 0
+    },
+    {
+      "word": "LARA",
+      "type": 0
+    },
+    {
+      "word": "RAFI",
+      "type": 0
+    },
+    {
+      "word": "RAIA",
+      "type": 0
+    },
+    {
+      "word": "RALA",
+      "type": 0
+    },
+    {
+      "word": "RALO",
+      "type": 0
+    },
+    {
+      "word": "RIFA",
+      "type": 0
+    },
+    {
+      "word": "RITA",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "SARI",
+      "type": 0
+    },
+    {
+      "word": "TALA",
+      "type": 0
+    },
+    {
+      "word": "TALO",
+      "type": 0
+    },
+    {
+      "word": "TARA",
+      "type": 0
+    },
+    {
+      "word": "ATIRA",
+      "type": 0
+    },
+    {
+      "word": "LOGAR",
+      "type": 0
+    },
+    {
+      "word": "TIRAS",
+      "type": 0
+    },
+    {
+      "word": "SAFIRA",
+      "type": 0
+    },
+    {
+      "word": "SARITA",
+      "type": 0
+    },
+    {
+      "word": "TARIFA",
+      "type": 0
+    },
+    {
+      "word": "TARIFAS",
+      "type": 0
+    }
+  ],
+  "letters": "OGAT,LARI,AIAF,TMSN",
+  "obstacles": []
 }

@@ -1,61 +1,279 @@
-﻿{
-    "id":  1099,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ÇİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EMİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İZİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MİNİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇİZİM",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ELİM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İÇEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LİME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MİÇEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇELİM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LİN,EMİ,ÇİZ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1099,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAY",
+      "type": 0
+    },
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "ANDA",
+      "type": 0
+    },
+    {
+      "word": "DAKİ",
+      "type": 0
+    },
+    {
+      "word": "DANK",
+      "type": 0
+    },
+    {
+      "word": "HANİ",
+      "type": 0
+    },
+    {
+      "word": "RYAN",
+      "type": 0
+    },
+    {
+      "word": "BAYAN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "AHN",
+      "type": 0
+    },
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ANN",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "DİK",
+      "type": 0
+    },
+    {
+      "word": "DİN",
+      "type": 0
+    },
+    {
+      "word": "HAN",
+      "type": 0
+    },
+    {
+      "word": "KİD",
+      "type": 0
+    },
+    {
+      "word": "KİN",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "NDA",
+      "type": 0
+    },
+    {
+      "word": "NİK",
+      "type": 0
+    },
+    {
+      "word": "RAB",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "İNN",
+      "type": 0
+    },
+    {
+      "word": "ANDİ",
+      "type": 0
+    },
+    {
+      "word": "ANNA",
+      "type": 0
+    },
+    {
+      "word": "ARDA",
+      "type": 0
+    },
+    {
+      "word": "AYAR",
+      "type": 0
+    },
+    {
+      "word": "BAND",
+      "type": 0
+    },
+    {
+      "word": "BARN",
+      "type": 0
+    },
+    {
+      "word": "BAYA",
+      "type": 0
+    },
+    {
+      "word": "DİNA",
+      "type": 0
+    },
+    {
+      "word": "NARN",
+      "type": 0
+    },
+    {
+      "word": "NDAN",
+      "type": 0
+    },
+    {
+      "word": "RAND",
+      "type": 0
+    },
+    {
+      "word": "YARD",
+      "type": 0
+    },
+    {
+      "word": "ADİNA",
+      "type": 0
+    },
+    {
+      "word": "ANDAN",
+      "type": 0
+    },
+    {
+      "word": "BARDA",
+      "type": 0
+    },
+    {
+      "word": "BARRY",
+      "type": 0
+    },
+    {
+      "word": "DİNAH",
+      "type": 0
+    },
+    {
+      "word": "HANNA",
+      "type": 0
+    },
+    {
+      "word": "KADİN",
+      "type": 0
+    },
+    {
+      "word": "NDAKİ",
+      "type": 0
+    },
+    {
+      "word": "YABAN",
+      "type": 0
+    },
+    {
+      "word": "YANDA",
+      "type": 0
+    },
+    {
+      "word": "YARDA",
+      "type": 0
+    },
+    {
+      "word": "ANDAKİ",
+      "type": 0
+    },
+    {
+      "word": "ANNİKA",
+      "type": 0
+    },
+    {
+      "word": "BARDAK",
+      "type": 0
+    },
+    {
+      "word": "BARDAN",
+      "type": 0
+    },
+    {
+      "word": "YANDAN",
+      "type": 0
+    },
+    {
+      "word": "BARDAKİ",
+      "type": 0
+    },
+    {
+      "word": "YANDAKİ",
+      "type": 0
+    },
+    {
+      "word": "BAYANDAN",
+      "type": 0
+    }
+  ],
+  "letters": "ABHA,YANN,RRDİ,KNAK",
+  "obstacles": []
 }

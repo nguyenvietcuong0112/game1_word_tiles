@@ -1,89 +1,159 @@
-﻿{
-    "id":  1790,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CRUMB",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MEANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "URBAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BANTER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANTE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BUNTER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CUBA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CUBAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EMU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NUB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EANT,MBUE,URCR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1790,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ICE",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "LIP",
+      "type": 0
+    },
+    {
+      "word": "PIC",
+      "type": 0
+    },
+    {
+      "word": "PIG",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "COOL",
+      "type": 0
+    },
+    {
+      "word": "LEGS",
+      "type": 0
+    },
+    {
+      "word": "PICS",
+      "type": 0
+    },
+    {
+      "word": "TOOL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "CEL",
+      "type": 0
+    },
+    {
+      "word": "COO",
+      "type": 0
+    },
+    {
+      "word": "COT",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GIP",
+      "type": 0
+    },
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OOT",
+      "type": 0
+    },
+    {
+      "word": "LICE",
+      "type": 0
+    },
+    {
+      "word": "LOOT",
+      "type": 0
+    },
+    {
+      "word": "PICE",
+      "type": 0
+    },
+    {
+      "word": "PIGS",
+      "type": 0
+    },
+    {
+      "word": "PILE",
+      "type": 0
+    },
+    {
+      "word": "PILI",
+      "type": 0
+    },
+    {
+      "word": "REGS",
+      "type": 0
+    },
+    {
+      "word": "CLOOT",
+      "type": 0
+    },
+    {
+      "word": "LIGER",
+      "type": 0
+    },
+    {
+      "word": "COOLER",
+      "type": 0
+    },
+    {
+      "word": "LIGERS",
+      "type": 0
+    },
+    {
+      "word": "TOOLER",
+      "type": 0
+    },
+    {
+      "word": "COOLERS",
+      "type": 0
+    },
+    {
+      "word": "TOOLERS",
+      "type": 0
+    }
+  ],
+  "letters": "RSCE,EGIL,LCPI,OOTG",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

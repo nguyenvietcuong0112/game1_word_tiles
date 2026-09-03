@@ -1,89 +1,203 @@
-﻿{
-    "id":  1045,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MICA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MICO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MITO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OITO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOTIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOTOCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OTIMISMO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CIMO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "COTIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COTO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "IMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TIMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOMISMO",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "SMOA,IMIC,MOTO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1045,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "CHA",
+      "type": 0
+    },
+    {
+      "word": "ELE",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "HAP",
+      "type": 0
+    },
+    {
+      "word": "LEI",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "TOA",
+      "type": 0
+    },
+    {
+      "word": "ALCE",
+      "type": 0
+    },
+    {
+      "word": "LEITO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "CEL",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "HAR",
+      "type": 0
+    },
+    {
+      "word": "ITO",
+      "type": 0
+    },
+    {
+      "word": "ITT",
+      "type": 0
+    },
+    {
+      "word": "LAP",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "PTA",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TTA",
+      "type": 0
+    },
+    {
+      "word": "TTE",
+      "type": 0
+    },
+    {
+      "word": "TTO",
+      "type": 0
+    },
+    {
+      "word": "AAAH",
+      "type": 0
+    },
+    {
+      "word": "APTA",
+      "type": 0
+    },
+    {
+      "word": "CHAR",
+      "type": 0
+    },
+    {
+      "word": "CLAP",
+      "type": 0
+    },
+    {
+      "word": "TELE",
+      "type": 0
+    },
+    {
+      "word": "TORA",
+      "type": 0
+    },
+    {
+      "word": "CHARO",
+      "type": 0
+    },
+    {
+      "word": "TORAH",
+      "type": 0
+    },
+    {
+      "word": "ELEITO",
+      "type": 0
+    },
+    {
+      "word": "LEITOR",
+      "type": 0
+    },
+    {
+      "word": "ELEITOR",
+      "type": 0
+    },
+    {
+      "word": "LEITORA",
+      "type": 0
+    }
+  ],
+  "letters": "ECLC,LPAH,ETAA,ITOR",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

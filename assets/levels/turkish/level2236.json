@@ -1,77 +1,187 @@
-﻿{
-    "id":  2236,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SES",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TİP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİST",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SİTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KESİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TESTİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KESİCİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TESPİT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EKİCİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KESİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KİSTİ,ECESP,SİTAN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2236,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "EEE",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "EŞİ",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "NDE",
+      "type": 0
+    },
+    {
+      "word": "RİO",
+      "type": 0
+    },
+    {
+      "word": "İŞE",
+      "type": 0
+    },
+    {
+      "word": "GERİ",
+      "type": 0
+    },
+    {
+      "word": "NERDE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "DRE",
+      "type": 0
+    },
+    {
+      "word": "ELM",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "ERİ",
+      "type": 0
+    },
+    {
+      "word": "EŞE",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "GER",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "NEO",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "RİN",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "ŞEN",
+      "type": 0
+    },
+    {
+      "word": "EDNA",
+      "type": 0
+    },
+    {
+      "word": "EGAN",
+      "type": 0
+    },
+    {
+      "word": "EMEN",
+      "type": 0
+    },
+    {
+      "word": "ERİN",
+      "type": 0
+    },
+    {
+      "word": "EŞİN",
+      "type": 0
+    },
+    {
+      "word": "MENİ",
+      "type": 0
+    },
+    {
+      "word": "MEŞE",
+      "type": 0
+    },
+    {
+      "word": "NEŞE",
+      "type": 0
+    },
+    {
+      "word": "RİOS",
+      "type": 0
+    },
+    {
+      "word": "İNDE",
+      "type": 0
+    },
+    {
+      "word": "ANDRE",
+      "type": 0
+    },
+    {
+      "word": "EŞİNE",
+      "type": 0
+    },
+    {
+      "word": "REGAN",
+      "type": 0
+    }
+  ],
+  "letters": "EDNEM,DRİŞE,NEOEE,AGSML",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

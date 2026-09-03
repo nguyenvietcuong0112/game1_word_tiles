@@ -1,73 +1,211 @@
-﻿{
-    "id":  1080,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANTI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WOMAN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "MANI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TIAN",
-                            "type":  1
-                        },
-                        {
-                            "word":  "WAN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "INT,WAI,OME",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1080,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "BIS",
+      "type": 0
+    },
+    {
+      "word": "BIT",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "EAST",
+      "type": 0
+    },
+    {
+      "word": "STAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAS",
+      "type": 0
+    },
+    {
+      "word": "AIT",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SIB",
+      "type": 0
+    },
+    {
+      "word": "TAB",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "BAAS",
+      "type": 0
+    },
+    {
+      "word": "BASS",
+      "type": 0
+    },
+    {
+      "word": "BATS",
+      "type": 0
+    },
+    {
+      "word": "BIAS",
+      "type": 0
+    },
+    {
+      "word": "BITE",
+      "type": 0
+    },
+    {
+      "word": "IBIS",
+      "type": 0
+    },
+    {
+      "word": "MARS",
+      "type": 0
+    },
+    {
+      "word": "MATS",
+      "type": 0
+    },
+    {
+      "word": "RAMS",
+      "type": 0
+    },
+    {
+      "word": "RATS",
+      "type": 0
+    },
+    {
+      "word": "SEAS",
+      "type": 0
+    },
+    {
+      "word": "STAB",
+      "type": 0
+    },
+    {
+      "word": "TAMS",
+      "type": 0
+    },
+    {
+      "word": "TARS",
+      "type": 0
+    },
+    {
+      "word": "TASS",
+      "type": 0
+    },
+    {
+      "word": "TEAS",
+      "type": 0
+    },
+    {
+      "word": "ASSET",
+      "type": 0
+    },
+    {
+      "word": "BITES",
+      "type": 0
+    },
+    {
+      "word": "EASTS",
+      "type": 0
+    },
+    {
+      "word": "STARS",
+      "type": 0
+    }
+  ],
+  "letters": "MARS,STSS,SAAE,IBIT",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

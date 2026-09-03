@@ -1,81 +1,167 @@
-﻿{
-    "id":  970,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MUDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUFO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UNIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIRME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FUNDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UNIFORME",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BUIR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "INDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MUI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NUTO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "UME",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CORME,OFIUB,TUNDO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 970,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FOI",
+      "type": 0
+    },
+    {
+      "word": "SEU",
+      "type": 0
+    },
+    {
+      "word": "SUL",
+      "type": 0
+    },
+    {
+      "word": "TEU",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "VÔO",
+      "type": 0
+    },
+    {
+      "word": "ARTE",
+      "type": 0
+    },
+    {
+      "word": "CASA",
+      "type": 0
+    },
+    {
+      "word": "SEUS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ASU",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "FAE",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "SIA",
+      "type": 0
+    },
+    {
+      "word": "SRA",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "FACA",
+      "type": 0
+    },
+    {
+      "word": "FAES",
+      "type": 0
+    },
+    {
+      "word": "RAIO",
+      "type": 0
+    },
+    {
+      "word": "SACA",
+      "type": 0
+    },
+    {
+      "word": "SEUL",
+      "type": 0
+    },
+    {
+      "word": "TEUS",
+      "type": 0
+    },
+    {
+      "word": "TRAI",
+      "type": 0
+    },
+    {
+      "word": "ARTES",
+      "type": 0
+    },
+    {
+      "word": "FACAS",
+      "type": 0
+    },
+    {
+      "word": "RAISE",
+      "type": 0
+    },
+    {
+      "word": "TRAIO",
+      "type": 0
+    },
+    {
+      "word": "ULTRA",
+      "type": 0
+    }
+  ],
+  "letters": "LTRA,UESI,SAFO,ACVÔ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

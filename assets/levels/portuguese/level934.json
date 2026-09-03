@@ -1,69 +1,243 @@
-﻿{
-    "id":  934,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "PAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BURCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BUSCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAPIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SURRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BUSCAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SURTIR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BUS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PIRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIPA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "URCA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SCAP,URRI,BTIM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 934,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "SRA",
+      "type": 0
+    },
+    {
+      "word": "VAI",
+      "type": 0
+    },
+    {
+      "word": "VEZ",
+      "type": 0
+    },
+    {
+      "word": "FATO",
+      "type": 0
+    },
+    {
+      "word": "FICA",
+      "type": 0
+    },
+    {
+      "word": "FICO",
+      "type": 0
+    },
+    {
+      "word": "FAVOR",
+      "type": 0
+    },
+    {
+      "word": "FICAVA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIC",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "AVC",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "CIA",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "FAR",
+      "type": 0
+    },
+    {
+      "word": "FAT",
+      "type": 0
+    },
+    {
+      "word": "FIA",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "OVA",
+      "type": 0
+    },
+    {
+      "word": "RAF",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TOC",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TOV",
+      "type": 0
+    },
+    {
+      "word": "VOC",
+      "type": 0
+    },
+    {
+      "word": "ZEV",
+      "type": 0
+    },
+    {
+      "word": "ATAR",
+      "type": 0
+    },
+    {
+      "word": "ATOR",
+      "type": 0
+    },
+    {
+      "word": "AVES",
+      "type": 0
+    },
+    {
+      "word": "CAVA",
+      "type": 0
+    },
+    {
+      "word": "CAVO",
+      "type": 0
+    },
+    {
+      "word": "CORA",
+      "type": 0
+    },
+    {
+      "word": "COTA",
+      "type": 0
+    },
+    {
+      "word": "COVA",
+      "type": 0
+    },
+    {
+      "word": "FACO",
+      "type": 0
+    },
+    {
+      "word": "FARO",
+      "type": 0
+    },
+    {
+      "word": "FAVO",
+      "type": 0
+    },
+    {
+      "word": "RATA",
+      "type": 0
+    },
+    {
+      "word": "RATO",
+      "type": 0
+    },
+    {
+      "word": "ROCA",
+      "type": 0
+    },
+    {
+      "word": "ROTA",
+      "type": 0
+    },
+    {
+      "word": "TARO",
+      "type": 0
+    },
+    {
+      "word": "TAVA",
+      "type": 0
+    },
+    {
+      "word": "TOCA",
+      "type": 0
+    },
+    {
+      "word": "TORA",
+      "type": 0
+    },
+    {
+      "word": "VAZE",
+      "type": 0
+    },
+    {
+      "word": "VOTA",
+      "type": 0
+    },
+    {
+      "word": "FATOR",
+      "type": 0
+    },
+    {
+      "word": "VOTAR",
+      "type": 0
+    },
+    {
+      "word": "AVATAR",
+      "type": 0
+    },
+    {
+      "word": "TOCAVA",
+      "type": 0
+    }
+  ],
+  "letters": "FSEZ,ARVA,TOCI,AVAF",
+  "obstacles": []
 }

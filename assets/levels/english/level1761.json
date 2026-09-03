@@ -1,114 +1,219 @@
-﻿{
-    "id":  1761,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CRY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOTE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CRYPTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DECREE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BEY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CREE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CRYPT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROTE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TOR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BEECE,RYDRE,CPTOT",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1761,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "SETS",
+      "type": 0
+    },
+    {
+      "word": "WEST",
+      "type": 0
+    },
+    {
+      "word": "CREST",
+      "type": 0
+    },
+    {
+      "word": "WESTERN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERN",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SEW",
+      "type": 0
+    },
+    {
+      "word": "TIC",
+      "type": 0
+    },
+    {
+      "word": "WIT",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "ARSE",
+      "type": 0
+    },
+    {
+      "word": "DERE",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "ERNS",
+      "type": 0
+    },
+    {
+      "word": "ERST",
+      "type": 0
+    },
+    {
+      "word": "RASE",
+      "type": 0
+    },
+    {
+      "word": "RETS",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SERE",
+      "type": 0
+    },
+    {
+      "word": "SERS",
+      "type": 0
+    },
+    {
+      "word": "TERN",
+      "type": 0
+    },
+    {
+      "word": "TICS",
+      "type": 0
+    },
+    {
+      "word": "TWIT",
+      "type": 0
+    },
+    {
+      "word": "WITS",
+      "type": 0
+    },
+    {
+      "word": "ESTER",
+      "type": 0
+    },
+    {
+      "word": "RASER",
+      "type": 0
+    },
+    {
+      "word": "SERED",
+      "type": 0
+    },
+    {
+      "word": "SERER",
+      "type": 0
+    },
+    {
+      "word": "SERES",
+      "type": 0
+    },
+    {
+      "word": "STERE",
+      "type": 0
+    },
+    {
+      "word": "STERN",
+      "type": 0
+    },
+    {
+      "word": "TERNS",
+      "type": 0
+    },
+    {
+      "word": "TERSE",
+      "type": 0
+    },
+    {
+      "word": "TWITS",
+      "type": 0
+    },
+    {
+      "word": "SEREST",
+      "type": 0
+    },
+    {
+      "word": "STERES",
+      "type": 0
+    },
+    {
+      "word": "STERNS",
+      "type": 0
+    },
+    {
+      "word": "WESTER",
+      "type": 0
+    },
+    {
+      "word": "WESTERED",
+      "type": 0
+    },
+    {
+      "word": "WESTERNS",
+      "type": 0
+    }
+  ],
+  "letters": "ASND,RERE,STCS,EWIT",
+  "obstacles": []
 }

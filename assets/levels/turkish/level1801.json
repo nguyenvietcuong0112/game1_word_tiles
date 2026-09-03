@@ -1,99 +1,259 @@
-﻿{
-    "id":  1801,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ABA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BACI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BATI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KORT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ORTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇORBA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ABACI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KIRBA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TABA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ÇOK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇORBACI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ABAC,IRTI,KOÇR",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1801,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "ONA",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SOK",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "SONA",
+      "type": 0
+    },
+    {
+      "word": "SALLA",
+      "type": 0
+    },
+    {
+      "word": "SATAN",
+      "type": 0
+    },
+    {
+      "word": "SATIN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ASI",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ATI",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "KAS",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "SOO",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "ANIT",
+      "type": 0
+    },
+    {
+      "word": "ANKA",
+      "type": 0
+    },
+    {
+      "word": "ASAL",
+      "type": 0
+    },
+    {
+      "word": "ASIN",
+      "type": 0
+    },
+    {
+      "word": "ATAN",
+      "type": 0
+    },
+    {
+      "word": "ATIN",
+      "type": 0
+    },
+    {
+      "word": "KASK",
+      "type": 0
+    },
+    {
+      "word": "KATI",
+      "type": 0
+    },
+    {
+      "word": "KATO",
+      "type": 0
+    },
+    {
+      "word": "LAST",
+      "type": 0
+    },
+    {
+      "word": "NASI",
+      "type": 0
+    },
+    {
+      "word": "NOTA",
+      "type": 0
+    },
+    {
+      "word": "SANS",
+      "type": 0
+    },
+    {
+      "word": "SATO",
+      "type": 0
+    },
+    {
+      "word": "SINA",
+      "type": 0
+    },
+    {
+      "word": "SONS",
+      "type": 0
+    },
+    {
+      "word": "SOOK",
+      "type": 0
+    },
+    {
+      "word": "SOON",
+      "type": 0
+    },
+    {
+      "word": "STAN",
+      "type": 0
+    },
+    {
+      "word": "TANK",
+      "type": 0
+    },
+    {
+      "word": "ALLAN",
+      "type": 0
+    },
+    {
+      "word": "ANTON",
+      "type": 0
+    },
+    {
+      "word": "ATINA",
+      "type": 0
+    },
+    {
+      "word": "ATSAN",
+      "type": 0
+    },
+    {
+      "word": "ATSIN",
+      "type": 0
+    },
+    {
+      "word": "KATIN",
+      "type": 0
+    },
+    {
+      "word": "KATINA",
+      "type": 0
+    },
+    {
+      "word": "SALLAN",
+      "type": 0
+    },
+    {
+      "word": "STANTON",
+      "type": 0
+    }
+  ],
+  "letters": "KOSLL,SONAA,ATISS,KNATA",
+  "obstacles": []
 }

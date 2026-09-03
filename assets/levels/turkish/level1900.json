@@ -1,69 +1,179 @@
-﻿{
-    "id":  1900,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "FAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HİS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECZA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HİZA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İNCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOFA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NİYET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SİZCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZİHNİYET",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "HİN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NİYE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZİHNİ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ZİHNİYE",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ETNCE,YHİZA,İNSOF",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1900,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "DUR",
+      "type": 0
+    },
+    {
+      "word": "FAN",
+      "type": 0
+    },
+    {
+      "word": "HAK",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "RUH",
+      "type": 0
+    },
+    {
+      "word": "UYU",
+      "type": 0
+    },
+    {
+      "word": "KARA",
+      "type": 0
+    },
+    {
+      "word": "LEAH",
+      "type": 0
+    },
+    {
+      "word": "RUHU",
+      "type": 0
+    },
+    {
+      "word": "DUYGU",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AHN",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DUY",
+      "type": 0
+    },
+    {
+      "word": "GUY",
+      "type": 0
+    },
+    {
+      "word": "GYU",
+      "type": 0
+    },
+    {
+      "word": "HAE",
+      "type": 0
+    },
+    {
+      "word": "HUH",
+      "type": 0
+    },
+    {
+      "word": "HUY",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "YUH",
+      "type": 0
+    },
+    {
+      "word": "ANKA",
+      "type": 0
+    },
+    {
+      "word": "DANK",
+      "type": 0
+    },
+    {
+      "word": "DARA",
+      "type": 0
+    },
+    {
+      "word": "ELKA",
+      "type": 0
+    },
+    {
+      "word": "HARA",
+      "type": 0
+    },
+    {
+      "word": "HARU",
+      "type": 0
+    },
+    {
+      "word": "HUYU",
+      "type": 0
+    },
+    {
+      "word": "KAHN",
+      "type": 0
+    },
+    {
+      "word": "LEAR",
+      "type": 0
+    },
+    {
+      "word": "RUHA",
+      "type": 0
+    },
+    {
+      "word": "UYUR",
+      "type": 0
+    },
+    {
+      "word": "DURAK",
+      "type": 0
+    },
+    {
+      "word": "ANKARA",
+      "type": 0
+    },
+    {
+      "word": "DUYGUYU",
+      "type": 0
+    }
+  ],
+  "letters": "DUHUG,ARUYY,EAHFU,LKNAD",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

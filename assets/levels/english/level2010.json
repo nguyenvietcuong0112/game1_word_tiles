@@ -1,122 +1,227 @@
-﻿{
-    "id":  2010,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRAG",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZEBRA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BRIG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BRIT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GARB",
-                            "type":  1
-                        },
-                        {
-                            "word":  "OUD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOGA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ZED",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BRIT,EAGO,ZEDU",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2010,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "AMP",
+      "type": 0
+    },
+    {
+      "word": "BOX",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "TOP",
+      "type": 0
+    },
+    {
+      "word": "INTO",
+      "type": 0
+    },
+    {
+      "word": "POINT",
+      "type": 0
+    },
+    {
+      "word": "BOXING",
+      "type": 0
+    },
+    {
+      "word": "OPTION",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "BIN",
+      "type": 0
+    },
+    {
+      "word": "BIO",
+      "type": 0
+    },
+    {
+      "word": "ION",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "NAP",
+      "type": 0
+    },
+    {
+      "word": "NIB",
+      "type": 0
+    },
+    {
+      "word": "NIX",
+      "type": 0
+    },
+    {
+      "word": "OBI",
+      "type": 0
+    },
+    {
+      "word": "OPT",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "POI",
+      "type": 0
+    },
+    {
+      "word": "POT",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "BINT",
+      "type": 0
+    },
+    {
+      "word": "CANT",
+      "type": 0
+    },
+    {
+      "word": "PACT",
+      "type": 0
+    },
+    {
+      "word": "PANG",
+      "type": 0
+    },
+    {
+      "word": "PANT",
+      "type": 0
+    },
+    {
+      "word": "PRAM",
+      "type": 0
+    },
+    {
+      "word": "PRAT",
+      "type": 0
+    },
+    {
+      "word": "RAMP",
+      "type": 0
+    },
+    {
+      "word": "TAMP",
+      "type": 0
+    },
+    {
+      "word": "TARP",
+      "type": 0
+    },
+    {
+      "word": "ANION",
+      "type": 0
+    },
+    {
+      "word": "CANTO",
+      "type": 0
+    },
+    {
+      "word": "PANTO",
+      "type": 0
+    },
+    {
+      "word": "RATIO",
+      "type": 0
+    },
+    {
+      "word": "TOPOI",
+      "type": 0
+    },
+    {
+      "word": "CANTON",
+      "type": 0
+    },
+    {
+      "word": "RATION",
+      "type": 0
+    },
+    {
+      "word": "TAMPON",
+      "type": 0
+    }
+  ],
+  "letters": "RPCAP,AMTNG,TPOIX,IONBO",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

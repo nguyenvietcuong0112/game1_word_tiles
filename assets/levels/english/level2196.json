@@ -1,97 +1,231 @@
-﻿{
-    "id":  2196,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUNE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ARENA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ARGUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HUMAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HUMANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANURE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TARE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "VANE",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "VANEU,AMURG,HURAT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2196,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "HOP",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "ARMS",
+      "type": 0
+    },
+    {
+      "word": "HOPE",
+      "type": 0
+    },
+    {
+      "word": "HORN",
+      "type": 0
+    },
+    {
+      "word": "ALARM",
+      "type": 0
+    },
+    {
+      "word": "HOPES",
+      "type": 0
+    },
+    {
+      "word": "RALPH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "HEP",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "HOD",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LAT",
+      "type": 0
+    },
+    {
+      "word": "OAR",
+      "type": 0
+    },
+    {
+      "word": "ODS",
+      "type": 0
+    },
+    {
+      "word": "OHS",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "PEH",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "POH",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "ALAR",
+      "type": 0
+    },
+    {
+      "word": "ALAS",
+      "type": 0
+    },
+    {
+      "word": "ALMS",
+      "type": 0
+    },
+    {
+      "word": "DORS",
+      "type": 0
+    },
+    {
+      "word": "HOAR",
+      "type": 0
+    },
+    {
+      "word": "HODS",
+      "type": 0
+    },
+    {
+      "word": "LASS",
+      "type": 0
+    },
+    {
+      "word": "LATS",
+      "type": 0
+    },
+    {
+      "word": "OPES",
+      "type": 0
+    },
+    {
+      "word": "RODS",
+      "type": 0
+    },
+    {
+      "word": "SHOD",
+      "type": 0
+    },
+    {
+      "word": "TALA",
+      "type": 0
+    },
+    {
+      "word": "TASS",
+      "type": 0
+    },
+    {
+      "word": "EPHOD",
+      "type": 0
+    },
+    {
+      "word": "EPHOR",
+      "type": 0
+    },
+    {
+      "word": "HORNS",
+      "type": 0
+    },
+    {
+      "word": "HORST",
+      "type": 0
+    },
+    {
+      "word": "SHORN",
+      "type": 0
+    },
+    {
+      "word": "TALAR",
+      "type": 0
+    },
+    {
+      "word": "ALARMS",
+      "type": 0
+    },
+    {
+      "word": "EPHODS",
+      "type": 0
+    },
+    {
+      "word": "EPHORS",
+      "type": 0
+    },
+    {
+      "word": "RALPHS",
+      "type": 0
+    },
+    {
+      "word": "ALPHORN",
+      "type": 0
+    },
+    {
+      "word": "ALPHORNS",
+      "type": 0
+    }
+  ],
+  "letters": "HOARA,EPLML,SHNSA,DORST",
+  "obstacles": []
 }

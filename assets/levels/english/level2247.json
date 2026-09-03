@@ -1,121 +1,215 @@
-﻿{
-    "id":  2247,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COSTUME",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANTE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CANES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CANT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CONES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EMU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "META",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NEEM",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ONES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEES",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ATEM,ANEU,COST",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2247,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "BIO",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "MUG",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "SUM",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "MASS",
+      "type": 0
+    },
+    {
+      "word": "THUS",
+      "type": 0
+    },
+    {
+      "word": "USED",
+      "type": 0
+    },
+    {
+      "word": "USES",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "EMU",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "GUM",
+      "type": 0
+    },
+    {
+      "word": "HUG",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "MUS",
+      "type": 0
+    },
+    {
+      "word": "ODD",
+      "type": 0
+    },
+    {
+      "word": "ODS",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TAU",
+      "type": 0
+    },
+    {
+      "word": "BRAT",
+      "type": 0
+    },
+    {
+      "word": "DOMS",
+      "type": 0
+    },
+    {
+      "word": "DRAT",
+      "type": 0
+    },
+    {
+      "word": "EDDO",
+      "type": 0
+    },
+    {
+      "word": "EMUS",
+      "type": 0
+    },
+    {
+      "word": "GUMS",
+      "type": 0
+    },
+    {
+      "word": "MESS",
+      "type": 0
+    },
+    {
+      "word": "MODS",
+      "type": 0
+    },
+    {
+      "word": "MUSE",
+      "type": 0
+    },
+    {
+      "word": "RATH",
+      "type": 0
+    },
+    {
+      "word": "SMUG",
+      "type": 0
+    },
+    {
+      "word": "SUDD",
+      "type": 0
+    },
+    {
+      "word": "SUMS",
+      "type": 0
+    },
+    {
+      "word": "TAUS",
+      "type": 0
+    },
+    {
+      "word": "THUD",
+      "type": 0
+    },
+    {
+      "word": "THUG",
+      "type": 0
+    },
+    {
+      "word": "ASSES",
+      "type": 0
+    },
+    {
+      "word": "MASSE",
+      "type": 0
+    },
+    {
+      "word": "MUSED",
+      "type": 0
+    },
+    {
+      "word": "MUSES",
+      "type": 0
+    },
+    {
+      "word": "SUDDS",
+      "type": 0
+    },
+    {
+      "word": "MASSED",
+      "type": 0
+    },
+    {
+      "word": "MASSES",
+      "type": 0
+    },
+    {
+      "word": "BIOMASS",
+      "type": 0
+    }
+  ],
+  "letters": "IBRAT,ODDUH,MSESU,ASMUG",
+  "obstacles": []
 }

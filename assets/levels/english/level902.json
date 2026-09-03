@@ -1,97 +1,223 @@
-﻿{
-    "id":  902,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AUNT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STUN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AUDIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STUNT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TASTE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "STUDIO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DINT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LINT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "NIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NUDE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NUTS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SAUDI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STUD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TASTED",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TAU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAUT",
-                            "type":  2
-                        },
-                        {
-                            "word":  "UNI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EDIO,TUNI,SATL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 902,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "BEEN",
+      "type": 0
+    },
+    {
+      "word": "GOOD",
+      "type": 0
+    },
+    {
+      "word": "NEED",
+      "type": 0
+    },
+    {
+      "word": "TAKE",
+      "type": 0
+    },
+    {
+      "word": "TAKEN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "BEE",
+      "type": 0
+    },
+    {
+      "word": "BOD",
+      "type": 0
+    },
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "GOA",
+      "type": 0
+    },
+    {
+      "word": "GOO",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "NIP",
+      "type": 0
+    },
+    {
+      "word": "OBE",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "PIS",
+      "type": 0
+    },
+    {
+      "word": "SAD",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "SIP",
+      "type": 0
+    },
+    {
+      "word": "SKA",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "AKEE",
+      "type": 0
+    },
+    {
+      "word": "ANIS",
+      "type": 0
+    },
+    {
+      "word": "BODE",
+      "type": 0
+    },
+    {
+      "word": "DANG",
+      "type": 0
+    },
+    {
+      "word": "GOAD",
+      "type": 0
+    },
+    {
+      "word": "GOAS",
+      "type": 0
+    },
+    {
+      "word": "KANE",
+      "type": 0
+    },
+    {
+      "word": "KATS",
+      "type": 0
+    },
+    {
+      "word": "OAST",
+      "type": 0
+    },
+    {
+      "word": "PINA",
+      "type": 0
+    },
+    {
+      "word": "PING",
+      "type": 0
+    },
+    {
+      "word": "SADE",
+      "type": 0
+    },
+    {
+      "word": "SANG",
+      "type": 0
+    },
+    {
+      "word": "SING",
+      "type": 0
+    },
+    {
+      "word": "SKAT",
+      "type": 0
+    },
+    {
+      "word": "SKEE",
+      "type": 0
+    },
+    {
+      "word": "ADOBE",
+      "type": 0
+    },
+    {
+      "word": "PINAS",
+      "type": 0
+    },
+    {
+      "word": "PINGO",
+      "type": 0
+    },
+    {
+      "word": "SKEED",
+      "type": 0
+    },
+    {
+      "word": "STAKE",
+      "type": 0
+    },
+    {
+      "word": "STANE",
+      "type": 0
+    },
+    {
+      "word": "TSADE",
+      "type": 0
+    }
+  ],
+  "letters": "PTAN,ISKE,NADE,GOOB",
+  "obstacles": []
 }

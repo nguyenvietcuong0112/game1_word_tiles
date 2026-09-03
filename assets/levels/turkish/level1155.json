@@ -1,57 +1,87 @@
-﻿{
-    "id":  1155,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ABA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KABA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAMP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KABAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PİŞMAN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAMAN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BAN,AMŞ,KPİ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1155,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "KUR",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "TİR",
+      "type": 0
+    },
+    {
+      "word": "ÇÖZ",
+      "type": 0
+    },
+    {
+      "word": "ÖZÜ",
+      "type": 0
+    },
+    {
+      "word": "İTO",
+      "type": 0
+    },
+    {
+      "word": "DERİ",
+      "type": 0
+    },
+    {
+      "word": "ERİK",
+      "type": 0
+    },
+    {
+      "word": "EĞİK",
+      "type": 0
+    },
+    {
+      "word": "ÇÖZÜLÜR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ERİ",
+      "type": 0
+    },
+    {
+      "word": "KİR",
+      "type": 0
+    },
+    {
+      "word": "KİT",
+      "type": 0
+    },
+    {
+      "word": "TİK",
+      "type": 0
+    },
+    {
+      "word": "DEĞİ",
+      "type": 0
+    }
+  ],
+  "letters": "ÖÇTO,ZKİĞ,ÜURE,LÜRD",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

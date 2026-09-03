@@ -1,77 +1,155 @@
-﻿{
-    "id":  630,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PESO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RARO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "VASO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAPOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PORÇÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EVAPORAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "APO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "APOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VAPORAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VEZO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ASOÃC,VEZÇR,APORA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 630,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "HAN",
+      "type": 0
+    },
+    {
+      "word": "IAN",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "VOA",
+      "type": 0
+    },
+    {
+      "word": "CHAN",
+      "type": 0
+    },
+    {
+      "word": "ATRIZ",
+      "type": 0
+    },
+    {
+      "word": "CHANG",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGH",
+      "type": 0
+    },
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ANG",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "CHA",
+      "type": 0
+    },
+    {
+      "word": "CNA",
+      "type": 0
+    },
+    {
+      "word": "GAO",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "HAI",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NAI",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "SKA",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "TRI",
+      "type": 0
+    },
+    {
+      "word": "ASHA",
+      "type": 0
+    },
+    {
+      "word": "CHAI",
+      "type": 0
+    },
+    {
+      "word": "HAIR",
+      "type": 0
+    },
+    {
+      "word": "HANG",
+      "type": 0
+    },
+    {
+      "word": "KATZ",
+      "type": 0
+    },
+    {
+      "word": "TRIZ",
+      "type": 0
+    },
+    {
+      "word": "CHAIR",
+      "type": 0
+    }
+  ],
+  "letters": "RTAK,IZHS,ANGA,HCVO",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

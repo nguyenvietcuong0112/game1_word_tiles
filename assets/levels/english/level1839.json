@@ -1,90 +1,195 @@
-﻿{
-    "id":  1839,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AWE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AWAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEWY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WADE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ANYWAY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AWED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WED",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NYY,AWA,DET",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1839,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BIT",
+      "type": 0
+    },
+    {
+      "word": "CUT",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "HIT",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "CITE",
+      "type": 0
+    },
+    {
+      "word": "READ",
+      "type": 0
+    },
+    {
+      "word": "ROAD",
+      "type": 0
+    },
+    {
+      "word": "WHITE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIT",
+      "type": 0
+    },
+    {
+      "word": "ALB",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "BET",
+      "type": 0
+    },
+    {
+      "word": "CUR",
+      "type": 0
+    },
+    {
+      "word": "HET",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "RUT",
+      "type": 0
+    },
+    {
+      "word": "TIC",
+      "type": 0
+    },
+    {
+      "word": "AERO",
+      "type": 0
+    },
+    {
+      "word": "BEAD",
+      "type": 0
+    },
+    {
+      "word": "BITE",
+      "type": 0
+    },
+    {
+      "word": "BLAE",
+      "type": 0
+    },
+    {
+      "word": "BLED",
+      "type": 0
+    },
+    {
+      "word": "CURE",
+      "type": 0
+    },
+    {
+      "word": "CUTE",
+      "type": 0
+    },
+    {
+      "word": "ETIC",
+      "type": 0
+    },
+    {
+      "word": "HEAL",
+      "type": 0
+    },
+    {
+      "word": "LAIC",
+      "type": 0
+    },
+    {
+      "word": "TEAL",
+      "type": 0
+    },
+    {
+      "word": "UREA",
+      "type": 0
+    },
+    {
+      "word": "WHET",
+      "type": 0
+    },
+    {
+      "word": "WHIT",
+      "type": 0
+    },
+    {
+      "word": "BITER",
+      "type": 0
+    },
+    {
+      "word": "CURET",
+      "type": 0
+    },
+    {
+      "word": "CUTER",
+      "type": 0
+    },
+    {
+      "word": "OREAD",
+      "type": 0
+    },
+    {
+      "word": "RETIA",
+      "type": 0
+    },
+    {
+      "word": "WHEAL",
+      "type": 0
+    },
+    {
+      "word": "ALBITE",
+      "type": 0
+    },
+    {
+      "word": "BEADED",
+      "type": 0
+    },
+    {
+      "word": "HEALED",
+      "type": 0
+    },
+    {
+      "word": "RETIAL",
+      "type": 0
+    },
+    {
+      "word": "WHITER",
+      "type": 0
+    }
+  ],
+  "letters": "TEHWC,IAITU,CLBER,DEDAO",
+  "obstacles": []
 }

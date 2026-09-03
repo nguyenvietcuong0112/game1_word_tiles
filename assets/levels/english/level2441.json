@@ -1,121 +1,251 @@
-﻿{
-    "id":  2441,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAIT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LAND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLAND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRAND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GLAND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LANDMARK",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALGA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ALGAL",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ANAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BRAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GLAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LARK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIGA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MANA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAND",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ITAND,AGLAM,LIBRK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2441,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "TAU",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "ARTS",
+      "type": 0
+    },
+    {
+      "word": "PORT",
+      "type": 0
+    },
+    {
+      "word": "POST",
+      "type": 0
+    },
+    {
+      "word": "SORT",
+      "type": 0
+    },
+    {
+      "word": "LABOR",
+      "type": 0
+    },
+    {
+      "word": "POSTS",
+      "type": 0
+    },
+    {
+      "word": "ASSIST",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABO",
+      "type": 0
+    },
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "AIS",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LOB",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORT",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SIS",
+      "type": 0
+    },
+    {
+      "word": "SOP",
+      "type": 0
+    },
+    {
+      "word": "ALAS",
+      "type": 0
+    },
+    {
+      "word": "BASS",
+      "type": 0
+    },
+    {
+      "word": "BOLA",
+      "type": 0
+    },
+    {
+      "word": "ISBA",
+      "type": 0
+    },
+    {
+      "word": "LABS",
+      "type": 0
+    },
+    {
+      "word": "LASS",
+      "type": 0
+    },
+    {
+      "word": "LOBS",
+      "type": 0
+    },
+    {
+      "word": "ORTS",
+      "type": 0
+    },
+    {
+      "word": "ROBS",
+      "type": 0
+    },
+    {
+      "word": "SABS",
+      "type": 0
+    },
+    {
+      "word": "SIAL",
+      "type": 0
+    },
+    {
+      "word": "SORA",
+      "type": 0
+    },
+    {
+      "word": "TAUS",
+      "type": 0
+    },
+    {
+      "word": "TROP",
+      "type": 0
+    },
+    {
+      "word": "USES",
+      "type": 0
+    },
+    {
+      "word": "ASSES",
+      "type": 0
+    },
+    {
+      "word": "BALAS",
+      "type": 0
+    },
+    {
+      "word": "BASAL",
+      "type": 0
+    },
+    {
+      "word": "BASSI",
+      "type": 0
+    },
+    {
+      "word": "BOLAS",
+      "type": 0
+    },
+    {
+      "word": "ISBAS",
+      "type": 0
+    },
+    {
+      "word": "PORTS",
+      "type": 0
+    },
+    {
+      "word": "SISES",
+      "type": 0
+    },
+    {
+      "word": "SORTS",
+      "type": 0
+    },
+    {
+      "word": "STROP",
+      "type": 0
+    },
+    {
+      "word": "BASSES",
+      "type": 0
+    },
+    {
+      "word": "LASSES",
+      "type": 0
+    },
+    {
+      "word": "SISTRA",
+      "type": 0
+    },
+    {
+      "word": "ASSISTS",
+      "type": 0
+    },
+    {
+      "word": "BASSIST",
+      "type": 0
+    },
+    {
+      "word": "BASSISTS",
+      "type": 0
+    }
+  ],
+  "letters": "RPORA,OBSTA,LAISU,ASSES",
+  "obstacles": []
 }

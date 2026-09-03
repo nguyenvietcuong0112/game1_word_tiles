@@ -1,65 +1,263 @@
-﻿{
-    "id":  737,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CIMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FUMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MICA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOFO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MUDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CALDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMINHAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DUAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAUDO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ARLDO,HMAUF,NICMO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 737,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "TAL",
+      "type": 0
+    },
+    {
+      "word": "DIGA",
+      "type": 0
+    },
+    {
+      "word": "DIGO",
+      "type": 0
+    },
+    {
+      "word": "ELAS",
+      "type": 0
+    },
+    {
+      "word": "LISTA",
+      "type": 0
+    },
+    {
+      "word": "CÓDIGO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGI",
+      "type": 0
+    },
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "DIG",
+      "type": 0
+    },
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "DOA",
+      "type": 0
+    },
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "DOG",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "GIN",
+      "type": 0
+    },
+    {
+      "word": "GOA",
+      "type": 0
+    },
+    {
+      "word": "GOD",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "IGA",
+      "type": 0
+    },
+    {
+      "word": "IGT",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "ISA",
+      "type": 0
+    },
+    {
+      "word": "IST",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "NID",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SIL",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TSA",
+      "type": 0
+    },
+    {
+      "word": "ALLI",
+      "type": 0
+    },
+    {
+      "word": "ASCO",
+      "type": 0
+    },
+    {
+      "word": "COAL",
+      "type": 0
+    },
+    {
+      "word": "DINA",
+      "type": 0
+    },
+    {
+      "word": "GINA",
+      "type": 0
+    },
+    {
+      "word": "LISA",
+      "type": 0
+    },
+    {
+      "word": "LIST",
+      "type": 0
+    },
+    {
+      "word": "ODIN",
+      "type": 0
+    },
+    {
+      "word": "SELA",
+      "type": 0
+    },
+    {
+      "word": "TALL",
+      "type": 0
+    },
+    {
+      "word": "AGIDO",
+      "type": 0
+    },
+    {
+      "word": "DIGAS",
+      "type": 0
+    },
+    {
+      "word": "ELLIS",
+      "type": 0
+    },
+    {
+      "word": "GASTA",
+      "type": 0
+    },
+    {
+      "word": "GASTAS",
+      "type": 0
+    },
+    {
+      "word": "LISTAS",
+      "type": 0
+    },
+    {
+      "word": "TALLIS",
+      "type": 0
+    },
+    {
+      "word": "GINASTA",
+      "type": 0
+    },
+    {
+      "word": "GINASTAS",
+      "type": 0
+    }
+  ],
+  "letters": "ESCÓ,LAOD,LTGI,ISAN",
+  "obstacles": []
 }

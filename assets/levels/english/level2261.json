@@ -1,101 +1,267 @@
-﻿{
-    "id":  2261,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDEAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRIDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEALING",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DEALING",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DEATH",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LATHE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LIED",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LING",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PRIG",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GNIL,IDEA,RPHT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2261,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "MAP",
+      "type": 0
+    },
+    {
+      "word": "OIL",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "MAIL",
+      "type": 0
+    },
+    {
+      "word": "SONS",
+      "type": 0
+    },
+    {
+      "word": "TOMB",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIL",
+      "type": 0
+    },
+    {
+      "word": "AIS",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "BAM",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "ION",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "MOA",
+      "type": 0
+    },
+    {
+      "word": "MOL",
+      "type": 0
+    },
+    {
+      "word": "MOO",
+      "type": 0
+    },
+    {
+      "word": "MOT",
+      "type": 0
+    },
+    {
+      "word": "NOO",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "OOT",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "AMMO",
+      "type": 0
+    },
+    {
+      "word": "BLOT",
+      "type": 0
+    },
+    {
+      "word": "ILLS",
+      "type": 0
+    },
+    {
+      "word": "IONS",
+      "type": 0
+    },
+    {
+      "word": "LION",
+      "type": 0
+    },
+    {
+      "word": "LOTS",
+      "type": 0
+    },
+    {
+      "word": "MAIR",
+      "type": 0
+    },
+    {
+      "word": "MOON",
+      "type": 0
+    },
+    {
+      "word": "MOOS",
+      "type": 0
+    },
+    {
+      "word": "MOTS",
+      "type": 0
+    },
+    {
+      "word": "NEST",
+      "type": 0
+    },
+    {
+      "word": "NOIL",
+      "type": 0
+    },
+    {
+      "word": "NOSE",
+      "type": 0
+    },
+    {
+      "word": "ONES",
+      "type": 0
+    },
+    {
+      "word": "OOTS",
+      "type": 0
+    },
+    {
+      "word": "PAIL",
+      "type": 0
+    },
+    {
+      "word": "SILL",
+      "type": 0
+    },
+    {
+      "word": "SOIL",
+      "type": 0
+    },
+    {
+      "word": "SONE",
+      "type": 0
+    },
+    {
+      "word": "SOOT",
+      "type": 0
+    },
+    {
+      "word": "STOA",
+      "type": 0
+    },
+    {
+      "word": "TOON",
+      "type": 0
+    },
+    {
+      "word": "BLOTS",
+      "type": 0
+    },
+    {
+      "word": "LIONS",
+      "type": 0
+    },
+    {
+      "word": "MAILL",
+      "type": 0
+    },
+    {
+      "word": "MOONS",
+      "type": 0
+    },
+    {
+      "word": "MOOSE",
+      "type": 0
+    },
+    {
+      "word": "SNOOT",
+      "type": 0
+    },
+    {
+      "word": "STOAI",
+      "type": 0
+    },
+    {
+      "word": "TOONS",
+      "type": 0
+    },
+    {
+      "word": "MAILLS",
+      "type": 0
+    },
+    {
+      "word": "SNOOTS",
+      "type": 0
+    },
+    {
+      "word": "AIRMAIL",
+      "type": 0
+    }
+  ],
+  "letters": "IRPLL,AMAIS,BMOON,LOTSE",
+  "obstacles": []
 }

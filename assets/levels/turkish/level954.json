@@ -1,77 +1,383 @@
-﻿{
-    "id":  954,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AKÇE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ARKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇARK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ÇENE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇİLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SARI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SARIMSAK",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKNE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AKÇA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AKÇELİ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "İÇEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SARIM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇARKA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇENK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LENEA,İÇKAS,SARIM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 954,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "KAL",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "YER",
+      "type": 0
+    },
+    {
+      "word": "İSA",
+      "type": 0
+    },
+    {
+      "word": "İSE",
+      "type": 0
+    },
+    {
+      "word": "KAFA",
+      "type": 0
+    },
+    {
+      "word": "SALAK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ASİ",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "EYE",
+      "type": 0
+    },
+    {
+      "word": "FAL",
+      "type": 0
+    },
+    {
+      "word": "FAT",
+      "type": 0
+    },
+    {
+      "word": "KAS",
+      "type": 0
+    },
+    {
+      "word": "LAF",
+      "type": 0
+    },
+    {
+      "word": "LAK",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LİM",
+      "type": 0
+    },
+    {
+      "word": "LİS",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "MİL",
+      "type": 0
+    },
+    {
+      "word": "MİS",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "REY",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SEY",
+      "type": 0
+    },
+    {
+      "word": "SİL",
+      "type": 0
+    },
+    {
+      "word": "SİM",
+      "type": 0
+    },
+    {
+      "word": "YEM",
+      "type": 0
+    },
+    {
+      "word": "YES",
+      "type": 0
+    },
+    {
+      "word": "YİL",
+      "type": 0
+    },
+    {
+      "word": "YİM",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "ALİM",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "ASİL",
+      "type": 0
+    },
+    {
+      "word": "ATAR",
+      "type": 0
+    },
+    {
+      "word": "EMİL",
+      "type": 0
+    },
+    {
+      "word": "EYER",
+      "type": 0
+    },
+    {
+      "word": "EYES",
+      "type": 0
+    },
+    {
+      "word": "FAKA",
+      "type": 0
+    },
+    {
+      "word": "KALA",
+      "type": 0
+    },
+    {
+      "word": "KALİ",
+      "type": 0
+    },
+    {
+      "word": "KASE",
+      "type": 0
+    },
+    {
+      "word": "LAFA",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "LİMA",
+      "type": 0
+    },
+    {
+      "word": "LİME",
+      "type": 0
+    },
+    {
+      "word": "LİSA",
+      "type": 0
+    },
+    {
+      "word": "LİSE",
+      "type": 0
+    },
+    {
+      "word": "MALA",
+      "type": 0
+    },
+    {
+      "word": "MALİ",
+      "type": 0
+    },
+    {
+      "word": "MATA",
+      "type": 0
+    },
+    {
+      "word": "MİSA",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "REMİ",
+      "type": 0
+    },
+    {
+      "word": "SAKA",
+      "type": 0
+    },
+    {
+      "word": "SEYE",
+      "type": 0
+    },
+    {
+      "word": "SEYİ",
+      "type": 0
+    },
+    {
+      "word": "TAMA",
+      "type": 0
+    },
+    {
+      "word": "TAMİ",
+      "type": 0
+    },
+    {
+      "word": "YEMİ",
+      "type": 0
+    },
+    {
+      "word": "İMAL",
+      "type": 0
+    },
+    {
+      "word": "ALAKA",
+      "type": 0
+    },
+    {
+      "word": "ATAMA",
+      "type": 0
+    },
+    {
+      "word": "KAFAM",
+      "type": 0
+    },
+    {
+      "word": "KASİM",
+      "type": 0
+    },
+    {
+      "word": "LAMAR",
+      "type": 0
+    },
+    {
+      "word": "MİSAL",
+      "type": 0
+    },
+    {
+      "word": "REYES",
+      "type": 0
+    },
+    {
+      "word": "SAKAL",
+      "type": 0
+    },
+    {
+      "word": "SALAM",
+      "type": 0
+    },
+    {
+      "word": "SALİM",
+      "type": 0
+    },
+    {
+      "word": "TALİM",
+      "type": 0
+    },
+    {
+      "word": "KAFAMA",
+      "type": 0
+    },
+    {
+      "word": "KASEYİ",
+      "type": 0
+    },
+    {
+      "word": "LİSEYE",
+      "type": 0
+    },
+    {
+      "word": "MALİYE",
+      "type": 0
+    },
+    {
+      "word": "SALATA",
+      "type": 0
+    },
+    {
+      "word": "KALAMAR",
+      "type": 0
+    },
+    {
+      "word": "KASİYER",
+      "type": 0
+    }
+  ],
+  "letters": "KASE,ALİY,FAME,ATAR",
+  "obstacles": []
 }

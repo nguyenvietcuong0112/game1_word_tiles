@@ -1,93 +1,235 @@
-﻿{
-    "id":  607,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VOZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AZAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAZA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "REZO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZONA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VERAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VERANO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AVEZAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AZO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RANO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REV",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VERA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VEZAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VON,AZA,VER",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 607,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASÍ",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "UNA",
+      "type": 0
+    },
+    {
+      "word": "TEMA",
+      "type": 0
+    },
+    {
+      "word": "UNAS",
+      "type": 0
+    },
+    {
+      "word": "USAS",
+      "type": 0
+    },
+    {
+      "word": "MERLÍN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ANU",
+      "type": 0
+    },
+    {
+      "word": "ASN",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SAS",
+      "type": 0
+    },
+    {
+      "word": "SUN",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "AMAN",
+      "type": 0
+    },
+    {
+      "word": "AMAS",
+      "type": 0
+    },
+    {
+      "word": "ASMA",
+      "type": 0
+    },
+    {
+      "word": "MANA",
+      "type": 0
+    },
+    {
+      "word": "MANU",
+      "type": 0
+    },
+    {
+      "word": "MASS",
+      "type": 0
+    },
+    {
+      "word": "MATE",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "NATE",
+      "type": 0
+    },
+    {
+      "word": "REMA",
+      "type": 0
+    },
+    {
+      "word": "RETA",
+      "type": 0
+    },
+    {
+      "word": "SAME",
+      "type": 0
+    },
+    {
+      "word": "SANA",
+      "type": 0
+    },
+    {
+      "word": "TAMA",
+      "type": 0
+    },
+    {
+      "word": "TANA",
+      "type": 0
+    },
+    {
+      "word": "USAN",
+      "type": 0
+    },
+    {
+      "word": "ASUNA",
+      "type": 0
+    },
+    {
+      "word": "EMANA",
+      "type": 0
+    },
+    {
+      "word": "MATER",
+      "type": 0
+    },
+    {
+      "word": "MERLÍ",
+      "type": 0
+    },
+    {
+      "word": "METAN",
+      "type": 0
+    },
+    {
+      "word": "TEMAN",
+      "type": 0
+    },
+    {
+      "word": "TEMAS",
+      "type": 0
+    }
+  ],
+  "letters": "USMA,NASS,AMNÍ,TERL",
+  "obstacles": []
 }

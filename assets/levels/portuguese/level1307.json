@@ -1,105 +1,243 @@
-﻿{
-    "id":  1307,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IÇAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VACA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VEIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AVEIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANSAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAVEIRA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAIEIRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EIRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NACA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SULA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VEIRE,AIÇAL,CANSU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1307,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "SID",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "FODA",
+      "type": 0
+    },
+    {
+      "word": "HANS",
+      "type": 0
+    },
+    {
+      "word": "THAT",
+      "type": 0
+    },
+    {
+      "word": "FODIDA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ANS",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "DAH",
+      "type": 0
+    },
+    {
+      "word": "DAT",
+      "type": 0
+    },
+    {
+      "word": "DET",
+      "type": 0
+    },
+    {
+      "word": "DID",
+      "type": 0
+    },
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "FAD",
+      "type": 0
+    },
+    {
+      "word": "FAN",
+      "type": 0
+    },
+    {
+      "word": "HAD",
+      "type": 0
+    },
+    {
+      "word": "HAN",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "IDE",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "ISS",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NID",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "THI",
+      "type": 0
+    },
+    {
+      "word": "TTA",
+      "type": 0
+    },
+    {
+      "word": "TTE",
+      "type": 0
+    },
+    {
+      "word": "ANIS",
+      "type": 0
+    },
+    {
+      "word": "DANI",
+      "type": 0
+    },
+    {
+      "word": "DANS",
+      "type": 0
+    },
+    {
+      "word": "DATE",
+      "type": 0
+    },
+    {
+      "word": "DIDO",
+      "type": 0
+    },
+    {
+      "word": "DINA",
+      "type": 0
+    },
+    {
+      "word": "FANS",
+      "type": 0
+    },
+    {
+      "word": "FODI",
+      "type": 0
+    },
+    {
+      "word": "HANI",
+      "type": 0
+    },
+    {
+      "word": "HATE",
+      "type": 0
+    },
+    {
+      "word": "NADO",
+      "type": 0
+    },
+    {
+      "word": "SIDE",
+      "type": 0
+    },
+    {
+      "word": "SINA",
+      "type": 0
+    },
+    {
+      "word": "SINS",
+      "type": 0
+    },
+    {
+      "word": "THAD",
+      "type": 0
+    },
+    {
+      "word": "THAN",
+      "type": 0
+    },
+    {
+      "word": "ADIDO",
+      "type": 0
+    },
+    {
+      "word": "DINAH",
+      "type": 0
+    }
+  ],
+  "letters": "ODID,FAHA,SNTT,SIDE",
+  "obstacles": []
 }

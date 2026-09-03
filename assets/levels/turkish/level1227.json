@@ -1,75 +1,219 @@
-﻿{
-    "id":  1227,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EMİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAŞE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞEHRİYE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "MEY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ŞAK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MİRH,EYŞE,ŞKAS",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1227,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "KAS",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "ADAM",
+      "type": 0
+    },
+    {
+      "word": "ASLA",
+      "type": 0
+    },
+    {
+      "word": "DAHA",
+      "type": 0
+    },
+    {
+      "word": "HALA",
+      "type": 0
+    },
+    {
+      "word": "AYLIK",
+      "type": 0
+    },
+    {
+      "word": "HAYAL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "HAD",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "HAM",
+      "type": 0
+    },
+    {
+      "word": "HAY",
+      "type": 0
+    },
+    {
+      "word": "KIL",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LAY",
+      "type": 0
+    },
+    {
+      "word": "LIK",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAY",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "YAD",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "ADAY",
+      "type": 0
+    },
+    {
+      "word": "ALAY",
+      "type": 0
+    },
+    {
+      "word": "ALSA",
+      "type": 0
+    },
+    {
+      "word": "AYAR",
+      "type": 0
+    },
+    {
+      "word": "DAMA",
+      "type": 0
+    },
+    {
+      "word": "DAYA",
+      "type": 0
+    },
+    {
+      "word": "HARA",
+      "type": 0
+    },
+    {
+      "word": "LARA",
+      "type": 0
+    },
+    {
+      "word": "MAYA",
+      "type": 0
+    },
+    {
+      "word": "SHAY",
+      "type": 0
+    },
+    {
+      "word": "YADA",
+      "type": 0
+    },
+    {
+      "word": "YALA",
+      "type": 0
+    },
+    {
+      "word": "YAMA",
+      "type": 0
+    },
+    {
+      "word": "YARA",
+      "type": 0
+    },
+    {
+      "word": "ADAYA",
+      "type": 0
+    },
+    {
+      "word": "ALAYA",
+      "type": 0
+    },
+    {
+      "word": "ALSAK",
+      "type": 0
+    },
+    {
+      "word": "ARAYA",
+      "type": 0
+    },
+    {
+      "word": "MAHAL",
+      "type": 0
+    },
+    {
+      "word": "AKMAYA",
+      "type": 0
+    },
+    {
+      "word": "AYARLI",
+      "type": 0
+    },
+    {
+      "word": "KASLAR",
+      "type": 0
+    }
+  ],
+  "letters": "ALSA,RAHK,LYAM,IKDA",
+  "obstacles": []
 }

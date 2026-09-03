@@ -1,99 +1,211 @@
-﻿{
-    "id":  1904,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DELAY",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LATER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAYER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AYE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EYED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YALE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TER,AYI,LED",
-    "obstacles":  [
-                      {
-                          "required_words":  9,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1904,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FOB",
+      "type": 0
+    },
+    {
+      "word": "KOS",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "BOOK",
+      "type": 0
+    },
+    {
+      "word": "EARN",
+      "type": 0
+    },
+    {
+      "word": "EURO",
+      "type": 0
+    },
+    {
+      "word": "NEAR",
+      "type": 0
+    },
+    {
+      "word": "CURSE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "APT",
+      "type": 0
+    },
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "BOA",
+      "type": 0
+    },
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "CUE",
+      "type": 0
+    },
+    {
+      "word": "CUR",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "ELK",
+      "type": 0
+    },
+    {
+      "word": "FET",
+      "type": 0
+    },
+    {
+      "word": "OAR",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "APSE",
+      "type": 0
+    },
+    {
+      "word": "ARBS",
+      "type": 0
+    },
+    {
+      "word": "BOAR",
+      "type": 0
+    },
+    {
+      "word": "BOOS",
+      "type": 0
+    },
+    {
+      "word": "BRAE",
+      "type": 0
+    },
+    {
+      "word": "CUES",
+      "type": 0
+    },
+    {
+      "word": "CURS",
+      "type": 0
+    },
+    {
+      "word": "FOBS",
+      "type": 0
+    },
+    {
+      "word": "NEAP",
+      "type": 0
+    },
+    {
+      "word": "RAPS",
+      "type": 0
+    },
+    {
+      "word": "RAPT",
+      "type": 0
+    },
+    {
+      "word": "RUES",
+      "type": 0
+    },
+    {
+      "word": "SEAR",
+      "type": 0
+    },
+    {
+      "word": "SPAE",
+      "type": 0
+    },
+    {
+      "word": "SPAR",
+      "type": 0
+    },
+    {
+      "word": "BRAES",
+      "type": 0
+    },
+    {
+      "word": "NEAPS",
+      "type": 0
+    },
+    {
+      "word": "ENRAPT",
+      "type": 0
+    },
+    {
+      "word": "NEURON",
+      "type": 0
+    },
+    {
+      "word": "BOOKLET",
+      "type": 0
+    },
+    {
+      "word": "NEURONS",
+      "type": 0
+    }
+  ],
+  "letters": "ONTEL,RSPFK,UEAOO,CNRBS",
+  "obstacles": []
 }

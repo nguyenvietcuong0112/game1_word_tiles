@@ -1,65 +1,255 @@
-﻿{
-    "id":  667,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "RES",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CESTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JUSTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RESTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SERIO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CERIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CESIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CUSIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "JUSI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RIO,EST,CUJ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 667,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "JEN",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "PASA",
+      "type": 0
+    },
+    {
+      "word": "PASO",
+      "type": 0
+    },
+    {
+      "word": "PATA",
+      "type": 0
+    },
+    {
+      "word": "PENA",
+      "type": 0
+    },
+    {
+      "word": "TEMA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AJA",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "EPA",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "JAS",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "OSA",
+      "type": 0
+    },
+    {
+      "word": "OTA",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "TAJ",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TAT",
+      "type": 0
+    },
+    {
+      "word": "TOS",
+      "type": 0
+    },
+    {
+      "word": "ATAS",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "PAJA",
+      "type": 0
+    },
+    {
+      "word": "PAJE",
+      "type": 0
+    },
+    {
+      "word": "PATO",
+      "type": 0
+    },
+    {
+      "word": "PETA",
+      "type": 0
+    },
+    {
+      "word": "SATO",
+      "type": 0
+    },
+    {
+      "word": "SOTA",
+      "type": 0
+    },
+    {
+      "word": "TAPA",
+      "type": 0
+    },
+    {
+      "word": "TAPE",
+      "type": 0
+    },
+    {
+      "word": "TASA",
+      "type": 0
+    },
+    {
+      "word": "TATA",
+      "type": 0
+    },
+    {
+      "word": "TATE",
+      "type": 0
+    },
+    {
+      "word": "TOSA",
+      "type": 0
+    },
+    {
+      "word": "AJENA",
+      "type": 0
+    },
+    {
+      "word": "APENA",
+      "type": 0
+    },
+    {
+      "word": "ETAPA",
+      "type": 0
+    },
+    {
+      "word": "PAJAS",
+      "type": 0
+    },
+    {
+      "word": "PATAS",
+      "type": 0
+    },
+    {
+      "word": "PATOS",
+      "type": 0
+    },
+    {
+      "word": "TAPAS",
+      "type": 0
+    },
+    {
+      "word": "TEMAN",
+      "type": 0
+    },
+    {
+      "word": "ETAPAS",
+      "type": 0
+    },
+    {
+      "word": "MANEJA",
+      "type": 0
+    },
+    {
+      "word": "PASAJE",
+      "type": 0
+    },
+    {
+      "word": "MANEJAS",
+      "type": 0
+    }
+  ],
+  "letters": "TATO,EPAS,MDJA,ANEP",
+  "obstacles": []
 }

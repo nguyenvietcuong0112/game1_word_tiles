@@ -1,113 +1,151 @@
-﻿{
-    "id":  1160,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ABA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AIPO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CISÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CISCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COPIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRECISÃO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ABAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BAIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COPIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OPIAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PIABA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PIABAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PIARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PIORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SIC",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ERPIO,CÃOAR,ISCBA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1160,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "VOU",
+      "type": 0
+    },
+    {
+      "word": "COLO",
+      "type": 0
+    },
+    {
+      "word": "FICO",
+      "type": 0
+    },
+    {
+      "word": "FINO",
+      "type": 0
+    },
+    {
+      "word": "COLIN",
+      "type": 0
+    },
+    {
+      "word": "CURTO",
+      "type": 0
+    },
+    {
+      "word": "TERNO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "CIL",
+      "type": 0
+    },
+    {
+      "word": "COL",
+      "type": 0
+    },
+    {
+      "word": "FIN",
+      "type": 0
+    },
+    {
+      "word": "INO",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "LON",
+      "type": 0
+    },
+    {
+      "word": "NIC",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "OLI",
+      "type": 0
+    },
+    {
+      "word": "ONI",
+      "type": 0
+    },
+    {
+      "word": "OUR",
+      "type": 0
+    },
+    {
+      "word": "TOU",
+      "type": 0
+    },
+    {
+      "word": "TOV",
+      "type": 0
+    },
+    {
+      "word": "TRU",
+      "type": 0
+    },
+    {
+      "word": "COLI",
+      "type": 0
+    },
+    {
+      "word": "CURT",
+      "type": 0
+    },
+    {
+      "word": "LIFT",
+      "type": 0
+    },
+    {
+      "word": "LINO",
+      "type": 0
+    },
+    {
+      "word": "NICO",
+      "type": 0
+    },
+    {
+      "word": "NILO",
+      "type": 0
+    },
+    {
+      "word": "TOUR",
+      "type": 0
+    },
+    {
+      "word": "CURTE",
+      "type": 0
+    },
+    {
+      "word": "FURTO",
+      "type": 0
+    }
+  ],
+  "letters": "ETRT,RFUO,NICV,OLON",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

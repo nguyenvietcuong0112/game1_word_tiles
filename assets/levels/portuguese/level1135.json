@@ -1,105 +1,179 @@
-﻿{
-    "id":  1135,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DURO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PURO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RODA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TUDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "URNA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APURO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUDOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRAVADOR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "APUD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AURO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DORNA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GRAVADO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAPA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAPADO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAPADOR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "UPAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "URU",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VADOÃ,APURN,RGTUA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1135,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEI",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "FAD",
+      "type": 0
+    },
+    {
+      "word": "FAZ",
+      "type": 0
+    },
+    {
+      "word": "PAI",
+      "type": 0
+    },
+    {
+      "word": "PAZ",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "AREA",
+      "type": 0
+    },
+    {
+      "word": "PARA",
+      "type": 0
+    },
+    {
+      "word": "PARE",
+      "type": 0
+    },
+    {
+      "word": "SAIA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIE",
+      "type": 0
+    },
+    {
+      "word": "APA",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "DES",
+      "type": 0
+    },
+    {
+      "word": "EIA",
+      "type": 0
+    },
+    {
+      "word": "EPA",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "IAS",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "SAI",
+      "type": 0
+    },
+    {
+      "word": "ZAF",
+      "type": 0
+    },
+    {
+      "word": "ZAP",
+      "type": 0
+    },
+    {
+      "word": "ARAS",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "PERA",
+      "type": 0
+    },
+    {
+      "word": "RAIA",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "DESAI",
+      "type": 0
+    },
+    {
+      "word": "PERAS",
+      "type": 0
+    },
+    {
+      "word": "DESFAZ",
+      "type": 0
+    }
+  ],
+  "letters": "AIED,RASD,EPFA,AZAP",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,101 +1,187 @@
-﻿{
-    "id":  2311,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOVE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LOBE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROBE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CLOVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DATED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BELOVED",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BOLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CLOD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DOLCE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DOLE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LODE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOVED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAD",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BEVED,OLODE,RCEAT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2311,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "LOG",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "ROLE",
+      "type": 0
+    },
+    {
+      "word": "ROLL",
+      "type": 0
+    },
+    {
+      "word": "SEEN",
+      "type": 0
+    },
+    {
+      "word": "SOME",
+      "type": 0
+    },
+    {
+      "word": "ENDURE",
+      "type": 0
+    },
+    {
+      "word": "ROLLING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "EGO",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ERN",
+      "type": 0
+    },
+    {
+      "word": "GEE",
+      "type": 0
+    },
+    {
+      "word": "GEM",
+      "type": 0
+    },
+    {
+      "word": "GOR",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "URN",
+      "type": 0
+    },
+    {
+      "word": "DURE",
+      "type": 0
+    },
+    {
+      "word": "DURN",
+      "type": 0
+    },
+    {
+      "word": "ERNE",
+      "type": 0
+    },
+    {
+      "word": "GORE",
+      "type": 0
+    },
+    {
+      "word": "LING",
+      "type": 0
+    },
+    {
+      "word": "LOGE",
+      "type": 0
+    },
+    {
+      "word": "LORE",
+      "type": 0
+    },
+    {
+      "word": "MEND",
+      "type": 0
+    },
+    {
+      "word": "NEEM",
+      "type": 0
+    },
+    {
+      "word": "NILL",
+      "type": 0
+    },
+    {
+      "word": "OGEE",
+      "type": 0
+    },
+    {
+      "word": "DURES",
+      "type": 0
+    },
+    {
+      "word": "ILLER",
+      "type": 0
+    },
+    {
+      "word": "LINGO",
+      "type": 0
+    },
+    {
+      "word": "ENDURES",
+      "type": 0
+    }
+  ],
+  "letters": "UDMRE,RNEOL,EEEGL,SOMNI",
+  "obstacles": []
 }

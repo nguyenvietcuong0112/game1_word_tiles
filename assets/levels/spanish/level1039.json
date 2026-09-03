@@ -1,113 +1,195 @@
-﻿{
-    "id":  1039,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAÑA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MAÑA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARAÑA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NORMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARAÑA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NORMAL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ANORMAL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARONA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAÑAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MARO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RANO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAÑA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NOAL,ARMC,MAÑA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1039,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "MIRA",
+      "type": 0
+    },
+    {
+      "word": "MIRO",
+      "type": 0
+    },
+    {
+      "word": "RARO",
+      "type": 0
+    },
+    {
+      "word": "TATE",
+      "type": 0
+    },
+    {
+      "word": "MIRAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "EHM",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "HEI",
+      "type": 0
+    },
+    {
+      "word": "IAS",
+      "type": 0
+    },
+    {
+      "word": "IRS",
+      "type": 0
+    },
+    {
+      "word": "LAI",
+      "type": 0
+    },
+    {
+      "word": "MIA",
+      "type": 0
+    },
+    {
+      "word": "MIE",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORI",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "RIE",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "SAI",
+      "type": 0
+    },
+    {
+      "word": "SRA",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TAT",
+      "type": 0
+    },
+    {
+      "word": "TEO",
+      "type": 0
+    },
+    {
+      "word": "TTE",
+      "type": 0
+    },
+    {
+      "word": "ARIA",
+      "type": 0
+    },
+    {
+      "word": "ATEO",
+      "type": 0
+    },
+    {
+      "word": "MIAS",
+      "type": 0
+    },
+    {
+      "word": "ORAR",
+      "type": 0
+    },
+    {
+      "word": "TATA",
+      "type": 0
+    },
+    {
+      "word": "THEO",
+      "type": 0
+    },
+    {
+      "word": "ARIAS",
+      "type": 0
+    },
+    {
+      "word": "THEIR",
+      "type": 0
+    },
+    {
+      "word": "THETA",
+      "type": 0
+    },
+    {
+      "word": "TEORIA",
+      "type": 0
+    }
+  ],
+  "letters": "LMHT,AIET,SROA,RAAT",
+  "obstacles": []
 }

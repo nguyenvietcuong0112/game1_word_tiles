@@ -1,89 +1,227 @@
-﻿{
-    "id":  1317,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DINE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MAID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEDIA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MAIDEN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MEDIUM",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AIMED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAIM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAIMED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MID",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIDI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UIN,MDE,AIM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1317,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADD",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SUB",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "MADE",
+      "type": 0
+    },
+    {
+      "word": "PLUS",
+      "type": 0
+    },
+    {
+      "word": "TELL",
+      "type": 0
+    },
+    {
+      "word": "WORD",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BUS",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "EME",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "POW",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "ROW",
+      "type": 0
+    },
+    {
+      "word": "WOP",
+      "type": 0
+    },
+    {
+      "word": "BULL",
+      "type": 0
+    },
+    {
+      "word": "BUST",
+      "type": 0
+    },
+    {
+      "word": "DAME",
+      "type": 0
+    },
+    {
+      "word": "DELE",
+      "type": 0
+    },
+    {
+      "word": "DELL",
+      "type": 0
+    },
+    {
+      "word": "DELS",
+      "type": 0
+    },
+    {
+      "word": "DEME",
+      "type": 0
+    },
+    {
+      "word": "DROP",
+      "type": 0
+    },
+    {
+      "word": "LETS",
+      "type": 0
+    },
+    {
+      "word": "LUST",
+      "type": 0
+    },
+    {
+      "word": "MELL",
+      "type": 0
+    },
+    {
+      "word": "MELS",
+      "type": 0
+    },
+    {
+      "word": "MERL",
+      "type": 0
+    },
+    {
+      "word": "PORE",
+      "type": 0
+    },
+    {
+      "word": "REDD",
+      "type": 0
+    },
+    {
+      "word": "SLED",
+      "type": 0
+    },
+    {
+      "word": "STEM",
+      "type": 0
+    },
+    {
+      "word": "TELE",
+      "type": 0
+    },
+    {
+      "word": "TELS",
+      "type": 0
+    },
+    {
+      "word": "WORE",
+      "type": 0
+    },
+    {
+      "word": "BULLS",
+      "type": 0
+    },
+    {
+      "word": "PORED",
+      "type": 0
+    },
+    {
+      "word": "RELET",
+      "type": 0
+    },
+    {
+      "word": "REMET",
+      "type": 0
+    },
+    {
+      "word": "STELE",
+      "type": 0
+    },
+    {
+      "word": "BULLED",
+      "type": 0
+    },
+    {
+      "word": "BULLET",
+      "type": 0
+    },
+    {
+      "word": "RELETS",
+      "type": 0
+    },
+    {
+      "word": "BULLETS",
+      "type": 0
+    }
+  ],
+  "letters": "TSUB,ELLP,MERO,ADDW",
+  "obstacles": []
 }

@@ -1,77 +1,251 @@
-﻿{
-    "id":  211,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ELE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VÍA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RESTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTADIO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESTAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GRES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RESTA,GEÍAO,ELVDI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 211,
+  "width": 4,
+  "height": 3,
+  "target_words": [
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "CASO",
+      "type": 0
+    },
+    {
+      "word": "COSA",
+      "type": 0
+    },
+    {
+      "word": "OTRA",
+      "type": 0
+    },
+    {
+      "word": "TIPO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "APP",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "CIA",
+      "type": 0
+    },
+    {
+      "word": "COP",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "ITO",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "OSA",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAI",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PIA",
+      "type": 0
+    },
+    {
+      "word": "PIT",
+      "type": 0
+    },
+    {
+      "word": "POS",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "TIA",
+      "type": 0
+    },
+    {
+      "word": "TIC",
+      "type": 0
+    },
+    {
+      "word": "TIP",
+      "type": 0
+    },
+    {
+      "word": "TOC",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "APOS",
+      "type": 0
+    },
+    {
+      "word": "APPA",
+      "type": 0
+    },
+    {
+      "word": "CAPI",
+      "type": 0
+    },
+    {
+      "word": "CAPO",
+      "type": 0
+    },
+    {
+      "word": "CAPP",
+      "type": 0
+    },
+    {
+      "word": "CITO",
+      "type": 0
+    },
+    {
+      "word": "COPA",
+      "type": 0
+    },
+    {
+      "word": "OPPA",
+      "type": 0
+    },
+    {
+      "word": "PACO",
+      "type": 0
+    },
+    {
+      "word": "PART",
+      "type": 0
+    },
+    {
+      "word": "PASO",
+      "type": 0
+    },
+    {
+      "word": "PICA",
+      "type": 0
+    },
+    {
+      "word": "PICO",
+      "type": 0
+    },
+    {
+      "word": "PITO",
+      "type": 0
+    },
+    {
+      "word": "POSA",
+      "type": 0
+    },
+    {
+      "word": "SACO",
+      "type": 0
+    },
+    {
+      "word": "SAPO",
+      "type": 0
+    },
+    {
+      "word": "SOPA",
+      "type": 0
+    },
+    {
+      "word": "TICO",
+      "type": 0
+    },
+    {
+      "word": "TIPA",
+      "type": 0
+    },
+    {
+      "word": "TOCA",
+      "type": 0
+    },
+    {
+      "word": "COPAS",
+      "type": 0
+    },
+    {
+      "word": "COPIA",
+      "type": 0
+    },
+    {
+      "word": "OCASO",
+      "type": 0
+    },
+    {
+      "word": "PARTO",
+      "type": 0
+    },
+    {
+      "word": "PICAS",
+      "type": 0
+    },
+    {
+      "word": "TIPOS",
+      "type": 0
+    },
+    {
+      "word": "TOCAS",
+      "type": 0
+    },
+    {
+      "word": "COPIAR",
+      "type": 0
+    },
+    {
+      "word": "COSACO",
+      "type": 0
+    },
+    {
+      "word": "SACIAR",
+      "type": 0
+    }
+  ],
+  "letters": "OCAS,TIPO,RAPC",
+  "obstacles": []
 }

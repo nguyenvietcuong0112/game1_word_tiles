@@ -1,73 +1,211 @@
-﻿{
-    "id":  770,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMFİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ARMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MANA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MANİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NARİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FRAGMAN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARİF",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MAGMA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MFİR,ARNA,GMAN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 770,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "ONA",
+      "type": 0
+    },
+    {
+      "word": "SUS",
+      "type": 0
+    },
+    {
+      "word": "ASMA",
+      "type": 0
+    },
+    {
+      "word": "JOSE",
+      "type": 0
+    },
+    {
+      "word": "ROMA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "DEA",
+      "type": 0
+    },
+    {
+      "word": "DES",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "AMON",
+      "type": 0
+    },
+    {
+      "word": "ANAM",
+      "type": 0
+    },
+    {
+      "word": "DANA",
+      "type": 0
+    },
+    {
+      "word": "DONA",
+      "type": 0
+    },
+    {
+      "word": "MANA",
+      "type": 0
+    },
+    {
+      "word": "MODA",
+      "type": 0
+    },
+    {
+      "word": "MODE",
+      "type": 0
+    },
+    {
+      "word": "MONA",
+      "type": 0
+    },
+    {
+      "word": "ODAN",
+      "type": 0
+    },
+    {
+      "word": "OMAR",
+      "type": 0
+    },
+    {
+      "word": "ORAN",
+      "type": 0
+    },
+    {
+      "word": "RANA",
+      "type": 0
+    },
+    {
+      "word": "MORAN",
+      "type": 0
+    },
+    {
+      "word": "ODANA",
+      "type": 0
+    },
+    {
+      "word": "RAMON",
+      "type": 0
+    },
+    {
+      "word": "ROMAN",
+      "type": 0
+    },
+    {
+      "word": "SEDAN",
+      "type": 0
+    },
+    {
+      "word": "RAMONA",
+      "type": 0
+    },
+    {
+      "word": "ROMANO",
+      "type": 0
+    }
+  ],
+  "letters": "ANAR,DOMO,EASU,SOJS",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

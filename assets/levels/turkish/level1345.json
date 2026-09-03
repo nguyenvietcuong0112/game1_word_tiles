@@ -1,79 +1,95 @@
-﻿{
-    "id":  1345,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CEP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KORT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORNA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KEP",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RTOR,OCAN,KEPO",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1345,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BYE",
+      "type": 0
+    },
+    {
+      "word": "BİG",
+      "type": 0
+    },
+    {
+      "word": "BİN",
+      "type": 0
+    },
+    {
+      "word": "GÖL",
+      "type": 0
+    },
+    {
+      "word": "GÖR",
+      "type": 0
+    },
+    {
+      "word": "KIR",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "İNN",
+      "type": 0
+    },
+    {
+      "word": "ALIR",
+      "type": 0
+    },
+    {
+      "word": "GİBİ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ANY",
+      "type": 0
+    },
+    {
+      "word": "GİN",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "İNİ",
+      "type": 0
+    },
+    {
+      "word": "BİNİ",
+      "type": 0
+    },
+    {
+      "word": "KIRILAN",
+      "type": 0
+    }
+  ],
+  "letters": "KNNİ,IGİB,RÖEY,ILAN",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

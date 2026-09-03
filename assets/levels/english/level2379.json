@@ -1,97 +1,215 @@
-﻿{
-    "id":  2379,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRAG",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DING",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRAID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BUILD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BUILDING",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FAG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FAIN",
-                            "type":  1
-                        },
-                        {
-                            "word":  "FART",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GARB",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "LDIN,IFAG,UBRT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2379,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "INK",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "BOOM",
+      "type": 0
+    },
+    {
+      "word": "IRON",
+      "type": 0
+    },
+    {
+      "word": "MINI",
+      "type": 0
+    },
+    {
+      "word": "RING",
+      "type": 0
+    },
+    {
+      "word": "SING",
+      "type": 0
+    },
+    {
+      "word": "RINGS",
+      "type": 0
+    },
+    {
+      "word": "MINING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "MOO",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "NIM",
+      "type": 0
+    },
+    {
+      "word": "NOD",
+      "type": 0
+    },
+    {
+      "word": "NOO",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "BOON",
+      "type": 0
+    },
+    {
+      "word": "BOOR",
+      "type": 0
+    },
+    {
+      "word": "DONG",
+      "type": 0
+    },
+    {
+      "word": "DONS",
+      "type": 0
+    },
+    {
+      "word": "DORS",
+      "type": 0
+    },
+    {
+      "word": "GRIN",
+      "type": 0
+    },
+    {
+      "word": "MINK",
+      "type": 0
+    },
+    {
+      "word": "MIRS",
+      "type": 0
+    },
+    {
+      "word": "MORS",
+      "type": 0
+    },
+    {
+      "word": "NORI",
+      "type": 0
+    },
+    {
+      "word": "RINK",
+      "type": 0
+    },
+    {
+      "word": "RINS",
+      "type": 0
+    },
+    {
+      "word": "SINS",
+      "type": 0
+    },
+    {
+      "word": "BOONS",
+      "type": 0
+    },
+    {
+      "word": "BOORS",
+      "type": 0
+    },
+    {
+      "word": "GRINS",
+      "type": 0
+    },
+    {
+      "word": "IRONS",
+      "type": 0
+    },
+    {
+      "word": "MINIM",
+      "type": 0
+    },
+    {
+      "word": "MORON",
+      "type": 0
+    },
+    {
+      "word": "MORONS",
+      "type": 0
+    },
+    {
+      "word": "BOOMING",
+      "type": 0
+    },
+    {
+      "word": "MININGS",
+      "type": 0
+    },
+    {
+      "word": "SNORING",
+      "type": 0
+    }
+  ],
+  "letters": "KMOOB,NIROD,INSNG,MGSIR",
+  "obstacles": []
 }

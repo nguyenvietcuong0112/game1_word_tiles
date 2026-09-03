@@ -1,61 +1,179 @@
-﻿{
-    "id":  1470,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RISE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARISE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AGAR",
-                            "type":  1
-                        },
-                        {
-                            "word":  "AGES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAGES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RHEA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SARI",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "ISE,RAG,HEA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1470,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "GOT",
+      "type": 0
+    },
+    {
+      "word": "ICE",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "SUN",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "ATOM",
+      "type": 0
+    },
+    {
+      "word": "MEAT",
+      "type": 0
+    },
+    {
+      "word": "SPEC",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "CEE",
+      "type": 0
+    },
+    {
+      "word": "CEP",
+      "type": 0
+    },
+    {
+      "word": "EME",
+      "type": 0
+    },
+    {
+      "word": "MOG",
+      "type": 0
+    },
+    {
+      "word": "MOT",
+      "type": 0
+    },
+    {
+      "word": "NUS",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "PEC",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TIC",
+      "type": 0
+    },
+    {
+      "word": "TOG",
+      "type": 0
+    },
+    {
+      "word": "CEPS",
+      "type": 0
+    },
+    {
+      "word": "MICE",
+      "type": 0
+    },
+    {
+      "word": "MOGS",
+      "type": 0
+    },
+    {
+      "word": "OMIT",
+      "type": 0
+    },
+    {
+      "word": "OTIC",
+      "type": 0
+    },
+    {
+      "word": "PECS",
+      "type": 0
+    },
+    {
+      "word": "SMIT",
+      "type": 0
+    },
+    {
+      "word": "SMOG",
+      "type": 0
+    },
+    {
+      "word": "TICS",
+      "type": 0
+    },
+    {
+      "word": "TOGS",
+      "type": 0
+    },
+    {
+      "word": "TOMS",
+      "type": 0
+    },
+    {
+      "word": "ATOMS",
+      "type": 0
+    },
+    {
+      "word": "EMCEE",
+      "type": 0
+    },
+    {
+      "word": "SMOGS",
+      "type": 0
+    },
+    {
+      "word": "ATOMIC",
+      "type": 0
+    },
+    {
+      "word": "SPECIE",
+      "type": 0
+    },
+    {
+      "word": "ATOMICS",
+      "type": 0
+    }
+  ],
+  "letters": "NUSG,PSMO,ECIT,EMEA",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

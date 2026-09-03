@@ -1,117 +1,195 @@
-﻿{
-    "id":  2185,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EARL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GULL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SLUG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GUILD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DETAIL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARSE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LIAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIARS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LIED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LUG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RATED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEAR",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SLUR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RLGLD,ALUIE,ESRAT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2185,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DUE",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "FED",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "HUG",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "TAU",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "GLEN",
+      "type": 0
+    },
+    {
+      "word": "HATE",
+      "type": 0
+    },
+    {
+      "word": "MATH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "ETH",
+      "type": 0
+    },
+    {
+      "word": "FEH",
+      "type": 0
+    },
+    {
+      "word": "GUV",
+      "type": 0
+    },
+    {
+      "word": "HAM",
+      "type": 0
+    },
+    {
+      "word": "HET",
+      "type": 0
+    },
+    {
+      "word": "LEU",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "URD",
+      "type": 0
+    },
+    {
+      "word": "VET",
+      "type": 0
+    },
+    {
+      "word": "VUG",
+      "type": 0
+    },
+    {
+      "word": "AMAH",
+      "type": 0
+    },
+    {
+      "word": "DUEL",
+      "type": 0
+    },
+    {
+      "word": "DURE",
+      "type": 0
+    },
+    {
+      "word": "HATH",
+      "type": 0
+    },
+    {
+      "word": "HERD",
+      "type": 0
+    },
+    {
+      "word": "HETH",
+      "type": 0
+    },
+    {
+      "word": "LEND",
+      "type": 0
+    },
+    {
+      "word": "LEUD",
+      "type": 0
+    },
+    {
+      "word": "MATE",
+      "type": 0
+    },
+    {
+      "word": "RUDD",
+      "type": 0
+    },
+    {
+      "word": "THRU",
+      "type": 0
+    },
+    {
+      "word": "DUVET",
+      "type": 0
+    },
+    {
+      "word": "ELVER",
+      "type": 0
+    },
+    {
+      "word": "HATER",
+      "type": 0
+    },
+    {
+      "word": "MATER",
+      "type": 0
+    },
+    {
+      "word": "REVUE",
+      "type": 0
+    },
+    {
+      "word": "ENDURE",
+      "type": 0
+    },
+    {
+      "word": "HAMATE",
+      "type": 0
+    }
+  ],
+  "letters": "MAHUG,ATEVL,UHRUE,FEDDN",
+  "obstacles": []
 }

@@ -1,69 +1,203 @@
-﻿{
-    "id":  2054,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TROOP",
-                             "type":  2
-                         },
-                         {
-                             "word":  "COOLER",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CLOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POOLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TORT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TROT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CLE,OOR,PTT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2054,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "ENDS",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    },
+    {
+      "word": "SEND",
+      "type": 0
+    },
+    {
+      "word": "SENT",
+      "type": 0
+    },
+    {
+      "word": "ASHES",
+      "type": 0
+    },
+    {
+      "word": "ROSES",
+      "type": 0
+    },
+    {
+      "word": "SPLASH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "ALPS",
+      "type": 0
+    },
+    {
+      "word": "ASPS",
+      "type": 0
+    },
+    {
+      "word": "BROS",
+      "type": 0
+    },
+    {
+      "word": "HEST",
+      "type": 0
+    },
+    {
+      "word": "LASH",
+      "type": 0
+    },
+    {
+      "word": "NESS",
+      "type": 0
+    },
+    {
+      "word": "NEST",
+      "type": 0
+    },
+    {
+      "word": "ORBS",
+      "type": 0
+    },
+    {
+      "word": "OSES",
+      "type": 0
+    },
+    {
+      "word": "SALP",
+      "type": 0
+    },
+    {
+      "word": "SHES",
+      "type": 0
+    },
+    {
+      "word": "SORB",
+      "type": 0
+    },
+    {
+      "word": "BROSE",
+      "type": 0
+    },
+    {
+      "word": "HESTS",
+      "type": 0
+    },
+    {
+      "word": "NESTS",
+      "type": 0
+    },
+    {
+      "word": "PLASH",
+      "type": 0
+    },
+    {
+      "word": "SALPS",
+      "type": 0
+    },
+    {
+      "word": "SENDS",
+      "type": 0
+    },
+    {
+      "word": "SORBS",
+      "type": 0
+    },
+    {
+      "word": "BROSES",
+      "type": 0
+    },
+    {
+      "word": "LASHES",
+      "type": 0
+    },
+    {
+      "word": "PLASHES",
+      "type": 0
+    },
+    {
+      "word": "SPLASHES",
+      "type": 0
+    }
+  ],
+  "letters": "IEHSA,NSSPL,STSBR,DNESO",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

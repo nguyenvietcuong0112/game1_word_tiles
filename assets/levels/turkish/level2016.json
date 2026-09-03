@@ -1,57 +1,151 @@
-﻿{
-    "id":  2016,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KULE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PARK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ULAK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PARKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEOPAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KULA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RKA,AUL,POE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2016,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ISI",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MIŞ",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SOO",
+      "type": 0
+    },
+    {
+      "word": "AKIM",
+      "type": 0
+    },
+    {
+      "word": "KANI",
+      "type": 0
+    },
+    {
+      "word": "KAOS",
+      "type": 0
+    },
+    {
+      "word": "SOCK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "GEC",
+      "type": 0
+    },
+    {
+      "word": "GER",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "IMI",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "MIN",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NAO",
+      "type": 0
+    },
+    {
+      "word": "OAK",
+      "type": 0
+    },
+    {
+      "word": "ANIM",
+      "type": 0
+    },
+    {
+      "word": "ISIR",
+      "type": 0
+    },
+    {
+      "word": "NAMI",
+      "type": 0
+    },
+    {
+      "word": "AKIMI",
+      "type": 0
+    },
+    {
+      "word": "KANIM",
+      "type": 0
+    },
+    {
+      "word": "KANIMI",
+      "type": 0
+    },
+    {
+      "word": "ISIRMIŞ",
+      "type": 0
+    }
+  ],
+  "letters": "MIŞOS,RECOS,IGKAN,SIIMI",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

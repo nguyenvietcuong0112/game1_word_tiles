@@ -1,97 +1,223 @@
-﻿{
-    "id":  2302,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "NEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODAK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TAVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAVAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAKİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AVOKADO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKNE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ATİK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAV",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TİK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OVAKM,KADNE,İTOYH",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2302,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "DIR",
+      "type": 0
+    },
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "VER",
+      "type": 0
+    },
+    {
+      "word": "EDER",
+      "type": 0
+    },
+    {
+      "word": "İZLE",
+      "type": 0
+    },
+    {
+      "word": "DAİMA",
+      "type": 0
+    },
+    {
+      "word": "İDARE",
+      "type": 0
+    },
+    {
+      "word": "DERLER",
+      "type": 0
+    },
+    {
+      "word": "İZLEDİM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DAİ",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DİE",
+      "type": 0
+    },
+    {
+      "word": "DİM",
+      "type": 0
+    },
+    {
+      "word": "DİZ",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LER",
+      "type": 0
+    },
+    {
+      "word": "LEİ",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MİA",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "NAİ",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAİ",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "ZED",
+      "type": 0
+    },
+    {
+      "word": "İAN",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "ANMA",
+      "type": 0
+    },
+    {
+      "word": "DAİM",
+      "type": 0
+    },
+    {
+      "word": "DEVE",
+      "type": 0
+    },
+    {
+      "word": "DİZE",
+      "type": 0
+    },
+    {
+      "word": "EDİE",
+      "type": 0
+    },
+    {
+      "word": "EVER",
+      "type": 0
+    },
+    {
+      "word": "MİDE",
+      "type": 0
+    },
+    {
+      "word": "VEDA",
+      "type": 0
+    },
+    {
+      "word": "VERA",
+      "type": 0
+    },
+    {
+      "word": "İADE",
+      "type": 0
+    },
+    {
+      "word": "İZLEDİ",
+      "type": 0
+    },
+    {
+      "word": "EDERLER",
+      "type": 0
+    }
+  ],
+  "letters": "ELREV,RNADE,AMİİZ,RIDEL",
+  "obstacles": []
 }

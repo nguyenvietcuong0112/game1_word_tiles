@@ -1,81 +1,151 @@
-﻿{
-    "id":  1100,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RÉU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAGU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAGU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASSAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GARRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALSA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALGAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAGUNÇA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAGUNÇAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARRAS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LASSAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RÉS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SABRA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UÉRRA,SSABÇ,ALGUN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1100,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "DOU",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "PIA",
+      "type": 0
+    },
+    {
+      "word": "SAI",
+      "type": 0
+    },
+    {
+      "word": "SIX",
+      "type": 0
+    },
+    {
+      "word": "VIA",
+      "type": 0
+    },
+    {
+      "word": "AVES",
+      "type": 0
+    },
+    {
+      "word": "COULD",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "AVI",
+      "type": 0
+    },
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "EPI",
+      "type": 0
+    },
+    {
+      "word": "IAS",
+      "type": 0
+    },
+    {
+      "word": "ISS",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "LUO",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "PIX",
+      "type": 0
+    },
+    {
+      "word": "SAA",
+      "type": 0
+    },
+    {
+      "word": "SIL",
+      "type": 0
+    },
+    {
+      "word": "VIP",
+      "type": 0
+    },
+    {
+      "word": "XIS",
+      "type": 0
+    },
+    {
+      "word": "XIV",
+      "type": 0
+    },
+    {
+      "word": "ISSA",
+      "type": 0
+    },
+    {
+      "word": "IVES",
+      "type": 0
+    },
+    {
+      "word": "PIAS",
+      "type": 0
+    },
+    {
+      "word": "VIAS",
+      "type": 0
+    },
+    {
+      "word": "LISSA",
+      "type": 0
+    },
+    {
+      "word": "PESCO",
+      "type": 0
+    },
+    {
+      "word": "PESCOU",
+      "type": 0
+    }
+  ],
+  "letters": "ULIS,ODXS,CPIA,SEVA",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

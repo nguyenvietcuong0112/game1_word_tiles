@@ -1,97 +1,227 @@
-﻿{
-    "id":  2230,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LINK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAIL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SAKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SITE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAIL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TAKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALIAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLANK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLINK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLANKET",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANIL",
-                            "type":  1
-                        },
-                        {
-                            "word":  "BAIN",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LANK",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LANKA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ANKE,LIAT,BASI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2230,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "CAD",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "DRY",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "BARS",
+      "type": 0
+    },
+    {
+      "word": "BEAR",
+      "type": 0
+    },
+    {
+      "word": "YEAR",
+      "type": 0
+    },
+    {
+      "word": "YACHT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABO",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BEY",
+      "type": 0
+    },
+    {
+      "word": "CAY",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "OBE",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "PYE",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "REP",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "RYA",
+      "type": 0
+    },
+    {
+      "word": "RYE",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "YEA",
+      "type": 0
+    },
+    {
+      "word": "AERO",
+      "type": 0
+    },
+    {
+      "word": "BEAT",
+      "type": 0
+    },
+    {
+      "word": "BORE",
+      "type": 0
+    },
+    {
+      "word": "DRAT",
+      "type": 0
+    },
+    {
+      "word": "EYRA",
+      "type": 0
+    },
+    {
+      "word": "EYRE",
+      "type": 0
+    },
+    {
+      "word": "EYRY",
+      "type": 0
+    },
+    {
+      "word": "OBEY",
+      "type": 0
+    },
+    {
+      "word": "PREY",
+      "type": 0
+    },
+    {
+      "word": "PYRE",
+      "type": 0
+    },
+    {
+      "word": "REAR",
+      "type": 0
+    },
+    {
+      "word": "ROBE",
+      "type": 0
+    },
+    {
+      "word": "BEARD",
+      "type": 0
+    },
+    {
+      "word": "DRYER",
+      "type": 0
+    },
+    {
+      "word": "PROBE",
+      "type": 0
+    },
+    {
+      "word": "REBAR",
+      "type": 0
+    },
+    {
+      "word": "REPRO",
+      "type": 0
+    },
+    {
+      "word": "REBARS",
+      "type": 0
+    },
+    {
+      "word": "YACHTS",
+      "type": 0
+    },
+    {
+      "word": "REPROBE",
+      "type": 0
+    }
+  ],
+  "letters": "OBARS,REATT,PYRDH,ERYAC",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

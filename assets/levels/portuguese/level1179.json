@@ -1,81 +1,211 @@
-﻿{
-    "id":  1179,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALHO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GULA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAGO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RUGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "URSO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALUNO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GALHO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VERSO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VOGAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGULHA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UNIVERSO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "GALHA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RENO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REVIVO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "VOGA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VERSO,INULH,VOGAA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1179,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "COM",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "LER",
+      "type": 0
+    },
+    {
+      "word": "PIT",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "DELA",
+      "type": 0
+    },
+    {
+      "word": "TIRE",
+      "type": 0
+    },
+    {
+      "word": "MORTE",
+      "type": 0
+    },
+    {
+      "word": "WRITE",
+      "type": 0
+    },
+    {
+      "word": "RELAÇÃO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "DET",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "OCO",
+      "type": 0
+    },
+    {
+      "word": "ORO",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "RIP",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TIP",
+      "type": 0
+    },
+    {
+      "word": "AÇÃO",
+      "type": 0
+    },
+    {
+      "word": "CORO",
+      "type": 0
+    },
+    {
+      "word": "CORT",
+      "type": 0
+    },
+    {
+      "word": "DALE",
+      "type": 0
+    },
+    {
+      "word": "LEDA",
+      "type": 0
+    },
+    {
+      "word": "MORO",
+      "type": 0
+    },
+    {
+      "word": "MORT",
+      "type": 0
+    },
+    {
+      "word": "ORLA",
+      "type": 0
+    },
+    {
+      "word": "PIRE",
+      "type": 0
+    },
+    {
+      "word": "TELA",
+      "type": 0
+    },
+    {
+      "word": "TERI",
+      "type": 0
+    },
+    {
+      "word": "CORTE",
+      "type": 0
+    },
+    {
+      "word": "RETRO",
+      "type": 0
+    },
+    {
+      "word": "RITMO",
+      "type": 0
+    },
+    {
+      "word": "ROMPI",
+      "type": 0
+    },
+    {
+      "word": "TELÃO",
+      "type": 0
+    },
+    {
+      "word": "TIRED",
+      "type": 0
+    },
+    {
+      "word": "TROCO",
+      "type": 0
+    },
+    {
+      "word": "REDAÇÃO",
+      "type": 0
+    }
+  ],
+  "letters": "PMOC,ITRO,RELÃ,WDAÇ",
+  "obstacles": []
 }

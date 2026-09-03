@@ -1,61 +1,243 @@
-﻿{
-    "id":  2071,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "JET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KORT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SERT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TART",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KORNA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STRATEJİ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARTROZ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KORE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "STRAT,ERNAE,KOZİJ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2071,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "DEK",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KEK",
+      "type": 0
+    },
+    {
+      "word": "YÜZ",
+      "type": 0
+    },
+    {
+      "word": "GEMİ",
+      "type": 0
+    },
+    {
+      "word": "KARA",
+      "type": 0
+    },
+    {
+      "word": "KEDİ",
+      "type": 0
+    },
+    {
+      "word": "ROTA",
+      "type": 0
+    },
+    {
+      "word": "TARA",
+      "type": 0
+    },
+    {
+      "word": "KOKAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "DEM",
+      "type": 0
+    },
+    {
+      "word": "DİM",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "EGO",
+      "type": 0
+    },
+    {
+      "word": "EKO",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "GED",
+      "type": 0
+    },
+    {
+      "word": "GEM",
+      "type": 0
+    },
+    {
+      "word": "GOT",
+      "type": 0
+    },
+    {
+      "word": "KOR",
+      "type": 0
+    },
+    {
+      "word": "KOT",
+      "type": 0
+    },
+    {
+      "word": "MEG",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "ROG",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "TOK",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "ADEM",
+      "type": 0
+    },
+    {
+      "word": "ADİM",
+      "type": 0
+    },
+    {
+      "word": "ARAR",
+      "type": 0
+    },
+    {
+      "word": "ATAR",
+      "type": 0
+    },
+    {
+      "word": "DATA",
+      "type": 0
+    },
+    {
+      "word": "DEKE",
+      "type": 0
+    },
+    {
+      "word": "DEMİ",
+      "type": 0
+    },
+    {
+      "word": "KARO",
+      "type": 0
+    },
+    {
+      "word": "KOKO",
+      "type": 0
+    },
+    {
+      "word": "MEGA",
+      "type": 0
+    },
+    {
+      "word": "MİDE",
+      "type": 0
+    },
+    {
+      "word": "TARO",
+      "type": 0
+    },
+    {
+      "word": "TOKA",
+      "type": 0
+    },
+    {
+      "word": "ÜZME",
+      "type": 0
+    },
+    {
+      "word": "GATOR",
+      "type": 0
+    },
+    {
+      "word": "KARAT",
+      "type": 0
+    },
+    {
+      "word": "KEDİM",
+      "type": 0
+    },
+    {
+      "word": "TARAK",
+      "type": 0
+    },
+    {
+      "word": "YÜZME",
+      "type": 0
+    },
+    {
+      "word": "ÜZMEK",
+      "type": 0
+    },
+    {
+      "word": "ATARAK",
+      "type": 0
+    },
+    {
+      "word": "YÜZMEK",
+      "type": 0
+    }
+  ],
+  "letters": "ÜYKOR,ZKEKA,MEGOR,İDATA",
+  "obstacles": []
 }

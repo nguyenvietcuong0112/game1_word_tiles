@@ -1,81 +1,239 @@
-﻿{
-    "id":  1376,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MEMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEMON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEMORY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AERO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "EMORY",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LAIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOME",
-                            "type":  1
-                        },
-                        {
-                            "word":  "NOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROME",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "INORE,ALMYA,RLEMT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1376,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "PASS",
+      "type": 0
+    },
+    {
+      "word": "SAFE",
+      "type": 0
+    },
+    {
+      "word": "SETS",
+      "type": 0
+    },
+    {
+      "word": "FRIES",
+      "type": 0
+    },
+    {
+      "word": "PATCH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "EFS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "FAS",
+      "type": 0
+    },
+    {
+      "word": "FEH",
+      "type": 0
+    },
+    {
+      "word": "FET",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "HET",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "SAP",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "CHEF",
+      "type": 0
+    },
+    {
+      "word": "ETAS",
+      "type": 0
+    },
+    {
+      "word": "ETCH",
+      "type": 0
+    },
+    {
+      "word": "FAIR",
+      "type": 0
+    },
+    {
+      "word": "FEHS",
+      "type": 0
+    },
+    {
+      "word": "FESS",
+      "type": 0
+    },
+    {
+      "word": "FETA",
+      "type": 0
+    },
+    {
+      "word": "FETS",
+      "type": 0
+    },
+    {
+      "word": "HETS",
+      "type": 0
+    },
+    {
+      "word": "IRIS",
+      "type": 0
+    },
+    {
+      "word": "PASE",
+      "type": 0
+    },
+    {
+      "word": "PATE",
+      "type": 0
+    },
+    {
+      "word": "PATS",
+      "type": 0
+    },
+    {
+      "word": "RIAS",
+      "type": 0
+    },
+    {
+      "word": "SATE",
+      "type": 0
+    },
+    {
+      "word": "SEIS",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SHES",
+      "type": 0
+    },
+    {
+      "word": "TASS",
+      "type": 0
+    },
+    {
+      "word": "CHEFS",
+      "type": 0
+    },
+    {
+      "word": "CHESS",
+      "type": 0
+    },
+    {
+      "word": "FETAS",
+      "type": 0
+    },
+    {
+      "word": "FETCH",
+      "type": 0
+    },
+    {
+      "word": "PATES",
+      "type": 0
+    },
+    {
+      "word": "SATES",
+      "type": 0
+    },
+    {
+      "word": "TASSIE",
+      "type": 0
+    },
+    {
+      "word": "FAIRIES",
+      "type": 0
+    },
+    {
+      "word": "PATCHES",
+      "type": 0
+    },
+    {
+      "word": "PATSIES",
+      "type": 0
+    }
+  ],
+  "letters": "SHCP,SETA,AFSS,IRIE",
+  "obstacles": []
 }

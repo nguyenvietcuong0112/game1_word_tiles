@@ -1,118 +1,215 @@
-﻿{
-    "id":  1676,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAGE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MILE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IMAGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOMAGE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LEG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIMO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MAG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEGA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OMEGA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOMA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SIL,OME,HAG",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1676,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CRY",
+      "type": 0
+    },
+    {
+      "word": "CUT",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "RUN",
+      "type": 0
+    },
+    {
+      "word": "CAST",
+      "type": 0
+    },
+    {
+      "word": "FAST",
+      "type": 0
+    },
+    {
+      "word": "FILE",
+      "type": 0
+    },
+    {
+      "word": "LIST",
+      "type": 0
+    },
+    {
+      "word": "NATURE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "CUR",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "FAS",
+      "type": 0
+    },
+    {
+      "word": "FIL",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "NAE",
+      "type": 0
+    },
+    {
+      "word": "NUT",
+      "type": 0
+    },
+    {
+      "word": "RUT",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TUN",
+      "type": 0
+    },
+    {
+      "word": "UTA",
+      "type": 0
+    },
+    {
+      "word": "UTS",
+      "type": 0
+    },
+    {
+      "word": "CURE",
+      "type": 0
+    },
+    {
+      "word": "CURR",
+      "type": 0
+    },
+    {
+      "word": "CUTS",
+      "type": 0
+    },
+    {
+      "word": "EATS",
+      "type": 0
+    },
+    {
+      "word": "FISC",
+      "type": 0
+    },
+    {
+      "word": "FIST",
+      "type": 0
+    },
+    {
+      "word": "ILEA",
+      "type": 0
+    },
+    {
+      "word": "LEAN",
+      "type": 0
+    },
+    {
+      "word": "NUTS",
+      "type": 0
+    },
+    {
+      "word": "RUNE",
+      "type": 0
+    },
+    {
+      "word": "RUTS",
+      "type": 0
+    },
+    {
+      "word": "SCRY",
+      "type": 0
+    },
+    {
+      "word": "SCUT",
+      "type": 0
+    },
+    {
+      "word": "SILT",
+      "type": 0
+    },
+    {
+      "word": "STUN",
+      "type": 0
+    },
+    {
+      "word": "TAEL",
+      "type": 0
+    },
+    {
+      "word": "TUNA",
+      "type": 0
+    },
+    {
+      "word": "TUNE",
+      "type": 0
+    },
+    {
+      "word": "CURRY",
+      "type": 0
+    },
+    {
+      "word": "ISTLE",
+      "type": 0
+    },
+    {
+      "word": "SCUTA",
+      "type": 0
+    },
+    {
+      "word": "STANE",
+      "type": 0
+    },
+    {
+      "word": "TUNER",
+      "type": 0
+    },
+    {
+      "word": "CASTLE",
+      "type": 0
+    },
+    {
+      "word": "LEANER",
+      "type": 0
+    },
+    {
+      "word": "SCURRY",
+      "type": 0
+    }
+  ],
+  "letters": "EANE,LTUR,ISCR,FACY",
+  "obstacles": []
 }

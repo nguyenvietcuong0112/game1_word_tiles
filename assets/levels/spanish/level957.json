@@ -1,77 +1,255 @@
-﻿{
-    "id":  957,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CEGAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REGAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGREGAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANTERA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANTI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARECER",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ERG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GANTE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RITE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "REGA,GCER,ANTI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 957,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "UNA",
+      "type": 0
+    },
+    {
+      "word": "UNO",
+      "type": 0
+    },
+    {
+      "word": "CARA",
+      "type": 0
+    },
+    {
+      "word": "CREO",
+      "type": 0
+    },
+    {
+      "word": "RUEGA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ANN",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "ANU",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "CRE",
+      "type": 0
+    },
+    {
+      "word": "DET",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "DOE",
+      "type": 0
+    },
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "EUN",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "GEO",
+      "type": 0
+    },
+    {
+      "word": "NDE",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "ONN",
+      "type": 0
+    },
+    {
+      "word": "ONU",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "REO",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "RUN",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "ACRE",
+      "type": 0
+    },
+    {
+      "word": "ANDE",
+      "type": 0
+    },
+    {
+      "word": "ANDO",
+      "type": 0
+    },
+    {
+      "word": "ANNA",
+      "type": 0
+    },
+    {
+      "word": "ARCA",
+      "type": 0
+    },
+    {
+      "word": "ARUN",
+      "type": 0
+    },
+    {
+      "word": "CUNA",
+      "type": 0
+    },
+    {
+      "word": "CURA",
+      "type": 0
+    },
+    {
+      "word": "DONA",
+      "type": 0
+    },
+    {
+      "word": "DOTE",
+      "type": 0
+    },
+    {
+      "word": "EDNA",
+      "type": 0
+    },
+    {
+      "word": "ETON",
+      "type": 0
+    },
+    {
+      "word": "NOTE",
+      "type": 0
+    },
+    {
+      "word": "NUCA",
+      "type": 0
+    },
+    {
+      "word": "RAGE",
+      "type": 0
+    },
+    {
+      "word": "RUNA",
+      "type": 0
+    },
+    {
+      "word": "ANOTE",
+      "type": 0
+    },
+    {
+      "word": "CURAN",
+      "type": 0
+    },
+    {
+      "word": "DONAR",
+      "type": 0
+    },
+    {
+      "word": "DONNA",
+      "type": 0
+    },
+    {
+      "word": "NUERA",
+      "type": 0
+    },
+    {
+      "word": "URANO",
+      "type": 0
+    },
+    {
+      "word": "DETONA",
+      "type": 0
+    },
+    {
+      "word": "DETONAR",
+      "type": 0
+    }
+  ],
+  "letters": "ETGA,DOER,NNUC,AARA",
+  "obstacles": []
 }

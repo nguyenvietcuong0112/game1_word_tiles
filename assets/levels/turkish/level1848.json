@@ -1,91 +1,131 @@
-﻿{
-    "id":  1848,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEPSİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEPSİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NİSPET",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "STEP",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PSİN,ETAR,HAÇE",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1848,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABİ",
+      "type": 0
+    },
+    {
+      "word": "BAK",
+      "type": 0
+    },
+    {
+      "word": "KAP",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAÇ",
+      "type": 0
+    },
+    {
+      "word": "SIK",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "BAEK",
+      "type": 0
+    },
+    {
+      "word": "ELMA",
+      "type": 0
+    },
+    {
+      "word": "ÖPMEK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "BAE",
+      "type": 0
+    },
+    {
+      "word": "ELM",
+      "type": 0
+    },
+    {
+      "word": "EMP",
+      "type": 0
+    },
+    {
+      "word": "KIS",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "PAK",
+      "type": 0
+    },
+    {
+      "word": "SKİ",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "ÇAM",
+      "type": 0
+    },
+    {
+      "word": "ISKA",
+      "type": 0
+    },
+    {
+      "word": "KEMP",
+      "type": 0
+    },
+    {
+      "word": "ÖPME",
+      "type": 0
+    },
+    {
+      "word": "SIKLET",
+      "type": 0
+    }
+  ],
+  "letters": "İBKEM,KAEÖP,SPMAÇ,IKLET",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

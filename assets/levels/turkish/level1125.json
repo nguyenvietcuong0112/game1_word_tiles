@@ -1,81 +1,123 @@
-﻿{
-    "id":  1125,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BALON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİBER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİBERON",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BARON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BİRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İBARE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LOR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LON,ARE,BİB",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1125,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "ASİ",
+      "type": 0
+    },
+    {
+      "word": "AİT",
+      "type": 0
+    },
+    {
+      "word": "DOO",
+      "type": 0
+    },
+    {
+      "word": "FAT",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "HİT",
+      "type": 0
+    },
+    {
+      "word": "SİD",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "İSA",
+      "type": 0
+    },
+    {
+      "word": "İDDİA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DAO",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "HAİ",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "TAİ",
+      "type": 0
+    },
+    {
+      "word": "TİA",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "İHA",
+      "type": 0
+    },
+    {
+      "word": "İTİ",
+      "type": 0
+    },
+    {
+      "word": "AHİT",
+      "type": 0
+    },
+    {
+      "word": "AİDA",
+      "type": 0
+    },
+    {
+      "word": "TAFT",
+      "type": 0
+    },
+    {
+      "word": "TAHİTİ",
+      "type": 0
+    }
+  ],
+  "letters": "FTİT,AİHA,TDDİ,OOAS",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

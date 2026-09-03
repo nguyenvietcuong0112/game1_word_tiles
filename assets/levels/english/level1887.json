@@ -1,122 +1,191 @@
-﻿{
-    "id":  1887,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOOT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "POLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POLL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STEP",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TEAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TELL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COMPEL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COOT",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LETS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOAM",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LOP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOPE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "PELL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PETS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EAOLL,TMPET,OOCOS",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1887,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "INN",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "OWN",
+      "type": 0
+    },
+    {
+      "word": "ROW",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "YIN",
+      "type": 0
+    },
+    {
+      "word": "ANTI",
+      "type": 0
+    },
+    {
+      "word": "RUIN",
+      "type": 0
+    },
+    {
+      "word": "BROWN",
+      "type": 0
+    },
+    {
+      "word": "MENTION",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "EMU",
+      "type": 0
+    },
+    {
+      "word": "ION",
+      "type": 0
+    },
+    {
+      "word": "NAB",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "NEB",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "RUM",
+      "type": 0
+    },
+    {
+      "word": "SOW",
+      "type": 0
+    },
+    {
+      "word": "WOS",
+      "type": 0
+    },
+    {
+      "word": "BANE",
+      "type": 0
+    },
+    {
+      "word": "BENT",
+      "type": 0
+    },
+    {
+      "word": "BRIO",
+      "type": 0
+    },
+    {
+      "word": "BRIT",
+      "type": 0
+    },
+    {
+      "word": "BROS",
+      "type": 0
+    },
+    {
+      "word": "BROW",
+      "type": 0
+    },
+    {
+      "word": "NABE",
+      "type": 0
+    },
+    {
+      "word": "NOIR",
+      "type": 0
+    },
+    {
+      "word": "ORBS",
+      "type": 0
+    },
+    {
+      "word": "OWNS",
+      "type": 0
+    },
+    {
+      "word": "SORB",
+      "type": 0
+    },
+    {
+      "word": "SORI",
+      "type": 0
+    },
+    {
+      "word": "SOWN",
+      "type": 0
+    },
+    {
+      "word": "TIRO",
+      "type": 0
+    },
+    {
+      "word": "BENNI",
+      "type": 0
+    },
+    {
+      "word": "ROSIN",
+      "type": 0
+    },
+    {
+      "word": "RUMEN",
+      "type": 0
+    },
+    {
+      "word": "TIROS",
+      "type": 0
+    },
+    {
+      "word": "BENNIS",
+      "type": 0
+    },
+    {
+      "word": "BROWNS",
+      "type": 0
+    },
+    {
+      "word": "BROWNY",
+      "type": 0
+    }
+  ],
+  "letters": "RUMEB,YINNA,NSBTN,WORIO",
+  "obstacles": []
 }

@@ -1,101 +1,119 @@
-﻿{
-    "id":  820,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ИМЯ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "МАТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПАС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПАТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЯМА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "МАТЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "МЯТА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "МЯТЬ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "СПАМ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СПАТЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПАМЯТЬ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ПАМ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ПАСС",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ПИМ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "САМ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "САП",
-                            "type":  0
-                        },
-                        {
-                            "word":  "САТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СПА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СПАС",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТАМ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТАСС",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ЯТЬ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ССЬ,ПАТ,ИМЯ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 820,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "КАН",
+      "type": 0
+    },
+    {
+      "word": "ЛЕС",
+      "type": 0
+    },
+    {
+      "word": "СЕЛ",
+      "type": 0
+    },
+    {
+      "word": "СИЛ",
+      "type": 0
+    },
+    {
+      "word": "ПЛЯЖ",
+      "type": 0
+    },
+    {
+      "word": "ПУЛИ",
+      "type": 0
+    },
+    {
+      "word": "СЕБЕ",
+      "type": 0
+    },
+    {
+      "word": "УЛИК",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АКИ",
+      "type": 0
+    },
+    {
+      "word": "АНБ",
+      "type": 0
+    },
+    {
+      "word": "БЕС",
+      "type": 0
+    },
+    {
+      "word": "ЕБЕ",
+      "type": 0
+    },
+    {
+      "word": "ЕЛИ",
+      "type": 0
+    },
+    {
+      "word": "ЛИК",
+      "type": 0
+    },
+    {
+      "word": "ЛИЛ",
+      "type": 0
+    },
+    {
+      "word": "ЛИС",
+      "type": 0
+    },
+    {
+      "word": "НАК",
+      "type": 0
+    },
+    {
+      "word": "ПЛИ",
+      "type": 0
+    },
+    {
+      "word": "ПУЛ",
+      "type": 0
+    },
+    {
+      "word": "СЕБ",
+      "type": 0
+    },
+    {
+      "word": "НАКИ",
+      "type": 0
+    },
+    {
+      "word": "СЕЛИ",
+      "type": 0
+    },
+    {
+      "word": "СИЛЕ",
+      "type": 0
+    },
+    {
+      "word": "УЛИКА",
+      "type": 0
+    }
+  ],
+  "letters": "ПУЛИ,ЛЯЖК,ИЛНА,СЕБЕ",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

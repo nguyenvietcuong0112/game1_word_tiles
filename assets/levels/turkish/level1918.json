@@ -1,86 +1,207 @@
-﻿{
-    "id":  1918,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DEF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEV",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İLK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEFA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VEFA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAZİFE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "İFA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İZAFE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LİF",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VAZ,EFİ,DKL",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1918,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "JAN",
+      "type": 0
+    },
+    {
+      "word": "MAX",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TUT",
+      "type": 0
+    },
+    {
+      "word": "TİM",
+      "type": 0
+    },
+    {
+      "word": "AMİN",
+      "type": 0
+    },
+    {
+      "word": "CUMA",
+      "type": 0
+    },
+    {
+      "word": "ORDA",
+      "type": 0
+    },
+    {
+      "word": "UNUT",
+      "type": 0
+    },
+    {
+      "word": "MARCO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANU",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "CUN",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DAX",
+      "type": 0
+    },
+    {
+      "word": "DİM",
+      "type": 0
+    },
+    {
+      "word": "DİN",
+      "type": 0
+    },
+    {
+      "word": "JUN",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MUN",
+      "type": 0
+    },
+    {
+      "word": "MİN",
+      "type": 0
+    },
+    {
+      "word": "MİT",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NİM",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "TAJ",
+      "type": 0
+    },
+    {
+      "word": "TİN",
+      "type": 0
+    },
+    {
+      "word": "UMA",
+      "type": 0
+    },
+    {
+      "word": "UNA",
+      "type": 0
+    },
+    {
+      "word": "UNU",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "ADİM",
+      "type": 0
+    },
+    {
+      "word": "DİNA",
+      "type": 0
+    },
+    {
+      "word": "MARC",
+      "type": 0
+    },
+    {
+      "word": "MİNA",
+      "type": 0
+    },
+    {
+      "word": "TUNA",
+      "type": 0
+    },
+    {
+      "word": "TİNA",
+      "type": 0
+    },
+    {
+      "word": "UNİT",
+      "type": 0
+    },
+    {
+      "word": "UTAN",
+      "type": 0
+    },
+    {
+      "word": "İDAM",
+      "type": 0
+    },
+    {
+      "word": "İNAT",
+      "type": 0
+    },
+    {
+      "word": "ADİNA",
+      "type": 0
+    },
+    {
+      "word": "ARMİN",
+      "type": 0
+    },
+    {
+      "word": "TUTAN",
+      "type": 0
+    }
+  ],
+  "letters": "TUTBO,ANİDR,JUMAX,OCRAM",
+  "obstacles": []
 }

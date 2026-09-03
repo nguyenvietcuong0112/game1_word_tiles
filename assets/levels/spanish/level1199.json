@@ -1,113 +1,267 @@
-﻿{
-    "id":  1199,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AHÍ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RÍA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAHÍA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BURRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BURRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARIDO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ABURRIDO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ABUR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BURÍ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MARO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MARRA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIRRA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ORA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "HÍAM,ARRI,BUOD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1199,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "HOY",
+      "type": 0
+    },
+    {
+      "word": "OOH",
+      "type": 0
+    },
+    {
+      "word": "SOY",
+      "type": 0
+    },
+    {
+      "word": "ARCO",
+      "type": 0
+    },
+    {
+      "word": "CADA",
+      "type": 0
+    },
+    {
+      "word": "CARA",
+      "type": 0
+    },
+    {
+      "word": "HORA",
+      "type": 0
+    },
+    {
+      "word": "ROSS",
+      "type": 0
+    },
+    {
+      "word": "AHORA",
+      "type": 0
+    },
+    {
+      "word": "HORAS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "HOO",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "OSA",
+      "type": 0
+    },
+    {
+      "word": "OSO",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "SOO",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "SRA",
+      "type": 0
+    },
+    {
+      "word": "ARAR",
+      "type": 0
+    },
+    {
+      "word": "ARAS",
+      "type": 0
+    },
+    {
+      "word": "AROS",
+      "type": 0
+    },
+    {
+      "word": "CADE",
+      "type": 0
+    },
+    {
+      "word": "CARO",
+      "type": 0
+    },
+    {
+      "word": "DARA",
+      "type": 0
+    },
+    {
+      "word": "DARE",
+      "type": 0
+    },
+    {
+      "word": "DERS",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "HOSS",
+      "type": 0
+    },
+    {
+      "word": "ORAR",
+      "type": 0
+    },
+    {
+      "word": "RARA",
+      "type": 0
+    },
+    {
+      "word": "RARO",
+      "type": 0
+    },
+    {
+      "word": "RASO",
+      "type": 0
+    },
+    {
+      "word": "ROSA",
+      "type": 0
+    },
+    {
+      "word": "SADE",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "SOHO",
+      "type": 0
+    },
+    {
+      "word": "SORA",
+      "type": 0
+    },
+    {
+      "word": "SRAS",
+      "type": 0
+    },
+    {
+      "word": "CARAS",
+      "type": 0
+    },
+    {
+      "word": "CAROS",
+      "type": 0
+    },
+    {
+      "word": "CRASO",
+      "type": 0
+    },
+    {
+      "word": "CROSS",
+      "type": 0
+    },
+    {
+      "word": "DAROS",
+      "type": 0
+    },
+    {
+      "word": "OSADA",
+      "type": 0
+    },
+    {
+      "word": "RADAR",
+      "type": 0
+    },
+    {
+      "word": "RAROS",
+      "type": 0
+    },
+    {
+      "word": "CADERA",
+      "type": 0
+    },
+    {
+      "word": "ROSADA",
+      "type": 0
+    },
+    {
+      "word": "CADERAS",
+      "type": 0
+    }
+  ],
+  "letters": "AOCC,HORA,OSAD,YSRE",
+  "obstacles": []
 }

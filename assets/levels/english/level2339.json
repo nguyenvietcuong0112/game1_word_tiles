@@ -1,81 +1,295 @@
-﻿{
-    "id":  2339,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SKI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HELP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ITCH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KITE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SKIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SKETCH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KETCHUP",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ETCH",
-                            "type":  1
-                        },
-                        {
-                            "word":  "FITCH",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ETCHU,KIVEP,SFPLA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2339,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADD",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "INN",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "WAS",
+      "type": 0
+    },
+    {
+      "word": "SAME",
+      "type": 0
+    },
+    {
+      "word": "BRAND",
+      "type": 0
+    },
+    {
+      "word": "STAND",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABA",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "AWN",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "DAB",
+      "type": 0
+    },
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "IDS",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "MAW",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "NAB",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "RID",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "SAW",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TWA",
+      "type": 0
+    },
+    {
+      "word": "ANDS",
+      "type": 0
+    },
+    {
+      "word": "ANNA",
+      "type": 0
+    },
+    {
+      "word": "ARID",
+      "type": 0
+    },
+    {
+      "word": "BADE",
+      "type": 0
+    },
+    {
+      "word": "BAND",
+      "type": 0
+    },
+    {
+      "word": "BANI",
+      "type": 0
+    },
+    {
+      "word": "BARB",
+      "type": 0
+    },
+    {
+      "word": "BARE",
+      "type": 0
+    },
+    {
+      "word": "BRAD",
+      "type": 0
+    },
+    {
+      "word": "BRAN",
+      "type": 0
+    },
+    {
+      "word": "BRIN",
+      "type": 0
+    },
+    {
+      "word": "DARB",
+      "type": 0
+    },
+    {
+      "word": "DARE",
+      "type": 0
+    },
+    {
+      "word": "MAST",
+      "type": 0
+    },
+    {
+      "word": "MAWN",
+      "type": 0
+    },
+    {
+      "word": "NADA",
+      "type": 0
+    },
+    {
+      "word": "RAND",
+      "type": 0
+    },
+    {
+      "word": "RANI",
+      "type": 0
+    },
+    {
+      "word": "REDD",
+      "type": 0
+    },
+    {
+      "word": "RIDS",
+      "type": 0
+    },
+    {
+      "word": "RIND",
+      "type": 0
+    },
+    {
+      "word": "SAND",
+      "type": 0
+    },
+    {
+      "word": "SAWN",
+      "type": 0
+    },
+    {
+      "word": "TWAS",
+      "type": 0
+    },
+    {
+      "word": "WAME",
+      "type": 0
+    },
+    {
+      "word": "WAST",
+      "type": 0
+    },
+    {
+      "word": "ANNAS",
+      "type": 0
+    },
+    {
+      "word": "BARED",
+      "type": 0
+    },
+    {
+      "word": "DINAR",
+      "type": 0
+    },
+    {
+      "word": "IRADE",
+      "type": 0
+    },
+    {
+      "word": "RADAR",
+      "type": 0
+    },
+    {
+      "word": "RANID",
+      "type": 0
+    },
+    {
+      "word": "REDAN",
+      "type": 0
+    },
+    {
+      "word": "DEMAST",
+      "type": 0
+    },
+    {
+      "word": "RANIDS",
+      "type": 0
+    },
+    {
+      "word": "STANDS",
+      "type": 0
+    }
+  ],
+  "letters": "REMAS,ADDWT,BANNA,BRIDS",
+  "obstacles": []
 }

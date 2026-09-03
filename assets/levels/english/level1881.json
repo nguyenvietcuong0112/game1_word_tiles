@@ -1,130 +1,211 @@
-﻿{
-    "id":  1881,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ILL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALLY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BILL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MALL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MILL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAILY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GALL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MALI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YALL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BBLA,AILY,DMAG",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  8,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1881,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "BOB",
+      "type": 0
+    },
+    {
+      "word": "HAS",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "HOST",
+      "type": 0
+    },
+    {
+      "word": "LOST",
+      "type": 0
+    },
+    {
+      "word": "SEEK",
+      "type": 0
+    },
+    {
+      "word": "SOLE",
+      "type": 0
+    },
+    {
+      "word": "ELECT",
+      "type": 0
+    },
+    {
+      "word": "HOSTS",
+      "type": 0
+    },
+    {
+      "word": "BASKET",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABO",
+      "type": 0
+    },
+    {
+      "word": "BAH",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "CEL",
+      "type": 0
+    },
+    {
+      "word": "LOB",
+      "type": 0
+    },
+    {
+      "word": "OBE",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "THO",
+      "type": 0
+    },
+    {
+      "word": "ABOS",
+      "type": 0
+    },
+    {
+      "word": "ASPS",
+      "type": 0
+    },
+    {
+      "word": "BAHT",
+      "type": 0
+    },
+    {
+      "word": "BASK",
+      "type": 0
+    },
+    {
+      "word": "BAST",
+      "type": 0
+    },
+    {
+      "word": "BOLE",
+      "type": 0
+    },
+    {
+      "word": "BOSK",
+      "type": 0
+    },
+    {
+      "word": "HASP",
+      "type": 0
+    },
+    {
+      "word": "HAST",
+      "type": 0
+    },
+    {
+      "word": "LOBE",
+      "type": 0
+    },
+    {
+      "word": "SABE",
+      "type": 0
+    },
+    {
+      "word": "SKEE",
+      "type": 0
+    },
+    {
+      "word": "TEES",
+      "type": 0
+    },
+    {
+      "word": "ABELE",
+      "type": 0
+    },
+    {
+      "word": "BASTE",
+      "type": 0
+    },
+    {
+      "word": "BASTS",
+      "type": 0
+    },
+    {
+      "word": "CELEB",
+      "type": 0
+    },
+    {
+      "word": "HASPS",
+      "type": 0
+    },
+    {
+      "word": "HASTE",
+      "type": 0
+    },
+    {
+      "word": "SEEKS",
+      "type": 0
+    },
+    {
+      "word": "SKEES",
+      "type": 0
+    },
+    {
+      "word": "BOSKET",
+      "type": 0
+    },
+    {
+      "word": "BASKETS",
+      "type": 0
+    },
+    {
+      "word": "BOSKETS",
+      "type": 0
+    }
+  ],
+  "letters": "CTHOH,EBASP,LOSTS,EBKEE",
+  "obstacles": []
 }

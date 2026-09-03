@@ -1,114 +1,231 @@
-﻿{
-    "id":  1820,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LAB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROSE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SEAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BREAK",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AERO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "BALI",
-                            "type":  2
-                        },
-                        {
-                            "word":  "BROS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "EROS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LAOS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LIES",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ILOK,EABA,SORE",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1820,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "FEE",
+      "type": 0
+    },
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "WAS",
+      "type": 0
+    },
+    {
+      "word": "EVER",
+      "type": 0
+    },
+    {
+      "word": "FEET",
+      "type": 0
+    },
+    {
+      "word": "SAFE",
+      "type": 0
+    },
+    {
+      "word": "SAVE",
+      "type": 0
+    },
+    {
+      "word": "STEM",
+      "type": 0
+    },
+    {
+      "word": "VERSES",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "AWA",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "FAS",
+      "type": 0
+    },
+    {
+      "word": "FOE",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "SAW",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "VAS",
+      "type": 0
+    },
+    {
+      "word": "VAW",
+      "type": 0
+    },
+    {
+      "word": "VEE",
+      "type": 0
+    },
+    {
+      "word": "AVER",
+      "type": 0
+    },
+    {
+      "word": "FAVE",
+      "type": 0
+    },
+    {
+      "word": "FORK",
+      "type": 0
+    },
+    {
+      "word": "METE",
+      "type": 0
+    },
+    {
+      "word": "REES",
+      "type": 0
+    },
+    {
+      "word": "REVS",
+      "type": 0
+    },
+    {
+      "word": "SAWS",
+      "type": 0
+    },
+    {
+      "word": "SEER",
+      "type": 0
+    },
+    {
+      "word": "VASA",
+      "type": 0
+    },
+    {
+      "word": "VAWS",
+      "type": 0
+    },
+    {
+      "word": "VEES",
+      "type": 0
+    },
+    {
+      "word": "WAVE",
+      "type": 0
+    },
+    {
+      "word": "AVERS",
+      "type": 0
+    },
+    {
+      "word": "ERSES",
+      "type": 0
+    },
+    {
+      "word": "FEVER",
+      "type": 0
+    },
+    {
+      "word": "FORKS",
+      "type": 0
+    },
+    {
+      "word": "SAVER",
+      "type": 0
+    },
+    {
+      "word": "SEERS",
+      "type": 0
+    },
+    {
+      "word": "STEER",
+      "type": 0
+    },
+    {
+      "word": "VERSE",
+      "type": 0
+    },
+    {
+      "word": "WAVER",
+      "type": 0
+    },
+    {
+      "word": "AVERSE",
+      "type": 0
+    },
+    {
+      "word": "FEVERS",
+      "type": 0
+    },
+    {
+      "word": "METEOR",
+      "type": 0
+    },
+    {
+      "word": "SAVERS",
+      "type": 0
+    },
+    {
+      "word": "STEERS",
+      "type": 0
+    },
+    {
+      "word": "STEEVE",
+      "type": 0
+    },
+    {
+      "word": "WAVERS",
+      "type": 0
+    }
+  ],
+  "letters": "SESWA,REVAS,MEEFK,STEOR",
+  "obstacles": []
 }

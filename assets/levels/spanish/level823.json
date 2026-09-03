@@ -1,77 +1,243 @@
-﻿{
-    "id":  823,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LLAMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AMPOLLA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAMA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MALLO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAF",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PUF",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROLLA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UPA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PAMA,UFPL,PROL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 823,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "AIRE",
+      "type": 0
+    },
+    {
+      "word": "ANDA",
+      "type": 0
+    },
+    {
+      "word": "FLOR",
+      "type": 0
+    },
+    {
+      "word": "OLER",
+      "type": 0
+    },
+    {
+      "word": "RARO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ADN",
+      "type": 0
+    },
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ARN",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "DAO",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "ERM",
+      "type": 0
+    },
+    {
+      "word": "ERO",
+      "type": 0
+    },
+    {
+      "word": "FAN",
+      "type": 0
+    },
+    {
+      "word": "FLO",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "MAI",
+      "type": 0
+    },
+    {
+      "word": "MOI",
+      "type": 0
+    },
+    {
+      "word": "MOO",
+      "type": 0
+    },
+    {
+      "word": "NDE",
+      "type": 0
+    },
+    {
+      "word": "NRO",
+      "type": 0
+    },
+    {
+      "word": "OIR",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "RIO",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "AFRO",
+      "type": 0
+    },
+    {
+      "word": "ANDE",
+      "type": 0
+    },
+    {
+      "word": "ARIA",
+      "type": 0
+    },
+    {
+      "word": "ARIO",
+      "type": 0
+    },
+    {
+      "word": "DARE",
+      "type": 0
+    },
+    {
+      "word": "EDNA",
+      "type": 0
+    },
+    {
+      "word": "LORA",
+      "type": 0
+    },
+    {
+      "word": "LORE",
+      "type": 0
+    },
+    {
+      "word": "ORAR",
+      "type": 0
+    },
+    {
+      "word": "ROLF",
+      "type": 0
+    },
+    {
+      "word": "ROOM",
+      "type": 0
+    },
+    {
+      "word": "ANDAR",
+      "type": 0
+    },
+    {
+      "word": "DARIA",
+      "type": 0
+    },
+    {
+      "word": "FLORA",
+      "type": 0
+    },
+    {
+      "word": "LORNA",
+      "type": 0
+    },
+    {
+      "word": "MOIRA",
+      "type": 0
+    },
+    {
+      "word": "MOORE",
+      "type": 0
+    }
+  ],
+  "letters": "ERMA,LOOI,FRAR,ANDE",
+  "obstacles": []
 }

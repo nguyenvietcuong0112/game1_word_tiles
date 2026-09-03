@@ -1,73 +1,279 @@
-﻿{
-    "id":  819,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BICO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SITE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUBO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOSSA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BOTECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASSOBIO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BUS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETOS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "OBUS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SITO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOB",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AITEC,SSOOO,TUBIC",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 819,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "PRA",
+      "type": 0
+    },
+    {
+      "word": "TEM",
+      "type": 0
+    },
+    {
+      "word": "AMOR",
+      "type": 0
+    },
+    {
+      "word": "NOME",
+      "type": 0
+    },
+    {
+      "word": "NOTA",
+      "type": 0
+    },
+    {
+      "word": "NOVO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "MMA",
+      "type": 0
+    },
+    {
+      "word": "MME",
+      "type": 0
+    },
+    {
+      "word": "MNA",
+      "type": 0
+    },
+    {
+      "word": "MOE",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "NEO",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "OMO",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "ONO",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "OVO",
+      "type": 0
+    },
+    {
+      "word": "PAO",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "TEO",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "VON",
+      "type": 0
+    },
+    {
+      "word": "EMMA",
+      "type": 0
+    },
+    {
+      "word": "ETON",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "METO",
+      "type": 0
+    },
+    {
+      "word": "MONA",
+      "type": 0
+    },
+    {
+      "word": "MONO",
+      "type": 0
+    },
+    {
+      "word": "MORA",
+      "type": 0
+    },
+    {
+      "word": "MOVO",
+      "type": 0
+    },
+    {
+      "word": "NEMO",
+      "type": 0
+    },
+    {
+      "word": "NETA",
+      "type": 0
+    },
+    {
+      "word": "NETO",
+      "type": 0
+    },
+    {
+      "word": "NOTE",
+      "type": 0
+    },
+    {
+      "word": "OMAR",
+      "type": 0
+    },
+    {
+      "word": "ORAM",
+      "type": 0
+    },
+    {
+      "word": "PATO",
+      "type": 0
+    },
+    {
+      "word": "PROA",
+      "type": 0
+    },
+    {
+      "word": "RAMO",
+      "type": 0
+    },
+    {
+      "word": "ROMA",
+      "type": 0
+    },
+    {
+      "word": "TEMO",
+      "type": 0
+    },
+    {
+      "word": "TEOR",
+      "type": 0
+    },
+    {
+      "word": "TONE",
+      "type": 0
+    },
+    {
+      "word": "TONO",
+      "type": 0
+    },
+    {
+      "word": "MONET",
+      "type": 0
+    },
+    {
+      "word": "NOTEM",
+      "type": 0
+    }
+  ],
+  "letters": "ANOV,AMMO,ROEN,PATO",
+  "obstacles": []
 }

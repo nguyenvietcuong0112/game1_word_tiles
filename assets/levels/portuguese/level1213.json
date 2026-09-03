@@ -1,109 +1,283 @@
-﻿{
-    "id":  1213,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LACA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MACA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PITA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "VACA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VOCAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PÉTALA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CAPITAL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ATÉ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ITA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PACO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PACOVA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PACOVAL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PÉLA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VALA,OCÉT,MAPI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1213,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "AOS",
+      "type": 0
+    },
+    {
+      "word": "CSI",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SIS",
+      "type": 0
+    },
+    {
+      "word": "ESSA",
+      "type": 0
+    },
+    {
+      "word": "ISSO",
+      "type": 0
+    },
+    {
+      "word": "DISSO",
+      "type": 0
+    },
+    {
+      "word": "LINHA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "AHN",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "DAO",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "HAR",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "ISS",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "LOS",
+      "type": 0
+    },
+    {
+      "word": "NHA",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "OLI",
+      "type": 0
+    },
+    {
+      "word": "OSS",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SID",
+      "type": 0
+    },
+    {
+      "word": "SOA",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "ANIL",
+      "type": 0
+    },
+    {
+      "word": "AREA",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "ESSO",
+      "type": 0
+    },
+    {
+      "word": "HARE",
+      "type": 0
+    },
+    {
+      "word": "HERA",
+      "type": 0
+    },
+    {
+      "word": "HERC",
+      "type": 0
+    },
+    {
+      "word": "HESS",
+      "type": 0
+    },
+    {
+      "word": "ISSA",
+      "type": 0
+    },
+    {
+      "word": "LANI",
+      "type": 0
+    },
+    {
+      "word": "LASS",
+      "type": 0
+    },
+    {
+      "word": "LINA",
+      "type": 0
+    },
+    {
+      "word": "NILO",
+      "type": 0
+    },
+    {
+      "word": "REAL",
+      "type": 0
+    },
+    {
+      "word": "SEAL",
+      "type": 0
+    },
+    {
+      "word": "SEAN",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SOLA",
+      "type": 0
+    },
+    {
+      "word": "ASSIS",
+      "type": 0
+    },
+    {
+      "word": "LASSE",
+      "type": 0
+    },
+    {
+      "word": "ALINHA",
+      "type": 0
+    },
+    {
+      "word": "ALINHE",
+      "type": 0
+    },
+    {
+      "word": "NASSER",
+      "type": 0
+    },
+    {
+      "word": "RESSOA",
+      "type": 0
+    },
+    {
+      "word": "ALINHAR",
+      "type": 0
+    },
+    {
+      "word": "SALINHA",
+      "type": 0
+    }
+  ],
+  "letters": "ILOA,NASD,HESI,ARCS",
+  "obstacles": []
 }

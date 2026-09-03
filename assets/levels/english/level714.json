@@ -1,45 +1,275 @@
-﻿{
-    "id":  714,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOUTH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLDER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LOUT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EDH,RLT,MOU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 714,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "DID",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "TAX",
+      "type": 0
+    },
+    {
+      "word": "DATE",
+      "type": 0
+    },
+    {
+      "word": "HEAR",
+      "type": 0
+    },
+    {
+      "word": "RATE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "AXE",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DEX",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "IDS",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "REX",
+      "type": 0
+    },
+    {
+      "word": "RID",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "ARID",
+      "type": 0
+    },
+    {
+      "word": "AXED",
+      "type": 0
+    },
+    {
+      "word": "DERE",
+      "type": 0
+    },
+    {
+      "word": "DIES",
+      "type": 0
+    },
+    {
+      "word": "DIRE",
+      "type": 0
+    },
+    {
+      "word": "EIDE",
+      "type": 0
+    },
+    {
+      "word": "HEAT",
+      "type": 0
+    },
+    {
+      "word": "HEED",
+      "type": 0
+    },
+    {
+      "word": "IRED",
+      "type": 0
+    },
+    {
+      "word": "REDE",
+      "type": 0
+    },
+    {
+      "word": "REES",
+      "type": 0
+    },
+    {
+      "word": "RIDE",
+      "type": 0
+    },
+    {
+      "word": "RIDS",
+      "type": 0
+    },
+    {
+      "word": "SEER",
+      "type": 0
+    },
+    {
+      "word": "TARE",
+      "type": 0
+    },
+    {
+      "word": "TEDS",
+      "type": 0
+    },
+    {
+      "word": "TEES",
+      "type": 0
+    },
+    {
+      "word": "DATED",
+      "type": 0
+    },
+    {
+      "word": "DERAT",
+      "type": 0
+    },
+    {
+      "word": "EARED",
+      "type": 0
+    },
+    {
+      "word": "EATER",
+      "type": 0
+    },
+    {
+      "word": "EERIE",
+      "type": 0
+    },
+    {
+      "word": "EIDER",
+      "type": 0
+    },
+    {
+      "word": "IRATE",
+      "type": 0
+    },
+    {
+      "word": "REDED",
+      "type": 0
+    },
+    {
+      "word": "REDID",
+      "type": 0
+    },
+    {
+      "word": "TARED",
+      "type": 0
+    },
+    {
+      "word": "TAXED",
+      "type": 0
+    },
+    {
+      "word": "TAXER",
+      "type": 0
+    },
+    {
+      "word": "DERATE",
+      "type": 0
+    },
+    {
+      "word": "DERIDE",
+      "type": 0
+    },
+    {
+      "word": "HEATER",
+      "type": 0
+    },
+    {
+      "word": "HEEDED",
+      "type": 0
+    },
+    {
+      "word": "REDATE",
+      "type": 0
+    },
+    {
+      "word": "REDATED",
+      "type": 0
+    },
+    {
+      "word": "EATERIES",
+      "type": 0
+    }
+  ],
+  "letters": "TAEH,EREX,EIDA,SDET",
+  "obstacles": []
 }

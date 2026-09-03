@@ -1,69 +1,255 @@
-﻿{
-    "id":  749,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FINO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOCIVO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "OFICINA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CINE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEVO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NOVENA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VON",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NOVE,ICIN,FOVA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 749,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAI",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "SEM",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "CARA",
+      "type": 0
+    },
+    {
+      "word": "ACHEI",
+      "type": 0
+    },
+    {
+      "word": "CARTA",
+      "type": 0
+    },
+    {
+      "word": "MERDA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACH",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "CHE",
+      "type": 0
+    },
+    {
+      "word": "CHI",
+      "type": 0
+    },
+    {
+      "word": "DAT",
+      "type": 0
+    },
+    {
+      "word": "DRE",
+      "type": 0
+    },
+    {
+      "word": "EIS",
+      "type": 0
+    },
+    {
+      "word": "EMA",
+      "type": 0
+    },
+    {
+      "word": "ERM",
+      "type": 0
+    },
+    {
+      "word": "HEI",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "IHE",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "MES",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RDA",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "SIE",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "ACHE",
+      "type": 0
+    },
+    {
+      "word": "ACRE",
+      "type": 0
+    },
+    {
+      "word": "AMES",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "CAME",
+      "type": 0
+    },
+    {
+      "word": "CHER",
+      "type": 0
+    },
+    {
+      "word": "CHIA",
+      "type": 0
+    },
+    {
+      "word": "DRES",
+      "type": 0
+    },
+    {
+      "word": "HERC",
+      "type": 0
+    },
+    {
+      "word": "MACA",
+      "type": 0
+    },
+    {
+      "word": "MACH",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "MART",
+      "type": 0
+    },
+    {
+      "word": "RACH",
+      "type": 0
+    },
+    {
+      "word": "REIS",
+      "type": 0
+    },
+    {
+      "word": "REMA",
+      "type": 0
+    },
+    {
+      "word": "TRAI",
+      "type": 0
+    },
+    {
+      "word": "ARAME",
+      "type": 0
+    },
+    {
+      "word": "ATRAI",
+      "type": 0
+    },
+    {
+      "word": "CHIAR",
+      "type": 0
+    },
+    {
+      "word": "MARTA",
+      "type": 0
+    },
+    {
+      "word": "RACHE",
+      "type": 0
+    },
+    {
+      "word": "REMAR",
+      "type": 0
+    },
+    {
+      "word": "ARAMES",
+      "type": 0
+    },
+    {
+      "word": "CHIARA",
+      "type": 0
+    },
+    {
+      "word": "HERMES",
+      "type": 0
+    }
+  ],
+  "letters": "TADR,RAME,ACRS,IHEI",
+  "obstacles": []
 }

@@ -1,77 +1,107 @@
-﻿{
-    "id":  1250,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÖK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İNEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KELEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÖKEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇÖKELEK",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ENİK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KELE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NİKEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇÖKEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇÖKEL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ÇİN,ÖKE,KEL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1250,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANN",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "ANNE",
+      "type": 0
+    },
+    {
+      "word": "PENN",
+      "type": 0
+    },
+    {
+      "word": "PİED",
+      "type": 0
+    },
+    {
+      "word": "YANİ",
+      "type": 0
+    },
+    {
+      "word": "İNAN",
+      "type": 0
+    },
+    {
+      "word": "İPLE",
+      "type": 0
+    },
+    {
+      "word": "NAYLON",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LOL",
+      "type": 0
+    },
+    {
+      "word": "LON",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "PİE",
+      "type": 0
+    },
+    {
+      "word": "PİN",
+      "type": 0
+    },
+    {
+      "word": "İNN",
+      "type": 0
+    }
+  ],
+  "letters": "NAYN,NNLO,EİPL,PEDE",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

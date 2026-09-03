@@ -1,73 +1,187 @@
-﻿{
-    "id":  1445,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "FEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DREW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEWER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FINER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INERT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REFINE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EWE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EWER",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WEE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NEEWE,INFDR,FERTE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1445,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "TOE",
+      "type": 0
+    },
+    {
+      "word": "CASE",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "SAME",
+      "type": 0
+    },
+    {
+      "word": "FOUND",
+      "type": 0
+    },
+    {
+      "word": "UNDER",
+      "type": 0
+    },
+    {
+      "word": "DEMAND",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "FOU",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "OFT",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "AMAS",
+      "type": 0
+    },
+    {
+      "word": "ANDS",
+      "type": 0
+    },
+    {
+      "word": "CAME",
+      "type": 0
+    },
+    {
+      "word": "MESA",
+      "type": 0
+    },
+    {
+      "word": "REDS",
+      "type": 0
+    },
+    {
+      "word": "SAND",
+      "type": 0
+    },
+    {
+      "word": "TOED",
+      "type": 0
+    },
+    {
+      "word": "UNDE",
+      "type": 0
+    },
+    {
+      "word": "CAMAS",
+      "type": 0
+    },
+    {
+      "word": "CAMES",
+      "type": 0
+    },
+    {
+      "word": "CASED",
+      "type": 0
+    },
+    {
+      "word": "NAMED",
+      "type": 0
+    },
+    {
+      "word": "NAMES",
+      "type": 0
+    },
+    {
+      "word": "DESAND",
+      "type": 0
+    },
+    {
+      "word": "FOUNDS",
+      "type": 0
+    },
+    {
+      "word": "SANDER",
+      "type": 0
+    },
+    {
+      "word": "DEMANDS",
+      "type": 0
+    },
+    {
+      "word": "FOUNDER",
+      "type": 0
+    },
+    {
+      "word": "DEMANDER",
+      "type": 0
+    },
+    {
+      "word": "FOUNDERS",
+      "type": 0
+    }
+  ],
+  "letters": "DREO,ESDT,MANF,ACUO",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

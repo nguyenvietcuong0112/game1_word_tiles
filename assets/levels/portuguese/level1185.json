@@ -1,109 +1,159 @@
-﻿{
-    "id":  1185,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GIZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIRAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RUGIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RASURA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RASURAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZAGUEIRO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AGUEIRAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AGUEIRO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ARU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AZO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EIRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IRAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LEIRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEIRAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LEU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUEIRO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ZAGU",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "URARO,SLEIZ,ARUGA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1185,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AOS",
+      "type": 0
+    },
+    {
+      "word": "BEM",
+      "type": 0
+    },
+    {
+      "word": "BLA",
+      "type": 0
+    },
+    {
+      "word": "BOA",
+      "type": 0
+    },
+    {
+      "word": "SOA",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "ABRE",
+      "type": 0
+    },
+    {
+      "word": "ALMA",
+      "type": 0
+    },
+    {
+      "word": "BABA",
+      "type": 0
+    },
+    {
+      "word": "SOBE",
+      "type": 0
+    },
+    {
+      "word": "VASO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "ABA",
+      "type": 0
+    },
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BAM",
+      "type": 0
+    },
+    {
+      "word": "BAO",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "BRE",
+      "type": 0
+    },
+    {
+      "word": "EBA",
+      "type": 0
+    },
+    {
+      "word": "EMA",
+      "type": 0
+    },
+    {
+      "word": "OAB",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "SAA",
+      "type": 0
+    },
+    {
+      "word": "SAV",
+      "type": 0
+    },
+    {
+      "word": "VAL",
+      "type": 0
+    },
+    {
+      "word": "AVAL",
+      "type": 0
+    },
+    {
+      "word": "BAAL",
+      "type": 0
+    },
+    {
+      "word": "BABE",
+      "type": 0
+    },
+    {
+      "word": "LAVA",
+      "type": 0
+    },
+    {
+      "word": "SAAB",
+      "type": 0
+    },
+    {
+      "word": "SOBERBA",
+      "type": 0
+    }
+  ],
+  "letters": "ERBE,BBAM,OAAL,SAVB",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

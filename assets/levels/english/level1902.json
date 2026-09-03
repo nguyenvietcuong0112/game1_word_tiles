@@ -1,53 +1,251 @@
-﻿{
-    "id":  1902,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GREAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INERT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LINER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TREAT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LINT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "NILE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "INT,LEA,TRG",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1902,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "WET",
+      "type": 0
+    },
+    {
+      "word": "CHEF",
+      "type": 0
+    },
+    {
+      "word": "LEVY",
+      "type": 0
+    },
+    {
+      "word": "SENT",
+      "type": 0
+    },
+    {
+      "word": "WOOD",
+      "type": 0
+    },
+    {
+      "word": "SENSE",
+      "type": 0
+    },
+    {
+      "word": "TOWELS",
+      "type": 0
+    },
+    {
+      "word": "WOODEN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "COY",
+      "type": 0
+    },
+    {
+      "word": "EFS",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "FEH",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OOT",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "OWE",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SLY",
+      "type": 0
+    },
+    {
+      "word": "TEW",
+      "type": 0
+    },
+    {
+      "word": "TOW",
+      "type": 0
+    },
+    {
+      "word": "VET",
+      "type": 0
+    },
+    {
+      "word": "WOO",
+      "type": 0
+    },
+    {
+      "word": "WOT",
+      "type": 0
+    },
+    {
+      "word": "DENS",
+      "type": 0
+    },
+    {
+      "word": "DENT",
+      "type": 0
+    },
+    {
+      "word": "ENVY",
+      "type": 0
+    },
+    {
+      "word": "FESS",
+      "type": 0
+    },
+    {
+      "word": "NESS",
+      "type": 0
+    },
+    {
+      "word": "ODES",
+      "type": 0
+    },
+    {
+      "word": "SLEW",
+      "type": 0
+    },
+    {
+      "word": "SNED",
+      "type": 0
+    },
+    {
+      "word": "SWOT",
+      "type": 0
+    },
+    {
+      "word": "TELS",
+      "type": 0
+    },
+    {
+      "word": "TEWS",
+      "type": 0
+    },
+    {
+      "word": "TOWS",
+      "type": 0
+    },
+    {
+      "word": "VETO",
+      "type": 0
+    },
+    {
+      "word": "CHEFS",
+      "type": 0
+    },
+    {
+      "word": "CHESS",
+      "type": 0
+    },
+    {
+      "word": "CORSE",
+      "type": 0
+    },
+    {
+      "word": "DENSE",
+      "type": 0
+    },
+    {
+      "word": "FESSE",
+      "type": 0
+    },
+    {
+      "word": "SENTE",
+      "type": 0
+    },
+    {
+      "word": "TOWEL",
+      "type": 0
+    },
+    {
+      "word": "CORVET",
+      "type": 0
+    },
+    {
+      "word": "FESSED",
+      "type": 0
+    },
+    {
+      "word": "WETNESS",
+      "type": 0
+    }
+  ],
+  "letters": "SLYOC,WEVRH,OTNSE,ODESF",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

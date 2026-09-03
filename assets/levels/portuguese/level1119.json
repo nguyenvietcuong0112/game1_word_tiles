@@ -1,113 +1,247 @@
-﻿{
-    "id":  1119,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HORA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROCK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERRAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENCERRAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARRE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "CERAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CERRAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CORAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "CROCE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ECAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OCAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ROCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROCAR",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "RRARC,EECOI,CNKHF",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1119,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AOS",
+      "type": 0
+    },
+    {
+      "word": "DEI",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "USO",
+      "type": 0
+    },
+    {
+      "word": "VAI",
+      "type": 0
+    },
+    {
+      "word": "IREI",
+      "type": 0
+    },
+    {
+      "word": "IVAN",
+      "type": 0
+    },
+    {
+      "word": "NAVE",
+      "type": 0
+    },
+    {
+      "word": "IDEIA",
+      "type": 0
+    },
+    {
+      "word": "FERIDO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIE",
+      "type": 0
+    },
+    {
+      "word": "AII",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ANS",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "AVI",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "DIR",
+      "type": 0
+    },
+    {
+      "word": "DOA",
+      "type": 0
+    },
+    {
+      "word": "EIA",
+      "type": 0
+    },
+    {
+      "word": "EID",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "FEI",
+      "type": 0
+    },
+    {
+      "word": "FER",
+      "type": 0
+    },
+    {
+      "word": "FIA",
+      "type": 0
+    },
+    {
+      "word": "FOA",
+      "type": 0
+    },
+    {
+      "word": "IAN",
+      "type": 0
+    },
+    {
+      "word": "IDE",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "NAI",
+      "type": 0
+    },
+    {
+      "word": "NAO",
+      "type": 0
+    },
+    {
+      "word": "OSU",
+      "type": 0
+    },
+    {
+      "word": "SOA",
+      "type": 0
+    },
+    {
+      "word": "VAN",
+      "type": 0
+    },
+    {
+      "word": "VAO",
+      "type": 0
+    },
+    {
+      "word": "VIN",
+      "type": 0
+    },
+    {
+      "word": "DEVA",
+      "type": 0
+    },
+    {
+      "word": "DEVI",
+      "type": 0
+    },
+    {
+      "word": "EDIE",
+      "type": 0
+    },
+    {
+      "word": "EVAN",
+      "type": 0
+    },
+    {
+      "word": "FERI",
+      "type": 0
+    },
+    {
+      "word": "FIDO",
+      "type": 0
+    },
+    {
+      "word": "FIRE",
+      "type": 0
+    },
+    {
+      "word": "FODI",
+      "type": 0
+    },
+    {
+      "word": "IDOS",
+      "type": 0
+    },
+    {
+      "word": "REID",
+      "type": 0
+    },
+    {
+      "word": "RIDO",
+      "type": 0
+    },
+    {
+      "word": "VANS",
+      "type": 0
+    },
+    {
+      "word": "VEIA",
+      "type": 0
+    },
+    {
+      "word": "DEVIN",
+      "type": 0
+    },
+    {
+      "word": "DIREI",
+      "type": 0
+    },
+    {
+      "word": "EVANS",
+      "type": 0
+    },
+    {
+      "word": "SOFIA",
+      "type": 0
+    },
+    {
+      "word": "SOFIE",
+      "type": 0
+    },
+    {
+      "word": "FERIDOS",
+      "type": 0
+    }
+  ],
+  "letters": "IVED,NAII,SOFE,UDIR",
+  "obstacles": []
 }

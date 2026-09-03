@@ -1,97 +1,191 @@
-﻿{
-    "id":  1234,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANIS",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ARTE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MUCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RICO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SINA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SINO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CISNE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "USINA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENSINO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENSINAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "IRAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MUCINA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MUS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RANI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RISTE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SIC",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TRINO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "USTRINA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "MUCO,NSIN,ETRA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1234,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "DEI",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "ERM",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "ANDA",
+      "type": 0
+    },
+    {
+      "word": "DITO",
+      "type": 0
+    },
+    {
+      "word": "TODA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADN",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ANS",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "DAT",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "DOE",
+      "type": 0
+    },
+    {
+      "word": "DRE",
+      "type": 0
+    },
+    {
+      "word": "EID",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "ITA",
+      "type": 0
+    },
+    {
+      "word": "ITO",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SOE",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "ANDO",
+      "type": 0
+    },
+    {
+      "word": "ATOS",
+      "type": 0
+    },
+    {
+      "word": "DITA",
+      "type": 0
+    },
+    {
+      "word": "DOEI",
+      "type": 0
+    },
+    {
+      "word": "DOSE",
+      "type": 0
+    },
+    {
+      "word": "DRES",
+      "type": 0
+    },
+    {
+      "word": "EITA",
+      "type": 0
+    },
+    {
+      "word": "ODIE",
+      "type": 0
+    },
+    {
+      "word": "SEAN",
+      "type": 0
+    },
+    {
+      "word": "SODA",
+      "type": 0
+    },
+    {
+      "word": "TIDO",
+      "type": 0
+    },
+    {
+      "word": "DEITA",
+      "type": 0
+    },
+    {
+      "word": "DEITO",
+      "type": 0
+    },
+    {
+      "word": "DITOS",
+      "type": 0
+    },
+    {
+      "word": "DITADO",
+      "type": 0
+    },
+    {
+      "word": "DEITADO",
+      "type": 0
+    },
+    {
+      "word": "DITADOS",
+      "type": 0
+    },
+    {
+      "word": "DEITADOS",
+      "type": 0
+    }
+  ],
+  "letters": "DITA,OEOD,TDSN,MREA",
+  "obstacles": []
 }

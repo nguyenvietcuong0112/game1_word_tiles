@@ -1,106 +1,139 @@
-﻿{
-    "id":  1654,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "INN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HINT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHIN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "THIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHIRT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "INS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ISNT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TON",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EONO,ISNT,THIR",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1654,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAY",
+      "type": 0
+    },
+    {
+      "word": "BIN",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TWO",
+      "type": 0
+    },
+    {
+      "word": "WAY",
+      "type": 0
+    },
+    {
+      "word": "ABLE",
+      "type": 0
+    },
+    {
+      "word": "BOMBING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABO",
+      "type": 0
+    },
+    {
+      "word": "BOD",
+      "type": 0
+    },
+    {
+      "word": "BOW",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "DOW",
+      "type": 0
+    },
+    {
+      "word": "ELM",
+      "type": 0
+    },
+    {
+      "word": "MOB",
+      "type": 0
+    },
+    {
+      "word": "MOW",
+      "type": 0
+    },
+    {
+      "word": "NIB",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "TWA",
+      "type": 0
+    },
+    {
+      "word": "WAB",
+      "type": 0
+    },
+    {
+      "word": "YAW",
+      "type": 0
+    },
+    {
+      "word": "BLET",
+      "type": 0
+    },
+    {
+      "word": "BOMB",
+      "type": 0
+    },
+    {
+      "word": "WOMB",
+      "type": 0
+    },
+    {
+      "word": "ABLES",
+      "type": 0
+    },
+    {
+      "word": "ELBOW",
+      "type": 0
+    },
+    {
+      "word": "INGLE",
+      "type": 0
+    },
+    {
+      "word": "INGLES",
+      "type": 0
+    },
+    {
+      "word": "DOWABLE",
+      "type": 0
+    },
+    {
+      "word": "BOMBINGS",
+      "type": 0
+    }
+  ],
+  "letters": "YAWT,TBOD,ELMB,SGNI",
+  "obstacles": []
 }

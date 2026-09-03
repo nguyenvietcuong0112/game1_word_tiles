@@ -1,93 +1,163 @@
-﻿{
-    "id":  1170,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BUS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRES",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UBRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CESTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RESTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RESPETO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESPETO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PETO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SERTE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "USOP,BRTE,CESP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1170,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DIO",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "ORO",
+      "type": 0
+    },
+    {
+      "word": "EARL",
+      "type": 0
+    },
+    {
+      "word": "ELLO",
+      "type": 0
+    },
+    {
+      "word": "LEAL",
+      "type": 0
+    },
+    {
+      "word": "PELO",
+      "type": 0
+    },
+    {
+      "word": "CLORO",
+      "type": 0
+    },
+    {
+      "word": "LLORA",
+      "type": 0
+    },
+    {
+      "word": "VOLAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LEI",
+      "type": 0
+    },
+    {
+      "word": "OID",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "DIOR",
+      "type": 0
+    },
+    {
+      "word": "ELLE",
+      "type": 0
+    },
+    {
+      "word": "LEAR",
+      "type": 0
+    },
+    {
+      "word": "LORA",
+      "type": 0
+    },
+    {
+      "word": "LORO",
+      "type": 0
+    },
+    {
+      "word": "OLLE",
+      "type": 0
+    },
+    {
+      "word": "ORAL",
+      "type": 0
+    },
+    {
+      "word": "PELL",
+      "type": 0
+    },
+    {
+      "word": "ROLL",
+      "type": 0
+    },
+    {
+      "word": "LLORO",
+      "type": 0
+    },
+    {
+      "word": "PELLE",
+      "type": 0
+    },
+    {
+      "word": "VOLARLE",
+      "type": 0
+    }
+  ],
+  "letters": "PEID,CLOV,DLRO,AEAL",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

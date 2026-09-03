@@ -1,93 +1,155 @@
-﻿{
-    "id":  840,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FERN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORNY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECONOMY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "COME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CONN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ECO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EMORY",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MONO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MORN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOME",
-                            "type":  1
-                        },
-                        {
-                            "word":  "NOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROME",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ONNY,CORE,EMYF",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 840,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "LIVE",
+      "type": 0
+    },
+    {
+      "word": "MAIN",
+      "type": 0
+    },
+    {
+      "word": "TERM",
+      "type": 0
+    },
+    {
+      "word": "DRIVE",
+      "type": 0
+    },
+    {
+      "word": "RIVER",
+      "type": 0
+    },
+    {
+      "word": "DRIVER",
+      "type": 0
+    },
+    {
+      "word": "MAINLY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "AIT",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "VET",
+      "type": 0
+    },
+    {
+      "word": "EVIL",
+      "type": 0
+    },
+    {
+      "word": "ILLY",
+      "type": 0
+    },
+    {
+      "word": "INLY",
+      "type": 0
+    },
+    {
+      "word": "LIRE",
+      "type": 0
+    },
+    {
+      "word": "LIRI",
+      "type": 0
+    },
+    {
+      "word": "MAIR",
+      "type": 0
+    },
+    {
+      "word": "RILL",
+      "type": 0
+    },
+    {
+      "word": "RITE",
+      "type": 0
+    },
+    {
+      "word": "RIVE",
+      "type": 0
+    },
+    {
+      "word": "TIRE",
+      "type": 0
+    },
+    {
+      "word": "VILL",
+      "type": 0
+    },
+    {
+      "word": "VIRL",
+      "type": 0
+    },
+    {
+      "word": "DRILL",
+      "type": 0
+    },
+    {
+      "word": "LIVER",
+      "type": 0
+    },
+    {
+      "word": "RETIA",
+      "type": 0
+    },
+    {
+      "word": "RIVET",
+      "type": 0
+    },
+    {
+      "word": "EVILLY",
+      "type": 0
+    }
+  ],
+  "letters": "INLY,AMLL,IRIR,TEVD",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

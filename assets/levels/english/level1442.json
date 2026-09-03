@@ -1,69 +1,243 @@
-﻿{
-    "id":  1442,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DUO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JOY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YOU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CLAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOUD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALOUD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CLOUD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CLOUT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CLOUDY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAYOUT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LOUT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "OUD",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AYD,LOU,CJT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1442,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "FROM",
+      "type": 0
+    },
+    {
+      "word": "HEAD",
+      "type": 0
+    },
+    {
+      "word": "MORE",
+      "type": 0
+    },
+    {
+      "word": "READ",
+      "type": 0
+    },
+    {
+      "word": "ROAD",
+      "type": 0
+    },
+    {
+      "word": "TIPS",
+      "type": 0
+    },
+    {
+      "word": "PRESS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DAP",
+      "type": 0
+    },
+    {
+      "word": "DIP",
+      "type": 0
+    },
+    {
+      "word": "DIT",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "FRO",
+      "type": 0
+    },
+    {
+      "word": "MOA",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "PIT",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "TIP",
+      "type": 0
+    },
+    {
+      "word": "ADIT",
+      "type": 0
+    },
+    {
+      "word": "AERO",
+      "type": 0
+    },
+    {
+      "word": "APSE",
+      "type": 0
+    },
+    {
+      "word": "DAPS",
+      "type": 0
+    },
+    {
+      "word": "DIPS",
+      "type": 0
+    },
+    {
+      "word": "EROS",
+      "type": 0
+    },
+    {
+      "word": "HEAP",
+      "type": 0
+    },
+    {
+      "word": "HERO",
+      "type": 0
+    },
+    {
+      "word": "MOSS",
+      "type": 0
+    },
+    {
+      "word": "OSSA",
+      "type": 0
+    },
+    {
+      "word": "PADI",
+      "type": 0
+    },
+    {
+      "word": "REAP",
+      "type": 0
+    },
+    {
+      "word": "ROMS",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    },
+    {
+      "word": "SEAS",
+      "type": 0
+    },
+    {
+      "word": "SOAP",
+      "type": 0
+    },
+    {
+      "word": "SORE",
+      "type": 0
+    },
+    {
+      "word": "SPAE",
+      "type": 0
+    },
+    {
+      "word": "SPIT",
+      "type": 0
+    },
+    {
+      "word": "APRES",
+      "type": 0
+    },
+    {
+      "word": "DIPSO",
+      "type": 0
+    },
+    {
+      "word": "EROSE",
+      "type": 0
+    },
+    {
+      "word": "HEAPS",
+      "type": 0
+    },
+    {
+      "word": "HEROS",
+      "type": 0
+    },
+    {
+      "word": "OREAD",
+      "type": 0
+    },
+    {
+      "word": "PSOAE",
+      "type": 0
+    },
+    {
+      "word": "REAPS",
+      "type": 0
+    },
+    {
+      "word": "TRESS",
+      "type": 0
+    },
+    {
+      "word": "ASSERT",
+      "type": 0
+    }
+  ],
+  "letters": "ASMF,ESOR,RPAE,TIDH",
+  "obstacles": []
 }

@@ -1,57 +1,143 @@
-﻿{
-    "id":  940,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ЛАК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛЕС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СКАЗ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ШЛАК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛЕСКА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СКАЗКА",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АЛЕ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЗАК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАШ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАШКА",
-                            "type":  2
-                        },
-                        {
-                            "word":  "СКА",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "АКЗ,ЛША,ЕСК",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 940,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "НОГ",
+      "type": 0
+    },
+    {
+      "word": "НОС",
+      "type": 0
+    },
+    {
+      "word": "ПАБ",
+      "type": 0
+    },
+    {
+      "word": "ПАН",
+      "type": 0
+    },
+    {
+      "word": "СОН",
+      "type": 0
+    },
+    {
+      "word": "НОГА",
+      "type": 0
+    },
+    {
+      "word": "НОГИ",
+      "type": 0
+    },
+    {
+      "word": "НАПАЛ",
+      "type": 0
+    },
+    {
+      "word": "ПЯТНА",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АЛО",
+      "type": 0
+    },
+    {
+      "word": "БАН",
+      "type": 0
+    },
+    {
+      "word": "БИГ",
+      "type": 0
+    },
+    {
+      "word": "БИП",
+      "type": 0
+    },
+    {
+      "word": "ГАЯ",
+      "type": 0
+    },
+    {
+      "word": "ГОЛ",
+      "type": 0
+    },
+    {
+      "word": "ГОН",
+      "type": 0
+    },
+    {
+      "word": "ЛАП",
+      "type": 0
+    },
+    {
+      "word": "ЛОН",
+      "type": 0
+    },
+    {
+      "word": "ННО",
+      "type": 0
+    },
+    {
+      "word": "ОГИ",
+      "type": 0
+    },
+    {
+      "word": "ОЛА",
+      "type": 0
+    },
+    {
+      "word": "ПАЛ",
+      "type": 0
+    },
+    {
+      "word": "ПИО",
+      "type": 0
+    },
+    {
+      "word": "ЛАПА",
+      "type": 0
+    },
+    {
+      "word": "ПАЛО",
+      "type": 0
+    },
+    {
+      "word": "СОНГ",
+      "type": 0
+    },
+    {
+      "word": "ГОЛАЯ",
+      "type": 0
+    },
+    {
+      "word": "ГИБСОН",
+      "type": 0
+    },
+    {
+      "word": "НАПАЛО",
+      "type": 0
+    }
+  ],
+  "letters": "НАБС,ТПИО,ЯАГН,ПЛОН",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

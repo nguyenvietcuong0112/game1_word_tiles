@@ -1,73 +1,199 @@
-﻿{
-    "id":  2032,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İTİNA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "İHTİYAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İHTAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İHTİRA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "İHTİYARİ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TAY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AANİR,MCHTA,HOİİY",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2032,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AMY",
+      "type": 0
+    },
+    {
+      "word": "HAY",
+      "type": 0
+    },
+    {
+      "word": "YAP",
+      "type": 0
+    },
+    {
+      "word": "YAT",
+      "type": 0
+    },
+    {
+      "word": "YAĞ",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "AMAN",
+      "type": 0
+    },
+    {
+      "word": "FİYAT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANY",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "AĞI",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "DİP",
+      "type": 0
+    },
+    {
+      "word": "FAT",
+      "type": 0
+    },
+    {
+      "word": "FAY",
+      "type": 0
+    },
+    {
+      "word": "HİP",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAY",
+      "type": 0
+    },
+    {
+      "word": "MAİ",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "PAY",
+      "type": 0
+    },
+    {
+      "word": "PİA",
+      "type": 0
+    },
+    {
+      "word": "TAY",
+      "type": 0
+    },
+    {
+      "word": "YAD",
+      "type": 0
+    },
+    {
+      "word": "YİM",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "İHA",
+      "type": 0
+    },
+    {
+      "word": "ANYA",
+      "type": 0
+    },
+    {
+      "word": "AYNA",
+      "type": 0
+    },
+    {
+      "word": "AİDA",
+      "type": 0
+    },
+    {
+      "word": "MAMA",
+      "type": 0
+    },
+    {
+      "word": "MANY",
+      "type": 0
+    },
+    {
+      "word": "MAYA",
+      "type": 0
+    },
+    {
+      "word": "NAMİ",
+      "type": 0
+    },
+    {
+      "word": "YAMA",
+      "type": 0
+    },
+    {
+      "word": "YAĞI",
+      "type": 0
+    },
+    {
+      "word": "İMAM",
+      "type": 0
+    },
+    {
+      "word": "İMAN",
+      "type": 0
+    },
+    {
+      "word": "İPAD",
+      "type": 0
+    },
+    {
+      "word": "YAMAN",
+      "type": 0
+    },
+    {
+      "word": "MANYAĞI",
+      "type": 0
+    }
+  ],
+  "letters": "FİMAN,AYAMY,TPİHA,YADIĞ",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

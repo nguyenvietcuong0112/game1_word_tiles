@@ -1,135 +1,403 @@
-﻿{
-    "id":  2018,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAGE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RAGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMPLE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MACRO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AGAR",
-                            "type":  1
-                        },
-                        {
-                            "word":  "AMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOOR",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "OMPL,OAGE,RCAR",
-    "obstacles":  [
-                      {
-                          "required_words":  7,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2018,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "SKA",
+      "type": 0
+    },
+    {
+      "word": "UPS",
+      "type": 0
+    },
+    {
+      "word": "AREA",
+      "type": 0
+    },
+    {
+      "word": "EDIT",
+      "type": 0
+    },
+    {
+      "word": "TAPE",
+      "type": 0
+    },
+    {
+      "word": "TIME",
+      "type": 0
+    },
+    {
+      "word": "PETER",
+      "type": 0
+    },
+    {
+      "word": "TIMES",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "AUK",
+      "type": 0
+    },
+    {
+      "word": "DIM",
+      "type": 0
+    },
+    {
+      "word": "DIT",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "EAU",
+      "type": 0
+    },
+    {
+      "word": "EME",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "IMP",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "IRK",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "MID",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "PUR",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TAU",
+      "type": 0
+    },
+    {
+      "word": "APED",
+      "type": 0
+    },
+    {
+      "word": "APES",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "AUKS",
+      "type": 0
+    },
+    {
+      "word": "AURA",
+      "type": 0
+    },
+    {
+      "word": "DEME",
+      "type": 0
+    },
+    {
+      "word": "DIME",
+      "type": 0
+    },
+    {
+      "word": "DITA",
+      "type": 0
+    },
+    {
+      "word": "EMES",
+      "type": 0
+    },
+    {
+      "word": "EMIT",
+      "type": 0
+    },
+    {
+      "word": "IDEM",
+      "type": 0
+    },
+    {
+      "word": "IMPS",
+      "type": 0
+    },
+    {
+      "word": "IRES",
+      "type": 0
+    },
+    {
+      "word": "IRKS",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "METE",
+      "type": 0
+    },
+    {
+      "word": "PATE",
+      "type": 0
+    },
+    {
+      "word": "PURE",
+      "type": 0
+    },
+    {
+      "word": "RETE",
+      "type": 0
+    },
+    {
+      "word": "SEME",
+      "type": 0
+    },
+    {
+      "word": "SEMI",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SKUA",
+      "type": 0
+    },
+    {
+      "word": "SPUR",
+      "type": 0
+    },
+    {
+      "word": "TEMP",
+      "type": 0
+    },
+    {
+      "word": "TEPA",
+      "type": 0
+    },
+    {
+      "word": "TIDE",
+      "type": 0
+    },
+    {
+      "word": "UREA",
+      "type": 0
+    },
+    {
+      "word": "DEMES",
+      "type": 0
+    },
+    {
+      "word": "DEMIT",
+      "type": 0
+    },
+    {
+      "word": "DIMES",
+      "type": 0
+    },
+    {
+      "word": "ERUPT",
+      "type": 0
+    },
+    {
+      "word": "ESKAR",
+      "type": 0
+    },
+    {
+      "word": "ETAPE",
+      "type": 0
+    },
+    {
+      "word": "METER",
+      "type": 0
+    },
+    {
+      "word": "METES",
+      "type": 0
+    },
+    {
+      "word": "PATER",
+      "type": 0
+    },
+    {
+      "word": "PATES",
+      "type": 0
+    },
+    {
+      "word": "RESET",
+      "type": 0
+    },
+    {
+      "word": "RETEM",
+      "type": 0
+    },
+    {
+      "word": "TAPED",
+      "type": 0
+    },
+    {
+      "word": "TAPES",
+      "type": 0
+    },
+    {
+      "word": "TEMPS",
+      "type": 0
+    },
+    {
+      "word": "TEMPT",
+      "type": 0
+    },
+    {
+      "word": "TIMED",
+      "type": 0
+    },
+    {
+      "word": "UPSET",
+      "type": 0
+    },
+    {
+      "word": "ETAPES",
+      "type": 0
+    },
+    {
+      "word": "IMPURE",
+      "type": 0
+    },
+    {
+      "word": "PESETA",
+      "type": 0
+    },
+    {
+      "word": "RETAPE",
+      "type": 0
+    },
+    {
+      "word": "UPTIME",
+      "type": 0
+    },
+    {
+      "word": "DIMETER",
+      "type": 0
+    },
+    {
+      "word": "RETAPED",
+      "type": 0
+    },
+    {
+      "word": "RETAPES",
+      "type": 0
+    },
+    {
+      "word": "TEMPURA",
+      "type": 0
+    },
+    {
+      "word": "UPTIMES",
+      "type": 0
+    }
+  ],
+  "letters": "ATERI,PESKA,EMPUR,DITAE",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

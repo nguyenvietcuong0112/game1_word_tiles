@@ -1,77 +1,95 @@
-﻿{
-    "id":  1780,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YÖN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELEM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "EMİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÖNEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YELE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RİMEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YÖNELİM",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ELİM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERİL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LİME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NEM,ÖLİ,YER",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1780,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "VAR",
+      "type": 0
+    },
+    {
+      "word": "ZAR",
+      "type": 0
+    },
+    {
+      "word": "RAZI",
+      "type": 0
+    },
+    {
+      "word": "HAZIR",
+      "type": 0
+    },
+    {
+      "word": "ZEHRİ",
+      "type": 0
+    },
+    {
+      "word": "HAZIRLA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AZI",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "HAZ",
+      "type": 0
+    },
+    {
+      "word": "DARA",
+      "type": 0
+    },
+    {
+      "word": "LARA",
+      "type": 0
+    },
+    {
+      "word": "RIZA",
+      "type": 0
+    },
+    {
+      "word": "HAZIRDA",
+      "type": 0
+    },
+    {
+      "word": "HAZIRLAR",
+      "type": 0
+    }
+  ],
+  "letters": "İRHE,IZAZ,RLRV,DARA",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

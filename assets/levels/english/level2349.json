@@ -1,93 +1,355 @@
-﻿{
-    "id":  2349,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OPT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FROG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POLO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PORT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PORTRAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRODIGY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "FRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GOD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PROD",
-                            "type":  1
-                        },
-                        {
-                            "word":  "PROG",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RTRAY,OPROG,LOFDI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2349,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BAG",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "BOLT",
+      "type": 0
+    },
+    {
+      "word": "GAME",
+      "type": 0
+    },
+    {
+      "word": "IDEA",
+      "type": 0
+    },
+    {
+      "word": "LESS",
+      "type": 0
+    },
+    {
+      "word": "SAME",
+      "type": 0
+    },
+    {
+      "word": "SIDE",
+      "type": 0
+    },
+    {
+      "word": "GAMES",
+      "type": 0
+    },
+    {
+      "word": "GAMMA",
+      "type": 0
+    },
+    {
+      "word": "IDEAS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "BAM",
+      "type": 0
+    },
+    {
+      "word": "BOD",
+      "type": 0
+    },
+    {
+      "word": "DAB",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "GAB",
+      "type": 0
+    },
+    {
+      "word": "GAM",
+      "type": 0
+    },
+    {
+      "word": "GEM",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LOB",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAG",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "MOA",
+      "type": 0
+    },
+    {
+      "word": "MOL",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "ABBA",
+      "type": 0
+    },
+    {
+      "word": "AGES",
+      "type": 0
+    },
+    {
+      "word": "AMAS",
+      "type": 0
+    },
+    {
+      "word": "AMMO",
+      "type": 0
+    },
+    {
+      "word": "BOLE",
+      "type": 0
+    },
+    {
+      "word": "BOLO",
+      "type": 0
+    },
+    {
+      "word": "DISS",
+      "type": 0
+    },
+    {
+      "word": "DOLE",
+      "type": 0
+    },
+    {
+      "word": "DOLT",
+      "type": 0
+    },
+    {
+      "word": "EASE",
+      "type": 0
+    },
+    {
+      "word": "GAMA",
+      "type": 0
+    },
+    {
+      "word": "IDES",
+      "type": 0
+    },
+    {
+      "word": "LEAS",
+      "type": 0
+    },
+    {
+      "word": "LOAM",
+      "type": 0
+    },
+    {
+      "word": "MAES",
+      "type": 0
+    },
+    {
+      "word": "MAGE",
+      "type": 0
+    },
+    {
+      "word": "MASS",
+      "type": 0
+    },
+    {
+      "word": "MESA",
+      "type": 0
+    },
+    {
+      "word": "MESS",
+      "type": 0
+    },
+    {
+      "word": "MOAS",
+      "type": 0
+    },
+    {
+      "word": "MOLE",
+      "type": 0
+    },
+    {
+      "word": "MOLT",
+      "type": 0
+    },
+    {
+      "word": "OLEA",
+      "type": 0
+    },
+    {
+      "word": "OLES",
+      "type": 0
+    },
+    {
+      "word": "SEAM",
+      "type": 0
+    },
+    {
+      "word": "SEAS",
+      "type": 0
+    },
+    {
+      "word": "AMASS",
+      "type": 0
+    },
+    {
+      "word": "AMOLE",
+      "type": 0
+    },
+    {
+      "word": "BOLES",
+      "type": 0
+    },
+    {
+      "word": "DOLED",
+      "type": 0
+    },
+    {
+      "word": "DOLES",
+      "type": 0
+    },
+    {
+      "word": "GAMAS",
+      "type": 0
+    },
+    {
+      "word": "GEMMA",
+      "type": 0
+    },
+    {
+      "word": "LEASE",
+      "type": 0
+    },
+    {
+      "word": "MAGES",
+      "type": 0
+    },
+    {
+      "word": "MASSE",
+      "type": 0
+    },
+    {
+      "word": "MOLES",
+      "type": 0
+    },
+    {
+      "word": "AMBAGE",
+      "type": 0
+    },
+    {
+      "word": "AMOLES",
+      "type": 0
+    },
+    {
+      "word": "MASSED",
+      "type": 0
+    },
+    {
+      "word": "MESSED",
+      "type": 0
+    },
+    {
+      "word": "AMASSED",
+      "type": 0
+    },
+    {
+      "word": "AMBAGES",
+      "type": 0
+    },
+    {
+      "word": "DISEASE",
+      "type": 0
+    }
+  ],
+  "letters": "BODAB,TLOMB,DEAMA,ISSEG",
+  "obstacles": []
 }

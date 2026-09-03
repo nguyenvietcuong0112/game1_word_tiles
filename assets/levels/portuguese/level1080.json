@@ -1,109 +1,171 @@
-﻿{
-    "id":  1080,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LACA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SACA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SACO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TACO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEITO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUSPEITO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACATO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CASULA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "EIS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EITO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ITA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LATO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PSIT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SACAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SATO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SITO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SULA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TACA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SULA,PSAC,EITO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1080,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEI",
+      "type": 0
+    },
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "EIN",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "COOL",
+      "type": 0
+    },
+    {
+      "word": "LADO",
+      "type": 0
+    },
+    {
+      "word": "LORD",
+      "type": 0
+    },
+    {
+      "word": "WADE",
+      "type": 0
+    },
+    {
+      "word": "LORDE",
+      "type": 0
+    },
+    {
+      "word": "WALDRON",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DEW",
+      "type": 0
+    },
+    {
+      "word": "DOI",
+      "type": 0
+    },
+    {
+      "word": "DOO",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "EWA",
+      "type": 0
+    },
+    {
+      "word": "INC",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LAW",
+      "type": 0
+    },
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OIE",
+      "type": 0
+    },
+    {
+      "word": "OOO",
+      "type": 0
+    },
+    {
+      "word": "RDA",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "ROO",
+      "type": 0
+    },
+    {
+      "word": "WAL",
+      "type": 0
+    },
+    {
+      "word": "WEI",
+      "type": 0
+    },
+    {
+      "word": "CODE",
+      "type": 0
+    },
+    {
+      "word": "DOIN",
+      "type": 0
+    },
+    {
+      "word": "DOOR",
+      "type": 0
+    },
+    {
+      "word": "ORLA",
+      "type": 0
+    }
+  ],
+  "letters": "NLCN,OOOI,RRDE,DLAW",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

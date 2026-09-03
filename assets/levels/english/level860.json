@@ -1,69 +1,211 @@
-﻿{
-    "id":  860,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CASH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHIN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SHUN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "UNDER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HINDER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "HIND",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RUE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UNI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OIND,CHUE,ASRR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 860,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "NUT",
+      "type": 0
+    },
+    {
+      "word": "OIL",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "EDIT",
+      "type": 0
+    },
+    {
+      "word": "JOIN",
+      "type": 0
+    },
+    {
+      "word": "LAKE",
+      "type": 0
+    },
+    {
+      "word": "PALM",
+      "type": 0
+    },
+    {
+      "word": "JOINED",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DAK",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DAP",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "DIT",
+      "type": 0
+    },
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LAP",
+      "type": 0
+    },
+    {
+      "word": "LID",
+      "type": 0
+    },
+    {
+      "word": "LIT",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "SKA",
+      "type": 0
+    },
+    {
+      "word": "TIL",
+      "type": 0
+    },
+    {
+      "word": "TUN",
+      "type": 0
+    },
+    {
+      "word": "ADIT",
+      "type": 0
+    },
+    {
+      "word": "ALIT",
+      "type": 0
+    },
+    {
+      "word": "DAKS",
+      "type": 0
+    },
+    {
+      "word": "DAPS",
+      "type": 0
+    },
+    {
+      "word": "DINE",
+      "type": 0
+    },
+    {
+      "word": "KADI",
+      "type": 0
+    },
+    {
+      "word": "LADE",
+      "type": 0
+    },
+    {
+      "word": "LAPS",
+      "type": 0
+    },
+    {
+      "word": "LITU",
+      "type": 0
+    },
+    {
+      "word": "NIDE",
+      "type": 0
+    },
+    {
+      "word": "NIDI",
+      "type": 0
+    },
+    {
+      "word": "PADI",
+      "type": 0
+    },
+    {
+      "word": "TIDE",
+      "type": 0
+    },
+    {
+      "word": "LADEN",
+      "type": 0
+    },
+    {
+      "word": "LAKED",
+      "type": 0
+    },
+    {
+      "word": "NIDAL",
+      "type": 0
+    },
+    {
+      "word": "SPADE",
+      "type": 0
+    },
+    {
+      "word": "SPAKE",
+      "type": 0
+    },
+    {
+      "word": "TIDAL",
+      "type": 0
+    },
+    {
+      "word": "TILAK",
+      "type": 0
+    },
+    {
+      "word": "TILAKS",
+      "type": 0
+    },
+    {
+      "word": "TULADI",
+      "type": 0
+    }
+  ],
+  "letters": "JTUN,OILM,IDAP,NEKS",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

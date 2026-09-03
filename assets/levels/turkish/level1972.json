@@ -1,62 +1,179 @@
-﻿{
-    "id":  1972,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESKİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İMLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KREM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SEMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİMSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KREMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RESMİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MİKSER",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-
-                    ],
-    "letters":  "İML,KSA,REM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1972,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AİT",
+      "type": 0
+    },
+    {
+      "word": "CHA",
+      "type": 0
+    },
+    {
+      "word": "GÖR",
+      "type": 0
+    },
+    {
+      "word": "GİR",
+      "type": 0
+    },
+    {
+      "word": "GİT",
+      "type": 0
+    },
+    {
+      "word": "YER",
+      "type": 0
+    },
+    {
+      "word": "DAHA",
+      "type": 0
+    },
+    {
+      "word": "GÖRE",
+      "type": 0
+    },
+    {
+      "word": "RİTA",
+      "type": 0
+    },
+    {
+      "word": "SAHA",
+      "type": 0
+    },
+    {
+      "word": "GÖRÜR",
+      "type": 0
+    },
+    {
+      "word": "GÖRÜRDÜ",
+      "type": 0
+    },
+    {
+      "word": "GÖRÜYOR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "AİR",
+      "type": 0
+    },
+    {
+      "word": "GÜR",
+      "type": 0
+    },
+    {
+      "word": "GİA",
+      "type": 0
+    },
+    {
+      "word": "HAA",
+      "type": 0
+    },
+    {
+      "word": "HAD",
+      "type": 0
+    },
+    {
+      "word": "HAS",
+      "type": 0
+    },
+    {
+      "word": "ORİ",
+      "type": 0
+    },
+    {
+      "word": "REY",
+      "type": 0
+    },
+    {
+      "word": "ROY",
+      "type": 0
+    },
+    {
+      "word": "RİA",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "TAA",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TİA",
+      "type": 0
+    },
+    {
+      "word": "TİR",
+      "type": 0
+    },
+    {
+      "word": "YOR",
+      "type": 0
+    },
+    {
+      "word": "ÜYE",
+      "type": 0
+    },
+    {
+      "word": "AAAH",
+      "type": 0
+    },
+    {
+      "word": "CHAD",
+      "type": 0
+    },
+    {
+      "word": "CHAS",
+      "type": 0
+    },
+    {
+      "word": "HASAT",
+      "type": 0
+    }
+  ],
+  "letters": "CDÖRE,HAGÜY,AAİRO,SATDÜ",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

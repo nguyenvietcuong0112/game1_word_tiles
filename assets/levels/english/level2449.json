@@ -1,89 +1,227 @@
-﻿{
-    "id":  2449,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOOK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOOK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "NOTE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TOOK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAIVE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "NOTEBOOK",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AEON",
-                            "type":  1
-                        },
-                        {
-                            "word":  "BOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EBOOK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VIA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BOOKE,ETOEV,JTNAI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2449,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BUS",
+      "type": 0
+    },
+    {
+      "word": "CRY",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SUB",
+      "type": 0
+    },
+    {
+      "word": "SUN",
+      "type": 0
+    },
+    {
+      "word": "YET",
+      "type": 0
+    },
+    {
+      "word": "DEEP",
+      "type": 0
+    },
+    {
+      "word": "NOTE",
+      "type": 0
+    },
+    {
+      "word": "TAPE",
+      "type": 0
+    },
+    {
+      "word": "TONGA",
+      "type": 0
+    },
+    {
+      "word": "DEEPLY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "BIS",
+      "type": 0
+    },
+    {
+      "word": "BUN",
+      "type": 0
+    },
+    {
+      "word": "BYE",
+      "type": 0
+    },
+    {
+      "word": "DAG",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "EON",
+      "type": 0
+    },
+    {
+      "word": "GAD",
+      "type": 0
+    },
+    {
+      "word": "LYE",
+      "type": 0
+    },
+    {
+      "word": "NUB",
+      "type": 0
+    },
+    {
+      "word": "NUS",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "PLY",
+      "type": 0
+    },
+    {
+      "word": "RIB",
+      "type": 0
+    },
+    {
+      "word": "RYE",
+      "type": 0
+    },
+    {
+      "word": "SIB",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TOE",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "YEP",
+      "type": 0
+    },
+    {
+      "word": "AEON",
+      "type": 0
+    },
+    {
+      "word": "BUNN",
+      "type": 0
+    },
+    {
+      "word": "BUNT",
+      "type": 0
+    },
+    {
+      "word": "CRIB",
+      "type": 0
+    },
+    {
+      "word": "CRIS",
+      "type": 0
+    },
+    {
+      "word": "DEET",
+      "type": 0
+    },
+    {
+      "word": "PEED",
+      "type": 0
+    },
+    {
+      "word": "SUNN",
+      "type": 0
+    },
+    {
+      "word": "TEED",
+      "type": 0
+    },
+    {
+      "word": "TEPA",
+      "type": 0
+    },
+    {
+      "word": "TOAD",
+      "type": 0
+    },
+    {
+      "word": "TOEA",
+      "type": 0
+    },
+    {
+      "word": "TOED",
+      "type": 0
+    },
+    {
+      "word": "TONG",
+      "type": 0
+    },
+    {
+      "word": "UNTO",
+      "type": 0
+    },
+    {
+      "word": "PAEON",
+      "type": 0
+    },
+    {
+      "word": "SIBYL",
+      "type": 0
+    }
+  ],
+  "letters": "CLPAT,RYEED,IBTOA,SUNNG",
+  "obstacles": []
 }

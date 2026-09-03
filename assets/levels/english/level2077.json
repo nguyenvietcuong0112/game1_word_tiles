@@ -1,79 +1,275 @@
-﻿{
-    "id":  2077,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "FOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FLOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "URGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FLOOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FORGE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LOP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOPE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "POO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "URG,FOE,LOP",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2077,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADS",
+      "type": 0
+    },
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "BAG",
+      "type": 0
+    },
+    {
+      "word": "BUS",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "SUB",
+      "type": 0
+    },
+    {
+      "word": "ABLE",
+      "type": 0
+    },
+    {
+      "word": "CELL",
+      "type": 0
+    },
+    {
+      "word": "GRID",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAL",
+      "type": 0
+    },
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "CEL",
+      "type": 0
+    },
+    {
+      "word": "DAD",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "GAB",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "LEU",
+      "type": 0
+    },
+    {
+      "word": "LID",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RID",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "AALS",
+      "type": 0
+    },
+    {
+      "word": "ANGA",
+      "type": 0
+    },
+    {
+      "word": "ARID",
+      "type": 0
+    },
+    {
+      "word": "ARIL",
+      "type": 0
+    },
+    {
+      "word": "BALE",
+      "type": 0
+    },
+    {
+      "word": "BALS",
+      "type": 0
+    },
+    {
+      "word": "DADS",
+      "type": 0
+    },
+    {
+      "word": "DILL",
+      "type": 0
+    },
+    {
+      "word": "EGAL",
+      "type": 0
+    },
+    {
+      "word": "GALE",
+      "type": 0
+    },
+    {
+      "word": "GALS",
+      "type": 0
+    },
+    {
+      "word": "GELS",
+      "type": 0
+    },
+    {
+      "word": "GLEG",
+      "type": 0
+    },
+    {
+      "word": "GRAD",
+      "type": 0
+    },
+    {
+      "word": "LIRA",
+      "type": 0
+    },
+    {
+      "word": "RADS",
+      "type": 0
+    },
+    {
+      "word": "RILL",
+      "type": 0
+    },
+    {
+      "word": "SLAB",
+      "type": 0
+    },
+    {
+      "word": "SLAG",
+      "type": 0
+    },
+    {
+      "word": "ANGEL",
+      "type": 0
+    },
+    {
+      "word": "ARGLE",
+      "type": 0
+    },
+    {
+      "word": "BAGEL",
+      "type": 0
+    },
+    {
+      "word": "CELLI",
+      "type": 0
+    },
+    {
+      "word": "GABLE",
+      "type": 0
+    },
+    {
+      "word": "GRADS",
+      "type": 0
+    },
+    {
+      "word": "GRILL",
+      "type": 0
+    },
+    {
+      "word": "LIDAR",
+      "type": 0
+    },
+    {
+      "word": "RILLE",
+      "type": 0
+    },
+    {
+      "word": "ANGELS",
+      "type": 0
+    },
+    {
+      "word": "BAGELS",
+      "type": 0
+    },
+    {
+      "word": "GRILLE",
+      "type": 0
+    },
+    {
+      "word": "LIDARS",
+      "type": 0
+    },
+    {
+      "word": "GELABLE",
+      "type": 0
+    }
+  ],
+  "letters": "BUEGN,DSLAA,ARGBC,DILLE",
+  "obstacles": []
 }

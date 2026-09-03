@@ -1,69 +1,175 @@
-﻿{
-    "id":  1040,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ABLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAFE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEFT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CABLE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AFT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAB",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BLEE,ADFT,CCAT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1040,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "WIN",
+      "type": 0
+    },
+    {
+      "word": "IRON",
+      "type": 0
+    },
+    {
+      "word": "LENS",
+      "type": 0
+    },
+    {
+      "word": "SHOE",
+      "type": 0
+    },
+    {
+      "word": "TWIN",
+      "type": 0
+    },
+    {
+      "word": "WINTER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "EON",
+      "type": 0
+    },
+    {
+      "word": "HOE",
+      "type": 0
+    },
+    {
+      "word": "HON",
+      "type": 0
+    },
+    {
+      "word": "NOH",
+      "type": 0
+    },
+    {
+      "word": "OHS",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "AEON",
+      "type": 0
+    },
+    {
+      "word": "LEAS",
+      "type": 0
+    },
+    {
+      "word": "NEON",
+      "type": 0
+    },
+    {
+      "word": "NOEL",
+      "type": 0
+    },
+    {
+      "word": "NORI",
+      "type": 0
+    },
+    {
+      "word": "TELE",
+      "type": 0
+    },
+    {
+      "word": "TELS",
+      "type": 0
+    },
+    {
+      "word": "WINO",
+      "type": 0
+    },
+    {
+      "word": "INLET",
+      "type": 0
+    },
+    {
+      "word": "INTER",
+      "type": 0
+    },
+    {
+      "word": "NOELS",
+      "type": 0
+    },
+    {
+      "word": "INTERS",
+      "type": 0
+    },
+    {
+      "word": "WINTERS",
+      "type": 0
+    }
+  ],
+  "letters": "SRIW,HONT,NELE,SASR",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,69 +1,191 @@
-﻿{
-    "id":  740,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SONDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SONDAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SONHAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RECEOSO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ONDAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ONDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOCCER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ECER,OCDA,SONH",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 740,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAI",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DEI",
+      "type": 0
+    },
+    {
+      "word": "DIA",
+      "type": 0
+    },
+    {
+      "word": "RAJ",
+      "type": 0
+    },
+    {
+      "word": "CARA",
+      "type": 0
+    },
+    {
+      "word": "JEDI",
+      "type": 0
+    },
+    {
+      "word": "RICA",
+      "type": 0
+    },
+    {
+      "word": "AINDA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADN",
+      "type": 0
+    },
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "AJA",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DEA",
+      "type": 0
+    },
+    {
+      "word": "DRA",
+      "type": 0
+    },
+    {
+      "word": "IDE",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "JAE",
+      "type": 0
+    },
+    {
+      "word": "JAI",
+      "type": 0
+    },
+    {
+      "word": "JAR",
+      "type": 0
+    },
+    {
+      "word": "JED",
+      "type": 0
+    },
+    {
+      "word": "JIA",
+      "type": 0
+    },
+    {
+      "word": "NIA",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "RIC",
+      "type": 0
+    },
+    {
+      "word": "RIE",
+      "type": 0
+    },
+    {
+      "word": "ARDE",
+      "type": 0
+    },
+    {
+      "word": "CARD",
+      "type": 0
+    },
+    {
+      "word": "DARA",
+      "type": 0
+    },
+    {
+      "word": "DEAD",
+      "type": 0
+    },
+    {
+      "word": "DEAR",
+      "type": 0
+    },
+    {
+      "word": "IDEA",
+      "type": 0
+    },
+    {
+      "word": "RAID",
+      "type": 0
+    },
+    {
+      "word": "RAJA",
+      "type": 0
+    },
+    {
+      "word": "ARDIA",
+      "type": 0
+    }
+  ],
+  "letters": "CAIJ,IRDE,EAJA,DDNI",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

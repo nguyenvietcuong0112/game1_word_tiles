@@ -1,77 +1,151 @@
-﻿{
-    "id":  1844,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ESER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HARÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERDEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RENDE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MEDRESE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALLAH",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ALLAME",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NERDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RESEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RDEMA,ENÇRL,SEHAL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1844,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABİ",
+      "type": 0
+    },
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "BEJ",
+      "type": 0
+    },
+    {
+      "word": "BEY",
+      "type": 0
+    },
+    {
+      "word": "CBİ",
+      "type": 0
+    },
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KEY",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "KART",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABC",
+      "type": 0
+    },
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "JEB",
+      "type": 0
+    },
+    {
+      "word": "KAC",
+      "type": 0
+    },
+    {
+      "word": "KAİ",
+      "type": 0
+    },
+    {
+      "word": "KEİ",
+      "type": 0
+    },
+    {
+      "word": "RAİ",
+      "type": 0
+    },
+    {
+      "word": "İYY",
+      "type": 0
+    },
+    {
+      "word": "ARDA",
+      "type": 0
+    },
+    {
+      "word": "ARSA",
+      "type": 0
+    },
+    {
+      "word": "BAAL",
+      "type": 0
+    },
+    {
+      "word": "BEYİ",
+      "type": 0
+    },
+    {
+      "word": "SCAR",
+      "type": 0
+    },
+    {
+      "word": "LARDA",
+      "type": 0
+    },
+    {
+      "word": "LARDAN",
+      "type": 0
+    },
+    {
+      "word": "NASCAR",
+      "type": 0
+    }
+  ],
+  "letters": "LJEYY,AABİE,RDCAK,NASRT",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

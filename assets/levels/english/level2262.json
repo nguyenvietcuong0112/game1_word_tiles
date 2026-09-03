@@ -1,105 +1,255 @@
-﻿{
-    "id":  2262,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OWN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DINE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "HONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HONEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOLIDAY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANIL",
-                            "type":  1
-                        },
-                        {
-                            "word":  "AYE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DANE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NDAY,WINE,OLOH",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2262,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "SAW",
+      "type": 0
+    },
+    {
+      "word": "SUB",
+      "type": 0
+    },
+    {
+      "word": "WAS",
+      "type": 0
+    },
+    {
+      "word": "ISSUE",
+      "type": 0
+    },
+    {
+      "word": "TEXAS",
+      "type": 0
+    },
+    {
+      "word": "WATER",
+      "type": 0
+    },
+    {
+      "word": "ISSUER",
+      "type": 0
+    },
+    {
+      "word": "RETAIL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIL",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "AWA",
+      "type": 0
+    },
+    {
+      "word": "AXE",
+      "type": 0
+    },
+    {
+      "word": "BUS",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "LEU",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "RAX",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "REX",
+      "type": 0
+    },
+    {
+      "word": "SAU",
+      "type": 0
+    },
+    {
+      "word": "SAX",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "TAW",
+      "type": 0
+    },
+    {
+      "word": "WAT",
+      "type": 0
+    },
+    {
+      "word": "AILS",
+      "type": 0
+    },
+    {
+      "word": "AXLE",
+      "type": 0
+    },
+    {
+      "word": "BUSS",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "LIER",
+      "type": 0
+    },
+    {
+      "word": "RETE",
+      "type": 0
+    },
+    {
+      "word": "SAIL",
+      "type": 0
+    },
+    {
+      "word": "SUER",
+      "type": 0
+    },
+    {
+      "word": "TAIL",
+      "type": 0
+    },
+    {
+      "word": "WAIL",
+      "type": 0
+    },
+    {
+      "word": "ARETE",
+      "type": 0
+    },
+    {
+      "word": "ILEUS",
+      "type": 0
+    },
+    {
+      "word": "SLIER",
+      "type": 0
+    },
+    {
+      "word": "SUERS",
+      "type": 0
+    },
+    {
+      "word": "TAILS",
+      "type": 0
+    },
+    {
+      "word": "WAILS",
+      "type": 0
+    },
+    {
+      "word": "RELIER",
+      "type": 0
+    },
+    {
+      "word": "SAILER",
+      "type": 0
+    },
+    {
+      "word": "TAILER",
+      "type": 0
+    },
+    {
+      "word": "WAILER",
+      "type": 0
+    },
+    {
+      "word": "ISSUERS",
+      "type": 0
+    },
+    {
+      "word": "RETAILS",
+      "type": 0
+    },
+    {
+      "word": "SAILERS",
+      "type": 0
+    },
+    {
+      "word": "TAILERS",
+      "type": 0
+    },
+    {
+      "word": "WAILERS",
+      "type": 0
+    },
+    {
+      "word": "RETAILER",
+      "type": 0
+    }
+  ],
+  "letters": "ETAWB,REIAU,AXLSS,SREUI",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

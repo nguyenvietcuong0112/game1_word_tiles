@@ -1,97 +1,123 @@
-﻿{
-    "id":  2198,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUNK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TACK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TACT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TANK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUNA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JACKET",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANUS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "JACK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SCAT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "UTAH",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SUNKE,TTACT,HAJSA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2198,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EGG",
+      "type": 0
+    },
+    {
+      "word": "GEE",
+      "type": 0
+    },
+    {
+      "word": "HOP",
+      "type": 0
+    },
+    {
+      "word": "LOG",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "SKI",
+      "type": 0
+    },
+    {
+      "word": "EGGS",
+      "type": 0
+    },
+    {
+      "word": "SHOP",
+      "type": 0
+    },
+    {
+      "word": "SOLO",
+      "type": 0
+    },
+    {
+      "word": "SHOPS",
+      "type": 0
+    },
+    {
+      "word": "GEOLOGY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "GIE",
+      "type": 0
+    },
+    {
+      "word": "HOY",
+      "type": 0
+    },
+    {
+      "word": "OHS",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "POH",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "HOPS",
+      "type": 0
+    },
+    {
+      "word": "HOYS",
+      "type": 0
+    },
+    {
+      "word": "LOGY",
+      "type": 0
+    },
+    {
+      "word": "PROP",
+      "type": 0
+    },
+    {
+      "word": "OLOGY",
+      "type": 0
+    },
+    {
+      "word": "PROPS",
+      "type": 0
+    }
+  ],
+  "letters": "SSPHS,KGROY,IGSPG,EEOLO",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

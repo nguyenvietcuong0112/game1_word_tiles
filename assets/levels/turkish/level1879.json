@@ -1,61 +1,231 @@
-﻿{
-    "id":  1879,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İLK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İŞTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SİCİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEMSİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEMSİLCİ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "İSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İSMET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "META",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SİLCİ,MŞAİL,ETASK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1879,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "AMY",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "NİN",
+      "type": 0
+    },
+    {
+      "word": "TAŞ",
+      "type": 0
+    },
+    {
+      "word": "YER",
+      "type": 0
+    },
+    {
+      "word": "ATIŞ",
+      "type": 0
+    },
+    {
+      "word": "SÜRE",
+      "type": 0
+    },
+    {
+      "word": "YÜREK",
+      "type": 0
+    },
+    {
+      "word": "ÇALIŞ",
+      "type": 0
+    },
+    {
+      "word": "ÇALIŞMA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ANY",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "ATI",
+      "type": 0
+    },
+    {
+      "word": "AŞI",
+      "type": 0
+    },
+    {
+      "word": "KEY",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "REY",
+      "type": 0
+    },
+    {
+      "word": "RİN",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SÜR",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "ÇAL",
+      "type": 0
+    },
+    {
+      "word": "ÜYE",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "ŞAL",
+      "type": 0
+    },
+    {
+      "word": "ALIŞ",
+      "type": 0
+    },
+    {
+      "word": "ASMA",
+      "type": 0
+    },
+    {
+      "word": "MAAŞ",
+      "type": 0
+    },
+    {
+      "word": "MANY",
+      "type": 0
+    },
+    {
+      "word": "MANİ",
+      "type": 0
+    },
+    {
+      "word": "MARİ",
+      "type": 0
+    },
+    {
+      "word": "NİNA",
+      "type": 0
+    },
+    {
+      "word": "RANİ",
+      "type": 0
+    },
+    {
+      "word": "RİNA",
+      "type": 0
+    },
+    {
+      "word": "TAŞA",
+      "type": 0
+    },
+    {
+      "word": "TAŞI",
+      "type": 0
+    },
+    {
+      "word": "ÇALI",
+      "type": 0
+    },
+    {
+      "word": "İRAN",
+      "type": 0
+    },
+    {
+      "word": "ATIŞA",
+      "type": 0
+    },
+    {
+      "word": "MAAŞI",
+      "type": 0
+    },
+    {
+      "word": "MARİN",
+      "type": 0
+    },
+    {
+      "word": "NARİN",
+      "type": 0
+    },
+    {
+      "word": "SATIŞ",
+      "type": 0
+    },
+    {
+      "word": "TASMA",
+      "type": 0
+    },
+    {
+      "word": "ALIŞMA",
+      "type": 0
+    },
+    {
+      "word": "SATIŞA",
+      "type": 0
+    },
+    {
+      "word": "ALIŞMAN",
+      "type": 0
+    },
+    {
+      "word": "ÇALIŞMAN",
+      "type": 0
+    }
+  ],
+  "letters": "NİRÇT,KNAAL,EYMŞI,RÜSAT",
+  "obstacles": []
 }

@@ -1,110 +1,187 @@
-﻿{
-    "id":  1907,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TÜM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TÜY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÜYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YETİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KISMİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEMİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YETİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KISMET",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "MİTOZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TİM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YEM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SMİZ,IETO,KYÜM",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  8,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1907,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "DİL",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "PEK",
+      "type": 0
+    },
+    {
+      "word": "SÜT",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TÜM",
+      "type": 0
+    },
+    {
+      "word": "İDİ",
+      "type": 0
+    },
+    {
+      "word": "İLK",
+      "type": 0
+    },
+    {
+      "word": "AÇSIN",
+      "type": 0
+    },
+    {
+      "word": "KANIT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ATI",
+      "type": 0
+    },
+    {
+      "word": "DİD",
+      "type": 0
+    },
+    {
+      "word": "HAA",
+      "type": 0
+    },
+    {
+      "word": "HAE",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NAİ",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "TAA",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "İAN",
+      "type": 0
+    },
+    {
+      "word": "AKLİ",
+      "type": 0
+    },
+    {
+      "word": "ANIT",
+      "type": 0
+    },
+    {
+      "word": "ATIN",
+      "type": 0
+    },
+    {
+      "word": "DİDİ",
+      "type": 0
+    },
+    {
+      "word": "DİLİ",
+      "type": 0
+    },
+    {
+      "word": "KANA",
+      "type": 0
+    },
+    {
+      "word": "KANI",
+      "type": 0
+    },
+    {
+      "word": "KATI",
+      "type": 0
+    },
+    {
+      "word": "NAİL",
+      "type": 0
+    },
+    {
+      "word": "SINA",
+      "type": 0
+    },
+    {
+      "word": "TAKE",
+      "type": 0
+    },
+    {
+      "word": "TANI",
+      "type": 0
+    },
+    {
+      "word": "ATINA",
+      "type": 0
+    },
+    {
+      "word": "DİANA",
+      "type": 0
+    },
+    {
+      "word": "KATIN",
+      "type": 0
+    },
+    {
+      "word": "NAKLİ",
+      "type": 0
+    },
+    {
+      "word": "KATINA",
+      "type": 0
+    },
+    {
+      "word": "TAKLİDİ",
+      "type": 0
+    }
+  ],
+  "letters": "PEAHM,DKATÜ,İLNIS,DİAAÇ",
+  "obstacles": []
 }

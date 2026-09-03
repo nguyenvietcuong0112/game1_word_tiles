@@ -1,85 +1,211 @@
-﻿{
-    "id":  2280,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SKOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KORNA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OKSİJEN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "MANAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MANEJ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEMA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "İJEM,SRNA,KOAT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2280,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "BOB",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CHİ",
+      "type": 0
+    },
+    {
+      "word": "İSA",
+      "type": 0
+    },
+    {
+      "word": "ALMA",
+      "type": 0
+    },
+    {
+      "word": "SADE",
+      "type": 0
+    },
+    {
+      "word": "TERS",
+      "type": 0
+    },
+    {
+      "word": "İSTE",
+      "type": 0
+    },
+    {
+      "word": "İSTER",
+      "type": 0
+    },
+    {
+      "word": "İSTERSE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ASİ",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BES",
+      "type": 0
+    },
+    {
+      "word": "BEİ",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "DEA",
+      "type": 0
+    },
+    {
+      "word": "DİE",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "HBO",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "REİ",
+      "type": 0
+    },
+    {
+      "word": "SİD",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "BACH",
+      "type": 0
+    },
+    {
+      "word": "BEST",
+      "type": 0
+    },
+    {
+      "word": "BOCA",
+      "type": 0
+    },
+    {
+      "word": "CABO",
+      "type": 0
+    },
+    {
+      "word": "CHİE",
+      "type": 0
+    },
+    {
+      "word": "EDİE",
+      "type": 0
+    },
+    {
+      "word": "ETSE",
+      "type": 0
+    },
+    {
+      "word": "REİD",
+      "type": 0
+    },
+    {
+      "word": "REİS",
+      "type": 0
+    },
+    {
+      "word": "SABA",
+      "type": 0
+    },
+    {
+      "word": "SOBA",
+      "type": 0
+    },
+    {
+      "word": "SİDE",
+      "type": 0
+    },
+    {
+      "word": "BESTE",
+      "type": 0
+    },
+    {
+      "word": "SADİE",
+      "type": 0
+    }
+  ],
+  "letters": "REİDE,STSAA,EBOBM,İHCAL",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,109 +1,243 @@
-﻿{
-    "id":  2307,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DERT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MERT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UŞAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEDER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEREOTU",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EDER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EMARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KERE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KUMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MUKAAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MUŞ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UMAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ŞAK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ŞUMAU,AKERT,ARDEO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2307,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAK",
+      "type": 0
+    },
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "GÜL",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "KİM",
+      "type": 0
+    },
+    {
+      "word": "LER",
+      "type": 0
+    },
+    {
+      "word": "AKAN",
+      "type": 0
+    },
+    {
+      "word": "BENİ",
+      "type": 0
+    },
+    {
+      "word": "EMİN",
+      "type": 0
+    },
+    {
+      "word": "KERE",
+      "type": 0
+    },
+    {
+      "word": "BENİM",
+      "type": 0
+    },
+    {
+      "word": "REKABET",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABC",
+      "type": 0
+    },
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "BER",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "KAC",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KEL",
+      "type": 0
+    },
+    {
+      "word": "KİN",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MİN",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "NİK",
+      "type": 0
+    },
+    {
+      "word": "NİM",
+      "type": 0
+    },
+    {
+      "word": "RAB",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "ABER",
+      "type": 0
+    },
+    {
+      "word": "ANKA",
+      "type": 0
+    },
+    {
+      "word": "BERE",
+      "type": 0
+    },
+    {
+      "word": "BERG",
+      "type": 0
+    },
+    {
+      "word": "CAKA",
+      "type": 0
+    },
+    {
+      "word": "CANİ",
+      "type": 0
+    },
+    {
+      "word": "KAAN",
+      "type": 0
+    },
+    {
+      "word": "KANE",
+      "type": 0
+    },
+    {
+      "word": "KARE",
+      "type": 0
+    },
+    {
+      "word": "KİME",
+      "type": 0
+    },
+    {
+      "word": "LERE",
+      "type": 0
+    },
+    {
+      "word": "MENİ",
+      "type": 0
+    },
+    {
+      "word": "MİKA",
+      "type": 0
+    },
+    {
+      "word": "MİNA",
+      "type": 0
+    },
+    {
+      "word": "MİNE",
+      "type": 0
+    },
+    {
+      "word": "AKANE",
+      "type": 0
+    },
+    {
+      "word": "BAKER",
+      "type": 0
+    },
+    {
+      "word": "CANİM",
+      "type": 0
+    },
+    {
+      "word": "GÜLLE",
+      "type": 0
+    },
+    {
+      "word": "KANKA",
+      "type": 0
+    },
+    {
+      "word": "İNKAR",
+      "type": 0
+    },
+    {
+      "word": "GÜLLER",
+      "type": 0
+    }
+  ],
+  "letters": "MEBLL,İNKEÜ,KAARG,ACBET",
+  "obstacles": []
 }

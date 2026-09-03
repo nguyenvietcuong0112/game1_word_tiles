@@ -1,85 +1,243 @@
-﻿{
-    "id":  1489,
-    "width":  4,
-    "height":  2,
-    "target_words":  [
-                         {
-                             "word":  "NAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EMEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TEMEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EMANET",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMELİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETİL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "METİL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AMEL,NETİ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1489,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AŞK",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "KOY",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "ONA",
+      "type": 0
+    },
+    {
+      "word": "YOK",
+      "type": 0
+    },
+    {
+      "word": "ADAM",
+      "type": 0
+    },
+    {
+      "word": "AYAK",
+      "type": 0
+    },
+    {
+      "word": "ADAMA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "DOK",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "KOD",
+      "type": 0
+    },
+    {
+      "word": "KON",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "ONO",
+      "type": 0
+    },
+    {
+      "word": "OYA",
+      "type": 0
+    },
+    {
+      "word": "YAA",
+      "type": 0
+    },
+    {
+      "word": "YAD",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "ADAK",
+      "type": 0
+    },
+    {
+      "word": "ADAY",
+      "type": 0
+    },
+    {
+      "word": "AKAN",
+      "type": 0
+    },
+    {
+      "word": "AŞKA",
+      "type": 0
+    },
+    {
+      "word": "DAMA",
+      "type": 0
+    },
+    {
+      "word": "DAYA",
+      "type": 0
+    },
+    {
+      "word": "DONA",
+      "type": 0
+    },
+    {
+      "word": "DOYA",
+      "type": 0
+    },
+    {
+      "word": "KAKA",
+      "type": 0
+    },
+    {
+      "word": "KAMA",
+      "type": 0
+    },
+    {
+      "word": "KANO",
+      "type": 0
+    },
+    {
+      "word": "KAYA",
+      "type": 0
+    },
+    {
+      "word": "KAYO",
+      "type": 0
+    },
+    {
+      "word": "KONO",
+      "type": 0
+    },
+    {
+      "word": "MAAŞ",
+      "type": 0
+    },
+    {
+      "word": "MAKO",
+      "type": 0
+    },
+    {
+      "word": "ODAK",
+      "type": 0
+    },
+    {
+      "word": "ODAM",
+      "type": 0
+    },
+    {
+      "word": "OKAY",
+      "type": 0
+    },
+    {
+      "word": "YADA",
+      "type": 0
+    },
+    {
+      "word": "YAKA",
+      "type": 0
+    },
+    {
+      "word": "YODA",
+      "type": 0
+    },
+    {
+      "word": "ADAYA",
+      "type": 0
+    },
+    {
+      "word": "DAMAK",
+      "type": 0
+    },
+    {
+      "word": "DAYAK",
+      "type": 0
+    },
+    {
+      "word": "KAYAK",
+      "type": 0
+    },
+    {
+      "word": "KONAK",
+      "type": 0
+    },
+    {
+      "word": "ODAMA",
+      "type": 0
+    },
+    {
+      "word": "ODAYA",
+      "type": 0
+    },
+    {
+      "word": "ADAMAK",
+      "type": 0
+    }
+  ],
+  "letters": "ŞKAK,AAYO,ADON,MAKA",
+  "obstacles": []
 }

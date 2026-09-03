@@ -1,101 +1,339 @@
-﻿{
-    "id":  1094,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AÇO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AÇÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÁREA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAÇO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONÇA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROÇA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROMÃ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOÇÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOÇÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAÇÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AEROMOÇA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AÇOR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "EGO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GORO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LORO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OMÃ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REGO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GOMÃO,EROÇN,AÁLAN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1094,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "DIA",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "MIL",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "CEDO",
+      "type": 0
+    },
+    {
+      "word": "LADO",
+      "type": 0
+    },
+    {
+      "word": "SIDO",
+      "type": 0
+    },
+    {
+      "word": "SLADE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ASU",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "DAD",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DIL",
+      "type": 0
+    },
+    {
+      "word": "DIM",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "DOA",
+      "type": 0
+    },
+    {
+      "word": "DOD",
+      "type": 0
+    },
+    {
+      "word": "ECA",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "ISA",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LIM",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "MIA",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "SID",
+      "type": 0
+    },
+    {
+      "word": "SIL",
+      "type": 0
+    },
+    {
+      "word": "SUM",
+      "type": 0
+    },
+    {
+      "word": "UMI",
+      "type": 0
+    },
+    {
+      "word": "AIDA",
+      "type": 0
+    },
+    {
+      "word": "ALAS",
+      "type": 0
+    },
+    {
+      "word": "ASIM",
+      "type": 0
+    },
+    {
+      "word": "CADE",
+      "type": 0
+    },
+    {
+      "word": "CALA",
+      "type": 0
+    },
+    {
+      "word": "CALI",
+      "type": 0
+    },
+    {
+      "word": "CEDA",
+      "type": 0
+    },
+    {
+      "word": "DADE",
+      "type": 0
+    },
+    {
+      "word": "DADO",
+      "type": 0
+    },
+    {
+      "word": "DALI",
+      "type": 0
+    },
+    {
+      "word": "LACE",
+      "type": 0
+    },
+    {
+      "word": "LIDA",
+      "type": 0
+    },
+    {
+      "word": "LIDO",
+      "type": 0
+    },
+    {
+      "word": "LISA",
+      "type": 0
+    },
+    {
+      "word": "MALA",
+      "type": 0
+    },
+    {
+      "word": "MALI",
+      "type": 0
+    },
+    {
+      "word": "MILA",
+      "type": 0
+    },
+    {
+      "word": "MISA",
+      "type": 0
+    },
+    {
+      "word": "MUSA",
+      "type": 0
+    },
+    {
+      "word": "SALA",
+      "type": 0
+    },
+    {
+      "word": "SIMI",
+      "type": 0
+    },
+    {
+      "word": "SLAM",
+      "type": 0
+    },
+    {
+      "word": "SLIM",
+      "type": 0
+    },
+    {
+      "word": "SUMI",
+      "type": 0
+    },
+    {
+      "word": "USAM",
+      "type": 0
+    },
+    {
+      "word": "ALADO",
+      "type": 0
+    },
+    {
+      "word": "ALISA",
+      "type": 0
+    },
+    {
+      "word": "CALAM",
+      "type": 0
+    },
+    {
+      "word": "IDADE",
+      "type": 0
+    },
+    {
+      "word": "LIDIA",
+      "type": 0
+    },
+    {
+      "word": "SALIM",
+      "type": 0
+    },
+    {
+      "word": "SUMIA",
+      "type": 0
+    },
+    {
+      "word": "ALADIM",
+      "type": 0
+    },
+    {
+      "word": "LIDADO",
+      "type": 0
+    },
+    {
+      "word": "SUMIDA",
+      "type": 0
+    },
+    {
+      "word": "SUMIDO",
+      "type": 0
+    },
+    {
+      "word": "UMIDADE",
+      "type": 0
+    }
+  ],
+  "letters": "USAM,MILS,IDAC,AODE",
+  "obstacles": []
 }

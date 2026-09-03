@@ -1,105 +1,259 @@
-﻿{
-    "id":  2329,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RUG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VEER",
-                             "type":  2
-                         },
-                         {
-                             "word":  "EERIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEESE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEVERE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "FOREVER",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ERIE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "REEVES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "REVERIE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ROVE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SEER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SERIE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VEERS",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "RERIE,OVEEG,FESRU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2329,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "BOB",
+      "type": 0
+    },
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "ARTS",
+      "type": 0
+    },
+    {
+      "word": "CART",
+      "type": 0
+    },
+    {
+      "word": "LIST",
+      "type": 0
+    },
+    {
+      "word": "PAIN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAS",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "AIS",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "AMP",
+      "type": 0
+    },
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "COO",
+      "type": 0
+    },
+    {
+      "word": "IMP",
+      "type": 0
+    },
+    {
+      "word": "LAC",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "ALTS",
+      "type": 0
+    },
+    {
+      "word": "AMIR",
+      "type": 0
+    },
+    {
+      "word": "AMIS",
+      "type": 0
+    },
+    {
+      "word": "ARBS",
+      "type": 0
+    },
+    {
+      "word": "BOBS",
+      "type": 0
+    },
+    {
+      "word": "BRAS",
+      "type": 0
+    },
+    {
+      "word": "BRIM",
+      "type": 0
+    },
+    {
+      "word": "BRIS",
+      "type": 0
+    },
+    {
+      "word": "CARB",
+      "type": 0
+    },
+    {
+      "word": "MART",
+      "type": 0
+    },
+    {
+      "word": "NISI",
+      "type": 0
+    },
+    {
+      "word": "PATS",
+      "type": 0
+    },
+    {
+      "word": "RAMI",
+      "type": 0
+    },
+    {
+      "word": "RAMP",
+      "type": 0
+    },
+    {
+      "word": "SAMP",
+      "type": 0
+    },
+    {
+      "word": "SILT",
+      "type": 0
+    },
+    {
+      "word": "SIMA",
+      "type": 0
+    },
+    {
+      "word": "SIMP",
+      "type": 0
+    },
+    {
+      "word": "TAIN",
+      "type": 0
+    },
+    {
+      "word": "TRAM",
+      "type": 0
+    },
+    {
+      "word": "ALIST",
+      "type": 0
+    },
+    {
+      "word": "CARBO",
+      "type": 0
+    },
+    {
+      "word": "CARBS",
+      "type": 0
+    },
+    {
+      "word": "CARTS",
+      "type": 0
+    },
+    {
+      "word": "MARTS",
+      "type": 0
+    },
+    {
+      "word": "SIMAR",
+      "type": 0
+    },
+    {
+      "word": "STAIN",
+      "type": 0
+    },
+    {
+      "word": "TRAMP",
+      "type": 0
+    }
+  ],
+  "letters": "OCALI,OBRTS,BSAAI,RIMPN",
+  "obstacles": []
 }

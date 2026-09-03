@@ -1,126 +1,211 @@
-﻿{
-    "id":  1710,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARSA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEFA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DERS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEDERAL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AFT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EDER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EFE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FAAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FARS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAF",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAF",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MTLL,EFAA,DERS",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1710,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "HAM",
+      "type": 0
+    },
+    {
+      "word": "KOY",
+      "type": 0
+    },
+    {
+      "word": "KİZ",
+      "type": 0
+    },
+    {
+      "word": "LİZ",
+      "type": 0
+    },
+    {
+      "word": "YAZ",
+      "type": 0
+    },
+    {
+      "word": "YOK",
+      "type": 0
+    },
+    {
+      "word": "AYAK",
+      "type": 0
+    },
+    {
+      "word": "KAZA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "AZA",
+      "type": 0
+    },
+    {
+      "word": "HAZ",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "KAZ",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "MAY",
+      "type": 0
+    },
+    {
+      "word": "MAİ",
+      "type": 0
+    },
+    {
+      "word": "OYA",
+      "type": 0
+    },
+    {
+      "word": "YAA",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "ZAK",
+      "type": 0
+    },
+    {
+      "word": "ZAM",
+      "type": 0
+    },
+    {
+      "word": "ZİL",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "ALİA",
+      "type": 0
+    },
+    {
+      "word": "KAKA",
+      "type": 0
+    },
+    {
+      "word": "KAMA",
+      "type": 0
+    },
+    {
+      "word": "KAYA",
+      "type": 0
+    },
+    {
+      "word": "KAYO",
+      "type": 0
+    },
+    {
+      "word": "LİAM",
+      "type": 0
+    },
+    {
+      "word": "MAKİ",
+      "type": 0
+    },
+    {
+      "word": "MAYA",
+      "type": 0
+    },
+    {
+      "word": "MAYO",
+      "type": 0
+    },
+    {
+      "word": "MAZİ",
+      "type": 0
+    },
+    {
+      "word": "MAİL",
+      "type": 0
+    },
+    {
+      "word": "OKAY",
+      "type": 0
+    },
+    {
+      "word": "YAKA",
+      "type": 0
+    },
+    {
+      "word": "YAMA",
+      "type": 0
+    },
+    {
+      "word": "YAZA",
+      "type": 0
+    },
+    {
+      "word": "İKAZ",
+      "type": 0
+    },
+    {
+      "word": "İZAH",
+      "type": 0
+    },
+    {
+      "word": "KAYAK",
+      "type": 0
+    },
+    {
+      "word": "AOYAMA",
+      "type": 0
+    },
+    {
+      "word": "KOYAMAZ",
+      "type": 0
+    }
+  ],
+  "letters": "LİZH,AAMA,OYAZ,KAKİ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

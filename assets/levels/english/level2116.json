@@ -1,129 +1,259 @@
-﻿{
-    "id":  2116,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRED",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIDER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UTTER",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BUTTER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARID",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BUTT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BUTTE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "IRATE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LADE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RATED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UTTAR",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "IDER,RATB,MLTU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2116,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "NOW",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "WIN",
+      "type": 0
+    },
+    {
+      "word": "YIN",
+      "type": 0
+    },
+    {
+      "word": "DEAF",
+      "type": 0
+    },
+    {
+      "word": "EVEN",
+      "type": 0
+    },
+    {
+      "word": "VOTE",
+      "type": 0
+    },
+    {
+      "word": "WINE",
+      "type": 0
+    },
+    {
+      "word": "ACTIVE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "APT",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "NIT",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "TOT",
+      "type": 0
+    },
+    {
+      "word": "VET",
+      "type": 0
+    },
+    {
+      "word": "WIT",
+      "type": 0
+    },
+    {
+      "word": "WON",
+      "type": 0
+    },
+    {
+      "word": "YON",
+      "type": 0
+    },
+    {
+      "word": "YOW",
+      "type": 0
+    },
+    {
+      "word": "DOTE",
+      "type": 0
+    },
+    {
+      "word": "DOVE",
+      "type": 0
+    },
+    {
+      "word": "ENOW",
+      "type": 0
+    },
+    {
+      "word": "FAIN",
+      "type": 0
+    },
+    {
+      "word": "INIA",
+      "type": 0
+    },
+    {
+      "word": "NEVE",
+      "type": 0
+    },
+    {
+      "word": "NEVI",
+      "type": 0
+    },
+    {
+      "word": "OVEN",
+      "type": 0
+    },
+    {
+      "word": "PACT",
+      "type": 0
+    },
+    {
+      "word": "TINE",
+      "type": 0
+    },
+    {
+      "word": "TOTE",
+      "type": 0
+    },
+    {
+      "word": "VETO",
+      "type": 0
+    },
+    {
+      "word": "VINE",
+      "type": 0
+    },
+    {
+      "word": "VINO",
+      "type": 0
+    },
+    {
+      "word": "WINO",
+      "type": 0
+    },
+    {
+      "word": "WIVE",
+      "type": 0
+    },
+    {
+      "word": "YONI",
+      "type": 0
+    },
+    {
+      "word": "ACTIN",
+      "type": 0
+    },
+    {
+      "word": "DOTED",
+      "type": 0
+    },
+    {
+      "word": "DOVEN",
+      "type": 0
+    },
+    {
+      "word": "OVINE",
+      "type": 0
+    },
+    {
+      "word": "TINEA",
+      "type": 0
+    },
+    {
+      "word": "TINED",
+      "type": 0
+    },
+    {
+      "word": "TOTED",
+      "type": 0
+    },
+    {
+      "word": "VINED",
+      "type": 0
+    },
+    {
+      "word": "VOTED",
+      "type": 0
+    },
+    {
+      "word": "WINED",
+      "type": 0
+    },
+    {
+      "word": "WIVED",
+      "type": 0
+    },
+    {
+      "word": "DEVOTE",
+      "type": 0
+    },
+    {
+      "word": "ACTINIA",
+      "type": 0
+    },
+    {
+      "word": "CAPTIVE",
+      "type": 0
+    },
+    {
+      "word": "DEVOTED",
+      "type": 0
+    },
+    {
+      "word": "ACTINIAE",
+      "type": 0
+    }
+  ],
+  "letters": "ETEDF,DOVEA,CTINI,APWOY",
+  "obstacles": []
 }

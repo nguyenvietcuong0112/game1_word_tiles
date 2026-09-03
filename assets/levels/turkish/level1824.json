@@ -1,49 +1,295 @@
-﻿{
-    "id":  1824,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ÇİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇETE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEMİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEÇİM",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "GEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TİM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ÇİM,ETE,STG",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1824,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "ULD",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "ZOR",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "DELİ",
+      "type": 0
+    },
+    {
+      "word": "KARA",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "UZAK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "ANU",
+      "type": 0
+    },
+    {
+      "word": "AOİ",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DİK",
+      "type": 0
+    },
+    {
+      "word": "DİL",
+      "type": 0
+    },
+    {
+      "word": "DİO",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KAZ",
+      "type": 0
+    },
+    {
+      "word": "KİD",
+      "type": 0
+    },
+    {
+      "word": "KİL",
+      "type": 0
+    },
+    {
+      "word": "LAY",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "LİK",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NAO",
+      "type": 0
+    },
+    {
+      "word": "NED",
+      "type": 0
+    },
+    {
+      "word": "NEY",
+      "type": 0
+    },
+    {
+      "word": "OAK",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "ROZ",
+      "type": 0
+    },
+    {
+      "word": "UNA",
+      "type": 0
+    },
+    {
+      "word": "UZA",
+      "type": 0
+    },
+    {
+      "word": "YAO",
+      "type": 0
+    },
+    {
+      "word": "YEN",
+      "type": 0
+    },
+    {
+      "word": "ZAK",
+      "type": 0
+    },
+    {
+      "word": "ZAR",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "AKAR",
+      "type": 0
+    },
+    {
+      "word": "AKİL",
+      "type": 0
+    },
+    {
+      "word": "ALLY",
+      "type": 0
+    },
+    {
+      "word": "DELL",
+      "type": 0
+    },
+    {
+      "word": "DİLE",
+      "type": 0
+    },
+    {
+      "word": "ELLY",
+      "type": 0
+    },
+    {
+      "word": "KARO",
+      "type": 0
+    },
+    {
+      "word": "KİLL",
+      "type": 0
+    },
+    {
+      "word": "NELL",
+      "type": 0
+    },
+    {
+      "word": "RAUL",
+      "type": 0
+    },
+    {
+      "word": "UZAR",
+      "type": 0
+    },
+    {
+      "word": "YALE",
+      "type": 0
+    },
+    {
+      "word": "ZARA",
+      "type": 0
+    },
+    {
+      "word": "ZORA",
+      "type": 0
+    },
+    {
+      "word": "İKAZ",
+      "type": 0
+    },
+    {
+      "word": "İLAN",
+      "type": 0
+    },
+    {
+      "word": "DELİK",
+      "type": 0
+    },
+    {
+      "word": "NELLY",
+      "type": 0
+    },
+    {
+      "word": "ZORAKİ",
+      "type": 0
+    },
+    {
+      "word": "DELANEY",
+      "type": 0
+    }
+  ],
+  "letters": "OZUNE,RAOAY,AKİLL,ULDEN",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

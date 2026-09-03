@@ -1,81 +1,131 @@
-﻿{
-    "id":  890,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ХНА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВИНА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛАМА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "МИНА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ГЛИНА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "МАЛИНА",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АМА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "АМАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "АМИН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ВИЛА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛАМ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛИВ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛИМАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "МАЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "МАЛИ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НАМ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НИЛ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "АМА,ЛИН,ГВХ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 890,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "КАН",
+      "type": 0
+    },
+    {
+      "word": "ЛЮК",
+      "type": 0
+    },
+    {
+      "word": "ОНА",
+      "type": 0
+    },
+    {
+      "word": "ФОН",
+      "type": 0
+    },
+    {
+      "word": "ЗНАК",
+      "type": 0
+    },
+    {
+      "word": "ЗНАЮ",
+      "type": 0
+    },
+    {
+      "word": "МИЛЬ",
+      "type": 0
+    },
+    {
+      "word": "ОКНО",
+      "type": 0
+    },
+    {
+      "word": "ОКОН",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ЗИМ",
+      "type": 0
+    },
+    {
+      "word": "ИЛЬ",
+      "type": 0
+    },
+    {
+      "word": "КОЛ",
+      "type": 0
+    },
+    {
+      "word": "КОН",
+      "type": 0
+    },
+    {
+      "word": "ЛИЗ",
+      "type": 0
+    },
+    {
+      "word": "ЛИМ",
+      "type": 0
+    },
+    {
+      "word": "ЛОК",
+      "type": 0
+    },
+    {
+      "word": "МИЛ",
+      "type": 0
+    },
+    {
+      "word": "НАК",
+      "type": 0
+    },
+    {
+      "word": "НАО",
+      "type": 0
+    },
+    {
+      "word": "НАЮ",
+      "type": 0
+    },
+    {
+      "word": "НОА",
+      "type": 0
+    },
+    {
+      "word": "ОКА",
+      "type": 0
+    },
+    {
+      "word": "ОКО",
+      "type": 0
+    },
+    {
+      "word": "ЮКО",
+      "type": 0
+    },
+    {
+      "word": "КОЛЬ",
+      "type": 0
+    },
+    {
+      "word": "КОНА",
+      "type": 0
+    }
+  ],
+  "letters": "НКОФ,ОАНМ,КЮЗИ,ОЛЬЛ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

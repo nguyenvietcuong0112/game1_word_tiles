@@ -1,49 +1,71 @@
-﻿{
-    "id":  1795,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÜT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HECE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KELLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEYLEK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KOKTEYL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "TEYEL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "HECEL,ÜTEYL,KKOKE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1795,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "HAD",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "SEY",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "YES",
+      "type": 0
+    },
+    {
+      "word": "DADI",
+      "type": 0
+    },
+    {
+      "word": "RENE",
+      "type": 0
+    },
+    {
+      "word": "SEYİ",
+      "type": 0
+    },
+    {
+      "word": "ÖĞREN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DAD",
+      "type": 0
+    },
+    {
+      "word": "ÖYİE",
+      "type": 0
+    }
+  ],
+  "letters": "İYES,EÖID,NĞDA,ERSH",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

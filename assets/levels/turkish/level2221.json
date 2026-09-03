@@ -1,81 +1,207 @@
-﻿{
-    "id":  2221,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASIK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KISA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIKI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SÜRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İMKAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEANS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KANSER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SANSÜR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAKIS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SAKIT",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ÜRE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TIESE,MKANR,İISSÜ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2221,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AİT",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "KİM",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "TİM",
+      "type": 0
+    },
+    {
+      "word": "ÇİK",
+      "type": 0
+    },
+    {
+      "word": "İKİ",
+      "type": 0
+    },
+    {
+      "word": "KİMİ",
+      "type": 0
+    },
+    {
+      "word": "MARS",
+      "type": 0
+    },
+    {
+      "word": "TAKİ",
+      "type": 0
+    },
+    {
+      "word": "İSMİ",
+      "type": 0
+    },
+    {
+      "word": "İŞTİ",
+      "type": 0
+    },
+    {
+      "word": "ŞİİR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "KAİ",
+      "type": 0
+    },
+    {
+      "word": "KİT",
+      "type": 0
+    },
+    {
+      "word": "KİŞ",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MAİ",
+      "type": 0
+    },
+    {
+      "word": "MİT",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAİ",
+      "type": 0
+    },
+    {
+      "word": "TAİ",
+      "type": 0
+    },
+    {
+      "word": "TİA",
+      "type": 0
+    },
+    {
+      "word": "TİK",
+      "type": 0
+    },
+    {
+      "word": "TİR",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "İMİ",
+      "type": 0
+    },
+    {
+      "word": "İRK",
+      "type": 0
+    },
+    {
+      "word": "İTİ",
+      "type": 0
+    },
+    {
+      "word": "İİK",
+      "type": 0
+    },
+    {
+      "word": "İİİ",
+      "type": 0
+    },
+    {
+      "word": "KATİ",
+      "type": 0
+    },
+    {
+      "word": "KİTİ",
+      "type": 0
+    },
+    {
+      "word": "MART",
+      "type": 0
+    },
+    {
+      "word": "MİKA",
+      "type": 0
+    },
+    {
+      "word": "MİMİ",
+      "type": 0
+    },
+    {
+      "word": "TİMİ",
+      "type": 0
+    },
+    {
+      "word": "KİMİM",
+      "type": 0
+    },
+    {
+      "word": "MARTİ",
+      "type": 0
+    },
+    {
+      "word": "MİMAR",
+      "type": 0
+    },
+    {
+      "word": "TAKİM",
+      "type": 0
+    },
+    {
+      "word": "İSMİM",
+      "type": 0
+    },
+    {
+      "word": "İŞTİR",
+      "type": 0
+    },
+    {
+      "word": "ARTİST",
+      "type": 0
+    },
+    {
+      "word": "TAKİMİ",
+      "type": 0
+    },
+    {
+      "word": "İSMİMİ",
+      "type": 0
+    },
+    {
+      "word": "ARTİSTİK",
+      "type": 0
+    }
+  ],
+  "letters": "KİMŞT,ATİİİ,İSMKR,TRAİÇ",
+  "obstacles": []
 }

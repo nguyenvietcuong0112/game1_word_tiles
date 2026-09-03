@@ -1,85 +1,123 @@
-﻿{
-    "id":  760,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ВОР",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛОВ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПАР",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПОЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВОЛЯ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ДВОР",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПОРА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РОЛЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПАРОЛЬ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АРО",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ВОЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ВЯЛО",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛОПАРЬ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ЛОР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОВД",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОРА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "РОВ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "РОЛ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "АРЬ,ПОЛ,ДВЯ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 760,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ДНА",
+      "type": 0
+    },
+    {
+      "word": "НАД",
+      "type": 0
+    },
+    {
+      "word": "ОНА",
+      "type": 0
+    },
+    {
+      "word": "ПРО",
+      "type": 0
+    },
+    {
+      "word": "РАН",
+      "type": 0
+    },
+    {
+      "word": "ДАНА",
+      "type": 0
+    },
+    {
+      "word": "НАДЯ",
+      "type": 0
+    },
+    {
+      "word": "РОЖАТЬ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АНА",
+      "type": 0
+    },
+    {
+      "word": "АНЯ",
+      "type": 0
+    },
+    {
+      "word": "ДАН",
+      "type": 0
+    },
+    {
+      "word": "НАН",
+      "type": 0
+    },
+    {
+      "word": "НАО",
+      "type": 0
+    },
+    {
+      "word": "НДА",
+      "type": 0
+    },
+    {
+      "word": "ОРА",
+      "type": 0
+    },
+    {
+      "word": "РАЯ",
+      "type": 0
+    },
+    {
+      "word": "РОЯ",
+      "type": 0
+    },
+    {
+      "word": "ЯДА",
+      "type": 0
+    },
+    {
+      "word": "ЯНА",
+      "type": 0
+    },
+    {
+      "word": "ДАНО",
+      "type": 0
+    },
+    {
+      "word": "ЖАТЬ",
+      "type": 0
+    },
+    {
+      "word": "НАНА",
+      "type": 0
+    },
+    {
+      "word": "РАЯН",
+      "type": 0
+    },
+    {
+      "word": "РОЖА",
+      "type": 0
+    }
+  ],
+  "letters": "НДАН,АЯНО,РОАЬ,ПЖАТ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

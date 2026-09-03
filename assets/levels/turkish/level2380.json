@@ -1,73 +1,139 @@
-﻿{
-    "id":  2380,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRAM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NUMARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARANGOZ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "NARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UMAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UMAN,MARG,UNZO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2380,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "DEK",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "GEÇ",
+      "type": 0
+    },
+    {
+      "word": "NDE",
+      "type": 0
+    },
+    {
+      "word": "ÖDE",
+      "type": 0
+    },
+    {
+      "word": "İSİ",
+      "type": 0
+    },
+    {
+      "word": "İÇİ",
+      "type": 0
+    },
+    {
+      "word": "DEDİ",
+      "type": 0
+    },
+    {
+      "word": "DEKİ",
+      "type": 0
+    },
+    {
+      "word": "HONG",
+      "type": 0
+    },
+    {
+      "word": "KEDİ",
+      "type": 0
+    },
+    {
+      "word": "BENDE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DEH",
+      "type": 0
+    },
+    {
+      "word": "DİK",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "KİD",
+      "type": 0
+    },
+    {
+      "word": "NED",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "İKE",
+      "type": 0
+    },
+    {
+      "word": "İÇE",
+      "type": 0
+    },
+    {
+      "word": "İİK",
+      "type": 0
+    },
+    {
+      "word": "DEDİK",
+      "type": 0
+    },
+    {
+      "word": "DENGE",
+      "type": 0
+    },
+    {
+      "word": "DENGİ",
+      "type": 0
+    },
+    {
+      "word": "NDEKİ",
+      "type": 0
+    },
+    {
+      "word": "BENDEKİ",
+      "type": 0
+    }
+  ],
+  "letters": "KİİÇE,EDSİG,DBDEN,NEÖHO",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

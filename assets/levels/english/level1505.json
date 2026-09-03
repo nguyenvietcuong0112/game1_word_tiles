@@ -1,53 +1,187 @@
-﻿{
-    "id":  1505,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIARY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "TOR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TID,OAM,RRY",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1505,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "FAR",
+      "type": 0
+    },
+    {
+      "word": "TRY",
+      "type": 0
+    },
+    {
+      "word": "PARA",
+      "type": 0
+    },
+    {
+      "word": "MODIFY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "DAB",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "FAD",
+      "type": 0
+    },
+    {
+      "word": "FID",
+      "type": 0
+    },
+    {
+      "word": "MOC",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "BRAT",
+      "type": 0
+    },
+    {
+      "word": "CARB",
+      "type": 0
+    },
+    {
+      "word": "CODA",
+      "type": 0
+    },
+    {
+      "word": "COMP",
+      "type": 0
+    },
+    {
+      "word": "DART",
+      "type": 0
+    },
+    {
+      "word": "FADO",
+      "type": 0
+    },
+    {
+      "word": "FART",
+      "type": 0
+    },
+    {
+      "word": "FICO",
+      "type": 0
+    },
+    {
+      "word": "FIDO",
+      "type": 0
+    },
+    {
+      "word": "MODI",
+      "type": 0
+    },
+    {
+      "word": "ODIC",
+      "type": 0
+    },
+    {
+      "word": "TRAD",
+      "type": 0
+    },
+    {
+      "word": "CARAT",
+      "type": 0
+    },
+    {
+      "word": "CODIFY",
+      "type": 0
+    }
+  ],
+  "letters": "CIFY,ODAR,MPBT,CARA",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

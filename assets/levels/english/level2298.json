@@ -1,109 +1,263 @@
-﻿{
-    "id":  2298,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DENY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HYPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PITY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TYPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIPEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRIPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THIRST",
-                             "type":  2
-                         },
-                         {
-                             "word":  "THIRSTY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "HITS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HYPED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PITS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "STIPE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "THY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TIP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TYNE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TYPED",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "STYN,RIPE,THYD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2298,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "SAW",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "SUB",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "WAS",
+      "type": 0
+    },
+    {
+      "word": "WEB",
+      "type": 0
+    },
+    {
+      "word": "ABUSE",
+      "type": 0
+    },
+    {
+      "word": "LEAGUE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "AWA",
+      "type": 0
+    },
+    {
+      "word": "AWE",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "BUS",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "GAE",
+      "type": 0
+    },
+    {
+      "word": "HEW",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LEU",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAG",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SEW",
+      "type": 0
+    },
+    {
+      "word": "WAB",
+      "type": 0
+    },
+    {
+      "word": "WAE",
+      "type": 0
+    },
+    {
+      "word": "AGUE",
+      "type": 0
+    },
+    {
+      "word": "AWES",
+      "type": 0
+    },
+    {
+      "word": "EASE",
+      "type": 0
+    },
+    {
+      "word": "GLEE",
+      "type": 0
+    },
+    {
+      "word": "HEBE",
+      "type": 0
+    },
+    {
+      "word": "HEEL",
+      "type": 0
+    },
+    {
+      "word": "LEAS",
+      "type": 0
+    },
+    {
+      "word": "LEES",
+      "type": 0
+    },
+    {
+      "word": "SEEL",
+      "type": 0
+    },
+    {
+      "word": "SHES",
+      "type": 0
+    },
+    {
+      "word": "SUBA",
+      "type": 0
+    },
+    {
+      "word": "WASH",
+      "type": 0
+    },
+    {
+      "word": "ABELE",
+      "type": 0
+    },
+    {
+      "word": "AGLEE",
+      "type": 0
+    },
+    {
+      "word": "AGUES",
+      "type": 0
+    },
+    {
+      "word": "ASHES",
+      "type": 0
+    },
+    {
+      "word": "AWASH",
+      "type": 0
+    },
+    {
+      "word": "BELGA",
+      "type": 0
+    },
+    {
+      "word": "EAGLE",
+      "type": 0
+    },
+    {
+      "word": "GLEBA",
+      "type": 0
+    },
+    {
+      "word": "GLEBE",
+      "type": 0
+    },
+    {
+      "word": "GLEES",
+      "type": 0
+    },
+    {
+      "word": "HEBES",
+      "type": 0
+    },
+    {
+      "word": "LEASE",
+      "type": 0
+    },
+    {
+      "word": "ABELES",
+      "type": 0
+    },
+    {
+      "word": "BELGAS",
+      "type": 0
+    },
+    {
+      "word": "EAGLES",
+      "type": 0
+    },
+    {
+      "word": "GLEBAE",
+      "type": 0
+    },
+    {
+      "word": "GLEBES",
+      "type": 0
+    },
+    {
+      "word": "WASHES",
+      "type": 0
+    },
+    {
+      "word": "LEAGUES",
+      "type": 0
+    }
+  ],
+  "letters": "EUSEU,ABELG,WEHEA,ASHES",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

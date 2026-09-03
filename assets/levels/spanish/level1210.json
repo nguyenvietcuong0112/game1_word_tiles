@@ -1,105 +1,155 @@
-﻿{
-    "id":  1210,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CRAC",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CASAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CLARA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "REGLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SACAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARREGLAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CERRA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LARA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RASA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RASAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REGLAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SACA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CARA,ASCL,RREG",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1210,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "ADAM",
+      "type": 0
+    },
+    {
+      "word": "ASMA",
+      "type": 0
+    },
+    {
+      "word": "CADA",
+      "type": 0
+    },
+    {
+      "word": "CAMA",
+      "type": 0
+    },
+    {
+      "word": "DAMA",
+      "type": 0
+    },
+    {
+      "word": "HUBO",
+      "type": 0
+    },
+    {
+      "word": "BOSCH",
+      "type": 0
+    },
+    {
+      "word": "LLAMA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "CHU",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "HUA",
+      "type": 0
+    },
+    {
+      "word": "HUB",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LLA",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "SHU",
+      "type": 0
+    },
+    {
+      "word": "CALL",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "MACH",
+      "type": 0
+    },
+    {
+      "word": "MALL",
+      "type": 0
+    },
+    {
+      "word": "SLAM",
+      "type": 0
+    },
+    {
+      "word": "MACHU",
+      "type": 0
+    },
+    {
+      "word": "MADHU",
+      "type": 0
+    },
+    {
+      "word": "LLAMAD",
+      "type": 0
+    }
+  ],
+  "letters": "ASMA,UHDA,BCAM,OSLL",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

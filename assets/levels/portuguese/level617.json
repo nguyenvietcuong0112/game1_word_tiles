@@ -1,85 +1,267 @@
-﻿{
-    "id":  617,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VÔO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAGAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAGAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PALCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAGARTO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AGAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ALAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "APO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COADO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GALAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GARVÔ,ALTPO,PCOAD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 617,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "PAI",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "SEM",
+      "type": 0
+    },
+    {
+      "word": "TAL",
+      "type": 0
+    },
+    {
+      "word": "ESTA",
+      "type": 0
+    },
+    {
+      "word": "MEIO",
+      "type": 0
+    },
+    {
+      "word": "MESA",
+      "type": 0
+    },
+    {
+      "word": "PAPAI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "AIE",
+      "type": 0
+    },
+    {
+      "word": "APA",
+      "type": 0
+    },
+    {
+      "word": "APO",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "EIA",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "ITA",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "MEI",
+      "type": 0
+    },
+    {
+      "word": "MES",
+      "type": 0
+    },
+    {
+      "word": "MOI",
+      "type": 0
+    },
+    {
+      "word": "OIE",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "PLA",
+      "type": 0
+    },
+    {
+      "word": "POM",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "TIA",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "TIO",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "TSA",
+      "type": 0
+    },
+    {
+      "word": "ALMA",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "ARAS",
+      "type": 0
+    },
+    {
+      "word": "ARTS",
+      "type": 0
+    },
+    {
+      "word": "EITA",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "MART",
+      "type": 0
+    },
+    {
+      "word": "MEIA",
+      "type": 0
+    },
+    {
+      "word": "PAPA",
+      "type": 0
+    },
+    {
+      "word": "PAPO",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "SEIO",
+      "type": 0
+    },
+    {
+      "word": "TRAS",
+      "type": 0
+    },
+    {
+      "word": "AARTI",
+      "type": 0
+    },
+    {
+      "word": "APOIA",
+      "type": 0
+    },
+    {
+      "word": "APOIE",
+      "type": 0
+    },
+    {
+      "word": "ARTIE",
+      "type": 0
+    },
+    {
+      "word": "ASTRA",
+      "type": 0
+    },
+    {
+      "word": "ATRAS",
+      "type": 0
+    },
+    {
+      "word": "MARTA",
+      "type": 0
+    },
+    {
+      "word": "MARTI",
+      "type": 0
+    },
+    {
+      "word": "MOITA",
+      "type": 0
+    },
+    {
+      "word": "RASTA",
+      "type": 0
+    },
+    {
+      "word": "SEITA",
+      "type": 0
+    },
+    {
+      "word": "APOIEM",
+      "type": 0
+    },
+    {
+      "word": "ATRASE",
+      "type": 0
+    },
+    {
+      "word": "MESTRA",
+      "type": 0
+    },
+    {
+      "word": "ATRASEI",
+      "type": 0
+    },
+    {
+      "word": "ATRASEM",
+      "type": 0
+    }
+  ],
+  "letters": "APLM,PAAA,OITR,MESA",
+  "obstacles": []
 }

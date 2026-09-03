@@ -1,81 +1,247 @@
-﻿{
-    "id":  1217,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "NOZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASNO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CACO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CASO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOCA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ISCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SACA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SACO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SINO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACASO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CASSINO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CACA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ISSO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NISSO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SACADO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOCA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "INOZ,SSOD,CACA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1217,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "FAZ",
+      "type": 0
+    },
+    {
+      "word": "LEI",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "PUT",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "TUA",
+      "type": 0
+    },
+    {
+      "word": "TINA",
+      "type": 0
+    },
+    {
+      "word": "MÚTUA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "EIN",
+      "type": 0
+    },
+    {
+      "word": "FAN",
+      "type": 0
+    },
+    {
+      "word": "FAR",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "INO",
+      "type": 0
+    },
+    {
+      "word": "ITO",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "MEI",
+      "type": 0
+    },
+    {
+      "word": "NAU",
+      "type": 0
+    },
+    {
+      "word": "NAZ",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "ONI",
+      "type": 0
+    },
+    {
+      "word": "PUA",
+      "type": 0
+    },
+    {
+      "word": "RAF",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "ZAF",
+      "type": 0
+    },
+    {
+      "word": "ZAN",
+      "type": 0
+    },
+    {
+      "word": "ARON",
+      "type": 0
+    },
+    {
+      "word": "FARO",
+      "type": 0
+    },
+    {
+      "word": "MEIN",
+      "type": 0
+    },
+    {
+      "word": "NAZI",
+      "type": 0
+    },
+    {
+      "word": "NORA",
+      "type": 0
+    },
+    {
+      "word": "PUTZ",
+      "type": 0
+    },
+    {
+      "word": "RAFA",
+      "type": 0
+    },
+    {
+      "word": "RANA",
+      "type": 0
+    },
+    {
+      "word": "RANI",
+      "type": 0
+    },
+    {
+      "word": "RONA",
+      "type": 0
+    },
+    {
+      "word": "TINO",
+      "type": 0
+    },
+    {
+      "word": "TONA",
+      "type": 0
+    },
+    {
+      "word": "TONI",
+      "type": 0
+    },
+    {
+      "word": "TORA",
+      "type": 0
+    },
+    {
+      "word": "TUAN",
+      "type": 0
+    },
+    {
+      "word": "ZINA",
+      "type": 0
+    },
+    {
+      "word": "ZITO",
+      "type": 0
+    },
+    {
+      "word": "EINAR",
+      "type": 0
+    },
+    {
+      "word": "ELTON",
+      "type": 0
+    },
+    {
+      "word": "LEITO",
+      "type": 0
+    },
+    {
+      "word": "LEITOR",
+      "type": 0
+    },
+    {
+      "word": "MELTON",
+      "type": 0
+    },
+    {
+      "word": "ROTINA",
+      "type": 0
+    },
+    {
+      "word": "LEITORA",
+      "type": 0
+    }
+  ],
+  "letters": "RAFP,ONAU,TIZT,LEMÚ",
+  "obstacles": []
 }

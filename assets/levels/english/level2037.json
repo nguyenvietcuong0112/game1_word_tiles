@@ -1,114 +1,167 @@
-﻿{
-    "id":  2037,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANTI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLAME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENEMY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LYME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TIAN",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "YMEN,LAIE,BNTH",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2037,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BEE",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "WAX",
+      "type": 0
+    },
+    {
+      "word": "BEER",
+      "type": 0
+    },
+    {
+      "word": "MESS",
+      "type": 0
+    },
+    {
+      "word": "POEM",
+      "type": 0
+    },
+    {
+      "word": "POSE",
+      "type": 0
+    },
+    {
+      "word": "POEMS",
+      "type": 0
+    },
+    {
+      "word": "BREEZE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AXE",
+      "type": 0
+    },
+    {
+      "word": "BOP",
+      "type": 0
+    },
+    {
+      "word": "EME",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "OBE",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "SOP",
+      "type": 0
+    },
+    {
+      "word": "ZEE",
+      "type": 0
+    },
+    {
+      "word": "BREE",
+      "type": 0
+    },
+    {
+      "word": "EMES",
+      "type": 0
+    },
+    {
+      "word": "EPOS",
+      "type": 0
+    },
+    {
+      "word": "MEZE",
+      "type": 0
+    },
+    {
+      "word": "OPES",
+      "type": 0
+    },
+    {
+      "word": "PESO",
+      "type": 0
+    },
+    {
+      "word": "ROES",
+      "type": 0
+    },
+    {
+      "word": "SEME",
+      "type": 0
+    },
+    {
+      "word": "EMEER",
+      "type": 0
+    },
+    {
+      "word": "MEZES",
+      "type": 0
+    },
+    {
+      "word": "REBOP",
+      "type": 0
+    },
+    {
+      "word": "SOBER",
+      "type": 0
+    },
+    {
+      "word": "BREEZES",
+      "type": 0
+    }
+  ],
+  "letters": "SEZRB,SMEEE,RSOBX,OEPWA",
+  "obstacles": []
 }

@@ -1,53 +1,107 @@
-﻿{
-    "id":  1050,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BANK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BANKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇOBAN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKÇA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ANKA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OBA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇAK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NKA,AÇÇ,BOL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1050,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DÜK",
+      "type": 0
+    },
+    {
+      "word": "EEG",
+      "type": 0
+    },
+    {
+      "word": "KEZ",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "VUR",
+      "type": 0
+    },
+    {
+      "word": "ZAM",
+      "type": 0
+    },
+    {
+      "word": "ZEKE",
+      "type": 0
+    },
+    {
+      "word": "KEMAN",
+      "type": 0
+    },
+    {
+      "word": "VURMA",
+      "type": 0
+    },
+    {
+      "word": "GÖMDÜM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "GÖM",
+      "type": 0
+    },
+    {
+      "word": "NAZ",
+      "type": 0
+    },
+    {
+      "word": "RUM",
+      "type": 0
+    },
+    {
+      "word": "ZAN",
+      "type": 0
+    },
+    {
+      "word": "KEZA",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "GÖMDÜ",
+      "type": 0
+    },
+    {
+      "word": "GÖMDÜK",
+      "type": 0
+    },
+    {
+      "word": "VURMAN",
+      "type": 0
+    },
+    {
+      "word": "VURMAZ",
+      "type": 0
+    }
+  ],
+  "letters": "EEGÖ,KÜDM,EMRU,ZANV",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

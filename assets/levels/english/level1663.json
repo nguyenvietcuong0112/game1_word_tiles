@@ -1,106 +1,203 @@
-﻿{
-    "id":  1663,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RACCOON",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AVANT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AVON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COON",
-                            "type":  1
-                        },
-                        {
-                            "word":  "NANO",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "OONK,CVAN,CART",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1663,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "HOST",
+      "type": 0
+    },
+    {
+      "word": "RATE",
+      "type": 0
+    },
+    {
+      "word": "TEST",
+      "type": 0
+    },
+    {
+      "word": "CHOSE",
+      "type": 0
+    },
+    {
+      "word": "RATES",
+      "type": 0
+    },
+    {
+      "word": "GLITTER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIT",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "HOG",
+      "type": 0
+    },
+    {
+      "word": "LIT",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "TIL",
+      "type": 0
+    },
+    {
+      "word": "AITS",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "HOSE",
+      "type": 0
+    },
+    {
+      "word": "LIER",
+      "type": 0
+    },
+    {
+      "word": "LITS",
+      "type": 0
+    },
+    {
+      "word": "OSES",
+      "type": 0
+    },
+    {
+      "word": "RETE",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SETT",
+      "type": 0
+    },
+    {
+      "word": "TARE",
+      "type": 0
+    },
+    {
+      "word": "TIER",
+      "type": 0
+    },
+    {
+      "word": "TIES",
+      "type": 0
+    },
+    {
+      "word": "ARETE",
+      "type": 0
+    },
+    {
+      "word": "HOSES",
+      "type": 0
+    },
+    {
+      "word": "SETTS",
+      "type": 0
+    },
+    {
+      "word": "STIES",
+      "type": 0
+    },
+    {
+      "word": "TERAI",
+      "type": 0
+    },
+    {
+      "word": "ARETES",
+      "type": 0
+    },
+    {
+      "word": "CHOSES",
+      "type": 0
+    },
+    {
+      "word": "HOGTIE",
+      "type": 0
+    },
+    {
+      "word": "LITTER",
+      "type": 0
+    },
+    {
+      "word": "RETEST",
+      "type": 0
+    },
+    {
+      "word": "TESTIER",
+      "type": 0
+    }
+  ],
+  "letters": "RAIT,ETES,ITSC,LGOH",
+  "obstacles": []
 }

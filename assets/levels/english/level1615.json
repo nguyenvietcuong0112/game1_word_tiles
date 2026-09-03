@@ -1,65 +1,179 @@
-﻿{
-    "id":  1615,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TINT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CHAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STINT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TONIC",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AINT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CHAI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TONICS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ONT,TIA,SCH",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1615,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "JOB",
+      "type": 0
+    },
+    {
+      "word": "JOE",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "TASK",
+      "type": 0
+    },
+    {
+      "word": "CREEK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "GEE",
+      "type": 0
+    },
+    {
+      "word": "KEG",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "BRAS",
+      "type": 0
+    },
+    {
+      "word": "BRAT",
+      "type": 0
+    },
+    {
+      "word": "BREE",
+      "type": 0
+    },
+    {
+      "word": "DEER",
+      "type": 0
+    },
+    {
+      "word": "EGER",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "ERRS",
+      "type": 0
+    },
+    {
+      "word": "GEED",
+      "type": 0
+    },
+    {
+      "word": "REED",
+      "type": 0
+    },
+    {
+      "word": "REEK",
+      "type": 0
+    },
+    {
+      "word": "TARE",
+      "type": 0
+    },
+    {
+      "word": "BREED",
+      "type": 0
+    },
+    {
+      "word": "ERRED",
+      "type": 0
+    },
+    {
+      "word": "SAREE",
+      "type": 0
+    },
+    {
+      "word": "TARRE",
+      "type": 0
+    },
+    {
+      "word": "TARRED",
+      "type": 0
+    }
+  ],
+  "letters": "JOBT,GERA,EERS,KDCK",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

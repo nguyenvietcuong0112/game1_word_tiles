@@ -1,41 +1,99 @@
-﻿{
-    "id":  1465,
-    "width":  4,
-    "height":  2,
-    "target_words":  [
-                         {
-                             "word":  "ATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PİDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İDEAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İPTAL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EDİP",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DEAL,İPTA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1465,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "DÜZ",
+      "type": 0
+    },
+    {
+      "word": "EEG",
+      "type": 0
+    },
+    {
+      "word": "EVİ",
+      "type": 0
+    },
+    {
+      "word": "LUC",
+      "type": 0
+    },
+    {
+      "word": "LİV",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "SÖZ",
+      "type": 0
+    },
+    {
+      "word": "SÖZÜ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "LUO",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "VEE",
+      "type": 0
+    },
+    {
+      "word": "ÖZÜ",
+      "type": 0
+    },
+    {
+      "word": "DEVİ",
+      "type": 0
+    },
+    {
+      "word": "EDGE",
+      "type": 0
+    },
+    {
+      "word": "EVİL",
+      "type": 0
+    },
+    {
+      "word": "LİVE",
+      "type": 0
+    },
+    {
+      "word": "DEVİL",
+      "type": 0
+    }
+  ],
+  "letters": "CMZÖ,UOÜS,LRDG,İVEE",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

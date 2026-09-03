@@ -1,61 +1,155 @@
-﻿{
-    "id":  680,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OJE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOLYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEKOLTE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DNAR,EJTE,KOLY",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 680,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ELE",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "HELE",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "AÇIĞA",
+      "type": 0
+    },
+    {
+      "word": "ELENA",
+      "type": 0
+    },
+    {
+      "word": "ELLEN",
+      "type": 0
+    },
+    {
+      "word": "HELEN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "AÇI",
+      "type": 0
+    },
+    {
+      "word": "AĞI",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "LAV",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "VAL",
+      "type": 0
+    },
+    {
+      "word": "ÇIĞ",
+      "type": 0
+    },
+    {
+      "word": "ALEV",
+      "type": 0
+    },
+    {
+      "word": "ELLA",
+      "type": 0
+    },
+    {
+      "word": "ELLE",
+      "type": 0
+    },
+    {
+      "word": "LENA",
+      "type": 0
+    },
+    {
+      "word": "NELL",
+      "type": 0
+    },
+    {
+      "word": "VALE",
+      "type": 0
+    },
+    {
+      "word": "ALLAN",
+      "type": 0
+    },
+    {
+      "word": "ALLEN",
+      "type": 0
+    },
+    {
+      "word": "NELLE",
+      "type": 0
+    },
+    {
+      "word": "VALLA",
+      "type": 0
+    },
+    {
+      "word": "HELENA",
+      "type": 0
+    },
+    {
+      "word": "HELENE",
+      "type": 0
+    }
+  ],
+  "letters": "ENEH,ĞALE,IELA,ÇAEV",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,102 +1,215 @@
-﻿{
-    "id":  1358,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OFF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIRM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FORM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AFFIRM",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "FAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GOAD",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RIFF",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "FIRM,FAOG,ODFI",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1358,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "SUN",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "CARD",
+      "type": 0
+    },
+    {
+      "word": "CARS",
+      "type": 0
+    },
+    {
+      "word": "DOOR",
+      "type": 0
+    },
+    {
+      "word": "NEAR",
+      "type": 0
+    },
+    {
+      "word": "NERD",
+      "type": 0
+    },
+    {
+      "word": "SOON",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "DUN",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "NOO",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "NUS",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SOD",
+      "type": 0
+    },
+    {
+      "word": "UDO",
+      "type": 0
+    },
+    {
+      "word": "ACNE",
+      "type": 0
+    },
+    {
+      "word": "ARSE",
+      "type": 0
+    },
+    {
+      "word": "DOSE",
+      "type": 0
+    },
+    {
+      "word": "DUNE",
+      "type": 0
+    },
+    {
+      "word": "EARS",
+      "type": 0
+    },
+    {
+      "word": "OSES",
+      "type": 0
+    },
+    {
+      "word": "ROOD",
+      "type": 0
+    },
+    {
+      "word": "SEAR",
+      "type": 0
+    },
+    {
+      "word": "UDOS",
+      "type": 0
+    },
+    {
+      "word": "USES",
+      "type": 0
+    },
+    {
+      "word": "ACNES",
+      "type": 0
+    },
+    {
+      "word": "ARSES",
+      "type": 0
+    },
+    {
+      "word": "CARSE",
+      "type": 0
+    },
+    {
+      "word": "DOORS",
+      "type": 0
+    },
+    {
+      "word": "DOSES",
+      "type": 0
+    },
+    {
+      "word": "DUNES",
+      "type": 0
+    },
+    {
+      "word": "ERSES",
+      "type": 0
+    },
+    {
+      "word": "NEARS",
+      "type": 0
+    },
+    {
+      "word": "NOOSE",
+      "type": 0
+    },
+    {
+      "word": "ROOSE",
+      "type": 0
+    },
+    {
+      "word": "SEARS",
+      "type": 0
+    },
+    {
+      "word": "CARSES",
+      "type": 0
+    },
+    {
+      "word": "NOOSES",
+      "type": 0
+    },
+    {
+      "word": "ROOSES",
+      "type": 0
+    },
+    {
+      "word": "SOONER",
+      "type": 0
+    },
+    {
+      "word": "SOONERS",
+      "type": 0
+    }
+  ],
+  "letters": "CNUD,AESO,RSRO,DREN",
+  "obstacles": []
 }

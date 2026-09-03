@@ -1,134 +1,195 @@
-﻿{
-    "id":  1695,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LİRA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YARA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SAYDAM",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARTMA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İDAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MARAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YASMA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SMTY,AARA,YDİL",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  8,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1695,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "BAY",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "YAZ",
+      "type": 0
+    },
+    {
+      "word": "YLA",
+      "type": 0
+    },
+    {
+      "word": "YLE",
+      "type": 0
+    },
+    {
+      "word": "EDİN",
+      "type": 0
+    },
+    {
+      "word": "UZAY",
+      "type": 0
+    },
+    {
+      "word": "İNŞA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "AMY",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "AZA",
+      "type": 0
+    },
+    {
+      "word": "BAZ",
+      "type": 0
+    },
+    {
+      "word": "DEA",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DİN",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NED",
+      "type": 0
+    },
+    {
+      "word": "UZA",
+      "type": 0
+    },
+    {
+      "word": "YAŞ",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "AYLA",
+      "type": 0
+    },
+    {
+      "word": "BAYA",
+      "type": 0
+    },
+    {
+      "word": "DİNE",
+      "type": 0
+    },
+    {
+      "word": "ENİD",
+      "type": 0
+    },
+    {
+      "word": "LAMB",
+      "type": 0
+    },
+    {
+      "word": "MALT",
+      "type": 0
+    },
+    {
+      "word": "YAZA",
+      "type": 0
+    },
+    {
+      "word": "LAMBA",
+      "type": 0
+    },
+    {
+      "word": "LYMAN",
+      "type": 0
+    },
+    {
+      "word": "UZAYA",
+      "type": 0
+    }
+  ],
+  "letters": "UZAB,ŞAYM,NELA,İDTN",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

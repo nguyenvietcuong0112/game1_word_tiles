@@ -1,85 +1,227 @@
-﻿{
-    "id":  790,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GENTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MENTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGENTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMANTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FUENTE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMENA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FUE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEGA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MENA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEMA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "FUTE,GENM,AMAA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 790,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "POR",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "ACTO",
+      "type": 0
+    },
+    {
+      "word": "ARMA",
+      "type": 0
+    },
+    {
+      "word": "RATO",
+      "type": 0
+    },
+    {
+      "word": "RAZA",
+      "type": 0
+    },
+    {
+      "word": "CATHY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACP",
+      "type": 0
+    },
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "OTA",
+      "type": 0
+    },
+    {
+      "word": "POT",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "TAC",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TOP",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "ZAR",
+      "type": 0
+    },
+    {
+      "word": "ACTA",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "AZAR",
+      "type": 0
+    },
+    {
+      "word": "CATH",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "MATO",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "RAYA",
+      "type": 0
+    },
+    {
+      "word": "ROTA",
+      "type": 0
+    },
+    {
+      "word": "TAMA",
+      "type": 0
+    },
+    {
+      "word": "TARA",
+      "type": 0
+    },
+    {
+      "word": "TARO",
+      "type": 0
+    },
+    {
+      "word": "TORA",
+      "type": 0
+    },
+    {
+      "word": "ZARA",
+      "type": 0
+    },
+    {
+      "word": "ACTOR",
+      "type": 0
+    },
+    {
+      "word": "AMARO",
+      "type": 0
+    },
+    {
+      "word": "AMATO",
+      "type": 0
+    },
+    {
+      "word": "ARMAR",
+      "type": 0
+    },
+    {
+      "word": "MARAT",
+      "type": 0
+    },
+    {
+      "word": "TACTO",
+      "type": 0
+    },
+    {
+      "word": "TAMRA",
+      "type": 0
+    },
+    {
+      "word": "ZAARA",
+      "type": 0
+    }
+  ],
+  "letters": "PCAT,OTYH,RAAZ,AMRA",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

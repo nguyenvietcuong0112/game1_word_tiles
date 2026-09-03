@@ -1,93 +1,119 @@
-﻿{
-    "id":  940,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIC",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CENA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CITA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DECIDIDO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACEDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CEDA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CEDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DACIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DITA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "IDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ION",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OCENA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAC",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DEDOA,ACION,TIDCE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 940,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EGO",
+      "type": 0
+    },
+    {
+      "word": "LEO",
+      "type": 0
+    },
+    {
+      "word": "OLD",
+      "type": 0
+    },
+    {
+      "word": "CREÍ",
+      "type": 0
+    },
+    {
+      "word": "DILO",
+      "type": 0
+    },
+    {
+      "word": "CRUEL",
+      "type": 0
+    },
+    {
+      "word": "LLEGO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "CEO",
+      "type": 0
+    },
+    {
+      "word": "CRE",
+      "type": 0
+    },
+    {
+      "word": "DIL",
+      "type": 0
+    },
+    {
+      "word": "DOG",
+      "type": 0
+    },
+    {
+      "word": "DOO",
+      "type": 0
+    },
+    {
+      "word": "ELE",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GEO",
+      "type": 0
+    },
+    {
+      "word": "GOD",
+      "type": 0
+    },
+    {
+      "word": "GOO",
+      "type": 0
+    },
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "OLI",
+      "type": 0
+    },
+    {
+      "word": "OOD",
+      "type": 0
+    },
+    {
+      "word": "REÍ",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "LEGO",
+      "type": 0
+    }
+  ],
+  "letters": "ERUL,ÍCEL,ILOE,DDOG",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

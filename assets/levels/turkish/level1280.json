@@ -1,93 +1,83 @@
-﻿{
-    "id":  1280,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PATİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRİZ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SARP",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ARAZİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PARAZİT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARAZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARİZA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SARA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SARAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TARAZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TARİZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZİRA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SAZ,PRİ,PAT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1280,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DES",
+      "type": 0
+    },
+    {
+      "word": "FİT",
+      "type": 0
+    },
+    {
+      "word": "SİR",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TİR",
+      "type": 0
+    },
+    {
+      "word": "ÖRT",
+      "type": 0
+    },
+    {
+      "word": "ETSE",
+      "type": 0
+    },
+    {
+      "word": "FİSH",
+      "type": 0
+    },
+    {
+      "word": "FİRST",
+      "type": 0
+    },
+    {
+      "word": "TRİSH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "SRİ",
+      "type": 0
+    },
+    {
+      "word": "İRS",
+      "type": 0
+    },
+    {
+      "word": "DESTE",
+      "type": 0
+    }
+  ],
+  "letters": "EDSH,TRİF,SSTÖ,EDTR",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

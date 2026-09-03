@@ -1,73 +1,227 @@
-﻿{
-    "id":  1023,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "SAX",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASTRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INTER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SETOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TINTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TROTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EXTINTO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "EXTINTOR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ESTRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEXAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TINTOR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "INTO,TXER,BAST",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1023,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "BOA",
+      "type": 0
+    },
+    {
+      "word": "BOM",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "PRU",
+      "type": 0
+    },
+    {
+      "word": "RUN",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "TIM",
+      "type": 0
+    },
+    {
+      "word": "MANO",
+      "type": 0
+    },
+    {
+      "word": "OBRA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ARN",
+      "type": 0
+    },
+    {
+      "word": "BON",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "BUN",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "CNA",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "ITA",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MIT",
+      "type": 0
+    },
+    {
+      "word": "MOB",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NOA",
+      "type": 0
+    },
+    {
+      "word": "OMI",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "PEI",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "AMIT",
+      "type": 0
+    },
+    {
+      "word": "AMON",
+      "type": 0
+    },
+    {
+      "word": "EITA",
+      "type": 0
+    },
+    {
+      "word": "ESMO",
+      "type": 0
+    },
+    {
+      "word": "MIEP",
+      "type": 0
+    },
+    {
+      "word": "MITA",
+      "type": 0
+    },
+    {
+      "word": "MONA",
+      "type": 0
+    },
+    {
+      "word": "NAMI",
+      "type": 0
+    },
+    {
+      "word": "NATI",
+      "type": 0
+    },
+    {
+      "word": "NOBU",
+      "type": 0
+    },
+    {
+      "word": "TAMI",
+      "type": 0
+    },
+    {
+      "word": "TAMO",
+      "type": 0
+    },
+    {
+      "word": "TANO",
+      "type": 0
+    },
+    {
+      "word": "TIMO",
+      "type": 0
+    },
+    {
+      "word": "MANCA",
+      "type": 0
+    },
+    {
+      "word": "SEITA",
+      "type": 0
+    },
+    {
+      "word": "MANCAR",
+      "type": 0
+    },
+    {
+      "word": "MANOBRA",
+      "type": 0
+    }
+  ],
+  "letters": "TIEP,AMSR,NOBU,CARN",
+  "obstacles": []
 }

@@ -1,90 +1,179 @@
-﻿{
-    "id":  1908,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEEP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEEL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KEEP",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LEEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LINK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLINK",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "NIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PEL,BEK,LIN",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1908,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABA",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "OWL",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "VOWS",
+      "type": 0
+    },
+    {
+      "word": "WEST",
+      "type": 0
+    },
+    {
+      "word": "CREAM",
+      "type": 0
+    },
+    {
+      "word": "THESE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BAM",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SEW",
+      "type": 0
+    },
+    {
+      "word": "VOE",
+      "type": 0
+    },
+    {
+      "word": "VOW",
+      "type": 0
+    },
+    {
+      "word": "WOE",
+      "type": 0
+    },
+    {
+      "word": "HERM",
+      "type": 0
+    },
+    {
+      "word": "HERS",
+      "type": 0
+    },
+    {
+      "word": "HEST",
+      "type": 0
+    },
+    {
+      "word": "LEST",
+      "type": 0
+    },
+    {
+      "word": "MAES",
+      "type": 0
+    },
+    {
+      "word": "OWLS",
+      "type": 0
+    },
+    {
+      "word": "REAM",
+      "type": 0
+    },
+    {
+      "word": "SEAM",
+      "type": 0
+    },
+    {
+      "word": "SELS",
+      "type": 0
+    },
+    {
+      "word": "SLEW",
+      "type": 0
+    },
+    {
+      "word": "VOES",
+      "type": 0
+    },
+    {
+      "word": "WELT",
+      "type": 0
+    },
+    {
+      "word": "WOES",
+      "type": 0
+    },
+    {
+      "word": "CREST",
+      "type": 0
+    },
+    {
+      "word": "HERMA",
+      "type": 0
+    },
+    {
+      "word": "RESEW",
+      "type": 0
+    },
+    {
+      "word": "THERM",
+      "type": 0
+    },
+    {
+      "word": "WELTS",
+      "type": 0
+    },
+    {
+      "word": "SCREAM",
+      "type": 0
+    }
+  ],
+  "letters": "VWCRM,OESEA,WLTHB,SSREA",
+  "obstacles": []
 }

@@ -1,97 +1,231 @@
-﻿{
-    "id":  2366,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TWO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RISE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WHEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WISE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WISH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WITH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RISEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WITNESS",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "NESS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SHES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TRIS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "WISHES",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "RISEN,TWSHT,TOIWI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2366,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "HAD",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "BOOK",
+      "type": 0
+    },
+    {
+      "word": "FIRE",
+      "type": 0
+    },
+    {
+      "word": "READ",
+      "type": 0
+    },
+    {
+      "word": "RING",
+      "type": 0
+    },
+    {
+      "word": "TOOK",
+      "type": 0
+    },
+    {
+      "word": "BOOKS",
+      "type": 0
+    },
+    {
+      "word": "CHART",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "BOT",
+      "type": 0
+    },
+    {
+      "word": "CHI",
+      "type": 0
+    },
+    {
+      "word": "DAH",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "FIR",
+      "type": 0
+    },
+    {
+      "word": "GHI",
+      "type": 0
+    },
+    {
+      "word": "HAE",
+      "type": 0
+    },
+    {
+      "word": "HIN",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "OOT",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "RIF",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "CHAD",
+      "type": 0
+    },
+    {
+      "word": "CHAR",
+      "type": 0
+    },
+    {
+      "word": "CHIN",
+      "type": 0
+    },
+    {
+      "word": "DART",
+      "type": 0
+    },
+    {
+      "word": "HART",
+      "type": 0
+    },
+    {
+      "word": "REAR",
+      "type": 0
+    },
+    {
+      "word": "RECS",
+      "type": 0
+    },
+    {
+      "word": "RIFT",
+      "type": 0
+    },
+    {
+      "word": "TRAD",
+      "type": 0
+    },
+    {
+      "word": "BREAD",
+      "type": 0
+    },
+    {
+      "word": "DREAR",
+      "type": 0
+    },
+    {
+      "word": "DRIFT",
+      "type": 0
+    },
+    {
+      "word": "FIRER",
+      "type": 0
+    },
+    {
+      "word": "RINGS",
+      "type": 0
+    },
+    {
+      "word": "TREAD",
+      "type": 0
+    },
+    {
+      "word": "ADRIFT",
+      "type": 0
+    },
+    {
+      "word": "CHADRI",
+      "type": 0
+    },
+    {
+      "word": "DARING",
+      "type": 0
+    },
+    {
+      "word": "EARING",
+      "type": 0
+    },
+    {
+      "word": "ECHING",
+      "type": 0
+    },
+    {
+      "word": "HARING",
+      "type": 0
+    },
+    {
+      "word": "CHARING",
+      "type": 0
+    },
+    {
+      "word": "DARINGS",
+      "type": 0
+    },
+    {
+      "word": "EARINGS",
+      "type": 0
+    },
+    {
+      "word": "REARING",
+      "type": 0
+    },
+    {
+      "word": "RECHART",
+      "type": 0
+    }
+  ],
+  "letters": "TDRIF,RAERT,IHCBO,NGSKO",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

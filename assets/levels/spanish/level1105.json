@@ -1,101 +1,107 @@
-﻿{
-    "id":  1105,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EÑE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ETAPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RETRO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TAPAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORTAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORBATA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CORTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PATERA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAPA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EÑER,ORTA,CBAP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1105,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CHO",
+      "type": 0
+    },
+    {
+      "word": "NOA",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "CECE",
+      "type": 0
+    },
+    {
+      "word": "ECHO",
+      "type": 0
+    },
+    {
+      "word": "ONCE",
+      "type": 0
+    },
+    {
+      "word": "TECHO",
+      "type": 0
+    },
+    {
+      "word": "WATSON",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "NOH",
+      "type": 0
+    },
+    {
+      "word": "ONN",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "WAT",
+      "type": 0
+    },
+    {
+      "word": "CHON",
+      "type": 0
+    },
+    {
+      "word": "SONS",
+      "type": 0
+    },
+    {
+      "word": "SWAT",
+      "type": 0
+    },
+    {
+      "word": "TECH",
+      "type": 0
+    },
+    {
+      "word": "WATCH",
+      "type": 0
+    },
+    {
+      "word": "TECHOS",
+      "type": 0
+    }
+  ],
+  "letters": "SOHT,NNCE,OSTC,AWAE",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

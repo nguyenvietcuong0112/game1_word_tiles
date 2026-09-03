@@ -1,94 +1,195 @@
-﻿{
-    "id":  1195,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TÜM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ABLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALTI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALBÜM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TABLA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ÇALTI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MSAÇ,ÜBLT,TAEI",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1195,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "DUA",
+      "type": 0
+    },
+    {
+      "word": "DUR",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "MAÇ",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "YAZ",
+      "type": 0
+    },
+    {
+      "word": "AMAN",
+      "type": 0
+    },
+    {
+      "word": "ANDA",
+      "type": 0
+    },
+    {
+      "word": "RADYO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "AZA",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "LAU",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAZ",
+      "type": 0
+    },
+    {
+      "word": "NDA",
+      "type": 0
+    },
+    {
+      "word": "OYA",
+      "type": 0
+    },
+    {
+      "word": "ZAM",
+      "type": 0
+    },
+    {
+      "word": "ZAN",
+      "type": 0
+    },
+    {
+      "word": "ÇAM",
+      "type": 0
+    },
+    {
+      "word": "AMAÇ",
+      "type": 0
+    },
+    {
+      "word": "ANAM",
+      "type": 0
+    },
+    {
+      "word": "ANDY",
+      "type": 0
+    },
+    {
+      "word": "AYDA",
+      "type": 0
+    },
+    {
+      "word": "DOYA",
+      "type": 0
+    },
+    {
+      "word": "LADY",
+      "type": 0
+    },
+    {
+      "word": "MANA",
+      "type": 0
+    },
+    {
+      "word": "ODUR",
+      "type": 0
+    },
+    {
+      "word": "YANA",
+      "type": 0
+    },
+    {
+      "word": "YAZA",
+      "type": 0
+    },
+    {
+      "word": "MANDY",
+      "type": 0
+    },
+    {
+      "word": "YANDA",
+      "type": 0
+    },
+    {
+      "word": "YAZAN",
+      "type": 0
+    },
+    {
+      "word": "AMANDA",
+      "type": 0
+    },
+    {
+      "word": "AMAÇLA",
+      "type": 0
+    },
+    {
+      "word": "ARMAND",
+      "type": 0
+    },
+    {
+      "word": "MAÇLAR",
+      "type": 0
+    },
+    {
+      "word": "AMAÇLAR",
+      "type": 0
+    }
+  ],
+  "letters": "OYAZ,DDNA,UARM,RLÇA",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

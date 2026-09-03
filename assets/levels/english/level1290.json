@@ -1,61 +1,143 @@
-﻿{
-    "id":  1290,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DUO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUTY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POUT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SPOUT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "STUDY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "OUD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OUTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOUS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "STUD",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ADY,SUT,POS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1290,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "PIC",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "DUCT",
+      "type": 0
+    },
+    {
+      "word": "SONG",
+      "type": 0
+    },
+    {
+      "word": "SUCK",
+      "type": 0
+    },
+    {
+      "word": "USED",
+      "type": 0
+    },
+    {
+      "word": "USES",
+      "type": 0
+    },
+    {
+      "word": "SONGS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "CUD",
+      "type": 0
+    },
+    {
+      "word": "NIP",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "SOP",
+      "type": 0
+    },
+    {
+      "word": "DUCI",
+      "type": 0
+    },
+    {
+      "word": "PING",
+      "type": 0
+    },
+    {
+      "word": "PINT",
+      "type": 0
+    },
+    {
+      "word": "PONG",
+      "type": 0
+    },
+    {
+      "word": "DUCTS",
+      "type": 0
+    },
+    {
+      "word": "EDUCT",
+      "type": 0
+    },
+    {
+      "word": "OPING",
+      "type": 0
+    },
+    {
+      "word": "PINGS",
+      "type": 0
+    },
+    {
+      "word": "PINTS",
+      "type": 0
+    },
+    {
+      "word": "PONGS",
+      "type": 0
+    },
+    {
+      "word": "SONIC",
+      "type": 0
+    },
+    {
+      "word": "SUCKS",
+      "type": 0
+    },
+    {
+      "word": "EDUCTS",
+      "type": 0
+    },
+    {
+      "word": "EDUCING",
+      "type": 0
+    },
+    {
+      "word": "SEDUCING",
+      "type": 0
+    }
+  ],
+  "letters": "UDES,CTSU,INGC,POSK",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

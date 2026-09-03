@@ -1,49 +1,347 @@
-﻿{
-    "id":  2026,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LYRE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RAKE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TYRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAKER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRAKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAKERY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BARB",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LYT,BRE,BAK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2026,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FAR",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "COST",
+      "type": 0
+    },
+    {
+      "word": "RATE",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "STAR",
+      "type": 0
+    },
+    {
+      "word": "THAN",
+      "type": 0
+    },
+    {
+      "word": "RATES",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "FAT",
+      "type": 0
+    },
+    {
+      "word": "FRO",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "HET",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TAT",
+      "type": 0
+    },
+    {
+      "word": "ANTA",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "CORE",
+      "type": 0
+    },
+    {
+      "word": "CORF",
+      "type": 0
+    },
+    {
+      "word": "COSS",
+      "type": 0
+    },
+    {
+      "word": "EROS",
+      "type": 0
+    },
+    {
+      "word": "FATE",
+      "type": 0
+    },
+    {
+      "word": "FATS",
+      "type": 0
+    },
+    {
+      "word": "HANT",
+      "type": 0
+    },
+    {
+      "word": "HERO",
+      "type": 0
+    },
+    {
+      "word": "HEST",
+      "type": 0
+    },
+    {
+      "word": "HETS",
+      "type": 0
+    },
+    {
+      "word": "ORES",
+      "type": 0
+    },
+    {
+      "word": "RATH",
+      "type": 0
+    },
+    {
+      "word": "RATS",
+      "type": 0
+    },
+    {
+      "word": "ROCS",
+      "type": 0
+    },
+    {
+      "word": "SERF",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SETS",
+      "type": 0
+    },
+    {
+      "word": "SHES",
+      "type": 0
+    },
+    {
+      "word": "SORE",
+      "type": 0
+    },
+    {
+      "word": "STAT",
+      "type": 0
+    },
+    {
+      "word": "TARN",
+      "type": 0
+    },
+    {
+      "word": "TARS",
+      "type": 0
+    },
+    {
+      "word": "TATE",
+      "type": 0
+    },
+    {
+      "word": "TATS",
+      "type": 0
+    },
+    {
+      "word": "CORES",
+      "type": 0
+    },
+    {
+      "word": "COSTA",
+      "type": 0
+    },
+    {
+      "word": "COSTS",
+      "type": 0
+    },
+    {
+      "word": "FATES",
+      "type": 0
+    },
+    {
+      "word": "FATSO",
+      "type": 0
+    },
+    {
+      "word": "FROST",
+      "type": 0
+    },
+    {
+      "word": "HEROS",
+      "type": 0
+    },
+    {
+      "word": "RATHE",
+      "type": 0
+    },
+    {
+      "word": "SCORE",
+      "type": 0
+    },
+    {
+      "word": "SERFS",
+      "type": 0
+    },
+    {
+      "word": "SORES",
+      "type": 0
+    },
+    {
+      "word": "STARS",
+      "type": 0
+    },
+    {
+      "word": "TATES",
+      "type": 0
+    },
+    {
+      "word": "ANTHER",
+      "type": 0
+    },
+    {
+      "word": "COSSET",
+      "type": 0
+    },
+    {
+      "word": "COSTAR",
+      "type": 0
+    },
+    {
+      "word": "FATHER",
+      "type": 0
+    },
+    {
+      "word": "FROSTS",
+      "type": 0
+    },
+    {
+      "word": "RATHER",
+      "type": 0
+    },
+    {
+      "word": "SCORES",
+      "type": 0
+    },
+    {
+      "word": "SOREST",
+      "type": 0
+    },
+    {
+      "word": "TSORES",
+      "type": 0
+    },
+    {
+      "word": "COSSETS",
+      "type": 0
+    },
+    {
+      "word": "COSTARS",
+      "type": 0
+    }
+  ],
+  "letters": "ANRSH,HTATE,THFSS,SEROC",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,65 +1,99 @@
-﻿{
-    "id":  790,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YETİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SINAV",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VASİYET",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "İSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SANI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAV",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VASİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YİV",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NITİ,ASTT,VİYE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 790,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEK",
+      "type": 0
+    },
+    {
+      "word": "DİL",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "LEO",
+      "type": 0
+    },
+    {
+      "word": "İLK",
+      "type": 0
+    },
+    {
+      "word": "HAİN",
+      "type": 0
+    },
+    {
+      "word": "KEDİ",
+      "type": 0
+    },
+    {
+      "word": "LEKE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AHN",
+      "type": 0
+    },
+    {
+      "word": "AİN",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "HAİ",
+      "type": 0
+    },
+    {
+      "word": "KEL",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "DEKE",
+      "type": 0
+    },
+    {
+      "word": "DEOK",
+      "type": 0
+    },
+    {
+      "word": "ELKA",
+      "type": 0
+    }
+  ],
+  "letters": "EKNA,OELK,KDHN,LİAİ",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,85 +1,131 @@
-﻿{
-    "id":  1540,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECHO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MACE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "NAME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MACHO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NACHO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "METHOD",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MACH",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MECH",
-                            "type":  1
-                        },
-                        {
-                            "word":  "METH",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TECH",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NDO,ACH,MET",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1540,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "FAR",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "SKA",
+      "type": 0
+    },
+    {
+      "word": "ALSO",
+      "type": 0
+    },
+    {
+      "word": "ARMS",
+      "type": 0
+    },
+    {
+      "word": "FARM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "KAF",
+      "type": 0
+    },
+    {
+      "word": "OAR",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "ALMS",
+      "type": 0
+    },
+    {
+      "word": "OARS",
+      "type": 0
+    },
+    {
+      "word": "OSSA",
+      "type": 0
+    },
+    {
+      "word": "RASH",
+      "type": 0
+    },
+    {
+      "word": "SALS",
+      "type": 0
+    },
+    {
+      "word": "SOAR",
+      "type": 0
+    },
+    {
+      "word": "FARMS",
+      "type": 0
+    },
+    {
+      "word": "PSALM",
+      "type": 0
+    },
+    {
+      "word": "SOARS",
+      "type": 0
+    },
+    {
+      "word": "PSALMS",
+      "type": 0
+    }
+  ],
+  "letters": "ALSO,SMSA,PRHR,FAKS",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

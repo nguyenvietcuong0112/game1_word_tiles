@@ -1,110 +1,203 @@
-﻿{
-    "id":  1726,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DOG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IVY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "URN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VARY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRAVY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PURITY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRAVITY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "GOD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ION",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOIR",
-                            "type":  1
-                        },
-                        {
-                            "word":  "PAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOON",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GRYTO,OAVIO,DPURN",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1726,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "DEAL",
+      "type": 0
+    },
+    {
+      "word": "EDGE",
+      "type": 0
+    },
+    {
+      "word": "PASS",
+      "type": 0
+    },
+    {
+      "word": "PISS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "DIP",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "GAE",
+      "type": 0
+    },
+    {
+      "word": "IDS",
+      "type": 0
+    },
+    {
+      "word": "PAP",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PEG",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "PIS",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAG",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAP",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "SIP",
+      "type": 0
+    },
+    {
+      "word": "AGES",
+      "type": 0
+    },
+    {
+      "word": "ALPS",
+      "type": 0
+    },
+    {
+      "word": "DISS",
+      "type": 0
+    },
+    {
+      "word": "EASE",
+      "type": 0
+    },
+    {
+      "word": "GAED",
+      "type": 0
+    },
+    {
+      "word": "GASP",
+      "type": 0
+    },
+    {
+      "word": "LASS",
+      "type": 0
+    },
+    {
+      "word": "PAPS",
+      "type": 0
+    },
+    {
+      "word": "SAGE",
+      "type": 0
+    },
+    {
+      "word": "SALP",
+      "type": 0
+    },
+    {
+      "word": "SAPS",
+      "type": 0
+    },
+    {
+      "word": "SASS",
+      "type": 0
+    },
+    {
+      "word": "SIPE",
+      "type": 0
+    },
+    {
+      "word": "SPAS",
+      "type": 0
+    },
+    {
+      "word": "EDGES",
+      "type": 0
+    },
+    {
+      "word": "PASSE",
+      "type": 0
+    },
+    {
+      "word": "SAGES",
+      "type": 0
+    },
+    {
+      "word": "SALPA",
+      "type": 0
+    },
+    {
+      "word": "SALPAS",
+      "type": 0
+    },
+    {
+      "word": "PASSAGE",
+      "type": 0
+    },
+    {
+      "word": "PASSAGES",
+      "type": 0
+    }
+  ],
+  "letters": "PDIP,ASSE,PSAG,LAED",
+  "obstacles": []
 }

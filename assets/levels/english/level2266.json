@@ -1,81 +1,147 @@
-﻿{
-    "id":  2266,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JAW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INFER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LINER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAFER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LINEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JAWLINE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AFAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FAWN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "REAR,INFE,LWAJ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2266,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "CAB",
+      "type": 0
+    },
+    {
+      "word": "FED",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "ACRE",
+      "type": 0
+    },
+    {
+      "word": "CORD",
+      "type": 0
+    },
+    {
+      "word": "ACCORD",
+      "type": 0
+    },
+    {
+      "word": "EFFECT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "COB",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "EFF",
+      "type": 0
+    },
+    {
+      "word": "GAE",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "ORC",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "ABED",
+      "type": 0
+    },
+    {
+      "word": "COCA",
+      "type": 0
+    },
+    {
+      "word": "CROC",
+      "type": 0
+    },
+    {
+      "word": "ORCA",
+      "type": 0
+    },
+    {
+      "word": "BACCA",
+      "type": 0
+    },
+    {
+      "word": "OCREA",
+      "type": 0
+    },
+    {
+      "word": "ORBED",
+      "type": 0
+    },
+    {
+      "word": "ACREAGE",
+      "type": 0
+    },
+    {
+      "word": "EFFECTER",
+      "type": 0
+    }
+  ],
+  "letters": "AERCA,GTBOC,ECDRC,FFEBA",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

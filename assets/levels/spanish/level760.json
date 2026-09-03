@@ -1,77 +1,151 @@
-﻿{
-    "id":  760,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NABO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BANDA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CANTIDAD",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANDA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANDAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANTI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CANDI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MANDA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "IDAD,TNAB,CAMO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 760,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "LUZ",
+      "type": 0
+    },
+    {
+      "word": "VAS",
+      "type": 0
+    },
+    {
+      "word": "BUEN",
+      "type": 0
+    },
+    {
+      "word": "MATA",
+      "type": 0
+    },
+    {
+      "word": "VALE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ASN",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "BUE",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MAU",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAU",
+      "type": 0
+    },
+    {
+      "word": "TZU",
+      "type": 0
+    },
+    {
+      "word": "UAT",
+      "type": 0
+    },
+    {
+      "word": "VAL",
+      "type": 0
+    },
+    {
+      "word": "BELA",
+      "type": 0
+    },
+    {
+      "word": "BESA",
+      "type": 0
+    },
+    {
+      "word": "SALE",
+      "type": 0
+    },
+    {
+      "word": "TAMA",
+      "type": 0
+    },
+    {
+      "word": "VALES",
+      "type": 0
+    }
+  ],
+  "letters": "LAVL,ESZU,BNTA,UEAM",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

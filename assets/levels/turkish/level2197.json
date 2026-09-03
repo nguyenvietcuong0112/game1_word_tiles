@@ -1,85 +1,235 @@
-﻿{
-    "id":  2197,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AÇI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AÇIK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EBAT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ETİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ETÜT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TETİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIRBAÇ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BERK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KIRBA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEKİT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TİK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KIÜTİ,RRTEK,EBAÇI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2197,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "JEN",
+      "type": 0
+    },
+    {
+      "word": "KAL",
+      "type": 0
+    },
+    {
+      "word": "KEZ",
+      "type": 0
+    },
+    {
+      "word": "KIZ",
+      "type": 0
+    },
+    {
+      "word": "LER",
+      "type": 0
+    },
+    {
+      "word": "AKIL",
+      "type": 0
+    },
+    {
+      "word": "ALIR",
+      "type": 0
+    },
+    {
+      "word": "BAZI",
+      "type": 0
+    },
+    {
+      "word": "CEZA",
+      "type": 0
+    },
+    {
+      "word": "KALP",
+      "type": 0
+    },
+    {
+      "word": "KIZA",
+      "type": 0
+    },
+    {
+      "word": "KIZI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "AZI",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "BAZ",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "BER",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "KAZ",
+      "type": 0
+    },
+    {
+      "word": "KEL",
+      "type": 0
+    },
+    {
+      "word": "KIL",
+      "type": 0
+    },
+    {
+      "word": "KIR",
+      "type": 0
+    },
+    {
+      "word": "LAK",
+      "type": 0
+    },
+    {
+      "word": "LIK",
+      "type": 0
+    },
+    {
+      "word": "RAB",
+      "type": 0
+    },
+    {
+      "word": "ZAK",
+      "type": 0
+    },
+    {
+      "word": "ZAR",
+      "type": 0
+    },
+    {
+      "word": "ABEL",
+      "type": 0
+    },
+    {
+      "word": "ABER",
+      "type": 0
+    },
+    {
+      "word": "ALEC",
+      "type": 0
+    },
+    {
+      "word": "ALEK",
+      "type": 0
+    },
+    {
+      "word": "BARI",
+      "type": 0
+    },
+    {
+      "word": "CELP",
+      "type": 0
+    },
+    {
+      "word": "KAKA",
+      "type": 0
+    },
+    {
+      "word": "KALE",
+      "type": 0
+    },
+    {
+      "word": "KEZA",
+      "type": 0
+    },
+    {
+      "word": "KIRP",
+      "type": 0
+    },
+    {
+      "word": "LAKE",
+      "type": 0
+    },
+    {
+      "word": "PLAK",
+      "type": 0
+    },
+    {
+      "word": "RAZI",
+      "type": 0
+    },
+    {
+      "word": "RIZA",
+      "type": 0
+    },
+    {
+      "word": "ZARI",
+      "type": 0
+    },
+    {
+      "word": "ZEKA",
+      "type": 0
+    },
+    {
+      "word": "KALIR",
+      "type": 0
+    },
+    {
+      "word": "KIZAR",
+      "type": 0
+    },
+    {
+      "word": "KIZIL",
+      "type": 0
+    },
+    {
+      "word": "PLAKA",
+      "type": 0
+    },
+    {
+      "word": "KALPLE",
+      "type": 0
+    },
+    {
+      "word": "ZEKALI",
+      "type": 0
+    },
+    {
+      "word": "KALPLER",
+      "type": 0
+    }
+  ],
+  "letters": "IKAKA,ZILEZ,ARPCN,BELJE",
+  "obstacles": []
 }

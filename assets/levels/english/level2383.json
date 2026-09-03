@@ -1,109 +1,211 @@
-﻿{
-    "id":  2383,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BIDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MACE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ABIDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMBER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DECEMBER",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACED",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAMBER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DIB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EMBER",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ICED",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DEAR,ICEE,BAMB",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2383,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADD",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "RAW",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "WAR",
+      "type": 0
+    },
+    {
+      "word": "CARD",
+      "type": 0
+    },
+    {
+      "word": "DRAW",
+      "type": 0
+    },
+    {
+      "word": "DREW",
+      "type": 0
+    },
+    {
+      "word": "WERE",
+      "type": 0
+    },
+    {
+      "word": "CHORDS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "AWE",
+      "type": 0
+    },
+    {
+      "word": "DAW",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "HOD",
+      "type": 0
+    },
+    {
+      "word": "NAW",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RHO",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SEW",
+      "type": 0
+    },
+    {
+      "word": "WAD",
+      "type": 0
+    },
+    {
+      "word": "WAN",
+      "type": 0
+    },
+    {
+      "word": "ADDS",
+      "type": 0
+    },
+    {
+      "word": "AWES",
+      "type": 0
+    },
+    {
+      "word": "DORR",
+      "type": 0
+    },
+    {
+      "word": "NADA",
+      "type": 0
+    },
+    {
+      "word": "NARD",
+      "type": 0
+    },
+    {
+      "word": "SERE",
+      "type": 0
+    },
+    {
+      "word": "SERS",
+      "type": 0
+    },
+    {
+      "word": "WARD",
+      "type": 0
+    },
+    {
+      "word": "ARDOR",
+      "type": 0
+    },
+    {
+      "word": "CHORD",
+      "type": 0
+    },
+    {
+      "word": "DORRS",
+      "type": 0
+    },
+    {
+      "word": "NACHO",
+      "type": 0
+    },
+    {
+      "word": "RAWER",
+      "type": 0
+    },
+    {
+      "word": "RESEW",
+      "type": 0
+    },
+    {
+      "word": "REWAN",
+      "type": 0
+    },
+    {
+      "word": "SERER",
+      "type": 0
+    },
+    {
+      "word": "SEWAN",
+      "type": 0
+    },
+    {
+      "word": "SEWAR",
+      "type": 0
+    },
+    {
+      "word": "CANARD",
+      "type": 0
+    },
+    {
+      "word": "DRAWER",
+      "type": 0
+    },
+    {
+      "word": "REWARD",
+      "type": 0
+    },
+    {
+      "word": "DRAWERS",
+      "type": 0
+    }
+  ],
+  "letters": "ESDDA,REWAN,SRDRA,DROHC",
+  "obstacles": []
 }

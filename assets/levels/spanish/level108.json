@@ -1,69 +1,263 @@
-﻿{
-    "id":  108,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JUGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUJA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PÉSIMO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "JUSI",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MIS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MUS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAJO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAJUZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UPA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "IMOG,SUJU,ÉPAZ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 108,
+  "width": 4,
+  "height": 3,
+  "target_words": [
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "TUS",
+      "type": 0
+    },
+    {
+      "word": "CADA",
+      "type": 0
+    },
+    {
+      "word": "CASA",
+      "type": 0
+    },
+    {
+      "word": "CASO",
+      "type": 0
+    },
+    {
+      "word": "DAME",
+      "type": 0
+    },
+    {
+      "word": "ASUMO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACA",
+      "type": 0
+    },
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "DEM",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "MOM",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "OSA",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SUM",
+      "type": 0
+    },
+    {
+      "word": "TAC",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TUM",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "USO",
+      "type": 0
+    },
+    {
+      "word": "ADAM",
+      "type": 0
+    },
+    {
+      "word": "AMOS",
+      "type": 0
+    },
+    {
+      "word": "CADE",
+      "type": 0
+    },
+    {
+      "word": "CAME",
+      "type": 0
+    },
+    {
+      "word": "DEMO",
+      "type": 0
+    },
+    {
+      "word": "MADE",
+      "type": 0
+    },
+    {
+      "word": "MASA",
+      "type": 0
+    },
+    {
+      "word": "MUSA",
+      "type": 0
+    },
+    {
+      "word": "SACA",
+      "type": 0
+    },
+    {
+      "word": "SADE",
+      "type": 0
+    },
+    {
+      "word": "SAME",
+      "type": 0
+    },
+    {
+      "word": "SOMA",
+      "type": 0
+    },
+    {
+      "word": "SOME",
+      "type": 0
+    },
+    {
+      "word": "SUMO",
+      "type": 0
+    },
+    {
+      "word": "TASA",
+      "type": 0
+    },
+    {
+      "word": "USAD",
+      "type": 0
+    },
+    {
+      "word": "ACASO",
+      "type": 0
+    },
+    {
+      "word": "ASADA",
+      "type": 0
+    },
+    {
+      "word": "ASOMA",
+      "type": 0
+    },
+    {
+      "word": "DAMOS",
+      "type": 0
+    },
+    {
+      "word": "DEMAS",
+      "type": 0
+    },
+    {
+      "word": "DEMOS",
+      "type": 0
+    },
+    {
+      "word": "OSADA",
+      "type": 0
+    },
+    {
+      "word": "SACAD",
+      "type": 0
+    },
+    {
+      "word": "USADA",
+      "type": 0
+    },
+    {
+      "word": "ADEMAS",
+      "type": 0
+    },
+    {
+      "word": "CASADA",
+      "type": 0
+    },
+    {
+      "word": "SACADA",
+      "type": 0
+    },
+    {
+      "word": "SACAME",
+      "type": 0
+    }
+  ],
+  "letters": "EMOM,DASU,ACAT",
+  "obstacles": []
 }

@@ -1,122 +1,195 @@
-﻿{
-    "id":  1986,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "URN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EARN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TURN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RETURN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TERN",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "NBNR,EARU,BEET",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1986,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "GOT",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "TOP",
+      "type": 0
+    },
+    {
+      "word": "COIN",
+      "type": 0
+    },
+    {
+      "word": "GIFT",
+      "type": 0
+    },
+    {
+      "word": "HEAT",
+      "type": 0
+    },
+    {
+      "word": "STEP",
+      "type": 0
+    },
+    {
+      "word": "COINS",
+      "type": 0
+    },
+    {
+      "word": "GIFTS",
+      "type": 0
+    },
+    {
+      "word": "STATE",
+      "type": 0
+    },
+    {
+      "word": "CHEATS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "CEE",
+      "type": 0
+    },
+    {
+      "word": "CEP",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "FIG",
+      "type": 0
+    },
+    {
+      "word": "FIN",
+      "type": 0
+    },
+    {
+      "word": "GIN",
+      "type": 0
+    },
+    {
+      "word": "IFS",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "PEC",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "POT",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAT",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TOG",
+      "type": 0
+    },
+    {
+      "word": "COIF",
+      "type": 0
+    },
+    {
+      "word": "EATS",
+      "type": 0
+    },
+    {
+      "word": "ECHE",
+      "type": 0
+    },
+    {
+      "word": "FINS",
+      "type": 0
+    },
+    {
+      "word": "GINS",
+      "type": 0
+    },
+    {
+      "word": "PECH",
+      "type": 0
+    },
+    {
+      "word": "PETS",
+      "type": 0
+    },
+    {
+      "word": "STAT",
+      "type": 0
+    },
+    {
+      "word": "TATE",
+      "type": 0
+    },
+    {
+      "word": "TATS",
+      "type": 0
+    },
+    {
+      "word": "CHEAT",
+      "type": 0
+    },
+    {
+      "word": "CHEEP",
+      "type": 0
+    },
+    {
+      "word": "COIFS",
+      "type": 0
+    },
+    {
+      "word": "HEATS",
+      "type": 0
+    }
+  ],
+  "letters": "HCPOT,EEPGC,ATFIO,TSSNC",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

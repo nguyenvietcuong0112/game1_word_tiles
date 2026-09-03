@@ -1,118 +1,187 @@
-﻿{
-    "id":  1882,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ABATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADVANCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADVANCED",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ABATED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BADE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BATE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BATED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAD",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VANC,DCDE,ABAT",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1882,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FAN",
+      "type": 0
+    },
+    {
+      "word": "FEE",
+      "type": 0
+    },
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "REP",
+      "type": 0
+    },
+    {
+      "word": "FEED",
+      "type": 0
+    },
+    {
+      "word": "FREE",
+      "type": 0
+    },
+    {
+      "word": "FORGE",
+      "type": 0
+    },
+    {
+      "word": "PRINT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "FER",
+      "type": 0
+    },
+    {
+      "word": "FOE",
+      "type": 0
+    },
+    {
+      "word": "NAE",
+      "type": 0
+    },
+    {
+      "word": "NIP",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "REF",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "RIP",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "DEER",
+      "type": 0
+    },
+    {
+      "word": "DERE",
+      "type": 0
+    },
+    {
+      "word": "DREE",
+      "type": 0
+    },
+    {
+      "word": "DRIP",
+      "type": 0
+    },
+    {
+      "word": "EPEE",
+      "type": 0
+    },
+    {
+      "word": "PEER",
+      "type": 0
+    },
+    {
+      "word": "PINT",
+      "type": 0
+    },
+    {
+      "word": "PROF",
+      "type": 0
+    },
+    {
+      "word": "REED",
+      "type": 0
+    },
+    {
+      "word": "REEF",
+      "type": 0
+    },
+    {
+      "word": "DRIPT",
+      "type": 0
+    },
+    {
+      "word": "FREED",
+      "type": 0
+    },
+    {
+      "word": "FREER",
+      "type": 0
+    },
+    {
+      "word": "ORPIN",
+      "type": 0
+    },
+    {
+      "word": "REPRINT",
+      "type": 0
+    }
+  ],
+  "letters": "NAFOE,FERRG,REDPT,EPRIN",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

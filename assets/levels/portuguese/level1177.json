@@ -1,101 +1,267 @@
-﻿{
-    "id":  1177,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AIPO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PICO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORJA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PICAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PORTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TÍPICO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TROCAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TROPICAL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CORTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OCAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PICA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROCAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAJ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TROPICAR",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "TTRJA,ÍPORT,AICAL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1177,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "ELI",
+      "type": 0
+    },
+    {
+      "word": "LHE",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "SAI",
+      "type": 0
+    },
+    {
+      "word": "GELO",
+      "type": 0
+    },
+    {
+      "word": "OLHE",
+      "type": 0
+    },
+    {
+      "word": "DESFILE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "DAI",
+      "type": 0
+    },
+    {
+      "word": "DES",
+      "type": 0
+    },
+    {
+      "word": "EGO",
+      "type": 0
+    },
+    {
+      "word": "EHH",
+      "type": 0
+    },
+    {
+      "word": "ELO",
+      "type": 0
+    },
+    {
+      "word": "EMA",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "FDA",
+      "type": 0
+    },
+    {
+      "word": "FEL",
+      "type": 0
+    },
+    {
+      "word": "FIA",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GEM",
+      "type": 0
+    },
+    {
+      "word": "GOL",
+      "type": 0
+    },
+    {
+      "word": "IAS",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "LOG",
+      "type": 0
+    },
+    {
+      "word": "MAG",
+      "type": 0
+    },
+    {
+      "word": "MEG",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OLI",
+      "type": 0
+    },
+    {
+      "word": "SAD",
+      "type": 0
+    },
+    {
+      "word": "SHI",
+      "type": 0
+    },
+    {
+      "word": "AGEM",
+      "type": 0
+    },
+    {
+      "word": "ASHI",
+      "type": 0
+    },
+    {
+      "word": "DASH",
+      "type": 0
+    },
+    {
+      "word": "ELIA",
+      "type": 0
+    },
+    {
+      "word": "ESME",
+      "type": 0
+    },
+    {
+      "word": "FEMA",
+      "type": 0
+    },
+    {
+      "word": "FILE",
+      "type": 0
+    },
+    {
+      "word": "GAME",
+      "type": 0
+    },
+    {
+      "word": "GEMA",
+      "type": 0
+    },
+    {
+      "word": "GOLE",
+      "type": 0
+    },
+    {
+      "word": "LEGO",
+      "type": 0
+    },
+    {
+      "word": "LEMA",
+      "type": 0
+    },
+    {
+      "word": "LIFE",
+      "type": 0
+    },
+    {
+      "word": "MAGO",
+      "type": 0
+    },
+    {
+      "word": "MEGA",
+      "type": 0
+    },
+    {
+      "word": "MELO",
+      "type": 0
+    },
+    {
+      "word": "OLEG",
+      "type": 0
+    },
+    {
+      "word": "SADE",
+      "type": 0
+    },
+    {
+      "word": "SEDA",
+      "type": 0
+    },
+    {
+      "word": "SHIL",
+      "type": 0
+    },
+    {
+      "word": "ELIAS",
+      "type": 0
+    },
+    {
+      "word": "GOLEM",
+      "type": 0
+    },
+    {
+      "word": "MAGOE",
+      "type": 0
+    },
+    {
+      "word": "SEDAS",
+      "type": 0
+    },
+    {
+      "word": "AMELIA",
+      "type": 0
+    },
+    {
+      "word": "ESMAGO",
+      "type": 0
+    },
+    {
+      "word": "GOLIAS",
+      "type": 0
+    }
+  ],
+  "letters": "ESMA,DFEG,AILO,SHHE",
+  "obstacles": []
 }

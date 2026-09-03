@@ -1,93 +1,179 @@
-﻿{
-    "id":  2354,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HIS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HERO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HIRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRIS",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PIER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCORPIO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CORP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PROC",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SIRE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "YORE",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "YOOIE,ERIPR,HISCO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2354,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "COL",
+      "type": 0
+    },
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "ICH",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "PROP",
+      "type": 0
+    },
+    {
+      "word": "RACE",
+      "type": 0
+    },
+    {
+      "word": "RAIN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABA",
+      "type": 0
+    },
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "AYE",
+      "type": 0
+    },
+    {
+      "word": "CAB",
+      "type": 0
+    },
+    {
+      "word": "CAY",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "LYE",
+      "type": 0
+    },
+    {
+      "word": "NAY",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "PLY",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "CAIN",
+      "type": 0
+    },
+    {
+      "word": "CARP",
+      "type": 0
+    },
+    {
+      "word": "COLY",
+      "type": 0
+    },
+    {
+      "word": "LOCH",
+      "type": 0
+    },
+    {
+      "word": "LOCI",
+      "type": 0
+    },
+    {
+      "word": "PRAY",
+      "type": 0
+    },
+    {
+      "word": "ABACA",
+      "type": 0
+    },
+    {
+      "word": "BACON",
+      "type": 0
+    },
+    {
+      "word": "BARON",
+      "type": 0
+    },
+    {
+      "word": "NICOL",
+      "type": 0
+    },
+    {
+      "word": "RACON",
+      "type": 0
+    }
+  ],
+  "letters": "PNORA,RACAB,OYEIN,PLOCH",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

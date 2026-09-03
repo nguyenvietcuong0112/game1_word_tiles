@@ -1,89 +1,115 @@
-﻿{
-    "id":  640,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIVAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LLEVAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "VISERA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEVA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LEVAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LLEVA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VALL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VIRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VIS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BAVE,ERLL,SIVA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 640,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "GARY",
+      "type": 0
+    },
+    {
+      "word": "SUYO",
+      "type": 0
+    },
+    {
+      "word": "FALSA",
+      "type": 0
+    },
+    {
+      "word": "SALSA",
+      "type": 0
+    },
+    {
+      "word": "FALSAS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "FOY",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "SAS",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "USS",
+      "type": 0
+    },
+    {
+      "word": "ARYA",
+      "type": 0
+    },
+    {
+      "word": "GASA",
+      "type": 0
+    },
+    {
+      "word": "OLAF",
+      "type": 0
+    },
+    {
+      "word": "OLAS",
+      "type": 0
+    },
+    {
+      "word": "SAGA",
+      "type": 0
+    },
+    {
+      "word": "SALSAS",
+      "type": 0
+    }
+  ],
+  "letters": "FASA,OLSG,YSAA,USYR",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

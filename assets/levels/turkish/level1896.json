@@ -1,53 +1,131 @@
-﻿{
-    "id":  1896,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İKON",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KİLO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOLİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİLER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KONGRE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ENİK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NER,İLG,KON",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1896,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ELM",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "MAİ",
+      "type": 0
+    },
+    {
+      "word": "POP",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "UMM",
+      "type": 0
+    },
+    {
+      "word": "YEM",
+      "type": 0
+    },
+    {
+      "word": "YİM",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "İŞİ",
+      "type": 0
+    },
+    {
+      "word": "İŞİM",
+      "type": 0
+    },
+    {
+      "word": "YEMİŞ",
+      "type": 0
+    },
+    {
+      "word": "İŞİME",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "MİŞ",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "POL",
+      "type": 0
+    },
+    {
+      "word": "PİA",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "İMİ",
+      "type": 0
+    },
+    {
+      "word": "ŞAM",
+      "type": 0
+    },
+    {
+      "word": "MİMİ",
+      "type": 0
+    },
+    {
+      "word": "YEMİ",
+      "type": 0
+    },
+    {
+      "word": "İMİŞ",
+      "type": 0
+    },
+    {
+      "word": "POLEN",
+      "type": 0
+    },
+    {
+      "word": "YEMİŞİM",
+      "type": 0
+    }
+  ],
+  "letters": "İPOLE,AMPMN,ŞİYSM,İMEUM",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

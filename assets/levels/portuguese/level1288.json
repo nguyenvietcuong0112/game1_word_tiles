@@ -1,97 +1,243 @@
-﻿{
-    "id":  1288,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LADO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOLTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOSTADO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALADO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MALO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOLAMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TALO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TOA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOSTA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "DATS,OLTO,SAMA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1288,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "POE",
+      "type": 0
+    },
+    {
+      "word": "ROZ",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "LANA",
+      "type": 0
+    },
+    {
+      "word": "MALA",
+      "type": 0
+    },
+    {
+      "word": "MINA",
+      "type": 0
+    },
+    {
+      "word": "ANIMAL",
+      "type": 0
+    },
+    {
+      "word": "IMPLORO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "LAL",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LOL",
+      "type": 0
+    },
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "MIN",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NIM",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ORO",
+      "type": 0
+    },
+    {
+      "word": "PLA",
+      "type": 0
+    },
+    {
+      "word": "POO",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "ROO",
+      "type": 0
+    },
+    {
+      "word": "AMIN",
+      "type": 0
+    },
+    {
+      "word": "LALA",
+      "type": 0
+    },
+    {
+      "word": "LALO",
+      "type": 0
+    },
+    {
+      "word": "LANI",
+      "type": 0
+    },
+    {
+      "word": "LOLA",
+      "type": 0
+    },
+    {
+      "word": "LOLO",
+      "type": 0
+    },
+    {
+      "word": "LOOP",
+      "type": 0
+    },
+    {
+      "word": "LORE",
+      "type": 0
+    },
+    {
+      "word": "MALP",
+      "type": 0
+    },
+    {
+      "word": "MANA",
+      "type": 0
+    },
+    {
+      "word": "MANI",
+      "type": 0
+    },
+    {
+      "word": "NAMI",
+      "type": 0
+    },
+    {
+      "word": "PLAN",
+      "type": 0
+    },
+    {
+      "word": "POOL",
+      "type": 0
+    },
+    {
+      "word": "POOR",
+      "type": 0
+    },
+    {
+      "word": "ROLA",
+      "type": 0
+    },
+    {
+      "word": "ROLO",
+      "type": 0
+    },
+    {
+      "word": "ZOLA",
+      "type": 0
+    },
+    {
+      "word": "ZORO",
+      "type": 0
+    },
+    {
+      "word": "AMINA",
+      "type": 0
+    },
+    {
+      "word": "AMPLO",
+      "type": 0
+    },
+    {
+      "word": "ANIMA",
+      "type": 0
+    },
+    {
+      "word": "INALA",
+      "type": 0
+    },
+    {
+      "word": "PLANA",
+      "type": 0
+    },
+    {
+      "word": "ROLAM",
+      "type": 0
+    },
+    {
+      "word": "IMPLORE",
+      "type": 0
+    }
+  ],
+  "letters": "INAL,MALP,PLOO,ZORE",
+  "obstacles": []
 }

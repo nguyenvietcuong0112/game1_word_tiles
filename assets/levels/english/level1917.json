@@ -1,75 +1,195 @@
-﻿{
-    "id":  1917,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ABS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OPT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BASH",
-                             "type":  2
-                         },
-                         {
-                             "word":  "POET",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SHOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEOPLE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "HOE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PETE,HOPL,SABS",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1917,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAG",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "OIL",
+      "type": 0
+    },
+    {
+      "word": "ALSO",
+      "type": 0
+    },
+    {
+      "word": "HILL",
+      "type": 0
+    },
+    {
+      "word": "LEAF",
+      "type": 0
+    },
+    {
+      "word": "MEAL",
+      "type": 0
+    },
+    {
+      "word": "PULL",
+      "type": 0
+    },
+    {
+      "word": "SOIL",
+      "type": 0
+    },
+    {
+      "word": "EQUAL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABO",
+      "type": 0
+    },
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "EAU",
+      "type": 0
+    },
+    {
+      "word": "ELF",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "EMU",
+      "type": 0
+    },
+    {
+      "word": "GAB",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LEU",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "PUL",
+      "type": 0
+    },
+    {
+      "word": "QUA",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAG",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "UMP",
+      "type": 0
+    },
+    {
+      "word": "ABOS",
+      "type": 0
+    },
+    {
+      "word": "BOIL",
+      "type": 0
+    },
+    {
+      "word": "FLEA",
+      "type": 0
+    },
+    {
+      "word": "GILL",
+      "type": 0
+    },
+    {
+      "word": "ILEA",
+      "type": 0
+    },
+    {
+      "word": "LEAL",
+      "type": 0
+    },
+    {
+      "word": "MELL",
+      "type": 0
+    },
+    {
+      "word": "OILS",
+      "type": 0
+    },
+    {
+      "word": "ABOIL",
+      "type": 0
+    },
+    {
+      "word": "AGILE",
+      "type": 0
+    },
+    {
+      "word": "BOILS",
+      "type": 0
+    },
+    {
+      "word": "ILEAL",
+      "type": 0
+    },
+    {
+      "word": "LEAFS",
+      "type": 0
+    },
+    {
+      "word": "MEALS",
+      "type": 0
+    },
+    {
+      "word": "EQUALS",
+      "type": 0
+    },
+    {
+      "word": "MEALIE",
+      "type": 0
+    }
+  ],
+  "letters": "HIGAB,LLFSO,UEALI,PMUQE",
+  "obstacles": []
 }

@@ -1,57 +1,127 @@
-﻿{
-    "id":  1390,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAMU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEŞRU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEŞHUR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "HUMAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UMAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EŞH,MRU,KAM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1390,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DÖN",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "OLD",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "ÇÖL",
+      "type": 0
+    },
+    {
+      "word": "ÖLÜ",
+      "type": 0
+    },
+    {
+      "word": "LORD",
+      "type": 0
+    },
+    {
+      "word": "ÖLÜM",
+      "type": 0
+    },
+    {
+      "word": "ÇÖLÜN",
+      "type": 0
+    },
+    {
+      "word": "ÖLÜMÜ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "ÖNÜ",
+      "type": 0
+    },
+    {
+      "word": "DORA",
+      "type": 0
+    },
+    {
+      "word": "ROLÜ",
+      "type": 0
+    },
+    {
+      "word": "ÇÖLÜ",
+      "type": 0
+    },
+    {
+      "word": "ÖLÜN",
+      "type": 0
+    },
+    {
+      "word": "DÖNÜM",
+      "type": 0
+    },
+    {
+      "word": "ROLÜM",
+      "type": 0
+    },
+    {
+      "word": "ROLÜN",
+      "type": 0
+    },
+    {
+      "word": "ÖNÜMÜ",
+      "type": 0
+    },
+    {
+      "word": "DÖNÜMÜ",
+      "type": 0
+    },
+    {
+      "word": "ROLÜMÜ",
+      "type": 0
+    },
+    {
+      "word": "ÖLÜMÜN",
+      "type": 0
+    }
+  ],
+  "letters": "RÖNÜ,ADDM,ROLÜ,DÇÖN",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

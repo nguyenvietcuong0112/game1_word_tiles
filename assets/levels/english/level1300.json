@@ -1,106 +1,279 @@
-﻿{
-    "id":  1300,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEAL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "STEAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VALUE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ASTRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DUETS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TSAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KDUL,STEA,AROV",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1300,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "GOT",
+      "type": 0
+    },
+    {
+      "word": "MAP",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "MAIL",
+      "type": 0
+    },
+    {
+      "word": "MAIN",
+      "type": 0
+    },
+    {
+      "word": "SONS",
+      "type": 0
+    },
+    {
+      "word": "AMONG",
+      "type": 0
+    },
+    {
+      "word": "AMONGST",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIL",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "AIS",
+      "type": 0
+    },
+    {
+      "word": "COT",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "ISM",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "NOG",
+      "type": 0
+    },
+    {
+      "word": "NOM",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "SOT",
+      "type": 0
+    },
+    {
+      "word": "TOG",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "AILS",
+      "type": 0
+    },
+    {
+      "word": "AINS",
+      "type": 0
+    },
+    {
+      "word": "CONI",
+      "type": 0
+    },
+    {
+      "word": "CONS",
+      "type": 0
+    },
+    {
+      "word": "COTS",
+      "type": 0
+    },
+    {
+      "word": "LINO",
+      "type": 0
+    },
+    {
+      "word": "LINS",
+      "type": 0
+    },
+    {
+      "word": "MONS",
+      "type": 0
+    },
+    {
+      "word": "NILS",
+      "type": 0
+    },
+    {
+      "word": "NOGS",
+      "type": 0
+    },
+    {
+      "word": "NOMA",
+      "type": 0
+    },
+    {
+      "word": "NOMS",
+      "type": 0
+    },
+    {
+      "word": "PAIL",
+      "type": 0
+    },
+    {
+      "word": "PAIN",
+      "type": 0
+    },
+    {
+      "word": "PAMS",
+      "type": 0
+    },
+    {
+      "word": "SCOT",
+      "type": 0
+    },
+    {
+      "word": "SINS",
+      "type": 0
+    },
+    {
+      "word": "SNOG",
+      "type": 0
+    },
+    {
+      "word": "SNOT",
+      "type": 0
+    },
+    {
+      "word": "SOTS",
+      "type": 0
+    },
+    {
+      "word": "TOGS",
+      "type": 0
+    },
+    {
+      "word": "TONS",
+      "type": 0
+    },
+    {
+      "word": "GONIA",
+      "type": 0
+    },
+    {
+      "word": "LINOS",
+      "type": 0
+    },
+    {
+      "word": "MAILS",
+      "type": 0
+    },
+    {
+      "word": "MAINS",
+      "type": 0
+    },
+    {
+      "word": "MONGO",
+      "type": 0
+    },
+    {
+      "word": "PAILS",
+      "type": 0
+    },
+    {
+      "word": "PAINS",
+      "type": 0
+    },
+    {
+      "word": "SCOTS",
+      "type": 0
+    },
+    {
+      "word": "SNOGS",
+      "type": 0
+    },
+    {
+      "word": "SNOTS",
+      "type": 0
+    },
+    {
+      "word": "MONGOS",
+      "type": 0
+    },
+    {
+      "word": "MONGST",
+      "type": 0
+    }
+  ],
+  "letters": "STOC,GONS,NSIL,OMAP",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

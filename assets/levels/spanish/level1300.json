@@ -1,89 +1,207 @@
-﻿{
-    "id":  1300,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AUTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLOG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOLF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOTEO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOREO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ABSOLUTO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LOS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OTERO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOLUTO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOGO",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "AUTOO,BLFTE,SOGOR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1300,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "REX",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "WOO",
+      "type": 0
+    },
+    {
+      "word": "AIRE",
+      "type": 0
+    },
+    {
+      "word": "ERIN",
+      "type": 0
+    },
+    {
+      "word": "NERD",
+      "type": 0
+    },
+    {
+      "word": "IRENE",
+      "type": 0
+    },
+    {
+      "word": "NIETO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BAI",
+      "type": 0
+    },
+    {
+      "word": "BET",
+      "type": 0
+    },
+    {
+      "word": "DAI",
+      "type": 0
+    },
+    {
+      "word": "DRE",
+      "type": 0
+    },
+    {
+      "word": "EIN",
+      "type": 0
+    },
+    {
+      "word": "ENE",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "NEO",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "NIA",
+      "type": 0
+    },
+    {
+      "word": "OWN",
+      "type": 0
+    },
+    {
+      "word": "RDA",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "RIE",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "TWO",
+      "type": 0
+    },
+    {
+      "word": "BETO",
+      "type": 0
+    },
+    {
+      "word": "ENTE",
+      "type": 0
+    },
+    {
+      "word": "ENTO",
+      "type": 0
+    },
+    {
+      "word": "ERIE",
+      "type": 0
+    },
+    {
+      "word": "INTO",
+      "type": 0
+    },
+    {
+      "word": "NEIN",
+      "type": 0
+    },
+    {
+      "word": "NETO",
+      "type": 0
+    },
+    {
+      "word": "RENE",
+      "type": 0
+    },
+    {
+      "word": "RIEN",
+      "type": 0
+    },
+    {
+      "word": "ABETO",
+      "type": 0
+    },
+    {
+      "word": "BAIRD",
+      "type": 0
+    },
+    {
+      "word": "ADRIEN",
+      "type": 0
+    },
+    {
+      "word": "EXENTO",
+      "type": 0
+    }
+  ],
+  "letters": "DABS,RIEN,ENTW,XEOO",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

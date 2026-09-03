@@ -1,105 +1,351 @@
-﻿{
-    "id":  727,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEXO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAGU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RARO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AGORA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ERRAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROGAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENCERRAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AGAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AGUDAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ARRE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "CERRAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CERRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ENCERRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EXORAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EXU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GORAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ERRAR,CÃOGA,NEXUD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 727,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "VER",
+      "type": 0
+    },
+    {
+      "word": "VIR",
+      "type": 0
+    },
+    {
+      "word": "ANDA",
+      "type": 0
+    },
+    {
+      "word": "ARTE",
+      "type": 0
+    },
+    {
+      "word": "VEEM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ADN",
+      "type": 0
+    },
+    {
+      "word": "ANS",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASN",
+      "type": 0
+    },
+    {
+      "word": "DEA",
+      "type": 0
+    },
+    {
+      "word": "DET",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "ENA",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "IRO",
+      "type": 0
+    },
+    {
+      "word": "IVO",
+      "type": 0
+    },
+    {
+      "word": "MEE",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ORI",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "RIR",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "SAD",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "TRI",
+      "type": 0
+    },
+    {
+      "word": "VEE",
+      "type": 0
+    },
+    {
+      "word": "VEN",
+      "type": 0
+    },
+    {
+      "word": "VOE",
+      "type": 0
+    },
+    {
+      "word": "VSA",
+      "type": 0
+    },
+    {
+      "word": "ANDE",
+      "type": 0
+    },
+    {
+      "word": "DEAN",
+      "type": 0
+    },
+    {
+      "word": "DEAR",
+      "type": 0
+    },
+    {
+      "word": "EDNA",
+      "type": 0
+    },
+    {
+      "word": "NERI",
+      "type": 0
+    },
+    {
+      "word": "NERO",
+      "type": 0
+    },
+    {
+      "word": "ORAR",
+      "type": 0
+    },
+    {
+      "word": "OREN",
+      "type": 0
+    },
+    {
+      "word": "RAND",
+      "type": 0
+    },
+    {
+      "word": "RARO",
+      "type": 0
+    },
+    {
+      "word": "RENA",
+      "type": 0
+    },
+    {
+      "word": "SADE",
+      "type": 0
+    },
+    {
+      "word": "SVEN",
+      "type": 0
+    },
+    {
+      "word": "TEAR",
+      "type": 0
+    },
+    {
+      "word": "TRAN",
+      "type": 0
+    },
+    {
+      "word": "VENS",
+      "type": 0
+    },
+    {
+      "word": "VERA",
+      "type": 0
+    },
+    {
+      "word": "VIRA",
+      "type": 0
+    },
+    {
+      "word": "VIRE",
+      "type": 0
+    },
+    {
+      "word": "VIRO",
+      "type": 0
+    },
+    {
+      "word": "VOEM",
+      "type": 0
+    },
+    {
+      "word": "ANDAS",
+      "type": 0
+    },
+    {
+      "word": "DEANE",
+      "type": 0
+    },
+    {
+      "word": "IRENA",
+      "type": 0
+    },
+    {
+      "word": "MEENA",
+      "type": 0
+    },
+    {
+      "word": "MEERA",
+      "type": 0
+    },
+    {
+      "word": "RENDA",
+      "type": 0
+    },
+    {
+      "word": "RENDE",
+      "type": 0
+    },
+    {
+      "word": "SNART",
+      "type": 0
+    },
+    {
+      "word": "SVEND",
+      "type": 0
+    },
+    {
+      "word": "TRANS",
+      "type": 0
+    },
+    {
+      "word": "VENDA",
+      "type": 0
+    },
+    {
+      "word": "VENDE",
+      "type": 0
+    },
+    {
+      "word": "VIRAR",
+      "type": 0
+    },
+    {
+      "word": "VIREN",
+      "type": 0
+    },
+    {
+      "word": "DETRAN",
+      "type": 0
+    },
+    {
+      "word": "RENDAS",
+      "type": 0
+    },
+    {
+      "word": "TRANSA",
+      "type": 0
+    },
+    {
+      "word": "VENDAS",
+      "type": 0
+    }
+  ],
+  "letters": "VOEM,IREV,RANS,TEDA",
+  "obstacles": []
 }

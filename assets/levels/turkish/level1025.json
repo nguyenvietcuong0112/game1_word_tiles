@@ -1,45 +1,131 @@
-﻿{
-    "id":  1025,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AHİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAHİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELLİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DAHİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DÜELLO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "İLLE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AHİ,DOL,ÜEL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1025,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BOZ",
+      "type": 0
+    },
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "KOT",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "UYU",
+      "type": 0
+    },
+    {
+      "word": "ROTA",
+      "type": 0
+    },
+    {
+      "word": "TRUE",
+      "type": 0
+    },
+    {
+      "word": "YURT",
+      "type": 0
+    },
+    {
+      "word": "KORKU",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "FOK",
+      "type": 0
+    },
+    {
+      "word": "KOR",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "RYU",
+      "type": 0
+    },
+    {
+      "word": "TOK",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TRU",
+      "type": 0
+    },
+    {
+      "word": "KATO",
+      "type": 0
+    },
+    {
+      "word": "KATZ",
+      "type": 0
+    },
+    {
+      "word": "KORK",
+      "type": 0
+    },
+    {
+      "word": "KUYU",
+      "type": 0
+    },
+    {
+      "word": "TAKO",
+      "type": 0
+    },
+    {
+      "word": "TOKA",
+      "type": 0
+    },
+    {
+      "word": "TORY",
+      "type": 0
+    },
+    {
+      "word": "UYUR",
+      "type": 0
+    },
+    {
+      "word": "KORKUYU",
+      "type": 0
+    }
+  ],
+  "letters": "OZTA,BFOK,TRRK,EUYU",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

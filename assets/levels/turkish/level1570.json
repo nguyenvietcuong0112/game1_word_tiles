@@ -1,103 +1,107 @@
-﻿{
-    "id":  1570,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GRİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SKOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JAGUAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TARİK",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TOK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TORİK",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "JAGU,NİRA,SKOT",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1570,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAĞ",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "NIN",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "YAS",
+      "type": 0
+    },
+    {
+      "word": "AYNI",
+      "type": 0
+    },
+    {
+      "word": "BAĞI",
+      "type": 0
+    },
+    {
+      "word": "SOME",
+      "type": 0
+    },
+    {
+      "word": "ÖĞLE",
+      "type": 0
+    },
+    {
+      "word": "ÖĞLEN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "AĞI",
+      "type": 0
+    },
+    {
+      "word": "BAE",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "SOM",
+      "type": 0
+    },
+    {
+      "word": "AĞIN",
+      "type": 0
+    },
+    {
+      "word": "NEMO",
+      "type": 0
+    },
+    {
+      "word": "BAĞIN",
+      "type": 0
+    },
+    {
+      "word": "ÖĞLENE",
+      "type": 0
+    }
+  ],
+  "letters": "YNIN,AÖĞL,SBAE,OMEN",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

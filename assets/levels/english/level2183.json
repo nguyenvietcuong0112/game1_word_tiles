@@ -1,101 +1,339 @@
-﻿{
-    "id":  2183,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUNE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ERODE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DECENT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RODENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DECENCY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CEDE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "EDEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RODE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUNT",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "ECTYA,DENCM,ORURI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2183,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "RUB",
+      "type": 0
+    },
+    {
+      "word": "SUB",
+      "type": 0
+    },
+    {
+      "word": "EDGE",
+      "type": 0
+    },
+    {
+      "word": "PASS",
+      "type": 0
+    },
+    {
+      "word": "RAGE",
+      "type": 0
+    },
+    {
+      "word": "PEACE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "BUR",
+      "type": 0
+    },
+    {
+      "word": "BUS",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "PEA",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "RAG",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAG",
+      "type": 0
+    },
+    {
+      "word": "SAP",
+      "type": 0
+    },
+    {
+      "word": "SAU",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "ACTA",
+      "type": 0
+    },
+    {
+      "word": "APED",
+      "type": 0
+    },
+    {
+      "word": "BURA",
+      "type": 0
+    },
+    {
+      "word": "BURS",
+      "type": 0
+    },
+    {
+      "word": "CAPE",
+      "type": 0
+    },
+    {
+      "word": "CAPS",
+      "type": 0
+    },
+    {
+      "word": "CATE",
+      "type": 0
+    },
+    {
+      "word": "GARS",
+      "type": 0
+    },
+    {
+      "word": "GASP",
+      "type": 0
+    },
+    {
+      "word": "PACA",
+      "type": 0
+    },
+    {
+      "word": "PACS",
+      "type": 0
+    },
+    {
+      "word": "PATE",
+      "type": 0
+    },
+    {
+      "word": "PEDS",
+      "type": 0
+    },
+    {
+      "word": "RASP",
+      "type": 0
+    },
+    {
+      "word": "RUBS",
+      "type": 0
+    },
+    {
+      "word": "SACS",
+      "type": 0
+    },
+    {
+      "word": "SAGE",
+      "type": 0
+    },
+    {
+      "word": "SAPS",
+      "type": 0
+    },
+    {
+      "word": "SCAT",
+      "type": 0
+    },
+    {
+      "word": "SPAS",
+      "type": 0
+    },
+    {
+      "word": "SPAT",
+      "type": 0
+    },
+    {
+      "word": "SPED",
+      "type": 0
+    },
+    {
+      "word": "SUBS",
+      "type": 0
+    },
+    {
+      "word": "TAPA",
+      "type": 0
+    },
+    {
+      "word": "TAPE",
+      "type": 0
+    },
+    {
+      "word": "TAPS",
+      "type": 0
+    },
+    {
+      "word": "TEDS",
+      "type": 0
+    },
+    {
+      "word": "TEPA",
+      "type": 0
+    },
+    {
+      "word": "URSA",
+      "type": 0
+    },
+    {
+      "word": "ACTED",
+      "type": 0
+    },
+    {
+      "word": "BURAS",
+      "type": 0
+    },
+    {
+      "word": "BURSA",
+      "type": 0
+    },
+    {
+      "word": "CAPED",
+      "type": 0
+    },
+    {
+      "word": "PACAS",
+      "type": 0
+    },
+    {
+      "word": "PATED",
+      "type": 0
+    },
+    {
+      "word": "RUBUS",
+      "type": 0
+    },
+    {
+      "word": "SCAPE",
+      "type": 0
+    },
+    {
+      "word": "SPATE",
+      "type": 0
+    },
+    {
+      "word": "TAPAS",
+      "type": 0
+    },
+    {
+      "word": "TAPED",
+      "type": 0
+    },
+    {
+      "word": "TEPAS",
+      "type": 0
+    },
+    {
+      "word": "GASPED",
+      "type": 0
+    },
+    {
+      "word": "RASPED",
+      "type": 0
+    },
+    {
+      "word": "SCAPED",
+      "type": 0
+    },
+    {
+      "word": "PASSAGE",
+      "type": 0
+    }
+  ],
+  "letters": "URAGE,BSSDC,UAPEA,SCATC",
+  "obstacles": []
 }

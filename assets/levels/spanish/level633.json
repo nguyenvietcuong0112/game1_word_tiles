@@ -1,73 +1,239 @@
-﻿{
-    "id":  633,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BESO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PECHO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRECHA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PERSONA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CHA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CHO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ECHO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REP",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ESON,BRHA,PECB",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 633,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GOA",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "QUE",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "CASO",
+      "type": 0
+    },
+    {
+      "word": "COSA",
+      "type": 0
+    },
+    {
+      "word": "DIME",
+      "type": 0
+    },
+    {
+      "word": "QUEDE",
+      "type": 0
+    },
+    {
+      "word": "METIDO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "CAI",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "DEM",
+      "type": 0
+    },
+    {
+      "word": "DET",
+      "type": 0
+    },
+    {
+      "word": "DIA",
+      "type": 0
+    },
+    {
+      "word": "DIM",
+      "type": 0
+    },
+    {
+      "word": "DOG",
+      "type": 0
+    },
+    {
+      "word": "EMI",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "GOD",
+      "type": 0
+    },
+    {
+      "word": "IAS",
+      "type": 0
+    },
+    {
+      "word": "IME",
+      "type": 0
+    },
+    {
+      "word": "ITE",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "MIA",
+      "type": 0
+    },
+    {
+      "word": "MIT",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "OSA",
+      "type": 0
+    },
+    {
+      "word": "SAI",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TIA",
+      "type": 0
+    },
+    {
+      "word": "TIM",
+      "type": 0
+    },
+    {
+      "word": "USO",
+      "type": 0
+    },
+    {
+      "word": "DEME",
+      "type": 0
+    },
+    {
+      "word": "DEMI",
+      "type": 0
+    },
+    {
+      "word": "DEUS",
+      "type": 0
+    },
+    {
+      "word": "DIAS",
+      "type": 0
+    },
+    {
+      "word": "ITEM",
+      "type": 0
+    },
+    {
+      "word": "METI",
+      "type": 0
+    },
+    {
+      "word": "MIAS",
+      "type": 0
+    },
+    {
+      "word": "MIDO",
+      "type": 0
+    },
+    {
+      "word": "ODIA",
+      "type": 0
+    },
+    {
+      "word": "SACO",
+      "type": 0
+    },
+    {
+      "word": "SAID",
+      "type": 0
+    },
+    {
+      "word": "TEME",
+      "type": 0
+    },
+    {
+      "word": "TIME",
+      "type": 0
+    },
+    {
+      "word": "CAIDO",
+      "type": 0
+    },
+    {
+      "word": "COSME",
+      "type": 0
+    },
+    {
+      "word": "EMITE",
+      "type": 0
+    },
+    {
+      "word": "ODIAS",
+      "type": 0
+    },
+    {
+      "word": "QUEME",
+      "type": 0
+    },
+    {
+      "word": "TEMIDO",
+      "type": 0
+    },
+    {
+      "word": "EMITIDO",
+      "type": 0
+    }
+  ],
+  "letters": "GODI,CAIT,OSME,QUED",
+  "obstacles": []
 }

@@ -1,77 +1,219 @@
-﻿{
-    "id":  1635,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AWE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OWE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WOKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AWOKE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AWESOME",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "MAW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OWES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SOMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WAS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OME,SAK,EWO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1635,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "NEW",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "WIN",
+      "type": 0
+    },
+    {
+      "word": "LAKE",
+      "type": 0
+    },
+    {
+      "word": "TEST",
+      "type": 0
+    },
+    {
+      "word": "WINE",
+      "type": 0
+    },
+    {
+      "word": "WIRE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "EKE",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "EWE",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "TET",
+      "type": 0
+    },
+    {
+      "word": "TEW",
+      "type": 0
+    },
+    {
+      "word": "WEN",
+      "type": 0
+    },
+    {
+      "word": "WET",
+      "type": 0
+    },
+    {
+      "word": "EWER",
+      "type": 0
+    },
+    {
+      "word": "KART",
+      "type": 0
+    },
+    {
+      "word": "NEWT",
+      "type": 0
+    },
+    {
+      "word": "RAKE",
+      "type": 0
+    },
+    {
+      "word": "RETS",
+      "type": 0
+    },
+    {
+      "word": "SETT",
+      "type": 0
+    },
+    {
+      "word": "STEW",
+      "type": 0
+    },
+    {
+      "word": "TREK",
+      "type": 0
+    },
+    {
+      "word": "TWIN",
+      "type": 0
+    },
+    {
+      "word": "WEKA",
+      "type": 0
+    },
+    {
+      "word": "WERT",
+      "type": 0
+    },
+    {
+      "word": "WETS",
+      "type": 0
+    },
+    {
+      "word": "AKENE",
+      "type": 0
+    },
+    {
+      "word": "ESTER",
+      "type": 0
+    },
+    {
+      "word": "INERT",
+      "type": 0
+    },
+    {
+      "word": "LAKER",
+      "type": 0
+    },
+    {
+      "word": "NEWER",
+      "type": 0
+    },
+    {
+      "word": "REWET",
+      "type": 0
+    },
+    {
+      "word": "REWIN",
+      "type": 0
+    },
+    {
+      "word": "TETRA",
+      "type": 0
+    },
+    {
+      "word": "TWINE",
+      "type": 0
+    },
+    {
+      "word": "REWETS",
+      "type": 0
+    },
+    {
+      "word": "REWIRE",
+      "type": 0
+    },
+    {
+      "word": "SETTER",
+      "type": 0
+    },
+    {
+      "word": "TESTER",
+      "type": 0
+    },
+    {
+      "word": "TETTER",
+      "type": 0
+    },
+    {
+      "word": "TWINER",
+      "type": 0
+    }
+  ],
+  "letters": "SETL,TTRA,EWEK,RINE",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

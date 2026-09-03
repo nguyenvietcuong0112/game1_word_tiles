@@ -1,65 +1,231 @@
-﻿{
-    "id":  754,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PLY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RELY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IMPLY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EMIR",
-                            "type":  1
-                        },
-                        {
-                            "word":  "IMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LYME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIRE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RIME",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "AMY,REL,IMP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 754,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "BAY",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "YEAR",
+      "type": 0
+    },
+    {
+      "word": "GREEN",
+      "type": 0
+    },
+    {
+      "word": "LARGE",
+      "type": 0
+    },
+    {
+      "word": "MERGE",
+      "type": 0
+    },
+    {
+      "word": "STILL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "AYE",
+      "type": 0
+    },
+    {
+      "word": "AYS",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERG",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "LIT",
+      "type": 0
+    },
+    {
+      "word": "LYE",
+      "type": 0
+    },
+    {
+      "word": "NAB",
+      "type": 0
+    },
+    {
+      "word": "NAY",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "TIL",
+      "type": 0
+    },
+    {
+      "word": "YEA",
+      "type": 0
+    },
+    {
+      "word": "YEN",
+      "type": 0
+    },
+    {
+      "word": "ALTS",
+      "type": 0
+    },
+    {
+      "word": "BANE",
+      "type": 0
+    },
+    {
+      "word": "BAYS",
+      "type": 0
+    },
+    {
+      "word": "GEAR",
+      "type": 0
+    },
+    {
+      "word": "GREE",
+      "type": 0
+    },
+    {
+      "word": "ILEA",
+      "type": 0
+    },
+    {
+      "word": "ILLY",
+      "type": 0
+    },
+    {
+      "word": "LEAL",
+      "type": 0
+    },
+    {
+      "word": "LEAR",
+      "type": 0
+    },
+    {
+      "word": "LITS",
+      "type": 0
+    },
+    {
+      "word": "NABS",
+      "type": 0
+    },
+    {
+      "word": "NAYS",
+      "type": 0
+    },
+    {
+      "word": "NEAR",
+      "type": 0
+    },
+    {
+      "word": "NEEM",
+      "type": 0
+    },
+    {
+      "word": "TILE",
+      "type": 0
+    },
+    {
+      "word": "TILL",
+      "type": 0
+    },
+    {
+      "word": "ANEAR",
+      "type": 0
+    },
+    {
+      "word": "ILEAL",
+      "type": 0
+    },
+    {
+      "word": "LAREE",
+      "type": 0
+    },
+    {
+      "word": "STILE",
+      "type": 0
+    },
+    {
+      "word": "STILLY",
+      "type": 0
+    }
+  ],
+  "letters": "MNAB,EEYS,RALT,GELI",
+  "obstacles": []
 }

@@ -1,118 +1,151 @@
-﻿{
-    "id":  1260,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "PUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POST",
-                             "type":  2
-                         },
-                         {
-                             "word":  "OCTOPUS",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANUS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COVET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ECO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OPUS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VETS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TOEAN,VETSU,OCTOP",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1260,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "LOW",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "TWO",
+      "type": 0
+    },
+    {
+      "word": "WHO",
+      "type": 0
+    },
+    {
+      "word": "MEAT",
+      "type": 0
+    },
+    {
+      "word": "TOLL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "MOL",
+      "type": 0
+    },
+    {
+      "word": "MOO",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "MOT",
+      "type": 0
+    },
+    {
+      "word": "OAT",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "WOO",
+      "type": 0
+    },
+    {
+      "word": "LOOM",
+      "type": 0
+    },
+    {
+      "word": "MOLL",
+      "type": 0
+    },
+    {
+      "word": "MOOL",
+      "type": 0
+    },
+    {
+      "word": "PROM",
+      "type": 0
+    },
+    {
+      "word": "ROMP",
+      "type": 0
+    },
+    {
+      "word": "HOLLO",
+      "type": 0
+    },
+    {
+      "word": "PROEM",
+      "type": 0
+    },
+    {
+      "word": "PROMO",
+      "type": 0
+    },
+    {
+      "word": "HOLLOA",
+      "type": 0
+    },
+    {
+      "word": "HOLLOO",
+      "type": 0
+    },
+    {
+      "word": "HOLLOW",
+      "type": 0
+    }
+  ],
+  "letters": "MRPT,EOMO,AOLL,TWHO",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

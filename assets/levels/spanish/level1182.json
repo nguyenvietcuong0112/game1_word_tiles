@@ -1,101 +1,279 @@
-﻿{
-    "id":  1182,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LADO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAJA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OJAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VENDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VENTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VENTAJA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALADO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DALA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ENTADO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LUTADO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TAJA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VENDO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ZULA,VTAJ,ENDO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1182,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "POR",
+      "type": 0
+    },
+    {
+      "word": "PARA",
+      "type": 0
+    },
+    {
+      "word": "RATO",
+      "type": 0
+    },
+    {
+      "word": "ROPA",
+      "type": 0
+    },
+    {
+      "word": "TIRA",
+      "type": 0
+    },
+    {
+      "word": "CALLA",
+      "type": 0
+    },
+    {
+      "word": "POLLA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACA",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ATI",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "ITO",
+      "type": 0
+    },
+    {
+      "word": "LAI",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "LLA",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "OTA",
+      "type": 0
+    },
+    {
+      "word": "POD",
+      "type": 0
+    },
+    {
+      "word": "POL",
+      "type": 0
+    },
+    {
+      "word": "POT",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TIA",
+      "type": 0
+    },
+    {
+      "word": "TOP",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "ALLA",
+      "type": 0
+    },
+    {
+      "word": "ARIA",
+      "type": 0
+    },
+    {
+      "word": "CALL",
+      "type": 0
+    },
+    {
+      "word": "CARI",
+      "type": 0
+    },
+    {
+      "word": "DARA",
+      "type": 0
+    },
+    {
+      "word": "DOLL",
+      "type": 0
+    },
+    {
+      "word": "LACA",
+      "type": 0
+    },
+    {
+      "word": "OLLA",
+      "type": 0
+    },
+    {
+      "word": "PARO",
+      "type": 0
+    },
+    {
+      "word": "RITA",
+      "type": 0
+    },
+    {
+      "word": "RITO",
+      "type": 0
+    },
+    {
+      "word": "ROTA",
+      "type": 0
+    },
+    {
+      "word": "TARA",
+      "type": 0
+    },
+    {
+      "word": "TARO",
+      "type": 0
+    },
+    {
+      "word": "TOPO",
+      "type": 0
+    },
+    {
+      "word": "TORA",
+      "type": 0
+    },
+    {
+      "word": "ARADO",
+      "type": 0
+    },
+    {
+      "word": "CLAIR",
+      "type": 0
+    },
+    {
+      "word": "PODAR",
+      "type": 0
+    },
+    {
+      "word": "CARITA",
+      "type": 0
+    },
+    {
+      "word": "POLACA",
+      "type": 0
+    },
+    {
+      "word": "TARADO",
+      "type": 0
+    },
+    {
+      "word": "TOALLA",
+      "type": 0
+    },
+    {
+      "word": "TOPADO",
+      "type": 0
+    },
+    {
+      "word": "ATORADO",
+      "type": 0
+    }
+  ],
+  "letters": "RACA,IALL,TOPO,ARAD",
+  "obstacles": []
 }

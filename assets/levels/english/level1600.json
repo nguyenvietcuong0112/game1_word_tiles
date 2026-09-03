@@ -1,69 +1,207 @@
-﻿{
-    "id":  1600,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARC",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARCH",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BOAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RANCH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANCHOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRANCH",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BRAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HOE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RANCHO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EOH,BRC,OAN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1600,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "PEP",
+      "type": 0
+    },
+    {
+      "word": "ENDS",
+      "type": 0
+    },
+    {
+      "word": "NEED",
+      "type": 0
+    },
+    {
+      "word": "SOON",
+      "type": 0
+    },
+    {
+      "word": "ENDED",
+      "type": 0
+    },
+    {
+      "word": "NEEDS",
+      "type": 0
+    },
+    {
+      "word": "SCOOP",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "COO",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "NOO",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "ODS",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "POD",
+      "type": 0
+    },
+    {
+      "word": "SOD",
+      "type": 0
+    },
+    {
+      "word": "SOP",
+      "type": 0
+    },
+    {
+      "word": "CONS",
+      "type": 0
+    },
+    {
+      "word": "COOP",
+      "type": 0
+    },
+    {
+      "word": "COOS",
+      "type": 0
+    },
+    {
+      "word": "DOPE",
+      "type": 0
+    },
+    {
+      "word": "DOSS",
+      "type": 0
+    },
+    {
+      "word": "EPOS",
+      "type": 0
+    },
+    {
+      "word": "LEND",
+      "type": 0
+    },
+    {
+      "word": "OPES",
+      "type": 0
+    },
+    {
+      "word": "PEPO",
+      "type": 0
+    },
+    {
+      "word": "PODS",
+      "type": 0
+    },
+    {
+      "word": "POON",
+      "type": 0
+    },
+    {
+      "word": "SODS",
+      "type": 0
+    },
+    {
+      "word": "DOPES",
+      "type": 0
+    },
+    {
+      "word": "EPODE",
+      "type": 0
+    },
+    {
+      "word": "LENDS",
+      "type": 0
+    },
+    {
+      "word": "PEPOS",
+      "type": 0
+    },
+    {
+      "word": "POONS",
+      "type": 0
+    },
+    {
+      "word": "SNOOD",
+      "type": 0
+    },
+    {
+      "word": "SNOOP",
+      "type": 0
+    },
+    {
+      "word": "SNOODS",
+      "type": 0
+    },
+    {
+      "word": "SNOODED",
+      "type": 0
+    }
+  ],
+  "letters": "DSSC,EDOO,ENPN,LPES",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

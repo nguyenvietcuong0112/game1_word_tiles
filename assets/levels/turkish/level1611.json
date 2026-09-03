@@ -1,118 +1,211 @@
-﻿{
-    "id":  1611,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAZİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TERS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARAZİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARAZİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TERAZİ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARAZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İZAM",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MARAZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MARS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MAZİ,ARSR,ZETI",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1611,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "BAK",
+      "type": 0
+    },
+    {
+      "word": "BEŞ",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "BİLE",
+      "type": 0
+    },
+    {
+      "word": "HALE",
+      "type": 0
+    },
+    {
+      "word": "BAKIŞ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "ABİ",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "BEK",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "BİL",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "HAA",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "KEL",
+      "type": 0
+    },
+    {
+      "word": "KEŞ",
+      "type": 0
+    },
+    {
+      "word": "KIŞ",
+      "type": 0
+    },
+    {
+      "word": "LEŞ",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "TAA",
+      "type": 0
+    },
+    {
+      "word": "İHA",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "ŞIK",
+      "type": 0
+    },
+    {
+      "word": "ABEL",
+      "type": 0
+    },
+    {
+      "word": "AKIŞ",
+      "type": 0
+    },
+    {
+      "word": "ALEK",
+      "type": 0
+    },
+    {
+      "word": "ALTA",
+      "type": 0
+    },
+    {
+      "word": "ATAN",
+      "type": 0
+    },
+    {
+      "word": "ATLA",
+      "type": 0
+    },
+    {
+      "word": "BEKA",
+      "type": 0
+    },
+    {
+      "word": "BELA",
+      "type": 0
+    },
+    {
+      "word": "BELİ",
+      "type": 0
+    },
+    {
+      "word": "HALT",
+      "type": 0
+    },
+    {
+      "word": "HALİ",
+      "type": 0
+    },
+    {
+      "word": "HİLE",
+      "type": 0
+    },
+    {
+      "word": "ATANA",
+      "type": 0
+    },
+    {
+      "word": "BİLEK",
+      "type": 0
+    },
+    {
+      "word": "HALTA",
+      "type": 0
+    },
+    {
+      "word": "KABİL",
+      "type": 0
+    },
+    {
+      "word": "KABİLE",
+      "type": 0
+    },
+    {
+      "word": "BAKIŞTA",
+      "type": 0
+    }
+  ],
+  "letters": "AKIA,BEŞN,İLTA,HAAG",
+  "obstacles": []
 }

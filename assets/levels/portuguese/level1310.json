@@ -1,89 +1,163 @@
-﻿{
-    "id":  1310,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SITE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAITA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DIVISA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GALETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIALETO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DIAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ITA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LATO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VIDE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SATGO,IVIAT,TEDLE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1310,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "AOS",
+      "type": 0
+    },
+    {
+      "word": "SAI",
+      "type": 0
+    },
+    {
+      "word": "SIX",
+      "type": 0
+    },
+    {
+      "word": "SOA",
+      "type": 0
+    },
+    {
+      "word": "PULA",
+      "type": 0
+    },
+    {
+      "word": "SAIO",
+      "type": 0
+    },
+    {
+      "word": "PULSO",
+      "type": 0
+    },
+    {
+      "word": "EXPULSO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AOI",
+      "type": 0
+    },
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "IAS",
+      "type": 0
+    },
+    {
+      "word": "ISO",
+      "type": 0
+    },
+    {
+      "word": "LAI",
+      "type": 0
+    },
+    {
+      "word": "LAL",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "OIL",
+      "type": 0
+    },
+    {
+      "word": "PSI",
+      "type": 0
+    },
+    {
+      "word": "SAA",
+      "type": 0
+    },
+    {
+      "word": "SIA",
+      "type": 0
+    },
+    {
+      "word": "SOS",
+      "type": 0
+    },
+    {
+      "word": "UPS",
+      "type": 0
+    },
+    {
+      "word": "XIS",
+      "type": 0
+    },
+    {
+      "word": "ALIA",
+      "type": 0
+    },
+    {
+      "word": "ISLA",
+      "type": 0
+    },
+    {
+      "word": "LALA",
+      "type": 0
+    },
+    {
+      "word": "LAOS",
+      "type": 0
+    },
+    {
+      "word": "SOSA",
+      "type": 0
+    },
+    {
+      "word": "ALIAS",
+      "type": 0
+    },
+    {
+      "word": "PULSA",
+      "type": 0
+    },
+    {
+      "word": "PULSOS",
+      "type": 0
+    },
+    {
+      "word": "EXPULSA",
+      "type": 0
+    },
+    {
+      "word": "EXPULSOS",
+      "type": 0
+    }
+  ],
+  "letters": "ALAL,ISOI,XPSA,EULA",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

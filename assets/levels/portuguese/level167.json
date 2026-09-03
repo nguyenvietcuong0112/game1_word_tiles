@@ -1,45 +1,259 @@
-﻿{
-    "id":  167,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HINO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZONA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GRANIZO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "FONA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RANI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "HIZ,ANO,RGF",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 167,
+  "width": 4,
+  "height": 3,
+  "target_words": [
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ANDA",
+      "type": 0
+    },
+    {
+      "word": "DELA",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "VALE",
+      "type": 0
+    },
+    {
+      "word": "LEVAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ADN",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ANS",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ASN",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DES",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "SAA",
+      "type": 0
+    },
+    {
+      "word": "SAV",
+      "type": 0
+    },
+    {
+      "word": "VAL",
+      "type": 0
+    },
+    {
+      "word": "VEL",
+      "type": 0
+    },
+    {
+      "word": "ANDE",
+      "type": 0
+    },
+    {
+      "word": "ARAS",
+      "type": 0
+    },
+    {
+      "word": "AVAL",
+      "type": 0
+    },
+    {
+      "word": "AVES",
+      "type": 0
+    },
+    {
+      "word": "DALE",
+      "type": 0
+    },
+    {
+      "word": "DEVA",
+      "type": 0
+    },
+    {
+      "word": "EDNA",
+      "type": 0
+    },
+    {
+      "word": "LAVA",
+      "type": 0
+    },
+    {
+      "word": "LAVE",
+      "type": 0
+    },
+    {
+      "word": "LEDA",
+      "type": 0
+    },
+    {
+      "word": "LEVA",
+      "type": 0
+    },
+    {
+      "word": "RASA",
+      "type": 0
+    },
+    {
+      "word": "RAVE",
+      "type": 0
+    },
+    {
+      "word": "SAVE",
+      "type": 0
+    },
+    {
+      "word": "SEDA",
+      "type": 0
+    },
+    {
+      "word": "SELA",
+      "type": 0
+    },
+    {
+      "word": "VALA",
+      "type": 0
+    },
+    {
+      "word": "VARA",
+      "type": 0
+    },
+    {
+      "word": "VEDA",
+      "type": 0
+    },
+    {
+      "word": "VELA",
+      "type": 0
+    },
+    {
+      "word": "ADELA",
+      "type": 0
+    },
+    {
+      "word": "ANDES",
+      "type": 0
+    },
+    {
+      "word": "ANSEL",
+      "type": 0
+    },
+    {
+      "word": "LAVAR",
+      "type": 0
+    },
+    {
+      "word": "LEVAS",
+      "type": 0
+    },
+    {
+      "word": "RAVES",
+      "type": 0
+    },
+    {
+      "word": "VALES",
+      "type": 0
+    },
+    {
+      "word": "VARAS",
+      "type": 0
+    },
+    {
+      "word": "LEVARA",
+      "type": 0
+    }
+  ],
+  "letters": "AVAR,LESA,ADNA",
+  "obstacles": []
 }

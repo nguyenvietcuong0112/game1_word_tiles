@@ -1,109 +1,183 @@
-﻿{
-    "id":  2442,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LINEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LINGO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "STAGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LANGUAGE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANIL",
-                            "type":  1
-                        },
-                        {
-                            "word":  "GEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GETS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "INANE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LING",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NETS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STAG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TENS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NEOSN,ANGTE,LIUAG",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2442,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BUT",
+      "type": 0
+    },
+    {
+      "word": "GOT",
+      "type": 0
+    },
+    {
+      "word": "OUR",
+      "type": 0
+    },
+    {
+      "word": "OUT",
+      "type": 0
+    },
+    {
+      "word": "ROW",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "BUTT",
+      "type": 0
+    },
+    {
+      "word": "DREW",
+      "type": 0
+    },
+    {
+      "word": "GROW",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABO",
+      "type": 0
+    },
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "BOW",
+      "type": 0
+    },
+    {
+      "word": "DAB",
+      "type": 0
+    },
+    {
+      "word": "NOO",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "SOT",
+      "type": 0
+    },
+    {
+      "word": "SOU",
+      "type": 0
+    },
+    {
+      "word": "TOG",
+      "type": 0
+    },
+    {
+      "word": "TUB",
+      "type": 0
+    },
+    {
+      "word": "URD",
+      "type": 0
+    },
+    {
+      "word": "UTS",
+      "type": 0
+    },
+    {
+      "word": "WOE",
+      "type": 0
+    },
+    {
+      "word": "WOO",
+      "type": 0
+    },
+    {
+      "word": "BOON",
+      "type": 0
+    },
+    {
+      "word": "BOOS",
+      "type": 0
+    },
+    {
+      "word": "BOWS",
+      "type": 0
+    },
+    {
+      "word": "BUTS",
+      "type": 0
+    },
+    {
+      "word": "OUTS",
+      "type": 0
+    },
+    {
+      "word": "ROWS",
+      "type": 0
+    },
+    {
+      "word": "STUB",
+      "type": 0
+    },
+    {
+      "word": "SWOB",
+      "type": 0
+    },
+    {
+      "word": "TOST",
+      "type": 0
+    },
+    {
+      "word": "WOOS",
+      "type": 0
+    },
+    {
+      "word": "ABOON",
+      "type": 0
+    },
+    {
+      "word": "BOOST",
+      "type": 0
+    },
+    {
+      "word": "GROWS",
+      "type": 0
+    },
+    {
+      "word": "SWOON",
+      "type": 0
+    }
+  ],
+  "letters": "DABNB,RUOOU,EOWST,WRGOT",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

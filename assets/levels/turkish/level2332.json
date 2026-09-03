@@ -1,93 +1,151 @@
-﻿{
-    "id":  2332,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İKİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İRİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAŞA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SERİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AŞAMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MAREŞAL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AŞAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ESMA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "İRİS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MAŞER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SERİK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ŞAMAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EŞALO,RAERİ,AMSİK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2332,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FUN",
+      "type": 0
+    },
+    {
+      "word": "ONA",
+      "type": 0
+    },
+    {
+      "word": "ONU",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "ROY",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "MOSS",
+      "type": 0
+    },
+    {
+      "word": "ONAY",
+      "type": 0
+    },
+    {
+      "word": "TROY",
+      "type": 0
+    },
+    {
+      "word": "UYAN",
+      "type": 0
+    },
+    {
+      "word": "SEVMEM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANU",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "OYA",
+      "type": 0
+    },
+    {
+      "word": "SEV",
+      "type": 0
+    },
+    {
+      "word": "SOM",
+      "type": 0
+    },
+    {
+      "word": "UNA",
+      "type": 0
+    },
+    {
+      "word": "YAY",
+      "type": 0
+    },
+    {
+      "word": "YEE",
+      "type": 0
+    },
+    {
+      "word": "YOR",
+      "type": 0
+    },
+    {
+      "word": "YUN",
+      "type": 0
+    },
+    {
+      "word": "EMME",
+      "type": 0
+    },
+    {
+      "word": "NORM",
+      "type": 0
+    },
+    {
+      "word": "SOME",
+      "type": 0
+    },
+    {
+      "word": "TRON",
+      "type": 0
+    },
+    {
+      "word": "YUNA",
+      "type": 0
+    },
+    {
+      "word": "EMMET",
+      "type": 0
+    },
+    {
+      "word": "METRO",
+      "type": 0
+    },
+    {
+      "word": "SEVME",
+      "type": 0
+    },
+    {
+      "word": "METROYA",
+      "type": 0
+    }
+  ],
+  "letters": "YAYEE,ONUFS,RMVES,TEMMO",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

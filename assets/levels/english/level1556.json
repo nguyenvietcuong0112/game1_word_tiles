@@ -1,134 +1,159 @@
-﻿{
-    "id":  1556,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FADE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEDAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FACADE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ADAGE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AFT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AGES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "CAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CASED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAFT",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FADES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NADA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NAG",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TSEG,FADA,ACIN",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1556,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "BIN",
+      "type": 0
+    },
+    {
+      "word": "BIT",
+      "type": 0
+    },
+    {
+      "word": "DRY",
+      "type": 0
+    },
+    {
+      "word": "EFF",
+      "type": 0
+    },
+    {
+      "word": "FED",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "PAIR",
+      "type": 0
+    },
+    {
+      "word": "SAFE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AFF",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "APT",
+      "type": 0
+    },
+    {
+      "word": "DAP",
+      "type": 0
+    },
+    {
+      "word": "DEY",
+      "type": 0
+    },
+    {
+      "word": "FAS",
+      "type": 0
+    },
+    {
+      "word": "FEY",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "NIB",
+      "type": 0
+    },
+    {
+      "word": "NIT",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "RYE",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "AINS",
+      "type": 0
+    },
+    {
+      "word": "AIRY",
+      "type": 0
+    },
+    {
+      "word": "BIAS",
+      "type": 0
+    },
+    {
+      "word": "BINS",
+      "type": 0
+    },
+    {
+      "word": "FAIN",
+      "type": 0
+    },
+    {
+      "word": "INIA",
+      "type": 0
+    },
+    {
+      "word": "SAIN",
+      "type": 0
+    },
+    {
+      "word": "SNIB",
+      "type": 0
+    },
+    {
+      "word": "SNIT",
+      "type": 0
+    },
+    {
+      "word": "TINS",
+      "type": 0
+    },
+    {
+      "word": "BINIT",
+      "type": 0
+    },
+    {
+      "word": "DAIRY",
+      "type": 0
+    },
+    {
+      "word": "PADRI",
+      "type": 0
+    },
+    {
+      "word": "TIBIA",
+      "type": 0
+    },
+    {
+      "word": "TIBIAS",
+      "type": 0
+    }
+  ],
+  "letters": "TPAI,IBDR,NIEY,SAFF",
+  "obstacles": []
 }

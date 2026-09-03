@@ -1,87 +1,235 @@
-﻿{
-    "id":  1587,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "FIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIFT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAFE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIFT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SOFT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASSIST",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FIGS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "GIFTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GIST",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAG",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EAST,FGIF,ASSO",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1587,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "OUT",
+      "type": 0
+    },
+    {
+      "word": "RUB",
+      "type": 0
+    },
+    {
+      "word": "RUN",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "RING",
+      "type": 0
+    },
+    {
+      "word": "UNIT",
+      "type": 0
+    },
+    {
+      "word": "ROUTE",
+      "type": 0
+    },
+    {
+      "word": "UNITS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BUN",
+      "type": 0
+    },
+    {
+      "word": "BUR",
+      "type": 0
+    },
+    {
+      "word": "ENG",
+      "type": 0
+    },
+    {
+      "word": "GNU",
+      "type": 0
+    },
+    {
+      "word": "NIT",
+      "type": 0
+    },
+    {
+      "word": "NUB",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "TET",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "TUT",
+      "type": 0
+    },
+    {
+      "word": "UTS",
+      "type": 0
+    },
+    {
+      "word": "BUNG",
+      "type": 0
+    },
+    {
+      "word": "BURR",
+      "type": 0
+    },
+    {
+      "word": "GRIN",
+      "type": 0
+    },
+    {
+      "word": "GRIT",
+      "type": 0
+    },
+    {
+      "word": "NETS",
+      "type": 0
+    },
+    {
+      "word": "NITE",
+      "type": 0
+    },
+    {
+      "word": "NITS",
+      "type": 0
+    },
+    {
+      "word": "OUTS",
+      "type": 0
+    },
+    {
+      "word": "RETS",
+      "type": 0
+    },
+    {
+      "word": "RITE",
+      "type": 0
+    },
+    {
+      "word": "ROUT",
+      "type": 0
+    },
+    {
+      "word": "RUNE",
+      "type": 0
+    },
+    {
+      "word": "RUNG",
+      "type": 0
+    },
+    {
+      "word": "STET",
+      "type": 0
+    },
+    {
+      "word": "STIR",
+      "type": 0
+    },
+    {
+      "word": "TETS",
+      "type": 0
+    },
+    {
+      "word": "TINE",
+      "type": 0
+    },
+    {
+      "word": "TING",
+      "type": 0
+    },
+    {
+      "word": "TUTS",
+      "type": 0
+    },
+    {
+      "word": "BURET",
+      "type": 0
+    },
+    {
+      "word": "GRITS",
+      "type": 0
+    },
+    {
+      "word": "INURE",
+      "type": 0
+    },
+    {
+      "word": "NITER",
+      "type": 0
+    },
+    {
+      "word": "OUTER",
+      "type": 0
+    },
+    {
+      "word": "ROUTS",
+      "type": 0
+    },
+    {
+      "word": "STING",
+      "type": 0
+    },
+    {
+      "word": "UNITE",
+      "type": 0
+    },
+    {
+      "word": "BURETS",
+      "type": 0
+    },
+    {
+      "word": "OUTING",
+      "type": 0
+    },
+    {
+      "word": "ROUTER",
+      "type": 0
+    },
+    {
+      "word": "UNITER",
+      "type": 0
+    },
+    {
+      "word": "ROUTINE",
+      "type": 0
+    },
+    {
+      "word": "ROUTING",
+      "type": 0
+    }
+  ],
+  "letters": "RRGB,OINU,UTER,TSTR",
+  "obstacles": []
 }

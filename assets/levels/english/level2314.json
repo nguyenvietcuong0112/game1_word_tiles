@@ -1,101 +1,139 @@
-﻿{
-    "id":  2314,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GHETTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BURRITO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BURR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HERR",
-                            "type":  1
-                        },
-                        {
-                            "word":  "OTTO",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REHEAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOOT",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "URRIY,BEATO,GHETO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2314,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "BUD",
+      "type": 0
+    },
+    {
+      "word": "COL",
+      "type": 0
+    },
+    {
+      "word": "DOE",
+      "type": 0
+    },
+    {
+      "word": "DOG",
+      "type": 0
+    },
+    {
+      "word": "DUE",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "ENG",
+      "type": 0
+    },
+    {
+      "word": "GOD",
+      "type": 0
+    },
+    {
+      "word": "MAG",
+      "type": 0
+    },
+    {
+      "word": "MAP",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "COCOA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "DUB",
+      "type": 0
+    },
+    {
+      "word": "GAE",
+      "type": 0
+    },
+    {
+      "word": "GAM",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "UDO",
+      "type": 0
+    },
+    {
+      "word": "COCO",
+      "type": 0
+    },
+    {
+      "word": "DODO",
+      "type": 0
+    },
+    {
+      "word": "GAMA",
+      "type": 0
+    },
+    {
+      "word": "LOAM",
+      "type": 0
+    },
+    {
+      "word": "LOCO",
+      "type": 0
+    },
+    {
+      "word": "MEND",
+      "type": 0
+    },
+    {
+      "word": "NEAP",
+      "type": 0
+    },
+    {
+      "word": "OGAM",
+      "type": 0
+    }
+  ],
+  "letters": "LOCOC,PAMAE,MENGO,BUDOD",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

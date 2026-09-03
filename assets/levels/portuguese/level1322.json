@@ -1,117 +1,223 @@
-﻿{
-    "id":  1322,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "PAI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NORA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RAIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAVIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IGNORAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AIAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AVIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GOIVA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "GOIVAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PIVA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UVAIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VARAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "IURAR,AVAIO,PIOGN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1322,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EUA",
+      "type": 0
+    },
+    {
+      "word": "NED",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SUA",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "TEU",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "ESTE",
+      "type": 0
+    },
+    {
+      "word": "ENTRE",
+      "type": 0
+    },
+    {
+      "word": "GENTE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "EEG",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "GEE",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "GER",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "TET",
+      "type": 0
+    },
+    {
+      "word": "TRE",
+      "type": 0
+    },
+    {
+      "word": "TSU",
+      "type": 0
+    },
+    {
+      "word": "ADEN",
+      "type": 0
+    },
+    {
+      "word": "DEER",
+      "type": 0
+    },
+    {
+      "word": "DENG",
+      "type": 0
+    },
+    {
+      "word": "ENTE",
+      "type": 0
+    },
+    {
+      "word": "EREN",
+      "type": 0
+    },
+    {
+      "word": "GERE",
+      "type": 0
+    },
+    {
+      "word": "GERT",
+      "type": 0
+    },
+    {
+      "word": "REED",
+      "type": 0
+    },
+    {
+      "word": "REGE",
+      "type": 0
+    },
+    {
+      "word": "RENT",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "SEEN",
+      "type": 0
+    },
+    {
+      "word": "STEN",
+      "type": 0
+    },
+    {
+      "word": "TEUS",
+      "type": 0
+    },
+    {
+      "word": "TREE",
+      "type": 0
+    },
+    {
+      "word": "TRES",
+      "type": 0
+    },
+    {
+      "word": "RESTE",
+      "type": 0
+    },
+    {
+      "word": "SEGER",
+      "type": 0
+    },
+    {
+      "word": "TETSU",
+      "type": 0
+    },
+    {
+      "word": "TRENT",
+      "type": 0
+    },
+    {
+      "word": "AUSTEN",
+      "type": 0
+    },
+    {
+      "word": "REGENT",
+      "type": 0
+    },
+    {
+      "word": "GERENTE",
+      "type": 0
+    },
+    {
+      "word": "REGENTE",
+      "type": 0
+    }
+  ],
+  "letters": "NTEN,ERTE,GESU,NEDA",
+  "obstacles": []
 }

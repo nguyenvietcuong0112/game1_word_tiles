@@ -1,49 +1,103 @@
-﻿{
-    "id":  1580,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AKÜ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAZA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAZAN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CAKA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CÜZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZAN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ONA,CÜZ,AKA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1580,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BES",
+      "type": 0
+    },
+    {
+      "word": "BİG",
+      "type": 0
+    },
+    {
+      "word": "NEY",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "RUH",
+      "type": 0
+    },
+    {
+      "word": "YEN",
+      "type": 0
+    },
+    {
+      "word": "GRAY",
+      "type": 0
+    },
+    {
+      "word": "RUHU",
+      "type": 0
+    },
+    {
+      "word": "UYAR",
+      "type": 0
+    },
+    {
+      "word": "BİGGS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BER",
+      "type": 0
+    },
+    {
+      "word": "EBU",
+      "type": 0
+    },
+    {
+      "word": "GİA",
+      "type": 0
+    },
+    {
+      "word": "RAİ",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "YUN",
+      "type": 0
+    },
+    {
+      "word": "YUİ",
+      "type": 0
+    },
+    {
+      "word": "UBER",
+      "type": 0
+    },
+    {
+      "word": "YUNE",
+      "type": 0
+    }
+  ],
+  "letters": "RGGS,AİBE,YUUR,ENHU",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

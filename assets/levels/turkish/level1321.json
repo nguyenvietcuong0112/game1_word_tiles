@@ -1,98 +1,187 @@
-﻿{
-    "id":  1321,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEZ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EZME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZEKİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEKİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HİZMET",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "METRİK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "HMET,İZDR,TEKİ",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1321,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AŞK",
+      "type": 0
+    },
+    {
+      "word": "DEK",
+      "type": 0
+    },
+    {
+      "word": "KUR",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "DEDİ",
+      "type": 0
+    },
+    {
+      "word": "DEME",
+      "type": 0
+    },
+    {
+      "word": "EDER",
+      "type": 0
+    },
+    {
+      "word": "BURKE",
+      "type": 0
+    },
+    {
+      "word": "DEDİM",
+      "type": 0
+    },
+    {
+      "word": "DEMEK",
+      "type": 0
+    },
+    {
+      "word": "EDERİM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARK",
+      "type": 0
+    },
+    {
+      "word": "DEM",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "DİM",
+      "type": 0
+    },
+    {
+      "word": "DİR",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "ERİ",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "RİM",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "BURA",
+      "type": 0
+    },
+    {
+      "word": "DEDE",
+      "type": 0
+    },
+    {
+      "word": "DEMİ",
+      "type": 0
+    },
+    {
+      "word": "DERİ",
+      "type": 0
+    },
+    {
+      "word": "EMEK",
+      "type": 0
+    },
+    {
+      "word": "EMİR",
+      "type": 0
+    },
+    {
+      "word": "KEDİ",
+      "type": 0
+    },
+    {
+      "word": "KURA",
+      "type": 0
+    },
+    {
+      "word": "MİDE",
+      "type": 0
+    },
+    {
+      "word": "TERİ",
+      "type": 0
+    },
+    {
+      "word": "DEDEM",
+      "type": 0
+    },
+    {
+      "word": "DEMİR",
+      "type": 0
+    },
+    {
+      "word": "DERİM",
+      "type": 0
+    },
+    {
+      "word": "ERİME",
+      "type": 0
+    },
+    {
+      "word": "KEDER",
+      "type": 0
+    },
+    {
+      "word": "KEDİM",
+      "type": 0
+    },
+    {
+      "word": "TERİM",
+      "type": 0
+    },
+    {
+      "word": "DEDEMİ",
+      "type": 0
+    },
+    {
+      "word": "DEMEDİ",
+      "type": 0
+    },
+    {
+      "word": "KEDERİ",
+      "type": 0
+    }
+  ],
+  "letters": "BTER,UKDİ,RKEM,AŞDE",
+  "obstacles": []
 }

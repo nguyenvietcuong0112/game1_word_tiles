@@ -1,89 +1,279 @@
-﻿{
-    "id":  1107,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MICO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MISS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PISO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASSIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MISSA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MISSÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OMISSÃO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "COMISSÃO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CIMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MISSAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MOCO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SIC",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ISOCO,PRMIÃ,BASSS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1107,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "MIL",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "TIA",
+      "type": 0
+    },
+    {
+      "word": "GATO",
+      "type": 0
+    },
+    {
+      "word": "NOTA",
+      "type": 0
+    },
+    {
+      "word": "MORGAN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIE",
+      "type": 0
+    },
+    {
+      "word": "EIA",
+      "type": 0
+    },
+    {
+      "word": "ENA",
+      "type": 0
+    },
+    {
+      "word": "GAI",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GRO",
+      "type": 0
+    },
+    {
+      "word": "IAN",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "LIM",
+      "type": 0
+    },
+    {
+      "word": "MIT",
+      "type": 0
+    },
+    {
+      "word": "MOL",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "NAI",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NEI",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "OLI",
+      "type": 0
+    },
+    {
+      "word": "OMI",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "ORO",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "TAI",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "TIL",
+      "type": 0
+    },
+    {
+      "word": "TIM",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "TRE",
+      "type": 0
+    },
+    {
+      "word": "GAIL",
+      "type": 0
+    },
+    {
+      "word": "LIAN",
+      "type": 0
+    },
+    {
+      "word": "LIMO",
+      "type": 0
+    },
+    {
+      "word": "MILI",
+      "type": 0
+    },
+    {
+      "word": "MILO",
+      "type": 0
+    },
+    {
+      "word": "MORO",
+      "type": 0
+    },
+    {
+      "word": "NATO",
+      "type": 0
+    },
+    {
+      "word": "NEIL",
+      "type": 0
+    },
+    {
+      "word": "OLGA",
+      "type": 0
+    },
+    {
+      "word": "OTAN",
+      "type": 0
+    },
+    {
+      "word": "RENA",
+      "type": 0
+    },
+    {
+      "word": "RENO",
+      "type": 0
+    },
+    {
+      "word": "ROMI",
+      "type": 0
+    },
+    {
+      "word": "TAIL",
+      "type": 0
+    },
+    {
+      "word": "TANO",
+      "type": 0
+    },
+    {
+      "word": "TIAN",
+      "type": 0
+    },
+    {
+      "word": "TIEN",
+      "type": 0
+    },
+    {
+      "word": "TIMO",
+      "type": 0
+    },
+    {
+      "word": "TONA",
+      "type": 0
+    },
+    {
+      "word": "TONE",
+      "type": 0
+    },
+    {
+      "word": "TAITI",
+      "type": 0
+    },
+    {
+      "word": "TIMOR",
+      "type": 0
+    },
+    {
+      "word": "TONER",
+      "type": 0
+    },
+    {
+      "word": "GROMIT",
+      "type": 0
+    },
+    {
+      "word": "RENATO",
+      "type": 0
+    }
+  ],
+  "letters": "OTDO,NAGR,EILO,RTIM",
+  "obstacles": []
 }

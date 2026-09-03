@@ -1,87 +1,215 @@
-﻿{
-    "id":  1071,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "FUSS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIMB",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LIST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MILD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MISS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLISS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FUSSY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MISTY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLISSFUL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LILT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LUST",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LUSTY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MISSY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SILT",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "BLTY,MISS,DLUF",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1071,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "AREA",
+      "type": 0
+    },
+    {
+      "word": "CARE",
+      "type": 0
+    },
+    {
+      "word": "MASS",
+      "type": 0
+    },
+    {
+      "word": "AREAS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAS",
+      "type": 0
+    },
+    {
+      "word": "AGA",
+      "type": 0
+    },
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "RAG",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAG",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "AGAR",
+      "type": 0
+    },
+    {
+      "word": "AGAS",
+      "type": 0
+    },
+    {
+      "word": "BRAG",
+      "type": 0
+    },
+    {
+      "word": "CARB",
+      "type": 0
+    },
+    {
+      "word": "GARB",
+      "type": 0
+    },
+    {
+      "word": "MART",
+      "type": 0
+    },
+    {
+      "word": "RAGA",
+      "type": 0
+    },
+    {
+      "word": "RAMS",
+      "type": 0
+    },
+    {
+      "word": "REAR",
+      "type": 0
+    },
+    {
+      "word": "SACS",
+      "type": 0
+    },
+    {
+      "word": "SAGA",
+      "type": 0
+    },
+    {
+      "word": "SCAG",
+      "type": 0
+    },
+    {
+      "word": "SCAR",
+      "type": 0
+    },
+    {
+      "word": "TEAR",
+      "type": 0
+    },
+    {
+      "word": "TEAS",
+      "type": 0
+    },
+    {
+      "word": "TRAM",
+      "type": 0
+    },
+    {
+      "word": "CARET",
+      "type": 0
+    },
+    {
+      "word": "RAGAS",
+      "type": 0
+    },
+    {
+      "word": "SCARE",
+      "type": 0
+    },
+    {
+      "word": "SMART",
+      "type": 0
+    },
+    {
+      "word": "TRAMS",
+      "type": 0
+    },
+    {
+      "word": "TRASS",
+      "type": 0
+    },
+    {
+      "word": "MARASCA",
+      "type": 0
+    },
+    {
+      "word": "SMARTER",
+      "type": 0
+    },
+    {
+      "word": "MARASCAS",
+      "type": 0
+    }
+  ],
+  "letters": "SSSM,ACSA,GAAR,BRET",
+  "obstacles": []
 }

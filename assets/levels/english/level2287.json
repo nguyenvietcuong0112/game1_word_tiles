@@ -1,101 +1,271 @@
-﻿{
-    "id":  2287,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "APE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEST",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TAPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATEST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PILATES",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "APES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DOTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PETAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAPES",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TEST,APAO,LILD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2287,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CUM",
+      "type": 0
+    },
+    {
+      "word": "FEE",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "FEED",
+      "type": 0
+    },
+    {
+      "word": "MEAN",
+      "type": 0
+    },
+    {
+      "word": "MEET",
+      "type": 0
+    },
+    {
+      "word": "STAR",
+      "type": 0
+    },
+    {
+      "word": "RANGE",
+      "type": 0
+    },
+    {
+      "word": "RANGERS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "CEE",
+      "type": 0
+    },
+    {
+      "word": "CUR",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "ECU",
+      "type": 0
+    },
+    {
+      "word": "EFS",
+      "type": 0
+    },
+    {
+      "word": "EME",
+      "type": 0
+    },
+    {
+      "word": "EMU",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "FET",
+      "type": 0
+    },
+    {
+      "word": "GEM",
+      "type": 0
+    },
+    {
+      "word": "NAE",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "RUM",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TAT",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "ANAS",
+      "type": 0
+    },
+    {
+      "word": "CURE",
+      "type": 0
+    },
+    {
+      "word": "CURS",
+      "type": 0
+    },
+    {
+      "word": "DEET",
+      "type": 0
+    },
+    {
+      "word": "DEME",
+      "type": 0
+    },
+    {
+      "word": "GNAR",
+      "type": 0
+    },
+    {
+      "word": "GRAN",
+      "type": 0
+    },
+    {
+      "word": "GRAT",
+      "type": 0
+    },
+    {
+      "word": "MURE",
+      "type": 0
+    },
+    {
+      "word": "RANG",
+      "type": 0
+    },
+    {
+      "word": "RATS",
+      "type": 0
+    },
+    {
+      "word": "SANG",
+      "type": 0
+    },
+    {
+      "word": "STAT",
+      "type": 0
+    },
+    {
+      "word": "TATS",
+      "type": 0
+    },
+    {
+      "word": "TEED",
+      "type": 0
+    },
+    {
+      "word": "TEEM",
+      "type": 0
+    },
+    {
+      "word": "UREA",
+      "type": 0
+    },
+    {
+      "word": "URSA",
+      "type": 0
+    },
+    {
+      "word": "ANGER",
+      "type": 0
+    },
+    {
+      "word": "DEMUR",
+      "type": 0
+    },
+    {
+      "word": "ERUCT",
+      "type": 0
+    },
+    {
+      "word": "GRANA",
+      "type": 0
+    },
+    {
+      "word": "REGNA",
+      "type": 0
+    },
+    {
+      "word": "TARGE",
+      "type": 0
+    },
+    {
+      "word": "UREAS",
+      "type": 0
+    },
+    {
+      "word": "URSAE",
+      "type": 0
+    },
+    {
+      "word": "ANGERS",
+      "type": 0
+    },
+    {
+      "word": "DEMEAN",
+      "type": 0
+    },
+    {
+      "word": "DEMURE",
+      "type": 0
+    },
+    {
+      "word": "DEMURS",
+      "type": 0
+    },
+    {
+      "word": "RANGER",
+      "type": 0
+    },
+    {
+      "word": "REMEET",
+      "type": 0
+    },
+    {
+      "word": "SANGER",
+      "type": 0
+    },
+    {
+      "word": "TEEMER",
+      "type": 0
+    },
+    {
+      "word": "TEEMERS",
+      "type": 0
+    }
+  ],
+  "letters": "TCURS,EEMEA,FDTGN,STARA",
+  "obstacles": []
 }

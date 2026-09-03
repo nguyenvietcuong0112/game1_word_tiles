@@ -1,97 +1,255 @@
-﻿{
-    "id":  1172,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ESE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CESE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CESTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PESTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DECRETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SECRETO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DESE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REV",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VOS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DEPS,ESTO,CREV",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1172,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "ARTE",
+      "type": 0
+    },
+    {
+      "word": "ERAN",
+      "type": 0
+    },
+    {
+      "word": "JANE",
+      "type": 0
+    },
+    {
+      "word": "KONG",
+      "type": 0
+    },
+    {
+      "word": "TRAE",
+      "type": 0
+    },
+    {
+      "word": "TREN",
+      "type": 0
+    },
+    {
+      "word": "ARENA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "AJA",
+      "type": 0
+    },
+    {
+      "word": "ANG",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "GAE",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "JAN",
+      "type": 0
+    },
+    {
+      "word": "JAR",
+      "type": 0
+    },
+    {
+      "word": "JET",
+      "type": 0
+    },
+    {
+      "word": "KON",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "ONG",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAJ",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TOK",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "TRE",
+      "type": 0
+    },
+    {
+      "word": "AANG",
+      "type": 0
+    },
+    {
+      "word": "ANGE",
+      "type": 0
+    },
+    {
+      "word": "ENTO",
+      "type": 0
+    },
+    {
+      "word": "GERT",
+      "type": 0
+    },
+    {
+      "word": "JANG",
+      "type": 0
+    },
+    {
+      "word": "JANO",
+      "type": 0
+    },
+    {
+      "word": "RAGE",
+      "type": 0
+    },
+    {
+      "word": "RAJA",
+      "type": 0
+    },
+    {
+      "word": "RANG",
+      "type": 0
+    },
+    {
+      "word": "RENA",
+      "type": 0
+    },
+    {
+      "word": "RENO",
+      "type": 0
+    },
+    {
+      "word": "TEJA",
+      "type": 0
+    },
+    {
+      "word": "TONE",
+      "type": 0
+    },
+    {
+      "word": "TONG",
+      "type": 0
+    },
+    {
+      "word": "JANEK",
+      "type": 0
+    },
+    {
+      "word": "NEGAR",
+      "type": 0
+    },
+    {
+      "word": "RAJAN",
+      "type": 0
+    },
+    {
+      "word": "RANGE",
+      "type": 0
+    },
+    {
+      "word": "TOKEN",
+      "type": 0
+    },
+    {
+      "word": "TRENT",
+      "type": 0
+    },
+    {
+      "word": "RAGNAR",
+      "type": 0
+    },
+    {
+      "word": "RANGER",
+      "type": 0
+    },
+    {
+      "word": "TEJANO",
+      "type": 0
+    },
+    {
+      "word": "NEGARTE",
+      "type": 0
+    },
+    {
+      "word": "TRENTON",
+      "type": 0
+    }
+  ],
+  "letters": "AJET,RAAR,ENGE,KOTN",
+  "obstacles": []
 }

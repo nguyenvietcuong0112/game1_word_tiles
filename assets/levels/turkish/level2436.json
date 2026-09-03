@@ -1,113 +1,243 @@
-﻿{
-    "id":  2436,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AŞK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KENE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KREP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SELE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERKEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KELEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PERSONEL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KELE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KELES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KESRE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NEKRE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SELEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SELEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SONE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ŞAP",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AŞLEK,PKENE,ERSOL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2436,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAK",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "KAL",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "LER",
+      "type": 0
+    },
+    {
+      "word": "YLA",
+      "type": 0
+    },
+    {
+      "word": "YLE",
+      "type": 0
+    },
+    {
+      "word": "İYİ",
+      "type": 0
+    },
+    {
+      "word": "BASS",
+      "type": 0
+    },
+    {
+      "word": "KALP",
+      "type": 0
+    },
+    {
+      "word": "KATZ",
+      "type": 0
+    },
+    {
+      "word": "KORU",
+      "type": 0
+    },
+    {
+      "word": "KYLE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABU",
+      "type": 0
+    },
+    {
+      "word": "AKU",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "EKO",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "KAS",
+      "type": 0
+    },
+    {
+      "word": "KAİ",
+      "type": 0
+    },
+    {
+      "word": "KEL",
+      "type": 0
+    },
+    {
+      "word": "KOR",
+      "type": 0
+    },
+    {
+      "word": "KUR",
+      "type": 0
+    },
+    {
+      "word": "LAK",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LAİ",
+      "type": 0
+    },
+    {
+      "word": "PİA",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SAİ",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "ABUK",
+      "type": 0
+    },
+    {
+      "word": "ABUR",
+      "type": 0
+    },
+    {
+      "word": "ALEK",
+      "type": 0
+    },
+    {
+      "word": "ASAL",
+      "type": 0
+    },
+    {
+      "word": "BAKA",
+      "type": 0
+    },
+    {
+      "word": "BASA",
+      "type": 0
+    },
+    {
+      "word": "KALE",
+      "type": 0
+    },
+    {
+      "word": "KASA",
+      "type": 0
+    },
+    {
+      "word": "PLAK",
+      "type": 0
+    },
+    {
+      "word": "SAKA",
+      "type": 0
+    },
+    {
+      "word": "İPLE",
+      "type": 0
+    },
+    {
+      "word": "PLAKA",
+      "type": 0
+    },
+    {
+      "word": "REKOR",
+      "type": 0
+    },
+    {
+      "word": "SABUK",
+      "type": 0
+    },
+    {
+      "word": "SAKAL",
+      "type": 0
+    },
+    {
+      "word": "SAKAT",
+      "type": 0
+    },
+    {
+      "word": "TABUR",
+      "type": 0
+    },
+    {
+      "word": "TAKAS",
+      "type": 0
+    },
+    {
+      "word": "İPLER",
+      "type": 0
+    },
+    {
+      "word": "REKORU",
+      "type": 0
+    }
+  ],
+  "letters": "RPİYİ,ELASS,KYKAT,ORUBZ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

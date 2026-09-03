@@ -1,83 +1,239 @@
-﻿{
-    "id":  1164,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EMİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÖŞE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞEMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KABİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KABİNE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞÖMİNE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMİN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MİNE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEMA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ŞEN,ÖMİ,KAB",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1164,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "PİS",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "İSA",
+      "type": 0
+    },
+    {
+      "word": "BERİ",
+      "type": 0
+    },
+    {
+      "word": "DELİ",
+      "type": 0
+    },
+    {
+      "word": "POLİS",
+      "type": 0
+    },
+    {
+      "word": "LESTER",
+      "type": 0
+    },
+    {
+      "word": "POLİSİ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "ASİ",
+      "type": 0
+    },
+    {
+      "word": "BER",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DES",
+      "type": 0
+    },
+    {
+      "word": "DİL",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "ERİ",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "LİL",
+      "type": 0
+    },
+    {
+      "word": "LİP",
+      "type": 0
+    },
+    {
+      "word": "LİS",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "POL",
+      "type": 0
+    },
+    {
+      "word": "PİL",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "RİO",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SİD",
+      "type": 0
+    },
+    {
+      "word": "SİL",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "İSİ",
+      "type": 0
+    },
+    {
+      "word": "ALİP",
+      "type": 0
+    },
+    {
+      "word": "ASİL",
+      "type": 0
+    },
+    {
+      "word": "DİLE",
+      "type": 0
+    },
+    {
+      "word": "DİLİ",
+      "type": 0
+    },
+    {
+      "word": "ETSE",
+      "type": 0
+    },
+    {
+      "word": "LİLA",
+      "type": 0
+    },
+    {
+      "word": "LİLİ",
+      "type": 0
+    },
+    {
+      "word": "LİSA",
+      "type": 0
+    },
+    {
+      "word": "PİLİ",
+      "type": 0
+    },
+    {
+      "word": "PİSİ",
+      "type": 0
+    },
+    {
+      "word": "SİDE",
+      "type": 0
+    },
+    {
+      "word": "TERİ",
+      "type": 0
+    },
+    {
+      "word": "DELİL",
+      "type": 0
+    },
+    {
+      "word": "DELİP",
+      "type": 0
+    },
+    {
+      "word": "DESTE",
+      "type": 0
+    },
+    {
+      "word": "ELBET",
+      "type": 0
+    },
+    {
+      "word": "ELİSA",
+      "type": 0
+    },
+    {
+      "word": "SİLİP",
+      "type": 0
+    },
+    {
+      "word": "DELİSİ",
+      "type": 0
+    },
+    {
+      "word": "EDİLİP",
+      "type": 0
+    }
+  ],
+  "letters": "İRET,OPBS,LİLE,ASİD",
+  "obstacles": []
 }

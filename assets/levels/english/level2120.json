@@ -1,93 +1,303 @@
-﻿{
-    "id":  2120,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANISE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CASINO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CASTLE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ASIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EPISTLE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LEST",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PISA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SINO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LEAE,TSIP,CANO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2120,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ELF",
+      "type": 0
+    },
+    {
+      "word": "KID",
+      "type": 0
+    },
+    {
+      "word": "LAW",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "ALSO",
+      "type": 0
+    },
+    {
+      "word": "KING",
+      "type": 0
+    },
+    {
+      "word": "LAKE",
+      "type": 0
+    },
+    {
+      "word": "LAWS",
+      "type": 0
+    },
+    {
+      "word": "SETS",
+      "type": 0
+    },
+    {
+      "word": "SOFT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIS",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "AWE",
+      "type": 0
+    },
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "EGG",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "ENG",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "IRK",
+      "type": 0
+    },
+    {
+      "word": "KEG",
+      "type": 0
+    },
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "KIN",
+      "type": 0
+    },
+    {
+      "word": "LEK",
+      "type": 0
+    },
+    {
+      "word": "OFT",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "SEW",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "TEW",
+      "type": 0
+    },
+    {
+      "word": "WET",
+      "type": 0
+    },
+    {
+      "word": "AKIN",
+      "type": 0
+    },
+    {
+      "word": "AWES",
+      "type": 0
+    },
+    {
+      "word": "DIKE",
+      "type": 0
+    },
+    {
+      "word": "DINE",
+      "type": 0
+    },
+    {
+      "word": "DING",
+      "type": 0
+    },
+    {
+      "word": "FLAK",
+      "type": 0
+    },
+    {
+      "word": "FLAW",
+      "type": 0
+    },
+    {
+      "word": "GELS",
+      "type": 0
+    },
+    {
+      "word": "KALE",
+      "type": 0
+    },
+    {
+      "word": "KINE",
+      "type": 0
+    },
+    {
+      "word": "KRIS",
+      "type": 0
+    },
+    {
+      "word": "LAIR",
+      "type": 0
+    },
+    {
+      "word": "RIAL",
+      "type": 0
+    },
+    {
+      "word": "SEWS",
+      "type": 0
+    },
+    {
+      "word": "SIAL",
+      "type": 0
+    },
+    {
+      "word": "SLAW",
+      "type": 0
+    },
+    {
+      "word": "STEW",
+      "type": 0
+    },
+    {
+      "word": "TEWS",
+      "type": 0
+    },
+    {
+      "word": "WAIR",
+      "type": 0
+    },
+    {
+      "word": "WAKE",
+      "type": 0
+    },
+    {
+      "word": "WALE",
+      "type": 0
+    },
+    {
+      "word": "WETS",
+      "type": 0
+    },
+    {
+      "word": "EKING",
+      "type": 0
+    },
+    {
+      "word": "FLAIR",
+      "type": 0
+    },
+    {
+      "word": "FLAKE",
+      "type": 0
+    },
+    {
+      "word": "FLAWS",
+      "type": 0
+    },
+    {
+      "word": "LAIRD",
+      "type": 0
+    },
+    {
+      "word": "RIALS",
+      "type": 0
+    },
+    {
+      "word": "SIALS",
+      "type": 0
+    },
+    {
+      "word": "SLAKE",
+      "type": 0
+    },
+    {
+      "word": "SLAWS",
+      "type": 0
+    },
+    {
+      "word": "STEWS",
+      "type": 0
+    },
+    {
+      "word": "SWALE",
+      "type": 0
+    },
+    {
+      "word": "WAKEN",
+      "type": 0
+    },
+    {
+      "word": "IRKING",
+      "type": 0
+    },
+    {
+      "word": "LAKING",
+      "type": 0
+    },
+    {
+      "word": "WAKING",
+      "type": 0
+    },
+    {
+      "word": "FLAKING",
+      "type": 0
+    },
+    {
+      "word": "SLAKING",
+      "type": 0
+    }
+  ],
+  "letters": "SSIRD,EWAKI,TSLEN,FOFGG",
+  "obstacles": []
 }

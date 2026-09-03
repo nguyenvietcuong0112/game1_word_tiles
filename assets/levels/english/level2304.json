@@ -1,125 +1,195 @@
-﻿{
-    "id":  2304,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AWE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAG",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DING",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RING",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIDGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WEDDING",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARIA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ARID",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AWED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GRAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GRANGE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IRAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RANGED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RINGED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WAIN",
-                            "type":  1
-                        },
-                        {
-                            "word":  "WED",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ANGE,RIDD,GAWE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2304,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANY",
+      "type": 0
+    },
+    {
+      "word": "GUN",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "PAP",
+      "type": 0
+    },
+    {
+      "word": "POP",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "FUEL",
+      "type": 0
+    },
+    {
+      "word": "MENU",
+      "type": 0
+    },
+    {
+      "word": "PLAN",
+      "type": 0
+    },
+    {
+      "word": "SALE",
+      "type": 0
+    },
+    {
+      "word": "ANIME",
+      "type": 0
+    },
+    {
+      "word": "POPPY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "EMF",
+      "type": 0
+    },
+    {
+      "word": "GIN",
+      "type": 0
+    },
+    {
+      "word": "LEU",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MIG",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "NIM",
+      "type": 0
+    },
+    {
+      "word": "NUN",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAU",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "ALAS",
+      "type": 0
+    },
+    {
+      "word": "ALPS",
+      "type": 0
+    },
+    {
+      "word": "ELAN",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "MINA",
+      "type": 0
+    },
+    {
+      "word": "MINE",
+      "type": 0
+    },
+    {
+      "word": "PAPS",
+      "type": 0
+    },
+    {
+      "word": "POPS",
+      "type": 0
+    },
+    {
+      "word": "SALP",
+      "type": 0
+    },
+    {
+      "word": "ALANE",
+      "type": 0
+    },
+    {
+      "word": "GIMEL",
+      "type": 0
+    },
+    {
+      "word": "PAPPY",
+      "type": 0
+    },
+    {
+      "word": "PLANE",
+      "type": 0
+    },
+    {
+      "word": "PLENA",
+      "type": 0
+    },
+    {
+      "word": "SALPA",
+      "type": 0
+    }
+  ],
+  "letters": "PYNUG,POANI,APLEM,PSAUF",
+  "obstacles": []
 }

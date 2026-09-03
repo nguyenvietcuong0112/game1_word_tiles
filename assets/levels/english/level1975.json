@@ -1,90 +1,139 @@
-﻿{
-    "id":  1975,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAFT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DRAFT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FANDOM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RANDOM",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AFT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAND",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "FTA,ANM,RDO",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  2
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1975,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "CRY",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "TOE",
+      "type": 0
+    },
+    {
+      "word": "POLICY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "ICY",
+      "type": 0
+    },
+    {
+      "word": "LOP",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "POL",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "CESS",
+      "type": 0
+    },
+    {
+      "word": "CLOP",
+      "type": 0
+    },
+    {
+      "word": "ERST",
+      "type": 0
+    },
+    {
+      "word": "LYRE",
+      "type": 0
+    },
+    {
+      "word": "PATS",
+      "type": 0
+    },
+    {
+      "word": "POLY",
+      "type": 0
+    },
+    {
+      "word": "SECT",
+      "type": 0
+    },
+    {
+      "word": "SERS",
+      "type": 0
+    },
+    {
+      "word": "TOES",
+      "type": 0
+    },
+    {
+      "word": "CRESS",
+      "type": 0
+    },
+    {
+      "word": "LYRES",
+      "type": 0
+    },
+    {
+      "word": "RECTA",
+      "type": 0
+    },
+    {
+      "word": "RECTO",
+      "type": 0
+    }
+  ],
+  "letters": "EICMA,OLYCT,PCREO,ATSSA",
+  "obstacles": []
 }

@@ -1,90 +1,263 @@
-﻿{
-    "id":  1824,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASHY",
-                             "type":  2
-                         },
-                         {
-                             "word":  "EAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EASY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TASTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TASTY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEAST",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "THY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YEASTY",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "THY,AST,EYE",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  2
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1824,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADS",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "BACK",
+      "type": 0
+    },
+    {
+      "word": "HERE",
+      "type": 0
+    },
+    {
+      "word": "LIKE",
+      "type": 0
+    },
+    {
+      "word": "THERE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "CAB",
+      "type": 0
+    },
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "DAK",
+      "type": 0
+    },
+    {
+      "word": "DAP",
+      "type": 0
+    },
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "EKE",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "HOD",
+      "type": 0
+    },
+    {
+      "word": "HON",
+      "type": 0
+    },
+    {
+      "word": "NAP",
+      "type": 0
+    },
+    {
+      "word": "NOD",
+      "type": 0
+    },
+    {
+      "word": "NOH",
+      "type": 0
+    },
+    {
+      "word": "ODS",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SKA",
+      "type": 0
+    },
+    {
+      "word": "THO",
+      "type": 0
+    },
+    {
+      "word": "BASK",
+      "type": 0
+    },
+    {
+      "word": "CASK",
+      "type": 0
+    },
+    {
+      "word": "CERE",
+      "type": 0
+    },
+    {
+      "word": "CODA",
+      "type": 0
+    },
+    {
+      "word": "CODS",
+      "type": 0
+    },
+    {
+      "word": "DAKS",
+      "type": 0
+    },
+    {
+      "word": "DOCS",
+      "type": 0
+    },
+    {
+      "word": "DONA",
+      "type": 0
+    },
+    {
+      "word": "HERB",
+      "type": 0
+    },
+    {
+      "word": "HIKE",
+      "type": 0
+    },
+    {
+      "word": "HILT",
+      "type": 0
+    },
+    {
+      "word": "HODS",
+      "type": 0
+    },
+    {
+      "word": "KAPA",
+      "type": 0
+    },
+    {
+      "word": "KERB",
+      "type": 0
+    },
+    {
+      "word": "KILT",
+      "type": 0
+    },
+    {
+      "word": "NADA",
+      "type": 0
+    },
+    {
+      "word": "NODS",
+      "type": 0
+    },
+    {
+      "word": "PADS",
+      "type": 0
+    },
+    {
+      "word": "PANT",
+      "type": 0
+    },
+    {
+      "word": "RECS",
+      "type": 0
+    },
+    {
+      "word": "SACK",
+      "type": 0
+    },
+    {
+      "word": "BACKS",
+      "type": 0
+    },
+    {
+      "word": "HIKER",
+      "type": 0
+    },
+    {
+      "word": "LIKER",
+      "type": 0
+    },
+    {
+      "word": "RECON",
+      "type": 0
+    },
+    {
+      "word": "SABRE",
+      "type": 0
+    },
+    {
+      "word": "ANTHER",
+      "type": 0
+    },
+    {
+      "word": "COHERE",
+      "type": 0
+    },
+    {
+      "word": "ANTLIKE",
+      "type": 0
+    },
+    {
+      "word": "PANTHER",
+      "type": 0
+    }
+  ],
+  "letters": "CABRE,KSCEK,ADOHI,PANTL",
+  "obstacles": []
 }

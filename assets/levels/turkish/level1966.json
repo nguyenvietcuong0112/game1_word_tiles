@@ -1,73 +1,243 @@
-﻿{
-    "id":  1966,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İMAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İMALI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATILIM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DİNAMİT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMİN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ATIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ATILI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İMAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MİDİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ILIMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ILIMAN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TILAN,ALIMİ,STTİD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1966,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "OTU",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "TUT",
+      "type": 0
+    },
+    {
+      "word": "ADIM",
+      "type": 0
+    },
+    {
+      "word": "EDEN",
+      "type": 0
+    },
+    {
+      "word": "MALA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "AMT",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DEA",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "LAU",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "NDA",
+      "type": 0
+    },
+    {
+      "word": "NED",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "ALIM",
+      "type": 0
+    },
+    {
+      "word": "ALTO",
+      "type": 0
+    },
+    {
+      "word": "DALI",
+      "type": 0
+    },
+    {
+      "word": "DAMA",
+      "type": 0
+    },
+    {
+      "word": "DEAD",
+      "type": 0
+    },
+    {
+      "word": "DENE",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "MALI",
+      "type": 0
+    },
+    {
+      "word": "MALT",
+      "type": 0
+    },
+    {
+      "word": "MODA",
+      "type": 0
+    },
+    {
+      "word": "NEAL",
+      "type": 0
+    },
+    {
+      "word": "NEDE",
+      "type": 0
+    },
+    {
+      "word": "ODAM",
+      "type": 0
+    },
+    {
+      "word": "TEAL",
+      "type": 0
+    },
+    {
+      "word": "ADIMA",
+      "type": 0
+    },
+    {
+      "word": "ODALI",
+      "type": 0
+    },
+    {
+      "word": "ODAMI",
+      "type": 0
+    },
+    {
+      "word": "TUTMA",
+      "type": 0
+    },
+    {
+      "word": "ALAMADI",
+      "type": 0
+    },
+    {
+      "word": "TUTMADI",
+      "type": 0
+    },
+    {
+      "word": "ALAMADIM",
+      "type": 0
+    },
+    {
+      "word": "TUTMADIM",
+      "type": 0
+    }
+  ],
+  "letters": "EDOAL,NETUA,DALTM,OMIDA",
+  "obstacles": []
 }

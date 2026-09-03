@@ -1,57 +1,239 @@
-﻿{
-    "id":  1679,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VERY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SILVER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ROM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROVE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SILVERY",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LVE,IOR,SMY",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1679,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "OUR",
+      "type": 0
+    },
+    {
+      "word": "OUT",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "EDIT",
+      "type": 0
+    },
+    {
+      "word": "POST",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DIT",
+      "type": 0
+    },
+    {
+      "word": "DUO",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "OUD",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "RID",
+      "type": 0
+    },
+    {
+      "word": "RUT",
+      "type": 0
+    },
+    {
+      "word": "SOP",
+      "type": 0
+    },
+    {
+      "word": "SOU",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "UTS",
+      "type": 0
+    },
+    {
+      "word": "DEET",
+      "type": 0
+    },
+    {
+      "word": "DIRE",
+      "type": 0
+    },
+    {
+      "word": "DITA",
+      "type": 0
+    },
+    {
+      "word": "DUOS",
+      "type": 0
+    },
+    {
+      "word": "EELS",
+      "type": 0
+    },
+    {
+      "word": "IRED",
+      "type": 0
+    },
+    {
+      "word": "LEER",
+      "type": 0
+    },
+    {
+      "word": "LETS",
+      "type": 0
+    },
+    {
+      "word": "OUTS",
+      "type": 0
+    },
+    {
+      "word": "POUR",
+      "type": 0
+    },
+    {
+      "word": "POUT",
+      "type": 0
+    },
+    {
+      "word": "REDD",
+      "type": 0
+    },
+    {
+      "word": "REEL",
+      "type": 0
+    },
+    {
+      "word": "RIDE",
+      "type": 0
+    },
+    {
+      "word": "RUDD",
+      "type": 0
+    },
+    {
+      "word": "RUTS",
+      "type": 0
+    },
+    {
+      "word": "SOUR",
+      "type": 0
+    },
+    {
+      "word": "STUD",
+      "type": 0
+    },
+    {
+      "word": "TEED",
+      "type": 0
+    },
+    {
+      "word": "TELS",
+      "type": 0
+    },
+    {
+      "word": "TIDE",
+      "type": 0
+    },
+    {
+      "word": "TIRE",
+      "type": 0
+    },
+    {
+      "word": "DEETS",
+      "type": 0
+    },
+    {
+      "word": "POUTS",
+      "type": 0
+    },
+    {
+      "word": "REELS",
+      "type": 0
+    },
+    {
+      "word": "STEED",
+      "type": 0
+    },
+    {
+      "word": "STEER",
+      "type": 0
+    },
+    {
+      "word": "TIRED",
+      "type": 0
+    },
+    {
+      "word": "UDDER",
+      "type": 0
+    },
+    {
+      "word": "RIDDER",
+      "type": 0
+    },
+    {
+      "word": "RUDDER",
+      "type": 0
+    },
+    {
+      "word": "AIRPOST",
+      "type": 0
+    }
+  ],
+  "letters": "LEER,STDI,OUDT,PRIA",
+  "obstacles": []
 }

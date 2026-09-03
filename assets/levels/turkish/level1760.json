@@ -1,53 +1,135 @@
-﻿{
-    "id":  1760,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ÇİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GİŞE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İÇİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇETİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEÇİŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEÇİT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "GEÇE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İÇİŞ",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ŞET,İÇİ,GEN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1760,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SUÇ",
+      "type": 0
+    },
+    {
+      "word": "ÇÖK",
+      "type": 0
+    },
+    {
+      "word": "İSE",
+      "type": 0
+    },
+    {
+      "word": "AYDA",
+      "type": 0
+    },
+    {
+      "word": "CARY",
+      "type": 0
+    },
+    {
+      "word": "NESİ",
+      "type": 0
+    },
+    {
+      "word": "SUÇU",
+      "type": 0
+    },
+    {
+      "word": "SUÇUN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACİ",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "DÖK",
+      "type": 0
+    },
+    {
+      "word": "KUN",
+      "type": 0
+    },
+    {
+      "word": "SEÇ",
+      "type": 0
+    },
+    {
+      "word": "UCA",
+      "type": 0
+    },
+    {
+      "word": "YAS",
+      "type": 0
+    },
+    {
+      "word": "YDU",
+      "type": 0
+    },
+    {
+      "word": "ARYA",
+      "type": 0
+    },
+    {
+      "word": "CADY",
+      "type": 0
+    },
+    {
+      "word": "KUÇU",
+      "type": 0
+    },
+    {
+      "word": "SUDA",
+      "type": 0
+    },
+    {
+      "word": "UÇUK",
+      "type": 0
+    },
+    {
+      "word": "UÇUN",
+      "type": 0
+    },
+    {
+      "word": "İSEN",
+      "type": 0
+    }
+  ],
+  "letters": "NESİ,UÇUC,KÖDA,SAYR",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

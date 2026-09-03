@@ -1,89 +1,215 @@
-﻿{
-    "id":  1329,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIRA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MISS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RISO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CREME",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CRIME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DITAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDITAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEDITAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DITAME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EMEDAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ITA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEDA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SIR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EMEMS,DARIS,ITCGO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1329,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "EGG",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "LEO",
+      "type": 0
+    },
+    {
+      "word": "TAL",
+      "type": 0
+    },
+    {
+      "word": "VÁS",
+      "type": 0
+    },
+    {
+      "word": "ALTA",
+      "type": 0
+    },
+    {
+      "word": "ALTO",
+      "type": 0
+    },
+    {
+      "word": "TOCA",
+      "type": 0
+    },
+    {
+      "word": "VALE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "COL",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GEO",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "TAC",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "TOC",
+      "type": 0
+    },
+    {
+      "word": "TTA",
+      "type": 0
+    },
+    {
+      "word": "TTO",
+      "type": 0
+    },
+    {
+      "word": "TÁS",
+      "type": 0
+    },
+    {
+      "word": "VAL",
+      "type": 0
+    },
+    {
+      "word": "CALL",
+      "type": 0
+    },
+    {
+      "word": "CALO",
+      "type": 0
+    },
+    {
+      "word": "CATO",
+      "type": 0
+    },
+    {
+      "word": "COLA",
+      "type": 0
+    },
+    {
+      "word": "COLT",
+      "type": 0
+    },
+    {
+      "word": "ELLA",
+      "type": 0
+    },
+    {
+      "word": "GALE",
+      "type": 0
+    },
+    {
+      "word": "GALT",
+      "type": 0
+    },
+    {
+      "word": "GELA",
+      "type": 0
+    },
+    {
+      "word": "LOCA",
+      "type": 0
+    },
+    {
+      "word": "TACO",
+      "type": 0
+    },
+    {
+      "word": "TALL",
+      "type": 0
+    },
+    {
+      "word": "TALO",
+      "type": 0
+    },
+    {
+      "word": "TOLA",
+      "type": 0
+    },
+    {
+      "word": "CALLE",
+      "type": 0
+    },
+    {
+      "word": "GALLO",
+      "type": 0
+    },
+    {
+      "word": "LOTTA",
+      "type": 0
+    },
+    {
+      "word": "COTTAGE",
+      "type": 0
+    }
+  ],
+  "letters": "CATO,OLLE,TTAG,SÁVG",
+  "obstacles": []
 }

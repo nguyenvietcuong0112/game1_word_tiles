@@ -1,89 +1,287 @@
-﻿{
-    "id":  1340,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CADA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAIR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LACA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LADO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PURO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CALVO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CALADO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POVOADO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALADO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ALVOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAIRO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ORLADO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "POVOO,URLAD,VIACA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1340,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "LOS",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "SOM",
+      "type": 0
+    },
+    {
+      "word": "TIM",
+      "type": 0
+    },
+    {
+      "word": "TOA",
+      "type": 0
+    },
+    {
+      "word": "DITO",
+      "type": 0
+    },
+    {
+      "word": "FROM",
+      "type": 0
+    },
+    {
+      "word": "ROSS",
+      "type": 0
+    },
+    {
+      "word": "TIME",
+      "type": 0
+    },
+    {
+      "word": "TORO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DEM",
+      "type": 0
+    },
+    {
+      "word": "DIM",
+      "type": 0
+    },
+    {
+      "word": "ELO",
+      "type": 0
+    },
+    {
+      "word": "EMI",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "FMI",
+      "type": 0
+    },
+    {
+      "word": "IDE",
+      "type": 0
+    },
+    {
+      "word": "ITO",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "MIT",
+      "type": 0
+    },
+    {
+      "word": "MOL",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OMI",
+      "type": 0
+    },
+    {
+      "word": "ORO",
+      "type": 0
+    },
+    {
+      "word": "OSS",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "AFRO",
+      "type": 0
+    },
+    {
+      "word": "DEMI",
+      "type": 0
+    },
+    {
+      "word": "DEMO",
+      "type": 0
+    },
+    {
+      "word": "DIME",
+      "type": 0
+    },
+    {
+      "word": "ELOS",
+      "type": 0
+    },
+    {
+      "word": "IDEM",
+      "type": 0
+    },
+    {
+      "word": "LSSO",
+      "type": 0
+    },
+    {
+      "word": "MEDI",
+      "type": 0
+    },
+    {
+      "word": "MELO",
+      "type": 0
+    },
+    {
+      "word": "MITO",
+      "type": 0
+    },
+    {
+      "word": "MOLE",
+      "type": 0
+    },
+    {
+      "word": "MORO",
+      "type": 0
+    },
+    {
+      "word": "MOSS",
+      "type": 0
+    },
+    {
+      "word": "ROLE",
+      "type": 0
+    },
+    {
+      "word": "ROME",
+      "type": 0
+    },
+    {
+      "word": "ROMI",
+      "type": 0
+    },
+    {
+      "word": "SOLE",
+      "type": 0
+    },
+    {
+      "word": "SOME",
+      "type": 0
+    },
+    {
+      "word": "SORO",
+      "type": 0
+    },
+    {
+      "word": "SOTO",
+      "type": 0
+    },
+    {
+      "word": "TIDE",
+      "type": 0
+    },
+    {
+      "word": "TIMO",
+      "type": 0
+    },
+    {
+      "word": "DEMOS",
+      "type": 0
+    },
+    {
+      "word": "LEMOS",
+      "type": 0
+    },
+    {
+      "word": "OTIMO",
+      "type": 0
+    },
+    {
+      "word": "TIMOR",
+      "type": 0
+    },
+    {
+      "word": "TOROS",
+      "type": 0
+    },
+    {
+      "word": "DEMITO",
+      "type": 0
+    },
+    {
+      "word": "DEMORO",
+      "type": 0
+    },
+    {
+      "word": "MELOSO",
+      "type": 0
+    }
+  ],
+  "letters": "DITO,EMFA,LORO,SSOT",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

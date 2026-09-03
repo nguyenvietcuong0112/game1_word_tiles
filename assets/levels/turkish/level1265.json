@@ -1,77 +1,227 @@
-﻿{
-    "id":  1265,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İKİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİŞİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EĞİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EŞİK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KİŞİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİKİŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEĞİŞİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEĞİŞİM",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DEĞİM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DEĞİŞ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DEŞİK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DİKİM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KİMİ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ĞİM,EŞİ,DİK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1265,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALF",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "BİR",
+      "type": 0
+    },
+    {
+      "word": "YLA",
+      "type": 0
+    },
+    {
+      "word": "İSE",
+      "type": 0
+    },
+    {
+      "word": "BERİ",
+      "type": 0
+    },
+    {
+      "word": "BİRA",
+      "type": 0
+    },
+    {
+      "word": "ÖYLE",
+      "type": 0
+    },
+    {
+      "word": "BURAYA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "AYY",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "BER",
+      "type": 0
+    },
+    {
+      "word": "BES",
+      "type": 0
+    },
+    {
+      "word": "EBU",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ELF",
+      "type": 0
+    },
+    {
+      "word": "ERİ",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LAY",
+      "type": 0
+    },
+    {
+      "word": "LER",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "YLE",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "ARAR",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "AYAR",
+      "type": 0
+    },
+    {
+      "word": "BELA",
+      "type": 0
+    },
+    {
+      "word": "BUBİ",
+      "type": 0
+    },
+    {
+      "word": "BURA",
+      "type": 0
+    },
+    {
+      "word": "BİRE",
+      "type": 0
+    },
+    {
+      "word": "ERİR",
+      "type": 0
+    },
+    {
+      "word": "LARA",
+      "type": 0
+    },
+    {
+      "word": "LERİ",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SERİ",
+      "type": 0
+    },
+    {
+      "word": "UBER",
+      "type": 0
+    },
+    {
+      "word": "YALE",
+      "type": 0
+    },
+    {
+      "word": "YARA",
+      "type": 0
+    },
+    {
+      "word": "SİBER",
+      "type": 0
+    },
+    {
+      "word": "YARAR",
+      "type": 0
+    },
+    {
+      "word": "BELAYA",
+      "type": 0
+    },
+    {
+      "word": "BİRAYA",
+      "type": 0
+    },
+    {
+      "word": "ÖYLESİ",
+      "type": 0
+    }
+  ],
+  "letters": "ÖFSİ,YLEB,YARU,ARİB",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,91 +1,115 @@
-﻿{
-    "id":  1135,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LION",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOLUTION",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ION",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POLIO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TION,ULAL,POSE",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1135,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "FAR",
+      "type": 0
+    },
+    {
+      "word": "FIR",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "CARS",
+      "type": 0
+    },
+    {
+      "word": "RACK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARF",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "OKA",
+      "type": 0
+    },
+    {
+      "word": "RIF",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "HACK",
+      "type": 0
+    },
+    {
+      "word": "KHAT",
+      "type": 0
+    },
+    {
+      "word": "SCAR",
+      "type": 0
+    },
+    {
+      "word": "TACK",
+      "type": 0
+    },
+    {
+      "word": "ACARI",
+      "type": 0
+    },
+    {
+      "word": "CARAT",
+      "type": 0
+    },
+    {
+      "word": "RACON",
+      "type": 0
+    },
+    {
+      "word": "SCARF",
+      "type": 0
+    }
+  ],
+  "letters": "IRAT,FACA,RAKH,SCON",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,89 +1,219 @@
-﻿{
-    "id":  1071,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MUGIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRIMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUGIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUMOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRIMOR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "REPRIMIR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ERMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GURI",
-                            "type":  2
-                        },
-                        {
-                            "word":  "IMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MORIM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PRUMO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RMOR,EIMI,PRUG",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1071,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EIS",
+      "type": 0
+    },
+    {
+      "word": "PUB",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "SUA",
+      "type": 0
+    },
+    {
+      "word": "ACHO",
+      "type": 0
+    },
+    {
+      "word": "NORM",
+      "type": 0
+    },
+    {
+      "word": "PICA",
+      "type": 0
+    },
+    {
+      "word": "SINO",
+      "type": 0
+    },
+    {
+      "word": "SUAS",
+      "type": 0
+    },
+    {
+      "word": "ACHOU",
+      "type": 0
+    },
+    {
+      "word": "ASSINOU",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACH",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "ASN",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "CHO",
+      "type": 0
+    },
+    {
+      "word": "EIN",
+      "type": 0
+    },
+    {
+      "word": "HON",
+      "type": 0
+    },
+    {
+      "word": "HOU",
+      "type": 0
+    },
+    {
+      "word": "ICH",
+      "type": 0
+    },
+    {
+      "word": "INO",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "ISS",
+      "type": 0
+    },
+    {
+      "word": "MEI",
+      "type": 0
+    },
+    {
+      "word": "NOH",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "NOU",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "ONI",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "ORM",
+      "type": 0
+    },
+    {
+      "word": "ROU",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SHO",
+      "type": 0
+    },
+    {
+      "word": "SIE",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "USS",
+      "type": 0
+    },
+    {
+      "word": "ASNO",
+      "type": 0
+    },
+    {
+      "word": "BUON",
+      "type": 0
+    },
+    {
+      "word": "CASH",
+      "type": 0
+    },
+    {
+      "word": "CASS",
+      "type": 0
+    },
+    {
+      "word": "CHON",
+      "type": 0
+    },
+    {
+      "word": "CHOU",
+      "type": 0
+    },
+    {
+      "word": "ISSA",
+      "type": 0
+    },
+    {
+      "word": "MEIN",
+      "type": 0
+    },
+    {
+      "word": "SINS",
+      "type": 0
+    },
+    {
+      "word": "CASSI",
+      "type": 0
+    },
+    {
+      "word": "ASSINO",
+      "type": 0
+    },
+    {
+      "word": "CASSIE",
+      "type": 0
+    },
+    {
+      "word": "CASSINO",
+      "type": 0
+    }
+  ],
+  "letters": "UACI,SSHP,INOU,EMRB",
+  "obstacles": []
 }

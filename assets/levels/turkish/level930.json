@@ -1,57 +1,195 @@
-﻿{
-    "id":  930,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ÇEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İKİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EVRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇEVİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇEVRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEKİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇERÇEVE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KEKEÇ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ÇEKEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇEVİKÇE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KEKİ,EVİK,ÇREÇ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 930,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "AYI",
+      "type": 0
+    },
+    {
+      "word": "BAK",
+      "type": 0
+    },
+    {
+      "word": "BAŞ",
+      "type": 0
+    },
+    {
+      "word": "KIL",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "KARA",
+      "type": 0
+    },
+    {
+      "word": "RİCA",
+      "type": 0
+    },
+    {
+      "word": "ACABA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACİ",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "KAC",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "LIK",
+      "type": 0
+    },
+    {
+      "word": "RAB",
+      "type": 0
+    },
+    {
+      "word": "RİC",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "AKAR",
+      "type": 0
+    },
+    {
+      "word": "BACA",
+      "type": 0
+    },
+    {
+      "word": "BAKA",
+      "type": 0
+    },
+    {
+      "word": "BARA",
+      "type": 0
+    },
+    {
+      "word": "BARİ",
+      "type": 0
+    },
+    {
+      "word": "CAKA",
+      "type": 0
+    },
+    {
+      "word": "CARA",
+      "type": 0
+    },
+    {
+      "word": "KABA",
+      "type": 0
+    },
+    {
+      "word": "KARİ",
+      "type": 0
+    },
+    {
+      "word": "YAKA",
+      "type": 0
+    },
+    {
+      "word": "YARA",
+      "type": 0
+    },
+    {
+      "word": "İRAK",
+      "type": 0
+    },
+    {
+      "word": "ARACA",
+      "type": 0
+    },
+    {
+      "word": "ARAYI",
+      "type": 0
+    },
+    {
+      "word": "BACAK",
+      "type": 0
+    },
+    {
+      "word": "BAKAR",
+      "type": 0
+    },
+    {
+      "word": "BAŞLI",
+      "type": 0
+    },
+    {
+      "word": "YAKAR",
+      "type": 0
+    },
+    {
+      "word": "YARAK",
+      "type": 0
+    },
+    {
+      "word": "BARAKA",
+      "type": 0
+    },
+    {
+      "word": "BAŞLIK",
+      "type": 0
+    }
+  ],
+  "letters": "İCAR,RAKA,ABKY,ŞLII",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

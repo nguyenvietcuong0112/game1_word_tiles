@@ -1,101 +1,207 @@
-﻿{
-    "id":  713,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DADO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NIDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COSTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COSTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COSTADO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CEE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DINA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NADO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOC",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TODA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OSTO,CDAD,EENI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 713,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "VES",
+      "type": 0
+    },
+    {
+      "word": "DAVE",
+      "type": 0
+    },
+    {
+      "word": "HALL",
+      "type": 0
+    },
+    {
+      "word": "TEMO",
+      "type": 0
+    },
+    {
+      "word": "TOME",
+      "type": 0
+    },
+    {
+      "word": "LLAVE",
+      "type": 0
+    },
+    {
+      "word": "SUERTE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "DES",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "HOT",
+      "type": 0
+    },
+    {
+      "word": "LLA",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "SED",
+      "type": 0
+    },
+    {
+      "word": "SEH",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "TOS",
+      "type": 0
+    },
+    {
+      "word": "TRE",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "USO",
+      "type": 0
+    },
+    {
+      "word": "VAL",
+      "type": 0
+    },
+    {
+      "word": "VED",
+      "type": 0
+    },
+    {
+      "word": "AVAL",
+      "type": 0
+    },
+    {
+      "word": "AVES",
+      "type": 0
+    },
+    {
+      "word": "DEVA",
+      "type": 0
+    },
+    {
+      "word": "HAVE",
+      "type": 0
+    },
+    {
+      "word": "HOME",
+      "type": 0
+    },
+    {
+      "word": "LAVA",
+      "type": 0
+    },
+    {
+      "word": "LAVE",
+      "type": 0
+    },
+    {
+      "word": "METO",
+      "type": 0
+    },
+    {
+      "word": "MOSE",
+      "type": 0
+    },
+    {
+      "word": "MOTE",
+      "type": 0
+    },
+    {
+      "word": "SEDA",
+      "type": 0
+    },
+    {
+      "word": "SOME",
+      "type": 0
+    },
+    {
+      "word": "SUDA",
+      "type": 0
+    },
+    {
+      "word": "TOSE",
+      "type": 0
+    },
+    {
+      "word": "USED",
+      "type": 0
+    },
+    {
+      "word": "VEDA",
+      "type": 0
+    },
+    {
+      "word": "LAVES",
+      "type": 0
+    },
+    {
+      "word": "LLAVES",
+      "type": 0
+    }
+  ],
+  "letters": "AVAL,DEHL,USOM,ERTE",
+  "obstacles": []
 }

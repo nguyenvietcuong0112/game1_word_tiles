@@ -1,71 +1,131 @@
-﻿{
-    "id":  1170,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OYA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İKNA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAPYON",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KİP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAPAK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "İKNA,PYOY,APAK",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1170,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "NDA",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "HİNT",
+      "type": 0
+    },
+    {
+      "word": "ONDA",
+      "type": 0
+    },
+    {
+      "word": "ORTA",
+      "type": 0
+    },
+    {
+      "word": "PHİL",
+      "type": 0
+    },
+    {
+      "word": "LİNDA",
+      "type": 0
+    },
+    {
+      "word": "NORTH",
+      "type": 0
+    },
+    {
+      "word": "HİNTLİ",
+      "type": 0
+    },
+    {
+      "word": "PATRON",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AİN",
+      "type": 0
+    },
+    {
+      "word": "LİN",
+      "type": 0
+    },
+    {
+      "word": "NON",
+      "type": 0
+    },
+    {
+      "word": "NİL",
+      "type": 0
+    },
+    {
+      "word": "ONO",
+      "type": 0
+    },
+    {
+      "word": "PAO",
+      "type": 0
+    },
+    {
+      "word": "PAİ",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TAİ",
+      "type": 0
+    },
+    {
+      "word": "AORT",
+      "type": 0
+    },
+    {
+      "word": "TAİL",
+      "type": 0
+    },
+    {
+      "word": "TRON",
+      "type": 0
+    },
+    {
+      "word": "RONON",
+      "type": 0
+    }
+  ],
+  "letters": "İHPH,LİAT,TNOR,ADNO",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

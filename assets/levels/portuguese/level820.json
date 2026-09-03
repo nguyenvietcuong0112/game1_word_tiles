@@ -1,77 +1,195 @@
-﻿{
-    "id":  820,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BOI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACNE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BOIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CABO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAIXA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PENCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUXAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAIXAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENCAIXAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ABOAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BAIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ITU",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PUXAR,ETIOI,NCABL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 820,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BEA",
+      "type": 0
+    },
+    {
+      "word": "FUI",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAPA",
+      "type": 0
+    },
+    {
+      "word": "PAPA",
+      "type": 0
+    },
+    {
+      "word": "PAPO",
+      "type": 0
+    },
+    {
+      "word": "SOPA",
+      "type": 0
+    },
+    {
+      "word": "STAN",
+      "type": 0
+    },
+    {
+      "word": "POSSUI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "APA",
+      "type": 0
+    },
+    {
+      "word": "APO",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "OSS",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "PIP",
+      "type": 0
+    },
+    {
+      "word": "PIU",
+      "type": 0
+    },
+    {
+      "word": "POE",
+      "type": 0
+    },
+    {
+      "word": "POS",
+      "type": 0
+    },
+    {
+      "word": "SOE",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "USS",
+      "type": 0
+    },
+    {
+      "word": "APOS",
+      "type": 0
+    },
+    {
+      "word": "BEAM",
+      "type": 0
+    },
+    {
+      "word": "MAPS",
+      "type": 0
+    },
+    {
+      "word": "NAPA",
+      "type": 0
+    },
+    {
+      "word": "PAPI",
+      "type": 0
+    },
+    {
+      "word": "PATS",
+      "type": 0
+    },
+    {
+      "word": "PINA",
+      "type": 0
+    },
+    {
+      "word": "PIPA",
+      "type": 0
+    },
+    {
+      "word": "SPAM",
+      "type": 0
+    },
+    {
+      "word": "SPIN",
+      "type": 0
+    },
+    {
+      "word": "TAPA",
+      "type": 0
+    },
+    {
+      "word": "PAPOS",
+      "type": 0
+    }
+  ],
+  "letters": "SSUF,OPIN,EAPA,BMST",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

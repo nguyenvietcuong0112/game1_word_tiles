@@ -1,97 +1,107 @@
-﻿{
-    "id":  1265,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FORO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LORO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TROL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AFORO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAROL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LITRO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MARTILLO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "FAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FAROE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LLORO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LORA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MARO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "FOER,AROL,MTIL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1265,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "MÍA",
+      "type": 0
+    },
+    {
+      "word": "NDE",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "GRIM",
+      "type": 0
+    },
+    {
+      "word": "IRÍA",
+      "type": 0
+    },
+    {
+      "word": "MIRA",
+      "type": 0
+    },
+    {
+      "word": "GARRA",
+      "type": 0
+    },
+    {
+      "word": "MIRAR",
+      "type": 0
+    },
+    {
+      "word": "ADMIRAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DET",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "RÍA",
+      "type": 0
+    },
+    {
+      "word": "MÍRA",
+      "type": 0
+    },
+    {
+      "word": "MIRRA",
+      "type": 0
+    },
+    {
+      "word": "ADMIRA",
+      "type": 0
+    },
+    {
+      "word": "MIRARÍA",
+      "type": 0
+    }
+  ],
+  "letters": "ADDE,ÍMNT,RIRG,ARRA",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

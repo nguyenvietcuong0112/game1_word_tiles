@@ -1,77 +1,123 @@
-﻿{
-    "id":  970,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ВОЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛОТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "УЛОВ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "УШАТ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ШАТО",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ГРУША",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ВОТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ГЛОТ",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ЛАТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛОВ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛУР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТАЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТОВ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТОЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ШАЛОТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ШАТ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ШАТ,УЛО,РГВ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 970,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "БРО",
+      "type": 0
+    },
+    {
+      "word": "ВОР",
+      "type": 0
+    },
+    {
+      "word": "ВСЕ",
+      "type": 0
+    },
+    {
+      "word": "ЕСТ",
+      "type": 0
+    },
+    {
+      "word": "РАЗ",
+      "type": 0
+    },
+    {
+      "word": "РОЙ",
+      "type": 0
+    },
+    {
+      "word": "СЫР",
+      "type": 0
+    },
+    {
+      "word": "ВСЕЙ",
+      "type": 0
+    },
+    {
+      "word": "ДВОРЕ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ВОЙ",
+      "type": 0
+    },
+    {
+      "word": "РЕЙ",
+      "type": 0
+    },
+    {
+      "word": "РОВ",
+      "type": 0
+    },
+    {
+      "word": "РЫБ",
+      "type": 0
+    },
+    {
+      "word": "СЕЙ",
+      "type": 0
+    },
+    {
+      "word": "СЕР",
+      "type": 0
+    },
+    {
+      "word": "ВАЗЫ",
+      "type": 0
+    },
+    {
+      "word": "ДВОР",
+      "type": 0
+    },
+    {
+      "word": "ЗАРЕ",
+      "type": 0
+    },
+    {
+      "word": "РАЗЫ",
+      "type": 0
+    },
+    {
+      "word": "СЕРА",
+      "type": 0
+    },
+    {
+      "word": "СЕРЫ",
+      "type": 0
+    },
+    {
+      "word": "СЫРА",
+      "type": 0
+    },
+    {
+      "word": "АРЕСТ",
+      "type": 0
+    },
+    {
+      "word": "СЕРОЙ",
+      "type": 0
+    }
+  ],
+  "letters": "ДВОЙ,ТБРЕ,СЫЗС,ЕРАВ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

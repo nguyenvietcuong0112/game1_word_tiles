@@ -1,97 +1,151 @@
-﻿{
-    "id":  2362,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEDGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OTHER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THERAPY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PARE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "PARED",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOED",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "ERAPY,HEDGE,TOTIE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2362,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BEG",
+      "type": 0
+    },
+    {
+      "word": "BET",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "WED",
+      "type": 0
+    },
+    {
+      "word": "WET",
+      "type": 0
+    },
+    {
+      "word": "BYTE",
+      "type": 0
+    },
+    {
+      "word": "DISK",
+      "type": 0
+    },
+    {
+      "word": "SIDE",
+      "type": 0
+    },
+    {
+      "word": "USES",
+      "type": 0
+    },
+    {
+      "word": "FOCUS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BYS",
+      "type": 0
+    },
+    {
+      "word": "COB",
+      "type": 0
+    },
+    {
+      "word": "DEW",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "ECU",
+      "type": 0
+    },
+    {
+      "word": "FET",
+      "type": 0
+    },
+    {
+      "word": "FOB",
+      "type": 0
+    },
+    {
+      "word": "OBE",
+      "type": 0
+    },
+    {
+      "word": "SIS",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TEW",
+      "type": 0
+    },
+    {
+      "word": "BEGS",
+      "type": 0
+    },
+    {
+      "word": "ECUS",
+      "type": 0
+    },
+    {
+      "word": "EIDE",
+      "type": 0
+    },
+    {
+      "word": "FETE",
+      "type": 0
+    },
+    {
+      "word": "OBES",
+      "type": 0
+    },
+    {
+      "word": "SYBO",
+      "type": 0
+    },
+    {
+      "word": "FETED",
+      "type": 0
+    },
+    {
+      "word": "SISES",
+      "type": 0
+    },
+    {
+      "word": "BESIDE",
+      "type": 0
+    },
+    {
+      "word": "FOCUSES",
+      "type": 0
+    }
+  ],
+  "letters": "FETEW,OBYDK,CESIS,USGEB",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

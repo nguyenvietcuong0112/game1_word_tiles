@@ -1,141 +1,259 @@
-﻿{
-    "id":  2292,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARC",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AREA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARTSY",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GREAT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "START",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RESTART",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARCS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EATS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GRAS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "GREATS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RATS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SEAR",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SECS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SERA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STARTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TART",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TARTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TSAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TART,SECS,ARGY",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2292,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DIG",
+      "type": 0
+    },
+    {
+      "word": "DOG",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "GOD",
+      "type": 0
+    },
+    {
+      "word": "HIM",
+      "type": 0
+    },
+    {
+      "word": "HIT",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "RUG",
+      "type": 0
+    },
+    {
+      "word": "TRUE",
+      "type": 0
+    },
+    {
+      "word": "AMATEUR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "EGO",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "GID",
+      "type": 0
+    },
+    {
+      "word": "GIG",
+      "type": 0
+    },
+    {
+      "word": "GOA",
+      "type": 0
+    },
+    {
+      "word": "HAM",
+      "type": 0
+    },
+    {
+      "word": "HAO",
+      "type": 0
+    },
+    {
+      "word": "HIN",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "NIM",
+      "type": 0
+    },
+    {
+      "word": "NIT",
+      "type": 0
+    },
+    {
+      "word": "OAT",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "URN",
+      "type": 0
+    },
+    {
+      "word": "AERO",
+      "type": 0
+    },
+    {
+      "word": "AMAH",
+      "type": 0
+    },
+    {
+      "word": "AMIN",
+      "type": 0
+    },
+    {
+      "word": "DOGE",
+      "type": 0
+    },
+    {
+      "word": "HINS",
+      "type": 0
+    },
+    {
+      "word": "MATE",
+      "type": 0
+    },
+    {
+      "word": "MITE",
+      "type": 0
+    },
+    {
+      "word": "NITE",
+      "type": 0
+    },
+    {
+      "word": "REAM",
+      "type": 0
+    },
+    {
+      "word": "ROAM",
+      "type": 0
+    },
+    {
+      "word": "SHAM",
+      "type": 0
+    },
+    {
+      "word": "SHIM",
+      "type": 0
+    },
+    {
+      "word": "SHIN",
+      "type": 0
+    },
+    {
+      "word": "SNIT",
+      "type": 0
+    },
+    {
+      "word": "TINS",
+      "type": 0
+    },
+    {
+      "word": "UREA",
+      "type": 0
+    },
+    {
+      "word": "URNS",
+      "type": 0
+    },
+    {
+      "word": "AMAHS",
+      "type": 0
+    },
+    {
+      "word": "AMINS",
+      "type": 0
+    },
+    {
+      "word": "DOGMA",
+      "type": 0
+    },
+    {
+      "word": "MATIN",
+      "type": 0
+    },
+    {
+      "word": "REGMA",
+      "type": 0
+    },
+    {
+      "word": "ETAMIN",
+      "type": 0
+    },
+    {
+      "word": "HAMATE",
+      "type": 0
+    },
+    {
+      "word": "MATINS",
+      "type": 0
+    },
+    {
+      "word": "ETAMINS",
+      "type": 0
+    }
+  ],
+  "letters": "UROEU,GEATR,IGMIN,DOAHS",
+  "obstacles": []
 }

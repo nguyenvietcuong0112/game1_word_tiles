@@ -1,61 +1,171 @@
-﻿{
-    "id":  1015,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATEŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ETKİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HALK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOALA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TEŞVİK",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YİV",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YOK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ŞVİY,ETKO,HALA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1015,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABİ",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "NDE",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "İAN",
+      "type": 0
+    },
+    {
+      "word": "BANA",
+      "type": 0
+    },
+    {
+      "word": "SAAT",
+      "type": 0
+    },
+    {
+      "word": "SANA",
+      "type": 0
+    },
+    {
+      "word": "MATHİEU",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABD",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "NAİ",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "TAA",
+      "type": 0
+    },
+    {
+      "word": "ANAN",
+      "type": 0
+    },
+    {
+      "word": "ANDİ",
+      "type": 0
+    },
+    {
+      "word": "ASAN",
+      "type": 0
+    },
+    {
+      "word": "ASMA",
+      "type": 0
+    },
+    {
+      "word": "BAND",
+      "type": 0
+    },
+    {
+      "word": "BASA",
+      "type": 0
+    },
+    {
+      "word": "EDNA",
+      "type": 0
+    },
+    {
+      "word": "NANA",
+      "type": 0
+    },
+    {
+      "word": "NASA",
+      "type": 0
+    },
+    {
+      "word": "SAND",
+      "type": 0
+    },
+    {
+      "word": "ASABİ",
+      "type": 0
+    },
+    {
+      "word": "BASAN",
+      "type": 0
+    },
+    {
+      "word": "BASMA",
+      "type": 0
+    },
+    {
+      "word": "DİANA",
+      "type": 0
+    },
+    {
+      "word": "SANAN",
+      "type": 0
+    },
+    {
+      "word": "ANANAS",
+      "type": 0
+    }
+  ],
+  "letters": "NAİU,ANDE,SABİ,MATH",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

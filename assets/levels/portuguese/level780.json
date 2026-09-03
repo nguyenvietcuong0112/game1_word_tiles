@@ -1,65 +1,159 @@
-﻿{
-    "id":  780,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CLÃ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACNE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CACO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOCAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOCHA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CALÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CACHIMBO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACHA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COCHA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "IHAÃO,MCALC,BOCNE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 780,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "TIA",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "TODO",
+      "type": 0
+    },
+    {
+      "word": "TOME",
+      "type": 0
+    },
+    {
+      "word": "BAIXO",
+      "type": 0
+    },
+    {
+      "word": "MOTOR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BAE",
+      "type": 0
+    },
+    {
+      "word": "BAI",
+      "type": 0
+    },
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "ITO",
+      "type": 0
+    },
+    {
+      "word": "MBA",
+      "type": 0
+    },
+    {
+      "word": "MEA",
+      "type": 0
+    },
+    {
+      "word": "MOE",
+      "type": 0
+    },
+    {
+      "word": "ODO",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "OXI",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "SEO",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "ESTO",
+      "type": 0
+    },
+    {
+      "word": "MOTO",
+      "type": 0
+    },
+    {
+      "word": "ODOR",
+      "type": 0
+    },
+    {
+      "word": "RODO",
+      "type": 0
+    },
+    {
+      "word": "TOTO",
+      "type": 0
+    },
+    {
+      "word": "AITOR",
+      "type": 0
+    },
+    {
+      "word": "BROTO",
+      "type": 0
+    },
+    {
+      "word": "MOTORS",
+      "type": 0
+    },
+    {
+      "word": "EMBAIXO",
+      "type": 0
+    }
+  ],
+  "letters": "XODB,ITOR,ABTS,EMOE",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

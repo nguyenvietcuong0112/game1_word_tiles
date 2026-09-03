@@ -1,57 +1,195 @@
-﻿{
-    "id":  1630,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALAY",
-                             "type":  2
-                         },
-                         {
-                             "word":  "İLGİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAİK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DİZGİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİYALİZ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İDİL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LALA",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "YALA,İLGİ,DİZK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1630,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABİ",
+      "type": 0
+    },
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "BİN",
+      "type": 0
+    },
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "DİK",
+      "type": 0
+    },
+    {
+      "word": "ISI",
+      "type": 0
+    },
+    {
+      "word": "VER",
+      "type": 0
+    },
+    {
+      "word": "BİNA",
+      "type": 0
+    },
+    {
+      "word": "EDİN",
+      "type": 0
+    },
+    {
+      "word": "KREM",
+      "type": 0
+    },
+    {
+      "word": "İNİP",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BİP",
+      "type": 0
+    },
+    {
+      "word": "DİN",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "EMP",
+      "type": 0
+    },
+    {
+      "word": "KİD",
+      "type": 0
+    },
+    {
+      "word": "KİN",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "NİK",
+      "type": 0
+    },
+    {
+      "word": "PİN",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "SKİ",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "İNİ",
+      "type": 0
+    },
+    {
+      "word": "ABİN",
+      "type": 0
+    },
+    {
+      "word": "BİNİ",
+      "type": 0
+    },
+    {
+      "word": "DANİ",
+      "type": 0
+    },
+    {
+      "word": "DİNA",
+      "type": 0
+    },
+    {
+      "word": "DİNİ",
+      "type": 0
+    },
+    {
+      "word": "KİNİ",
+      "type": 0
+    },
+    {
+      "word": "PREM",
+      "type": 0
+    },
+    {
+      "word": "VERN",
+      "type": 0
+    },
+    {
+      "word": "ABİNİ",
+      "type": 0
+    },
+    {
+      "word": "ADİNİ",
+      "type": 0
+    },
+    {
+      "word": "MEVKİ",
+      "type": 0
+    },
+    {
+      "word": "VERNA",
+      "type": 0
+    },
+    {
+      "word": "MEVKİDE",
+      "type": 0
+    }
+  ],
+  "letters": "EISI,DİKV,ANRE,BİPM",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

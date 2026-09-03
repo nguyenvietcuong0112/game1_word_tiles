@@ -1,93 +1,327 @@
-﻿{
-    "id":  2251,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MALL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REST",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SEAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIGIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STALL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIGITAL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DIGITS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EATS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MATS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STIM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GIML,ITAL,DSER",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2251,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "FILE",
+      "type": 0
+    },
+    {
+      "word": "FIRE",
+      "type": 0
+    },
+    {
+      "word": "LESS",
+      "type": 0
+    },
+    {
+      "word": "LIFE",
+      "type": 0
+    },
+    {
+      "word": "RISE",
+      "type": 0
+    },
+    {
+      "word": "VASE",
+      "type": 0
+    },
+    {
+      "word": "FILES",
+      "type": 0
+    },
+    {
+      "word": "SERIES",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "EFS",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "FIG",
+      "type": 0
+    },
+    {
+      "word": "FIL",
+      "type": 0
+    },
+    {
+      "word": "FIR",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "IFS",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "RIF",
+      "type": 0
+    },
+    {
+      "word": "RIG",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "VAS",
+      "type": 0
+    },
+    {
+      "word": "AGER",
+      "type": 0
+    },
+    {
+      "word": "AGES",
+      "type": 0
+    },
+    {
+      "word": "ALEF",
+      "type": 0
+    },
+    {
+      "word": "ALES",
+      "type": 0
+    },
+    {
+      "word": "ALIF",
+      "type": 0
+    },
+    {
+      "word": "EGAL",
+      "type": 0
+    },
+    {
+      "word": "ERRS",
+      "type": 0
+    },
+    {
+      "word": "FESS",
+      "type": 0
+    },
+    {
+      "word": "FILA",
+      "type": 0
+    },
+    {
+      "word": "FIRS",
+      "type": 0
+    },
+    {
+      "word": "GALE",
+      "type": 0
+    },
+    {
+      "word": "IRES",
+      "type": 0
+    },
+    {
+      "word": "IRIS",
+      "type": 0
+    },
+    {
+      "word": "LIRE",
+      "type": 0
+    },
+    {
+      "word": "LIRI",
+      "type": 0
+    },
+    {
+      "word": "ORES",
+      "type": 0
+    },
+    {
+      "word": "REIS",
+      "type": 0
+    },
+    {
+      "word": "RIFE",
+      "type": 0
+    },
+    {
+      "word": "RIFS",
+      "type": 0
+    },
+    {
+      "word": "RILE",
+      "type": 0
+    },
+    {
+      "word": "SEIS",
+      "type": 0
+    },
+    {
+      "word": "SERS",
+      "type": 0
+    },
+    {
+      "word": "SIRE",
+      "type": 0
+    },
+    {
+      "word": "SIRS",
+      "type": 0
+    },
+    {
+      "word": "SRIS",
+      "type": 0
+    },
+    {
+      "word": "AGERS",
+      "type": 0
+    },
+    {
+      "word": "AGILE",
+      "type": 0
+    },
+    {
+      "word": "ALEFS",
+      "type": 0
+    },
+    {
+      "word": "ALIFS",
+      "type": 0
+    },
+    {
+      "word": "FIRES",
+      "type": 0
+    },
+    {
+      "word": "GALES",
+      "type": 0
+    },
+    {
+      "word": "LAGER",
+      "type": 0
+    },
+    {
+      "word": "LIGER",
+      "type": 0
+    },
+    {
+      "word": "REGAL",
+      "type": 0
+    },
+    {
+      "word": "RILES",
+      "type": 0
+    },
+    {
+      "word": "SEISE",
+      "type": 0
+    },
+    {
+      "word": "SERIF",
+      "type": 0
+    },
+    {
+      "word": "LAGERS",
+      "type": 0
+    },
+    {
+      "word": "LIGERS",
+      "type": 0
+    },
+    {
+      "word": "REGALE",
+      "type": 0
+    },
+    {
+      "word": "SAVIOR",
+      "type": 0
+    },
+    {
+      "word": "SEISER",
+      "type": 0
+    },
+    {
+      "word": "SERIFS",
+      "type": 0
+    },
+    {
+      "word": "REGALES",
+      "type": 0
+    }
+  ],
+  "letters": "OREIS,IRSRE,VSFIG,ASELA",
+  "obstacles": []
 }

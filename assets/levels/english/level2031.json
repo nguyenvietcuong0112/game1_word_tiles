@@ -1,107 +1,199 @@
-﻿{
-    "id":  2031,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "APE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OWL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOOT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LOST",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SOAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STOW",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TOOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WOOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHAPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOLVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STOOL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "HAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOOT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "HAPE,SOLV,TOWA",
-    "obstacles":  [
-                      {
-                          "required_words":  9,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2031,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "DUG",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "WIN",
+      "type": 0
+    },
+    {
+      "word": "HARD",
+      "type": 0
+    },
+    {
+      "word": "THAN",
+      "type": 0
+    },
+    {
+      "word": "GRANT",
+      "type": 0
+    },
+    {
+      "word": "RANGE",
+      "type": 0
+    },
+    {
+      "word": "TYING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "DAB",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "HAE",
+      "type": 0
+    },
+    {
+      "word": "NAE",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "YIN",
+      "type": 0
+    },
+    {
+      "word": "AVER",
+      "type": 0
+    },
+    {
+      "word": "AYIN",
+      "type": 0
+    },
+    {
+      "word": "GEAR",
+      "type": 0
+    },
+    {
+      "word": "GNAR",
+      "type": 0
+    },
+    {
+      "word": "GRAN",
+      "type": 0
+    },
+    {
+      "word": "HANG",
+      "type": 0
+    },
+    {
+      "word": "HANT",
+      "type": 0
+    },
+    {
+      "word": "HERB",
+      "type": 0
+    },
+    {
+      "word": "NARD",
+      "type": 0
+    },
+    {
+      "word": "RANG",
+      "type": 0
+    },
+    {
+      "word": "RANI",
+      "type": 0
+    },
+    {
+      "word": "RANT",
+      "type": 0
+    },
+    {
+      "word": "THAE",
+      "type": 0
+    },
+    {
+      "word": "VERB",
+      "type": 0
+    },
+    {
+      "word": "WING",
+      "type": 0
+    },
+    {
+      "word": "BARRE",
+      "type": 0
+    },
+    {
+      "word": "GNARR",
+      "type": 0
+    },
+    {
+      "word": "ANTHER",
+      "type": 0
+    },
+    {
+      "word": "ARRANT",
+      "type": 0
+    },
+    {
+      "word": "GRANGE",
+      "type": 0
+    },
+    {
+      "word": "REHANG",
+      "type": 0
+    },
+    {
+      "word": "ARRANGE",
+      "type": 0
+    }
+  ],
+  "letters": "WGEGU,INARD,YTHRA,AVERB",
+  "obstacles": []
 }

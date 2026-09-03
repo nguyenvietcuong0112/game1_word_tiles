@@ -1,97 +1,271 @@
-﻿{
-    "id":  711,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ESO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GUSTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PERRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORRE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DISGUSTO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "GUETO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IROS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RISO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SIRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOTO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TESO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TOSE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UES",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RROTO,EISET,PDGUS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 711,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "BERT",
+      "type": 0
+    },
+    {
+      "word": "ESTA",
+      "type": 0
+    },
+    {
+      "word": "RATO",
+      "type": 0
+    },
+    {
+      "word": "TOMA",
+      "type": 0
+    },
+    {
+      "word": "TRES",
+      "type": 0
+    },
+    {
+      "word": "ESTAR",
+      "type": 0
+    },
+    {
+      "word": "TOMAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "ERM",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "ONO",
+      "type": 0
+    },
+    {
+      "word": "OTA",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TOC",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "TRE",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "ATOM",
+      "type": 0
+    },
+    {
+      "word": "BEST",
+      "type": 0
+    },
+    {
+      "word": "CONO",
+      "type": 0
+    },
+    {
+      "word": "COTO",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "MATO",
+      "type": 0
+    },
+    {
+      "word": "MONO",
+      "type": 0
+    },
+    {
+      "word": "MOTA",
+      "type": 0
+    },
+    {
+      "word": "MOTO",
+      "type": 0
+    },
+    {
+      "word": "NOTA",
+      "type": 0
+    },
+    {
+      "word": "NOTO",
+      "type": 0
+    },
+    {
+      "word": "OMAR",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "RAMO",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "STAR",
+      "type": 0
+    },
+    {
+      "word": "TAMA",
+      "type": 0
+    },
+    {
+      "word": "TARA",
+      "type": 0
+    },
+    {
+      "word": "TONO",
+      "type": 0
+    },
+    {
+      "word": "TOTO",
+      "type": 0
+    },
+    {
+      "word": "AMATO",
+      "type": 0
+    },
+    {
+      "word": "BERTA",
+      "type": 0
+    },
+    {
+      "word": "BERTO",
+      "type": 0
+    },
+    {
+      "word": "MARAT",
+      "type": 0
+    },
+    {
+      "word": "NOTAR",
+      "type": 0
+    },
+    {
+      "word": "NOTRE",
+      "type": 0
+    },
+    {
+      "word": "RAMON",
+      "type": 0
+    },
+    {
+      "word": "RATON",
+      "type": 0
+    },
+    {
+      "word": "RESTA",
+      "type": 0
+    },
+    {
+      "word": "ESTARA",
+      "type": 0
+    },
+    {
+      "word": "NOTARA",
+      "type": 0
+    },
+    {
+      "word": "TOMARA",
+      "type": 0
+    }
+  ],
+  "letters": "STAR,ERMA,BTOT,CONO",
+  "obstacles": []
 }

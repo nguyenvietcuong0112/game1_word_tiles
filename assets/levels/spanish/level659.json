@@ -1,57 +1,287 @@
-﻿{
-    "id":  659,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PECA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PACTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AFECTO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CEPO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FACTO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAF",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POCA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "POO,ECT,FAP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 659,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "FEO",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "UNA",
+      "type": 0
+    },
+    {
+      "word": "BOTE",
+      "type": 0
+    },
+    {
+      "word": "DATE",
+      "type": 0
+    },
+    {
+      "word": "DIME",
+      "type": 0
+    },
+    {
+      "word": "ROBO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ANU",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DET",
+      "type": 0
+    },
+    {
+      "word": "DIM",
+      "type": 0
+    },
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "EMI",
+      "type": 0
+    },
+    {
+      "word": "ERO",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "FDA",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "IME",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "ITE",
+      "type": 0
+    },
+    {
+      "word": "ITO",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "MIN",
+      "type": 0
+    },
+    {
+      "word": "MIT",
+      "type": 0
+    },
+    {
+      "word": "MUN",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NIM",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "TIM",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "UNI",
+      "type": 0
+    },
+    {
+      "word": "DANI",
+      "type": 0
+    },
+    {
+      "word": "DINA",
+      "type": 0
+    },
+    {
+      "word": "FEET",
+      "type": 0
+    },
+    {
+      "word": "ITEM",
+      "type": 0
+    },
+    {
+      "word": "MERO",
+      "type": 0
+    },
+    {
+      "word": "METI",
+      "type": 0
+    },
+    {
+      "word": "METO",
+      "type": 0
+    },
+    {
+      "word": "MIDA",
+      "type": 0
+    },
+    {
+      "word": "MIDE",
+      "type": 0
+    },
+    {
+      "word": "MINA",
+      "type": 0
+    },
+    {
+      "word": "MITO",
+      "type": 0
+    },
+    {
+      "word": "NADE",
+      "type": 0
+    },
+    {
+      "word": "NATE",
+      "type": 0
+    },
+    {
+      "word": "OBOE",
+      "type": 0
+    },
+    {
+      "word": "REMI",
+      "type": 0
+    },
+    {
+      "word": "RETO",
+      "type": 0
+    },
+    {
+      "word": "TIME",
+      "type": 0
+    },
+    {
+      "word": "TINA",
+      "type": 0
+    },
+    {
+      "word": "UNIT",
+      "type": 0
+    },
+    {
+      "word": "ANIME",
+      "type": 0
+    },
+    {
+      "word": "UNIDA",
+      "type": 0
+    },
+    {
+      "word": "EDITOR",
+      "type": 0
+    },
+    {
+      "word": "METIDA",
+      "type": 0
+    },
+    {
+      "word": "NUMERO",
+      "type": 0
+    },
+    {
+      "word": "RETINA",
+      "type": 0
+    },
+    {
+      "word": "TEMIDA",
+      "type": 0
+    }
+  ],
+  "letters": "OEET,BFDA,OTIN,REMU",
+  "obstacles": []
 }

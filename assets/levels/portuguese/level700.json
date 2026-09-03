@@ -1,54 +1,347 @@
-﻿{
-    "id":  700,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GUIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GULA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RALI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÁGUIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GUIAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-
-                    ],
-    "letters":  "MIR,ÁLA,GUI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 700,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "MAU",
+      "type": 0
+    },
+    {
+      "word": "TEM",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "TANTA",
+      "type": 0
+    },
+    {
+      "word": "MANTER",
+      "type": 0
+    },
+    {
+      "word": "QUINTA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ATM",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NAU",
+      "type": 0
+    },
+    {
+      "word": "NIA",
+      "type": 0
+    },
+    {
+      "word": "QUA",
+      "type": 0
+    },
+    {
+      "word": "QUI",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "RIU",
+      "type": 0
+    },
+    {
+      "word": "TAI",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TTA",
+      "type": 0
+    },
+    {
+      "word": "TTE",
+      "type": 0
+    },
+    {
+      "word": "AMAN",
+      "type": 0
+    },
+    {
+      "word": "ANIA",
+      "type": 0
+    },
+    {
+      "word": "ANTA",
+      "type": 0
+    },
+    {
+      "word": "ANTE",
+      "type": 0
+    },
+    {
+      "word": "AREA",
+      "type": 0
+    },
+    {
+      "word": "ARIA",
+      "type": 0
+    },
+    {
+      "word": "ATER",
+      "type": 0
+    },
+    {
+      "word": "ATTA",
+      "type": 0
+    },
+    {
+      "word": "ETTA",
+      "type": 0
+    },
+    {
+      "word": "IATE",
+      "type": 0
+    },
+    {
+      "word": "MANA",
+      "type": 0
+    },
+    {
+      "word": "MANI",
+      "type": 0
+    },
+    {
+      "word": "MATT",
+      "type": 0
+    },
+    {
+      "word": "MAUI",
+      "type": 0
+    },
+    {
+      "word": "MERA",
+      "type": 0
+    },
+    {
+      "word": "MERE",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "QUAN",
+      "type": 0
+    },
+    {
+      "word": "RAIN",
+      "type": 0
+    },
+    {
+      "word": "RETA",
+      "type": 0
+    },
+    {
+      "word": "RINA",
+      "type": 0
+    },
+    {
+      "word": "TAMA",
+      "type": 0
+    },
+    {
+      "word": "TANA",
+      "type": 0
+    },
+    {
+      "word": "TERA",
+      "type": 0
+    },
+    {
+      "word": "ERETA",
+      "type": 0
+    },
+    {
+      "word": "ETNIA",
+      "type": 0
+    },
+    {
+      "word": "INTER",
+      "type": 0
+    },
+    {
+      "word": "MANIA",
+      "type": 0
+    },
+    {
+      "word": "MANTA",
+      "type": 0
+    },
+    {
+      "word": "QUINA",
+      "type": 0
+    },
+    {
+      "word": "QUINT",
+      "type": 0
+    },
+    {
+      "word": "RAINA",
+      "type": 0
+    },
+    {
+      "word": "TANIA",
+      "type": 0
+    },
+    {
+      "word": "AMANTE",
+      "type": 0
+    },
+    {
+      "word": "MANTEM",
+      "type": 0
+    },
+    {
+      "word": "MATTER",
+      "type": 0
+    },
+    {
+      "word": "QUANTA",
+      "type": 0
+    }
+  ],
+  "letters": "EARQ,RAIU,ETNA,MTAM",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,57 +1,163 @@
-﻿{
-    "id":  920,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "PAI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PATÊ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAPAI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAPÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAPEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAPAIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAPELÃO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LÃOA,EPAI,PATÊ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 920,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "TAL",
+      "type": 0
+    },
+    {
+      "word": "FALO",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "REFÉM",
+      "type": 0
+    },
+    {
+      "word": "TÍTULO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ALÍ",
+      "type": 0
+    },
+    {
+      "word": "ENA",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "FAN",
+      "type": 0
+    },
+    {
+      "word": "FAT",
+      "type": 0
+    },
+    {
+      "word": "FEN",
+      "type": 0
+    },
+    {
+      "word": "FER",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LOL",
+      "type": 0
+    },
+    {
+      "word": "MOL",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "FANE",
+      "type": 0
+    },
+    {
+      "word": "LAND",
+      "type": 0
+    },
+    {
+      "word": "LOLA",
+      "type": 0
+    },
+    {
+      "word": "LULA",
+      "type": 0
+    },
+    {
+      "word": "MOLA",
+      "type": 0
+    },
+    {
+      "word": "OLAF",
+      "type": 0
+    },
+    {
+      "word": "RENA",
+      "type": 0
+    },
+    {
+      "word": "TALO",
+      "type": 0
+    },
+    {
+      "word": "TULA",
+      "type": 0
+    },
+    {
+      "word": "RENAL",
+      "type": 0
+    }
+  ],
+  "letters": "TULA,ÍLOM,TAFÉ,DNER",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

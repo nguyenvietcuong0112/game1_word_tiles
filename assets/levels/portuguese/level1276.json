@@ -1,89 +1,255 @@
-﻿{
-    "id":  1276,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PICO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RASO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MUDAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SARAMPO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ADUMAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMUO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COPIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAMASO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RASO,AMPI,DUOC",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1276,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "IAN",
+      "type": 0
+    },
+    {
+      "word": "LEI",
+      "type": 0
+    },
+    {
+      "word": "RIO",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "FIEL",
+      "type": 0
+    },
+    {
+      "word": "REAL",
+      "type": 0
+    },
+    {
+      "word": "WILL",
+      "type": 0
+    },
+    {
+      "word": "TERIA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "DOI",
+      "type": 0
+    },
+    {
+      "word": "DRE",
+      "type": 0
+    },
+    {
+      "word": "ELI",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "LAI",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LEW",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "NAI",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "OIL",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "WEI",
+      "type": 0
+    },
+    {
+      "word": "WIL",
+      "type": 0
+    },
+    {
+      "word": "WIN",
+      "type": 0
+    },
+    {
+      "word": "ALLI",
+      "type": 0
+    },
+    {
+      "word": "ANIL",
+      "type": 0
+    },
+    {
+      "word": "ANTE",
+      "type": 0
+    },
+    {
+      "word": "ELIN",
+      "type": 0
+    },
+    {
+      "word": "FILL",
+      "type": 0
+    },
+    {
+      "word": "LANI",
+      "type": 0
+    },
+    {
+      "word": "LEIF",
+      "type": 0
+    },
+    {
+      "word": "LIAN",
+      "type": 0
+    },
+    {
+      "word": "LINA",
+      "type": 0
+    },
+    {
+      "word": "RIOS",
+      "type": 0
+    },
+    {
+      "word": "TEAL",
+      "type": 0
+    },
+    {
+      "word": "TERI",
+      "type": 0
+    },
+    {
+      "word": "WELL",
+      "type": 0
+    },
+    {
+      "word": "ALLIE",
+      "type": 0
+    },
+    {
+      "word": "DRILL",
+      "type": 0
+    },
+    {
+      "word": "ELINA",
+      "type": 0
+    },
+    {
+      "word": "INTER",
+      "type": 0
+    },
+    {
+      "word": "LAIRD",
+      "type": 0
+    },
+    {
+      "word": "NAILS",
+      "type": 0
+    },
+    {
+      "word": "WELLS",
+      "type": 0
+    },
+    {
+      "word": "WILLI",
+      "type": 0
+    },
+    {
+      "word": "WILLS",
+      "type": 0
+    },
+    {
+      "word": "FILIAL",
+      "type": 0
+    },
+    {
+      "word": "WILLIE",
+      "type": 0
+    },
+    {
+      "word": "WINTER",
+      "type": 0
+    },
+    {
+      "word": "WILLIAN",
+      "type": 0
+    }
+  ],
+  "letters": "TERD,NAIO,ILLS,WEIF",
+  "obstacles": []
 }

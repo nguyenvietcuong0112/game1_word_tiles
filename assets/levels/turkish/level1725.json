@@ -1,109 +1,287 @@
-﻿{
-    "id":  1725,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AHİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İLAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LİRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MALİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAZİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İHMAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NİHAYET",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ALAZ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARİZA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AYET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AYMAZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HAY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HİN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İNÇ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İZAM",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LAZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MALA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZİRA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ETZİR,YMALA,AHİNÇ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1725,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "ÇIK",
+      "type": 0
+    },
+    {
+      "word": "İLK",
+      "type": 0
+    },
+    {
+      "word": "AYAK",
+      "type": 0
+    },
+    {
+      "word": "AŞIK",
+      "type": 0
+    },
+    {
+      "word": "HANİ",
+      "type": 0
+    },
+    {
+      "word": "İÇLİ",
+      "type": 0
+    },
+    {
+      "word": "ŞAKA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "ANN",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "AŞI",
+      "type": 0
+    },
+    {
+      "word": "HAA",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "HAN",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "KAŞ",
+      "type": 0
+    },
+    {
+      "word": "KIÇ",
+      "type": 0
+    },
+    {
+      "word": "KIŞ",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "YAA",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "YAŞ",
+      "type": 0
+    },
+    {
+      "word": "İHA",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "İNN",
+      "type": 0
+    },
+    {
+      "word": "ŞAK",
+      "type": 0
+    },
+    {
+      "word": "ŞIK",
+      "type": 0
+    },
+    {
+      "word": "AKAN",
+      "type": 0
+    },
+    {
+      "word": "AKIŞ",
+      "type": 0
+    },
+    {
+      "word": "AKLA",
+      "type": 0
+    },
+    {
+      "word": "AKLİ",
+      "type": 0
+    },
+    {
+      "word": "ALÇI",
+      "type": 0
+    },
+    {
+      "word": "ANNA",
+      "type": 0
+    },
+    {
+      "word": "HALK",
+      "type": 0
+    },
+    {
+      "word": "HALİ",
+      "type": 0
+    },
+    {
+      "word": "KAAN",
+      "type": 0
+    },
+    {
+      "word": "KANA",
+      "type": 0
+    },
+    {
+      "word": "KAYA",
+      "type": 0
+    },
+    {
+      "word": "KAŞI",
+      "type": 0
+    },
+    {
+      "word": "KLAN",
+      "type": 0
+    },
+    {
+      "word": "YAKA",
+      "type": 0
+    },
+    {
+      "word": "YANA",
+      "type": 0
+    },
+    {
+      "word": "YAŞI",
+      "type": 0
+    },
+    {
+      "word": "İLAN",
+      "type": 0
+    },
+    {
+      "word": "ALKIŞ",
+      "type": 0
+    },
+    {
+      "word": "HALKA",
+      "type": 0
+    },
+    {
+      "word": "HALKI",
+      "type": 0
+    },
+    {
+      "word": "HANNA",
+      "type": 0
+    },
+    {
+      "word": "KAYAN",
+      "type": 0
+    },
+    {
+      "word": "NAKLİ",
+      "type": 0
+    },
+    {
+      "word": "YAKAN",
+      "type": 0
+    },
+    {
+      "word": "YANAK",
+      "type": 0
+    },
+    {
+      "word": "ÇIKAN",
+      "type": 0
+    },
+    {
+      "word": "İLAHİ",
+      "type": 0
+    },
+    {
+      "word": "ŞAYAN",
+      "type": 0
+    },
+    {
+      "word": "AYAKLA",
+      "type": 0
+    },
+    {
+      "word": "ÇIKANA",
+      "type": 0
+    },
+    {
+      "word": "ŞAKAYA",
+      "type": 0
+    }
+  ],
+  "letters": "ANNİ,YAAH,AKLİ,ŞIÇİ",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,91 +1,175 @@
-﻿{
-    "id":  1240,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HIS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HUG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HISS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THIS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIRTH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GUESS",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "HILT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HUES",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LIES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIEU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SILT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "THUG",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GUES,IHIS,RTLT",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1240,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADD",
+      "type": 0
+    },
+    {
+      "word": "BID",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "DATE",
+      "type": 0
+    },
+    {
+      "word": "HURT",
+      "type": 0
+    },
+    {
+      "word": "LEGS",
+      "type": 0
+    },
+    {
+      "word": "TRUE",
+      "type": 0
+    },
+    {
+      "word": "DATES",
+      "type": 0
+    },
+    {
+      "word": "HURLEY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "BIS",
+      "type": 0
+    },
+    {
+      "word": "DIB",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GEY",
+      "type": 0
+    },
+    {
+      "word": "HUE",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "LEY",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "SAD",
+      "type": 0
+    },
+    {
+      "word": "SIB",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "ETAS",
+      "type": 0
+    },
+    {
+      "word": "GRUE",
+      "type": 0
+    },
+    {
+      "word": "HUES",
+      "type": 0
+    },
+    {
+      "word": "HURL",
+      "type": 0
+    },
+    {
+      "word": "LEYS",
+      "type": 0
+    },
+    {
+      "word": "RUES",
+      "type": 0
+    },
+    {
+      "word": "SATE",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "URGE",
+      "type": 0
+    },
+    {
+      "word": "GRUES",
+      "type": 0
+    },
+    {
+      "word": "TRUES",
+      "type": 0
+    },
+    {
+      "word": "HURLEYS",
+      "type": 0
+    }
+  ],
+  "letters": "SEUH,ATRL,DDGE,BISY",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

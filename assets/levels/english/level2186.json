@@ -1,109 +1,343 @@
-﻿{
-    "id":  2186,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AREA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "EASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEARER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEVISE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BOAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BOER",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ERAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SERA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TRES",
-                            "type":  1
-                        },
-                        {
-                            "word":  "VIE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VIS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VISA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VISEA,EEART,DBOER",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2186,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SAW",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "WAR",
+      "type": 0
+    },
+    {
+      "word": "WAS",
+      "type": 0
+    },
+    {
+      "word": "DREW",
+      "type": 0
+    },
+    {
+      "word": "JEWS",
+      "type": 0
+    },
+    {
+      "word": "OPEN",
+      "type": 0
+    },
+    {
+      "word": "SURE",
+      "type": 0
+    },
+    {
+      "word": "USER",
+      "type": 0
+    },
+    {
+      "word": "WARS",
+      "type": 0
+    },
+    {
+      "word": "POWER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "AWE",
+      "type": 0
+    },
+    {
+      "word": "DAW",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "JEW",
+      "type": 0
+    },
+    {
+      "word": "JOW",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "OWE",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PAW",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "POW",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAW",
+      "type": 0
+    },
+    {
+      "word": "SAP",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SEW",
+      "type": 0
+    },
+    {
+      "word": "SOP",
+      "type": 0
+    },
+    {
+      "word": "SOW",
+      "type": 0
+    },
+    {
+      "word": "URD",
+      "type": 0
+    },
+    {
+      "word": "WAD",
+      "type": 0
+    },
+    {
+      "word": "WAP",
+      "type": 0
+    },
+    {
+      "word": "WOP",
+      "type": 0
+    },
+    {
+      "word": "WOS",
+      "type": 0
+    },
+    {
+      "word": "ARSE",
+      "type": 0
+    },
+    {
+      "word": "AWES",
+      "type": 0
+    },
+    {
+      "word": "EPOS",
+      "type": 0
+    },
+    {
+      "word": "ERRS",
+      "type": 0
+    },
+    {
+      "word": "JOWS",
+      "type": 0
+    },
+    {
+      "word": "OPES",
+      "type": 0
+    },
+    {
+      "word": "OWES",
+      "type": 0
+    },
+    {
+      "word": "PASE",
+      "type": 0
+    },
+    {
+      "word": "PAWS",
+      "type": 0
+    },
+    {
+      "word": "PESO",
+      "type": 0
+    },
+    {
+      "word": "POSE",
+      "type": 0
+    },
+    {
+      "word": "POWS",
+      "type": 0
+    },
+    {
+      "word": "RUSE",
+      "type": 0
+    },
+    {
+      "word": "SAPS",
+      "type": 0
+    },
+    {
+      "word": "SAWS",
+      "type": 0
+    },
+    {
+      "word": "SENE",
+      "type": 0
+    },
+    {
+      "word": "SEWS",
+      "type": 0
+    },
+    {
+      "word": "SOPS",
+      "type": 0
+    },
+    {
+      "word": "SOWS",
+      "type": 0
+    },
+    {
+      "word": "SPAS",
+      "type": 0
+    },
+    {
+      "word": "SURD",
+      "type": 0
+    },
+    {
+      "word": "SWAP",
+      "type": 0
+    },
+    {
+      "word": "SWOP",
+      "type": 0
+    },
+    {
+      "word": "WAPS",
+      "type": 0
+    },
+    {
+      "word": "WOPS",
+      "type": 0
+    },
+    {
+      "word": "WREN",
+      "type": 0
+    },
+    {
+      "word": "DRUSE",
+      "type": 0
+    },
+    {
+      "word": "PAWER",
+      "type": 0
+    },
+    {
+      "word": "PENES",
+      "type": 0
+    },
+    {
+      "word": "POSER",
+      "type": 0
+    },
+    {
+      "word": "RESAW",
+      "type": 0
+    },
+    {
+      "word": "RESOW",
+      "type": 0
+    },
+    {
+      "word": "SAWER",
+      "type": 0
+    },
+    {
+      "word": "SOWER",
+      "type": 0
+    },
+    {
+      "word": "OPENER",
+      "type": 0
+    },
+    {
+      "word": "RESAWS",
+      "type": 0
+    },
+    {
+      "word": "RESOWS",
+      "type": 0
+    },
+    {
+      "word": "WARREN",
+      "type": 0
+    }
+  ],
+  "letters": "NEPSP,ESOWA,RRJES,WADRU",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

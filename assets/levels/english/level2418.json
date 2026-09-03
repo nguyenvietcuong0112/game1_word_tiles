@@ -1,73 +1,323 @@
-﻿{
-    "id":  2418,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUNE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EATEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VERSE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "UNIVERSE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "NUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UNI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EATE,SOUN,REVI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2418,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "RUN",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "CASE",
+      "type": 0
+    },
+    {
+      "word": "HERE",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    },
+    {
+      "word": "RUNS",
+      "type": 0
+    },
+    {
+      "word": "SAME",
+      "type": 0
+    },
+    {
+      "word": "THERE",
+      "type": 0
+    },
+    {
+      "word": "THESE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "EON",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERN",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "NUN",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SOS",
+      "type": 0
+    },
+    {
+      "word": "UNS",
+      "type": 0
+    },
+    {
+      "word": "ACES",
+      "type": 0
+    },
+    {
+      "word": "CAME",
+      "type": 0
+    },
+    {
+      "word": "CERE",
+      "type": 0
+    },
+    {
+      "word": "CERO",
+      "type": 0
+    },
+    {
+      "word": "EONS",
+      "type": 0
+    },
+    {
+      "word": "ERNS",
+      "type": 0
+    },
+    {
+      "word": "EROS",
+      "type": 0
+    },
+    {
+      "word": "HERN",
+      "type": 0
+    },
+    {
+      "word": "HERO",
+      "type": 0
+    },
+    {
+      "word": "MACE",
+      "type": 0
+    },
+    {
+      "word": "MESA",
+      "type": 0
+    },
+    {
+      "word": "NUNS",
+      "type": 0
+    },
+    {
+      "word": "ORES",
+      "type": 0
+    },
+    {
+      "word": "OSES",
+      "type": 0
+    },
+    {
+      "word": "SECT",
+      "type": 0
+    },
+    {
+      "word": "SERE",
+      "type": 0
+    },
+    {
+      "word": "SORE",
+      "type": 0
+    },
+    {
+      "word": "SORN",
+      "type": 0
+    },
+    {
+      "word": "CAMES",
+      "type": 0
+    },
+    {
+      "word": "CEROS",
+      "type": 0
+    },
+    {
+      "word": "ERECT",
+      "type": 0
+    },
+    {
+      "word": "EROSE",
+      "type": 0
+    },
+    {
+      "word": "HERES",
+      "type": 0
+    },
+    {
+      "word": "HERNS",
+      "type": 0
+    },
+    {
+      "word": "HEROS",
+      "type": 0
+    },
+    {
+      "word": "MACER",
+      "type": 0
+    },
+    {
+      "word": "MACES",
+      "type": 0
+    },
+    {
+      "word": "MASER",
+      "type": 0
+    },
+    {
+      "word": "NURSE",
+      "type": 0
+    },
+    {
+      "word": "RESEE",
+      "type": 0
+    },
+    {
+      "word": "ROSES",
+      "type": 0
+    },
+    {
+      "word": "SORES",
+      "type": 0
+    },
+    {
+      "word": "SORNS",
+      "type": 0
+    },
+    {
+      "word": "THECA",
+      "type": 0
+    },
+    {
+      "word": "CASERN",
+      "type": 0
+    },
+    {
+      "word": "EROSES",
+      "type": 0
+    },
+    {
+      "word": "HEREON",
+      "type": 0
+    },
+    {
+      "word": "NURSES",
+      "type": 0
+    },
+    {
+      "word": "THERES",
+      "type": 0
+    },
+    {
+      "word": "ACEROSE",
+      "type": 0
+    },
+    {
+      "word": "CASERNS",
+      "type": 0
+    },
+    {
+      "word": "THEREON",
+      "type": 0
+    }
+  ],
+  "letters": "MEEES,ASOSR,CERNU,THEON",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

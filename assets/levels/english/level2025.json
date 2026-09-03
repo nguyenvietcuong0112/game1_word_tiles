@@ -1,118 +1,171 @@
-﻿{
-    "id":  2025,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ICY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CITY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOSS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CRUDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CRUST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRUST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CITRUS",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CRUD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EATS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "OATS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RUDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TRUSS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TYSOO,ICSTA,TRUDE",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2025,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIM",
+      "type": 0
+    },
+    {
+      "word": "BOB",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RUB",
+      "type": 0
+    },
+    {
+      "word": "BEST",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "CLAIM",
+      "type": 0
+    },
+    {
+      "word": "LABOR",
+      "type": 0
+    },
+    {
+      "word": "HARBOR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABO",
+      "type": 0
+    },
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "BUR",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "URB",
+      "type": 0
+    },
+    {
+      "word": "BURA",
+      "type": 0
+    },
+    {
+      "word": "BURR",
+      "type": 0
+    },
+    {
+      "word": "CARB",
+      "type": 0
+    },
+    {
+      "word": "ERRS",
+      "type": 0
+    },
+    {
+      "word": "RUBE",
+      "type": 0
+    },
+    {
+      "word": "AIMED",
+      "type": 0
+    },
+    {
+      "word": "ARBOR",
+      "type": 0
+    },
+    {
+      "word": "BURRO",
+      "type": 0
+    },
+    {
+      "word": "BURRS",
+      "type": 0
+    },
+    {
+      "word": "CARBO",
+      "type": 0
+    },
+    {
+      "word": "RUBES",
+      "type": 0
+    },
+    {
+      "word": "ARBORS",
+      "type": 0
+    },
+    {
+      "word": "LABORS",
+      "type": 0
+    },
+    {
+      "word": "CLAIMED",
+      "type": 0
+    },
+    {
+      "word": "HARBORS",
+      "type": 0
+    }
+  ],
+  "letters": "TDEMI,SROBA,ERBHL,BURAC",
+  "obstacles": []
 }

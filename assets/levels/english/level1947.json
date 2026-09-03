@@ -1,95 +1,239 @@
-﻿{
-    "id":  1947,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAME",
-                             "type":  2
-                         },
-                         {
-                             "word":  "HEIR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "THEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THEIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARRIAGE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AFAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AHEM",
-                            "type":  1
-                        },
-                        {
-                            "word":  "HEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEGA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "AIRR,GEMA,THAF",
-    "obstacles":  [
-                      {
-                          "required_words":  8,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1947,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "BIT",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "WIN",
+      "type": 0
+    },
+    {
+      "word": "BETA",
+      "type": 0
+    },
+    {
+      "word": "FIND",
+      "type": 0
+    },
+    {
+      "word": "FROM",
+      "type": 0
+    },
+    {
+      "word": "TIME",
+      "type": 0
+    },
+    {
+      "word": "WIND",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "ARF",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "BET",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "FIN",
+      "type": 0
+    },
+    {
+      "word": "FRO",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MIB",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "ARTY",
+      "type": 0
+    },
+    {
+      "word": "ATMA",
+      "type": 0
+    },
+    {
+      "word": "BEMA",
+      "type": 0
+    },
+    {
+      "word": "BIMA",
+      "type": 0
+    },
+    {
+      "word": "BRAD",
+      "type": 0
+    },
+    {
+      "word": "BRAY",
+      "type": 0
+    },
+    {
+      "word": "DARB",
+      "type": 0
+    },
+    {
+      "word": "DARN",
+      "type": 0
+    },
+    {
+      "word": "DART",
+      "type": 0
+    },
+    {
+      "word": "EMIT",
+      "type": 0
+    },
+    {
+      "word": "FROE",
+      "type": 0
+    },
+    {
+      "word": "INRO",
+      "type": 0
+    },
+    {
+      "word": "MATE",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "MITY",
+      "type": 0
+    },
+    {
+      "word": "MORA",
+      "type": 0
+    },
+    {
+      "word": "MORN",
+      "type": 0
+    },
+    {
+      "word": "TAME",
+      "type": 0
+    },
+    {
+      "word": "TRAD",
+      "type": 0
+    },
+    {
+      "word": "TRAY",
+      "type": 0
+    },
+    {
+      "word": "YARN",
+      "type": 0
+    },
+    {
+      "word": "AMITY",
+      "type": 0
+    },
+    {
+      "word": "ORBIT",
+      "type": 0
+    },
+    {
+      "word": "DAYTIME",
+      "type": 0
+    }
+  ],
+  "letters": "AMITY,TEBRA,MORND,ARFIW",
+  "obstacles": []
 }

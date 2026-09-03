@@ -1,93 +1,219 @@
-﻿{
-    "id":  1103,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CERO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POCO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RICO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROCK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COCER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÍCONO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONOCER",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ICONO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ICOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOCIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POCERO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROCÍN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ÍNOP,COCK,IRED",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1103,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CIA",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "DIA",
+      "type": 0
+    },
+    {
+      "word": "HAS",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "RIC",
+      "type": 0
+    },
+    {
+      "word": "RARA",
+      "type": 0
+    },
+    {
+      "word": "TRAE",
+      "type": 0
+    },
+    {
+      "word": "TRAS",
+      "type": 0
+    },
+    {
+      "word": "TRAER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "CHA",
+      "type": 0
+    },
+    {
+      "word": "CID",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DAH",
+      "type": 0
+    },
+    {
+      "word": "DAI",
+      "type": 0
+    },
+    {
+      "word": "DCI",
+      "type": 0
+    },
+    {
+      "word": "DRA",
+      "type": 0
+    },
+    {
+      "word": "HAD",
+      "type": 0
+    },
+    {
+      "word": "ICH",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "RIE",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "ARAR",
+      "type": 0
+    },
+    {
+      "word": "ARAS",
+      "type": 0
+    },
+    {
+      "word": "ASAR",
+      "type": 0
+    },
+    {
+      "word": "CHAD",
+      "type": 0
+    },
+    {
+      "word": "CHAS",
+      "type": 0
+    },
+    {
+      "word": "DARA",
+      "type": 0
+    },
+    {
+      "word": "HADA",
+      "type": 0
+    },
+    {
+      "word": "IRAS",
+      "type": 0
+    },
+    {
+      "word": "READ",
+      "type": 0
+    },
+    {
+      "word": "REIR",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "SARI",
+      "type": 0
+    },
+    {
+      "word": "ASADA",
+      "type": 0
+    },
+    {
+      "word": "DICHA",
+      "type": 0
+    },
+    {
+      "word": "HADAR",
+      "type": 0
+    },
+    {
+      "word": "HADAS",
+      "type": 0
+    },
+    {
+      "word": "RADAR",
+      "type": 0
+    },
+    {
+      "word": "RARAS",
+      "type": 0
+    },
+    {
+      "word": "DICHAS",
+      "type": 0
+    }
+  ],
+  "letters": "CTRD,IRAI,EADC,RSAH",
+  "obstacles": []
 }

@@ -1,73 +1,251 @@
-﻿{
-    "id":  914,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HORA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MERO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROCK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TACHO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHOCAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BOCAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CHE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OCAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROCA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MERA,CHOC,ATBK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 914,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "LER",
+      "type": 0
+    },
+    {
+      "word": "NAO",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "RYAN",
+      "type": 0
+    },
+    {
+      "word": "TINA",
+      "type": 0
+    },
+    {
+      "word": "POUCO",
+      "type": 0
+    },
+    {
+      "word": "RILEY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "AYE",
+      "type": 0
+    },
+    {
+      "word": "CUT",
+      "type": 0
+    },
+    {
+      "word": "ELI",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "IRO",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "LEY",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NAY",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ORI",
+      "type": 0
+    },
+    {
+      "word": "OUT",
+      "type": 0
+    },
+    {
+      "word": "REY",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "RYE",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TAY",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "TOC",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TRY",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "YAO",
+      "type": 0
+    },
+    {
+      "word": "YET",
+      "type": 0
+    },
+    {
+      "word": "YIN",
+      "type": 0
+    },
+    {
+      "word": "ATER",
+      "type": 0
+    },
+    {
+      "word": "ATOR",
+      "type": 0
+    },
+    {
+      "word": "ATUO",
+      "type": 0
+    },
+    {
+      "word": "CORE",
+      "type": 0
+    },
+    {
+      "word": "CORI",
+      "type": 0
+    },
+    {
+      "word": "COTA",
+      "type": 0
+    },
+    {
+      "word": "LETO",
+      "type": 0
+    },
+    {
+      "word": "NATE",
+      "type": 0
+    },
+    {
+      "word": "NATO",
+      "type": 0
+    },
+    {
+      "word": "OTAN",
+      "type": 0
+    },
+    {
+      "word": "RETA",
+      "type": 0
+    },
+    {
+      "word": "RETO",
+      "type": 0
+    },
+    {
+      "word": "ROTA",
+      "type": 0
+    },
+    {
+      "word": "TERI",
+      "type": 0
+    },
+    {
+      "word": "TORE",
+      "type": 0
+    },
+    {
+      "word": "TORI",
+      "type": 0
+    },
+    {
+      "word": "TUCO",
+      "type": 0
+    },
+    {
+      "word": "COREY",
+      "type": 0
+    },
+    {
+      "word": "INATO",
+      "type": 0
+    },
+    {
+      "word": "TRYIN",
+      "type": 0
+    }
+  ],
+  "letters": "TINP,RYAO,LETU,IROC",
+  "obstacles": []
 }

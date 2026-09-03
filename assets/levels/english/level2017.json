@@ -1,111 +1,227 @@
-﻿{
-    "id":  2017,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HIS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HANG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HINT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SING",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SONG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AUTUMN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HANGS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MUG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MUGS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOSING",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "UTUM,ANGN,HISO",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2017,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANY",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "JOE",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "YEP",
+      "type": 0
+    },
+    {
+      "word": "LADY",
+      "type": 0
+    },
+    {
+      "word": "NEAR",
+      "type": 0
+    },
+    {
+      "word": "EARLY",
+      "type": 0
+    },
+    {
+      "word": "NEARLY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAL",
+      "type": 0
+    },
+    {
+      "word": "AAS",
+      "type": 0
+    },
+    {
+      "word": "ABA",
+      "type": 0
+    },
+    {
+      "word": "ABY",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BYE",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "EON",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LEY",
+      "type": 0
+    },
+    {
+      "word": "NAB",
+      "type": 0
+    },
+    {
+      "word": "RYE",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "ABYE",
+      "type": 0
+    },
+    {
+      "word": "ANES",
+      "type": 0
+    },
+    {
+      "word": "ANSA",
+      "type": 0
+    },
+    {
+      "word": "BARN",
+      "type": 0
+    },
+    {
+      "word": "BYRL",
+      "type": 0
+    },
+    {
+      "word": "DALE",
+      "type": 0
+    },
+    {
+      "word": "EARL",
+      "type": 0
+    },
+    {
+      "word": "EARN",
+      "type": 0
+    },
+    {
+      "word": "ELAN",
+      "type": 0
+    },
+    {
+      "word": "EYRA",
+      "type": 0
+    },
+    {
+      "word": "JOEY",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "NESS",
+      "type": 0
+    },
+    {
+      "word": "NOEL",
+      "type": 0
+    },
+    {
+      "word": "PEON",
+      "type": 0
+    },
+    {
+      "word": "SEAR",
+      "type": 0
+    },
+    {
+      "word": "ANEAR",
+      "type": 0
+    },
+    {
+      "word": "BARNS",
+      "type": 0
+    },
+    {
+      "word": "BARYE",
+      "type": 0
+    },
+    {
+      "word": "EARNS",
+      "type": 0
+    },
+    {
+      "word": "ELANS",
+      "type": 0
+    },
+    {
+      "word": "LANES",
+      "type": 0
+    },
+    {
+      "word": "PEONY",
+      "type": 0
+    },
+    {
+      "word": "SENSA",
+      "type": 0
+    },
+    {
+      "word": "BARLEY",
+      "type": 0
+    }
+  ],
+  "letters": "SEABA,SNRYN,AALEO,CDYPJ",
+  "obstacles": []
 }

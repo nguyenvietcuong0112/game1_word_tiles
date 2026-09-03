@@ -1,78 +1,87 @@
-﻿{
-    "id":  1371,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ЕЛЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛЕС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛУЧ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПОЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПУЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛОЖЕ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПОЛЕ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СЕЛО",
-                             "type":  2
-                         },
-                         {
-                             "word":  "СЕЛЬ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ПУЛЬС",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ЛУП",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ЖЕС,ОЛЬ,ПУЧ",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1371,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ВАЛ",
+      "type": 0
+    },
+    {
+      "word": "ВОР",
+      "type": 0
+    },
+    {
+      "word": "ВОУ",
+      "type": 0
+    },
+    {
+      "word": "ПЕН",
+      "type": 0
+    },
+    {
+      "word": "ПРО",
+      "type": 0
+    },
+    {
+      "word": "ФАР",
+      "type": 0
+    },
+    {
+      "word": "ЧЕН",
+      "type": 0
+    },
+    {
+      "word": "ПРОВАЛ",
+      "type": 0
+    },
+    {
+      "word": "УЧЕНЫЕ",
+      "type": 0
+    },
+    {
+      "word": "ПРОВАЛА",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АЛА",
+      "type": 0
+    },
+    {
+      "word": "ЛАВ",
+      "type": 0
+    },
+    {
+      "word": "РАЛ",
+      "type": 0
+    },
+    {
+      "word": "РАФ",
+      "type": 0
+    },
+    {
+      "word": "РОВ",
+      "type": 0
+    },
+    {
+      "word": "РОУ",
+      "type": 0
+    },
+    {
+      "word": "ЧУН",
+      "type": 0
+    },
+    {
+      "word": "ПЕНЫ",
+      "type": 0
+    },
+    {
+      "word": "РАФА",
+      "type": 0
+    }
+  ],
+  "letters": "ЫЕРП,НУОВ,ЕЧФА,ПРАЛ",
+  "obstacles": []
 }

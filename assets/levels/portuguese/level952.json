@@ -1,73 +1,351 @@
-﻿{
-    "id":  952,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AVAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LESMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SELVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESMOLA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MALO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VALO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LVA,EAL,SMO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 952,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "MIM",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "CADA",
+      "type": 0
+    },
+    {
+      "word": "FATO",
+      "type": 0
+    },
+    {
+      "word": "MATA",
+      "type": 0
+    },
+    {
+      "word": "ÉPOCA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "APO",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "COP",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DAT",
+      "type": 0
+    },
+    {
+      "word": "DIM",
+      "type": 0
+    },
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "FAD",
+      "type": 0
+    },
+    {
+      "word": "FAT",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "ITA",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MIT",
+      "type": 0
+    },
+    {
+      "word": "MOM",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "OMI",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "POD",
+      "type": 0
+    },
+    {
+      "word": "TAC",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TIM",
+      "type": 0
+    },
+    {
+      "word": "ADAM",
+      "type": 0
+    },
+    {
+      "word": "AMIT",
+      "type": 0
+    },
+    {
+      "word": "ATOM",
+      "type": 0
+    },
+    {
+      "word": "CATA",
+      "type": 0
+    },
+    {
+      "word": "COPA",
+      "type": 0
+    },
+    {
+      "word": "DAMA",
+      "type": 0
+    },
+    {
+      "word": "DATA",
+      "type": 0
+    },
+    {
+      "word": "DIMA",
+      "type": 0
+    },
+    {
+      "word": "DITA",
+      "type": 0
+    },
+    {
+      "word": "DOCA",
+      "type": 0
+    },
+    {
+      "word": "FADA",
+      "type": 0
+    },
+    {
+      "word": "FAMA",
+      "type": 0
+    },
+    {
+      "word": "MADA",
+      "type": 0
+    },
+    {
+      "word": "MADI",
+      "type": 0
+    },
+    {
+      "word": "MATO",
+      "type": 0
+    },
+    {
+      "word": "MIMA",
+      "type": 0
+    },
+    {
+      "word": "MIMO",
+      "type": 0
+    },
+    {
+      "word": "MITA",
+      "type": 0
+    },
+    {
+      "word": "MOTA",
+      "type": 0
+    },
+    {
+      "word": "PODA",
+      "type": 0
+    },
+    {
+      "word": "TACO",
+      "type": 0
+    },
+    {
+      "word": "TAMA",
+      "type": 0
+    },
+    {
+      "word": "TAMI",
+      "type": 0
+    },
+    {
+      "word": "TAMO",
+      "type": 0
+    },
+    {
+      "word": "TIDO",
+      "type": 0
+    },
+    {
+      "word": "TIMO",
+      "type": 0
+    },
+    {
+      "word": "TOMA",
+      "type": 0
+    },
+    {
+      "word": "TOMI",
+      "type": 0
+    },
+    {
+      "word": "ADAMA",
+      "type": 0
+    },
+    {
+      "word": "AMADA",
+      "type": 0
+    },
+    {
+      "word": "AMADO",
+      "type": 0
+    },
+    {
+      "word": "AMATO",
+      "type": 0
+    },
+    {
+      "word": "AMIDO",
+      "type": 0
+    },
+    {
+      "word": "AMITA",
+      "type": 0
+    },
+    {
+      "word": "ATACO",
+      "type": 0
+    },
+    {
+      "word": "ATADA",
+      "type": 0
+    },
+    {
+      "word": "ATADO",
+      "type": 0
+    },
+    {
+      "word": "DATAM",
+      "type": 0
+    },
+    {
+      "word": "MATADO",
+      "type": 0
+    },
+    {
+      "word": "MIMADA",
+      "type": 0
+    },
+    {
+      "word": "MIMADO",
+      "type": 0
+    },
+    {
+      "word": "TOMADA",
+      "type": 0
+    },
+    {
+      "word": "TOMADO",
+      "type": 0
+    }
+  ],
+  "letters": "ÉPOC,FADA,AMIT,TOMA",
+  "obstacles": []
 }

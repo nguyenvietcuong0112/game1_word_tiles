@@ -1,135 +1,179 @@
-﻿{
-    "id":  2046,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DENY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NODE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AIDER",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SPIDER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AIDS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DIPS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IDEAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NODS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REDO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "REDS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RENO",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "PSAN,IDER,AONY",
-    "obstacles":  [
-                      {
-                          "required_words":  8,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2046,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "FAN",
+      "type": 0
+    },
+    {
+      "word": "GET",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "FACE",
+      "type": 0
+    },
+    {
+      "word": "FANS",
+      "type": 0
+    },
+    {
+      "word": "FREE",
+      "type": 0
+    },
+    {
+      "word": "SCAN",
+      "type": 0
+    },
+    {
+      "word": "AFTER",
+      "type": 0
+    },
+    {
+      "word": "ROUND",
+      "type": 0
+    },
+    {
+      "word": "ROUNDS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "AFT",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "GEE",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TEG",
+      "type": 0
+    },
+    {
+      "word": "ACED",
+      "type": 0
+    },
+    {
+      "word": "CANS",
+      "type": 0
+    },
+    {
+      "word": "CETE",
+      "type": 0
+    },
+    {
+      "word": "FRET",
+      "type": 0
+    },
+    {
+      "word": "RETE",
+      "type": 0
+    },
+    {
+      "word": "ROUE",
+      "type": 0
+    },
+    {
+      "word": "SUED",
+      "type": 0
+    },
+    {
+      "word": "SUET",
+      "type": 0
+    },
+    {
+      "word": "TEDS",
+      "type": 0
+    },
+    {
+      "word": "UNDE",
+      "type": 0
+    },
+    {
+      "word": "DECAF",
+      "type": 0
+    },
+    {
+      "word": "DETER",
+      "type": 0
+    },
+    {
+      "word": "FACED",
+      "type": 0
+    },
+    {
+      "word": "FACET",
+      "type": 0
+    },
+    {
+      "word": "FREER",
+      "type": 0
+    },
+    {
+      "word": "FACETE",
+      "type": 0
+    },
+    {
+      "word": "TERRET",
+      "type": 0
+    }
+  ],
+  "letters": "FTFAN,REGCS,RETEU,OUNDS",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

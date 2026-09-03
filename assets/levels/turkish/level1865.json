@@ -1,65 +1,295 @@
-﻿{
-    "id":  1865,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BANK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ABONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BANKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇOBAN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKNE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANKA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OBA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "YEA,ANK,BOÇ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1865,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACI",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AŞK",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "ÇIK",
+      "type": 0
+    },
+    {
+      "word": "İSA",
+      "type": 0
+    },
+    {
+      "word": "KAPA",
+      "type": 0
+    },
+    {
+      "word": "KISA",
+      "type": 0
+    },
+    {
+      "word": "SIKI",
+      "type": 0
+    },
+    {
+      "word": "AKŞAM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "ASI",
+      "type": 0
+    },
+    {
+      "word": "ASİ",
+      "type": 0
+    },
+    {
+      "word": "AİN",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "CIK",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "ISI",
+      "type": 0
+    },
+    {
+      "word": "KAP",
+      "type": 0
+    },
+    {
+      "word": "KIS",
+      "type": 0
+    },
+    {
+      "word": "KIÇ",
+      "type": 0
+    },
+    {
+      "word": "MAİ",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "PAK",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "SAP",
+      "type": 0
+    },
+    {
+      "word": "SAİ",
+      "type": 0
+    },
+    {
+      "word": "SIK",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "SİN",
+      "type": 0
+    },
+    {
+      "word": "ÇİN",
+      "type": 0
+    },
+    {
+      "word": "İSI",
+      "type": 0
+    },
+    {
+      "word": "ŞAM",
+      "type": 0
+    },
+    {
+      "word": "ACIN",
+      "type": 0
+    },
+    {
+      "word": "AKIN",
+      "type": 0
+    },
+    {
+      "word": "AKIP",
+      "type": 0
+    },
+    {
+      "word": "ARSA",
+      "type": 0
+    },
+    {
+      "word": "ASIK",
+      "type": 0
+    },
+    {
+      "word": "ASIN",
+      "type": 0
+    },
+    {
+      "word": "ASIP",
+      "type": 0
+    },
+    {
+      "word": "AŞKA",
+      "type": 0
+    },
+    {
+      "word": "AŞKI",
+      "type": 0
+    },
+    {
+      "word": "AŞÇI",
+      "type": 0
+    },
+    {
+      "word": "IKIN",
+      "type": 0
+    },
+    {
+      "word": "KANI",
+      "type": 0
+    },
+    {
+      "word": "KAPI",
+      "type": 0
+    },
+    {
+      "word": "KINA",
+      "type": 0
+    },
+    {
+      "word": "MAİN",
+      "type": 0
+    },
+    {
+      "word": "PASI",
+      "type": 0
+    },
+    {
+      "word": "RANİ",
+      "type": 0
+    },
+    {
+      "word": "SAPA",
+      "type": 0
+    },
+    {
+      "word": "SAPI",
+      "type": 0
+    },
+    {
+      "word": "SINA",
+      "type": 0
+    },
+    {
+      "word": "ACISI",
+      "type": 0
+    },
+    {
+      "word": "AKICI",
+      "type": 0
+    },
+    {
+      "word": "ANISI",
+      "type": 0
+    },
+    {
+      "word": "KISIK",
+      "type": 0
+    },
+    {
+      "word": "SAPIK",
+      "type": 0
+    },
+    {
+      "word": "SIKAN",
+      "type": 0
+    },
+    {
+      "word": "SIKAR",
+      "type": 0
+    },
+    {
+      "word": "AKŞAMA",
+      "type": 0
+    },
+    {
+      "word": "KAPISI",
+      "type": 0
+    },
+    {
+      "word": "SIKICA",
+      "type": 0
+    },
+    {
+      "word": "KISACIK",
+      "type": 0
+    },
+    {
+      "word": "KAPISINA",
+      "type": 0
+    }
+  ],
+  "letters": "APACI,KISIK,ŞÇİNA,AMASR",
+  "obstacles": []
 }

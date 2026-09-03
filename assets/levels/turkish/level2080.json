@@ -1,107 +1,175 @@
-﻿{
-    "id":  2080,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AĞA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAĞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SÜT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TÜL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKSİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KASK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AKSAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAKTÜS",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKİL",
-                            "type":  1
-                        },
-                        {
-                            "word":  "AKİS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KİLÜS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAKİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAKİL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KTÜL,AKSİ,AĞAK",
-    "obstacles":  [
-                      {
-                          "required_words":  7,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2080,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "CHA",
+      "type": 0
+    },
+    {
+      "word": "GAO",
+      "type": 0
+    },
+    {
+      "word": "GOA",
+      "type": 0
+    },
+    {
+      "word": "HAN",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MOM",
+      "type": 0
+    },
+    {
+      "word": "ASMA",
+      "type": 0
+    },
+    {
+      "word": "ÖNCE",
+      "type": 0
+    },
+    {
+      "word": "ANTİK",
+      "type": 0
+    },
+    {
+      "word": "CHANG",
+      "type": 0
+    },
+    {
+      "word": "ÖNCEKİ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "CİK",
+      "type": 0
+    },
+    {
+      "word": "GOT",
+      "type": 0
+    },
+    {
+      "word": "HAA",
+      "type": 0
+    },
+    {
+      "word": "HAM",
+      "type": 0
+    },
+    {
+      "word": "KİT",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NCİ",
+      "type": 0
+    },
+    {
+      "word": "SAG",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "TİK",
+      "type": 0
+    },
+    {
+      "word": "İCE",
+      "type": 0
+    },
+    {
+      "word": "İKE",
+      "type": 0
+    },
+    {
+      "word": "İTO",
+      "type": 0
+    },
+    {
+      "word": "AANG",
+      "type": 0
+    },
+    {
+      "word": "ANTİ",
+      "type": 0
+    },
+    {
+      "word": "CHAN",
+      "type": 0
+    },
+    {
+      "word": "HAAS",
+      "type": 0
+    },
+    {
+      "word": "HANG",
+      "type": 0
+    },
+    {
+      "word": "GOTİK",
+      "type": 0
+    },
+    {
+      "word": "MANGA",
+      "type": 0
+    },
+    {
+      "word": "MANGO",
+      "type": 0
+    },
+    {
+      "word": "CHANCE",
+      "type": 0
+    }
+  ],
+  "letters": "KİTOA,ECNGM,CHAAS,NÖMOM",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,122 +1,183 @@
-﻿{
-    "id":  1942,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "APT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IVY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIVE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RIFT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHAPTER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHATTER",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CHAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HATTER",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LEVY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PATTER",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIVE",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "EVIRE,LYFTT,KCHAP",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1942,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "SOY",
+      "type": 0
+    },
+    {
+      "word": "SYN",
+      "type": 0
+    },
+    {
+      "word": "ARTS",
+      "type": 0
+    },
+    {
+      "word": "PART",
+      "type": 0
+    },
+    {
+      "word": "ISSUE",
+      "type": 0
+    },
+    {
+      "word": "PARTS",
+      "type": 0
+    },
+    {
+      "word": "RAISE",
+      "type": 0
+    },
+    {
+      "word": "ISSUES",
+      "type": 0
+    },
+    {
+      "word": "PRAISE",
+      "type": 0
+    },
+    {
+      "word": "TYRANNY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIS",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "AYS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "NAP",
+      "type": 0
+    },
+    {
+      "word": "NAY",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "PRY",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "SIS",
+      "type": 0
+    },
+    {
+      "word": "STY",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "NARY",
+      "type": 0
+    },
+    {
+      "word": "NAYS",
+      "type": 0
+    },
+    {
+      "word": "PRAY",
+      "type": 0
+    },
+    {
+      "word": "RAYS",
+      "type": 0
+    },
+    {
+      "word": "SOYA",
+      "type": 0
+    },
+    {
+      "word": "SOYS",
+      "type": 0
+    },
+    {
+      "word": "SUES",
+      "type": 0
+    },
+    {
+      "word": "TRAP",
+      "type": 0
+    },
+    {
+      "word": "PRAYS",
+      "type": 0
+    },
+    {
+      "word": "STRAP",
+      "type": 0
+    },
+    {
+      "word": "APPRAISE",
+      "type": 0
+    }
+  ],
+  "letters": "TYRPP,SIANA,SSYNR,UEOST",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

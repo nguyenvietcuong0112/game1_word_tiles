@@ -1,81 +1,235 @@
-﻿{
-    "id":  2089,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KALAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAPAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARSLAN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAKT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PALAN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PANI,ALSR,KTBA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2089,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "YLA",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "ANDY",
+      "type": 0
+    },
+    {
+      "word": "KARA",
+      "type": 0
+    },
+    {
+      "word": "MODA",
+      "type": 0
+    },
+    {
+      "word": "KARAR",
+      "type": 0
+    },
+    {
+      "word": "LARDA",
+      "type": 0
+    },
+    {
+      "word": "ODAYA",
+      "type": 0
+    },
+    {
+      "word": "SKYLAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "AYY",
+      "type": 0
+    },
+    {
+      "word": "DAD",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "MAY",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "OYA",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RYO",
+      "type": 0
+    },
+    {
+      "word": "YAA",
+      "type": 0
+    },
+    {
+      "word": "YAD",
+      "type": 0
+    },
+    {
+      "word": "YAY",
+      "type": 0
+    },
+    {
+      "word": "ARAN",
+      "type": 0
+    },
+    {
+      "word": "ARAR",
+      "type": 0
+    },
+    {
+      "word": "ARDA",
+      "type": 0
+    },
+    {
+      "word": "ARYA",
+      "type": 0
+    },
+    {
+      "word": "AYLA",
+      "type": 0
+    },
+    {
+      "word": "DAYA",
+      "type": 0
+    },
+    {
+      "word": "DOYA",
+      "type": 0
+    },
+    {
+      "word": "LAND",
+      "type": 0
+    },
+    {
+      "word": "LARA",
+      "type": 0
+    },
+    {
+      "word": "MAYA",
+      "type": 0
+    },
+    {
+      "word": "MAYO",
+      "type": 0
+    },
+    {
+      "word": "MOYA",
+      "type": 0
+    },
+    {
+      "word": "RAND",
+      "type": 0
+    },
+    {
+      "word": "YAYA",
+      "type": 0
+    },
+    {
+      "word": "YODA",
+      "type": 0
+    },
+    {
+      "word": "AYLAR",
+      "type": 0
+    },
+    {
+      "word": "KARAN",
+      "type": 0
+    },
+    {
+      "word": "KARDA",
+      "type": 0
+    },
+    {
+      "word": "RANDY",
+      "type": 0
+    },
+    {
+      "word": "ALARAK",
+      "type": 0
+    },
+    {
+      "word": "ARALAR",
+      "type": 0
+    },
+    {
+      "word": "KARARA",
+      "type": 0
+    },
+    {
+      "word": "MODAYA",
+      "type": 0
+    },
+    {
+      "word": "YAYLAN",
+      "type": 0
+    },
+    {
+      "word": "AYLARDA",
+      "type": 0
+    }
+  ],
+  "letters": "KARAN,DRALD,AYAYY,DOMKS",
+  "obstacles": []
 }

@@ -1,53 +1,31 @@
-﻿{
-    "id":  9,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AORTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TESTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEATRO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ATROAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ESTRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TESO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TROAR",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "TEA,RST,AOR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 9,
+  "width": 3,
+  "height": 2,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "MAU",
+      "type": 0
+    },
+    {
+      "word": "ARMA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "MAAR",
+      "type": 0
+    }
+  ],
+  "letters": "AMR,UAA",
+  "obstacles": []
 }

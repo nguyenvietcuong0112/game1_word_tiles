@@ -1,73 +1,191 @@
-﻿{
-    "id":  690,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HUB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HELM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HERD",
-                             "type":  2
-                         },
-                         {
-                             "word":  "HERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TERM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BERET",
-                             "type":  2
-                         },
-                         {
-                             "word":  "REBEL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "HALE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MID",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ALMI,HERD,UBET",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 690,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MID",
+      "type": 0
+    },
+    {
+      "word": "FLAG",
+      "type": 0
+    },
+    {
+      "word": "MIDI",
+      "type": 0
+    },
+    {
+      "word": "THIN",
+      "type": 0
+    },
+    {
+      "word": "LIGHT",
+      "type": 0
+    },
+    {
+      "word": "DIVINE",
+      "type": 0
+    },
+    {
+      "word": "FLIGHT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "DIM",
+      "type": 0
+    },
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "EFT",
+      "type": 0
+    },
+    {
+      "word": "FED",
+      "type": 0
+    },
+    {
+      "word": "FEM",
+      "type": 0
+    },
+    {
+      "word": "FEN",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GHI",
+      "type": 0
+    },
+    {
+      "word": "GIT",
+      "type": 0
+    },
+    {
+      "word": "HIN",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LIT",
+      "type": 0
+    },
+    {
+      "word": "TIL",
+      "type": 0
+    },
+    {
+      "word": "ALIT",
+      "type": 0
+    },
+    {
+      "word": "DEFT",
+      "type": 0
+    },
+    {
+      "word": "DENT",
+      "type": 0
+    },
+    {
+      "word": "DIME",
+      "type": 0
+    },
+    {
+      "word": "DINE",
+      "type": 0
+    },
+    {
+      "word": "DINT",
+      "type": 0
+    },
+    {
+      "word": "FLIT",
+      "type": 0
+    },
+    {
+      "word": "HINT",
+      "type": 0
+    },
+    {
+      "word": "IDEM",
+      "type": 0
+    },
+    {
+      "word": "INTI",
+      "type": 0
+    },
+    {
+      "word": "NIDE",
+      "type": 0
+    },
+    {
+      "word": "NIDI",
+      "type": 0
+    },
+    {
+      "word": "VIDE",
+      "type": 0
+    },
+    {
+      "word": "VINE",
+      "type": 0
+    },
+    {
+      "word": "THINE",
+      "type": 0
+    },
+    {
+      "word": "VINED",
+      "type": 0
+    },
+    {
+      "word": "ALIGHT",
+      "type": 0
+    },
+    {
+      "word": "DENTIL",
+      "type": 0
+    },
+    {
+      "word": "FLAGMEN",
+      "type": 0
+    }
+  ],
+  "letters": "IMGA,DEFL,INTI,VIHG",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,73 +1,239 @@
-﻿{
-    "id":  821,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BOA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALZA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OBRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAÍZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALZAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHIVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARCHIVO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CHIÍ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZARBO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "HIVOB,CÍZAR,RALPI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 821,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DÍA",
+      "type": 0
+    },
+    {
+      "word": "ESE",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "LOS",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "DÍAS",
+      "type": 0
+    },
+    {
+      "word": "OTRA",
+      "type": 0
+    },
+    {
+      "word": "CARTA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MES",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OTA",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "SOS",
+      "type": 0
+    },
+    {
+      "word": "SRA",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TOS",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "AMES",
+      "type": 0
+    },
+    {
+      "word": "ARLO",
+      "type": 0
+    },
+    {
+      "word": "CARL",
+      "type": 0
+    },
+    {
+      "word": "CARS",
+      "type": 0
+    },
+    {
+      "word": "ESES",
+      "type": 0
+    },
+    {
+      "word": "ESOS",
+      "type": 0
+    },
+    {
+      "word": "LAME",
+      "type": 0
+    },
+    {
+      "word": "LEMA",
+      "type": 0
+    },
+    {
+      "word": "LOSE",
+      "type": 0
+    },
+    {
+      "word": "MALO",
+      "type": 0
+    },
+    {
+      "word": "SATO",
+      "type": 0
+    },
+    {
+      "word": "SCAR",
+      "type": 0
+    },
+    {
+      "word": "SOLA",
+      "type": 0
+    },
+    {
+      "word": "SOLE",
+      "type": 0
+    },
+    {
+      "word": "SOTA",
+      "type": 0
+    },
+    {
+      "word": "SRTA",
+      "type": 0
+    },
+    {
+      "word": "TOSE",
+      "type": 0
+    },
+    {
+      "word": "CARLA",
+      "type": 0
+    },
+    {
+      "word": "CARLO",
+      "type": 0
+    },
+    {
+      "word": "MALES",
+      "type": 0
+    },
+    {
+      "word": "MALOS",
+      "type": 0
+    },
+    {
+      "word": "MESES",
+      "type": 0
+    },
+    {
+      "word": "SOLES",
+      "type": 0
+    },
+    {
+      "word": "CARLOS",
+      "type": 0
+    },
+    {
+      "word": "CARTAS",
+      "type": 0
+    },
+    {
+      "word": "CARLOTA",
+      "type": 0
+    }
+  ],
+  "letters": "ÍASC,DTRA,SOLA,ESEM",
+  "obstacles": []
 }

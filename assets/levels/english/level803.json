@@ -1,85 +1,211 @@
-﻿{
-    "id":  803,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "RIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIFE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SUCH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SWAM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "WIFE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAFER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADMIRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADMIRER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AFIRE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "AMIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIRE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SWAMI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WIFI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "HDMIR,CAAFE,USWIR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 803,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "HAS",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "LEAN",
+      "type": 0
+    },
+    {
+      "word": "LENS",
+      "type": 0
+    },
+    {
+      "word": "NEAR",
+      "type": 0
+    },
+    {
+      "word": "RAPE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "AAS",
+      "type": 0
+    },
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "ENG",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "GAE",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "NAE",
+      "type": 0
+    },
+    {
+      "word": "NAG",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "REP",
+      "type": 0
+    },
+    {
+      "word": "ANGA",
+      "type": 0
+    },
+    {
+      "word": "APER",
+      "type": 0
+    },
+    {
+      "word": "EARL",
+      "type": 0
+    },
+    {
+      "word": "EPHA",
+      "type": 0
+    },
+    {
+      "word": "GAEN",
+      "type": 0
+    },
+    {
+      "word": "HAAR",
+      "type": 0
+    },
+    {
+      "word": "HANG",
+      "type": 0
+    },
+    {
+      "word": "LEAP",
+      "type": 0
+    },
+    {
+      "word": "LEAR",
+      "type": 0
+    },
+    {
+      "word": "NEAP",
+      "type": 0
+    },
+    {
+      "word": "OSSA",
+      "type": 0
+    },
+    {
+      "word": "PARE",
+      "type": 0
+    },
+    {
+      "word": "SANE",
+      "type": 0
+    },
+    {
+      "word": "SANG",
+      "type": 0
+    },
+    {
+      "word": "SANS",
+      "type": 0
+    },
+    {
+      "word": "ANEAR",
+      "type": 0
+    },
+    {
+      "word": "EPHAS",
+      "type": 0
+    },
+    {
+      "word": "PAEAN",
+      "type": 0
+    },
+    {
+      "word": "PARLE",
+      "type": 0
+    },
+    {
+      "word": "SANGA",
+      "type": 0
+    },
+    {
+      "word": "SNEAP",
+      "type": 0
+    },
+    {
+      "word": "GOSSAN",
+      "type": 0
+    },
+    {
+      "word": "LEAPER",
+      "type": 0
+    }
+  ],
+  "letters": "NLRE,AEAP,GNAH,OSSA",
+  "obstacles": []
 }

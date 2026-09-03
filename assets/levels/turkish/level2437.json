@@ -1,97 +1,191 @@
-﻿{
-    "id":  2437,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AKÜ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÜF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BORA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAKAT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ORTAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PORTATİF",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "İFA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAFİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KATAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "OBA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAKA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TATAR",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "PRATİ,ORTAF,BAAKÜ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2437,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ELE",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "SÜT",
+      "type": 0
+    },
+    {
+      "word": "VAR",
+      "type": 0
+    },
+    {
+      "word": "VER",
+      "type": 0
+    },
+    {
+      "word": "YER",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "KERE",
+      "type": 0
+    },
+    {
+      "word": "YERİ",
+      "type": 0
+    },
+    {
+      "word": "BREAK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "BRİ",
+      "type": 0
+    },
+    {
+      "word": "ERİ",
+      "type": 0
+    },
+    {
+      "word": "KEL",
+      "type": 0
+    },
+    {
+      "word": "KEV",
+      "type": 0
+    },
+    {
+      "word": "KİL",
+      "type": 0
+    },
+    {
+      "word": "LER",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "LİK",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REY",
+      "type": 0
+    },
+    {
+      "word": "SKİ",
+      "type": 0
+    },
+    {
+      "word": "TİR",
+      "type": 0
+    },
+    {
+      "word": "İKE",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "ERİR",
+      "type": 0
+    },
+    {
+      "word": "EYRE",
+      "type": 0
+    },
+    {
+      "word": "KARE",
+      "type": 0
+    },
+    {
+      "word": "LERE",
+      "type": 0
+    },
+    {
+      "word": "LEVY",
+      "type": 0
+    },
+    {
+      "word": "LİKE",
+      "type": 0
+    },
+    {
+      "word": "RİTA",
+      "type": 0
+    },
+    {
+      "word": "VELİ",
+      "type": 0
+    },
+    {
+      "word": "VERA",
+      "type": 0
+    },
+    {
+      "word": "VERY",
+      "type": 0
+    },
+    {
+      "word": "KAREV",
+      "type": 0
+    },
+    {
+      "word": "KİLER",
+      "type": 0
+    },
+    {
+      "word": "LEVYE",
+      "type": 0
+    },
+    {
+      "word": "VEKİL",
+      "type": 0
+    },
+    {
+      "word": "KİLERE",
+      "type": 0
+    },
+    {
+      "word": "SÜVARİ",
+      "type": 0
+    },
+    {
+      "word": "KERELİK",
+      "type": 0
+    }
+  ],
+  "letters": "VÜSKİ,ATVEL,RİYRE,BREAK",
+  "obstacles": []
 }

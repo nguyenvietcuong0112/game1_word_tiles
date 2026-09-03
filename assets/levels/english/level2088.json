@@ -1,78 +1,239 @@
-﻿{
-    "id":  2088,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "END",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOCK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OPEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHOKE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ODN,CKE,HOP",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2088,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "GEM",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "WEE",
+      "type": 0
+    },
+    {
+      "word": "WHO",
+      "type": 0
+    },
+    {
+      "word": "HEEL",
+      "type": 0
+    },
+    {
+      "word": "HOME",
+      "type": 0
+    },
+    {
+      "word": "HOST",
+      "type": 0
+    },
+    {
+      "word": "MORE",
+      "type": 0
+    },
+    {
+      "word": "POST",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "STAGE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "EME",
+      "type": 0
+    },
+    {
+      "word": "GAT",
+      "type": 0
+    },
+    {
+      "word": "HEM",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "HOP",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MEW",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "OAT",
+      "type": 0
+    },
+    {
+      "word": "OHO",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "POH",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SOP",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "GATS",
+      "type": 0
+    },
+    {
+      "word": "HEME",
+      "type": 0
+    },
+    {
+      "word": "HEMP",
+      "type": 0
+    },
+    {
+      "word": "HERO",
+      "type": 0
+    },
+    {
+      "word": "HEST",
+      "type": 0
+    },
+    {
+      "word": "HOSE",
+      "type": 0
+    },
+    {
+      "word": "OATS",
+      "type": 0
+    },
+    {
+      "word": "ORES",
+      "type": 0
+    },
+    {
+      "word": "POSE",
+      "type": 0
+    },
+    {
+      "word": "STAG",
+      "type": 0
+    },
+    {
+      "word": "TAOS",
+      "type": 0
+    },
+    {
+      "word": "WEEL",
+      "type": 0
+    },
+    {
+      "word": "WHOA",
+      "type": 0
+    },
+    {
+      "word": "WHOM",
+      "type": 0
+    },
+    {
+      "word": "WHOP",
+      "type": 0
+    },
+    {
+      "word": "HOSTA",
+      "type": 0
+    },
+    {
+      "word": "MELEE",
+      "type": 0
+    },
+    {
+      "word": "MORES",
+      "type": 0
+    },
+    {
+      "word": "POSER",
+      "type": 0
+    },
+    {
+      "word": "WHOSE",
+      "type": 0
+    },
+    {
+      "word": "WHORES",
+      "type": 0
+    },
+    {
+      "word": "HOSTAGE",
+      "type": 0
+    },
+    {
+      "word": "POSTAGE",
+      "type": 0
+    },
+    {
+      "word": "RESTAGE",
+      "type": 0
+    }
+  ],
+  "letters": "ROMEL,EHWEE,SOPME,TAGEH",
+  "obstacles": []
 }

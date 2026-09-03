@@ -1,85 +1,299 @@
-﻿{
-    "id":  348,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FILA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FINO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LONA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NULO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FINAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FUNIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INATO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ATOL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "FULO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LATO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TONA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TONAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UNO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LOT,UNA,FIL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 348,
+  "width": 4,
+  "height": 3,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "IAM",
+      "type": 0
+    },
+    {
+      "word": "POR",
+      "type": 0
+    },
+    {
+      "word": "TEM",
+      "type": 0
+    },
+    {
+      "word": "AMOR",
+      "type": 0
+    },
+    {
+      "word": "PORTA",
+      "type": 0
+    },
+    {
+      "word": "PORTAS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "EMA",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "MAI",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "PEM",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "POM",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "TAI",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "IATE",
+      "type": 0
+    },
+    {
+      "word": "MAIA",
+      "type": 0
+    },
+    {
+      "word": "MART",
+      "type": 0
+    },
+    {
+      "word": "MATE",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "MORA",
+      "type": 0
+    },
+    {
+      "word": "MORT",
+      "type": 0
+    },
+    {
+      "word": "OMAR",
+      "type": 0
+    },
+    {
+      "word": "ORAM",
+      "type": 0
+    },
+    {
+      "word": "PETA",
+      "type": 0
+    },
+    {
+      "word": "PORT",
+      "type": 0
+    },
+    {
+      "word": "RAIA",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "RAMO",
+      "type": 0
+    },
+    {
+      "word": "ROMA",
+      "type": 0
+    },
+    {
+      "word": "ROME",
+      "type": 0
+    },
+    {
+      "word": "TAMA",
+      "type": 0
+    },
+    {
+      "word": "TAME",
+      "type": 0
+    },
+    {
+      "word": "TAMO",
+      "type": 0
+    },
+    {
+      "word": "TEMA",
+      "type": 0
+    },
+    {
+      "word": "TEMO",
+      "type": 0
+    },
+    {
+      "word": "TRAI",
+      "type": 0
+    },
+    {
+      "word": "AMARO",
+      "type": 0
+    },
+    {
+      "word": "AMORA",
+      "type": 0
+    },
+    {
+      "word": "AROMA",
+      "type": 0
+    },
+    {
+      "word": "ATRAI",
+      "type": 0
+    },
+    {
+      "word": "MARTA",
+      "type": 0
+    },
+    {
+      "word": "MORTA",
+      "type": 0
+    },
+    {
+      "word": "POMAR",
+      "type": 0
+    },
+    {
+      "word": "SPORT",
+      "type": 0
+    },
+    {
+      "word": "TEMOR",
+      "type": 0
+    },
+    {
+      "word": "TRAIA",
+      "type": 0
+    },
+    {
+      "word": "TRAMA",
+      "type": 0
+    },
+    {
+      "word": "ATRAIA",
+      "type": 0
+    },
+    {
+      "word": "MORTAS",
+      "type": 0
+    }
+  ],
+  "letters": "SPET,AOMA,TRAI",
+  "obstacles": []
 }

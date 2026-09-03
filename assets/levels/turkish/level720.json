@@ -1,61 +1,123 @@
-﻿{
-    "id":  720,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ÇAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAÇA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEŞE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MENTEŞE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAÇA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAÇ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇAK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TEŞE,NMKA,EMAÇ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 720,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "DAĞ",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "ÇIK",
+      "type": 0
+    },
+    {
+      "word": "AÇIK",
+      "type": 0
+    },
+    {
+      "word": "OLMA",
+      "type": 0
+    },
+    {
+      "word": "AÇIKÇA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AÇI",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "KIÇ",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "ÇAN",
+      "type": 0
+    },
+    {
+      "word": "ALMA",
+      "type": 0
+    },
+    {
+      "word": "DANA",
+      "type": 0
+    },
+    {
+      "word": "DANK",
+      "type": 0
+    },
+    {
+      "word": "KIÇA",
+      "type": 0
+    },
+    {
+      "word": "ODAN",
+      "type": 0
+    },
+    {
+      "word": "SAOL",
+      "type": 0
+    },
+    {
+      "word": "DOLMA",
+      "type": 0
+    },
+    {
+      "word": "ODANA",
+      "type": 0
+    }
+  ],
+  "letters": "AÇÇA,NKIA,ADOL,ĞSAM",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

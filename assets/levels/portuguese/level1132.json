@@ -1,97 +1,299 @@
-﻿{
-    "id":  1132,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FILA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GALÃ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GANA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GARI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GULA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LULA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAGU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RALI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FILAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUGAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GARANTIR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANAL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ANTI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IRAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORNAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ROAN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "FIRAO,ÃLANR,LUGTI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1132,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DEU",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERM",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "VAI",
+      "type": 0
+    },
+    {
+      "word": "VAGA",
+      "type": 0
+    },
+    {
+      "word": "AINDA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADN",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "DAG",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "DIL",
+      "type": 0
+    },
+    {
+      "word": "DOV",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "IDE",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "LAI",
+      "type": 0
+    },
+    {
+      "word": "NIA",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "OLI",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ORM",
+      "type": 0
+    },
+    {
+      "word": "OVA",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "VAL",
+      "type": 0
+    },
+    {
+      "word": "VOD",
+      "type": 0
+    },
+    {
+      "word": "AVAL",
+      "type": 0
+    },
+    {
+      "word": "AVNI",
+      "type": 0
+    },
+    {
+      "word": "DARE",
+      "type": 0
+    },
+    {
+      "word": "DAVA",
+      "type": 0
+    },
+    {
+      "word": "DERA",
+      "type": 0
+    },
+    {
+      "word": "DORA",
+      "type": 0
+    },
+    {
+      "word": "GARE",
+      "type": 0
+    },
+    {
+      "word": "GARO",
+      "type": 0
+    },
+    {
+      "word": "IDOL",
+      "type": 0
+    },
+    {
+      "word": "LAVA",
+      "type": 0
+    },
+    {
+      "word": "LAVO",
+      "type": 0
+    },
+    {
+      "word": "LIDE",
+      "type": 0
+    },
+    {
+      "word": "LIDO",
+      "type": 0
+    },
+    {
+      "word": "LORA",
+      "type": 0
+    },
+    {
+      "word": "LORE",
+      "type": 0
+    },
+    {
+      "word": "OVAL",
+      "type": 0
+    },
+    {
+      "word": "OVNI",
+      "type": 0
+    },
+    {
+      "word": "RAVN",
+      "type": 0
+    },
+    {
+      "word": "RODE",
+      "type": 0
+    },
+    {
+      "word": "ROLA",
+      "type": 0
+    },
+    {
+      "word": "LAVAR",
+      "type": 0
+    },
+    {
+      "word": "LIDER",
+      "type": 0
+    },
+    {
+      "word": "VALOR",
+      "type": 0
+    },
+    {
+      "word": "INVADA",
+      "type": 0
+    },
+    {
+      "word": "LAVADA",
+      "type": 0
+    },
+    {
+      "word": "LIDERA",
+      "type": 0
+    },
+    {
+      "word": "LIDERO",
+      "type": 0
+    },
+    {
+      "word": "ROLAVA",
+      "type": 0
+    },
+    {
+      "word": "VALIDO",
+      "type": 0
+    },
+    {
+      "word": "INDAGAR",
+      "type": 0
+    },
+    {
+      "word": "LIDERADA",
+      "type": 0
+    },
+    {
+      "word": "LIDERAVA",
+      "type": 0
+    }
+  ],
+  "letters": "UMGA,ERAD,DOVN,ILAI",
+  "obstacles": []
 }

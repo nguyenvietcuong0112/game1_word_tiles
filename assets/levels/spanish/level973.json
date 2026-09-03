@@ -1,57 +1,291 @@
-﻿{
-    "id":  973,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CODO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CRUCE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CEDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CURO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "URO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CJO,ROD,UCE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 973,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "REY",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "COCO",
+      "type": 0
+    },
+    {
+      "word": "CORRE",
+      "type": 0
+    },
+    {
+      "word": "CORTE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "RYE",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "TES",
+      "type": 0
+    },
+    {
+      "word": "TRY",
+      "type": 0
+    },
+    {
+      "word": "YET",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "AMAS",
+      "type": 0
+    },
+    {
+      "word": "CORY",
+      "type": 0
+    },
+    {
+      "word": "MARE",
+      "type": 0
+    },
+    {
+      "word": "MATE",
+      "type": 0
+    },
+    {
+      "word": "MERA",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "METE",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "REMA",
+      "type": 0
+    },
+    {
+      "word": "RETA",
+      "type": 0
+    },
+    {
+      "word": "SAME",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "TAMA",
+      "type": 0
+    },
+    {
+      "word": "TEMA",
+      "type": 0
+    },
+    {
+      "word": "TERA",
+      "type": 0
+    },
+    {
+      "word": "YEMA",
+      "type": 0
+    },
+    {
+      "word": "ARETE",
+      "type": 0
+    },
+    {
+      "word": "CORRA",
+      "type": 0
+    },
+    {
+      "word": "CORTA",
+      "type": 0
+    },
+    {
+      "word": "MATER",
+      "type": 0
+    },
+    {
+      "word": "MATES",
+      "type": 0
+    },
+    {
+      "word": "MERRY",
+      "type": 0
+    },
+    {
+      "word": "METAS",
+      "type": 0
+    },
+    {
+      "word": "METES",
+      "type": 0
+    },
+    {
+      "word": "METRO",
+      "type": 0
+    },
+    {
+      "word": "RAMAS",
+      "type": 0
+    },
+    {
+      "word": "RETRO",
+      "type": 0
+    },
+    {
+      "word": "SAMAR",
+      "type": 0
+    },
+    {
+      "word": "TEMAS",
+      "type": 0
+    },
+    {
+      "word": "TERRY",
+      "type": 0
+    },
+    {
+      "word": "YEMAS",
+      "type": 0
+    },
+    {
+      "word": "ARETES",
+      "type": 0
+    },
+    {
+      "word": "CORTAS",
+      "type": 0
+    },
+    {
+      "word": "CORTES",
+      "type": 0
+    },
+    {
+      "word": "REMATE",
+      "type": 0
+    }
+  ],
+  "letters": "OCOC,RYRL,RETE,AMAS",
+  "obstacles": []
 }

@@ -1,57 +1,163 @@
-﻿{
-    "id":  1980,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AKÜ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKSİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MORG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇÜRÜK",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KÜR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAKSİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MORS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROMA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ORGÇ,MSİÜ,AKÜR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1980,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AİT",
+      "type": 0
+    },
+    {
+      "word": "DES",
+      "type": 0
+    },
+    {
+      "word": "HAY",
+      "type": 0
+    },
+    {
+      "word": "LAF",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "DEME",
+      "type": 0
+    },
+    {
+      "word": "HALA",
+      "type": 0
+    },
+    {
+      "word": "HALK",
+      "type": 0
+    },
+    {
+      "word": "HALT",
+      "type": 0
+    },
+    {
+      "word": "HALDE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "DEA",
+      "type": 0
+    },
+    {
+      "word": "DEM",
+      "type": 0
+    },
+    {
+      "word": "FAL",
+      "type": 0
+    },
+    {
+      "word": "FAY",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "LAİ",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "TİA",
+      "type": 0
+    },
+    {
+      "word": "ALTİ",
+      "type": 0
+    },
+    {
+      "word": "LAFA",
+      "type": 0
+    },
+    {
+      "word": "LALA",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "MALA",
+      "type": 0
+    },
+    {
+      "word": "OKLA",
+      "type": 0
+    },
+    {
+      "word": "HALAM",
+      "type": 0
+    },
+    {
+      "word": "İTHAF",
+      "type": 0
+    },
+    {
+      "word": "İTHAL",
+      "type": 0
+    },
+    {
+      "word": "HALKLA",
+      "type": 0
+    }
+  ],
+  "letters": "AMAEM,OKLDE,ALAFS,İTHAY",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,73 +1,239 @@
-﻿{
-    "id":  2001,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "RANG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SANG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SANK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TANK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RESET",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ERAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GNAT",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RATES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SERA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TARE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TASER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ETG,SAN,ERK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2001,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "MOB",
+      "type": 0
+    },
+    {
+      "word": "NOT",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "POP",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "PETS",
+      "type": 0
+    },
+    {
+      "word": "STEP",
+      "type": 0
+    },
+    {
+      "word": "PETER",
+      "type": 0
+    },
+    {
+      "word": "SISTER",
+      "type": 0
+    },
+    {
+      "word": "PERSIST",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BOP",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "IDS",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "MOP",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "PEP",
+      "type": 0
+    },
+    {
+      "word": "PIS",
+      "type": 0
+    },
+    {
+      "word": "POM",
+      "type": 0
+    },
+    {
+      "word": "REP",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "RIP",
+      "type": 0
+    },
+    {
+      "word": "SIP",
+      "type": 0
+    },
+    {
+      "word": "SIS",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "TON",
+      "type": 0
+    },
+    {
+      "word": "DRIP",
+      "type": 0
+    },
+    {
+      "word": "ERST",
+      "type": 0
+    },
+    {
+      "word": "MIRE",
+      "type": 0
+    },
+    {
+      "word": "MIRS",
+      "type": 0
+    },
+    {
+      "word": "MIST",
+      "type": 0
+    },
+    {
+      "word": "MOPE",
+      "type": 0
+    },
+    {
+      "word": "PEPO",
+      "type": 0
+    },
+    {
+      "word": "PERI",
+      "type": 0
+    },
+    {
+      "word": "POPE",
+      "type": 0
+    },
+    {
+      "word": "REPO",
+      "type": 0
+    },
+    {
+      "word": "RETE",
+      "type": 0
+    },
+    {
+      "word": "RETS",
+      "type": 0
+    },
+    {
+      "word": "RIPE",
+      "type": 0
+    },
+    {
+      "word": "SIPE",
+      "type": 0
+    },
+    {
+      "word": "SIRE",
+      "type": 0
+    },
+    {
+      "word": "SIRS",
+      "type": 0
+    },
+    {
+      "word": "SNOT",
+      "type": 0
+    },
+    {
+      "word": "SRIS",
+      "type": 0
+    },
+    {
+      "word": "TONS",
+      "type": 0
+    },
+    {
+      "word": "MOPER",
+      "type": 0
+    },
+    {
+      "word": "PERIS",
+      "type": 0
+    },
+    {
+      "word": "MOPERS",
+      "type": 0
+    },
+    {
+      "word": "PETERS",
+      "type": 0
+    },
+    {
+      "word": "PISTON",
+      "type": 0
+    }
+  ],
+  "letters": "ETSIS,PERDT,OPISN,BOMTO",
+  "obstacles": []
 }

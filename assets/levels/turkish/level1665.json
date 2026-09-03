@@ -1,77 +1,123 @@
-﻿{
-    "id":  1665,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AHIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DARI",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EMEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MERA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "HAREM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HADEME",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ADEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEDAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "REMEL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "HIL,ARE,DEM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1665,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "KAP",
+      "type": 0
+    },
+    {
+      "word": "ONA",
+      "type": 0
+    },
+    {
+      "word": "SEV",
+      "type": 0
+    },
+    {
+      "word": "ANCA",
+      "type": 0
+    },
+    {
+      "word": "KAKA",
+      "type": 0
+    },
+    {
+      "word": "KAPA",
+      "type": 0
+    },
+    {
+      "word": "ONCA",
+      "type": 0
+    },
+    {
+      "word": "OPPA",
+      "type": 0
+    },
+    {
+      "word": "ANCAK",
+      "type": 0
+    },
+    {
+      "word": "KAPAK",
+      "type": 0
+    },
+    {
+      "word": "SIÇAN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AÇI",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "KAC",
+      "type": 0
+    },
+    {
+      "word": "OAK",
+      "type": 0
+    },
+    {
+      "word": "PAK",
+      "type": 0
+    },
+    {
+      "word": "PAO",
+      "type": 0
+    },
+    {
+      "word": "PON",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "ÇAN",
+      "type": 0
+    },
+    {
+      "word": "CAKA",
+      "type": 0
+    },
+    {
+      "word": "SEVK",
+      "type": 0
+    },
+    {
+      "word": "KAKAO",
+      "type": 0
+    }
+  ],
+  "letters": "SEAK,IVKA,ÇCAP,ANOP",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

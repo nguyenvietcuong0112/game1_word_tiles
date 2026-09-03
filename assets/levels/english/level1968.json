@@ -1,94 +1,275 @@
-﻿{
-    "id":  1968,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MUD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUMB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADULT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRIDAL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALUM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LALT,IDUE,RBMY",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1968,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "NEW",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "JANE",
+      "type": 0
+    },
+    {
+      "word": "NEWS",
+      "type": 0
+    },
+    {
+      "word": "PEAS",
+      "type": 0
+    },
+    {
+      "word": "WERE",
+      "type": 0
+    },
+    {
+      "word": "ANSWER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAS",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "AWE",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "EWE",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GEE",
+      "type": 0
+    },
+    {
+      "word": "JAG",
+      "type": 0
+    },
+    {
+      "word": "JAW",
+      "type": 0
+    },
+    {
+      "word": "JEW",
+      "type": 0
+    },
+    {
+      "word": "LEI",
+      "type": 0
+    },
+    {
+      "word": "NAG",
+      "type": 0
+    },
+    {
+      "word": "NAP",
+      "type": 0
+    },
+    {
+      "word": "NAW",
+      "type": 0
+    },
+    {
+      "word": "NIP",
+      "type": 0
+    },
+    {
+      "word": "PEA",
+      "type": 0
+    },
+    {
+      "word": "PEW",
+      "type": 0
+    },
+    {
+      "word": "PIE",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "WAG",
+      "type": 0
+    },
+    {
+      "word": "WAN",
+      "type": 0
+    },
+    {
+      "word": "WEN",
+      "type": 0
+    },
+    {
+      "word": "AGEE",
+      "type": 0
+    },
+    {
+      "word": "AGER",
+      "type": 0
+    },
+    {
+      "word": "ANEW",
+      "type": 0
+    },
+    {
+      "word": "EGER",
+      "type": 0
+    },
+    {
+      "word": "GANE",
+      "type": 0
+    },
+    {
+      "word": "GLEE",
+      "type": 0
+    },
+    {
+      "word": "JAWS",
+      "type": 0
+    },
+    {
+      "word": "JEWS",
+      "type": 0
+    },
+    {
+      "word": "LEER",
+      "type": 0
+    },
+    {
+      "word": "NAPE",
+      "type": 0
+    },
+    {
+      "word": "NIPA",
+      "type": 0
+    },
+    {
+      "word": "PEWS",
+      "type": 0
+    },
+    {
+      "word": "PINA",
+      "type": 0
+    },
+    {
+      "word": "REEL",
+      "type": 0
+    },
+    {
+      "word": "SNAG",
+      "type": 0
+    },
+    {
+      "word": "SNAW",
+      "type": 0
+    },
+    {
+      "word": "SWAG",
+      "type": 0
+    },
+    {
+      "word": "SWAN",
+      "type": 0
+    },
+    {
+      "word": "WAGE",
+      "type": 0
+    },
+    {
+      "word": "WANE",
+      "type": 0
+    },
+    {
+      "word": "WANS",
+      "type": 0
+    },
+    {
+      "word": "WENS",
+      "type": 0
+    },
+    {
+      "word": "AGLEE",
+      "type": 0
+    },
+    {
+      "word": "JAGER",
+      "type": 0
+    },
+    {
+      "word": "REWAN",
+      "type": 0
+    },
+    {
+      "word": "SWAGE",
+      "type": 0
+    },
+    {
+      "word": "WAGER",
+      "type": 0
+    },
+    {
+      "word": "SWAGER",
+      "type": 0
+    }
+  ],
+  "letters": "SWENS,AEJAW,APLGE,NIEER",
+  "obstacles": []
 }

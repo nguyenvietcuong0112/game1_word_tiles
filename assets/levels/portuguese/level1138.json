@@ -1,113 +1,203 @@
-﻿{
-    "id":  1138,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RICO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LICOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIRAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PINICO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INSPIRAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARILO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "CORAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "IRAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LINS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NICAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NILO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OCAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PINICAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PIRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROCAR",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "PIRAR,SNICO,ÃOLTE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1138,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "ALGO",
+      "type": 0
+    },
+    {
+      "word": "ANDA",
+      "type": 0
+    },
+    {
+      "word": "CALE",
+      "type": 0
+    },
+    {
+      "word": "CEDO",
+      "type": 0
+    },
+    {
+      "word": "DOCE",
+      "type": 0
+    },
+    {
+      "word": "DOIS",
+      "type": 0
+    },
+    {
+      "word": "LADO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ADN",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ANG",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "DOG",
+      "type": 0
+    },
+    {
+      "word": "DOI",
+      "type": 0
+    },
+    {
+      "word": "ECA",
+      "type": 0
+    },
+    {
+      "word": "ECO",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "GOD",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "MIO",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "ANDE",
+      "type": 0
+    },
+    {
+      "word": "ANDO",
+      "type": 0
+    },
+    {
+      "word": "CADE",
+      "type": 0
+    },
+    {
+      "word": "CEDA",
+      "type": 0
+    },
+    {
+      "word": "CODE",
+      "type": 0
+    },
+    {
+      "word": "DOGS",
+      "type": 0
+    },
+    {
+      "word": "EDNA",
+      "type": 0
+    },
+    {
+      "word": "LACE",
+      "type": 0
+    },
+    {
+      "word": "LAND",
+      "type": 0
+    },
+    {
+      "word": "LANG",
+      "type": 0
+    },
+    {
+      "word": "SELA",
+      "type": 0
+    },
+    {
+      "word": "LANDO",
+      "type": 0
+    },
+    {
+      "word": "CANDACE",
+      "type": 0
+    },
+    {
+      "word": "SELANDO",
+      "type": 0
+    }
+  ],
+  "letters": "CALC,EDNA,COGL,MISE",
+  "obstacles": []
 }

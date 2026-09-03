@@ -1,93 +1,163 @@
-﻿{
-    "id":  1040,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MERO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NULO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REMO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MENOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NUVEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OMBRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOVEMBRO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "NEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OVER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RENO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RENOVO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "UNO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VERO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VON",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LONO,UVER,NOMB",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1040,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "CAI",
+      "type": 0
+    },
+    {
+      "word": "ETC",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "PIA",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "ANTE",
+      "type": 0
+    },
+    {
+      "word": "CLAN",
+      "type": 0
+    },
+    {
+      "word": "FALA",
+      "type": 0
+    },
+    {
+      "word": "SAGA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "CNA",
+      "type": 0
+    },
+    {
+      "word": "EPI",
+      "type": 0
+    },
+    {
+      "word": "FAE",
+      "type": 0
+    },
+    {
+      "word": "FAN",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LIP",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "PIL",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "GALA",
+      "type": 0
+    },
+    {
+      "word": "ILSA",
+      "type": 0
+    },
+    {
+      "word": "LIPS",
+      "type": 0
+    },
+    {
+      "word": "SAFA",
+      "type": 0
+    },
+    {
+      "word": "SLIP",
+      "type": 0
+    },
+    {
+      "word": "TEAL",
+      "type": 0
+    },
+    {
+      "word": "GALAN",
+      "type": 0
+    },
+    {
+      "word": "FALANTE",
+      "type": 0
+    },
+    {
+      "word": "GALANTE",
+      "type": 0
+    }
+  ],
+  "letters": "LIAC,SPET,AFAN,GALC",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

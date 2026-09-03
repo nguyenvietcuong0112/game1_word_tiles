@@ -1,81 +1,179 @@
-﻿{
-    "id":  1040,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AÑO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÁLOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAÑO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÁLAMO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PALOMA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOÑA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAÑOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÁMALO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ÑOMA,ALÁL,PFEO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1040,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "LOU",
+      "type": 0
+    },
+    {
+      "word": "UNO",
+      "type": 0
+    },
+    {
+      "word": "DIGO",
+      "type": 0
+    },
+    {
+      "word": "ELLA",
+      "type": 0
+    },
+    {
+      "word": "ELLO",
+      "type": 0
+    },
+    {
+      "word": "FRAU",
+      "type": 0
+    },
+    {
+      "word": "LLEGA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "DIG",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "FAA",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GOL",
+      "type": 0
+    },
+    {
+      "word": "GON",
+      "type": 0
+    },
+    {
+      "word": "GUN",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LAU",
+      "type": 0
+    },
+    {
+      "word": "LLA",
+      "type": 0
+    },
+    {
+      "word": "LON",
+      "type": 0
+    },
+    {
+      "word": "NOG",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "ONU",
+      "type": 0
+    },
+    {
+      "word": "OUI",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "UGO",
+      "type": 0
+    },
+    {
+      "word": "ALGA",
+      "type": 0
+    },
+    {
+      "word": "DARA",
+      "type": 0
+    },
+    {
+      "word": "LARA",
+      "type": 0
+    },
+    {
+      "word": "NOLA",
+      "type": 0
+    },
+    {
+      "word": "OLGA",
+      "type": 0
+    },
+    {
+      "word": "OLLE",
+      "type": 0
+    },
+    {
+      "word": "GELLAR",
+      "type": 0
+    }
+  ],
+  "letters": "FAGE,RALL,AUON,DIGU",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

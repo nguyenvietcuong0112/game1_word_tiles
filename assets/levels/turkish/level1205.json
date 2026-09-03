@@ -1,81 +1,95 @@
-﻿{
-    "id":  1205,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FİŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İRİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOBİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FREN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RENK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİBER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞİFRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞİZOFREN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BİRİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FİRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FRENK",
-                            "type":  1
-                        },
-                        {
-                            "word":  "KEBİR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZİFİR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZİFİRİ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ŞRENK,İFİRE,ZOBİB",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1205,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "ABD",
+      "type": 0
+    },
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "DOE",
+      "type": 0
+    },
+    {
+      "word": "VAR",
+      "type": 0
+    },
+    {
+      "word": "ŞOV",
+      "type": 0
+    },
+    {
+      "word": "ARKA",
+      "type": 0
+    },
+    {
+      "word": "VAROŞ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARK",
+      "type": 0
+    },
+    {
+      "word": "BEA",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "RAB",
+      "type": 0
+    },
+    {
+      "word": "YAD",
+      "type": 0
+    },
+    {
+      "word": "ŞOVA",
+      "type": 0
+    },
+    {
+      "word": "ŞOVDA",
+      "type": 0
+    }
+  ],
+  "letters": "YŞOR,ADVA,EBAA,ODRK",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

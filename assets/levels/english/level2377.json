@@ -1,89 +1,315 @@
-﻿{
-    "id":  2377,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ILL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BELL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BILL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TELL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VEIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VERB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BELIEVE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BELIEVER",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BELIEVES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "BILE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELVES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SERB",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TLBR,ELVE,BIES",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2377,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "LAT",
+      "type": 0
+    },
+    {
+      "word": "MAY",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "FLAG",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "MENU",
+      "type": 0
+    },
+    {
+      "word": "SOME",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "FLU",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GIN",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "NAG",
+      "type": 0
+    },
+    {
+      "word": "NUT",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SOY",
+      "type": 0
+    },
+    {
+      "word": "TUN",
+      "type": 0
+    },
+    {
+      "word": "UTA",
+      "type": 0
+    },
+    {
+      "word": "YAM",
+      "type": 0
+    },
+    {
+      "word": "YOM",
+      "type": 0
+    },
+    {
+      "word": "AGIN",
+      "type": 0
+    },
+    {
+      "word": "ALES",
+      "type": 0
+    },
+    {
+      "word": "AMEN",
+      "type": 0
+    },
+    {
+      "word": "ANES",
+      "type": 0
+    },
+    {
+      "word": "ANIS",
+      "type": 0
+    },
+    {
+      "word": "ARIA",
+      "type": 0
+    },
+    {
+      "word": "CARL",
+      "type": 0
+    },
+    {
+      "word": "FLAN",
+      "type": 0
+    },
+    {
+      "word": "GANE",
+      "type": 0
+    },
+    {
+      "word": "LAIC",
+      "type": 0
+    },
+    {
+      "word": "LAIR",
+      "type": 0
+    },
+    {
+      "word": "LUNA",
+      "type": 0
+    },
+    {
+      "word": "LUNE",
+      "type": 0
+    },
+    {
+      "word": "MAAR",
+      "type": 0
+    },
+    {
+      "word": "MAYO",
+      "type": 0
+    },
+    {
+      "word": "NEMA",
+      "type": 0
+    },
+    {
+      "word": "OMEN",
+      "type": 0
+    },
+    {
+      "word": "RIAL",
+      "type": 0
+    },
+    {
+      "word": "SINE",
+      "type": 0
+    },
+    {
+      "word": "SOMA",
+      "type": 0
+    },
+    {
+      "word": "SOYA",
+      "type": 0
+    },
+    {
+      "word": "TALE",
+      "type": 0
+    },
+    {
+      "word": "TULE",
+      "type": 0
+    },
+    {
+      "word": "TUNA",
+      "type": 0
+    },
+    {
+      "word": "TUNE",
+      "type": 0
+    },
+    {
+      "word": "ULAN",
+      "type": 0
+    },
+    {
+      "word": "ALULA",
+      "type": 0
+    },
+    {
+      "word": "ANISE",
+      "type": 0
+    },
+    {
+      "word": "ARLES",
+      "type": 0
+    },
+    {
+      "word": "CARLE",
+      "type": 0
+    },
+    {
+      "word": "LANES",
+      "type": 0
+    },
+    {
+      "word": "LENIS",
+      "type": 0
+    },
+    {
+      "word": "LUNES",
+      "type": 0
+    },
+    {
+      "word": "MAYOS",
+      "type": 0
+    },
+    {
+      "word": "TALES",
+      "type": 0
+    },
+    {
+      "word": "TULES",
+      "type": 0
+    },
+    {
+      "word": "TUNES",
+      "type": 0
+    },
+    {
+      "word": "ULEMA",
+      "type": 0
+    },
+    {
+      "word": "YAMEN",
+      "type": 0
+    },
+    {
+      "word": "AIRMEN",
+      "type": 0
+    },
+    {
+      "word": "CARLES",
+      "type": 0
+    },
+    {
+      "word": "CARMEN",
+      "type": 0
+    },
+    {
+      "word": "FLANES",
+      "type": 0
+    },
+    {
+      "word": "RACIAL",
+      "type": 0
+    }
+  ],
+  "letters": "FTAIC,LULRA,ANEMA,GISOY",
+  "obstacles": []
 }

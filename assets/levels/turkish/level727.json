@@ -1,73 +1,235 @@
-﻿{
-    "id":  727,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AYNA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAZA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAYNAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KEREVİZ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "İKAZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KERE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VİKAYE",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "VİZAA,EKAAR,REYNO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 727,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "KAL",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "SAĞ",
+      "type": 0
+    },
+    {
+      "word": "ASLA",
+      "type": 0
+    },
+    {
+      "word": "KAPA",
+      "type": 0
+    },
+    {
+      "word": "KRAL",
+      "type": 0
+    },
+    {
+      "word": "PARA",
+      "type": 0
+    },
+    {
+      "word": "TAKIM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ARK",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "KAP",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "LAK",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "PAK",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "AKAR",
+      "type": 0
+    },
+    {
+      "word": "AKIM",
+      "type": 0
+    },
+    {
+      "word": "ALSA",
+      "type": 0
+    },
+    {
+      "word": "APAR",
+      "type": 0
+    },
+    {
+      "word": "ARAP",
+      "type": 0
+    },
+    {
+      "word": "ARKA",
+      "type": 0
+    },
+    {
+      "word": "ARTA",
+      "type": 0
+    },
+    {
+      "word": "AĞLA",
+      "type": 0
+    },
+    {
+      "word": "KALA",
+      "type": 0
+    },
+    {
+      "word": "KARA",
+      "type": 0
+    },
+    {
+      "word": "KART",
+      "type": 0
+    },
+    {
+      "word": "LAPA",
+      "type": 0
+    },
+    {
+      "word": "LARA",
+      "type": 0
+    },
+    {
+      "word": "MASA",
+      "type": 0
+    },
+    {
+      "word": "PALA",
+      "type": 0
+    },
+    {
+      "word": "PARK",
+      "type": 0
+    },
+    {
+      "word": "PART",
+      "type": 0
+    },
+    {
+      "word": "TAKI",
+      "type": 0
+    },
+    {
+      "word": "ALAKA",
+      "type": 0
+    },
+    {
+      "word": "ALSAM",
+      "type": 0
+    },
+    {
+      "word": "AĞLAR",
+      "type": 0
+    },
+    {
+      "word": "KALSA",
+      "type": 0
+    },
+    {
+      "word": "KAPAR",
+      "type": 0
+    },
+    {
+      "word": "KARTA",
+      "type": 0
+    },
+    {
+      "word": "KRALA",
+      "type": 0
+    },
+    {
+      "word": "LAKAP",
+      "type": 0
+    },
+    {
+      "word": "PARKA",
+      "type": 0
+    },
+    {
+      "word": "PARKI",
+      "type": 0
+    },
+    {
+      "word": "SAĞLA",
+      "type": 0
+    },
+    {
+      "word": "KALSAM",
+      "type": 0
+    },
+    {
+      "word": "SAĞLAR",
+      "type": 0
+    },
+    {
+      "word": "TAKIMA",
+      "type": 0
+    }
+  ],
+  "letters": "MIKA,AART,SLAP,AĞKA",
+  "obstacles": []
 }

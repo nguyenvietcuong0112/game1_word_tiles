@@ -1,73 +1,159 @@
-﻿{
-    "id":  1040,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AŞK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MAŞA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKŞAM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AŞMAK",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKLAMA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AŞMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAMAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ŞAD",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MAL,AŞK,DMA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1040,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "DUA",
+      "type": 0
+    },
+    {
+      "word": "GİT",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "VAN",
+      "type": 0
+    },
+    {
+      "word": "ÇIK",
+      "type": 0
+    },
+    {
+      "word": "ADET",
+      "type": 0
+    },
+    {
+      "word": "PUAN",
+      "type": 0
+    },
+    {
+      "word": "ÇIKMA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "AMT",
+      "type": 0
+    },
+    {
+      "word": "APU",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "DUT",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "ETİ",
+      "type": 0
+    },
+    {
+      "word": "GED",
+      "type": 0
+    },
+    {
+      "word": "GET",
+      "type": 0
+    },
+    {
+      "word": "KIÇ",
+      "type": 0
+    },
+    {
+      "word": "KİT",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "PUT",
+      "type": 0
+    },
+    {
+      "word": "TİK",
+      "type": 0
+    },
+    {
+      "word": "ANAM",
+      "type": 0
+    },
+    {
+      "word": "ETİK",
+      "type": 0
+    },
+    {
+      "word": "KİTE",
+      "type": 0
+    },
+    {
+      "word": "MANA",
+      "type": 0
+    },
+    {
+      "word": "MAUD",
+      "type": 0
+    },
+    {
+      "word": "MANAV",
+      "type": 0
+    },
+    {
+      "word": "MAUDE",
+      "type": 0
+    },
+    {
+      "word": "ÇIKMAN",
+      "type": 0
+    },
+    {
+      "word": "ÇIKMANA",
+      "type": 0
+    }
+  ],
+  "letters": "AVÇI,NAMK,PUTİ,ADEG",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

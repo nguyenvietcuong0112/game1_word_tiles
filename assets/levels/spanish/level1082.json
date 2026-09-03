@@ -1,117 +1,223 @@
-﻿{
-    "id":  1082,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HABA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOBA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RABO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHAVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHIVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CRIBA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIVAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARCHIVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHABOLA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALOBAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "CHA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CHIVAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CRIBO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HAVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IBA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OVAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RABA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RABAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VIRA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "IVOL,HABA,CRIV",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1082,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "AGUA",
+      "type": 0
+    },
+    {
+      "word": "CASA",
+      "type": 0
+    },
+    {
+      "word": "CUAL",
+      "type": 0
+    },
+    {
+      "word": "DIGA",
+      "type": 0
+    },
+    {
+      "word": "ERIN",
+      "type": 0
+    },
+    {
+      "word": "SALA",
+      "type": 0
+    },
+    {
+      "word": "IGUAL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ASN",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "DAG",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "DIG",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "LAU",
+      "type": 0
+    },
+    {
+      "word": "NED",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "ALAS",
+      "type": 0
+    },
+    {
+      "word": "CALA",
+      "type": 0
+    },
+    {
+      "word": "DANE",
+      "type": 0
+    },
+    {
+      "word": "DANI",
+      "type": 0
+    },
+    {
+      "word": "DENA",
+      "type": 0
+    },
+    {
+      "word": "GANE",
+      "type": 0
+    },
+    {
+      "word": "NADE",
+      "type": 0
+    },
+    {
+      "word": "RENA",
+      "type": 0
+    },
+    {
+      "word": "RINA",
+      "type": 0
+    },
+    {
+      "word": "UCLA",
+      "type": 0
+    },
+    {
+      "word": "ACUSA",
+      "type": 0
+    },
+    {
+      "word": "AGUAS",
+      "type": 0
+    },
+    {
+      "word": "DENSA",
+      "type": 0
+    },
+    {
+      "word": "DIGAN",
+      "type": 0
+    },
+    {
+      "word": "GANSA",
+      "type": 0
+    },
+    {
+      "word": "IRENA",
+      "type": 0
+    },
+    {
+      "word": "NADER",
+      "type": 0
+    },
+    {
+      "word": "IGUALA",
+      "type": 0
+    },
+    {
+      "word": "ENAGUAS",
+      "type": 0
+    }
+  ],
+  "letters": "RIUC,ENSA,DAAL,IGUC",
+  "obstacles": []
 }

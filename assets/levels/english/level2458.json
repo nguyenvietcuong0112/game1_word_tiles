@@ -1,101 +1,163 @@
-﻿{
-    "id":  2458,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "END",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HIS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDEA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RISE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THIS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RISEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEENY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THIRTEEN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ENDS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FEDS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "FIDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IDEAS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TRIS",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "TEENY,RISDI,THAEF",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2458,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FIT",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "CLIP",
+      "type": 0
+    },
+    {
+      "word": "EVIL",
+      "type": 0
+    },
+    {
+      "word": "LIVE",
+      "type": 0
+    },
+    {
+      "word": "FIFTH",
+      "type": 0
+    },
+    {
+      "word": "RADAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARF",
+      "type": 0
+    },
+    {
+      "word": "CEE",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ETH",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "LIP",
+      "type": 0
+    },
+    {
+      "word": "NIP",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "VEE",
+      "type": 0
+    },
+    {
+      "word": "VET",
+      "type": 0
+    },
+    {
+      "word": "LEET",
+      "type": 0
+    },
+    {
+      "word": "NADA",
+      "type": 0
+    },
+    {
+      "word": "PILE",
+      "type": 0
+    },
+    {
+      "word": "PINA",
+      "type": 0
+    },
+    {
+      "word": "RANI",
+      "type": 0
+    },
+    {
+      "word": "TEEL",
+      "type": 0
+    },
+    {
+      "word": "VILE",
+      "type": 0
+    },
+    {
+      "word": "VINA",
+      "type": 0
+    },
+    {
+      "word": "LEVIN",
+      "type": 0
+    },
+    {
+      "word": "LIPIN",
+      "type": 0
+    },
+    {
+      "word": "TEETH",
+      "type": 0
+    }
+  ],
+  "letters": "FITEC,RFTEL,ARHVI,DANIP",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

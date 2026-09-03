@@ -1,65 +1,203 @@
-﻿{
-    "id":  1200,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BUZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LİG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLUZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELLİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "EZGİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GREV",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BELLİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VERGİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LEBLEBİ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLLE",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "LLİGR,EEBZE,BLUZV",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1200,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "DEK",
+      "type": 0
+    },
+    {
+      "word": "HİS",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "İSA",
+      "type": 0
+    },
+    {
+      "word": "ASIL",
+      "type": 0
+    },
+    {
+      "word": "SAHİ",
+      "type": 0
+    },
+    {
+      "word": "SARI",
+      "type": 0
+    },
+    {
+      "word": "SIRA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ASI",
+      "type": 0
+    },
+    {
+      "word": "ASİ",
+      "type": 0
+    },
+    {
+      "word": "BAE",
+      "type": 0
+    },
+    {
+      "word": "DEA",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "HAA",
+      "type": 0
+    },
+    {
+      "word": "HAS",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "RAB",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "SAR",
+      "type": 0
+    },
+    {
+      "word": "İHA",
+      "type": 0
+    },
+    {
+      "word": "İSI",
+      "type": 0
+    },
+    {
+      "word": "ARDA",
+      "type": 0
+    },
+    {
+      "word": "ASIR",
+      "type": 0
+    },
+    {
+      "word": "BAEK",
+      "type": 0
+    },
+    {
+      "word": "BARN",
+      "type": 0
+    },
+    {
+      "word": "İSIR",
+      "type": 0
+    },
+    {
+      "word": "ASILI",
+      "type": 0
+    },
+    {
+      "word": "BARDA",
+      "type": 0
+    },
+    {
+      "word": "HARIL",
+      "type": 0
+    },
+    {
+      "word": "HASIR",
+      "type": 0
+    },
+    {
+      "word": "SARIL",
+      "type": 0
+    },
+    {
+      "word": "SARIN",
+      "type": 0
+    },
+    {
+      "word": "SIRRA",
+      "type": 0
+    },
+    {
+      "word": "İHBAR",
+      "type": 0
+    },
+    {
+      "word": "BARDAN",
+      "type": 0
+    },
+    {
+      "word": "SARILI",
+      "type": 0
+    },
+    {
+      "word": "SARILIN",
+      "type": 0
+    },
+    {
+      "word": "İHBARDA",
+      "type": 0
+    }
+  ],
+  "letters": "LINA,IRRD,SAAE,İHBK",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,115 +1,295 @@
-﻿{
-    "id":  1919,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CITE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HANG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VOTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCEAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHANCE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CHANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COTE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ECO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LUG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TECH",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EOCNG,OTEAU,VICHL",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1919,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADD",
+      "type": 0
+    },
+    {
+      "word": "ADS",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "POD",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "DALE",
+      "type": 0
+    },
+    {
+      "word": "DOES",
+      "type": 0
+    },
+    {
+      "word": "IDLE",
+      "type": 0
+    },
+    {
+      "word": "MISS",
+      "type": 0
+    },
+    {
+      "word": "ODDS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DIT",
+      "type": 0
+    },
+    {
+      "word": "DOE",
+      "type": 0
+    },
+    {
+      "word": "ELD",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "IDS",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LEI",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "OAR",
+      "type": 0
+    },
+    {
+      "word": "ODD",
+      "type": 0
+    },
+    {
+      "word": "ODS",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "ALES",
+      "type": 0
+    },
+    {
+      "word": "DARE",
+      "type": 0
+    },
+    {
+      "word": "DIEL",
+      "type": 0
+    },
+    {
+      "word": "ELDS",
+      "type": 0
+    },
+    {
+      "word": "EMIR",
+      "type": 0
+    },
+    {
+      "word": "LADS",
+      "type": 0
+    },
+    {
+      "word": "LARI",
+      "type": 0
+    },
+    {
+      "word": "LARS",
+      "type": 0
+    },
+    {
+      "word": "MELD",
+      "type": 0
+    },
+    {
+      "word": "MIRE",
+      "type": 0
+    },
+    {
+      "word": "MIRS",
+      "type": 0
+    },
+    {
+      "word": "OARS",
+      "type": 0
+    },
+    {
+      "word": "PODS",
+      "type": 0
+    },
+    {
+      "word": "RADS",
+      "type": 0
+    },
+    {
+      "word": "RALE",
+      "type": 0
+    },
+    {
+      "word": "RIME",
+      "type": 0
+    },
+    {
+      "word": "SIRE",
+      "type": 0
+    },
+    {
+      "word": "SIRS",
+      "type": 0
+    },
+    {
+      "word": "SRIS",
+      "type": 0
+    },
+    {
+      "word": "TIER",
+      "type": 0
+    },
+    {
+      "word": "DALES",
+      "type": 0
+    },
+    {
+      "word": "ELEMI",
+      "type": 0
+    },
+    {
+      "word": "EMIRS",
+      "type": 0
+    },
+    {
+      "word": "IDLER",
+      "type": 0
+    },
+    {
+      "word": "IDLES",
+      "type": 0
+    },
+    {
+      "word": "LARIS",
+      "type": 0
+    },
+    {
+      "word": "MELDS",
+      "type": 0
+    },
+    {
+      "word": "RALES",
+      "type": 0
+    },
+    {
+      "word": "TIERS",
+      "type": 0
+    },
+    {
+      "word": "ELEMIS",
+      "type": 0
+    },
+    {
+      "word": "IDLERS",
+      "type": 0
+    },
+    {
+      "word": "REMISS",
+      "type": 0
+    }
+  ],
+  "letters": "PDOES,ODALD,DSREI,DSIMT",
+  "obstacles": []
 }

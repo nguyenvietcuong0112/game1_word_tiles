@@ -1,45 +1,139 @@
-﻿{
-    "id":  1285,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "РИФ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ШАР",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ШИК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЦИРК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ШАРФ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЦИФРА",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "РАШ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ФРА",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "РИФ,КЦР,ИША",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1285,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ЗАЛ",
+      "type": 0
+    },
+    {
+      "word": "ИСК",
+      "type": 0
+    },
+    {
+      "word": "ЛИЗ",
+      "type": 0
+    },
+    {
+      "word": "СИЛ",
+      "type": 0
+    },
+    {
+      "word": "СИН",
+      "type": 0
+    },
+    {
+      "word": "УЗИ",
+      "type": 0
+    },
+    {
+      "word": "ФЕИ",
+      "type": 0
+    },
+    {
+      "word": "ЛИЗА",
+      "type": 0
+    },
+    {
+      "word": "ЛОИС",
+      "type": 0
+    },
+    {
+      "word": "ЛЮСИ",
+      "type": 0
+    },
+    {
+      "word": "СИЛА",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АЛИ",
+      "type": 0
+    },
+    {
+      "word": "КОИ",
+      "type": 0
+    },
+    {
+      "word": "КОЛ",
+      "type": 0
+    },
+    {
+      "word": "ЛИС",
+      "type": 0
+    },
+    {
+      "word": "ЛОК",
+      "type": 0
+    },
+    {
+      "word": "ОКС",
+      "type": 0
+    },
+    {
+      "word": "ОЛЕ",
+      "type": 0
+    },
+    {
+      "word": "СИЕ",
+      "type": 0
+    },
+    {
+      "word": "СИЮ",
+      "type": 0
+    },
+    {
+      "word": "СЛИ",
+      "type": 0
+    },
+    {
+      "word": "ЮЛИ",
+      "type": 0
+    },
+    {
+      "word": "АЛИС",
+      "type": 0
+    },
+    {
+      "word": "ЛИЗУ",
+      "type": 0
+    },
+    {
+      "word": "ОКСИ",
+      "type": 0
+    },
+    {
+      "word": "ФАЗУ",
+      "type": 0
+    },
+    {
+      "word": "КОЛЕИ",
+      "type": 0
+    },
+    {
+      "word": "ЛОКСЛИ",
+      "type": 0
+    }
+  ],
+  "letters": "УФЕЛ,ЗАИО,ИЛСК,СЮИН",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

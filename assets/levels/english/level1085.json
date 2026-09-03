@@ -1,69 +1,119 @@
-﻿{
-    "id":  1085,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COMEDY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "COME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DEMS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SCORED",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OYD,SME,COR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1085,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "ICH",
+      "type": 0
+    },
+    {
+      "word": "LAT",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "MATH",
+      "type": 0
+    },
+    {
+      "word": "VERDICT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "GAM",
+      "type": 0
+    },
+    {
+      "word": "GAT",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "MAG",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "AGMA",
+      "type": 0
+    },
+    {
+      "word": "CLAG",
+      "type": 0
+    },
+    {
+      "word": "HERD",
+      "type": 0
+    },
+    {
+      "word": "TALC",
+      "type": 0
+    },
+    {
+      "word": "ALCID",
+      "type": 0
+    },
+    {
+      "word": "DICTA",
+      "type": 0
+    },
+    {
+      "word": "GATHER",
+      "type": 0
+    },
+    {
+      "word": "HERDIC",
+      "type": 0
+    }
+  ],
+  "letters": "MAGV,GTHE,ALCR,TCID",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

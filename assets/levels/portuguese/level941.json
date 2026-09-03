@@ -1,77 +1,283 @@
-﻿{
-    "id":  941,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANGU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GANG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MÍNI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALUMÍNIO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "APO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LUPO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MONA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MÍNIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PANGO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PUM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GANGU,APOOI,LUMÍN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 941,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "RUA",
+      "type": 0
+    },
+    {
+      "word": "ACHA",
+      "type": 0
+    },
+    {
+      "word": "PENA",
+      "type": 0
+    },
+    {
+      "word": "RUAS",
+      "type": 0
+    },
+    {
+      "word": "BURRO",
+      "type": 0
+    },
+    {
+      "word": "SHANE",
+      "type": 0
+    },
+    {
+      "word": "APENAS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACH",
+      "type": 0
+    },
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "CHA",
+      "type": 0
+    },
+    {
+      "word": "ENA",
+      "type": 0
+    },
+    {
+      "word": "EPA",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "HAN",
+      "type": 0
+    },
+    {
+      "word": "HAS",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "PAU",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TAU",
+      "type": 0
+    },
+    {
+      "word": "TOA",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TRU",
+      "type": 0
+    },
+    {
+      "word": "ACTO",
+      "type": 0
+    },
+    {
+      "word": "ASHA",
+      "type": 0
+    },
+    {
+      "word": "ATOR",
+      "type": 0
+    },
+    {
+      "word": "BURR",
+      "type": 0
+    },
+    {
+      "word": "BURT",
+      "type": 0
+    },
+    {
+      "word": "CASH",
+      "type": 0
+    },
+    {
+      "word": "CHAN",
+      "type": 0
+    },
+    {
+      "word": "CHAS",
+      "type": 0
+    },
+    {
+      "word": "HANE",
+      "type": 0
+    },
+    {
+      "word": "NASA",
+      "type": 0
+    },
+    {
+      "word": "PASA",
+      "type": 0
+    },
+    {
+      "word": "PATO",
+      "type": 0
+    },
+    {
+      "word": "PESA",
+      "type": 0
+    },
+    {
+      "word": "ROTA",
+      "type": 0
+    },
+    {
+      "word": "SATO",
+      "type": 0
+    },
+    {
+      "word": "SENA",
+      "type": 0
+    },
+    {
+      "word": "SHAN",
+      "type": 0
+    },
+    {
+      "word": "TAPE",
+      "type": 0
+    },
+    {
+      "word": "TAUB",
+      "type": 0
+    },
+    {
+      "word": "ACHAS",
+      "type": 0
+    },
+    {
+      "word": "ACTOR",
+      "type": 0
+    },
+    {
+      "word": "APENA",
+      "type": 0
+    },
+    {
+      "word": "CHASE",
+      "type": 0
+    },
+    {
+      "word": "PATCH",
+      "type": 0
+    },
+    {
+      "word": "PENAS",
+      "type": 0
+    },
+    {
+      "word": "PESCA",
+      "type": 0
+    },
+    {
+      "word": "ROACH",
+      "type": 0
+    },
+    {
+      "word": "ROTAS",
+      "type": 0
+    },
+    {
+      "word": "SACHA",
+      "type": 0
+    }
+  ],
+  "letters": "SAOR,HCTR,ASAU,NEPB",
+  "obstacles": []
 }

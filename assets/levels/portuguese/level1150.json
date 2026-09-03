@@ -1,85 +1,175 @@
-﻿{
-    "id":  1150,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AVÔ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LAPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "VALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PALAVRÃO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AZO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MALO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VALO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZAL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "HUPAZ,AMALO,CÔVRÃ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1150,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "EIS",
+      "type": 0
+    },
+    {
+      "word": "LOS",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "SOU",
+      "type": 0
+    },
+    {
+      "word": "SEIS",
+      "type": 0
+    },
+    {
+      "word": "BECCA",
+      "type": 0
+    },
+    {
+      "word": "SOLTA",
+      "type": 0
+    },
+    {
+      "word": "SOUBE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACH",
+      "type": 0
+    },
+    {
+      "word": "BEC",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "CHU",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "HUB",
+      "type": 0
+    },
+    {
+      "word": "HUO",
+      "type": 0
+    },
+    {
+      "word": "ISA",
+      "type": 0
+    },
+    {
+      "word": "LOU",
+      "type": 0
+    },
+    {
+      "word": "OIE",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SHU",
+      "type": 0
+    },
+    {
+      "word": "SIE",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "TSA",
+      "type": 0
+    },
+    {
+      "word": "CASH",
+      "type": 0
+    },
+    {
+      "word": "CUBE",
+      "type": 0
+    },
+    {
+      "word": "CUBS",
+      "type": 0
+    },
+    {
+      "word": "LOIS",
+      "type": 0
+    },
+    {
+      "word": "LOSE",
+      "type": 0
+    },
+    {
+      "word": "SEIO",
+      "type": 0
+    },
+    {
+      "word": "SOIS",
+      "type": 0
+    },
+    {
+      "word": "CASTA",
+      "type": 0
+    },
+    {
+      "word": "STASI",
+      "type": 0
+    },
+    {
+      "word": "CASTAS",
+      "type": 0
+    },
+    {
+      "word": "SOLTAS",
+      "type": 0
+    }
+  ],
+  "letters": "EBSE,CUOI,CHLS,ASTA",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

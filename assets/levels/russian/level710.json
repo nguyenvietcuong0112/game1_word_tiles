@@ -1,77 +1,79 @@
-﻿{
-    "id":  710,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ВАЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ИВА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ШАР",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛАВА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛИРА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СЛАВА",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АРА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ВАЛИ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ВАР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛАВ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛАР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛАРИ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛИР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "РАЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "РАШ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ШАРА",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ИВА,ШАР,СЛИ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 710,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "РАЙ",
+      "type": 0
+    },
+    {
+      "word": "РОЙ",
+      "type": 0
+    },
+    {
+      "word": "УРА",
+      "type": 0
+    },
+    {
+      "word": "МЯСО",
+      "type": 0
+    },
+    {
+      "word": "ПРЯМ",
+      "type": 0
+    },
+    {
+      "word": "РОСТ",
+      "type": 0
+    },
+    {
+      "word": "ВПРЯМЬ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АРТ",
+      "type": 0
+    },
+    {
+      "word": "ОСЬ",
+      "type": 0
+    },
+    {
+      "word": "РОС",
+      "type": 0
+    },
+    {
+      "word": "СОС",
+      "type": 0
+    },
+    {
+      "word": "РАЙТ",
+      "type": 0
+    },
+    {
+      "word": "СОСО",
+      "type": 0
+    }
+  ],
+  "letters": "ЬСОР,МЯСО,ПРТЙ,ВУРА",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

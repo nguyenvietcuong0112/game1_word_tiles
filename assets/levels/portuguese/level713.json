@@ -1,93 +1,247 @@
-﻿{
-    "id":  713,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BICA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BICO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CASO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MICA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MICO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MINA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NACO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROCK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROSA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SACO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TABERNA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BERNA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BIMBA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "CIMBA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ROCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROCIM",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SACI",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SOCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TABE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ERNAS,BMICO,ATBKR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 713,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAM",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "FIZ",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "TODA",
+      "type": 0
+    },
+    {
+      "word": "TRAZ",
+      "type": 0
+    },
+    {
+      "word": "TRATA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABA",
+      "type": 0
+    },
+    {
+      "word": "ABI",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "BAZ",
+      "type": 0
+    },
+    {
+      "word": "BIZ",
+      "type": 0
+    },
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "DAO",
+      "type": 0
+    },
+    {
+      "word": "DAT",
+      "type": 0
+    },
+    {
+      "word": "DOA",
+      "type": 0
+    },
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "FAB",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "TAB",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TAZ",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "ATAR",
+      "type": 0
+    },
+    {
+      "word": "ATOR",
+      "type": 0
+    },
+    {
+      "word": "BART",
+      "type": 0
+    },
+    {
+      "word": "BATA",
+      "type": 0
+    },
+    {
+      "word": "BATO",
+      "type": 0
+    },
+    {
+      "word": "DATA",
+      "type": 0
+    },
+    {
+      "word": "DORA",
+      "type": 0
+    },
+    {
+      "word": "RABI",
+      "type": 0
+    },
+    {
+      "word": "RATA",
+      "type": 0
+    },
+    {
+      "word": "RATO",
+      "type": 0
+    },
+    {
+      "word": "RODA",
+      "type": 0
+    },
+    {
+      "word": "ROTA",
+      "type": 0
+    },
+    {
+      "word": "TARO",
+      "type": 0
+    },
+    {
+      "word": "TORA",
+      "type": 0
+    },
+    {
+      "word": "TZAR",
+      "type": 0
+    },
+    {
+      "word": "ADORA",
+      "type": 0
+    },
+    {
+      "word": "ADOTA",
+      "type": 0
+    },
+    {
+      "word": "ATADO",
+      "type": 0
+    },
+    {
+      "word": "DOADO",
+      "type": 0
+    },
+    {
+      "word": "TRATO",
+      "type": 0
+    },
+    {
+      "word": "ADOTAR",
+      "type": 0
+    },
+    {
+      "word": "DOADOR",
+      "type": 0
+    },
+    {
+      "word": "DOADORA",
+      "type": 0
+    },
+    {
+      "word": "TRATADO",
+      "type": 0
+    }
+  ],
+  "letters": "COAD,MDTO,ABAR,FIZT",
+  "obstacles": []
 }

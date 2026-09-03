@@ -1,93 +1,111 @@
-﻿{
-    "id":  730,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ВИД",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ГОН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ИВА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВИНА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВИНО",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ДИВА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЗНАК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ДИВАН",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ВАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ДИВ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ДИН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ДИНА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ИВАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ИНОК",
-                            "type":  1
-                        },
-                        {
-                            "word":  "КАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НИВА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОКА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОНА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОНИ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ВАК,ИНО,ДЗГ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 730,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "БЛА",
+      "type": 0
+    },
+    {
+      "word": "ЖИВ",
+      "type": 0
+    },
+    {
+      "word": "ИМИ",
+      "type": 0
+    },
+    {
+      "word": "НИМ",
+      "type": 0
+    },
+    {
+      "word": "СИЛ",
+      "type": 0
+    },
+    {
+      "word": "СЛИ",
+      "type": 0
+    },
+    {
+      "word": "ЖИВО",
+      "type": 0
+    },
+    {
+      "word": "НИМИ",
+      "type": 0
+    },
+    {
+      "word": "СНИМИ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ВЛИ",
+      "type": 0
+    },
+    {
+      "word": "ЖМИ",
+      "type": 0
+    },
+    {
+      "word": "ЛАС",
+      "type": 0
+    },
+    {
+      "word": "ЛИС",
+      "type": 0
+    },
+    {
+      "word": "МИА",
+      "type": 0
+    },
+    {
+      "word": "МИИ",
+      "type": 0
+    },
+    {
+      "word": "МИН",
+      "type": 0
+    },
+    {
+      "word": "НИИ",
+      "type": 0
+    },
+    {
+      "word": "ОВИ",
+      "type": 0
+    },
+    {
+      "word": "САЛ",
+      "type": 0
+    },
+    {
+      "word": "САС",
+      "type": 0
+    },
+    {
+      "word": "МИНИ",
+      "type": 0
+    },
+    {
+      "word": "ЛИССА",
+      "type": 0
+    }
+  ],
+  "letters": "ИСЛБ,ЛСАС,ВИИН,ОЖМИ",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

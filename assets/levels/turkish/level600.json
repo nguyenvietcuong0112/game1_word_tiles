@@ -1,105 +1,187 @@
-﻿{
-    "id":  600,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PES",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKOR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KORT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "OPAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROKA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KAPLICA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKORT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "APORT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAPLI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAPORTA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KAPORTACI",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ORTALI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PORTAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAPLI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SEIC,APLA,KORT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 600,
+  "width": 4,
+  "height": 3,
+  "target_words": [
+    {
+      "word": "HEM",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SUN",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "İSA",
+      "type": 0
+    },
+    {
+      "word": "İSE",
+      "type": 0
+    },
+    {
+      "word": "İNAN",
+      "type": 0
+    },
+    {
+      "word": "HAMİLE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANU",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "ASİ",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "HAM",
+      "type": 0
+    },
+    {
+      "word": "HİS",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "LİM",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MİL",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SİN",
+      "type": 0
+    },
+    {
+      "word": "UNA",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "İHA",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "AMES",
+      "type": 0
+    },
+    {
+      "word": "ELİM",
+      "type": 0
+    },
+    {
+      "word": "EMİL",
+      "type": 0
+    },
+    {
+      "word": "ESİN",
+      "type": 0
+    },
+    {
+      "word": "LUNA",
+      "type": 0
+    },
+    {
+      "word": "LİMA",
+      "type": 0
+    },
+    {
+      "word": "LİME",
+      "type": 0
+    },
+    {
+      "word": "MAHİ",
+      "type": 0
+    },
+    {
+      "word": "MİLE",
+      "type": 0
+    },
+    {
+      "word": "SUNA",
+      "type": 0
+    },
+    {
+      "word": "MESİH",
+      "type": 0
+    },
+    {
+      "word": "MİLES",
+      "type": 0
+    },
+    {
+      "word": "NİSAN",
+      "type": 0
+    },
+    {
+      "word": "SELİM",
+      "type": 0
+    },
+    {
+      "word": "SUNAN",
+      "type": 0
+    },
+    {
+      "word": "SİNAN",
+      "type": 0
+    }
+  ],
+  "letters": "NİHA,ASEM,NULİ",
+  "obstacles": []
 }

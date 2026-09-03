@@ -1,85 +1,195 @@
-﻿{
-    "id":  2142,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "APT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALSO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SLAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOAPY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEYPAD",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LAOS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "PAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PALS",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "LDTE,OAPY,SLKE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2142,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "VAN",
+      "type": 0
+    },
+    {
+      "word": "ANNA",
+      "type": 0
+    },
+    {
+      "word": "FEAT",
+      "type": 0
+    },
+    {
+      "word": "MATH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIT",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "SAP",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "VAS",
+      "type": 0
+    },
+    {
+      "word": "AITS",
+      "type": 0
+    },
+    {
+      "word": "ASPS",
+      "type": 0
+    },
+    {
+      "word": "EATH",
+      "type": 0
+    },
+    {
+      "word": "NAAN",
+      "type": 0
+    },
+    {
+      "word": "PATS",
+      "type": 0
+    },
+    {
+      "word": "SAPS",
+      "type": 0
+    },
+    {
+      "word": "SATI",
+      "type": 0
+    },
+    {
+      "word": "SPAS",
+      "type": 0
+    },
+    {
+      "word": "SPAT",
+      "type": 0
+    },
+    {
+      "word": "TAPA",
+      "type": 0
+    },
+    {
+      "word": "TAPS",
+      "type": 0
+    },
+    {
+      "word": "VANS",
+      "type": 0
+    },
+    {
+      "word": "VASA",
+      "type": 0
+    },
+    {
+      "word": "MATHS",
+      "type": 0
+    },
+    {
+      "word": "NAANS",
+      "type": 0
+    },
+    {
+      "word": "PAVAN",
+      "type": 0
+    },
+    {
+      "word": "SPATS",
+      "type": 0
+    },
+    {
+      "word": "TAPAS",
+      "type": 0
+    },
+    {
+      "word": "PAVANS",
+      "type": 0
+    },
+    {
+      "word": "SAVANNA",
+      "type": 0
+    }
+  ],
+  "letters": "AAVAS,NNSPA,FMHST,EATAI",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,135 +1,203 @@
-﻿{
-    "id":  1535,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TÜM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKMAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAKMAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOKMAK",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AKÇA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAÇ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAÇKA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "OTAMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAKMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MAKÇ,KAMA,OTÜT",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1535,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AMY",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TEK",
+      "type": 0
+    },
+    {
+      "word": "YIL",
+      "type": 0
+    },
+    {
+      "word": "MARV",
+      "type": 0
+    },
+    {
+      "word": "ARAMA",
+      "type": 0
+    },
+    {
+      "word": "YILLIK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "KIL",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "LIK",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "ATAR",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "MALI",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "MATA",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "TAMA",
+      "type": 0
+    },
+    {
+      "word": "TARA",
+      "type": 0
+    },
+    {
+      "word": "TEMA",
+      "type": 0
+    },
+    {
+      "word": "AMARA",
+      "type": 0
+    },
+    {
+      "word": "ATAMA",
+      "type": 0
+    },
+    {
+      "word": "KEMAL",
+      "type": 0
+    },
+    {
+      "word": "KILLI",
+      "type": 0
+    },
+    {
+      "word": "LAMAR",
+      "type": 0
+    },
+    {
+      "word": "TARAMA",
+      "type": 0
+    },
+    {
+      "word": "TEMALI",
+      "type": 0
+    },
+    {
+      "word": "ARAMALI",
+      "type": 0
+    }
+  ],
+  "letters": "ARVK,TAOI,EMAL,KYIL",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

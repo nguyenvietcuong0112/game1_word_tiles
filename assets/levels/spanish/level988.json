@@ -1,53 +1,251 @@
-﻿{
-    "id":  988,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANDAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BANDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PANDA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ABRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANDA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PANDAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UPA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PRA,UBD,PAN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 988,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "ORO",
+      "type": 0
+    },
+    {
+      "word": "ELLO",
+      "type": 0
+    },
+    {
+      "word": "LOCO",
+      "type": 0
+    },
+    {
+      "word": "POCO",
+      "type": 0
+    },
+    {
+      "word": "CORRE",
+      "type": 0
+    },
+    {
+      "word": "CIERTO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "COL",
+      "type": 0
+    },
+    {
+      "word": "COM",
+      "type": 0
+    },
+    {
+      "word": "COP",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "LEO",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MIE",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "OMI",
+      "type": 0
+    },
+    {
+      "word": "ORI",
+      "type": 0
+    },
+    {
+      "word": "POE",
+      "type": 0
+    },
+    {
+      "word": "POM",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "RIC",
+      "type": 0
+    },
+    {
+      "word": "RIE",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TRE",
+      "type": 0
+    },
+    {
+      "word": "AMIR",
+      "type": 0
+    },
+    {
+      "word": "CIMA",
+      "type": 0
+    },
+    {
+      "word": "CIRO",
+      "type": 0
+    },
+    {
+      "word": "COMA",
+      "type": 0
+    },
+    {
+      "word": "COMI",
+      "type": 0
+    },
+    {
+      "word": "COPO",
+      "type": 0
+    },
+    {
+      "word": "CORI",
+      "type": 0
+    },
+    {
+      "word": "CORO",
+      "type": 0
+    },
+    {
+      "word": "LORI",
+      "type": 0
+    },
+    {
+      "word": "LORO",
+      "type": 0
+    },
+    {
+      "word": "MIER",
+      "type": 0
+    },
+    {
+      "word": "MIRO",
+      "type": 0
+    },
+    {
+      "word": "MOCO",
+      "type": 0
+    },
+    {
+      "word": "OLLE",
+      "type": 0
+    },
+    {
+      "word": "OLOR",
+      "type": 0
+    },
+    {
+      "word": "REIR",
+      "type": 0
+    },
+    {
+      "word": "RICO",
+      "type": 0
+    },
+    {
+      "word": "RIMA",
+      "type": 0
+    },
+    {
+      "word": "ROLL",
+      "type": 0
+    },
+    {
+      "word": "TORI",
+      "type": 0
+    },
+    {
+      "word": "TORO",
+      "type": 0
+    },
+    {
+      "word": "COLOR",
+      "type": 0
+    },
+    {
+      "word": "ERROL",
+      "type": 0
+    },
+    {
+      "word": "LLORO",
+      "type": 0
+    },
+    {
+      "word": "TORRE",
+      "type": 0
+    },
+    {
+      "word": "CIERRO",
+      "type": 0
+    },
+    {
+      "word": "CORREA",
+      "type": 0
+    }
+  ],
+  "letters": "TOLL,RROE,EICO,AMOP",
+  "obstacles": []
 }

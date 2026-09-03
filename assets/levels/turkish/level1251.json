@@ -1,118 +1,175 @@
-﻿{
-    "id":  1251,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇİLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FANİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LİNK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LİRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REÇİNE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALENİ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERİL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FANİLA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REÇİNA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ÇERİ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "JELA,ANİR,FKÇE",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1251,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "BAY",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "DİSK",
+      "type": 0
+    },
+    {
+      "word": "RİCK",
+      "type": 0
+    },
+    {
+      "word": "YANI",
+      "type": 0
+    },
+    {
+      "word": "YANİ",
+      "type": 0
+    },
+    {
+      "word": "BAYAN",
+      "type": 0
+    },
+    {
+      "word": "RİCKY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BRİ",
+      "type": 0
+    },
+    {
+      "word": "CİK",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "DİN",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "KİR",
+      "type": 0
+    },
+    {
+      "word": "RİC",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "SKİ",
+      "type": 0
+    },
+    {
+      "word": "SİD",
+      "type": 0
+    },
+    {
+      "word": "SİN",
+      "type": 0
+    },
+    {
+      "word": "YAD",
+      "type": 0
+    },
+    {
+      "word": "YİN",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "İSI",
+      "type": 0
+    },
+    {
+      "word": "AYİN",
+      "type": 0
+    },
+    {
+      "word": "BAYA",
+      "type": 0
+    },
+    {
+      "word": "DAYA",
+      "type": 0
+    },
+    {
+      "word": "DİNA",
+      "type": 0
+    },
+    {
+      "word": "SINA",
+      "type": 0
+    },
+    {
+      "word": "İSIR",
+      "type": 0
+    },
+    {
+      "word": "ADİNA",
+      "type": 0
+    },
+    {
+      "word": "BRİCK",
+      "type": 0
+    },
+    {
+      "word": "DAYAN",
+      "type": 0
+    },
+    {
+      "word": "DİSKİ",
+      "type": 0
+    },
+    {
+      "word": "BAYANI",
+      "type": 0
+    },
+    {
+      "word": "DAYANIR",
+      "type": 0
+    }
+  ],
+  "letters": "BRİC,ADKK,YİSY,ANIR",
+  "obstacles": []
 }

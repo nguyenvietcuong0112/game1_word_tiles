@@ -1,110 +1,287 @@
-﻿{
-    "id":  2007,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FARM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FORM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WORM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARMOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOMORROW",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "MORROW",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TOMO,AARR,NFOW",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2007,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "LIB",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "CORE",
+      "type": 0
+    },
+    {
+      "word": "DUAL",
+      "type": 0
+    },
+    {
+      "word": "DUDE",
+      "type": 0
+    },
+    {
+      "word": "LAND",
+      "type": 0
+    },
+    {
+      "word": "ORAL",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "COB",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "DUD",
+      "type": 0
+    },
+    {
+      "word": "ELD",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERN",
+      "type": 0
+    },
+    {
+      "word": "LAC",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LAY",
+      "type": 0
+    },
+    {
+      "word": "OBI",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "RYA",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "ALES",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "BORA",
+      "type": 0
+    },
+    {
+      "word": "BORE",
+      "type": 0
+    },
+    {
+      "word": "CORD",
+      "type": 0
+    },
+    {
+      "word": "DRAY",
+      "type": 0
+    },
+    {
+      "word": "EROS",
+      "type": 0
+    },
+    {
+      "word": "LARD",
+      "type": 0
+    },
+    {
+      "word": "LAUD",
+      "type": 0
+    },
+    {
+      "word": "ORES",
+      "type": 0
+    },
+    {
+      "word": "RALE",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SORA",
+      "type": 0
+    },
+    {
+      "word": "SORD",
+      "type": 0
+    },
+    {
+      "word": "SORE",
+      "type": 0
+    },
+    {
+      "word": "YALD",
+      "type": 0
+    },
+    {
+      "word": "YARD",
+      "type": 0
+    },
+    {
+      "word": "YARE",
+      "type": 0
+    },
+    {
+      "word": "YAUD",
+      "type": 0
+    },
+    {
+      "word": "AROSE",
+      "type": 0
+    },
+    {
+      "word": "BORAL",
+      "type": 0
+    },
+    {
+      "word": "BORES",
+      "type": 0
+    },
+    {
+      "word": "CANDY",
+      "type": 0
+    },
+    {
+      "word": "CORAL",
+      "type": 0
+    },
+    {
+      "word": "CORES",
+      "type": 0
+    },
+    {
+      "word": "LARDY",
+      "type": 0
+    },
+    {
+      "word": "LARES",
+      "type": 0
+    },
+    {
+      "word": "RALES",
+      "type": 0
+    },
+    {
+      "word": "RELAY",
+      "type": 0
+    },
+    {
+      "word": "SERAL",
+      "type": 0
+    },
+    {
+      "word": "SOREL",
+      "type": 0
+    },
+    {
+      "word": "LAUDER",
+      "type": 0
+    }
+  ],
+  "letters": "ERNAL,DYDCI,UAROB,DLESO",
+  "obstacles": []
 }

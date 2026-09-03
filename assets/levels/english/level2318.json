@@ -1,125 +1,243 @@
-﻿{
-    "id":  2318,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "PET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SLY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CROP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEST",
-                             "type":  2
-                         },
-                         {
-                             "word":  "POSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COMPETE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "COMPOSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COMPOST",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "COME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COMPETES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "COMPOTE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PEE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PESO",
-                            "type":  1
-                        },
-                        {
-                            "word":  "POT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROTE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SEPT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEEM",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TESTY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EETEP,MPOST,OCRLY",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2318,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CRY",
+      "type": 0
+    },
+    {
+      "word": "ION",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "OIL",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RIP",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "LILY",
+      "type": 0
+    },
+    {
+      "word": "ONLY",
+      "type": 0
+    },
+    {
+      "word": "RISE",
+      "type": 0
+    },
+    {
+      "word": "RESPOND",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "DIP",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "LAC",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "PIS",
+      "type": 0
+    },
+    {
+      "word": "POI",
+      "type": 0
+    },
+    {
+      "word": "PSI",
+      "type": 0
+    },
+    {
+      "word": "RID",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SIP",
+      "type": 0
+    },
+    {
+      "word": "ALPS",
+      "type": 0
+    },
+    {
+      "word": "DIPS",
+      "type": 0
+    },
+    {
+      "word": "DIRE",
+      "type": 0
+    },
+    {
+      "word": "IONS",
+      "type": 0
+    },
+    {
+      "word": "IRES",
+      "type": 0
+    },
+    {
+      "word": "LION",
+      "type": 0
+    },
+    {
+      "word": "NOIL",
+      "type": 0
+    },
+    {
+      "word": "OILY",
+      "type": 0
+    },
+    {
+      "word": "POND",
+      "type": 0
+    },
+    {
+      "word": "PONS",
+      "type": 0
+    },
+    {
+      "word": "RIPS",
+      "type": 0
+    },
+    {
+      "word": "SALP",
+      "type": 0
+    },
+    {
+      "word": "SERS",
+      "type": 0
+    },
+    {
+      "word": "SIPS",
+      "type": 0
+    },
+    {
+      "word": "SIRE",
+      "type": 0
+    },
+    {
+      "word": "SIRS",
+      "type": 0
+    },
+    {
+      "word": "SRIS",
+      "type": 0
+    },
+    {
+      "word": "DIRER",
+      "type": 0
+    },
+    {
+      "word": "LIONS",
+      "type": 0
+    },
+    {
+      "word": "NOILY",
+      "type": 0
+    },
+    {
+      "word": "RESID",
+      "type": 0
+    },
+    {
+      "word": "RISER",
+      "type": 0
+    },
+    {
+      "word": "SALPS",
+      "type": 0
+    },
+    {
+      "word": "SPIRE",
+      "type": 0
+    },
+    {
+      "word": "SPOIL",
+      "type": 0
+    },
+    {
+      "word": "SALPID",
+      "type": 0
+    },
+    {
+      "word": "SPIRES",
+      "type": 0
+    }
+  ],
+  "letters": "SALPS,RCDIR,YLNSE,LIOPR",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

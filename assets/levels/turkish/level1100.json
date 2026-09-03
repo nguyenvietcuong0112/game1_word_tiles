@@ -1,73 +1,139 @@
-﻿{
-    "id":  1100,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DRAM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "İADE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "İMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAİMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SAADET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MÜSAADE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARDA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAİM",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TEDAİ",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ÜSZE,MART,İADE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1100,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DİN",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "İLK",
+      "type": 0
+    },
+    {
+      "word": "DİNİ",
+      "type": 0
+    },
+    {
+      "word": "EDİN",
+      "type": 0
+    },
+    {
+      "word": "SAUL",
+      "type": 0
+    },
+    {
+      "word": "WİLL",
+      "type": 0
+    },
+    {
+      "word": "WİLKİNS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DES",
+      "type": 0
+    },
+    {
+      "word": "DİE",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "KİN",
+      "type": 0
+    },
+    {
+      "word": "LEİ",
+      "type": 0
+    },
+    {
+      "word": "LİL",
+      "type": 0
+    },
+    {
+      "word": "NİK",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SKİ",
+      "type": 0
+    },
+    {
+      "word": "WİL",
+      "type": 0
+    },
+    {
+      "word": "İNİ",
+      "type": 0
+    },
+    {
+      "word": "İİK",
+      "type": 0
+    },
+    {
+      "word": "EDİE",
+      "type": 0
+    },
+    {
+      "word": "ELSA",
+      "type": 0
+    },
+    {
+      "word": "KİNİ",
+      "type": 0
+    },
+    {
+      "word": "İLKİ",
+      "type": 0
+    },
+    {
+      "word": "İLSA",
+      "type": 0
+    },
+    {
+      "word": "NİELS",
+      "type": 0
+    }
+  ],
+  "letters": "SKLL,NİİW,İELU,DESA",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

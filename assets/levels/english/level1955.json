@@ -1,106 +1,283 @@
-﻿{
-    "id":  1955,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "URN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CURE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUSP",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SURE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UNDER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUCCEED",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CURED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SIRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SIRED",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CEED,CURN,PSIU",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1955,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "MAP",
+      "type": 0
+    },
+    {
+      "word": "MOM",
+      "type": 0
+    },
+    {
+      "word": "LAND",
+      "type": 0
+    },
+    {
+      "word": "MALE",
+      "type": 0
+    },
+    {
+      "word": "SALE",
+      "type": 0
+    },
+    {
+      "word": "SALES",
+      "type": 0
+    },
+    {
+      "word": "SLAVE",
+      "type": 0
+    },
+    {
+      "word": "ISLAND",
+      "type": 0
+    },
+    {
+      "word": "ISLANDS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIS",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAV",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MEM",
+      "type": 0
+    },
+    {
+      "word": "MOA",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "ALAS",
+      "type": 0
+    },
+    {
+      "word": "ALES",
+      "type": 0
+    },
+    {
+      "word": "ANDS",
+      "type": 0
+    },
+    {
+      "word": "ELAN",
+      "type": 0
+    },
+    {
+      "word": "ISLE",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "LAME",
+      "type": 0
+    },
+    {
+      "word": "LAMS",
+      "type": 0
+    },
+    {
+      "word": "LASE",
+      "type": 0
+    },
+    {
+      "word": "LAVE",
+      "type": 0
+    },
+    {
+      "word": "MELS",
+      "type": 0
+    },
+    {
+      "word": "MEMO",
+      "type": 0
+    },
+    {
+      "word": "MEMS",
+      "type": 0
+    },
+    {
+      "word": "MESA",
+      "type": 0
+    },
+    {
+      "word": "MOME",
+      "type": 0
+    },
+    {
+      "word": "MOMS",
+      "type": 0
+    },
+    {
+      "word": "SALS",
+      "type": 0
+    },
+    {
+      "word": "SAND",
+      "type": 0
+    },
+    {
+      "word": "SANS",
+      "type": 0
+    },
+    {
+      "word": "SELS",
+      "type": 0
+    },
+    {
+      "word": "SIAL",
+      "type": 0
+    },
+    {
+      "word": "SLAM",
+      "type": 0
+    },
+    {
+      "word": "AISLE",
+      "type": 0
+    },
+    {
+      "word": "ALAND",
+      "type": 0
+    },
+    {
+      "word": "ALANS",
+      "type": 0
+    },
+    {
+      "word": "ELAND",
+      "type": 0
+    },
+    {
+      "word": "ELANS",
+      "type": 0
+    },
+    {
+      "word": "ISLES",
+      "type": 0
+    },
+    {
+      "word": "LAMES",
+      "type": 0
+    },
+    {
+      "word": "LANDS",
+      "type": 0
+    },
+    {
+      "word": "MALES",
+      "type": 0
+    },
+    {
+      "word": "MESAS",
+      "type": 0
+    },
+    {
+      "word": "SANDS",
+      "type": 0
+    },
+    {
+      "word": "SLAMS",
+      "type": 0
+    },
+    {
+      "word": "VALSE",
+      "type": 0
+    },
+    {
+      "word": "AISLES",
+      "type": 0
+    },
+    {
+      "word": "ALANDS",
+      "type": 0
+    },
+    {
+      "word": "ELANDS",
+      "type": 0
+    }
+  ],
+  "letters": "VALSD,EMSAN,MOELS,PAMAI",
+  "obstacles": []
 }

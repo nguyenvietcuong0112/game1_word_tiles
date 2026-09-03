@@ -1,135 +1,219 @@
-﻿{
-    "id":  2051,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ILL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MADE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MULE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SELL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALUMNI",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ALUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DALE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAMN",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DELL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LADE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LAIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MALES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MULES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NILL,MADE,ULES",
-    "obstacles":  [
-                      {
-                          "required_words":  7,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2051,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "LOW",
+      "type": 0
+    },
+    {
+      "word": "OUT",
+      "type": 0
+    },
+    {
+      "word": "PAY",
+      "type": 0
+    },
+    {
+      "word": "YOU",
+      "type": 0
+    },
+    {
+      "word": "ALSO",
+      "type": 0
+    },
+    {
+      "word": "PAIN",
+      "type": 0
+    },
+    {
+      "word": "SIGN",
+      "type": 0
+    },
+    {
+      "word": "LOUIS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "LAP",
+      "type": 0
+    },
+    {
+      "word": "LAY",
+      "type": 0
+    },
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "OWE",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "SAG",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TUI",
+      "type": 0
+    },
+    {
+      "word": "UTA",
+      "type": 0
+    },
+    {
+      "word": "UTS",
+      "type": 0
+    },
+    {
+      "word": "WOO",
+      "type": 0
+    },
+    {
+      "word": "YAP",
+      "type": 0
+    },
+    {
+      "word": "YOW",
+      "type": 0
+    },
+    {
+      "word": "ALOW",
+      "type": 0
+    },
+    {
+      "word": "EATS",
+      "type": 0
+    },
+    {
+      "word": "GAST",
+      "type": 0
+    },
+    {
+      "word": "GIST",
+      "type": 0
+    },
+    {
+      "word": "LAIN",
+      "type": 0
+    },
+    {
+      "word": "LAPS",
+      "type": 0
+    },
+    {
+      "word": "LOOS",
+      "type": 0
+    },
+    {
+      "word": "LOUT",
+      "type": 0
+    },
+    {
+      "word": "LOWE",
+      "type": 0
+    },
+    {
+      "word": "OUTS",
+      "type": 0
+    },
+    {
+      "word": "PALS",
+      "type": 0
+    },
+    {
+      "word": "SLAP",
+      "type": 0
+    },
+    {
+      "word": "SLAY",
+      "type": 0
+    },
+    {
+      "word": "SLOW",
+      "type": 0
+    },
+    {
+      "word": "SPAY",
+      "type": 0
+    },
+    {
+      "word": "TUIS",
+      "type": 0
+    },
+    {
+      "word": "WOOS",
+      "type": 0
+    },
+    {
+      "word": "YAPS",
+      "type": 0
+    },
+    {
+      "word": "YOWE",
+      "type": 0
+    },
+    {
+      "word": "AGIST",
+      "type": 0
+    },
+    {
+      "word": "LOUTS",
+      "type": 0
+    },
+    {
+      "word": "SLAIN",
+      "type": 0
+    },
+    {
+      "word": "LAYOUT",
+      "type": 0
+    },
+    {
+      "word": "PAYOUT",
+      "type": 0
+    },
+    {
+      "word": "LAYOUTS",
+      "type": 0
+    },
+    {
+      "word": "PAYOUTS",
+      "type": 0
+    }
+  ],
+  "letters": "OOWEA,SLOUT,PAYIS,NINGA",
+  "obstacles": []
 }

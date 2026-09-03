@@ -1,105 +1,319 @@
-﻿{
-    "id":  2313,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OWL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BITE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOWL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OILY",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SONG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEING",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOWLING",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BETS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BITS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LING",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LYE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STEIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WRY",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SONGE,TEILY,IBOWR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2313,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIM",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "SUN",
+      "type": 0
+    },
+    {
+      "word": "WAR",
+      "type": 0
+    },
+    {
+      "word": "AIMS",
+      "type": 0
+    },
+    {
+      "word": "GAIN",
+      "type": 0
+    },
+    {
+      "word": "ROUND",
+      "type": 0
+    },
+    {
+      "word": "SOUND",
+      "type": 0
+    },
+    {
+      "word": "STORE",
+      "type": 0
+    },
+    {
+      "word": "GROUND",
+      "type": 0
+    },
+    {
+      "word": "SOUNDS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "AIS",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "AWA",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERG",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "MUN",
+      "type": 0
+    },
+    {
+      "word": "MUS",
+      "type": 0
+    },
+    {
+      "word": "NIM",
+      "type": 0
+    },
+    {
+      "word": "NUS",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "RAW",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "ROT",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "SOT",
+      "type": 0
+    },
+    {
+      "word": "SOU",
+      "type": 0
+    },
+    {
+      "word": "SUM",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "UNS",
+      "type": 0
+    },
+    {
+      "word": "WAG",
+      "type": 0
+    },
+    {
+      "word": "AINS",
+      "type": 0
+    },
+    {
+      "word": "ERGS",
+      "type": 0
+    },
+    {
+      "word": "EROS",
+      "type": 0
+    },
+    {
+      "word": "ERST",
+      "type": 0
+    },
+    {
+      "word": "GROT",
+      "type": 0
+    },
+    {
+      "word": "MIST",
+      "type": 0
+    },
+    {
+      "word": "MUNS",
+      "type": 0
+    },
+    {
+      "word": "MUSS",
+      "type": 0
+    },
+    {
+      "word": "NIMS",
+      "type": 0
+    },
+    {
+      "word": "RAWS",
+      "type": 0
+    },
+    {
+      "word": "RETS",
+      "type": 0
+    },
+    {
+      "word": "ROTE",
+      "type": 0
+    },
+    {
+      "word": "ROTS",
+      "type": 0
+    },
+    {
+      "word": "SIMS",
+      "type": 0
+    },
+    {
+      "word": "SING",
+      "type": 0
+    },
+    {
+      "word": "SINS",
+      "type": 0
+    },
+    {
+      "word": "SORE",
+      "type": 0
+    },
+    {
+      "word": "SOTS",
+      "type": 0
+    },
+    {
+      "word": "SOUS",
+      "type": 0
+    },
+    {
+      "word": "SUMS",
+      "type": 0
+    },
+    {
+      "word": "SUNS",
+      "type": 0
+    },
+    {
+      "word": "SWAG",
+      "type": 0
+    },
+    {
+      "word": "TORE",
+      "type": 0
+    },
+    {
+      "word": "WAIN",
+      "type": 0
+    },
+    {
+      "word": "WARE",
+      "type": 0
+    },
+    {
+      "word": "WARS",
+      "type": 0
+    },
+    {
+      "word": "AWARE",
+      "type": 0
+    },
+    {
+      "word": "GAINS",
+      "type": 0
+    },
+    {
+      "word": "GROTS",
+      "type": 0
+    },
+    {
+      "word": "SORER",
+      "type": 0
+    },
+    {
+      "word": "SWAIN",
+      "type": 0
+    },
+    {
+      "word": "SWARE",
+      "type": 0
+    },
+    {
+      "word": "WAINS",
+      "type": 0
+    },
+    {
+      "word": "WAIST",
+      "type": 0
+    },
+    {
+      "word": "MISTER",
+      "type": 0
+    },
+    {
+      "word": "ROUNDS",
+      "type": 0
+    },
+    {
+      "word": "STOUND",
+      "type": 0
+    },
+    {
+      "word": "SWAINS",
+      "type": 0
+    },
+    {
+      "word": "GROUNDS",
+      "type": 0
+    },
+    {
+      "word": "STOUNDS",
+      "type": 0
+    },
+    {
+      "word": "WAISTER",
+      "type": 0
+    }
+  ],
+  "letters": "DSSNG,NUMIA,SOTSW,GRERA",
+  "obstacles": []
 }

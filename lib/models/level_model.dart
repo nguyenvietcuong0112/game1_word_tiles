@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 class TargetWord {
   final String word;
   final int type; // 0 = normal, 2 = highlighted/bonus

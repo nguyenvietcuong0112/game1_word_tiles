@@ -1,81 +1,283 @@
-﻿{
-    "id":  817,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAJA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAJA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAJE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PASAJE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AJE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ALEJA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEJA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEJAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEVA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PAJEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAPA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "VEL,AJA,PAS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 817,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ORO",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "TODA",
+      "type": 0
+    },
+    {
+      "word": "USAR",
+      "type": 0
+    },
+    {
+      "word": "NEGRO",
+      "type": 0
+    },
+    {
+      "word": "TODAS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "ERO",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "GRO",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "ONG",
+      "type": 0
+    },
+    {
+      "word": "ONN",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "DARE",
+      "type": 0
+    },
+    {
+      "word": "DONE",
+      "type": 0
+    },
+    {
+      "word": "DONG",
+      "type": 0
+    },
+    {
+      "word": "DORA",
+      "type": 0
+    },
+    {
+      "word": "DOTE",
+      "type": 0
+    },
+    {
+      "word": "ENDO",
+      "type": 0
+    },
+    {
+      "word": "GRAS",
+      "type": 0
+    },
+    {
+      "word": "NERO",
+      "type": 0
+    },
+    {
+      "word": "NETO",
+      "type": 0
+    },
+    {
+      "word": "OREN",
+      "type": 0
+    },
+    {
+      "word": "RENO",
+      "type": 0
+    },
+    {
+      "word": "RETO",
+      "type": 0
+    },
+    {
+      "word": "ROTO",
+      "type": 0
+    },
+    {
+      "word": "TERA",
+      "type": 0
+    },
+    {
+      "word": "TORA",
+      "type": 0
+    },
+    {
+      "word": "TORO",
+      "type": 0
+    },
+    {
+      "word": "USAD",
+      "type": 0
+    },
+    {
+      "word": "ADORE",
+      "type": 0
+    },
+    {
+      "word": "DOREN",
+      "type": 0
+    },
+    {
+      "word": "GRADO",
+      "type": 0
+    },
+    {
+      "word": "NEGRA",
+      "type": 0
+    },
+    {
+      "word": "ROTOR",
+      "type": 0
+    },
+    {
+      "word": "SARGE",
+      "type": 0
+    },
+    {
+      "word": "TENOR",
+      "type": 0
+    },
+    {
+      "word": "USADO",
+      "type": 0
+    },
+    {
+      "word": "USARE",
+      "type": 0
+    },
+    {
+      "word": "NEGRAS",
+      "type": 0
+    },
+    {
+      "word": "SARGEN",
+      "type": 0
+    },
+    {
+      "word": "SUEGRA",
+      "type": 0
+    },
+    {
+      "word": "SUEGRO",
+      "type": 0
+    },
+    {
+      "word": "TORERO",
+      "type": 0
+    }
+  ],
+  "letters": "USAD,EGRO,NNET,DORO",
+  "obstacles": []
 }

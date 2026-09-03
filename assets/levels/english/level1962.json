@@ -1,123 +1,287 @@
-﻿{
-    "id":  1962,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOSS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SACK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOCK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TACK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASSENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COSMOS",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NESS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SEAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TACO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TACOS",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "YOCK,MSAT,OSEN",
-    "obstacles":  [
-                      {
-                          "required_words":  7,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1962,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BUT",
+      "type": 0
+    },
+    {
+      "word": "GET",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "BUSH",
+      "type": 0
+    },
+    {
+      "word": "EVER",
+      "type": 0
+    },
+    {
+      "word": "KING",
+      "type": 0
+    },
+    {
+      "word": "RING",
+      "type": 0
+    },
+    {
+      "word": "SURE",
+      "type": 0
+    },
+    {
+      "word": "TALK",
+      "type": 0
+    },
+    {
+      "word": "USER",
+      "type": 0
+    },
+    {
+      "word": "CAUSE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "BEG",
+      "type": 0
+    },
+    {
+      "word": "BET",
+      "type": 0
+    },
+    {
+      "word": "BUR",
+      "type": 0
+    },
+    {
+      "word": "BUS",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "CUB",
+      "type": 0
+    },
+    {
+      "word": "CUT",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "KIN",
+      "type": 0
+    },
+    {
+      "word": "KIR",
+      "type": 0
+    },
+    {
+      "word": "LAC",
+      "type": 0
+    },
+    {
+      "word": "LAT",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "RUB",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SUB",
+      "type": 0
+    },
+    {
+      "word": "TAU",
+      "type": 0
+    },
+    {
+      "word": "TEG",
+      "type": 0
+    },
+    {
+      "word": "TUB",
+      "type": 0
+    },
+    {
+      "word": "UTA",
+      "type": 0
+    },
+    {
+      "word": "BETA",
+      "type": 0
+    },
+    {
+      "word": "BURL",
+      "type": 0
+    },
+    {
+      "word": "BUTE",
+      "type": 0
+    },
+    {
+      "word": "CALK",
+      "type": 0
+    },
+    {
+      "word": "CATE",
+      "type": 0
+    },
+    {
+      "word": "CUBE",
+      "type": 0
+    },
+    {
+      "word": "CUTE",
+      "type": 0
+    },
+    {
+      "word": "EVES",
+      "type": 0
+    },
+    {
+      "word": "GETA",
+      "type": 0
+    },
+    {
+      "word": "GRIN",
+      "type": 0
+    },
+    {
+      "word": "LATE",
+      "type": 0
+    },
+    {
+      "word": "RESH",
+      "type": 0
+    },
+    {
+      "word": "RUSE",
+      "type": 0
+    },
+    {
+      "word": "RUSH",
+      "type": 0
+    },
+    {
+      "word": "SERE",
+      "type": 0
+    },
+    {
+      "word": "TAUS",
+      "type": 0
+    },
+    {
+      "word": "TUBE",
+      "type": 0
+    },
+    {
+      "word": "ACUTE",
+      "type": 0
+    },
+    {
+      "word": "AURES",
+      "type": 0
+    },
+    {
+      "word": "EKING",
+      "type": 0
+    },
+    {
+      "word": "SEVER",
+      "type": 0
+    },
+    {
+      "word": "TRIKE",
+      "type": 0
+    },
+    {
+      "word": "CALKER",
+      "type": 0
+    },
+    {
+      "word": "CALKIN",
+      "type": 0
+    },
+    {
+      "word": "CAUSER",
+      "type": 0
+    },
+    {
+      "word": "TALKER",
+      "type": 0
+    },
+    {
+      "word": "CALKING",
+      "type": 0
+    },
+    {
+      "word": "ERLKING",
+      "type": 0
+    },
+    {
+      "word": "TALKING",
+      "type": 0
+    }
+  ],
+  "letters": "BUCBH,ETAUS,GRLRE,NIKEV",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

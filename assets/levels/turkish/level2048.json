@@ -1,45 +1,199 @@
-﻿{
-    "id":  2048,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIĞ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AĞDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AĞIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAĞIT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "TOK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TIA,OĞD,KAZ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2048,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "BREE",
+      "type": 0
+    },
+    {
+      "word": "FENA",
+      "type": 0
+    },
+    {
+      "word": "HALA",
+      "type": 0
+    },
+    {
+      "word": "NANE",
+      "type": 0
+    },
+    {
+      "word": "SERT",
+      "type": 0
+    },
+    {
+      "word": "TREN",
+      "type": 0
+    },
+    {
+      "word": "NEFES",
+      "type": 0
+    },
+    {
+      "word": "RAHAT",
+      "type": 0
+    },
+    {
+      "word": "SEFER",
+      "type": 0
+    },
+    {
+      "word": "SEFERE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "BEE",
+      "type": 0
+    },
+    {
+      "word": "BER",
+      "type": 0
+    },
+    {
+      "word": "BES",
+      "type": 0
+    },
+    {
+      "word": "ESE",
+      "type": 0
+    },
+    {
+      "word": "FEN",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "HEE",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "BERE",
+      "type": 0
+    },
+    {
+      "word": "BERT",
+      "type": 0
+    },
+    {
+      "word": "EREN",
+      "type": 0
+    },
+    {
+      "word": "ESER",
+      "type": 0
+    },
+    {
+      "word": "HARE",
+      "type": 0
+    },
+    {
+      "word": "HERA",
+      "type": 0
+    },
+    {
+      "word": "HERB",
+      "type": 0
+    },
+    {
+      "word": "NERE",
+      "type": 0
+    },
+    {
+      "word": "TREE",
+      "type": 0
+    },
+    {
+      "word": "HALAT",
+      "type": 0
+    },
+    {
+      "word": "REESE",
+      "type": 0
+    },
+    {
+      "word": "NEFESE",
+      "type": 0
+    },
+    {
+      "word": "SERENA",
+      "type": 0
+    },
+    {
+      "word": "HERBERT",
+      "type": 0
+    }
+  ],
+  "letters": "FENAN,ERTYT,SEBHA,HERAL",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

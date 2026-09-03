@@ -1,113 +1,287 @@
-﻿{
-    "id":  2332,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALSO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAIR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GLAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRAND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRIND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRANDPA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARIA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "FAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FAIN",
-                            "type":  1
-                        },
-                        {
-                            "word":  "GRAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IRAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAIR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RAND",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIND",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SLAIN",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ANDPA,RIAFW,GGLSO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2332,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "ROW",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "ARMY",
+      "type": 0
+    },
+    {
+      "word": "YEAH",
+      "type": 0
+    },
+    {
+      "word": "YEAR",
+      "type": 0
+    },
+    {
+      "word": "EARLY",
+      "type": 0
+    },
+    {
+      "word": "SHARP",
+      "type": 0
+    },
+    {
+      "word": "WORST",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "HAE",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LEY",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "PEA",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "PIS",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "ROT",
+      "type": 0
+    },
+    {
+      "word": "SAG",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "SHY",
+      "type": 0
+    },
+    {
+      "word": "SIP",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TOW",
+      "type": 0
+    },
+    {
+      "word": "WOT",
+      "type": 0
+    },
+    {
+      "word": "YEA",
+      "type": 0
+    },
+    {
+      "word": "ASEA",
+      "type": 0
+    },
+    {
+      "word": "ASHY",
+      "type": 0
+    },
+    {
+      "word": "EARL",
+      "type": 0
+    },
+    {
+      "word": "GASH",
+      "type": 0
+    },
+    {
+      "word": "HAES",
+      "type": 0
+    },
+    {
+      "word": "HARL",
+      "type": 0
+    },
+    {
+      "word": "HARM",
+      "type": 0
+    },
+    {
+      "word": "HARP",
+      "type": 0
+    },
+    {
+      "word": "LEAR",
+      "type": 0
+    },
+    {
+      "word": "MIST",
+      "type": 0
+    },
+    {
+      "word": "OWSE",
+      "type": 0
+    },
+    {
+      "word": "PEAR",
+      "type": 0
+    },
+    {
+      "word": "PROW",
+      "type": 0
+    },
+    {
+      "word": "ROTS",
+      "type": 0
+    },
+    {
+      "word": "ROWS",
+      "type": 0
+    },
+    {
+      "word": "SASH",
+      "type": 0
+    },
+    {
+      "word": "SEAR",
+      "type": 0
+    },
+    {
+      "word": "SIPE",
+      "type": 0
+    },
+    {
+      "word": "STOW",
+      "type": 0
+    },
+    {
+      "word": "SWOT",
+      "type": 0
+    },
+    {
+      "word": "TORS",
+      "type": 0
+    },
+    {
+      "word": "TOWS",
+      "type": 0
+    },
+    {
+      "word": "WOTS",
+      "type": 0
+    },
+    {
+      "word": "GASES",
+      "type": 0
+    },
+    {
+      "word": "PEARL",
+      "type": 0
+    },
+    {
+      "word": "PROWS",
+      "type": 0
+    },
+    {
+      "word": "SIPES",
+      "type": 0
+    },
+    {
+      "word": "STOWS",
+      "type": 0
+    },
+    {
+      "word": "SWOTS",
+      "type": 0
+    },
+    {
+      "word": "TORSE",
+      "type": 0
+    },
+    {
+      "word": "TORSI",
+      "type": 0
+    },
+    {
+      "word": "WORSE",
+      "type": 0
+    },
+    {
+      "word": "PEARLY",
+      "type": 0
+    },
+    {
+      "word": "TORSES",
+      "type": 0
+    },
+    {
+      "word": "WORSES",
+      "type": 0
+    },
+    {
+      "word": "YEARLY",
+      "type": 0
+    },
+    {
+      "word": "HARPIST",
+      "type": 0
+    }
+  ],
+  "letters": "YHSAG,EAESW,LRPRO,YMIST",
+  "obstacles": []
 }

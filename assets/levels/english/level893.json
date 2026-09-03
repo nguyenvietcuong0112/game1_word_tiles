@@ -1,89 +1,243 @@
-﻿{
-    "id":  893,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ITCH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MACE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADHERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACADEMIC",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACED",
-                            "type":  1
-                        },
-                        {
-                            "word":  "CAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETCH",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ICED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MECH",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ADHER,CECTE,AMIIA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 893,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "LOVE",
+      "type": 0
+    },
+    {
+      "word": "SAID",
+      "type": 0
+    },
+    {
+      "word": "SAME",
+      "type": 0
+    },
+    {
+      "word": "USER",
+      "type": 0
+    },
+    {
+      "word": "NOVEL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "AIDE",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "CARE",
+      "type": 0
+    },
+    {
+      "word": "CATE",
+      "type": 0
+    },
+    {
+      "word": "LEVO",
+      "type": 0
+    },
+    {
+      "word": "MAID",
+      "type": 0
+    },
+    {
+      "word": "MESA",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "RATE",
+      "type": 0
+    },
+    {
+      "word": "RUSE",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SURA",
+      "type": 0
+    },
+    {
+      "word": "SURE",
+      "type": 0
+    },
+    {
+      "word": "TARE",
+      "type": 0
+    },
+    {
+      "word": "VOLE",
+      "type": 0
+    },
+    {
+      "word": "CARES",
+      "type": 0
+    },
+    {
+      "word": "CARET",
+      "type": 0
+    },
+    {
+      "word": "CATER",
+      "type": 0
+    },
+    {
+      "word": "CATES",
+      "type": 0
+    },
+    {
+      "word": "DEVON",
+      "type": 0
+    },
+    {
+      "word": "LOVED",
+      "type": 0
+    },
+    {
+      "word": "MASER",
+      "type": 0
+    },
+    {
+      "word": "RATES",
+      "type": 0
+    },
+    {
+      "word": "SERAC",
+      "type": 0
+    },
+    {
+      "word": "TARES",
+      "type": 0
+    },
+    {
+      "word": "URATE",
+      "type": 0
+    },
+    {
+      "word": "VOLED",
+      "type": 0
+    },
+    {
+      "word": "RESAID",
+      "type": 0
+    },
+    {
+      "word": "URATES",
+      "type": 0
+    }
+  ],
+  "letters": "CNOL,ATVE,REMD,USAI",
+  "obstacles": []
 }

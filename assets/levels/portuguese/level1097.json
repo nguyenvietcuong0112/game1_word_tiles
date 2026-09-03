@@ -1,109 +1,283 @@
-﻿{
-    "id":  1097,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VOAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CASAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRAIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VODCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARREPIAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AIAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARRIAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ASAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CARPIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PIARA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RIA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OVOAR,DSAIR,CARPE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1097,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "CAPA",
+      "type": 0
+    },
+    {
+      "word": "CASO",
+      "type": 0
+    },
+    {
+      "word": "DATA",
+      "type": 0
+    },
+    {
+      "word": "PARA",
+      "type": 0
+    },
+    {
+      "word": "POST",
+      "type": 0
+    },
+    {
+      "word": "ACASO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "APA",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "DAT",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "PIP",
+      "type": 0
+    },
+    {
+      "word": "POS",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "RIP",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "TAC",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TSA",
+      "type": 0
+    },
+    {
+      "word": "TTA",
+      "type": 0
+    },
+    {
+      "word": "ATAR",
+      "type": 0
+    },
+    {
+      "word": "ATAS",
+      "type": 0
+    },
+    {
+      "word": "CATA",
+      "type": 0
+    },
+    {
+      "word": "DARA",
+      "type": 0
+    },
+    {
+      "word": "IPAD",
+      "type": 0
+    },
+    {
+      "word": "PARI",
+      "type": 0
+    },
+    {
+      "word": "PATA",
+      "type": 0
+    },
+    {
+      "word": "PIPA",
+      "type": 0
+    },
+    {
+      "word": "PIRA",
+      "type": 0
+    },
+    {
+      "word": "POSA",
+      "type": 0
+    },
+    {
+      "word": "RAPA",
+      "type": 0
+    },
+    {
+      "word": "RATA",
+      "type": 0
+    },
+    {
+      "word": "SACA",
+      "type": 0
+    },
+    {
+      "word": "TAPA",
+      "type": 0
+    },
+    {
+      "word": "TARA",
+      "type": 0
+    },
+    {
+      "word": "ATACA",
+      "type": 0
+    },
+    {
+      "word": "ATADA",
+      "type": 0
+    },
+    {
+      "word": "ATARI",
+      "type": 0
+    },
+    {
+      "word": "CATAR",
+      "type": 0
+    },
+    {
+      "word": "DATAS",
+      "type": 0
+    },
+    {
+      "word": "IRADA",
+      "type": 0
+    },
+    {
+      "word": "PACAS",
+      "type": 0
+    },
+    {
+      "word": "PATAS",
+      "type": 0
+    },
+    {
+      "word": "TAPAR",
+      "type": 0
+    },
+    {
+      "word": "ACATAR",
+      "type": 0
+    },
+    {
+      "word": "PACATA",
+      "type": 0
+    },
+    {
+      "word": "PIRADA",
+      "type": 0
+    },
+    {
+      "word": "PIRATA",
+      "type": 0
+    },
+    {
+      "word": "RIPADA",
+      "type": 0
+    },
+    {
+      "word": "PIRATAS",
+      "type": 0
+    }
+  ],
+  "letters": "OPIP,STDA,ATAR,CAPI",
+  "obstacles": []
 }

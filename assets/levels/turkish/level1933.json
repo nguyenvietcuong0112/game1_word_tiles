@@ -1,61 +1,231 @@
-﻿{
-    "id":  1933,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "FAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AFET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAFA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAFE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAZI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAKAT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AZI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAKA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ZIT,AFE,KAT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1933,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AZI",
+      "type": 0
+    },
+    {
+      "word": "DİZ",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "SIZ",
+      "type": 0
+    },
+    {
+      "word": "YEM",
+      "type": 0
+    },
+    {
+      "word": "ESKİ",
+      "type": 0
+    },
+    {
+      "word": "NEYİ",
+      "type": 0
+    },
+    {
+      "word": "NİYE",
+      "type": 0
+    },
+    {
+      "word": "YENİ",
+      "type": 0
+    },
+    {
+      "word": "YİNE",
+      "type": 0
+    },
+    {
+      "word": "TEMAS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ASI",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "DİO",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "KİN",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "MIZ",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "NEY",
+      "type": 0
+    },
+    {
+      "word": "NİK",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "SKİ",
+      "type": 0
+    },
+    {
+      "word": "TEZ",
+      "type": 0
+    },
+    {
+      "word": "YEN",
+      "type": 0
+    },
+    {
+      "word": "YİN",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "AMES",
+      "type": 0
+    },
+    {
+      "word": "DİON",
+      "type": 0
+    },
+    {
+      "word": "ETKİ",
+      "type": 0
+    },
+    {
+      "word": "MENİ",
+      "type": 0
+    },
+    {
+      "word": "MONT",
+      "type": 0
+    },
+    {
+      "word": "MORT",
+      "type": 0
+    },
+    {
+      "word": "NEMO",
+      "type": 0
+    },
+    {
+      "word": "ROME",
+      "type": 0
+    },
+    {
+      "word": "TEMA",
+      "type": 0
+    },
+    {
+      "word": "TRON",
+      "type": 0
+    },
+    {
+      "word": "TROİ",
+      "type": 0
+    },
+    {
+      "word": "ETKİN",
+      "type": 0
+    },
+    {
+      "word": "ETNİK",
+      "type": 0
+    },
+    {
+      "word": "METNİ",
+      "type": 0
+    },
+    {
+      "word": "METRO",
+      "type": 0
+    },
+    {
+      "word": "MONEY",
+      "type": 0
+    },
+    {
+      "word": "MONTE",
+      "type": 0
+    },
+    {
+      "word": "SAMET",
+      "type": 0
+    },
+    {
+      "word": "YENİK",
+      "type": 0
+    },
+    {
+      "word": "ESKİYE",
+      "type": 0
+    },
+    {
+      "word": "ETKİYE",
+      "type": 0
+    }
+  ],
+  "letters": "ASKİY,METNE,IZROM,SAZİD",
+  "obstacles": []
 }

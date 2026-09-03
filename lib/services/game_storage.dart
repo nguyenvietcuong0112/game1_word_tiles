@@ -81,13 +81,30 @@ class GameStorage {
     return false;
   }
 
-  // Extra Words Chest Count (Milestone: 5 words = reward chest)
+  // Extra Words Bank (Milestone: 10 words = 10 Coins Reward)
   static int getExtraWordsChestCount() {
     return _prefs.getInt('extra_words_chest_count') ?? 0;
   }
 
   static Future<void> setExtraWordsChestCount(int count) async {
     await _prefs.setInt('extra_words_chest_count', count);
+  }
+
+  static int addExtraWordToBank() {
+    final current = getExtraWordsChestCount();
+    final newCount = (current + 1).clamp(0, 10);
+    setExtraWordsChestCount(newCount);
+    return newCount;
+  }
+
+  static Future<bool> claimExtraWordsBankReward() async {
+    final current = getExtraWordsChestCount();
+    if (current >= 10) {
+      await addCoins(10);
+      await setExtraWordsChestCount(0);
+      return true;
+    }
+    return false;
   }
 
   // Free Booster Inventory: 💡 Hint (80 Coins) & 🚀 Rocket (240 Coins)
@@ -127,6 +144,33 @@ class GameStorage {
     return false;
   }
 
+  // Daily Free Gift (24h Cooldown)
+  static int getLastDailyGiftClaimTime() {
+    return _prefs.getInt('last_daily_gift_claim_ms') ?? 0;
+  }
+
+  static Future<void> setLastDailyGiftClaimTime(int timestampMs) async {
+    await _prefs.setInt('last_daily_gift_claim_ms', timestampMs);
+  }
+
+  static bool canClaimDailyGift() {
+    final lastMs = getLastDailyGiftClaimTime();
+    if (lastMs <= 0) return true;
+    final lastTime = DateTime.fromMillisecondsSinceEpoch(lastMs);
+    final diff = DateTime.now().difference(lastTime);
+    return diff.inMilliseconds >= const Duration(hours: 24).inMilliseconds;
+  }
+
+  static Duration getRemainingDailyGiftCooldown() {
+    final lastMs = getLastDailyGiftClaimTime();
+    if (lastMs <= 0) return Duration.zero;
+    final lastTime = DateTime.fromMillisecondsSinceEpoch(lastMs);
+    final elapsed = DateTime.now().difference(lastTime);
+    const totalDuration = Duration(hours: 24);
+    if (elapsed >= totalDuration) return Duration.zero;
+    return totalDuration - elapsed;
+  }
+
   // Sound & Haptic Settings
   static bool getSoundEnabled() {
     return _prefs.getBool('sound_enabled') ?? true;
@@ -144,10 +188,29 @@ class GameStorage {
     await _prefs.setBool('haptic_enabled', enabled);
   }
 
+  // In-Game Tutorial Progress
+  static bool isTutorialCompleted() {
+    return _prefs.getBool('tutorial_completed') ?? false;
+  }
+
+  static Future<void> setTutorialCompleted(bool completed) async {
+    await _prefs.setBool('tutorial_completed', completed);
+  }
+
+  static bool isCountTutorialShown() {
+    return _prefs.getBool('count_tutorial_shown') ?? false;
+  }
+
+  static Future<void> setCountTutorialShown(bool shown) async {
+    await _prefs.setBool('count_tutorial_shown', shown);
+  }
+
   // Reset Progress
   static Future<void> resetLanguageProgress(String language) async {
     await _prefs.remove('current_level_index_$language');
     await _prefs.remove('max_unlocked_level_index_$language');
     await _prefs.remove('level_stars_$language');
+    await _prefs.remove('tutorial_completed');
+    await _prefs.remove('count_tutorial_shown');
   }
 }

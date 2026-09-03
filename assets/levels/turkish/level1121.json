@@ -1,81 +1,243 @@
-﻿{
-    "id":  1121,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MANİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAMAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SANDVİÇ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANAÇ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MANAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAMANİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SANA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇAM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MAÇ,ANİ,SDV",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1121,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "CSİ",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "KAÇ",
+      "type": 0
+    },
+    {
+      "word": "KAİ",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "ÇIK",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "AÇIK",
+      "type": 0
+    },
+    {
+      "word": "İNCE",
+      "type": 0
+    },
+    {
+      "word": "ÇIKAN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "AÇI",
+      "type": 0
+    },
+    {
+      "word": "AİN",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "KEL",
+      "type": 0
+    },
+    {
+      "word": "KEİ",
+      "type": 0
+    },
+    {
+      "word": "KIÇ",
+      "type": 0
+    },
+    {
+      "word": "KİL",
+      "type": 0
+    },
+    {
+      "word": "KİN",
+      "type": 0
+    },
+    {
+      "word": "LAİ",
+      "type": 0
+    },
+    {
+      "word": "LEİ",
+      "type": 0
+    },
+    {
+      "word": "LİK",
+      "type": 0
+    },
+    {
+      "word": "LİN",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NAİ",
+      "type": 0
+    },
+    {
+      "word": "NİK",
+      "type": 0
+    },
+    {
+      "word": "NİL",
+      "type": 0
+    },
+    {
+      "word": "ÇAK",
+      "type": 0
+    },
+    {
+      "word": "İAN",
+      "type": 0
+    },
+    {
+      "word": "İKE",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "AKİL",
+      "type": 0
+    },
+    {
+      "word": "ALEC",
+      "type": 0
+    },
+    {
+      "word": "ALEK",
+      "type": 0
+    },
+    {
+      "word": "ALİN",
+      "type": 0
+    },
+    {
+      "word": "EKİN",
+      "type": 0
+    },
+    {
+      "word": "ELİN",
+      "type": 0
+    },
+    {
+      "word": "KANA",
+      "type": 0
+    },
+    {
+      "word": "KAÇI",
+      "type": 0
+    },
+    {
+      "word": "KIÇA",
+      "type": 0
+    },
+    {
+      "word": "LANA",
+      "type": 0
+    },
+    {
+      "word": "LEİA",
+      "type": 0
+    },
+    {
+      "word": "LİKE",
+      "type": 0
+    },
+    {
+      "word": "LİNA",
+      "type": 0
+    },
+    {
+      "word": "NİKE",
+      "type": 0
+    },
+    {
+      "word": "ÇAKI",
+      "type": 0
+    },
+    {
+      "word": "İLAN",
+      "type": 0
+    },
+    {
+      "word": "KANAL",
+      "type": 0
+    },
+    {
+      "word": "KAÇIK",
+      "type": 0
+    },
+    {
+      "word": "NAKİL",
+      "type": 0
+    },
+    {
+      "word": "ÇIKANA",
+      "type": 0
+    },
+    {
+      "word": "İNCELİK",
+      "type": 0
+    }
+  ],
+  "letters": "AKIÇ,NİKA,ALEİ,İNCS",
+  "obstacles": []
 }

@@ -1,49 +1,87 @@
-﻿{
-    "id":  1075,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ГИД",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РОМ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ГРОМ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "МОЗГ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РОМБ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ЗОМБИ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ГРОЗД",
-                            "type":  0
-                        },
-                        {
-                            "word":  "МОР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "РОЗ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "МБИ,ОЗД,РГИ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1075,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ДИН",
+      "type": 0
+    },
+    {
+      "word": "МЭТ",
+      "type": 0
+    },
+    {
+      "word": "ПСА",
+      "type": 0
+    },
+    {
+      "word": "СПИ",
+      "type": 0
+    },
+    {
+      "word": "ЧАС",
+      "type": 0
+    },
+    {
+      "word": "ЭММ",
+      "type": 0
+    },
+    {
+      "word": "САРА",
+      "type": 0
+    },
+    {
+      "word": "СПИД",
+      "type": 0
+    },
+    {
+      "word": "ЧАРЫ",
+      "type": 0
+    },
+    {
+      "word": "СПИНЫ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АРА",
+      "type": 0
+    },
+    {
+      "word": "ДИП",
+      "type": 0
+    },
+    {
+      "word": "РАС",
+      "type": 0
+    },
+    {
+      "word": "ЧАР",
+      "type": 0
+    },
+    {
+      "word": "САРДИНЫ",
+      "type": 0
+    }
+  ],
+  "letters": "ЧАРЫ,АРММ,СДТЭ,ПИНЫ",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

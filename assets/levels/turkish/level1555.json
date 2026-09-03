@@ -1,53 +1,159 @@
-﻿{
-    "id":  1555,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TÜM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAKI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAKIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MÜTHİŞ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ŞKI,İAM,HTÜ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1555,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "GUN",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "NIN",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "TAŞ",
+      "type": 0
+    },
+    {
+      "word": "ARTI",
+      "type": 0
+    },
+    {
+      "word": "UTAH",
+      "type": 0
+    },
+    {
+      "word": "ŞUNA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANU",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "GUT",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "SAR",
+      "type": 0
+    },
+    {
+      "word": "STU",
+      "type": 0
+    },
+    {
+      "word": "TUŞ",
+      "type": 0
+    },
+    {
+      "word": "UNA",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "YAS",
+      "type": 0
+    },
+    {
+      "word": "ŞAH",
+      "type": 0
+    },
+    {
+      "word": "ŞUT",
+      "type": 0
+    },
+    {
+      "word": "ANIN",
+      "type": 0
+    },
+    {
+      "word": "ANIT",
+      "type": 0
+    },
+    {
+      "word": "ASTI",
+      "type": 0
+    },
+    {
+      "word": "RAST",
+      "type": 0
+    },
+    {
+      "word": "TUNA",
+      "type": 0
+    },
+    {
+      "word": "TUŞA",
+      "type": 0
+    },
+    {
+      "word": "TUŞU",
+      "type": 0
+    },
+    {
+      "word": "ASTIN",
+      "type": 0
+    },
+    {
+      "word": "TAŞRA",
+      "type": 0
+    },
+    {
+      "word": "TUŞUNA",
+      "type": 0
+    }
+  ],
+  "letters": "ANIN,GUTS,UŞRA,TAHY",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

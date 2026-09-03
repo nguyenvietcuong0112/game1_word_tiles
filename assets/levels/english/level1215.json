@@ -1,130 +1,195 @@
-﻿{
-    "id":  1215,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ORB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOTE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "STORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STANCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANCESTOR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AERO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NATS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROTE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ROTS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "STAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TERSE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOTS",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "CEBA,NSRE,ATOT",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1215,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "IDS",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "POP",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "POLE",
+      "type": 0
+    },
+    {
+      "word": "POOR",
+      "type": 0
+    },
+    {
+      "word": "SIDE",
+      "type": 0
+    },
+    {
+      "word": "PROBE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "LOP",
+      "type": 0
+    },
+    {
+      "word": "OBE",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "POL",
+      "type": 0
+    },
+    {
+      "word": "PSI",
+      "type": 0
+    },
+    {
+      "word": "SOP",
+      "type": 0
+    },
+    {
+      "word": "VIS",
+      "type": 0
+    },
+    {
+      "word": "BOOS",
+      "type": 0
+    },
+    {
+      "word": "DELS",
+      "type": 0
+    },
+    {
+      "word": "DIVE",
+      "type": 0
+    },
+    {
+      "word": "LOPS",
+      "type": 0
+    },
+    {
+      "word": "OBES",
+      "type": 0
+    },
+    {
+      "word": "OOPS",
+      "type": 0
+    },
+    {
+      "word": "POLS",
+      "type": 0
+    },
+    {
+      "word": "POPS",
+      "type": 0
+    },
+    {
+      "word": "ROBE",
+      "type": 0
+    },
+    {
+      "word": "SLED",
+      "type": 0
+    },
+    {
+      "word": "SLOP",
+      "type": 0
+    },
+    {
+      "word": "SOPS",
+      "type": 0
+    },
+    {
+      "word": "VIDE",
+      "type": 0
+    },
+    {
+      "word": "VISE",
+      "type": 0
+    },
+    {
+      "word": "POLED",
+      "type": 0
+    },
+    {
+      "word": "ROBES",
+      "type": 0
+    },
+    {
+      "word": "SPOOR",
+      "type": 0
+    },
+    {
+      "word": "BESIDE",
+      "type": 0
+    },
+    {
+      "word": "DEVISE",
+      "type": 0
+    },
+    {
+      "word": "PROBES",
+      "type": 0
+    }
+  ],
+  "letters": "ROBE,POPS,PSDI,OLEV",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,129 +1,235 @@
-﻿{
-    "id":  2357,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANTI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HINT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MINT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAMP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHIN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MARSH",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SHAMPOO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HART",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MARS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MART",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MINA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OARS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "POO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SHAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TIAN",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TRAM",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TRAMP",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TOPOO,RAMTI,SHINA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2357,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "FED",
+      "type": 0
+    },
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "OFF",
+      "type": 0
+    },
+    {
+      "word": "OLD",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "WAN",
+      "type": 0
+    },
+    {
+      "word": "EVER",
+      "type": 0
+    },
+    {
+      "word": "OVER",
+      "type": 0
+    },
+    {
+      "word": "ROLE",
+      "type": 0
+    },
+    {
+      "word": "FOLDED",
+      "type": 0
+    },
+    {
+      "word": "FOREVER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "ELD",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERN",
+      "type": 0
+    },
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "FRO",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "NAE",
+      "type": 0
+    },
+    {
+      "word": "NAW",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "WAE",
+      "type": 0
+    },
+    {
+      "word": "DEAN",
+      "type": 0
+    },
+    {
+      "word": "DERE",
+      "type": 0
+    },
+    {
+      "word": "DOFF",
+      "type": 0
+    },
+    {
+      "word": "DOLE",
+      "type": 0
+    },
+    {
+      "word": "DORE",
+      "type": 0
+    },
+    {
+      "word": "FOLD",
+      "type": 0
+    },
+    {
+      "word": "FORE",
+      "type": 0
+    },
+    {
+      "word": "LEAN",
+      "type": 0
+    },
+    {
+      "word": "LODE",
+      "type": 0
+    },
+    {
+      "word": "LORE",
+      "type": 0
+    },
+    {
+      "word": "ODEA",
+      "type": 0
+    },
+    {
+      "word": "OLEA",
+      "type": 0
+    },
+    {
+      "word": "REDE",
+      "type": 0
+    },
+    {
+      "word": "REDO",
+      "type": 0
+    },
+    {
+      "word": "RODE",
+      "type": 0
+    },
+    {
+      "word": "ROVE",
+      "type": 0
+    },
+    {
+      "word": "WAND",
+      "type": 0
+    },
+    {
+      "word": "ERODE",
+      "type": 0
+    },
+    {
+      "word": "FRERE",
+      "type": 0
+    },
+    {
+      "word": "ROVED",
+      "type": 0
+    },
+    {
+      "word": "ROVER",
+      "type": 0
+    },
+    {
+      "word": "FOREDO",
+      "type": 0
+    },
+    {
+      "word": "OVERED",
+      "type": 0
+    },
+    {
+      "word": "WANDER",
+      "type": 0
+    },
+    {
+      "word": "OLEANDER",
+      "type": 0
+    }
+  ],
+  "letters": "WANRE,FEDEV,DLORO,EDFFF",
+  "obstacles": []
 }

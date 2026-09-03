@@ -1,81 +1,119 @@
-﻿{
-    "id":  2204,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ILIK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KORU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KURU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OKUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KURUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MERMER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KILIŞ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OMUR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "URURM,KOMEE,ILIŞR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2204,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "DÜN",
+      "type": 0
+    },
+    {
+      "word": "LOS",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "YAA",
+      "type": 0
+    },
+    {
+      "word": "YEM",
+      "type": 0
+    },
+    {
+      "word": "YÜZ",
+      "type": 0
+    },
+    {
+      "word": "ÜNÜ",
+      "type": 0
+    },
+    {
+      "word": "DOLU",
+      "type": 0
+    },
+    {
+      "word": "YÜZÜ",
+      "type": 0
+    },
+    {
+      "word": "LUCAS",
+      "type": 0
+    },
+    {
+      "word": "YÜZÜN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AYY",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "LUC",
+      "type": 0
+    },
+    {
+      "word": "OLU",
+      "type": 0
+    },
+    {
+      "word": "UCA",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "YÜN",
+      "type": 0
+    },
+    {
+      "word": "LUCA",
+      "type": 0
+    },
+    {
+      "word": "SOLU",
+      "type": 0
+    },
+    {
+      "word": "OLUCAM",
+      "type": 0
+    }
+  ],
+  "letters": "ASODÜ,CULÜN,AAYÜZ,MEYNÜ",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

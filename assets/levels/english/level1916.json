@@ -1,94 +1,275 @@
-﻿{
-    "id":  1916,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OWE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OMEN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SAME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WOMB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WOMEN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "WEN,OMB,SAE",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1916,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "NEW",
+      "type": 0
+    },
+    {
+      "word": "OIL",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "COIL",
+      "type": 0
+    },
+    {
+      "word": "LATE",
+      "type": 0
+    },
+    {
+      "word": "ROCK",
+      "type": 0
+    },
+    {
+      "word": "WORK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "COW",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "KOA",
+      "type": 0
+    },
+    {
+      "word": "KOI",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LAT",
+      "type": 0
+    },
+    {
+      "word": "LIT",
+      "type": 0
+    },
+    {
+      "word": "OAR",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "OWE",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "ROW",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "TIL",
+      "type": 0
+    },
+    {
+      "word": "WEN",
+      "type": 0
+    },
+    {
+      "word": "ALIT",
+      "type": 0
+    },
+    {
+      "word": "ARIL",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "BROW",
+      "type": 0
+    },
+    {
+      "word": "COIR",
+      "type": 0
+    },
+    {
+      "word": "CORK",
+      "type": 0
+    },
+    {
+      "word": "DART",
+      "type": 0
+    },
+    {
+      "word": "ETAS",
+      "type": 0
+    },
+    {
+      "word": "LASE",
+      "type": 0
+    },
+    {
+      "word": "LATI",
+      "type": 0
+    },
+    {
+      "word": "LIRA",
+      "type": 0
+    },
+    {
+      "word": "LITE",
+      "type": 0
+    },
+    {
+      "word": "NECK",
+      "type": 0
+    },
+    {
+      "word": "RITE",
+      "type": 0
+    },
+    {
+      "word": "SALT",
+      "type": 0
+    },
+    {
+      "word": "SATE",
+      "type": 0
+    },
+    {
+      "word": "SATI",
+      "type": 0
+    },
+    {
+      "word": "SENE",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "TALI",
+      "type": 0
+    },
+    {
+      "word": "TILT",
+      "type": 0
+    },
+    {
+      "word": "TRAD",
+      "type": 0
+    },
+    {
+      "word": "TRIO",
+      "type": 0
+    },
+    {
+      "word": "ATILT",
+      "type": 0
+    },
+    {
+      "word": "BROCK",
+      "type": 0
+    },
+    {
+      "word": "LATEN",
+      "type": 0
+    },
+    {
+      "word": "LITAS",
+      "type": 0
+    },
+    {
+      "word": "OCTAL",
+      "type": 0
+    },
+    {
+      "word": "RITES",
+      "type": 0
+    },
+    {
+      "word": "ROWEN",
+      "type": 0
+    },
+    {
+      "word": "SETAL",
+      "type": 0
+    },
+    {
+      "word": "TRITE",
+      "type": 0
+    },
+    {
+      "word": "COITAL",
+      "type": 0
+    }
+  ],
+  "letters": "TRADB,LIOKR,ATCCO,SENEW",
+  "obstacles": []
 }

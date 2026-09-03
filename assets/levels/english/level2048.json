@@ -1,91 +1,255 @@
-﻿{
-    "id":  2048,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MICRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORSO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "COSMIC",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "OARS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ORCS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TARO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ICRO,MSRO,COAT",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2048,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SEW",
+      "type": 0
+    },
+    {
+      "word": "SUN",
+      "type": 0
+    },
+    {
+      "word": "DATE",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "LENS",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "METER",
+      "type": 0
+    },
+    {
+      "word": "METERS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "NUS",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "UNS",
+      "type": 0
+    },
+    {
+      "word": "ALES",
+      "type": 0
+    },
+    {
+      "word": "ANES",
+      "type": 0
+    },
+    {
+      "word": "DEIL",
+      "type": 0
+    },
+    {
+      "word": "DERE",
+      "type": 0
+    },
+    {
+      "word": "ELAN",
+      "type": 0
+    },
+    {
+      "word": "LEWD",
+      "type": 0
+    },
+    {
+      "word": "LIED",
+      "type": 0
+    },
+    {
+      "word": "LIER",
+      "type": 0
+    },
+    {
+      "word": "MERE",
+      "type": 0
+    },
+    {
+      "word": "MERL",
+      "type": 0
+    },
+    {
+      "word": "METE",
+      "type": 0
+    },
+    {
+      "word": "REMS",
+      "type": 0
+    },
+    {
+      "word": "RETE",
+      "type": 0
+    },
+    {
+      "word": "SUNS",
+      "type": 0
+    },
+    {
+      "word": "WILE",
+      "type": 0
+    },
+    {
+      "word": "DATER",
+      "type": 0
+    },
+    {
+      "word": "DETER",
+      "type": 0
+    },
+    {
+      "word": "ELANS",
+      "type": 0
+    },
+    {
+      "word": "LANES",
+      "type": 0
+    },
+    {
+      "word": "LIERS",
+      "type": 0
+    },
+    {
+      "word": "MERLE",
+      "type": 0
+    },
+    {
+      "word": "METED",
+      "type": 0
+    },
+    {
+      "word": "RETEM",
+      "type": 0
+    },
+    {
+      "word": "TERSE",
+      "type": 0
+    },
+    {
+      "word": "UNSEW",
+      "type": 0
+    },
+    {
+      "word": "WILES",
+      "type": 0
+    },
+    {
+      "word": "DATERS",
+      "type": 0
+    },
+    {
+      "word": "DETERS",
+      "type": 0
+    },
+    {
+      "word": "LEWDER",
+      "type": 0
+    },
+    {
+      "word": "MERLES",
+      "type": 0
+    },
+    {
+      "word": "REDATE",
+      "type": 0
+    },
+    {
+      "word": "RETEMS",
+      "type": 0
+    },
+    {
+      "word": "SENSUAL",
+      "type": 0
+    }
+  ],
+  "letters": "ADWES,TEILN,ERLAU,MSENS",
+  "obstacles": []
 }

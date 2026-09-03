@@ -1,113 +1,183 @@
-﻿{
-    "id":  1159,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "PAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVNI",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PATÉ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PITA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TINA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PINAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAPAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATINAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PATINAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ATIPAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAPA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NIPA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PANCO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PARCO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PINA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PIPAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAPA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TIPA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "APAR,TINC,ÉPVO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1159,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BUD",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "PUM",
+      "type": 0
+    },
+    {
+      "word": "CADA",
+      "type": 0
+    },
+    {
+      "word": "COCA",
+      "type": 0
+    },
+    {
+      "word": "COCO",
+      "type": 0
+    },
+    {
+      "word": "DURA",
+      "type": 0
+    },
+    {
+      "word": "FOCO",
+      "type": 0
+    },
+    {
+      "word": "MUERA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "DUB",
+      "type": 0
+    },
+    {
+      "word": "ECO",
+      "type": 0
+    },
+    {
+      "word": "FAR",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "PRE",
+      "type": 0
+    },
+    {
+      "word": "PUE",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAF",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "UMA",
+      "type": 0
+    },
+    {
+      "word": "AREA",
+      "type": 0
+    },
+    {
+      "word": "BUDA",
+      "type": 0
+    },
+    {
+      "word": "CARE",
+      "type": 0
+    },
+    {
+      "word": "CERA",
+      "type": 0
+    },
+    {
+      "word": "DARE",
+      "type": 0
+    },
+    {
+      "word": "DURE",
+      "type": 0
+    },
+    {
+      "word": "FACE",
+      "type": 0
+    },
+    {
+      "word": "FOCA",
+      "type": 0
+    },
+    {
+      "word": "PUMA",
+      "type": 0
+    },
+    {
+      "word": "RACE",
+      "type": 0
+    },
+    {
+      "word": "RAFA",
+      "type": 0
+    },
+    {
+      "word": "RUDA",
+      "type": 0
+    },
+    {
+      "word": "COCER",
+      "type": 0
+    },
+    {
+      "word": "COCOA",
+      "type": 0
+    },
+    {
+      "word": "MUECA",
+      "type": 0
+    },
+    {
+      "word": "PRADA",
+      "type": 0
+    },
+    {
+      "word": "REUMA",
+      "type": 0
+    }
+  ],
+  "letters": "ADUB,FARP,OCEU,COAM",
+  "obstacles": []
 }

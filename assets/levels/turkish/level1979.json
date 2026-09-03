@@ -1,90 +1,231 @@
-﻿{
-    "id":  1979,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TÜM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EMİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MİDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÜMİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEDİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEYİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEMİN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DEMİN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TİM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TÜMEY",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "DİN,EMÜ,YİT",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1979,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANN",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "AİT",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "EUN",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TUR",
+      "type": 0
+    },
+    {
+      "word": "TİM",
+      "type": 0
+    },
+    {
+      "word": "İAN",
+      "type": 0
+    },
+    {
+      "word": "ANNA",
+      "type": 0
+    },
+    {
+      "word": "EMİN",
+      "type": 0
+    },
+    {
+      "word": "BURUN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANU",
+      "type": 0
+    },
+    {
+      "word": "AİN",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "MİA",
+      "type": 0
+    },
+    {
+      "word": "MİN",
+      "type": 0
+    },
+    {
+      "word": "MİT",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NAİ",
+      "type": 0
+    },
+    {
+      "word": "NUR",
+      "type": 0
+    },
+    {
+      "word": "NİM",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "RUN",
+      "type": 0
+    },
+    {
+      "word": "RUT",
+      "type": 0
+    },
+    {
+      "word": "TAT",
+      "type": 0
+    },
+    {
+      "word": "TAU",
+      "type": 0
+    },
+    {
+      "word": "TRU",
+      "type": 0
+    },
+    {
+      "word": "TİA",
+      "type": 0
+    },
+    {
+      "word": "TİN",
+      "type": 0
+    },
+    {
+      "word": "UNA",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "İMİ",
+      "type": 0
+    },
+    {
+      "word": "İNN",
+      "type": 0
+    },
+    {
+      "word": "İTİ",
+      "type": 0
+    },
+    {
+      "word": "BURT",
+      "type": 0
+    },
+    {
+      "word": "MEAN",
+      "type": 0
+    },
+    {
+      "word": "MİNA",
+      "type": 0
+    },
+    {
+      "word": "TRUE",
+      "type": 0
+    },
+    {
+      "word": "TUNA",
+      "type": 0
+    },
+    {
+      "word": "TURN",
+      "type": 0
+    },
+    {
+      "word": "TİAN",
+      "type": 0
+    },
+    {
+      "word": "TİME",
+      "type": 0
+    },
+    {
+      "word": "TİMİ",
+      "type": 0
+    },
+    {
+      "word": "TİNA",
+      "type": 0
+    },
+    {
+      "word": "UNİT",
+      "type": 0
+    },
+    {
+      "word": "UTAN",
+      "type": 0
+    },
+    {
+      "word": "İMİN",
+      "type": 0
+    },
+    {
+      "word": "İNAT",
+      "type": 0
+    },
+    {
+      "word": "İTİN",
+      "type": 0
+    },
+    {
+      "word": "AİTİM",
+      "type": 0
+    },
+    {
+      "word": "NAİNA",
+      "type": 0
+    },
+    {
+      "word": "TANİA",
+      "type": 0
+    },
+    {
+      "word": "TURNA",
+      "type": 0
+    }
+  ],
+  "letters": "EMİUB,AİTRD,NNAUE,RUTNL",
+  "obstacles": []
 }

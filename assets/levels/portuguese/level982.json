@@ -1,69 +1,263 @@
-﻿{
-    "id":  982,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FURO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TROCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FUTURO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "OCELO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SURO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TROLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "URU",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TUSO,UROC,FTLE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 982,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAI",
+      "type": 0
+    },
+    {
+      "word": "DIA",
+      "type": 0
+    },
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "POR",
+      "type": 0
+    },
+    {
+      "word": "CADA",
+      "type": 0
+    },
+    {
+      "word": "FATO",
+      "type": 0
+    },
+    {
+      "word": "FORA",
+      "type": 0
+    },
+    {
+      "word": "CLARO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "APA",
+      "type": 0
+    },
+    {
+      "word": "APO",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "DAI",
+      "type": 0
+    },
+    {
+      "word": "DAT",
+      "type": 0
+    },
+    {
+      "word": "DRA",
+      "type": 0
+    },
+    {
+      "word": "FAD",
+      "type": 0
+    },
+    {
+      "word": "FAT",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "ITA",
+      "type": 0
+    },
+    {
+      "word": "ITO",
+      "type": 0
+    },
+    {
+      "word": "LAP",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "POT",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RDA",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TIA",
+      "type": 0
+    },
+    {
+      "word": "TOP",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "AIDA",
+      "type": 0
+    },
+    {
+      "word": "ARCA",
+      "type": 0
+    },
+    {
+      "word": "ATOR",
+      "type": 0
+    },
+    {
+      "word": "CAIA",
+      "type": 0
+    },
+    {
+      "word": "CLAP",
+      "type": 0
+    },
+    {
+      "word": "DITA",
+      "type": 0
+    },
+    {
+      "word": "DITO",
+      "type": 0
+    },
+    {
+      "word": "DROP",
+      "type": 0
+    },
+    {
+      "word": "FORD",
+      "type": 0
+    },
+    {
+      "word": "OPAL",
+      "type": 0
+    },
+    {
+      "word": "ORAL",
+      "type": 0
+    },
+    {
+      "word": "ORCA",
+      "type": 0
+    },
+    {
+      "word": "PARO",
+      "type": 0
+    },
+    {
+      "word": "RAPA",
+      "type": 0
+    },
+    {
+      "word": "ROTA",
+      "type": 0
+    },
+    {
+      "word": "TOPA",
+      "type": 0
+    },
+    {
+      "word": "TORA",
+      "type": 0
+    },
+    {
+      "word": "AFORA",
+      "type": 0
+    },
+    {
+      "word": "AITOR",
+      "type": 0
+    },
+    {
+      "word": "FATIA",
+      "type": 0
+    },
+    {
+      "word": "FATOR",
+      "type": 0
+    },
+    {
+      "word": "FORCA",
+      "type": 0
+    },
+    {
+      "word": "PORCA",
+      "type": 0
+    },
+    {
+      "word": "TOPAR",
+      "type": 0
+    },
+    {
+      "word": "ADIADA",
+      "type": 0
+    },
+    {
+      "word": "ARCADA",
+      "type": 0
+    }
+  ],
+  "letters": "DIAI,ATDA,FORC,APAL",
+  "obstacles": []
 }

@@ -1,85 +1,287 @@
-﻿{
-    "id":  1345,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TANK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DRANK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STANK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STARDUST",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DRAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NATS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RATS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STEMS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RANK,DTSM,USTE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1345,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "BIN",
+      "type": 0
+    },
+    {
+      "word": "BIT",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "ANTI",
+      "type": 0
+    },
+    {
+      "word": "HUNT",
+      "type": 0
+    },
+    {
+      "word": "INCH",
+      "type": 0
+    },
+    {
+      "word": "TERM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "BAH",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BET",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "HUN",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "NAB",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NIB",
+      "type": 0
+    },
+    {
+      "word": "NIT",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "ABET",
+      "type": 0
+    },
+    {
+      "word": "BARE",
+      "type": 0
+    },
+    {
+      "word": "BARM",
+      "type": 0
+    },
+    {
+      "word": "BERM",
+      "type": 0
+    },
+    {
+      "word": "BETS",
+      "type": 0
+    },
+    {
+      "word": "BITE",
+      "type": 0
+    },
+    {
+      "word": "BITS",
+      "type": 0
+    },
+    {
+      "word": "CHAR",
+      "type": 0
+    },
+    {
+      "word": "HANT",
+      "type": 0
+    },
+    {
+      "word": "HARE",
+      "type": 0
+    },
+    {
+      "word": "HARM",
+      "type": 0
+    },
+    {
+      "word": "HART",
+      "type": 0
+    },
+    {
+      "word": "MIST",
+      "type": 0
+    },
+    {
+      "word": "NABE",
+      "type": 0
+    },
+    {
+      "word": "NITE",
+      "type": 0
+    },
+    {
+      "word": "NITS",
+      "type": 0
+    },
+    {
+      "word": "RANT",
+      "type": 0
+    },
+    {
+      "word": "REIS",
+      "type": 0
+    },
+    {
+      "word": "RETS",
+      "type": 0
+    },
+    {
+      "word": "TRET",
+      "type": 0
+    },
+    {
+      "word": "ABETS",
+      "type": 0
+    },
+    {
+      "word": "ANTRE",
+      "type": 0
+    },
+    {
+      "word": "BITER",
+      "type": 0
+    },
+    {
+      "word": "CHANT",
+      "type": 0
+    },
+    {
+      "word": "CHARE",
+      "type": 0
+    },
+    {
+      "word": "CHARM",
+      "type": 0
+    },
+    {
+      "word": "CHART",
+      "type": 0
+    },
+    {
+      "word": "HABIT",
+      "type": 0
+    },
+    {
+      "word": "MITRE",
+      "type": 0
+    },
+    {
+      "word": "NITER",
+      "type": 0
+    },
+    {
+      "word": "TRETS",
+      "type": 0
+    },
+    {
+      "word": "UNARM",
+      "type": 0
+    },
+    {
+      "word": "BARMIE",
+      "type": 0
+    },
+    {
+      "word": "HABITS",
+      "type": 0
+    },
+    {
+      "word": "MISTER",
+      "type": 0
+    },
+    {
+      "word": "ITERANT",
+      "type": 0
+    }
+  ],
+  "letters": "ITNU,MRAH,IEBC,STIN",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

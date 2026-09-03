@@ -1,147 +1,187 @@
-﻿{
-    "id":  2074,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RING",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRING",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANEW",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARIA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "BANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BARB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BARING",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BRAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GNAW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IRAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WANE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "WARING",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OWGW,BANE,BRIA",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2074,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "APT",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RID",
+      "type": 0
+    },
+    {
+      "word": "RUN",
+      "type": 0
+    },
+    {
+      "word": "FEAR",
+      "type": 0
+    },
+    {
+      "word": "LEAD",
+      "type": 0
+    },
+    {
+      "word": "PARA",
+      "type": 0
+    },
+    {
+      "word": "LIQUID",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARF",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "DAP",
+      "type": 0
+    },
+    {
+      "word": "DUN",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "TUI",
+      "type": 0
+    },
+    {
+      "word": "URB",
+      "type": 0
+    },
+    {
+      "word": "ABRI",
+      "type": 0
+    },
+    {
+      "word": "DIRL",
+      "type": 0
+    },
+    {
+      "word": "DURA",
+      "type": 0
+    },
+    {
+      "word": "FRAE",
+      "type": 0
+    },
+    {
+      "word": "FRAP",
+      "type": 0
+    },
+    {
+      "word": "LEAP",
+      "type": 0
+    },
+    {
+      "word": "LEAR",
+      "type": 0
+    },
+    {
+      "word": "NURL",
+      "type": 0
+    },
+    {
+      "word": "PADI",
+      "type": 0
+    },
+    {
+      "word": "PLEA",
+      "type": 0
+    },
+    {
+      "word": "QUID",
+      "type": 0
+    },
+    {
+      "word": "RAPT",
+      "type": 0
+    },
+    {
+      "word": "DUNAM",
+      "type": 0
+    },
+    {
+      "word": "LEAPT",
+      "type": 0
+    },
+    {
+      "word": "PLEAD",
+      "type": 0
+    },
+    {
+      "word": "RADII",
+      "type": 0
+    }
+  ],
+  "letters": "MANBA,FRURL,EADII,LPTUQ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

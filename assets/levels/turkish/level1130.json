@@ -1,57 +1,99 @@
-﻿{
-    "id":  1130,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÜP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÜPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÖPEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÖPÜK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÖPÜCÜK",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KEP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KÖTEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÖTE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TEK,ÖPÜ,KÜC",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1130,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AİT",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "HAY",
+      "type": 0
+    },
+    {
+      "word": "HİS",
+      "type": 0
+    },
+    {
+      "word": "INI",
+      "type": 0
+    },
+    {
+      "word": "HALK",
+      "type": 0
+    },
+    {
+      "word": "THİS",
+      "type": 0
+    },
+    {
+      "word": "HALKI",
+      "type": 0
+    },
+    {
+      "word": "HALKIN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "AİN",
+      "type": 0
+    },
+    {
+      "word": "HİT",
+      "type": 0
+    },
+    {
+      "word": "TAİ",
+      "type": 0
+    },
+    {
+      "word": "TİA",
+      "type": 0
+    },
+    {
+      "word": "TİN",
+      "type": 0
+    },
+    {
+      "word": "İTİ",
+      "type": 0
+    },
+    {
+      "word": "İTİN",
+      "type": 0
+    },
+    {
+      "word": "HALKINI",
+      "type": 0
+    }
+  ],
+  "letters": "KLAH,INIA,AİTY,THİS",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

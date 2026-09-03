@@ -1,95 +1,107 @@
-﻿{
-    "id":  1140,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "МАК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "МЕХ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ХАН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЯМА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СЕМЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СЕНЬ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ЯСЕНЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КАМЕНЬ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АКА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "МЕНА",
-                            "type":  1
-                        },
-                        {
-                            "word":  "САК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "САМ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СЕМА",
-                            "type":  1
-                        },
-                        {
-                            "word":  "СЕН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СЕНА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СЯМ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ХАНЬ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "КАМЬ,АСЕН,МЯХА",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1140,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ГУЛ",
+      "type": 0
+    },
+    {
+      "word": "ДАЛ",
+      "type": 0
+    },
+    {
+      "word": "ЕЛА",
+      "type": 0
+    },
+    {
+      "word": "ЕТО",
+      "type": 0
+    },
+    {
+      "word": "ЗАД",
+      "type": 0
+    },
+    {
+      "word": "ЗАЛ",
+      "type": 0
+    },
+    {
+      "word": "ООУ",
+      "type": 0
+    },
+    {
+      "word": "ТЕД",
+      "type": 0
+    },
+    {
+      "word": "ТЕО",
+      "type": 0
+    },
+    {
+      "word": "ЗАЛЕ",
+      "type": 0
+    },
+    {
+      "word": "ТОЧКА",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АЛЕ",
+      "type": 0
+    },
+    {
+      "word": "АУЧ",
+      "type": 0
+    },
+    {
+      "word": "ЛАД",
+      "type": 0
+    },
+    {
+      "word": "ЛЕГ",
+      "type": 0
+    },
+    {
+      "word": "ОУУ",
+      "type": 0
+    },
+    {
+      "word": "ЗАЛУ",
+      "type": 0
+    },
+    {
+      "word": "ОЧКА",
+      "type": 0
+    },
+    {
+      "word": "УЗДЕ",
+      "type": 0
+    },
+    {
+      "word": "ДЕТОЧКА",
+      "type": 0
+    }
+  ],
+  "letters": "ТОЧК,ЕОУА,ДЗУГ,ДАЛЕ",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,97 +1,87 @@
-﻿{
-    "id":  1852,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ИОН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "НОС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ОСА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "САН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СОР",
-                             "type":  0
-                         },
-                         {
-                             "word":  "НАСТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РОСА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РОСТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СВАТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТАВР",
-                             "type":  2
-                         },
-                         {
-                             "word":  "РВАТЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СОРВАТЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛИЧНОСТЬ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ЛИЧНО",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НАС",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НОР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОНА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОСТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОСТЬ",
-                            "type":  1
-                        },
-                        {
-                            "word":  "СОН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТАВРО",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "ЧНАЬ,ИОСТ,ЛРВА",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1852,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ДАЮ",
+      "type": 0
+    },
+    {
+      "word": "ДКЕ",
+      "type": 0
+    },
+    {
+      "word": "ДНА",
+      "type": 0
+    },
+    {
+      "word": "ЗАД",
+      "type": 0
+    },
+    {
+      "word": "ПАН",
+      "type": 0
+    },
+    {
+      "word": "ПОД",
+      "type": 0
+    },
+    {
+      "word": "РОД",
+      "type": 0
+    },
+    {
+      "word": "ФАН",
+      "type": 0
+    },
+    {
+      "word": "ДАЮТ",
+      "type": 0
+    },
+    {
+      "word": "ОДНА",
+      "type": 0
+    },
+    {
+      "word": "РОДЫ",
+      "type": 0
+    },
+    {
+      "word": "ВЫДАЮТ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ДЫР",
+      "type": 0
+    },
+    {
+      "word": "АНДО",
+      "type": 0
+    },
+    {
+      "word": "ПОДН",
+      "type": 0
+    },
+    {
+      "word": "ВЫДАЮ",
+      "type": 0
+    }
+  ],
+  "letters": "ЕОДТЮ,КРЫЗА,ДНАПД,ОПФВЫ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

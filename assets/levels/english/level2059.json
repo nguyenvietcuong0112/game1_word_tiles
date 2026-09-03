@@ -1,103 +1,295 @@
-﻿{
-    "id":  2059,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OWN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TWO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUITE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOLUTION",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ION",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DTION,LUITW,OSWEO",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2059,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADD",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "DONE",
+      "type": 0
+    },
+    {
+      "word": "MERE",
+      "type": 0
+    },
+    {
+      "word": "VEST",
+      "type": 0
+    },
+    {
+      "word": "SENSE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "DAP",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "EME",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "NOD",
+      "type": 0
+    },
+    {
+      "word": "ODD",
+      "type": 0
+    },
+    {
+      "word": "ODS",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "REP",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "ADDS",
+      "type": 0
+    },
+    {
+      "word": "APER",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "DARE",
+      "type": 0
+    },
+    {
+      "word": "DELE",
+      "type": 0
+    },
+    {
+      "word": "DERE",
+      "type": 0
+    },
+    {
+      "word": "DONS",
+      "type": 0
+    },
+    {
+      "word": "EDDO",
+      "type": 0
+    },
+    {
+      "word": "LETS",
+      "type": 0
+    },
+    {
+      "word": "NEST",
+      "type": 0
+    },
+    {
+      "word": "NODS",
+      "type": 0
+    },
+    {
+      "word": "ONES",
+      "type": 0
+    },
+    {
+      "word": "PARE",
+      "type": 0
+    },
+    {
+      "word": "RAPE",
+      "type": 0
+    },
+    {
+      "word": "REDD",
+      "type": 0
+    },
+    {
+      "word": "REDE",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SERE",
+      "type": 0
+    },
+    {
+      "word": "TELE",
+      "type": 0
+    },
+    {
+      "word": "CRAPE",
+      "type": 0
+    },
+    {
+      "word": "CREME",
+      "type": 0
+    },
+    {
+      "word": "DARED",
+      "type": 0
+    },
+    {
+      "word": "DARES",
+      "type": 0
+    },
+    {
+      "word": "MERES",
+      "type": 0
+    },
+    {
+      "word": "ODDER",
+      "type": 0
+    },
+    {
+      "word": "PARED",
+      "type": 0
+    },
+    {
+      "word": "PARES",
+      "type": 0
+    },
+    {
+      "word": "REDDS",
+      "type": 0
+    },
+    {
+      "word": "STELE",
+      "type": 0
+    },
+    {
+      "word": "NESTED",
+      "type": 0
+    },
+    {
+      "word": "NODDED",
+      "type": 0
+    },
+    {
+      "word": "NODDER",
+      "type": 0
+    },
+    {
+      "word": "SENSED",
+      "type": 0
+    },
+    {
+      "word": "SERAPE",
+      "type": 0
+    },
+    {
+      "word": "VESTED",
+      "type": 0
+    }
+  ],
+  "letters": "STELE,EVDCM,NSERE,ODDAP",
+  "obstacles": []
 }

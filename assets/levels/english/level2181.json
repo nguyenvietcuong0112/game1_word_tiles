@@ -1,105 +1,207 @@
-﻿{
-    "id":  2181,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OWN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DINE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SLOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COUSIN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DINES",
-                            "type":  1
-                        },
-                        {
-                            "word":  "DON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ONES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SINE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SINO",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "WNONE,OADIS,LSCOU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2181,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADD",
+      "type": 0
+    },
+    {
+      "word": "ADS",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "CARD",
+      "type": 0
+    },
+    {
+      "word": "CARR",
+      "type": 0
+    },
+    {
+      "word": "CATS",
+      "type": 0
+    },
+    {
+      "word": "TRUE",
+      "type": 0
+    },
+    {
+      "word": "STEAK",
+      "type": 0
+    },
+    {
+      "word": "TRUST",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "CAD",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "KAE",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "ARAK",
+      "type": 0
+    },
+    {
+      "word": "CADS",
+      "type": 0
+    },
+    {
+      "word": "DEAR",
+      "type": 0
+    },
+    {
+      "word": "KART",
+      "type": 0
+    },
+    {
+      "word": "RUED",
+      "type": 0
+    },
+    {
+      "word": "RUST",
+      "type": 0
+    },
+    {
+      "word": "SACS",
+      "type": 0
+    },
+    {
+      "word": "SARD",
+      "type": 0
+    },
+    {
+      "word": "SCAD",
+      "type": 0
+    },
+    {
+      "word": "SCAR",
+      "type": 0
+    },
+    {
+      "word": "SCAT",
+      "type": 0
+    },
+    {
+      "word": "SUED",
+      "type": 0
+    },
+    {
+      "word": "SUET",
+      "type": 0
+    },
+    {
+      "word": "SURA",
+      "type": 0
+    },
+    {
+      "word": "TADS",
+      "type": 0
+    },
+    {
+      "word": "TEAK",
+      "type": 0
+    },
+    {
+      "word": "TEAR",
+      "type": 0
+    },
+    {
+      "word": "CARRS",
+      "type": 0
+    },
+    {
+      "word": "SCATS",
+      "type": 0
+    },
+    {
+      "word": "SCATT",
+      "type": 0
+    },
+    {
+      "word": "TRUED",
+      "type": 0
+    },
+    {
+      "word": "TRUSS",
+      "type": 0
+    },
+    {
+      "word": "CATTED",
+      "type": 0
+    },
+    {
+      "word": "RUSTED",
+      "type": 0
+    },
+    {
+      "word": "SCATTS",
+      "type": 0
+    },
+    {
+      "word": "SCATTED",
+      "type": 0
+    },
+    {
+      "word": "TRUSTED",
+      "type": 0
+    }
+  ],
+  "letters": "TRUSS,KAETT,RRDDA,SACSC",
+  "obstacles": []
 }

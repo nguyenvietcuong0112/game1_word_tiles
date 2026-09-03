@@ -1,57 +1,139 @@
-﻿{
-    "id":  920,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ИКС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛИК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТАЗ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БЛИК",
-                             "type":  2
-                         },
-                         {
-                             "word":  "СВАТ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ТАЗИК",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АЗИК",
-                            "type":  1
-                        },
-                        {
-                            "word":  "БЗИК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "БЛИЗ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЗАВ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЗИЛ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ЛИК,БЗС,ТАВ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 920,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ИЗО",
+      "type": 0
+    },
+    {
+      "word": "НАМ",
+      "type": 0
+    },
+    {
+      "word": "ПРИ",
+      "type": 0
+    },
+    {
+      "word": "ПРО",
+      "type": 0
+    },
+    {
+      "word": "РОТ",
+      "type": 0
+    },
+    {
+      "word": "СНЕ",
+      "type": 0
+    },
+    {
+      "word": "ХЕН",
+      "type": 0
+    },
+    {
+      "word": "ХАУС",
+      "type": 0
+    },
+    {
+      "word": "ОТЦОМ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ЕНА",
+      "type": 0
+    },
+    {
+      "word": "МАН",
+      "type": 0
+    },
+    {
+      "word": "ОРИ",
+      "type": 0
+    },
+    {
+      "word": "ОРУ",
+      "type": 0
+    },
+    {
+      "word": "ПСУ",
+      "type": 0
+    },
+    {
+      "word": "РИЗ",
+      "type": 0
+    },
+    {
+      "word": "РОЗ",
+      "type": 0
+    },
+    {
+      "word": "РУС",
+      "type": 0
+    },
+    {
+      "word": "СНА",
+      "type": 0
+    },
+    {
+      "word": "ТОР",
+      "type": 0
+    },
+    {
+      "word": "УРИ",
+      "type": 0
+    },
+    {
+      "word": "ЦТО",
+      "type": 0
+    },
+    {
+      "word": "ПРИЗ",
+      "type": 0
+    },
+    {
+      "word": "РОЗИ",
+      "type": 0
+    },
+    {
+      "word": "ТОРИ",
+      "type": 0
+    },
+    {
+      "word": "ТОРП",
+      "type": 0
+    },
+    {
+      "word": "ТОРУ",
+      "type": 0
+    },
+    {
+      "word": "ТПРУ",
+      "type": 0
+    },
+    {
+      "word": "ХЕНА",
+      "type": 0
+    }
+  ],
+  "letters": "ХАИЗ,ЕУРО,НСПТ,АМОЦ",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

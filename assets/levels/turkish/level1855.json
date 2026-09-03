@@ -1,61 +1,255 @@
-﻿{
-    "id":  1855,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HEP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PES",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SORU",
-                             "type":  2
-                         },
-                         {
-                             "word":  "HESAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IHLAMUR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "PAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SORUM",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SORUMA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "MUROA,AIPSP,LHESA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1855,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "LOU",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "NDA",
+      "type": 0
+    },
+    {
+      "word": "TİM",
+      "type": 0
+    },
+    {
+      "word": "İLK",
+      "type": 0
+    },
+    {
+      "word": "ANDA",
+      "type": 0
+    },
+    {
+      "word": "EZME",
+      "type": 0
+    },
+    {
+      "word": "DİNLE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "AKU",
+      "type": 0
+    },
+    {
+      "word": "AİN",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DİE",
+      "type": 0
+    },
+    {
+      "word": "DİN",
+      "type": 0
+    },
+    {
+      "word": "KAİ",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LEİ",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "LİM",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAİ",
+      "type": 0
+    },
+    {
+      "word": "MEİ",
+      "type": 0
+    },
+    {
+      "word": "MİL",
+      "type": 0
+    },
+    {
+      "word": "MİT",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAİ",
+      "type": 0
+    },
+    {
+      "word": "İAN",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "İTO",
+      "type": 0
+    },
+    {
+      "word": "AKLİ",
+      "type": 0
+    },
+    {
+      "word": "ANDİ",
+      "type": 0
+    },
+    {
+      "word": "ANMA",
+      "type": 0
+    },
+    {
+      "word": "AİDA",
+      "type": 0
+    },
+    {
+      "word": "LEİA",
+      "type": 0
+    },
+    {
+      "word": "LİMA",
+      "type": 0
+    },
+    {
+      "word": "MAİN",
+      "type": 0
+    },
+    {
+      "word": "MİLK",
+      "type": 0
+    },
+    {
+      "word": "MİLO",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "NAMİ",
+      "type": 0
+    },
+    {
+      "word": "NDAN",
+      "type": 0
+    },
+    {
+      "word": "İDAM",
+      "type": 0
+    },
+    {
+      "word": "İMAN",
+      "type": 0
+    },
+    {
+      "word": "ANDAN",
+      "type": 0
+    },
+    {
+      "word": "ANDİE",
+      "type": 0
+    },
+    {
+      "word": "AİDAN",
+      "type": 0
+    },
+    {
+      "word": "KANDA",
+      "type": 0
+    },
+    {
+      "word": "KLİMA",
+      "type": 0
+    },
+    {
+      "word": "LİMAN",
+      "type": 0
+    },
+    {
+      "word": "NADİA",
+      "type": 0
+    },
+    {
+      "word": "NAKLİ",
+      "type": 0
+    },
+    {
+      "word": "KANDAN",
+      "type": 0
+    }
+  ],
+  "letters": "TİMAN,OLNDT,UKAİN,EZMEL",
+  "obstacles": []
 }

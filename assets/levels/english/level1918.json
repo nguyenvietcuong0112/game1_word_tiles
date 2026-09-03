@@ -1,98 +1,219 @@
-﻿{
-    "id":  1918,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEEL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PLEA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "WEEP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAPLE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "PEE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WEE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "YWGA,AEEE,MAPL",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1918,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "DAD",
+      "type": 0
+    },
+    {
+      "word": "ICE",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "ABLE",
+      "type": 0
+    },
+    {
+      "word": "IDEA",
+      "type": 0
+    },
+    {
+      "word": "ROLE",
+      "type": 0
+    },
+    {
+      "word": "SAID",
+      "type": 0
+    },
+    {
+      "word": "IDEAS",
+      "type": 0
+    },
+    {
+      "word": "SUITE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DAB",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "TIC",
+      "type": 0
+    },
+    {
+      "word": "ABED",
+      "type": 0
+    },
+    {
+      "word": "AIDE",
+      "type": 0
+    },
+    {
+      "word": "BADE",
+      "type": 0
+    },
+    {
+      "word": "CEDE",
+      "type": 0
+    },
+    {
+      "word": "CEDI",
+      "type": 0
+    },
+    {
+      "word": "CETE",
+      "type": 0
+    },
+    {
+      "word": "CITE",
+      "type": 0
+    },
+    {
+      "word": "DICE",
+      "type": 0
+    },
+    {
+      "word": "ETIC",
+      "type": 0
+    },
+    {
+      "word": "ICED",
+      "type": 0
+    },
+    {
+      "word": "ICES",
+      "type": 0
+    },
+    {
+      "word": "LORE",
+      "type": 0
+    },
+    {
+      "word": "ROES",
+      "type": 0
+    },
+    {
+      "word": "SUIT",
+      "type": 0
+    },
+    {
+      "word": "ABLER",
+      "type": 0
+    },
+    {
+      "word": "AIDED",
+      "type": 0
+    },
+    {
+      "word": "CEDED",
+      "type": 0
+    },
+    {
+      "word": "CETES",
+      "type": 0
+    },
+    {
+      "word": "CITES",
+      "type": 0
+    },
+    {
+      "word": "DICES",
+      "type": 0
+    },
+    {
+      "word": "SAICE",
+      "type": 0
+    },
+    {
+      "word": "SAICES",
+      "type": 0
+    },
+    {
+      "word": "SECEDE",
+      "type": 0
+    },
+    {
+      "word": "SUITES",
+      "type": 0
+    },
+    {
+      "word": "SECEDED",
+      "type": 0
+    },
+    {
+      "word": "SUICIDED",
+      "type": 0
+    }
+  ],
+  "letters": "DABLE,EDEOR,AICES,SUITE",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

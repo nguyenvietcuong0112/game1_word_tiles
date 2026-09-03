@@ -1,89 +1,155 @@
-﻿{
-    "id":  980,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GANG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MAMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARÇO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANÇO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESMAGAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AGAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMAGAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESGAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAMAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NARA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SEARA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MARÇO,AGANG,MSEFI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 980,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "NAO",
+      "type": 0
+    },
+    {
+      "word": "ABRE",
+      "type": 0
+    },
+    {
+      "word": "BEBA",
+      "type": 0
+    },
+    {
+      "word": "ACABA",
+      "type": 0
+    },
+    {
+      "word": "ACABE",
+      "type": 0
+    },
+    {
+      "word": "ENTRE",
+      "type": 0
+    },
+    {
+      "word": "RENEE",
+      "type": 0
+    },
+    {
+      "word": "BABACA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABA",
+      "type": 0
+    },
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "BAE",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BRE",
+      "type": 0
+    },
+    {
+      "word": "CAB",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "EBA",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "TRE",
+      "type": 0
+    },
+    {
+      "word": "BABA",
+      "type": 0
+    },
+    {
+      "word": "BABE",
+      "type": 0
+    },
+    {
+      "word": "BREA",
+      "type": 0
+    },
+    {
+      "word": "BREN",
+      "type": 0
+    },
+    {
+      "word": "CABE",
+      "type": 0
+    },
+    {
+      "word": "CANA",
+      "type": 0
+    },
+    {
+      "word": "RENE",
+      "type": 0
+    },
+    {
+      "word": "RENT",
+      "type": 0
+    },
+    {
+      "word": "ABANA",
+      "type": 0
+    },
+    {
+      "word": "BRENT",
+      "type": 0
+    },
+    {
+      "word": "BACANA",
+      "type": 0
+    },
+    {
+      "word": "CABANA",
+      "type": 0
+    }
+  ],
+  "letters": "EBRT,BAEN,ACAE,NAOE",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

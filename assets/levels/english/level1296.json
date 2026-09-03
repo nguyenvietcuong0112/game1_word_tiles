@@ -1,73 +1,251 @@
-﻿{
-    "id":  1296,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLOB",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LOBE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOUSY",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SUEDE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BLOUSE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DEUS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LOUSE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SUED",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BEED,YSUE,BLOB",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1296,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADD",
+      "type": 0
+    },
+    {
+      "word": "ADS",
+      "type": 0
+    },
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "DRY",
+      "type": 0
+    },
+    {
+      "word": "HAD",
+      "type": 0
+    },
+    {
+      "word": "MOM",
+      "type": 0
+    },
+    {
+      "word": "SUM",
+      "type": 0
+    },
+    {
+      "word": "WAR",
+      "type": 0
+    },
+    {
+      "word": "ADDS",
+      "type": 0
+    },
+    {
+      "word": "STAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DAH",
+      "type": 0
+    },
+    {
+      "word": "HAY",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "MUS",
+      "type": 0
+    },
+    {
+      "word": "MUT",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "RAW",
+      "type": 0
+    },
+    {
+      "word": "RUM",
+      "type": 0
+    },
+    {
+      "word": "RUT",
+      "type": 0
+    },
+    {
+      "word": "RYA",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TAW",
+      "type": 0
+    },
+    {
+      "word": "URD",
+      "type": 0
+    },
+    {
+      "word": "UTA",
+      "type": 0
+    },
+    {
+      "word": "UTS",
+      "type": 0
+    },
+    {
+      "word": "WAT",
+      "type": 0
+    },
+    {
+      "word": "YAH",
+      "type": 0
+    },
+    {
+      "word": "ARUM",
+      "type": 0
+    },
+    {
+      "word": "DRAT",
+      "type": 0
+    },
+    {
+      "word": "DRAW",
+      "type": 0
+    },
+    {
+      "word": "DRUM",
+      "type": 0
+    },
+    {
+      "word": "MOMS",
+      "type": 0
+    },
+    {
+      "word": "MOSS",
+      "type": 0
+    },
+    {
+      "word": "MURA",
+      "type": 0
+    },
+    {
+      "word": "MUSS",
+      "type": 0
+    },
+    {
+      "word": "MUTS",
+      "type": 0
+    },
+    {
+      "word": "RATS",
+      "type": 0
+    },
+    {
+      "word": "RUMS",
+      "type": 0
+    },
+    {
+      "word": "RUTS",
+      "type": 0
+    },
+    {
+      "word": "SMUT",
+      "type": 0
+    },
+    {
+      "word": "STAW",
+      "type": 0
+    },
+    {
+      "word": "STUM",
+      "type": 0
+    },
+    {
+      "word": "SUMO",
+      "type": 0
+    },
+    {
+      "word": "SUMS",
+      "type": 0
+    },
+    {
+      "word": "SURA",
+      "type": 0
+    },
+    {
+      "word": "SURD",
+      "type": 0
+    },
+    {
+      "word": "TURD",
+      "type": 0
+    },
+    {
+      "word": "URDS",
+      "type": 0
+    },
+    {
+      "word": "WARD",
+      "type": 0
+    },
+    {
+      "word": "WARY",
+      "type": 0
+    },
+    {
+      "word": "WATS",
+      "type": 0
+    },
+    {
+      "word": "ARUMS",
+      "type": 0
+    },
+    {
+      "word": "DRATS",
+      "type": 0
+    },
+    {
+      "word": "DRUMS",
+      "type": 0
+    },
+    {
+      "word": "MOMUS",
+      "type": 0
+    },
+    {
+      "word": "TURDS",
+      "type": 0
+    },
+    {
+      "word": "WARDS",
+      "type": 0
+    },
+    {
+      "word": "HAYWARD",
+      "type": 0
+    },
+    {
+      "word": "HAYWARDS",
+      "type": 0
+    }
+  ],
+  "letters": "STAW,MURY,OSDA,MSDH",
+  "obstacles": []
 }

@@ -1,89 +1,203 @@
-﻿{
-    "id":  1110,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BOI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CÉU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RÉU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AURA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CURA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RATÉ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUIR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UIVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATIVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUIVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CURATIVO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ATÉ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ITA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RÉCUA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VIRA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "AATÉB,URIVO,CÉURI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1110,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "ALEX",
+      "type": 0
+    },
+    {
+      "word": "MAGS",
+      "type": 0
+    },
+    {
+      "word": "TAXA",
+      "type": 0
+    },
+    {
+      "word": "TELA",
+      "type": 0
+    },
+    {
+      "word": "TESS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "AXE",
+      "type": 0
+    },
+    {
+      "word": "DOA",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "LAL",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "LAX",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "LEX",
+      "type": 0
+    },
+    {
+      "word": "MAG",
+      "type": 0
+    },
+    {
+      "word": "ORM",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TEX",
+      "type": 0
+    },
+    {
+      "word": "AXEL",
+      "type": 0
+    },
+    {
+      "word": "LALA",
+      "type": 0
+    },
+    {
+      "word": "LESS",
+      "type": 0
+    },
+    {
+      "word": "MASS",
+      "type": 0
+    },
+    {
+      "word": "ORLA",
+      "type": 0
+    },
+    {
+      "word": "SELA",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SETS",
+      "type": 0
+    },
+    {
+      "word": "XALE",
+      "type": 0
+    },
+    {
+      "word": "ALEXA",
+      "type": 0
+    },
+    {
+      "word": "EXALA",
+      "type": 0
+    },
+    {
+      "word": "DORSET",
+      "type": 0
+    },
+    {
+      "word": "AXELROD",
+      "type": 0
+    }
+  ],
+  "letters": "ATSG,XESA,ALRM,LAOD",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

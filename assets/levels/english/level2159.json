@@ -1,85 +1,303 @@
-﻿{
-    "id":  2159,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AVID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIFE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RIGID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REFUGE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAGED",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UGED,FIGI,ERAV",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2159,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "ELF",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "CAME",
+      "type": 0
+    },
+    {
+      "word": "CODE",
+      "type": 0
+    },
+    {
+      "word": "ELSE",
+      "type": 0
+    },
+    {
+      "word": "MADE",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "SAME",
+      "type": 0
+    },
+    {
+      "word": "CANCER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "CAD",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "CEL",
+      "type": 0
+    },
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "EON",
+      "type": 0
+    },
+    {
+      "word": "ERN",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "NAE",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "ORT",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "ACRE",
+      "type": 0
+    },
+    {
+      "word": "AMAS",
+      "type": 0
+    },
+    {
+      "word": "ANAS",
+      "type": 0
+    },
+    {
+      "word": "CADE",
+      "type": 0
+    },
+    {
+      "word": "CELS",
+      "type": 0
+    },
+    {
+      "word": "CODA",
+      "type": 0
+    },
+    {
+      "word": "DAME",
+      "type": 0
+    },
+    {
+      "word": "EASE",
+      "type": 0
+    },
+    {
+      "word": "FLEA",
+      "type": 0
+    },
+    {
+      "word": "LEAN",
+      "type": 0
+    },
+    {
+      "word": "LEAS",
+      "type": 0
+    },
+    {
+      "word": "MANA",
+      "type": 0
+    },
+    {
+      "word": "NOES",
+      "type": 0
+    },
+    {
+      "word": "NORM",
+      "type": 0
+    },
+    {
+      "word": "ROES",
+      "type": 0
+    },
+    {
+      "word": "CADET",
+      "type": 0
+    },
+    {
+      "word": "CAMAS",
+      "type": 0
+    },
+    {
+      "word": "CEASE",
+      "type": 0
+    },
+    {
+      "word": "DAMAN",
+      "type": 0
+    },
+    {
+      "word": "DANCE",
+      "type": 0
+    },
+    {
+      "word": "FLEAM",
+      "type": 0
+    },
+    {
+      "word": "FLEAS",
+      "type": 0
+    },
+    {
+      "word": "LEASE",
+      "type": 0
+    },
+    {
+      "word": "MANAS",
+      "type": 0
+    },
+    {
+      "word": "METRO",
+      "type": 0
+    },
+    {
+      "word": "NACRE",
+      "type": 0
+    },
+    {
+      "word": "NAMED",
+      "type": 0
+    },
+    {
+      "word": "ANADEM",
+      "type": 0
+    },
+    {
+      "word": "CANCEL",
+      "type": 0
+    },
+    {
+      "word": "DANCER",
+      "type": 0
+    },
+    {
+      "word": "NORMED",
+      "type": 0
+    },
+    {
+      "word": "CANCELS",
+      "type": 0
+    }
+  ],
+  "letters": "FLECE,ESANR,ORMAC,NTEDO",
+  "obstacles": []
 }

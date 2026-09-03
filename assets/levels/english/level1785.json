@@ -1,77 +1,179 @@
-﻿{
-    "id":  1785,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AREA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INSET",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RESET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAINT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AINT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "INS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAINS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SERA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "INT,ASE,REA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1785,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "HIT",
+      "type": 0
+    },
+    {
+      "word": "ICE",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "OPT",
+      "type": 0
+    },
+    {
+      "word": "CHAT",
+      "type": 0
+    },
+    {
+      "word": "RATE",
+      "type": 0
+    },
+    {
+      "word": "OPTIC",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "CHI",
+      "type": 0
+    },
+    {
+      "word": "COP",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "HIC",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TIC",
+      "type": 0
+    },
+    {
+      "word": "ARCO",
+      "type": 0
+    },
+    {
+      "word": "CHAR",
+      "type": 0
+    },
+    {
+      "word": "CHIC",
+      "type": 0
+    },
+    {
+      "word": "CHIT",
+      "type": 0
+    },
+    {
+      "word": "CITE",
+      "type": 0
+    },
+    {
+      "word": "ETIC",
+      "type": 0
+    },
+    {
+      "word": "HARM",
+      "type": 0
+    },
+    {
+      "word": "HATE",
+      "type": 0
+    },
+    {
+      "word": "MAAR",
+      "type": 0
+    },
+    {
+      "word": "MACH",
+      "type": 0
+    },
+    {
+      "word": "POET",
+      "type": 0
+    },
+    {
+      "word": "CHARM",
+      "type": 0
+    },
+    {
+      "word": "CRATE",
+      "type": 0
+    },
+    {
+      "word": "IRATE",
+      "type": 0
+    },
+    {
+      "word": "ARCTIC",
+      "type": 0
+    },
+    {
+      "word": "POETIC",
+      "type": 0
+    },
+    {
+      "word": "TARMAC",
+      "type": 0
+    }
+  ],
+  "letters": "CHIC,AATE,MRCO,CITP",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

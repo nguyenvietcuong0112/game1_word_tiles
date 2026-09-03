@@ -1,81 +1,287 @@
-﻿{
-    "id":  1220,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ECA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AFTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CENA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FACE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CENTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CESTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACENTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CENTAVO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IOTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAFTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SENA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "STAV,ENTO,CAFI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1220,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "TAL",
+      "type": 0
+    },
+    {
+      "word": "ALGA",
+      "type": 0
+    },
+    {
+      "word": "ALMA",
+      "type": 0
+    },
+    {
+      "word": "ELAS",
+      "type": 0
+    },
+    {
+      "word": "FRAS",
+      "type": 0
+    },
+    {
+      "word": "ANTES",
+      "type": 0
+    },
+    {
+      "word": "NATAL",
+      "type": 0
+    },
+    {
+      "word": "TANTA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "ARN",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "ELM",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "MAG",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "RNA",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TTA",
+      "type": 0
+    },
+    {
+      "word": "TTE",
+      "type": 0
+    },
+    {
+      "word": "ANTA",
+      "type": 0
+    },
+    {
+      "word": "ANTE",
+      "type": 0
+    },
+    {
+      "word": "ATTA",
+      "type": 0
+    },
+    {
+      "word": "ETTA",
+      "type": 0
+    },
+    {
+      "word": "LATA",
+      "type": 0
+    },
+    {
+      "word": "LATE",
+      "type": 0
+    },
+    {
+      "word": "LEAL",
+      "type": 0
+    },
+    {
+      "word": "MAGS",
+      "type": 0
+    },
+    {
+      "word": "NATA",
+      "type": 0
+    },
+    {
+      "word": "SEAL",
+      "type": 0
+    },
+    {
+      "word": "SELA",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "TEAL",
+      "type": 0
+    },
+    {
+      "word": "TELA",
+      "type": 0
+    },
+    {
+      "word": "LATTE",
+      "type": 0
+    },
+    {
+      "word": "LESMA",
+      "type": 0
+    },
+    {
+      "word": "RASGA",
+      "type": 0
+    },
+    {
+      "word": "SALMA",
+      "type": 0
+    },
+    {
+      "word": "SARNA",
+      "type": 0
+    },
+    {
+      "word": "SELAR",
+      "type": 0
+    },
+    {
+      "word": "SELAS",
+      "type": 0
+    },
+    {
+      "word": "SELMA",
+      "type": 0
+    },
+    {
+      "word": "SETAS",
+      "type": 0
+    },
+    {
+      "word": "TELAS",
+      "type": 0
+    },
+    {
+      "word": "TESLA",
+      "type": 0
+    },
+    {
+      "word": "RASGAM",
+      "type": 0
+    },
+    {
+      "word": "TANTAS",
+      "type": 0
+    }
+  ],
+  "letters": "FRNA,SATT,GLEA,AMSL",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

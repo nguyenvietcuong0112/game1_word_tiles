@@ -1,81 +1,275 @@
-﻿{
-    "id":  1106,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RİCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CEBİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAZİBE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACİBE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARİZA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BİRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İCAZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZİRA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ARŞ,BİZ,ECA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1106,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SES",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "İLK",
+      "type": 0
+    },
+    {
+      "word": "İSE",
+      "type": 0
+    },
+    {
+      "word": "SENİ",
+      "type": 0
+    },
+    {
+      "word": "SESİ",
+      "type": 0
+    },
+    {
+      "word": "RESMİ",
+      "type": 0
+    },
+    {
+      "word": "ŞEKLİ",
+      "type": 0
+    },
+    {
+      "word": "SERVİS",
+      "type": 0
+    },
+    {
+      "word": "SESİNİ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "KEŞ",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "LİN",
+      "type": 0
+    },
+    {
+      "word": "MİN",
+      "type": 0
+    },
+    {
+      "word": "MİS",
+      "type": 0
+    },
+    {
+      "word": "NİL",
+      "type": 0
+    },
+    {
+      "word": "NİM",
+      "type": 0
+    },
+    {
+      "word": "REİ",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SİM",
+      "type": 0
+    },
+    {
+      "word": "SİN",
+      "type": 0
+    },
+    {
+      "word": "SİS",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "İNİ",
+      "type": 0
+    },
+    {
+      "word": "İSİ",
+      "type": 0
+    },
+    {
+      "word": "EKLE",
+      "type": 0
+    },
+    {
+      "word": "EKSİ",
+      "type": 0
+    },
+    {
+      "word": "ELİN",
+      "type": 0
+    },
+    {
+      "word": "ESİN",
+      "type": 0
+    },
+    {
+      "word": "LİNE",
+      "type": 0
+    },
+    {
+      "word": "MİNE",
+      "type": 0
+    },
+    {
+      "word": "MİNİ",
+      "type": 0
+    },
+    {
+      "word": "MİSS",
+      "type": 0
+    },
+    {
+      "word": "NESS",
+      "type": 0
+    },
+    {
+      "word": "NESİ",
+      "type": 0
+    },
+    {
+      "word": "REİS",
+      "type": 0
+    },
+    {
+      "word": "SİMS",
+      "type": 0
+    },
+    {
+      "word": "SİNE",
+      "type": 0
+    },
+    {
+      "word": "SİNİ",
+      "type": 0
+    },
+    {
+      "word": "SİSİ",
+      "type": 0
+    },
+    {
+      "word": "İSEN",
+      "type": 0
+    },
+    {
+      "word": "İSİM",
+      "type": 0
+    },
+    {
+      "word": "İSİN",
+      "type": 0
+    },
+    {
+      "word": "İSİS",
+      "type": 0
+    },
+    {
+      "word": "ELİNİ",
+      "type": 0
+    },
+    {
+      "word": "NİLES",
+      "type": 0
+    },
+    {
+      "word": "REİSİ",
+      "type": 0
+    },
+    {
+      "word": "SENİM",
+      "type": 0
+    },
+    {
+      "word": "SESİM",
+      "type": 0
+    },
+    {
+      "word": "SESİN",
+      "type": 0
+    },
+    {
+      "word": "SİSİN",
+      "type": 0
+    },
+    {
+      "word": "İSİNİ",
+      "type": 0
+    },
+    {
+      "word": "ŞEKLE",
+      "type": 0
+    },
+    {
+      "word": "RESMİN",
+      "type": 0
+    },
+    {
+      "word": "ŞEKLİN",
+      "type": 0
+    },
+    {
+      "word": "RESMİNE",
+      "type": 0
+    },
+    {
+      "word": "RESMİNİ",
+      "type": 0
+    },
+    {
+      "word": "SERVİSE",
+      "type": 0
+    },
+    {
+      "word": "SERVİSİ",
+      "type": 0
+    },
+    {
+      "word": "ŞEKLİNE",
+      "type": 0
+    },
+    {
+      "word": "ŞEKLİNİ",
+      "type": 0
+    },
+    {
+      "word": "SERVİSİN",
+      "type": 0
+    }
+  ],
+  "letters": "MSER,İSİV,NESŞ,İLKE",
+  "obstacles": []
 }

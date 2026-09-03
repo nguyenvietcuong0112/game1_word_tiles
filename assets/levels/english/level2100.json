@@ -1,118 +1,215 @@
-﻿{
-    "id":  2100,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "APE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HALT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAPPY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "HAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HOLT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PALO",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "TTPY,LAPE,OHTG",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  8,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2100,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "FLU",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LIB",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "BALL",
+      "type": 0
+    },
+    {
+      "word": "BARS",
+      "type": 0
+    },
+    {
+      "word": "BILL",
+      "type": 0
+    },
+    {
+      "word": "PEST",
+      "type": 0
+    },
+    {
+      "word": "PULL",
+      "type": 0
+    },
+    {
+      "word": "BILLING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "HEP",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "PEG",
+      "type": 0
+    },
+    {
+      "word": "PEH",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "PUL",
+      "type": 0
+    },
+    {
+      "word": "PUR",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "ANIL",
+      "type": 0
+    },
+    {
+      "word": "GEST",
+      "type": 0
+    },
+    {
+      "word": "GNAT",
+      "type": 0
+    },
+    {
+      "word": "HEST",
+      "type": 0
+    },
+    {
+      "word": "LARS",
+      "type": 0
+    },
+    {
+      "word": "LING",
+      "type": 0
+    },
+    {
+      "word": "LULL",
+      "type": 0
+    },
+    {
+      "word": "NILL",
+      "type": 0
+    },
+    {
+      "word": "PULA",
+      "type": 0
+    },
+    {
+      "word": "PULI",
+      "type": 0
+    },
+    {
+      "word": "PULS",
+      "type": 0
+    },
+    {
+      "word": "PURS",
+      "type": 0
+    },
+    {
+      "word": "SLUR",
+      "type": 0
+    },
+    {
+      "word": "TANG",
+      "type": 0
+    },
+    {
+      "word": "GNATS",
+      "type": 0
+    },
+    {
+      "word": "SEGNI",
+      "type": 0
+    },
+    {
+      "word": "STANG",
+      "type": 0
+    },
+    {
+      "word": "THEGN",
+      "type": 0
+    },
+    {
+      "word": "INGEST",
+      "type": 0
+    },
+    {
+      "word": "BALLING",
+      "type": 0
+    },
+    {
+      "word": "INGESTA",
+      "type": 0
+    },
+    {
+      "word": "LULLING",
+      "type": 0
+    },
+    {
+      "word": "PULLING",
+      "type": 0
+    }
+  ],
+  "letters": "BIINA,ALLGT,RUPES,SLFHT",
+  "obstacles": []
 }

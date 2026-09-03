@@ -1,77 +1,239 @@
-﻿{
-    "id":  2384,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BÜRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KONİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TARLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BÜROKRAT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BİRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BONO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOKRA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "İNOLA,BOKRA,ÜRBİT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2384,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "DÜN",
+      "type": 0
+    },
+    {
+      "word": "DÜŞ",
+      "type": 0
+    },
+    {
+      "word": "EVİ",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "ÇÖP",
+      "type": 0
+    },
+    {
+      "word": "ALIP",
+      "type": 0
+    },
+    {
+      "word": "EVİN",
+      "type": 0
+    },
+    {
+      "word": "KORUMA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "AMT",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "KIL",
+      "type": 0
+    },
+    {
+      "word": "KOL",
+      "type": 0
+    },
+    {
+      "word": "KOR",
+      "type": 0
+    },
+    {
+      "word": "LIK",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "RUM",
+      "type": 0
+    },
+    {
+      "word": "TRU",
+      "type": 0
+    },
+    {
+      "word": "UMA",
+      "type": 0
+    },
+    {
+      "word": "VİN",
+      "type": 0
+    },
+    {
+      "word": "ÖDE",
+      "type": 0
+    },
+    {
+      "word": "ÖDÜ",
+      "type": 0
+    },
+    {
+      "word": "ŞAL",
+      "type": 0
+    },
+    {
+      "word": "ŞAM",
+      "type": 0
+    },
+    {
+      "word": "ŞAN",
+      "type": 0
+    },
+    {
+      "word": "AŞAN",
+      "type": 0
+    },
+    {
+      "word": "DALI",
+      "type": 0
+    },
+    {
+      "word": "DEVİ",
+      "type": 0
+    },
+    {
+      "word": "KOLA",
+      "type": 0
+    },
+    {
+      "word": "KORU",
+      "type": 0
+    },
+    {
+      "word": "LORT",
+      "type": 0
+    },
+    {
+      "word": "MANİ",
+      "type": 0
+    },
+    {
+      "word": "PAŞA",
+      "type": 0
+    },
+    {
+      "word": "TROL",
+      "type": 0
+    },
+    {
+      "word": "VEDA",
+      "type": 0
+    },
+    {
+      "word": "ÖDEV",
+      "type": 0
+    },
+    {
+      "word": "ÖDÜN",
+      "type": 0
+    },
+    {
+      "word": "DALIP",
+      "type": 0
+    },
+    {
+      "word": "DEVİN",
+      "type": 0
+    },
+    {
+      "word": "PAŞAM",
+      "type": 0
+    },
+    {
+      "word": "ÖDEVİ",
+      "type": 0
+    },
+    {
+      "word": "ALTMAN",
+      "type": 0
+    },
+    {
+      "word": "TRUMAN",
+      "type": 0
+    },
+    {
+      "word": "ÖDEVİN",
+      "type": 0
+    },
+    {
+      "word": "KORUMAN",
+      "type": 0
+    }
+  ],
+  "letters": "KIPÖÇ,OLADE,RTŞÜV,UMANİ",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

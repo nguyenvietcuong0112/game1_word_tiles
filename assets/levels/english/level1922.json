@@ -1,115 +1,171 @@
-﻿{
-    "id":  1922,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OWN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRIS",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RING",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WORN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SWORN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MORNING",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "MORA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MORN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MORNIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OWNING",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROWS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "WRING",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "IRING,SWNBR,MORAI",
-    "obstacles":  [
-                      {
-                          "required_words":  8,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1922,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "IMP",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "MILL",
+      "type": 0
+    },
+    {
+      "word": "MOOD",
+      "type": 0
+    },
+    {
+      "word": "RISE",
+      "type": 0
+    },
+    {
+      "word": "TRUE",
+      "type": 0
+    },
+    {
+      "word": "DOLLS",
+      "type": 0
+    },
+    {
+      "word": "CRUISE",
+      "type": 0
+    },
+    {
+      "word": "CRUISES",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "MIL",
+      "type": 0
+    },
+    {
+      "word": "MIM",
+      "type": 0
+    },
+    {
+      "word": "MOO",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "CLOD",
+      "type": 0
+    },
+    {
+      "word": "CRUS",
+      "type": 0
+    },
+    {
+      "word": "DOLL",
+      "type": 0
+    },
+    {
+      "word": "DOOM",
+      "type": 0
+    },
+    {
+      "word": "LIMO",
+      "type": 0
+    },
+    {
+      "word": "LIMP",
+      "type": 0
+    },
+    {
+      "word": "LOOM",
+      "type": 0
+    },
+    {
+      "word": "MILS",
+      "type": 0
+    },
+    {
+      "word": "MOOL",
+      "type": 0
+    },
+    {
+      "word": "RUES",
+      "type": 0
+    },
+    {
+      "word": "SIRS",
+      "type": 0
+    },
+    {
+      "word": "SLIM",
+      "type": 0
+    },
+    {
+      "word": "SRIS",
+      "type": 0
+    },
+    {
+      "word": "SUES",
+      "type": 0
+    },
+    {
+      "word": "PRISE",
+      "type": 0
+    },
+    {
+      "word": "RISES",
+      "type": 0
+    },
+    {
+      "word": "TRUES",
+      "type": 0
+    },
+    {
+      "word": "PRISES",
+      "type": 0
+    }
+  ],
+  "letters": "OODTS,MLCRS,ILSUE,MPRIS",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

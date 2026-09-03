@@ -1,85 +1,191 @@
-﻿{
-    "id":  1210,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REDE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SACA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CEDER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SACAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SECAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEDAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CADERNO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACEDER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ADERNO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARNO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ECAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "IAON,ACAR,SEDE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1210,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "GET",
+      "type": 0
+    },
+    {
+      "word": "IAM",
+      "type": 0
+    },
+    {
+      "word": "PAI",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "PEG",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "TOA",
+      "type": 0
+    },
+    {
+      "word": "FIRE",
+      "type": 0
+    },
+    {
+      "word": "MAPA",
+      "type": 0
+    },
+    {
+      "word": "FIRMA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "APA",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "EEG",
+      "type": 0
+    },
+    {
+      "word": "EEP",
+      "type": 0
+    },
+    {
+      "word": "EGG",
+      "type": 0
+    },
+    {
+      "word": "EPA",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "ERM",
+      "type": 0
+    },
+    {
+      "word": "FER",
+      "type": 0
+    },
+    {
+      "word": "FIA",
+      "type": 0
+    },
+    {
+      "word": "GEE",
+      "type": 0
+    },
+    {
+      "word": "GER",
+      "type": 0
+    },
+    {
+      "word": "MAI",
+      "type": 0
+    },
+    {
+      "word": "PAO",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "APTO",
+      "type": 0
+    },
+    {
+      "word": "FERE",
+      "type": 0
+    },
+    {
+      "word": "FERI",
+      "type": 0
+    },
+    {
+      "word": "GERE",
+      "type": 0
+    },
+    {
+      "word": "GERI",
+      "type": 0
+    },
+    {
+      "word": "IRMA",
+      "type": 0
+    },
+    {
+      "word": "PAIR",
+      "type": 0
+    },
+    {
+      "word": "PERI",
+      "type": 0
+    },
+    {
+      "word": "REGE",
+      "type": 0
+    },
+    {
+      "word": "RIAM",
+      "type": 0
+    },
+    {
+      "word": "TEEGER",
+      "type": 0
+    }
+  ],
+  "letters": "FEGG,IREE,AMPT,PAAO",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

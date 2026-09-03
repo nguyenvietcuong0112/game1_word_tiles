@@ -1,107 +1,219 @@
-﻿{
-    "id":  2083,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÜP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÜPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TANI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TANK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAZE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEZAT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TANIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEKMEZ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EKME",
-                            "type":  2
-                        },
-                        {
-                            "word":  "EZAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZAT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ZEMK,ANIE,TKÜP",
-    "obstacles":  [
-                      {
-                          "required_words":  8,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2083,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AİT",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TEK",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "AİLE",
+      "type": 0
+    },
+    {
+      "word": "EMRE",
+      "type": 0
+    },
+    {
+      "word": "ETTİ",
+      "type": 0
+    },
+    {
+      "word": "TAMAM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "LAİ",
+      "type": 0
+    },
+    {
+      "word": "LEİ",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MEİ",
+      "type": 0
+    },
+    {
+      "word": "PAİ",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAİ",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SAP",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SAİ",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "TİA",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "ALİA",
+      "type": 0
+    },
+    {
+      "word": "AMES",
+      "type": 0
+    },
+    {
+      "word": "LEİA",
+      "type": 0
+    },
+    {
+      "word": "MAMA",
+      "type": 0
+    },
+    {
+      "word": "MASA",
+      "type": 0
+    },
+    {
+      "word": "MATA",
+      "type": 0
+    },
+    {
+      "word": "SEAL",
+      "type": 0
+    },
+    {
+      "word": "TAMA",
+      "type": 0
+    },
+    {
+      "word": "TREK",
+      "type": 0
+    },
+    {
+      "word": "ARTİE",
+      "type": 0
+    },
+    {
+      "word": "ELİAS",
+      "type": 0
+    },
+    {
+      "word": "EMRET",
+      "type": 0
+    },
+    {
+      "word": "MESAİ",
+      "type": 0
+    },
+    {
+      "word": "TEKME",
+      "type": 0
+    },
+    {
+      "word": "EMRETTİ",
+      "type": 0
+    }
+  ],
+  "letters": "ATKET,MAMRT,SSEAİ,PAİLE",
+  "obstacles": []
 }

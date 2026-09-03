@@ -1,109 +1,235 @@
-﻿{
-    "id":  1093,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASÍ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALZA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOMO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LOMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CALDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CALMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CALZA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CALZADO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ALZADO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CALDA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DOM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOLSA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SAO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LOMO,SALD,ÍCZA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1093,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "ORO",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "POR",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "GRIS",
+      "type": 0
+    },
+    {
+      "word": "MANO",
+      "type": 0
+    },
+    {
+      "word": "PEOR",
+      "type": 0
+    },
+    {
+      "word": "PONE",
+      "type": 0
+    },
+    {
+      "word": "ROPA",
+      "type": 0
+    },
+    {
+      "word": "PONER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "ERO",
+      "type": 0
+    },
+    {
+      "word": "GEO",
+      "type": 0
+    },
+    {
+      "word": "GRO",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NOP",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "ONO",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "ORI",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "PEG",
+      "type": 0
+    },
+    {
+      "word": "PON",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "AMEN",
+      "type": 0
+    },
+    {
+      "word": "EREN",
+      "type": 0
+    },
+    {
+      "word": "IRON",
+      "type": 0
+    },
+    {
+      "word": "MERE",
+      "type": 0
+    },
+    {
+      "word": "MERO",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "NERO",
+      "type": 0
+    },
+    {
+      "word": "OREN",
+      "type": 0
+    },
+    {
+      "word": "REMA",
+      "type": 0
+    },
+    {
+      "word": "RENA",
+      "type": 0
+    },
+    {
+      "word": "RENO",
+      "type": 0
+    },
+    {
+      "word": "SIRE",
+      "type": 0
+    },
+    {
+      "word": "SIRO",
+      "type": 0
+    },
+    {
+      "word": "IRENA",
+      "type": 0
+    },
+    {
+      "word": "MANOR",
+      "type": 0
+    },
+    {
+      "word": "MENOR",
+      "type": 0
+    },
+    {
+      "word": "REMEN",
+      "type": 0
+    },
+    {
+      "word": "EMERGE",
+      "type": 0
+    },
+    {
+      "word": "SIRENA",
+      "type": 0
+    },
+    {
+      "word": "PROPANO",
+      "type": 0
+    }
+  ],
+  "letters": "SIRE,GREM,EONA,PROP",
+  "obstacles": []
 }

@@ -1,81 +1,259 @@
-﻿{
-    "id":  1316,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GÖL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GÖZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEMİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEZİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEZE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÖZEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÖZET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GÖLET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GÖZETİM",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EZEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GEZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TİM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÖGE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MİT,EZE,GÖL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1316,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACI",
+      "type": 0
+    },
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "KES",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LUC",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "İSE",
+      "type": 0
+    },
+    {
+      "word": "AKIL",
+      "type": 0
+    },
+    {
+      "word": "LİLA",
+      "type": 0
+    },
+    {
+      "word": "SİGARA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "CIK",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "KAC",
+      "type": 0
+    },
+    {
+      "word": "KIL",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LIK",
+      "type": 0
+    },
+    {
+      "word": "LİL",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MİS",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "SEK",
+      "type": 0
+    },
+    {
+      "word": "SİM",
+      "type": 0
+    },
+    {
+      "word": "UCA",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "ACIM",
+      "type": 0
+    },
+    {
+      "word": "AKIM",
+      "type": 0
+    },
+    {
+      "word": "ALIM",
+      "type": 0
+    },
+    {
+      "word": "AMES",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "GAME",
+      "type": 0
+    },
+    {
+      "word": "LARA",
+      "type": 0
+    },
+    {
+      "word": "LUCA",
+      "type": 0
+    },
+    {
+      "word": "LİRA",
+      "type": 0
+    },
+    {
+      "word": "MALI",
+      "type": 0
+    },
+    {
+      "word": "MALİ",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "MARİ",
+      "type": 0
+    },
+    {
+      "word": "İLIK",
+      "type": 0
+    },
+    {
+      "word": "İMAL",
+      "type": 0
+    },
+    {
+      "word": "ACIMA",
+      "type": 0
+    },
+    {
+      "word": "ARAMI",
+      "type": 0
+    },
+    {
+      "word": "KEMAL",
+      "type": 0
+    },
+    {
+      "word": "KESİM",
+      "type": 0
+    },
+    {
+      "word": "KILAR",
+      "type": 0
+    },
+    {
+      "word": "LULAR",
+      "type": 0
+    },
+    {
+      "word": "ACILAR",
+      "type": 0
+    },
+    {
+      "word": "ARALIK",
+      "type": 0
+    },
+    {
+      "word": "ARAMİS",
+      "type": 0
+    },
+    {
+      "word": "ACILARA",
+      "type": 0
+    },
+    {
+      "word": "SİGARAM",
+      "type": 0
+    },
+    {
+      "word": "SİGARAMI",
+      "type": 0
+    }
+  ],
+  "letters": "AGİS,RAME,İLIK,LUCA",
+  "obstacles": []
 }

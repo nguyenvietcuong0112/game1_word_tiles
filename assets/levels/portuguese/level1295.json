@@ -1,101 +1,267 @@
-﻿{
-    "id":  1295,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANHA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANHÃ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PINHA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VARÃO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AMANHÃ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APANHA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PINHÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APANHAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "APINHAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMANHAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARNO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MONDAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NHÃ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ONDAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PINA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "INHAV,PAÃRA,AMOND",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1295,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "ESTA",
+      "type": 0
+    },
+    {
+      "word": "ESTE",
+      "type": 0
+    },
+    {
+      "word": "RENE",
+      "type": 0
+    },
+    {
+      "word": "BESTA",
+      "type": 0
+    },
+    {
+      "word": "DESTA",
+      "type": 0
+    },
+    {
+      "word": "DESTE",
+      "type": 0
+    },
+    {
+      "word": "ESTAS",
+      "type": 0
+    },
+    {
+      "word": "ESTES",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "DES",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "ENA",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "ETC",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "TET",
+      "type": 0
+    },
+    {
+      "word": "ATER",
+      "type": 0
+    },
+    {
+      "word": "BEST",
+      "type": 0
+    },
+    {
+      "word": "CODE",
+      "type": 0
+    },
+    {
+      "word": "EREN",
+      "type": 0
+    },
+    {
+      "word": "NATE",
+      "type": 0
+    },
+    {
+      "word": "NETA",
+      "type": 0
+    },
+    {
+      "word": "RENA",
+      "type": 0
+    },
+    {
+      "word": "RETA",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SETE",
+      "type": 0
+    },
+    {
+      "word": "SETS",
+      "type": 0
+    },
+    {
+      "word": "STAN",
+      "type": 0
+    },
+    {
+      "word": "STEN",
+      "type": 0
+    },
+    {
+      "word": "TETA",
+      "type": 0
+    },
+    {
+      "word": "CRETA",
+      "type": 0
+    },
+    {
+      "word": "ERETA",
+      "type": 0
+    },
+    {
+      "word": "ESTER",
+      "type": 0
+    },
+    {
+      "word": "NETAS",
+      "type": 0
+    },
+    {
+      "word": "RENAS",
+      "type": 0
+    },
+    {
+      "word": "RETAS",
+      "type": 0
+    },
+    {
+      "word": "TETAS",
+      "type": 0
+    },
+    {
+      "word": "BESTAS",
+      "type": 0
+    },
+    {
+      "word": "BESTER",
+      "type": 0
+    },
+    {
+      "word": "DESTAS",
+      "type": 0
+    },
+    {
+      "word": "DESTES",
+      "type": 0
+    },
+    {
+      "word": "ESTASE",
+      "type": 0
+    },
+    {
+      "word": "ESTERCO",
+      "type": 0
+    }
+  ],
+  "letters": "OCRE,DTEN,ESTA,BTES",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

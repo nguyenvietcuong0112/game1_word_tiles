@@ -1,89 +1,231 @@
-﻿{
-    "id":  625,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORÓ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOCAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANCOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRANCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRANCAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "COTÓ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OCAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RANCORA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ROAN",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ROCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TRANCO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NCA,AOR,RTÓ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 625,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "TEM",
+      "type": 0
+    },
+    {
+      "word": "VIA",
+      "type": 0
+    },
+    {
+      "word": "VÃO",
+      "type": 0
+    },
+    {
+      "word": "AÇÃO",
+      "type": 0
+    },
+    {
+      "word": "LEVA",
+      "type": 0
+    },
+    {
+      "word": "PETE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "AVI",
+      "type": 0
+    },
+    {
+      "word": "ELI",
+      "type": 0
+    },
+    {
+      "word": "EPA",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "EVO",
+      "type": 0
+    },
+    {
+      "word": "IVO",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "LIV",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "OVA",
+      "type": 0
+    },
+    {
+      "word": "OVE",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "PEM",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TOA",
+      "type": 0
+    },
+    {
+      "word": "TOV",
+      "type": 0
+    },
+    {
+      "word": "VEL",
+      "type": 0
+    },
+    {
+      "word": "VET",
+      "type": 0
+    },
+    {
+      "word": "VIL",
+      "type": 0
+    },
+    {
+      "word": "VOA",
+      "type": 0
+    },
+    {
+      "word": "ELIA",
+      "type": 0
+    },
+    {
+      "word": "EVIL",
+      "type": 0
+    },
+    {
+      "word": "LEVI",
+      "type": 0
+    },
+    {
+      "word": "LEVO",
+      "type": 0
+    },
+    {
+      "word": "LIVE",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "METO",
+      "type": 0
+    },
+    {
+      "word": "PATO",
+      "type": 0
+    },
+    {
+      "word": "PETA",
+      "type": 0
+    },
+    {
+      "word": "TAPE",
+      "type": 0
+    },
+    {
+      "word": "TATE",
+      "type": 0
+    },
+    {
+      "word": "TATO",
+      "type": 0
+    },
+    {
+      "word": "VETE",
+      "type": 0
+    },
+    {
+      "word": "VOTA",
+      "type": 0
+    },
+    {
+      "word": "VOTE",
+      "type": 0
+    },
+    {
+      "word": "PATEL",
+      "type": 0
+    },
+    {
+      "word": "PAVEL",
+      "type": 0
+    },
+    {
+      "word": "VOTEM",
+      "type": 0
+    },
+    {
+      "word": "TAPETE",
+      "type": 0
+    },
+    {
+      "word": "AVIAÇÃO",
+      "type": 0
+    }
+  ],
+  "letters": "ÇÃVM,AOTE,IVAP,LETE",
+  "obstacles": []
 }

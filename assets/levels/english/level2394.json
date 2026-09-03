@@ -1,93 +1,91 @@
-﻿{
-    "id":  2394,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BYE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEAD",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DARE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TOAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEARD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOARD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEYBOARD",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOBY",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "KERD,EEAD,YBOT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2394,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "BUD",
+      "type": 0
+    },
+    {
+      "word": "BUS",
+      "type": 0
+    },
+    {
+      "word": "CUB",
+      "type": 0
+    },
+    {
+      "word": "DUB",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SUB",
+      "type": 0
+    },
+    {
+      "word": "BULB",
+      "type": 0
+    },
+    {
+      "word": "BUZZ",
+      "type": 0
+    },
+    {
+      "word": "BULBS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "SAU",
+      "type": 0
+    },
+    {
+      "word": "ULU",
+      "type": 0
+    },
+    {
+      "word": "BLUB",
+      "type": 0
+    },
+    {
+      "word": "SUBS",
+      "type": 0
+    },
+    {
+      "word": "BLUBS",
+      "type": 0
+    }
+  ],
+  "letters": "ZZBUC,BULUD,SUBBT,RASRE",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

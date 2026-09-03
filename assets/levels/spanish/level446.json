@@ -1,85 +1,243 @@
-﻿{
-    "id":  446,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TACO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARENA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASCUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RENTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUENTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUARENTA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CUAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CUERA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAC",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SCOC,AUAA,RENT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 446,
+  "width": 4,
+  "height": 3,
+  "target_words": [
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "ARMA",
+      "type": 0
+    },
+    {
+      "word": "BOCA",
+      "type": 0
+    },
+    {
+      "word": "ELLA",
+      "type": 0
+    },
+    {
+      "word": "LLAMO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "BAM",
+      "type": 0
+    },
+    {
+      "word": "BEA",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "BOM",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "CAB",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "COM",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LLA",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MEA",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MOB",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "ABEL",
+      "type": 0
+    },
+    {
+      "word": "ABRA",
+      "type": 0
+    },
+    {
+      "word": "ALLA",
+      "type": 0
+    },
+    {
+      "word": "BACO",
+      "type": 0
+    },
+    {
+      "word": "BEAR",
+      "type": 0
+    },
+    {
+      "word": "BELA",
+      "type": 0
+    },
+    {
+      "word": "BELL",
+      "type": 0
+    },
+    {
+      "word": "CABE",
+      "type": 0
+    },
+    {
+      "word": "CABO",
+      "type": 0
+    },
+    {
+      "word": "COMA",
+      "type": 0
+    },
+    {
+      "word": "COME",
+      "type": 0
+    },
+    {
+      "word": "LAME",
+      "type": 0
+    },
+    {
+      "word": "LEAL",
+      "type": 0
+    },
+    {
+      "word": "LEAR",
+      "type": 0
+    },
+    {
+      "word": "LEMA",
+      "type": 0
+    },
+    {
+      "word": "MALL",
+      "type": 0
+    },
+    {
+      "word": "MEAR",
+      "type": 0
+    },
+    {
+      "word": "MOCA",
+      "type": 0
+    },
+    {
+      "word": "OBRA",
+      "type": 0
+    },
+    {
+      "word": "BELLA",
+      "type": 0
+    },
+    {
+      "word": "CABRA",
+      "type": 0
+    },
+    {
+      "word": "COBRA",
+      "type": 0
+    },
+    {
+      "word": "LLAME",
+      "type": 0
+    },
+    {
+      "word": "MABEL",
+      "type": 0
+    },
+    {
+      "word": "MALLA",
+      "type": 0
+    },
+    {
+      "word": "MELLA",
+      "type": 0
+    }
+  ],
+  "letters": "MRAL,ABEL,COMA",
+  "obstacles": []
 }

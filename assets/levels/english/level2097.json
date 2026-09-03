@@ -1,94 +1,271 @@
-﻿{
-    "id":  2097,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLUR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LUSH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUSH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLURT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLUSH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRUSH",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LIEU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LUST",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "IEH,LUS,BRT",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2097,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "BIN",
+      "type": 0
+    },
+    {
+      "word": "BIT",
+      "type": 0
+    },
+    {
+      "word": "BUT",
+      "type": 0
+    },
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "GET",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "MIB",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "CASE",
+      "type": 0
+    },
+    {
+      "word": "CAST",
+      "type": 0
+    },
+    {
+      "word": "ACTING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BEG",
+      "type": 0
+    },
+    {
+      "word": "BET",
+      "type": 0
+    },
+    {
+      "word": "BUM",
+      "type": 0
+    },
+    {
+      "word": "ERG",
+      "type": 0
+    },
+    {
+      "word": "ERN",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "MUT",
+      "type": 0
+    },
+    {
+      "word": "NIB",
+      "type": 0
+    },
+    {
+      "word": "NIM",
+      "type": 0
+    },
+    {
+      "word": "NIT",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TEG",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "TUB",
+      "type": 0
+    },
+    {
+      "word": "VEG",
+      "type": 0
+    },
+    {
+      "word": "ACTS",
+      "type": 0
+    },
+    {
+      "word": "BINS",
+      "type": 0
+    },
+    {
+      "word": "BITS",
+      "type": 0
+    },
+    {
+      "word": "BUTE",
+      "type": 0
+    },
+    {
+      "word": "ERNS",
+      "type": 0
+    },
+    {
+      "word": "EVES",
+      "type": 0
+    },
+    {
+      "word": "GEST",
+      "type": 0
+    },
+    {
+      "word": "MUTE",
+      "type": 0
+    },
+    {
+      "word": "NITS",
+      "type": 0
+    },
+    {
+      "word": "SNIB",
+      "type": 0
+    },
+    {
+      "word": "SNIT",
+      "type": 0
+    },
+    {
+      "word": "TERN",
+      "type": 0
+    },
+    {
+      "word": "TING",
+      "type": 0
+    },
+    {
+      "word": "TINS",
+      "type": 0
+    },
+    {
+      "word": "TUBE",
+      "type": 0
+    },
+    {
+      "word": "VEST",
+      "type": 0
+    },
+    {
+      "word": "ACTIN",
+      "type": 0
+    },
+    {
+      "word": "BINGE",
+      "type": 0
+    },
+    {
+      "word": "EGEST",
+      "type": 0
+    },
+    {
+      "word": "EGRET",
+      "type": 0
+    },
+    {
+      "word": "INSET",
+      "type": 0
+    },
+    {
+      "word": "SEGNI",
+      "type": 0
+    },
+    {
+      "word": "SERGE",
+      "type": 0
+    },
+    {
+      "word": "SNITS",
+      "type": 0
+    },
+    {
+      "word": "STING",
+      "type": 0
+    },
+    {
+      "word": "TERNS",
+      "type": 0
+    },
+    {
+      "word": "TINGE",
+      "type": 0
+    },
+    {
+      "word": "ACTINS",
+      "type": 0
+    },
+    {
+      "word": "BINGES",
+      "type": 0
+    },
+    {
+      "word": "INGEST",
+      "type": 0
+    },
+    {
+      "word": "TINGES",
+      "type": 0
+    },
+    {
+      "word": "TUBING",
+      "type": 0
+    },
+    {
+      "word": "CASTING",
+      "type": 0
+    },
+    {
+      "word": "VESTING",
+      "type": 0
+    }
+  ],
+  "letters": "VESET,EGNRG,STIBE,ACMUT",
+  "obstacles": []
 }

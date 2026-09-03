@@ -1,65 +1,95 @@
-﻿{
-    "id":  810,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ИОН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПИК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КИНО",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПОНИ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ХИЩНИК",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ИНОК",
-                            "type":  1
-                        },
-                        {
-                            "word":  "КОП",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НИК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОНИ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ПИКИ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ПОН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ХИЩНО",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ИКИ,ПОН,ХИЩ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 810,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ДЕД",
+      "type": 0
+    },
+    {
+      "word": "МЕЛ",
+      "type": 0
+    },
+    {
+      "word": "ХОД",
+      "type": 0
+    },
+    {
+      "word": "ВХОД",
+      "type": 0
+    },
+    {
+      "word": "ИДЕЙ",
+      "type": 0
+    },
+    {
+      "word": "ЛЖЕТ",
+      "type": 0
+    },
+    {
+      "word": "ЛЖЕЦ",
+      "type": 0
+    },
+    {
+      "word": "ВХОДИ",
+      "type": 0
+    },
+    {
+      "word": "СХОДИ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ИДЕ",
+      "type": 0
+    },
+    {
+      "word": "ЛЕМ",
+      "type": 0
+    },
+    {
+      "word": "МЕИ",
+      "type": 0
+    },
+    {
+      "word": "ОДИ",
+      "type": 0
+    },
+    {
+      "word": "ЕДОЙ",
+      "type": 0
+    },
+    {
+      "word": "ХОДЕ",
+      "type": 0
+    },
+    {
+      "word": "ХОДИ",
+      "type": 0
+    },
+    {
+      "word": "ВХОДЕ",
+      "type": 0
+    }
+  ],
+  "letters": "СХВЦ,ЙОЖЕ,ЕДЛТ,ДИЕМ",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

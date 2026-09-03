@@ -1,69 +1,263 @@
-﻿{
-    "id":  2101,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AURA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAMP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRADE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COMPEL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ECO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GRAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAD",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "URAMP,ADEOE,RGECL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2101,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "COL",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "LOG",
+      "type": 0
+    },
+    {
+      "word": "MOO",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "UPS",
+      "type": 0
+    },
+    {
+      "word": "REAL",
+      "type": 0
+    },
+    {
+      "word": "SHORE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "COG",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "OHS",
+      "type": 0
+    },
+    {
+      "word": "ORC",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "PUS",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SUP",
+      "type": 0
+    },
+    {
+      "word": "AERO",
+      "type": 0
+    },
+    {
+      "word": "CLAM",
+      "type": 0
+    },
+    {
+      "word": "HEAL",
+      "type": 0
+    },
+    {
+      "word": "HERO",
+      "type": 0
+    },
+    {
+      "word": "IRES",
+      "type": 0
+    },
+    {
+      "word": "LAIR",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "MAES",
+      "type": 0
+    },
+    {
+      "word": "MAIR",
+      "type": 0
+    },
+    {
+      "word": "MALL",
+      "type": 0
+    },
+    {
+      "word": "OLLA",
+      "type": 0
+    },
+    {
+      "word": "ORES",
+      "type": 0
+    },
+    {
+      "word": "PUSH",
+      "type": 0
+    },
+    {
+      "word": "PUSS",
+      "type": 0
+    },
+    {
+      "word": "REAM",
+      "type": 0
+    },
+    {
+      "word": "RIAL",
+      "type": 0
+    },
+    {
+      "word": "SEAL",
+      "type": 0
+    },
+    {
+      "word": "SEAM",
+      "type": 0
+    },
+    {
+      "word": "SHEA",
+      "type": 0
+    },
+    {
+      "word": "SHES",
+      "type": 0
+    },
+    {
+      "word": "SLAM",
+      "type": 0
+    },
+    {
+      "word": "SUPS",
+      "type": 0
+    },
+    {
+      "word": "HEALS",
+      "type": 0
+    },
+    {
+      "word": "LLAMA",
+      "type": 0
+    },
+    {
+      "word": "REALS",
+      "type": 0
+    },
+    {
+      "word": "RIALS",
+      "type": 0
+    },
+    {
+      "word": "SHEAL",
+      "type": 0
+    },
+    {
+      "word": "USHER",
+      "type": 0
+    },
+    {
+      "word": "CLAMOR",
+      "type": 0
+    },
+    {
+      "word": "PUSHER",
+      "type": 0
+    },
+    {
+      "word": "PUSHES",
+      "type": 0
+    },
+    {
+      "word": "SERIAL",
+      "type": 0
+    },
+    {
+      "word": "SHEALS",
+      "type": 0
+    },
+    {
+      "word": "SHORES",
+      "type": 0
+    }
+  ],
+  "letters": "OAIRO,OMAEH,RCLSS,GOLPU",
+  "obstacles": []
 }

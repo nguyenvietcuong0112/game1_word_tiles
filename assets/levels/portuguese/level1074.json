@@ -1,105 +1,299 @@
-﻿{
-    "id":  1074,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AULA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VILA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TERRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VALIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RETALIAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALUAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARRITE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ATER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ITA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LATER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RETAL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VATE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ZUAR,ILIR,VATE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1074,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "RAJ",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "VER",
+      "type": 0
+    },
+    {
+      "word": "VIR",
+      "type": 0
+    },
+    {
+      "word": "IREI",
+      "type": 0
+    },
+    {
+      "word": "LEVA",
+      "type": 0
+    },
+    {
+      "word": "LEVE",
+      "type": 0
+    },
+    {
+      "word": "LEVAR",
+      "type": 0
+    },
+    {
+      "word": "AVISAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "AVI",
+      "type": 0
+    },
+    {
+      "word": "EIE",
+      "type": 0
+    },
+    {
+      "word": "ELI",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "ISA",
+      "type": 0
+    },
+    {
+      "word": "JAR",
+      "type": 0
+    },
+    {
+      "word": "JER",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "LIV",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "SAV",
+      "type": 0
+    },
+    {
+      "word": "VEL",
+      "type": 0
+    },
+    {
+      "word": "VIL",
+      "type": 0
+    },
+    {
+      "word": "VIS",
+      "type": 0
+    },
+    {
+      "word": "ARAS",
+      "type": 0
+    },
+    {
+      "word": "AVES",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "EVER",
+      "type": 0
+    },
+    {
+      "word": "EVIL",
+      "type": 0
+    },
+    {
+      "word": "IVAR",
+      "type": 0
+    },
+    {
+      "word": "IVES",
+      "type": 0
+    },
+    {
+      "word": "JAVA",
+      "type": 0
+    },
+    {
+      "word": "JAVI",
+      "type": 0
+    },
+    {
+      "word": "LEVI",
+      "type": 0
+    },
+    {
+      "word": "LIVE",
+      "type": 0
+    },
+    {
+      "word": "RAVE",
+      "type": 0
+    },
+    {
+      "word": "RAVI",
+      "type": 0
+    },
+    {
+      "word": "REVI",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "SAVE",
+      "type": 0
+    },
+    {
+      "word": "SAVI",
+      "type": 0
+    },
+    {
+      "word": "VARA",
+      "type": 0
+    },
+    {
+      "word": "VERA",
+      "type": 0
+    },
+    {
+      "word": "VIRE",
+      "type": 0
+    },
+    {
+      "word": "VISA",
+      "type": 0
+    },
+    {
+      "word": "AVISA",
+      "type": 0
+    },
+    {
+      "word": "AVISE",
+      "type": 0
+    },
+    {
+      "word": "ILESA",
+      "type": 0
+    },
+    {
+      "word": "LEVAS",
+      "type": 0
+    },
+    {
+      "word": "LEVEI",
+      "type": 0
+    },
+    {
+      "word": "LIVES",
+      "type": 0
+    },
+    {
+      "word": "RAVES",
+      "type": 0
+    },
+    {
+      "word": "RIVER",
+      "type": 0
+    },
+    {
+      "word": "VARAS",
+      "type": 0
+    },
+    {
+      "word": "VEREI",
+      "type": 0
+    },
+    {
+      "word": "VIREI",
+      "type": 0
+    },
+    {
+      "word": "LEVARA",
+      "type": 0
+    },
+    {
+      "word": "LEVAVA",
+      "type": 0
+    },
+    {
+      "word": "RIVERA",
+      "type": 0
+    },
+    {
+      "word": "SEVERA",
+      "type": 0
+    },
+    {
+      "word": "EVASIVA",
+      "type": 0
+    },
+    {
+      "word": "LEVAREI",
+      "type": 0
+    },
+    {
+      "word": "REVIREI",
+      "type": 0
+    },
+    {
+      "word": "AVISAREI",
+      "type": 0
+    }
+  ],
+  "letters": "EIEJ,RERA,IVAV,LESI",
+  "obstacles": []
 }

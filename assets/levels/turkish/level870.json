@@ -1,73 +1,103 @@
-﻿{
-    "id":  870,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İLK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KRAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KASET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KRALİYET",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKİL",
-                            "type":  1
-                        },
-                        {
-                            "word":  "AYET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KİYASET",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SAKİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAKİL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SETA,AYKR,KİLA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 870,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADİ",
+      "type": 0
+    },
+    {
+      "word": "DİZ",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "YLA",
+      "type": 0
+    },
+    {
+      "word": "AYDA",
+      "type": 0
+    },
+    {
+      "word": "BORCU",
+      "type": 0
+    },
+    {
+      "word": "KAYDA",
+      "type": 0
+    },
+    {
+      "word": "SUYLA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "KAC",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "UCA",
+      "type": 0
+    },
+    {
+      "word": "YAA",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "YDİ",
+      "type": 0
+    },
+    {
+      "word": "İDA",
+      "type": 0
+    },
+    {
+      "word": "AKLA",
+      "type": 0
+    },
+    {
+      "word": "LADY",
+      "type": 0
+    },
+    {
+      "word": "BORCA",
+      "type": 0
+    }
+  ],
+  "letters": "UYBO,SLKR,ZAAC,İDYU",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,89 +1,243 @@
-﻿{
-    "id":  792,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MITE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TIDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADMIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DILATE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LITE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MALI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MID",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ANDE,DMIT,EALA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 792,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "LINE",
+      "type": 0
+    },
+    {
+      "word": "SALE",
+      "type": 0
+    },
+    {
+      "word": "SPIN",
+      "type": 0
+    },
+    {
+      "word": "ANGLE",
+      "type": 0
+    },
+    {
+      "word": "LOVING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ENG",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "LIP",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "NIP",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "ALAS",
+      "type": 0
+    },
+    {
+      "word": "ALES",
+      "type": 0
+    },
+    {
+      "word": "ANIL",
+      "type": 0
+    },
+    {
+      "word": "ELAN",
+      "type": 0
+    },
+    {
+      "word": "ENGS",
+      "type": 0
+    },
+    {
+      "word": "GLEN",
+      "type": 0
+    },
+    {
+      "word": "LANG",
+      "type": 0
+    },
+    {
+      "word": "LASE",
+      "type": 0
+    },
+    {
+      "word": "LING",
+      "type": 0
+    },
+    {
+      "word": "LIPS",
+      "type": 0
+    },
+    {
+      "word": "NIPS",
+      "type": 0
+    },
+    {
+      "word": "PINA",
+      "type": 0
+    },
+    {
+      "word": "PINE",
+      "type": 0
+    },
+    {
+      "word": "PING",
+      "type": 0
+    },
+    {
+      "word": "SANE",
+      "type": 0
+    },
+    {
+      "word": "SANG",
+      "type": 0
+    },
+    {
+      "word": "SPIV",
+      "type": 0
+    },
+    {
+      "word": "VINA",
+      "type": 0
+    },
+    {
+      "word": "VINE",
+      "type": 0
+    },
+    {
+      "word": "ALANE",
+      "type": 0
+    },
+    {
+      "word": "ALANG",
+      "type": 0
+    },
+    {
+      "word": "ALINE",
+      "type": 0
+    },
+    {
+      "word": "INGLE",
+      "type": 0
+    },
+    {
+      "word": "LINGS",
+      "type": 0
+    },
+    {
+      "word": "OVINE",
+      "type": 0
+    },
+    {
+      "word": "PENAL",
+      "type": 0
+    },
+    {
+      "word": "PINAS",
+      "type": 0
+    },
+    {
+      "word": "PINGS",
+      "type": 0
+    },
+    {
+      "word": "SALAL",
+      "type": 0
+    },
+    {
+      "word": "SALOL",
+      "type": 0
+    },
+    {
+      "word": "SPINE",
+      "type": 0
+    },
+    {
+      "word": "VINAL",
+      "type": 0
+    },
+    {
+      "word": "VINAS",
+      "type": 0
+    },
+    {
+      "word": "SALINE",
+      "type": 0
+    },
+    {
+      "word": "SPINAL",
+      "type": 0
+    },
+    {
+      "word": "SPINEL",
+      "type": 0
+    },
+    {
+      "word": "VOLING",
+      "type": 0
+    }
+  ],
+  "letters": "SVOL,PILA,ENAL,LGSE",
+  "obstacles": []
 }

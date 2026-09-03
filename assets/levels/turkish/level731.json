@@ -1,65 +1,255 @@
-﻿{
-    "id":  731,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DEV",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DERİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DERT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VERİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEVİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEDER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VERİM",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DEVİM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EDER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KERE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KERİM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KTM,ERİ,DEV",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 731,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEK",
+      "type": 0
+    },
+    {
+      "word": "SES",
+      "type": 0
+    },
+    {
+      "word": "İSE",
+      "type": 0
+    },
+    {
+      "word": "DEKİ",
+      "type": 0
+    },
+    {
+      "word": "SERT",
+      "type": 0
+    },
+    {
+      "word": "SESİ",
+      "type": 0
+    },
+    {
+      "word": "ŞAİR",
+      "type": 0
+    },
+    {
+      "word": "KADAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "AİR",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "DRE",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "ERİ",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "KAİ",
+      "type": 0
+    },
+    {
+      "word": "KAŞ",
+      "type": 0
+    },
+    {
+      "word": "KEİ",
+      "type": 0
+    },
+    {
+      "word": "KİR",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "REİ",
+      "type": 0
+    },
+    {
+      "word": "RİA",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SİR",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "İKE",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "ŞAK",
+      "type": 0
+    },
+    {
+      "word": "ADAK",
+      "type": 0
+    },
+    {
+      "word": "AKAR",
+      "type": 0
+    },
+    {
+      "word": "DERİ",
+      "type": 0
+    },
+    {
+      "word": "ERİK",
+      "type": 0
+    },
+    {
+      "word": "ESİR",
+      "type": 0
+    },
+    {
+      "word": "KARE",
+      "type": 0
+    },
+    {
+      "word": "KARİ",
+      "type": 0
+    },
+    {
+      "word": "KİRA",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "REİS",
+      "type": 0
+    },
+    {
+      "word": "RİKA",
+      "type": 0
+    },
+    {
+      "word": "SERİ",
+      "type": 0
+    },
+    {
+      "word": "İRAK",
+      "type": 0
+    },
+    {
+      "word": "ADRES",
+      "type": 0
+    },
+    {
+      "word": "AKİRA",
+      "type": 0
+    },
+    {
+      "word": "AİRES",
+      "type": 0
+    },
+    {
+      "word": "ERİKA",
+      "type": 0
+    },
+    {
+      "word": "KADER",
+      "type": 0
+    },
+    {
+      "word": "STRES",
+      "type": 0
+    },
+    {
+      "word": "TAKAR",
+      "type": 0
+    },
+    {
+      "word": "İRADE",
+      "type": 0
+    },
+    {
+      "word": "ADRESİ",
+      "type": 0
+    },
+    {
+      "word": "KADERİ",
+      "type": 0
+    },
+    {
+      "word": "KAİSER",
+      "type": 0
+    },
+    {
+      "word": "STRESİ",
+      "type": 0
+    }
+  ],
+  "letters": "İKAŞ,REİS,ADRE,KATS",
+  "obstacles": []
 }

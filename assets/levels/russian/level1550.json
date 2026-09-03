@@ -1,95 +1,123 @@
-﻿{
-    "id":  1550,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "АКТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БАК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТЮК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БАНК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БАНТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТАНК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КАБАН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КАНАТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "НАБАТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТАБАК",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АНА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "АНК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "БАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "БАТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАБ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАНТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТАН",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "КТЮ,АНК,БАТ",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1550,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ВЕЛ",
+      "type": 0
+    },
+    {
+      "word": "ЛЕВ",
+      "type": 0
+    },
+    {
+      "word": "ЛИЗ",
+      "type": 0
+    },
+    {
+      "word": "РЕЙ",
+      "type": 0
+    },
+    {
+      "word": "РИЗ",
+      "type": 0
+    },
+    {
+      "word": "РИС",
+      "type": 0
+    },
+    {
+      "word": "РОС",
+      "type": 0
+    },
+    {
+      "word": "СИЛ",
+      "type": 0
+    },
+    {
+      "word": "СИР",
+      "type": 0
+    },
+    {
+      "word": "МЮЗИКЛ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ЗИК",
+      "type": 0
+    },
+    {
+      "word": "ИЗИ",
+      "type": 0
+    },
+    {
+      "word": "КИС",
+      "type": 0
+    },
+    {
+      "word": "ЛИР",
+      "type": 0
+    },
+    {
+      "word": "ЛИС",
+      "type": 0
+    },
+    {
+      "word": "МЮЛ",
+      "type": 0
+    },
+    {
+      "word": "ОРИ",
+      "type": 0
+    },
+    {
+      "word": "ОСИ",
+      "type": 0
+    },
+    {
+      "word": "СИК",
+      "type": 0
+    },
+    {
+      "word": "ЮЛИ",
+      "type": 0
+    },
+    {
+      "word": "ЕЛКИ",
+      "type": 0
+    },
+    {
+      "word": "ИЗЮМ",
+      "type": 0
+    },
+    {
+      "word": "РЕЙЛИ",
+      "type": 0
+    },
+    {
+      "word": "МЮЗИКЛЕ",
+      "type": 0
+    }
+  ],
+  "letters": "ЕРМВ,ЙЛЮЕ,РИЗЛ,ОСИК",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

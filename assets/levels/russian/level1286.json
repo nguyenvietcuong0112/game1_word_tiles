@@ -1,123 +1,59 @@
-﻿{
-    "id":  1286,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "БОК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЖУК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ИКС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КИТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "НОС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СОК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СНОБ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СНОС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОСТИ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "НОСКИ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "НОСОК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СУКНО",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "БОН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КОБ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КОС",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КОСО",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КУС",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОБО",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОБОК",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ОСТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СКИТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СОН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СТИК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТИК",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ЖИТК,УКСО,СНОБ",
-    "obstacles":  [
-                      {
-                          "required_words":  8,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1286,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ДАК",
+      "type": 0
+    },
+    {
+      "word": "ДЕС",
+      "type": 0
+    },
+    {
+      "word": "ДРЕ",
+      "type": 0
+    },
+    {
+      "word": "СЕР",
+      "type": 0
+    },
+    {
+      "word": "ЦДЕ",
+      "type": 0
+    },
+    {
+      "word": "КАДР",
+      "type": 0
+    },
+    {
+      "word": "АДРЕС",
+      "type": 0
+    },
+    {
+      "word": "КАДРЕ",
+      "type": 0
+    },
+    {
+      "word": "СЛУШАЮ",
+      "type": 0
+    },
+    {
+      "word": "СЛУШАЮТ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "КЕС",
+      "type": 0
+    },
+    {
+      "word": "СЕК",
+      "type": 0
+    }
+  ],
+  "letters": "ДРЕС,АКЕД,УЛСЦ,ШАЮТ",
+  "obstacles": []
 }

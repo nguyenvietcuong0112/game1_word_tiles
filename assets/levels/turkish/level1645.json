@@ -1,113 +1,119 @@
-﻿{
-    "id":  1645,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KESE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKMEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MERCEK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SEKMEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SERMEK",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CEMRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EKME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EMCEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERMEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESERME",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ESERMEK",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KEMRE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KERE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KEREM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KERES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KESER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEREK",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MERES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEKME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SERME",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KMEK,ERCL,SEMA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1645,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CHİ",
+      "type": 0
+    },
+    {
+      "word": "LER",
+      "type": 0
+    },
+    {
+      "word": "SEÇ",
+      "type": 0
+    },
+    {
+      "word": "SİZ",
+      "type": 0
+    },
+    {
+      "word": "İAN",
+      "type": 0
+    },
+    {
+      "word": "İSE",
+      "type": 0
+    },
+    {
+      "word": "İÇE",
+      "type": 0
+    },
+    {
+      "word": "LUİS",
+      "type": 0
+    },
+    {
+      "word": "İZLE",
+      "type": 0
+    },
+    {
+      "word": "SİZLER",
+      "type": 0
+    },
+    {
+      "word": "SİZLERE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "CHE",
+      "type": 0
+    },
+    {
+      "word": "LUC",
+      "type": 0
+    },
+    {
+      "word": "NAİ",
+      "type": 0
+    },
+    {
+      "word": "REİ",
+      "type": 0
+    },
+    {
+      "word": "İSİ",
+      "type": 0
+    },
+    {
+      "word": "CHİE",
+      "type": 0
+    },
+    {
+      "word": "LERE",
+      "type": 0
+    },
+    {
+      "word": "LUCE",
+      "type": 0
+    },
+    {
+      "word": "SEUL",
+      "type": 0
+    },
+    {
+      "word": "SİZLE",
+      "type": 0
+    },
+    {
+      "word": "İZLER",
+      "type": 0
+    },
+    {
+      "word": "İZLERE",
+      "type": 0
+    }
+  ],
+  "letters": "RELZ,ECUİ,İHES,ANÇİ",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,69 +1,231 @@
-﻿{
-    "id":  1360,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AXLE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LEAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAKE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "REAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRAKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SNEAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SNEAKER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAX",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NEAKE,SREAR,AXLKB",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1360,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BIT",
+      "type": 0
+    },
+    {
+      "word": "BOW",
+      "type": 0
+    },
+    {
+      "word": "FAT",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "BITS",
+      "type": 0
+    },
+    {
+      "word": "HOST",
+      "type": 0
+    },
+    {
+      "word": "TOES",
+      "type": 0
+    },
+    {
+      "word": "STATS",
+      "type": 0
+    },
+    {
+      "word": "THOSE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BIO",
+      "type": 0
+    },
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "OAF",
+      "type": 0
+    },
+    {
+      "word": "OAT",
+      "type": 0
+    },
+    {
+      "word": "OBI",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "OOT",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TAT",
+      "type": 0
+    },
+    {
+      "word": "THO",
+      "type": 0
+    },
+    {
+      "word": "TOE",
+      "type": 0
+    },
+    {
+      "word": "TOW",
+      "type": 0
+    },
+    {
+      "word": "WOE",
+      "type": 0
+    },
+    {
+      "word": "WOO",
+      "type": 0
+    },
+    {
+      "word": "WOT",
+      "type": 0
+    },
+    {
+      "word": "BOWS",
+      "type": 0
+    },
+    {
+      "word": "FATS",
+      "type": 0
+    },
+    {
+      "word": "HOSE",
+      "type": 0
+    },
+    {
+      "word": "OAFS",
+      "type": 0
+    },
+    {
+      "word": "OATH",
+      "type": 0
+    },
+    {
+      "word": "OATS",
+      "type": 0
+    },
+    {
+      "word": "OBIT",
+      "type": 0
+    },
+    {
+      "word": "OOTS",
+      "type": 0
+    },
+    {
+      "word": "OSES",
+      "type": 0
+    },
+    {
+      "word": "OWSE",
+      "type": 0
+    },
+    {
+      "word": "STAT",
+      "type": 0
+    },
+    {
+      "word": "STOW",
+      "type": 0
+    },
+    {
+      "word": "SWOB",
+      "type": 0
+    },
+    {
+      "word": "SWOT",
+      "type": 0
+    },
+    {
+      "word": "TATS",
+      "type": 0
+    },
+    {
+      "word": "TOWS",
+      "type": 0
+    },
+    {
+      "word": "WOES",
+      "type": 0
+    },
+    {
+      "word": "WOTS",
+      "type": 0
+    },
+    {
+      "word": "BOWSE",
+      "type": 0
+    },
+    {
+      "word": "FATSO",
+      "type": 0
+    },
+    {
+      "word": "HOSES",
+      "type": 0
+    },
+    {
+      "word": "HOSTA",
+      "type": 0
+    },
+    {
+      "word": "OBITS",
+      "type": 0
+    },
+    {
+      "word": "STOWS",
+      "type": 0
+    },
+    {
+      "word": "SWOTS",
+      "type": 0
+    },
+    {
+      "word": "BOWSES",
+      "type": 0
+    }
+  ],
+  "letters": "BOWS,IOOE,TATS,SFHO",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

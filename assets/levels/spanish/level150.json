@@ -1,81 +1,323 @@
-﻿{
-    "id":  150,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VOZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SODIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DISFRAZ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARIO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "BARIO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FRISO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "IDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IDOS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RISO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SIDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZARZO",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "VOZZ,DIRA,OSFB",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 150,
+  "width": 4,
+  "height": 3,
+  "target_words": [
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "POR",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "CASA",
+      "type": 0
+    },
+    {
+      "word": "CERO",
+      "type": 0
+    },
+    {
+      "word": "ERES",
+      "type": 0
+    },
+    {
+      "word": "PONER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "ECO",
+      "type": 0
+    },
+    {
+      "word": "ENE",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERO",
+      "type": 0
+    },
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "NOP",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PON",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "CASE",
+      "type": 0
+    },
+    {
+      "word": "CENA",
+      "type": 0
+    },
+    {
+      "word": "CENE",
+      "type": 0
+    },
+    {
+      "word": "CENO",
+      "type": 0
+    },
+    {
+      "word": "CESA",
+      "type": 0
+    },
+    {
+      "word": "ENES",
+      "type": 0
+    },
+    {
+      "word": "EREN",
+      "type": 0
+    },
+    {
+      "word": "NASA",
+      "type": 0
+    },
+    {
+      "word": "NERO",
+      "type": 0
+    },
+    {
+      "word": "ONES",
+      "type": 0
+    },
+    {
+      "word": "OREN",
+      "type": 0
+    },
+    {
+      "word": "PASA",
+      "type": 0
+    },
+    {
+      "word": "PASE",
+      "type": 0
+    },
+    {
+      "word": "PONE",
+      "type": 0
+    },
+    {
+      "word": "RENA",
+      "type": 0
+    },
+    {
+      "word": "RENE",
+      "type": 0
+    },
+    {
+      "word": "RENO",
+      "type": 0
+    },
+    {
+      "word": "ROCA",
+      "type": 0
+    },
+    {
+      "word": "ROCE",
+      "type": 0
+    },
+    {
+      "word": "ROPA",
+      "type": 0
+    },
+    {
+      "word": "SACO",
+      "type": 0
+    },
+    {
+      "word": "SANE",
+      "type": 0
+    },
+    {
+      "word": "SANO",
+      "type": 0
+    },
+    {
+      "word": "SAPO",
+      "type": 0
+    },
+    {
+      "word": "SECA",
+      "type": 0
+    },
+    {
+      "word": "SECO",
+      "type": 0
+    },
+    {
+      "word": "SENA",
+      "type": 0
+    },
+    {
+      "word": "SENO",
+      "type": 0
+    },
+    {
+      "word": "SERE",
+      "type": 0
+    },
+    {
+      "word": "ACERO",
+      "type": 0
+    },
+    {
+      "word": "ASANO",
+      "type": 0
+    },
+    {
+      "word": "CASAN",
+      "type": 0
+    },
+    {
+      "word": "CASEN",
+      "type": 0
+    },
+    {
+      "word": "CENAS",
+      "type": 0
+    },
+    {
+      "word": "ENERO",
+      "type": 0
+    },
+    {
+      "word": "PANES",
+      "type": 0
+    },
+    {
+      "word": "PASEN",
+      "type": 0
+    },
+    {
+      "word": "PONES",
+      "type": 0
+    },
+    {
+      "word": "ROCAS",
+      "type": 0
+    },
+    {
+      "word": "ROCES",
+      "type": 0
+    },
+    {
+      "word": "ROPAS",
+      "type": 0
+    },
+    {
+      "word": "SENOR",
+      "type": 0
+    },
+    {
+      "word": "CASERO",
+      "type": 0
+    },
+    {
+      "word": "SERENA",
+      "type": 0
+    },
+    {
+      "word": "SERENO",
+      "type": 0
+    }
+  ],
+  "letters": "RERO,ONEC,PASA",
+  "obstacles": []
 }

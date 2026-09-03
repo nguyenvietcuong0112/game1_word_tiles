@@ -1,81 +1,255 @@
-﻿{
-    "id":  2205,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OPT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FELT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAFE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PATRON",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LOP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "FENNO,ALTTR,SOPAI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2205,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "SIS",
+      "type": 0
+    },
+    {
+      "word": "CARD",
+      "type": 0
+    },
+    {
+      "word": "CARE",
+      "type": 0
+    },
+    {
+      "word": "CASE",
+      "type": 0
+    },
+    {
+      "word": "SITE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIS",
+      "type": 0
+    },
+    {
+      "word": "CIS",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "GAE",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SIC",
+      "type": 0
+    },
+    {
+      "word": "SIT",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TIC",
+      "type": 0
+    },
+    {
+      "word": "TIS",
+      "type": 0
+    },
+    {
+      "word": "VEE",
+      "type": 0
+    },
+    {
+      "word": "VEG",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "ASEA",
+      "type": 0
+    },
+    {
+      "word": "CITE",
+      "type": 0
+    },
+    {
+      "word": "DEER",
+      "type": 0
+    },
+    {
+      "word": "DEES",
+      "type": 0
+    },
+    {
+      "word": "DEVS",
+      "type": 0
+    },
+    {
+      "word": "DREE",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "ETIC",
+      "type": 0
+    },
+    {
+      "word": "GAES",
+      "type": 0
+    },
+    {
+      "word": "GRIM",
+      "type": 0
+    },
+    {
+      "word": "RASE",
+      "type": 0
+    },
+    {
+      "word": "REED",
+      "type": 0
+    },
+    {
+      "word": "SARD",
+      "type": 0
+    },
+    {
+      "word": "SEED",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "VEER",
+      "type": 0
+    },
+    {
+      "word": "VEES",
+      "type": 0
+    },
+    {
+      "word": "CARES",
+      "type": 0
+    },
+    {
+      "word": "CITES",
+      "type": 0
+    },
+    {
+      "word": "DREED",
+      "type": 0
+    },
+    {
+      "word": "ERASE",
+      "type": 0
+    },
+    {
+      "word": "REEVE",
+      "type": 0
+    },
+    {
+      "word": "SAREE",
+      "type": 0
+    },
+    {
+      "word": "SERAC",
+      "type": 0
+    },
+    {
+      "word": "SIEVE",
+      "type": 0
+    },
+    {
+      "word": "GRIEVE",
+      "type": 0
+    },
+    {
+      "word": "SIEVED",
+      "type": 0
+    },
+    {
+      "word": "GRIEVED",
+      "type": 0
+    }
+  ],
+  "letters": "DREED,CASVM,ISIEI,TEAGR",
+  "obstacles": []
 }

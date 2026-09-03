@@ -1,79 +1,131 @@
-﻿{
-    "id":  1405,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EMEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MİKROP",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "MİKRO",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "PORG,SIKİ,EMEM",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1405,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EVİ",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "POD",
+      "type": 0
+    },
+    {
+      "word": "DİYE",
+      "type": 0
+    },
+    {
+      "word": "EDİN",
+      "type": 0
+    },
+    {
+      "word": "EVİN",
+      "type": 0
+    },
+    {
+      "word": "NİYE",
+      "type": 0
+    },
+    {
+      "word": "YEDİ",
+      "type": 0
+    },
+    {
+      "word": "İNCE",
+      "type": 0
+    },
+    {
+      "word": "EVİNDE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DİE",
+      "type": 0
+    },
+    {
+      "word": "DİN",
+      "type": 0
+    },
+    {
+      "word": "EDİ",
+      "type": 0
+    },
+    {
+      "word": "NDA",
+      "type": 0
+    },
+    {
+      "word": "NDE",
+      "type": 0
+    },
+    {
+      "word": "VİN",
+      "type": 0
+    },
+    {
+      "word": "YİN",
+      "type": 0
+    },
+    {
+      "word": "EDİE",
+      "type": 0
+    },
+    {
+      "word": "EVİE",
+      "type": 0
+    },
+    {
+      "word": "İNDE",
+      "type": 0
+    },
+    {
+      "word": "DEYİN",
+      "type": 0
+    },
+    {
+      "word": "YEDİN",
+      "type": 0
+    },
+    {
+      "word": "EDİNCE",
+      "type": 0
+    },
+    {
+      "word": "DEYİNCE",
+      "type": 0
+    }
+  ],
+  "letters": "EDPO,YİND,DECA,NİVE",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

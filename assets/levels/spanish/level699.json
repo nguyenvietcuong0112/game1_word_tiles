@@ -1,65 +1,247 @@
-﻿{
-    "id":  699,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "UVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUNA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANUAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDEAL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AUN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAUNA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "UNA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VIDUAL",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ANL,VUA,IDE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 699,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MAX",
+      "type": 0
+    },
+    {
+      "word": "OHH",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "VEO",
+      "type": 0
+    },
+    {
+      "word": "MIRA",
+      "type": 0
+    },
+    {
+      "word": "VIVA",
+      "type": 0
+    },
+    {
+      "word": "VIVE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "AVI",
+      "type": 0
+    },
+    {
+      "word": "AXE",
+      "type": 0
+    },
+    {
+      "word": "DEO",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "EHH",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "HEX",
+      "type": 0
+    },
+    {
+      "word": "HOT",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "IVA",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "VED",
+      "type": 0
+    },
+    {
+      "word": "VEX",
+      "type": 0
+    },
+    {
+      "word": "VIR",
+      "type": 0
+    },
+    {
+      "word": "VIV",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "AMIR",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "AVIV",
+      "type": 0
+    },
+    {
+      "word": "DARA",
+      "type": 0
+    },
+    {
+      "word": "DAVE",
+      "type": 0
+    },
+    {
+      "word": "DEVA",
+      "type": 0
+    },
+    {
+      "word": "DEVI",
+      "type": 0
+    },
+    {
+      "word": "IVAR",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "MARI",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "RAMI",
+      "type": 0
+    },
+    {
+      "word": "RAVE",
+      "type": 0
+    },
+    {
+      "word": "RAVI",
+      "type": 0
+    },
+    {
+      "word": "RIMA",
+      "type": 0
+    },
+    {
+      "word": "RIVA",
+      "type": 0
+    },
+    {
+      "word": "VARA",
+      "type": 0
+    },
+    {
+      "word": "VEDA",
+      "type": 0
+    },
+    {
+      "word": "VIRA",
+      "type": 0
+    },
+    {
+      "word": "AMARA",
+      "type": 0
+    },
+    {
+      "word": "AMIRA",
+      "type": 0
+    },
+    {
+      "word": "AVIVA",
+      "type": 0
+    },
+    {
+      "word": "MIRAD",
+      "type": 0
+    },
+    {
+      "word": "AVIVAR",
+      "type": 0
+    }
+  ],
+  "letters": "DEOT,AVHH,RIVE,AMAX",
+  "obstacles": []
 }

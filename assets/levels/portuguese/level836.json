@@ -1,93 +1,259 @@
-﻿{
-    "id":  836,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MICO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LICOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIMIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "METÁLICO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CIAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CORRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FIAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PERRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROCIAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ROCIM",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "LICOR,ÁMIAR,TEFPE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 836,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "ECO",
+      "type": 0
+    },
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "ESSA",
+      "type": 0
+    },
+    {
+      "word": "SABE",
+      "type": 0
+    },
+    {
+      "word": "GRANA",
+      "type": 0
+    },
+    {
+      "word": "NESSA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ANG",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ASB",
+      "type": 0
+    },
+    {
+      "word": "ASN",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "BEA",
+      "type": 0
+    },
+    {
+      "word": "CEE",
+      "type": 0
+    },
+    {
+      "word": "COE",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "EBA",
+      "type": 0
+    },
+    {
+      "word": "EEG",
+      "type": 0
+    },
+    {
+      "word": "ENA",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "GEE",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "NEO",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "OSS",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAS",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SEO",
+      "type": 0
+    },
+    {
+      "word": "SOC",
+      "type": 0
+    },
+    {
+      "word": "SOE",
+      "type": 0
+    },
+    {
+      "word": "ANGE",
+      "type": 0
+    },
+    {
+      "word": "ASAS",
+      "type": 0
+    },
+    {
+      "word": "ASSA",
+      "type": 0
+    },
+    {
+      "word": "BASS",
+      "type": 0
+    },
+    {
+      "word": "BEAN",
+      "type": 0
+    },
+    {
+      "word": "BENS",
+      "type": 0
+    },
+    {
+      "word": "COSA",
+      "type": 0
+    },
+    {
+      "word": "ECOS",
+      "type": 0
+    },
+    {
+      "word": "ESSO",
+      "type": 0
+    },
+    {
+      "word": "GRAN",
+      "type": 0
+    },
+    {
+      "word": "GRAS",
+      "type": 0
+    },
+    {
+      "word": "NASA",
+      "type": 0
+    },
+    {
+      "word": "NESS",
+      "type": 0
+    },
+    {
+      "word": "RANA",
+      "type": 0
+    },
+    {
+      "word": "RASA",
+      "type": 0
+    },
+    {
+      "word": "SANA",
+      "type": 0
+    },
+    {
+      "word": "SANG",
+      "type": 0
+    },
+    {
+      "word": "SARG",
+      "type": 0
+    },
+    {
+      "word": "SENA",
+      "type": 0
+    },
+    {
+      "word": "RANGE",
+      "type": 0
+    },
+    {
+      "word": "RASAS",
+      "type": 0
+    },
+    {
+      "word": "SARGE",
+      "type": 0
+    },
+    {
+      "word": "SANGRA",
+      "type": 0
+    },
+    {
+      "word": "ASSANGE",
+      "type": 0
+    }
+  ],
+  "letters": "ASOC,BSEE,EANG,NSAR",
+  "obstacles": []
 }

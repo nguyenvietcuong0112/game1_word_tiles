@@ -1,97 +1,231 @@
-﻿{
-    "id":  816,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAX",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "META",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MURO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SETA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SETE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAXA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LETAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "METAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SETEMBRO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ELE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAXA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RUME",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TALO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TELEX",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEXAS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "UMBRO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "XETA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AXALO,SETBR,ULEMU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 816,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DIA",
+      "type": 0
+    },
+    {
+      "word": "TIA",
+      "type": 0
+    },
+    {
+      "word": "DITO",
+      "type": 0
+    },
+    {
+      "word": "NINA",
+      "type": 0
+    },
+    {
+      "word": "RATO",
+      "type": 0
+    },
+    {
+      "word": "ERRADA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "AHN",
+      "type": 0
+    },
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DAI",
+      "type": 0
+    },
+    {
+      "word": "DAT",
+      "type": 0
+    },
+    {
+      "word": "DRE",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "IAN",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "ITA",
+      "type": 0
+    },
+    {
+      "word": "ITO",
+      "type": 0
+    },
+    {
+      "word": "NAI",
+      "type": 0
+    },
+    {
+      "word": "NHA",
+      "type": 0
+    },
+    {
+      "word": "NIA",
+      "type": 0
+    },
+    {
+      "word": "NIN",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "RDA",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "AAAH",
+      "type": 0
+    },
+    {
+      "word": "AIDA",
+      "type": 0
+    },
+    {
+      "word": "ANIA",
+      "type": 0
+    },
+    {
+      "word": "ARRE",
+      "type": 0
+    },
+    {
+      "word": "DAAN",
+      "type": 0
+    },
+    {
+      "word": "DITA",
+      "type": 0
+    },
+    {
+      "word": "DREN",
+      "type": 0
+    },
+    {
+      "word": "ERRA",
+      "type": 0
+    },
+    {
+      "word": "NERD",
+      "type": 0
+    },
+    {
+      "word": "NINE",
+      "type": 0
+    },
+    {
+      "word": "READ",
+      "type": 0
+    },
+    {
+      "word": "TARR",
+      "type": 0
+    },
+    {
+      "word": "TIAN",
+      "type": 0
+    },
+    {
+      "word": "TITA",
+      "type": 0
+    },
+    {
+      "word": "TITO",
+      "type": 0
+    },
+    {
+      "word": "DITAR",
+      "type": 0
+    },
+    {
+      "word": "NINER",
+      "type": 0
+    },
+    {
+      "word": "DARREN",
+      "type": 0
+    }
+  ],
+  "letters": "NERR,IADA,NAIT,HATO",
+  "obstacles": []
 }

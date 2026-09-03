@@ -1,107 +1,191 @@
-﻿{
-    "id":  1878,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AREA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REIN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PENGUIN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PENG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PRE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NGUD,EAIN,PREA",
-    "obstacles":  [
-                      {
-                          "required_words":  7,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1878,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AWE",
+      "type": 0
+    },
+    {
+      "word": "BOW",
+      "type": 0
+    },
+    {
+      "word": "BUG",
+      "type": 0
+    },
+    {
+      "word": "COW",
+      "type": 0
+    },
+    {
+      "word": "FED",
+      "type": 0
+    },
+    {
+      "word": "OUR",
+      "type": 0
+    },
+    {
+      "word": "REF",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "WEB",
+      "type": 0
+    },
+    {
+      "word": "WERE",
+      "type": 0
+    },
+    {
+      "word": "COURSE",
+      "type": 0
+    },
+    {
+      "word": "REFUGE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BEG",
+      "type": 0
+    },
+    {
+      "word": "BUR",
+      "type": 0
+    },
+    {
+      "word": "CAW",
+      "type": 0
+    },
+    {
+      "word": "COB",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "FER",
+      "type": 0
+    },
+    {
+      "word": "FUB",
+      "type": 0
+    },
+    {
+      "word": "FUG",
+      "type": 0
+    },
+    {
+      "word": "FUR",
+      "type": 0
+    },
+    {
+      "word": "GED",
+      "type": 0
+    },
+    {
+      "word": "OBE",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "OWE",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "RUB",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "RUG",
+      "type": 0
+    },
+    {
+      "word": "FERE",
+      "type": 0
+    },
+    {
+      "word": "OURS",
+      "type": 0
+    },
+    {
+      "word": "ROES",
+      "type": 0
+    },
+    {
+      "word": "RUBE",
+      "type": 0
+    },
+    {
+      "word": "RUES",
+      "type": 0
+    },
+    {
+      "word": "BOWER",
+      "type": 0
+    },
+    {
+      "word": "COWER",
+      "type": 0
+    },
+    {
+      "word": "DEFER",
+      "type": 0
+    },
+    {
+      "word": "REFED",
+      "type": 0
+    },
+    {
+      "word": "BOURSE",
+      "type": 0
+    },
+    {
+      "word": "REFUGED",
+      "type": 0
+    }
+  ],
+  "letters": "SEORD,RUEGE,COBUF,AWERE",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

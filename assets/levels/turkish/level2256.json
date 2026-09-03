@@ -1,81 +1,171 @@
-﻿{
-    "id":  2256,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKŞİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAKAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KANAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAKİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FANATİK",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKNE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ATİK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAKA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TİK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KŞİT,ENKA,YFAN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2256,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "SAF",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SES",
+      "type": 0
+    },
+    {
+      "word": "VAR",
+      "type": 0
+    },
+    {
+      "word": "ARAÇ",
+      "type": 0
+    },
+    {
+      "word": "SANA",
+      "type": 0
+    },
+    {
+      "word": "ARABA",
+      "type": 0
+    },
+    {
+      "word": "VARSA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "AÇI",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "FAN",
+      "type": 0
+    },
+    {
+      "word": "FAS",
+      "type": 0
+    },
+    {
+      "word": "RAB",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "ÇAR",
+      "type": 0
+    },
+    {
+      "word": "ARAR",
+      "type": 0
+    },
+    {
+      "word": "ARSA",
+      "type": 0
+    },
+    {
+      "word": "AÇAR",
+      "type": 0
+    },
+    {
+      "word": "BARA",
+      "type": 0
+    },
+    {
+      "word": "CANA",
+      "type": 0
+    },
+    {
+      "word": "CASE",
+      "type": 0
+    },
+    {
+      "word": "ÇABA",
+      "type": 0
+    },
+    {
+      "word": "ESRAR",
+      "type": 0
+    },
+    {
+      "word": "SEARS",
+      "type": 0
+    },
+    {
+      "word": "AFACAN",
+      "type": 0
+    },
+    {
+      "word": "ARARSA",
+      "type": 0
+    },
+    {
+      "word": "AÇARSA",
+      "type": 0
+    },
+    {
+      "word": "ESRARI",
+      "type": 0
+    },
+    {
+      "word": "ARARSAN",
+      "type": 0
+    },
+    {
+      "word": "AÇARSAN",
+      "type": 0
+    }
+  ],
+  "letters": "FACRI,ANAAÇ,SESRA,VARAB",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

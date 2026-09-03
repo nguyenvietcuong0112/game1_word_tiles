@@ -1,73 +1,219 @@
-﻿{
-    "id":  2150,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AKÜ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GÜN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÜS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÜST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAST",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LİNK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "İNKAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SÜRGÜN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KÜR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAST",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SÜRGÜ",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "RÜST,GKAR,ÜNİL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2150,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "ONA",
+      "type": 0
+    },
+    {
+      "word": "ONU",
+      "type": 0
+    },
+    {
+      "word": "RUH",
+      "type": 0
+    },
+    {
+      "word": "ÇEK",
+      "type": 0
+    },
+    {
+      "word": "HANİ",
+      "type": 0
+    },
+    {
+      "word": "KONU",
+      "type": 0
+    },
+    {
+      "word": "RUHU",
+      "type": 0
+    },
+    {
+      "word": "SKOR",
+      "type": 0
+    },
+    {
+      "word": "NAZİK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AHH",
+      "type": 0
+    },
+    {
+      "word": "ANU",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "HAE",
+      "type": 0
+    },
+    {
+      "word": "HAN",
+      "type": 0
+    },
+    {
+      "word": "HUA",
+      "type": 0
+    },
+    {
+      "word": "HUN",
+      "type": 0
+    },
+    {
+      "word": "KON",
+      "type": 0
+    },
+    {
+      "word": "KOR",
+      "type": 0
+    },
+    {
+      "word": "KİN",
+      "type": 0
+    },
+    {
+      "word": "KİZ",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NAZ",
+      "type": 0
+    },
+    {
+      "word": "NUH",
+      "type": 0
+    },
+    {
+      "word": "NUR",
+      "type": 0
+    },
+    {
+      "word": "NİK",
+      "type": 0
+    },
+    {
+      "word": "NİZ",
+      "type": 0
+    },
+    {
+      "word": "RON",
+      "type": 0
+    },
+    {
+      "word": "RUN",
+      "type": 0
+    },
+    {
+      "word": "UHH",
+      "type": 0
+    },
+    {
+      "word": "UNA",
+      "type": 0
+    },
+    {
+      "word": "UNU",
+      "type": 0
+    },
+    {
+      "word": "ZAN",
+      "type": 0
+    },
+    {
+      "word": "İNÇ",
+      "type": 0
+    },
+    {
+      "word": "HANA",
+      "type": 0
+    },
+    {
+      "word": "KAAN",
+      "type": 0
+    },
+    {
+      "word": "KANO",
+      "type": 0
+    },
+    {
+      "word": "KHAN",
+      "type": 0
+    },
+    {
+      "word": "KORU",
+      "type": 0
+    },
+    {
+      "word": "NANO",
+      "type": 0
+    },
+    {
+      "word": "NAZİ",
+      "type": 0
+    },
+    {
+      "word": "ONUR",
+      "type": 0
+    },
+    {
+      "word": "ZİNA",
+      "type": 0
+    },
+    {
+      "word": "KONAN",
+      "type": 0
+    },
+    {
+      "word": "RUHUN",
+      "type": 0
+    },
+    {
+      "word": "SKORU",
+      "type": 0
+    },
+    {
+      "word": "RUHUNA",
+      "type": 0
+    },
+    {
+      "word": "KORUNAN",
+      "type": 0
+    },
+    {
+      "word": "NAZİKÇE",
+      "type": 0
+    }
+  ],
+  "letters": "RUHHK,ONUAE,KAANÇ,SNZİK",
+  "obstacles": []
 }

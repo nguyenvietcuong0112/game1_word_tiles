@@ -1,101 +1,231 @@
-﻿{
-    "id":  2245,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONSET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONSENT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CONTENT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CONS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ISNT",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SINE",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "AHAT,CTEN,ONSI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2245,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "JAR",
+      "type": 0
+    },
+    {
+      "word": "JAY",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "UPS",
+      "type": 0
+    },
+    {
+      "word": "CHAR",
+      "type": 0
+    },
+    {
+      "word": "HAIR",
+      "type": 0
+    },
+    {
+      "word": "MASS",
+      "type": 0
+    },
+    {
+      "word": "CHAIR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "PUS",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "RAJ",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "SUP",
+      "type": 0
+    },
+    {
+      "word": "AIRS",
+      "type": 0
+    },
+    {
+      "word": "AJAR",
+      "type": 0
+    },
+    {
+      "word": "AMAS",
+      "type": 0
+    },
+    {
+      "word": "ANAS",
+      "type": 0
+    },
+    {
+      "word": "ARCH",
+      "type": 0
+    },
+    {
+      "word": "ARIA",
+      "type": 0
+    },
+    {
+      "word": "JARS",
+      "type": 0
+    },
+    {
+      "word": "JAUP",
+      "type": 0
+    },
+    {
+      "word": "MANA",
+      "type": 0
+    },
+    {
+      "word": "NARC",
+      "type": 0
+    },
+    {
+      "word": "PUSS",
+      "type": 0
+    },
+    {
+      "word": "RAJA",
+      "type": 0
+    },
+    {
+      "word": "RAMS",
+      "type": 0
+    },
+    {
+      "word": "SUPS",
+      "type": 0
+    },
+    {
+      "word": "YIRR",
+      "type": 0
+    },
+    {
+      "word": "AMASS",
+      "type": 0
+    },
+    {
+      "word": "ARRAS",
+      "type": 0
+    },
+    {
+      "word": "CHARR",
+      "type": 0
+    },
+    {
+      "word": "HAIRS",
+      "type": 0
+    },
+    {
+      "word": "JAUPS",
+      "type": 0
+    },
+    {
+      "word": "MANAS",
+      "type": 0
+    },
+    {
+      "word": "SARAN",
+      "type": 0
+    },
+    {
+      "word": "ANARCH",
+      "type": 0
+    },
+    {
+      "word": "CHAIRS",
+      "type": 0
+    },
+    {
+      "word": "CHARAS",
+      "type": 0
+    },
+    {
+      "word": "CHARRS",
+      "type": 0
+    },
+    {
+      "word": "HARASS",
+      "type": 0
+    },
+    {
+      "word": "JARRAH",
+      "type": 0
+    },
+    {
+      "word": "ANARCHY",
+      "type": 0
+    }
+  ],
+  "letters": "CRANA,HARAM,YIRSS,AJAUP",
+  "obstacles": []
 }

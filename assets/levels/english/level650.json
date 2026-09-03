@@ -1,77 +1,219 @@
-﻿{
-    "id":  650,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIX",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EPIC",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RESET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRIPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RECIPE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CERT",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ICES",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SEX",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TRES",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TRICE",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "ISET,XECE,TRIP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 650,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "TOP",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "HALF",
+      "type": 0
+    },
+    {
+      "word": "HELP",
+      "type": 0
+    },
+    {
+      "word": "ORAL",
+      "type": 0
+    },
+    {
+      "word": "USES",
+      "type": 0
+    },
+    {
+      "word": "RALPH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "HEH",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "ORT",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "POT",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "SOP",
+      "type": 0
+    },
+    {
+      "word": "SOT",
+      "type": 0
+    },
+    {
+      "word": "ALTO",
+      "type": 0
+    },
+    {
+      "word": "ARSE",
+      "type": 0
+    },
+    {
+      "word": "HALE",
+      "type": 0
+    },
+    {
+      "word": "HALO",
+      "type": 0
+    },
+    {
+      "word": "HALT",
+      "type": 0
+    },
+    {
+      "word": "HART",
+      "type": 0
+    },
+    {
+      "word": "LARS",
+      "type": 0
+    },
+    {
+      "word": "OSES",
+      "type": 0
+    },
+    {
+      "word": "POSE",
+      "type": 0
+    },
+    {
+      "word": "RALE",
+      "type": 0
+    },
+    {
+      "word": "ROLF",
+      "type": 0
+    },
+    {
+      "word": "SOPH",
+      "type": 0
+    },
+    {
+      "word": "TOPH",
+      "type": 0
+    },
+    {
+      "word": "ALTOS",
+      "type": 0
+    },
+    {
+      "word": "ARSES",
+      "type": 0
+    },
+    {
+      "word": "FLORA",
+      "type": 0
+    },
+    {
+      "word": "LORAL",
+      "type": 0
+    },
+    {
+      "word": "LOUSE",
+      "type": 0
+    },
+    {
+      "word": "POSES",
+      "type": 0
+    },
+    {
+      "word": "ROUSE",
+      "type": 0
+    },
+    {
+      "word": "TOPHE",
+      "type": 0
+    },
+    {
+      "word": "AROUSE",
+      "type": 0
+    },
+    {
+      "word": "FLORAL",
+      "type": 0
+    },
+    {
+      "word": "LOUSES",
+      "type": 0
+    },
+    {
+      "word": "ROUSES",
+      "type": 0
+    },
+    {
+      "word": "AROUSES",
+      "type": 0
+    }
+  ],
+  "letters": "FLOU,HARS,ELTE,HPOS",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

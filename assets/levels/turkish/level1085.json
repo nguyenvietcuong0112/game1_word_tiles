@@ -1,102 +1,183 @@
-﻿{
-    "id":  1085,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MİS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TÜM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TÜR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÖMÜR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÜMİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SÖMÜRGE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "İSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SİM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TİM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ÖMÜR,SİTG,AASE",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1085,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "HEM",
+      "type": 0
+    },
+    {
+      "word": "KUR",
+      "type": 0
+    },
+    {
+      "word": "RUS",
+      "type": 0
+    },
+    {
+      "word": "SIK",
+      "type": 0
+    },
+    {
+      "word": "ETME",
+      "type": 0
+    },
+    {
+      "word": "KISA",
+      "type": 0
+    },
+    {
+      "word": "CHASE",
+      "type": 0
+    },
+    {
+      "word": "ETSEM",
+      "type": 0
+    },
+    {
+      "word": "KISACA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ASI",
+      "type": 0
+    },
+    {
+      "word": "BAE",
+      "type": 0
+    },
+    {
+      "word": "CHA",
+      "type": 0
+    },
+    {
+      "word": "CHE",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "HAS",
+      "type": 0
+    },
+    {
+      "word": "KIS",
+      "type": 0
+    },
+    {
+      "word": "KUS",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SUK",
+      "type": 0
+    },
+    {
+      "word": "SUR",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "ASIK",
+      "type": 0
+    },
+    {
+      "word": "BACA",
+      "type": 0
+    },
+    {
+      "word": "BACH",
+      "type": 0
+    },
+    {
+      "word": "CHAS",
+      "type": 0
+    },
+    {
+      "word": "EMRE",
+      "type": 0
+    },
+    {
+      "word": "ETSE",
+      "type": 0
+    },
+    {
+      "word": "MEST",
+      "type": 0
+    },
+    {
+      "word": "SABA",
+      "type": 0
+    },
+    {
+      "word": "SEMT",
+      "type": 0
+    },
+    {
+      "word": "SURE",
+      "type": 0
+    },
+    {
+      "word": "EMRET",
+      "type": 0
+    },
+    {
+      "word": "CABASI",
+      "type": 0
+    },
+    {
+      "word": "HESTER",
+      "type": 0
+    },
+    {
+      "word": "CHESTER",
+      "type": 0
+    }
+  ],
+  "letters": "ERUK,TMSI,SEAB,AHCA",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,121 +1,191 @@
-﻿{
-    "id":  2266,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AKÜ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÜL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARAK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ARMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LÜKS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALARM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KARMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KARİZMA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ALARMA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARİYA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAKS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RAY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RİYA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RİYAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RİYALA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SKALA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YARMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ZİRA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ÜLAA,KARM,SYİZ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2266,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAK",
+      "type": 0
+    },
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "KOD",
+      "type": 0
+    },
+    {
+      "word": "NDA",
+      "type": 0
+    },
+    {
+      "word": "NDE",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "ALIŞ",
+      "type": 0
+    },
+    {
+      "word": "OMAR",
+      "type": 0
+    },
+    {
+      "word": "BENDE",
+      "type": 0
+    },
+    {
+      "word": "AKLIMA",
+      "type": 0
+    },
+    {
+      "word": "AKLIMI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "AŞI",
+      "type": 0
+    },
+    {
+      "word": "BAO",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "DOK",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "IMI",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MIŞ",
+      "type": 0
+    },
+    {
+      "word": "MOM",
+      "type": 0
+    },
+    {
+      "word": "OAK",
+      "type": 0
+    },
+    {
+      "word": "OLD",
+      "type": 0
+    },
+    {
+      "word": "ŞAL",
+      "type": 0
+    },
+    {
+      "word": "AKLI",
+      "type": 0
+    },
+    {
+      "word": "ALDO",
+      "type": 0
+    },
+    {
+      "word": "ALIM",
+      "type": 0
+    },
+    {
+      "word": "IŞIL",
+      "type": 0
+    },
+    {
+      "word": "MADE",
+      "type": 0
+    },
+    {
+      "word": "AKLIM",
+      "type": 0
+    },
+    {
+      "word": "ALIMI",
+      "type": 0
+    },
+    {
+      "word": "ENDER",
+      "type": 0
+    },
+    {
+      "word": "MIŞIL",
+      "type": 0
+    },
+    {
+      "word": "BENDER",
+      "type": 0
+    }
+  ],
+  "letters": "EBAKO,NMOLD,DAMIL,ERIŞA",
+  "obstacles": []
 }

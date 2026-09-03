@@ -1,85 +1,207 @@
-﻿{
-    "id":  302,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MICO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MUCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÁTOMO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "HOMEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOTEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOTEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COMPLETO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CIMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HIC",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HOMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOMO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UCOMP,MIMEL,UHOTÁ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 302,
+  "width": 4,
+  "height": 3,
+  "target_words": [
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "OFF",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "FORA",
+      "type": 0
+    },
+    {
+      "word": "FURO",
+      "type": 0
+    },
+    {
+      "word": "ROSA",
+      "type": 0
+    },
+    {
+      "word": "SENDO",
+      "type": 0
+    },
+    {
+      "word": "VENDO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ARU",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "DOO",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "FOO",
+      "type": 0
+    },
+    {
+      "word": "OOF",
+      "type": 0
+    },
+    {
+      "word": "ROO",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "SAV",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SOO",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "UFO",
+      "type": 0
+    },
+    {
+      "word": "VEN",
+      "type": 0
+    },
+    {
+      "word": "AROS",
+      "type": 0
+    },
+    {
+      "word": "AVES",
+      "type": 0
+    },
+    {
+      "word": "DOOR",
+      "type": 0
+    },
+    {
+      "word": "ENDO",
+      "type": 0
+    },
+    {
+      "word": "ENDS",
+      "type": 0
+    },
+    {
+      "word": "FOOD",
+      "type": 0
+    },
+    {
+      "word": "FURA",
+      "type": 0
+    },
+    {
+      "word": "NEVA",
+      "type": 0
+    },
+    {
+      "word": "ORAS",
+      "type": 0
+    },
+    {
+      "word": "RASO",
+      "type": 0
+    },
+    {
+      "word": "RAVE",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    },
+    {
+      "word": "SAVE",
+      "type": 0
+    },
+    {
+      "word": "SEND",
+      "type": 0
+    },
+    {
+      "word": "SORA",
+      "type": 0
+    },
+    {
+      "word": "VASO",
+      "type": 0
+    },
+    {
+      "word": "FOODS",
+      "type": 0
+    },
+    {
+      "word": "FORAS",
+      "type": 0
+    },
+    {
+      "word": "FUROS",
+      "type": 0
+    },
+    {
+      "word": "NEVAR",
+      "type": 0
+    },
+    {
+      "word": "RAVEN",
+      "type": 0
+    },
+    {
+      "word": "RAVES",
+      "type": 0
+    },
+    {
+      "word": "ROSEN",
+      "type": 0
+    }
+  ],
+  "letters": "VARU,ESOF,NDOF",
+  "obstacles": []
 }

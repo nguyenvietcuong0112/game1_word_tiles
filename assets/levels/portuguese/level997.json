@@ -1,97 +1,239 @@
-﻿{
-    "id":  997,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CALO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CIRCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RACIAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CACHECOL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CHE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MECA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OCRA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RIA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CIAL,ARCO,CHEM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 997,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "SOU",
+      "type": 0
+    },
+    {
+      "word": "FALA",
+      "type": 0
+    },
+    {
+      "word": "FALE",
+      "type": 0
+    },
+    {
+      "word": "FUGA",
+      "type": 0
+    },
+    {
+      "word": "LADO",
+      "type": 0
+    },
+    {
+      "word": "USOU",
+      "type": 0
+    },
+    {
+      "word": "DEDOS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "DAG",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DEF",
+      "type": 0
+    },
+    {
+      "word": "DOD",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "EDU",
+      "type": 0
+    },
+    {
+      "word": "FAD",
+      "type": 0
+    },
+    {
+      "word": "FED",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OSU",
+      "type": 0
+    },
+    {
+      "word": "UFA",
+      "type": 0
+    },
+    {
+      "word": "UFO",
+      "type": 0
+    },
+    {
+      "word": "USO",
+      "type": 0
+    },
+    {
+      "word": "DAFU",
+      "type": 0
+    },
+    {
+      "word": "DALE",
+      "type": 0
+    },
+    {
+      "word": "DEDO",
+      "type": 0
+    },
+    {
+      "word": "FADA",
+      "type": 0
+    },
+    {
+      "word": "FADE",
+      "type": 0
+    },
+    {
+      "word": "FODA",
+      "type": 0
+    },
+    {
+      "word": "FODE",
+      "type": 0
+    },
+    {
+      "word": "GADO",
+      "type": 0
+    },
+    {
+      "word": "GALA",
+      "type": 0
+    },
+    {
+      "word": "GALE",
+      "type": 0
+    },
+    {
+      "word": "GELA",
+      "type": 0
+    },
+    {
+      "word": "SODA",
+      "type": 0
+    },
+    {
+      "word": "ALADO",
+      "type": 0
+    },
+    {
+      "word": "ALEGA",
+      "type": 0
+    },
+    {
+      "word": "DEDAL",
+      "type": 0
+    },
+    {
+      "word": "LADOS",
+      "type": 0
+    },
+    {
+      "word": "FALADO",
+      "type": 0
+    },
+    {
+      "word": "GELADA",
+      "type": 0
+    },
+    {
+      "word": "GELADO",
+      "type": 0
+    },
+    {
+      "word": "LEGADO",
+      "type": 0
+    },
+    {
+      "word": "ALEGADO",
+      "type": 0
+    },
+    {
+      "word": "FALADOS",
+      "type": 0
+    },
+    {
+      "word": "GELADOS",
+      "type": 0
+    },
+    {
+      "word": "LEGADOS",
+      "type": 0
+    }
+  ],
+  "letters": "ELAF,GADE,UFOD,UOSU",
+  "obstacles": []
 }

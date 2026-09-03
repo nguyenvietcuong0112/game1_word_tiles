@@ -1,89 +1,283 @@
-﻿{
-    "id":  1070,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OÍR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CRÍO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LANA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VARIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACUARIO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AUCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AVÍO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CRIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RÍO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VÍOL,ARIA,UCAN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1070,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "DES",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "RAJ",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "ARCO",
+      "type": 0
+    },
+    {
+      "word": "NADA",
+      "type": 0
+    },
+    {
+      "word": "CARGA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "DAG",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DEA",
+      "type": 0
+    },
+    {
+      "word": "DRA",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "JAE",
+      "type": 0
+    },
+    {
+      "word": "JAR",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "NED",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "RDA",
+      "type": 0
+    },
+    {
+      "word": "SED",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SRA",
+      "type": 0
+    },
+    {
+      "word": "ADAN",
+      "type": 0
+    },
+    {
+      "word": "AGRA",
+      "type": 0
+    },
+    {
+      "word": "ANJA",
+      "type": 0
+    },
+    {
+      "word": "ARDA",
+      "type": 0
+    },
+    {
+      "word": "ARDE",
+      "type": 0
+    },
+    {
+      "word": "CAOS",
+      "type": 0
+    },
+    {
+      "word": "CARD",
+      "type": 0
+    },
+    {
+      "word": "CARS",
+      "type": 0
+    },
+    {
+      "word": "COSE",
+      "type": 0
+    },
+    {
+      "word": "DANE",
+      "type": 0
+    },
+    {
+      "word": "DEAR",
+      "type": 0
+    },
+    {
+      "word": "DENA",
+      "type": 0
+    },
+    {
+      "word": "GALA",
+      "type": 0
+    },
+    {
+      "word": "GRAC",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "NADE",
+      "type": 0
+    },
+    {
+      "word": "NEAR",
+      "type": 0
+    },
+    {
+      "word": "OSEA",
+      "type": 0
+    },
+    {
+      "word": "SEDA",
+      "type": 0
+    },
+    {
+      "word": "SENA",
+      "type": 0
+    },
+    {
+      "word": "ARCOS",
+      "type": 0
+    },
+    {
+      "word": "ARDEN",
+      "type": 0
+    },
+    {
+      "word": "DANES",
+      "type": 0
+    },
+    {
+      "word": "LADEN",
+      "type": 0
+    },
+    {
+      "word": "LADRA",
+      "type": 0
+    },
+    {
+      "word": "SEDAL",
+      "type": 0
+    },
+    {
+      "word": "SEDAN",
+      "type": 0
+    },
+    {
+      "word": "CARGAD",
+      "type": 0
+    },
+    {
+      "word": "ARSENAL",
+      "type": 0
+    },
+    {
+      "word": "CARGADA",
+      "type": 0
+    },
+    {
+      "word": "CARDENAL",
+      "type": 0
+    }
+  ],
+  "letters": "LANJ,ADEA,GRSR,CAOC",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

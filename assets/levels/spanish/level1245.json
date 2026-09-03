@@ -1,137 +1,139 @@
-﻿{
-    "id":  1245,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VALS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VALER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VASCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESCONDER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASCONDER",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DELA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DELAS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ERAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAVE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LERA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ONDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VES",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SLED,VARN,ESCO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1245,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "IAN",
+      "type": 0
+    },
+    {
+      "word": "MIA",
+      "type": 0
+    },
+    {
+      "word": "PAZ",
+      "type": 0
+    },
+    {
+      "word": "YEN",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "LENA",
+      "type": 0
+    },
+    {
+      "word": "PLAN",
+      "type": 0
+    },
+    {
+      "word": "IBIZA",
+      "type": 0
+    },
+    {
+      "word": "LANZA",
+      "type": 0
+    },
+    {
+      "word": "PLENA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "AYE",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "EPA",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "IBN",
+      "type": 0
+    },
+    {
+      "word": "LAI",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "NAI",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "NEL",
+      "type": 0
+    },
+    {
+      "word": "PAY",
+      "type": 0
+    },
+    {
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "YEP",
+      "type": 0
+    },
+    {
+      "word": "PENG",
+      "type": 0
+    }
+  ],
+  "letters": "GNEY,ELPA,NANZ,MIBI",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

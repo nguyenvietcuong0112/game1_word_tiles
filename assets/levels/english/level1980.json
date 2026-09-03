@@ -1,102 +1,231 @@
-﻿{
-    "id":  1980,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WITH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EARTH",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "RAW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "THAI",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TIAN",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "GRTH,EAIA,RWWN",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1980,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "KID",
+      "type": 0
+    },
+    {
+      "word": "MID",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "COOK",
+      "type": 0
+    },
+    {
+      "word": "DONE",
+      "type": 0
+    },
+    {
+      "word": "KING",
+      "type": 0
+    },
+    {
+      "word": "ROOT",
+      "type": 0
+    },
+    {
+      "word": "TOKEN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "COO",
+      "type": 0
+    },
+    {
+      "word": "DIM",
+      "type": 0
+    },
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "ENG",
+      "type": 0
+    },
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "KIN",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "MOO",
+      "type": 0
+    },
+    {
+      "word": "NOD",
+      "type": 0
+    },
+    {
+      "word": "NOM",
+      "type": 0
+    },
+    {
+      "word": "NOO",
+      "type": 0
+    },
+    {
+      "word": "OKE",
+      "type": 0
+    },
+    {
+      "word": "OOT",
+      "type": 0
+    },
+    {
+      "word": "ORC",
+      "type": 0
+    },
+    {
+      "word": "ROT",
+      "type": 0
+    },
+    {
+      "word": "TOE",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "COOT",
+      "type": 0
+    },
+    {
+      "word": "DIKE",
+      "type": 0
+    },
+    {
+      "word": "DINE",
+      "type": 0
+    },
+    {
+      "word": "DING",
+      "type": 0
+    },
+    {
+      "word": "DONG",
+      "type": 0
+    },
+    {
+      "word": "KENO",
+      "type": 0
+    },
+    {
+      "word": "KINE",
+      "type": 0
+    },
+    {
+      "word": "KINO",
+      "type": 0
+    },
+    {
+      "word": "MODI",
+      "type": 0
+    },
+    {
+      "word": "MOOT",
+      "type": 0
+    },
+    {
+      "word": "NODI",
+      "type": 0
+    },
+    {
+      "word": "OOTS",
+      "type": 0
+    },
+    {
+      "word": "OTTO",
+      "type": 0
+    },
+    {
+      "word": "ROTS",
+      "type": 0
+    },
+    {
+      "word": "TOKE",
+      "type": 0
+    },
+    {
+      "word": "TOOM",
+      "type": 0
+    },
+    {
+      "word": "TOON",
+      "type": 0
+    },
+    {
+      "word": "TOOT",
+      "type": 0
+    },
+    {
+      "word": "TORC",
+      "type": 0
+    },
+    {
+      "word": "TORS",
+      "type": 0
+    },
+    {
+      "word": "COOTS",
+      "type": 0
+    },
+    {
+      "word": "EKING",
+      "type": 0
+    },
+    {
+      "word": "TOOTS",
+      "type": 0
+    },
+    {
+      "word": "TOKING",
+      "type": 0
+    },
+    {
+      "word": "COOKING",
+      "type": 0
+    }
+  ],
+  "letters": "STTDI,ROOOM,COENG,TOKID",
+  "obstacles": []
 }

@@ -1,69 +1,167 @@
-﻿{
-    "id":  1485,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DİŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİŞİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MALİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MİDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEĞİL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DEĞİŞİM",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DEĞİŞ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DİŞİL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İMAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ŞİMAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ŞİMALİ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MAL,İŞİ,DEĞ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1485,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ATI",
+      "type": 0
+    },
+    {
+      "word": "AYI",
+      "type": 0
+    },
+    {
+      "word": "KEİ",
+      "type": 0
+    },
+    {
+      "word": "YAT",
+      "type": 0
+    },
+    {
+      "word": "AYAK",
+      "type": 0
+    },
+    {
+      "word": "AYIK",
+      "type": 0
+    },
+    {
+      "word": "KAFA",
+      "type": 0
+    },
+    {
+      "word": "KAYA",
+      "type": 0
+    },
+    {
+      "word": "KAYIT",
+      "type": 0
+    },
+    {
+      "word": "KAFAYI",
+      "type": 0
+    },
+    {
+      "word": "OLİVİA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "FAT",
+      "type": 0
+    },
+    {
+      "word": "FAY",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "KAİ",
+      "type": 0
+    },
+    {
+      "word": "KIT",
+      "type": 0
+    },
+    {
+      "word": "LİV",
+      "type": 0
+    },
+    {
+      "word": "OAK",
+      "type": 0
+    },
+    {
+      "word": "TAY",
+      "type": 0
+    },
+    {
+      "word": "TIK",
+      "type": 0
+    },
+    {
+      "word": "VİA",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "YIK",
+      "type": 0
+    },
+    {
+      "word": "YIİ",
+      "type": 0
+    },
+    {
+      "word": "İVY",
+      "type": 0
+    },
+    {
+      "word": "AKIİ",
+      "type": 0
+    },
+    {
+      "word": "ATIK",
+      "type": 0
+    },
+    {
+      "word": "KITA",
+      "type": 0
+    },
+    {
+      "word": "TIKA",
+      "type": 0
+    },
+    {
+      "word": "YATI",
+      "type": 0
+    },
+    {
+      "word": "YIKA",
+      "type": 0
+    },
+    {
+      "word": "KAYIK",
+      "type": 0
+    },
+    {
+      "word": "KIYAK",
+      "type": 0
+    },
+    {
+      "word": "LİVİA",
+      "type": 0
+    }
+  ],
+  "letters": "IKAO,TIİL,AYVİ,FAKE",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

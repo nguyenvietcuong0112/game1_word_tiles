@@ -1,81 +1,271 @@
-﻿{
-    "id":  1302,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOBO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOCA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CABO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RITO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ABRIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COBRIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CABRITO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACIR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TORA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VOMCA,ABRIR,COBTO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1302,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "ISTO",
+      "type": 0
+    },
+    {
+      "word": "SIGA",
+      "type": 0
+    },
+    {
+      "word": "TENS",
+      "type": 0
+    },
+    {
+      "word": "NISTO",
+      "type": 0
+    },
+    {
+      "word": "PASSA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "AGI",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ANS",
+      "type": 0
+    },
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "ENA",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GAP",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "GET",
+      "type": 0
+    },
+    {
+      "word": "IGA",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "ISA",
+      "type": 0
+    },
+    {
+      "word": "ISS",
+      "type": 0
+    },
+    {
+      "word": "IST",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "PIO",
+      "type": 0
+    },
+    {
+      "word": "PTA",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SIG",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "TOI",
+      "type": 0
+    },
+    {
+      "word": "ANIS",
+      "type": 0
+    },
+    {
+      "word": "APTA",
+      "type": 0
+    },
+    {
+      "word": "APTO",
+      "type": 0
+    },
+    {
+      "word": "ASSA",
+      "type": 0
+    },
+    {
+      "word": "EGAN",
+      "type": 0
+    },
+    {
+      "word": "GETS",
+      "type": 0
+    },
+    {
+      "word": "ISSA",
+      "type": 0
+    },
+    {
+      "word": "NEGA",
+      "type": 0
+    },
+    {
+      "word": "PAGE",
+      "type": 0
+    },
+    {
+      "word": "PANE",
+      "type": 0
+    },
+    {
+      "word": "PASS",
+      "type": 0
+    },
+    {
+      "word": "PINA",
+      "type": 0
+    },
+    {
+      "word": "PINE",
+      "type": 0
+    },
+    {
+      "word": "SAGE",
+      "type": 0
+    },
+    {
+      "word": "SANS",
+      "type": 0
+    },
+    {
+      "word": "SATO",
+      "type": 0
+    },
+    {
+      "word": "SINA",
+      "type": 0
+    },
+    {
+      "word": "SINS",
+      "type": 0
+    },
+    {
+      "word": "SNAP",
+      "type": 0
+    },
+    {
+      "word": "SPIN",
+      "type": 0
+    },
+    {
+      "word": "STEN",
+      "type": 0
+    },
+    {
+      "word": "ASPAS",
+      "type": 0
+    },
+    {
+      "word": "GENIO",
+      "type": 0
+    },
+    {
+      "word": "SAGET",
+      "type": 0
+    },
+    {
+      "word": "TEGAN",
+      "type": 0
+    },
+    {
+      "word": "TENIS",
+      "type": 0
+    }
+  ],
+  "letters": "TOTA,SIPS,SNAS,TEGI",
+  "obstacles": []
 }

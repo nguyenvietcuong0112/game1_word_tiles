@@ -1,93 +1,195 @@
-﻿{
-    "id":  1338,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMÉM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CENA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CIMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MICO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PENA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PICO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MENTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PENTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POETA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIMENTA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CEPO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COPTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MANECO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PECO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÉPICO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MANTA,ÉMEPT,PICOE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1338,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "BOL",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "CADA",
+      "type": 0
+    },
+    {
+      "word": "DICA",
+      "type": 0
+    },
+    {
+      "word": "ESSE",
+      "type": 0
+    },
+    {
+      "word": "TESS",
+      "type": 0
+    },
+    {
+      "word": "ESSES",
+      "type": 0
+    },
+    {
+      "word": "ESCADA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "BIC",
+      "type": 0
+    },
+    {
+      "word": "CID",
+      "type": 0
+    },
+    {
+      "word": "CIL",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DAT",
+      "type": 0
+    },
+    {
+      "word": "EID",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "ITA",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "SCI",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TIC",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "ACID",
+      "type": 0
+    },
+    {
+      "word": "ADIE",
+      "type": 0
+    },
+    {
+      "word": "CALI",
+      "type": 0
+    },
+    {
+      "word": "CITA",
+      "type": 0
+    },
+    {
+      "word": "CITE",
+      "type": 0
+    },
+    {
+      "word": "DALI",
+      "type": 0
+    },
+    {
+      "word": "DATE",
+      "type": 0
+    },
+    {
+      "word": "DITA",
+      "type": 0
+    },
+    {
+      "word": "EITA",
+      "type": 0
+    },
+    {
+      "word": "LICA",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SETI",
+      "type": 0
+    },
+    {
+      "word": "SEITA",
+      "type": 0
+    },
+    {
+      "word": "CILADA",
+      "type": 0
+    },
+    {
+      "word": "CITADA",
+      "type": 0
+    },
+    {
+      "word": "LADIES",
+      "type": 0
+    }
+  ],
+  "letters": "ATES,DIES,ACSL,LIBO",
+  "obstacles": []
 }

@@ -1,61 +1,123 @@
-﻿{
-    "id":  1765,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İBRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RENK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REKOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞNORKEL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ERBİN",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KORE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KRON",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NİŞ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NRENL,İBKKE,ŞNORE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1765,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "EUN",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "MOM",
+      "type": 0
+    },
+    {
+      "word": "TUT",
+      "type": 0
+    },
+    {
+      "word": "KANE",
+      "type": 0
+    },
+    {
+      "word": "SEAN",
+      "type": 0
+    },
+    {
+      "word": "ŞUNA",
+      "type": 0
+    },
+    {
+      "word": "TUTMUŞ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "ANU",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "BEA",
+      "type": 0
+    },
+    {
+      "word": "BES",
+      "type": 0
+    },
+    {
+      "word": "MUN",
+      "type": 0
+    },
+    {
+      "word": "MUŞ",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "UNA",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "ŞEN",
+      "type": 0
+    },
+    {
+      "word": "BEAN",
+      "type": 0
+    }
+  ],
+  "letters": "MTUT,OMSA,ŞUEB,ENAK",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

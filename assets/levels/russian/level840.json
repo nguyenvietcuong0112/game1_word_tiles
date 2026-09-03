@@ -1,69 +1,107 @@
-﻿{
-    "id":  840,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ПОЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПУЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПУП",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЧАН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПОЛА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПУЛЯ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПОЛЯНА",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ЛАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛУП",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛЯН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛЯП",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НАЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ПЯЛО",
-                            "type":  2
-                        },
-                        {
-                            "word":  "УЛАН",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ЧАН,ОЛЯ,ПУП",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 840,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "БЕН",
+      "type": 0
+    },
+    {
+      "word": "МНЕ",
+      "type": 0
+    },
+    {
+      "word": "УВЫ",
+      "type": 0
+    },
+    {
+      "word": "ШВЫ",
+      "type": 0
+    },
+    {
+      "word": "ЯМУ",
+      "type": 0
+    },
+    {
+      "word": "БЕРИ",
+      "type": 0
+    },
+    {
+      "word": "УМНЫМ",
+      "type": 0
+    },
+    {
+      "word": "ВЫБЕРИ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "МНЯ",
+      "type": 0
+    },
+    {
+      "word": "НЯМ",
+      "type": 0
+    },
+    {
+      "word": "РЕБ",
+      "type": 0
+    },
+    {
+      "word": "РЕН",
+      "type": 0
+    },
+    {
+      "word": "РИН",
+      "type": 0
+    },
+    {
+      "word": "РЫБ",
+      "type": 0
+    },
+    {
+      "word": "УМЫ",
+      "type": 0
+    },
+    {
+      "word": "ЯМЫ",
+      "type": 0
+    },
+    {
+      "word": "ЯНМ",
+      "type": 0
+    },
+    {
+      "word": "БЕНИ",
+      "type": 0
+    },
+    {
+      "word": "ИРЕН",
+      "type": 0
+    },
+    {
+      "word": "РЫБЕ",
+      "type": 0
+    },
+    {
+      "word": "УМНЫ",
+      "type": 0
+    }
+  ],
+  "letters": "УВЫБ,МШРЕ,НЯИН,ЫМУМ",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

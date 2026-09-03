@@ -1,89 +1,167 @@
-﻿{
-    "id":  1005,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GELO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GUME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TACO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLEGA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "COLONO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COGUMELO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EGO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GOLO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GUTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOCA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OMEGA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "UME",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "COLO,AGEN,TUMO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1005,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "CIA",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "CADA",
+      "type": 0
+    },
+    {
+      "word": "CASE",
+      "type": 0
+    },
+    {
+      "word": "BAIXE",
+      "type": 0
+    },
+    {
+      "word": "MARCA",
+      "type": 0
+    },
+    {
+      "word": "MARCAS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "AIC",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ASB",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BAI",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "ISA",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "SAA",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAD",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SIA",
+      "type": 0
+    },
+    {
+      "word": "ARCA",
+      "type": 0
+    },
+    {
+      "word": "ASIA",
+      "type": 0
+    },
+    {
+      "word": "MARC",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "MARCI",
+      "type": 0
+    },
+    {
+      "word": "ARCADA",
+      "type": 0
+    },
+    {
+      "word": "MARCIA",
+      "type": 0
+    },
+    {
+      "word": "MARCADA",
+      "type": 0
+    }
+  ],
+  "letters": "AAAI,MDBX,AASE,RCIA",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

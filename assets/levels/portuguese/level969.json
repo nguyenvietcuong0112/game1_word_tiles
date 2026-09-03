@@ -1,77 +1,235 @@
-﻿{
-    "id":  969,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARTE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TELA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ADIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LETRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FILIAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FILMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AFILIAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EDIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MARTE",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "LETR,ADIA,FILM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 969,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AOS",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "TEM",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "VOS",
+      "type": 0
+    },
+    {
+      "word": "ESTA",
+      "type": 0
+    },
+    {
+      "word": "ESTE",
+      "type": 0
+    },
+    {
+      "word": "TEMOS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "EMA",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "EVO",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "OSS",
+      "type": 0
+    },
+    {
+      "word": "OVE",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SOA",
+      "type": 0
+    },
+    {
+      "word": "SOM",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "TOA",
+      "type": 0
+    },
+    {
+      "word": "ESSO",
+      "type": 0
+    },
+    {
+      "word": "EVOS",
+      "type": 0
+    },
+    {
+      "word": "MAOS",
+      "type": 0
+    },
+    {
+      "word": "MATE",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "METO",
+      "type": 0
+    },
+    {
+      "word": "METS",
+      "type": 0
+    },
+    {
+      "word": "MOSE",
+      "type": 0
+    },
+    {
+      "word": "MOSS",
+      "type": 0
+    },
+    {
+      "word": "OSSO",
+      "type": 0
+    },
+    {
+      "word": "SOAM",
+      "type": 0
+    },
+    {
+      "word": "SOME",
+      "type": 0
+    },
+    {
+      "word": "TAME",
+      "type": 0
+    },
+    {
+      "word": "TEMA",
+      "type": 0
+    },
+    {
+      "word": "TEMO",
+      "type": 0
+    },
+    {
+      "word": "TOME",
+      "type": 0
+    },
+    {
+      "word": "ESTAM",
+      "type": 0
+    },
+    {
+      "word": "ESTAO",
+      "type": 0
+    },
+    {
+      "word": "MOSES",
+      "type": 0
+    },
+    {
+      "word": "SESTA",
+      "type": 0
+    },
+    {
+      "word": "VESTA",
+      "type": 0
+    },
+    {
+      "word": "VESTE",
+      "type": 0
+    },
+    {
+      "word": "VESTEM",
+      "type": 0
+    }
+  ],
+  "letters": "OVSO,SESD,TAOM,EMTE",
+  "obstacles": []
 }

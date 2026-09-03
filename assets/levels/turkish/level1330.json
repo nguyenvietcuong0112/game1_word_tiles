@@ -1,67 +1,107 @@
-﻿{
-    "id":  1330,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "İRİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EMİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İRİN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MEMNUN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "MEMNU",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MNUR,EMNN,KİRİ",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1330,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DÜZ",
+      "type": 0
+    },
+    {
+      "word": "KOY",
+      "type": 0
+    },
+    {
+      "word": "KUŞ",
+      "type": 0
+    },
+    {
+      "word": "OKU",
+      "type": 0
+    },
+    {
+      "word": "ROY",
+      "type": 0
+    },
+    {
+      "word": "YOK",
+      "type": 0
+    },
+    {
+      "word": "ERER",
+      "type": 0
+    },
+    {
+      "word": "KOYU",
+      "type": 0
+    },
+    {
+      "word": "ÜZÜM",
+      "type": 0
+    },
+    {
+      "word": "ÜZERE",
+      "type": 0
+    },
+    {
+      "word": "OKUYOR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "KOR",
+      "type": 0
+    },
+    {
+      "word": "OYU",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "YOR",
+      "type": 0
+    },
+    {
+      "word": "KORO",
+      "type": 0
+    },
+    {
+      "word": "MÜZE",
+      "type": 0
+    },
+    {
+      "word": "OYUK",
+      "type": 0
+    },
+    {
+      "word": "YOKO",
+      "type": 0
+    },
+    {
+      "word": "ÜZER",
+      "type": 0
+    },
+    {
+      "word": "YOKUŞ",
+      "type": 0
+    }
+  ],
+  "letters": "MÜDŞ,ÜZYU,REOK,ERRO",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

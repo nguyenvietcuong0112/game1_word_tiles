@@ -1,130 +1,151 @@
-﻿{
-    "id":  1513,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OWN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MACE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MEOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMEO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CREAM",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOME",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RCEO,EAMW,THON",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  8,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1513,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FAT",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "FATE",
+      "type": 0
+    },
+    {
+      "word": "LOST",
+      "type": 0
+    },
+    {
+      "word": "STAT",
+      "type": 0
+    },
+    {
+      "word": "TENT",
+      "type": 0
+    },
+    {
+      "word": "SOLVE",
+      "type": 0
+    },
+    {
+      "word": "THEFT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AFT",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "EFS",
+      "type": 0
+    },
+    {
+      "word": "EFT",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "FEH",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "SOT",
+      "type": 0
+    },
+    {
+      "word": "TAT",
+      "type": 0
+    },
+    {
+      "word": "VET",
+      "type": 0
+    },
+    {
+      "word": "FATS",
+      "type": 0
+    },
+    {
+      "word": "HEFT",
+      "type": 0
+    },
+    {
+      "word": "LOTH",
+      "type": 0
+    },
+    {
+      "word": "NETS",
+      "type": 0
+    },
+    {
+      "word": "NETT",
+      "type": 0
+    },
+    {
+      "word": "SOTH",
+      "type": 0
+    },
+    {
+      "word": "TATE",
+      "type": 0
+    },
+    {
+      "word": "TATS",
+      "type": 0
+    },
+    {
+      "word": "TOST",
+      "type": 0
+    },
+    {
+      "word": "VENT",
+      "type": 0
+    },
+    {
+      "word": "VETS",
+      "type": 0
+    },
+    {
+      "word": "FATSO",
+      "type": 0
+    },
+    {
+      "word": "SOLVENT",
+      "type": 0
+    }
+  ],
+  "letters": "HEFT,TFAT,OSTT,LVEN",
+  "obstacles": []
 }

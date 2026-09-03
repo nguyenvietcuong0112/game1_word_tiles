@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'services/game_storage.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'services/audio_manager.dart';
 import 'theme/app_theme.dart';
-import 'views/home_screen.dart';
+import 'views/loading_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -16,25 +17,61 @@ void main() async {
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,
-      statusBarIconBrightness: Brightness.dark,
+      statusBarIconBrightness: Brightness.light,
     ),
   );
-
-  await GameStorage.init();
 
   runApp(const WordTilesApp());
 }
 
-class WordTilesApp extends StatelessWidget {
+class WordTilesApp extends StatefulWidget {
   const WordTilesApp({super.key});
 
   @override
+  State<WordTilesApp> createState() => _WordTilesAppState();
+}
+
+class _WordTilesAppState extends State<WordTilesApp> with WidgetsBindingObserver {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.paused ||
+        state == AppLifecycleState.inactive ||
+        state == AppLifecycleState.hidden ||
+        state == AppLifecycleState.detached) {
+      AudioManager.pauseBgm();
+    } else if (state == AppLifecycleState.resumed) {
+      AudioManager.resumeBgm();
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Word Tiles',
-      debugShowCheckedModeBanner: false,
-      theme: AppThemes.lightTheme,
-      home: const HomeScreen(),
+    return ScreenUtilInit(
+      designSize: const Size(390, 844),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      builder: (context, child) {
+        return MaterialApp(
+          title: 'Word Tiles',
+          debugShowCheckedModeBanner: false,
+          theme: AppThemes.lightTheme,
+          home: const LoadingScreen(),
+        );
+      },
     );
   }
 }
+
+

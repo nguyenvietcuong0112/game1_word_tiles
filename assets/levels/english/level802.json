@@ -1,65 +1,255 @@
-﻿{
-    "id":  802,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONSET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONSENT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CONN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CONS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SETO,NNTE,OCLI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 802,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "HOT",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "TOP",
+      "type": 0
+    },
+    {
+      "word": "EASE",
+      "type": 0
+    },
+    {
+      "word": "HOPE",
+      "type": 0
+    },
+    {
+      "word": "POWER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "HOP",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "OWE",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "PEW",
+      "type": 0
+    },
+    {
+      "word": "POH",
+      "type": 0
+    },
+    {
+      "word": "POT",
+      "type": 0
+    },
+    {
+      "word": "POW",
+      "type": 0
+    },
+    {
+      "word": "REP",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "TEW",
+      "type": 0
+    },
+    {
+      "word": "WET",
+      "type": 0
+    },
+    {
+      "word": "WOP",
+      "type": 0
+    },
+    {
+      "word": "ALTO",
+      "type": 0
+    },
+    {
+      "word": "ATOP",
+      "type": 0
+    },
+    {
+      "word": "CATE",
+      "type": 0
+    },
+    {
+      "word": "CREW",
+      "type": 0
+    },
+    {
+      "word": "HATE",
+      "type": 0
+    },
+    {
+      "word": "LASE",
+      "type": 0
+    },
+    {
+      "word": "REPO",
+      "type": 0
+    },
+    {
+      "word": "SALT",
+      "type": 0
+    },
+    {
+      "word": "TACE",
+      "type": 0
+    },
+    {
+      "word": "TOPE",
+      "type": 0
+    },
+    {
+      "word": "ALTER",
+      "type": 0
+    },
+    {
+      "word": "ATLAS",
+      "type": 0
+    },
+    {
+      "word": "CATER",
+      "type": 0
+    },
+    {
+      "word": "CEASE",
+      "type": 0
+    },
+    {
+      "word": "HATER",
+      "type": 0
+    },
+    {
+      "word": "HOPER",
+      "type": 0
+    },
+    {
+      "word": "PERSE",
+      "type": 0
+    },
+    {
+      "word": "REPOT",
+      "type": 0
+    },
+    {
+      "word": "TERCE",
+      "type": 0
+    },
+    {
+      "word": "TERSE",
+      "type": 0
+    },
+    {
+      "word": "TOPER",
+      "type": 0
+    },
+    {
+      "word": "ALTERS",
+      "type": 0
+    },
+    {
+      "word": "CATERS",
+      "type": 0
+    },
+    {
+      "word": "HATERS",
+      "type": 0
+    },
+    {
+      "word": "HOPERS",
+      "type": 0
+    },
+    {
+      "word": "POWERS",
+      "type": 0
+    },
+    {
+      "word": "SALTER",
+      "type": 0
+    },
+    {
+      "word": "SECRET",
+      "type": 0
+    },
+    {
+      "word": "TERCES",
+      "type": 0
+    },
+    {
+      "word": "TOPERS",
+      "type": 0
+    },
+    {
+      "word": "PERSALT",
+      "type": 0
+    }
+  ],
+  "letters": "HOPO,ATEW,CLRC,EASE",
+  "obstacles": []
 }

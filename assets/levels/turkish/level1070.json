@@ -1,126 +1,147 @@
-﻿{
-    "id":  1070,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİST",
-                             "type":  2
-                         },
-                         {
-                             "word":  "STAT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "USTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İSTİFA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASTAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FATSA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "İFA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İKTİFA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İSTİF",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LASTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TATSAL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ZULA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ZİKT,USTA,LAİF",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1070,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "KAÇ",
+      "type": 0
+    },
+    {
+      "word": "KOÇ",
+      "type": 0
+    },
+    {
+      "word": "MOE",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "ÇAY",
+      "type": 0
+    },
+    {
+      "word": "ÇOK",
+      "type": 0
+    },
+    {
+      "word": "KARL",
+      "type": 0
+    },
+    {
+      "word": "ACEMİ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "CEM",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "ÇAK",
+      "type": 0
+    },
+    {
+      "word": "ÇİM",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "AKLA",
+      "type": 0
+    },
+    {
+      "word": "KATY",
+      "type": 0
+    },
+    {
+      "word": "OKAY",
+      "type": 0
+    },
+    {
+      "word": "TAKE",
+      "type": 0
+    },
+    {
+      "word": "AKTAR",
+      "type": 0
+    },
+    {
+      "word": "KARLA",
+      "type": 0
+    },
+    {
+      "word": "KATYA",
+      "type": 0
+    },
+    {
+      "word": "TAKLA",
+      "type": 0
+    },
+    {
+      "word": "TARLA",
+      "type": 0
+    },
+    {
+      "word": "ÇOKTA",
+      "type": 0
+    }
+  ],
+  "letters": "İÇAY,MOKT,EEKA,CALR",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

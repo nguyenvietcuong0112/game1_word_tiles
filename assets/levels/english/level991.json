@@ -1,77 +1,239 @@
-﻿{
-    "id":  991,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BUFF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAMB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VERB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOVER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BUFFALO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FAMER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VERA,OMBU,LAFF",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 991,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "HALL",
+      "type": 0
+    },
+    {
+      "word": "ORAL",
+      "type": 0
+    },
+    {
+      "word": "OVAL",
+      "type": 0
+    },
+    {
+      "word": "SAVE",
+      "type": 0
+    },
+    {
+      "word": "SHALL",
+      "type": 0
+    },
+    {
+      "word": "VALVE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "AVO",
+      "type": 0
+    },
+    {
+      "word": "HAO",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LAV",
+      "type": 0
+    },
+    {
+      "word": "OAR",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "OVA",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "VAR",
+      "type": 0
+    },
+    {
+      "word": "VAS",
+      "type": 0
+    },
+    {
+      "word": "ALAR",
+      "type": 0
+    },
+    {
+      "word": "ALAS",
+      "type": 0
+    },
+    {
+      "word": "AVES",
+      "type": 0
+    },
+    {
+      "word": "AVOS",
+      "type": 0
+    },
+    {
+      "word": "HARP",
+      "type": 0
+    },
+    {
+      "word": "LASE",
+      "type": 0
+    },
+    {
+      "word": "LAVE",
+      "type": 0
+    },
+    {
+      "word": "OSAR",
+      "type": 0
+    },
+    {
+      "word": "PRAO",
+      "type": 0
+    },
+    {
+      "word": "PROS",
+      "type": 0
+    },
+    {
+      "word": "RASE",
+      "type": 0
+    },
+    {
+      "word": "RAVE",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    },
+    {
+      "word": "SALL",
+      "type": 0
+    },
+    {
+      "word": "SOAR",
+      "type": 0
+    },
+    {
+      "word": "SORA",
+      "type": 0
+    },
+    {
+      "word": "VARA",
+      "type": 0
+    },
+    {
+      "word": "VASE",
+      "type": 0
+    },
+    {
+      "word": "AROSE",
+      "type": 0
+    },
+    {
+      "word": "HALVA",
+      "type": 0
+    },
+    {
+      "word": "LAVES",
+      "type": 0
+    },
+    {
+      "word": "PRAOS",
+      "type": 0
+    },
+    {
+      "word": "PRASE",
+      "type": 0
+    },
+    {
+      "word": "PROSE",
+      "type": 0
+    },
+    {
+      "word": "RAVES",
+      "type": 0
+    },
+    {
+      "word": "SALVO",
+      "type": 0
+    },
+    {
+      "word": "SHARP",
+      "type": 0
+    },
+    {
+      "word": "PHAROS",
+      "type": 0
+    },
+    {
+      "word": "SALVOS",
+      "type": 0
+    },
+    {
+      "word": "VALVAL",
+      "type": 0
+    },
+    {
+      "word": "VALVAR",
+      "type": 0
+    },
+    {
+      "word": "VALVES",
+      "type": 0
+    }
+  ],
+  "letters": "ROSE,PRAV,HALL,SOVA",
+  "obstacles": []
 }

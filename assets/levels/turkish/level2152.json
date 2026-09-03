@@ -1,97 +1,183 @@
-﻿{
-    "id":  2152,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AFET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARAF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FARAŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEFTİŞ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AFT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ATAŞ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AŞAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAF",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TARAŞ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TRATA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ŞAFT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EFTİ,TARŞ,AŞAÇ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2152,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AMY",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "VER",
+      "type": 0
+    },
+    {
+      "word": "ZAR",
+      "type": 0
+    },
+    {
+      "word": "MART",
+      "type": 0
+    },
+    {
+      "word": "MASA",
+      "type": 0
+    },
+    {
+      "word": "OLMA",
+      "type": 0
+    },
+    {
+      "word": "MARİA",
+      "type": 0
+    },
+    {
+      "word": "PETRA",
+      "type": 0
+    },
+    {
+      "word": "VERDİ",
+      "type": 0
+    },
+    {
+      "word": "OLMASA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "AİR",
+      "type": 0
+    },
+    {
+      "word": "DRE",
+      "type": 0
+    },
+    {
+      "word": "DİR",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MAİ",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RİA",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "SAİ",
+      "type": 0
+    },
+    {
+      "word": "TAİ",
+      "type": 0
+    },
+    {
+      "word": "ZAM",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "ARTA",
+      "type": 0
+    },
+    {
+      "word": "ARİA",
+      "type": 0
+    },
+    {
+      "word": "ASMA",
+      "type": 0
+    },
+    {
+      "word": "ERDİ",
+      "type": 0
+    },
+    {
+      "word": "MARİ",
+      "type": 0
+    },
+    {
+      "word": "MAİA",
+      "type": 0
+    },
+    {
+      "word": "SAOL",
+      "type": 0
+    },
+    {
+      "word": "SAİD",
+      "type": 0
+    },
+    {
+      "word": "MARTA",
+      "type": 0
+    }
+  ],
+  "letters": "YMSAO,ZAAML,PRİDR,ETAVE",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

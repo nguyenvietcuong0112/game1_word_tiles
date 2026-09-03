@@ -1,130 +1,187 @@
-﻿{
-    "id":  1786,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OPAL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "POLO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAUGH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POLAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAUGHTER",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LOP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PALO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUTH",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TERRA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TUG",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "FORRE,OLAUT,PAEGH",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1786,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "ANY",
+      "type": 0
+    },
+    {
+      "word": "BIN",
+      "type": 0
+    },
+    {
+      "word": "BIT",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "CHAR",
+      "type": 0
+    },
+    {
+      "word": "ACTING",
+      "type": 0
+    },
+    {
+      "word": "BITING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIT",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NIB",
+      "type": 0
+    },
+    {
+      "word": "NIT",
+      "type": 0
+    },
+    {
+      "word": "RAG",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "SAG",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "ARCH",
+      "type": 0
+    },
+    {
+      "word": "ARCS",
+      "type": 0
+    },
+    {
+      "word": "BRAG",
+      "type": 0
+    },
+    {
+      "word": "BRAN",
+      "type": 0
+    },
+    {
+      "word": "BRAS",
+      "type": 0
+    },
+    {
+      "word": "CRAG",
+      "type": 0
+    },
+    {
+      "word": "GARB",
+      "type": 0
+    },
+    {
+      "word": "NARC",
+      "type": 0
+    },
+    {
+      "word": "RAIA",
+      "type": 0
+    },
+    {
+      "word": "TING",
+      "type": 0
+    },
+    {
+      "word": "ACTIN",
+      "type": 0
+    },
+    {
+      "word": "NARCS",
+      "type": 0
+    },
+    {
+      "word": "SARAN",
+      "type": 0
+    },
+    {
+      "word": "SCRAG",
+      "type": 0
+    },
+    {
+      "word": "TIARA",
+      "type": 0
+    },
+    {
+      "word": "TIBIA",
+      "type": 0
+    },
+    {
+      "word": "ANARCH",
+      "type": 0
+    },
+    {
+      "word": "CHARAS",
+      "type": 0
+    },
+    {
+      "word": "TIARAS",
+      "type": 0
+    },
+    {
+      "word": "ANARCHY",
+      "type": 0
+    }
+  ],
+  "letters": "SCHY,ARAN,GBIA,NITC",
+  "obstacles": []
 }

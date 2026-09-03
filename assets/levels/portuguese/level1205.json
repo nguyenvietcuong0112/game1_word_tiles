@@ -1,89 +1,187 @@
-﻿{
-    "id":  1205,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BELO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GELO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MULO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TÚMULO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOBAGEM",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ABEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EGO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GEBO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MÚTULO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OMEGA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UME",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TULO,ÚMEG,BOBA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1205,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "TIO",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "BASS",
+      "type": 0
+    },
+    {
+      "word": "ESTA",
+      "type": 0
+    },
+    {
+      "word": "STAN",
+      "type": 0
+    },
+    {
+      "word": "SUBS",
+      "type": 0
+    },
+    {
+      "word": "TIOS",
+      "type": 0
+    },
+    {
+      "word": "BESTA",
+      "type": 0
+    },
+    {
+      "word": "ESTAS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANS",
+      "type": 0
+    },
+    {
+      "word": "ASB",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "ASU",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BIO",
+      "type": 0
+    },
+    {
+      "word": "BIT",
+      "type": 0
+    },
+    {
+      "word": "BUS",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "ITT",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NBA",
+      "type": 0
+    },
+    {
+      "word": "SAA",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "SUB",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TSA",
+      "type": 0
+    },
+    {
+      "word": "TTA",
+      "type": 0
+    },
+    {
+      "word": "USS",
+      "type": 0
+    },
+    {
+      "word": "ASSA",
+      "type": 0
+    },
+    {
+      "word": "BEST",
+      "type": 0
+    },
+    {
+      "word": "BITS",
+      "type": 0
+    },
+    {
+      "word": "SAAB",
+      "type": 0
+    },
+    {
+      "word": "SANS",
+      "type": 0
+    },
+    {
+      "word": "SUBI",
+      "type": 0
+    },
+    {
+      "word": "BESTAS",
+      "type": 0
+    }
+  ],
+  "letters": "OSBE,ITTS,BSAN,USAB",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,77 +1,243 @@
-﻿{
-    "id":  1177,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LARD",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LORD",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ORDER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BORDER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LADDER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ADDER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BORA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LARDER",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ORAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAD",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DDE,ARR,LOB",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1177,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "IVY",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "CARD",
+      "type": 0
+    },
+    {
+      "word": "EDIT",
+      "type": 0
+    },
+    {
+      "word": "LATE",
+      "type": 0
+    },
+    {
+      "word": "TALE",
+      "type": 0
+    },
+    {
+      "word": "LATER",
+      "type": 0
+    },
+    {
+      "word": "RELATE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "DIT",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "LAT",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "RID",
+      "type": 0
+    },
+    {
+      "word": "TAT",
+      "type": 0
+    },
+    {
+      "word": "ACRE",
+      "type": 0
+    },
+    {
+      "word": "CARR",
+      "type": 0
+    },
+    {
+      "word": "DIRE",
+      "type": 0
+    },
+    {
+      "word": "DITA",
+      "type": 0
+    },
+    {
+      "word": "DITE",
+      "type": 0
+    },
+    {
+      "word": "DIVE",
+      "type": 0
+    },
+    {
+      "word": "LATI",
+      "type": 0
+    },
+    {
+      "word": "RIDE",
+      "type": 0
+    },
+    {
+      "word": "RITE",
+      "type": 0
+    },
+    {
+      "word": "RIVE",
+      "type": 0
+    },
+    {
+      "word": "TATE",
+      "type": 0
+    },
+    {
+      "word": "TELA",
+      "type": 0
+    },
+    {
+      "word": "TELE",
+      "type": 0
+    },
+    {
+      "word": "TIDE",
+      "type": 0
+    },
+    {
+      "word": "TIRE",
+      "type": 0
+    },
+    {
+      "word": "TIVY",
+      "type": 0
+    },
+    {
+      "word": "VIDE",
+      "type": 0
+    },
+    {
+      "word": "VITA",
+      "type": 0
+    },
+    {
+      "word": "ACRID",
+      "type": 0
+    },
+    {
+      "word": "DIRER",
+      "type": 0
+    },
+    {
+      "word": "ELATE",
+      "type": 0
+    },
+    {
+      "word": "EVITE",
+      "type": 0
+    },
+    {
+      "word": "RELET",
+      "type": 0
+    },
+    {
+      "word": "RIVED",
+      "type": 0
+    },
+    {
+      "word": "TALER",
+      "type": 0
+    },
+    {
+      "word": "TATER",
+      "type": 0
+    },
+    {
+      "word": "TERRA",
+      "type": 0
+    },
+    {
+      "word": "VITAL",
+      "type": 0
+    },
+    {
+      "word": "ARRIVE",
+      "type": 0
+    },
+    {
+      "word": "CARREL",
+      "type": 0
+    },
+    {
+      "word": "ELATER",
+      "type": 0
+    },
+    {
+      "word": "ARRIVED",
+      "type": 0
+    },
+    {
+      "word": "ELATIVE",
+      "type": 0
+    },
+    {
+      "word": "RELATER",
+      "type": 0
+    },
+    {
+      "word": "ELATERID",
+      "type": 0
+    },
+    {
+      "word": "RELATIVE",
+      "type": 0
+    }
+  ],
+  "letters": "TALE,YTER,VIRC,EDRA",
+  "obstacles": []
 }

@@ -1,93 +1,247 @@
-﻿{
-    "id":  1144,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MÃE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CIANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MACIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POLCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NACIONAL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACIONAL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMÃ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANION",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEÃ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POLAINA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "POLAN,EÃCIO,AMANO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1144,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "PIO",
+      "type": 0
+    },
+    {
+      "word": "PRA",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "ARTE",
+      "type": 0
+    },
+    {
+      "word": "PISO",
+      "type": 0
+    },
+    {
+      "word": "PODE",
+      "type": 0
+    },
+    {
+      "word": "POIS",
+      "type": 0
+    },
+    {
+      "word": "DEPOIS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABI",
+      "type": 0
+    },
+    {
+      "word": "AOI",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "BAO",
+      "type": 0
+    },
+    {
+      "word": "BIS",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "DEP",
+      "type": 0
+    },
+    {
+      "word": "DET",
+      "type": 0
+    },
+    {
+      "word": "DOI",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "ISA",
+      "type": 0
+    },
+    {
+      "word": "ISO",
+      "type": 0
+    },
+    {
+      "word": "IST",
+      "type": 0
+    },
+    {
+      "word": "OAB",
+      "type": 0
+    },
+    {
+      "word": "OBA",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "POD",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "TRI",
+      "type": 0
+    },
+    {
+      "word": "ARIS",
+      "type": 0
+    },
+    {
+      "word": "ARTS",
+      "type": 0
+    },
+    {
+      "word": "BARI",
+      "type": 0
+    },
+    {
+      "word": "BART",
+      "type": 0
+    },
+    {
+      "word": "PISA",
+      "type": 0
+    },
+    {
+      "word": "PRAS",
+      "type": 0
+    },
+    {
+      "word": "RABI",
+      "type": 0
+    },
+    {
+      "word": "RABO",
+      "type": 0
+    },
+    {
+      "word": "RASO",
+      "type": 0
+    },
+    {
+      "word": "SARI",
+      "type": 0
+    },
+    {
+      "word": "SIRA",
+      "type": 0
+    },
+    {
+      "word": "STEP",
+      "type": 0
+    },
+    {
+      "word": "TRAS",
+      "type": 0
+    },
+    {
+      "word": "TRIS",
+      "type": 0
+    },
+    {
+      "word": "BARTS",
+      "type": 0
+    },
+    {
+      "word": "PETRA",
+      "type": 0
+    },
+    {
+      "word": "PETRI",
+      "type": 0
+    },
+    {
+      "word": "PISAR",
+      "type": 0
+    },
+    {
+      "word": "RABOS",
+      "type": 0
+    },
+    {
+      "word": "TRIBO",
+      "type": 0
+    },
+    {
+      "word": "TRIBOS",
+      "type": 0
+    }
+  ],
+  "letters": "DETS,OPRI,IOAB,PISO",
+  "obstacles": []
 }

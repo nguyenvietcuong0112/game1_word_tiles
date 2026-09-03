@@ -1,138 +1,307 @@
-﻿{
-    "id":  1858,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "NIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EMIT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MITE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "OMIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UNIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MERIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIMER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UNITE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MINUTE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EMIR",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MERE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIRE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NITE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "NOM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOME",
-                            "type":  1
-                        },
-                        {
-                            "word":  "NUT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REMIT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIME",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RITE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UNI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UTE,NIR,OME",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1858,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "ACTS",
+      "type": 0
+    },
+    {
+      "word": "CAST",
+      "type": 0
+    },
+    {
+      "word": "DESK",
+      "type": 0
+    },
+    {
+      "word": "ROCK",
+      "type": 0
+    },
+    {
+      "word": "ASSUME",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "CAD",
+      "type": 0
+    },
+    {
+      "word": "COB",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "EAU",
+      "type": 0
+    },
+    {
+      "word": "EMU",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "MUS",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAD",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAU",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "SUM",
+      "type": 0
+    },
+    {
+      "word": "ARSE",
+      "type": 0
+    },
+    {
+      "word": "ASKS",
+      "type": 0
+    },
+    {
+      "word": "BOCK",
+      "type": 0
+    },
+    {
+      "word": "BORA",
+      "type": 0
+    },
+    {
+      "word": "BOSK",
+      "type": 0
+    },
+    {
+      "word": "BOSS",
+      "type": 0
+    },
+    {
+      "word": "CADE",
+      "type": 0
+    },
+    {
+      "word": "COSS",
+      "type": 0
+    },
+    {
+      "word": "EARS",
+      "type": 0
+    },
+    {
+      "word": "EMUS",
+      "type": 0
+    },
+    {
+      "word": "ERRS",
+      "type": 0
+    },
+    {
+      "word": "MUSS",
+      "type": 0
+    },
+    {
+      "word": "OCAS",
+      "type": 0
+    },
+    {
+      "word": "OSAR",
+      "type": 0
+    },
+    {
+      "word": "SACK",
+      "type": 0
+    },
+    {
+      "word": "SADE",
+      "type": 0
+    },
+    {
+      "word": "SEAR",
+      "type": 0
+    },
+    {
+      "word": "SEAS",
+      "type": 0
+    },
+    {
+      "word": "SOCK",
+      "type": 0
+    },
+    {
+      "word": "SORA",
+      "type": 0
+    },
+    {
+      "word": "BOCKS",
+      "type": 0
+    },
+    {
+      "word": "BORAS",
+      "type": 0
+    },
+    {
+      "word": "BOSKS",
+      "type": 0
+    },
+    {
+      "word": "CADES",
+      "type": 0
+    },
+    {
+      "word": "CORSE",
+      "type": 0
+    },
+    {
+      "word": "DESKS",
+      "type": 0
+    },
+    {
+      "word": "ROCKS",
+      "type": 0
+    },
+    {
+      "word": "SACKS",
+      "type": 0
+    },
+    {
+      "word": "SADES",
+      "type": 0
+    },
+    {
+      "word": "SOCKS",
+      "type": 0
+    },
+    {
+      "word": "TSADE",
+      "type": 0
+    },
+    {
+      "word": "MUSSED",
+      "type": 0
+    },
+    {
+      "word": "RESEAU",
+      "type": 0
+    },
+    {
+      "word": "TSADES",
+      "type": 0
+    },
+    {
+      "word": "ASSUMES",
+      "type": 0
+    },
+    {
+      "word": "RESEAUS",
+      "type": 0
+    }
+  ],
+  "letters": "MUSSE,EASKD,SROCA,ERBTS",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

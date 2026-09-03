@@ -1,93 +1,191 @@
-﻿{
-    "id":  1010,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BASİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İTİCİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BİNİCİ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARABİ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BARİT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CİN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NİSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SABİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SARA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SARAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SİNİ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NİCİ,İSİT,BARA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1010,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "HAN",
+      "type": 0
+    },
+    {
+      "word": "MEG",
+      "type": 0
+    },
+    {
+      "word": "NİN",
+      "type": 0
+    },
+    {
+      "word": "İAN",
+      "type": 0
+    },
+    {
+      "word": "ANNA",
+      "type": 0
+    },
+    {
+      "word": "EMRİ",
+      "type": 0
+    },
+    {
+      "word": "İZNİ",
+      "type": 0
+    },
+    {
+      "word": "HANNAH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "ANN",
+      "type": 0
+    },
+    {
+      "word": "AİR",
+      "type": 0
+    },
+    {
+      "word": "GEM",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "HAA",
+      "type": 0
+    },
+    {
+      "word": "HAİ",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAİ",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MRİ",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAİ",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "RİA",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "AMEN",
+      "type": 0
+    },
+    {
+      "word": "ANAM",
+      "type": 0
+    },
+    {
+      "word": "GENİ",
+      "type": 0
+    },
+    {
+      "word": "HANA",
+      "type": 0
+    },
+    {
+      "word": "MANA",
+      "type": 0
+    },
+    {
+      "word": "MANN",
+      "type": 0
+    },
+    {
+      "word": "MAİA",
+      "type": 0
+    },
+    {
+      "word": "MENİ",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "NİNE",
+      "type": 0
+    },
+    {
+      "word": "İRMA",
+      "type": 0
+    },
+    {
+      "word": "HANNA",
+      "type": 0
+    },
+    {
+      "word": "NİNEM",
+      "type": 0
+    },
+    {
+      "word": "İZNİN",
+      "type": 0
+    },
+    {
+      "word": "MEGHAN",
+      "type": 0
+    },
+    {
+      "word": "İZNİNE",
+      "type": 0
+    }
+  ],
+  "letters": "HANN,ZİAA,NRMH,İNEG",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

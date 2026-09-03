@@ -1,101 +1,155 @@
-﻿{
-    "id":  1070,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HORA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SACA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SACO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OUSAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PORCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POUSAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REPOUSAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AROCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OCAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OCRE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PERSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POUSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SACRO",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "USAR,ORCO,PEAH",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1070,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "JEN",
+      "type": 0
+    },
+    {
+      "word": "JIN",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "UTI",
+      "type": 0
+    },
+    {
+      "word": "HAVE",
+      "type": 0
+    },
+    {
+      "word": "TAPA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "APA",
+      "type": 0
+    },
+    {
+      "word": "APU",
+      "type": 0
+    },
+    {
+      "word": "EIN",
+      "type": 0
+    },
+    {
+      "word": "HAP",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "NEI",
+      "type": 0
+    },
+    {
+      "word": "PUT",
+      "type": 0
+    },
+    {
+      "word": "RIE",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "TRI",
+      "type": 0
+    },
+    {
+      "word": "UNE",
+      "type": 0
+    },
+    {
+      "word": "UNI",
+      "type": 0
+    },
+    {
+      "word": "UPA",
+      "type": 0
+    },
+    {
+      "word": "UVA",
+      "type": 0
+    },
+    {
+      "word": "UVE",
+      "type": 0
+    },
+    {
+      "word": "VET",
+      "type": 0
+    },
+    {
+      "word": "NEIN",
+      "type": 0
+    },
+    {
+      "word": "NEJI",
+      "type": 0
+    },
+    {
+      "word": "PUNE",
+      "type": 0
+    },
+    {
+      "word": "TUNE",
+      "type": 0
+    },
+    {
+      "word": "UNIT",
+      "type": 0
+    },
+    {
+      "word": "PUTIN",
+      "type": 0
+    }
+  ],
+  "letters": "ETIJ,VUNE,APRI,HATN",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

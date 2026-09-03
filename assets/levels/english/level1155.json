@@ -1,85 +1,159 @@
-﻿{
-    "id":  1155,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COPY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PECAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANOPY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECONOMY",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "COMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ECO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MONACO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MONO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOPE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "NOM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EPY,COM,ANO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1155,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DRY",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "HOT",
+      "type": 0
+    },
+    {
+      "word": "OIL",
+      "type": 0
+    },
+    {
+      "word": "CORD",
+      "type": 0
+    },
+    {
+      "word": "FAIL",
+      "type": 0
+    },
+    {
+      "word": "LINE",
+      "type": 0
+    },
+    {
+      "word": "NEED",
+      "type": 0
+    },
+    {
+      "word": "ROAD",
+      "type": 0
+    },
+    {
+      "word": "INDEED",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIL",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "DEY",
+      "type": 0
+    },
+    {
+      "word": "EDH",
+      "type": 0
+    },
+    {
+      "word": "FAD",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "OAF",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "RYE",
+      "type": 0
+    },
+    {
+      "word": "CORY",
+      "type": 0
+    },
+    {
+      "word": "DEED",
+      "type": 0
+    },
+    {
+      "word": "FADE",
+      "type": 0
+    },
+    {
+      "word": "FAIN",
+      "type": 0
+    },
+    {
+      "word": "TOIL",
+      "type": 0
+    },
+    {
+      "word": "LINED",
+      "type": 0
+    },
+    {
+      "word": "ORDAIN",
+      "type": 0
+    },
+    {
+      "word": "HOTLINE",
+      "type": 0
+    },
+    {
+      "word": "ORDAINED",
+      "type": 0
+    }
+  ],
+  "letters": "DEEY,HNDR,OIAO,TLFC",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

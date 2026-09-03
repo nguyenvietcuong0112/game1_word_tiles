@@ -1,57 +1,107 @@
-﻿{
-    "id":  700,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ГОЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ИГО",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛИФ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ФОЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ГОЛЬ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ГОЛЬФ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ИГОЛКА",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ГИЛЬ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ИЛЬ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛОГ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ФИГ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ФКА,ОЛЬ,ГИФ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 700,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ГДЕ",
+      "type": 0
+    },
+    {
+      "word": "ДКЕ",
+      "type": 0
+    },
+    {
+      "word": "МАК",
+      "type": 0
+    },
+    {
+      "word": "МЕН",
+      "type": 0
+    },
+    {
+      "word": "НЕМ",
+      "type": 0
+    },
+    {
+      "word": "ДЖЕК",
+      "type": 0
+    },
+    {
+      "word": "РЕКС",
+      "type": 0
+    },
+    {
+      "word": "КАМЕНЬ",
+      "type": 0
+    },
+    {
+      "word": "ПРЕЖДЕ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ГЕН",
+      "type": 0
+    },
+    {
+      "word": "ДЕС",
+      "type": 0
+    },
+    {
+      "word": "ЕМА",
+      "type": 0
+    },
+    {
+      "word": "КЕР",
+      "type": 0
+    },
+    {
+      "word": "МАГ",
+      "type": 0
+    },
+    {
+      "word": "МЕГ",
+      "type": 0
+    },
+    {
+      "word": "РЕК",
+      "type": 0
+    },
+    {
+      "word": "ДЖЕР",
+      "type": 0
+    },
+    {
+      "word": "МЕГА",
+      "type": 0
+    },
+    {
+      "word": "РЕЖЬ",
+      "type": 0
+    },
+    {
+      "word": "ДЖЕКС",
+      "type": 0
+    },
+    {
+      "word": "НЕГДЕ",
+      "type": 0
+    }
+  ],
+  "letters": "КЕРП,СЖЬН,ЕДГЕ,ЕКАМ",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

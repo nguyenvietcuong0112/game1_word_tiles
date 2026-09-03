@@ -1,61 +1,143 @@
-﻿{
-    "id":  910,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KASK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAST",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SARP",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ASTRONOT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KRON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAST",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RPTO,ASTN,KKRO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 910,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABİ",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AMY",
+      "type": 0
+    },
+    {
+      "word": "AKIL",
+      "type": 0
+    },
+    {
+      "word": "ARKA",
+      "type": 0
+    },
+    {
+      "word": "MARK",
+      "type": 0
+    },
+    {
+      "word": "MARY",
+      "type": 0
+    },
+    {
+      "word": "KILICI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ARK",
+      "type": 0
+    },
+    {
+      "word": "CIK",
+      "type": 0
+    },
+    {
+      "word": "IRK",
+      "type": 0
+    },
+    {
+      "word": "KIL",
+      "type": 0
+    },
+    {
+      "word": "LIK",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "ILIK",
+      "type": 0
+    },
+    {
+      "word": "KAMA",
+      "type": 0
+    },
+    {
+      "word": "KILI",
+      "type": 0
+    },
+    {
+      "word": "MYKA",
+      "type": 0
+    },
+    {
+      "word": "MYRA",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "AKICI",
+      "type": 0
+    },
+    {
+      "word": "MARKA",
+      "type": 0
+    },
+    {
+      "word": "MARKİ",
+      "type": 0
+    },
+    {
+      "word": "RAMAK",
+      "type": 0
+    },
+    {
+      "word": "İKRAM",
+      "type": 0
+    }
+  ],
+  "letters": "BAIL,İICI,KRYK,AAMA",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

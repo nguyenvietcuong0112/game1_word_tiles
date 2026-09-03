@@ -1,93 +1,243 @@
-﻿{
-    "id":  2360,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞOK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İLİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TARZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LİMİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MİLAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALİMAT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "TALİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TİM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "İMARZ,LİTCA,ATŞOK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2360,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "DEA",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "RİP",
+      "type": 0
+    },
+    {
+      "word": "YAZ",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "AYAK",
+      "type": 0
+    },
+    {
+      "word": "KAYA",
+      "type": 0
+    },
+    {
+      "word": "KAZA",
+      "type": 0
+    },
+    {
+      "word": "MARY",
+      "type": 0
+    },
+    {
+      "word": "MAYA",
+      "type": 0
+    },
+    {
+      "word": "YAZI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "AZA",
+      "type": 0
+    },
+    {
+      "word": "AZI",
+      "type": 0
+    },
+    {
+      "word": "EPİ",
+      "type": 0
+    },
+    {
+      "word": "HAM",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "KAZ",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MAY",
+      "type": 0
+    },
+    {
+      "word": "MIZ",
+      "type": 0
+    },
+    {
+      "word": "MRİ",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "PİM",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RİM",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "YAY",
+      "type": 0
+    },
+    {
+      "word": "ZAK",
+      "type": 0
+    },
+    {
+      "word": "ZAM",
+      "type": 0
+    },
+    {
+      "word": "İPE",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "AMİR",
+      "type": 0
+    },
+    {
+      "word": "ARYA",
+      "type": 0
+    },
+    {
+      "word": "HARİ",
+      "type": 0
+    },
+    {
+      "word": "KAMA",
+      "type": 0
+    },
+    {
+      "word": "KAZI",
+      "type": 0
+    },
+    {
+      "word": "MAMA",
+      "type": 0
+    },
+    {
+      "word": "MARİ",
+      "type": 0
+    },
+    {
+      "word": "MİRA",
+      "type": 0
+    },
+    {
+      "word": "YAKA",
+      "type": 0
+    },
+    {
+      "word": "YAMA",
+      "type": 0
+    },
+    {
+      "word": "YAYA",
+      "type": 0
+    },
+    {
+      "word": "YAZA",
+      "type": 0
+    },
+    {
+      "word": "İRMA",
+      "type": 0
+    },
+    {
+      "word": "YAZIM",
+      "type": 0
+    },
+    {
+      "word": "KAYAYA",
+      "type": 0
+    },
+    {
+      "word": "KAZAYA",
+      "type": 0
+    }
+  ],
+  "letters": "AIZAK,HMAMA,ARYAY,MİPED",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

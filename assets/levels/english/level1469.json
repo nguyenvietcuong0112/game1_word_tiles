@@ -1,162 +1,135 @@
-﻿{
-    "id":  1469,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SNAG",
-                             "type":  2
-                         },
-                         {
-                             "word":  "OASIS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANSION",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANUS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EONS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ION",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IONS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAGS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MANO",
-                            "type":  1
-                        },
-                        {
-                            "word":  "MANS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MANSIONS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NAG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAGS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ONUS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SINE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SION",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SONS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SUNS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MAGSN,UNSIO,SOANE",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1469,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIM",
+      "type": 0
+    },
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "DIS",
+      "type": 0
+    },
+    {
+      "word": "IDS",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "MOL",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "SIDE",
+      "type": 0
+    },
+    {
+      "word": "TEST",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIT",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "TET",
+      "type": 0
+    },
+    {
+      "word": "AITS",
+      "type": 0
+    },
+    {
+      "word": "DIOL",
+      "type": 0
+    },
+    {
+      "word": "DISS",
+      "type": 0
+    },
+    {
+      "word": "MITT",
+      "type": 0
+    },
+    {
+      "word": "MOLS",
+      "type": 0
+    },
+    {
+      "word": "OMIT",
+      "type": 0
+    },
+    {
+      "word": "RASE",
+      "type": 0
+    },
+    {
+      "word": "SETT",
+      "type": 0
+    },
+    {
+      "word": "STET",
+      "type": 0
+    },
+    {
+      "word": "TEDS",
+      "type": 0
+    },
+    {
+      "word": "TETS",
+      "type": 0
+    },
+    {
+      "word": "TSAR",
+      "type": 0
+    },
+    {
+      "word": "DIOLS",
+      "type": 0
+    },
+    {
+      "word": "OMITS",
+      "type": 0
+    },
+    {
+      "word": "SLOID",
+      "type": 0
+    },
+    {
+      "word": "DETEST",
+      "type": 0
+    },
+    {
+      "word": "SLOIDS",
+      "type": 0
+    },
+    {
+      "word": "OMITTED",
+      "type": 0
+    }
+  ],
+  "letters": "TSSL,EDIO,TTIM,ESAR",
+  "obstacles": []
 }

@@ -1,141 +1,231 @@
-﻿{
-    "id":  1118,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CURA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DURO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OTRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANTRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RETRO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TRUCO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CORTEJO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DURANTE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANTEJO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ANTOJE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARTEJO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CURO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DARTE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DURA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORANTE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORTO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OTRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REJO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUDA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEJO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TERNA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "URO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "COOJ,URTE,DANR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1118,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "LEO",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "TAL",
+      "type": 0
+    },
+    {
+      "word": "ALTO",
+      "type": 0
+    },
+    {
+      "word": "DABA",
+      "type": 0
+    },
+    {
+      "word": "DALE",
+      "type": 0
+    },
+    {
+      "word": "LADO",
+      "type": 0
+    },
+    {
+      "word": "GENTE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DOG",
+      "type": 0
+    },
+    {
+      "word": "EGO",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "GEO",
+      "type": 0
+    },
+    {
+      "word": "GOD",
+      "type": 0
+    },
+    {
+      "word": "GOL",
+      "type": 0
+    },
+    {
+      "word": "GON",
+      "type": 0
+    },
+    {
+      "word": "LON",
+      "type": 0
+    },
+    {
+      "word": "NOG",
+      "type": 0
+    },
+    {
+      "word": "ODA",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TES",
+      "type": 0
+    },
+    {
+      "word": "ABAD",
+      "type": 0
+    },
+    {
+      "word": "BALE",
+      "type": 0
+    },
+    {
+      "word": "BATA",
+      "type": 0
+    },
+    {
+      "word": "DALO",
+      "type": 0
+    },
+    {
+      "word": "DATA",
+      "type": 0
+    },
+    {
+      "word": "DONE",
+      "type": 0
+    },
+    {
+      "word": "EGEO",
+      "type": 0
+    },
+    {
+      "word": "EGON",
+      "type": 0
+    },
+    {
+      "word": "ENTE",
+      "type": 0
+    },
+    {
+      "word": "GONE",
+      "type": 0
+    },
+    {
+      "word": "LATA",
+      "type": 0
+    },
+    {
+      "word": "LEGO",
+      "type": 0
+    },
+    {
+      "word": "LONE",
+      "type": 0
+    },
+    {
+      "word": "NOLA",
+      "type": 0
+    },
+    {
+      "word": "OLEG",
+      "type": 0
+    },
+    {
+      "word": "ALONE",
+      "type": 0
+    },
+    {
+      "word": "ATADO",
+      "type": 0
+    },
+    {
+      "word": "BALON",
+      "type": 0
+    },
+    {
+      "word": "TALON",
+      "type": 0
+    },
+    {
+      "word": "BATTLE",
+      "type": 0
+    },
+    {
+      "word": "GENTES",
+      "type": 0
+    }
+  ],
+  "letters": "EGEO,NOLT,TDAT,ESBA",
+  "obstacles": []
 }

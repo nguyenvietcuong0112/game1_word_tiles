@@ -1,107 +1,115 @@
-﻿{
-    "id":  1515,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ИНЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ИОН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СОН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЧИН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛИТЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "НИТЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СЛИТЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЧИНИТЬ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛИЧНОСТЬ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ИЛИ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛИТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛИЧНО",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НИЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НИТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НОС",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОСЛИТЬ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОСТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОСТЬ",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ТИН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЧИЛИ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "НИТЬ,ИЛСН,ЧНОИ",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1515,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ПАЛ",
+      "type": 0
+    },
+    {
+      "word": "РАК",
+      "type": 0
+    },
+    {
+      "word": "СОС",
+      "type": 0
+    },
+    {
+      "word": "СПА",
+      "type": 0
+    },
+    {
+      "word": "ЭВА",
+      "type": 0
+    },
+    {
+      "word": "КАРА",
+      "type": 0
+    },
+    {
+      "word": "КАРЛ",
+      "type": 0
+    },
+    {
+      "word": "СПАЛ",
+      "type": 0
+    },
+    {
+      "word": "ЭЛЛА",
+      "type": 0
+    },
+    {
+      "word": "КЛАРА",
+      "type": 0
+    },
+    {
+      "word": "ПОСПАЛ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АРА",
+      "type": 0
+    },
+    {
+      "word": "ВАЛ",
+      "type": 0
+    },
+    {
+      "word": "ВЭЛ",
+      "type": 0
+    },
+    {
+      "word": "КАР",
+      "type": 0
+    },
+    {
+      "word": "ЛАВ",
+      "type": 0
+    },
+    {
+      "word": "ЛАП",
+      "type": 0
+    },
+    {
+      "word": "РАЛ",
+      "type": 0
+    },
+    {
+      "word": "ЭЛА",
+      "type": 0
+    },
+    {
+      "word": "ЛАРА",
+      "type": 0
+    },
+    {
+      "word": "ОСПА",
+      "type": 0
+    },
+    {
+      "word": "ПАЛКА",
+      "type": 0
+    },
+    {
+      "word": "СВАЛКА",
+      "type": 0
+    }
+  ],
+  "letters": "СОСП,КПВА,ЛЛЭЛ,АРАК",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

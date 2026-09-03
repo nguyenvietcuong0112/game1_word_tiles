@@ -1,109 +1,195 @@
-﻿{
-    "id":  1324,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COPO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TÊNIS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TENSO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOVACO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "INTENSO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EIS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EITO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SITO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOCOPO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOVA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TISNE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOSO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ÊTOCA,NISOV,TENPO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1324,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "MEU",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "ANDA",
+      "type": 0
+    },
+    {
+      "word": "MENTE",
+      "type": 0
+    },
+    {
+      "word": "MANTER",
+      "type": 0
+    },
+    {
+      "word": "AGUENTE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADN",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "ATM",
+      "type": 0
+    },
+    {
+      "word": "DAT",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "EMA",
+      "type": 0
+    },
+    {
+      "word": "ENA",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GUT",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MEA",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "RNA",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TIL",
+      "type": 0
+    },
+    {
+      "word": "TUG",
+      "type": 0
+    },
+    {
+      "word": "AMEN",
+      "type": 0
+    },
+    {
+      "word": "ANTE",
+      "type": 0
+    },
+    {
+      "word": "ANTI",
+      "type": 0
+    },
+    {
+      "word": "ATUE",
+      "type": 0
+    },
+    {
+      "word": "ENTE",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "NEAL",
+      "type": 0
+    },
+    {
+      "word": "TEAM",
+      "type": 0
+    },
+    {
+      "word": "TILA",
+      "type": 0
+    },
+    {
+      "word": "ENTER",
+      "type": 0
+    },
+    {
+      "word": "MANDA",
+      "type": 0
+    },
+    {
+      "word": "MENTI",
+      "type": 0
+    },
+    {
+      "word": "NANDA",
+      "type": 0
+    },
+    {
+      "word": "NANTE",
+      "type": 0
+    },
+    {
+      "word": "TERNA",
+      "type": 0
+    }
+  ],
+  "letters": "GALI,UENT,TMAE,ADNR",
+  "obstacles": []
 }

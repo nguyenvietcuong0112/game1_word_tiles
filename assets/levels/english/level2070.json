@@ -1,57 +1,159 @@
-﻿{
-    "id":  2070,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VENT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DRONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DROVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAVEN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AVON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NORD",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ROVE",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "TNE,GOV,DRA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2070,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "BIG",
+      "type": 0
+    },
+    {
+      "word": "BIN",
+      "type": 0
+    },
+    {
+      "word": "BOX",
+      "type": 0
+    },
+    {
+      "word": "CRY",
+      "type": 0
+    },
+    {
+      "word": "GYM",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "MARC",
+      "type": 0
+    },
+    {
+      "word": "LODGING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "COB",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "COX",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "GIB",
+      "type": 0
+    },
+    {
+      "word": "GIG",
+      "type": 0
+    },
+    {
+      "word": "GIN",
+      "type": 0
+    },
+    {
+      "word": "NIB",
+      "type": 0
+    },
+    {
+      "word": "ORC",
+      "type": 0
+    },
+    {
+      "word": "OXY",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "AMBO",
+      "type": 0
+    },
+    {
+      "word": "ARCO",
+      "type": 0
+    },
+    {
+      "word": "BOXY",
+      "type": 0
+    },
+    {
+      "word": "CORY",
+      "type": 0
+    },
+    {
+      "word": "CRAM",
+      "type": 0
+    },
+    {
+      "word": "CROC",
+      "type": 0
+    },
+    {
+      "word": "ORYX",
+      "type": 0
+    },
+    {
+      "word": "ARBOR",
+      "type": 0
+    },
+    {
+      "word": "COBRA",
+      "type": 0
+    },
+    {
+      "word": "CRAMBO",
+      "type": 0
+    }
+  ],
+  "letters": "GNYMA,GIGBR,DBXOC,OLYRC",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

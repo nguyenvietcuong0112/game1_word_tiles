@@ -1,121 +1,231 @@
-﻿{
-    "id":  2206,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COOP",
-                             "type":  2
-                         },
-                         {
-                             "word":  "COST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOTE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "STATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STOOD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POTATO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COSTA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "DOS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OATS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "POO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOTS",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ADPOE,COOTE,ASTAO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2206,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "BAY",
+      "type": 0
+    },
+    {
+      "word": "HIM",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "ABLE",
+      "type": 0
+    },
+    {
+      "word": "RELY",
+      "type": 0
+    },
+    {
+      "word": "SAME",
+      "type": 0
+    },
+    {
+      "word": "HUMOR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "HUM",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "MOA",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "UMM",
+      "type": 0
+    },
+    {
+      "word": "ABLY",
+      "type": 0
+    },
+    {
+      "word": "AMIR",
+      "type": 0
+    },
+    {
+      "word": "AMMO",
+      "type": 0
+    },
+    {
+      "word": "ARSE",
+      "type": 0
+    },
+    {
+      "word": "ASEA",
+      "type": 0
+    },
+    {
+      "word": "EARS",
+      "type": 0
+    },
+    {
+      "word": "MAES",
+      "type": 0
+    },
+    {
+      "word": "MARS",
+      "type": 0
+    },
+    {
+      "word": "MIRS",
+      "type": 0
+    },
+    {
+      "word": "MOAS",
+      "type": 0
+    },
+    {
+      "word": "RAMI",
+      "type": 0
+    },
+    {
+      "word": "ROAM",
+      "type": 0
+    },
+    {
+      "word": "SEAM",
+      "type": 0
+    },
+    {
+      "word": "SEAR",
+      "type": 0
+    },
+    {
+      "word": "YLEM",
+      "type": 0
+    },
+    {
+      "word": "ABLER",
+      "type": 0
+    },
+    {
+      "word": "AMBLE",
+      "type": 0
+    },
+    {
+      "word": "AMIRS",
+      "type": 0
+    },
+    {
+      "word": "EMBAY",
+      "type": 0
+    },
+    {
+      "word": "MAMBA",
+      "type": 0
+    },
+    {
+      "word": "MARSE",
+      "type": 0
+    },
+    {
+      "word": "ORMER",
+      "type": 0
+    },
+    {
+      "word": "SAMBA",
+      "type": 0
+    },
+    {
+      "word": "AMBLER",
+      "type": 0
+    },
+    {
+      "word": "ROAMER",
+      "type": 0
+    }
+  ],
+  "letters": "MAEAY,IRSBL,HMAME,UMORR",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

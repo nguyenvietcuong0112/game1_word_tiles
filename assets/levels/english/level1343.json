@@ -1,85 +1,231 @@
-﻿{
-    "id":  1343,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HARP",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RAIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHARP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAILOR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AILS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "HAILS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIARS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RAILS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RASP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SLIT",
-                            "type":  2
-                        },
-                        {
-                            "word":  "THAI",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "TILO,HASR,SRPU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1343,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "HAD",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "CALL",
+      "type": 0
+    },
+    {
+      "word": "EVIL",
+      "type": 0
+    },
+    {
+      "word": "LIVE",
+      "type": 0
+    },
+    {
+      "word": "CALLING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DAH",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "LAC",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "VEE",
+      "type": 0
+    },
+    {
+      "word": "VIE",
+      "type": 0
+    },
+    {
+      "word": "ACRE",
+      "type": 0
+    },
+    {
+      "word": "DEER",
+      "type": 0
+    },
+    {
+      "word": "HADE",
+      "type": 0
+    },
+    {
+      "word": "HEIL",
+      "type": 0
+    },
+    {
+      "word": "LEES",
+      "type": 0
+    },
+    {
+      "word": "LING",
+      "type": 0
+    },
+    {
+      "word": "NILL",
+      "type": 0
+    },
+    {
+      "word": "REED",
+      "type": 0
+    },
+    {
+      "word": "REES",
+      "type": 0
+    },
+    {
+      "word": "SEEL",
+      "type": 0
+    },
+    {
+      "word": "SEER",
+      "type": 0
+    },
+    {
+      "word": "VEES",
+      "type": 0
+    },
+    {
+      "word": "VILE",
+      "type": 0
+    },
+    {
+      "word": "VILL",
+      "type": 0
+    },
+    {
+      "word": "ALLEE",
+      "type": 0
+    },
+    {
+      "word": "CLING",
+      "type": 0
+    },
+    {
+      "word": "CREED",
+      "type": 0
+    },
+    {
+      "word": "DEERS",
+      "type": 0
+    },
+    {
+      "word": "HADES",
+      "type": 0
+    },
+    {
+      "word": "LEVIN",
+      "type": 0
+    },
+    {
+      "word": "LIVER",
+      "type": 0
+    },
+    {
+      "word": "VERSE",
+      "type": 0
+    },
+    {
+      "word": "VILER",
+      "type": 0
+    },
+    {
+      "word": "VILLA",
+      "type": 0
+    },
+    {
+      "word": "ALLEES",
+      "type": 0
+    },
+    {
+      "word": "CALLER",
+      "type": 0
+    },
+    {
+      "word": "LIVERS",
+      "type": 0
+    },
+    {
+      "word": "VERSED",
+      "type": 0
+    },
+    {
+      "word": "ADVERSE",
+      "type": 0
+    },
+    {
+      "word": "CALLERS",
+      "type": 0
+    },
+    {
+      "word": "CLIVERS",
+      "type": 0
+    },
+    {
+      "word": "SEELING",
+      "type": 0
+    }
+  ],
+  "letters": "AHEG,DVIN,EELL,SRCA",
+  "obstacles": []
 }

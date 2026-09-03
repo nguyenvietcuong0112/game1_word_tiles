@@ -1,105 +1,267 @@
-﻿{
-    "id":  2422,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FLU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FUME",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MEAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FLUTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FLUENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AFFLUENT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EMU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FLUE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LUTE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ONES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TUFF",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EATET,MFUEN,UFLSO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2422,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "WAS",
+      "type": 0
+    },
+    {
+      "word": "HEAT",
+      "type": 0
+    },
+    {
+      "word": "SENT",
+      "type": 0
+    },
+    {
+      "word": "STAT",
+      "type": 0
+    },
+    {
+      "word": "THEM",
+      "type": 0
+    },
+    {
+      "word": "THESE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "AWL",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "EME",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "HEM",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "LAT",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SAW",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TAT",
+      "type": 0
+    },
+    {
+      "word": "ALTS",
+      "type": 0
+    },
+    {
+      "word": "AWLS",
+      "type": 0
+    },
+    {
+      "word": "EATS",
+      "type": 0
+    },
+    {
+      "word": "EMES",
+      "type": 0
+    },
+    {
+      "word": "HEAL",
+      "type": 0
+    },
+    {
+      "word": "HEME",
+      "type": 0
+    },
+    {
+      "word": "HEST",
+      "type": 0
+    },
+    {
+      "word": "LASH",
+      "type": 0
+    },
+    {
+      "word": "NEST",
+      "type": 0
+    },
+    {
+      "word": "SALS",
+      "type": 0
+    },
+    {
+      "word": "SALT",
+      "type": 0
+    },
+    {
+      "word": "SAWS",
+      "type": 0
+    },
+    {
+      "word": "SEME",
+      "type": 0
+    },
+    {
+      "word": "SHEA",
+      "type": 0
+    },
+    {
+      "word": "SHES",
+      "type": 0
+    },
+    {
+      "word": "SLAT",
+      "type": 0
+    },
+    {
+      "word": "TATS",
+      "type": 0
+    },
+    {
+      "word": "HEALS",
+      "type": 0
+    },
+    {
+      "word": "HEATS",
+      "type": 0
+    },
+    {
+      "word": "HEMES",
+      "type": 0
+    },
+    {
+      "word": "MENSA",
+      "type": 0
+    },
+    {
+      "word": "SALSA",
+      "type": 0
+    },
+    {
+      "word": "SALTS",
+      "type": 0
+    },
+    {
+      "word": "SEMEN",
+      "type": 0
+    },
+    {
+      "word": "SENSA",
+      "type": 0
+    },
+    {
+      "word": "SHEAL",
+      "type": 0
+    },
+    {
+      "word": "SLASH",
+      "type": 0
+    },
+    {
+      "word": "THEME",
+      "type": 0
+    },
+    {
+      "word": "SEMENS",
+      "type": 0
+    },
+    {
+      "word": "SHEALS",
+      "type": 0
+    },
+    {
+      "word": "STATAL",
+      "type": 0
+    },
+    {
+      "word": "THEMES",
+      "type": 0
+    }
+  ],
+  "letters": "STAEH,HTTAS,ESTLW,MENSA",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

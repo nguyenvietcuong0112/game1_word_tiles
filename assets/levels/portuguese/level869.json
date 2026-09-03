@@ -1,77 +1,215 @@
-﻿{
-    "id":  869,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "IMÃ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MULO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHITA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATIM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MOCHO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOCHILA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMÃ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HILO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ITA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TALO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AMÃTA,ULMIL,MOCHO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 869,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GET",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "EARL",
+      "type": 0
+    },
+    {
+      "word": "ESTA",
+      "type": 0
+    },
+    {
+      "word": "ESTE",
+      "type": 0
+    },
+    {
+      "word": "TIRA",
+      "type": 0
+    },
+    {
+      "word": "CHUVA",
+      "type": 0
+    },
+    {
+      "word": "ESTEJA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "CHU",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "ITA",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "JET",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RIE",
+      "type": 0
+    },
+    {
+      "word": "RIG",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "SHU",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "SVU",
+      "type": 0
+    },
+    {
+      "word": "TAJ",
+      "type": 0
+    },
+    {
+      "word": "TEJ",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "TIG",
+      "type": 0
+    },
+    {
+      "word": "UVA",
+      "type": 0
+    },
+    {
+      "word": "EITA",
+      "type": 0
+    },
+    {
+      "word": "GETS",
+      "type": 0
+    },
+    {
+      "word": "GIRA",
+      "type": 0
+    },
+    {
+      "word": "GIRL",
+      "type": 0
+    },
+    {
+      "word": "GITA",
+      "type": 0
+    },
+    {
+      "word": "IRAM",
+      "type": 0
+    },
+    {
+      "word": "JETS",
+      "type": 0
+    },
+    {
+      "word": "MARI",
+      "type": 0
+    },
+    {
+      "word": "RITA",
+      "type": 0
+    },
+    {
+      "word": "STIG",
+      "type": 0
+    },
+    {
+      "word": "ATIRA",
+      "type": 0
+    },
+    {
+      "word": "CESTA",
+      "type": 0
+    },
+    {
+      "word": "GIRAM",
+      "type": 0
+    },
+    {
+      "word": "MARIE",
+      "type": 0
+    },
+    {
+      "word": "SEITA",
+      "type": 0
+    },
+    {
+      "word": "TIRAM",
+      "type": 0
+    },
+    {
+      "word": "ATIRAM",
+      "type": 0
+    }
+  ],
+  "letters": "MARL,CEIG,HSTE,UVAJ",
+  "obstacles": []
 }

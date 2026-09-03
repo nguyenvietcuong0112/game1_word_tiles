@@ -1,129 +1,251 @@
-﻿{
-    "id":  999,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LIMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MACA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MUCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NACO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NUCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMOMILA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COMUNA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "IMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOCA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MALO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MALOCA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MOCA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MUCAMA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NACA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UCA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MAMA,ACOL,NUMI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 999,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "SRA",
+      "type": 0
+    },
+    {
+      "word": "VER",
+      "type": 0
+    },
+    {
+      "word": "CRER",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "HAVER",
+      "type": 0
+    },
+    {
+      "word": "LINHA",
+      "type": 0
+    },
+    {
+      "word": "SARAH",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "AHN",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "AVC",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "HAN",
+      "type": 0
+    },
+    {
+      "word": "HAR",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "IHE",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NHA",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "REV",
+      "type": 0
+    },
+    {
+      "word": "VAL",
+      "type": 0
+    },
+    {
+      "word": "ANIL",
+      "type": 0
+    },
+    {
+      "word": "ARAR",
+      "type": 0
+    },
+    {
+      "word": "ARAS",
+      "type": 0
+    },
+    {
+      "word": "ARRE",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "ERRA",
+      "type": 0
+    },
+    {
+      "word": "HALI",
+      "type": 0
+    },
+    {
+      "word": "HANI",
+      "type": 0
+    },
+    {
+      "word": "HARA",
+      "type": 0
+    },
+    {
+      "word": "HARE",
+      "type": 0
+    },
+    {
+      "word": "HAVE",
+      "type": 0
+    },
+    {
+      "word": "HERA",
+      "type": 0
+    },
+    {
+      "word": "HERC",
+      "type": 0
+    },
+    {
+      "word": "HERR",
+      "type": 0
+    },
+    {
+      "word": "LAVE",
+      "type": 0
+    },
+    {
+      "word": "LINA",
+      "type": 0
+    },
+    {
+      "word": "NARA",
+      "type": 0
+    },
+    {
+      "word": "RANI",
+      "type": 0
+    },
+    {
+      "word": "RARA",
+      "type": 0
+    },
+    {
+      "word": "VERA",
+      "type": 0
+    },
+    {
+      "word": "ALINA",
+      "type": 0
+    },
+    {
+      "word": "HARAS",
+      "type": 0
+    },
+    {
+      "word": "REHAN",
+      "type": 0
+    },
+    {
+      "word": "ALINHA",
+      "type": 0
+    },
+    {
+      "word": "ARANHA",
+      "type": 0
+    },
+    {
+      "word": "ALINHAR",
+      "type": 0
+    }
+  ],
+  "letters": "CVAL,REHI,ARAN,SRAH",
+  "obstacles": []
 }

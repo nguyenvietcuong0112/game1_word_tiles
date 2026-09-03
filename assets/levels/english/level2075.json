@@ -1,110 +1,199 @@
-﻿{
-    "id":  2075,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HIS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HISS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LESS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLESS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BLISS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STEEL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LEST",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SETS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEES",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NHSE,IIST,BLEE",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2075,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "GIN",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "GANG",
+      "type": 0
+    },
+    {
+      "word": "PARA",
+      "type": 0
+    },
+    {
+      "word": "RAPE",
+      "type": 0
+    },
+    {
+      "word": "AGING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GAT",
+      "type": 0
+    },
+    {
+      "word": "GIE",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "NAG",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "AGIN",
+      "type": 0
+    },
+    {
+      "word": "APES",
+      "type": 0
+    },
+    {
+      "word": "GIES",
+      "type": 0
+    },
+    {
+      "word": "GINS",
+      "type": 0
+    },
+    {
+      "word": "GNAT",
+      "type": 0
+    },
+    {
+      "word": "MORS",
+      "type": 0
+    },
+    {
+      "word": "PARS",
+      "type": 0
+    },
+    {
+      "word": "PEIN",
+      "type": 0
+    },
+    {
+      "word": "RAPS",
+      "type": 0
+    },
+    {
+      "word": "ROMS",
+      "type": 0
+    },
+    {
+      "word": "SASS",
+      "type": 0
+    },
+    {
+      "word": "SNAG",
+      "type": 0
+    },
+    {
+      "word": "SPAR",
+      "type": 0
+    },
+    {
+      "word": "TANG",
+      "type": 0
+    },
+    {
+      "word": "TANS",
+      "type": 0
+    },
+    {
+      "word": "PARAS",
+      "type": 0
+    },
+    {
+      "word": "PEINS",
+      "type": 0
+    },
+    {
+      "word": "RAPES",
+      "type": 0
+    },
+    {
+      "word": "SARAPE",
+      "type": 0
+    },
+    {
+      "word": "SARAPES",
+      "type": 0
+    }
+  ],
+  "letters": "NIORS,TGMSA,ANSSR,GIEPA",
+  "obstacles": []
 }

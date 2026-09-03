@@ -1,69 +1,251 @@
-﻿{
-    "id":  674,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MISS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SELIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENSO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENSOR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AUSO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ISSO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LISE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LENR,ISSO,MAUC",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 674,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "OVO",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "BATI",
+      "type": 0
+    },
+    {
+      "word": "BOLA",
+      "type": 0
+    },
+    {
+      "word": "LOBO",
+      "type": 0
+    },
+    {
+      "word": "TANTO",
+      "type": 0
+    },
+    {
+      "word": "TANTOS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABA",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ANS",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "ASN",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "BOL",
+      "type": 0
+    },
+    {
+      "word": "BOT",
+      "type": 0
+    },
+    {
+      "word": "ITA",
+      "type": 0
+    },
+    {
+      "word": "ITO",
+      "type": 0
+    },
+    {
+      "word": "ITT",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "OBA",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "SAA",
+      "type": 0
+    },
+    {
+      "word": "TAB",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TOV",
+      "type": 0
+    },
+    {
+      "word": "TTA",
+      "type": 0
+    },
+    {
+      "word": "TTO",
+      "type": 0
+    },
+    {
+      "word": "BAAL",
+      "type": 0
+    },
+    {
+      "word": "BALL",
+      "type": 0
+    },
+    {
+      "word": "BATO",
+      "type": 0
+    },
+    {
+      "word": "BOTA",
+      "type": 0
+    },
+    {
+      "word": "LANA",
+      "type": 0
+    },
+    {
+      "word": "LOBA",
+      "type": 0
+    },
+    {
+      "word": "NABO",
+      "type": 0
+    },
+    {
+      "word": "NATI",
+      "type": 0
+    },
+    {
+      "word": "NATO",
+      "type": 0
+    },
+    {
+      "word": "OTAN",
+      "type": 0
+    },
+    {
+      "word": "SAAB",
+      "type": 0
+    },
+    {
+      "word": "TANA",
+      "type": 0
+    },
+    {
+      "word": "TATO",
+      "type": 0
+    },
+    {
+      "word": "TITA",
+      "type": 0
+    },
+    {
+      "word": "TITO",
+      "type": 0
+    },
+    {
+      "word": "TOSA",
+      "type": 0
+    },
+    {
+      "word": "VOTA",
+      "type": 0
+    },
+    {
+      "word": "ABALO",
+      "type": 0
+    },
+    {
+      "word": "ALLAN",
+      "type": 0
+    },
+    {
+      "word": "BANAL",
+      "type": 0
+    },
+    {
+      "word": "BOTAN",
+      "type": 0
+    },
+    {
+      "word": "TITAN",
+      "type": 0
+    },
+    {
+      "word": "TITANS",
+      "type": 0
+    }
+  ],
+  "letters": "OSAL,TNAL,TABO,ITOV",
+  "obstacles": []
 }

@@ -1,65 +1,215 @@
-﻿{
-    "id":  1685,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AREA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEAD",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BEAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "READ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BRAID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BREAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BREAK",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DIE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KAD,BEI,BRA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1685,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "LAW",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "WAR",
+      "type": 0
+    },
+    {
+      "word": "HAND",
+      "type": 0
+    },
+    {
+      "word": "LAND",
+      "type": 0
+    },
+    {
+      "word": "PLAN",
+      "type": 0
+    },
+    {
+      "word": "HANDS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "AWN",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "DAW",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "HAP",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NAP",
+      "type": 0
+    },
+    {
+      "word": "PAH",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAW",
+      "type": 0
+    },
+    {
+      "word": "WAD",
+      "type": 0
+    },
+    {
+      "word": "ANDS",
+      "type": 0
+    },
+    {
+      "word": "DALE",
+      "type": 0
+    },
+    {
+      "word": "DALS",
+      "type": 0
+    },
+    {
+      "word": "DARN",
+      "type": 0
+    },
+    {
+      "word": "DAWN",
+      "type": 0
+    },
+    {
+      "word": "DAWS",
+      "type": 0
+    },
+    {
+      "word": "DELS",
+      "type": 0
+    },
+    {
+      "word": "LADE",
+      "type": 0
+    },
+    {
+      "word": "LAWN",
+      "type": 0
+    },
+    {
+      "word": "LAWS",
+      "type": 0
+    },
+    {
+      "word": "RALE",
+      "type": 0
+    },
+    {
+      "word": "RAWS",
+      "type": 0
+    },
+    {
+      "word": "SLAW",
+      "type": 0
+    },
+    {
+      "word": "SLED",
+      "type": 0
+    },
+    {
+      "word": "WADE",
+      "type": 0
+    },
+    {
+      "word": "WALE",
+      "type": 0
+    },
+    {
+      "word": "WARN",
+      "type": 0
+    },
+    {
+      "word": "WARP",
+      "type": 0
+    },
+    {
+      "word": "ALPHA",
+      "type": 0
+    },
+    {
+      "word": "PRAWN",
+      "type": 0
+    },
+    {
+      "word": "SWALE",
+      "type": 0
+    },
+    {
+      "word": "WALED",
+      "type": 0
+    }
+  ],
+  "letters": "DNAH,SWPP,LARL,EDNA",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

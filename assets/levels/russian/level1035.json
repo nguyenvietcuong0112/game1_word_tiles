@@ -1,91 +1,99 @@
-﻿{
-    "id":  1035,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "АКР",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПАН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РИФ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "АРКА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ИКРА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПАНДА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПАПКА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПАПРИКА",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ААР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "АПК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "АРК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КИР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КРА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ПРИ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "РАА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ФРА",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "НДАА,АПКР,ПРИФ",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1035,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "АХА",
+      "type": 0
+    },
+    {
+      "word": "КИН",
+      "type": 0
+    },
+    {
+      "word": "НАХ",
+      "type": 0
+    },
+    {
+      "word": "НИК",
+      "type": 0
+    },
+    {
+      "word": "НЮХ",
+      "type": 0
+    },
+    {
+      "word": "ПАЙ",
+      "type": 0
+    },
+    {
+      "word": "ХАН",
+      "type": 0
+    },
+    {
+      "word": "ЮКИ",
+      "type": 0
+    },
+    {
+      "word": "ЕЛКИ",
+      "type": 0
+    },
+    {
+      "word": "РЕКИ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ИНА",
+      "type": 0
+    },
+    {
+      "word": "КЕР",
+      "type": 0
+    },
+    {
+      "word": "НИЕ",
+      "type": 0
+    },
+    {
+      "word": "РЕК",
+      "type": 0
+    },
+    {
+      "word": "ЮНА",
+      "type": 0
+    },
+    {
+      "word": "КЕРК",
+      "type": 0
+    },
+    {
+      "word": "ХАНИ",
+      "type": 0
+    },
+    {
+      "word": "ЮХАН",
+      "type": 0
+    }
+  ],
+  "letters": "ЕИНА,ЛКЮХ,ЙРЕА,АПКИ",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

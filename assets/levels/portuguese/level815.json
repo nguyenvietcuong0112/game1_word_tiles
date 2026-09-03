@@ -1,93 +1,267 @@
-﻿{
-    "id":  815,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TABU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TATO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TATU",
-                             "type":  2
-                         },
-                         {
-                             "word":  "VAIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BATATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LABUTA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ABUTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ATOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BATAVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LATO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TALO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TUBA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TUIA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "BUIA,ATAT,LOVO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 815,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BOM",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "TAL",
+      "type": 0
+    },
+    {
+      "word": "BOCA",
+      "type": 0
+    },
+    {
+      "word": "CASA",
+      "type": 0
+    },
+    {
+      "word": "SACO",
+      "type": 0
+    },
+    {
+      "word": "BASTA",
+      "type": 0
+    },
+    {
+      "word": "CALMO",
+      "type": 0
+    },
+    {
+      "word": "PASTA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "BLA",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "CAB",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "MCA",
+      "type": 0
+    },
+    {
+      "word": "MOB",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "OBA",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "OCO",
+      "type": 0
+    },
+    {
+      "word": "OMC",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PTA",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SOC",
+      "type": 0
+    },
+    {
+      "word": "SOM",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "TAC",
+      "type": 0
+    },
+    {
+      "word": "TSA",
+      "type": 0
+    },
+    {
+      "word": "ALBA",
+      "type": 0
+    },
+    {
+      "word": "APTA",
+      "type": 0
+    },
+    {
+      "word": "BACO",
+      "type": 0
+    },
+    {
+      "word": "CABO",
+      "type": 0
+    },
+    {
+      "word": "CACA",
+      "type": 0
+    },
+    {
+      "word": "CACO",
+      "type": 0
+    },
+    {
+      "word": "CATS",
+      "type": 0
+    },
+    {
+      "word": "COCA",
+      "type": 0
+    },
+    {
+      "word": "COCO",
+      "type": 0
+    },
+    {
+      "word": "OCAS",
+      "type": 0
+    },
+    {
+      "word": "PACO",
+      "type": 0
+    },
+    {
+      "word": "PASA",
+      "type": 0
+    },
+    {
+      "word": "PAST",
+      "type": 0
+    },
+    {
+      "word": "SACA",
+      "type": 0
+    },
+    {
+      "word": "SOCA",
+      "type": 0
+    },
+    {
+      "word": "SOCO",
+      "type": 0
+    },
+    {
+      "word": "ACABO",
+      "type": 0
+    },
+    {
+      "word": "BOCAS",
+      "type": 0
+    },
+    {
+      "word": "CABOS",
+      "type": 0
+    },
+    {
+      "word": "CACOS",
+      "type": 0
+    },
+    {
+      "word": "CAPTA",
+      "type": 0
+    },
+    {
+      "word": "CASTA",
+      "type": 0
+    },
+    {
+      "word": "COCAS",
+      "type": 0
+    },
+    {
+      "word": "COCOS",
+      "type": 0
+    },
+    {
+      "word": "PACAS",
+      "type": 0
+    },
+    {
+      "word": "SACOS",
+      "type": 0
+    },
+    {
+      "word": "CALMOS",
+      "type": 0
+    },
+    {
+      "word": "CASACO",
+      "type": 0
+    },
+    {
+      "word": "CASACOS",
+      "type": 0
+    }
+  ],
+  "letters": "CMOS,ALBO,TSAC,PACO",
+  "obstacles": []
 }

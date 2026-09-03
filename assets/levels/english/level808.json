@@ -1,53 +1,255 @@
-﻿{
-    "id":  808,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "SEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EASE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MESS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIMMER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IMMERSE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MESA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEAS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MESA,MRSE,ISHE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 808,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "NOW",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "WON",
+      "type": 0
+    },
+    {
+      "word": "GALE",
+      "type": 0
+    },
+    {
+      "word": "LENS",
+      "type": 0
+    },
+    {
+      "word": "RISE",
+      "type": 0
+    },
+    {
+      "word": "SIERRA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "OAR",
+      "type": 0
+    },
+    {
+      "word": "PSI",
+      "type": 0
+    },
+    {
+      "word": "RAG",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "REP",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "ALES",
+      "type": 0
+    },
+    {
+      "word": "ARIL",
+      "type": 0
+    },
+    {
+      "word": "ENOW",
+      "type": 0
+    },
+    {
+      "word": "GALS",
+      "type": 0
+    },
+    {
+      "word": "LAGS",
+      "type": 0
+    },
+    {
+      "word": "LARI",
+      "type": 0
+    },
+    {
+      "word": "LIER",
+      "type": 0
+    },
+    {
+      "word": "LIRA",
+      "type": 0
+    },
+    {
+      "word": "LISP",
+      "type": 0
+    },
+    {
+      "word": "RAGS",
+      "type": 0
+    },
+    {
+      "word": "RALE",
+      "type": 0
+    },
+    {
+      "word": "REIS",
+      "type": 0
+    },
+    {
+      "word": "REPS",
+      "type": 0
+    },
+    {
+      "word": "RILE",
+      "type": 0
+    },
+    {
+      "word": "SELS",
+      "type": 0
+    },
+    {
+      "word": "SLAG",
+      "type": 0
+    },
+    {
+      "word": "ARILS",
+      "type": 0
+    },
+    {
+      "word": "ARISE",
+      "type": 0
+    },
+    {
+      "word": "GALES",
+      "type": 0
+    },
+    {
+      "word": "LARIS",
+      "type": 0
+    },
+    {
+      "word": "PEISE",
+      "type": 0
+    },
+    {
+      "word": "RALES",
+      "type": 0
+    },
+    {
+      "word": "RILES",
+      "type": 0
+    },
+    {
+      "word": "RISEN",
+      "type": 0
+    },
+    {
+      "word": "SLIER",
+      "type": 0
+    },
+    {
+      "word": "SPEIL",
+      "type": 0
+    },
+    {
+      "word": "SPEIR",
+      "type": 0
+    },
+    {
+      "word": "ARISEN",
+      "type": 0
+    },
+    {
+      "word": "ERENOW",
+      "type": 0
+    },
+    {
+      "word": "GARNER",
+      "type": 0
+    },
+    {
+      "word": "LISPER",
+      "type": 0
+    },
+    {
+      "word": "NEREIS",
+      "type": 0
+    },
+    {
+      "word": "SPEILS",
+      "type": 0
+    }
+  ],
+  "letters": "WONE,GARR,SLIE,NESP",
+  "obstacles": []
 }

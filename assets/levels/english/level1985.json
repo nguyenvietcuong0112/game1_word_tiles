@@ -1,77 +1,311 @@
-﻿{
-    "id":  1985,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ABATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEAUTY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ABATED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BADE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BATE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BATED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BEAU",
-                            "type":  1
-                        },
-                        {
-                            "word":  "DAB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAD",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ADEAI,BATVN,EAUTY",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1985,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "HUM",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "TAX",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "LATE",
+      "type": 0
+    },
+    {
+      "word": "LOTS",
+      "type": 0
+    },
+    {
+      "word": "MALE",
+      "type": 0
+    },
+    {
+      "word": "POLE",
+      "type": 0
+    },
+    {
+      "word": "SLOT",
+      "type": 0
+    },
+    {
+      "word": "METAL",
+      "type": 0
+    },
+    {
+      "word": "METALS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "AMU",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "EMU",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAT",
+      "type": 0
+    },
+    {
+      "word": "LOP",
+      "type": 0
+    },
+    {
+      "word": "LOX",
+      "type": 0
+    },
+    {
+      "word": "LUM",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OPE",
+      "type": 0
+    },
+    {
+      "word": "POL",
+      "type": 0
+    },
+    {
+      "word": "POX",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TET",
+      "type": 0
+    },
+    {
+      "word": "ALUM",
+      "type": 0
+    },
+    {
+      "word": "HULA",
+      "type": 0
+    },
+    {
+      "word": "HUMS",
+      "type": 0
+    },
+    {
+      "word": "LAME",
+      "type": 0
+    },
+    {
+      "word": "LAMS",
+      "type": 0
+    },
+    {
+      "word": "LATS",
+      "type": 0
+    },
+    {
+      "word": "LETS",
+      "type": 0
+    },
+    {
+      "word": "LOPE",
+      "type": 0
+    },
+    {
+      "word": "LUMS",
+      "type": 0
+    },
+    {
+      "word": "MATE",
+      "type": 0
+    },
+    {
+      "word": "MATS",
+      "type": 0
+    },
+    {
+      "word": "MELS",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "MULE",
+      "type": 0
+    },
+    {
+      "word": "POLS",
+      "type": 0
+    },
+    {
+      "word": "SHUL",
+      "type": 0
+    },
+    {
+      "word": "SLAM",
+      "type": 0
+    },
+    {
+      "word": "SLAT",
+      "type": 0
+    },
+    {
+      "word": "SLOP",
+      "type": 0
+    },
+    {
+      "word": "STEM",
+      "type": 0
+    },
+    {
+      "word": "STET",
+      "type": 0
+    },
+    {
+      "word": "TALE",
+      "type": 0
+    },
+    {
+      "word": "TAME",
+      "type": 0
+    },
+    {
+      "word": "TAMS",
+      "type": 0
+    },
+    {
+      "word": "TELS",
+      "type": 0
+    },
+    {
+      "word": "TETS",
+      "type": 0
+    },
+    {
+      "word": "TOLE",
+      "type": 0
+    },
+    {
+      "word": "ALUMS",
+      "type": 0
+    },
+    {
+      "word": "ELATE",
+      "type": 0
+    },
+    {
+      "word": "SLAMS",
+      "type": 0
+    },
+    {
+      "word": "SLATE",
+      "type": 0
+    },
+    {
+      "word": "SLATS",
+      "type": 0
+    },
+    {
+      "word": "SLOPE",
+      "type": 0
+    },
+    {
+      "word": "SLOTS",
+      "type": 0
+    },
+    {
+      "word": "STALE",
+      "type": 0
+    },
+    {
+      "word": "STEMS",
+      "type": 0
+    },
+    {
+      "word": "STETS",
+      "type": 0
+    },
+    {
+      "word": "STOLE",
+      "type": 0
+    },
+    {
+      "word": "HUMATE",
+      "type": 0
+    },
+    {
+      "word": "MATELOT",
+      "type": 0
+    },
+    {
+      "word": "MATELOTS",
+      "type": 0
+    }
+  ],
+  "letters": "PELUH,OLAMS,XSTET,ATSLO",
+  "obstacles": []
 }

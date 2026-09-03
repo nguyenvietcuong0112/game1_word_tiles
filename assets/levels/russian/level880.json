@@ -1,65 +1,107 @@
-﻿{
-    "id":  880,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ЛАЙ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛЕС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛИС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЧАЙ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СЕЧА",
-                             "type":  2
-                         },
-                         {
-                             "word":  "СИЛА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СИЛАЧ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СИНИЙ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АЛЕ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЕСИ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ИЛИ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НИЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СИЛИН",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "НИЙ,ИЛА,СЕЧ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 880,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ОБА",
+      "type": 0
+    },
+    {
+      "word": "РТА",
+      "type": 0
+    },
+    {
+      "word": "ШЛА",
+      "type": 0
+    },
+    {
+      "word": "ЗОВУ",
+      "type": 0
+    },
+    {
+      "word": "РЕШУ",
+      "type": 0
+    },
+    {
+      "word": "УШЛА",
+      "type": 0
+    },
+    {
+      "word": "ЗАБОТА",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "БАЗ",
+      "type": 0
+    },
+    {
+      "word": "ВОА",
+      "type": 0
+    },
+    {
+      "word": "ВОЗ",
+      "type": 0
+    },
+    {
+      "word": "ЕРТ",
+      "type": 0
+    },
+    {
+      "word": "ЗОВ",
+      "type": 0
+    },
+    {
+      "word": "ЛАУ",
+      "type": 0
+    },
+    {
+      "word": "ТАУ",
+      "type": 0
+    },
+    {
+      "word": "ШЕР",
+      "type": 0
+    },
+    {
+      "word": "АЗОТ",
+      "type": 0
+    },
+    {
+      "word": "АЗОТА",
+      "type": 0
+    },
+    {
+      "word": "ЗАБОТ",
+      "type": 0
+    },
+    {
+      "word": "ОБРЕЗ",
+      "type": 0
+    },
+    {
+      "word": "ОЗЕРУ",
+      "type": 0
+    }
+  ],
+  "letters": "ЛШУА,АЕРТ,УЗБО,ВОАЗ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

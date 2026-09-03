@@ -1,101 +1,231 @@
-﻿{
-    "id":  973,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BELO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOLO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOVO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PELE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOVELA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOVELO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ABEL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "BEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EBOLA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LABELO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NELE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOVEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEBA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PELO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VELO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VON",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "PEBA,ELOL,NOVE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 973,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "CAMA",
+      "type": 0
+    },
+    {
+      "word": "DIGA",
+      "type": 0
+    },
+    {
+      "word": "DIGO",
+      "type": 0
+    },
+    {
+      "word": "DOCE",
+      "type": 0
+    },
+    {
+      "word": "GANHA",
+      "type": 0
+    },
+    {
+      "word": "CÓDIGO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "AGH",
+      "type": 0
+    },
+    {
+      "word": "AGI",
+      "type": 0
+    },
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "AHN",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "CEM",
+      "type": 0
+    },
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "DIG",
+      "type": 0
+    },
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "DOG",
+      "type": 0
+    },
+    {
+      "word": "ECA",
+      "type": 0
+    },
+    {
+      "word": "ECO",
+      "type": 0
+    },
+    {
+      "word": "EGO",
+      "type": 0
+    },
+    {
+      "word": "EMA",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GEM",
+      "type": 0
+    },
+    {
+      "word": "GOD",
+      "type": 0
+    },
+    {
+      "word": "HAE",
+      "type": 0
+    },
+    {
+      "word": "IGA",
+      "type": 0
+    },
+    {
+      "word": "MEA",
+      "type": 0
+    },
+    {
+      "word": "MEG",
+      "type": 0
+    },
+    {
+      "word": "NHA",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "AGEM",
+      "type": 0
+    },
+    {
+      "word": "CACO",
+      "type": 0
+    },
+    {
+      "word": "CAME",
+      "type": 0
+    },
+    {
+      "word": "CEGA",
+      "type": 0
+    },
+    {
+      "word": "CEGO",
+      "type": 0
+    },
+    {
+      "word": "DOCA",
+      "type": 0
+    },
+    {
+      "word": "DOGE",
+      "type": 0
+    },
+    {
+      "word": "EGAN",
+      "type": 0
+    },
+    {
+      "word": "GAGE",
+      "type": 0
+    },
+    {
+      "word": "GAGO",
+      "type": 0
+    },
+    {
+      "word": "GEMA",
+      "type": 0
+    },
+    {
+      "word": "GOGH",
+      "type": 0
+    },
+    {
+      "word": "MACE",
+      "type": 0
+    },
+    {
+      "word": "MECA",
+      "type": 0
+    },
+    {
+      "word": "MEGA",
+      "type": 0
+    },
+    {
+      "word": "AGIDO",
+      "type": 0
+    },
+    {
+      "word": "MEGAN",
+      "type": 0
+    },
+    {
+      "word": "MEGHA",
+      "type": 0
+    },
+    {
+      "word": "MEGHNA",
+      "type": 0
+    }
+  ],
+  "letters": "NHAA,AGEM,GOCA,IDÓC",
+  "obstacles": []
 }

@@ -1,110 +1,87 @@
-﻿{
-    "id":  1242,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "TOE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REIN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TWIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VINE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "WINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UNION",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REUNION",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ION",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TWINE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "UNI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VIE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TOEON,WINIV,GAUER",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1242,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "YEN",
+      "type": 0
+    },
+    {
+      "word": "DUST",
+      "type": 0
+    },
+    {
+      "word": "LUST",
+      "type": 0
+    },
+    {
+      "word": "URGE",
+      "type": 0
+    },
+    {
+      "word": "SURGE",
+      "type": 0
+    },
+    {
+      "word": "URGENCY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "GEY",
+      "type": 0
+    },
+    {
+      "word": "CYST",
+      "type": 0
+    },
+    {
+      "word": "DREG",
+      "type": 0
+    },
+    {
+      "word": "GRUE",
+      "type": 0
+    },
+    {
+      "word": "REGS",
+      "type": 0
+    },
+    {
+      "word": "RUER",
+      "type": 0
+    },
+    {
+      "word": "SUER",
+      "type": 0
+    },
+    {
+      "word": "DREGS",
+      "type": 0
+    },
+    {
+      "word": "ENCYST",
+      "type": 0
+    }
+  ],
+  "letters": "RUER,GSGD,EYSU,NCTL",
+  "obstacles": []
 }

@@ -1,117 +1,195 @@
-﻿{
-    "id":  1167,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIC",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CITA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OBRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CITAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PERAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RECITAL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CEPO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CITEREO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ERAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LERA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PETAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RETAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TARECO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ITAL,CERE,OPBO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1167,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "CIA",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "ÉSE",
+      "type": 0
+    },
+    {
+      "word": "ARMA",
+      "type": 0
+    },
+    {
+      "word": "PASA",
+      "type": 0
+    },
+    {
+      "word": "ARMAS",
+      "type": 0
+    },
+    {
+      "word": "PASTA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ATÉ",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "IES",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAS",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "STA",
+      "type": 0
+    },
+    {
+      "word": "STE",
+      "type": 0
+    },
+    {
+      "word": "TAI",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TES",
+      "type": 0
+    },
+    {
+      "word": "TSA",
+      "type": 0
+    },
+    {
+      "word": "TÉS",
+      "type": 0
+    },
+    {
+      "word": "ASTA",
+      "type": 0
+    },
+    {
+      "word": "MASA",
+      "type": 0
+    },
+    {
+      "word": "NASA",
+      "type": 0
+    },
+    {
+      "word": "NASH",
+      "type": 0
+    },
+    {
+      "word": "SAND",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SETS",
+      "type": 0
+    },
+    {
+      "word": "STAR",
+      "type": 0
+    },
+    {
+      "word": "ARMAN",
+      "type": 0
+    },
+    {
+      "word": "PASAN",
+      "type": 0
+    },
+    {
+      "word": "ARMAND",
+      "type": 0
+    },
+    {
+      "word": "PASTAR",
+      "type": 0
+    },
+    {
+      "word": "ARMASTE",
+      "type": 0
+    }
+  ],
+  "letters": "CIES,RATÉ,MASA,DNHP",
+  "obstacles": []
 }

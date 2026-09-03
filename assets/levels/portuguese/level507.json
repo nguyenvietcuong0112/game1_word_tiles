@@ -1,89 +1,219 @@
-﻿{
-    "id":  507,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MULO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PULO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAMO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ARMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FARDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RADAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POMADA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARMADURA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FARDAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LUPO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PUM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LOMAR,UPRDU,MFAAR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 507,
+  "width": 4,
+  "height": 3,
+  "target_words": [
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "CAI",
+      "type": 0
+    },
+    {
+      "word": "DIA",
+      "type": 0
+    },
+    {
+      "word": "IAM",
+      "type": 0
+    },
+    {
+      "word": "IDO",
+      "type": 0
+    },
+    {
+      "word": "DAVE",
+      "type": 0
+    },
+    {
+      "word": "LIAM",
+      "type": 0
+    },
+    {
+      "word": "VADIA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "ADO",
+      "type": 0
+    },
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DEA",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "DIL",
+      "type": 0
+    },
+    {
+      "word": "DOA",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "IDA",
+      "type": 0
+    },
+    {
+      "word": "IDE",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAI",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "VAM",
+      "type": 0
+    },
+    {
+      "word": "AIDA",
+      "type": 0
+    },
+    {
+      "word": "CAIA",
+      "type": 0
+    },
+    {
+      "word": "DEVA",
+      "type": 0
+    },
+    {
+      "word": "IDEA",
+      "type": 0
+    },
+    {
+      "word": "LIDA",
+      "type": 0
+    },
+    {
+      "word": "LIDE",
+      "type": 0
+    },
+    {
+      "word": "LIDO",
+      "type": 0
+    },
+    {
+      "word": "MADE",
+      "type": 0
+    },
+    {
+      "word": "MADI",
+      "type": 0
+    },
+    {
+      "word": "MAIA",
+      "type": 0
+    },
+    {
+      "word": "MAIL",
+      "type": 0
+    },
+    {
+      "word": "MODA",
+      "type": 0
+    },
+    {
+      "word": "MODE",
+      "type": 0
+    },
+    {
+      "word": "MODI",
+      "type": 0
+    },
+    {
+      "word": "VAMO",
+      "type": 0
+    },
+    {
+      "word": "VEDA",
+      "type": 0
+    },
+    {
+      "word": "CAIAM",
+      "type": 0
+    },
+    {
+      "word": "CAIDO",
+      "type": 0
+    },
+    {
+      "word": "DEVAM",
+      "type": 0
+    },
+    {
+      "word": "LIDAM",
+      "type": 0
+    },
+    {
+      "word": "MADEA",
+      "type": 0
+    }
+  ],
+  "letters": "MAEV,LIDA,CAOM",
+  "obstacles": []
 }

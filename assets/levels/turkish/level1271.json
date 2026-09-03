@@ -1,41 +1,267 @@
-﻿{
-    "id":  1271,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TÜM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MÜLK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MÜZE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÜZÜM",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "TÜZE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MÜL,ÜZK,TEB",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1271,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "BİL",
+      "type": 0
+    },
+    {
+      "word": "DİK",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "KAL",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MİL",
+      "type": 0
+    },
+    {
+      "word": "İDİ",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "ALET",
+      "type": 0
+    },
+    {
+      "word": "İSİM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "DİL",
+      "type": 0
+    },
+    {
+      "word": "DİM",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "KİD",
+      "type": 0
+    },
+    {
+      "word": "KİL",
+      "type": 0
+    },
+    {
+      "word": "LAK",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "LİK",
+      "type": 0
+    },
+    {
+      "word": "LİM",
+      "type": 0
+    },
+    {
+      "word": "LİS",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "MİS",
+      "type": 0
+    },
+    {
+      "word": "SİD",
+      "type": 0
+    },
+    {
+      "word": "SİL",
+      "type": 0
+    },
+    {
+      "word": "SİM",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "İBM",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "İSİ",
+      "type": 0
+    },
+    {
+      "word": "AKİL",
+      "type": 0
+    },
+    {
+      "word": "ALEM",
+      "type": 0
+    },
+    {
+      "word": "ALİM",
+      "type": 0
+    },
+    {
+      "word": "DİLE",
+      "type": 0
+    },
+    {
+      "word": "DİLİ",
+      "type": 0
+    },
+    {
+      "word": "ELİM",
+      "type": 0
+    },
+    {
+      "word": "EMİL",
+      "type": 0
+    },
+    {
+      "word": "KALE",
+      "type": 0
+    },
+    {
+      "word": "KALİ",
+      "type": 0
+    },
+    {
+      "word": "LALE",
+      "type": 0
+    },
+    {
+      "word": "LİME",
+      "type": 0
+    },
+    {
+      "word": "MİLE",
+      "type": 0
+    },
+    {
+      "word": "MİLİ",
+      "type": 0
+    },
+    {
+      "word": "TELL",
+      "type": 0
+    },
+    {
+      "word": "TELİ",
+      "type": 0
+    },
+    {
+      "word": "İDİM",
+      "type": 0
+    },
+    {
+      "word": "İLET",
+      "type": 0
+    },
+    {
+      "word": "ALEMİ",
+      "type": 0
+    },
+    {
+      "word": "BİLME",
+      "type": 0
+    },
+    {
+      "word": "DİLİM",
+      "type": 0
+    },
+    {
+      "word": "KALEM",
+      "type": 0
+    },
+    {
+      "word": "MİSLİ",
+      "type": 0
+    },
+    {
+      "word": "SİDİK",
+      "type": 0
+    },
+    {
+      "word": "SİLİK",
+      "type": 0
+    },
+    {
+      "word": "KALEMİ",
+      "type": 0
+    },
+    {
+      "word": "KİLİDİ",
+      "type": 0
+    },
+    {
+      "word": "İSİMLİ",
+      "type": 0
+    },
+    {
+      "word": "BİLMELİ",
+      "type": 0
+    }
+  ],
+  "letters": "KALL,İLET,DİMB,İSLİ",
+  "obstacles": []
 }

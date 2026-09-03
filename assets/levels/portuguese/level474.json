@@ -1,81 +1,255 @@
-﻿{
-    "id":  474,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CADA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CIMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DICA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MICA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACIMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARÇO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CADARÇO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACIDAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ACIMAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMIDA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAMI",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SACI",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "MARÇ,IDÃO,CASA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 474,
+  "width": 4,
+  "height": 3,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "SEM",
+      "type": 0
+    },
+    {
+      "word": "TEM",
+      "type": 0
+    },
+    {
+      "word": "CAMA",
+      "type": 0
+    },
+    {
+      "word": "CARA",
+      "type": 0
+    },
+    {
+      "word": "TESS",
+      "type": 0
+    },
+    {
+      "word": "CHAMAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "CHA",
+      "type": 0
+    },
+    {
+      "word": "EMA",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "HAM",
+      "type": 0
+    },
+    {
+      "word": "HAR",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAH",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MES",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "AHAM",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "AMES",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "ARCH",
+      "type": 0
+    },
+    {
+      "word": "CAME",
+      "type": 0
+    },
+    {
+      "word": "CHAR",
+      "type": 0
+    },
+    {
+      "word": "CHAT",
+      "type": 0
+    },
+    {
+      "word": "HARA",
+      "type": 0
+    },
+    {
+      "word": "HATE",
+      "type": 0
+    },
+    {
+      "word": "MACA",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "MARC",
+      "type": 0
+    },
+    {
+      "word": "MATE",
+      "type": 0
+    },
+    {
+      "word": "MESS",
+      "type": 0
+    },
+    {
+      "word": "META",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "SCAR",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "TAMA",
+      "type": 0
+    },
+    {
+      "word": "TAME",
+      "type": 0
+    },
+    {
+      "word": "TEMA",
+      "type": 0
+    },
+    {
+      "word": "AMARA",
+      "type": 0
+    },
+    {
+      "word": "ARAME",
+      "type": 0
+    },
+    {
+      "word": "CHAMA",
+      "type": 0
+    },
+    {
+      "word": "CHAME",
+      "type": 0
+    },
+    {
+      "word": "MARCH",
+      "type": 0
+    },
+    {
+      "word": "ARAMES",
+      "type": 0
+    },
+    {
+      "word": "MARCHA",
+      "type": 0
+    },
+    {
+      "word": "TAMARA",
+      "type": 0
+    }
+  ],
+  "letters": "SSCA,EMAR,TAHC",
+  "obstacles": []
 }

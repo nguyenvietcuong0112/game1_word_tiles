@@ -1,61 +1,387 @@
-﻿{
-    "id":  1912,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "NEST",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RAID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CRANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STRAND",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CRANES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAND",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TSAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CID,RAN,TSE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1912,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "WIN",
+      "type": 0
+    },
+    {
+      "word": "REAP",
+      "type": 0
+    },
+    {
+      "word": "RING",
+      "type": 0
+    },
+    {
+      "word": "SEPT",
+      "type": 0
+    },
+    {
+      "word": "STEP",
+      "type": 0
+    },
+    {
+      "word": "TAPE",
+      "type": 0
+    },
+    {
+      "word": "CREATE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "REP",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "ROW",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "WOE",
+      "type": 0
+    },
+    {
+      "word": "ACRE",
+      "type": 0
+    },
+    {
+      "word": "APER",
+      "type": 0
+    },
+    {
+      "word": "CAPE",
+      "type": 0
+    },
+    {
+      "word": "CATE",
+      "type": 0
+    },
+    {
+      "word": "CATS",
+      "type": 0
+    },
+    {
+      "word": "EATS",
+      "type": 0
+    },
+    {
+      "word": "ERST",
+      "type": 0
+    },
+    {
+      "word": "PACS",
+      "type": 0
+    },
+    {
+      "word": "PATE",
+      "type": 0
+    },
+    {
+      "word": "PATS",
+      "type": 0
+    },
+    {
+      "word": "PEST",
+      "type": 0
+    },
+    {
+      "word": "PETS",
+      "type": 0
+    },
+    {
+      "word": "PROW",
+      "type": 0
+    },
+    {
+      "word": "RETS",
+      "type": 0
+    },
+    {
+      "word": "RINS",
+      "type": 0
+    },
+    {
+      "word": "ROES",
+      "type": 0
+    },
+    {
+      "word": "SCAT",
+      "type": 0
+    },
+    {
+      "word": "SERE",
+      "type": 0
+    },
+    {
+      "word": "TEPA",
+      "type": 0
+    },
+    {
+      "word": "WING",
+      "type": 0
+    },
+    {
+      "word": "WINS",
+      "type": 0
+    },
+    {
+      "word": "WOES",
+      "type": 0
+    },
+    {
+      "word": "ACRES",
+      "type": 0
+    },
+    {
+      "word": "APERS",
+      "type": 0
+    },
+    {
+      "word": "CAPER",
+      "type": 0
+    },
+    {
+      "word": "CATER",
+      "type": 0
+    },
+    {
+      "word": "EATER",
+      "type": 0
+    },
+    {
+      "word": "ESTER",
+      "type": 0
+    },
+    {
+      "word": "OWING",
+      "type": 0
+    },
+    {
+      "word": "PATER",
+      "type": 0
+    },
+    {
+      "word": "PERSE",
+      "type": 0
+    },
+    {
+      "word": "RINSE",
+      "type": 0
+    },
+    {
+      "word": "SCAPE",
+      "type": 0
+    },
+    {
+      "word": "SCATS",
+      "type": 0
+    },
+    {
+      "word": "SEGNI",
+      "type": 0
+    },
+    {
+      "word": "SEPTA",
+      "type": 0
+    },
+    {
+      "word": "SERER",
+      "type": 0
+    },
+    {
+      "word": "TAPER",
+      "type": 0
+    },
+    {
+      "word": "TERSE",
+      "type": 0
+    },
+    {
+      "word": "WORSE",
+      "type": 0
+    },
+    {
+      "word": "CAPERS",
+      "type": 0
+    },
+    {
+      "word": "CATERS",
+      "type": 0
+    },
+    {
+      "word": "EATERS",
+      "type": 0
+    },
+    {
+      "word": "ESCAPE",
+      "type": 0
+    },
+    {
+      "word": "PATERS",
+      "type": 0
+    },
+    {
+      "word": "PESTER",
+      "type": 0
+    },
+    {
+      "word": "REAPER",
+      "type": 0
+    },
+    {
+      "word": "RINGER",
+      "type": 0
+    },
+    {
+      "word": "RINSER",
+      "type": 0
+    },
+    {
+      "word": "ROWING",
+      "type": 0
+    },
+    {
+      "word": "TAPERS",
+      "type": 0
+    },
+    {
+      "word": "WINGER",
+      "type": 0
+    },
+    {
+      "word": "WORSER",
+      "type": 0
+    },
+    {
+      "word": "ESCAPER",
+      "type": 0
+    },
+    {
+      "word": "INSCAPE",
+      "type": 0
+    },
+    {
+      "word": "REAPERS",
+      "type": 0
+    },
+    {
+      "word": "ESCAPERS",
+      "type": 0
+    }
+  ],
+  "letters": "GERER,NSCAP,IRPTE,WOESR",
+  "obstacles": []
 }

@@ -1,110 +1,295 @@
-﻿{
-    "id":  1841,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "FAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAX",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FLU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAX",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAXI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FLUENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AFFLUENT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AFT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FATTEN",
-                            "type":  2
-                        },
-                        {
-                            "word":  "FLUE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ION",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NET",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UENO,LTTI,FFAX",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1841,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "MAP",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MUM",
+      "type": 0
+    },
+    {
+      "word": "SUN",
+      "type": 0
+    },
+    {
+      "word": "ARTS",
+      "type": 0
+    },
+    {
+      "word": "MAPS",
+      "type": 0
+    },
+    {
+      "word": "PART",
+      "type": 0
+    },
+    {
+      "word": "PAST",
+      "type": 0
+    },
+    {
+      "word": "GRAMS",
+      "type": 0
+    },
+    {
+      "word": "LUNAR",
+      "type": 0
+    },
+    {
+      "word": "MAJOR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMU",
+      "type": 0
+    },
+    {
+      "word": "GIT",
+      "type": 0
+    },
+    {
+      "word": "JAM",
+      "type": 0
+    },
+    {
+      "word": "JAR",
+      "type": 0
+    },
+    {
+      "word": "NAP",
+      "type": 0
+    },
+    {
+      "word": "NUS",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "RAJ",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "SAP",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "GITS",
+      "type": 0
+    },
+    {
+      "word": "GRAM",
+      "type": 0
+    },
+    {
+      "word": "GRAN",
+      "type": 0
+    },
+    {
+      "word": "LUNA",
+      "type": 0
+    },
+    {
+      "word": "LUST",
+      "type": 0
+    },
+    {
+      "word": "MART",
+      "type": 0
+    },
+    {
+      "word": "MUMS",
+      "type": 0
+    },
+    {
+      "word": "NAPS",
+      "type": 0
+    },
+    {
+      "word": "PAMS",
+      "type": 0
+    },
+    {
+      "word": "PARA",
+      "type": 0
+    },
+    {
+      "word": "PRAM",
+      "type": 0
+    },
+    {
+      "word": "PROS",
+      "type": 0
+    },
+    {
+      "word": "RAMS",
+      "type": 0
+    },
+    {
+      "word": "RAPS",
+      "type": 0
+    },
+    {
+      "word": "SAPS",
+      "type": 0
+    },
+    {
+      "word": "SOJA",
+      "type": 0
+    },
+    {
+      "word": "SORA",
+      "type": 0
+    },
+    {
+      "word": "SORN",
+      "type": 0
+    },
+    {
+      "word": "SPAN",
+      "type": 0
+    },
+    {
+      "word": "SPAR",
+      "type": 0
+    },
+    {
+      "word": "SPAS",
+      "type": 0
+    },
+    {
+      "word": "TRAM",
+      "type": 0
+    },
+    {
+      "word": "TRAP",
+      "type": 0
+    },
+    {
+      "word": "TSAR",
+      "type": 0
+    },
+    {
+      "word": "APART",
+      "type": 0
+    },
+    {
+      "word": "JORAM",
+      "type": 0
+    },
+    {
+      "word": "LUNAS",
+      "type": 0
+    },
+    {
+      "word": "MARTS",
+      "type": 0
+    },
+    {
+      "word": "PARAS",
+      "type": 0
+    },
+    {
+      "word": "PARTS",
+      "type": 0
+    },
+    {
+      "word": "SMART",
+      "type": 0
+    },
+    {
+      "word": "STRAP",
+      "type": 0
+    },
+    {
+      "word": "TRAMS",
+      "type": 0
+    },
+    {
+      "word": "TRAPS",
+      "type": 0
+    },
+    {
+      "word": "LUSTRA",
+      "type": 0
+    },
+    {
+      "word": "SMARTS",
+      "type": 0
+    },
+    {
+      "word": "STIGMA",
+      "type": 0
+    },
+    {
+      "word": "STRAPS",
+      "type": 0
+    },
+    {
+      "word": "TRAPAN",
+      "type": 0
+    }
+  ],
+  "letters": "JOSMU,ARPAM,MNARG,LUSTI",
+  "obstacles": []
 }

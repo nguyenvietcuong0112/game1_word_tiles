@@ -1,77 +1,303 @@
-﻿{
-    "id":  731,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WALL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WOKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AWAKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AWOKE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AWAKEN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AWOKEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WAKEN",
-                            "type":  1
-                        },
-                        {
-                            "word":  "WAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WANE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "WOKEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LNE,LAK,AWO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 731,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "FLEX",
+      "type": 0
+    },
+    {
+      "word": "FOOD",
+      "type": 0
+    },
+    {
+      "word": "MORE",
+      "type": 0
+    },
+    {
+      "word": "ROLE",
+      "type": 0
+    },
+    {
+      "word": "SAME",
+      "type": 0
+    },
+    {
+      "word": "CAMERA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "AXE",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DEX",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "ELF",
+      "type": 0
+    },
+    {
+      "word": "EMF",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LEX",
+      "type": 0
+    },
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "LOX",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "MOL",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "RAX",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "AXED",
+      "type": 0
+    },
+    {
+      "word": "AXEL",
+      "type": 0
+    },
+    {
+      "word": "CAME",
+      "type": 0
+    },
+    {
+      "word": "CERO",
+      "type": 0
+    },
+    {
+      "word": "DELF",
+      "type": 0
+    },
+    {
+      "word": "DOLE",
+      "type": 0
+    },
+    {
+      "word": "DOOR",
+      "type": 0
+    },
+    {
+      "word": "EMFS",
+      "type": 0
+    },
+    {
+      "word": "FLED",
+      "type": 0
+    },
+    {
+      "word": "FOOL",
+      "type": 0
+    },
+    {
+      "word": "LODE",
+      "type": 0
+    },
+    {
+      "word": "LOOF",
+      "type": 0
+    },
+    {
+      "word": "LORE",
+      "type": 0
+    },
+    {
+      "word": "MACE",
+      "type": 0
+    },
+    {
+      "word": "MOLE",
+      "type": 0
+    },
+    {
+      "word": "MORA",
+      "type": 0
+    },
+    {
+      "word": "MOXA",
+      "type": 0
+    },
+    {
+      "word": "OMER",
+      "type": 0
+    },
+    {
+      "word": "ROLF",
+      "type": 0
+    },
+    {
+      "word": "ROOD",
+      "type": 0
+    },
+    {
+      "word": "AMOLE",
+      "type": 0
+    },
+    {
+      "word": "ARECA",
+      "type": 0
+    },
+    {
+      "word": "AROMA",
+      "type": 0
+    },
+    {
+      "word": "DELFS",
+      "type": 0
+    },
+    {
+      "word": "DOLOR",
+      "type": 0
+    },
+    {
+      "word": "DOORS",
+      "type": 0
+    },
+    {
+      "word": "FLOOR",
+      "type": 0
+    },
+    {
+      "word": "FLORA",
+      "type": 0
+    },
+    {
+      "word": "LOOFS",
+      "type": 0
+    },
+    {
+      "word": "LOXED",
+      "type": 0
+    },
+    {
+      "word": "MACER",
+      "type": 0
+    },
+    {
+      "word": "RAXED",
+      "type": 0
+    },
+    {
+      "word": "ROLFS",
+      "type": 0
+    },
+    {
+      "word": "ARECAS",
+      "type": 0
+    },
+    {
+      "word": "AROMAS",
+      "type": 0
+    },
+    {
+      "word": "FLEXOR",
+      "type": 0
+    },
+    {
+      "word": "FLOORS",
+      "type": 0
+    },
+    {
+      "word": "FOOLED",
+      "type": 0
+    }
+  ],
+  "letters": "DOOR,ELFS,XOMA,AREC",
+  "obstacles": []
 }

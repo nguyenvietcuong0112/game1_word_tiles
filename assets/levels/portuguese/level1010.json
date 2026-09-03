@@ -1,85 +1,155 @@
-﻿{
-    "id":  1010,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ECA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GARI",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RAGU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACENO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECOAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COAGIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONJUGAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COARI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ENJUGAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "JUGAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AIRI,COAG,ENJU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1010,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "OUT",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "TUT",
+      "type": 0
+    },
+    {
+      "word": "YOU",
+      "type": 0
+    },
+    {
+      "word": "PISO",
+      "type": 0
+    },
+    {
+      "word": "TOUR",
+      "type": 0
+    },
+    {
+      "word": "YOUR",
+      "type": 0
+    },
+    {
+      "word": "OUTRO",
+      "type": 0
+    },
+    {
+      "word": "PRYCE",
+      "type": 0
+    },
+    {
+      "word": "OUTROS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ISO",
+      "type": 0
+    },
+    {
+      "word": "IST",
+      "type": 0
+    },
+    {
+      "word": "OUR",
+      "type": 0
+    },
+    {
+      "word": "PIE",
+      "type": 0
+    },
+    {
+      "word": "PRE",
+      "type": 0
+    },
+    {
+      "word": "PRU",
+      "type": 0
+    },
+    {
+      "word": "RIE",
+      "type": 0
+    },
+    {
+      "word": "RIP",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "RUT",
+      "type": 0
+    },
+    {
+      "word": "RYO",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "STU",
+      "type": 0
+    },
+    {
+      "word": "TOU",
+      "type": 0
+    },
+    {
+      "word": "TOY",
+      "type": 0
+    },
+    {
+      "word": "TTO",
+      "type": 0
+    },
+    {
+      "word": "URE",
+      "type": 0
+    },
+    {
+      "word": "IRIS",
+      "type": 0
+    },
+    {
+      "word": "PIER",
+      "type": 0
+    },
+    {
+      "word": "RISO",
+      "type": 0
+    },
+    {
+      "word": "SIRI",
+      "type": 0
+    },
+    {
+      "word": "TOUT",
+      "type": 0
+    }
+  ],
+  "letters": "OSIR,RTPI,TURE,TOYC",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

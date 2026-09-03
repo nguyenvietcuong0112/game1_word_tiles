@@ -1,99 +1,247 @@
-﻿{
-    "id":  1838,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BELT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MESH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOTTLE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HOB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SERB",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SHOT,ERBT,MOEL",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1838,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEW",
+      "type": 0
+    },
+    {
+      "word": "FOG",
+      "type": 0
+    },
+    {
+      "word": "LOG",
+      "type": 0
+    },
+    {
+      "word": "LOW",
+      "type": 0
+    },
+    {
+      "word": "WED",
+      "type": 0
+    },
+    {
+      "word": "HUSH",
+      "type": 0
+    },
+    {
+      "word": "LOGO",
+      "type": 0
+    },
+    {
+      "word": "PIPE",
+      "type": 0
+    },
+    {
+      "word": "PUSH",
+      "type": 0
+    },
+    {
+      "word": "READ",
+      "type": 0
+    },
+    {
+      "word": "SLOW",
+      "type": 0
+    },
+    {
+      "word": "LOGOS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "DAP",
+      "type": 0
+    },
+    {
+      "word": "EGO",
+      "type": 0
+    },
+    {
+      "word": "EWE",
+      "type": 0
+    },
+    {
+      "word": "GED",
+      "type": 0
+    },
+    {
+      "word": "GIP",
+      "type": 0
+    },
+    {
+      "word": "HUP",
+      "type": 0
+    },
+    {
+      "word": "OWE",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "PEG",
+      "type": 0
+    },
+    {
+      "word": "PEW",
+      "type": 0
+    },
+    {
+      "word": "PIG",
+      "type": 0
+    },
+    {
+      "word": "PIP",
+      "type": 0
+    },
+    {
+      "word": "PIS",
+      "type": 0
+    },
+    {
+      "word": "PUS",
+      "type": 0
+    },
+    {
+      "word": "SIP",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "SUP",
+      "type": 0
+    },
+    {
+      "word": "WOG",
+      "type": 0
+    },
+    {
+      "word": "APED",
+      "type": 0
+    },
+    {
+      "word": "EGIS",
+      "type": 0
+    },
+    {
+      "word": "EGOS",
+      "type": 0
+    },
+    {
+      "word": "GOSH",
+      "type": 0
+    },
+    {
+      "word": "LOGE",
+      "type": 0
+    },
+    {
+      "word": "LOWE",
+      "type": 0
+    },
+    {
+      "word": "OWED",
+      "type": 0
+    },
+    {
+      "word": "PISH",
+      "type": 0
+    },
+    {
+      "word": "PISO",
+      "type": 0
+    },
+    {
+      "word": "REAP",
+      "type": 0
+    },
+    {
+      "word": "SIPE",
+      "type": 0
+    },
+    {
+      "word": "SLOG",
+      "type": 0
+    },
+    {
+      "word": "SOLO",
+      "type": 0
+    },
+    {
+      "word": "SOLS",
+      "type": 0
+    },
+    {
+      "word": "APISH",
+      "type": 0
+    },
+    {
+      "word": "LOWED",
+      "type": 0
+    },
+    {
+      "word": "PIPED",
+      "type": 0
+    },
+    {
+      "word": "SIPED",
+      "type": 0
+    },
+    {
+      "word": "SLOSH",
+      "type": 0
+    },
+    {
+      "word": "GOLOSH",
+      "type": 0
+    },
+    {
+      "word": "ISOLOG",
+      "type": 0
+    },
+    {
+      "word": "REAPED",
+      "type": 0
+    },
+    {
+      "word": "SLOWED",
+      "type": 0
+    }
+  ],
+  "letters": "ERPUH,APISH,DEGOF,EWOLS",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

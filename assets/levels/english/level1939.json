@@ -1,114 +1,259 @@
-﻿{
-    "id":  1939,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SWAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WARM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WING",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SWARM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SWING",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BARS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GNAW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "WARS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MBG,RAN,SWI",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1939,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "VAN",
+      "type": 0
+    },
+    {
+      "word": "ZOO",
+      "type": 0
+    },
+    {
+      "word": "SEEN",
+      "type": 0
+    },
+    {
+      "word": "TEEN",
+      "type": 0
+    },
+    {
+      "word": "THEM",
+      "type": 0
+    },
+    {
+      "word": "INTENSE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "AVO",
+      "type": 0
+    },
+    {
+      "word": "EME",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "HEM",
+      "type": 0
+    },
+    {
+      "word": "HET",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "OVA",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "VAR",
+      "type": 0
+    },
+    {
+      "word": "ANES",
+      "type": 0
+    },
+    {
+      "word": "ANIS",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "HEME",
+      "type": 0
+    },
+    {
+      "word": "IRES",
+      "type": 0
+    },
+    {
+      "word": "METE",
+      "type": 0
+    },
+    {
+      "word": "ORES",
+      "type": 0
+    },
+    {
+      "word": "RANI",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SINE",
+      "type": 0
+    },
+    {
+      "word": "TEES",
+      "type": 0
+    },
+    {
+      "word": "TENS",
+      "type": 0
+    },
+    {
+      "word": "VANE",
+      "type": 0
+    },
+    {
+      "word": "ANISE",
+      "type": 0
+    },
+    {
+      "word": "MENSE",
+      "type": 0
+    },
+    {
+      "word": "NARES",
+      "type": 0
+    },
+    {
+      "word": "OORIE",
+      "type": 0
+    },
+    {
+      "word": "RANEE",
+      "type": 0
+    },
+    {
+      "word": "RANIS",
+      "type": 0
+    },
+    {
+      "word": "RESIN",
+      "type": 0
+    },
+    {
+      "word": "SERIN",
+      "type": 0
+    },
+    {
+      "word": "SNEER",
+      "type": 0
+    },
+    {
+      "word": "TENSE",
+      "type": 0
+    },
+    {
+      "word": "THEME",
+      "type": 0
+    },
+    {
+      "word": "VANES",
+      "type": 0
+    },
+    {
+      "word": "TENSER",
+      "type": 0
+    },
+    {
+      "word": "INTENSER",
+      "type": 0
+    }
+  ],
+  "letters": "TZOOV,HNIRA,ETEEN,MENSI",
+  "obstacles": []
 }

@@ -1,93 +1,187 @@
-﻿{
-    "id":  2012,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAV",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VALİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VASAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VASITA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AVAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAV",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAVAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAV",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAVAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VASİ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VAL,ASİ,TIT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2012,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GRİ",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "İZİ",
+      "type": 0
+    },
+    {
+      "word": "KAPA",
+      "type": 0
+    },
+    {
+      "word": "KİRA",
+      "type": 0
+    },
+    {
+      "word": "SAHİ",
+      "type": 0
+    },
+    {
+      "word": "İKNA",
+      "type": 0
+    },
+    {
+      "word": "KRİZİ",
+      "type": 0
+    },
+    {
+      "word": "SANKİ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "AİR",
+      "type": 0
+    },
+    {
+      "word": "HAS",
+      "type": 0
+    },
+    {
+      "word": "KAP",
+      "type": 0
+    },
+    {
+      "word": "KAİ",
+      "type": 0
+    },
+    {
+      "word": "KİP",
+      "type": 0
+    },
+    {
+      "word": "KİR",
+      "type": 0
+    },
+    {
+      "word": "NEN",
+      "type": 0
+    },
+    {
+      "word": "PAK",
+      "type": 0
+    },
+    {
+      "word": "PAİ",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RİA",
+      "type": 0
+    },
+    {
+      "word": "RİP",
+      "type": 0
+    },
+    {
+      "word": "SKİ",
+      "type": 0
+    },
+    {
+      "word": "SRİ",
+      "type": 0
+    },
+    {
+      "word": "İHA",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "İRK",
+      "type": 0
+    },
+    {
+      "word": "İRS",
+      "type": 0
+    },
+    {
+      "word": "İRİ",
+      "type": 0
+    },
+    {
+      "word": "ANKİ",
+      "type": 0
+    },
+    {
+      "word": "APAR",
+      "type": 0
+    },
+    {
+      "word": "ARSA",
+      "type": 0
+    },
+    {
+      "word": "KAPİ",
+      "type": 0
+    },
+    {
+      "word": "KRİZ",
+      "type": 0
+    },
+    {
+      "word": "RİKA",
+      "type": 0
+    },
+    {
+      "word": "SKİP",
+      "type": 0
+    },
+    {
+      "word": "AKİRA",
+      "type": 0
+    },
+    {
+      "word": "KAPAR",
+      "type": 0
+    }
+  ],
+  "letters": "ZİAPA,İRKİR,HGNKS,ASENA",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

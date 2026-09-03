@@ -1,77 +1,355 @@
-﻿{
-    "id":  710,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAX",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MESA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIXA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LASER",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SALAME",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MASER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SIR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RIX,ESA,MAL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 710,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "ACHA",
+      "type": 0
+    },
+    {
+      "word": "CARA",
+      "type": 0
+    },
+    {
+      "word": "NOME",
+      "type": 0
+    },
+    {
+      "word": "HAVIA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "ACH",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "AVI",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "CHA",
+      "type": 0
+    },
+    {
+      "word": "EMA",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "ENA",
+      "type": 0
+    },
+    {
+      "word": "IAM",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAI",
+      "type": 0
+    },
+    {
+      "word": "MAM",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "NEL",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "VIA",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "ALEM",
+      "type": 0
+    },
+    {
+      "word": "AMAL",
+      "type": 0
+    },
+    {
+      "word": "AMAM",
+      "type": 0
+    },
+    {
+      "word": "AMEM",
+      "type": 0
+    },
+    {
+      "word": "AMEN",
+      "type": 0
+    },
+    {
+      "word": "AMON",
+      "type": 0
+    },
+    {
+      "word": "ANEL",
+      "type": 0
+    },
+    {
+      "word": "CALA",
+      "type": 0
+    },
+    {
+      "word": "CALE",
+      "type": 0
+    },
+    {
+      "word": "CAMA",
+      "type": 0
+    },
+    {
+      "word": "CAME",
+      "type": 0
+    },
+    {
+      "word": "ELAM",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "LARA",
+      "type": 0
+    },
+    {
+      "word": "LEMA",
+      "type": 0
+    },
+    {
+      "word": "LENA",
+      "type": 0
+    },
+    {
+      "word": "LENO",
+      "type": 0
+    },
+    {
+      "word": "MACA",
+      "type": 0
+    },
+    {
+      "word": "MACH",
+      "type": 0
+    },
+    {
+      "word": "MALA",
+      "type": 0
+    },
+    {
+      "word": "MAMA",
+      "type": 0
+    },
+    {
+      "word": "MAME",
+      "type": 0
+    },
+    {
+      "word": "MAMO",
+      "type": 0
+    },
+    {
+      "word": "MEMO",
+      "type": 0
+    },
+    {
+      "word": "MONA",
+      "type": 0
+    },
+    {
+      "word": "NARA",
+      "type": 0
+    },
+    {
+      "word": "NELA",
+      "type": 0
+    },
+    {
+      "word": "NEMO",
+      "type": 0
+    },
+    {
+      "word": "RACH",
+      "type": 0
+    },
+    {
+      "word": "RALA",
+      "type": 0
+    },
+    {
+      "word": "VIAM",
+      "type": 0
+    },
+    {
+      "word": "AMENO",
+      "type": 0
+    },
+    {
+      "word": "CALAM",
+      "type": 0
+    },
+    {
+      "word": "CALAR",
+      "type": 0
+    },
+    {
+      "word": "CALEM",
+      "type": 0
+    },
+    {
+      "word": "CAMEL",
+      "type": 0
+    },
+    {
+      "word": "LEMON",
+      "type": 0
+    },
+    {
+      "word": "RACHA",
+      "type": 0
+    },
+    {
+      "word": "HAVIAM",
+      "type": 0
+    },
+    {
+      "word": "MELANOMA",
+      "type": 0
+    }
+  ],
+  "letters": "IAMO,VMEN,AALA,HCAR",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

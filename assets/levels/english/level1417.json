@@ -1,53 +1,255 @@
-﻿{
-    "id":  1417,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAWN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HERE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "READ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UNDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AHEAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WHERE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DOER",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "UNDO,RWAE,AHER",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1417,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "BLAH",
+      "type": 0
+    },
+    {
+      "word": "HAND",
+      "type": 0
+    },
+    {
+      "word": "LAND",
+      "type": 0
+    },
+    {
+      "word": "LOSE",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    },
+    {
+      "word": "SELF",
+      "type": 0
+    },
+    {
+      "word": "HANDS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALB",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ELF",
+      "type": 0
+    },
+    {
+      "word": "FRO",
+      "type": 0
+    },
+    {
+      "word": "LAP",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "SOS",
+      "type": 0
+    },
+    {
+      "word": "ALES",
+      "type": 0
+    },
+    {
+      "word": "ANDS",
+      "type": 0
+    },
+    {
+      "word": "APES",
+      "type": 0
+    },
+    {
+      "word": "ELAN",
+      "type": 0
+    },
+    {
+      "word": "FLAP",
+      "type": 0
+    },
+    {
+      "word": "HALE",
+      "type": 0
+    },
+    {
+      "word": "HALO",
+      "type": 0
+    },
+    {
+      "word": "NOSE",
+      "type": 0
+    },
+    {
+      "word": "OLES",
+      "type": 0
+    },
+    {
+      "word": "PALE",
+      "type": 0
+    },
+    {
+      "word": "PELF",
+      "type": 0
+    },
+    {
+      "word": "PESO",
+      "type": 0
+    },
+    {
+      "word": "SOLA",
+      "type": 0
+    },
+    {
+      "word": "SOLE",
+      "type": 0
+    },
+    {
+      "word": "ANOLE",
+      "type": 0
+    },
+    {
+      "word": "BLAND",
+      "type": 0
+    },
+    {
+      "word": "BLOND",
+      "type": 0
+    },
+    {
+      "word": "ELAND",
+      "type": 0
+    },
+    {
+      "word": "HALES",
+      "type": 0
+    },
+    {
+      "word": "HALOS",
+      "type": 0
+    },
+    {
+      "word": "LANDS",
+      "type": 0
+    },
+    {
+      "word": "LAPEL",
+      "type": 0
+    },
+    {
+      "word": "LOSEL",
+      "type": 0
+    },
+    {
+      "word": "PALES",
+      "type": 0
+    },
+    {
+      "word": "PELFS",
+      "type": 0
+    },
+    {
+      "word": "PELON",
+      "type": 0
+    },
+    {
+      "word": "PESOS",
+      "type": 0
+    },
+    {
+      "word": "SELAH",
+      "type": 0
+    },
+    {
+      "word": "SEPAL",
+      "type": 0
+    },
+    {
+      "word": "SOLAN",
+      "type": 0
+    },
+    {
+      "word": "SOLES",
+      "type": 0
+    },
+    {
+      "word": "ANOLES",
+      "type": 0
+    },
+    {
+      "word": "BLONDS",
+      "type": 0
+    },
+    {
+      "word": "ELANDS",
+      "type": 0
+    },
+    {
+      "word": "LANOSE",
+      "type": 0
+    },
+    {
+      "word": "SOLAND",
+      "type": 0
+    },
+    {
+      "word": "SOLANDS",
+      "type": 0
+    }
+  ],
+  "letters": "HAND,BLOS,PESO,ALFR",
+  "obstacles": []
 }

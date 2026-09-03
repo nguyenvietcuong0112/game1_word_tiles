@@ -1,122 +1,179 @@
-﻿{
-    "id":  1487,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REIN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "VEIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INTERN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LANTERN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANTE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "INTER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "INTERNS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LANTERNS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TERN",
-                            "type":  1
-                        },
-                        {
-                            "word":  "VEAL",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "LOBOS,LANTN,VEIER",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1487,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "FAR",
+      "type": 0
+    },
+    {
+      "word": "FLU",
+      "type": 0
+    },
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "LOG",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "CORE",
+      "type": 0
+    },
+    {
+      "word": "LOGS",
+      "type": 0
+    },
+    {
+      "word": "ORAL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "FOG",
+      "type": 0
+    },
+    {
+      "word": "FOU",
+      "type": 0
+    },
+    {
+      "word": "GAT",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "RAH",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "ALGA",
+      "type": 0
+    },
+    {
+      "word": "FARE",
+      "type": 0
+    },
+    {
+      "word": "FARO",
+      "type": 0
+    },
+    {
+      "word": "FLUS",
+      "type": 0
+    },
+    {
+      "word": "FOGS",
+      "type": 0
+    },
+    {
+      "word": "FORA",
+      "type": 0
+    },
+    {
+      "word": "FORE",
+      "type": 0
+    },
+    {
+      "word": "FOUL",
+      "type": 0
+    },
+    {
+      "word": "HALO",
+      "type": 0
+    },
+    {
+      "word": "HALT",
+      "type": 0
+    },
+    {
+      "word": "HARE",
+      "type": 0
+    },
+    {
+      "word": "HERO",
+      "type": 0
+    },
+    {
+      "word": "AFORE",
+      "type": 0
+    },
+    {
+      "word": "AFOUL",
+      "type": 0
+    },
+    {
+      "word": "CORAL",
+      "type": 0
+    },
+    {
+      "word": "GLARE",
+      "type": 0
+    },
+    {
+      "word": "SULFA",
+      "type": 0
+    },
+    {
+      "word": "SULFO",
+      "type": 0
+    },
+    {
+      "word": "AGLARE",
+      "type": 0
+    },
+    {
+      "word": "GATHER",
+      "type": 0
+    }
+  ],
+  "letters": "SGGA,UOLT,LFAH,CORE",
+  "obstacles": []
 }

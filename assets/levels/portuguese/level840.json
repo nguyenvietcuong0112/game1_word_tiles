@@ -1,85 +1,175 @@
-﻿{
-    "id":  840,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MÃE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BODE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OBRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOBRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOBRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAJOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMAROTE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMÃ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAMAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ODE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORBE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TEJO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TORA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "EBROT,DOAJE,CAMÃE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 840,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BOA",
+      "type": 0
+    },
+    {
+      "word": "CÃO",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "JED",
+      "type": 0
+    },
+    {
+      "word": "TÃO",
+      "type": 0
+    },
+    {
+      "word": "CELA",
+      "type": 0
+    },
+    {
+      "word": "PELA",
+      "type": 0
+    },
+    {
+      "word": "ESTÃO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "APA",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "CEL",
+      "type": 0
+    },
+    {
+      "word": "CEP",
+      "type": 0
+    },
+    {
+      "word": "DES",
+      "type": 0
+    },
+    {
+      "word": "EPA",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "HAO",
+      "type": 0
+    },
+    {
+      "word": "HAP",
+      "type": 0
+    },
+    {
+      "word": "HBO",
+      "type": 0
+    },
+    {
+      "word": "LAP",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "PAO",
+      "type": 0
+    },
+    {
+      "word": "ALEC",
+      "type": 0
+    },
+    {
+      "word": "CAPA",
+      "type": 0
+    },
+    {
+      "word": "CAPE",
+      "type": 0
+    },
+    {
+      "word": "CEPA",
+      "type": 0
+    },
+    {
+      "word": "ESTÃ",
+      "type": 0
+    },
+    {
+      "word": "HALE",
+      "type": 0
+    },
+    {
+      "word": "APELA",
+      "type": 0
+    },
+    {
+      "word": "CAPELA",
+      "type": 0
+    },
+    {
+      "word": "ESCAPA",
+      "type": 0
+    },
+    {
+      "word": "ESCAPE",
+      "type": 0
+    }
+  ],
+  "letters": "BOÃT,HACS,APJE,LECD",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

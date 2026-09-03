@@ -1,45 +1,319 @@
-﻿{
-    "id":  757,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ROL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIJO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TROL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROLLO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TIMOL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OLL,RMO,TIJ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 757,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "BOTE",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "ROSS",
+      "type": 0
+    },
+    {
+      "word": "TEMA",
+      "type": 0
+    },
+    {
+      "word": "TORRE",
+      "type": 0
+    },
+    {
+      "word": "MANERA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "ERO",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MER",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "OSA",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "STE",
+      "type": 0
+    },
+    {
+      "word": "STO",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TOS",
+      "type": 0
+    },
+    {
+      "word": "TSA",
+      "type": 0
+    },
+    {
+      "word": "AMEN",
+      "type": 0
+    },
+    {
+      "word": "AROS",
+      "type": 0
+    },
+    {
+      "word": "ARRE",
+      "type": 0
+    },
+    {
+      "word": "ASMA",
+      "type": 0
+    },
+    {
+      "word": "BORA",
+      "type": 0
+    },
+    {
+      "word": "BOSS",
+      "type": 0
+    },
+    {
+      "word": "EROS",
+      "type": 0
+    },
+    {
+      "word": "MERA",
+      "type": 0
+    },
+    {
+      "word": "MERO",
+      "type": 0
+    },
+    {
+      "word": "METO",
+      "type": 0
+    },
+    {
+      "word": "METS",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "NERO",
+      "type": 0
+    },
+    {
+      "word": "NETO",
+      "type": 0
+    },
+    {
+      "word": "OREN",
+      "type": 0
+    },
+    {
+      "word": "RASO",
+      "type": 0
+    },
+    {
+      "word": "REMA",
+      "type": 0
+    },
+    {
+      "word": "RENA",
+      "type": 0
+    },
+    {
+      "word": "RETO",
+      "type": 0
+    },
+    {
+      "word": "ROSA",
+      "type": 0
+    },
+    {
+      "word": "SORA",
+      "type": 0
+    },
+    {
+      "word": "STEN",
+      "type": 0
+    },
+    {
+      "word": "TERA",
+      "type": 0
+    },
+    {
+      "word": "TORA",
+      "type": 0
+    },
+    {
+      "word": "TOSA",
+      "type": 0
+    },
+    {
+      "word": "ARENA",
+      "type": 0
+    },
+    {
+      "word": "ASTER",
+      "type": 0
+    },
+    {
+      "word": "ASTOR",
+      "type": 0
+    },
+    {
+      "word": "BORRE",
+      "type": 0
+    },
+    {
+      "word": "GASTE",
+      "type": 0
+    },
+    {
+      "word": "GASTO",
+      "type": 0
+    },
+    {
+      "word": "MEROS",
+      "type": 0
+    },
+    {
+      "word": "RETOS",
+      "type": 0
+    },
+    {
+      "word": "SOREN",
+      "type": 0
+    },
+    {
+      "word": "TEMAN",
+      "type": 0
+    },
+    {
+      "word": "GASTEN",
+      "type": 0
+    },
+    {
+      "word": "GASTOS",
+      "type": 0
+    },
+    {
+      "word": "MANERAS",
+      "type": 0
+    }
+  ],
+  "letters": "AGBS,STOS,MERA,ANRE",
+  "obstacles": []
 }

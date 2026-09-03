@@ -1,61 +1,263 @@
-﻿{
-    "id":  787,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEZİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TERS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEZİNTİ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EZİNTİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GENİZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GEZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OLEİN",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ZİELO,ENYTS,GTİER",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 787,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "KİM",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "AYAK",
+      "type": 0
+    },
+    {
+      "word": "AİLE",
+      "type": 0
+    },
+    {
+      "word": "MİKE",
+      "type": 0
+    },
+    {
+      "word": "PARTİ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "AYA",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "KEY",
+      "type": 0
+    },
+    {
+      "word": "KEİ",
+      "type": 0
+    },
+    {
+      "word": "KİT",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MAY",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MİT",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "TİK",
+      "type": 0
+    },
+    {
+      "word": "TİM",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "İKE",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "ALEM",
+      "type": 0
+    },
+    {
+      "word": "ALİA",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "APAR",
+      "type": 0
+    },
+    {
+      "word": "EKİM",
+      "type": 0
+    },
+    {
+      "word": "KAYA",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "LAPA",
+      "type": 0
+    },
+    {
+      "word": "MAKE",
+      "type": 0
+    },
+    {
+      "word": "MAKİ",
+      "type": 0
+    },
+    {
+      "word": "MALİ",
+      "type": 0
+    },
+    {
+      "word": "MART",
+      "type": 0
+    },
+    {
+      "word": "MAYA",
+      "type": 0
+    },
+    {
+      "word": "MİKA",
+      "type": 0
+    },
+    {
+      "word": "PART",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "ARTİK",
+      "type": 0
+    },
+    {
+      "word": "AİLEM",
+      "type": 0
+    },
+    {
+      "word": "LAMAR",
+      "type": 0
+    },
+    {
+      "word": "MALİA",
+      "type": 0
+    },
+    {
+      "word": "MARTİ",
+      "type": 0
+    },
+    {
+      "word": "MİKEY",
+      "type": 0
+    },
+    {
+      "word": "AMALİA",
+      "type": 0
+    },
+    {
+      "word": "AMELİA",
+      "type": 0
+    },
+    {
+      "word": "PAMELA",
+      "type": 0
+    },
+    {
+      "word": "PARTİM",
+      "type": 0
+    }
+  ],
+  "letters": "ELİA,MAEY,APKA,RTİM",
+  "obstacles": []
 }

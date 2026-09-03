@@ -1,81 +1,251 @@
-﻿{
-    "id":  1169,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLÉ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZÔO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SELO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "URRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GORRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEGUIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEGURO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEGUIDOR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EGO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LESO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUGE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SEGUIDO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ELÉZÔ,SORRO,EGUID",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1169,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "FIM",
+      "type": 0
+    },
+    {
+      "word": "POR",
+      "type": 0
+    },
+    {
+      "word": "PRA",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "CARA",
+      "type": 0
+    },
+    {
+      "word": "PARA",
+      "type": 0
+    },
+    {
+      "word": "BAIXO",
+      "type": 0
+    },
+    {
+      "word": "ABAIXO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABA",
+      "type": 0
+    },
+    {
+      "word": "ACP",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "APA",
+      "type": 0
+    },
+    {
+      "word": "APO",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BAI",
+      "type": 0
+    },
+    {
+      "word": "BAO",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "FAR",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "OAB",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "OXI",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "RAF",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "ROX",
+      "type": 0
+    },
+    {
+      "word": "AFIM",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "CARO",
+      "type": 0
+    },
+    {
+      "word": "FAMA",
+      "type": 0
+    },
+    {
+      "word": "FARA",
+      "type": 0
+    },
+    {
+      "word": "FARO",
+      "type": 0
+    },
+    {
+      "word": "MAPA",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "ORAM",
+      "type": 0
+    },
+    {
+      "word": "PARO",
+      "type": 0
+    },
+    {
+      "word": "POXA",
+      "type": 0
+    },
+    {
+      "word": "PROA",
+      "type": 0
+    },
+    {
+      "word": "PROP",
+      "type": 0
+    },
+    {
+      "word": "RAFI",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "RAMI",
+      "type": 0
+    },
+    {
+      "word": "RAPA",
+      "type": 0
+    },
+    {
+      "word": "ROXA",
+      "type": 0
+    },
+    {
+      "word": "XIAO",
+      "type": 0
+    },
+    {
+      "word": "AMARA",
+      "type": 0
+    },
+    {
+      "word": "AMARO",
+      "type": 0
+    },
+    {
+      "word": "BAIXA",
+      "type": 0
+    },
+    {
+      "word": "ABAIXA",
+      "type": 0
+    },
+    {
+      "word": "BAIXAR",
+      "type": 0
+    },
+    {
+      "word": "ABAIXAR",
+      "type": 0
+    },
+    {
+      "word": "BAIXARAM",
+      "type": 0
+    }
+  ],
+  "letters": "ABAI,APOX,MARA,IFPC",
+  "obstacles": []
 }

@@ -1,57 +1,259 @@
-﻿{
-    "id":  1818,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MADE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MULE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NORM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NORMAL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALUM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DALE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LADE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "NORMA",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "NDE,OAL,RMU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1818,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "ROW",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "CROW",
+      "type": 0
+    },
+    {
+      "word": "INTO",
+      "type": 0
+    },
+    {
+      "word": "OWLS",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    },
+    {
+      "word": "WORD",
+      "type": 0
+    },
+    {
+      "word": "LEWIS",
+      "type": 0
+    },
+    {
+      "word": "SWORD",
+      "type": 0
+    },
+    {
+      "word": "WORDS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "IDS",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "ODS",
+      "type": 0
+    },
+    {
+      "word": "ORC",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "OWL",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "SOD",
+      "type": 0
+    },
+    {
+      "word": "SOT",
+      "type": 0
+    },
+    {
+      "word": "SOW",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "WEE",
+      "type": 0
+    },
+    {
+      "word": "WIS",
+      "type": 0
+    },
+    {
+      "word": "WOE",
+      "type": 0
+    },
+    {
+      "word": "WOS",
+      "type": 0
+    },
+    {
+      "word": "DINT",
+      "type": 0
+    },
+    {
+      "word": "DOSE",
+      "type": 0
+    },
+    {
+      "word": "EELS",
+      "type": 0
+    },
+    {
+      "word": "LEES",
+      "type": 0
+    },
+    {
+      "word": "ODES",
+      "type": 0
+    },
+    {
+      "word": "ORCS",
+      "type": 0
+    },
+    {
+      "word": "ROWS",
+      "type": 0
+    },
+    {
+      "word": "SEEL",
+      "type": 0
+    },
+    {
+      "word": "SEIS",
+      "type": 0
+    },
+    {
+      "word": "SLEW",
+      "type": 0
+    },
+    {
+      "word": "SODS",
+      "type": 0
+    },
+    {
+      "word": "SORD",
+      "type": 0
+    },
+    {
+      "word": "SOWS",
+      "type": 0
+    },
+    {
+      "word": "TODS",
+      "type": 0
+    },
+    {
+      "word": "WEES",
+      "type": 0
+    },
+    {
+      "word": "CROWS",
+      "type": 0
+    },
+    {
+      "word": "ORCIN",
+      "type": 0
+    },
+    {
+      "word": "ROSED",
+      "type": 0
+    },
+    {
+      "word": "SEELS",
+      "type": 0
+    },
+    {
+      "word": "SORDS",
+      "type": 0
+    },
+    {
+      "word": "WEEDS",
+      "type": 0
+    },
+    {
+      "word": "ESCROW",
+      "type": 0
+    },
+    {
+      "word": "SWORDS",
+      "type": 0
+    },
+    {
+      "word": "ESCROWS",
+      "type": 0
+    }
+  ],
+  "letters": "SDOTN,IESCI,WEORD,SLWSS",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

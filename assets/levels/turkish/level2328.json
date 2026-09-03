@@ -1,105 +1,123 @@
-﻿{
-    "id":  2328,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "İKİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATOM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ELEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TANK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UMUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOMUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOMUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOMUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOMUTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOMUTAN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ATİK",
-                            "type":  2
-                        },
-                        {
-                            "word":  "İSOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KELE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KOTAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MUSİKİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MUTİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TİK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UMUNK,SOTAE,İKİEL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2328,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AZI",
+      "type": 0
+    },
+    {
+      "word": "JAN",
+      "type": 0
+    },
+    {
+      "word": "JAY",
+      "type": 0
+    },
+    {
+      "word": "ONA",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "SOS",
+      "type": 0
+    },
+    {
+      "word": "YAN",
+      "type": 0
+    },
+    {
+      "word": "ZAM",
+      "type": 0
+    },
+    {
+      "word": "ÖNE",
+      "type": 0
+    },
+    {
+      "word": "JEAN",
+      "type": 0
+    },
+    {
+      "word": "ONAY",
+      "type": 0
+    },
+    {
+      "word": "FÜZYON",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "MIZ",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "NEN",
+      "type": 0
+    },
+    {
+      "word": "OYA",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "NANE",
+      "type": 0
+    },
+    {
+      "word": "SOSA",
+      "type": 0
+    },
+    {
+      "word": "SÖNEN",
+      "type": 0
+    },
+    {
+      "word": "SANJAY",
+      "type": 0
+    }
+  ],
+  "letters": "ENJAN,NAEYO,ÖSÜZA,SOFIM",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

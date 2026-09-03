@@ -1,102 +1,147 @@
-﻿{
-    "id":  1876,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BEŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATEŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEZE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TURA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUTAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUTUBET",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BETA",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "RAŞE,UTEZ,TUBİ",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  8,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1876,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEK",
+      "type": 0
+    },
+    {
+      "word": "DEV",
+      "type": 0
+    },
+    {
+      "word": "IMI",
+      "type": 0
+    },
+    {
+      "word": "KÜL",
+      "type": 0
+    },
+    {
+      "word": "MIZ",
+      "type": 0
+    },
+    {
+      "word": "OKU",
+      "type": 0
+    },
+    {
+      "word": "ONU",
+      "type": 0
+    },
+    {
+      "word": "YIL",
+      "type": 0
+    },
+    {
+      "word": "KONU",
+      "type": 0
+    },
+    {
+      "word": "LUKE",
+      "type": 0
+    },
+    {
+      "word": "LÜKS",
+      "type": 0
+    },
+    {
+      "word": "OKUL",
+      "type": 0
+    },
+    {
+      "word": "DÖVÜŞ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DÖV",
+      "type": 0
+    },
+    {
+      "word": "KEV",
+      "type": 0
+    },
+    {
+      "word": "KEŞ",
+      "type": 0
+    },
+    {
+      "word": "KIL",
+      "type": 0
+    },
+    {
+      "word": "KON",
+      "type": 0
+    },
+    {
+      "word": "KUN",
+      "type": 0
+    },
+    {
+      "word": "LIK",
+      "type": 0
+    },
+    {
+      "word": "LUK",
+      "type": 0
+    },
+    {
+      "word": "LÜK",
+      "type": 0
+    },
+    {
+      "word": "YIK",
+      "type": 0
+    },
+    {
+      "word": "ÖDE",
+      "type": 0
+    },
+    {
+      "word": "DÖVE",
+      "type": 0
+    },
+    {
+      "word": "IMIZ",
+      "type": 0
+    },
+    {
+      "word": "ÖDEV",
+      "type": 0
+    },
+    {
+      "word": "KONUK",
+      "type": 0
+    },
+    {
+      "word": "DÖVÜŞE",
+      "type": 0
+    },
+    {
+      "word": "DÖVÜŞÜ",
+      "type": 0
+    }
+  ],
+  "letters": "ONSDÖ,KUKEV,ILÜŞÜ,YZIMI",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

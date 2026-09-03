@@ -1,75 +1,135 @@
-﻿{
-    "id":  1415,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AWE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OMIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ADMIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BROAD",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "MORSE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ROM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TIMOR",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "WADT,EOMI,SRBW",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1415,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "HOT",
+      "type": 0
+    },
+    {
+      "word": "HOW",
+      "type": 0
+    },
+    {
+      "word": "LIE",
+      "type": 0
+    },
+    {
+      "word": "FIVE",
+      "type": 0
+    },
+    {
+      "word": "LIES",
+      "type": 0
+    },
+    {
+      "word": "MILE",
+      "type": 0
+    },
+    {
+      "word": "SHOT",
+      "type": 0
+    },
+    {
+      "word": "SHOW",
+      "type": 0
+    },
+    {
+      "word": "SMILE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "LEV",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MIL",
+      "type": 0
+    },
+    {
+      "word": "OHS",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "SOT",
+      "type": 0
+    },
+    {
+      "word": "SOW",
+      "type": 0
+    },
+    {
+      "word": "TOW",
+      "type": 0
+    },
+    {
+      "word": "WOS",
+      "type": 0
+    },
+    {
+      "word": "WOT",
+      "type": 0
+    },
+    {
+      "word": "HOSE",
+      "type": 0
+    },
+    {
+      "word": "HOTS",
+      "type": 0
+    },
+    {
+      "word": "HOWF",
+      "type": 0
+    },
+    {
+      "word": "LIME",
+      "type": 0
+    },
+    {
+      "word": "SOTS",
+      "type": 0
+    },
+    {
+      "word": "STOW",
+      "type": 0
+    },
+    {
+      "word": "WOTS",
+      "type": 0
+    }
+  ],
+  "letters": "IVEL,FWMI,TOSE,SHLI",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

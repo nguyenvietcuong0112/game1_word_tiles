@@ -1,69 +1,235 @@
-﻿{
-    "id":  601,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CONDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LANCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHUPETE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HUPE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LANDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ONDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOC",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UHSCE,PCOND,ETEAL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 601,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "ACTO",
+      "type": 0
+    },
+    {
+      "word": "HAGO",
+      "type": 0
+    },
+    {
+      "word": "PASA",
+      "type": 0
+    },
+    {
+      "word": "PATO",
+      "type": 0
+    },
+    {
+      "word": "CALOR",
+      "type": 0
+    },
+    {
+      "word": "HAROLD",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAO",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "GOL",
+      "type": 0
+    },
+    {
+      "word": "GOO",
+      "type": 0
+    },
+    {
+      "word": "HAR",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "OLD",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "OTA",
+      "type": 0
+    },
+    {
+      "word": "PAS",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "POT",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "ROG",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "TOP",
+      "type": 0
+    },
+    {
+      "word": "ACTA",
+      "type": 0
+    },
+    {
+      "word": "ARPA",
+      "type": 0
+    },
+    {
+      "word": "GOLD",
+      "type": 0
+    },
+    {
+      "word": "HAAS",
+      "type": 0
+    },
+    {
+      "word": "HARA",
+      "type": 0
+    },
+    {
+      "word": "LORA",
+      "type": 0
+    },
+    {
+      "word": "POOL",
+      "type": 0
+    },
+    {
+      "word": "POOR",
+      "type": 0
+    },
+    {
+      "word": "ROOT",
+      "type": 0
+    },
+    {
+      "word": "SAPO",
+      "type": 0
+    },
+    {
+      "word": "SATO",
+      "type": 0
+    },
+    {
+      "word": "TAPA",
+      "type": 0
+    },
+    {
+      "word": "TASA",
+      "type": 0
+    },
+    {
+      "word": "ACTAS",
+      "type": 0
+    },
+    {
+      "word": "LOGAR",
+      "type": 0
+    },
+    {
+      "word": "OPRAH",
+      "type": 0
+    },
+    {
+      "word": "TAPAS",
+      "type": 0
+    }
+  ],
+  "letters": "CALD,TOOG,APRA,SAAH",
+  "obstacles": []
 }

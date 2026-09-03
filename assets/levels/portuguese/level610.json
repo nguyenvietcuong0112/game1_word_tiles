@@ -1,77 +1,167 @@
-﻿{
-    "id":  610,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FORO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GELO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SELO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOLIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PÊSSEGO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AURO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EGO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FOG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GORO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LORO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RIA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SELIA,SGORU,ÊPFOL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 610,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAI",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TIA",
+      "type": 0
+    },
+    {
+      "word": "CALA",
+      "type": 0
+    },
+    {
+      "word": "CALE",
+      "type": 0
+    },
+    {
+      "word": "FALA",
+      "type": 0
+    },
+    {
+      "word": "FALE",
+      "type": 0
+    },
+    {
+      "word": "TINTA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "CEL",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "ECA",
+      "type": 0
+    },
+    {
+      "word": "FAA",
+      "type": 0
+    },
+    {
+      "word": "FEL",
+      "type": 0
+    },
+    {
+      "word": "INC",
+      "type": 0
+    },
+    {
+      "word": "NIA",
+      "type": 0
+    },
+    {
+      "word": "TAC",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TIN",
+      "type": 0
+    },
+    {
+      "word": "ALEC",
+      "type": 0
+    },
+    {
+      "word": "CAIN",
+      "type": 0
+    },
+    {
+      "word": "CELA",
+      "type": 0
+    },
+    {
+      "word": "FELA",
+      "type": 0
+    },
+    {
+      "word": "INCA",
+      "type": 0
+    },
+    {
+      "word": "LACE",
+      "type": 0
+    },
+    {
+      "word": "NCAA",
+      "type": 0
+    },
+    {
+      "word": "NTAC",
+      "type": 0
+    },
+    {
+      "word": "FECAL",
+      "type": 0
+    }
+  ],
+  "letters": "FAAT,ELCN,CAAI,TAET",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

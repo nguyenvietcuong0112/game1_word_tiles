@@ -1,61 +1,155 @@
-﻿{
-    "id":  860,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "COR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RÉU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CRER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUIR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TOCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CORRER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCORRER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "OCRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "IURR,RÉOE,TOCR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 860,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "ALCE",
+      "type": 0
+    },
+    {
+      "word": "ARTE",
+      "type": 0
+    },
+    {
+      "word": "ASAS",
+      "type": 0
+    },
+    {
+      "word": "SALA",
+      "type": 0
+    },
+    {
+      "word": "SEJA",
+      "type": 0
+    },
+    {
+      "word": "SALVA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "AVE",
+      "type": 0
+    },
+    {
+      "word": "ESA",
+      "type": 0
+    },
+    {
+      "word": "JAR",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "RAJ",
+      "type": 0
+    },
+    {
+      "word": "SAA",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAS",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "TEC",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "VET",
+      "type": 0
+    },
+    {
+      "word": "ALAS",
+      "type": 0
+    },
+    {
+      "word": "ALVA",
+      "type": 0
+    },
+    {
+      "word": "AVEC",
+      "type": 0
+    },
+    {
+      "word": "SALAS",
+      "type": 0
+    },
+    {
+      "word": "SALVE",
+      "type": 0
+    },
+    {
+      "word": "TECLA",
+      "type": 0
+    },
+    {
+      "word": "TRAJE",
+      "type": 0
+    },
+    {
+      "word": "TECLAS",
+      "type": 0
+    },
+    {
+      "word": "TRAJES",
+      "type": 0
+    }
+  ],
+  "letters": "ASAE,SALC,EAVE,JART",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

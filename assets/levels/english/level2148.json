@@ -1,105 +1,243 @@
-﻿{
-    "id":  2148,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAGE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "NOEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IMAGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIRAGE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EMIR",
-                            "type":  1
-                        },
-                        {
-                            "word":  "EON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIMA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MAG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MEGA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIME",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "GEOE,AMNL,RILA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2148,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "DOG",
+      "type": 0
+    },
+    {
+      "word": "GOD",
+      "type": 0
+    },
+    {
+      "word": "ILL",
+      "type": 0
+    },
+    {
+      "word": "KING",
+      "type": 0
+    },
+    {
+      "word": "PACK",
+      "type": 0
+    },
+    {
+      "word": "PAID",
+      "type": 0
+    },
+    {
+      "word": "PICK",
+      "type": 0
+    },
+    {
+      "word": "PILL",
+      "type": 0
+    },
+    {
+      "word": "PUMP",
+      "type": 0
+    },
+    {
+      "word": "KINGDOM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "GAL",
+      "type": 0
+    },
+    {
+      "word": "GAP",
+      "type": 0
+    },
+    {
+      "word": "GIP",
+      "type": 0
+    },
+    {
+      "word": "GOA",
+      "type": 0
+    },
+    {
+      "word": "GUM",
+      "type": 0
+    },
+    {
+      "word": "ICK",
+      "type": 0
+    },
+    {
+      "word": "KID",
+      "type": 0
+    },
+    {
+      "word": "KIN",
+      "type": 0
+    },
+    {
+      "word": "LAG",
+      "type": 0
+    },
+    {
+      "word": "LAP",
+      "type": 0
+    },
+    {
+      "word": "LIP",
+      "type": 0
+    },
+    {
+      "word": "MOA",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "MOG",
+      "type": 0
+    },
+    {
+      "word": "MUG",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "PIC",
+      "type": 0
+    },
+    {
+      "word": "PIG",
+      "type": 0
+    },
+    {
+      "word": "PUG",
+      "type": 0
+    },
+    {
+      "word": "UMP",
+      "type": 0
+    },
+    {
+      "word": "CAID",
+      "type": 0
+    },
+    {
+      "word": "CAIN",
+      "type": 0
+    },
+    {
+      "word": "DING",
+      "type": 0
+    },
+    {
+      "word": "GALL",
+      "type": 0
+    },
+    {
+      "word": "GILD",
+      "type": 0
+    },
+    {
+      "word": "GILL",
+      "type": 0
+    },
+    {
+      "word": "INIA",
+      "type": 0
+    },
+    {
+      "word": "MODI",
+      "type": 0
+    },
+    {
+      "word": "PAIK",
+      "type": 0
+    },
+    {
+      "word": "PAIN",
+      "type": 0
+    },
+    {
+      "word": "PALL",
+      "type": 0
+    },
+    {
+      "word": "PALP",
+      "type": 0
+    },
+    {
+      "word": "PICA",
+      "type": 0
+    },
+    {
+      "word": "PAGOD",
+      "type": 0
+    },
+    {
+      "word": "PALPI",
+      "type": 0
+    },
+    {
+      "word": "DIKING",
+      "type": 0
+    },
+    {
+      "word": "PACKING",
+      "type": 0
+    },
+    {
+      "word": "PAIKING",
+      "type": 0
+    },
+    {
+      "word": "PICKING",
+      "type": 0
+    }
+  ],
+  "letters": "PIGNI,LLDIK,AGOAC,PUMPI",
+  "obstacles": []
 }

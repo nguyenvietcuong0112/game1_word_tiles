@@ -1,69 +1,99 @@
-﻿{
-    "id":  1145,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ДЫРА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОМА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОРА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОРЖ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "МОРЖ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ОМАР",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОМАР",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РОМАН",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АРЫК",
-                            "type":  1
-                        },
-                        {
-                            "word":  "КОРАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "МОРА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НАРЫ",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ОМАН",
-                            "type":  1
-                        },
-                        {
-                            "word":  "РОМА",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "МАН,ОРЖ,КЫД",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1145,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "БЛА",
+      "type": 0
+    },
+    {
+      "word": "ЛМЕ",
+      "type": 0
+    },
+    {
+      "word": "ЛОБ",
+      "type": 0
+    },
+    {
+      "word": "МАК",
+      "type": 0
+    },
+    {
+      "word": "МЕР",
+      "type": 0
+    },
+    {
+      "word": "ТЕМ",
+      "type": 0
+    },
+    {
+      "word": "ВРЕМ",
+      "type": 0
+    },
+    {
+      "word": "ВРЕТ",
+      "type": 0
+    },
+    {
+      "word": "ЛОЖКА",
+      "type": 0
+    },
+    {
+      "word": "ТЕРЯЮ",
+      "type": 0
+    },
+    {
+      "word": "ТЕРЯЮТ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "КАЛ",
+      "type": 0
+    },
+    {
+      "word": "ЛАК",
+      "type": 0
+    },
+    {
+      "word": "ЛАМ",
+      "type": 0
+    },
+    {
+      "word": "МАЛ",
+      "type": 0
+    },
+    {
+      "word": "МЕТ",
+      "type": 0
+    },
+    {
+      "word": "РЕМ",
+      "type": 0
+    },
+    {
+      "word": "ТЕР",
+      "type": 0
+    },
+    {
+      "word": "БРЕТ",
+      "type": 0
+    }
+  ],
+  "letters": "КЖОЛ,АЛБМ,МВРЕ,ТЮЯТ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

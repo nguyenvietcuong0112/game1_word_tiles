@@ -1,75 +1,227 @@
-﻿{
-    "id":  1893,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DUO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AUTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDEA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AUDIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STUDIO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "IDEAS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "OUD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OUTS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SAUDI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "STUD",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "STO,AUO,EDI",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1893,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "VAR",
+      "type": 0
+    },
+    {
+      "word": "CAST",
+      "type": 0
+    },
+    {
+      "word": "SALT",
+      "type": 0
+    },
+    {
+      "word": "THAT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALS",
+      "type": 0
+    },
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "ECU",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LAT",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "VAC",
+      "type": 0
+    },
+    {
+      "word": "VAS",
+      "type": 0
+    },
+    {
+      "word": "ACES",
+      "type": 0
+    },
+    {
+      "word": "ACTA",
+      "type": 0
+    },
+    {
+      "word": "ACTS",
+      "type": 0
+    },
+    {
+      "word": "ALAR",
+      "type": 0
+    },
+    {
+      "word": "ALAS",
+      "type": 0
+    },
+    {
+      "word": "CASA",
+      "type": 0
+    },
+    {
+      "word": "CESS",
+      "type": 0
+    },
+    {
+      "word": "CUSS",
+      "type": 0
+    },
+    {
+      "word": "ECUS",
+      "type": 0
+    },
+    {
+      "word": "HALT",
+      "type": 0
+    },
+    {
+      "word": "HATS",
+      "type": 0
+    },
+    {
+      "word": "LATS",
+      "type": 0
+    },
+    {
+      "word": "LUCE",
+      "type": 0
+    },
+    {
+      "word": "SALS",
+      "type": 0
+    },
+    {
+      "word": "SASS",
+      "type": 0
+    },
+    {
+      "word": "SLAT",
+      "type": 0
+    },
+    {
+      "word": "SUSS",
+      "type": 0
+    },
+    {
+      "word": "TALA",
+      "type": 0
+    },
+    {
+      "word": "VARA",
+      "type": 0
+    },
+    {
+      "word": "VASA",
+      "type": 0
+    },
+    {
+      "word": "CASUS",
+      "type": 0
+    },
+    {
+      "word": "LUCES",
+      "type": 0
+    },
+    {
+      "word": "SALSA",
+      "type": 0
+    },
+    {
+      "word": "TALAR",
+      "type": 0
+    },
+    {
+      "word": "TALAS",
+      "type": 0
+    },
+    {
+      "word": "VARAS",
+      "type": 0
+    },
+    {
+      "word": "VASAL",
+      "type": 0
+    },
+    {
+      "word": "SALSAS",
+      "type": 0
+    },
+    {
+      "word": "SECULAR",
+      "type": 0
+    }
+  ],
+  "letters": "CASSE,TSLUC,ALASA,HTRAV",
+  "obstacles": []
 }

@@ -1,85 +1,163 @@
-﻿{
-    "id":  1515,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MUSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SANE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMUSE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MARINA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARINE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "IRAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MANI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MARINES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SARI",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "USE,MAN,ARI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1515,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "RISE",
+      "type": 0
+    },
+    {
+      "word": "SINCE",
+      "type": 0
+    },
+    {
+      "word": "INCEST",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIT",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "AITS",
+      "type": 0
+    },
+    {
+      "word": "CESS",
+      "type": 0
+    },
+    {
+      "word": "HEST",
+      "type": 0
+    },
+    {
+      "word": "IRES",
+      "type": 0
+    },
+    {
+      "word": "SECS",
+      "type": 0
+    },
+    {
+      "word": "SERS",
+      "type": 0
+    },
+    {
+      "word": "SHES",
+      "type": 0
+    },
+    {
+      "word": "SIRE",
+      "type": 0
+    },
+    {
+      "word": "SIRS",
+      "type": 0
+    },
+    {
+      "word": "SRIS",
+      "type": 0
+    },
+    {
+      "word": "TIER",
+      "type": 0
+    },
+    {
+      "word": "TIES",
+      "type": 0
+    },
+    {
+      "word": "CESTI",
+      "type": 0
+    },
+    {
+      "word": "STIES",
+      "type": 0
+    },
+    {
+      "word": "TIERS",
+      "type": 0
+    }
+  ],
+  "letters": "NIIS,CSRE,ESTI,HSTA",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

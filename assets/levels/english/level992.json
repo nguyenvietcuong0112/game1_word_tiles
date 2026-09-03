@@ -1,113 +1,199 @@
-﻿{
-    "id":  992,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "OAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEFT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LICK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LOFT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOIL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "COCOA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COCKTAIL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COCK",
-                            "type":  2
-                        },
-                        {
-                            "word":  "COCO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COLI",
-                            "type":  1
-                        },
-                        {
-                            "word":  "COT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FOAL",
-                            "type":  1
-                        },
-                        {
-                            "word":  "IOTA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOCI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOCO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TALC",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "AILAT,TOCOF,KCILE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 992,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BIN",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LAS",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "ONLY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABY",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "BIS",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "NIB",
+      "type": 0
+    },
+    {
+      "word": "NIP",
+      "type": 0
+    },
+    {
+      "word": "NOM",
+      "type": 0
+    },
+    {
+      "word": "PAP",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RIB",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "RIP",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SAL",
+      "type": 0
+    },
+    {
+      "word": "SIB",
+      "type": 0
+    },
+    {
+      "word": "YOM",
+      "type": 0
+    },
+    {
+      "word": "YON",
+      "type": 0
+    },
+    {
+      "word": "BINS",
+      "type": 0
+    },
+    {
+      "word": "IBIS",
+      "type": 0
+    },
+    {
+      "word": "NIPA",
+      "type": 0
+    },
+    {
+      "word": "PARS",
+      "type": 0
+    },
+    {
+      "word": "PINS",
+      "type": 0
+    },
+    {
+      "word": "RINS",
+      "type": 0
+    },
+    {
+      "word": "SINS",
+      "type": 0
+    },
+    {
+      "word": "SNIB",
+      "type": 0
+    },
+    {
+      "word": "SNIP",
+      "type": 0
+    },
+    {
+      "word": "BASIN",
+      "type": 0
+    },
+    {
+      "word": "PIBAL",
+      "type": 0
+    },
+    {
+      "word": "SABIN",
+      "type": 0
+    },
+    {
+      "word": "SABIR",
+      "type": 0
+    },
+    {
+      "word": "SIBYL",
+      "type": 0
+    },
+    {
+      "word": "BASINS",
+      "type": 0
+    },
+    {
+      "word": "RAPINI",
+      "type": 0
+    },
+    {
+      "word": "SABINS",
+      "type": 0
+    },
+    {
+      "word": "SABIRS",
+      "type": 0
+    },
+    {
+      "word": "PARSNIP",
+      "type": 0
+    }
+  ],
+  "letters": "PARS,MPIN,OYBI,NLAS",
+  "obstacles": []
 }

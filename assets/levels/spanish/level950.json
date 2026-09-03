@@ -1,77 +1,251 @@
-﻿{
-    "id":  950,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AÚN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DATA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "META",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRENDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRENDER",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ENDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ETA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOER",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NEO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RENDER",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TATA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TATE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "REDAT,RENÚA,POMET",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 950,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "DAS",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "DEJA",
+      "type": 0
+    },
+    {
+      "word": "MANO",
+      "type": 0
+    },
+    {
+      "word": "CELDA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACA",
+      "type": 0
+    },
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "DAO",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ELE",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "JED",
+      "type": 0
+    },
+    {
+      "word": "LAL",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NOA",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "ALEC",
+      "type": 0
+    },
+    {
+      "word": "CALA",
+      "type": 0
+    },
+    {
+      "word": "CALE",
+      "type": 0
+    },
+    {
+      "word": "CAME",
+      "type": 0
+    },
+    {
+      "word": "DELA",
+      "type": 0
+    },
+    {
+      "word": "DELE",
+      "type": 0
+    },
+    {
+      "word": "JALA",
+      "type": 0
+    },
+    {
+      "word": "JALE",
+      "type": 0
+    },
+    {
+      "word": "LACA",
+      "type": 0
+    },
+    {
+      "word": "LACE",
+      "type": 0
+    },
+    {
+      "word": "LALA",
+      "type": 0
+    },
+    {
+      "word": "LELA",
+      "type": 0
+    },
+    {
+      "word": "LEMA",
+      "type": 0
+    },
+    {
+      "word": "MACE",
+      "type": 0
+    },
+    {
+      "word": "MECA",
+      "type": 0
+    },
+    {
+      "word": "MONA",
+      "type": 0
+    },
+    {
+      "word": "NACE",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "NOME",
+      "type": 0
+    },
+    {
+      "word": "CAMEL",
+      "type": 0
+    },
+    {
+      "word": "CANOA",
+      "type": 0
+    },
+    {
+      "word": "LEMON",
+      "type": 0
+    },
+    {
+      "word": "ALEMAN",
+      "type": 0
+    },
+    {
+      "word": "CANOAS",
+      "type": 0
+    },
+    {
+      "word": "CELDAS",
+      "type": 0
+    },
+    {
+      "word": "DEJALA",
+      "type": 0
+    }
+  ],
+  "letters": "NACA,OMEL,ADLA,SDEJ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,73 +1,307 @@
-﻿{
-    "id":  1623,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "END",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DINE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DIRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WINE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WIRE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DINER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REND",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RIND",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "ORE,DIN,OWD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1623,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "ODD",
+      "type": 0
+    },
+    {
+      "word": "SAT",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "MAIN",
+      "type": 0
+    },
+    {
+      "word": "MOST",
+      "type": 0
+    },
+    {
+      "word": "PORT",
+      "type": 0
+    },
+    {
+      "word": "SORT",
+      "type": 0
+    },
+    {
+      "word": "DOMAIN",
+      "type": 0
+    },
+    {
+      "word": "SPORTS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "OPS",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "ORT",
+      "type": 0
+    },
+    {
+      "word": "POD",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SOD",
+      "type": 0
+    },
+    {
+      "word": "TAS",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "AINS",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "DORS",
+      "type": 0
+    },
+    {
+      "word": "DOST",
+      "type": 0
+    },
+    {
+      "word": "ETAS",
+      "type": 0
+    },
+    {
+      "word": "MAST",
+      "type": 0
+    },
+    {
+      "word": "MORS",
+      "type": 0
+    },
+    {
+      "word": "MORT",
+      "type": 0
+    },
+    {
+      "word": "NETS",
+      "type": 0
+    },
+    {
+      "word": "ODOR",
+      "type": 0
+    },
+    {
+      "word": "ORTS",
+      "type": 0
+    },
+    {
+      "word": "SAIN",
+      "type": 0
+    },
+    {
+      "word": "SATE",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SETS",
+      "type": 0
+    },
+    {
+      "word": "SOMA",
+      "type": 0
+    },
+    {
+      "word": "TENS",
+      "type": 0
+    },
+    {
+      "word": "TROD",
+      "type": 0
+    },
+    {
+      "word": "TROP",
+      "type": 0
+    },
+    {
+      "word": "AMORT",
+      "type": 0
+    },
+    {
+      "word": "DORSA",
+      "type": 0
+    },
+    {
+      "word": "MAINS",
+      "type": 0
+    },
+    {
+      "word": "MORTS",
+      "type": 0
+    },
+    {
+      "word": "MOSTE",
+      "type": 0
+    },
+    {
+      "word": "ODORS",
+      "type": 0
+    },
+    {
+      "word": "PORTS",
+      "type": 0
+    },
+    {
+      "word": "SATES",
+      "type": 0
+    },
+    {
+      "word": "SENSA",
+      "type": 0
+    },
+    {
+      "word": "SPORT",
+      "type": 0
+    },
+    {
+      "word": "STROP",
+      "type": 0
+    },
+    {
+      "word": "TENIA",
+      "type": 0
+    },
+    {
+      "word": "SENSOR",
+      "type": 0
+    },
+    {
+      "word": "STROMA",
+      "type": 0
+    },
+    {
+      "word": "STROPS",
+      "type": 0
+    },
+    {
+      "word": "TENIAS",
+      "type": 0
+    },
+    {
+      "word": "TENSOR",
+      "type": 0
+    },
+    {
+      "word": "DOMAINS",
+      "type": 0
+    },
+    {
+      "word": "ROMAINE",
+      "type": 0
+    },
+    {
+      "word": "SENSORS",
+      "type": 0
+    },
+    {
+      "word": "TENSORS",
+      "type": 0
+    },
+    {
+      "word": "ROMAINES",
+      "type": 0
+    }
+  ],
+  "letters": "PSAS,ORTE,DOSN,DMAI",
+  "obstacles": []
 }

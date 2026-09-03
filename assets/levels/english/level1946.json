@@ -1,75 +1,339 @@
-﻿{
-    "id":  1946,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ELK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OPAL",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PASTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PASTEL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LETS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PASO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LTE,ASL,POK",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1946,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "BASE",
+      "type": 0
+    },
+    {
+      "word": "MIKE",
+      "type": 0
+    },
+    {
+      "word": "STAR",
+      "type": 0
+    },
+    {
+      "word": "SUPRA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABA",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "ARB",
+      "type": 0
+    },
+    {
+      "word": "BAP",
+      "type": 0
+    },
+    {
+      "word": "BAS",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "IMP",
+      "type": 0
+    },
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "NAP",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "PUS",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "SAB",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "SUP",
+      "type": 0
+    },
+    {
+      "word": "TAB",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "ABAS",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "BARE",
+      "type": 0
+    },
+    {
+      "word": "BATS",
+      "type": 0
+    },
+    {
+      "word": "BRAN",
+      "type": 0
+    },
+    {
+      "word": "KEMP",
+      "type": 0
+    },
+    {
+      "word": "KIST",
+      "type": 0
+    },
+    {
+      "word": "MIST",
+      "type": 0
+    },
+    {
+      "word": "PANE",
+      "type": 0
+    },
+    {
+      "word": "PARE",
+      "type": 0
+    },
+    {
+      "word": "PATS",
+      "type": 0
+    },
+    {
+      "word": "PRAT",
+      "type": 0
+    },
+    {
+      "word": "PROA",
+      "type": 0
+    },
+    {
+      "word": "PROP",
+      "type": 0
+    },
+    {
+      "word": "RATS",
+      "type": 0
+    },
+    {
+      "word": "SABE",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SIKE",
+      "type": 0
+    },
+    {
+      "word": "SIMP",
+      "type": 0
+    },
+    {
+      "word": "STAB",
+      "type": 0
+    },
+    {
+      "word": "TARE",
+      "type": 0
+    },
+    {
+      "word": "TARP",
+      "type": 0
+    },
+    {
+      "word": "ABASE",
+      "type": 0
+    },
+    {
+      "word": "BARES",
+      "type": 0
+    },
+    {
+      "word": "BASER",
+      "type": 0
+    },
+    {
+      "word": "PARES",
+      "type": 0
+    },
+    {
+      "word": "PRATS",
+      "type": 0
+    },
+    {
+      "word": "PRESA",
+      "type": 0
+    },
+    {
+      "word": "PROAS",
+      "type": 0
+    },
+    {
+      "word": "SABER",
+      "type": 0
+    },
+    {
+      "word": "SABRA",
+      "type": 0
+    },
+    {
+      "word": "STARE",
+      "type": 0
+    },
+    {
+      "word": "TABER",
+      "type": 0
+    },
+    {
+      "word": "TABES",
+      "type": 0
+    },
+    {
+      "word": "TARES",
+      "type": 0
+    },
+    {
+      "word": "ABASER",
+      "type": 0
+    },
+    {
+      "word": "BATMEN",
+      "type": 0
+    },
+    {
+      "word": "STARES",
+      "type": 0
+    },
+    {
+      "word": "PROPANE",
+      "type": 0
+    }
+  ],
+  "letters": "KENAP,IMPRO,STABA,UPRES",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

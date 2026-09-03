@@ -1,73 +1,203 @@
-﻿{
-    "id":  1190,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAMU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MAKUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MUKAVVA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KULA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KUMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ULAMA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ULAMAK",
-                            "type":  2
-                        },
-                        {
-                            "word":  "VAKUM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VVA,AMA,KUL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1190,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "NDA",
+      "type": 0
+    },
+    {
+      "word": "ONA",
+      "type": 0
+    },
+    {
+      "word": "TIR",
+      "type": 0
+    },
+    {
+      "word": "ARAÇ",
+      "type": 0
+    },
+    {
+      "word": "OLAN",
+      "type": 0
+    },
+    {
+      "word": "OLMA",
+      "type": 0
+    },
+    {
+      "word": "OLANI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMT",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "DAM",
+      "type": 0
+    },
+    {
+      "word": "DAO",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "LON",
+      "type": 0
+    },
+    {
+      "word": "LOT",
+      "type": 0
+    },
+    {
+      "word": "MAD",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "OLD",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "ÇAR",
+      "type": 0
+    },
+    {
+      "word": "ANIT",
+      "type": 0
+    },
+    {
+      "word": "ANMA",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "DARA",
+      "type": 0
+    },
+    {
+      "word": "LARI",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "NOLA",
+      "type": 0
+    },
+    {
+      "word": "LARIN",
+      "type": 0
+    },
+    {
+      "word": "ARAÇLA",
+      "type": 0
+    },
+    {
+      "word": "ARINMA",
+      "type": 0
+    },
+    {
+      "word": "ARITMA",
+      "type": 0
+    },
+    {
+      "word": "ARAÇLAR",
+      "type": 0
+    },
+    {
+      "word": "ARAÇLARI",
+      "type": 0
+    }
+  ],
+  "letters": "ÇARN,LOAD,ANML,RITO",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

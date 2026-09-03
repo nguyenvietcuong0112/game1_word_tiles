@@ -1,49 +1,155 @@
-﻿{
-    "id":  1510,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DELI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EASY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DIZZY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "IDEAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEDS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIDS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ZZY,IDS,LEA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1510,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "AIM",
+      "type": 0
+    },
+    {
+      "word": "HIM",
+      "type": 0
+    },
+    {
+      "word": "HOT",
+      "type": 0
+    },
+    {
+      "word": "TIP",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "ATOM",
+      "type": 0
+    },
+    {
+      "word": "CHAT",
+      "type": 0
+    },
+    {
+      "word": "HALF",
+      "type": 0
+    },
+    {
+      "word": "ATOMIC",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "CHI",
+      "type": 0
+    },
+    {
+      "word": "HAP",
+      "type": 0
+    },
+    {
+      "word": "HAT",
+      "type": 0
+    },
+    {
+      "word": "HIC",
+      "type": 0
+    },
+    {
+      "word": "ICH",
+      "type": 0
+    },
+    {
+      "word": "LAC",
+      "type": 0
+    },
+    {
+      "word": "MOT",
+      "type": 0
+    },
+    {
+      "word": "PAH",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "PIT",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "CALF",
+      "type": 0
+    },
+    {
+      "word": "CHAP",
+      "type": 0
+    },
+    {
+      "word": "CHIA",
+      "type": 0
+    },
+    {
+      "word": "CHIC",
+      "type": 0
+    },
+    {
+      "word": "HALT",
+      "type": 0
+    },
+    {
+      "word": "ITCH",
+      "type": 0
+    },
+    {
+      "word": "LAIC",
+      "type": 0
+    },
+    {
+      "word": "OHIA",
+      "type": 0
+    },
+    {
+      "word": "LAICH",
+      "type": 0
+    },
+    {
+      "word": "PITCH",
+      "type": 0
+    }
+  ],
+  "letters": "ICHF,MIAL,OHCT,TAPI",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

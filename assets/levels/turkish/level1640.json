@@ -1,79 +1,71 @@
-﻿{
-    "id":  1640,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ÇEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİNÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İPEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİNGİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOPİNG",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DİNGİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İNGİN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İNÇ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KEÇN,OPÇİ,DİNG",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1640,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALT",
+      "type": 0
+    },
+    {
+      "word": "HOO",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "MOO",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "OOH",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "ÖDÜ",
+      "type": 0
+    },
+    {
+      "word": "ETME",
+      "type": 0
+    },
+    {
+      "word": "HOOP",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALTO",
+      "type": 0
+    }
+  ],
+  "letters": "LAÖD,TOEÜ,ETMH,NPOO",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,106 +1,103 @@
-﻿{
-    "id":  1185,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "БОЙ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БОТ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СЫН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СЫЧ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ТАЗ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "УСЫ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БУСЫ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЙОТА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СБОЙ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СУББОТА",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ЗАТО",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЙОТ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СУН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ТАЙЧ",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "НЫЧЗ,УСЙА,ББОТ",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1185,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "БУМ",
+      "type": 0
+    },
+    {
+      "word": "ГОД",
+      "type": 0
+    },
+    {
+      "word": "ДОМ",
+      "type": 0
+    },
+    {
+      "word": "ЗАК",
+      "type": 0
+    },
+    {
+      "word": "ЗАЛ",
+      "type": 0
+    },
+    {
+      "word": "МОГ",
+      "type": 0
+    },
+    {
+      "word": "ОСИ",
+      "type": 0
+    },
+    {
+      "word": "СИД",
+      "type": 0
+    },
+    {
+      "word": "УКАЗАЛ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "БОМ",
+      "type": 0
+    },
+    {
+      "word": "ГОА",
+      "type": 0
+    },
+    {
+      "word": "ДОГ",
+      "type": 0
+    },
+    {
+      "word": "КУБ",
+      "type": 0
+    },
+    {
+      "word": "МОД",
+      "type": 0
+    },
+    {
+      "word": "МУК",
+      "type": 0
+    },
+    {
+      "word": "УКА",
+      "type": 0
+    },
+    {
+      "word": "ЗАКУ",
+      "type": 0
+    },
+    {
+      "word": "МУКА",
+      "type": 0
+    },
+    {
+      "word": "УКАЗ",
+      "type": 0
+    }
+  ],
+  "letters": "АКУБ,ЗММО,АОГС,ЛДДИ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

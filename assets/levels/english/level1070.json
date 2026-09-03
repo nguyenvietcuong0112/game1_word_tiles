@@ -1,73 +1,167 @@
-﻿{
-    "id":  1070,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOOT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SHOOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHAMPOO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POOH",
-                            "type":  2
-                        },
-                        {
-                            "word":  "POT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SHAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SHOO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AMP,HOO,SIT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1070,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CHI",
+      "type": 0
+    },
+    {
+      "word": "CUB",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "HIM",
+      "type": 0
+    },
+    {
+      "word": "HUB",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "BERG",
+      "type": 0
+    },
+    {
+      "word": "CHIC",
+      "type": 0
+    },
+    {
+      "word": "HERO",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BUM",
+      "type": 0
+    },
+    {
+      "word": "ERG",
+      "type": 0
+    },
+    {
+      "word": "HES",
+      "type": 0
+    },
+    {
+      "word": "HIC",
+      "type": 0
+    },
+    {
+      "word": "HUM",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "SAU",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SOY",
+      "type": 0
+    },
+    {
+      "word": "CHUB",
+      "type": 0
+    },
+    {
+      "word": "CHUM",
+      "type": 0
+    },
+    {
+      "word": "EROS",
+      "type": 0
+    },
+    {
+      "word": "ORES",
+      "type": 0
+    },
+    {
+      "word": "SORE",
+      "type": 0
+    },
+    {
+      "word": "SOYA",
+      "type": 0
+    },
+    {
+      "word": "YORE",
+      "type": 0
+    },
+    {
+      "word": "HEROS",
+      "type": 0
+    },
+    {
+      "word": "HUMIC",
+      "type": 0
+    },
+    {
+      "word": "RESAY",
+      "type": 0
+    },
+    {
+      "word": "SAUCH",
+      "type": 0
+    },
+    {
+      "word": "SEBUM",
+      "type": 0
+    },
+    {
+      "word": "YORES",
+      "type": 0
+    }
+  ],
+  "letters": "BUAY,CCSO,IHER,MUBG",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

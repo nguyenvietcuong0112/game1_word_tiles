@@ -1,81 +1,267 @@
-﻿{
-    "id":  917,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MINA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TINA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIMNASIA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANGINA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ASIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DINA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAIS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IDAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "INGA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ISA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DASI,INGA,TMIN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 917,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "TAL",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "CLAN",
+      "type": 0
+    },
+    {
+      "word": "ERAN",
+      "type": 0
+    },
+    {
+      "word": "KATE",
+      "type": 0
+    },
+    {
+      "word": "MALA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "KAL",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "LAL",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "ALAK",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "ATAN",
+      "type": 0
+    },
+    {
+      "word": "ATEN",
+      "type": 0
+    },
+    {
+      "word": "KALA",
+      "type": 0
+    },
+    {
+      "word": "KALE",
+      "type": 0
+    },
+    {
+      "word": "LAKE",
+      "type": 0
+    },
+    {
+      "word": "LALA",
+      "type": 0
+    },
+    {
+      "word": "LANA",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "LATA",
+      "type": 0
+    },
+    {
+      "word": "LATE",
+      "type": 0
+    },
+    {
+      "word": "MATA",
+      "type": 0
+    },
+    {
+      "word": "MATE",
+      "type": 0
+    },
+    {
+      "word": "NATA",
+      "type": 0
+    },
+    {
+      "word": "NATE",
+      "type": 0
+    },
+    {
+      "word": "RANA",
+      "type": 0
+    },
+    {
+      "word": "RETA",
+      "type": 0
+    },
+    {
+      "word": "TAKE",
+      "type": 0
+    },
+    {
+      "word": "TALA",
+      "type": 0
+    },
+    {
+      "word": "TANA",
+      "type": 0
+    },
+    {
+      "word": "TELA",
+      "type": 0
+    },
+    {
+      "word": "TERA",
+      "type": 0
+    },
+    {
+      "word": "ALANA",
+      "type": 0
+    },
+    {
+      "word": "ALETA",
+      "type": 0
+    },
+    {
+      "word": "ARETE",
+      "type": 0
+    },
+    {
+      "word": "LETAL",
+      "type": 0
+    },
+    {
+      "word": "MATAN",
+      "type": 0
+    },
+    {
+      "word": "MATEN",
+      "type": 0
+    },
+    {
+      "word": "NATAL",
+      "type": 0
+    },
+    {
+      "word": "TELAR",
+      "type": 0
+    },
+    {
+      "word": "LATERAL",
+      "type": 0
+    }
+  ],
+  "letters": "EKCM,TALA,ELAT,RANE",
+  "obstacles": []
 }

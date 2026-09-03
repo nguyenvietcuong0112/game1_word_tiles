@@ -1,75 +1,219 @@
-﻿{
-    "id":  1212,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "FAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OYA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOYU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUNU",
-                             "type":  2
-                         },
-                         {
-                             "word":  "YOKSA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "YOKSUN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "SUNA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YOK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UNUR,SAUF,KOYA",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1212,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "KOY",
+      "type": 0
+    },
+    {
+      "word": "RAY",
+      "type": 0
+    },
+    {
+      "word": "YLA",
+      "type": 0
+    },
+    {
+      "word": "YOK",
+      "type": 0
+    },
+    {
+      "word": "ALIN",
+      "type": 0
+    },
+    {
+      "word": "ALIR",
+      "type": 0
+    },
+    {
+      "word": "GRAY",
+      "type": 0
+    },
+    {
+      "word": "ALICI",
+      "type": 0
+    },
+    {
+      "word": "AKLINI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "INI",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "OYA",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "YAR",
+      "type": 0
+    },
+    {
+      "word": "YAY",
+      "type": 0
+    },
+    {
+      "word": "AKLA",
+      "type": 0
+    },
+    {
+      "word": "AKLI",
+      "type": 0
+    },
+    {
+      "word": "ARAN",
+      "type": 0
+    },
+    {
+      "word": "AYLA",
+      "type": 0
+    },
+    {
+      "word": "GINA",
+      "type": 0
+    },
+    {
+      "word": "LARA",
+      "type": 0
+    },
+    {
+      "word": "LARI",
+      "type": 0
+    },
+    {
+      "word": "OKLA",
+      "type": 0
+    },
+    {
+      "word": "AKLIN",
+      "type": 0
+    },
+    {
+      "word": "ARANI",
+      "type": 0
+    },
+    {
+      "word": "AYLAR",
+      "type": 0
+    },
+    {
+      "word": "GICIR",
+      "type": 0
+    },
+    {
+      "word": "KLARA",
+      "type": 0
+    },
+    {
+      "word": "KOYAR",
+      "type": 0
+    },
+    {
+      "word": "LARIN",
+      "type": 0
+    },
+    {
+      "word": "OKLAR",
+      "type": 0
+    },
+    {
+      "word": "OYLAR",
+      "type": 0
+    },
+    {
+      "word": "YARGI",
+      "type": 0
+    },
+    {
+      "word": "YAYLI",
+      "type": 0
+    },
+    {
+      "word": "AKLINA",
+      "type": 0
+    },
+    {
+      "word": "ANILAR",
+      "type": 0
+    },
+    {
+      "word": "AYLARI",
+      "type": 0
+    },
+    {
+      "word": "LARINI",
+      "type": 0
+    },
+    {
+      "word": "OKLARI",
+      "type": 0
+    },
+    {
+      "word": "OYLARI",
+      "type": 0
+    },
+    {
+      "word": "YOKLAR",
+      "type": 0
+    },
+    {
+      "word": "YARGICI",
+      "type": 0
+    },
+    {
+      "word": "OYLARINI",
+      "type": 0
+    },
+    {
+      "word": "RAYLARIN",
+      "type": 0
+    },
+    {
+      "word": "YARGICIN",
+      "type": 0
+    }
+  ],
+  "letters": "YOKA,AYLA,RCIR,GINA",
+  "obstacles": []
 }

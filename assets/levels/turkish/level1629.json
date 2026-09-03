@@ -1,85 +1,223 @@
-﻿{
-    "id":  1629,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KESE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SİRK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KESİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KESİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KRONİK",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ENİK",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KESEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KESİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KRON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NESİR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SİNE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KRO,KİN,ESE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1629,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "HAK",
+      "type": 0
+    },
+    {
+      "word": "KAL",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "ALMA",
+      "type": 0
+    },
+    {
+      "word": "AÇMA",
+      "type": 0
+    },
+    {
+      "word": "MARS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "ELM",
+      "type": 0
+    },
+    {
+      "word": "END",
+      "type": 0
+    },
+    {
+      "word": "HAN",
+      "type": 0
+    },
+    {
+      "word": "HAÇ",
+      "type": 0
+    },
+    {
+      "word": "LAK",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "AKAN",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "ELMA",
+      "type": 0
+    },
+    {
+      "word": "HANA",
+      "type": 0
+    },
+    {
+      "word": "HAND",
+      "type": 0
+    },
+    {
+      "word": "HANE",
+      "type": 0
+    },
+    {
+      "word": "KALE",
+      "type": 0
+    },
+    {
+      "word": "KANA",
+      "type": 0
+    },
+    {
+      "word": "KANE",
+      "type": 0
+    },
+    {
+      "word": "LANA",
+      "type": 0
+    },
+    {
+      "word": "LAND",
+      "type": 0
+    },
+    {
+      "word": "LANE",
+      "type": 0
+    },
+    {
+      "word": "LEAR",
+      "type": 0
+    },
+    {
+      "word": "LENA",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "AKANE",
+      "type": 0
+    },
+    {
+      "word": "HAKAN",
+      "type": 0
+    },
+    {
+      "word": "KALMA",
+      "type": 0
+    },
+    {
+      "word": "KANAL",
+      "type": 0
+    },
+    {
+      "word": "SELMA",
+      "type": 0
+    },
+    {
+      "word": "ARSENAL",
+      "type": 0
+    }
+  ],
+  "letters": "AÇMA,HDSR,ANEA,KALM",
+  "obstacles": []
 }

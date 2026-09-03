@@ -1,89 +1,115 @@
-﻿{
-    "id":  1440,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OPERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POLAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCHOLAR",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CHOLERA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ERAS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LOP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOPE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "OPERAS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "REPO",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "SAR,CLE,HOP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1440,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "PAP",
+      "type": 0
+    },
+    {
+      "word": "SIT",
+      "type": 0
+    },
+    {
+      "word": "TIP",
+      "type": 0
+    },
+    {
+      "word": "ACTS",
+      "type": 0
+    },
+    {
+      "word": "LILY",
+      "type": 0
+    },
+    {
+      "word": "PISS",
+      "type": 0
+    },
+    {
+      "word": "APPLY",
+      "type": 0
+    },
+    {
+      "word": "FLIRT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PIS",
+      "type": 0
+    },
+    {
+      "word": "PIT",
+      "type": 0
+    },
+    {
+      "word": "PLY",
+      "type": 0
+    },
+    {
+      "word": "SIP",
+      "type": 0
+    },
+    {
+      "word": "TIS",
+      "type": 0
+    },
+    {
+      "word": "PACT",
+      "type": 0
+    },
+    {
+      "word": "PITS",
+      "type": 0
+    },
+    {
+      "word": "SITS",
+      "type": 0
+    },
+    {
+      "word": "PACTS",
+      "type": 0
+    },
+    {
+      "word": "PAPPI",
+      "type": 0
+    },
+    {
+      "word": "FLIRTS",
+      "type": 0
+    }
+  ],
+  "letters": "YPAP,LPCP,IRTI,LFSS",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

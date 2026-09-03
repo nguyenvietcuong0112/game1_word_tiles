@@ -1,97 +1,215 @@
-﻿{
-    "id":  2346,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PRO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FATE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "APRON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PATIO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PATRON",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PATRIOT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "GIRO",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ION",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PRIG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOON",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AIONO,ETRIO,FAPGT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2346,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "OPT",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "PUB",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "VIS",
+      "type": 0
+    },
+    {
+      "word": "PART",
+      "type": 0
+    },
+    {
+      "word": "PUBS",
+      "type": 0
+    },
+    {
+      "word": "RAPE",
+      "type": 0
+    },
+    {
+      "word": "BUBBLE",
+      "type": 0
+    },
+    {
+      "word": "OPTICS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "APT",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "BIS",
+      "type": 0
+    },
+    {
+      "word": "BOP",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "BUB",
+      "type": 0
+    },
+    {
+      "word": "EBB",
+      "type": 0
+    },
+    {
+      "word": "LOB",
+      "type": 0
+    },
+    {
+      "word": "PAP",
+      "type": 0
+    },
+    {
+      "word": "POI",
+      "type": 0
+    },
+    {
+      "word": "PUP",
+      "type": 0
+    },
+    {
+      "word": "SIB",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "SOP",
+      "type": 0
+    },
+    {
+      "word": "TIC",
+      "type": 0
+    },
+    {
+      "word": "UPO",
+      "type": 0
+    },
+    {
+      "word": "BLEB",
+      "type": 0
+    },
+    {
+      "word": "BUBO",
+      "type": 0
+    },
+    {
+      "word": "BUBS",
+      "type": 0
+    },
+    {
+      "word": "LOBO",
+      "type": 0
+    },
+    {
+      "word": "LOBS",
+      "type": 0
+    },
+    {
+      "word": "OBOL",
+      "type": 0
+    },
+    {
+      "word": "PUPA",
+      "type": 0
+    },
+    {
+      "word": "RAPT",
+      "type": 0
+    },
+    {
+      "word": "SIBB",
+      "type": 0
+    },
+    {
+      "word": "SLOB",
+      "type": 0
+    },
+    {
+      "word": "SOBS",
+      "type": 0
+    },
+    {
+      "word": "SOLS",
+      "type": 0
+    },
+    {
+      "word": "TICS",
+      "type": 0
+    },
+    {
+      "word": "TRAP",
+      "type": 0
+    },
+    {
+      "word": "BLEBS",
+      "type": 0
+    },
+    {
+      "word": "LOBOS",
+      "type": 0
+    },
+    {
+      "word": "OBOLS",
+      "type": 0
+    },
+    {
+      "word": "OPTIC",
+      "type": 0
+    }
+  ],
+  "letters": "VLOSC,ISBOI,BBUPT,LEPAR",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

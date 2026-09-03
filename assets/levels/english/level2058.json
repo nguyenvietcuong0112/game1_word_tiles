@@ -1,79 +1,455 @@
-﻿{
-    "id":  2058,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIFT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TINT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TINY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAILY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ITALY",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "YLAY,AITN,DFTI",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2058,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAP",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "CAMS",
+      "type": 0
+    },
+    {
+      "word": "CASE",
+      "type": 0
+    },
+    {
+      "word": "CASH",
+      "type": 0
+    },
+    {
+      "word": "MARC",
+      "type": 0
+    },
+    {
+      "word": "PATH",
+      "type": 0
+    },
+    {
+      "word": "SIZE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "CIS",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "ETH",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAM",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "PES",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "REP",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SIC",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "APER",
+      "type": 0
+    },
+    {
+      "word": "APES",
+      "type": 0
+    },
+    {
+      "word": "ARCS",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "ATAP",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "CAPE",
+      "type": 0
+    },
+    {
+      "word": "CAPH",
+      "type": 0
+    },
+    {
+      "word": "CATE",
+      "type": 0
+    },
+    {
+      "word": "CRAM",
+      "type": 0
+    },
+    {
+      "word": "ETHS",
+      "type": 0
+    },
+    {
+      "word": "MACS",
+      "type": 0
+    },
+    {
+      "word": "MARE",
+      "type": 0
+    },
+    {
+      "word": "MATE",
+      "type": 0
+    },
+    {
+      "word": "MATH",
+      "type": 0
+    },
+    {
+      "word": "PACA",
+      "type": 0
+    },
+    {
+      "word": "PACS",
+      "type": 0
+    },
+    {
+      "word": "PAMS",
+      "type": 0
+    },
+    {
+      "word": "PARE",
+      "type": 0
+    },
+    {
+      "word": "PATE",
+      "type": 0
+    },
+    {
+      "word": "RAMS",
+      "type": 0
+    },
+    {
+      "word": "RAPE",
+      "type": 0
+    },
+    {
+      "word": "SCAM",
+      "type": 0
+    },
+    {
+      "word": "SCAT",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "TAMS",
+      "type": 0
+    },
+    {
+      "word": "TAPA",
+      "type": 0
+    },
+    {
+      "word": "TAPE",
+      "type": 0
+    },
+    {
+      "word": "TEPA",
+      "type": 0
+    },
+    {
+      "word": "ZETA",
+      "type": 0
+    },
+    {
+      "word": "CAPER",
+      "type": 0
+    },
+    {
+      "word": "CAPES",
+      "type": 0
+    },
+    {
+      "word": "CAPHS",
+      "type": 0
+    },
+    {
+      "word": "CATES",
+      "type": 0
+    },
+    {
+      "word": "CRAMS",
+      "type": 0
+    },
+    {
+      "word": "CRAPE",
+      "type": 0
+    },
+    {
+      "word": "CREPE",
+      "type": 0
+    },
+    {
+      "word": "ETAPE",
+      "type": 0
+    },
+    {
+      "word": "MARCS",
+      "type": 0
+    },
+    {
+      "word": "MARES",
+      "type": 0
+    },
+    {
+      "word": "MATES",
+      "type": 0
+    },
+    {
+      "word": "MATHS",
+      "type": 0
+    },
+    {
+      "word": "PARES",
+      "type": 0
+    },
+    {
+      "word": "PATES",
+      "type": 0
+    },
+    {
+      "word": "PATHS",
+      "type": 0
+    },
+    {
+      "word": "RAPES",
+      "type": 0
+    },
+    {
+      "word": "SCAPE",
+      "type": 0
+    },
+    {
+      "word": "SCRAM",
+      "type": 0
+    },
+    {
+      "word": "SCRAP",
+      "type": 0
+    },
+    {
+      "word": "SIZER",
+      "type": 0
+    },
+    {
+      "word": "SIZES",
+      "type": 0
+    },
+    {
+      "word": "TAPER",
+      "type": 0
+    },
+    {
+      "word": "TAPES",
+      "type": 0
+    },
+    {
+      "word": "CRAPES",
+      "type": 0
+    },
+    {
+      "word": "CREPES",
+      "type": 0
+    },
+    {
+      "word": "ETAPES",
+      "type": 0
+    },
+    {
+      "word": "RAMATE",
+      "type": 0
+    },
+    {
+      "word": "RESIZE",
+      "type": 0
+    },
+    {
+      "word": "SCAPES",
+      "type": 0
+    },
+    {
+      "word": "SCRAMS",
+      "type": 0
+    },
+    {
+      "word": "SCRAPE",
+      "type": 0
+    },
+    {
+      "word": "SERAPE",
+      "type": 0
+    },
+    {
+      "word": "PATAMAR",
+      "type": 0
+    },
+    {
+      "word": "RESIZES",
+      "type": 0
+    },
+    {
+      "word": "SCRAPES",
+      "type": 0
+    },
+    {
+      "word": "SERAPES",
+      "type": 0
+    }
+  ],
+  "letters": "PHSAC,ATEZI,CAPES,SMARC",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

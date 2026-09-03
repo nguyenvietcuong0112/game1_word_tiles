@@ -1,73 +1,115 @@
-﻿{
-    "id":  1705,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AYI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AYIK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ETKİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAKI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YETKİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIYAMET",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AYET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAMET",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KAYI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KIYAM",
-                            "type":  2
-                        },
-                        {
-                            "word":  "YEM",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TKİ,EYI,MAK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1705,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "KAS",
+      "type": 0
+    },
+    {
+      "word": "KAÇ",
+      "type": 0
+    },
+    {
+      "word": "KES",
+      "type": 0
+    },
+    {
+      "word": "SEY",
+      "type": 0
+    },
+    {
+      "word": "ZAR",
+      "type": 0
+    },
+    {
+      "word": "ÇAK",
+      "type": 0
+    },
+    {
+      "word": "ARPA",
+      "type": 0
+    },
+    {
+      "word": "KONSEY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARK",
+      "type": 0
+    },
+    {
+      "word": "AZA",
+      "type": 0
+    },
+    {
+      "word": "KEY",
+      "type": 0
+    },
+    {
+      "word": "KON",
+      "type": 0
+    },
+    {
+      "word": "NSA",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SEK",
+      "type": 0
+    },
+    {
+      "word": "YES",
+      "type": 0
+    },
+    {
+      "word": "AZAR",
+      "type": 0
+    },
+    {
+      "word": "KASE",
+      "type": 0
+    },
+    {
+      "word": "KAÇA",
+      "type": 0
+    },
+    {
+      "word": "RAZA",
+      "type": 0
+    },
+    {
+      "word": "SAKA",
+      "type": 0
+    },
+    {
+      "word": "SAKE",
+      "type": 0
+    }
+  ],
+  "letters": "OKRA,NYPZ,SEAA,AKAÇ",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

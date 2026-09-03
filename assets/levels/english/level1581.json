@@ -1,79 +1,231 @@
-﻿{
-    "id":  1581,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARDIO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ACOUSTIC",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "OUST",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "USTI,OIDC,CART",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1581,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "ELM",
+      "type": 0
+    },
+    {
+      "word": "FIT",
+      "type": 0
+    },
+    {
+      "word": "INK",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LINK",
+      "type": 0
+    },
+    {
+      "word": "SELF",
+      "type": 0
+    },
+    {
+      "word": "SOLE",
+      "type": 0
+    },
+    {
+      "word": "ITSELF",
+      "type": 0
+    },
+    {
+      "word": "LINKED",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "DOE",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "ELF",
+      "type": 0
+    },
+    {
+      "word": "IFS",
+      "type": 0
+    },
+    {
+      "word": "LID",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SOD",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "DELF",
+      "type": 0
+    },
+    {
+      "word": "DELI",
+      "type": 0
+    },
+    {
+      "word": "DINK",
+      "type": 0
+    },
+    {
+      "word": "DOLE",
+      "type": 0
+    },
+    {
+      "word": "DOLT",
+      "type": 0
+    },
+    {
+      "word": "ELMS",
+      "type": 0
+    },
+    {
+      "word": "FITS",
+      "type": 0
+    },
+    {
+      "word": "FLED",
+      "type": 0
+    },
+    {
+      "word": "FLOE",
+      "type": 0
+    },
+    {
+      "word": "IDES",
+      "type": 0
+    },
+    {
+      "word": "IDOL",
+      "type": 0
+    },
+    {
+      "word": "LEST",
+      "type": 0
+    },
+    {
+      "word": "LIDO",
+      "type": 0
+    },
+    {
+      "word": "LODE",
+      "type": 0
+    },
+    {
+      "word": "NIDE",
+      "type": 0
+    },
+    {
+      "word": "ODES",
+      "type": 0
+    },
+    {
+      "word": "OLES",
+      "type": 0
+    },
+    {
+      "word": "DELFS",
+      "type": 0
+    },
+    {
+      "word": "DOLES",
+      "type": 0
+    },
+    {
+      "word": "DOLTS",
+      "type": 0
+    },
+    {
+      "word": "INKED",
+      "type": 0
+    },
+    {
+      "word": "LIDOS",
+      "type": 0
+    },
+    {
+      "word": "LODES",
+      "type": 0
+    },
+    {
+      "word": "NIDES",
+      "type": 0
+    },
+    {
+      "word": "SELFS",
+      "type": 0
+    },
+    {
+      "word": "SOLED",
+      "type": 0
+    },
+    {
+      "word": "SOLES",
+      "type": 0
+    },
+    {
+      "word": "DINKED",
+      "type": 0
+    },
+    {
+      "word": "STIFLE",
+      "type": 0
+    },
+    {
+      "word": "STIFLED",
+      "type": 0
+    }
+  ],
+  "letters": "NKED,IDOS,LELF,MSTI",
+  "obstacles": []
 }

@@ -1,93 +1,155 @@
-﻿{
-    "id":  1315,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LEI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FURO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MITO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OURO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUIM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "FARDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FURAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEITO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOURO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTOURO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ESTOURAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EITO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LESTO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OURA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OURAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RUFAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "STOOO,EIURD,LMFAR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1315,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "SRA",
+      "type": 0
+    },
+    {
+      "word": "BANHO",
+      "type": 0
+    },
+    {
+      "word": "MORRA",
+      "type": 0
+    },
+    {
+      "word": "MORRI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABI",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RHO",
+      "type": 0
+    },
+    {
+      "word": "RIE",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "ARRE",
+      "type": 0
+    },
+    {
+      "word": "BARI",
+      "type": 0
+    },
+    {
+      "word": "BARR",
+      "type": 0
+    },
+    {
+      "word": "ERRA",
+      "type": 0
+    },
+    {
+      "word": "MORE",
+      "type": 0
+    },
+    {
+      "word": "OREI",
+      "type": 0
+    },
+    {
+      "word": "RABI",
+      "type": 0
+    },
+    {
+      "word": "BARRO",
+      "type": 0
+    },
+    {
+      "word": "ERRAR",
+      "type": 0
+    },
+    {
+      "word": "MOREI",
+      "type": 0
+    },
+    {
+      "word": "RANHO",
+      "type": 0
+    },
+    {
+      "word": "BANHOS",
+      "type": 0
+    },
+    {
+      "word": "MORRIE",
+      "type": 0
+    },
+    {
+      "word": "MOREIRA",
+      "type": 0
+    }
+  ],
+  "letters": "MORE,PRRI,SRAB,OHNT",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

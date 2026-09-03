@@ -1,109 +1,211 @@
-﻿{
-    "id":  1184,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ÍMÃ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AÇÃO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALVO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MAÇÃ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VERSO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VIOLAÇÃO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALVOR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AMO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMÃ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MALO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAÇÃO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MOL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OMÃ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOMAÇÃO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VERO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÍMOLA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "OVLAÇ,RSOMÃ,EVIÍO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1184,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "ELE",
+      "type": 0
+    },
+    {
+      "word": "LEO",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "DADA",
+      "type": 0
+    },
+    {
+      "word": "DATA",
+      "type": 0
+    },
+    {
+      "word": "FADA",
+      "type": 0
+    },
+    {
+      "word": "NELE",
+      "type": 0
+    },
+    {
+      "word": "VOLTA",
+      "type": 0
+    },
+    {
+      "word": "VOLTE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "BET",
+      "type": 0
+    },
+    {
+      "word": "DAD",
+      "type": 0
+    },
+    {
+      "word": "DAT",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "DEN",
+      "type": 0
+    },
+    {
+      "word": "DET",
+      "type": 0
+    },
+    {
+      "word": "EBA",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "FAD",
+      "type": 0
+    },
+    {
+      "word": "FAT",
+      "type": 0
+    },
+    {
+      "word": "FLO",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "NED",
+      "type": 0
+    },
+    {
+      "word": "NEL",
+      "type": 0
+    },
+    {
+      "word": "NEO",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "TAD",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "VOE",
+      "type": 0
+    },
+    {
+      "word": "ABED",
+      "type": 0
+    },
+    {
+      "word": "ABEL",
+      "type": 0
+    },
+    {
+      "word": "ADEN",
+      "type": 0
+    },
+    {
+      "word": "BENE",
+      "type": 0
+    },
+    {
+      "word": "BETA",
+      "type": 0
+    },
+    {
+      "word": "DADE",
+      "type": 0
+    },
+    {
+      "word": "DATE",
+      "type": 0
+    },
+    {
+      "word": "EBEN",
+      "type": 0
+    },
+    {
+      "word": "ENEL",
+      "type": 0
+    },
+    {
+      "word": "NETA",
+      "type": 0
+    },
+    {
+      "word": "ATADA",
+      "type": 0
+    },
+    {
+      "word": "DATADA",
+      "type": 0
+    },
+    {
+      "word": "VOLTADA",
+      "type": 0
+    }
+  ],
+  "letters": "ADAD,BETA,ENLF,LEOV",
+  "obstacles": []
 }

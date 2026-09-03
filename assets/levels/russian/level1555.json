@@ -1,114 +1,91 @@
-﻿{
-    "id":  1555,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "БОК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БОР",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ОКО",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РОК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КАФЕ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БЕКОН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОРОБ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "БОРОНА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОРОНА",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "БЕК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КАФ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КОБ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КОР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НОР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОБЕ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОКА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ОНА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ФАН",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "РОН,ОКА,БЕФ",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1555,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ГАЙ",
+      "type": 0
+    },
+    {
+      "word": "ЛОБ",
+      "type": 0
+    },
+    {
+      "word": "ПАР",
+      "type": 0
+    },
+    {
+      "word": "РАЙ",
+      "type": 0
+    },
+    {
+      "word": "РОН",
+      "type": 0
+    },
+    {
+      "word": "ЧОН",
+      "type": 0
+    },
+    {
+      "word": "БОЛЬ",
+      "type": 0
+    },
+    {
+      "word": "НОЧЬ",
+      "type": 0
+    },
+    {
+      "word": "ПРАЙС",
+      "type": 0
+    },
+    {
+      "word": "БОЛЬНО",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АЙС",
+      "type": 0
+    },
+    {
+      "word": "ПАЙ",
+      "type": 0
+    },
+    {
+      "word": "СПА",
+      "type": 0
+    },
+    {
+      "word": "БРАЙ",
+      "type": 0
+    },
+    {
+      "word": "РАЙС",
+      "type": 0
+    },
+    {
+      "word": "БРАЙС",
+      "type": 0
+    }
+  ],
+  "letters": "ОЛЬР,БГНО,РАПЧ,ПЙСЬ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

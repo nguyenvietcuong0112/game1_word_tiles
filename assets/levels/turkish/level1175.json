@@ -1,65 +1,139 @@
-﻿{
-    "id":  1175,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUNİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KESİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAKİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VESİKA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKİS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KESİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAKİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAV",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SUN,AKİ,VES",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1175,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALL",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "NDA",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "ANDA",
+      "type": 0
+    },
+    {
+      "word": "PRAG",
+      "type": 0
+    },
+    {
+      "word": "ORADA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAA",
+      "type": 0
+    },
+    {
+      "word": "ADA",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "LAR",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "POS",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "ARAN",
+      "type": 0
+    },
+    {
+      "word": "LAND",
+      "type": 0
+    },
+    {
+      "word": "LARA",
+      "type": 0
+    },
+    {
+      "word": "RAND",
+      "type": 0
+    },
+    {
+      "word": "SORA",
+      "type": 0
+    },
+    {
+      "word": "ALANDA",
+      "type": 0
+    },
+    {
+      "word": "ARANDA",
+      "type": 0
+    }
+  ],
+  "letters": "ADAA,RNAL,OPRL,SGAG",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

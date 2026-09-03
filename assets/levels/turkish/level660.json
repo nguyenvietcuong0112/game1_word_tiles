@@ -1,77 +1,119 @@
-﻿{
-    "id":  660,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "İLK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKLİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "İLKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İNEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İNŞA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NİNE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YELKEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YELKENLİ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EKLEYİŞ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ENLİ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İNEKLİ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "İNLEYİŞ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ŞİLE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NİNE,ŞİLK,AYEL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 660,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "MAY",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "MASA",
+      "type": 0
+    },
+    {
+      "word": "YASA",
+      "type": 0
+    },
+    {
+      "word": "SAKIN",
+      "type": 0
+    },
+    {
+      "word": "SAMMY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "AYY",
+      "type": 0
+    },
+    {
+      "word": "KAS",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "YAS",
+      "type": 0
+    },
+    {
+      "word": "AKIN",
+      "type": 0
+    },
+    {
+      "word": "ASMA",
+      "type": 0
+    },
+    {
+      "word": "ASYA",
+      "type": 0
+    },
+    {
+      "word": "MAMA",
+      "type": 0
+    },
+    {
+      "word": "YAMA",
+      "type": 0
+    },
+    {
+      "word": "AKSAM",
+      "type": 0
+    },
+    {
+      "word": "MASAM",
+      "type": 0
+    },
+    {
+      "word": "YAKMA",
+      "type": 0
+    }
+  ],
+  "letters": "SMKA,AASY,KMAY,INMM",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

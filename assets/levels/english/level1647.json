@@ -1,61 +1,323 @@
-﻿{
-    "id":  1647,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EVIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LIVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MACE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "VIBE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "VILE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BECAME",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BILE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAME",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MEL,ABI,CEV",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1647,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "OLD",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "BOLD",
+      "type": 0
+    },
+    {
+      "word": "CARE",
+      "type": 0
+    },
+    {
+      "word": "EACH",
+      "type": 0
+    },
+    {
+      "word": "PAGE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "BOD",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ELD",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "GAP",
+      "type": 0
+    },
+    {
+      "word": "GED",
+      "type": 0
+    },
+    {
+      "word": "GEE",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "HAG",
+      "type": 0
+    },
+    {
+      "word": "HAP",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "LOB",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "ODS",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "PAH",
+      "type": 0
+    },
+    {
+      "word": "PED",
+      "type": 0
+    },
+    {
+      "word": "PEG",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "AGED",
+      "type": 0
+    },
+    {
+      "word": "AGEE",
+      "type": 0
+    },
+    {
+      "word": "APED",
+      "type": 0
+    },
+    {
+      "word": "BODE",
+      "type": 0
+    },
+    {
+      "word": "BODS",
+      "type": 0
+    },
+    {
+      "word": "BOLE",
+      "type": 0
+    },
+    {
+      "word": "CHAP",
+      "type": 0
+    },
+    {
+      "word": "DELE",
+      "type": 0
+    },
+    {
+      "word": "DOLE",
+      "type": 0
+    },
+    {
+      "word": "GAPE",
+      "type": 0
+    },
+    {
+      "word": "GAPS",
+      "type": 0
+    },
+    {
+      "word": "GEAR",
+      "type": 0
+    },
+    {
+      "word": "GEDS",
+      "type": 0
+    },
+    {
+      "word": "GEED",
+      "type": 0
+    },
+    {
+      "word": "GELD",
+      "type": 0
+    },
+    {
+      "word": "HAPS",
+      "type": 0
+    },
+    {
+      "word": "LEAR",
+      "type": 0
+    },
+    {
+      "word": "LEER",
+      "type": 0
+    },
+    {
+      "word": "LODE",
+      "type": 0
+    },
+    {
+      "word": "OLEA",
+      "type": 0
+    },
+    {
+      "word": "PEDS",
+      "type": 0
+    },
+    {
+      "word": "PELE",
+      "type": 0
+    },
+    {
+      "word": "REEL",
+      "type": 0
+    },
+    {
+      "word": "SPED",
+      "type": 0
+    },
+    {
+      "word": "CARED",
+      "type": 0
+    },
+    {
+      "word": "CHAPE",
+      "type": 0
+    },
+    {
+      "word": "CHAPS",
+      "type": 0
+    },
+    {
+      "word": "EARED",
+      "type": 0
+    },
+    {
+      "word": "ELDER",
+      "type": 0
+    },
+    {
+      "word": "GAPED",
+      "type": 0
+    },
+    {
+      "word": "GELEE",
+      "type": 0
+    },
+    {
+      "word": "LEACH",
+      "type": 0
+    },
+    {
+      "word": "OLDER",
+      "type": 0
+    },
+    {
+      "word": "PAGED",
+      "type": 0
+    },
+    {
+      "word": "BODEGA",
+      "type": 0
+    },
+    {
+      "word": "BOLDER",
+      "type": 0
+    },
+    {
+      "word": "CHAPEL",
+      "type": 0
+    },
+    {
+      "word": "GEARED",
+      "type": 0
+    },
+    {
+      "word": "GELDER",
+      "type": 0
+    },
+    {
+      "word": "REDLEG",
+      "type": 0
+    },
+    {
+      "word": "REELED",
+      "type": 0
+    }
+  ],
+  "letters": "SDOB,PELD,AGEE,HCAR",
+  "obstacles": []
 }

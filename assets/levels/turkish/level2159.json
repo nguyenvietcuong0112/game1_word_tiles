@@ -1,93 +1,283 @@
-﻿{
-    "id":  2159,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OYA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ŞOK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YOK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KLAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ONAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALKIŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANLIK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YANKI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YANLI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YANLIŞ",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KOY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YANLIK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ŞIK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KLIŞ,ONKO,YALT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2159,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "EVİ",
+      "type": 0
+    },
+    {
+      "word": "SAN",
+      "type": 0
+    },
+    {
+      "word": "İZİ",
+      "type": 0
+    },
+    {
+      "word": "ASLA",
+      "type": 0
+    },
+    {
+      "word": "EVİE",
+      "type": 0
+    },
+    {
+      "word": "SANA",
+      "type": 0
+    },
+    {
+      "word": "İLAÇ",
+      "type": 0
+    },
+    {
+      "word": "AMINA",
+      "type": 0
+    },
+    {
+      "word": "EVİME",
+      "type": 0
+    },
+    {
+      "word": "TEMİZ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALİ",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ASI",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "ETİ",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "MIN",
+      "type": 0
+    },
+    {
+      "word": "MİA",
+      "type": 0
+    },
+    {
+      "word": "MİZ",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAİ",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "SAİ",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "TEZ",
+      "type": 0
+    },
+    {
+      "word": "TİZ",
+      "type": 0
+    },
+    {
+      "word": "VEE",
+      "type": 0
+    },
+    {
+      "word": "ÇAL",
+      "type": 0
+    },
+    {
+      "word": "ÇİT",
+      "type": 0
+    },
+    {
+      "word": "ÇİZ",
+      "type": 0
+    },
+    {
+      "word": "İAN",
+      "type": 0
+    },
+    {
+      "word": "İLA",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "İMİ",
+      "type": 0
+    },
+    {
+      "word": "İÇİ",
+      "type": 0
+    },
+    {
+      "word": "ALSA",
+      "type": 0
+    },
+    {
+      "word": "ANAM",
+      "type": 0
+    },
+    {
+      "word": "ANIM",
+      "type": 0
+    },
+    {
+      "word": "ASIN",
+      "type": 0
+    },
+    {
+      "word": "AZİM",
+      "type": 0
+    },
+    {
+      "word": "EVİM",
+      "type": 0
+    },
+    {
+      "word": "MANA",
+      "type": 0
+    },
+    {
+      "word": "NAMI",
+      "type": 0
+    },
+    {
+      "word": "NASI",
+      "type": 0
+    },
+    {
+      "word": "SINA",
+      "type": 0
+    },
+    {
+      "word": "TEZİ",
+      "type": 0
+    },
+    {
+      "word": "İLSA",
+      "type": 0
+    },
+    {
+      "word": "İMİZ",
+      "type": 0
+    },
+    {
+      "word": "ALSAN",
+      "type": 0
+    },
+    {
+      "word": "ALSIN",
+      "type": 0
+    },
+    {
+      "word": "ANASI",
+      "type": 0
+    },
+    {
+      "word": "EVİMİ",
+      "type": 0
+    },
+    {
+      "word": "LAZİM",
+      "type": 0
+    },
+    {
+      "word": "ÇİZİM",
+      "type": 0
+    },
+    {
+      "word": "İZİMİ",
+      "type": 0
+    },
+    {
+      "word": "ALSANA",
+      "type": 0
+    },
+    {
+      "word": "EVİMİZ",
+      "type": 0
+    },
+    {
+      "word": "MANASI",
+      "type": 0
+    },
+    {
+      "word": "ÇALSIN",
+      "type": 0
+    },
+    {
+      "word": "ÇİZİMİ",
+      "type": 0
+    },
+    {
+      "word": "EVİMİZE",
+      "type": 0
+    },
+    {
+      "word": "EVİMİZİ",
+      "type": 0
+    }
+  ],
+  "letters": "TEMİV,İZİEE,ÇAANA,İLSIM",
+  "obstacles": []
 }

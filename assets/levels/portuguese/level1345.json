@@ -1,89 +1,243 @@
-﻿{
-    "id":  1345,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AÇO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUFE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RASO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "URSO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SOLUÇO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOLUÇAR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AUSO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AÇU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FERRA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LUSO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "FEOLR,URSUA,PRAÇO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1345,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AOS",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "HAM",
+      "type": 0
+    },
+    {
+      "word": "IAM",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "SOM",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "MAIA",
+      "type": 0
+    },
+    {
+      "word": "MARIA",
+      "type": 0
+    },
+    {
+      "word": "PRIMO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIR",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "BAM",
+      "type": 0
+    },
+    {
+      "word": "BAO",
+      "type": 0
+    },
+    {
+      "word": "BRI",
+      "type": 0
+    },
+    {
+      "word": "HAI",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "MAH",
+      "type": 0
+    },
+    {
+      "word": "MAI",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "MBA",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "OAB",
+      "type": 0
+    },
+    {
+      "word": "OMI",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "RIA",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "SOA",
+      "type": 0
+    },
+    {
+      "word": "ABRI",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "ARIA",
+      "type": 0
+    },
+    {
+      "word": "BARI",
+      "type": 0
+    },
+    {
+      "word": "BHAI",
+      "type": 0
+    },
+    {
+      "word": "HAIA",
+      "type": 0
+    },
+    {
+      "word": "HAIR",
+      "type": 0
+    },
+    {
+      "word": "IRAM",
+      "type": 0
+    },
+    {
+      "word": "MAOS",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "MARI",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "RIAM",
+      "type": 0
+    },
+    {
+      "word": "SOAM",
+      "type": 0
+    },
+    {
+      "word": "SOAR",
+      "type": 0
+    },
+    {
+      "word": "RIMOS",
+      "type": 0
+    },
+    {
+      "word": "AMARIA",
+      "type": 0
+    },
+    {
+      "word": "MARIAH",
+      "type": 0
+    },
+    {
+      "word": "PRIMOS",
+      "type": 0
+    },
+    {
+      "word": "SOARAM",
+      "type": 0
+    },
+    {
+      "word": "SOARIA",
+      "type": 0
+    },
+    {
+      "word": "ABRIMOS",
+      "type": 0
+    },
+    {
+      "word": "AMARIAM",
+      "type": 0
+    }
+  ],
+  "letters": "IMOS,RBAM,PHRA,MAIA",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,97 +1,155 @@
-﻿{
-    "id":  2312,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEF",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEDE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEFA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KLAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEDER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEDERAL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ALFA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EDER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KEFAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAF",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ALFAL,NKEDA,AUDER",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2312,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "HAN",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KAÇ",
+      "type": 0
+    },
+    {
+      "word": "KIZ",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SEO",
+      "type": 0
+    },
+    {
+      "word": "SIK",
+      "type": 0
+    },
+    {
+      "word": "İSE",
+      "type": 0
+    },
+    {
+      "word": "NESİ",
+      "type": 0
+    },
+    {
+      "word": "NESİN",
+      "type": 0
+    },
+    {
+      "word": "KORKAR",
+      "type": 0
+    },
+    {
+      "word": "SİOBHAN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARZ",
+      "type": 0
+    },
+    {
+      "word": "HBO",
+      "type": 0
+    },
+    {
+      "word": "HEO",
+      "type": 0
+    },
+    {
+      "word": "KIS",
+      "type": 0
+    },
+    {
+      "word": "KOR",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NAO",
+      "type": 0
+    },
+    {
+      "word": "NEO",
+      "type": 0
+    },
+    {
+      "word": "SIZ",
+      "type": 0
+    },
+    {
+      "word": "SİN",
+      "type": 0
+    },
+    {
+      "word": "ÇAK",
+      "type": 0
+    },
+    {
+      "word": "ÇAR",
+      "type": 0
+    },
+    {
+      "word": "ESİN",
+      "type": 0
+    },
+    {
+      "word": "HANE",
+      "type": 0
+    },
+    {
+      "word": "KORK",
+      "type": 0
+    },
+    {
+      "word": "İSEN",
+      "type": 0
+    },
+    {
+      "word": "ARSIZ",
+      "type": 0
+    },
+    {
+      "word": "KORNA",
+      "type": 0
+    },
+    {
+      "word": "KORRA",
+      "type": 0
+    },
+    {
+      "word": "HANESİ",
+      "type": 0
+    },
+    {
+      "word": "KISRAK",
+      "type": 0
+    }
+  ],
+  "letters": "KOAHB,KRNEO,ARZSİ,ÇSIKN",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

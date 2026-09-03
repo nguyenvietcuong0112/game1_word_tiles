@@ -1,69 +1,123 @@
-﻿{
-    "id":  730,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AÇO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAÇO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MÍNI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEMI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SINO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FEMININO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LUSO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEMINU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SULA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SÍNOÇ,EMISA,FINUL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 730,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "FLY",
+      "type": 0
+    },
+    {
+      "word": "SAI",
+      "type": 0
+    },
+    {
+      "word": "OUÇA",
+      "type": 0
+    },
+    {
+      "word": "SAIA",
+      "type": 0
+    },
+    {
+      "word": "YORK",
+      "type": 0
+    },
+    {
+      "word": "SAIAM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIC",
+      "type": 0
+    },
+    {
+      "word": "CIA",
+      "type": 0
+    },
+    {
+      "word": "COY",
+      "type": 0
+    },
+    {
+      "word": "IAM",
+      "type": 0
+    },
+    {
+      "word": "IAS",
+      "type": 0
+    },
+    {
+      "word": "MAI",
+      "type": 0
+    },
+    {
+      "word": "MAO",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "ROY",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "CIAO",
+      "type": 0
+    },
+    {
+      "word": "CORK",
+      "type": 0
+    },
+    {
+      "word": "MAIA",
+      "type": 0
+    },
+    {
+      "word": "CORÇA",
+      "type": 0
+    },
+    {
+      "word": "MAIAS",
+      "type": 0
+    },
+    {
+      "word": "OUÇAM",
+      "type": 0
+    }
+  ],
+  "letters": "AMAO,ICÇU,AORK,SYLF",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

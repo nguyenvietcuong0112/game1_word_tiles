@@ -1,85 +1,255 @@
-﻿{
-    "id":  2258,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "FANİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MANİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TERFİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FRAGMAN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "İFA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İFRAT",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAFİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TEKFİN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GMAN,ARFİ,TEKK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2258,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ABD",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "BİN",
+      "type": 0
+    },
+    {
+      "word": "GAY",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "İAN",
+      "type": 0
+    },
+    {
+      "word": "ALAN",
+      "type": 0
+    },
+    {
+      "word": "KARA",
+      "type": 0
+    },
+    {
+      "word": "İKNA",
+      "type": 0
+    },
+    {
+      "word": "TAKTİK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABİ",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BAİ",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "KİT",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LAİ",
+      "type": 0
+    },
+    {
+      "word": "NAL",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NAİ",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "RAİ",
+      "type": 0
+    },
+    {
+      "word": "TAA",
+      "type": 0
+    },
+    {
+      "word": "TAK",
+      "type": 0
+    },
+    {
+      "word": "TAİ",
+      "type": 0
+    },
+    {
+      "word": "TİK",
+      "type": 0
+    },
+    {
+      "word": "YAA",
+      "type": 0
+    },
+    {
+      "word": "ABİN",
+      "type": 0
+    },
+    {
+      "word": "ANKİ",
+      "type": 0
+    },
+    {
+      "word": "ARAN",
+      "type": 0
+    },
+    {
+      "word": "ARYA",
+      "type": 0
+    },
+    {
+      "word": "ATAK",
+      "type": 0
+    },
+    {
+      "word": "ATAN",
+      "type": 0
+    },
+    {
+      "word": "ATAR",
+      "type": 0
+    },
+    {
+      "word": "AYNİ",
+      "type": 0
+    },
+    {
+      "word": "BALA",
+      "type": 0
+    },
+    {
+      "word": "KATA",
+      "type": 0
+    },
+    {
+      "word": "KİTT",
+      "type": 0
+    },
+    {
+      "word": "LANA",
+      "type": 0
+    },
+    {
+      "word": "RANA",
+      "type": 0
+    },
+    {
+      "word": "TANK",
+      "type": 0
+    },
+    {
+      "word": "TARA",
+      "type": 0
+    },
+    {
+      "word": "İNDİ",
+      "type": 0
+    },
+    {
+      "word": "ALANA",
+      "type": 0
+    },
+    {
+      "word": "ATANA",
+      "type": 0
+    },
+    {
+      "word": "BİNDİ",
+      "type": 0
+    },
+    {
+      "word": "DİANA",
+      "type": 0
+    },
+    {
+      "word": "KARAN",
+      "type": 0
+    },
+    {
+      "word": "KARAT",
+      "type": 0
+    },
+    {
+      "word": "KATAR",
+      "type": 0
+    },
+    {
+      "word": "TARAK",
+      "type": 0
+    },
+    {
+      "word": "İDRAK",
+      "type": 0
+    },
+    {
+      "word": "İNDİA",
+      "type": 0
+    },
+    {
+      "word": "İNDİANA",
+      "type": 0
+    }
+  ],
+  "letters": "GAYNİ,KARDB,TTAİA,İKNAL",
+  "obstacles": []
 }

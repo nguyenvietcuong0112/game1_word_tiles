@@ -1,81 +1,235 @@
-﻿{
-    "id":  1066,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ECA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CERTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PARTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PARTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACERTO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "QUARTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "QUICAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "QUARTETO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ECAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PARECI",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PAU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "QUART",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ICEO,UART,QPTE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1066,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGI",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "IAM",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "SRA",
+      "type": 0
+    },
+    {
+      "word": "MAIO",
+      "type": 0
+    },
+    {
+      "word": "SOJA",
+      "type": 0
+    },
+    {
+      "word": "MAIOR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "ABI",
+      "type": 0
+    },
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "AIG",
+      "type": 0
+    },
+    {
+      "word": "AII",
+      "type": 0
+    },
+    {
+      "word": "AJO",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "AOI",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "BAI",
+      "type": 0
+    },
+    {
+      "word": "BAM",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BIN",
+      "type": 0
+    },
+    {
+      "word": "EBA",
+      "type": 0
+    },
+    {
+      "word": "ENA",
+      "type": 0
+    },
+    {
+      "word": "GAO",
+      "type": 0
+    },
+    {
+      "word": "GIA",
+      "type": 0
+    },
+    {
+      "word": "GIO",
+      "type": 0
+    },
+    {
+      "word": "IGA",
+      "type": 0
+    },
+    {
+      "word": "IIB",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "IRO",
+      "type": 0
+    },
+    {
+      "word": "IRS",
+      "type": 0
+    },
+    {
+      "word": "JAG",
+      "type": 0
+    },
+    {
+      "word": "JOO",
+      "type": 0
+    },
+    {
+      "word": "JOS",
+      "type": 0
+    },
+    {
+      "word": "MAI",
+      "type": 0
+    },
+    {
+      "word": "ORI",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "ROO",
+      "type": 0
+    },
+    {
+      "word": "SOO",
+      "type": 0
+    },
+    {
+      "word": "SRI",
+      "type": 0
+    },
+    {
+      "word": "AGIA",
+      "type": 0
+    },
+    {
+      "word": "BANE",
+      "type": 0
+    },
+    {
+      "word": "BARI",
+      "type": 0
+    },
+    {
+      "word": "BENI",
+      "type": 0
+    },
+    {
+      "word": "GAJO",
+      "type": 0
+    },
+    {
+      "word": "NIRO",
+      "type": 0
+    },
+    {
+      "word": "ORIN",
+      "type": 0
+    },
+    {
+      "word": "RANI",
+      "type": 0
+    },
+    {
+      "word": "RINA",
+      "type": 0
+    },
+    {
+      "word": "AGIAM",
+      "type": 0
+    },
+    {
+      "word": "BANIR",
+      "type": 0
+    },
+    {
+      "word": "GAJOS",
+      "type": 0
+    }
+  ],
+  "letters": "MABE,GIIN,AORA,JOSB",
+  "obstacles": []
 }

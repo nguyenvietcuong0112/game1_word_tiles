@@ -1,85 +1,91 @@
-﻿{
-    "id":  2176,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ADİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARZU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KREM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DİREK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KRİKO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NADİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÖTMEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİREKT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DANK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÖTME",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RZUOÖ,ADİKT,NKREM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2176,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "GÜN",
+      "type": 0
+    },
+    {
+      "word": "SIK",
+      "type": 0
+    },
+    {
+      "word": "VAN",
+      "type": 0
+    },
+    {
+      "word": "ÇÖZ",
+      "type": 0
+    },
+    {
+      "word": "İAN",
+      "type": 0
+    },
+    {
+      "word": "GÜCÜ",
+      "type": 0
+    },
+    {
+      "word": "GÜNÜ",
+      "type": 0
+    },
+    {
+      "word": "GÜCÜNÜ",
+      "type": 0
+    },
+    {
+      "word": "ÇÖZECEK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "KIS",
+      "type": 0
+    },
+    {
+      "word": "NAİ",
+      "type": 0
+    },
+    {
+      "word": "ÜNÜ",
+      "type": 0
+    },
+    {
+      "word": "ANDI",
+      "type": 0
+    },
+    {
+      "word": "GÜCÜN",
+      "type": 0
+    }
+  ],
+  "letters": "ÜGKKE,CÜISC,ÜNDÇE,İAVÖZ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

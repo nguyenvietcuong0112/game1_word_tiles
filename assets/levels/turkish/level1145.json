@@ -1,102 +1,91 @@
-﻿{
-    "id":  1145,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUJ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TURA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TURP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PANJUR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARDA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "DARP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TARPAN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NUJN,URPA,TADR",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1145,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "BOZ",
+      "type": 0
+    },
+    {
+      "word": "BUL",
+      "type": 0
+    },
+    {
+      "word": "LİZ",
+      "type": 0
+    },
+    {
+      "word": "RİO",
+      "type": 0
+    },
+    {
+      "word": "VAN",
+      "type": 0
+    },
+    {
+      "word": "VAR",
+      "type": 0
+    },
+    {
+      "word": "WİL",
+      "type": 0
+    },
+    {
+      "word": "ZİL",
+      "type": 0
+    },
+    {
+      "word": "GINA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "NAR",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "AVLU",
+      "type": 0
+    },
+    {
+      "word": "BULVAR",
+      "type": 0
+    },
+    {
+      "word": "BULVARI",
+      "type": 0
+    }
+  ],
+  "letters": "BOİR,GZİW,INLU,RAVB",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

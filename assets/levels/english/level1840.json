@@ -1,107 +1,231 @@
-﻿{
-    "id":  1840,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OPT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MITE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SITE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "STOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOPIC",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OPTIMIST",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "COPS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "COT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PICO",
-                            "type":  1
-                        },
-                        {
-                            "word":  "POT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOPS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MITE,ISPI,ATOC",
-    "obstacles":  [
-                      {
-                          "required_words":  9,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1840,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAN",
+      "type": 0
+    },
+    {
+      "word": "CAP",
+      "type": 0
+    },
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "DOOR",
+      "type": 0
+    },
+    {
+      "word": "EXPO",
+      "type": 0
+    },
+    {
+      "word": "SEED",
+      "type": 0
+    },
+    {
+      "word": "CLEAN",
+      "type": 0
+    },
+    {
+      "word": "CANCEL",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ANE",
+      "type": 0
+    },
+    {
+      "word": "CEE",
+      "type": 0
+    },
+    {
+      "word": "CEL",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "DEX",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "LAC",
+      "type": 0
+    },
+    {
+      "word": "LAP",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "NAE",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OKE",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "PAC",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SOP",
+      "type": 0
+    },
+    {
+      "word": "ALEC",
+      "type": 0
+    },
+    {
+      "word": "ALEE",
+      "type": 0
+    },
+    {
+      "word": "CALX",
+      "type": 0
+    },
+    {
+      "word": "CANE",
+      "type": 0
+    },
+    {
+      "word": "CAPO",
+      "type": 0
+    },
+    {
+      "word": "CLAP",
+      "type": 0
+    },
+    {
+      "word": "DEER",
+      "type": 0
+    },
+    {
+      "word": "DEES",
+      "type": 0
+    },
+    {
+      "word": "DREE",
+      "type": 0
+    },
+    {
+      "word": "LEAN",
+      "type": 0
+    },
+    {
+      "word": "OPAL",
+      "type": 0
+    },
+    {
+      "word": "ORDO",
+      "type": 0
+    },
+    {
+      "word": "ORES",
+      "type": 0
+    },
+    {
+      "word": "PALE",
+      "type": 0
+    },
+    {
+      "word": "POSE",
+      "type": 0
+    },
+    {
+      "word": "REED",
+      "type": 0
+    },
+    {
+      "word": "ROOD",
+      "type": 0
+    },
+    {
+      "word": "ROOK",
+      "type": 0
+    },
+    {
+      "word": "CAPOS",
+      "type": 0
+    },
+    {
+      "word": "EXPOS",
+      "type": 0
+    },
+    {
+      "word": "PALEA",
+      "type": 0
+    },
+    {
+      "word": "POSER",
+      "type": 0
+    },
+    {
+      "word": "EXPOSE",
+      "type": 0
+    },
+    {
+      "word": "EXPOSER",
+      "type": 0
+    }
+  ],
+  "letters": "ENACC,KCELA,ODEXP,ORESO",
+  "obstacles": []
 }

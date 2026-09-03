@@ -1,65 +1,127 @@
-﻿{
-    "id":  620,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ШИК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ИШАК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СУША",
-                             "type":  0
-                         },
-                         {
-                             "word":  "СУШИ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "УСИК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РЕПКА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ПЕРСИК",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "КАШ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ПЕР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ПЕРС",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ПЕРСИ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "РЕП",
-                            "type":  0
-                        },
-                        {
-                            "word":  "СИЕ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "УША,СИК,РЕП",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 620,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "АЛИ",
+      "type": 0
+    },
+    {
+      "word": "ДАЙ",
+      "type": 0
+    },
+    {
+      "word": "ЖМИ",
+      "type": 0
+    },
+    {
+      "word": "МИР",
+      "type": 0
+    },
+    {
+      "word": "РИМ",
+      "type": 0
+    },
+    {
+      "word": "БРАЛ",
+      "type": 0
+    },
+    {
+      "word": "МИРА",
+      "type": 0
+    },
+    {
+      "word": "ФАЙЛ",
+      "type": 0
+    },
+    {
+      "word": "ФРАУ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АРИ",
+      "type": 0
+    },
+    {
+      "word": "БРИ",
+      "type": 0
+    },
+    {
+      "word": "ИРА",
+      "type": 0
+    },
+    {
+      "word": "ЛАУ",
+      "type": 0
+    },
+    {
+      "word": "ЛИЛ",
+      "type": 0
+    },
+    {
+      "word": "ЛИМ",
+      "type": 0
+    },
+    {
+      "word": "ЛИР",
+      "type": 0
+    },
+    {
+      "word": "МИЛ",
+      "type": 0
+    },
+    {
+      "word": "РАЛ",
+      "type": 0
+    },
+    {
+      "word": "ФРИ",
+      "type": 0
+    },
+    {
+      "word": "АЙДА",
+      "type": 0
+    },
+    {
+      "word": "ЛИЛА",
+      "type": 0
+    },
+    {
+      "word": "ЛИРА",
+      "type": 0
+    },
+    {
+      "word": "МИЛА",
+      "type": 0
+    },
+    {
+      "word": "БРАЛИ",
+      "type": 0
+    },
+    {
+      "word": "УБРАЛ",
+      "type": 0
+    },
+    {
+      "word": "УБРАЛИ",
+      "type": 0
+    }
+  ],
+  "letters": "АЙДА,ФЛФЙ,МИРБ,ЖЛАУ",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

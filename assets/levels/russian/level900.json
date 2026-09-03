@@ -1,61 +1,143 @@
-﻿{
-    "id":  900,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "БАР",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БАНК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БАНЯ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БАРС",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БАНКА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БАРСУК",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АНК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "БАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КУС",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НАР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "РАБ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "РАНКА",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "АКУ,ЯНС,БАР",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 900,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "БЕН",
+      "type": 0
+    },
+    {
+      "word": "ВОР",
+      "type": 0
+    },
+    {
+      "word": "ВОТ",
+      "type": 0
+    },
+    {
+      "word": "ИЛИ",
+      "type": 0
+    },
+    {
+      "word": "ЛИЦ",
+      "type": 0
+    },
+    {
+      "word": "НИЛ",
+      "type": 0
+    },
+    {
+      "word": "РОТ",
+      "type": 0
+    },
+    {
+      "word": "ВОРА",
+      "type": 0
+    },
+    {
+      "word": "ВТОРОЕ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "БИЛ",
+      "type": 0
+    },
+    {
+      "word": "БИН",
+      "type": 0
+    },
+    {
+      "word": "ВИЛ",
+      "type": 0
+    },
+    {
+      "word": "ЕБЕ",
+      "type": 0
+    },
+    {
+      "word": "ЛИА",
+      "type": 0
+    },
+    {
+      "word": "ЛИВ",
+      "type": 0
+    },
+    {
+      "word": "ЛИН",
+      "type": 0
+    },
+    {
+      "word": "ОРА",
+      "type": 0
+    },
+    {
+      "word": "РОВ",
+      "type": 0
+    },
+    {
+      "word": "ТОВ",
+      "type": 0
+    },
+    {
+      "word": "ТОР",
+      "type": 0
+    },
+    {
+      "word": "ЦИН",
+      "type": 0
+    },
+    {
+      "word": "БЕНИ",
+      "type": 0
+    },
+    {
+      "word": "БИЛИ",
+      "type": 0
+    },
+    {
+      "word": "НЕБЕ",
+      "type": 0
+    },
+    {
+      "word": "НИЛИ",
+      "type": 0
+    },
+    {
+      "word": "РОТА",
+      "type": 0
+    },
+    {
+      "word": "ТАРО",
+      "type": 0
+    },
+    {
+      "word": "ТОРА",
+      "type": 0
+    },
+    {
+      "word": "ТОРО",
+      "type": 0
+    }
+  ],
+  "letters": "ЦИНЕ,ИЛИБ,ВТАЕ,ВОРО",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

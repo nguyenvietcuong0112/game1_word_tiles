@@ -1,109 +1,191 @@
-﻿{
-    "id":  1133,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ABA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAGO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOLO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JOGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JOIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LADO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOGO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "GOIABA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOIABADA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ABADA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BADALO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BAIO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "BODA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DOLO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "GABOLA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GOLADA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GOLO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IOGA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EJOLA,COGOD,CIABA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1133,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAI",
+      "type": 0
+    },
+    {
+      "word": "DAR",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "PRA",
+      "type": 0
+    },
+    {
+      "word": "QUE",
+      "type": 0
+    },
+    {
+      "word": "TEU",
+      "type": 0
+    },
+    {
+      "word": "ARTE",
+      "type": 0
+    },
+    {
+      "word": "PAPI",
+      "type": 0
+    },
+    {
+      "word": "QUIS",
+      "type": 0
+    },
+    {
+      "word": "SITE",
+      "type": 0
+    },
+    {
+      "word": "APERTE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "APP",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "EEP",
+      "type": 0
+    },
+    {
+      "word": "EPA",
+      "type": 0
+    },
+    {
+      "word": "EPI",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "PEP",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "PIA",
+      "type": 0
+    },
+    {
+      "word": "PIE",
+      "type": 0
+    },
+    {
+      "word": "PPA",
+      "type": 0
+    },
+    {
+      "word": "PRE",
+      "type": 0
+    },
+    {
+      "word": "QUI",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "SIT",
+      "type": 0
+    },
+    {
+      "word": "SIU",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "TRE",
+      "type": 0
+    },
+    {
+      "word": "DARE",
+      "type": 0
+    },
+    {
+      "word": "PEPI",
+      "type": 0
+    },
+    {
+      "word": "PERA",
+      "type": 0
+    },
+    {
+      "word": "PREP",
+      "type": 0
+    },
+    {
+      "word": "TRAD",
+      "type": 0
+    },
+    {
+      "word": "TRAI",
+      "type": 0
+    },
+    {
+      "word": "TREE",
+      "type": 0
+    },
+    {
+      "word": "PAPER",
+      "type": 0
+    },
+    {
+      "word": "PIQUE",
+      "type": 0
+    },
+    {
+      "word": "QUITE",
+      "type": 0
+    },
+    {
+      "word": "TREPA",
+      "type": 0
+    },
+    {
+      "word": "APERTEI",
+      "type": 0
+    }
+  ],
+  "letters": "SIUQ,DTEI,AREP,IPPA",
+  "obstacles": []
 }

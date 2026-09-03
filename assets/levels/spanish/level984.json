@@ -1,105 +1,239 @@
-﻿{
-    "id":  984,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EME",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MES",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CLIC",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESTAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LISTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LISTAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RACIÓN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CICLISTA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ESTACIÓN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "CAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CISTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "IÓN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LEME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LIS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MELIS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MICCIÓN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MIS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MISTAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SIC",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAC",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ESTAR,MICCN,ELCIÓ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 984,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "GAS",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "IRME",
+      "type": 0
+    },
+    {
+      "word": "RARA",
+      "type": 0
+    },
+    {
+      "word": "SOMBRA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "EMS",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "ERM",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "ILA",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "ISE",
+      "type": 0
+    },
+    {
+      "word": "LIS",
+      "type": 0
+    },
+    {
+      "word": "MEA",
+      "type": 0
+    },
+    {
+      "word": "MEO",
+      "type": 0
+    },
+    {
+      "word": "MOE",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "OSA",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "SIL",
+      "type": 0
+    },
+    {
+      "word": "ARAR",
+      "type": 0
+    },
+    {
+      "word": "ARAS",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "ARME",
+      "type": 0
+    },
+    {
+      "word": "ARMS",
+      "type": 0
+    },
+    {
+      "word": "IRAS",
+      "type": 0
+    },
+    {
+      "word": "LIRA",
+      "type": 0
+    },
+    {
+      "word": "LISE",
+      "type": 0
+    },
+    {
+      "word": "RAGE",
+      "type": 0
+    },
+    {
+      "word": "RASO",
+      "type": 0
+    },
+    {
+      "word": "RISE",
+      "type": 0
+    },
+    {
+      "word": "SAGA",
+      "type": 0
+    },
+    {
+      "word": "SAGE",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "SARI",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SIRE",
+      "type": 0
+    },
+    {
+      "word": "BRAGA",
+      "type": 0
+    },
+    {
+      "word": "LIRAS",
+      "type": 0
+    },
+    {
+      "word": "REGAR",
+      "type": 0
+    },
+    {
+      "word": "SERAS",
+      "type": 0
+    },
+    {
+      "word": "SERME",
+      "type": 0
+    },
+    {
+      "word": "BRAGAS",
+      "type": 0
+    },
+    {
+      "word": "ASOMBRA",
+      "type": 0
+    }
+  ],
+  "letters": "AEOM,LMSB,IRAR,SEGA",
+  "obstacles": []
 }

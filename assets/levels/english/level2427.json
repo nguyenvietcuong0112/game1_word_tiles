@@ -1,101 +1,251 @@
-﻿{
-    "id":  2427,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DUG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BIND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DING",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BUILD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CABIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PACING",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BUILDING",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DIB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LACING",
-                            "type":  2
-                        },
-                        {
-                            "word":  "NIB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PUBIC",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ILDGU,UBIND,PACAL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2427,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "TOE",
+      "type": 0
+    },
+    {
+      "word": "WAR",
+      "type": 0
+    },
+    {
+      "word": "ABLE",
+      "type": 0
+    },
+    {
+      "word": "PARK",
+      "type": 0
+    },
+    {
+      "word": "PART",
+      "type": 0
+    },
+    {
+      "word": "SKIN",
+      "type": 0
+    },
+    {
+      "word": "TAIL",
+      "type": 0
+    },
+    {
+      "word": "TAPE",
+      "type": 0
+    },
+    {
+      "word": "WORK",
+      "type": 0
+    },
+    {
+      "word": "TABLE",
+      "type": 0
+    },
+    {
+      "word": "WORKS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIL",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "APE",
+      "type": 0
+    },
+    {
+      "word": "APT",
+      "type": 0
+    },
+    {
+      "word": "ARK",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "KIN",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORT",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "RAW",
+      "type": 0
+    },
+    {
+      "word": "ROW",
+      "type": 0
+    },
+    {
+      "word": "SKI",
+      "type": 0
+    },
+    {
+      "word": "TAB",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "AINS",
+      "type": 0
+    },
+    {
+      "word": "ARKS",
+      "type": 0
+    },
+    {
+      "word": "BAIL",
+      "type": 0
+    },
+    {
+      "word": "BATS",
+      "type": 0
+    },
+    {
+      "word": "BATT",
+      "type": 0
+    },
+    {
+      "word": "KINS",
+      "type": 0
+    },
+    {
+      "word": "LEPT",
+      "type": 0
+    },
+    {
+      "word": "PARA",
+      "type": 0
+    },
+    {
+      "word": "RAIN",
+      "type": 0
+    },
+    {
+      "word": "RAPE",
+      "type": 0
+    },
+    {
+      "word": "RAPT",
+      "type": 0
+    },
+    {
+      "word": "STAB",
+      "type": 0
+    },
+    {
+      "word": "TARO",
+      "type": 0
+    },
+    {
+      "word": "TART",
+      "type": 0
+    },
+    {
+      "word": "TRAP",
+      "type": 0
+    },
+    {
+      "word": "TROW",
+      "type": 0
+    },
+    {
+      "word": "WAIN",
+      "type": 0
+    },
+    {
+      "word": "WARK",
+      "type": 0
+    },
+    {
+      "word": "WORT",
+      "type": 0
+    },
+    {
+      "word": "ATTAR",
+      "type": 0
+    },
+    {
+      "word": "PARKS",
+      "type": 0
+    },
+    {
+      "word": "RAINS",
+      "type": 0
+    },
+    {
+      "word": "WAINS",
+      "type": 0
+    },
+    {
+      "word": "WARKS",
+      "type": 0
+    },
+    {
+      "word": "STABLE",
+      "type": 0
+    },
+    {
+      "word": "RATTAIL",
+      "type": 0
+    },
+    {
+      "word": "INSTABLE",
+      "type": 0
+    }
+  ],
+  "letters": "IATSN,LBTKI,EPARA,OTROW",
+  "obstacles": []
 }

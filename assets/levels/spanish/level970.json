@@ -1,73 +1,139 @@
-﻿{
-    "id":  970,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AGUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GARRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORTUGA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARCAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GUA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MARRA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RAGUA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ROTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UTA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RTARR,OUGCA,TAADM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 970,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "IOS",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "OUI",
+      "type": 0
+    },
+    {
+      "word": "ÉSE",
+      "type": 0
+    },
+    {
+      "word": "PERO",
+      "type": 0
+    },
+    {
+      "word": "PERDER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DER",
+      "type": 0
+    },
+    {
+      "word": "DRE",
+      "type": 0
+    },
+    {
+      "word": "ELE",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERO",
+      "type": 0
+    },
+    {
+      "word": "IES",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LEI",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "PER",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "ÉSO",
+      "type": 0
+    },
+    {
+      "word": "DELE",
+      "type": 0
+    },
+    {
+      "word": "LEER",
+      "type": 0
+    },
+    {
+      "word": "PEEL",
+      "type": 0
+    },
+    {
+      "word": "PERD",
+      "type": 0
+    },
+    {
+      "word": "RELÉ",
+      "type": 0
+    },
+    {
+      "word": "DELES",
+      "type": 0
+    },
+    {
+      "word": "PERDERÉ",
+      "type": 0
+    }
+  ],
+  "letters": "RERO,DPEU,ELEI,RÉSO",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

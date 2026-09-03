@@ -1,85 +1,227 @@
-﻿{
-    "id":  790,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLÉ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALÉM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GELO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LADO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MIAU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEGA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PODA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEGADA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PELADO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POLEGADA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DOPE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GELADO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LÉU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MALO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PELO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PODAL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DAMMI,OLÉUA,PEGAD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 790,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEI",
+      "type": 0
+    },
+    {
+      "word": "EGO",
+      "type": 0
+    },
+    {
+      "word": "EIS",
+      "type": 0
+    },
+    {
+      "word": "ARTE",
+      "type": 0
+    },
+    {
+      "word": "BODE",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "TEVE",
+      "type": 0
+    },
+    {
+      "word": "STEVE",
+      "type": 0
+    },
+    {
+      "word": "AVISAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASA",
+      "type": 0
+    },
+    {
+      "word": "AVI",
+      "type": 0
+    },
+    {
+      "word": "BEA",
+      "type": 0
+    },
+    {
+      "word": "BET",
+      "type": 0
+    },
+    {
+      "word": "BEV",
+      "type": 0
+    },
+    {
+      "word": "DOG",
+      "type": 0
+    },
+    {
+      "word": "EDO",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "GOB",
+      "type": 0
+    },
+    {
+      "word": "GOD",
+      "type": 0
+    },
+    {
+      "word": "ISA",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SAV",
+      "type": 0
+    },
+    {
+      "word": "SIE",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "VET",
+      "type": 0
+    },
+    {
+      "word": "VIE",
+      "type": 0
+    },
+    {
+      "word": "VIS",
+      "type": 0
+    },
+    {
+      "word": "ARAS",
+      "type": 0
+    },
+    {
+      "word": "ARTS",
+      "type": 0
+    },
+    {
+      "word": "BEAR",
+      "type": 0
+    },
+    {
+      "word": "DOGE",
+      "type": 0
+    },
+    {
+      "word": "IVAR",
+      "type": 0
+    },
+    {
+      "word": "RASA",
+      "type": 0
+    },
+    {
+      "word": "RAVI",
+      "type": 0
+    },
+    {
+      "word": "SAVI",
+      "type": 0
+    },
+    {
+      "word": "TEAR",
+      "type": 0
+    },
+    {
+      "word": "TRAS",
+      "type": 0
+    },
+    {
+      "word": "TRAV",
+      "type": 0
+    },
+    {
+      "word": "VARA",
+      "type": 0
+    },
+    {
+      "word": "VISA",
+      "type": 0
+    },
+    {
+      "word": "AVISA",
+      "type": 0
+    },
+    {
+      "word": "VARAS",
+      "type": 0
+    },
+    {
+      "word": "BEAVIS",
+      "type": 0
+    },
+    {
+      "word": "TRAVIS",
+      "type": 0
+    }
+  ],
+  "letters": "EDOG,IVBE,SAEV,ARTS",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

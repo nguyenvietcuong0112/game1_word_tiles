@@ -1,95 +1,199 @@
-﻿{
-    "id":  1519,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KING",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GIRAFFE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "FAB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FEIGN",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "TKGIE,UINRF,COBAF",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1519,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AFT",
+      "type": 0
+    },
+    {
+      "word": "FUN",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "LENS",
+      "type": 0
+    },
+    {
+      "word": "LESS",
+      "type": 0
+    },
+    {
+      "word": "LOSS",
+      "type": 0
+    },
+    {
+      "word": "LOST",
+      "type": 0
+    },
+    {
+      "word": "SELF",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "EFS",
+      "type": 0
+    },
+    {
+      "word": "ELF",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ENS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "FAS",
+      "type": 0
+    },
+    {
+      "word": "FEN",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "NUT",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "SAU",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "TUN",
+      "type": 0
+    },
+    {
+      "word": "UNS",
+      "type": 0
+    },
+    {
+      "word": "UTS",
+      "type": 0
+    },
+    {
+      "word": "FAUN",
+      "type": 0
+    },
+    {
+      "word": "FELL",
+      "type": 0
+    },
+    {
+      "word": "FENS",
+      "type": 0
+    },
+    {
+      "word": "FUNS",
+      "type": 0
+    },
+    {
+      "word": "LETS",
+      "type": 0
+    },
+    {
+      "word": "NUTS",
+      "type": 0
+    },
+    {
+      "word": "SETS",
+      "type": 0
+    },
+    {
+      "word": "SONS",
+      "type": 0
+    },
+    {
+      "word": "STUN",
+      "type": 0
+    },
+    {
+      "word": "TUNE",
+      "type": 0
+    },
+    {
+      "word": "TUNS",
+      "type": 0
+    },
+    {
+      "word": "FAUNS",
+      "type": 0
+    },
+    {
+      "word": "FLOSS",
+      "type": 0
+    },
+    {
+      "word": "ONSET",
+      "type": 0
+    },
+    {
+      "word": "SAUTE",
+      "type": 0
+    },
+    {
+      "word": "SNELL",
+      "type": 0
+    },
+    {
+      "word": "STUNS",
+      "type": 0
+    },
+    {
+      "word": "LESSON",
+      "type": 0
+    },
+    {
+      "word": "ONSETS",
+      "type": 0
+    },
+    {
+      "word": "SAUTES",
+      "type": 0
+    }
+  ],
+  "letters": "NOLL,SSFE,ETUN,LFAS",
+  "obstacles": []
 }

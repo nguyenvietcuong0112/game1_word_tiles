@@ -1,73 +1,231 @@
-﻿{
-    "id":  1225,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CELL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RICE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CELLO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PIANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRIAL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "LAIR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TALON",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TRICE",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "ELLO,CTAN,IRIP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1225,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "GAP",
+      "type": 0
+    },
+    {
+      "word": "MOC",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "TAG",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "GANG",
+      "type": 0
+    },
+    {
+      "word": "STAR",
+      "type": 0
+    },
+    {
+      "word": "AGING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "GAN",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "GAT",
+      "type": 0
+    },
+    {
+      "word": "GIN",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "NAG",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "RAG",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "AGIN",
+      "type": 0
+    },
+    {
+      "word": "ANGA",
+      "type": 0
+    },
+    {
+      "word": "GARS",
+      "type": 0
+    },
+    {
+      "word": "GATS",
+      "type": 0
+    },
+    {
+      "word": "GNAR",
+      "type": 0
+    },
+    {
+      "word": "GNAT",
+      "type": 0
+    },
+    {
+      "word": "GRAN",
+      "type": 0
+    },
+    {
+      "word": "GRAT",
+      "type": 0
+    },
+    {
+      "word": "LINT",
+      "type": 0
+    },
+    {
+      "word": "MOCS",
+      "type": 0
+    },
+    {
+      "word": "PRAT",
+      "type": 0
+    },
+    {
+      "word": "RAGI",
+      "type": 0
+    },
+    {
+      "word": "RANG",
+      "type": 0
+    },
+    {
+      "word": "RANI",
+      "type": 0
+    },
+    {
+      "word": "RATS",
+      "type": 0
+    },
+    {
+      "word": "STAG",
+      "type": 0
+    },
+    {
+      "word": "TANG",
+      "type": 0
+    },
+    {
+      "word": "TARP",
+      "type": 0
+    },
+    {
+      "word": "TARS",
+      "type": 0
+    },
+    {
+      "word": "GLINT",
+      "type": 0
+    },
+    {
+      "word": "GNARS",
+      "type": 0
+    },
+    {
+      "word": "GNATS",
+      "type": 0
+    },
+    {
+      "word": "LINTS",
+      "type": 0
+    },
+    {
+      "word": "PRANG",
+      "type": 0
+    },
+    {
+      "word": "PRATS",
+      "type": 0
+    },
+    {
+      "word": "STANG",
+      "type": 0
+    },
+    {
+      "word": "GLINTS",
+      "type": 0
+    },
+    {
+      "word": "RAGING",
+      "type": 0
+    },
+    {
+      "word": "RATLIN",
+      "type": 0
+    },
+    {
+      "word": "STAGING",
+      "type": 0
+    }
+  ],
+  "letters": "APCO,GRSM,NATN,IGLI",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

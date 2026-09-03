@@ -1,75 +1,411 @@
-﻿{
-    "id":  1451,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HAIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMBER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHAIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CHAMBER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BHAI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CHAI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AKBE,OBMR,CHAI",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1451,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "AREA",
+      "type": 0
+    },
+    {
+      "word": "RATE",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "SENT",
+      "type": 0
+    },
+    {
+      "word": "GREAT",
+      "type": 0
+    },
+    {
+      "word": "JONES",
+      "type": 0
+    },
+    {
+      "word": "STATE",
+      "type": 0
+    },
+    {
+      "word": "STATES",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERG",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TAT",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "EATS",
+      "type": 0
+    },
+    {
+      "word": "ERST",
+      "type": 0
+    },
+    {
+      "word": "GRAT",
+      "type": 0
+    },
+    {
+      "word": "NEST",
+      "type": 0
+    },
+    {
+      "word": "NETT",
+      "type": 0
+    },
+    {
+      "word": "ONES",
+      "type": 0
+    },
+    {
+      "word": "ORES",
+      "type": 0
+    },
+    {
+      "word": "RARE",
+      "type": 0
+    },
+    {
+      "word": "RATS",
+      "type": 0
+    },
+    {
+      "word": "RENT",
+      "type": 0
+    },
+    {
+      "word": "RETE",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SERS",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SETT",
+      "type": 0
+    },
+    {
+      "word": "STAR",
+      "type": 0
+    },
+    {
+      "word": "STAT",
+      "type": 0
+    },
+    {
+      "word": "TARE",
+      "type": 0
+    },
+    {
+      "word": "TARO",
+      "type": 0
+    },
+    {
+      "word": "TARS",
+      "type": 0
+    },
+    {
+      "word": "TATE",
+      "type": 0
+    },
+    {
+      "word": "TATS",
+      "type": 0
+    },
+    {
+      "word": "TEAT",
+      "type": 0
+    },
+    {
+      "word": "TENT",
+      "type": 0
+    },
+    {
+      "word": "TEST",
+      "type": 0
+    },
+    {
+      "word": "ARETE",
+      "type": 0
+    },
+    {
+      "word": "ATTAR",
+      "type": 0
+    },
+    {
+      "word": "GRATE",
+      "type": 0
+    },
+    {
+      "word": "NETTS",
+      "type": 0
+    },
+    {
+      "word": "ORATE",
+      "type": 0
+    },
+    {
+      "word": "RARES",
+      "type": 0
+    },
+    {
+      "word": "RATER",
+      "type": 0
+    },
+    {
+      "word": "RATES",
+      "type": 0
+    },
+    {
+      "word": "RENTS",
+      "type": 0
+    },
+    {
+      "word": "SENOR",
+      "type": 0
+    },
+    {
+      "word": "STARE",
+      "type": 0
+    },
+    {
+      "word": "TARES",
+      "type": 0
+    },
+    {
+      "word": "TATER",
+      "type": 0
+    },
+    {
+      "word": "TATES",
+      "type": 0
+    },
+    {
+      "word": "TEATS",
+      "type": 0
+    },
+    {
+      "word": "TENOR",
+      "type": 0
+    },
+    {
+      "word": "TENTS",
+      "type": 0
+    },
+    {
+      "word": "TESTA",
+      "type": 0
+    },
+    {
+      "word": "AERATE",
+      "type": 0
+    },
+    {
+      "word": "ARETES",
+      "type": 0
+    },
+    {
+      "word": "ATTARS",
+      "type": 0
+    },
+    {
+      "word": "ATTENT",
+      "type": 0
+    },
+    {
+      "word": "ATTEST",
+      "type": 0
+    },
+    {
+      "word": "GRATER",
+      "type": 0
+    },
+    {
+      "word": "GRATES",
+      "type": 0
+    },
+    {
+      "word": "GREATS",
+      "type": 0
+    },
+    {
+      "word": "ORATES",
+      "type": 0
+    },
+    {
+      "word": "RAREST",
+      "type": 0
+    },
+    {
+      "word": "RATERS",
+      "type": 0
+    },
+    {
+      "word": "RETEST",
+      "type": 0
+    },
+    {
+      "word": "SENORA",
+      "type": 0
+    },
+    {
+      "word": "SENORS",
+      "type": 0
+    },
+    {
+      "word": "STARES",
+      "type": 0
+    },
+    {
+      "word": "STATER",
+      "type": 0
+    },
+    {
+      "word": "TATERS",
+      "type": 0
+    },
+    {
+      "word": "TENORS",
+      "type": 0
+    },
+    {
+      "word": "TESTAE",
+      "type": 0
+    },
+    {
+      "word": "AERATES",
+      "type": 0
+    },
+    {
+      "word": "GRATERS",
+      "type": 0
+    }
+  ],
+  "letters": "GREA,TATT,SRES,JONT",
+  "obstacles": []
 }

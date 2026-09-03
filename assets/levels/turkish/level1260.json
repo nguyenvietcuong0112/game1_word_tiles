@@ -1,65 +1,175 @@
-﻿{
-    "id":  1260,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "GAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÖRS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FREN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KART",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKTÖR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İFTAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRAKTÖR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARİF",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FİRAK",
-                            "type":  2
-                        },
-                        {
-                            "word":  "İFRAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAGİR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ÖRSNE,TGİFR,KARTA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1260,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "BİR",
+      "type": 0
+    },
+    {
+      "word": "GİR",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "TOM",
+      "type": 0
+    },
+    {
+      "word": "BUNU",
+      "type": 0
+    },
+    {
+      "word": "GİRDİ",
+      "type": 0
+    },
+    {
+      "word": "UNUTMA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMT",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "BUN",
+      "type": 0
+    },
+    {
+      "word": "BUT",
+      "type": 0
+    },
+    {
+      "word": "BİG",
+      "type": 0
+    },
+    {
+      "word": "DİN",
+      "type": 0
+    },
+    {
+      "word": "EBU",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "TAU",
+      "type": 0
+    },
+    {
+      "word": "TİN",
+      "type": 0
+    },
+    {
+      "word": "UNU",
+      "type": 0
+    },
+    {
+      "word": "İTO",
+      "type": 0
+    },
+    {
+      "word": "ATOM",
+      "type": 0
+    },
+    {
+      "word": "BİRD",
+      "type": 0
+    },
+    {
+      "word": "DİNA",
+      "type": 0
+    },
+    {
+      "word": "MANİ",
+      "type": 0
+    },
+    {
+      "word": "NATO",
+      "type": 0
+    },
+    {
+      "word": "TİNA",
+      "type": 0
+    },
+    {
+      "word": "UNUT",
+      "type": 0
+    },
+    {
+      "word": "İNAT",
+      "type": 0
+    },
+    {
+      "word": "BUTUN",
+      "type": 0
+    },
+    {
+      "word": "TANRİ",
+      "type": 0
+    },
+    {
+      "word": "GİRDİN",
+      "type": 0
+    },
+    {
+      "word": "UNUTMAN",
+      "type": 0
+    }
+  ],
+  "letters": "DİTO,RNAM,İBUT,GENU",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

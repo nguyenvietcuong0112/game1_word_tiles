@@ -1,53 +1,223 @@
-﻿{
-    "id":  1270,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "KAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KÖK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SİRK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ULAK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KOMUT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KOMUTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KRİSTAL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SİRKAT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EKLAK,KÖUTR,KOMSİ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1270,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EVA",
+      "type": 0
+    },
+    {
+      "word": "KES",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "VAR",
+      "type": 0
+    },
+    {
+      "word": "İSA",
+      "type": 0
+    },
+    {
+      "word": "İSE",
+      "type": 0
+    },
+    {
+      "word": "DAİR",
+      "type": 0
+    },
+    {
+      "word": "EMRİ",
+      "type": 0
+    },
+    {
+      "word": "HAVA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "ARİ",
+      "type": 0
+    },
+    {
+      "word": "ASİ",
+      "type": 0
+    },
+    {
+      "word": "AVA",
+      "type": 0
+    },
+    {
+      "word": "AİR",
+      "type": 0
+    },
+    {
+      "word": "DAİ",
+      "type": 0
+    },
+    {
+      "word": "DEM",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "EKO",
+      "type": 0
+    },
+    {
+      "word": "HAV",
+      "type": 0
+    },
+    {
+      "word": "KEV",
+      "type": 0
+    },
+    {
+      "word": "KOR",
+      "type": 0
+    },
+    {
+      "word": "KOV",
+      "type": 0
+    },
+    {
+      "word": "MEİ",
+      "type": 0
+    },
+    {
+      "word": "MRİ",
+      "type": 0
+    },
+    {
+      "word": "ORİ",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "RİA",
+      "type": 0
+    },
+    {
+      "word": "SEK",
+      "type": 0
+    },
+    {
+      "word": "SEV",
+      "type": 0
+    },
+    {
+      "word": "SOK",
+      "type": 0
+    },
+    {
+      "word": "SİR",
+      "type": 0
+    },
+    {
+      "word": "VAH",
+      "type": 0
+    },
+    {
+      "word": "VAK",
+      "type": 0
+    },
+    {
+      "word": "İRA",
+      "type": 0
+    },
+    {
+      "word": "ADEM",
+      "type": 0
+    },
+    {
+      "word": "ARİA",
+      "type": 0
+    },
+    {
+      "word": "ESİR",
+      "type": 0
+    },
+    {
+      "word": "HARİ",
+      "type": 0
+    },
+    {
+      "word": "KOVA",
+      "type": 0
+    },
+    {
+      "word": "ROSA",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    },
+    {
+      "word": "RİSA",
+      "type": 0
+    },
+    {
+      "word": "SORA",
+      "type": 0
+    },
+    {
+      "word": "VAAD",
+      "type": 0
+    },
+    {
+      "word": "İADE",
+      "type": 0
+    },
+    {
+      "word": "AHMED",
+      "type": 0
+    },
+    {
+      "word": "KOVAR",
+      "type": 0
+    },
+    {
+      "word": "ROSİE",
+      "type": 0
+    },
+    {
+      "word": "VARİS",
+      "type": 0
+    }
+  ],
+  "letters": "DEMH,AİRA,ASOV,VEKA",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

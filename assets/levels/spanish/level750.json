@@ -1,97 +1,155 @@
-﻿{
-    "id":  750,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMAR",
-                             "type":  2
-                         },
-                         {
-                             "word":  "MAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MONA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PUMA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRAMO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARCIANO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CIAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NOMA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "POMA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "POMAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PON",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CIAN,RAMO,TMUP",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 750,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "HAN",
+      "type": 0
+    },
+    {
+      "word": "OSO",
+      "type": 0
+    },
+    {
+      "word": "VOS",
+      "type": 0
+    },
+    {
+      "word": "ABRA",
+      "type": 0
+    },
+    {
+      "word": "ANNA",
+      "type": 0
+    },
+    {
+      "word": "ANNE",
+      "type": 0
+    },
+    {
+      "word": "JENNA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "ANN",
+      "type": 0
+    },
+    {
+      "word": "BAE",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BAO",
+      "type": 0
+    },
+    {
+      "word": "BRA",
+      "type": 0
+    },
+    {
+      "word": "JEN",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "NAO",
+      "type": 0
+    },
+    {
+      "word": "NBA",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RAO",
+      "type": 0
+    },
+    {
+      "word": "ANJA",
+      "type": 0
+    },
+    {
+      "word": "BANE",
+      "type": 0
+    },
+    {
+      "word": "BARB",
+      "type": 0
+    },
+    {
+      "word": "BRAN",
+      "type": 0
+    },
+    {
+      "word": "JAAN",
+      "type": 0
+    },
+    {
+      "word": "JENN",
+      "type": 0
+    },
+    {
+      "word": "ABRAN",
+      "type": 0
+    },
+    {
+      "word": "AJENA",
+      "type": 0
+    },
+    {
+      "word": "BARBA",
+      "type": 0
+    },
+    {
+      "word": "HANNA",
+      "type": 0
+    },
+    {
+      "word": "HANNE",
+      "type": 0
+    }
+  ],
+  "letters": "VOSO,RABH,BNNA,AEJA",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

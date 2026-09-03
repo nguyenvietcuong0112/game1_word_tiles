@@ -1,113 +1,191 @@
-﻿{
-    "id":  1989,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HIS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HIT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HISS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THIS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOISE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TORTOISE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AIDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AIDES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AIDS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ASS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DESI",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ION",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OTTO",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SHIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SION",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TORT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TROT",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NOISE,RTHSD,OTIAI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1989,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "EGG",
+      "type": 0
+    },
+    {
+      "word": "ELM",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "OFF",
+      "type": 0
+    },
+    {
+      "word": "REF",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "BEDS",
+      "type": 0
+    },
+    {
+      "word": "SURE",
+      "type": 0
+    },
+    {
+      "word": "HORDE",
+      "type": 0
+    },
+    {
+      "word": "OFFER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BEG",
+      "type": 0
+    },
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "EFF",
+      "type": 0
+    },
+    {
+      "word": "ERG",
+      "type": 0
+    },
+    {
+      "word": "FER",
+      "type": 0
+    },
+    {
+      "word": "FOE",
+      "type": 0
+    },
+    {
+      "word": "GED",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "MHO",
+      "type": 0
+    },
+    {
+      "word": "OBE",
+      "type": 0
+    },
+    {
+      "word": "OHM",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "BLEB",
+      "type": 0
+    },
+    {
+      "word": "EGER",
+      "type": 0
+    },
+    {
+      "word": "GEDS",
+      "type": 0
+    },
+    {
+      "word": "GLEG",
+      "type": 0
+    },
+    {
+      "word": "GRUE",
+      "type": 0
+    },
+    {
+      "word": "RUED",
+      "type": 0
+    },
+    {
+      "word": "SUED",
+      "type": 0
+    },
+    {
+      "word": "URGE",
+      "type": 0
+    },
+    {
+      "word": "EGGED",
+      "type": 0
+    },
+    {
+      "word": "EGGER",
+      "type": 0
+    },
+    {
+      "word": "LEGER",
+      "type": 0
+    },
+    {
+      "word": "ORBED",
+      "type": 0
+    },
+    {
+      "word": "SURGE",
+      "type": 0
+    },
+    {
+      "word": "URGED",
+      "type": 0
+    },
+    {
+      "word": "BEGGED",
+      "type": 0
+    },
+    {
+      "word": "LEGGED",
+      "type": 0
+    },
+    {
+      "word": "SURGED",
+      "type": 0
+    }
+  ],
+  "letters": "OHMBO,RBLEO,DEGGF,SUREF",
+  "obstacles": []
 }

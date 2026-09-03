@@ -1,89 +1,219 @@
-﻿{
-    "id":  1888,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ASİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İRİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SERİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SİTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BASİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SABİT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İSABET",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BİRİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İRİS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "İRİTE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SABİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SABİTE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TİRE",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ERİ,SİT,ABE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1888,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AİT",
+      "type": 0
+    },
+    {
+      "word": "AŞK",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "MİL",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TEK",
+      "type": 0
+    },
+    {
+      "word": "TİM",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "HART",
+      "type": 0
+    },
+    {
+      "word": "ARTIK",
+      "type": 0
+    },
+    {
+      "word": "AŞKIN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMT",
+      "type": 0
+    },
+    {
+      "word": "ARK",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "EMİ",
+      "type": 0
+    },
+    {
+      "word": "ETİ",
+      "type": 0
+    },
+    {
+      "word": "INI",
+      "type": 0
+    },
+    {
+      "word": "KEL",
+      "type": 0
+    },
+    {
+      "word": "KIT",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "LİM",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "MİA",
+      "type": 0
+    },
+    {
+      "word": "MİT",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "TIK",
+      "type": 0
+    },
+    {
+      "word": "TİA",
+      "type": 0
+    },
+    {
+      "word": "İME",
+      "type": 0
+    },
+    {
+      "word": "İMİ",
+      "type": 0
+    },
+    {
+      "word": "ARTI",
+      "type": 0
+    },
+    {
+      "word": "ATKI",
+      "type": 0
+    },
+    {
+      "word": "AŞKI",
+      "type": 0
+    },
+    {
+      "word": "ELİM",
+      "type": 0
+    },
+    {
+      "word": "EMİL",
+      "type": 0
+    },
+    {
+      "word": "LİME",
+      "type": 0
+    },
+    {
+      "word": "MİLE",
+      "type": 0
+    },
+    {
+      "word": "RAHL",
+      "type": 0
+    },
+    {
+      "word": "TELİ",
+      "type": 0
+    },
+    {
+      "word": "TİME",
+      "type": 0
+    },
+    {
+      "word": "TİMİ",
+      "type": 0
+    },
+    {
+      "word": "İLET",
+      "type": 0
+    },
+    {
+      "word": "AŞKTA",
+      "type": 0
+    },
+    {
+      "word": "ELİMİ",
+      "type": 0
+    },
+    {
+      "word": "LİMİT",
+      "type": 0
+    },
+    {
+      "word": "İLETİ",
+      "type": 0
+    },
+    {
+      "word": "AŞKINI",
+      "type": 0
+    }
+  ],
+  "letters": "ARTMA,HKINT,LETIK,İMİAŞ",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

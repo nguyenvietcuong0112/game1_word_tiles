@@ -1,53 +1,111 @@
-﻿{
-    "id":  760,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SERGİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENARYO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "GRENA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SENA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NACK,ERGİ,SYOD",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 760,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "JET",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "KAP",
+      "type": 0
+    },
+    {
+      "word": "PAN",
+      "type": 0
+    },
+    {
+      "word": "OYUN",
+      "type": 0
+    },
+    {
+      "word": "OYUNA",
+      "type": 0
+    },
+    {
+      "word": "OYUNU",
+      "type": 0
+    },
+    {
+      "word": "ZIPLA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKU",
+      "type": 0
+    },
+    {
+      "word": "ALP",
+      "type": 0
+    },
+    {
+      "word": "ANU",
+      "type": 0
+    },
+    {
+      "word": "KUN",
+      "type": 0
+    },
+    {
+      "word": "LAO",
+      "type": 0
+    },
+    {
+      "word": "LAU",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "OYU",
+      "type": 0
+    },
+    {
+      "word": "PAK",
+      "type": 0
+    },
+    {
+      "word": "UNA",
+      "type": 0
+    },
+    {
+      "word": "UNU",
+      "type": 0
+    },
+    {
+      "word": "YUN",
+      "type": 0
+    },
+    {
+      "word": "YUNA",
+      "type": 0
+    }
+  ],
+  "letters": "IZOY,PLAU,TPAN,EJKU",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

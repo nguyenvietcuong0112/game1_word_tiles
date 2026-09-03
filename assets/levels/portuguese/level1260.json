@@ -1,93 +1,207 @@
-﻿{
-    "id":  1260,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ATUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CASCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CASCAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MASCAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MÁSCARA",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARATU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ASCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ATUMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAMAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TUMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UTAR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "CCAR,ASMA,MÁUT",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1260,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "DOM",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "PRA",
+      "type": 0
+    },
+    {
+      "word": "WAT",
+      "type": 0
+    },
+    {
+      "word": "MINA",
+      "type": 0
+    },
+    {
+      "word": "MODO",
+      "type": 0
+    },
+    {
+      "word": "PRIMO",
+      "type": 0
+    },
+    {
+      "word": "QUATRO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "AQU",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "DOE",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "EWA",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "MIN",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "MOD",
+      "type": 0
+    },
+    {
+      "word": "NIM",
+      "type": 0
+    },
+    {
+      "word": "ODO",
+      "type": 0
+    },
+    {
+      "word": "OMI",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "QUA",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "TAU",
+      "type": 0
+    },
+    {
+      "word": "TEO",
+      "type": 0
+    },
+    {
+      "word": "WET",
+      "type": 0
+    },
+    {
+      "word": "AQUA",
+      "type": 0
+    },
+    {
+      "word": "MIRA",
+      "type": 0
+    },
+    {
+      "word": "ODOR",
+      "type": 0
+    },
+    {
+      "word": "PETA",
+      "type": 0
+    },
+    {
+      "word": "RANI",
+      "type": 0
+    },
+    {
+      "word": "RINA",
+      "type": 0
+    },
+    {
+      "word": "RODO",
+      "type": 0
+    },
+    {
+      "word": "TEOR",
+      "type": 0
+    },
+    {
+      "word": "ANIMO",
+      "type": 0
+    },
+    {
+      "word": "MINAR",
+      "type": 0
+    },
+    {
+      "word": "DOMINA",
+      "type": 0
+    },
+    {
+      "word": "DOMINAR",
+      "type": 0
+    }
+  ],
+  "letters": "NAQU,IRWA,MPET,ODOR",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

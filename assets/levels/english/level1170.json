@@ -1,69 +1,171 @@
-﻿{
-    "id":  1170,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "NET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASSET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASSIST",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NESS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SINE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TESTA",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ATT,SSE,SIN",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1170,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "LET",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "TEL",
+      "type": 0
+    },
+    {
+      "word": "WET",
+      "type": 0
+    },
+    {
+      "word": "FRONT",
+      "type": 0
+    },
+    {
+      "word": "STYLE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DEY",
+      "type": 0
+    },
+    {
+      "word": "ELD",
+      "type": 0
+    },
+    {
+      "word": "FON",
+      "type": 0
+    },
+    {
+      "word": "FRO",
+      "type": 0
+    },
+    {
+      "word": "LYE",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "STY",
+      "type": 0
+    },
+    {
+      "word": "TEW",
+      "type": 0
+    },
+    {
+      "word": "TYE",
+      "type": 0
+    },
+    {
+      "word": "YON",
+      "type": 0
+    },
+    {
+      "word": "FONT",
+      "type": 0
+    },
+    {
+      "word": "LETS",
+      "type": 0
+    },
+    {
+      "word": "OYER",
+      "type": 0
+    },
+    {
+      "word": "STEW",
+      "type": 0
+    },
+    {
+      "word": "STYE",
+      "type": 0
+    },
+    {
+      "word": "TEWS",
+      "type": 0
+    },
+    {
+      "word": "TYER",
+      "type": 0
+    },
+    {
+      "word": "WELD",
+      "type": 0
+    },
+    {
+      "word": "WETS",
+      "type": 0
+    },
+    {
+      "word": "YORE",
+      "type": 0
+    },
+    {
+      "word": "ELDER",
+      "type": 0
+    },
+    {
+      "word": "FONTS",
+      "type": 0
+    },
+    {
+      "word": "FRORE",
+      "type": 0
+    },
+    {
+      "word": "REDLY",
+      "type": 0
+    },
+    {
+      "word": "STYED",
+      "type": 0
+    },
+    {
+      "word": "FRONTS",
+      "type": 0
+    },
+    {
+      "word": "WELDER",
+      "type": 0
+    }
+  ],
+  "letters": "DERF,LYOR,ETNO,WSOF",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

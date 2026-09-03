@@ -1,86 +1,283 @@
-﻿{
-    "id":  1855,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AREA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAKE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "READ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DREAD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAKER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DADA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DRAKE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "KEA,ARD,MDA",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  7,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1855,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "SIS",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "YES",
+      "type": 0
+    },
+    {
+      "word": "RARE",
+      "type": 0
+    },
+    {
+      "word": "RATE",
+      "type": 0
+    },
+    {
+      "word": "SURE",
+      "type": 0
+    },
+    {
+      "word": "USER",
+      "type": 0
+    },
+    {
+      "word": "LAYER",
+      "type": 0
+    },
+    {
+      "word": "RATES",
+      "type": 0
+    },
+    {
+      "word": "SKATE",
+      "type": 0
+    },
+    {
+      "word": "USERS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "AYE",
+      "type": 0
+    },
+    {
+      "word": "AYS",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "LAY",
+      "type": 0
+    },
+    {
+      "word": "LEY",
+      "type": 0
+    },
+    {
+      "word": "RAS",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SKA",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "ALES",
+      "type": 0
+    },
+    {
+      "word": "ARAK",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "ATES",
+      "type": 0
+    },
+    {
+      "word": "AYES",
+      "type": 0
+    },
+    {
+      "word": "ERAS",
+      "type": 0
+    },
+    {
+      "word": "LAYS",
+      "type": 0
+    },
+    {
+      "word": "LEYS",
+      "type": 0
+    },
+    {
+      "word": "RASE",
+      "type": 0
+    },
+    {
+      "word": "RUSE",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SERS",
+      "type": 0
+    },
+    {
+      "word": "SETA",
+      "type": 0
+    },
+    {
+      "word": "SKAT",
+      "type": 0
+    },
+    {
+      "word": "TARE",
+      "type": 0
+    },
+    {
+      "word": "TARS",
+      "type": 0
+    },
+    {
+      "word": "ARAKS",
+      "type": 0
+    },
+    {
+      "word": "ARSIS",
+      "type": 0
+    },
+    {
+      "word": "ERASE",
+      "type": 0
+    },
+    {
+      "word": "RARES",
+      "type": 0
+    },
+    {
+      "word": "RASER",
+      "type": 0
+    },
+    {
+      "word": "RELAY",
+      "type": 0
+    },
+    {
+      "word": "TARES",
+      "type": 0
+    },
+    {
+      "word": "TARSI",
+      "type": 0
+    },
+    {
+      "word": "ERASER",
+      "type": 0
+    },
+    {
+      "word": "LAYERS",
+      "type": 0
+    },
+    {
+      "word": "RASERS",
+      "type": 0
+    },
+    {
+      "word": "RASURE",
+      "type": 0
+    },
+    {
+      "word": "RELAYS",
+      "type": 0
+    },
+    {
+      "word": "SKATER",
+      "type": 0
+    },
+    {
+      "word": "SKATES",
+      "type": 0
+    },
+    {
+      "word": "ERASERS",
+      "type": 0
+    },
+    {
+      "word": "ERASURE",
+      "type": 0
+    },
+    {
+      "word": "RASURES",
+      "type": 0
+    },
+    {
+      "word": "SKATERS",
+      "type": 0
+    },
+    {
+      "word": "ERASURES",
+      "type": 0
+    }
+  ],
+  "letters": "TESUR,ARASE,KSREL,SISYA",
+  "obstacles": []
 }

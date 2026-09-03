@@ -1,97 +1,195 @@
-﻿{
-    "id":  1275,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAZO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LOZA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GALÓN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LATÓN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TALÓN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PANTALÓN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ALÓN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANTA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AZO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GALO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GOLA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TALO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NTÓN,AALA,PGOZ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1275,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "HBO",
+      "type": 0
+    },
+    {
+      "word": "IAN",
+      "type": 0
+    },
+    {
+      "word": "KIM",
+      "type": 0
+    },
+    {
+      "word": "MIL",
+      "type": 0
+    },
+    {
+      "word": "MIO",
+      "type": 0
+    },
+    {
+      "word": "LOOK",
+      "type": 0
+    },
+    {
+      "word": "MOON",
+      "type": 0
+    },
+    {
+      "word": "PIANO",
+      "type": 0
+    },
+    {
+      "word": "LIMPIA",
+      "type": 0
+    },
+    {
+      "word": "LIMPIO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "BOK",
+      "type": 0
+    },
+    {
+      "word": "BOM",
+      "type": 0
+    },
+    {
+      "word": "KOO",
+      "type": 0
+    },
+    {
+      "word": "LIM",
+      "type": 0
+    },
+    {
+      "word": "LIO",
+      "type": 0
+    },
+    {
+      "word": "LON",
+      "type": 0
+    },
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "MOB",
+      "type": 0
+    },
+    {
+      "word": "MOI",
+      "type": 0
+    },
+    {
+      "word": "MOM",
+      "type": 0
+    },
+    {
+      "word": "MOO",
+      "type": 0
+    },
+    {
+      "word": "NAI",
+      "type": 0
+    },
+    {
+      "word": "NOI",
+      "type": 0
+    },
+    {
+      "word": "NOO",
+      "type": 0
+    },
+    {
+      "word": "OIL",
+      "type": 0
+    },
+    {
+      "word": "OLI",
+      "type": 0
+    },
+    {
+      "word": "OMI",
+      "type": 0
+    },
+    {
+      "word": "OMO",
+      "type": 0
+    },
+    {
+      "word": "PIA",
+      "type": 0
+    },
+    {
+      "word": "PIO",
+      "type": 0
+    },
+    {
+      "word": "BOON",
+      "type": 0
+    },
+    {
+      "word": "LONA",
+      "type": 0
+    },
+    {
+      "word": "MIKO",
+      "type": 0
+    },
+    {
+      "word": "MILO",
+      "type": 0
+    },
+    {
+      "word": "MIMO",
+      "type": 0
+    },
+    {
+      "word": "MOMO",
+      "type": 0
+    },
+    {
+      "word": "OLMO",
+      "type": 0
+    },
+    {
+      "word": "OONA",
+      "type": 0
+    },
+    {
+      "word": "ILONA",
+      "type": 0
+    },
+    {
+      "word": "LIMPIAN",
+      "type": 0
+    },
+    {
+      "word": "OLIMPIA",
+      "type": 0
+    }
+  ],
+  "letters": "MIOM,PLMI,IOOK,ANBH",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

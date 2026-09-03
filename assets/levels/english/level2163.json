@@ -1,101 +1,199 @@
-﻿{
-    "id":  2163,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "HOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HOPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PORT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CRIMP",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SHORE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SHORT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TROPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IMPORT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SHRIMP",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "IMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PERT",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PERTH",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PORTE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "REPO",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SHRI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ETRE,SHOP,CRIM",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2163,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "DELL",
+      "type": 0
+    },
+    {
+      "word": "FREE",
+      "type": 0
+    },
+    {
+      "word": "PULL",
+      "type": 0
+    },
+    {
+      "word": "REAR",
+      "type": 0
+    },
+    {
+      "word": "ZERO",
+      "type": 0
+    },
+    {
+      "word": "FREEZE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABO",
+      "type": 0
+    },
+    {
+      "word": "BEE",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ELL",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "OBE",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "PUL",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "ZEE",
+      "type": 0
+    },
+    {
+      "word": "BARE",
+      "type": 0
+    },
+    {
+      "word": "BEER",
+      "type": 0
+    },
+    {
+      "word": "BORE",
+      "type": 0
+    },
+    {
+      "word": "DEER",
+      "type": 0
+    },
+    {
+      "word": "DERE",
+      "type": 0
+    },
+    {
+      "word": "EARL",
+      "type": 0
+    },
+    {
+      "word": "LEER",
+      "type": 0
+    },
+    {
+      "word": "PLED",
+      "type": 0
+    },
+    {
+      "word": "REED",
+      "type": 0
+    },
+    {
+      "word": "REEL",
+      "type": 0
+    },
+    {
+      "word": "ROBE",
+      "type": 0
+    },
+    {
+      "word": "BARRE",
+      "type": 0
+    },
+    {
+      "word": "FREER",
+      "type": 0
+    },
+    {
+      "word": "FRERE",
+      "type": 0
+    },
+    {
+      "word": "PULLED",
+      "type": 0
+    },
+    {
+      "word": "PULLER",
+      "type": 0
+    },
+    {
+      "word": "REBORE",
+      "type": 0
+    },
+    {
+      "word": "UPREAR",
+      "type": 0
+    },
+    {
+      "word": "FREEZER",
+      "type": 0
+    }
+  ],
+  "letters": "ROBAE,EZERR,ERELP,RFDLU",
+  "obstacles": []
 }

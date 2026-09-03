@@ -1,97 +1,219 @@
-﻿{
-    "id":  1231,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ESO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OSA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PASO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAXO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SESO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DESCANSO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANSA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ASNA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "CANSO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DOSES",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ESA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESCA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ESCARPA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SES",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "RPAX,ANSO,CSED",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1231,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "MIS",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "ABRE",
+      "type": 0
+    },
+    {
+      "word": "ARTE",
+      "type": 0
+    },
+    {
+      "word": "ERES",
+      "type": 0
+    },
+    {
+      "word": "ERIC",
+      "type": 0
+    },
+    {
+      "word": "TREN",
+      "type": 0
+    },
+    {
+      "word": "NEGAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "CRE",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "GAB",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "ISE",
+      "type": 0
+    },
+    {
+      "word": "ISI",
+      "type": 0
+    },
+    {
+      "word": "ITE",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RIC",
+      "type": 0
+    },
+    {
+      "word": "SIM",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SIT",
+      "type": 0
+    },
+    {
+      "word": "TER",
+      "type": 0
+    },
+    {
+      "word": "TIC",
+      "type": 0
+    },
+    {
+      "word": "TRA",
+      "type": 0
+    },
+    {
+      "word": "TRE",
+      "type": 0
+    },
+    {
+      "word": "BART",
+      "type": 0
+    },
+    {
+      "word": "BRET",
+      "type": 0
+    },
+    {
+      "word": "CRAB",
+      "type": 0
+    },
+    {
+      "word": "GERT",
+      "type": 0
+    },
+    {
+      "word": "NCIS",
+      "type": 0
+    },
+    {
+      "word": "RAGE",
+      "type": 0
+    },
+    {
+      "word": "RISE",
+      "type": 0
+    },
+    {
+      "word": "SERE",
+      "type": 0
+    },
+    {
+      "word": "SIRE",
+      "type": 0
+    },
+    {
+      "word": "TERE",
+      "type": 0
+    },
+    {
+      "word": "TERI",
+      "type": 0
+    },
+    {
+      "word": "TIRE",
+      "type": 0
+    },
+    {
+      "word": "TIRES",
+      "type": 0
+    },
+    {
+      "word": "CRAGEN",
+      "type": 0
+    },
+    {
+      "word": "RETIRE",
+      "type": 0
+    },
+    {
+      "word": "NEGARTE",
+      "type": 0
+    },
+    {
+      "word": "RETIRES",
+      "type": 0
+    }
+  ],
+  "letters": "GENM,ARCI,BTIS,RERE",
+  "obstacles": []
 }

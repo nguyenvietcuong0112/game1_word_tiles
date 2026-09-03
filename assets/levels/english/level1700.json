@@ -1,73 +1,175 @@
-﻿{
-    "id":  1700,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FAINT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOUND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOUNTAIN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AINT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "FAIN",
-                            "type":  1
-                        },
-                        {
-                            "word":  "RUNT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "UNTO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "INNE,ATND,FOUR",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1700,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "FAR",
+      "type": 0
+    },
+    {
+      "word": "ARTS",
+      "type": 0
+    },
+    {
+      "word": "BOSS",
+      "type": 0
+    },
+    {
+      "word": "CART",
+      "type": 0
+    },
+    {
+      "word": "TRACK",
+      "type": 0
+    },
+    {
+      "word": "TRACKED",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AFT",
+      "type": 0
+    },
+    {
+      "word": "BOS",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "EBB",
+      "type": 0
+    },
+    {
+      "word": "FAS",
+      "type": 0
+    },
+    {
+      "word": "KEA",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SOB",
+      "type": 0
+    },
+    {
+      "word": "AFAR",
+      "type": 0
+    },
+    {
+      "word": "BEDS",
+      "type": 0
+    },
+    {
+      "word": "DEAF",
+      "type": 0
+    },
+    {
+      "word": "DEBS",
+      "type": 0
+    },
+    {
+      "word": "EBBS",
+      "type": 0
+    },
+    {
+      "word": "FART",
+      "type": 0
+    },
+    {
+      "word": "KEAS",
+      "type": 0
+    },
+    {
+      "word": "RACK",
+      "type": 0
+    },
+    {
+      "word": "RAFT",
+      "type": 0
+    },
+    {
+      "word": "SACK",
+      "type": 0
+    },
+    {
+      "word": "SOBS",
+      "type": 0
+    },
+    {
+      "word": "CARTS",
+      "type": 0
+    },
+    {
+      "word": "FARTS",
+      "type": 0
+    },
+    {
+      "word": "RAFTS",
+      "type": 0
+    },
+    {
+      "word": "RACKED",
+      "type": 0
+    },
+    {
+      "word": "SACKED",
+      "type": 0
+    },
+    {
+      "word": "SOBBED",
+      "type": 0
+    },
+    {
+      "word": "OSTRACA",
+      "type": 0
+    }
+  ],
+  "letters": "OBBE,SSSD,TFAE,RACK",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

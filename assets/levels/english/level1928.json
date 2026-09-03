@@ -1,111 +1,223 @@
-﻿{
-    "id":  1928,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "APT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AREA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MARE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAMP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REAP",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TAME",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TYPO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EMPTY",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAMER",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TAMPA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TARE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TOP",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "APTO,EMYP,RATA",
-    "obstacles":  [
-                      {
-                          "required_words":  7,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1928,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "HAD",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "FACT",
+      "type": 0
+    },
+    {
+      "word": "HAND",
+      "type": 0
+    },
+    {
+      "word": "READ",
+      "type": 0
+    },
+    {
+      "word": "REAR",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "RUTH",
+      "type": 0
+    },
+    {
+      "word": "GUEST",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AHA",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARF",
+      "type": 0
+    },
+    {
+      "word": "DAH",
+      "type": 0
+    },
+    {
+      "word": "DAP",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "ERG",
+      "type": 0
+    },
+    {
+      "word": "FAN",
+      "type": 0
+    },
+    {
+      "word": "GUT",
+      "type": 0
+    },
+    {
+      "word": "HAP",
+      "type": 0
+    },
+    {
+      "word": "NAH",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "PAH",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "RAD",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "RUG",
+      "type": 0
+    },
+    {
+      "word": "RUT",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TUG",
+      "type": 0
+    },
+    {
+      "word": "UGH",
+      "type": 0
+    },
+    {
+      "word": "APSE",
+      "type": 0
+    },
+    {
+      "word": "DAPS",
+      "type": 0
+    },
+    {
+      "word": "FRAE",
+      "type": 0
+    },
+    {
+      "word": "FRAP",
+      "type": 0
+    },
+    {
+      "word": "FRUG",
+      "type": 0
+    },
+    {
+      "word": "HAPS",
+      "type": 0
+    },
+    {
+      "word": "RAPS",
+      "type": 0
+    },
+    {
+      "word": "REAP",
+      "type": 0
+    },
+    {
+      "word": "RUER",
+      "type": 0
+    },
+    {
+      "word": "RUES",
+      "type": 0
+    },
+    {
+      "word": "SEAR",
+      "type": 0
+    },
+    {
+      "word": "SPAE",
+      "type": 0
+    },
+    {
+      "word": "SPAR",
+      "type": 0
+    },
+    {
+      "word": "TURF",
+      "type": 0
+    },
+    {
+      "word": "CRAPS",
+      "type": 0
+    },
+    {
+      "word": "FRAPS",
+      "type": 0
+    },
+    {
+      "word": "REAPS",
+      "type": 0
+    },
+    {
+      "word": "TREAD",
+      "type": 0
+    }
+  ],
+  "letters": "HACTH,AFRUG,NDAER,HAPST",
+  "obstacles": []
 }

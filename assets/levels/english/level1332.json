@@ -1,111 +1,187 @@
-﻿{
-    "id":  1332,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "PIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "REEK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "REST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TREE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TRIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EERIE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "STRIP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DESSERT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ERIE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "PIED",
-                            "type":  2
-                        },
-                        {
-                            "word":  "RESTED",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SERIE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SETS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TRES",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TRESS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "TRIED",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "DEIP,ETRK,SSEE",
-    "obstacles":  [
-                      {
-                          "required_words":  6,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1332,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TIT",
+      "type": 0
+    },
+    {
+      "word": "CARS",
+      "type": 0
+    },
+    {
+      "word": "RAISE",
+      "type": 0
+    },
+    {
+      "word": "SCOTS",
+      "type": 0
+    },
+    {
+      "word": "SCOTIA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIS",
+      "type": 0
+    },
+    {
+      "word": "AIT",
+      "type": 0
+    },
+    {
+      "word": "ARS",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "COT",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORS",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "ROT",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "AITS",
+      "type": 0
+    },
+    {
+      "word": "ARSE",
+      "type": 0
+    },
+    {
+      "word": "COTS",
+      "type": 0
+    },
+    {
+      "word": "FORA",
+      "type": 0
+    },
+    {
+      "word": "ROCS",
+      "type": 0
+    },
+    {
+      "word": "ROTI",
+      "type": 0
+    },
+    {
+      "word": "ROTS",
+      "type": 0
+    },
+    {
+      "word": "SCAR",
+      "type": 0
+    },
+    {
+      "word": "SCOT",
+      "type": 0
+    },
+    {
+      "word": "TEES",
+      "type": 0
+    },
+    {
+      "word": "TORA",
+      "type": 0
+    },
+    {
+      "word": "TORS",
+      "type": 0
+    },
+    {
+      "word": "ARSES",
+      "type": 0
+    },
+    {
+      "word": "CARSE",
+      "type": 0
+    },
+    {
+      "word": "CORSE",
+      "type": 0
+    },
+    {
+      "word": "SCARS",
+      "type": 0
+    },
+    {
+      "word": "TORSE",
+      "type": 0
+    },
+    {
+      "word": "TORSI",
+      "type": 0
+    },
+    {
+      "word": "CARSES",
+      "type": 0
+    },
+    {
+      "word": "CORSES",
+      "type": 0
+    },
+    {
+      "word": "RAISES",
+      "type": 0
+    },
+    {
+      "word": "TORSES",
+      "type": 0
+    },
+    {
+      "word": "SCOTIAS",
+      "type": 0
+    }
+  ],
+  "letters": "EESI,TSRA,ITOC,ASFS",
+  "obstacles": []
 }

@@ -1,110 +1,299 @@
-﻿{
-    "id":  1896,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JUG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COMB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GROW",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WORM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "COMBO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JUMBO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROBOT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BOT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MUG",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ROBO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "GROW,UMBO,JOCT",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1896,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BRO",
+      "type": 0
+    },
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "DOT",
+      "type": 0
+    },
+    {
+      "word": "INS",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "TOO",
+      "type": 0
+    },
+    {
+      "word": "DIES",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    },
+    {
+      "word": "SOON",
+      "type": 0
+    },
+    {
+      "word": "TOOL",
+      "type": 0
+    },
+    {
+      "word": "DETECT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DIN",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "DON",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "LOO",
+      "type": 0
+    },
+    {
+      "word": "NOD",
+      "type": 0
+    },
+    {
+      "word": "NOO",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "ONS",
+      "type": 0
+    },
+    {
+      "word": "OOT",
+      "type": 0
+    },
+    {
+      "word": "ORB",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "ROT",
+      "type": 0
+    },
+    {
+      "word": "SEI",
+      "type": 0
+    },
+    {
+      "word": "SOD",
+      "type": 0
+    },
+    {
+      "word": "SOT",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TOD",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "BROS",
+      "type": 0
+    },
+    {
+      "word": "CETE",
+      "type": 0
+    },
+    {
+      "word": "DINS",
+      "type": 0
+    },
+    {
+      "word": "DOLE",
+      "type": 0
+    },
+    {
+      "word": "DOLT",
+      "type": 0
+    },
+    {
+      "word": "DONS",
+      "type": 0
+    },
+    {
+      "word": "DOSE",
+      "type": 0
+    },
+    {
+      "word": "EIDE",
+      "type": 0
+    },
+    {
+      "word": "IDOL",
+      "type": 0
+    },
+    {
+      "word": "LODE",
+      "type": 0
+    },
+    {
+      "word": "LOOS",
+      "type": 0
+    },
+    {
+      "word": "LOOT",
+      "type": 0
+    },
+    {
+      "word": "NIDE",
+      "type": 0
+    },
+    {
+      "word": "NODE",
+      "type": 0
+    },
+    {
+      "word": "NODI",
+      "type": 0
+    },
+    {
+      "word": "ODES",
+      "type": 0
+    },
+    {
+      "word": "ORBS",
+      "type": 0
+    },
+    {
+      "word": "ROTE",
+      "type": 0
+    },
+    {
+      "word": "SECT",
+      "type": 0
+    },
+    {
+      "word": "SORB",
+      "type": 0
+    },
+    {
+      "word": "TOON",
+      "type": 0
+    },
+    {
+      "word": "BROSE",
+      "type": 0
+    },
+    {
+      "word": "CETES",
+      "type": 0
+    },
+    {
+      "word": "LOOSE",
+      "type": 0
+    },
+    {
+      "word": "NOOSE",
+      "type": 0
+    },
+    {
+      "word": "ROSED",
+      "type": 0
+    },
+    {
+      "word": "ROSET",
+      "type": 0
+    },
+    {
+      "word": "ROTES",
+      "type": 0
+    },
+    {
+      "word": "SECTS",
+      "type": 0
+    },
+    {
+      "word": "SNIDE",
+      "type": 0
+    },
+    {
+      "word": "SNOOD",
+      "type": 0
+    },
+    {
+      "word": "SNOOT",
+      "type": 0
+    },
+    {
+      "word": "TOONS",
+      "type": 0
+    },
+    {
+      "word": "DESORB",
+      "type": 0
+    },
+    {
+      "word": "LOOSED",
+      "type": 0
+    },
+    {
+      "word": "NOOSED",
+      "type": 0
+    },
+    {
+      "word": "SEIDEL",
+      "type": 0
+    },
+    {
+      "word": "TOOLED",
+      "type": 0
+    },
+    {
+      "word": "DETECTS",
+      "type": 0
+    }
+  ],
+  "letters": "RBTLE,OSOOD,TEDNI,ECTSE",
+  "obstacles": []
 }

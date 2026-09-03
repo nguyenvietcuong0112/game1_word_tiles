@@ -1,93 +1,299 @@
-﻿{
-    "id":  1230,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELLA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ELLO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CALLE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "SELLO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DESCALZO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACLE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "CALZO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESCA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESCALO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OCLE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SEL",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SCAO,ELLZ,DCOB",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1230,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BUE",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "IRA",
+      "type": 0
+    },
+    {
+      "word": "IRÉ",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "GIRA",
+      "type": 0
+    },
+    {
+      "word": "RATO",
+      "type": 0
+    },
+    {
+      "word": "CUERO",
+      "type": 0
+    },
+    {
+      "word": "LIGERO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ARO",
+      "type": 0
+    },
+    {
+      "word": "ATO",
+      "type": 0
+    },
+    {
+      "word": "ERI",
+      "type": 0
+    },
+    {
+      "word": "ERO",
+      "type": 0
+    },
+    {
+      "word": "GIL",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "ORA",
+      "type": 0
+    },
+    {
+      "word": "ORI",
+      "type": 0
+    },
+    {
+      "word": "OTA",
+      "type": 0
+    },
+    {
+      "word": "PAT",
+      "type": 0
+    },
+    {
+      "word": "PIG",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RIP",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "TAP",
+      "type": 0
+    },
+    {
+      "word": "TAR",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TOS",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "AROS",
+      "type": 0
+    },
+    {
+      "word": "EROS",
+      "type": 0
+    },
+    {
+      "word": "GIRE",
+      "type": 0
+    },
+    {
+      "word": "GIRO",
+      "type": 0
+    },
+    {
+      "word": "GIRÉ",
+      "type": 0
+    },
+    {
+      "word": "IROS",
+      "type": 0
+    },
+    {
+      "word": "PARE",
+      "type": 0
+    },
+    {
+      "word": "PARI",
+      "type": 0
+    },
+    {
+      "word": "PARO",
+      "type": 0
+    },
+    {
+      "word": "PATO",
+      "type": 0
+    },
+    {
+      "word": "PIRA",
+      "type": 0
+    },
+    {
+      "word": "PIRO",
+      "type": 0
+    },
+    {
+      "word": "RIGE",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    },
+    {
+      "word": "ROTA",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SORA",
+      "type": 0
+    },
+    {
+      "word": "SOTA",
+      "type": 0
+    },
+    {
+      "word": "TARO",
+      "type": 0
+    },
+    {
+      "word": "TORA",
+      "type": 0
+    },
+    {
+      "word": "TORI",
+      "type": 0
+    },
+    {
+      "word": "TOSE",
+      "type": 0
+    },
+    {
+      "word": "GIRES",
+      "type": 0
+    },
+    {
+      "word": "GIROS",
+      "type": 0
+    },
+    {
+      "word": "PARES",
+      "type": 0
+    },
+    {
+      "word": "PARIR",
+      "type": 0
+    },
+    {
+      "word": "PATOS",
+      "type": 0
+    },
+    {
+      "word": "RATOS",
+      "type": 0
+    },
+    {
+      "word": "TOSER",
+      "type": 0
+    },
+    {
+      "word": "CUEROS",
+      "type": 0
+    },
+    {
+      "word": "LIGERA",
+      "type": 0
+    },
+    {
+      "word": "LIGEROS",
+      "type": 0
+    }
+  ],
+  "letters": "ÉPAT,RIRO,IGES,LBUC",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

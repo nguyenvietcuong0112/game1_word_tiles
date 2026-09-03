@@ -1,107 +1,207 @@
-﻿{
-    "id":  2030,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ACI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇAKI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇALI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ILIK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ACILI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AKICI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALICI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇAKIL",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACILIK",
-                            "type":  2
-                        },
-                        {
-                            "word":  "AKI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAÇA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇAK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇAKICI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇAKILI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇALILI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇALILIK",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ILICA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ILICAK",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "KIL,ACI,ÇAL",
-    "obstacles":  [
-                      {
-                          "required_words":  7,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2030,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DAN",
+      "type": 0
+    },
+    {
+      "word": "DİK",
+      "type": 0
+    },
+    {
+      "word": "ELİ",
+      "type": 0
+    },
+    {
+      "word": "EVE",
+      "type": 0
+    },
+    {
+      "word": "SEÇ",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "İLE",
+      "type": 0
+    },
+    {
+      "word": "İSE",
+      "type": 0
+    },
+    {
+      "word": "ADEM",
+      "type": 0
+    },
+    {
+      "word": "ETME",
+      "type": 0
+    },
+    {
+      "word": "İKNA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "DAE",
+      "type": 0
+    },
+    {
+      "word": "DEM",
+      "type": 0
+    },
+    {
+      "word": "DİL",
+      "type": 0
+    },
+    {
+      "word": "EDA",
+      "type": 0
+    },
+    {
+      "word": "KİD",
+      "type": 0
+    },
+    {
+      "word": "KİL",
+      "type": 0
+    },
+    {
+      "word": "LES",
+      "type": 0
+    },
+    {
+      "word": "LİK",
+      "type": 0
+    },
+    {
+      "word": "LİS",
+      "type": 0
+    },
+    {
+      "word": "MET",
+      "type": 0
+    },
+    {
+      "word": "NEE",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SİD",
+      "type": 0
+    },
+    {
+      "word": "SİK",
+      "type": 0
+    },
+    {
+      "word": "SİL",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "VEE",
+      "type": 0
+    },
+    {
+      "word": "İDİ",
+      "type": 0
+    },
+    {
+      "word": "İSİ",
+      "type": 0
+    },
+    {
+      "word": "ADET",
+      "type": 0
+    },
+    {
+      "word": "ANKİ",
+      "type": 0
+    },
+    {
+      "word": "DANE",
+      "type": 0
+    },
+    {
+      "word": "DANK",
+      "type": 0
+    },
+    {
+      "word": "DİLE",
+      "type": 0
+    },
+    {
+      "word": "ETLE",
+      "type": 0
+    },
+    {
+      "word": "ETLİ",
+      "type": 0
+    },
+    {
+      "word": "KİSİ",
+      "type": 0
+    },
+    {
+      "word": "LİSE",
+      "type": 0
+    },
+    {
+      "word": "MEAD",
+      "type": 0
+    },
+    {
+      "word": "MEAN",
+      "type": 0
+    },
+    {
+      "word": "EVEET",
+      "type": 0
+    },
+    {
+      "word": "MEADE",
+      "type": 0
+    },
+    {
+      "word": "SİDİK",
+      "type": 0
+    },
+    {
+      "word": "TENLİ",
+      "type": 0
+    },
+    {
+      "word": "ÇELİK",
+      "type": 0
+    }
+  ],
+  "letters": "İDMET,SİKDM,ELNAE,ÇTEEV",
+  "obstacles": []
 }

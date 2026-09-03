@@ -1,91 +1,203 @@
-﻿{
-    "id":  2070,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AÇI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AÇIK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇIPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAPI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAÇIK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MATKAP",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "KAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAPMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAKT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇAK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇAPMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÇIKMA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ÇIK,APM,KTA",
-    "obstacles":  [
-                      {
-                          "required_words":  5,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  1
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2070,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "HAS",
+      "type": 0
+    },
+    {
+      "word": "HIZ",
+      "type": 0
+    },
+    {
+      "word": "KİM",
+      "type": 0
+    },
+    {
+      "word": "LOS",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "MAÇ",
+      "type": 0
+    },
+    {
+      "word": "SAR",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "AMMA",
+      "type": 0
+    },
+    {
+      "word": "SOLA",
+      "type": 0
+    },
+    {
+      "word": "HAZIR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ASH",
+      "type": 0
+    },
+    {
+      "word": "ASK",
+      "type": 0
+    },
+    {
+      "word": "AZI",
+      "type": 0
+    },
+    {
+      "word": "HAA",
+      "type": 0
+    },
+    {
+      "word": "HAZ",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "SAO",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "SKİ",
+      "type": 0
+    },
+    {
+      "word": "ÇAL",
+      "type": 0
+    },
+    {
+      "word": "ÇAM",
+      "type": 0
+    },
+    {
+      "word": "ÇİK",
+      "type": 0
+    },
+    {
+      "word": "ÇİM",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "AHIR",
+      "type": 0
+    },
+    {
+      "word": "ARLO",
+      "type": 0
+    },
+    {
+      "word": "AÇİK",
+      "type": 0
+    },
+    {
+      "word": "HAAS",
+      "type": 0
+    },
+    {
+      "word": "HIZA",
+      "type": 0
+    },
+    {
+      "word": "MAÇO",
+      "type": 0
+    },
+    {
+      "word": "RIZA",
+      "type": 0
+    },
+    {
+      "word": "SAOL",
+      "type": 0
+    },
+    {
+      "word": "SHAO",
+      "type": 0
+    },
+    {
+      "word": "SHAZ",
+      "type": 0
+    },
+    {
+      "word": "İMAL",
+      "type": 0
+    },
+    {
+      "word": "AHIRA",
+      "type": 0
+    },
+    {
+      "word": "ARIZA",
+      "type": 0
+    },
+    {
+      "word": "MARLA",
+      "type": 0
+    },
+    {
+      "word": "MARLO",
+      "type": 0
+    },
+    {
+      "word": "SAHRA",
+      "type": 0
+    },
+    {
+      "word": "HAZIRLA",
+      "type": 0
+    }
+  ],
+  "letters": "KSAHR,İÇOSA,MALHA,MARIZ",
+  "obstacles": []
 }

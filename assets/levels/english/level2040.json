@@ -1,122 +1,211 @@
-﻿{
-    "id":  2040,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "APE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BEET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OBEY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PEER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CABIN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BEY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RET",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NOYT,IBEE,CAPR",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  8,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2040,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASS",
+      "type": 0
+    },
+    {
+      "word": "ITS",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MUD",
+      "type": 0
+    },
+    {
+      "word": "REM",
+      "type": 0
+    },
+    {
+      "word": "SAY",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "SPA",
+      "type": 0
+    },
+    {
+      "word": "LESS",
+      "type": 0
+    },
+    {
+      "word": "READ",
+      "type": 0
+    },
+    {
+      "word": "SAYS",
+      "type": 0
+    },
+    {
+      "word": "WRIT",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAS",
+      "type": 0
+    },
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "AYS",
+      "type": 0
+    },
+    {
+      "word": "DAP",
+      "type": 0
+    },
+    {
+      "word": "EMU",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "PAD",
+      "type": 0
+    },
+    {
+      "word": "PSI",
+      "type": 0
+    },
+    {
+      "word": "SAU",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SIT",
+      "type": 0
+    },
+    {
+      "word": "SYN",
+      "type": 0
+    },
+    {
+      "word": "TIS",
+      "type": 0
+    },
+    {
+      "word": "DAPS",
+      "type": 0
+    },
+    {
+      "word": "LEST",
+      "type": 0
+    },
+    {
+      "word": "MEAD",
+      "type": 0
+    },
+    {
+      "word": "NESS",
+      "type": 0
+    },
+    {
+      "word": "NEST",
+      "type": 0
+    },
+    {
+      "word": "REAP",
+      "type": 0
+    },
+    {
+      "word": "SENE",
+      "type": 0
+    },
+    {
+      "word": "SITS",
+      "type": 0
+    },
+    {
+      "word": "SPAE",
+      "type": 0
+    },
+    {
+      "word": "STIR",
+      "type": 0
+    },
+    {
+      "word": "SYNE",
+      "type": 0
+    },
+    {
+      "word": "YAUD",
+      "type": 0
+    },
+    {
+      "word": "ENEMY",
+      "type": 0
+    },
+    {
+      "word": "ESSAY",
+      "type": 0
+    },
+    {
+      "word": "PADRE",
+      "type": 0
+    },
+    {
+      "word": "PRISS",
+      "type": 0
+    },
+    {
+      "word": "REAPS",
+      "type": 0
+    },
+    {
+      "word": "SAYST",
+      "type": 0
+    },
+    {
+      "word": "SPRIT",
+      "type": 0
+    },
+    {
+      "word": "STIRP",
+      "type": 0
+    },
+    {
+      "word": "WRITS",
+      "type": 0
+    },
+    {
+      "word": "PRISSY",
+      "type": 0
+    },
+    {
+      "word": "SPRITS",
+      "type": 0
+    },
+    {
+      "word": "STIRPS",
+      "type": 0
+    }
+  ],
+  "letters": "WRITL,MPSSE,EAAYN,RDUME",
+  "obstacles": []
 }

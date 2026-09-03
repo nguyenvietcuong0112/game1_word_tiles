@@ -1,97 +1,231 @@
-﻿{
-    "id":  2426,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BACK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COPE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DEEP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOCK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "TEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YARD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BACKYARD",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DRAY",
-                            "type":  1
-                        },
-                        {
-                            "word":  "PEE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEED",
-                            "type":  1
-                        },
-                        {
-                            "word":  "PESO",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "EARDE,TYKPE,BACOS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2426,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ART",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "WAR",
+      "type": 0
+    },
+    {
+      "word": "CART",
+      "type": 0
+    },
+    {
+      "word": "CREW",
+      "type": 0
+    },
+    {
+      "word": "OVAL",
+      "type": 0
+    },
+    {
+      "word": "PARK",
+      "type": 0
+    },
+    {
+      "word": "PART",
+      "type": 0
+    },
+    {
+      "word": "ALERT",
+      "type": 0
+    },
+    {
+      "word": "TRACK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAL",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "APT",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ARK",
+      "type": 0
+    },
+    {
+      "word": "AVO",
+      "type": 0
+    },
+    {
+      "word": "AWE",
+      "type": 0
+    },
+    {
+      "word": "EAR",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "LAV",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "OVA",
+      "type": 0
+    },
+    {
+      "word": "PAR",
+      "type": 0
+    },
+    {
+      "word": "PAW",
+      "type": 0
+    },
+    {
+      "word": "RAP",
+      "type": 0
+    },
+    {
+      "word": "RAW",
+      "type": 0
+    },
+    {
+      "word": "WAP",
+      "type": 0
+    },
+    {
+      "word": "CRAW",
+      "type": 0
+    },
+    {
+      "word": "LEAP",
+      "type": 0
+    },
+    {
+      "word": "LEAR",
+      "type": 0
+    },
+    {
+      "word": "OLEA",
+      "type": 0
+    },
+    {
+      "word": "PARE",
+      "type": 0
+    },
+    {
+      "word": "PARR",
+      "type": 0
+    },
+    {
+      "word": "RACK",
+      "type": 0
+    },
+    {
+      "word": "RAPT",
+      "type": 0
+    },
+    {
+      "word": "REAP",
+      "type": 0
+    },
+    {
+      "word": "REAR",
+      "type": 0
+    },
+    {
+      "word": "TRAP",
+      "type": 0
+    },
+    {
+      "word": "VALE",
+      "type": 0
+    },
+    {
+      "word": "VOLE",
+      "type": 0
+    },
+    {
+      "word": "WARE",
+      "type": 0
+    },
+    {
+      "word": "APART",
+      "type": 0
+    },
+    {
+      "word": "CRAAL",
+      "type": 0
+    },
+    {
+      "word": "CRACK",
+      "type": 0
+    },
+    {
+      "word": "KRAAL",
+      "type": 0
+    },
+    {
+      "word": "LEAPT",
+      "type": 0
+    },
+    {
+      "word": "PAWER",
+      "type": 0
+    },
+    {
+      "word": "PARREL",
+      "type": 0
+    }
+  ],
+  "letters": "OLERT,VAARK,WAPTC,ERCRA",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

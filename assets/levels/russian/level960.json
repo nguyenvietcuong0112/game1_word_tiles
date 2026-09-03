@@ -1,73 +1,119 @@
-﻿{
-    "id":  960,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ВОЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОЛ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОМ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЛОМ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВВОД",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВОЛК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КЛОК",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ВОД",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ВОЛОК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ДОВ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ДОЛ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КОЛО",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛОВ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ЛОД",
-                            "type":  0
-                        },
-                        {
-                            "word":  "МОЛ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "КОМ,ВЛК,ВОД",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 960,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ДЕЛ",
+      "type": 0
+    },
+    {
+      "word": "ЗАЛ",
+      "type": 0
+    },
+    {
+      "word": "РТА",
+      "type": 0
+    },
+    {
+      "word": "АЛЛО",
+      "type": 0
+    },
+    {
+      "word": "ДЕЛА",
+      "type": 0
+    },
+    {
+      "word": "КЛЕР",
+      "type": 0
+    },
+    {
+      "word": "ЛЕДИ",
+      "type": 0
+    },
+    {
+      "word": "СИДЕЛ",
+      "type": 0
+    },
+    {
+      "word": "ЗАПИСЬ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "АЛЕ",
+      "type": 0
+    },
+    {
+      "word": "ДЕР",
+      "type": 0
+    },
+    {
+      "word": "ДИП",
+      "type": 0
+    },
+    {
+      "word": "ЕДЬ",
+      "type": 0
+    },
+    {
+      "word": "ЕЛА",
+      "type": 0
+    },
+    {
+      "word": "ЕРТ",
+      "type": 0
+    },
+    {
+      "word": "ИДЕ",
+      "type": 0
+    },
+    {
+      "word": "ЛЕА",
+      "type": 0
+    },
+    {
+      "word": "ЛЕД",
+      "type": 0
+    },
+    {
+      "word": "РЕД",
+      "type": 0
+    },
+    {
+      "word": "СИД",
+      "type": 0
+    },
+    {
+      "word": "ДЕЛЛ",
+      "type": 0
+    },
+    {
+      "word": "ЗАЛЕ",
+      "type": 0
+    },
+    {
+      "word": "РЕДИ",
+      "type": 0
+    },
+    {
+      "word": "СИДЕЛА",
+      "type": 0
+    }
+  ],
+  "letters": "СИПА,ЬДКЗ,АЕЛА,ТРЛО",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

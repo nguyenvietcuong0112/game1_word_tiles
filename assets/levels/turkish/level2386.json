@@ -1,121 +1,267 @@
-﻿{
-    "id":  2386,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ÇİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇOK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇİLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YALI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAZI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AYLAK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AZILI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÇELİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAZIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAZIM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAZILI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAZILIM",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKİL",
-                            "type":  1
-                        },
-                        {
-                            "word":  "ALLI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AYLA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AZI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İÇEL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KALYA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "KOÇ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YALIM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YALIZ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ZIMLE,ALIİÇ,YLAKO",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2386,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "GOL",
+      "type": 0
+    },
+    {
+      "word": "GİT",
+      "type": 0
+    },
+    {
+      "word": "HEM",
+      "type": 0
+    },
+    {
+      "word": "HİS",
+      "type": 0
+    },
+    {
+      "word": "KAN",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "SİK",
+      "type": 0
+    },
+    {
+      "word": "İSA",
+      "type": 0
+    },
+    {
+      "word": "KANI",
+      "type": 0
+    },
+    {
+      "word": "KARA",
+      "type": 0
+    },
+    {
+      "word": "KARIM",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AKİ",
+      "type": 0
+    },
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ASİ",
+      "type": 0
+    },
+    {
+      "word": "IMA",
+      "type": 0
+    },
+    {
+      "word": "IMI",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "KAS",
+      "type": 0
+    },
+    {
+      "word": "KEL",
+      "type": 0
+    },
+    {
+      "word": "KIR",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LOG",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MIN",
+      "type": 0
+    },
+    {
+      "word": "NAK",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "SAR",
+      "type": 0
+    },
+    {
+      "word": "İKE",
+      "type": 0
+    },
+    {
+      "word": "İİK",
+      "type": 0
+    },
+    {
+      "word": "AKAN",
+      "type": 0
+    },
+    {
+      "word": "AKAR",
+      "type": 0
+    },
+    {
+      "word": "AKIM",
+      "type": 0
+    },
+    {
+      "word": "ANIM",
+      "type": 0
+    },
+    {
+      "word": "IRAK",
+      "type": 0
+    },
+    {
+      "word": "KARI",
+      "type": 0
+    },
+    {
+      "word": "KAST",
+      "type": 0
+    },
+    {
+      "word": "KİSA",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "NAMI",
+      "type": 0
+    },
+    {
+      "word": "RAST",
+      "type": 0
+    },
+    {
+      "word": "SAKE",
+      "type": 0
+    },
+    {
+      "word": "SAKİ",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "SARI",
+      "type": 0
+    },
+    {
+      "word": "STİG",
+      "type": 0
+    },
+    {
+      "word": "AKIMI",
+      "type": 0
+    },
+    {
+      "word": "HELLO",
+      "type": 0
+    },
+    {
+      "word": "HİSTİ",
+      "type": 0
+    },
+    {
+      "word": "KANIM",
+      "type": 0
+    },
+    {
+      "word": "KASTİ",
+      "type": 0
+    },
+    {
+      "word": "KEMAN",
+      "type": 0
+    },
+    {
+      "word": "RAKAM",
+      "type": 0
+    },
+    {
+      "word": "KANIMI",
+      "type": 0
+    },
+    {
+      "word": "KARIMA",
+      "type": 0
+    },
+    {
+      "word": "KARIMI",
+      "type": 0
+    },
+    {
+      "word": "KEMANI",
+      "type": 0
+    },
+    {
+      "word": "MAKARA",
+      "type": 0
+    },
+    {
+      "word": "RAKAMI",
+      "type": 0
+    },
+    {
+      "word": "KARIMIN",
+      "type": 0
+    }
+  ],
+  "letters": "NILLO,AMEHG,KIKİİ,ARAST",
+  "obstacles": []
 }

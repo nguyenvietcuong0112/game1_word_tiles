@@ -1,73 +1,291 @@
-﻿{
-    "id":  950,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RUA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NETO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FÉRIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FÚRIA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PENTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POTENTE",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ENTE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LÉRIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TOPE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NTEIA,ETÚRU,POFÉL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 950,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AGE",
+      "type": 0
+    },
+    {
+      "word": "BOB",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "BOBA",
+      "type": 0
+    },
+    {
+      "word": "GAIL",
+      "type": 0
+    },
+    {
+      "word": "ANGEL",
+      "type": 0
+    },
+    {
+      "word": "NEGAR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AGO",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "ANG",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BAE",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BOO",
+      "type": 0
+    },
+    {
+      "word": "EGO",
+      "type": 0
+    },
+    {
+      "word": "GAI",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "GER",
+      "type": 0
+    },
+    {
+      "word": "GON",
+      "type": 0
+    },
+    {
+      "word": "GOO",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "ING",
+      "type": 0
+    },
+    {
+      "word": "LEA",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "LIA",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "NIA",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "NOG",
+      "type": 0
+    },
+    {
+      "word": "OBA",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "AANG",
+      "type": 0
+    },
+    {
+      "word": "ABLE",
+      "type": 0
+    },
+    {
+      "word": "ANGE",
+      "type": 0
+    },
+    {
+      "word": "ANIA",
+      "type": 0
+    },
+    {
+      "word": "ANIL",
+      "type": 0
+    },
+    {
+      "word": "BANG",
+      "type": 0
+    },
+    {
+      "word": "BOOG",
+      "type": 0
+    },
+    {
+      "word": "BOON",
+      "type": 0
+    },
+    {
+      "word": "EGON",
+      "type": 0
+    },
+    {
+      "word": "ELBA",
+      "type": 0
+    },
+    {
+      "word": "GARE",
+      "type": 0
+    },
+    {
+      "word": "GERA",
+      "type": 0
+    },
+    {
+      "word": "GONE",
+      "type": 0
+    },
+    {
+      "word": "IAGO",
+      "type": 0
+    },
+    {
+      "word": "INGE",
+      "type": 0
+    },
+    {
+      "word": "LEAN",
+      "type": 0
+    },
+    {
+      "word": "LINA",
+      "type": 0
+    },
+    {
+      "word": "LING",
+      "type": 0
+    },
+    {
+      "word": "NABO",
+      "type": 0
+    },
+    {
+      "word": "NEGA",
+      "type": 0
+    },
+    {
+      "word": "NEGO",
+      "type": 0
+    },
+    {
+      "word": "RAAB",
+      "type": 0
+    },
+    {
+      "word": "RAGE",
+      "type": 0
+    },
+    {
+      "word": "RAIN",
+      "type": 0
+    },
+    {
+      "word": "REGO",
+      "type": 0
+    },
+    {
+      "word": "RENO",
+      "type": 0
+    },
+    {
+      "word": "BOONE",
+      "type": 0
+    },
+    {
+      "word": "NABOO",
+      "type": 0
+    },
+    {
+      "word": "RAINA",
+      "type": 0
+    }
+  ],
+  "letters": "GELB,NABO,IAGO,LREN",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

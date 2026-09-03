@@ -1,134 +1,71 @@
-﻿{
-    "id":  1015,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ДАН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЕДА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "МАК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ОДА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БАНК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БЕДА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ВОДА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ЦЕНА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "БАНКА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ОЦЕНКА",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "АДОВ",
-                            "type":  1
-                        },
-                        {
-                            "word":  "АМБА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "АНК",
-                            "type":  0
-                        },
-                        {
-                            "word":  "БАД",
-                            "type":  0
-                        },
-                        {
-                            "word":  "БАДЕН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "БАН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ВЕБ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ВОД",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ДОВ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НАД",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НАДО",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ЦЕНК,ОДАА,ВЕБМ",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1015,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ЛЕС",
+      "type": 0
+    },
+    {
+      "word": "СЕЛ",
+      "type": 0
+    },
+    {
+      "word": "ТЕО",
+      "type": 0
+    },
+    {
+      "word": "ШЕЛ",
+      "type": 0
+    },
+    {
+      "word": "ЭЭЭ",
+      "type": 0
+    },
+    {
+      "word": "ЛОРУ",
+      "type": 0
+    },
+    {
+      "word": "ПЕТР",
+      "type": 0
+    },
+    {
+      "word": "ТРОЕ",
+      "type": 0
+    },
+    {
+      "word": "ФЛЕШ",
+      "type": 0
+    },
+    {
+      "word": "ТЕПЛО",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ЛОР",
+      "type": 0
+    },
+    {
+      "word": "ОРУ",
+      "type": 0
+    }
+  ],
+  "letters": "РУФЛ,ТРСЕ,ЕОЭШ,ПЛЭЭ",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,105 +1,91 @@
-﻿{
-    "id":  1190,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "IRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AZAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAZA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CENA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JUGO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RANA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RAZA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "VENA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAZAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CENAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAYÓN",
-                             "type":  2
-                         },
-                         {
-                             "word":  "CANARIO",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARIO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAZ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GRAN",
-                            "type":  2
-                        },
-                        {
-                            "word":  "GRANA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "GRAY",
-                            "type":  2
-                        },
-                        {
-                            "word":  "IRGO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "VÓYIO,ENARG,CAZJU",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1190,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AQU",
+      "type": 0
+    },
+    {
+      "word": "NOS",
+      "type": 0
+    },
+    {
+      "word": "OLA",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "OOH",
+      "type": 0
+    },
+    {
+      "word": "OSO",
+      "type": 0
+    },
+    {
+      "word": "SEA",
+      "type": 0
+    },
+    {
+      "word": "SON",
+      "type": 0
+    },
+    {
+      "word": "SOO",
+      "type": 0
+    },
+    {
+      "word": "AQUÌ",
+      "type": 0
+    },
+    {
+      "word": "HOLA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALO",
+      "type": 0
+    },
+    {
+      "word": "HOO",
+      "type": 0
+    },
+    {
+      "word": "QUO",
+      "type": 0
+    },
+    {
+      "word": "ENOS",
+      "type": 0
+    },
+    {
+      "word": "SEAL",
+      "type": 0
+    }
+  ],
+  "letters": "SONE,OUQA,OÌSE,HOLA",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

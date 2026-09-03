@@ -1,105 +1,119 @@
-﻿{
-    "id":  2200,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AYA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAŞ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AYAZ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAŞA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAYA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAŞAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YAZMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MAYMUN",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANKA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AYAZMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AYAŞ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AZMAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DANK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KANMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MADUN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YAZMAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YAŞA",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "ŞAZMN,AYDAA,MMUNK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2200,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADI",
+      "type": 0
+    },
+    {
+      "word": "AYI",
+      "type": 0
+    },
+    {
+      "word": "BEN",
+      "type": 0
+    },
+    {
+      "word": "BEŞ",
+      "type": 0
+    },
+    {
+      "word": "EŞİ",
+      "type": 0
+    },
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "LAF",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "İNN",
+      "type": 0
+    },
+    {
+      "word": "İŞE",
+      "type": 0
+    },
+    {
+      "word": "BENİ",
+      "type": 0
+    },
+    {
+      "word": "FORT",
+      "type": 0
+    },
+    {
+      "word": "BEŞİNCİ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "DAY",
+      "type": 0
+    },
+    {
+      "word": "FAL",
+      "type": 0
+    },
+    {
+      "word": "NCİ",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "YAD",
+      "type": 0
+    },
+    {
+      "word": "İNE",
+      "type": 0
+    },
+    {
+      "word": "ŞEN",
+      "type": 0
+    },
+    {
+      "word": "BEŞİ",
+      "type": 0
+    },
+    {
+      "word": "DAYI",
+      "type": 0
+    },
+    {
+      "word": "EŞİN",
+      "type": 0
+    },
+    {
+      "word": "İNCİ",
+      "type": 0
+    }
+  ],
+  "letters": "ADŞİİ,YIENC,TFBNF,ROSLA",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

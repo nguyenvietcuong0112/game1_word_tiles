@@ -1,53 +1,203 @@
-﻿{
-    "id":  1120,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AIRY",
-                             "type":  2
-                         },
-                         {
-                             "word":  "NODE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DAIRY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MYRIAD",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NAY",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "MYR,NAI,ODE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1120,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "EAT",
+      "type": 0
+    },
+    {
+      "word": "NET",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "REF",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "TEN",
+      "type": 0
+    },
+    {
+      "word": "FIRE",
+      "type": 0
+    },
+    {
+      "word": "RISE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATT",
+      "type": 0
+    },
+    {
+      "word": "ERN",
+      "type": 0
+    },
+    {
+      "word": "FER",
+      "type": 0
+    },
+    {
+      "word": "FIE",
+      "type": 0
+    },
+    {
+      "word": "FIR",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "OAT",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "RIF",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SIR",
+      "type": 0
+    },
+    {
+      "word": "TAE",
+      "type": 0
+    },
+    {
+      "word": "TAO",
+      "type": 0
+    },
+    {
+      "word": "COAT",
+      "type": 0
+    },
+    {
+      "word": "CONE",
+      "type": 0
+    },
+    {
+      "word": "ERNE",
+      "type": 0
+    },
+    {
+      "word": "FERN",
+      "type": 0
+    },
+    {
+      "word": "IRES",
+      "type": 0
+    },
+    {
+      "word": "NEAT",
+      "type": 0
+    },
+    {
+      "word": "NEIF",
+      "type": 0
+    },
+    {
+      "word": "NETT",
+      "type": 0
+    },
+    {
+      "word": "RIFE",
+      "type": 0
+    },
+    {
+      "word": "SIRE",
+      "type": 0
+    },
+    {
+      "word": "TEAT",
+      "type": 0
+    },
+    {
+      "word": "COSIE",
+      "type": 0
+    },
+    {
+      "word": "FIRES",
+      "type": 0
+    },
+    {
+      "word": "RIFER",
+      "type": 0
+    },
+    {
+      "word": "SERIF",
+      "type": 0
+    },
+    {
+      "word": "CONFER",
+      "type": 0
+    },
+    {
+      "word": "REFIRE",
+      "type": 0
+    },
+    {
+      "word": "TENREC",
+      "type": 0
+    },
+    {
+      "word": "REFIRES",
+      "type": 0
+    }
+  ],
+  "letters": "ERTT,SIEA,OFNO,CERC",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

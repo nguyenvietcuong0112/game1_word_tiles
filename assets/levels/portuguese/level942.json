@@ -1,85 +1,243 @@
-﻿{
-    "id":  942,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AVE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ECO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ASCO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COVA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DOCE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NEVAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NASCER",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANDOR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEVO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ODE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OVAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "VEDOR",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "NEVA,NDOR,ASCE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 942,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANO",
+      "type": 0
+    },
+    {
+      "word": "BEA",
+      "type": 0
+    },
+    {
+      "word": "CIA",
+      "type": 0
+    },
+    {
+      "word": "TIO",
+      "type": 0
+    },
+    {
+      "word": "VIA",
+      "type": 0
+    },
+    {
+      "word": "BATA",
+      "type": 0
+    },
+    {
+      "word": "NOVA",
+      "type": 0
+    },
+    {
+      "word": "RAIVA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIC",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "AVI",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "BIO",
+      "type": 0
+    },
+    {
+      "word": "BIT",
+      "type": 0
+    },
+    {
+      "word": "BOI",
+      "type": 0
+    },
+    {
+      "word": "BON",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "INO",
+      "type": 0
+    },
+    {
+      "word": "IVO",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NIA",
+      "type": 0
+    },
+    {
+      "word": "NIC",
+      "type": 0
+    },
+    {
+      "word": "NOI",
+      "type": 0
+    },
+    {
+      "word": "OBA",
+      "type": 0
+    },
+    {
+      "word": "ONI",
+      "type": 0
+    },
+    {
+      "word": "OVA",
+      "type": 0
+    },
+    {
+      "word": "RAI",
+      "type": 0
+    },
+    {
+      "word": "TAB",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "VIC",
+      "type": 0
+    },
+    {
+      "word": "VIN",
+      "type": 0
+    },
+    {
+      "word": "VON",
+      "type": 0
+    },
+    {
+      "word": "AINO",
+      "type": 0
+    },
+    {
+      "word": "ANIA",
+      "type": 0
+    },
+    {
+      "word": "ARCA",
+      "type": 0
+    },
+    {
+      "word": "AVON",
+      "type": 0
+    },
+    {
+      "word": "BONI",
+      "type": 0
+    },
+    {
+      "word": "CAVO",
+      "type": 0
+    },
+    {
+      "word": "IONA",
+      "type": 0
+    },
+    {
+      "word": "NABO",
+      "type": 0
+    },
+    {
+      "word": "NATA",
+      "type": 0
+    },
+    {
+      "word": "NICA",
+      "type": 0
+    },
+    {
+      "word": "RAIN",
+      "type": 0
+    },
+    {
+      "word": "TANA",
+      "type": 0
+    },
+    {
+      "word": "TANO",
+      "type": 0
+    },
+    {
+      "word": "VINO",
+      "type": 0
+    },
+    {
+      "word": "CRAIN",
+      "type": 0
+    },
+    {
+      "word": "INATA",
+      "type": 0
+    },
+    {
+      "word": "RAINA",
+      "type": 0
+    },
+    {
+      "word": "TANIA",
+      "type": 0
+    },
+    {
+      "word": "BOVINA",
+      "type": 0
+    },
+    {
+      "word": "CAVIAR",
+      "type": 0
+    },
+    {
+      "word": "VACINA",
+      "type": 0
+    }
+  ],
+  "letters": "TAAR,ANIC,BOVA,TIBE",
+  "obstacles": []
 }

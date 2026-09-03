@@ -1,65 +1,259 @@
-﻿{
-    "id":  1320,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ÖLÜ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MÜLK",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ÖLÜM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKLEM",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ÖRÜMCEK",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "EMCEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İTME",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MÜLKİ",
-                            "type":  2
-                        },
-                        {
-                            "word":  "TİK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ÖRÜMCE",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "KİTBO,LÜMEL,ÖRCEK",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1320,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ARA",
+      "type": 0
+    },
+    {
+      "word": "KAR",
+      "type": 0
+    },
+    {
+      "word": "PİN",
+      "type": 0
+    },
+    {
+      "word": "SAM",
+      "type": 0
+    },
+    {
+      "word": "İSA",
+      "type": 0
+    },
+    {
+      "word": "ARAÇ",
+      "type": 0
+    },
+    {
+      "word": "KARA",
+      "type": 0
+    },
+    {
+      "word": "MARS",
+      "type": 0
+    },
+    {
+      "word": "SARI",
+      "type": 0
+    },
+    {
+      "word": "TARA",
+      "type": 0
+    },
+    {
+      "word": "İNAN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "ARI",
+      "type": 0
+    },
+    {
+      "word": "ASİ",
+      "type": 0
+    },
+    {
+      "word": "ATI",
+      "type": 0
+    },
+    {
+      "word": "KAS",
+      "type": 0
+    },
+    {
+      "word": "KIR",
+      "type": 0
+    },
+    {
+      "word": "KIT",
+      "type": 0
+    },
+    {
+      "word": "MAK",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MİS",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "SAR",
+      "type": 0
+    },
+    {
+      "word": "SİM",
+      "type": 0
+    },
+    {
+      "word": "TAÇ",
+      "type": 0
+    },
+    {
+      "word": "TIK",
+      "type": 0
+    },
+    {
+      "word": "TIR",
+      "type": 0
+    },
+    {
+      "word": "ÇAR",
+      "type": 0
+    },
+    {
+      "word": "ÇAT",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "AKIİ",
+      "type": 0
+    },
+    {
+      "word": "ANKA",
+      "type": 0
+    },
+    {
+      "word": "ANMA",
+      "type": 0
+    },
+    {
+      "word": "ARAM",
+      "type": 0
+    },
+    {
+      "word": "ATIK",
+      "type": 0
+    },
+    {
+      "word": "IRAK",
+      "type": 0
+    },
+    {
+      "word": "KARI",
+      "type": 0
+    },
+    {
+      "word": "KITA",
+      "type": 0
+    },
+    {
+      "word": "MARA",
+      "type": 0
+    },
+    {
+      "word": "MİSA",
+      "type": 0
+    },
+    {
+      "word": "MİSS",
+      "type": 0
+    },
+    {
+      "word": "PİNK",
+      "type": 0
+    },
+    {
+      "word": "SAMİ",
+      "type": 0
+    },
+    {
+      "word": "SARA",
+      "type": 0
+    },
+    {
+      "word": "TIKA",
+      "type": 0
+    },
+    {
+      "word": "ÇATI",
+      "type": 0
+    },
+    {
+      "word": "ANMAK",
+      "type": 0
+    },
+    {
+      "word": "KARAT",
+      "type": 0
+    },
+    {
+      "word": "KASİM",
+      "type": 0
+    },
+    {
+      "word": "TARAK",
+      "type": 0
+    },
+    {
+      "word": "TARIK",
+      "type": 0
+    },
+    {
+      "word": "İNKAR",
+      "type": 0
+    },
+    {
+      "word": "ANKARA",
+      "type": 0
+    },
+    {
+      "word": "ARAMİS",
+      "type": 0
+    },
+    {
+      "word": "İNANMA",
+      "type": 0
+    },
+    {
+      "word": "İNANMAK",
+      "type": 0
+    }
+  ],
+  "letters": "PTAÇ,İIRS,NKAS,ANMİ",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

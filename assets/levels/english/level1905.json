@@ -1,106 +1,227 @@
-﻿{
-    "id":  1905,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "FLU",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "USE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FOUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "FUSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUSH",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOUL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOULFUL",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "FOB",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HUES",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "UEBR,HSOU,LUFL",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  9,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1905,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BIT",
+      "type": 0
+    },
+    {
+      "word": "EYE",
+      "type": 0
+    },
+    {
+      "word": "MON",
+      "type": 0
+    },
+    {
+      "word": "ONE",
+      "type": 0
+    },
+    {
+      "word": "RED",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "DECK",
+      "type": 0
+    },
+    {
+      "word": "MORE",
+      "type": 0
+    },
+    {
+      "word": "TREE",
+      "type": 0
+    },
+    {
+      "word": "MONEY",
+      "type": 0
+    },
+    {
+      "word": "REDUCE",
+      "type": 0
+    },
+    {
+      "word": "REGENCY",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BEE",
+      "type": 0
+    },
+    {
+      "word": "CUD",
+      "type": 0
+    },
+    {
+      "word": "DEY",
+      "type": 0
+    },
+    {
+      "word": "ECU",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "GED",
+      "type": 0
+    },
+    {
+      "word": "GEE",
+      "type": 0
+    },
+    {
+      "word": "GEN",
+      "type": 0
+    },
+    {
+      "word": "GEY",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "NOM",
+      "type": 0
+    },
+    {
+      "word": "NOR",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "ORT",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "REI",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "TIE",
+      "type": 0
+    },
+    {
+      "word": "YEN",
+      "type": 0
+    },
+    {
+      "word": "BEER",
+      "type": 0
+    },
+    {
+      "word": "BIER",
+      "type": 0
+    },
+    {
+      "word": "CEDE",
+      "type": 0
+    },
+    {
+      "word": "DUCE",
+      "type": 0
+    },
+    {
+      "word": "DUCK",
+      "type": 0
+    },
+    {
+      "word": "EGER",
+      "type": 0
+    },
+    {
+      "word": "EYED",
+      "type": 0
+    },
+    {
+      "word": "EYEN",
+      "type": 0
+    },
+    {
+      "word": "EYER",
+      "type": 0
+    },
+    {
+      "word": "GECK",
+      "type": 0
+    },
+    {
+      "word": "GEEK",
+      "type": 0
+    },
+    {
+      "word": "MORT",
+      "type": 0
+    },
+    {
+      "word": "REDE",
+      "type": 0
+    },
+    {
+      "word": "REEK",
+      "type": 0
+    },
+    {
+      "word": "TIER",
+      "type": 0
+    },
+    {
+      "word": "TREY",
+      "type": 0
+    },
+    {
+      "word": "CEDER",
+      "type": 0
+    },
+    {
+      "word": "EDUCE",
+      "type": 0
+    },
+    {
+      "word": "GENOM",
+      "type": 0
+    },
+    {
+      "word": "TRONE",
+      "type": 0
+    },
+    {
+      "word": "REDEYE",
+      "type": 0
+    },
+    {
+      "word": "MONEYED",
+      "type": 0
+    },
+    {
+      "word": "MONEYER",
+      "type": 0
+    }
+  ],
+  "letters": "BEKCU,IEGED,TREYE,MONCR",
+  "obstacles": []
 }

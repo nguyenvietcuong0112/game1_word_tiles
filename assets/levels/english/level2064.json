@@ -1,79 +1,219 @@
-﻿{
-    "id":  2064,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RIB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROB",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CRIB",
-                             "type":  2
-                         },
-                         {
-                             "word":  "IRIS",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ROBE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CRISIS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SCRIBE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ORCS",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SCAB",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "SIBE,IROE,SCAB",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2064,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "EYE",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "LEE",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "THE",
+      "type": 0
+    },
+    {
+      "word": "WET",
+      "type": 0
+    },
+    {
+      "word": "YET",
+      "type": 0
+    },
+    {
+      "word": "HERE",
+      "type": 0
+    },
+    {
+      "word": "NESS",
+      "type": 0
+    },
+    {
+      "word": "SENT",
+      "type": 0
+    },
+    {
+      "word": "TYPE",
+      "type": 0
+    },
+    {
+      "word": "THERE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "EEL",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "ERE",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "LEY",
+      "type": 0
+    },
+    {
+      "word": "PEE",
+      "type": 0
+    },
+    {
+      "word": "PYE",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "SEN",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "TEW",
+      "type": 0
+    },
+    {
+      "word": "TYE",
+      "type": 0
+    },
+    {
+      "word": "WEE",
+      "type": 0
+    },
+    {
+      "word": "YEP",
+      "type": 0
+    },
+    {
+      "word": "YEW",
+      "type": 0
+    },
+    {
+      "word": "EELS",
+      "type": 0
+    },
+    {
+      "word": "ESES",
+      "type": 0
+    },
+    {
+      "word": "HERS",
+      "type": 0
+    },
+    {
+      "word": "LEET",
+      "type": 0
+    },
+    {
+      "word": "PEEL",
+      "type": 0
+    },
+    {
+      "word": "SERE",
+      "type": 0
+    },
+    {
+      "word": "SERS",
+      "type": 0
+    },
+    {
+      "word": "TEEL",
+      "type": 0
+    },
+    {
+      "word": "TEWS",
+      "type": 0
+    },
+    {
+      "word": "TYEE",
+      "type": 0
+    },
+    {
+      "word": "WEEL",
+      "type": 0
+    },
+    {
+      "word": "YEWS",
+      "type": 0
+    },
+    {
+      "word": "HERES",
+      "type": 0
+    },
+    {
+      "word": "PEELS",
+      "type": 0
+    },
+    {
+      "word": "SENTE",
+      "type": 0
+    },
+    {
+      "word": "SLEEP",
+      "type": 0
+    },
+    {
+      "word": "SLEET",
+      "type": 0
+    },
+    {
+      "word": "TEELS",
+      "type": 0
+    },
+    {
+      "word": "TYPEY",
+      "type": 0
+    },
+    {
+      "word": "RESENT",
+      "type": 0
+    },
+    {
+      "word": "SLEEPY",
+      "type": 0
+    },
+    {
+      "word": "THERES",
+      "type": 0
+    },
+    {
+      "word": "WETNESS",
+      "type": 0
+    }
+  ],
+  "letters": "ETNES,YEWSE,EELSR,PYTHE",
+  "obstacles": []
 }

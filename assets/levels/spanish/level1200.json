@@ -1,73 +1,167 @@
-﻿{
-    "id":  1200,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AÑO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OCA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIC",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACTA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAÑO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAÑA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAÑO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CITA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TACO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÁBACO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ÁTICO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACUÁTICO",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "BAÑA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TABA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAC",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "AICO,CTAÑ,UÁBA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1200,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAE",
+      "type": 0
+    },
+    {
+      "word": "COS",
+      "type": 0
+    },
+    {
+      "word": "GET",
+      "type": 0
+    },
+    {
+      "word": "PAL",
+      "type": 0
+    },
+    {
+      "word": "PAZ",
+      "type": 0
+    },
+    {
+      "word": "SUR",
+      "type": 0
+    },
+    {
+      "word": "USA",
+      "type": 0
+    },
+    {
+      "word": "COGE",
+      "type": 0
+    },
+    {
+      "word": "COPA",
+      "type": 0
+    },
+    {
+      "word": "POCAS",
+      "type": 0
+    },
+    {
+      "word": "RUEGO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "CAS",
+      "type": 0
+    },
+    {
+      "word": "COP",
+      "type": 0
+    },
+    {
+      "word": "EGO",
+      "type": 0
+    },
+    {
+      "word": "ETC",
+      "type": 0
+    },
+    {
+      "word": "GRU",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "OPA",
+      "type": 0
+    },
+    {
+      "word": "RUE",
+      "type": 0
+    },
+    {
+      "word": "RUS",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "SOG",
+      "type": 0
+    },
+    {
+      "word": "SUE",
+      "type": 0
+    },
+    {
+      "word": "TEA",
+      "type": 0
+    },
+    {
+      "word": "EGOS",
+      "type": 0
+    },
+    {
+      "word": "OPAL",
+      "type": 0
+    },
+    {
+      "word": "POCA",
+      "type": 0
+    },
+    {
+      "word": "RUSA",
+      "type": 0
+    },
+    {
+      "word": "SACO",
+      "type": 0
+    },
+    {
+      "word": "URGE",
+      "type": 0
+    },
+    {
+      "word": "SURCO",
+      "type": 0
+    },
+    {
+      "word": "SURGE",
+      "type": 0
+    },
+    {
+      "word": "RUEGOS",
+      "type": 0
+    },
+    {
+      "word": "SURCOS",
+      "type": 0
+    }
+  ],
+  "letters": "LAPO,SZTC,OGEA,CRUS",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

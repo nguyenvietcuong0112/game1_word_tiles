@@ -1,106 +1,127 @@
-﻿{
-    "id":  1504,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "INN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOY",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YES",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SENT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SILENT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "SEN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SILT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SINN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YEN",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "INNTI,SYELE,ROSIO",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  4,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  4,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1504,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "DEL",
+      "type": 0
+    },
+    {
+      "word": "FED",
+      "type": 0
+    },
+    {
+      "word": "FEE",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "LED",
+      "type": 0
+    },
+    {
+      "word": "LEI",
+      "type": 0
+    },
+    {
+      "word": "HOLE",
+      "type": 0
+    },
+    {
+      "word": "HOLT",
+      "type": 0
+    },
+    {
+      "word": "LOCK",
+      "type": 0
+    },
+    {
+      "word": "REED",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "COL",
+      "type": 0
+    },
+    {
+      "word": "DEE",
+      "type": 0
+    },
+    {
+      "word": "IRE",
+      "type": 0
+    },
+    {
+      "word": "KEF",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "REE",
+      "type": 0
+    },
+    {
+      "word": "THO",
+      "type": 0
+    },
+    {
+      "word": "DEER",
+      "type": 0
+    },
+    {
+      "word": "DREE",
+      "type": 0
+    },
+    {
+      "word": "HEED",
+      "type": 0
+    },
+    {
+      "word": "HERD",
+      "type": 0
+    },
+    {
+      "word": "REEF",
+      "type": 0
+    },
+    {
+      "word": "REEK",
+      "type": 0
+    },
+    {
+      "word": "RIEL",
+      "type": 0
+    },
+    {
+      "word": "EERIE",
+      "type": 0
+    },
+    {
+      "word": "HOLED",
+      "type": 0
+    },
+    {
+      "word": "THOLE",
+      "type": 0
+    },
+    {
+      "word": "LOCKED",
+      "type": 0
+    },
+    {
+      "word": "THOLED",
+      "type": 0
+    }
+  ],
+  "letters": "HFCO,EEKL,RDTH,IELO",
+  "obstacles": []
 }

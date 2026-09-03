@@ -1,105 +1,127 @@
-﻿{
-    "id":  1285,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CANO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CERO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HENO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ACERO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HACER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "JAQUE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NACER",
-                             "type":  0
-                         },
-                         {
-                             "word":  "QUEHACER",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HENAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ORA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "QUE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "QUENA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RANO",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "UENO,QHAR,AJCE",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1285,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "BOB",
+      "type": 0
+    },
+    {
+      "word": "EST",
+      "type": 0
+    },
+    {
+      "word": "ETC",
+      "type": 0
+    },
+    {
+      "word": "FOR",
+      "type": 0
+    },
+    {
+      "word": "MUY",
+      "type": 0
+    },
+    {
+      "word": "PET",
+      "type": 0
+    },
+    {
+      "word": "PRO",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "BEBO",
+      "type": 0
+    },
+    {
+      "word": "ESTE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ERM",
+      "type": 0
+    },
+    {
+      "word": "ERO",
+      "type": 0
+    },
+    {
+      "word": "ESP",
+      "type": 0
+    },
+    {
+      "word": "ETS",
+      "type": 0
+    },
+    {
+      "word": "PRE",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "STE",
+      "type": 0
+    },
+    {
+      "word": "YUM",
+      "type": 0
+    },
+    {
+      "word": "BEST",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "SEBO",
+      "type": 0
+    },
+    {
+      "word": "STEP",
+      "type": 0
+    },
+    {
+      "word": "FOREST",
+      "type": 0
+    },
+    {
+      "word": "ORESTE",
+      "type": 0
+    },
+    {
+      "word": "PRESTE",
+      "type": 0
+    }
+  ],
+  "letters": "FOUY,PRMC,BEST,OBPE",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

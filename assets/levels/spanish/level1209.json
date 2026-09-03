@@ -1,149 +1,275 @@
-﻿{
-    "id":  1209,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CAPA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PARA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAPE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "RAYA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "ACERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PARAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAPAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CARECER",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PARECER",
-                             "type":  2
-                         },
-                         {
-                             "word":  "APARECER",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ACARAR",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ACERAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "APACER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARECA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ARECER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AYA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAPAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "CECA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "ERAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ERE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PACA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PACAY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PACER",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAP",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAPA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RARA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "YACA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YACER",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EPAR,YARE,ACEC",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1209,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMO",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "ESO",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "CAMA",
+      "type": 0
+    },
+    {
+      "word": "ERAN",
+      "type": 0
+    },
+    {
+      "word": "MALA",
+      "type": 0
+    },
+    {
+      "word": "AMENAZÓ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACA",
+      "type": 0
+    },
+    {
+      "word": "ALA",
+      "type": 0
+    },
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "ALÓ",
+      "type": 0
+    },
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "AMÓ",
+      "type": 0
+    },
+    {
+      "word": "ANA",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "CAL",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LEN",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAZ",
+      "type": 0
+    },
+    {
+      "word": "NEL",
+      "type": 0
+    },
+    {
+      "word": "RAN",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "ZAR",
+      "type": 0
+    },
+    {
+      "word": "ZEN",
+      "type": 0
+    },
+    {
+      "word": "AMAN",
+      "type": 0
+    },
+    {
+      "word": "AMEN",
+      "type": 0
+    },
+    {
+      "word": "AMOS",
+      "type": 0
+    },
+    {
+      "word": "ARES",
+      "type": 0
+    },
+    {
+      "word": "CALA",
+      "type": 0
+    },
+    {
+      "word": "CALE",
+      "type": 0
+    },
+    {
+      "word": "CAME",
+      "type": 0
+    },
+    {
+      "word": "LACA",
+      "type": 0
+    },
+    {
+      "word": "LAMA",
+      "type": 0
+    },
+    {
+      "word": "LAME",
+      "type": 0
+    },
+    {
+      "word": "LEMA",
+      "type": 0
+    },
+    {
+      "word": "LENA",
+      "type": 0
+    },
+    {
+      "word": "MANA",
+      "type": 0
+    },
+    {
+      "word": "MOSE",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "RANA",
+      "type": 0
+    },
+    {
+      "word": "REZA",
+      "type": 0
+    },
+    {
+      "word": "REZÓ",
+      "type": 0
+    },
+    {
+      "word": "SERA",
+      "type": 0
+    },
+    {
+      "word": "SOMA",
+      "type": 0
+    },
+    {
+      "word": "SÓLA",
+      "type": 0
+    },
+    {
+      "word": "ZANE",
+      "type": 0
+    },
+    {
+      "word": "ALAMO",
+      "type": 0
+    },
+    {
+      "word": "CAMEL",
+      "type": 0
+    },
+    {
+      "word": "EMANA",
+      "type": 0
+    },
+    {
+      "word": "REZAN",
+      "type": 0
+    },
+    {
+      "word": "SERAN",
+      "type": 0
+    },
+    {
+      "word": "ALEMAN",
+      "type": 0
+    },
+    {
+      "word": "MALEZA",
+      "type": 0
+    },
+    {
+      "word": "ALEMANA",
+      "type": 0
+    }
+  ],
+  "letters": "CAMA,ALEN,MÓZA,OSER",
+  "obstacles": []
 }

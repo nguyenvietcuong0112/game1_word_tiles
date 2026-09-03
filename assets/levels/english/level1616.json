@@ -1,105 +1,219 @@
-﻿{
-    "id":  1616,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "RAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SET",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HINT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "THIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GRAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INSET",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PAINT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "QUAINT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PARADISE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AINT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GRAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "GRAINS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "HIND",
-                            "type":  1
-                        },
-                        {
-                            "word":  "HINDI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "INS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ISNT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAINS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PAR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PARA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAD",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RAINS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "QUHTE,PAINS,GRADI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1616,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ADS",
+      "type": 0
+    },
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "BALD",
+      "type": 0
+    },
+    {
+      "word": "BAND",
+      "type": 0
+    },
+    {
+      "word": "GAIN",
+      "type": 0
+    },
+    {
+      "word": "BADGE",
+      "type": 0
+    },
+    {
+      "word": "BANDS",
+      "type": 0
+    },
+    {
+      "word": "STAND",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAL",
+      "type": 0
+    },
+    {
+      "word": "ABS",
+      "type": 0
+    },
+    {
+      "word": "AIN",
+      "type": 0
+    },
+    {
+      "word": "AIS",
+      "type": 0
+    },
+    {
+      "word": "ALB",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "BAA",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BAN",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "DAB",
+      "type": 0
+    },
+    {
+      "word": "DAL",
+      "type": 0
+    },
+    {
+      "word": "LAD",
+      "type": 0
+    },
+    {
+      "word": "NAB",
+      "type": 0
+    },
+    {
+      "word": "SEG",
+      "type": 0
+    },
+    {
+      "word": "SIN",
+      "type": 0
+    },
+    {
+      "word": "TAB",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "ALBA",
+      "type": 0
+    },
+    {
+      "word": "ALBS",
+      "type": 0
+    },
+    {
+      "word": "ANDS",
+      "type": 0
+    },
+    {
+      "word": "ANGA",
+      "type": 0
+    },
+    {
+      "word": "ANIS",
+      "type": 0
+    },
+    {
+      "word": "BAAL",
+      "type": 0
+    },
+    {
+      "word": "BADS",
+      "type": 0
+    },
+    {
+      "word": "BANG",
+      "type": 0
+    },
+    {
+      "word": "BANI",
+      "type": 0
+    },
+    {
+      "word": "BATS",
+      "type": 0
+    },
+    {
+      "word": "BLAB",
+      "type": 0
+    },
+    {
+      "word": "GNAT",
+      "type": 0
+    },
+    {
+      "word": "LADS",
+      "type": 0
+    },
+    {
+      "word": "NABS",
+      "type": 0
+    },
+    {
+      "word": "SING",
+      "type": 0
+    },
+    {
+      "word": "STAB",
+      "type": 0
+    },
+    {
+      "word": "TABS",
+      "type": 0
+    },
+    {
+      "word": "TANG",
+      "type": 0
+    },
+    {
+      "word": "ANISE",
+      "type": 0
+    },
+    {
+      "word": "GNATS",
+      "type": 0
+    },
+    {
+      "word": "STANG",
+      "type": 0
+    },
+    {
+      "word": "TABLA",
+      "type": 0
+    },
+    {
+      "word": "BADGES",
+      "type": 0
+    },
+    {
+      "word": "STANDS",
+      "type": 0
+    }
+  ],
+  "letters": "AISE,GNDG,TAAB,SBLD",
+  "obstacles": []
 }

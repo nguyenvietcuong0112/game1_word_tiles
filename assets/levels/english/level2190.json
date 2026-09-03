@@ -1,113 +1,235 @@
-﻿{
-    "id":  2190,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AXE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "POD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RED",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ROD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAX",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CITE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LURE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PORE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "PORT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PURE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TOTE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "EXOTIC",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AERO",
-                            "type":  2
-                        },
-                        {
-                            "word":  "COT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COTE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "COX",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LURED",
-                            "type":  2
-                        },
-                        {
-                            "word":  "PORED",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PORTO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "REDO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "RODE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TROD",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "DEAXE,ORTOT,PULCI",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2190,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIM",
+      "type": 0
+    },
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "ESS",
+      "type": 0
+    },
+    {
+      "word": "FEE",
+      "type": 0
+    },
+    {
+      "word": "HIM",
+      "type": 0
+    },
+    {
+      "word": "RAG",
+      "type": 0
+    },
+    {
+      "word": "SEE",
+      "type": 0
+    },
+    {
+      "word": "FEET",
+      "type": 0
+    },
+    {
+      "word": "HOLE",
+      "type": 0
+    },
+    {
+      "word": "LEGS",
+      "type": 0
+    },
+    {
+      "word": "LOSS",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AIL",
+      "type": 0
+    },
+    {
+      "word": "EFS",
+      "type": 0
+    },
+    {
+      "word": "ELS",
+      "type": 0
+    },
+    {
+      "word": "GAR",
+      "type": 0
+    },
+    {
+      "word": "GEL",
+      "type": 0
+    },
+    {
+      "word": "GEM",
+      "type": 0
+    },
+    {
+      "word": "GHI",
+      "type": 0
+    },
+    {
+      "word": "HET",
+      "type": 0
+    },
+    {
+      "word": "HOE",
+      "type": 0
+    },
+    {
+      "word": "LEG",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "MIL",
+      "type": 0
+    },
+    {
+      "word": "OES",
+      "type": 0
+    },
+    {
+      "word": "OLE",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "TEE",
+      "type": 0
+    },
+    {
+      "word": "AILS",
+      "type": 0
+    },
+    {
+      "word": "FESS",
+      "type": 0
+    },
+    {
+      "word": "GELS",
+      "type": 0
+    },
+    {
+      "word": "GHEE",
+      "type": 0
+    },
+    {
+      "word": "HOES",
+      "type": 0
+    },
+    {
+      "word": "HOLS",
+      "type": 0
+    },
+    {
+      "word": "LIAR",
+      "type": 0
+    },
+    {
+      "word": "LIME",
+      "type": 0
+    },
+    {
+      "word": "MELS",
+      "type": 0
+    },
+    {
+      "word": "MILE",
+      "type": 0
+    },
+    {
+      "word": "MILO",
+      "type": 0
+    },
+    {
+      "word": "MILS",
+      "type": 0
+    },
+    {
+      "word": "OHIA",
+      "type": 0
+    },
+    {
+      "word": "RAIL",
+      "type": 0
+    },
+    {
+      "word": "SLIM",
+      "type": 0
+    },
+    {
+      "word": "SLOE",
+      "type": 0
+    },
+    {
+      "word": "SOLE",
+      "type": 0
+    },
+    {
+      "word": "SOLI",
+      "type": 0
+    },
+    {
+      "word": "SOLS",
+      "type": 0
+    },
+    {
+      "word": "TEES",
+      "type": 0
+    },
+    {
+      "word": "GHEES",
+      "type": 0
+    },
+    {
+      "word": "LOESS",
+      "type": 0
+    },
+    {
+      "word": "MILOS",
+      "type": 0
+    },
+    {
+      "word": "RAILS",
+      "type": 0
+    },
+    {
+      "word": "SLIME",
+      "type": 0
+    },
+    {
+      "word": "SLOES",
+      "type": 0
+    }
+  ],
+  "letters": "SSSSG,FEOLE,EEHIM,ETGAR",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

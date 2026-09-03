@@ -1,110 +1,231 @@
-﻿{
-    "id":  2060,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "MOD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AUNT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "UNDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOUND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOUNT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SOUND",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AMOUNT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MOUNTAIN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DOS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NUNS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SOMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "TAU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UNI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DDNI,MOUA,ASNT",
-    "obstacles":  [
-                      {
-                          "required_words":  3,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        }
-                                    ]
-                      },
-                      {
-                          "required_words":  6,
-                          "id":  2,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  3,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2060,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AWE",
+      "type": 0
+    },
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "MAC",
+      "type": 0
+    },
+    {
+      "word": "RIP",
+      "type": 0
+    },
+    {
+      "word": "SAW",
+      "type": 0
+    },
+    {
+      "word": "WAS",
+      "type": 0
+    },
+    {
+      "word": "CAMP",
+      "type": 0
+    },
+    {
+      "word": "MATH",
+      "type": 0
+    },
+    {
+      "word": "RING",
+      "type": 0
+    },
+    {
+      "word": "TIPS",
+      "type": 0
+    },
+    {
+      "word": "RINGS",
+      "type": 0
+    },
+    {
+      "word": "WELCH",
+      "type": 0
+    },
+    {
+      "word": "SPRING",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AMI",
+      "type": 0
+    },
+    {
+      "word": "AMP",
+      "type": 0
+    },
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "CAM",
+      "type": 0
+    },
+    {
+      "word": "IMP",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MIR",
+      "type": 0
+    },
+    {
+      "word": "NIP",
+      "type": 0
+    },
+    {
+      "word": "PIN",
+      "type": 0
+    },
+    {
+      "word": "PIT",
+      "type": 0
+    },
+    {
+      "word": "RIM",
+      "type": 0
+    },
+    {
+      "word": "RIN",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TIP",
+      "type": 0
+    },
+    {
+      "word": "WAW",
+      "type": 0
+    },
+    {
+      "word": "AMIR",
+      "type": 0
+    },
+    {
+      "word": "CLEW",
+      "type": 0
+    },
+    {
+      "word": "GRIN",
+      "type": 0
+    },
+    {
+      "word": "GRIP",
+      "type": 0
+    },
+    {
+      "word": "IMPI",
+      "type": 0
+    },
+    {
+      "word": "PIMA",
+      "type": 0
+    },
+    {
+      "word": "PIMP",
+      "type": 0
+    },
+    {
+      "word": "PING",
+      "type": 0
+    },
+    {
+      "word": "PITA",
+      "type": 0
+    },
+    {
+      "word": "PITH",
+      "type": 0
+    },
+    {
+      "word": "RIPS",
+      "type": 0
+    },
+    {
+      "word": "SPIT",
+      "type": 0
+    },
+    {
+      "word": "TAMP",
+      "type": 0
+    },
+    {
+      "word": "TIRL",
+      "type": 0
+    },
+    {
+      "word": "WASP",
+      "type": 0
+    },
+    {
+      "word": "WRIT",
+      "type": 0
+    },
+    {
+      "word": "CAMPI",
+      "type": 0
+    },
+    {
+      "word": "PINGS",
+      "type": 0
+    },
+    {
+      "word": "THRIP",
+      "type": 0
+    },
+    {
+      "word": "IMPING",
+      "type": 0
+    },
+    {
+      "word": "RIPSAW",
+      "type": 0
+    },
+    {
+      "word": "THRIPS",
+      "type": 0
+    },
+    {
+      "word": "CAMPING",
+      "type": 0
+    },
+    {
+      "word": "IMPINGS",
+      "type": 0
+    },
+    {
+      "word": "PIMPING",
+      "type": 0
+    },
+    {
+      "word": "TAMPING",
+      "type": 0
+    },
+    {
+      "word": "CAMPINGS",
+      "type": 0
+    }
+  ],
+  "letters": "CATHC,PMIRL,IRPWE,NGSAW",
+  "obstacles": []
 }

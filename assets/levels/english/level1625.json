@@ -1,77 +1,219 @@
-﻿{
-    "id":  1625,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LOT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COAL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LAST",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SALT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "COAST",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "COATS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "COSTA",
-                            "type":  1
-                        },
-                        {
-                            "word":  "COSTAL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LAOS",
-                            "type":  1
-                        },
-                        {
-                            "word":  "LAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LOTS",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OATS",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TLO,SAT,COS",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1625,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ASP",
+      "type": 0
+    },
+    {
+      "word": "DOC",
+      "type": 0
+    },
+    {
+      "word": "CASE",
+      "type": 0
+    },
+    {
+      "word": "CODE",
+      "type": 0
+    },
+    {
+      "word": "SAME",
+      "type": 0
+    },
+    {
+      "word": "CASES",
+      "type": 0
+    },
+    {
+      "word": "CREAM",
+      "type": 0
+    },
+    {
+      "word": "CORNER",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "COD",
+      "type": 0
+    },
+    {
+      "word": "COR",
+      "type": 0
+    },
+    {
+      "word": "DOR",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "ERS",
+      "type": 0
+    },
+    {
+      "word": "MAE",
+      "type": 0
+    },
+    {
+      "word": "MAS",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ODE",
+      "type": 0
+    },
+    {
+      "word": "ROC",
+      "type": 0
+    },
+    {
+      "word": "ROD",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SAE",
+      "type": 0
+    },
+    {
+      "word": "ACED",
+      "type": 0
+    },
+    {
+      "word": "ACRE",
+      "type": 0
+    },
+    {
+      "word": "CASA",
+      "type": 0
+    },
+    {
+      "word": "CECA",
+      "type": 0
+    },
+    {
+      "word": "CORN",
+      "type": 0
+    },
+    {
+      "word": "DECO",
+      "type": 0
+    },
+    {
+      "word": "DORR",
+      "type": 0
+    },
+    {
+      "word": "EASE",
+      "type": 0
+    },
+    {
+      "word": "MESA",
+      "type": 0
+    },
+    {
+      "word": "OCAS",
+      "type": 0
+    },
+    {
+      "word": "REAM",
+      "type": 0
+    },
+    {
+      "word": "RODE",
+      "type": 0
+    },
+    {
+      "word": "ACORN",
+      "type": 0
+    },
+    {
+      "word": "CODEC",
+      "type": 0
+    },
+    {
+      "word": "DECOR",
+      "type": 0
+    },
+    {
+      "word": "DORRS",
+      "type": 0
+    },
+    {
+      "word": "EASES",
+      "type": 0
+    },
+    {
+      "word": "ERSES",
+      "type": 0
+    },
+    {
+      "word": "MESAS",
+      "type": 0
+    },
+    {
+      "word": "OCREA",
+      "type": 0
+    },
+    {
+      "word": "CORNEA",
+      "type": 0
+    },
+    {
+      "word": "CREASE",
+      "type": 0
+    },
+    {
+      "word": "AMESACE",
+      "type": 0
+    },
+    {
+      "word": "CORNEAS",
+      "type": 0
+    },
+    {
+      "word": "CORNERS",
+      "type": 0
+    },
+    {
+      "word": "CREASES",
+      "type": 0
+    },
+    {
+      "word": "DECREASE",
+      "type": 0
+    }
+  ],
+  "letters": "PCED,SACO,ESRR,MAEN",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

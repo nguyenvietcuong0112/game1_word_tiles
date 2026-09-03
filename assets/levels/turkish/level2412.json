@@ -1,97 +1,159 @@
-﻿{
-    "id":  2412,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KİR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NAM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "EKİM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "İMAN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAMU",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KİRA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MANDA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KUMANDA",
-                             "type":  2
-                         },
-                         {
-                             "word":  "KUMANDAN",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARDA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KUMA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KUMAN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KUNDA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MAKİ",
-                            "type":  1
-                        }
-                    ],
-    "letters":  "EİNAA,KUNDR,İMAKİ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2412,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "KUR",
+      "type": 0
+    },
+    {
+      "word": "KUŞ",
+      "type": 0
+    },
+    {
+      "word": "MEN",
+      "type": 0
+    },
+    {
+      "word": "NÜN",
+      "type": 0
+    },
+    {
+      "word": "OKU",
+      "type": 0
+    },
+    {
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "TUR",
+      "type": 0
+    },
+    {
+      "word": "ÖTE",
+      "type": 0
+    },
+    {
+      "word": "OTUR",
+      "type": 0
+    },
+    {
+      "word": "TURA",
+      "type": 0
+    },
+    {
+      "word": "TURK",
+      "type": 0
+    },
+    {
+      "word": "ÖLMEK",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ARK",
+      "type": 0
+    },
+    {
+      "word": "KOT",
+      "type": 0
+    },
+    {
+      "word": "NEM",
+      "type": 0
+    },
+    {
+      "word": "OTU",
+      "type": 0
+    },
+    {
+      "word": "RAE",
+      "type": 0
+    },
+    {
+      "word": "RUT",
+      "type": 0
+    },
+    {
+      "word": "TOK",
+      "type": 0
+    },
+    {
+      "word": "TUŞ",
+      "type": 0
+    },
+    {
+      "word": "ÜNE",
+      "type": 0
+    },
+    {
+      "word": "ŞUT",
+      "type": 0
+    },
+    {
+      "word": "EMEK",
+      "type": 0
+    },
+    {
+      "word": "EMEN",
+      "type": 0
+    },
+    {
+      "word": "KOTU",
+      "type": 0
+    },
+    {
+      "word": "KURA",
+      "type": 0
+    },
+    {
+      "word": "KUŞA",
+      "type": 0
+    },
+    {
+      "word": "MENÜ",
+      "type": 0
+    },
+    {
+      "word": "OKUR",
+      "type": 0
+    },
+    {
+      "word": "TUŞA",
+      "type": 0
+    },
+    {
+      "word": "ÖLME",
+      "type": 0
+    },
+    {
+      "word": "TOKUŞ",
+      "type": 0
+    },
+    {
+      "word": "ÖLMEN",
+      "type": 0
+    },
+    {
+      "word": "ÖLMEKTE",
+      "type": 0
+    }
+  ],
+  "letters": "LMENÜ,ÖEAŞN,TKRUT,ESKKO",
+  "obstacles": [
+    {
+      "required_words": 2,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

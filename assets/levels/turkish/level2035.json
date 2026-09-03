@@ -1,119 +1,167 @@
-﻿{
-    "id":  2035,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "BAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BOR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "DİK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ARKA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BARİ",
-                             "type":  2
-                         },
-                         {
-                             "word":  "BARO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BORA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEDİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ORKİDE",
-                             "type":  2
-                         },
-                         {
-                             "word":  "AKROBAT",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AKİDE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ARİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BARİT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BARKA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "BORAT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OBA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SAKİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEK",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TİİD,ARKE,BOAS",
-    "obstacles":  [
-                      {
-                          "required_words":  7,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 2035,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "HER",
+      "type": 0
+    },
+    {
+      "word": "SHE",
+      "type": 0
+    },
+    {
+      "word": "SOS",
+      "type": 0
+    },
+    {
+      "word": "ABER",
+      "type": 0
+    },
+    {
+      "word": "BABA",
+      "type": 0
+    },
+    {
+      "word": "KERE",
+      "type": 0
+    },
+    {
+      "word": "BALIK",
+      "type": 0
+    },
+    {
+      "word": "GEREK",
+      "type": 0
+    },
+    {
+      "word": "HABER",
+      "type": 0
+    },
+    {
+      "word": "GEREKEN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BER",
+      "type": 0
+    },
+    {
+      "word": "EBE",
+      "type": 0
+    },
+    {
+      "word": "GER",
+      "type": 0
+    },
+    {
+      "word": "KEN",
+      "type": 0
+    },
+    {
+      "word": "KIL",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "LIK",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "REN",
+      "type": 0
+    },
+    {
+      "word": "SHA",
+      "type": 0
+    },
+    {
+      "word": "BABE",
+      "type": 0
+    },
+    {
+      "word": "BEBE",
+      "type": 0
+    },
+    {
+      "word": "BERE",
+      "type": 0
+    },
+    {
+      "word": "EGER",
+      "type": 0
+    },
+    {
+      "word": "EREN",
+      "type": 0
+    },
+    {
+      "word": "GEBE",
+      "type": 0
+    },
+    {
+      "word": "GERE",
+      "type": 0
+    },
+    {
+      "word": "HALI",
+      "type": 0
+    },
+    {
+      "word": "HEBA",
+      "type": 0
+    },
+    {
+      "word": "HERE",
+      "type": 0
+    },
+    {
+      "word": "NERE",
+      "type": 0
+    },
+    {
+      "word": "SHEN",
+      "type": 0
+    },
+    {
+      "word": "GEBER",
+      "type": 0
+    },
+    {
+      "word": "HABERE",
+      "type": 0
+    },
+    {
+      "word": "BABALIK",
+      "type": 0
+    }
+  ],
+  "letters": "ILABA,KSHEB,SNERE,OSKEG",
+  "obstacles": []
 }

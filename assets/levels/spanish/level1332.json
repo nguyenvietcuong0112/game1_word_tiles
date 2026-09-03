@@ -1,77 +1,251 @@
-﻿{
-    "id":  1332,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DON",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "YEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ZEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CIEN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ENTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAJE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TEJA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CERDO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "CIENO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OYENTE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "RECIENTE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AJE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DOY",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ODRE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "YENTE",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DONTE,RYEZJ,ECIPA",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1332,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ROB",
+      "type": 0
+    },
+    {
+      "word": "TUS",
+      "type": 0
+    },
+    {
+      "word": "USO",
+      "type": 0
+    },
+    {
+      "word": "BOCA",
+      "type": 0
+    },
+    {
+      "word": "CABO",
+      "type": 0
+    },
+    {
+      "word": "DEBA",
+      "type": 0
+    },
+    {
+      "word": "DEBO",
+      "type": 0
+    },
+    {
+      "word": "MUST",
+      "type": 0
+    },
+    {
+      "word": "SUBE",
+      "type": 0
+    },
+    {
+      "word": "TOCA",
+      "type": 0
+    },
+    {
+      "word": "TUMOR",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ABE",
+      "type": 0
+    },
+    {
+      "word": "ABU",
+      "type": 0
+    },
+    {
+      "word": "ADE",
+      "type": 0
+    },
+    {
+      "word": "BAD",
+      "type": 0
+    },
+    {
+      "word": "BED",
+      "type": 0
+    },
+    {
+      "word": "BUM",
+      "type": 0
+    },
+    {
+      "word": "BUS",
+      "type": 0
+    },
+    {
+      "word": "BUT",
+      "type": 0
+    },
+    {
+      "word": "CAB",
+      "type": 0
+    },
+    {
+      "word": "DEB",
+      "type": 0
+    },
+    {
+      "word": "DEM",
+      "type": 0
+    },
+    {
+      "word": "DEO",
+      "type": 0
+    },
+    {
+      "word": "EMO",
+      "type": 0
+    },
+    {
+      "word": "MED",
+      "type": 0
+    },
+    {
+      "word": "MEO",
+      "type": 0
+    },
+    {
+      "word": "MOR",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "OCA",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "ROM",
+      "type": 0
+    },
+    {
+      "word": "ROS",
+      "type": 0
+    },
+    {
+      "word": "SOR",
+      "type": 0
+    },
+    {
+      "word": "SUB",
+      "type": 0
+    },
+    {
+      "word": "SUM",
+      "type": 0
+    },
+    {
+      "word": "TOC",
+      "type": 0
+    },
+    {
+      "word": "TUM",
+      "type": 0
+    },
+    {
+      "word": "ABED",
+      "type": 0
+    },
+    {
+      "word": "BACO",
+      "type": 0
+    },
+    {
+      "word": "CABE",
+      "type": 0
+    },
+    {
+      "word": "CADE",
+      "type": 0
+    },
+    {
+      "word": "DEMO",
+      "type": 0
+    },
+    {
+      "word": "MOST",
+      "type": 0
+    },
+    {
+      "word": "ROME",
+      "type": 0
+    },
+    {
+      "word": "SOME",
+      "type": 0
+    },
+    {
+      "word": "SUBA",
+      "type": 0
+    },
+    {
+      "word": "SUBO",
+      "type": 0
+    },
+    {
+      "word": "SUMO",
+      "type": 0
+    },
+    {
+      "word": "TUBA",
+      "type": 0
+    },
+    {
+      "word": "TUBE",
+      "type": 0
+    },
+    {
+      "word": "TUBO",
+      "type": 0
+    },
+    {
+      "word": "ABUSO",
+      "type": 0
+    },
+    {
+      "word": "BORRO",
+      "type": 0
+    },
+    {
+      "word": "CABOT",
+      "type": 0
+    },
+    {
+      "word": "DEBUT",
+      "type": 0
+    },
+    {
+      "word": "DEMOS",
+      "type": 0
+    },
+    {
+      "word": "MORRO",
+      "type": 0
+    },
+    {
+      "word": "ROMEO",
+      "type": 0
+    },
+    {
+      "word": "TOCAD",
+      "type": 0
+    },
+    {
+      "word": "CABEMOS",
+      "type": 0
+    }
+  ],
+  "letters": "RROB,OMED,SUBA,TTOC",
+  "obstacles": []
 }

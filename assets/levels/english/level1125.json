@@ -1,73 +1,163 @@
-﻿{
-    "id":  1125,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ERA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "INK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEG",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LIE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "GEAR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LINK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUNG",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LUNGE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MERGE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ARE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EMU",
-                            "type":  0
-                        },
-                        {
-                            "word":  "LING",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NIL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "UNI",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EKEA,INGR,LUME",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1125,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "CAT",
+      "type": 0
+    },
+    {
+      "word": "GET",
+      "type": 0
+    },
+    {
+      "word": "CAKE",
+      "type": 0
+    },
+    {
+      "word": "CATS",
+      "type": 0
+    },
+    {
+      "word": "GETS",
+      "type": 0
+    },
+    {
+      "word": "TAKE",
+      "type": 0
+    },
+    {
+      "word": "TERM",
+      "type": 0
+    },
+    {
+      "word": "VOLT",
+      "type": 0
+    },
+    {
+      "word": "TERMS",
+      "type": 0
+    },
+    {
+      "word": "VODKA",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ATE",
+      "type": 0
+    },
+    {
+      "word": "DOL",
+      "type": 0
+    },
+    {
+      "word": "ETA",
+      "type": 0
+    },
+    {
+      "word": "KAT",
+      "type": 0
+    },
+    {
+      "word": "KEG",
+      "type": 0
+    },
+    {
+      "word": "REG",
+      "type": 0
+    },
+    {
+      "word": "RET",
+      "type": 0
+    },
+    {
+      "word": "TEG",
+      "type": 0
+    },
+    {
+      "word": "TET",
+      "type": 0
+    },
+    {
+      "word": "CATE",
+      "type": 0
+    },
+    {
+      "word": "DOLS",
+      "type": 0
+    },
+    {
+      "word": "DOLT",
+      "type": 0
+    },
+    {
+      "word": "EGER",
+      "type": 0
+    },
+    {
+      "word": "GERM",
+      "type": 0
+    },
+    {
+      "word": "GETA",
+      "type": 0
+    },
+    {
+      "word": "KATS",
+      "type": 0
+    },
+    {
+      "word": "KEGS",
+      "type": 0
+    },
+    {
+      "word": "REGS",
+      "type": 0
+    },
+    {
+      "word": "RETE",
+      "type": 0
+    },
+    {
+      "word": "STET",
+      "type": 0
+    },
+    {
+      "word": "TEGS",
+      "type": 0
+    },
+    {
+      "word": "TETS",
+      "type": 0
+    },
+    {
+      "word": "GERMS",
+      "type": 0
+    },
+    {
+      "word": "STAKE",
+      "type": 0
+    },
+    {
+      "word": "VOLTE",
+      "type": 0
+    }
+  ],
+  "letters": "SGER,TETM,AKLS,CDOV",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

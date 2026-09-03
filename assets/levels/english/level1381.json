@@ -1,69 +1,283 @@
-﻿{
-    "id":  1381,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "AID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NOD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OLD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TAP",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAID",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAIN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PAINT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POINT",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AINT",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DIN",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DINT",
-                            "type":  1
-                        },
-                        {
-                            "word":  "DON",
-                            "type":  0
-                        },
-                        {
-                            "word":  "DONT",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LOP",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "TNO,AID,POL",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1381,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ACT",
+      "type": 0
+    },
+    {
+      "word": "CAR",
+      "type": 0
+    },
+    {
+      "word": "SAW",
+      "type": 0
+    },
+    {
+      "word": "SEC",
+      "type": 0
+    },
+    {
+      "word": "TED",
+      "type": 0
+    },
+    {
+      "word": "WAS",
+      "type": 0
+    },
+    {
+      "word": "CASE",
+      "type": 0
+    },
+    {
+      "word": "REST",
+      "type": 0
+    },
+    {
+      "word": "ROSE",
+      "type": 0
+    },
+    {
+      "word": "SELF",
+      "type": 0
+    },
+    {
+      "word": "WASTE",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ACE",
+      "type": 0
+    },
+    {
+      "word": "CAW",
+      "type": 0
+    },
+    {
+      "word": "CEL",
+      "type": 0
+    },
+    {
+      "word": "ELF",
+      "type": 0
+    },
+    {
+      "word": "ERR",
+      "type": 0
+    },
+    {
+      "word": "ORC",
+      "type": 0
+    },
+    {
+      "word": "ORE",
+      "type": 0
+    },
+    {
+      "word": "OSE",
+      "type": 0
+    },
+    {
+      "word": "REC",
+      "type": 0
+    },
+    {
+      "word": "RES",
+      "type": 0
+    },
+    {
+      "word": "ROE",
+      "type": 0
+    },
+    {
+      "word": "ROT",
+      "type": 0
+    },
+    {
+      "word": "SAC",
+      "type": 0
+    },
+    {
+      "word": "SEL",
+      "type": 0
+    },
+    {
+      "word": "SER",
+      "type": 0
+    },
+    {
+      "word": "SOT",
+      "type": 0
+    },
+    {
+      "word": "TOE",
+      "type": 0
+    },
+    {
+      "word": "TOR",
+      "type": 0
+    },
+    {
+      "word": "TWA",
+      "type": 0
+    },
+    {
+      "word": "ACES",
+      "type": 0
+    },
+    {
+      "word": "ACRE",
+      "type": 0
+    },
+    {
+      "word": "CARL",
+      "type": 0
+    },
+    {
+      "word": "CARR",
+      "type": 0
+    },
+    {
+      "word": "CAST",
+      "type": 0
+    },
+    {
+      "word": "CERO",
+      "type": 0
+    },
+    {
+      "word": "EROS",
+      "type": 0
+    },
+    {
+      "word": "LEST",
+      "type": 0
+    },
+    {
+      "word": "ORCA",
+      "type": 0
+    },
+    {
+      "word": "ORES",
+      "type": 0
+    },
+    {
+      "word": "ORRA",
+      "type": 0
+    },
+    {
+      "word": "SORE",
+      "type": 0
+    },
+    {
+      "word": "TOED",
+      "type": 0
+    },
+    {
+      "word": "TORC",
+      "type": 0
+    },
+    {
+      "word": "TORE",
+      "type": 0
+    },
+    {
+      "word": "TORR",
+      "type": 0
+    },
+    {
+      "word": "TOST",
+      "type": 0
+    },
+    {
+      "word": "TWAS",
+      "type": 0
+    },
+    {
+      "word": "WAST",
+      "type": 0
+    },
+    {
+      "word": "ACRES",
+      "type": 0
+    },
+    {
+      "word": "ACTOR",
+      "type": 0
+    },
+    {
+      "word": "ARLES",
+      "type": 0
+    },
+    {
+      "word": "CARLE",
+      "type": 0
+    },
+    {
+      "word": "CASTE",
+      "type": 0
+    },
+    {
+      "word": "CEROS",
+      "type": 0
+    },
+    {
+      "word": "CREST",
+      "type": 0
+    },
+    {
+      "word": "RESAW",
+      "type": 0
+    },
+    {
+      "word": "SOREL",
+      "type": 0
+    },
+    {
+      "word": "TORES",
+      "type": 0
+    },
+    {
+      "word": "ARREST",
+      "type": 0
+    },
+    {
+      "word": "CARLES",
+      "type": 0
+    },
+    {
+      "word": "CARREL",
+      "type": 0
+    },
+    {
+      "word": "CARROT",
+      "type": 0
+    },
+    {
+      "word": "RECAST",
+      "type": 0
+    },
+    {
+      "word": "RESTED",
+      "type": 0
+    },
+    {
+      "word": "WASTED",
+      "type": 0
+    },
+    {
+      "word": "CRESTED",
+      "type": 0
+    },
+    {
+      "word": "ARRESTED",
+      "type": 0
+    }
+  ],
+  "letters": "FCAW,LEST,RROE,ACTD",
+  "obstacles": []
 }

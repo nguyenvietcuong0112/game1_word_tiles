@@ -1,113 +1,243 @@
-﻿{
-    "id":  1035,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "LEI",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TIL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ILHA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LEITO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "LENTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ALENTO",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MENTOL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "PLEITO",
-                             "type":  2
-                         },
-                         {
-                             "word":  "LENTILHA",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "AMEIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "AMENTO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ANTI",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EIA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "EITO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ELA",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ILHAL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MANEIA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MANTILHA",
-                            "type":  2
-                        },
-                        {
-                            "word":  "MANTO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MENTO",
-                            "type":  0
-                        },
-                        {
-                            "word":  "NEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "OLHAL",
-                            "type":  2
-                        }
-                    ],
-    "letters":  "ANTO,MEIL,PLAH",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1035,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "DOS",
+      "type": 0
+    },
+    {
+      "word": "ELA",
+      "type": 0
+    },
+    {
+      "word": "MAL",
+      "type": 0
+    },
+    {
+      "word": "SOL",
+      "type": 0
+    },
+    {
+      "word": "ALTO",
+      "type": 0
+    },
+    {
+      "word": "INDO",
+      "type": 0
+    },
+    {
+      "word": "ROLO",
+      "type": 0
+    },
+    {
+      "word": "SOLO",
+      "type": 0
+    },
+    {
+      "word": "LINDO",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALE",
+      "type": 0
+    },
+    {
+      "word": "AME",
+      "type": 0
+    },
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ANT",
+      "type": 0
+    },
+    {
+      "word": "DNA",
+      "type": 0
+    },
+    {
+      "word": "EMA",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "LAM",
+      "type": 0
+    },
+    {
+      "word": "LAN",
+      "type": 0
+    },
+    {
+      "word": "LEM",
+      "type": 0
+    },
+    {
+      "word": "LIN",
+      "type": 0
+    },
+    {
+      "word": "LOS",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MEL",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "NIL",
+      "type": 0
+    },
+    {
+      "word": "OIL",
+      "type": 0
+    },
+    {
+      "word": "ORM",
+      "type": 0
+    },
+    {
+      "word": "RNA",
+      "type": 0
+    },
+    {
+      "word": "ROL",
+      "type": 0
+    },
+    {
+      "word": "TOI",
+      "type": 0
+    },
+    {
+      "word": "ALEM",
+      "type": 0
+    },
+    {
+      "word": "ANDO",
+      "type": 0
+    },
+    {
+      "word": "ANIL",
+      "type": 0
+    },
+    {
+      "word": "ELAM",
+      "type": 0
+    },
+    {
+      "word": "INTO",
+      "type": 0
+    },
+    {
+      "word": "LAND",
+      "type": 0
+    },
+    {
+      "word": "LANI",
+      "type": 0
+    },
+    {
+      "word": "LEMA",
+      "type": 0
+    },
+    {
+      "word": "LINA",
+      "type": 0
+    },
+    {
+      "word": "LIND",
+      "type": 0
+    },
+    {
+      "word": "MANI",
+      "type": 0
+    },
+    {
+      "word": "NAME",
+      "type": 0
+    },
+    {
+      "word": "NANI",
+      "type": 0
+    },
+    {
+      "word": "NILS",
+      "type": 0
+    },
+    {
+      "word": "LANDO",
+      "type": 0
+    },
+    {
+      "word": "LORNA",
+      "type": 0
+    },
+    {
+      "word": "MANDO",
+      "type": 0
+    },
+    {
+      "word": "MANTO",
+      "type": 0
+    },
+    {
+      "word": "NANDO",
+      "type": 0
+    },
+    {
+      "word": "ROLOS",
+      "type": 0
+    },
+    {
+      "word": "LINDOS",
+      "type": 0
+    },
+    {
+      "word": "MANTLE",
+      "type": 0
+    },
+    {
+      "word": "INDOLOR",
+      "type": 0
+    }
+  ],
+  "letters": "ELTO,MANI,RNDL,OLOS",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,103 +1,127 @@
-﻿{
-    "id":  1230,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "EEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ODD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "OWE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POD",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "POKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "WOKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPELL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SPOKE",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "DOPE",
-                            "type":  2
-                        },
-                        {
-                            "word":  "LEES",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PEE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "PELL",
-                            "type":  0
-                        },
-                        {
-                            "word":  "POW",
-                            "type":  0
-                        },
-                        {
-                            "word":  "SEEP",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "LLDD,EPOK,ESWE",
-    "obstacles":  [
-                      {
-                          "required_words":  4,
-                          "id":  1,
-                          "type":  0,
-                          "cells":  [
-                                        {
-                                            "x":  0,
-                                            "y":  2
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  1
-                                        },
-                                        {
-                                            "x":  0,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  1,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  2,
-                                            "y":  0
-                                        },
-                                        {
-                                            "x":  3,
-                                            "y":  0
-                                        }
-                                    ]
-                      }
-                  ]
+{
+  "id": 1230,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AIM",
+      "type": 0
+    },
+    {
+      "word": "ARE",
+      "type": 0
+    },
+    {
+      "word": "ARM",
+      "type": 0
+    },
+    {
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "ERA",
+      "type": 0
+    },
+    {
+      "word": "MIB",
+      "type": 0
+    },
+    {
+      "word": "BARE",
+      "type": 0
+    },
+    {
+      "word": "MOSS",
+      "type": 0
+    },
+    {
+      "word": "PISS",
+      "type": 0
+    },
+    {
+      "word": "RELY",
+      "type": 0
+    },
+    {
+      "word": "GOSSIP",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "BEL",
+      "type": 0
+    },
+    {
+      "word": "ISM",
+      "type": 0
+    },
+    {
+      "word": "MOG",
+      "type": 0
+    },
+    {
+      "word": "MOS",
+      "type": 0
+    },
+    {
+      "word": "OMS",
+      "type": 0
+    },
+    {
+      "word": "PIS",
+      "type": 0
+    },
+    {
+      "word": "PLY",
+      "type": 0
+    },
+    {
+      "word": "REB",
+      "type": 0
+    },
+    {
+      "word": "SIP",
+      "type": 0
+    },
+    {
+      "word": "YIP",
+      "type": 0
+    },
+    {
+      "word": "BARM",
+      "type": 0
+    },
+    {
+      "word": "BERM",
+      "type": 0
+    },
+    {
+      "word": "PLEB",
+      "type": 0
+    },
+    {
+      "word": "SMOG",
+      "type": 0
+    },
+    {
+      "word": "BARELY",
+      "type": 0
+    }
+  ],
+  "letters": "SSIY,OMPL,GMRE,BIAB",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

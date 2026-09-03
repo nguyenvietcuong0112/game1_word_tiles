@@ -1,65 +1,235 @@
-﻿{
-    "id":  1875,
-    "width":  5,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "ANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "NUR",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BANT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BURÇ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "BUSE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SAAT",
-                             "type":  0
-                         },
-                         {
-                             "word":  "TREN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SABUN",
-                             "type":  0
-                         },
-                         {
-                             "word":  "ANTRENÖR",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ANTRE",
-                            "type":  1
-                        },
-                        {
-                            "word":  "SABUR",
-                            "type":  0
-                        },
-                        {
-                            "word":  "USANÇ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "EATRE,SANÇN,UBURÖ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 1875,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ANI",
+      "type": 0
+    },
+    {
+      "word": "ANN",
+      "type": 0
+    },
+    {
+      "word": "HAL",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "TAN",
+      "type": 0
+    },
+    {
+      "word": "İNN",
+      "type": 0
+    },
+    {
+      "word": "ALIN",
+      "type": 0
+    },
+    {
+      "word": "ALMA",
+      "type": 0
+    },
+    {
+      "word": "ATIN",
+      "type": 0
+    },
+    {
+      "word": "BATI",
+      "type": 0
+    },
+    {
+      "word": "İNAN",
+      "type": 0
+    },
+    {
+      "word": "BATILI",
+      "type": 0
+    },
+    {
+      "word": "İNANCI",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "AAH",
+      "type": 0
+    },
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ANİ",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "ATI",
+      "type": 0
+    },
+    {
+      "word": "BAL",
+      "type": 0
+    },
+    {
+      "word": "BAT",
+      "type": 0
+    },
+    {
+      "word": "BLA",
+      "type": 0
+    },
+    {
+      "word": "HAA",
+      "type": 0
+    },
+    {
+      "word": "INA",
+      "type": 0
+    },
+    {
+      "word": "LAB",
+      "type": 0
+    },
+    {
+      "word": "MAN",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "MİN",
+      "type": 0
+    },
+    {
+      "word": "NAM",
+      "type": 0
+    },
+    {
+      "word": "NAN",
+      "type": 0
+    },
+    {
+      "word": "NAT",
+      "type": 0
+    },
+    {
+      "word": "NİM",
+      "type": 0
+    },
+    {
+      "word": "TAA",
+      "type": 0
+    },
+    {
+      "word": "İMA",
+      "type": 0
+    },
+    {
+      "word": "ABLA",
+      "type": 0
+    },
+    {
+      "word": "ALBA",
+      "type": 0
+    },
+    {
+      "word": "AMİN",
+      "type": 0
+    },
+    {
+      "word": "ANIT",
+      "type": 0
+    },
+    {
+      "word": "ATAN",
+      "type": 0
+    },
+    {
+      "word": "BAAL",
+      "type": 0
+    },
+    {
+      "word": "BATH",
+      "type": 0
+    },
+    {
+      "word": "BLAH",
+      "type": 0
+    },
+    {
+      "word": "MANN",
+      "type": 0
+    },
+    {
+      "word": "MANİ",
+      "type": 0
+    },
+    {
+      "word": "MATA",
+      "type": 0
+    },
+    {
+      "word": "MİNA",
+      "type": 0
+    },
+    {
+      "word": "NAMİ",
+      "type": 0
+    },
+    {
+      "word": "TAMİ",
+      "type": 0
+    },
+    {
+      "word": "TANI",
+      "type": 0
+    },
+    {
+      "word": "İMAN",
+      "type": 0
+    },
+    {
+      "word": "İMHA",
+      "type": 0
+    },
+    {
+      "word": "İNAT",
+      "type": 0
+    },
+    {
+      "word": "ATINA",
+      "type": 0
+    },
+    {
+      "word": "BATAN",
+      "type": 0
+    },
+    {
+      "word": "BATIL",
+      "type": 0
+    },
+    {
+      "word": "ALINAN",
+      "type": 0
+    },
+    {
+      "word": "İNANCIN",
+      "type": 0
+    }
+  ],
+  "letters": "INİIA,CNILM,NATAB,İMHAL",
+  "obstacles": []
 }

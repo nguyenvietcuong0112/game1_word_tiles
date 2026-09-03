@@ -1,65 +1,123 @@
-﻿{
-    "id":  930,
-    "width":  3,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "КИЙ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОН",
-                             "type":  0
-                         },
-                         {
-                             "word":  "РОК",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОРЖ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОРМ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "КОРМА",
-                             "type":  0
-                         },
-                         {
-                             "word":  "НОРМА",
-                             "type":  0
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ИРМА",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ИРОН",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КИР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "КОР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "НОР",
-                            "type":  0
-                        },
-                        {
-                            "word":  "РЖА",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "НМА,ОРЖ,КИЙ",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 930,
+  "width": 4,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "ИЛИ",
+      "type": 0
+    },
+    {
+      "word": "ЛИЗ",
+      "type": 0
+    },
+    {
+      "word": "ЛМЕ",
+      "type": 0
+    },
+    {
+      "word": "ШЛИ",
+      "type": 0
+    },
+    {
+      "word": "ЛИЦУ",
+      "type": 0
+    },
+    {
+      "word": "УЧИЛ",
+      "type": 0
+    },
+    {
+      "word": "ШЛЮХ",
+      "type": 0
+    },
+    {
+      "word": "УЛИЦУ",
+      "type": 0
+    },
+    {
+      "word": "ШЛЮХИ",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ЗИМ",
+      "type": 0
+    },
+    {
+      "word": "ЛИМ",
+      "type": 0
+    },
+    {
+      "word": "ЛИЦ",
+      "type": 0
+    },
+    {
+      "word": "ЛУЧ",
+      "type": 0
+    },
+    {
+      "word": "МИЛ",
+      "type": 0
+    },
+    {
+      "word": "УЗИ",
+      "type": 0
+    },
+    {
+      "word": "УЧИ",
+      "type": 0
+    },
+    {
+      "word": "ЛИЗЕ",
+      "type": 0
+    },
+    {
+      "word": "ЛИЗУ",
+      "type": 0
+    },
+    {
+      "word": "ЛУЧИ",
+      "type": 0
+    },
+    {
+      "word": "МИЛИ",
+      "type": 0
+    },
+    {
+      "word": "УЛИЦ",
+      "type": 0
+    },
+    {
+      "word": "ХИЛИ",
+      "type": 0
+    },
+    {
+      "word": "ЧИЛИ",
+      "type": 0
+    },
+    {
+      "word": "УЧИЛИ",
+      "type": 0
+    },
+    {
+      "word": "ИЗУЧИЛ",
+      "type": 0
+    }
+  ],
+  "letters": "УЦИЧ,ЛШЛУ,ЮХИЗ,ХЛМЕ",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

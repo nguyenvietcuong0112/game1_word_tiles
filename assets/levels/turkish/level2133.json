@@ -1,97 +1,235 @@
-﻿{
-    "id":  2133,
-    "width":  4,
-    "height":  3,
-    "target_words":  [
-                         {
-                             "word":  "DİL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "HEM",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KAS",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KEL",
-                             "type":  0
-                         },
-                         {
-                             "word":  "AİLE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KASE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "KASK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEMA",
-                             "type":  0
-                         },
-                         {
-                             "word":  "SEMT",
-                             "type":  2
-                         },
-                         {
-                             "word":  "DİLEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MASKE",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MESAİ",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MESLEK",
-                             "type":  0
-                         },
-                         {
-                             "word":  "MASKELİ",
-                             "type":  2
-                         }
-                     ],
-    "extra_words":  [
-                        {
-                            "word":  "ASLİ",
-                            "type":  0
-                        },
-                        {
-                            "word":  "ESLEK",
-                            "type":  0
-                        },
-                        {
-                            "word":  "İLE",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KAM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "KASEM",
-                            "type":  0
-                        },
-                        {
-                            "word":  "MESAİL",
-                            "type":  2
-                        },
-                        {
-                            "word":  "SEMAİ",
-                            "type":  0
-                        }
-                    ],
-    "letters":  "DİLE,KASK,TMEH",
-    "obstacles":  [
-
-                  ]
+{
+  "id": 2133,
+  "width": 5,
+  "height": 4,
+  "target_words": [
+    {
+      "word": "AMA",
+      "type": 0
+    },
+    {
+      "word": "KAL",
+      "type": 0
+    },
+    {
+      "word": "NIN",
+      "type": 0
+    },
+    {
+      "word": "RUM",
+      "type": 0
+    },
+    {
+      "word": "TAM",
+      "type": 0
+    },
+    {
+      "word": "YIL",
+      "type": 0
+    },
+    {
+      "word": "ALIN",
+      "type": 0
+    },
+    {
+      "word": "MARK",
+      "type": 0
+    },
+    {
+      "word": "AYLIK",
+      "type": 0
+    },
+    {
+      "word": "KALIN",
+      "type": 0
+    },
+    {
+      "word": "MURAT",
+      "type": 0
+    },
+    {
+      "word": "YAKIN",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "ALI",
+      "type": 0
+    },
+    {
+      "word": "ARK",
+      "type": 0
+    },
+    {
+      "word": "ATA",
+      "type": 0
+    },
+    {
+      "word": "AYI",
+      "type": 0
+    },
+    {
+      "word": "INI",
+      "type": 0
+    },
+    {
+      "word": "KAY",
+      "type": 0
+    },
+    {
+      "word": "KIL",
+      "type": 0
+    },
+    {
+      "word": "LAK",
+      "type": 0
+    },
+    {
+      "word": "LAY",
+      "type": 0
+    },
+    {
+      "word": "LIK",
+      "type": 0
+    },
+    {
+      "word": "MAR",
+      "type": 0
+    },
+    {
+      "word": "MAT",
+      "type": 0
+    },
+    {
+      "word": "RAM",
+      "type": 0
+    },
+    {
+      "word": "RAT",
+      "type": 0
+    },
+    {
+      "word": "UMA",
+      "type": 0
+    },
+    {
+      "word": "YAK",
+      "type": 0
+    },
+    {
+      "word": "YIK",
+      "type": 0
+    },
+    {
+      "word": "AKIL",
+      "type": 0
+    },
+    {
+      "word": "AKIN",
+      "type": 0
+    },
+    {
+      "word": "AMAR",
+      "type": 0
+    },
+    {
+      "word": "ATAR",
+      "type": 0
+    },
+    {
+      "word": "AYIK",
+      "type": 0
+    },
+    {
+      "word": "IKIN",
+      "type": 0
+    },
+    {
+      "word": "ILIK",
+      "type": 0
+    },
+    {
+      "word": "ININ",
+      "type": 0
+    },
+    {
+      "word": "KILI",
+      "type": 0
+    },
+    {
+      "word": "MARU",
+      "type": 0
+    },
+    {
+      "word": "MATA",
+      "type": 0
+    },
+    {
+      "word": "RAMA",
+      "type": 0
+    },
+    {
+      "word": "TAMA",
+      "type": 0
+    },
+    {
+      "word": "YILA",
+      "type": 0
+    },
+    {
+      "word": "YILI",
+      "type": 0
+    },
+    {
+      "word": "KAYIK",
+      "type": 0
+    },
+    {
+      "word": "KILIK",
+      "type": 0
+    },
+    {
+      "word": "KIYAK",
+      "type": 0
+    },
+    {
+      "word": "LAYIK",
+      "type": 0
+    },
+    {
+      "word": "MARLA",
+      "type": 0
+    },
+    {
+      "word": "TARLA",
+      "type": 0
+    },
+    {
+      "word": "YALIN",
+      "type": 0
+    },
+    {
+      "word": "YILIN",
+      "type": 0
+    },
+    {
+      "word": "KILINI",
+      "type": 0
+    },
+    {
+      "word": "YAKINI",
+      "type": 0
+    },
+    {
+      "word": "YILINI",
+      "type": 0
+    },
+    {
+      "word": "YILININ",
+      "type": 0
+    }
+  ],
+  "letters": "NINTA,KKIAM,IALRU,LYIKR",
+  "obstacles": []
 }
