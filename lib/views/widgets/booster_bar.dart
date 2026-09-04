@@ -32,35 +32,35 @@ class BoosterBar extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              // 1. Extra Words Button (Authentic Wooden Ring)
-              WoodCircularButton(
+              // 1. Extra Words Button (Carved Wood)
+              WoodCarvedIconButton(
                 size: 56.r,
-                icon: WoodGameIcons.extraWords(size: 30.r),
+                assetPath: WoodGameIcons.btnExtraWords,
                 badgeText: isReadyToClaim ? 'CLAIM!' : '$extraCount/10',
                 badgeColor: isReadyToClaim ? const Color(0xFF10B981) : null,
                 onTap: onOpenExtraWords,
               ),
 
-              // 2. Hint Booster 💡
-              WoodCircularButton(
+              // 2. Hint Booster 💡 (Carved Wood)
+              WoodCarvedIconButton(
                 size: 56.r,
-                icon: WoodGameIcons.hint(size: 30.r),
+                assetPath: WoodGameIcons.btnHint,
                 badgeText: hintCount > 0 ? '$hintCount' : '80 🪙',
                 onTap: () => controller.useHint(),
               ),
 
-              // 3. Rocket Booster 🚀
-              WoodCircularButton(
+              // 3. Rocket Booster 🚀 (Carved Wood)
+              WoodCarvedIconButton(
                 size: 56.r,
-                icon: WoodGameIcons.rocket(size: 30.r),
+                assetPath: WoodGameIcons.btnRocket,
                 badgeText: rocketCount > 0 ? '$rocketCount' : '240 🪙',
                 onTap: () => controller.useRocket(),
               ),
 
-              // 4. Shop / Chest 🎁
-              WoodCircularButton(
+              // 4. Shop / Cart 🛒 (Carved Wood)
+              WoodCarvedIconButton(
                 size: 56.r,
-                icon: WoodGameIcons.shop(size: 30.r),
+                assetPath: WoodGameIcons.btnShop,
                 badgeText: 'SHOP',
                 onTap: onOpenShop,
               ),

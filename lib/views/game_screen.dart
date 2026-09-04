@@ -546,7 +546,7 @@ class _GameScreenState extends State<GameScreen> {
                   child: Stack(
                     alignment: Alignment.center,
                     children: [
-                      // Dark roasted wood gradient
+                      // Golden Honey Oak wood gradient
                       Positioned.fill(
                         child: Container(
                           decoration: const BoxDecoration(
@@ -554,9 +554,10 @@ class _GameScreenState extends State<GameScreen> {
                               begin: Alignment.topCenter,
                               end: Alignment.bottomCenter,
                               colors: [
-                                Color(0xFF4A2007),
-                                Color(0xFF381401),
-                                Color(0xFF260C00),
+                                Color(0xFFFFD868),
+                                Color(0xFFF3942B),
+                                Color(0xFFD97213),
+                                Color(0xFFAC4B04),
                               ],
                             ),
                           ),
@@ -565,12 +566,22 @@ class _GameScreenState extends State<GameScreen> {
                       // Real wood grain texture
                       Positioned.fill(
                         child: Opacity(
-                          opacity: 0.28,
+                          opacity: 0.32,
                           child: Image.asset(
                             'assets/images/golden_wood_texture.webp',
                             fit: BoxFit.cover,
                             errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
                           ),
+                        ),
+                      ),
+                      // Top highlight specular rim
+                      Positioned(
+                        top: 0,
+                        left: 10,
+                        right: 10,
+                        height: 1.2,
+                        child: Container(
+                          color: Colors.white.withValues(alpha: 0.45),
                         ),
                       ),
                       // Text content
@@ -583,12 +594,12 @@ class _GameScreenState extends State<GameScreen> {
                                   style: GoogleFonts.fredoka(
                                     fontSize: 13.5.sp,
                                     fontWeight: FontWeight.w700,
-                                    color: Colors.white,
+                                    color: GoldenWoodColors.carvedDark,
                                     shadows: const [
                                       Shadow(
-                                        color: Color(0xFF1F0900),
+                                        color: GoldenWoodColors.carvedShadowLight,
                                         offset: Offset(0, 1.2),
-                                        blurRadius: 1,
+                                        blurRadius: 0,
                                       ),
                                     ],
                                   ),
@@ -597,7 +608,7 @@ class _GameScreenState extends State<GameScreen> {
                                     TextSpan(
                                       text: '"$nextWord"',
                                       style: const TextStyle(
-                                        color: Color(0xFFFFBA52),
+                                        color: Color(0xFF4A1A02),
                                         fontWeight: FontWeight.w900,
                                       ),
                                     ),
@@ -610,12 +621,12 @@ class _GameScreenState extends State<GameScreen> {
                                   style: GoogleFonts.fredoka(
                                     fontSize: 14.sp,
                                     fontWeight: FontWeight.w700,
-                                    color: Colors.white,
+                                    color: GoldenWoodColors.carvedDark,
                                     shadows: const [
                                       Shadow(
-                                        color: Color(0xFF1F0900),
+                                        color: GoldenWoodColors.carvedShadowLight,
                                         offset: Offset(0, 1.2),
-                                        blurRadius: 1,
+                                        blurRadius: 0,
                                       ),
                                     ],
                                   ),
@@ -624,7 +635,7 @@ class _GameScreenState extends State<GameScreen> {
                                     TextSpan(
                                       text: '"$nextWord"',
                                       style: const TextStyle(
-                                        color: Color(0xFFFFBA52),
+                                        color: Color(0xFF4A1A02),
                                         fontWeight: FontWeight.w900,
                                       ),
                                     ),

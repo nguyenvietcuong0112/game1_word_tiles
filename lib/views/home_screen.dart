@@ -261,9 +261,9 @@ class _HomeScreenState extends State<HomeScreen> {
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            Color(0xFF4A2007),
-                            Color(0xFF381401),
-                            Color(0xFF260C00),
+                            GoldenWoodColors.woodHighlight,
+                            GoldenWoodColors.woodTop,
+                            GoldenWoodColors.woodMid,
                           ],
                         ),
                       ),
@@ -271,11 +271,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   Positioned.fill(
                     child: Opacity(
-                      opacity: 0.22,
+                      opacity: 0.35,
                       child: Image.asset(
                         'assets/images/golden_wood_texture.webp',
                         fit: BoxFit.cover,
                       ),
+                    ),
+                  ),
+                  Positioned(
+                    top: 0,
+                    left: 8,
+                    right: 8,
+                    height: 1.2,
+                    child: Container(
+                      color: Colors.white.withValues(alpha: 0.45),
                     ),
                   ),
                   Padding(
@@ -304,7 +313,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         const Icon(
                           Icons.arrow_drop_down_rounded,
                           size: 20,
-                          color: Color(0xFFFFBA52),
+                          color: Colors.white,
                         ),
                       ],
                     ),
@@ -337,33 +346,19 @@ class _HomeScreenState extends State<HomeScreen> {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Container(
-          padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 5.h),
-          decoration: BoxDecoration(
-            color: const Color(0xFF381401),
-            borderRadius: BorderRadius.circular(16.r),
-            border: Border.all(color: WoodenStyle.woodBevel, width: 1.5),
-            boxShadow: const [
-              BoxShadow(
-                color: WoodenStyle.woodExtrusion,
-                offset: Offset(0, 1.8),
+        Text(
+          '✨ CASUAL WORD PUZZLE ✨',
+          style: GoogleFonts.fredoka(
+            fontSize: 12.sp,
+            fontWeight: FontWeight.w900,
+            letterSpacing: 1.5,
+            color: WoodenStyle.carvedDark,
+            shadows: const [
+              Shadow(
+                color: WoodenStyle.carvedShadowLight,
+                offset: Offset(0, 1.2),
               ),
             ],
-          ),
-          child: Text(
-            '✨ CASUAL WORD PUZZLE ✨',
-            style: GoogleFonts.fredoka(
-              fontSize: 11.sp,
-              fontWeight: FontWeight.w900,
-              letterSpacing: 1.5,
-              color: const Color(0xFFFFBA52),
-              shadows: const [
-                Shadow(
-                  color: Color(0xFF1F0900),
-                  offset: Offset(0, 1),
-                ),
-              ],
-            ),
           ),
         ),
         SizedBox(height: 14.h),
@@ -519,7 +514,7 @@ class _HomeScreenState extends State<HomeScreen> {
           borderRadius: BorderRadius.circular(21.r),
           child: Stack(
             children: [
-              // Rich Roasted Chocolate Wood Background
+              // Rich Golden Honey Oak Wood Background
               Positioned.fill(
                 child: Container(
                   decoration: const BoxDecoration(
@@ -527,9 +522,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        Color(0xFF481F07),
-                        Color(0xFF381401),
-                        Color(0xFF260C00),
+                        Color(0xFFFFD868),
+                        Color(0xFFF3942B),
+                        Color(0xFFD97213),
+                        Color(0xFFAC4B04),
                       ],
                     ),
                   ),
@@ -538,7 +534,7 @@ class _HomeScreenState extends State<HomeScreen> {
               // Subtle Wood Grain Texture
               Positioned.fill(
                 child: Opacity(
-                  opacity: 0.22,
+                  opacity: 0.32,
                   child: Image.asset(
                     'assets/images/golden_wood_texture.webp',
                     fit: BoxFit.cover,
@@ -550,9 +546,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 top: 0,
                 left: 12,
                 right: 12,
-                height: 1.2,
+                height: 1.5,
                 child: Container(
-                  color: Colors.white.withValues(alpha: 0.25),
+                  color: Colors.white.withValues(alpha: 0.5),
                 ),
               ),
               // Content
@@ -571,15 +567,15 @@ class _HomeScreenState extends State<HomeScreen> {
                               begin: Alignment.topCenter,
                               end: Alignment.bottomCenter,
                               colors: [
-                                Color(0xFF2E0F00),
-                                Color(0xFF1A0600),
+                                Color(0xFF5A2508),
+                                Color(0xFF381401),
                               ],
                             ),
                             shape: BoxShape.circle,
-                            border: Border.all(color: WoodenStyle.woodHighlight, width: 1.8),
+                            border: Border.all(color: GoldenWoodColors.woodHighlight, width: 1.8),
                             boxShadow: const [
                               BoxShadow(
-                                color: Color(0xFF120400),
+                                color: GoldenWoodColors.woodExtrusion,
                                 offset: Offset(0, 2),
                               ),
                             ],
@@ -610,22 +606,33 @@ class _HomeScreenState extends State<HomeScreen> {
                                           offset: Offset(0, 1.5),
                                           blurRadius: 1,
                                         ),
+                                        Shadow(
+                                          color: Color(0x66000000),
+                                          offset: Offset(0, 2.5),
+                                          blurRadius: 2,
+                                        ),
                                       ],
                                     ),
                                   ),
                                   Container(
                                     padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 3.h),
                                     decoration: BoxDecoration(
-                                      color: const Color(0xFF2A0E01),
+                                      color: const Color(0xFF4A1E05),
                                       borderRadius: BorderRadius.circular(10.r),
-                                      border: Border.all(color: const Color(0xFF7A2F02), width: 1.2),
+                                      border: Border.all(color: const Color(0xFF8C3E08), width: 1.2),
+                                      boxShadow: const [
+                                        BoxShadow(
+                                          color: Color(0x22000000),
+                                          offset: Offset(0, 1),
+                                        ),
+                                      ],
                                     ),
                                     child: Text(
                                       'Goal: Level $nextMilestone',
                                       style: GoogleFonts.fredoka(
                                         fontSize: 11.sp,
                                         fontWeight: FontWeight.w900,
-                                        color: const Color(0xFFFFBA52),
+                                        color: Colors.white,
                                       ),
                                     ),
                                   ),
@@ -636,8 +643,15 @@ class _HomeScreenState extends State<HomeScreen> {
                                 '$langFlag $langNameOnly • ⭐ $_totalStars Stars',
                                 style: GoogleFonts.fredoka(
                                   fontSize: 12.5.sp,
-                                  color: Colors.white.withValues(alpha: 0.85),
-                                  fontWeight: FontWeight.w600,
+                                  color: Colors.white.withValues(alpha: 0.95),
+                                  fontWeight: FontWeight.w700,
+                                  shadows: const [
+                                    Shadow(
+                                      color: Color(0xFF1F0900),
+                                      offset: Offset(0, 1.2),
+                                      blurRadius: 1,
+                                    ),
+                                  ],
                                 ),
                               ),
                             ],
@@ -646,15 +660,22 @@ class _HomeScreenState extends State<HomeScreen> {
                         SizedBox(width: 8.w),
                         // Forward Arrow Button
                         Container(
-                          width: 28.r,
-                          height: 28.r,
+                          width: 30.r,
+                          height: 30.r,
                           decoration: BoxDecoration(
-                            color: WoodenStyle.woodTop,
+                            gradient: const LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                Color(0xFF5A2508),
+                                Color(0xFF381401),
+                              ],
+                            ),
                             shape: BoxShape.circle,
-                            border: Border.all(color: WoodenStyle.woodExtrusion, width: 1.2),
+                            border: Border.all(color: GoldenWoodColors.woodHighlight, width: 1.4),
                             boxShadow: const [
                               BoxShadow(
-                                color: WoodenStyle.woodExtrusion,
+                                color: GoldenWoodColors.woodExtrusion,
                                 offset: Offset(0, 1.5),
                               ),
                             ],
@@ -662,8 +683,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           child: const Center(
                             child: Icon(
                               Icons.arrow_forward_ios_rounded,
-                              size: 12,
-                              color: Colors.white,
+                              size: 13,
+                              color: Color(0xFFFFD868),
                             ),
                           ),
                         ),
@@ -672,10 +693,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     SizedBox(height: 14.h),
 
                     // Progress Bar to Next Milestone
-                    // WoodenProgressBar(
-                    //   progress: progressInMilestone == 0.0 ? 1.0 : progressInMilestone,
-                    //   height: 14.h,
-                    // ),
+                    WoodenProgressBar(
+                      progress: progressInMilestone == 0.0 ? 1.0 : progressInMilestone,
+                      height: 14.h,
+                    ),
                   ],
                 ),
               ),
@@ -689,10 +710,14 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildPlayButton(int levelNumber) {
     return WoodenButton(
       text: 'PLAY LEVEL $levelNumber',
-      icon: Icons.play_arrow_rounded,
-      textColor: Colors.white,
+      iconWidget: Image.asset(
+        WoodGameIcons.btnPlay,
+        width: 38.r,
+        height: 38.r,
+        fit: BoxFit.contain,
+      ),
       variant: WoodenButtonVariant.primary,
-      height: 60.h,
+      height: 64.h,
       fontSize: 22.sp,
       onTap: _playCurrentLevel,
     ).animate(onPlay: (c) => c.repeat(reverse: true)).scale(

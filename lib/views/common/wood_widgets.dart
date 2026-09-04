@@ -71,6 +71,10 @@ class WoodGameIcons {
   static const String btnLock = 'assets/icons/wood_btn_lock.webp';
   static const String btnInfo = 'assets/icons/wood_btn_info.webp';
   static const String btnVibrate = 'assets/icons/wood_btn_vibrate.webp';
+  static const String btnHint = 'assets/icons/wood_btn_hint.png';
+  static const String btnRocket = 'assets/icons/wood_btn_rocket.png';
+  static const String btnExtraWords = 'assets/icons/wood_btn_extra.png';
+  static const String btnShop = 'assets/icons/wood_btn_shop.png';
 
   static Widget buttonImage(String assetPath, {double size = 48}) {
     return Image.asset(
@@ -93,7 +97,7 @@ class WoodGameIcons {
 
   static Widget hint({double size = 28, BoxFit fit = BoxFit.contain}) {
     return Image.asset(
-      iconHint,
+      btnHint,
       width: size,
       height: size,
       fit: fit,
@@ -103,7 +107,7 @@ class WoodGameIcons {
 
   static Widget rocket({double size = 28, BoxFit fit = BoxFit.contain}) {
     return Image.asset(
-      iconRocket,
+      btnRocket,
       width: size,
       height: size,
       fit: fit,
@@ -113,7 +117,7 @@ class WoodGameIcons {
 
   static Widget extraWords({double size = 28, BoxFit fit = BoxFit.contain}) {
     return Image.asset(
-      iconExtraWords,
+      btnExtraWords,
       width: size,
       height: size,
       fit: fit,
@@ -123,11 +127,11 @@ class WoodGameIcons {
 
   static Widget shop({double size = 28, BoxFit fit = BoxFit.contain}) {
     return Image.asset(
-      iconShop,
+      btnShop,
       width: size,
       height: size,
       fit: fit,
-      errorBuilder: (c, e, s) => Text('🎁', style: TextStyle(fontSize: size * 0.8)),
+      errorBuilder: (c, e, s) => Text('🛒', style: TextStyle(fontSize: size * 0.8)),
     );
   }
 
@@ -866,9 +870,12 @@ class _WoodCarvedIconButtonState extends State<WoodCarvedIconButton> {
           ),
           if (widget.badgeText != null)
             Positioned(
-              bottom: -4,
+              bottom: -5,
               child: Container(
-                padding: EdgeInsets.symmetric(horizontal: 7.w, vertical: 2.h),
+                padding: EdgeInsets.symmetric(
+                  horizontal: widget.size > 50 ? 9.w : 7.w,
+                  vertical: 2.5.h,
+                ),
                 decoration: BoxDecoration(
                   gradient: widget.badgeColor == null
                       ? const LinearGradient(
@@ -891,7 +898,7 @@ class _WoodCarvedIconButtonState extends State<WoodCarvedIconButton> {
                 child: Text(
                   widget.badgeText!,
                   style: GoogleFonts.fredoka(
-                    fontSize: 9.sp,
+                    fontSize: widget.size > 50 ? 10.5.sp : 9.sp,
                     fontWeight: FontWeight.w900,
                     color: Colors.white,
                     height: 1.0,
@@ -910,6 +917,7 @@ class WoodPlankButton extends StatefulWidget {
   final VoidCallback? onTap;
   final String text;
   final IconData? icon;
+  final Widget? iconWidget;
   final double? width;
   final double? height;
   final EdgeInsetsGeometry? padding;
@@ -923,6 +931,7 @@ class WoodPlankButton extends StatefulWidget {
     required this.text,
     this.onTap,
     this.icon,
+    this.iconWidget,
     this.width,
     this.height,
     this.padding,
@@ -1087,7 +1096,10 @@ class _WoodPlankButtonState extends State<WoodPlankButton> {
                         mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          if (widget.icon != null) ...[
+                          if (widget.iconWidget != null) ...[
+                            widget.iconWidget!,
+                            SizedBox(width: 10.w),
+                          ] else if (widget.icon != null) ...[
                             Icon(
                               widget.icon,
                               color: effectiveTextColor,
@@ -1545,16 +1557,18 @@ class WoodSignboardDialog extends StatelessWidget {
                         style: GoogleFonts.fredoka(
                           fontSize: 18.sp,
                           fontWeight: FontWeight.w900,
-                          color: GoldenWoodColors.carvedDark,
+                          color: Colors.white,
                           letterSpacing: 1.8,
                           shadows: const [
                             Shadow(
-                              color: GoldenWoodColors.carvedShadowLight,
-                              offset: Offset(0, 1.5),
+                              color: Color(0xFF1F0900),
+                              offset: Offset(0, 2.0),
+                              blurRadius: 1,
                             ),
                             Shadow(
-                              color: Color(0xFF1F0900),
-                              offset: Offset(0, -1.0),
+                              color: Color(0x66000000),
+                              offset: Offset(0, 3.5),
+                              blurRadius: 3,
                             ),
                           ],
                         ),
@@ -1779,6 +1793,7 @@ class WoodenButton extends StatelessWidget {
   final VoidCallback? onTap;
   final String text;
   final IconData? icon;
+  final Widget? iconWidget;
   final double? width;
   final double? height;
   final EdgeInsetsGeometry? padding;
@@ -1792,6 +1807,7 @@ class WoodenButton extends StatelessWidget {
     required this.text,
     this.onTap,
     this.icon,
+    this.iconWidget,
     this.width,
     this.height,
     this.padding,
@@ -1807,6 +1823,7 @@ class WoodenButton extends StatelessWidget {
       text: text,
       onTap: isEnabled ? onTap : null,
       icon: icon,
+      iconWidget: iconWidget,
       width: width,
       height: height,
       padding: padding,
@@ -2032,9 +2049,9 @@ class WoodenCurrency extends StatelessWidget {
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                       colors: [
-                        Color(0xFF4A2007),
-                        Color(0xFF381401),
-                        Color(0xFF260C00),
+                        GoldenWoodColors.woodHighlight,
+                        GoldenWoodColors.woodTop,
+                        GoldenWoodColors.woodMid,
                       ],
                     ),
                   ),
@@ -2042,11 +2059,21 @@ class WoodenCurrency extends StatelessWidget {
               ),
               Positioned.fill(
                 child: Opacity(
-                  opacity: 0.22,
+                  opacity: 0.35,
                   child: Image.asset(
                     'assets/images/golden_wood_texture.webp',
                     fit: BoxFit.cover,
                   ),
+                ),
+              ),
+              // Top specular rim
+              Positioned(
+                top: 0,
+                left: 8,
+                right: 8,
+                height: 1.2,
+                child: Container(
+                  color: Colors.white.withValues(alpha: 0.45),
                 ),
               ),
               Padding(
@@ -2061,12 +2088,17 @@ class WoodenCurrency extends StatelessWidget {
                       style: GoogleFonts.fredoka(
                         fontSize: 14.sp,
                         fontWeight: FontWeight.w900,
-                        color: Colors.white,
+                        color: GoldenWoodColors.carvedDark,
                         shadows: const [
                           Shadow(
-                            color: Color(0xFF1F0900),
+                            color: GoldenWoodColors.carvedShadowLight,
                             offset: Offset(0, 1.2),
-                            blurRadius: 1,
+                            blurRadius: 0,
+                          ),
+                          Shadow(
+                            color: Color(0xFF1F0900),
+                            offset: Offset(0, -1.0),
+                            blurRadius: 0,
                           ),
                         ],
                       ),

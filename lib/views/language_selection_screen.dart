@@ -151,18 +151,20 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                                               begin: Alignment.topCenter,
                                               end: Alignment.bottomCenter,
                                               colors: [
-                                                Color(0xFFFFC062),
-                                                Color(0xFFE5871F),
-                                                Color(0xFFB55208),
+                                                Color(0xFFFFD868),
+                                                Color(0xFFF3942B),
+                                                Color(0xFFD97213),
+                                                Color(0xFFAC4B04),
                                               ],
                                             )
                                           : const LinearGradient(
                                               begin: Alignment.topCenter,
                                               end: Alignment.bottomCenter,
                                               colors: [
-                                                Color(0xFF4A2007),
-                                                Color(0xFF381401),
-                                                Color(0xFF260C00),
+                                                Color(0xFFD97E25),
+                                                Color(0xFFBF6212),
+                                                Color(0xFFA64F0A),
+                                                Color(0xFF853B04),
                                               ],
                                             ),
                                     ),
@@ -171,24 +173,24 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                                 // Wood Grain
                                 Positioned.fill(
                                   child: Opacity(
-                                    opacity: isSelected ? 0.32 : 0.20,
+                                    opacity: isSelected ? 0.32 : 0.25,
                                     child: Image.asset(
                                       'assets/images/golden_wood_texture.webp',
                                       fit: BoxFit.cover,
+                                      errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
                                     ),
                                   ),
                                 ),
                                 // Highlight specular rim
-                                if (isSelected)
-                                  Positioned(
-                                    top: 0,
-                                    left: 12,
-                                    right: 12,
-                                    height: 1.2,
-                                    child: Container(
-                                      color: Colors.white.withValues(alpha: 0.4),
-                                    ),
+                                Positioned(
+                                  top: 0,
+                                  left: 12,
+                                  right: 12,
+                                  height: 1.2,
+                                  child: Container(
+                                    color: Colors.white.withValues(alpha: isSelected ? 0.45 : 0.35),
                                   ),
+                                ),
                                 // Content
                                 Padding(
                                   padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 14.h),
@@ -199,12 +201,27 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                                         width: 44.r,
                                         height: 44.r,
                                         decoration: BoxDecoration(
-                                          color: isSelected ? const Color(0xFF2A0E01) : const Color(0xFF220A00),
+                                          gradient: const LinearGradient(
+                                            begin: Alignment.topCenter,
+                                            end: Alignment.bottomCenter,
+                                            colors: [
+                                              Color(0xFF5A2508),
+                                              Color(0xFF381401),
+                                            ],
+                                          ),
                                           shape: BoxShape.circle,
                                           border: Border.all(
-                                            color: isSelected ? WoodenStyle.woodHighlight : WoodenStyle.woodBevel,
+                                            color: isSelected
+                                                ? GoldenWoodColors.woodHighlight
+                                                : GoldenWoodColors.woodBevel,
                                             width: 1.4,
                                           ),
+                                          boxShadow: const [
+                                            BoxShadow(
+                                              color: GoldenWoodColors.woodExtrusion,
+                                              offset: Offset(0, 1.5),
+                                            ),
+                                          ],
                                         ),
                                         child: Center(
                                           child: Text(flag, style: TextStyle(fontSize: 22.sp)),
@@ -223,10 +240,10 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                                                 fontWeight: FontWeight.w900,
                                                 fontSize: 16.sp,
                                                 color: Colors.white,
-                                                shadows: [
+                                                shadows: const [
                                                   Shadow(
-                                                    color: isSelected ? const Color(0xFF4A1800) : const Color(0xFF1F0900),
-                                                    offset: const Offset(0, 1.2),
+                                                    color: Color(0xFF1F0900),
+                                                    offset: Offset(0, 1.2),
                                                     blurRadius: 1,
                                                   ),
                                                 ],
@@ -237,10 +254,15 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                                               'Progress: Level $maxUnlocked',
                                               style: GoogleFonts.fredoka(
                                                 fontSize: 12.sp,
-                                                color: isSelected
-                                                    ? Colors.white.withValues(alpha: 0.9)
-                                                    : const Color(0xFFFFD48F),
+                                                color: Colors.white.withValues(alpha: 0.9),
                                                 fontWeight: FontWeight.w600,
+                                                shadows: const [
+                                                  Shadow(
+                                                    color: Color(0xFF1F0900),
+                                                    offset: Offset(0, 1.0),
+                                                    blurRadius: 1,
+                                                  ),
+                                                ],
                                               ),
                                             ),
                                           ],
@@ -259,12 +281,18 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                                           width: 24.r,
                                           height: 24.r,
                                           decoration: BoxDecoration(
-                                            color: const Color(0xFF220A00),
+                                            color: const Color(0xFF421500),
                                             shape: BoxShape.circle,
                                             border: Border.all(
-                                              color: WoodenStyle.woodBevel,
+                                              color: GoldenWoodColors.woodBevel,
                                               width: 2.0,
                                             ),
+                                            boxShadow: const [
+                                              BoxShadow(
+                                                color: Color(0x22000000),
+                                                offset: Offset(0, 1),
+                                              ),
+                                            ],
                                           ),
                                         ),
                                     ],
