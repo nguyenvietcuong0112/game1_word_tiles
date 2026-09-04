@@ -594,12 +594,12 @@ class _GameScreenState extends State<GameScreen> {
                                   style: GoogleFonts.fredoka(
                                     fontSize: 13.5.sp,
                                     fontWeight: FontWeight.w700,
-                                    color: GoldenWoodColors.carvedDark,
+                                    color: Colors.white,
                                     shadows: const [
                                       Shadow(
-                                        color: GoldenWoodColors.carvedShadowLight,
+                                        color: Color(0xFF1F0900),
                                         offset: Offset(0, 1.2),
-                                        blurRadius: 0,
+                                        blurRadius: 1,
                                       ),
                                     ],
                                   ),
@@ -608,7 +608,7 @@ class _GameScreenState extends State<GameScreen> {
                                     TextSpan(
                                       text: '"$nextWord"',
                                       style: const TextStyle(
-                                        color: Color(0xFF4A1A02),
+                                        color: Color(0xFFFFE066),
                                         fontWeight: FontWeight.w900,
                                       ),
                                     ),
@@ -621,12 +621,12 @@ class _GameScreenState extends State<GameScreen> {
                                   style: GoogleFonts.fredoka(
                                     fontSize: 14.sp,
                                     fontWeight: FontWeight.w700,
-                                    color: GoldenWoodColors.carvedDark,
+                                    color: Colors.white,
                                     shadows: const [
                                       Shadow(
-                                        color: GoldenWoodColors.carvedShadowLight,
+                                        color: Color(0xFF1F0900),
                                         offset: Offset(0, 1.2),
-                                        blurRadius: 0,
+                                        blurRadius: 1,
                                       ),
                                     ],
                                   ),
@@ -635,7 +635,7 @@ class _GameScreenState extends State<GameScreen> {
                                     TextSpan(
                                       text: '"$nextWord"',
                                       style: const TextStyle(
-                                        color: Color(0xFF4A1A02),
+                                        color: Color(0xFFFFE066),
                                         fontWeight: FontWeight.w900,
                                       ),
                                     ),

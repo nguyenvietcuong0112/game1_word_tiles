@@ -2088,17 +2088,12 @@ class WoodenCurrency extends StatelessWidget {
                       style: GoogleFonts.fredoka(
                         fontSize: 14.sp,
                         fontWeight: FontWeight.w900,
-                        color: GoldenWoodColors.carvedDark,
+                        color: Colors.white,
                         shadows: const [
                           Shadow(
-                            color: GoldenWoodColors.carvedShadowLight,
-                            offset: Offset(0, 1.2),
-                            blurRadius: 0,
-                          ),
-                          Shadow(
                             color: Color(0xFF1F0900),
-                            offset: Offset(0, -1.0),
-                            blurRadius: 0,
+                            offset: Offset(0, 1.2),
+                            blurRadius: 1,
                           ),
                         ],
                       ),
