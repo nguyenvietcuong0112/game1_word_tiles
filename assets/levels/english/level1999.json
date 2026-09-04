@@ -1,60 +1,14 @@
 {
   "id": 1999,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "BIN",
+      "word": "ALE",
       "type": 0
     },
     {
-      "word": "BIT",
-      "type": 0
-    },
-    {
-      "word": "CAD",
-      "type": 0
-    },
-    {
-      "word": "CUT",
-      "type": 0
-    },
-    {
-      "word": "INS",
-      "type": 0
-    },
-    {
-      "word": "ION",
-      "type": 0
-    },
-    {
-      "word": "SET",
-      "type": 0
-    },
-    {
-      "word": "TAN",
-      "type": 0
-    },
-    {
-      "word": "DUMP",
-      "type": 0
-    },
-    {
-      "word": "JOIN",
-      "type": 0
-    },
-    {
-      "word": "JOINT",
-      "type": 0
-    }
-  ],
-  "extra_words": [
-    {
-      "word": "AIN",
-      "type": 0
-    },
-    {
-      "word": "AIT",
+      "word": "ALL",
       "type": 0
     },
     {
@@ -62,138 +16,72 @@
       "type": 0
     },
     {
-      "word": "DUI",
+      "word": "EAT",
       "type": 0
     },
     {
-      "word": "ETA",
+      "word": "LET",
       "type": 0
     },
     {
-      "word": "MUD",
+      "word": "TEA",
       "type": 0
     },
     {
-      "word": "NIB",
+      "word": "VET",
       "type": 0
     },
     {
-      "word": "NIT",
+      "word": "HEAL",
       "type": 0
     },
     {
-      "word": "TIN",
+      "word": "LAVA",
       "type": 0
     },
     {
-      "word": "UMP",
+      "word": "TEAL",
+      "type": 2
+    },
+    {
+      "word": "LEAVE",
       "type": 0
     },
     {
-      "word": "AINS",
-      "type": 0
-    },
-    {
-      "word": "ATES",
-      "type": 0
-    },
-    {
-      "word": "BINS",
-      "type": 0
-    },
-    {
-      "word": "BINT",
-      "type": 0
-    },
-    {
-      "word": "DAUT",
-      "type": 0
-    },
-    {
-      "word": "DUIT",
-      "type": 0
-    },
-    {
-      "word": "DUMB",
-      "type": 0
-    },
-    {
-      "word": "INIA",
-      "type": 0
-    },
-    {
-      "word": "NIBS",
-      "type": 0
-    },
-    {
-      "word": "SETA",
-      "type": 0
-    },
-    {
-      "word": "SNIB",
-      "type": 0
-    },
-    {
-      "word": "SNIT",
-      "type": 0
-    },
-    {
-      "word": "TAIN",
-      "type": 0
-    },
-    {
-      "word": "TINS",
-      "type": 0
-    },
-    {
-      "word": "TINT",
-      "type": 0
-    },
-    {
-      "word": "BINIT",
-      "type": 0
-    },
-    {
-      "word": "CUTIN",
-      "type": 0
-    },
-    {
-      "word": "DUMBS",
-      "type": 0
-    },
-    {
-      "word": "INION",
-      "type": 0
-    },
-    {
-      "word": "INSET",
-      "type": 0
-    },
-    {
-      "word": "JOINS",
-      "type": 0
-    },
-    {
-      "word": "NATES",
-      "type": 0
-    },
-    {
-      "word": "TAINS",
-      "type": 0
-    },
-    {
-      "word": "ANOINT",
-      "type": 0
-    },
-    {
-      "word": "CUTINS",
-      "type": 0
-    },
-    {
-      "word": "CAUTION",
+      "word": "VALET",
       "type": 0
     }
   ],
-  "letters": "ESBMP,TNIUD,AITUA,NOJCC",
-  "obstacles": []
+  "extra_words": [
+    {
+      "word": "EAVE",
+      "type": 1
+    },
+    {
+      "word": "HEAVE",
+      "type": 0
+    },
+    {
+      "word": "VALE",
+      "type": 0
+    }
+  ],
+  "letters": "TLET,EAVA,HLLE",
+  "obstacles": [
+    {
+      "required_words": 6,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

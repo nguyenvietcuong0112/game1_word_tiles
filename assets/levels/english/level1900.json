@@ -1,151 +1,99 @@
 {
   "id": 1900,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ENG",
+      "word": "ORB",
       "type": 0
     },
     {
-      "word": "IDS",
+      "word": "ROT",
       "type": 0
     },
     {
-      "word": "ITS",
+      "word": "SON",
       "type": 0
     },
     {
-      "word": "MET",
+      "word": "TRY",
       "type": 0
     },
     {
-      "word": "NET",
+      "word": "LIST",
       "type": 0
     },
     {
-      "word": "PIE",
+      "word": "LOST",
       "type": 0
     },
     {
-      "word": "RAT",
+      "word": "ONTO",
+      "type": 2
+    },
+    {
+      "word": "SILO",
+      "type": 2
+    },
+    {
+      "word": "SORT",
       "type": 0
     },
     {
-      "word": "TEN",
+      "word": "BISON",
       "type": 0
     },
     {
-      "word": "TIT",
-      "type": 0
-    },
-    {
-      "word": "ITEM",
-      "type": 0
-    },
-    {
-      "word": "TEMP",
-      "type": 0
-    },
-    {
-      "word": "TENT",
-      "type": 0
-    },
-    {
-      "word": "ATTEMPT",
+      "word": "BISTRO",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ATT",
+      "word": "NOR",
       "type": 0
     },
     {
-      "word": "DIT",
-      "type": 0
+      "word": "SILT",
+      "type": 1
     },
     {
-      "word": "SEG",
-      "type": 0
-    },
-    {
-      "word": "SEI",
-      "type": 0
-    },
-    {
-      "word": "TAR",
-      "type": 0
-    },
-    {
-      "word": "TET",
-      "type": 0
-    },
-    {
-      "word": "DITE",
-      "type": 0
-    },
-    {
-      "word": "DITS",
-      "type": 0
-    },
-    {
-      "word": "DRAT",
-      "type": 0
-    },
-    {
-      "word": "GEST",
-      "type": 0
-    },
-    {
-      "word": "METE",
-      "type": 0
-    },
-    {
-      "word": "NETS",
-      "type": 0
-    },
-    {
-      "word": "NETT",
-      "type": 0
-    },
-    {
-      "word": "PIES",
-      "type": 0
-    },
-    {
-      "word": "PRAT",
-      "type": 0
-    },
-    {
-      "word": "STET",
-      "type": 0
-    },
-    {
-      "word": "TARP",
-      "type": 0
-    },
-    {
-      "word": "TETS",
-      "type": 0
-    },
-    {
-      "word": "GESTE",
-      "type": 0
-    },
-    {
-      "word": "SPRAT",
-      "type": 0
-    },
-    {
-      "word": "TARPS",
-      "type": 0
-    },
-    {
-      "word": "TEMPT",
+      "word": "TOR",
       "type": 0
     }
   ],
-  "letters": "ATTEM,RDITP,PSTET,IEGNT",
-  "obstacles": []
+  "letters": "OTNY,RLOR,BIST",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,235 +1,78 @@
 {
   "id": 2108,
-  "width": 5,
-  "height": 4,
+  "width": 3,
+  "height": 3,
   "target_words": [
     {
-      "word": "CAT",
+      "word": "COD",
       "type": 0
     },
     {
-      "word": "COS",
+      "word": "END",
       "type": 0
     },
     {
-      "word": "LET",
+      "word": "HOP",
       "type": 0
     },
     {
-      "word": "LOG",
+      "word": "PEN",
       "type": 0
     },
     {
-      "word": "SEA",
+      "word": "CHOP",
       "type": 0
     },
     {
-      "word": "SHE",
+      "word": "DOCK",
       "type": 0
     },
     {
-      "word": "TEL",
+      "word": "HOPE",
       "type": 0
     },
     {
-      "word": "EACH",
+      "word": "OPEN",
       "type": 0
     },
     {
-      "word": "FELT",
+      "word": "POKE",
       "type": 0
     },
     {
-      "word": "LOGO",
-      "type": 0
-    },
-    {
-      "word": "SOUND",
-      "type": 0
-    },
-    {
-      "word": "POUNDS",
+      "word": "CHOKE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ACE",
-      "type": 0
-    },
-    {
-      "word": "ATE",
-      "type": 0
-    },
-    {
-      "word": "ATT",
-      "type": 0
-    },
-    {
-      "word": "CEL",
-      "type": 0
-    },
-    {
-      "word": "COP",
-      "type": 0
-    },
-    {
-      "word": "EAT",
-      "type": 0
-    },
-    {
-      "word": "ETA",
-      "type": 0
-    },
-    {
-      "word": "FET",
-      "type": 0
-    },
-    {
-      "word": "FOG",
-      "type": 0
-    },
-    {
-      "word": "FOP",
-      "type": 0
-    },
-    {
-      "word": "HES",
-      "type": 0
-    },
-    {
-      "word": "OCA",
-      "type": 0
-    },
-    {
-      "word": "OLE",
-      "type": 0
-    },
-    {
-      "word": "SOP",
-      "type": 0
-    },
-    {
-      "word": "SOU",
-      "type": 0
-    },
-    {
-      "word": "TAE",
-      "type": 0
-    },
-    {
-      "word": "UNS",
-      "type": 0
-    },
-    {
-      "word": "ACHE",
-      "type": 0
-    },
-    {
-      "word": "CATE",
-      "type": 0
-    },
-    {
-      "word": "CELT",
-      "type": 0
-    },
-    {
-      "word": "COSH",
-      "type": 0
-    },
-    {
-      "word": "ECHE",
-      "type": 0
-    },
-    {
-      "word": "FETA",
-      "type": 0
-    },
-    {
-      "word": "HEAT",
-      "type": 0
-    },
-    {
-      "word": "LECH",
-      "type": 0
-    },
-    {
-      "word": "POSH",
-      "type": 0
-    },
-    {
-      "word": "SEAT",
-      "type": 0
-    },
-    {
-      "word": "SHEA",
-      "type": 0
-    },
-    {
-      "word": "SHES",
-      "type": 0
-    },
-    {
-      "word": "TACE",
-      "type": 0
-    },
-    {
-      "word": "TACH",
-      "type": 0
-    },
-    {
-      "word": "TACO",
-      "type": 0
-    },
-    {
-      "word": "ACHES",
-      "type": 0
-    },
-    {
-      "word": "CHEAT",
-      "type": 0
-    },
-    {
-      "word": "ECHES",
-      "type": 0
-    },
-    {
-      "word": "POUND",
-      "type": 0
-    },
-    {
-      "word": "TACHE",
-      "type": 0
-    },
-    {
-      "word": "TACHS",
-      "type": 0
-    },
-    {
-      "word": "TACOS",
-      "type": 0
-    },
-    {
-      "word": "CATTLE",
-      "type": 0
-    },
-    {
-      "word": "COSHES",
-      "type": 0
-    },
-    {
-      "word": "LECHES",
-      "type": 0
-    },
-    {
-      "word": "SOUNDS",
-      "type": 0
-    },
-    {
-      "word": "TACHES",
+      "word": "KEN",
       "type": 0
     }
   ],
-  "letters": "UOPOG,NSOFO,DHCEL,SEATT",
-  "obstacles": []
+  "letters": "ODN,CKE,HOP",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 2,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

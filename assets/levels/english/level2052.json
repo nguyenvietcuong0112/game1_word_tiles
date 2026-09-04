@@ -1,199 +1,94 @@
 {
   "id": 2052,
-  "width": 5,
-  "height": 4,
+  "width": 3,
+  "height": 3,
   "target_words": [
     {
-      "word": "ACT",
+      "word": "ILL",
       "type": 0
     },
     {
-      "word": "AGO",
+      "word": "RAW",
       "type": 0
     },
     {
-      "word": "ART",
+      "word": "RIG",
       "type": 0
     },
     {
-      "word": "BET",
+      "word": "WIG",
       "type": 0
     },
     {
-      "word": "BIG",
+      "word": "DRAW",
+      "type": 2
+    },
+    {
+      "word": "TWIG",
+      "type": 2
+    },
+    {
+      "word": "WARD",
       "type": 0
     },
     {
-      "word": "CAM",
+      "word": "WILD",
       "type": 0
     },
     {
-      "word": "CAR",
+      "word": "WILL",
       "type": 0
     },
     {
-      "word": "FLU",
-      "type": 0
-    },
-    {
-      "word": "LEE",
-      "type": 0
-    },
-    {
-      "word": "MAR",
-      "type": 0
-    },
-    {
-      "word": "THE",
-      "type": 0
-    },
-    {
-      "word": "CART",
-      "type": 0
-    },
-    {
-      "word": "THUS",
+      "word": "DRILL",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AAH",
+      "word": "GILD",
       "type": 0
     },
     {
-      "word": "ABS",
+      "word": "GILL",
       "type": 0
     },
     {
-      "word": "AMA",
-      "type": 0
+      "word": "GIRD",
+      "type": 1
     },
     {
-      "word": "ARB",
-      "type": 0
+      "word": "RILL",
+      "type": 1
     },
     {
-      "word": "BAA",
-      "type": 0
-    },
-    {
-      "word": "BAG",
-      "type": 0
-    },
-    {
-      "word": "BEE",
-      "type": 0
-    },
-    {
-      "word": "BRA",
-      "type": 0
-    },
-    {
-      "word": "EEL",
-      "type": 0
-    },
-    {
-      "word": "ELF",
-      "type": 0
-    },
-    {
-      "word": "ETH",
-      "type": 0
-    },
-    {
-      "word": "GAB",
-      "type": 0
-    },
-    {
-      "word": "GIB",
-      "type": 0
-    },
-    {
-      "word": "GOA",
-      "type": 0
-    },
-    {
-      "word": "HAO",
-      "type": 0
-    },
-    {
-      "word": "MAC",
-      "type": 0
-    },
-    {
-      "word": "RAM",
-      "type": 0
-    },
-    {
-      "word": "TEE",
-      "type": 0
-    },
-    {
-      "word": "BETH",
-      "type": 0
-    },
-    {
-      "word": "CARB",
-      "type": 0
-    },
-    {
-      "word": "FLEE",
-      "type": 0
-    },
-    {
-      "word": "FLUS",
-      "type": 0
-    },
-    {
-      "word": "GABS",
-      "type": 0
-    },
-    {
-      "word": "GIBS",
-      "type": 0
-    },
-    {
-      "word": "LEET",
-      "type": 0
-    },
-    {
-      "word": "MART",
-      "type": 0
-    },
-    {
-      "word": "TEEL",
-      "type": 0
-    },
-    {
-      "word": "THEE",
-      "type": 0
-    },
-    {
-      "word": "TRAM",
-      "type": 0
-    },
-    {
-      "word": "BRACT",
-      "type": 0
-    },
-    {
-      "word": "CARTE",
-      "type": 0
-    },
-    {
-      "word": "FLEET",
-      "type": 0
-    },
-    {
-      "word": "LEHUA",
-      "type": 0
-    },
-    {
-      "word": "BETHEL",
+      "word": "WAR",
       "type": 0
     }
   ],
-  "letters": "FLEEB,SUHTR,BAACA,IGOAM",
-  "obstacles": []
+  "letters": "TGL,WIL,ARD",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 2,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

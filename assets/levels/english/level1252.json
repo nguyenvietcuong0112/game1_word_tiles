@@ -1,123 +1,115 @@
 {
   "id": 1252,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "EMS",
+      "word": "HAT",
       "type": 0
     },
     {
-      "word": "HER",
+      "word": "LESS",
       "type": 0
     },
     {
-      "word": "SEC",
+      "word": "LOSE",
       "type": 0
     },
     {
-      "word": "SHE",
+      "word": "LOSS",
       "type": 0
     },
     {
-      "word": "PLUS",
+      "word": "MELT",
+      "type": 2
+    },
+    {
+      "word": "MESS",
       "type": 0
     },
     {
-      "word": "RULE",
+      "word": "ROLE",
       "type": 0
     },
     {
-      "word": "RUSH",
+      "word": "ROSE",
       "type": 0
     },
     {
-      "word": "RULES",
+      "word": "SOLE",
       "type": 0
     },
     {
-      "word": "SURVIVE",
+      "word": "LEMUR",
+      "type": 0
+    },
+    {
+      "word": "SERUM",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "CEL",
+      "word": "EMU",
       "type": 0
     },
     {
-      "word": "EME",
+      "word": "LOSER",
       "type": 0
     },
     {
-      "word": "HEM",
+      "word": "ROLES",
       "type": 0
     },
     {
-      "word": "REM",
+      "word": "RUM",
       "type": 0
     },
     {
-      "word": "SEL",
-      "type": 0
+      "word": "SMELT",
+      "type": 2
     },
     {
-      "word": "ECHE",
-      "type": 0
+      "word": "TRES",
+      "type": 1
     },
     {
-      "word": "HEME",
-      "type": 0
-    },
-    {
-      "word": "HEMS",
-      "type": 0
-    },
-    {
-      "word": "LECH",
-      "type": 0
-    },
-    {
-      "word": "LUSH",
-      "type": 0
-    },
-    {
-      "word": "REMS",
-      "type": 0
-    },
-    {
-      "word": "VIVE",
-      "type": 0
-    },
-    {
-      "word": "CREME",
-      "type": 0
-    },
-    {
-      "word": "PLUSH",
-      "type": 0
-    },
-    {
-      "word": "USHER",
-      "type": 0
-    },
-    {
-      "word": "LECHER",
-      "type": 0
-    },
-    {
-      "word": "LUSHER",
-      "type": 0
-    },
-    {
-      "word": "RUSHER",
-      "type": 0
-    },
-    {
-      "word": "PLUSHER",
-      "type": 0
+      "word": "TRESS",
+      "type": 1
     }
   ],
-  "letters": "EMER,VSHC,IULE,VRPS",
-  "obstacles": []
+  "letters": "ATRU,HLEM,ROSS",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

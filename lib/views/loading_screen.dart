@@ -5,6 +5,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import '../services/audio_manager.dart';
 import '../services/game_storage.dart';
 import '../theme/app_theme.dart';
+import 'common/app_background.dart';
 import 'home_screen.dart';
 
 class LoadingScreen extends StatefulWidget {
@@ -97,21 +98,8 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.bgCanvas,
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Color(0xFFFFF7ED), // Warm pastel peach cream
-              Color(0xFFFEF3C7), // Soft pastel butter
-              Color(0xFFFFF7ED),
-            ],
-          ),
-        ),
+      backgroundColor: Colors.transparent,
+      body: AppBackground(
         child: SafeArea(
           child: Stack(
             children: [
@@ -182,7 +170,7 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(44),
                           child: Image.asset(
-                            'assets/images/app_logo.png',
+                            'assets/images/app_logo.webp',
                             fit: BoxFit.cover,
                           ),
                         ),

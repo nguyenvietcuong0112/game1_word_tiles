@@ -1,42 +1,22 @@
 {
   "id": 1885,
-  "width": 5,
-  "height": 4,
+  "width": 3,
+  "height": 3,
   "target_words": [
     {
-      "word": "ASS",
+      "word": "HIT",
       "type": 0
     },
     {
-      "word": "CAR",
+      "word": "LOW",
       "type": 0
     },
     {
-      "word": "MAR",
+      "word": "TEA",
       "type": 0
     },
     {
-      "word": "RAM",
-      "type": 0
-    },
-    {
-      "word": "TAN",
-      "type": 0
-    },
-    {
-      "word": "TIT",
-      "type": 0
-    },
-    {
-      "word": "MASS",
-      "type": 0
-    },
-    {
-      "word": "NEAR",
-      "type": 0
-    },
-    {
-      "word": "ORAL",
+      "word": "HIRE",
       "type": 0
     },
     {
@@ -44,172 +24,67 @@
       "type": 0
     },
     {
-      "word": "REAR",
+      "word": "TEAL",
+      "type": 2
+    },
+    {
+      "word": "TIRE",
       "type": 0
     },
     {
-      "word": "SWIM",
+      "word": "WHIRL",
+      "type": 0
+    },
+    {
+      "word": "WHITE",
+      "type": 0
+    },
+    {
+      "word": "WRITE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ALA",
+      "word": "RET",
       "type": 0
     },
     {
-      "word": "AMA",
+      "word": "RITE",
       "type": 0
     },
     {
-      "word": "AMI",
+      "word": "WHIT",
       "type": 0
     },
     {
-      "word": "ANE",
-      "type": 0
-    },
-    {
-      "word": "COR",
-      "type": 0
-    },
-    {
-      "word": "COS",
-      "type": 0
-    },
-    {
-      "word": "EAR",
-      "type": 0
-    },
-    {
-      "word": "LAC",
-      "type": 0
-    },
-    {
-      "word": "LAM",
-      "type": 0
-    },
-    {
-      "word": "LAR",
-      "type": 0
-    },
-    {
-      "word": "MAE",
-      "type": 0
-    },
-    {
-      "word": "MAS",
-      "type": 0
-    },
-    {
-      "word": "OCA",
-      "type": 0
-    },
-    {
-      "word": "ORA",
-      "type": 0
-    },
-    {
-      "word": "RAS",
-      "type": 0
-    },
-    {
-      "word": "ROC",
-      "type": 0
-    },
-    {
-      "word": "TAT",
-      "type": 0
-    },
-    {
-      "word": "ALAE",
-      "type": 0
-    },
-    {
-      "word": "ALAR",
-      "type": 0
-    },
-    {
-      "word": "AMAS",
-      "type": 0
-    },
-    {
-      "word": "ATMA",
-      "type": 0
-    },
-    {
-      "word": "COSS",
-      "type": 0
-    },
-    {
-      "word": "IMAM",
-      "type": 0
-    },
-    {
-      "word": "LAMA",
-      "type": 0
-    },
-    {
-      "word": "MAMA",
-      "type": 0
-    },
-    {
-      "word": "OSAR",
-      "type": 0
-    },
-    {
-      "word": "RAMI",
-      "type": 0
-    },
-    {
-      "word": "RAMS",
-      "type": 0
-    },
-    {
-      "word": "REAM",
-      "type": 0
-    },
-    {
-      "word": "SORA",
-      "type": 0
-    },
-    {
-      "word": "AMASS",
-      "type": 0
-    },
-    {
-      "word": "ANEAR",
-      "type": 0
-    },
-    {
-      "word": "ATMAS",
-      "type": 0
-    },
-    {
-      "word": "CORAL",
-      "type": 0
-    },
-    {
-      "word": "LAMAS",
-      "type": 0
-    },
-    {
-      "word": "MALAR",
-      "type": 0
-    },
-    {
-      "word": "TITAN",
-      "type": 0
-    },
-    {
-      "word": "SAMARA",
-      "type": 0
-    },
-    {
-      "word": "CALAMAR",
+      "word": "WRIT",
       "type": 0
     }
   ],
-  "letters": "TANER,ITMAL,IMARA,WSSOC",
-  "obstacles": []
+  "letters": "OLA,WRE,HIT",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 2,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

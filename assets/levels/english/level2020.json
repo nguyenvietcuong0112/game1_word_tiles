@@ -1,191 +1,91 @@
 {
   "id": 2020,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ACT",
+      "word": "AGO",
       "type": 0
     },
     {
-      "word": "ASK",
+      "word": "EAR",
       "type": 0
     },
     {
-      "word": "CAR",
+      "word": "GAG",
       "type": 0
     },
     {
-      "word": "CAT",
+      "word": "OWE",
       "type": 0
     },
     {
-      "word": "FOR",
+      "word": "RAG",
       "type": 0
     },
     {
-      "word": "LET",
+      "word": "BRAG",
+      "type": 2
+    },
+    {
+      "word": "WEAR",
       "type": 0
     },
     {
-      "word": "RET",
+      "word": "WOKE",
       "type": 0
     },
     {
-      "word": "SKA",
-      "type": 0
-    },
-    {
-      "word": "TEL",
-      "type": 0
-    },
-    {
-      "word": "CARS",
-      "type": 0
-    },
-    {
-      "word": "CAST",
-      "type": 0
-    },
-    {
-      "word": "LENS",
+      "word": "CIGAR",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ARS",
+      "word": "BRA",
       "type": 0
     },
     {
-      "word": "ATE",
+      "word": "GAR",
       "type": 0
     },
     {
-      "word": "ATT",
-      "type": 0
-    },
-    {
-      "word": "ENS",
-      "type": 0
-    },
-    {
-      "word": "ERE",
-      "type": 0
-    },
-    {
-      "word": "ETA",
-      "type": 0
-    },
-    {
-      "word": "ORA",
-      "type": 0
-    },
-    {
-      "word": "ORS",
-      "type": 0
-    },
-    {
-      "word": "RAS",
-      "type": 0
-    },
-    {
-      "word": "SAC",
-      "type": 0
-    },
-    {
-      "word": "ACNE",
-      "type": 0
-    },
-    {
-      "word": "ACTS",
-      "type": 0
-    },
-    {
-      "word": "CASK",
-      "type": 0
-    },
-    {
-      "word": "CATE",
-      "type": 0
-    },
-    {
-      "word": "FORA",
-      "type": 0
-    },
-    {
-      "word": "OAST",
-      "type": 0
-    },
-    {
-      "word": "SACK",
-      "type": 0
-    },
-    {
-      "word": "SACS",
-      "type": 0
-    },
-    {
-      "word": "SCAR",
-      "type": 0
-    },
-    {
-      "word": "TACK",
-      "type": 0
-    },
-    {
-      "word": "TACT",
-      "type": 0
-    },
-    {
-      "word": "TELE",
-      "type": 0
-    },
-    {
-      "word": "CATER",
-      "type": 0
-    },
-    {
-      "word": "RELET",
-      "type": 0
-    },
-    {
-      "word": "ROAST",
-      "type": 0
-    },
-    {
-      "word": "SACKS",
-      "type": 0
-    },
-    {
-      "word": "TACKS",
-      "type": 0
-    },
-    {
-      "word": "TACTS",
-      "type": 0
-    },
-    {
-      "word": "CASTLE",
-      "type": 0
-    },
-    {
-      "word": "CATTLE",
-      "type": 0
-    },
-    {
-      "word": "ORACLE",
-      "type": 0
-    },
-    {
-      "word": "RETACK",
-      "type": 0
-    },
-    {
-      "word": "RETACKS",
-      "type": 0
+      "word": "GARB",
+      "type": 1
     }
   ],
-  "letters": "FORAS,SASCN,KCTLE,AATER",
-  "obstacles": []
+  "letters": "CIGO,KEAG,OWRB",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

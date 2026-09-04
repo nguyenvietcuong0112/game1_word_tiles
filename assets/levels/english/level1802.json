@@ -1,123 +1,118 @@
 {
   "id": 1802,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "BAG",
+      "word": "EGO",
       "type": 0
     },
     {
-      "word": "BAY",
+      "word": "OAR",
       "type": 0
     },
     {
-      "word": "BUG",
+      "word": "ORE",
+      "type": 2
+    },
+    {
+      "word": "PAR",
       "type": 0
     },
     {
-      "word": "GAP",
+      "word": "PIE",
       "type": 0
     },
     {
-      "word": "GEN",
+      "word": "PRO",
       "type": 0
     },
     {
-      "word": "BAGS",
+      "word": "CORE",
       "type": 0
     },
     {
-      "word": "BUGS",
+      "word": "PIER",
       "type": 0
     },
     {
-      "word": "OPEN",
+      "word": "SCORE",
       "type": 0
     },
     {
-      "word": "GUESS",
-      "type": 0
+      "word": "SCORPIO",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "BAA",
+      "word": "CORP",
       "type": 0
     },
     {
-      "word": "BAP",
+      "word": "PARA",
       "type": 0
     },
     {
-      "word": "ENG",
+      "word": "PRE",
       "type": 0
     },
     {
-      "word": "ENS",
+      "word": "PROC",
       "type": 0
     },
     {
-      "word": "ESS",
+      "word": "RAP",
       "type": 0
     },
     {
-      "word": "GAB",
-      "type": 0
+      "word": "RAPIER",
+      "type": 2
     },
     {
-      "word": "OPE",
-      "type": 0
-    },
-    {
-      "word": "PEG",
-      "type": 0
-    },
-    {
-      "word": "PEN",
-      "type": 0
-    },
-    {
-      "word": "PYA",
-      "type": 0
-    },
-    {
-      "word": "ABBA",
-      "type": 0
-    },
-    {
-      "word": "AGUE",
-      "type": 0
-    },
-    {
-      "word": "ENGS",
-      "type": 0
-    },
-    {
-      "word": "GAPY",
-      "type": 0
-    },
-    {
-      "word": "GENS",
-      "type": 0
-    },
-    {
-      "word": "PEGS",
-      "type": 0
-    },
-    {
-      "word": "PENS",
-      "type": 0
-    },
-    {
-      "word": "AGUES",
-      "type": 0
-    },
-    {
-      "word": "OPENS",
-      "type": 0
+      "word": "SARI",
+      "type": 1
     }
   ],
-  "letters": "OPEG,YPNS,AAGS,BBUE",
-  "obstacles": []
+  "letters": "OREG,CPIO,SARA",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

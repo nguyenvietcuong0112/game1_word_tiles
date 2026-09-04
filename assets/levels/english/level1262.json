@@ -1,123 +1,110 @@
 {
   "id": 1262,
-  "width": 4,
-  "height": 4,
+  "width": 5,
+  "height": 3,
   "target_words": [
     {
-      "word": "CON",
+      "word": "TOE",
       "type": 0
     },
     {
-      "word": "LOW",
+      "word": "WIN",
       "type": 0
     },
     {
-      "word": "OIL",
+      "word": "GAIN",
       "type": 0
     },
     {
-      "word": "OLD",
+      "word": "NEON",
       "type": 0
     },
     {
-      "word": "FILE",
+      "word": "REIN",
+      "type": 2
+    },
+    {
+      "word": "TWIN",
       "type": 0
     },
     {
-      "word": "FIST",
+      "word": "VINE",
+      "type": 2
+    },
+    {
+      "word": "WINE",
       "type": 0
     },
     {
-      "word": "FLOW",
+      "word": "UNION",
       "type": 0
     },
     {
-      "word": "LIFE",
-      "type": 0
-    },
-    {
-      "word": "NUTS",
-      "type": 0
-    },
-    {
-      "word": "FILES",
-      "type": 0
-    },
-    {
-      "word": "FLOWS",
-      "type": 0
+      "word": "REUNION",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "DIS",
+      "word": "EON",
       "type": 0
     },
     {
-      "word": "FEU",
+      "word": "ION",
       "type": 0
     },
     {
-      "word": "FID",
+      "word": "TWINE",
+      "type": 1
+    },
+    {
+      "word": "UNI",
       "type": 0
     },
     {
-      "word": "FIL",
-      "type": 0
-    },
-    {
-      "word": "LEU",
-      "type": 0
-    },
-    {
-      "word": "LIS",
-      "type": 0
-    },
-    {
-      "word": "NUT",
-      "type": 0
-    },
-    {
-      "word": "SEL",
-      "type": 0
-    },
-    {
-      "word": "TUN",
-      "type": 0
-    },
-    {
-      "word": "UTS",
-      "type": 0
-    },
-    {
-      "word": "CLEF",
-      "type": 0
-    },
-    {
-      "word": "FISC",
-      "type": 0
-    },
-    {
-      "word": "LEST",
-      "type": 0
-    },
-    {
-      "word": "LOWS",
-      "type": 0
-    },
-    {
-      "word": "STUN",
-      "type": 0
-    },
-    {
-      "word": "WOLD",
-      "type": 0
-    },
-    {
-      "word": "WOLF",
+      "word": "VIE",
       "type": 0
     }
   ],
-  "letters": "WOLD,SIFI,CLES,ONUT",
-  "obstacles": []
+  "letters": "TOEON,WINIV,GAUER",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 1
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

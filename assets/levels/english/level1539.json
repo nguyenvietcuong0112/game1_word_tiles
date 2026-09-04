@@ -1,10 +1,22 @@
 {
   "id": 1539,
-  "width": 4,
-  "height": 4,
+  "width": 5,
+  "height": 3,
   "target_words": [
     {
-      "word": "BEN",
+      "word": "BAR",
+      "type": 0
+    },
+    {
+      "word": "COB",
+      "type": 0
+    },
+    {
+      "word": "CUT",
+      "type": 0
+    },
+    {
+      "word": "FAR",
       "type": 0
     },
     {
@@ -12,108 +24,72 @@
       "type": 0
     },
     {
-      "word": "PER",
+      "word": "RIG",
       "type": 0
     },
     {
-      "word": "PIE",
+      "word": "BARN",
       "type": 0
     },
     {
-      "word": "REP",
+      "word": "COIN",
       "type": 0
     },
     {
-      "word": "RES",
+      "word": "KING",
       "type": 0
     },
     {
-      "word": "SIM",
-      "type": 0
-    },
-    {
-      "word": "THAN",
-      "type": 0
-    },
-    {
-      "word": "PRINT",
+      "word": "GIRAFFE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ANE",
+      "word": "FAB",
       "type": 0
     },
     {
-      "word": "ERR",
-      "type": 0
-    },
-    {
-      "word": "KIR",
-      "type": 0
-    },
-    {
-      "word": "MIS",
-      "type": 0
-    },
-    {
-      "word": "NAH",
-      "type": 0
-    },
-    {
-      "word": "NEB",
-      "type": 0
-    },
-    {
-      "word": "PES",
-      "type": 0
-    },
-    {
-      "word": "PIS",
-      "type": 0
-    },
-    {
-      "word": "RIN",
-      "type": 0
-    },
-    {
-      "word": "SER",
-      "type": 0
-    },
-    {
-      "word": "SIP",
-      "type": 0
-    },
-    {
-      "word": "MIEN",
-      "type": 0
-    },
-    {
-      "word": "MISE",
-      "type": 0
-    },
-    {
-      "word": "NEBS",
-      "type": 0
-    },
-    {
-      "word": "SIPE",
-      "type": 0
-    },
-    {
-      "word": "MISER",
-      "type": 0
-    },
-    {
-      "word": "THANE",
-      "type": 0
-    },
-    {
-      "word": "REPRINT",
-      "type": 0
+      "word": "FEIGN",
+      "type": 2
     }
   ],
-  "letters": "AHTN,NMKI,EIPR,BSER",
-  "obstacles": []
+  "letters": "TKGIE,UINRF,COBAF",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 4,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

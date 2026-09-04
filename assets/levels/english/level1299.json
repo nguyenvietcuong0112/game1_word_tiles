@@ -1,159 +1,86 @@
 {
   "id": 1299,
-  "width": 4,
-  "height": 4,
+  "width": 3,
+  "height": 3,
   "target_words": [
     {
-      "word": "ABS",
+      "word": "ADD",
       "type": 0
     },
     {
-      "word": "BAN",
+      "word": "DAM",
       "type": 0
     },
     {
-      "word": "FIT",
+      "word": "ERA",
       "type": 0
     },
     {
-      "word": "FIX",
+      "word": "ODD",
       "type": 0
     },
     {
-      "word": "PIN",
+      "word": "AREA",
       "type": 0
     },
     {
-      "word": "TIP",
+      "word": "DARE",
       "type": 0
     },
     {
-      "word": "ANTI",
+      "word": "READ",
       "type": 0
     },
     {
-      "word": "EXIT",
+      "word": "DREAM",
       "type": 0
     },
     {
-      "word": "WANT",
+      "word": "READY",
       "type": 0
     },
     {
-      "word": "WANTING",
+      "word": "DREAMY",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ANT",
+      "word": "ARE",
       "type": 0
     },
     {
-      "word": "NAB",
+      "word": "MAD",
       "type": 0
     },
     {
-      "word": "NAW",
-      "type": 0
-    },
-    {
-      "word": "NIP",
-      "type": 0
-    },
-    {
-      "word": "NIT",
-      "type": 0
-    },
-    {
-      "word": "NIX",
-      "type": 0
-    },
-    {
-      "word": "PIT",
-      "type": 0
-    },
-    {
-      "word": "PIX",
-      "type": 0
-    },
-    {
-      "word": "TIN",
-      "type": 0
-    },
-    {
-      "word": "WAB",
-      "type": 0
-    },
-    {
-      "word": "WAN",
-      "type": 0
-    },
-    {
-      "word": "NABS",
-      "type": 0
-    },
-    {
-      "word": "NIXE",
-      "type": 0
-    },
-    {
-      "word": "PING",
-      "type": 0
-    },
-    {
-      "word": "SWAB",
-      "type": 0
-    },
-    {
-      "word": "SWAN",
-      "type": 0
-    },
-    {
-      "word": "TING",
-      "type": 0
-    },
-    {
-      "word": "TIPI",
-      "type": 0
-    },
-    {
-      "word": "WABS",
-      "type": 0
-    },
-    {
-      "word": "FIXES",
-      "type": 0
-    },
-    {
-      "word": "FIXIT",
-      "type": 0
-    },
-    {
-      "word": "NIXES",
-      "type": 0
-    },
-    {
-      "word": "PIXES",
-      "type": 0
-    },
-    {
-      "word": "ANTING",
-      "type": 0
-    },
-    {
-      "word": "FIXING",
-      "type": 0
-    },
-    {
-      "word": "SEXING",
-      "type": 0
-    },
-    {
-      "word": "EXITING",
+      "word": "RAD",
       "type": 0
     }
   ],
-  "letters": "TING,NPIT,ABXI,WSEF",
-  "obstacles": []
+  "letters": "EAM,RDY,ADO",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 2,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,175 +1,110 @@
 {
   "id": 1993,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "FAN",
+      "word": "APP",
       "type": 0
     },
     {
-      "word": "HES",
+      "word": "APT",
       "type": 0
     },
     {
-      "word": "HIT",
+      "word": "HAS",
       "type": 0
     },
     {
-      "word": "HOT",
+      "word": "SIR",
       "type": 0
     },
     {
-      "word": "ITS",
+      "word": "TRY",
       "type": 0
     },
     {
-      "word": "MAY",
+      "word": "PAST",
       "type": 0
     },
     {
-      "word": "SAT",
+      "word": "HAPPY",
       "type": 0
     },
     {
-      "word": "SEA",
+      "word": "HASTY",
       "type": 0
     },
     {
-      "word": "TIE",
-      "type": 0
+      "word": "PASTRY",
+      "type": 2
     },
     {
-      "word": "TIT",
-      "type": 0
-    },
-    {
-      "word": "HITTING",
-      "type": 0
-    },
-    {
-      "word": "TASTING",
+      "word": "UNHAPPY",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ANI",
+      "word": "HAP",
       "type": 0
     },
     {
-      "word": "ATT",
+      "word": "HAST",
       "type": 0
     },
     {
-      "word": "MAE",
+      "word": "PASTY",
       "type": 0
     },
     {
-      "word": "NIT",
+      "word": "SAPPY",
       "type": 0
     },
     {
-      "word": "OAF",
-      "type": 0
-    },
-    {
-      "word": "SEI",
-      "type": 0
-    },
-    {
-      "word": "TAS",
-      "type": 0
-    },
-    {
-      "word": "TAT",
-      "type": 0
-    },
-    {
-      "word": "THO",
-      "type": 0
-    },
-    {
-      "word": "TIN",
-      "type": 0
-    },
-    {
-      "word": "YAM",
-      "type": 0
-    },
-    {
-      "word": "ASEA",
-      "type": 0
-    },
-    {
-      "word": "ATMA",
-      "type": 0
-    },
-    {
-      "word": "FANG",
-      "type": 0
-    },
-    {
-      "word": "HEST",
-      "type": 0
-    },
-    {
-      "word": "MAES",
-      "type": 0
-    },
-    {
-      "word": "NITS",
-      "type": 0
-    },
-    {
-      "word": "SATI",
-      "type": 0
-    },
-    {
-      "word": "SEAM",
-      "type": 0
-    },
-    {
-      "word": "TIES",
-      "type": 0
-    },
-    {
-      "word": "TING",
-      "type": 0
-    },
-    {
-      "word": "YAMS",
-      "type": 0
-    },
-    {
-      "word": "STING",
-      "type": 0
-    },
-    {
-      "word": "TINGE",
-      "type": 0
-    },
-    {
-      "word": "TATTIE",
-      "type": 0
-    },
-    {
-      "word": "TITTIE",
-      "type": 0
-    },
-    {
-      "word": "TATTIES",
-      "type": 0
-    },
-    {
-      "word": "TATTING",
-      "type": 0
-    },
-    {
-      "word": "TITTIES",
-      "type": 0
+      "word": "TRIS",
+      "type": 1
     }
   ],
-  "letters": "TITAT,OHTSM,ANIEA,FGEHY",
-  "obstacles": []
+  "letters": "UIRY,NSTY,HAPP",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

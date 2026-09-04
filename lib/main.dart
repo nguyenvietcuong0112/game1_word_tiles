@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'services/analytics_service.dart';
 import 'services/audio_manager.dart';
 import 'theme/app_theme.dart';
 import 'views/loading_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Initialize Firebase, Analytics, and Crashlytics
+  await AnalyticsService.initialize();
 
   // Set portrait orientation
   await SystemChrome.setPreferredOrientations([

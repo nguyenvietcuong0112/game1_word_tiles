@@ -1,179 +1,91 @@
 {
   "id": 1804,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ASP",
+      "word": "PIG",
       "type": 0
     },
     {
-      "word": "BIT",
+      "word": "RED",
       "type": 0
     },
     {
-      "word": "BRO",
+      "word": "ROW",
       "type": 0
     },
     {
-      "word": "BUT",
+      "word": "WOE",
       "type": 0
     },
     {
-      "word": "EAT",
+      "word": "DROP",
+      "type": 2
+    },
+    {
+      "word": "GROW",
       "type": 0
     },
     {
-      "word": "LAT",
+      "word": "WORD",
       "type": 0
     },
     {
-      "word": "LIB",
+      "word": "ORDER",
       "type": 0
     },
     {
-      "word": "PER",
-      "type": 0
-    },
-    {
-      "word": "SAT",
-      "type": 0
-    },
-    {
-      "word": "TAB",
-      "type": 0
-    },
-    {
-      "word": "ORBIT",
+      "word": "POWDER",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "BAS",
+      "word": "GOER",
+      "type": 1
+    },
+    {
+      "word": "GROG",
       "type": 0
     },
     {
-      "word": "BAT",
-      "type": 0
-    },
-    {
-      "word": "LIT",
-      "type": 0
-    },
-    {
-      "word": "ORB",
-      "type": 0
-    },
-    {
-      "word": "ORS",
-      "type": 0
-    },
-    {
-      "word": "PEA",
-      "type": 0
-    },
-    {
-      "word": "REP",
-      "type": 0
-    },
-    {
-      "word": "SAB",
-      "type": 0
-    },
-    {
-      "word": "SAE",
-      "type": 0
-    },
-    {
-      "word": "TAE",
-      "type": 0
-    },
-    {
-      "word": "TAS",
-      "type": 0
-    },
-    {
-      "word": "TIL",
-      "type": 0
-    },
-    {
-      "word": "TIT",
-      "type": 0
-    },
-    {
-      "word": "TUB",
-      "type": 0
-    },
-    {
-      "word": "TUT",
-      "type": 0
-    },
-    {
-      "word": "UTA",
-      "type": 0
-    },
-    {
-      "word": "ALIT",
-      "type": 0
-    },
-    {
-      "word": "LATI",
-      "type": 0
-    },
-    {
-      "word": "LITU",
-      "type": 0
-    },
-    {
-      "word": "PEAS",
-      "type": 0
-    },
-    {
-      "word": "PEAT",
-      "type": 0
-    },
-    {
-      "word": "PERT",
-      "type": 0
-    },
-    {
-      "word": "REPS",
-      "type": 0
-    },
-    {
-      "word": "SATI",
-      "type": 0
-    },
-    {
-      "word": "TALI",
-      "type": 0
-    },
-    {
-      "word": "UTAS",
-      "type": 0
-    },
-    {
-      "word": "ASPER",
-      "type": 0
-    },
-    {
-      "word": "LITAS",
-      "type": 0
-    },
-    {
-      "word": "LITRE",
-      "type": 0
-    },
-    {
-      "word": "TITRE",
-      "type": 0
-    },
-    {
-      "word": "ORBITAL",
+      "word": "POW",
       "type": 0
     }
   ],
-  "letters": "BREP,UTAS,TIBR,ALRO",
-  "obstacles": []
+  "letters": "IGOE,POWR,GRDE",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

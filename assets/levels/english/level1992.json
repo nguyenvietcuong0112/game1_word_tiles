@@ -1,155 +1,115 @@
 {
   "id": 1992,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
-    {
-      "word": "AND",
-      "type": 0
-    },
-    {
-      "word": "BID",
-      "type": 0
-    },
-    {
-      "word": "BIN",
-      "type": 0
-    },
-    {
-      "word": "DOT",
-      "type": 0
-    },
     {
       "word": "INN",
       "type": 0
     },
     {
-      "word": "LAT",
+      "word": "NET",
       "type": 0
     },
     {
-      "word": "RIG",
+      "word": "SIN",
       "type": 0
     },
     {
-      "word": "CHEW",
+      "word": "SIT",
       "type": 0
     },
     {
-      "word": "DOSE",
+      "word": "TIE",
       "type": 0
     },
     {
-      "word": "LAND",
+      "word": "TIN",
       "type": 0
     },
     {
-      "word": "RICH",
+      "word": "GAIT",
+      "type": 2
+    },
+    {
+      "word": "ISLE",
       "type": 0
     },
     {
-      "word": "LANDING",
+      "word": "SITE",
+      "type": 0
+    },
+    {
+      "word": "AGILE",
+      "type": 0
+    },
+    {
+      "word": "AISLE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ALT",
+      "word": "LIGA",
       "type": 0
     },
     {
-      "word": "ANT",
+      "word": "NIT",
       "type": 0
     },
     {
-      "word": "DIB",
+      "word": "NITE",
+      "type": 1
+    },
+    {
+      "word": "SINE",
+      "type": 1
+    },
+    {
+      "word": "SINN",
       "type": 0
     },
     {
-      "word": "DIN",
+      "word": "TEN",
       "type": 0
     },
     {
-      "word": "DOS",
-      "type": 0
-    },
-    {
-      "word": "HES",
-      "type": 0
-    },
-    {
-      "word": "HEW",
-      "type": 0
-    },
-    {
-      "word": "ICH",
-      "type": 0
-    },
-    {
-      "word": "NIB",
-      "type": 0
-    },
-    {
-      "word": "OSE",
-      "type": 0
-    },
-    {
-      "word": "SEW",
-      "type": 0
-    },
-    {
-      "word": "SOD",
-      "type": 0
-    },
-    {
-      "word": "SOT",
-      "type": 0
-    },
-    {
-      "word": "TAN",
-      "type": 0
-    },
-    {
-      "word": "TOD",
-      "type": 0
-    },
-    {
-      "word": "ALTO",
-      "type": 0
-    },
-    {
-      "word": "BRIG",
-      "type": 0
-    },
-    {
-      "word": "DING",
-      "type": 0
-    },
-    {
-      "word": "ALTOS",
-      "type": 0
-    },
-    {
-      "word": "DINGS",
-      "type": 0
-    },
-    {
-      "word": "TANTO",
-      "type": 0
-    },
-    {
-      "word": "ALDOSE",
-      "type": 0
-    },
-    {
-      "word": "RICHES",
-      "type": 0
-    },
-    {
-      "word": "LANDINGS",
-      "type": 0
+      "word": "TINE",
+      "type": 1
     }
   ],
-  "letters": "RBIDT,IGNNA,CWGTL,HESOD",
-  "obstacles": []
+  "letters": "ILEN,GSIN,AITE",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

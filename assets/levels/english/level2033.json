@@ -1,211 +1,110 @@
 {
   "id": 2033,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "AMI",
+      "word": "KEY",
       "type": 0
     },
     {
-      "word": "ARM",
+      "word": "SUE",
       "type": 0
     },
     {
-      "word": "SEA",
+      "word": "SUN",
       "type": 0
     },
     {
-      "word": "SEC",
+      "word": "TEA",
       "type": 0
     },
     {
-      "word": "SHE",
+      "word": "TEN",
       "type": 0
     },
     {
-      "word": "SIM",
+      "word": "KEEN",
       "type": 0
     },
     {
-      "word": "THE",
+      "word": "KNEE",
       "type": 0
     },
     {
-      "word": "UPS",
+      "word": "SNEAK",
       "type": 0
     },
     {
-      "word": "ARMS",
+      "word": "STEAK",
       "type": 0
     },
     {
-      "word": "FROG",
-      "type": 0
-    },
-    {
-      "word": "HEAR",
-      "type": 0
-    },
-    {
-      "word": "RUGS",
-      "type": 0
-    },
-    {
-      "word": "CRASH",
+      "word": "SUNNY",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ARC",
+      "word": "ENSUE",
       "type": 0
     },
     {
-      "word": "ASH",
+      "word": "NET",
       "type": 0
     },
     {
-      "word": "EAR",
+      "word": "NETS",
       "type": 0
     },
     {
-      "word": "FRO",
+      "word": "TEAK",
       "type": 0
     },
     {
-      "word": "GOR",
-      "type": 0
-    },
-    {
-      "word": "HES",
-      "type": 0
-    },
-    {
-      "word": "MIS",
-      "type": 0
-    },
-    {
-      "word": "PSI",
-      "type": 0
-    },
-    {
-      "word": "PUG",
-      "type": 0
-    },
-    {
-      "word": "PUR",
-      "type": 0
-    },
-    {
-      "word": "RAS",
-      "type": 0
-    },
-    {
-      "word": "RUG",
-      "type": 0
-    },
-    {
-      "word": "SAE",
-      "type": 0
-    },
-    {
-      "word": "AMIS",
-      "type": 0
-    },
-    {
-      "word": "ARCS",
-      "type": 0
-    },
-    {
-      "word": "FIST",
-      "type": 0
-    },
-    {
-      "word": "FRUG",
-      "type": 0
-    },
-    {
-      "word": "HEST",
-      "type": 0
-    },
-    {
-      "word": "MISE",
-      "type": 0
-    },
-    {
-      "word": "MIST",
-      "type": 0
-    },
-    {
-      "word": "PUGS",
-      "type": 0
-    },
-    {
-      "word": "RASH",
-      "type": 0
-    },
-    {
-      "word": "SEAR",
-      "type": 0
-    },
-    {
-      "word": "SEAS",
-      "type": 0
-    },
-    {
-      "word": "SECS",
-      "type": 0
-    },
-    {
-      "word": "SHEA",
-      "type": 0
-    },
-    {
-      "word": "SHES",
-      "type": 0
-    },
-    {
-      "word": "SIMA",
-      "type": 0
-    },
-    {
-      "word": "SPUR",
-      "type": 0
-    },
-    {
-      "word": "ASHES",
-      "type": 0
-    },
-    {
-      "word": "FROGS",
-      "type": 0
-    },
-    {
-      "word": "FRUGS",
-      "type": 0
-    },
-    {
-      "word": "GUISE",
-      "type": 0
-    },
-    {
-      "word": "SHEAR",
-      "type": 0
-    },
-    {
-      "word": "RASHES",
-      "type": 0
-    },
-    {
-      "word": "CRASHES",
-      "type": 0
-    },
-    {
-      "word": "RASHEST",
+      "word": "TENS",
       "type": 0
     }
   ],
-  "letters": "AMTHS,FISEA,RUPCR,OGSSM",
-  "obstacles": []
+  "letters": "AKEY,ENEN,TSUN",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

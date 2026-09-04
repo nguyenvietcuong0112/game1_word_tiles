@@ -1,167 +1,122 @@
 {
   "id": 1461,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "RUN",
+      "word": "ELF",
       "type": 0
     },
     {
-      "word": "SIR",
+      "word": "FLU",
       "type": 0
     },
     {
-      "word": "TIE",
+      "word": "HIT",
       "type": 0
     },
     {
-      "word": "UPS",
+      "word": "LET",
       "type": 0
     },
     {
-      "word": "WET",
+      "word": "LIT",
       "type": 0
     },
     {
-      "word": "RISE",
+      "word": "SAT",
       "type": 0
     },
     {
-      "word": "SITE",
+      "word": "FOUL",
       "type": 0
     },
     {
-      "word": "SITH",
+      "word": "SAIL",
       "type": 0
     },
     {
-      "word": "SUIT",
+      "word": "TAIL",
       "type": 0
     },
     {
-      "word": "WEIR",
+      "word": "TILE",
       "type": 0
     },
     {
-      "word": "SUITE",
+      "word": "TASTE",
+      "type": 0
+    },
+    {
+      "word": "TASTEFUL",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ETH",
+      "word": "AIL",
       "type": 0
     },
     {
-      "word": "PUN",
+      "word": "FLIT",
       "type": 0
     },
     {
-      "word": "PUR",
+      "word": "HITS",
       "type": 0
     },
     {
-      "word": "SIT",
+      "word": "LETS",
+      "type": 2
+    },
+    {
+      "word": "LITE",
       "type": 0
     },
     {
-      "word": "SRI",
-      "type": 0
-    },
-    {
-      "word": "SUE",
-      "type": 0
-    },
-    {
-      "word": "TEW",
-      "type": 0
-    },
-    {
-      "word": "TIS",
-      "type": 0
-    },
-    {
-      "word": "ETHS",
-      "type": 0
-    },
-    {
-      "word": "PUNT",
-      "type": 0
-    },
-    {
-      "word": "PURI",
-      "type": 0
-    },
-    {
-      "word": "PURS",
-      "type": 0
-    },
-    {
-      "word": "RITE",
-      "type": 0
-    },
-    {
-      "word": "RUNT",
-      "type": 0
-    },
-    {
-      "word": "SIRS",
-      "type": 0
-    },
-    {
-      "word": "SPUN",
-      "type": 0
-    },
-    {
-      "word": "SPUR",
-      "type": 0
-    },
-    {
-      "word": "SRIS",
-      "type": 0
-    },
-    {
-      "word": "SUES",
-      "type": 0
-    },
-    {
-      "word": "PURIS",
-      "type": 0
-    },
-    {
-      "word": "SIRUP",
-      "type": 0
-    },
-    {
-      "word": "SPURT",
-      "type": 0
-    },
-    {
-      "word": "TRITE",
-      "type": 0
-    },
-    {
-      "word": "UNTIE",
-      "type": 0
-    },
-    {
-      "word": "PURSUE",
-      "type": 0
-    },
-    {
-      "word": "SIRUPS",
-      "type": 0
-    },
-    {
-      "word": "PURSUES",
-      "type": 0
-    },
-    {
-      "word": "PURSUIT",
+      "word": "STILE",
       "type": 0
     }
   ],
-  "letters": "PUNR,SRTI,UITE,ESHW",
-  "obstacles": []
+  "letters": "STEF,AILU,THFO",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 9,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

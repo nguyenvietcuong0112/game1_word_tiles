@@ -1,236 +1,80 @@
 {
   "id": 1902,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "COR",
+      "word": "AND",
       "type": 0
     },
     {
-      "word": "DEN",
+      "word": "ATE",
       "type": 0
     },
     {
-      "word": "LET",
+      "word": "BAD",
       "type": 0
     },
     {
-      "word": "TEL",
+      "word": "CAN",
       "type": 0
     },
     {
-      "word": "TOO",
+      "word": "TAB",
       "type": 0
     },
     {
-      "word": "WET",
+      "word": "VAN",
       "type": 0
     },
     {
-      "word": "CHEF",
+      "word": "DATE",
       "type": 0
     },
     {
-      "word": "LEVY",
+      "word": "ABATE",
       "type": 0
     },
     {
-      "word": "SENT",
+      "word": "ADVANCE",
       "type": 0
     },
     {
-      "word": "WOOD",
-      "type": 0
-    },
-    {
-      "word": "SENSE",
-      "type": 0
-    },
-    {
-      "word": "TOWELS",
-      "type": 0
-    },
-    {
-      "word": "WOODEN",
+      "word": "ADVANCED",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "COY",
+      "word": "ABATED",
       "type": 0
     },
     {
-      "word": "EFS",
+      "word": "BADE",
       "type": 0
     },
     {
-      "word": "ELS",
+      "word": "BAT",
       "type": 0
     },
     {
-      "word": "ENS",
+      "word": "BATE",
       "type": 0
     },
     {
-      "word": "ESS",
+      "word": "BATED",
       "type": 0
     },
     {
-      "word": "FEH",
+      "word": "DAB",
       "type": 0
     },
     {
-      "word": "HES",
-      "type": 0
-    },
-    {
-      "word": "LEV",
-      "type": 0
-    },
-    {
-      "word": "ODE",
-      "type": 0
-    },
-    {
-      "word": "OOT",
-      "type": 0
-    },
-    {
-      "word": "ORS",
-      "type": 0
-    },
-    {
-      "word": "OWE",
-      "type": 0
-    },
-    {
-      "word": "ROC",
-      "type": 0
-    },
-    {
-      "word": "SEN",
-      "type": 0
-    },
-    {
-      "word": "SLY",
-      "type": 0
-    },
-    {
-      "word": "TEW",
-      "type": 0
-    },
-    {
-      "word": "TOW",
-      "type": 0
-    },
-    {
-      "word": "VET",
-      "type": 0
-    },
-    {
-      "word": "WOO",
-      "type": 0
-    },
-    {
-      "word": "WOT",
-      "type": 0
-    },
-    {
-      "word": "DENS",
-      "type": 0
-    },
-    {
-      "word": "DENT",
-      "type": 0
-    },
-    {
-      "word": "ENVY",
-      "type": 0
-    },
-    {
-      "word": "FESS",
-      "type": 0
-    },
-    {
-      "word": "NESS",
-      "type": 0
-    },
-    {
-      "word": "ODES",
-      "type": 0
-    },
-    {
-      "word": "SLEW",
-      "type": 0
-    },
-    {
-      "word": "SNED",
-      "type": 0
-    },
-    {
-      "word": "SWOT",
-      "type": 0
-    },
-    {
-      "word": "TELS",
-      "type": 0
-    },
-    {
-      "word": "TEWS",
-      "type": 0
-    },
-    {
-      "word": "TOWS",
-      "type": 0
-    },
-    {
-      "word": "VETO",
-      "type": 0
-    },
-    {
-      "word": "CHEFS",
-      "type": 0
-    },
-    {
-      "word": "CHESS",
-      "type": 0
-    },
-    {
-      "word": "CORSE",
-      "type": 0
-    },
-    {
-      "word": "DENSE",
-      "type": 0
-    },
-    {
-      "word": "FESSE",
-      "type": 0
-    },
-    {
-      "word": "SENTE",
-      "type": 0
-    },
-    {
-      "word": "TOWEL",
-      "type": 0
-    },
-    {
-      "word": "CORVET",
-      "type": 0
-    },
-    {
-      "word": "FESSED",
-      "type": 0
-    },
-    {
-      "word": "WETNESS",
+      "word": "TAD",
       "type": 0
     }
   ],
-  "letters": "SLYOC,WEVRH,OTNSE,ODESF",
+  "letters": "VANC,DCDE,ABAT",
   "obstacles": [
     {
       "required_words": 3,
@@ -238,11 +82,34 @@
       "type": 0,
       "cells": [
         {
-          "x": 0,
-          "y": 0
+          "x": 3,
+          "y": 2
         },
         {
-          "x": 1,
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
           "y": 0
         }
       ]

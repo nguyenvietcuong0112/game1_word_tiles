@@ -1,111 +1,114 @@
 {
   "id": 1698,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "AID",
+      "word": "AND",
       "type": 0
     },
     {
-      "word": "ALA",
+      "word": "ANT",
       "type": 0
     },
     {
-      "word": "ALL",
+      "word": "EVE",
       "type": 0
     },
     {
-      "word": "TEA",
+      "word": "HAD",
       "type": 0
     },
     {
-      "word": "CALL",
+      "word": "VAN",
       "type": 0
     },
     {
-      "word": "FALL",
+      "word": "ANTI",
       "type": 0
     },
     {
-      "word": "HALL",
+      "word": "EDIT",
       "type": 0
     },
     {
-      "word": "MALL",
+      "word": "HAND",
       "type": 0
     },
     {
-      "word": "ETHICAL",
+      "word": "HAVE",
+      "type": 0
+    },
+    {
+      "word": "HINT",
+      "type": 0
+    },
+    {
+      "word": "TIDE",
+      "type": 0
+    },
+    {
+      "word": "EVADE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AAH",
+      "word": "HADE",
+      "type": 1
+    },
+    {
+      "word": "HIND",
+      "type": 1
+    },
+    {
+      "word": "HINDI",
       "type": 0
     },
     {
-      "word": "AAL",
-      "type": 0
-    },
-    {
-      "word": "ALT",
-      "type": 0
-    },
-    {
-      "word": "DAL",
-      "type": 0
-    },
-    {
-      "word": "ETH",
-      "type": 0
-    },
-    {
-      "word": "HIC",
-      "type": 0
-    },
-    {
-      "word": "LAC",
-      "type": 0
-    },
-    {
-      "word": "LAD",
-      "type": 0
-    },
-    {
-      "word": "LAM",
-      "type": 0
-    },
-    {
-      "word": "ALAE",
-      "type": 0
-    },
-    {
-      "word": "ALFA",
-      "type": 0
-    },
-    {
-      "word": "FLAM",
-      "type": 0
-    },
-    {
-      "word": "HALT",
-      "type": 0
-    },
-    {
-      "word": "TEAL",
-      "type": 0
-    },
-    {
-      "word": "CALLA",
-      "type": 0
-    },
-    {
-      "word": "ETHIC",
-      "type": 0
+      "word": "NAVE",
+      "type": 1
     }
   ],
-  "letters": "IAAM,DALF,CALA,IHTE",
-  "obstacles": []
+  "letters": "EDTI,VAND,EHIE",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

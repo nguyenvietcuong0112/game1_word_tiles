@@ -1,227 +1,122 @@
 {
   "id": 1905,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "BIT",
+      "word": "ASK",
       "type": 0
     },
     {
-      "word": "EYE",
+      "word": "HAS",
       "type": 0
     },
     {
-      "word": "MON",
+      "word": "KIT",
       "type": 0
     },
     {
-      "word": "ONE",
+      "word": "OAK",
       "type": 0
     },
     {
-      "word": "RED",
+      "word": "SKI",
       "type": 0
     },
     {
-      "word": "REG",
+      "word": "SPA",
       "type": 0
     },
     {
-      "word": "DECK",
+      "word": "TIP",
       "type": 0
     },
     {
-      "word": "MORE",
+      "word": "SKIP",
       "type": 0
     },
     {
-      "word": "TREE",
+      "word": "SKIT",
       "type": 0
     },
     {
-      "word": "MONEY",
+      "word": "SOAK",
       "type": 0
     },
     {
-      "word": "REDUCE",
+      "word": "SPIT",
       "type": 0
     },
     {
-      "word": "REGENCY",
+      "word": "HOSPITAL",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "BEE",
+      "word": "LAOS",
+      "type": 1
+    },
+    {
+      "word": "LAT",
       "type": 0
     },
     {
-      "word": "CUD",
+      "word": "OAKS",
       "type": 0
     },
     {
-      "word": "DEY",
+      "word": "PIT",
       "type": 0
     },
     {
-      "word": "ECU",
-      "type": 0
+      "word": "PITA",
+      "type": 1
     },
     {
-      "word": "ERE",
-      "type": 0
-    },
-    {
-      "word": "GED",
-      "type": 0
-    },
-    {
-      "word": "GEE",
-      "type": 0
-    },
-    {
-      "word": "GEN",
-      "type": 0
-    },
-    {
-      "word": "GEY",
-      "type": 0
-    },
-    {
-      "word": "MOR",
-      "type": 0
-    },
-    {
-      "word": "NOM",
-      "type": 0
-    },
-    {
-      "word": "NOR",
-      "type": 0
-    },
-    {
-      "word": "ORE",
-      "type": 0
-    },
-    {
-      "word": "ORT",
-      "type": 0
-    },
-    {
-      "word": "REE",
-      "type": 0
-    },
-    {
-      "word": "REI",
-      "type": 0
-    },
-    {
-      "word": "ROM",
-      "type": 0
-    },
-    {
-      "word": "TIE",
-      "type": 0
-    },
-    {
-      "word": "YEN",
-      "type": 0
-    },
-    {
-      "word": "BEER",
-      "type": 0
-    },
-    {
-      "word": "BIER",
-      "type": 0
-    },
-    {
-      "word": "CEDE",
-      "type": 0
-    },
-    {
-      "word": "DUCE",
-      "type": 0
-    },
-    {
-      "word": "DUCK",
-      "type": 0
-    },
-    {
-      "word": "EGER",
-      "type": 0
-    },
-    {
-      "word": "EYED",
-      "type": 0
-    },
-    {
-      "word": "EYEN",
-      "type": 0
-    },
-    {
-      "word": "EYER",
-      "type": 0
-    },
-    {
-      "word": "GECK",
-      "type": 0
-    },
-    {
-      "word": "GEEK",
-      "type": 0
-    },
-    {
-      "word": "MORT",
-      "type": 0
-    },
-    {
-      "word": "REDE",
-      "type": 0
-    },
-    {
-      "word": "REEK",
-      "type": 0
-    },
-    {
-      "word": "TIER",
-      "type": 0
-    },
-    {
-      "word": "TREY",
-      "type": 0
-    },
-    {
-      "word": "CEDER",
-      "type": 0
-    },
-    {
-      "word": "EDUCE",
-      "type": 0
-    },
-    {
-      "word": "GENOM",
-      "type": 0
-    },
-    {
-      "word": "TRONE",
-      "type": 0
-    },
-    {
-      "word": "REDEYE",
-      "type": 0
-    },
-    {
-      "word": "MONEYED",
-      "type": 0
-    },
-    {
-      "word": "MONEYER",
-      "type": 0
+      "word": "TIPS",
+      "type": 2
     }
   ],
-  "letters": "BEKCU,IEGED,TREYE,MONCR",
-  "obstacles": []
+  "letters": "APIT,ASKA,HOAL",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

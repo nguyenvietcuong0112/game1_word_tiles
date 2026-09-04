@@ -1,107 +1,75 @@
 {
   "id": 1026,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ARC",
+      "word": "DAD",
       "type": 0
     },
     {
-      "word": "BOW",
+      "word": "DUE",
       "type": 0
     },
     {
-      "word": "BRO",
+      "word": "KEY",
       "type": 0
     },
     {
-      "word": "COW",
+      "word": "OLD",
       "type": 0
     },
     {
-      "word": "SIR",
+      "word": "COLD",
       "type": 0
     },
     {
-      "word": "BOOK",
+      "word": "HOLD",
       "type": 0
     },
     {
-      "word": "COOK",
-      "type": 0
+      "word": "LOCK",
+      "type": 2
     },
     {
-      "word": "COOP",
-      "type": 0
-    },
-    {
-      "word": "COWS",
-      "type": 0
-    },
-    {
-      "word": "FIRM",
-      "type": 0
+      "word": "HOCKEY",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "BOO",
+      "word": "COL",
       "type": 0
     },
     {
-      "word": "COB",
-      "type": 0
-    },
-    {
-      "word": "COO",
-      "type": 0
-    },
-    {
-      "word": "FIR",
-      "type": 0
-    },
-    {
-      "word": "KOP",
-      "type": 0
-    },
-    {
-      "word": "KOR",
-      "type": 0
-    },
-    {
-      "word": "ORB",
-      "type": 0
-    },
-    {
-      "word": "RAS",
-      "type": 0
-    },
-    {
-      "word": "RIF",
-      "type": 0
-    },
-    {
-      "word": "WOO",
-      "type": 0
-    },
-    {
-      "word": "ARCO",
-      "type": 0
-    },
-    {
-      "word": "BOWS",
-      "type": 0
-    },
-    {
-      "word": "SWOB",
-      "type": 0
-    },
-    {
-      "word": "SWOOP",
-      "type": 0
+      "word": "HOCK",
+      "type": 1
     }
   ],
-  "letters": "ASIR,RWFM,COBR,POKO",
-  "obstacles": []
+  "letters": "EYUE,KCDA,HOLD",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

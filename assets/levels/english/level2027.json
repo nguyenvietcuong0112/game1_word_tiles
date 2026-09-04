@@ -1,239 +1,110 @@
 {
   "id": 2027,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "BOY",
+      "word": "ARM",
       "type": 0
     },
     {
-      "word": "DUO",
+      "word": "FAR",
       "type": 0
     },
     {
-      "word": "FUN",
+      "word": "FOR",
       "type": 0
     },
     {
-      "word": "OUT",
+      "word": "OAR",
       "type": 0
     },
     {
-      "word": "ROB",
+      "word": "ROW",
       "type": 0
     },
     {
-      "word": "SET",
+      "word": "TAN",
       "type": 0
     },
     {
-      "word": "FUND",
+      "word": "ATOM",
       "type": 0
     },
     {
-      "word": "FUNDS",
+      "word": "FARM",
       "type": 0
     },
     {
-      "word": "STORE",
+      "word": "FORM",
       "type": 0
     },
     {
-      "word": "COUNTY",
+      "word": "WORM",
       "type": 0
     },
     {
-      "word": "STORES",
+      "word": "ARMOR",
       "type": 0
+    },
+    {
+      "word": "TOMORROW",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "BOT",
+      "word": "MORROW",
+      "type": 1
+    },
+    {
+      "word": "MOT",
       "type": 0
     },
     {
-      "word": "COD",
-      "type": 0
-    },
-    {
-      "word": "DOC",
-      "type": 0
-    },
-    {
-      "word": "ODS",
-      "type": 0
-    },
-    {
-      "word": "ORE",
-      "type": 0
-    },
-    {
-      "word": "ORT",
-      "type": 0
-    },
-    {
-      "word": "OUD",
-      "type": 0
-    },
-    {
-      "word": "RES",
-      "type": 0
-    },
-    {
-      "word": "RET",
-      "type": 0
-    },
-    {
-      "word": "ROT",
-      "type": 0
-    },
-    {
-      "word": "SER",
-      "type": 0
-    },
-    {
-      "word": "TOR",
-      "type": 0
-    },
-    {
-      "word": "UNS",
-      "type": 0
-    },
-    {
-      "word": "YOB",
-      "type": 0
-    },
-    {
-      "word": "BORE",
-      "type": 0
-    },
-    {
-      "word": "BORT",
-      "type": 0
-    },
-    {
-      "word": "BOTS",
-      "type": 0
-    },
-    {
-      "word": "BOUT",
-      "type": 0
-    },
-    {
-      "word": "BOYS",
-      "type": 0
-    },
-    {
-      "word": "CODS",
-      "type": 0
-    },
-    {
-      "word": "DOCS",
-      "type": 0
-    },
-    {
-      "word": "FUNS",
-      "type": 0
-    },
-    {
-      "word": "ORES",
-      "type": 0
-    },
-    {
-      "word": "RETS",
-      "type": 0
-    },
-    {
-      "word": "ROBS",
-      "type": 0
-    },
-    {
-      "word": "ROTE",
-      "type": 0
-    },
-    {
-      "word": "ROTS",
-      "type": 0
-    },
-    {
-      "word": "ROUT",
-      "type": 0
-    },
-    {
-      "word": "SETS",
-      "type": 0
-    },
-    {
-      "word": "STOB",
-      "type": 0
-    },
-    {
-      "word": "TORE",
-      "type": 0
-    },
-    {
-      "word": "TOUT",
-      "type": 0
-    },
-    {
-      "word": "TROY",
-      "type": 0
-    },
-    {
-      "word": "UNDO",
-      "type": 0
-    },
-    {
-      "word": "YOBS",
-      "type": 0
-    },
-    {
-      "word": "BORES",
-      "type": 0
-    },
-    {
-      "word": "COUNT",
-      "type": 0
-    },
-    {
-      "word": "ROBOT",
-      "type": 0
-    },
-    {
-      "word": "ROTES",
-      "type": 0
-    },
-    {
-      "word": "STOUT",
-      "type": 0
-    },
-    {
-      "word": "TORES",
-      "type": 0
-    },
-    {
-      "word": "TROYS",
-      "type": 0
-    },
-    {
-      "word": "OYSTER",
-      "type": 0
-    },
-    {
-      "word": "ROBOTS",
-      "type": 0
-    },
-    {
-      "word": "SETOUT",
-      "type": 0
-    },
-    {
-      "word": "ROYSTER",
+      "word": "ROM",
       "type": 0
     }
   ],
-  "letters": "ROYTF,TBSNU,UOTDO,DRESC",
-  "obstacles": []
+  "letters": "TOMO,AARR,NFOW",
+  "obstacles": [
+    {
+      "required_words": 6,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 9,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

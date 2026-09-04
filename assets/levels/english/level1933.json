@@ -1,191 +1,134 @@
 {
   "id": 1933,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ITS",
+      "word": "BIN",
       "type": 0
     },
     {
-      "word": "MAP",
+      "word": "BUN",
       "type": 0
     },
     {
-      "word": "RIB",
+      "word": "ORB",
       "type": 0
     },
     {
-      "word": "SIC",
+      "word": "RAG",
       "type": 0
     },
     {
-      "word": "SRI",
+      "word": "ROB",
       "type": 0
     },
     {
-      "word": "LIST",
+      "word": "WAG",
+      "type": 2
+    },
+    {
+      "word": "BRAG",
+      "type": 2
+    },
+    {
+      "word": "GAIN",
       "type": 0
     },
     {
-      "word": "MAIN",
+      "word": "RAIN",
       "type": 0
     },
     {
-      "word": "SHIP",
+      "word": "ROBE",
       "type": 0
     },
     {
-      "word": "TIPS",
+      "word": "AGAIN",
       "type": 0
     },
     {
-      "word": "FIRST",
-      "type": 0
-    },
-    {
-      "word": "LISTS",
-      "type": 0
-    },
-    {
-      "word": "SHIPS",
+      "word": "BRAIN",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AIN",
+      "word": "AGAR",
+      "type": 1
+    },
+    {
+      "word": "BORA",
       "type": 0
     },
     {
-      "word": "AIT",
+      "word": "BRA",
       "type": 0
     },
     {
-      "word": "APT",
+      "word": "GAR",
       "type": 0
     },
     {
-      "word": "CIS",
+      "word": "GARB",
+      "type": 1
+    },
+    {
+      "word": "NIB",
       "type": 0
     },
     {
-      "word": "FIB",
+      "word": "NUB",
       "type": 0
     },
     {
-      "word": "FIR",
+      "word": "UNI",
       "type": 0
     },
     {
-      "word": "HIP",
-      "type": 0
-    },
-    {
-      "word": "HIT",
-      "type": 0
-    },
-    {
-      "word": "LIS",
-      "type": 0
-    },
-    {
-      "word": "NIT",
-      "type": 0
-    },
-    {
-      "word": "PAM",
-      "type": 0
-    },
-    {
-      "word": "PIT",
-      "type": 0
-    },
-    {
-      "word": "RIF",
-      "type": 0
-    },
-    {
-      "word": "TIN",
-      "type": 0
-    },
-    {
-      "word": "TIP",
-      "type": 0
-    },
-    {
-      "word": "AITS",
-      "type": 0
-    },
-    {
-      "word": "CIST",
-      "type": 0
-    },
-    {
-      "word": "FIBS",
-      "type": 0
-    },
-    {
-      "word": "FIRS",
-      "type": 0
-    },
-    {
-      "word": "HIPS",
-      "type": 0
-    },
-    {
-      "word": "HITS",
-      "type": 0
-    },
-    {
-      "word": "IAMB",
-      "type": 0
-    },
-    {
-      "word": "NITS",
-      "type": 0
-    },
-    {
-      "word": "PAIN",
-      "type": 0
-    },
-    {
-      "word": "PITS",
-      "type": 0
-    },
-    {
-      "word": "RIBS",
-      "type": 0
-    },
-    {
-      "word": "SPIT",
-      "type": 0
-    },
-    {
-      "word": "CISTS",
-      "type": 0
-    },
-    {
-      "word": "IAMBI",
-      "type": 0
-    },
-    {
-      "word": "IAMBS",
-      "type": 0
-    },
-    {
-      "word": "SHITS",
-      "type": 0
-    },
-    {
-      "word": "SPITS",
-      "type": 0
-    },
-    {
-      "word": "FIRSTS",
-      "type": 0
+      "word": "WAIN",
+      "type": 1
     }
   ],
-  "letters": "SPIHL,RSTSI,IBPTC,FMAIN",
-  "obstacles": []
+  "letters": "EUNW,BBIA,ORAG",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

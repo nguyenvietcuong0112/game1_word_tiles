@@ -1,139 +1,134 @@
 {
   "id": 2047,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "LOW",
+      "word": "ACE",
       "type": 0
     },
     {
-      "word": "NOT",
+      "word": "ELF",
       "type": 0
     },
     {
-      "word": "OIL",
+      "word": "ORE",
+      "type": 2
+    },
+    {
+      "word": "COLA",
       "type": 0
     },
     {
-      "word": "OUT",
+      "word": "FLEA",
       "type": 0
     },
     {
-      "word": "SIT",
+      "word": "LACE",
       "type": 0
     },
     {
-      "word": "TOP",
+      "word": "LORE",
       "type": 0
     },
     {
-      "word": "TWO",
+      "word": "MOLE",
       "type": 0
     },
     {
-      "word": "BOIL",
+      "word": "MORE",
       "type": 0
     },
     {
-      "word": "FLOW",
+      "word": "REAL",
       "type": 0
     },
     {
-      "word": "SPOT",
+      "word": "ROLE",
       "type": 0
     },
     {
-      "word": "TURN",
+      "word": "LOCAL",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "FUR",
+      "word": "AERO",
+      "type": 2
+    },
+    {
+      "word": "COL",
       "type": 0
     },
     {
-      "word": "LIS",
+      "word": "COLE",
       "type": 0
     },
     {
-      "word": "LIT",
+      "word": "ECO",
       "type": 0
     },
     {
-      "word": "OPS",
+      "word": "FECAL",
       "type": 0
     },
     {
-      "word": "OPT",
+      "word": "MOL",
       "type": 0
     },
     {
-      "word": "OWL",
+      "word": "MOREL",
       "type": 0
     },
     {
-      "word": "POT",
+      "word": "ROLF",
       "type": 0
     },
     {
-      "word": "PSI",
-      "type": 0
-    },
-    {
-      "word": "RUT",
-      "type": 0
-    },
-    {
-      "word": "TIL",
-      "type": 0
-    },
-    {
-      "word": "TIS",
-      "type": 0
-    },
-    {
-      "word": "TON",
-      "type": 0
-    },
-    {
-      "word": "TUT",
-      "type": 0
-    },
-    {
-      "word": "URN",
-      "type": 0
-    },
-    {
-      "word": "LISP",
-      "type": 0
-    },
-    {
-      "word": "LITU",
-      "type": 0
-    },
-    {
-      "word": "TOPS",
-      "type": 0
-    },
-    {
-      "word": "TOUT",
-      "type": 0
-    },
-    {
-      "word": "TUTU",
-      "type": 0
-    },
-    {
-      "word": "WOLF",
-      "type": 0
-    },
-    {
-      "word": "TURNOUT",
+      "word": "ROM",
       "type": 0
     }
   ],
-  "letters": "LOIOB,FWLIS,UTUTP,RNOTO",
-  "obstacles": []
+  "letters": "REAL,OLCO,MFEL",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 8,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

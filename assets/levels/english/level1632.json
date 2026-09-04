@@ -1,131 +1,95 @@
 {
   "id": 1632,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ART",
+      "word": "HUE",
       "type": 0
     },
     {
-      "word": "BAR",
+      "word": "KID",
       "type": 0
     },
     {
-      "word": "ELF",
+      "word": "LIE",
       "type": 0
     },
     {
-      "word": "LET",
+      "word": "LIT",
       "type": 0
     },
     {
-      "word": "NET",
+      "word": "TIE",
       "type": 0
     },
     {
-      "word": "TEL",
+      "word": "GLUE",
       "type": 0
     },
     {
-      "word": "TEN",
+      "word": "HUNK",
+      "type": 2
+    },
+    {
+      "word": "CHUNK",
       "type": 0
     },
     {
-      "word": "DEAN",
-      "type": 0
-    },
-    {
-      "word": "DUKE",
-      "type": 0
-    },
-    {
-      "word": "THAN",
-      "type": 0
-    },
-    {
-      "word": "THANK",
+      "word": "LUNCH",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ANT",
+      "word": "GLUED",
       "type": 0
     },
     {
-      "word": "ARF",
+      "word": "LIED",
       "type": 0
     },
     {
-      "word": "BUD",
+      "word": "LIEU",
       "type": 0
     },
     {
-      "word": "DUB",
-      "type": 0
-    },
-    {
-      "word": "ETH",
-      "type": 0
-    },
-    {
-      "word": "HAE",
-      "type": 0
-    },
-    {
-      "word": "KEA",
-      "type": 0
-    },
-    {
-      "word": "NAE",
-      "type": 0
-    },
-    {
-      "word": "NAH",
-      "type": 0
-    },
-    {
-      "word": "UKE",
-      "type": 0
-    },
-    {
-      "word": "ANTE",
-      "type": 0
-    },
-    {
-      "word": "BARF",
-      "type": 0
-    },
-    {
-      "word": "ETNA",
-      "type": 0
-    },
-    {
-      "word": "HAED",
-      "type": 0
-    },
-    {
-      "word": "HANK",
-      "type": 0
-    },
-    {
-      "word": "HANT",
-      "type": 0
-    },
-    {
-      "word": "THAE",
-      "type": 0
-    },
-    {
-      "word": "HANKED",
-      "type": 0
-    },
-    {
-      "word": "THANKED",
+      "word": "TIED",
       "type": 0
     }
   ],
-  "letters": "NETH,FLNA,RTKE,ABUD",
-  "obstacles": []
+  "letters": "CNKI,HUED,GLIT",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,119 +1,83 @@
 {
   "id": 1536,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "AIR",
+      "word": "HEN",
       "type": 0
     },
     {
-      "word": "ART",
+      "word": "SHE",
       "type": 0
     },
     {
-      "word": "BRA",
+      "word": "LANE",
       "type": 0
     },
     {
-      "word": "CAR",
+      "word": "NEST",
       "type": 0
     },
     {
-      "word": "FOR",
+      "word": "STUN",
+      "type": 2
+    },
+    {
+      "word": "CHEST",
       "type": 0
     },
     {
-      "word": "OFF",
+      "word": "STUNT",
       "type": 0
     },
     {
-      "word": "VIA",
-      "type": 0
-    },
-    {
-      "word": "CARGO",
-      "type": 0
-    },
-    {
-      "word": "VIRTUAL",
-      "type": 0
+      "word": "CHESTNUT",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "ALB",
+      "word": "LANES",
       "type": 0
     },
     {
-      "word": "ARB",
+      "word": "NUT",
       "type": 0
     },
     {
-      "word": "BRO",
+      "word": "NUTS",
+      "type": 2
+    },
+    {
+      "word": "SEN",
       "type": 0
     },
     {
-      "word": "FOG",
+      "word": "SHES",
       "type": 0
     },
     {
-      "word": "GOR",
-      "type": 0
-    },
-    {
-      "word": "LAR",
-      "type": 0
-    },
-    {
-      "word": "ORB",
-      "type": 0
-    },
-    {
-      "word": "RIA",
-      "type": 0
-    },
-    {
-      "word": "AIRT",
-      "type": 0
-    },
-    {
-      "word": "ARIA",
-      "type": 0
-    },
-    {
-      "word": "CARR",
-      "type": 0
-    },
-    {
-      "word": "FORB",
-      "type": 0
-    },
-    {
-      "word": "LARI",
-      "type": 0
-    },
-    {
-      "word": "ORRA",
-      "type": 0
-    },
-    {
-      "word": "BRIAR",
-      "type": 0
-    },
-    {
-      "word": "TRIAC",
-      "type": 0
-    },
-    {
-      "word": "VIRAL",
-      "type": 0
-    },
-    {
-      "word": "VIRTU",
+      "word": "STUNTS",
       "type": 0
     }
   ],
-  "letters": "FFOG,LBRR,ARIA,UTVC",
-  "obstacles": []
+  "letters": "NEST,AHCN,LSTU",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 1
+        }
+      ]
+    }
+  ]
 }

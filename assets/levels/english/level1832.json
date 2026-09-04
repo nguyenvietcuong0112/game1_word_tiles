@@ -1,271 +1,83 @@
 {
   "id": 1832,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "CAN",
+      "word": "GIN",
       "type": 0
     },
     {
-      "word": "CAT",
+      "word": "LOG",
       "type": 0
     },
     {
-      "word": "DEN",
+      "word": "ONE",
       "type": 0
     },
     {
-      "word": "GAS",
+      "word": "SEE",
       "type": 0
     },
     {
-      "word": "HAT",
+      "word": "GIVE",
       "type": 0
     },
     {
-      "word": "HER",
+      "word": "GONE",
       "type": 0
     },
     {
-      "word": "LET",
+      "word": "LENS",
       "type": 0
     },
     {
-      "word": "RED",
+      "word": "LONE",
       "type": 0
     },
     {
-      "word": "TEL",
+      "word": "VEER",
+      "type": 2
+    },
+    {
+      "word": "VINE",
       "type": 0
     },
     {
-      "word": "THE",
+      "word": "LOGIN",
       "type": 0
     },
     {
-      "word": "SAIL",
-      "type": 0
-    },
-    {
-      "word": "TUNE",
-      "type": 0
+      "word": "SERVE",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "ACE",
+      "word": "GINS",
       "type": 0
     },
     {
-      "word": "AIL",
-      "type": 0
-    },
-    {
-      "word": "ANE",
-      "type": 0
-    },
-    {
-      "word": "ASH",
-      "type": 0
-    },
-    {
-      "word": "ATE",
-      "type": 0
-    },
-    {
-      "word": "CEL",
-      "type": 0
-    },
-    {
-      "word": "DUN",
-      "type": 0
-    },
-    {
-      "word": "ENS",
-      "type": 0
-    },
-    {
-      "word": "ETA",
-      "type": 0
-    },
-    {
-      "word": "ETH",
-      "type": 0
-    },
-    {
-      "word": "NAH",
-      "type": 0
-    },
-    {
-      "word": "NUT",
-      "type": 0
-    },
-    {
-      "word": "SAG",
-      "type": 0
-    },
-    {
-      "word": "SHA",
-      "type": 0
-    },
-    {
-      "word": "TAN",
-      "type": 0
-    },
-    {
-      "word": "TUN",
-      "type": 0
-    },
-    {
-      "word": "UNS",
-      "type": 0
-    },
-    {
-      "word": "UTS",
-      "type": 0
-    },
-    {
-      "word": "ACED",
-      "type": 0
-    },
-    {
-      "word": "ANSA",
-      "type": 0
-    },
-    {
-      "word": "CANE",
-      "type": 0
-    },
-    {
-      "word": "CANS",
-      "type": 0
-    },
-    {
-      "word": "CATE",
-      "type": 0
-    },
-    {
-      "word": "DENS",
-      "type": 0
-    },
-    {
-      "word": "DUNE",
-      "type": 0
-    },
-    {
-      "word": "DUNS",
-      "type": 0
-    },
-    {
-      "word": "GASH",
-      "type": 0
-    },
-    {
-      "word": "GAST",
-      "type": 0
-    },
-    {
-      "word": "HATE",
-      "type": 0
-    },
-    {
-      "word": "HATH",
-      "type": 0
-    },
-    {
-      "word": "HERL",
-      "type": 0
-    },
-    {
-      "word": "NUTS",
-      "type": 0
-    },
-    {
-      "word": "SHAT",
-      "type": 0
-    },
-    {
-      "word": "SNED",
-      "type": 0
-    },
-    {
-      "word": "STUD",
-      "type": 0
-    },
-    {
-      "word": "STUN",
-      "type": 0
-    },
-    {
-      "word": "TACE",
-      "type": 0
-    },
-    {
-      "word": "TAHR",
-      "type": 0
-    },
-    {
-      "word": "TANS",
-      "type": 0
-    },
-    {
-      "word": "TUNA",
-      "type": 0
-    },
-    {
-      "word": "TUNS",
-      "type": 0
-    },
-    {
-      "word": "CANED",
-      "type": 0
-    },
-    {
-      "word": "CANST",
-      "type": 0
-    },
-    {
-      "word": "ENATE",
-      "type": 0
-    },
-    {
-      "word": "ETHER",
-      "type": 0
-    },
-    {
-      "word": "HANSA",
-      "type": 0
-    },
-    {
-      "word": "LETHE",
-      "type": 0
-    },
-    {
-      "word": "SHRED",
-      "type": 0
-    },
-    {
-      "word": "SNATH",
-      "type": 0
-    },
-    {
-      "word": "TUNED",
-      "type": 0
-    },
-    {
-      "word": "CETANE",
-      "type": 0
-    },
-    {
-      "word": "HATRED",
-      "type": 0
-    },
-    {
-      "word": "SNATHE",
+      "word": "INS",
       "type": 0
     }
   ],
-  "letters": "LECED,HTANU,ERHST,DLIAG",
-  "obstacles": []
+  "letters": "LEVR,ONSE,GIVE",
+  "obstacles": [
+    {
+      "required_words": 6,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

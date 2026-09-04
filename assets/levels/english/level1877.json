@@ -1,151 +1,126 @@
 {
   "id": 1877,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "DEL",
+      "word": "ILL",
       "type": 0
     },
     {
-      "word": "HER",
+      "word": "KIN",
       "type": 0
     },
     {
-      "word": "JOE",
+      "word": "LIE",
       "type": 0
     },
     {
-      "word": "LED",
+      "word": "KEEN",
       "type": 0
     },
     {
-      "word": "NET",
+      "word": "LINE",
       "type": 0
     },
     {
-      "word": "PHI",
+      "word": "NAIL",
       "type": 0
     },
     {
-      "word": "PRO",
+      "word": "SAIL",
       "type": 0
     },
     {
-      "word": "ROB",
+      "word": "SAKE",
       "type": 0
     },
     {
-      "word": "TEN",
+      "word": "SNAIL",
       "type": 0
     },
     {
-      "word": "THE",
-      "type": 0
-    },
-    {
-      "word": "PRINT",
-      "type": 0
-    },
-    {
-      "word": "PROBLEM",
+      "word": "SNAKE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "HEN",
+      "word": "AIL",
       "type": 0
     },
     {
-      "word": "HET",
+      "word": "AILS",
+      "type": 1
+    },
+    {
+      "word": "AKIN",
       "type": 0
     },
     {
-      "word": "HIN",
+      "word": "ASS",
       "type": 0
     },
     {
-      "word": "MED",
+      "word": "INS",
       "type": 0
     },
     {
-      "word": "MEL",
+      "word": "NAILS",
       "type": 0
     },
     {
-      "word": "MOL",
+      "word": "NIL",
       "type": 0
     },
     {
-      "word": "OLE",
+      "word": "SANS",
       "type": 0
     },
     {
-      "word": "RIN",
-      "type": 0
-    },
-    {
-      "word": "BLED",
-      "type": 0
-    },
-    {
-      "word": "DEMO",
-      "type": 0
-    },
-    {
-      "word": "HENT",
-      "type": 0
-    },
-    {
-      "word": "HERM",
-      "type": 0
-    },
-    {
-      "word": "HINT",
-      "type": 0
-    },
-    {
-      "word": "JOLE",
-      "type": 0
-    },
-    {
-      "word": "MOLE",
-      "type": 0
-    },
-    {
-      "word": "NETT",
-      "type": 0
-    },
-    {
-      "word": "ORLE",
-      "type": 0
-    },
-    {
-      "word": "TENT",
-      "type": 0
-    },
-    {
-      "word": "ROBLE",
-      "type": 0
-    },
-    {
-      "word": "TENTH",
-      "type": 0
-    },
-    {
-      "word": "THERM",
-      "type": 0
-    },
-    {
-      "word": "THERME",
-      "type": 0
-    },
-    {
-      "word": "THERMEL",
+      "word": "SNAILS",
       "type": 0
     }
   ],
-  "letters": "PROBD,HIRLE,ENJOM,TTHER",
-  "obstacles": []
+  "letters": "IKEE,NAIN,SSLL",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,163 +1,102 @@
 {
   "id": 1927,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "AND",
+      "word": "HOT",
       "type": 0
     },
     {
-      "word": "ARM",
+      "word": "LET",
       "type": 0
     },
     {
-      "word": "BAR",
+      "word": "LOT",
       "type": 0
     },
     {
-      "word": "DON",
+      "word": "PUN",
       "type": 0
     },
     {
-      "word": "MON",
+      "word": "TOY",
       "type": 0
     },
     {
-      "word": "MOS",
+      "word": "HOLE",
       "type": 0
     },
     {
-      "word": "PIN",
+      "word": "PUNT",
       "type": 0
     },
     {
-      "word": "SIN",
+      "word": "TELL",
       "type": 0
     },
     {
-      "word": "SON",
+      "word": "TOLL",
       "type": 0
     },
     {
-      "word": "BAND",
-      "type": 0
-    },
-    {
-      "word": "REAR",
+      "word": "PHOTO",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ABA",
+      "word": "HELL",
       "type": 0
     },
     {
-      "word": "ANA",
+      "word": "HOLLY",
       "type": 0
     },
     {
-      "word": "BAN",
-      "type": 0
-    },
-    {
-      "word": "EAR",
-      "type": 0
-    },
-    {
-      "word": "ERR",
-      "type": 0
-    },
-    {
-      "word": "MOA",
-      "type": 0
-    },
-    {
-      "word": "MOP",
-      "type": 0
-    },
-    {
-      "word": "NAB",
-      "type": 0
-    },
-    {
-      "word": "NAE",
-      "type": 0
-    },
-    {
-      "word": "NIP",
-      "type": 0
-    },
-    {
-      "word": "NOD",
-      "type": 0
-    },
-    {
-      "word": "NOM",
-      "type": 0
-    },
-    {
-      "word": "NOS",
-      "type": 0
-    },
-    {
-      "word": "OAR",
-      "type": 0
-    },
-    {
-      "word": "POM",
-      "type": 0
-    },
-    {
-      "word": "RAN",
-      "type": 0
-    },
-    {
-      "word": "SOP",
-      "type": 0
-    },
-    {
-      "word": "BARM",
-      "type": 0
-    },
-    {
-      "word": "BARN",
-      "type": 0
-    },
-    {
-      "word": "EARN",
-      "type": 0
-    },
-    {
-      "word": "PRAO",
-      "type": 0
-    },
-    {
-      "word": "RAND",
-      "type": 0
-    },
-    {
-      "word": "SOAR",
-      "type": 0
-    },
-    {
-      "word": "BARRE",
-      "type": 0
-    },
-    {
-      "word": "NOMOS",
-      "type": 0
-    },
-    {
-      "word": "ABANDON",
-      "type": 0
-    },
-    {
-      "word": "ARMBAND",
+      "word": "TELLY",
       "type": 0
     }
   ],
-  "letters": "DNAER,OABAR,NRMON,IPOSI",
-  "obstacles": []
+  "letters": "NTLY,UELO,PHOT",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,215 +1,94 @@
 {
   "id": 2117,
-  "width": 5,
-  "height": 4,
+  "width": 3,
+  "height": 3,
   "target_words": [
     {
-      "word": "ART",
+      "word": "LIE",
       "type": 0
     },
     {
-      "word": "BAD",
+      "word": "SHE",
       "type": 0
     },
     {
-      "word": "BED",
+      "word": "SUE",
       "type": 0
     },
     {
-      "word": "MAD",
+      "word": "BLUE",
       "type": 0
     },
     {
-      "word": "RAW",
+      "word": "BLUR",
+      "type": 2
+    },
+    {
+      "word": "LUSH",
       "type": 0
     },
     {
-      "word": "ROW",
+      "word": "RUSH",
       "type": 0
     },
     {
-      "word": "WAR",
+      "word": "RUST",
       "type": 0
     },
     {
-      "word": "WOW",
+      "word": "TRUE",
       "type": 0
     },
     {
-      "word": "BRAD",
+      "word": "BLURT",
       "type": 0
     },
     {
-      "word": "HOOD",
+      "word": "BLUSH",
       "type": 0
     },
     {
-      "word": "MODE",
-      "type": 0
-    },
-    {
-      "word": "THROW",
-      "type": 0
-    },
-    {
-      "word": "WORLD",
+      "word": "BRUSH",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ADO",
+      "word": "LIEU",
       "type": 0
     },
     {
-      "word": "ARB",
+      "word": "LUST",
       "type": 0
     },
     {
-      "word": "BET",
-      "type": 0
-    },
-    {
-      "word": "BRA",
-      "type": 0
-    },
-    {
-      "word": "DAB",
-      "type": 0
-    },
-    {
-      "word": "DAM",
-      "type": 0
-    },
-    {
-      "word": "DAW",
-      "type": 0
-    },
-    {
-      "word": "DEB",
-      "type": 0
-    },
-    {
-      "word": "DOM",
-      "type": 0
-    },
-    {
-      "word": "ETH",
-      "type": 0
-    },
-    {
-      "word": "HOE",
-      "type": 0
-    },
-    {
-      "word": "MOD",
-      "type": 0
-    },
-    {
-      "word": "MOO",
-      "type": 0
-    },
-    {
-      "word": "ODE",
-      "type": 0
-    },
-    {
-      "word": "OOH",
-      "type": 0
-    },
-    {
-      "word": "OWL",
-      "type": 0
-    },
-    {
-      "word": "RAD",
-      "type": 0
-    },
-    {
-      "word": "RHO",
-      "type": 0
-    },
-    {
-      "word": "TED",
-      "type": 0
-    },
-    {
-      "word": "THO",
-      "type": 0
-    },
-    {
-      "word": "TWA",
-      "type": 0
-    },
-    {
-      "word": "WAD",
-      "type": 0
-    },
-    {
-      "word": "ABED",
-      "type": 0
-    },
-    {
-      "word": "ABET",
-      "type": 0
-    },
-    {
-      "word": "BADE",
-      "type": 0
-    },
-    {
-      "word": "BETH",
-      "type": 0
-    },
-    {
-      "word": "BRAW",
-      "type": 0
-    },
-    {
-      "word": "DARB",
-      "type": 0
-    },
-    {
-      "word": "DART",
-      "type": 0
-    },
-    {
-      "word": "DAWT",
-      "type": 0
-    },
-    {
-      "word": "HOED",
-      "type": 0
-    },
-    {
-      "word": "THRO",
-      "type": 0
-    },
-    {
-      "word": "TRAD",
-      "type": 0
-    },
-    {
-      "word": "WART",
-      "type": 0
-    },
-    {
-      "word": "MOOED",
-      "type": 0
-    },
-    {
-      "word": "DARTED",
-      "type": 0
-    },
-    {
-      "word": "DAWTED",
-      "type": 0
-    },
-    {
-      "word": "WARTED",
+      "word": "RUE",
       "type": 0
     }
   ],
-  "letters": "MADLW,OOHRO,DETWW,ABRAD",
-  "obstacles": []
+  "letters": "IEH,LUS,BRT",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 2,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

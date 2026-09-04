@@ -1,22 +1,14 @@
 {
   "id": 1064,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "AGE",
+      "word": "RID",
       "type": 0
     },
     {
-      "word": "CUT",
-      "type": 0
-    },
-    {
-      "word": "GET",
-      "type": 0
-    },
-    {
-      "word": "LET",
+      "word": "SAD",
       "type": 0
     },
     {
@@ -24,176 +16,84 @@
       "type": 0
     },
     {
-      "word": "TEL",
+      "word": "ACID",
       "type": 0
     },
     {
-      "word": "CHAT",
+      "word": "CAST",
       "type": 0
     },
     {
-      "word": "THAT",
+      "word": "EAST",
       "type": 0
     },
     {
-      "word": "STATE",
+      "word": "VAST",
       "type": 0
+    },
+    {
+      "word": "SAVOR",
+      "type": 2
+    },
+    {
+      "word": "AVOCADO",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "AAH",
+      "word": "CAD",
       "type": 0
     },
     {
-      "word": "ALE",
+      "word": "CASA",
       "type": 0
     },
     {
-      "word": "ALS",
+      "word": "CASTE",
       "type": 0
     },
     {
-      "word": "ALT",
+      "word": "STEAD",
       "type": 0
     },
     {
-      "word": "ATE",
-      "type": 0
-    },
-    {
-      "word": "ATT",
-      "type": 0
-    },
-    {
-      "word": "ELS",
-      "type": 0
-    },
-    {
-      "word": "ETA",
-      "type": 0
-    },
-    {
-      "word": "GAL",
-      "type": 0
-    },
-    {
-      "word": "GEL",
-      "type": 0
-    },
-    {
-      "word": "HAT",
-      "type": 0
-    },
-    {
-      "word": "LAG",
-      "type": 0
-    },
-    {
-      "word": "LEG",
-      "type": 0
-    },
-    {
-      "word": "TAT",
-      "type": 0
-    },
-    {
-      "word": "TEG",
-      "type": 0
-    },
-    {
-      "word": "TET",
-      "type": 0
-    },
-    {
-      "word": "EGAL",
-      "type": 0
-    },
-    {
-      "word": "GALE",
-      "type": 0
-    },
-    {
-      "word": "GALS",
-      "type": 0
-    },
-    {
-      "word": "GELS",
-      "type": 0
-    },
-    {
-      "word": "GELT",
-      "type": 0
-    },
-    {
-      "word": "GETA",
-      "type": 0
-    },
-    {
-      "word": "GETS",
-      "type": 0
-    },
-    {
-      "word": "HATE",
-      "type": 0
-    },
-    {
-      "word": "HATS",
-      "type": 0
-    },
-    {
-      "word": "LETS",
-      "type": 0
-    },
-    {
-      "word": "SLAG",
-      "type": 0
-    },
-    {
-      "word": "STAT",
-      "type": 0
-    },
-    {
-      "word": "STET",
-      "type": 0
-    },
-    {
-      "word": "TATE",
-      "type": 0
-    },
-    {
-      "word": "TATS",
-      "type": 0
-    },
-    {
-      "word": "TELA",
-      "type": 0
-    },
-    {
-      "word": "TELS",
-      "type": 0
-    },
-    {
-      "word": "TETS",
-      "type": 0
-    },
-    {
-      "word": "CHATS",
-      "type": 0
-    },
-    {
-      "word": "STELA",
-      "type": 0
-    },
-    {
-      "word": "CUTLET",
-      "type": 0
-    },
-    {
-      "word": "CUTLETS",
+      "word": "TEAS",
       "type": 0
     }
   ],
-  "letters": "AETA,ATST,HTLE,CUAG",
-  "obstacles": []
+  "letters": "RIDO,OCAE,VAST",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

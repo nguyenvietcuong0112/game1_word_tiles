@@ -1,223 +1,134 @@
 {
   "id": 1972,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "BAR",
+      "word": "FED",
       "type": 0
     },
     {
-      "word": "CAD",
+      "word": "FEE",
       "type": 0
     },
     {
-      "word": "CAR",
+      "word": "FIN",
       "type": 0
     },
     {
-      "word": "ONE",
+      "word": "INK",
       "type": 0
     },
     {
-      "word": "PIC",
+      "word": "RID",
       "type": 0
     },
     {
-      "word": "ROB",
+      "word": "DIRT",
       "type": 0
     },
     {
-      "word": "SEA",
+      "word": "FEET",
       "type": 0
     },
     {
-      "word": "CARS",
+      "word": "RIDE",
       "type": 0
     },
     {
-      "word": "EACH",
+      "word": "RIFE",
+      "type": 2
+    },
+    {
+      "word": "RIFT",
       "type": 0
     },
     {
-      "word": "LOVE",
-      "type": 0
+      "word": "TOTE",
+      "type": 2
     },
     {
-      "word": "ALONE",
+      "word": "KNIFE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ABA",
+      "word": "DEFT",
+      "type": 1
+    },
+    {
+      "word": "DIN",
       "type": 0
     },
     {
-      "word": "ALB",
+      "word": "DINK",
+      "type": 1
+    },
+    {
+      "word": "DINT",
+      "type": 1
+    },
+    {
+      "word": "DIRK",
+      "type": 2
+    },
+    {
+      "word": "FIDE",
       "type": 0
     },
     {
-      "word": "ARS",
+      "word": "FINK",
       "type": 0
     },
     {
-      "word": "CAB",
-      "type": 0
+      "word": "KNIFED",
+      "type": 2
     },
     {
-      "word": "DAL",
-      "type": 0
-    },
-    {
-      "word": "EAR",
-      "type": 0
-    },
-    {
-      "word": "ENS",
-      "type": 0
-    },
-    {
-      "word": "EON",
-      "type": 0
-    },
-    {
-      "word": "ICH",
-      "type": 0
-    },
-    {
-      "word": "LAC",
-      "type": 0
-    },
-    {
-      "word": "LAD",
-      "type": 0
-    },
-    {
-      "word": "OES",
-      "type": 0
-    },
-    {
-      "word": "ONS",
-      "type": 0
-    },
-    {
-      "word": "VOE",
-      "type": 0
-    },
-    {
-      "word": "AEON",
-      "type": 0
-    },
-    {
-      "word": "ALOE",
-      "type": 0
-    },
-    {
-      "word": "ARSE",
-      "type": 0
-    },
-    {
-      "word": "BACH",
-      "type": 0
-    },
-    {
-      "word": "BARS",
-      "type": 0
-    },
-    {
-      "word": "BLAE",
-      "type": 0
-    },
-    {
-      "word": "CALO",
-      "type": 0
-    },
-    {
-      "word": "EARS",
-      "type": 0
-    },
-    {
-      "word": "ENOL",
-      "type": 0
-    },
-    {
-      "word": "EONS",
-      "type": 0
-    },
-    {
-      "word": "LONE",
-      "type": 0
-    },
-    {
-      "word": "NOES",
-      "type": 0
-    },
-    {
-      "word": "OVEN",
-      "type": 0
-    },
-    {
-      "word": "PICA",
-      "type": 0
-    },
-    {
-      "word": "SEAL",
-      "type": 0
-    },
-    {
-      "word": "SEAR",
-      "type": 0
-    },
-    {
-      "word": "VOES",
-      "type": 0
-    },
-    {
-      "word": "ABACA",
-      "type": 0
-    },
-    {
-      "word": "ABACI",
-      "type": 0
-    },
-    {
-      "word": "AEONS",
-      "type": 0
-    },
-    {
-      "word": "ALOES",
-      "type": 0
-    },
-    {
-      "word": "CARSE",
-      "type": 0
-    },
-    {
-      "word": "OVENS",
-      "type": 0
-    },
-    {
-      "word": "PICAL",
-      "type": 0
-    },
-    {
-      "word": "RABIC",
-      "type": 0
-    },
-    {
-      "word": "ARABIC",
-      "type": 0
-    },
-    {
-      "word": "PICARA",
-      "type": 0
-    },
-    {
-      "word": "ARABICA",
+      "word": "RINK",
       "type": 0
     }
   ],
-  "letters": "OBDHP,RLACI,VOEAB,ENSRA",
-  "obstacles": []
+  "letters": "TFEE,NIDT,KRTO",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 9,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

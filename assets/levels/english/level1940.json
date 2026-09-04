@@ -1,151 +1,118 @@
 {
   "id": 1940,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "AGE",
+      "word": "END",
       "type": 0
     },
     {
-      "word": "EGG",
+      "word": "SIT",
       "type": 0
     },
     {
-      "word": "GEL",
+      "word": "SIX",
       "type": 0
     },
     {
-      "word": "LEG",
+      "word": "TEN",
       "type": 0
     },
     {
-      "word": "LOG",
+      "word": "EXIT",
       "type": 0
     },
     {
-      "word": "LOW",
+      "word": "MITE",
+      "type": 2
+    },
+    {
+      "word": "NEED",
       "type": 0
     },
     {
-      "word": "REG",
+      "word": "NEXT",
       "type": 0
     },
     {
-      "word": "RUSH",
+      "word": "SITE",
       "type": 0
     },
     {
-      "word": "SORE",
+      "word": "TEEN",
       "type": 0
     },
     {
-      "word": "CRUSH",
+      "word": "TEND",
       "type": 0
     },
     {
-      "word": "LEGAL",
+      "word": "TENT",
       "type": 0
     },
     {
-      "word": "LOGGER",
+      "word": "TEXT",
+      "type": 0
+    },
+    {
+      "word": "SIXTEEN",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ERG",
+      "word": "MITT",
+      "type": 1
+    },
+    {
+      "word": "NET",
       "type": 0
     },
     {
-      "word": "GAL",
-      "type": 0
-    },
-    {
-      "word": "GOO",
-      "type": 0
-    },
-    {
-      "word": "LAG",
-      "type": 0
-    },
-    {
-      "word": "LOO",
-      "type": 0
-    },
-    {
-      "word": "OLE",
-      "type": 0
-    },
-    {
-      "word": "ORC",
-      "type": 0
-    },
-    {
-      "word": "ORE",
-      "type": 0
-    },
-    {
-      "word": "OWE",
-      "type": 0
-    },
-    {
-      "word": "OWL",
-      "type": 0
-    },
-    {
-      "word": "WOO",
-      "type": 0
-    },
-    {
-      "word": "CLAG",
-      "type": 0
-    },
-    {
-      "word": "CRUS",
-      "type": 0
-    },
-    {
-      "word": "EGAL",
-      "type": 0
-    },
-    {
-      "word": "ERGO",
-      "type": 0
-    },
-    {
-      "word": "EROS",
-      "type": 0
-    },
-    {
-      "word": "LOWE",
-      "type": 0
-    },
-    {
-      "word": "LUSH",
-      "type": 0
-    },
-    {
-      "word": "OGRE",
-      "type": 0
-    },
-    {
-      "word": "WOOL",
-      "type": 0
-    },
-    {
-      "word": "CRORE",
-      "type": 0
-    },
-    {
-      "word": "SORER",
-      "type": 0
-    },
-    {
-      "word": "SORGO",
+      "word": "TEXTED",
       "type": 0
     }
   ],
-  "letters": "GGOOL,ERLWE,RORCG,HSULA",
-  "obstacles": []
+  "letters": "MTND,ITEE,SIXT",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

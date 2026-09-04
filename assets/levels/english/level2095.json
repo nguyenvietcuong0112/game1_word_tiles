@@ -1,34 +1,18 @@
 {
   "id": 2095,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ARE",
+      "word": "BIN",
       "type": 0
     },
     {
-      "word": "BRA",
+      "word": "EEL",
       "type": 0
     },
     {
-      "word": "COR",
-      "type": 0
-    },
-    {
-      "word": "EAT",
-      "type": 0
-    },
-    {
-      "word": "GOA",
-      "type": 0
-    },
-    {
-      "word": "MOS",
-      "type": 0
-    },
-    {
-      "word": "SEA",
+      "word": "HIS",
       "type": 0
     },
     {
@@ -36,196 +20,91 @@
       "type": 0
     },
     {
-      "word": "THE",
+      "word": "SET",
       "type": 0
     },
     {
-      "word": "HEAR",
+      "word": "HISS",
       "type": 0
     },
     {
-      "word": "HEAT",
+      "word": "LESS",
       "type": 0
     },
     {
-      "word": "MOST",
+      "word": "LIST",
       "type": 0
     },
     {
-      "word": "STAR",
+      "word": "BLESS",
       "type": 0
+    },
+    {
+      "word": "BLISS",
+      "type": 0
+    },
+    {
+      "word": "STEEL",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "ARB",
+      "word": "LEST",
       "type": 0
     },
     {
-      "word": "BOA",
+      "word": "NIB",
       "type": 0
     },
     {
-      "word": "BOG",
+      "word": "SETS",
       "type": 0
     },
     {
-      "word": "BOS",
-      "type": 0
-    },
-    {
-      "word": "BRO",
-      "type": 0
-    },
-    {
-      "word": "EAR",
-      "type": 0
-    },
-    {
-      "word": "ERA",
-      "type": 0
-    },
-    {
-      "word": "ERG",
-      "type": 0
-    },
-    {
-      "word": "GOB",
-      "type": 0
-    },
-    {
-      "word": "MOA",
-      "type": 0
-    },
-    {
-      "word": "OAR",
-      "type": 0
-    },
-    {
-      "word": "ORA",
-      "type": 0
-    },
-    {
-      "word": "ORB",
-      "type": 0
-    },
-    {
-      "word": "OSE",
-      "type": 0
-    },
-    {
-      "word": "RAT",
-      "type": 0
-    },
-    {
-      "word": "REE",
-      "type": 0
-    },
-    {
-      "word": "ROC",
-      "type": 0
-    },
-    {
-      "word": "SOB",
-      "type": 0
-    },
-    {
-      "word": "SOS",
-      "type": 0
-    },
-    {
-      "word": "TAE",
-      "type": 0
-    },
-    {
-      "word": "TAR",
-      "type": 0
-    },
-    {
-      "word": "BOAR",
-      "type": 0
-    },
-    {
-      "word": "BRAE",
-      "type": 0
-    },
-    {
-      "word": "BRAT",
-      "type": 0
-    },
-    {
-      "word": "EATH",
-      "type": 0
-    },
-    {
-      "word": "EATS",
-      "type": 0
-    },
-    {
-      "word": "ERGO",
-      "type": 0
-    },
-    {
-      "word": "GREE",
-      "type": 0
-    },
-    {
-      "word": "OGRE",
-      "type": 0
-    },
-    {
-      "word": "RATH",
-      "type": 0
-    },
-    {
-      "word": "RATS",
-      "type": 0
-    },
-    {
-      "word": "REES",
-      "type": 0
-    },
-    {
-      "word": "SEAR",
-      "type": 0
-    },
-    {
-      "word": "SEER",
-      "type": 0
-    },
-    {
-      "word": "SOAR",
-      "type": 0
-    },
-    {
-      "word": "TARO",
-      "type": 0
-    },
-    {
-      "word": "BOSOM",
-      "type": 0
-    },
-    {
-      "word": "BRATS",
-      "type": 0
-    },
-    {
-      "word": "GREES",
-      "type": 0
-    },
-    {
-      "word": "HEATS",
-      "type": 0
-    },
-    {
-      "word": "RATHE",
-      "type": 0
-    },
-    {
-      "word": "TAROC",
+      "word": "TEES",
       "type": 0
     }
   ],
-  "letters": "ERGCO,EAOBR,SOSTA,OMTHE",
-  "obstacles": []
+  "letters": "NHSE,IIST,BLEE",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

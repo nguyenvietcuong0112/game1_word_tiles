@@ -1,239 +1,118 @@
 {
   "id": 2001,
   "width": 5,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "DIS",
+      "word": "LAP",
       "type": 0
     },
     {
-      "word": "MOB",
+      "word": "LAY",
       "type": 0
     },
     {
-      "word": "NOT",
+      "word": "PAY",
       "type": 0
     },
     {
-      "word": "PER",
+      "word": "PLY",
       "type": 0
     },
     {
-      "word": "PET",
+      "word": "SIX",
       "type": 0
     },
     {
-      "word": "POP",
+      "word": "LIST",
       "type": 0
     },
     {
-      "word": "SIM",
+      "word": "MEAL",
       "type": 0
     },
     {
-      "word": "SIR",
+      "word": "PLAY",
       "type": 0
     },
     {
-      "word": "PETS",
+      "word": "SAIL",
+      "type": 2
+    },
+    {
+      "word": "ALIAS",
       "type": 0
     },
     {
-      "word": "STEP",
+      "word": "MEALY",
       "type": 0
     },
     {
-      "word": "PETER",
-      "type": 0
-    },
-    {
-      "word": "SISTER",
-      "type": 0
-    },
-    {
-      "word": "PERSIST",
-      "type": 0
+      "word": "PLAYLIST",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "BOP",
+      "word": "AIL",
       "type": 0
     },
     {
-      "word": "ERS",
+      "word": "ASS",
       "type": 0
     },
     {
-      "word": "IDS",
+      "word": "AYE",
       "type": 0
     },
     {
-      "word": "IRE",
+      "word": "LYE",
       "type": 0
     },
     {
-      "word": "MIR",
-      "type": 0
-    },
-    {
-      "word": "MIS",
-      "type": 0
-    },
-    {
-      "word": "MOP",
-      "type": 0
-    },
-    {
-      "word": "ONS",
-      "type": 0
-    },
-    {
-      "word": "OPE",
-      "type": 0
-    },
-    {
-      "word": "PEP",
-      "type": 0
-    },
-    {
-      "word": "PIS",
-      "type": 0
-    },
-    {
-      "word": "POM",
-      "type": 0
-    },
-    {
-      "word": "REP",
-      "type": 0
-    },
-    {
-      "word": "RET",
-      "type": 0
-    },
-    {
-      "word": "RIM",
-      "type": 0
-    },
-    {
-      "word": "RIP",
-      "type": 0
-    },
-    {
-      "word": "SIP",
-      "type": 0
-    },
-    {
-      "word": "SIS",
-      "type": 0
-    },
-    {
-      "word": "SRI",
-      "type": 0
-    },
-    {
-      "word": "TON",
-      "type": 0
-    },
-    {
-      "word": "DRIP",
-      "type": 0
-    },
-    {
-      "word": "ERST",
-      "type": 0
-    },
-    {
-      "word": "MIRE",
-      "type": 0
-    },
-    {
-      "word": "MIRS",
-      "type": 0
-    },
-    {
-      "word": "MIST",
-      "type": 0
-    },
-    {
-      "word": "MOPE",
-      "type": 0
-    },
-    {
-      "word": "PEPO",
-      "type": 0
-    },
-    {
-      "word": "PERI",
-      "type": 0
-    },
-    {
-      "word": "POPE",
-      "type": 0
-    },
-    {
-      "word": "REPO",
-      "type": 0
-    },
-    {
-      "word": "RETE",
-      "type": 0
-    },
-    {
-      "word": "RETS",
-      "type": 0
-    },
-    {
-      "word": "RIPE",
-      "type": 0
-    },
-    {
-      "word": "SIPE",
-      "type": 0
-    },
-    {
-      "word": "SIRE",
-      "type": 0
-    },
-    {
-      "word": "SIRS",
-      "type": 0
-    },
-    {
-      "word": "SNOT",
-      "type": 0
-    },
-    {
-      "word": "SRIS",
-      "type": 0
-    },
-    {
-      "word": "TONS",
-      "type": 0
-    },
-    {
-      "word": "MOPER",
-      "type": 0
-    },
-    {
-      "word": "PERIS",
-      "type": 0
-    },
-    {
-      "word": "MOPERS",
-      "type": 0
-    },
-    {
-      "word": "PETERS",
-      "type": 0
-    },
-    {
-      "word": "PISTON",
+      "word": "PAL",
       "type": 0
     }
   ],
-  "letters": "ETSIS,PERDT,OPISN,BOMTO",
-  "obstacles": []
+  "letters": "LAPXT,PYLIS,MEAAS",
+  "obstacles": [
+    {
+      "required_words": 6,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        }
+      ]
+    },
+    {
+      "required_words": 9,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 4,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

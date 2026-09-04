@@ -1,199 +1,106 @@
 {
   "id": 1736,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ITS",
+      "word": "ANT",
       "type": 0
     },
     {
-      "word": "KIT",
+      "word": "END",
       "type": 0
     },
     {
-      "word": "REC",
+      "word": "FAN",
       "type": 0
     },
     {
-      "word": "SEE",
+      "word": "VAN",
       "type": 0
     },
     {
-      "word": "SET",
+      "word": "WIT",
       "type": 0
     },
     {
-      "word": "SKI",
+      "word": "ANTI",
       "type": 0
     },
     {
-      "word": "SEEK",
+      "word": "SEND",
       "type": 0
     },
     {
-      "word": "TEST",
+      "word": "SENT",
       "type": 0
     },
     {
-      "word": "TESTS",
-      "type": 0
+      "word": "VENT",
+      "type": 2
     },
     {
-      "word": "SEEKER",
-      "type": 0
-    },
-    {
-      "word": "SEEKERS",
-      "type": 0
+      "word": "WITNESS",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "EKE",
+      "word": "FAVE",
       "type": 0
     },
     {
-      "word": "ERS",
-      "type": 0
+      "word": "NAVE",
+      "type": 1
     },
     {
-      "word": "RET",
-      "type": 0
+      "word": "NESS",
+      "type": 2
     },
     {
-      "word": "SEI",
-      "type": 0
-    },
-    {
-      "word": "TIE",
-      "type": 0
-    },
-    {
-      "word": "ERST",
-      "type": 0
-    },
-    {
-      "word": "KIKE",
-      "type": 0
-    },
-    {
-      "word": "KITE",
-      "type": 0
-    },
-    {
-      "word": "KITS",
-      "type": 0
-    },
-    {
-      "word": "RECS",
-      "type": 0
-    },
-    {
-      "word": "RETS",
-      "type": 0
-    },
-    {
-      "word": "SKIT",
-      "type": 0
-    },
-    {
-      "word": "TIES",
-      "type": 0
-    },
-    {
-      "word": "TIKE",
-      "type": 0
-    },
-    {
-      "word": "TRET",
-      "type": 0
-    },
-    {
-      "word": "ERSES",
-      "type": 0
-    },
-    {
-      "word": "ESKER",
-      "type": 0
-    },
-    {
-      "word": "ESTER",
-      "type": 0
-    },
-    {
-      "word": "KITER",
-      "type": 0
-    },
-    {
-      "word": "RETIE",
-      "type": 0
-    },
-    {
-      "word": "SKIES",
-      "type": 0
-    },
-    {
-      "word": "SKITE",
-      "type": 0
-    },
-    {
-      "word": "SKITS",
-      "type": 0
-    },
-    {
-      "word": "STIES",
-      "type": 0
-    },
-    {
-      "word": "TERSE",
-      "type": 0
-    },
-    {
-      "word": "TRETS",
-      "type": 0
-    },
-    {
-      "word": "CERTES",
-      "type": 0
-    },
-    {
-      "word": "ESKERS",
-      "type": 0
-    },
-    {
-      "word": "ESTERS",
-      "type": 0
-    },
-    {
-      "word": "KITERS",
-      "type": 0
-    },
-    {
-      "word": "RETIES",
-      "type": 0
-    },
-    {
-      "word": "TESTER",
-      "type": 0
-    },
-    {
-      "word": "KEESTER",
-      "type": 0
-    },
-    {
-      "word": "KIESTER",
-      "type": 0
-    },
-    {
-      "word": "KEESTERS",
-      "type": 0
-    },
-    {
-      "word": "KIESTERS",
+      "word": "SEN",
       "type": 0
     }
   ],
-  "letters": "CSEE,ETIK,RSKE,TESR",
-  "obstacles": []
+  "letters": "SEND,SVTI,FANW",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

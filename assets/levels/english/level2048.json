@@ -1,255 +1,103 @@
 {
   "id": 2048,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
       "word": "ALE",
       "type": 0
     },
     {
-      "word": "LIE",
+      "word": "APE",
       "type": 0
     },
     {
-      "word": "MET",
+      "word": "EEL",
       "type": 0
     },
     {
-      "word": "RED",
+      "word": "ELM",
       "type": 0
     },
     {
-      "word": "SEW",
+      "word": "LAP",
       "type": 0
     },
     {
-      "word": "SUN",
+      "word": "ACID",
       "type": 0
     },
     {
-      "word": "DATE",
+      "word": "IDOL",
       "type": 0
     },
     {
-      "word": "LANE",
+      "word": "PALE",
       "type": 0
     },
     {
-      "word": "LENS",
+      "word": "PALM",
       "type": 0
     },
     {
-      "word": "META",
-      "type": 0
+      "word": "PEEL",
+      "type": 2
     },
     {
-      "word": "METER",
-      "type": 0
-    },
-    {
-      "word": "METERS",
-      "type": 0
+      "word": "MELODIC",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "ANE",
+      "word": "DOLE",
       "type": 0
     },
     {
-      "word": "ATE",
+      "word": "PAL",
       "type": 0
     },
     {
-      "word": "EMS",
+      "word": "PALEO",
       "type": 0
     },
     {
-      "word": "ENS",
-      "type": 0
-    },
-    {
-      "word": "ERE",
-      "type": 0
-    },
-    {
-      "word": "ERS",
-      "type": 0
-    },
-    {
-      "word": "ETA",
-      "type": 0
-    },
-    {
-      "word": "NUS",
-      "type": 0
-    },
-    {
-      "word": "REI",
-      "type": 0
-    },
-    {
-      "word": "REM",
-      "type": 0
-    },
-    {
-      "word": "RET",
-      "type": 0
-    },
-    {
-      "word": "SEL",
-      "type": 0
-    },
-    {
-      "word": "SEN",
-      "type": 0
-    },
-    {
-      "word": "TAD",
-      "type": 0
-    },
-    {
-      "word": "TED",
-      "type": 0
-    },
-    {
-      "word": "UNS",
-      "type": 0
-    },
-    {
-      "word": "ALES",
-      "type": 0
-    },
-    {
-      "word": "ANES",
-      "type": 0
-    },
-    {
-      "word": "DEIL",
-      "type": 0
-    },
-    {
-      "word": "DERE",
-      "type": 0
-    },
-    {
-      "word": "ELAN",
-      "type": 0
-    },
-    {
-      "word": "LEWD",
-      "type": 0
-    },
-    {
-      "word": "LIED",
-      "type": 0
-    },
-    {
-      "word": "LIER",
-      "type": 0
-    },
-    {
-      "word": "MERE",
-      "type": 0
-    },
-    {
-      "word": "MERL",
-      "type": 0
-    },
-    {
-      "word": "METE",
-      "type": 0
-    },
-    {
-      "word": "REMS",
-      "type": 0
-    },
-    {
-      "word": "RETE",
-      "type": 0
-    },
-    {
-      "word": "SUNS",
-      "type": 0
-    },
-    {
-      "word": "WILE",
-      "type": 0
-    },
-    {
-      "word": "DATER",
-      "type": 0
-    },
-    {
-      "word": "DETER",
-      "type": 0
-    },
-    {
-      "word": "ELANS",
-      "type": 0
-    },
-    {
-      "word": "LANES",
-      "type": 0
-    },
-    {
-      "word": "LIERS",
-      "type": 0
-    },
-    {
-      "word": "MERLE",
-      "type": 0
-    },
-    {
-      "word": "METED",
-      "type": 0
-    },
-    {
-      "word": "RETEM",
-      "type": 0
-    },
-    {
-      "word": "TERSE",
-      "type": 0
-    },
-    {
-      "word": "UNSEW",
-      "type": 0
-    },
-    {
-      "word": "WILES",
-      "type": 0
-    },
-    {
-      "word": "DATERS",
-      "type": 0
-    },
-    {
-      "word": "DETERS",
-      "type": 0
-    },
-    {
-      "word": "LEWDER",
-      "type": 0
-    },
-    {
-      "word": "MERLES",
-      "type": 0
-    },
-    {
-      "word": "REDATE",
-      "type": 0
-    },
-    {
-      "word": "RETEMS",
-      "type": 0
-    },
-    {
-      "word": "SENSUAL",
+      "word": "PEE",
       "type": 0
     }
   ],
-  "letters": "ADWES,TEILN,ERLAU,MSENS",
-  "obstacles": []
+  "letters": "IDOL,CPEE,AALM",
+  "obstacles": [
+    {
+      "required_words": 7,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

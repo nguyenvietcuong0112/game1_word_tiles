@@ -1,235 +1,78 @@
 {
   "id": 2049,
-  "width": 5,
-  "height": 4,
+  "width": 3,
+  "height": 3,
   "target_words": [
     {
-      "word": "ADD",
+      "word": "BEE",
       "type": 0
     },
     {
-      "word": "DOC",
+      "word": "RUB",
       "type": 0
     },
     {
-      "word": "MEN",
+      "word": "BEER",
       "type": 0
     },
     {
-      "word": "MON",
+      "word": "GERM",
       "type": 0
     },
     {
-      "word": "ONE",
+      "word": "GRUB",
+      "type": 2
+    },
+    {
+      "word": "URGE",
       "type": 0
     },
     {
-      "word": "SEC",
+      "word": "MERGE",
       "type": 0
     },
     {
-      "word": "SRI",
+      "word": "BURGER",
       "type": 0
     },
     {
-      "word": "CASE",
+      "word": "EMERGE",
       "type": 0
     },
     {
-      "word": "CODE",
-      "type": 0
-    },
-    {
-      "word": "MOVE",
-      "type": 0
-    },
-    {
-      "word": "RISE",
-      "type": 0
-    },
-    {
-      "word": "VISA",
+      "word": "MERGER",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ACE",
-      "type": 0
-    },
-    {
-      "word": "COD",
-      "type": 0
-    },
-    {
-      "word": "DOE",
-      "type": 0
-    },
-    {
-      "word": "ENS",
-      "type": 0
-    },
-    {
-      "word": "ERS",
-      "type": 0
-    },
-    {
-      "word": "IRE",
-      "type": 0
-    },
-    {
-      "word": "NOM",
-      "type": 0
-    },
-    {
-      "word": "ODD",
-      "type": 0
-    },
-    {
-      "word": "ODE",
-      "type": 0
-    },
-    {
-      "word": "ONS",
-      "type": 0
-    },
-    {
-      "word": "REC",
-      "type": 0
-    },
-    {
-      "word": "RES",
-      "type": 0
-    },
-    {
-      "word": "SAC",
-      "type": 0
-    },
-    {
-      "word": "SAD",
-      "type": 0
-    },
-    {
-      "word": "SAE",
-      "type": 0
-    },
-    {
-      "word": "SER",
-      "type": 0
-    },
-    {
-      "word": "SIR",
-      "type": 0
-    },
-    {
-      "word": "VIE",
-      "type": 0
-    },
-    {
-      "word": "VIS",
-      "type": 0
-    },
-    {
-      "word": "VOE",
-      "type": 0
-    },
-    {
-      "word": "ACES",
-      "type": 0
-    },
-    {
-      "word": "DECO",
-      "type": 0
-    },
-    {
-      "word": "EASE",
-      "type": 0
-    },
-    {
-      "word": "IRES",
-      "type": 0
-    },
-    {
-      "word": "MENO",
-      "type": 0
-    },
-    {
-      "word": "MONS",
-      "type": 0
-    },
-    {
-      "word": "NOME",
-      "type": 0
-    },
-    {
-      "word": "OMEN",
-      "type": 0
-    },
-    {
-      "word": "OVEN",
-      "type": 0
-    },
-    {
-      "word": "SERS",
-      "type": 0
-    },
-    {
-      "word": "SIRE",
-      "type": 0
-    },
-    {
-      "word": "SIRS",
-      "type": 0
-    },
-    {
-      "word": "SRIS",
-      "type": 0
-    },
-    {
-      "word": "VISE",
-      "type": 0
-    },
-    {
-      "word": "MENSA",
-      "type": 0
-    },
-    {
-      "word": "MENSE",
-      "type": 0
-    },
-    {
-      "word": "OMENS",
-      "type": 0
-    },
-    {
-      "word": "OVENS",
-      "type": 0
-    },
-    {
-      "word": "VENOM",
-      "type": 0
-    },
-    {
-      "word": "VIRES",
-      "type": 0
-    },
-    {
-      "word": "ADVISE",
-      "type": 0
-    },
-    {
-      "word": "OVISAC",
-      "type": 0
-    },
-    {
-      "word": "ADVISER",
-      "type": 0
-    },
-    {
-      "word": "ADVISERS",
+      "word": "BERG",
       "type": 0
     }
   ],
-  "letters": "ECVOM,DOENE,DVISA,ASREC",
-  "obstacles": []
+  "letters": "EMR,BEE,URG",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 2,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

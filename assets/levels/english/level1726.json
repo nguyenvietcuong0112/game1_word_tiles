@@ -1,203 +1,122 @@
 {
   "id": 1726,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "AGE",
+      "word": "COD",
       "type": 0
     },
     {
-      "word": "ASS",
+      "word": "OWE",
       "type": 0
     },
     {
-      "word": "DIS",
+      "word": "OWN",
       "type": 0
     },
     {
-      "word": "GAS",
+      "word": "SAD",
       "type": 0
     },
     {
-      "word": "LAS",
+      "word": "SEW",
       "type": 0
     },
     {
-      "word": "SPA",
+      "word": "SOW",
       "type": 0
     },
     {
-      "word": "DEAL",
+      "word": "DOSE",
       "type": 0
     },
     {
-      "word": "EDGE",
+      "word": "DOWN",
       "type": 0
     },
     {
-      "word": "PASS",
+      "word": "SODA",
       "type": 0
     },
     {
-      "word": "PISS",
+      "word": "SOFA",
       "type": 0
+    },
+    {
+      "word": "VASE",
+      "type": 0
+    },
+    {
+      "word": "AVOCADO",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "ALP",
+      "word": "CAD",
       "type": 0
     },
     {
-      "word": "ASP",
+      "word": "DOS",
       "type": 0
     },
     {
-      "word": "DIP",
+      "word": "FAD",
       "type": 0
     },
     {
-      "word": "ESS",
+      "word": "OWES",
       "type": 0
     },
     {
-      "word": "GAE",
+      "word": "SEWN",
       "type": 0
     },
     {
-      "word": "IDS",
-      "type": 0
-    },
-    {
-      "word": "PAP",
-      "type": 0
-    },
-    {
-      "word": "PAS",
-      "type": 0
-    },
-    {
-      "word": "PEG",
-      "type": 0
-    },
-    {
-      "word": "PES",
-      "type": 0
-    },
-    {
-      "word": "PIS",
-      "type": 0
-    },
-    {
-      "word": "SAE",
-      "type": 0
-    },
-    {
-      "word": "SAG",
-      "type": 0
-    },
-    {
-      "word": "SAL",
-      "type": 0
-    },
-    {
-      "word": "SAP",
-      "type": 0
-    },
-    {
-      "word": "SEG",
-      "type": 0
-    },
-    {
-      "word": "SIP",
-      "type": 0
-    },
-    {
-      "word": "AGES",
-      "type": 0
-    },
-    {
-      "word": "ALPS",
-      "type": 0
-    },
-    {
-      "word": "DISS",
-      "type": 0
-    },
-    {
-      "word": "EASE",
-      "type": 0
-    },
-    {
-      "word": "GAED",
-      "type": 0
-    },
-    {
-      "word": "GASP",
-      "type": 0
-    },
-    {
-      "word": "LASS",
-      "type": 0
-    },
-    {
-      "word": "PAPS",
-      "type": 0
-    },
-    {
-      "word": "SAGE",
-      "type": 0
-    },
-    {
-      "word": "SALP",
-      "type": 0
-    },
-    {
-      "word": "SAPS",
-      "type": 0
-    },
-    {
-      "word": "SASS",
-      "type": 0
-    },
-    {
-      "word": "SIPE",
-      "type": 0
-    },
-    {
-      "word": "SPAS",
-      "type": 0
-    },
-    {
-      "word": "EDGES",
-      "type": 0
-    },
-    {
-      "word": "PASSE",
-      "type": 0
-    },
-    {
-      "word": "SAGES",
-      "type": 0
-    },
-    {
-      "word": "SALPA",
-      "type": 0
-    },
-    {
-      "word": "SALPAS",
-      "type": 0
-    },
-    {
-      "word": "PASSAGE",
-      "type": 0
-    },
-    {
-      "word": "PASSAGES",
-      "type": 0
+      "word": "SOWN",
+      "type": 1
     }
   ],
-  "letters": "PDIP,ASSE,PSAG,LAED",
-  "obstacles": []
+  "letters": "CAFN,ODOW,VASE",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 9,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

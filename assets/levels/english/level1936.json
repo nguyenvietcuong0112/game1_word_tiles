@@ -1,183 +1,94 @@
 {
   "id": 1936,
-  "width": 5,
-  "height": 4,
+  "width": 3,
+  "height": 3,
   "target_words": [
     {
-      "word": "BUG",
+      "word": "MEN",
       "type": 0
     },
     {
-      "word": "FEE",
+      "word": "MOW",
       "type": 0
     },
     {
-      "word": "HAS",
+      "word": "NEW",
       "type": 0
     },
     {
-      "word": "LOG",
+      "word": "OWE",
       "type": 0
     },
     {
-      "word": "ROM",
+      "word": "SOW",
       "type": 0
     },
     {
-      "word": "SEE",
+      "word": "BEAM",
       "type": 0
     },
     {
-      "word": "CHAR",
+      "word": "OMEN",
+      "type": 2
+    },
+    {
+      "word": "SAME",
       "type": 0
     },
     {
-      "word": "FEES",
+      "word": "SOME",
       "type": 0
     },
     {
-      "word": "FROM",
+      "word": "WOMB",
       "type": 0
     },
     {
-      "word": "RUBY",
-      "type": 0
-    },
-    {
-      "word": "HARSH",
+      "word": "WOMEN",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ARF",
+      "word": "AMEN",
       "type": 0
     },
     {
-      "word": "ARS",
+      "word": "MEW",
       "type": 0
     },
     {
-      "word": "BUR",
+      "word": "SOMA",
       "type": 0
     },
     {
-      "word": "EFS",
-      "type": 0
-    },
-    {
-      "word": "EMF",
-      "type": 0
-    },
-    {
-      "word": "FRO",
-      "type": 0
-    },
-    {
-      "word": "GOR",
-      "type": 0
-    },
-    {
-      "word": "HAH",
-      "type": 0
-    },
-    {
-      "word": "HUB",
-      "type": 0
-    },
-    {
-      "word": "HUG",
-      "type": 0
-    },
-    {
-      "word": "MOL",
-      "type": 0
-    },
-    {
-      "word": "MOR",
-      "type": 0
-    },
-    {
-      "word": "RAH",
-      "type": 0
-    },
-    {
-      "word": "RAS",
-      "type": 0
-    },
-    {
-      "word": "RUB",
-      "type": 0
-    },
-    {
-      "word": "RUG",
-      "type": 0
-    },
-    {
-      "word": "SHA",
-      "type": 0
-    },
-    {
-      "word": "ARFS",
-      "type": 0
-    },
-    {
-      "word": "CHUB",
-      "type": 0
-    },
-    {
-      "word": "CHUG",
-      "type": 0
-    },
-    {
-      "word": "EMFS",
-      "type": 0
-    },
-    {
-      "word": "FROG",
-      "type": 0
-    },
-    {
-      "word": "FRUG",
-      "type": 0
-    },
-    {
-      "word": "HAHS",
-      "type": 0
-    },
-    {
-      "word": "LOGY",
-      "type": 0
-    },
-    {
-      "word": "MESA",
-      "type": 0
-    },
-    {
-      "word": "RASE",
-      "type": 0
-    },
-    {
-      "word": "SHAH",
-      "type": 0
-    },
-    {
-      "word": "CHARS",
-      "type": 0
-    },
-    {
-      "word": "CHASE",
-      "type": 0
-    },
-    {
-      "word": "OLOGY",
-      "type": 0
-    },
-    {
-      "word": "UROLOGY",
+      "word": "WEN",
       "type": 0
     }
   ],
-  "letters": "LOMEE,ORFSF,GUHAR,YBCHS",
-  "obstacles": []
+  "letters": "WEN,OMB,SAE",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 2,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

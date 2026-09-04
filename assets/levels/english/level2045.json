@@ -1,171 +1,118 @@
 {
   "id": 2045,
   "width": 5,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "HER",
+      "word": "EAT",
       "type": 0
     },
     {
-      "word": "HET",
+      "word": "ICY",
       "type": 0
     },
     {
-      "word": "ION",
+      "word": "OAT",
       "type": 0
     },
     {
-      "word": "SIT",
+      "word": "TOO",
       "type": 0
     },
     {
-      "word": "SON",
+      "word": "CITY",
       "type": 0
     },
     {
-      "word": "THE",
+      "word": "DUST",
       "type": 0
     },
     {
-      "word": "TIE",
+      "word": "RUST",
       "type": 0
     },
     {
-      "word": "BURY",
+      "word": "TOSS",
       "type": 0
     },
     {
-      "word": "RUBY",
+      "word": "CRUDE",
       "type": 0
     },
     {
-      "word": "SIGN",
+      "word": "CRUST",
       "type": 0
     },
     {
-      "word": "SONS",
+      "word": "TRUST",
       "type": 0
     },
     {
-      "word": "EITHER",
+      "word": "CITRUS",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "BUR",
+      "word": "CRUD",
       "type": 0
     },
     {
-      "word": "INS",
+      "word": "EATS",
+      "type": 2
+    },
+    {
+      "word": "OATS",
+      "type": 2
+    },
+    {
+      "word": "RUDE",
       "type": 0
     },
     {
-      "word": "NIT",
-      "type": 0
-    },
-    {
-      "word": "NOS",
-      "type": 0
-    },
-    {
-      "word": "ONS",
-      "type": 0
-    },
-    {
-      "word": "RET",
-      "type": 0
-    },
-    {
-      "word": "RUB",
-      "type": 0
-    },
-    {
-      "word": "TIN",
-      "type": 0
-    },
-    {
-      "word": "TIS",
-      "type": 0
-    },
-    {
-      "word": "TIT",
-      "type": 0
-    },
-    {
-      "word": "INBY",
-      "type": 0
-    },
-    {
-      "word": "IONS",
-      "type": 0
-    },
-    {
-      "word": "RETE",
-      "type": 0
-    },
-    {
-      "word": "SITH",
-      "type": 0
-    },
-    {
-      "word": "SNIT",
-      "type": 0
-    },
-    {
-      "word": "TING",
-      "type": 0
-    },
-    {
-      "word": "TINS",
-      "type": 0
-    },
-    {
-      "word": "TITI",
-      "type": 0
-    },
-    {
-      "word": "TRET",
-      "type": 0
-    },
-    {
-      "word": "BURET",
-      "type": 0
-    },
-    {
-      "word": "ITHER",
-      "type": 0
-    },
-    {
-      "word": "NITRE",
-      "type": 0
-    },
-    {
-      "word": "TITHE",
-      "type": 0
-    },
-    {
-      "word": "TITIS",
-      "type": 0
-    },
-    {
-      "word": "TITRE",
-      "type": 0
-    },
-    {
-      "word": "SITING",
-      "type": 0
-    },
-    {
-      "word": "SONSIE",
-      "type": 0
-    },
-    {
-      "word": "TITHER",
+      "word": "TRUSS",
       "type": 0
     }
   ],
-  "letters": "TERUR,EHTBY,ITING,SNOSI",
-  "obstacles": []
+  "letters": "TYSOO,ICSTA,TRUDE",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 1
+        }
+      ]
+    },
+    {
+      "required_words": 9,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

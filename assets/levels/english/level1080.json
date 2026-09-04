@@ -1,72 +1,14 @@
 {
   "id": 1080,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ASS",
+      "word": "CAT",
       "type": 0
     },
     {
-      "word": "BIS",
-      "type": 0
-    },
-    {
-      "word": "BIT",
-      "type": 0
-    },
-    {
-      "word": "ESS",
-      "type": 0
-    },
-    {
-      "word": "MAR",
-      "type": 0
-    },
-    {
-      "word": "SAT",
-      "type": 0
-    },
-    {
-      "word": "SEA",
-      "type": 0
-    },
-    {
-      "word": "SET",
-      "type": 0
-    },
-    {
-      "word": "EAST",
-      "type": 0
-    },
-    {
-      "word": "STAR",
-      "type": 0
-    }
-  ],
-  "extra_words": [
-    {
-      "word": "AAS",
-      "type": 0
-    },
-    {
-      "word": "AIT",
-      "type": 0
-    },
-    {
-      "word": "ARS",
-      "type": 0
-    },
-    {
-      "word": "BAA",
-      "type": 0
-    },
-    {
-      "word": "BAS",
-      "type": 0
-    },
-    {
-      "word": "BAT",
+      "word": "DIP",
       "type": 0
     },
     {
@@ -74,135 +16,148 @@
       "type": 0
     },
     {
-      "word": "RAM",
+      "word": "MOP",
       "type": 0
     },
     {
-      "word": "RAT",
+      "word": "POT",
       "type": 0
     },
     {
-      "word": "SAB",
+      "word": "TIP",
       "type": 0
     },
     {
-      "word": "SAE",
+      "word": "ATOM",
       "type": 0
     },
     {
-      "word": "SIB",
+      "word": "ATOP",
       "type": 0
     },
     {
-      "word": "TAB",
+      "word": "SCAM",
       "type": 0
     },
     {
-      "word": "TAM",
+      "word": "STOP",
       "type": 0
     },
     {
-      "word": "TAR",
+      "word": "SWAM",
+      "type": 2
+    },
+    {
+      "word": "STOMACH",
+      "type": 2
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "CAM",
       "type": 0
     },
     {
-      "word": "TAS",
+      "word": "CAMO",
       "type": 0
     },
     {
-      "word": "TEA",
+      "word": "CATS",
       "type": 0
     },
     {
-      "word": "BAAS",
+      "word": "CAW",
       "type": 0
     },
     {
-      "word": "BASS",
+      "word": "MACH",
       "type": 0
     },
     {
-      "word": "BATS",
-      "type": 0
-    },
-    {
-      "word": "BIAS",
-      "type": 0
-    },
-    {
-      "word": "BITE",
-      "type": 0
-    },
-    {
-      "word": "IBIS",
-      "type": 0
-    },
-    {
-      "word": "MARS",
-      "type": 0
+      "word": "MACS",
+      "type": 1
     },
     {
       "word": "MATS",
       "type": 0
     },
     {
-      "word": "RAMS",
+      "word": "MAW",
       "type": 0
     },
     {
-      "word": "RATS",
+      "word": "MOT",
       "type": 0
     },
     {
-      "word": "SEAS",
+      "word": "PIT",
       "type": 0
     },
     {
-      "word": "STAB",
+      "word": "PITA",
+      "type": 1
+    },
+    {
+      "word": "PITS",
       "type": 0
     },
     {
-      "word": "TAMS",
+      "word": "POTS",
       "type": 0
     },
     {
-      "word": "TARS",
+      "word": "SCAT",
+      "type": 1
+    },
+    {
+      "word": "SWAT",
       "type": 0
     },
     {
-      "word": "TASS",
+      "word": "TAW",
       "type": 0
     },
     {
-      "word": "TEAS",
-      "type": 0
-    },
-    {
-      "word": "ASSET",
-      "type": 0
-    },
-    {
-      "word": "BITES",
-      "type": 0
-    },
-    {
-      "word": "EASTS",
-      "type": 0
-    },
-    {
-      "word": "STARS",
+      "word": "TOP",
       "type": 0
     }
   ],
-  "letters": "MARS,STSS,SAAE,IBIT",
+  "letters": "HMOP,CATI,SWSD",
   "obstacles": [
     {
-      "required_words": 5,
+      "required_words": 3,
       "id": 1,
       "type": 0,
       "cells": [
         {
           "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
           "y": 0
         }
       ]

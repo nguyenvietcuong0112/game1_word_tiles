@@ -1,79 +1,63 @@
 {
   "id": 1361,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "COS",
+      "word": "HIP",
       "type": 0
     },
     {
-      "word": "DIG",
+      "word": "HIS",
       "type": 0
     },
     {
-      "word": "DIS",
+      "word": "ORE",
+      "type": 2
+    },
+    {
+      "word": "SIP",
       "type": 0
     },
     {
-      "word": "DUG",
+      "word": "CORE",
       "type": 0
     },
     {
-      "word": "FOR",
+      "word": "HOST",
       "type": 0
     },
     {
-      "word": "ORS",
+      "word": "SCORE",
       "type": 0
     },
     {
-      "word": "DISH",
-      "type": 0
-    },
-    {
-      "word": "DIVE",
-      "type": 0
-    },
-    {
-      "word": "ECHO",
-      "type": 0
-    },
-    {
-      "word": "GIVE",
+      "word": "SISTER",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "FOH",
-      "type": 0
-    },
-    {
-      "word": "GID",
-      "type": 0
-    },
-    {
-      "word": "VIG",
-      "type": 0
-    },
-    {
-      "word": "VIS",
-      "type": 0
-    },
-    {
-      "word": "COSH",
-      "type": 0
-    },
-    {
-      "word": "COVE",
-      "type": 0
-    },
-    {
-      "word": "FORGIVE",
+      "word": "RET",
       "type": 0
     }
   ],
-  "letters": "SUDH,RGIS,OFVO,HCEC",
-  "obstacles": []
+  "letters": "PCOR,ISIE,HOST",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 1
+        }
+      ]
+    }
+  ]
 }

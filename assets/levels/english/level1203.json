@@ -1,139 +1,95 @@
 {
   "id": 1203,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "BED",
+      "word": "ADD",
       "type": 0
     },
     {
-      "word": "BOY",
+      "word": "AIM",
       "type": 0
     },
     {
-      "word": "FED",
+      "word": "AIR",
       "type": 0
     },
     {
-      "word": "SEA",
+      "word": "DAM",
       "type": 0
     },
     {
-      "word": "SEE",
+      "word": "MAN",
       "type": 0
     },
     {
-      "word": "USE",
+      "word": "RIM",
       "type": 0
     },
     {
-      "word": "YES",
+      "word": "MANE",
+      "type": 2
+    },
+    {
+      "word": "TREE",
       "type": 0
     },
     {
-      "word": "BEEN",
+      "word": "TRIM",
       "type": 0
     },
     {
-      "word": "SEEN",
-      "type": 0
-    },
-    {
-      "word": "BUDDY",
+      "word": "ADMIRE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "BEE",
+      "word": "ERIE",
+      "type": 1
+    },
+    {
+      "word": "IMMA",
+      "type": 1
+    },
+    {
+      "word": "MAD",
       "type": 0
     },
     {
-      "word": "BOS",
+      "word": "MAIM",
       "type": 0
     },
     {
-      "word": "BUD",
-      "type": 0
+      "word": "MIEN",
+      "type": 1
     },
     {
-      "word": "BUS",
-      "type": 0
+      "word": "MIRE",
+      "type": 1
     },
     {
-      "word": "DEB",
-      "type": 0
-    },
-    {
-      "word": "DUB",
-      "type": 0
-    },
-    {
-      "word": "DYE",
-      "type": 0
-    },
-    {
-      "word": "ENS",
-      "type": 0
-    },
-    {
-      "word": "NEE",
-      "type": 0
-    },
-    {
-      "word": "OBE",
-      "type": 0
-    },
-    {
-      "word": "OSE",
-      "type": 0
-    },
-    {
-      "word": "SOB",
-      "type": 0
-    },
-    {
-      "word": "SOY",
-      "type": 0
-    },
-    {
-      "word": "SUB",
-      "type": 0
-    },
-    {
-      "word": "YEA",
-      "type": 0
-    },
-    {
-      "word": "YOB",
-      "type": 0
-    },
-    {
-      "word": "DEFY",
-      "type": 0
-    },
-    {
-      "word": "DYES",
-      "type": 0
-    },
-    {
-      "word": "OBES",
-      "type": 0
-    },
-    {
-      "word": "OYES",
-      "type": 0
-    },
-    {
-      "word": "SUDD",
-      "type": 0
-    },
-    {
-      "word": "SUBDEB",
+      "word": "NAM",
       "type": 0
     }
   ],
-  "letters": "NEES,SOBU,EYDD,AFEB",
-  "obstacles": []
+  "letters": "DTRE,DMIE,AMAN",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 1
+        }
+      ]
+    }
+  ]
 }

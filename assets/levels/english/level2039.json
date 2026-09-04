@@ -1,131 +1,73 @@
 {
   "id": 2039,
-  "width": 5,
-  "height": 4,
+  "width": 3,
+  "height": 3,
   "target_words": [
     {
-      "word": "ART",
+      "word": "DOT",
       "type": 0
     },
     {
-      "word": "CAR",
+      "word": "OWN",
       "type": 0
     },
     {
-      "word": "TIT",
+      "word": "TOW",
       "type": 0
     },
     {
-      "word": "AQUA",
+      "word": "WHY",
       "type": 0
     },
     {
-      "word": "CART",
+      "word": "WIN",
       "type": 0
     },
     {
-      "word": "MEET",
+      "word": "DOWN",
       "type": 0
     },
     {
-      "word": "TERM",
+      "word": "TOWN",
       "type": 0
     },
     {
-      "word": "ROUGH",
+      "word": "WIND",
       "type": 0
     },
     {
-      "word": "CARTER",
+      "word": "WINDY",
       "type": 0
     },
     {
-      "word": "QUARTER",
-      "type": 0
-    },
-    {
-      "word": "ROUGHLY",
-      "type": 0
+      "word": "WINDOW",
+      "type": 2
     }
   ],
-  "extra_words": [
+  "extra_words": [],
+  "letters": "INW,WDO,HYT",
+  "obstacles": [
     {
-      "word": "ERG",
-      "type": 0
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 2,
+          "y": 2
+        }
+      ]
     },
     {
-      "word": "IRE",
-      "type": 0
-    },
-    {
-      "word": "ORE",
-      "type": 0
-    },
-    {
-      "word": "QUA",
-      "type": 0
-    },
-    {
-      "word": "REE",
-      "type": 0
-    },
-    {
-      "word": "RET",
-      "type": 0
-    },
-    {
-      "word": "TEE",
-      "type": 0
-    },
-    {
-      "word": "UGH",
-      "type": 0
-    },
-    {
-      "word": "GREE",
-      "type": 0
-    },
-    {
-      "word": "RITE",
-      "type": 0
-    },
-    {
-      "word": "TEEM",
-      "type": 0
-    },
-    {
-      "word": "TIRE",
-      "type": 0
-    },
-    {
-      "word": "TIRO",
-      "type": 0
-    },
-    {
-      "word": "CARTE",
-      "type": 0
-    },
-    {
-      "word": "QUART",
-      "type": 0
-    },
-    {
-      "word": "QUEER",
-      "type": 0
-    },
-    {
-      "word": "TITER",
-      "type": 0
-    },
-    {
-      "word": "UTERI",
-      "type": 0
-    },
-    {
-      "word": "QUARTE",
-      "type": 0
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
     }
-  ],
-  "letters": "UORIT,GRETR,HMEUA,LYAQC",
-  "obstacles": []
+  ]
 }

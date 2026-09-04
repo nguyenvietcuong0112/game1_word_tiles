@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../controllers/game_controller.dart';
 import '../../services/game_storage.dart';
 import '../../theme/app_theme.dart';
+import '../common/wood_widgets.dart';
 import 'shatter_particle_overlay.dart';
 import 'tile_widget.dart';
 import 'tutorial_overlay.dart';
@@ -76,6 +77,11 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
   }
 
   void _handleTouch(Offset globalPos, bool isStart) {
+    if (!GameStorage.isCountTutorialShown() &&
+        widget.controller.getFirstTileWithCountGreaterThanOne() != null) {
+      return;
+    }
+
     final RenderBox? renderBox = _gridKey.currentContext?.findRenderObject() as RenderBox?;
     if (renderBox == null) return;
 
@@ -119,11 +125,11 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
 
     return LayoutBuilder(
       builder: (context, constraints) {
-        const double containerPadding = 20.0;
-        const double borderAndMargin = 12.0;
+        const double trayPadding = 18.0;
+        const double outerSafety = 6.0;
 
-        final availableW = max(0.0, constraints.maxWidth - containerPadding - borderAndMargin);
-        final availableH = max(0.0, constraints.maxHeight - containerPadding - borderAndMargin);
+        final availableW = max(0.0, constraints.maxWidth - trayPadding - outerSafety);
+        final availableH = max(0.0, constraints.maxHeight - trayPadding - outerSafety);
 
         final sizeByWidth = width > 0 ? availableW / width : 58.0;
         final sizeByHeight = height > 0 ? availableH / height : 58.0;
@@ -133,28 +139,13 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
         final boardHeight = height * _tileSize;
 
         return Center(
-          child: RepaintBoundary(
-            child: Container(
-              padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                color: AppColors.cardPeach,
-                borderRadius: BorderRadius.circular(24),
-                border: Border.all(
-                  color: AppColors.borderSubtle,
-                  width: 1.8,
-                ),
-                boxShadow: const [
-                  // 3D Tray Bevel Bottom
-                  BoxShadow(
-                    color: Color(0xFFE8D7C4),
-                    offset: Offset(0, 2.5),
-                    blurRadius: 0,
-                  ),
-                ],
-              ),
-              child: SizedBox(
-                width: boardWidth,
-                height: boardHeight,
+          child: FittedBox(
+            fit: BoxFit.scaleDown,
+            child: RepaintBoundary(
+              child: WoodBoardTray(
+                child: SizedBox(
+                  width: boardWidth,
+                  height: boardHeight,
                 child: GestureDetector(
                   onPanStart: (details) => _handleTouch(details.globalPosition, true),
                   onPanUpdate: (details) => _handleTouch(details.globalPosition, false),
@@ -197,6 +188,10 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
                       ListenableBuilder(
                         listenable: widget.controller,
                         builder: (context, _) {
+                          final firstCountPt = (!GameStorage.isCountTutorialShown() && !widget.controller.isWon)
+                              ? widget.controller.getFirstTileWithCountGreaterThanOne()
+                              : null;
+
                           return RepaintBoundary(
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
@@ -207,16 +202,25 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
                                     final tile = widget.controller.grid[r][c];
                                     final isSelected = widget.controller.currentPath.contains(Point(c, r));
                                     final isHinted = widget.controller.highlightedHintPath?.contains(Point(c, r)) ?? false;
-                                    final isCountSpotlight = !GameStorage.isCountTutorialShown() &&
-                                        !widget.controller.isWon &&
-                                        tile.count > 1;
-                                    return TileWidget(
+                                    final isCountSpotlight = firstCountPt != null &&
+                                        firstCountPt.x == c &&
+                                        firstCountPt.y == r;
+                                    final tileWidget = TileWidget(
                                       tile: tile,
                                       isSelected: isSelected,
                                       isHinted: isHinted,
                                       isCountSpotlight: isCountSpotlight,
                                       size: _tileSize,
                                     );
+
+                                    // Dim other tiles when count tutorial spotlight is active
+                                    if (firstCountPt != null && !isCountSpotlight) {
+                                      return Opacity(
+                                        opacity: 0.30,
+                                        child: tileWidget,
+                                      );
+                                    }
+                                    return tileWidget;
                                   }),
                                 );
                               }),
@@ -254,6 +258,7 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
                           if (widget.controller.isWon ||
                               widget.controller.isWinning ||
                               GameStorage.isTutorialCompleted() ||
+                              !GameStorage.isCountTutorialShown() ||
                               widget.controller.levelNumber != 1 ||
                               widget.controller.currentPath.isNotEmpty) {
                             return const SizedBox.shrink();
@@ -279,9 +284,10 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
               ),
             ),
           ),
-        );
-      },
-    );
+        ),
+      );
+    },
+  );
   }
 }
 

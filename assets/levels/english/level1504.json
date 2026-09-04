@@ -1,127 +1,126 @@
 {
   "id": 1504,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "DEL",
+      "word": "HAM",
       "type": 0
     },
     {
-      "word": "FED",
+      "word": "MET",
       "type": 0
     },
     {
-      "word": "FEE",
+      "word": "PIE",
       "type": 0
     },
     {
-      "word": "HER",
+      "word": "SHE",
       "type": 0
     },
     {
-      "word": "LED",
+      "word": "SIP",
       "type": 0
     },
     {
-      "word": "LEI",
+      "word": "TOO",
       "type": 0
     },
     {
-      "word": "HOLE",
+      "word": "STEM",
       "type": 0
     },
     {
-      "word": "HOLT",
+      "word": "SHAME",
       "type": 0
     },
     {
-      "word": "LOCK",
+      "word": "TEMPO",
       "type": 0
     },
     {
-      "word": "REED",
+      "word": "SHAMPOO",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "COL",
+      "word": "AHEM",
+      "type": 1
+    },
+    {
+      "word": "AMP",
       "type": 0
     },
     {
-      "word": "DEE",
+      "word": "HEIST",
       "type": 0
     },
     {
-      "word": "IRE",
+      "word": "HEM",
       "type": 0
     },
     {
-      "word": "KEF",
+      "word": "HEMP",
       "type": 0
     },
     {
-      "word": "OLE",
+      "word": "POO",
       "type": 0
     },
     {
-      "word": "REE",
+      "word": "SHAM",
       "type": 0
     },
     {
-      "word": "THO",
+      "word": "STOOP",
       "type": 0
     },
     {
-      "word": "DEER",
-      "type": 0
-    },
-    {
-      "word": "DREE",
-      "type": 0
-    },
-    {
-      "word": "HEED",
-      "type": 0
-    },
-    {
-      "word": "HERD",
-      "type": 0
-    },
-    {
-      "word": "REEF",
-      "type": 0
-    },
-    {
-      "word": "REEK",
-      "type": 0
-    },
-    {
-      "word": "RIEL",
-      "type": 0
-    },
-    {
-      "word": "EERIE",
-      "type": 0
-    },
-    {
-      "word": "HOLED",
-      "type": 0
-    },
-    {
-      "word": "THOLE",
-      "type": 0
-    },
-    {
-      "word": "LOCKED",
-      "type": 0
-    },
-    {
-      "word": "THOLED",
+      "word": "TEMP",
       "type": 0
     }
   ],
-  "letters": "HFCO,EEKL,RDTH,IELO",
-  "obstacles": []
+  "letters": "AMPO,HEIO,STST",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

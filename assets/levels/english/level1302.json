@@ -1,123 +1,91 @@
 {
   "id": 1302,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
       "word": "ACE",
       "type": 0
     },
     {
-      "word": "CAR",
+      "word": "ACT",
       "type": 0
     },
     {
-      "word": "INS",
+      "word": "NOT",
       "type": 0
     },
     {
-      "word": "LIE",
+      "word": "TOE",
       "type": 0
     },
     {
-      "word": "LIP",
+      "word": "CENT",
       "type": 0
     },
     {
-      "word": "PIN",
+      "word": "ICON",
       "type": 0
     },
     {
-      "word": "CAST",
+      "word": "TICK",
       "type": 0
     },
     {
-      "word": "RACE",
+      "word": "TICKET",
       "type": 0
     },
     {
-      "word": "GRACE",
-      "type": 0
-    },
-    {
-      "word": "CEILING",
-      "type": 0
+      "word": "CONNECT",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "LIN",
+      "word": "CON",
       "type": 0
     },
     {
-      "word": "NIL",
+      "word": "CONN",
       "type": 0
     },
     {
-      "word": "NIP",
+      "word": "COT",
       "type": 0
     },
     {
-      "word": "PIE",
+      "word": "EON",
       "type": 0
     },
     {
-      "word": "RAS",
+      "word": "NOCK",
       "type": 0
     },
     {
-      "word": "SAC",
+      "word": "TON",
       "type": 0
     },
     {
-      "word": "CECA",
-      "type": 0
-    },
-    {
-      "word": "CEIL",
-      "type": 0
-    },
-    {
-      "word": "LING",
-      "type": 0
-    },
-    {
-      "word": "LINS",
-      "type": 0
-    },
-    {
-      "word": "PILI",
-      "type": 0
-    },
-    {
-      "word": "PING",
-      "type": 0
-    },
-    {
-      "word": "PINS",
-      "type": 0
-    },
-    {
-      "word": "SNIP",
-      "type": 0
-    },
-    {
-      "word": "TSAR",
-      "type": 0
-    },
-    {
-      "word": "LIPIN",
-      "type": 0
-    },
-    {
-      "word": "LIPINS",
-      "type": 0
-    },
-    {
-      "word": "PILING",
-      "type": 0
+      "word": "TONNE",
+      "type": 2
     }
   ],
-  "letters": "LILI,CEIP,GCNG,RAST",
-  "obstacles": []
+  "letters": "ENNT,CTOE,AICK",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

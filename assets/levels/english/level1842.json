@@ -1,228 +1,107 @@
 {
   "id": 1842,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ACT",
+      "word": "AIR",
       "type": 0
     },
     {
-      "word": "CAN",
+      "word": "FAN",
       "type": 0
     },
     {
-      "word": "OLD",
+      "word": "FIG",
       "type": 0
     },
     {
-      "word": "SIN",
+      "word": "LET",
       "type": 0
     },
     {
-      "word": "SON",
+      "word": "RIG",
       "type": 0
     },
     {
-      "word": "SPA",
+      "word": "FAIR",
       "type": 0
     },
     {
-      "word": "HOLD",
+      "word": "GIFT",
       "type": 0
     },
     {
-      "word": "POST",
+      "word": "GIRL",
       "type": 0
     },
     {
-      "word": "APPEAR",
+      "word": "RIFT",
       "type": 0
     },
     {
-      "word": "APPEARS",
+      "word": "TOTE",
+      "type": 2
+    },
+    {
+      "word": "ANGLE",
       "type": 0
+    },
+    {
+      "word": "TRIANGLE",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "ANA",
+      "word": "ANG",
       "type": 0
     },
     {
-      "word": "ANI",
+      "word": "FANG",
       "type": 0
     },
     {
-      "word": "ARS",
-      "type": 0
-    },
-    {
-      "word": "CIS",
-      "type": 0
-    },
-    {
-      "word": "EAR",
-      "type": 0
-    },
-    {
-      "word": "EON",
-      "type": 0
-    },
-    {
-      "word": "NAN",
-      "type": 0
-    },
-    {
-      "word": "NAP",
-      "type": 0
-    },
-    {
-      "word": "NOS",
-      "type": 0
-    },
-    {
-      "word": "OPS",
-      "type": 0
-    },
-    {
-      "word": "PAN",
-      "type": 0
-    },
-    {
-      "word": "PAR",
-      "type": 0
-    },
-    {
-      "word": "PEA",
-      "type": 0
-    },
-    {
-      "word": "RAP",
-      "type": 0
-    },
-    {
-      "word": "SIC",
-      "type": 0
-    },
-    {
-      "word": "SOP",
-      "type": 0
-    },
-    {
-      "word": "THO",
-      "type": 0
-    },
-    {
-      "word": "ACTS",
-      "type": 0
-    },
-    {
-      "word": "AEON",
-      "type": 0
-    },
-    {
-      "word": "ANIS",
-      "type": 0
-    },
-    {
-      "word": "CIST",
-      "type": 0
-    },
-    {
-      "word": "EARS",
-      "type": 0
-    },
-    {
-      "word": "HOLS",
-      "type": 0
-    },
-    {
-      "word": "NANA",
-      "type": 0
-    },
-    {
-      "word": "OLDS",
-      "type": 0
-    },
-    {
-      "word": "PARS",
-      "type": 0
-    },
-    {
-      "word": "PEAR",
-      "type": 0
-    },
-    {
-      "word": "PEON",
-      "type": 0
-    },
-    {
-      "word": "RAPS",
-      "type": 0
-    },
-    {
-      "word": "SOPS",
-      "type": 0
-    },
-    {
-      "word": "SPAE",
-      "type": 0
-    },
-    {
-      "word": "SPAR",
-      "type": 0
-    },
-    {
-      "word": "EOSIN",
-      "type": 0
-    },
-    {
-      "word": "HOLDS",
-      "type": 0
-    },
-    {
-      "word": "NAPPE",
-      "type": 0
-    },
-    {
-      "word": "PAEON",
-      "type": 0
-    },
-    {
-      "word": "PANIC",
-      "type": 0
-    },
-    {
-      "word": "PEARS",
-      "type": 0
-    },
-    {
-      "word": "SONIC",
-      "type": 0
-    },
-    {
-      "word": "AEONIC",
-      "type": 0
-    },
-    {
-      "word": "ONANIST",
-      "type": 0
+      "word": "RIFF",
+      "type": 2
     }
   ],
-  "letters": "ACTHO,NISDL,ANOPS,PPEAR",
+  "letters": "NGLE,AIRT,FFTO",
   "obstacles": [
     {
-      "required_words": 2,
+      "required_words": 5,
       "id": 1,
       "type": 0,
       "cells": [
         {
           "x": 0,
-          "y": 0
+          "y": 2
         },
         {
-          "x": 1,
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 8,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
           "y": 0
         }
       ]

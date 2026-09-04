@@ -1,18 +1,64 @@
 {
   "id": 1883,
-  "width": 5,
-  "height": 4,
+  "width": 3,
+  "height": 3,
   "target_words": [
     {
-      "word": "ADS",
+      "word": "PEN",
       "type": 0
     },
     {
-      "word": "LAS",
+      "word": "PUN",
       "type": 0
     },
     {
-      "word": "SAD",
+      "word": "SET",
+      "type": 0
+    },
+    {
+      "word": "SUN",
+      "type": 0
+    },
+    {
+      "word": "USE",
+      "type": 0
+    },
+    {
+      "word": "PUNT",
+      "type": 0
+    },
+    {
+      "word": "SENT",
+      "type": 0
+    },
+    {
+      "word": "SENSE",
+      "type": 0
+    },
+    {
+      "word": "SPENT",
+      "type": 0
+    },
+    {
+      "word": "SUNSET",
+      "type": 0
+    }
+  ],
+  "extra_words": [
+    {
+      "word": "PENS",
+      "type": 0
+    },
+    {
+      "word": "PENT",
+      "type": 0
+    },
+    {
+      "word": "PUNE",
+      "type": 2
+    },
+    {
+      "word": "PUNS",
       "type": 0
     },
     {
@@ -20,184 +66,37 @@
       "type": 0
     },
     {
-      "word": "SHE",
+      "word": "SENS",
       "type": 0
     },
     {
-      "word": "CORD",
-      "type": 0
-    },
-    {
-      "word": "CROP",
-      "type": 0
-    },
-    {
-      "word": "DROP",
-      "type": 0
-    },
-    {
-      "word": "SIDE",
-      "type": 0
-    },
-    {
-      "word": "ASIDE",
-      "type": 0
-    },
-    {
-      "word": "BLADE",
-      "type": 0
-    },
-    {
-      "word": "GUIDE",
-      "type": 0
-    },
-    {
-      "word": "GUIDES",
+      "word": "SUNS",
       "type": 0
     }
   ],
-  "extra_words": [
+  "letters": "PSE,ENT,SUP",
+  "obstacles": [
     {
-      "word": "ALB",
-      "type": 0
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        }
+      ]
     },
     {
-      "word": "COP",
-      "type": 0
-    },
-    {
-      "word": "COR",
-      "type": 0
-    },
-    {
-      "word": "DAL",
-      "type": 0
-    },
-    {
-      "word": "DIS",
-      "type": 0
-    },
-    {
-      "word": "ENS",
-      "type": 0
-    },
-    {
-      "word": "ESS",
-      "type": 0
-    },
-    {
-      "word": "HES",
-      "type": 0
-    },
-    {
-      "word": "LAD",
-      "type": 0
-    },
-    {
-      "word": "ORC",
-      "type": 0
-    },
-    {
-      "word": "ROC",
-      "type": 0
-    },
-    {
-      "word": "SAL",
-      "type": 0
-    },
-    {
-      "word": "ALBS",
-      "type": 0
-    },
-    {
-      "word": "CROC",
-      "type": 0
-    },
-    {
-      "word": "GUID",
-      "type": 0
-    },
-    {
-      "word": "IDES",
-      "type": 0
-    },
-    {
-      "word": "LADE",
-      "type": 0
-    },
-    {
-      "word": "LADS",
-      "type": 0
-    },
-    {
-      "word": "LASE",
-      "type": 0
-    },
-    {
-      "word": "NESS",
-      "type": 0
-    },
-    {
-      "word": "SADE",
-      "type": 0
-    },
-    {
-      "word": "SHED",
-      "type": 0
-    },
-    {
-      "word": "SHES",
-      "type": 0
-    },
-    {
-      "word": "BLASE",
-      "type": 0
-    },
-    {
-      "word": "DEDAL",
-      "type": 0
-    },
-    {
-      "word": "GUISE",
-      "type": 0
-    },
-    {
-      "word": "LADED",
-      "type": 0
-    },
-    {
-      "word": "LADES",
-      "type": 0
-    },
-    {
-      "word": "LASED",
-      "type": 0
-    },
-    {
-      "word": "SIDED",
-      "type": 0
-    },
-    {
-      "word": "BLADED",
-      "type": 0
-    },
-    {
-      "word": "BLADES",
-      "type": 0
-    },
-    {
-      "word": "CORDED",
-      "type": 0
-    },
-    {
-      "word": "GUIDED",
-      "type": 0
-    },
-    {
-      "word": "GUISED",
-      "type": 0
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 2,
+          "y": 0
+        }
+      ]
     }
-  ],
-  "letters": "LASIU,BDEDG,SSHRC,ENPOC",
-  "obstacles": []
+  ]
 }

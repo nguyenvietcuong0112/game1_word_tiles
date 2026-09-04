@@ -1,195 +1,110 @@
 {
   "id": 1529,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "BOW",
+      "word": "FOE",
       "type": 0
     },
     {
-      "word": "LET",
+      "word": "LIT",
       "type": 0
     },
     {
-      "word": "LIB",
+      "word": "OAT",
       "type": 0
     },
     {
-      "word": "MAX",
+      "word": "SAT",
       "type": 0
     },
     {
-      "word": "TEL",
+      "word": "FLAT",
       "type": 0
     },
     {
-      "word": "EXAM",
+      "word": "LAST",
       "type": 0
     },
     {
-      "word": "MERE",
+      "word": "OATH",
       "type": 0
     },
     {
-      "word": "SORT",
+      "word": "LIGHT",
       "type": 0
     },
     {
-      "word": "RETRO",
+      "word": "TIGHT",
       "type": 0
     },
     {
-      "word": "MOBILE",
+      "word": "FLIGHT",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AXE",
+      "word": "ALIGHT",
+      "type": 1
+    },
+    {
+      "word": "FLIT",
       "type": 0
     },
     {
-      "word": "BEL",
+      "word": "FOAL",
+      "type": 1
+    },
+    {
+      "word": "FOES",
       "type": 0
     },
     {
-      "word": "EMS",
-      "type": 0
-    },
-    {
-      "word": "ERE",
-      "type": 0
-    },
-    {
-      "word": "ERR",
-      "type": 0
-    },
-    {
-      "word": "ERS",
-      "type": 0
-    },
-    {
-      "word": "MAW",
-      "type": 0
-    },
-    {
-      "word": "MEL",
-      "type": 0
-    },
-    {
-      "word": "MOB",
-      "type": 0
-    },
-    {
-      "word": "MOW",
-      "type": 0
-    },
-    {
-      "word": "OBE",
-      "type": 0
-    },
-    {
-      "word": "OBI",
-      "type": 0
-    },
-    {
-      "word": "OMS",
-      "type": 0
-    },
-    {
-      "word": "ORT",
-      "type": 0
-    },
-    {
-      "word": "REB",
-      "type": 0
-    },
-    {
-      "word": "REM",
-      "type": 0
-    },
-    {
-      "word": "RET",
-      "type": 0
-    },
-    {
-      "word": "ROE",
-      "type": 0
-    },
-    {
-      "word": "WAX",
-      "type": 0
-    },
-    {
-      "word": "BEMA",
-      "type": 0
-    },
-    {
-      "word": "BILE",
-      "type": 0
-    },
-    {
-      "word": "OMER",
-      "type": 0
-    },
-    {
-      "word": "REMS",
-      "type": 0
-    },
-    {
-      "word": "TELE",
-      "type": 0
-    },
-    {
-      "word": "WAME",
-      "type": 0
-    },
-    {
-      "word": "BERET",
-      "type": 0
-    },
-    {
-      "word": "EXAMS",
-      "type": 0
-    },
-    {
-      "word": "LIBER",
-      "type": 0
-    },
-    {
-      "word": "OBELI",
-      "type": 0
-    },
-    {
-      "word": "OMERS",
-      "type": 0
-    },
-    {
-      "word": "RELET",
-      "type": 0
-    },
-    {
-      "word": "LIBERS",
-      "type": 0
-    },
-    {
-      "word": "OMELET",
-      "type": 0
-    },
-    {
-      "word": "RETROS",
-      "type": 0
-    },
-    {
-      "word": "SORREL",
-      "type": 0
-    },
-    {
-      "word": "SORTER",
+      "word": "LAT",
       "type": 0
     }
   ],
-  "letters": "TROE,ERSX,LEMA,IBOW",
-  "obstacles": []
+  "letters": "ESTT,OATH,FLIG",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

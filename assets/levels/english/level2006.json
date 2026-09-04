@@ -1,246 +1,117 @@
 {
   "id": 2006,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "AIR",
+      "word": "BAR",
       "type": 0
     },
     {
-      "word": "APE",
+      "word": "BEE",
       "type": 0
     },
     {
-      "word": "ASP",
+      "word": "EAR",
       "type": 0
     },
     {
-      "word": "HAD",
+      "word": "ERA",
       "type": 0
     },
     {
-      "word": "PAN",
+      "word": "URN",
       "type": 0
     },
     {
-      "word": "PEN",
+      "word": "BARE",
       "type": 0
     },
     {
-      "word": "PER",
+      "word": "BARN",
       "type": 0
     },
     {
-      "word": "RED",
+      "word": "BEAR",
       "type": 0
     },
     {
-      "word": "SHE",
+      "word": "BEER",
       "type": 0
     },
     {
-      "word": "PAIN",
+      "word": "BEET",
       "type": 0
     },
     {
-      "word": "PAIR",
+      "word": "EARN",
       "type": 0
     },
     {
-      "word": "PURE",
+      "word": "NEAR",
       "type": 0
     },
     {
-      "word": "REPAIR",
+      "word": "TURN",
+      "type": 0
+    },
+    {
+      "word": "RETURN",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AAH",
+      "word": "ARE",
       "type": 0
     },
     {
-      "word": "AAS",
+      "word": "RET",
       "type": 0
     },
     {
-      "word": "AIN",
+      "word": "RUT",
       "type": 0
     },
     {
-      "word": "ANE",
-      "type": 0
-    },
-    {
-      "word": "ANI",
-      "type": 0
-    },
-    {
-      "word": "ASH",
-      "type": 0
-    },
-    {
-      "word": "DAH",
-      "type": 0
-    },
-    {
-      "word": "HEP",
-      "type": 0
-    },
-    {
-      "word": "NAP",
-      "type": 0
-    },
-    {
-      "word": "PAR",
-      "type": 0
-    },
-    {
-      "word": "PEA",
-      "type": 0
-    },
-    {
-      "word": "PED",
-      "type": 0
-    },
-    {
-      "word": "PEH",
-      "type": 0
-    },
-    {
-      "word": "PUR",
-      "type": 0
-    },
-    {
-      "word": "RAN",
-      "type": 0
-    },
-    {
-      "word": "RAP",
-      "type": 0
-    },
-    {
-      "word": "REP",
-      "type": 0
-    },
-    {
-      "word": "RIA",
-      "type": 0
-    },
-    {
-      "word": "RIN",
-      "type": 0
-    },
-    {
-      "word": "SHA",
-      "type": 0
-    },
-    {
-      "word": "AAHS",
-      "type": 0
-    },
-    {
-      "word": "APED",
-      "type": 0
-    },
-    {
-      "word": "APER",
-      "type": 0
-    },
-    {
-      "word": "ARIA",
-      "type": 0
-    },
-    {
-      "word": "DAHS",
-      "type": 0
-    },
-    {
-      "word": "HADE",
-      "type": 0
-    },
-    {
-      "word": "HEIR",
-      "type": 0
-    },
-    {
-      "word": "NEAP",
-      "type": 0
-    },
-    {
-      "word": "PANE",
-      "type": 0
-    },
-    {
-      "word": "PEHS",
-      "type": 0
-    },
-    {
-      "word": "PEIN",
-      "type": 0
-    },
-    {
-      "word": "RANI",
-      "type": 0
-    },
-    {
-      "word": "REDE",
-      "type": 0
-    },
-    {
-      "word": "SHAD",
-      "type": 0
-    },
-    {
-      "word": "SHED",
-      "type": 0
-    },
-    {
-      "word": "SHRI",
-      "type": 0
-    },
-    {
-      "word": "AAHED",
-      "type": 0
-    },
-    {
-      "word": "ASHED",
-      "type": 0
-    },
-    {
-      "word": "HEDER",
-      "type": 0
-    },
-    {
-      "word": "PRIED",
-      "type": 0
-    },
-    {
-      "word": "SHADE",
-      "type": 0
-    },
-    {
-      "word": "PAUPER",
-      "type": 0
-    },
-    {
-      "word": "SHADER",
-      "type": 0
-    },
-    {
-      "word": "SHRINE",
-      "type": 0
+      "word": "TERN",
+      "type": 1
     }
   ],
-  "letters": "PENAP,AAIRP,UPEHS,REDAA",
+  "letters": "NBNR,EARU,BEET",
   "obstacles": [
     {
-      "required_words": 4,
+      "required_words": 6,
       "id": 1,
       "type": 0,
       "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 9,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
         {
           "x": 0,
           "y": 0

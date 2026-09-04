@@ -1,184 +1,103 @@
 {
   "id": 1445,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "AND",
+      "word": "CAR",
       "type": 0
     },
     {
-      "word": "CAN",
+      "word": "OUR",
       "type": 0
     },
     {
-      "word": "MAC",
+      "word": "PAL",
       "type": 0
     },
     {
-      "word": "MAN",
+      "word": "RUG",
       "type": 0
     },
     {
-      "word": "TOE",
+      "word": "FOUR",
       "type": 0
     },
     {
-      "word": "CASE",
+      "word": "OPAL",
+      "type": 2
+    },
+    {
+      "word": "POLO",
       "type": 0
     },
     {
-      "word": "NAME",
+      "word": "POUR",
       "type": 0
     },
     {
-      "word": "SAME",
+      "word": "SCAR",
       "type": 0
     },
     {
-      "word": "FOUND",
-      "type": 0
-    },
-    {
-      "word": "UNDER",
-      "type": 0
-    },
-    {
-      "word": "DEMAND",
+      "word": "SCARF",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AMA",
+      "word": "LAP",
       "type": 0
     },
     {
-      "word": "CAM",
+      "word": "LOP",
       "type": 0
     },
     {
-      "word": "ERS",
+      "word": "PALO",
       "type": 0
     },
     {
-      "word": "FOU",
-      "type": 0
-    },
-    {
-      "word": "MAS",
-      "type": 0
-    },
-    {
-      "word": "MED",
-      "type": 0
-    },
-    {
-      "word": "NAM",
-      "type": 0
-    },
-    {
-      "word": "OFT",
-      "type": 0
-    },
-    {
-      "word": "RED",
-      "type": 0
-    },
-    {
-      "word": "SAC",
-      "type": 0
-    },
-    {
-      "word": "AMAS",
-      "type": 0
-    },
-    {
-      "word": "ANDS",
-      "type": 0
-    },
-    {
-      "word": "CAME",
-      "type": 0
-    },
-    {
-      "word": "MESA",
-      "type": 0
-    },
-    {
-      "word": "REDS",
-      "type": 0
-    },
-    {
-      "word": "SAND",
-      "type": 0
-    },
-    {
-      "word": "TOED",
-      "type": 0
-    },
-    {
-      "word": "UNDE",
-      "type": 0
-    },
-    {
-      "word": "CAMAS",
-      "type": 0
-    },
-    {
-      "word": "CAMES",
-      "type": 0
-    },
-    {
-      "word": "CASED",
-      "type": 0
-    },
-    {
-      "word": "NAMED",
-      "type": 0
-    },
-    {
-      "word": "NAMES",
-      "type": 0
-    },
-    {
-      "word": "DESAND",
-      "type": 0
-    },
-    {
-      "word": "FOUNDS",
-      "type": 0
-    },
-    {
-      "word": "SANDER",
-      "type": 0
-    },
-    {
-      "word": "DEMANDS",
-      "type": 0
-    },
-    {
-      "word": "FOUNDER",
-      "type": 0
-    },
-    {
-      "word": "DEMANDER",
-      "type": 0
-    },
-    {
-      "word": "FOUNDERS",
+      "word": "RUGS",
       "type": 0
     }
   ],
-  "letters": "DREO,ESDT,MANF,ACUO",
+  "letters": "ARFO,CUOL,SGPA",
   "obstacles": [
     {
-      "required_words": 3,
+      "required_words": 4,
       "id": 1,
       "type": 0,
       "cells": [
         {
           "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
           "y": 0
         }
       ]

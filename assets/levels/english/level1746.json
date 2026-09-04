@@ -1,127 +1,110 @@
 {
   "id": 1746,
-  "width": 4,
-  "height": 4,
+  "width": 5,
+  "height": 3,
   "target_words": [
     {
-      "word": "BUS",
+      "word": "DOG",
       "type": 0
     },
     {
-      "word": "COL",
+      "word": "IVY",
       "type": 0
     },
     {
-      "word": "MAR",
+      "word": "OAR",
       "type": 0
     },
     {
-      "word": "MOC",
+      "word": "RAP",
       "type": 0
     },
     {
-      "word": "RAM",
+      "word": "TOO",
       "type": 0
     },
     {
-      "word": "SUB",
+      "word": "URN",
       "type": 0
     },
     {
-      "word": "BUSH",
+      "word": "VARY",
       "type": 0
     },
     {
-      "word": "MARS",
+      "word": "GRAVY",
       "type": 0
     },
     {
-      "word": "SUCH",
+      "word": "PURITY",
       "type": 0
     },
     {
-      "word": "COLIN",
-      "type": 0
+      "word": "GRAVITY",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "ARB",
+      "word": "GOD",
       "type": 0
     },
     {
-      "word": "ARS",
+      "word": "ION",
       "type": 0
     },
     {
-      "word": "BRA",
+      "word": "NOIR",
+      "type": 1
+    },
+    {
+      "word": "PAR",
       "type": 0
     },
     {
-      "word": "CUB",
-      "type": 0
-    },
-    {
-      "word": "LIN",
-      "type": 0
-    },
-    {
-      "word": "NIL",
-      "type": 0
-    },
-    {
-      "word": "OHS",
-      "type": 0
-    },
-    {
-      "word": "OMS",
-      "type": 0
-    },
-    {
-      "word": "COMA",
-      "type": 0
-    },
-    {
-      "word": "LOCH",
-      "type": 0
-    },
-    {
-      "word": "LOCI",
-      "type": 0
-    },
-    {
-      "word": "LUSH",
-      "type": 0
-    },
-    {
-      "word": "RAMS",
-      "type": 0
-    },
-    {
-      "word": "COLIC",
-      "type": 0
-    },
-    {
-      "word": "LOCUS",
-      "type": 0
-    },
-    {
-      "word": "MARSH",
-      "type": 0
-    },
-    {
-      "word": "NICOL",
-      "type": 0
-    },
-    {
-      "word": "OCULI",
-      "type": 0
-    },
-    {
-      "word": "BUCOLIC",
+      "word": "TOON",
       "type": 0
     }
   ],
-  "letters": "HBRA,CUSM,OLHO,CINC",
-  "obstacles": []
+  "letters": "GRYTO,OAVIO,DPURN",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 4,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

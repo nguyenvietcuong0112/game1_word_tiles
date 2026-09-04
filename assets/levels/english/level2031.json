@@ -1,199 +1,75 @@
 {
   "id": 2031,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "AVE",
+      "word": "BIT",
       "type": 0
     },
     {
-      "word": "BAD",
+      "word": "FLU",
       "type": 0
     },
     {
-      "word": "BAR",
+      "word": "FUR",
       "type": 0
     },
     {
-      "word": "DUG",
+      "word": "BITE",
       "type": 0
     },
     {
-      "word": "HER",
+      "word": "BLUR",
+      "type": 2
+    },
+    {
+      "word": "LURE",
       "type": 0
     },
     {
-      "word": "THE",
+      "word": "RENT",
       "type": 0
     },
     {
-      "word": "WIN",
+      "word": "BLUFF",
       "type": 0
     },
     {
-      "word": "HARD",
-      "type": 0
-    },
-    {
-      "word": "THAN",
-      "type": 0
-    },
-    {
-      "word": "GRANT",
-      "type": 0
-    },
-    {
-      "word": "RANGE",
-      "type": 0
-    },
-    {
-      "word": "TYING",
+      "word": "BLURT",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ANI",
-      "type": 0
-    },
-    {
-      "word": "ANT",
-      "type": 0
-    },
-    {
-      "word": "DAB",
-      "type": 0
-    },
-    {
-      "word": "EAR",
-      "type": 0
-    },
-    {
-      "word": "ERR",
-      "type": 0
-    },
-    {
-      "word": "HAE",
-      "type": 0
-    },
-    {
-      "word": "NAE",
-      "type": 0
-    },
-    {
-      "word": "NAH",
-      "type": 0
-    },
-    {
-      "word": "RAD",
-      "type": 0
-    },
-    {
-      "word": "RAH",
-      "type": 0
-    },
-    {
-      "word": "RAN",
-      "type": 0
-    },
-    {
-      "word": "REV",
-      "type": 0
-    },
-    {
-      "word": "YIN",
-      "type": 0
-    },
-    {
-      "word": "AVER",
-      "type": 0
-    },
-    {
-      "word": "AYIN",
-      "type": 0
-    },
-    {
-      "word": "GEAR",
-      "type": 0
-    },
-    {
-      "word": "GNAR",
-      "type": 0
-    },
-    {
-      "word": "GRAN",
-      "type": 0
-    },
-    {
-      "word": "HANG",
-      "type": 0
-    },
-    {
-      "word": "HANT",
-      "type": 0
-    },
-    {
-      "word": "HERB",
-      "type": 0
-    },
-    {
-      "word": "NARD",
-      "type": 0
-    },
-    {
-      "word": "RANG",
-      "type": 0
-    },
-    {
-      "word": "RANI",
-      "type": 0
-    },
-    {
-      "word": "RANT",
-      "type": 0
-    },
-    {
-      "word": "THAE",
-      "type": 0
-    },
-    {
-      "word": "VERB",
-      "type": 0
-    },
-    {
-      "word": "WING",
-      "type": 0
-    },
-    {
-      "word": "BARRE",
-      "type": 0
-    },
-    {
-      "word": "GNARR",
-      "type": 0
-    },
-    {
-      "word": "ANTHER",
-      "type": 0
-    },
-    {
-      "word": "ARRANT",
-      "type": 0
-    },
-    {
-      "word": "GRANGE",
-      "type": 0
-    },
-    {
-      "word": "REHANG",
-      "type": 0
-    },
-    {
-      "word": "ARRANGE",
-      "type": 0
+      "word": "RUFF",
+      "type": 2
     }
   ],
-  "letters": "WGEGU,INARD,YTHRA,AVERB",
-  "obstacles": []
+  "letters": "FFEN,LURT,BITE",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

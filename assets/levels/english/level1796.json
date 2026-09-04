@@ -1,123 +1,119 @@
 {
   "id": 1796,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
-    {
-      "word": "DEL",
-      "type": 0
-    },
     {
       "word": "LED",
       "type": 0
     },
     {
-      "word": "LEG",
+      "word": "LID",
       "type": 0
     },
     {
-      "word": "TIE",
+      "word": "MAD",
       "type": 0
     },
     {
-      "word": "ANTI",
+      "word": "DELI",
       "type": 0
     },
     {
-      "word": "HUGE",
+      "word": "ISLE",
       "type": 0
     },
     {
-      "word": "LEGS",
+      "word": "MADE",
       "type": 0
     },
     {
-      "word": "KERNEL",
+      "word": "SLED",
       "type": 0
+    },
+    {
+      "word": "SLID",
+      "type": 0
+    },
+    {
+      "word": "AISLE",
+      "type": 0
+    },
+    {
+      "word": "SLIDE",
+      "type": 0
+    },
+    {
+      "word": "MEDIUM",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "AIT",
+      "word": "DAIS",
+      "type": 1
+    },
+    {
+      "word": "DAM",
       "type": 0
     },
     {
-      "word": "ANT",
+      "word": "DAME",
       "type": 0
     },
     {
-      "word": "DEN",
+      "word": "DID",
       "type": 0
     },
     {
-      "word": "DUG",
+      "word": "LIDS",
       "type": 0
     },
     {
-      "word": "ERN",
+      "word": "MED",
       "type": 0
     },
     {
-      "word": "GED",
+      "word": "MEDS",
       "type": 0
     },
     {
-      "word": "GEL",
-      "type": 0
-    },
-    {
-      "word": "HUG",
-      "type": 0
-    },
-    {
-      "word": "REI",
-      "type": 0
-    },
-    {
-      "word": "DELE",
-      "type": 0
-    },
-    {
-      "word": "DUGS",
-      "type": 0
-    },
-    {
-      "word": "ERNE",
-      "type": 0
-    },
-    {
-      "word": "GUAN",
-      "type": 0
-    },
-    {
-      "word": "GUDE",
-      "type": 0
-    },
-    {
-      "word": "HUGS",
-      "type": 0
-    },
-    {
-      "word": "KERN",
-      "type": 0
-    },
-    {
-      "word": "TIER",
-      "type": 0
-    },
-    {
-      "word": "KERNE",
-      "type": 0
-    },
-    {
-      "word": "KERNED",
-      "type": 0
-    },
-    {
-      "word": "KERNELED",
-      "type": 0
+      "word": "SIAM",
+      "type": 1
     }
   ],
-  "letters": "LENR,EDKE,GUAI,SHNT",
-  "obstacles": []
+  "letters": "MEUM,ADID,ISLE",
+  "obstacles": [
+    {
+      "required_words": 6,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

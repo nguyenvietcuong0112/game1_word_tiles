@@ -1,10 +1,12 @@
 import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 import '../../services/game_storage.dart';
-import '../../theme/app_theme.dart';
+import '../common/wood_widgets.dart';
 
 /// 3D Animated Hand Guide moving over the tiles inside the board with active trail & tile illumination
 class TutorialHandGuide extends StatefulWidget {
@@ -21,7 +23,8 @@ class TutorialHandGuide extends StatefulWidget {
   State<TutorialHandGuide> createState() => _TutorialHandGuideState();
 }
 
-class _TutorialHandGuideState extends State<TutorialHandGuide> with SingleTickerProviderStateMixin {
+class _TutorialHandGuideState extends State<TutorialHandGuide>
+    with SingleTickerProviderStateMixin {
   late AnimationController _controller;
 
   @override
@@ -37,7 +40,9 @@ class _TutorialHandGuideState extends State<TutorialHandGuide> with SingleTicker
   void didUpdateWidget(covariant TutorialHandGuide oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.path != widget.path) {
-      _controller.duration = Duration(milliseconds: max(1600, widget.path.length * 700));
+      _controller.duration = Duration(
+        milliseconds: max(1600, widget.path.length * 700),
+      );
       _controller.reset();
       _controller.repeat();
     }
@@ -91,8 +96,13 @@ class _TutorialHandGuideState extends State<TutorialHandGuide> with SingleTicker
             );
           }
 
-          final handOpacity = t > 0.88 ? (1.0 - ((t - 0.88) / 0.12)) : (t < 0.08 ? (t / 0.08) : 1.0);
-          final visitedSubpath = widget.path.sublist(0, min(activeIndex + 1, widget.path.length));
+          final handOpacity = t > 0.88
+              ? (1.0 - ((t - 0.88) / 0.12))
+              : (t < 0.08 ? (t / 0.08) : 1.0);
+          final visitedSubpath = widget.path.sublist(
+            0,
+            min(activeIndex + 1, widget.path.length),
+          );
 
           return Stack(
             clipBehavior: Clip.none,
@@ -108,13 +118,16 @@ class _TutorialHandGuideState extends State<TutorialHandGuide> with SingleTicker
                     opacity: handOpacity * 0.45,
                     child: Container(
                       decoration: BoxDecoration(
-                        color: AppColors.btnFaceBrown,
-                        borderRadius: BorderRadius.circular(16),
-                        border: Border.all(color: Colors.white, width: 2.0),
+                        color: const Color(0xFFFFB300).withValues(alpha: 0.35),
+                        borderRadius: BorderRadius.circular(16.r),
+                        border: Border.all(
+                          color: const Color(0xFFFFD54F),
+                          width: 2.2,
+                        ),
                         boxShadow: const [
                           BoxShadow(
-                            color: Color(0x66BA805D),
-                            blurRadius: 8,
+                            color: Color(0x99F58A07),
+                            blurRadius: 10,
                             spreadRadius: 2,
                           ),
                         ],
@@ -145,14 +158,17 @@ class _TutorialHandGuideState extends State<TutorialHandGuide> with SingleTicker
                     width: 36.r,
                     height: 36.r,
                     decoration: BoxDecoration(
-                      color: AppColors.btnFaceBrown.withValues(alpha: 0.4),
+                      color: const Color(0xFFF58A07).withValues(alpha: 0.5),
                       shape: BoxShape.circle,
-                      border: Border.all(color: Colors.white, width: 2.5),
+                      border: Border.all(
+                        color: const Color(0xFFFFE082),
+                        width: 2.5,
+                      ),
                       boxShadow: const [
                         BoxShadow(
-                          color: Color(0x66BA805D),
-                          blurRadius: 10,
-                          spreadRadius: 2,
+                          color: Color(0xAAF58A07),
+                          blurRadius: 12,
+                          spreadRadius: 3,
                         ),
                       ],
                     ),
@@ -179,10 +195,7 @@ class _TutorialHandGuideState extends State<TutorialHandGuide> with SingleTicker
                           ),
                         ],
                       ),
-                      child: Text(
-                        '👆',
-                        style: TextStyle(fontSize: 42.sp),
-                      ),
+                      child: Text('👆', style: TextStyle(fontSize: 42.sp)),
                     ),
                   ),
                 ),
@@ -215,25 +228,31 @@ class _TutorialTrailPainter extends CustomPainter {
     if (path.isEmpty || opacity <= 0) return;
 
     final paintGlow = Paint()
-      ..color = const Color(0x88BA805D).withValues(alpha: 0.5 * opacity)
+      ..color = const Color(0xFFF58A07).withValues(alpha: 0.65 * opacity)
       ..strokeWidth = 14.0
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
 
     final paintCore = Paint()
-      ..color = Colors.white.withValues(alpha: 0.9 * opacity)
+      ..color = Colors.white.withValues(alpha: 0.95 * opacity)
       ..strokeWidth = 5.0
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
 
     final trail = Path();
-    final p0 = Offset((path[0].x + 0.5) * tileSize, (path[0].y + 0.5) * tileSize);
+    final p0 = Offset(
+      (path[0].x + 0.5) * tileSize,
+      (path[0].y + 0.5) * tileSize,
+    );
     trail.moveTo(p0.dx, p0.dy);
 
     for (int i = 1; i < visitedCount && i < path.length; i++) {
-      final pi = Offset((path[i].x + 0.5) * tileSize, (path[i].y + 0.5) * tileSize);
+      final pi = Offset(
+        (path[i].x + 0.5) * tileSize,
+        (path[i].y + 0.5) * tileSize,
+      );
       trail.lineTo(pi.dx, pi.dy);
     }
     trail.lineTo(currentTip.dx, currentTip.dy);
@@ -246,12 +265,16 @@ class _TutorialTrailPainter extends CustomPainter {
   bool shouldRepaint(covariant _TutorialTrailPainter oldDelegate) => true;
 }
 
-/// Modal Dialog explaining letter usage count with spotlight emphasis
+/// Modal Dialog explaining letter usage count with spotlight emphasis on 1 single letter tile
 class TileCountTutorialModal extends StatelessWidget {
+  final String sampleLetter;
+  final int count;
   final VoidCallback onDismiss;
 
   const TileCountTutorialModal({
     super.key,
+    this.sampleLetter = 'A',
+    this.count = 2,
     required this.onDismiss,
   });
 
@@ -259,145 +282,251 @@ class TileCountTutorialModal extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        // Semi-transparent dark backdrop
-        Positioned.fill(
-          child: Container(
-            color: Colors.black.withValues(alpha: 0.55),
-          ).animate().fadeIn(duration: 250.ms),
-        ),
-
-        // Modal Content
-        Center(
-          child: Container(
-            margin: EdgeInsets.symmetric(horizontal: 28.w),
-            padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 24.h),
-            decoration: BoxDecoration(
-              color: AppColors.cardWhite,
-              borderRadius: BorderRadius.circular(28.r),
-              border: Border.all(color: AppColors.borderSubtle, width: 2.0),
-              boxShadow: const [
-                BoxShadow(
-                  color: Color(0xFFD4C2AE),
-                  offset: Offset(0, 4.0),
-                  blurRadius: 0,
-                ),
-              ],
-            ),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                // Top Number Badge
-                Container(
-                  width: 56.r,
-                  height: 56.r,
-                  decoration: BoxDecoration(
-                    color: AppColors.cardPeachLight,
-                    shape: BoxShape.circle,
-                    border: Border.all(color: AppColors.borderSubtle, width: 2.0),
+        Positioned(
+          top: 175.h,
+          left: 20.w,
+          right: 20.w,
+          child:
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(26.r),
+                  border: Border.all(
+                    color: GoldenWoodColors.woodBevel,
+                    width: 2.8,
                   ),
-                  child: Center(
-                    child: Container(
-                      width: 32.r,
-                      height: 32.r,
-                      decoration: const BoxDecoration(
-                        color: Color(0xFFE11D48),
-                        shape: BoxShape.circle,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Color(0x66E11D48),
-                            blurRadius: 6,
-                            spreadRadius: 1,
-                          ),
-                        ],
-                      ),
-                      child: Center(
-                        child: Text(
-                          '2',
-                          style: GoogleFonts.fredoka(
-                            fontSize: 18.sp,
-                            fontWeight: FontWeight.w900,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: GoldenWoodColors.woodExtrusion,
+                      offset: Offset(0, 6.0),
+                      blurRadius: 0,
                     ),
-                  ),
+                    BoxShadow(
+                      color: Color(0x66000000),
+                      offset: Offset(0, 10),
+                      blurRadius: 20,
+                      spreadRadius: 2,
+                    ),
+                  ],  
                 ),
-                SizedBox(height: 16.h),
-
-                // Explanation Text
-                RichText(
-                  textAlign: TextAlign.center,
-                  text: TextSpan(
-                    style: GoogleFonts.fredoka(
-                      fontSize: 16.sp,
-                      fontWeight: FontWeight.w600,
-                      color: AppColors.textDark,
-                      height: 1.4,
-                    ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(23.r),
+                  child: Stack(
                     children: [
-                      const TextSpan(text: 'This '),
-                      const TextSpan(
-                        text: 'number',
-                        style: TextStyle(
-                          color: Color(0xFFE11D48),
-                          fontWeight: FontWeight.w900,
+                      // 1. Outer Golden Wood Plank Background
+                      Positioned.fill(
+                        child: Container(
+                          decoration: const BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                GoldenWoodColors.woodHighlight,
+                                GoldenWoodColors.woodTop,
+                                GoldenWoodColors.woodMid,
+                                GoldenWoodColors.woodDark,
+                              ],
+                            ),
+                          ),
                         ),
                       ),
-                      const TextSpan(text: ' shows\neach letter\'s usage count.'),
+
+                      // 2. Real Golden Wood Grain Texture
+                      Positioned.fill(
+                        child: Opacity(
+                          opacity: 0.38,
+                          child: Image.asset(
+                            'assets/images/golden_wood_texture.webp',
+                            fit: BoxFit.cover,
+                            errorBuilder: (context, error, stackTrace) =>
+                                const SizedBox.shrink(),
+                          ),
+                        ),
+                      ),
+
+                      // 3. Inner Dark Carved Inset Panel
+                      Padding(
+                        padding: EdgeInsets.all(10.r),
+                        child: Container(
+                          padding: EdgeInsets.symmetric(
+                            horizontal: 20.w,
+                            vertical: 18.h,
+                          ),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(18.r),
+                            border: Border.all(
+                              color: GoldenWoodColors.grooveBorder,
+                              width: 1.8,
+                            ),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: Color(0x55000000),
+                                offset: Offset(0, 2.5),
+                                blurRadius: 3,
+                              ),
+                            ],
+                          ),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(16.r),
+                            child: Stack(
+                              children: [
+                                // Dark Roasted Inset Face
+                                Positioned.fill(
+                                  child: Container(
+                                    decoration: const BoxDecoration(
+                                      gradient: LinearGradient(
+                                        begin: Alignment.topCenter,
+                                        end: Alignment.bottomCenter,
+                                        colors: [
+                                          Color(0xFF421C05),
+                                          Color(0xFF2E1202),
+                                          Color(0xFF1F0900),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+
+                                // Real Wood Grain on Inset
+                                Positioned.fill(
+                                  child: Opacity(
+                                    opacity: 0.32,
+                                    child: Image.asset(
+                                      'assets/images/golden_wood_texture.webp',
+                                      fit: BoxFit.cover,
+                                      errorBuilder: (
+                                        context,
+                                        error,
+                                        stackTrace,
+                                      ) => const SizedBox.shrink(),
+                                    ),
+                                  ),
+                                ),
+
+                                // Content Column
+                                Padding(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 8.w,
+                                    vertical: 6.h,
+                                  ),
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      // Header Title Badge
+                                      Container(
+                                        padding: EdgeInsets.symmetric(
+                                          horizontal: 16.w,
+                                          vertical: 4.h,
+                                        ),
+                                        decoration: BoxDecoration(
+                                          color: GoldenWoodColors.woodTop,
+                                          borderRadius: BorderRadius.circular(
+                                            12.r,
+                                          ),
+                                          border: Border.all(
+                                            color: GoldenWoodColors.woodBevel,
+                                            width: 1.5,
+                                          ),
+                                          boxShadow: const [
+                                            BoxShadow(
+                                              color: GoldenWoodColors
+                                                  .woodExtrusion,
+                                              offset: Offset(0, 2.0),
+                                            ),
+                                          ],
+                                        ),
+                                        child: Text(
+                                          'HOW TO PLAY',
+                                          style: GoogleFonts.fredoka(
+                                            fontSize: 13.sp,
+                                            fontWeight: FontWeight.w900,
+                                            color: Colors.white,
+                                            letterSpacing: 1.5,
+                                            shadows: const [
+                                              Shadow(
+                                                color: Color(0xFF260C00),
+                                                offset: Offset(0, 1.5),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                      SizedBox(height: 16.h),
+
+                                      // Authentic 3D Wooden Tile Preview with Count Badge
+                                      WoodenTile(
+                                        letter: sampleLetter,
+                                        count: count,
+                                        state: WoodenTileState.normal,
+                                        size: 68.r,
+                                      ),
+                                      SizedBox(height: 16.h),
+
+                                      // Explanation Text
+                                      RichText(
+                                        textAlign: TextAlign.center,
+                                        text: TextSpan(
+                                          style: GoogleFonts.fredoka(
+                                            fontSize: 16.sp,
+                                            fontWeight: FontWeight.w700,
+                                            color: Colors.white,
+                                            height: 1.35,
+                                            shadows: const [
+                                              Shadow(
+                                                color: Color(0xFF1F0900),
+                                                offset: Offset(0, 1.5),
+                                                blurRadius: 1,
+                                              ),
+                                            ],
+                                          ),
+                                          children: [
+                                            const TextSpan(text: 'This '),
+                                            const TextSpan(
+                                              text: 'number',
+                                              style: TextStyle(
+                                                color: Color(0xFFFFBA52),
+                                                fontWeight: FontWeight.w900,
+                                              ),
+                                            ),
+                                            const TextSpan(
+                                              text: ' shows how many times\nthis letter can be used!',
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                      SizedBox(height: 8.h),
+
+                                      // "Got it!" Wooden Plank Action Button
+                                      WoodenButton(
+                                        text: 'GOT IT!',
+                                        variant: WoodenButtonVariant.action,
+                                        textColor: Colors.white,
+                                        width: 190.w,
+                                        height: 52.h,
+                                        fontSize: 20.sp,
+                                        onTap: () async {
+                                          await GameStorage.setCountTutorialShown(
+                                            true,
+                                          );
+                                          onDismiss();
+                                        },
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                 ),
-                SizedBox(height: 22.h),
-
-                // "Got it!" Woodcraft CTA Button
-                InkWell(
-                  onTap: () async {
-                    await GameStorage.setCountTutorialShown(true);
-                    onDismiss();
-                  },
-                  borderRadius: BorderRadius.circular(18.r),
-                  child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 40.w, vertical: 13.h),
-                    decoration: BoxDecoration(
-                      gradient: const LinearGradient(
-                        colors: [Color(0xFFCA9370), AppColors.btnFaceBrown],
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                      ),
-                      borderRadius: BorderRadius.circular(18.r),
-                      border: Border.all(color: AppColors.btnBorderBrown, width: 1.8),
-                      boxShadow: const [
-                        BoxShadow(
-                          color: AppColors.btnShadowBrown,
-                          offset: Offset(0, 2.5),
-                          blurRadius: 0,
-                        ),
-                      ],
-                    ),
-                    child: Text(
-                      'Got it!',
-                      style: GoogleFonts.fredoka(
-                        fontSize: 16.sp,
-                        fontWeight: FontWeight.w900,
-                        color: Colors.white,
-                        letterSpacing: 1.0,
-                        shadows: const [
-                          Shadow(
-                            color: AppColors.btnShadowBrown,
-                            offset: Offset(0, 1.5),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          )
-              .animate()
-              .scale(begin: const Offset(0.7, 0.7), end: const Offset(1.0, 1.0), duration: 350.ms, curve: Curves.easeOutBack)
-              .fadeIn(duration: 250.ms),
+              ).animate().scale(
+                duration: 250.ms,
+                curve: Curves.easeOutBack,
+                begin: const Offset(0.85, 0.85),
+                end: const Offset(1.0, 1.0),
+              ),
         ),
       ],
     );

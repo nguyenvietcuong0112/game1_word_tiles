@@ -1,219 +1,90 @@
 {
   "id": 1844,
-  "width": 5,
-  "height": 4,
+  "width": 3,
+  "height": 3,
   "target_words": [
     {
-      "word": "ADS",
+      "word": "ASH",
       "type": 0
     },
     {
-      "word": "AGE",
+      "word": "EAT",
       "type": 0
     },
     {
-      "word": "ARM",
+      "word": "EYE",
       "type": 0
     },
     {
-      "word": "FEW",
+      "word": "SAT",
       "type": 0
     },
     {
-      "word": "JAR",
+      "word": "SHY",
       "type": 0
     },
     {
-      "word": "RAG",
+      "word": "YET",
       "type": 0
     },
     {
-      "word": "RAW",
+      "word": "ASHY",
+      "type": 2
+    },
+    {
+      "word": "EAST",
       "type": 0
     },
     {
-      "word": "REF",
+      "word": "EASY",
       "type": 0
     },
     {
-      "word": "WAR",
+      "word": "TASTE",
       "type": 0
     },
     {
-      "word": "DRAW",
+      "word": "TASTY",
       "type": 0
     },
     {
-      "word": "FELT",
-      "type": 0
-    },
-    {
-      "word": "MESS",
+      "word": "YEAST",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ARS",
+      "word": "THY",
       "type": 0
     },
     {
-      "word": "AWE",
-      "type": 0
-    },
-    {
-      "word": "DAG",
-      "type": 0
-    },
-    {
-      "word": "EFS",
-      "type": 0
-    },
-    {
-      "word": "ERS",
-      "type": 0
-    },
-    {
-      "word": "ESS",
-      "type": 0
-    },
-    {
-      "word": "EWE",
-      "type": 0
-    },
-    {
-      "word": "FER",
-      "type": 0
-    },
-    {
-      "word": "GAD",
-      "type": 0
-    },
-    {
-      "word": "GAR",
-      "type": 0
-    },
-    {
-      "word": "GEL",
-      "type": 0
-    },
-    {
-      "word": "JAG",
-      "type": 0
-    },
-    {
-      "word": "LEG",
-      "type": 0
-    },
-    {
-      "word": "RAD",
-      "type": 0
-    },
-    {
-      "word": "RAJ",
-      "type": 0
-    },
-    {
-      "word": "WAG",
-      "type": 0
-    },
-    {
-      "word": "DAGS",
-      "type": 0
-    },
-    {
-      "word": "DRAG",
-      "type": 0
-    },
-    {
-      "word": "EWER",
-      "type": 0
-    },
-    {
-      "word": "GADS",
-      "type": 0
-    },
-    {
-      "word": "GARS",
-      "type": 0
-    },
-    {
-      "word": "GELT",
-      "type": 0
-    },
-    {
-      "word": "JAGS",
-      "type": 0
-    },
-    {
-      "word": "JARS",
-      "type": 0
-    },
-    {
-      "word": "RADS",
-      "type": 0
-    },
-    {
-      "word": "RAGE",
-      "type": 0
-    },
-    {
-      "word": "RAGS",
-      "type": 0
-    },
-    {
-      "word": "REFS",
-      "type": 0
-    },
-    {
-      "word": "TREF",
-      "type": 0
-    },
-    {
-      "word": "WAGE",
-      "type": 0
-    },
-    {
-      "word": "WARD",
-      "type": 0
-    },
-    {
-      "word": "WELT",
-      "type": 0
-    },
-    {
-      "word": "WERT",
-      "type": 0
-    },
-    {
-      "word": "EWERS",
-      "type": 0
-    },
-    {
-      "word": "RAWER",
-      "type": 0
-    },
-    {
-      "word": "WARDS",
-      "type": 0
-    },
-    {
-      "word": "DRAWER",
-      "type": 0
-    },
-    {
-      "word": "REWARD",
-      "type": 0
-    },
-    {
-      "word": "DRAWERS",
-      "type": 0
-    },
-    {
-      "word": "REWARDS",
+      "word": "YEASTY",
       "type": 0
     }
   ],
-  "letters": "TRSSE,LEFGM,EWJAR,GARDS",
-  "obstacles": []
+  "letters": "THY,AST,EYE",
+  "obstacles": [
+    {
+      "required_words": 6,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 9,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 2,
+          "y": 2
+        }
+      ]
+    }
+  ]
 }

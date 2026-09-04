@@ -1,123 +1,90 @@
 {
   "id": 1983,
-  "width": 5,
-  "height": 4,
+  "width": 3,
+  "height": 3,
   "target_words": [
     {
-      "word": "CUR",
+      "word": "AGE",
       "type": 0
     },
     {
-      "word": "DEE",
+      "word": "ATE",
       "type": 0
     },
     {
-      "word": "DOT",
+      "word": "GET",
       "type": 0
     },
     {
-      "word": "ODD",
+      "word": "HAT",
       "type": 0
     },
     {
-      "word": "PEE",
+      "word": "LAG",
       "type": 0
     },
     {
-      "word": "PRO",
+      "word": "TAG",
       "type": 0
     },
     {
-      "word": "ROC",
+      "word": "TEA",
       "type": 0
     },
     {
-      "word": "TOT",
+      "word": "GATE",
       "type": 0
     },
     {
-      "word": "NEED",
+      "word": "HATE",
       "type": 0
     },
     {
-      "word": "CORPS",
+      "word": "LATE",
       "type": 0
     },
     {
-      "word": "CENSUS",
+      "word": "ALPHA",
       "type": 0
     },
     {
-      "word": "SUCCEED",
+      "word": "PLATE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "CEE",
+      "word": "LAT",
       "type": 0
     },
     {
-      "word": "COR",
-      "type": 0
-    },
-    {
-      "word": "ENS",
-      "type": 0
-    },
-    {
-      "word": "NEE",
-      "type": 0
-    },
-    {
-      "word": "PED",
-      "type": 0
-    },
-    {
-      "word": "TOD",
-      "type": 0
-    },
-    {
-      "word": "CUSP",
-      "type": 0
-    },
-    {
-      "word": "DOTS",
-      "type": 0
-    },
-    {
-      "word": "EDDO",
-      "type": 0
-    },
-    {
-      "word": "NEEP",
-      "type": 0
-    },
-    {
-      "word": "PEEN",
-      "type": 0
-    },
-    {
-      "word": "RUST",
-      "type": 0
-    },
-    {
-      "word": "TOTS",
-      "type": 0
-    },
-    {
-      "word": "PEENS",
-      "type": 0
-    },
-    {
-      "word": "USURP",
-      "type": 0
-    },
-    {
-      "word": "USURPS",
-      "type": 0
+      "word": "PLAT",
+      "type": 1
     }
   ],
-  "letters": "PSUCC,RUSNE,OCTPE,CTODD",
-  "obstacles": []
+  "letters": "HAA,PTE,LAG",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 2,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "required_words": 9,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

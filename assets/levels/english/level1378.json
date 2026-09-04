@@ -1,79 +1,102 @@
 {
   "id": 1378,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ANA",
+      "word": "AIR",
       "type": 0
     },
     {
-      "word": "CAN",
+      "word": "FIG",
       "type": 0
     },
     {
-      "word": "CAT",
+      "word": "FOG",
       "type": 0
     },
     {
-      "word": "JOY",
+      "word": "FOR",
       "type": 0
     },
     {
-      "word": "SIT",
+      "word": "OFF",
       "type": 0
     },
     {
-      "word": "TAN",
+      "word": "FAIR",
       "type": 0
     },
     {
-      "word": "SCAN",
+      "word": "FIRM",
       "type": 0
     },
     {
-      "word": "SCAT",
+      "word": "FORM",
       "type": 0
     },
     {
-      "word": "CHORDS",
+      "word": "ROAD",
+      "type": 0
+    },
+    {
+      "word": "AFFIRM",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ORC",
+      "word": "FAD",
       "type": 0
     },
     {
-      "word": "THO",
-      "type": 0
+      "word": "GOAD",
+      "type": 1
     },
     {
-      "word": "TIS",
-      "type": 0
-    },
-    {
-      "word": "ORCA",
-      "type": 0
-    },
-    {
-      "word": "ORCS",
-      "type": 0
-    },
-    {
-      "word": "TACH",
-      "type": 0
-    },
-    {
-      "word": "CHORD",
-      "type": 0
-    },
-    {
-      "word": "NACHO",
-      "type": 0
+      "word": "RIFF",
+      "type": 2
     }
   ],
-  "letters": "OJNA,YCAT,ISCH,TDRO",
-  "obstacles": []
+  "letters": "FIRM,FAOG,ODFI",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

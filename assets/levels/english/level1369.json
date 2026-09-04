@@ -1,107 +1,102 @@
 {
   "id": 1369,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "CAP",
+      "word": "BEE",
       "type": 0
     },
     {
-      "word": "CHI",
+      "word": "EGO",
       "type": 0
     },
     {
-      "word": "LIE",
+      "word": "LOG",
       "type": 0
     },
     {
-      "word": "PHI",
+      "word": "ROB",
       "type": 0
     },
     {
-      "word": "PIE",
+      "word": "ROE",
       "type": 0
     },
     {
-      "word": "THE",
+      "word": "BEER",
       "type": 0
     },
     {
-      "word": "THY",
+      "word": "BLOG",
       "type": 0
     },
     {
-      "word": "LIFE",
+      "word": "LOCK",
       "type": 0
     },
     {
-      "word": "HAPPILY",
+      "word": "ROBE",
+      "type": 0
+    },
+    {
+      "word": "BLOCK",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ETH",
+      "word": "BLOC",
       "type": 0
     },
     {
-      "word": "FEH",
+      "word": "COG",
       "type": 0
     },
     {
-      "word": "FIL",
-      "type": 0
-    },
-    {
-      "word": "HAP",
-      "type": 0
-    },
-    {
-      "word": "LIP",
-      "type": 0
-    },
-    {
-      "word": "PAC",
-      "type": 0
-    },
-    {
-      "word": "PAH",
-      "type": 0
-    },
-    {
-      "word": "PLY",
-      "type": 0
-    },
-    {
-      "word": "ACHY",
-      "type": 0
-    },
-    {
-      "word": "CAPH",
-      "type": 0
-    },
-    {
-      "word": "PILY",
-      "type": 0
-    },
-    {
-      "word": "PLIE",
-      "type": 0
-    },
-    {
-      "word": "ETHYL",
-      "type": 0
-    },
-    {
-      "word": "FILCH",
-      "type": 0
-    },
-    {
-      "word": "HAPLY",
+      "word": "COL",
       "type": 0
     }
   ],
-  "letters": "ETHE,ILYF,PPHI,HACL",
-  "obstacles": []
+  "letters": "EEER,OBGK,RLOC",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

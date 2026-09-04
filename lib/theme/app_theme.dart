@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppColors {
-  // 1. Backgrounds (Warm Sandalwood & Rich Linen Canvas with High Contrast)
-  static const Color bgCanvas = Color(0xFFEADBCE);
-  static const Color bgCanvasSecondary = Color(0xFFDECBB8);
-  static const Color bgSkyGradientStart = Color(0xFFEDE0D1);
-  static const Color bgSkyGradientEnd = Color(0xFFDAC7B2);
-  static const Color cardPeach = Color(0xFFF5EBE1);
-  static const Color cardPeachLight = Color(0xFFFCF7F0);
+  // 1. Backgrounds (Warm Cream / Clean Wood Canvas)
+  static const Color bgCanvas = Color(0xFFFFF9F0);
+  static const Color bgCanvasSecondary = Color(0xFFFAF2E6);
+  static const Color bgSkyGradientStart = Color(0xFFFFF9F0);
+  static const Color bgSkyGradientEnd = Color(0xFFF3E8DA);
+  static const Color cardPeach = Color(0xFFF8E7D5);
+  static const Color cardPeachLight = Color(0xFFFDF4EA);
   static const Color cardWhite = Color(0xFFFFFFFF);
 
-  // 2. Outlines & Borders (Warm Wood Grain & Cocoa Borders)
-  static const Color borderDark = Color(0xFFB89B7E);
-  static const Color borderSubtle = Color(0xFFD9C6B0);
-  static const Color borderSelected = Color(0xFF854B26);
+  // 2. Outlines & Borders (Clean Warm Birch Wood Borders)
+  static const Color borderDark = Color(0xFF5C2E14);
+  static const Color borderSubtle = Color(0xFFD6C8B8);
+  static const Color borderSelected = Color(0xFFA66640);
 
   // 3. Primary Accents - Rich Roasted Cocoa Caramel (Punchy, High Contrast Action Color)
   static const Color terracotta = Color(0xFFA66640); // Rich Roasted Cocoa Face

@@ -1,267 +1,110 @@
 {
   "id": 1935,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "BIS",
+      "word": "BAD",
       "type": 0
     },
     {
-      "word": "GET",
+      "word": "BED",
       "type": 0
     },
     {
-      "word": "PRO",
+      "word": "BUS",
       "type": 0
     },
     {
-      "word": "REG",
+      "word": "ODE",
       "type": 0
     },
     {
-      "word": "RES",
+      "word": "SAD",
       "type": 0
     },
     {
-      "word": "SER",
+      "word": "WAY",
       "type": 0
     },
     {
-      "word": "SIR",
+      "word": "BUSY",
       "type": 0
     },
     {
-      "word": "GORE",
+      "word": "EASY",
       "type": 0
     },
     {
-      "word": "REST",
+      "word": "SWAY",
       "type": 0
     },
     {
-      "word": "RISE",
-      "type": 0
-    },
-    {
-      "word": "RESIST",
-      "type": 0
-    },
-    {
-      "word": "SURGERY",
+      "word": "SUBWAY",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ERR",
+      "word": "ABED",
+      "type": 1
+    },
+    {
+      "word": "AYE",
       "type": 0
     },
     {
-      "word": "ERS",
+      "word": "BADE",
       "type": 0
     },
     {
-      "word": "GOR",
+      "word": "DAB",
       "type": 0
     },
     {
-      "word": "GOY",
-      "type": 0
-    },
-    {
-      "word": "IRE",
-      "type": 0
-    },
-    {
-      "word": "ORE",
-      "type": 0
-    },
-    {
-      "word": "RET",
-      "type": 0
-    },
-    {
-      "word": "RIB",
-      "type": 0
-    },
-    {
-      "word": "SIB",
-      "type": 0
-    },
-    {
-      "word": "SIS",
-      "type": 0
-    },
-    {
-      "word": "TEG",
-      "type": 0
-    },
-    {
-      "word": "BISE",
-      "type": 0
-    },
-    {
-      "word": "ERRS",
-      "type": 0
-    },
-    {
-      "word": "ERST",
-      "type": 0
-    },
-    {
-      "word": "GORP",
-      "type": 0
-    },
-    {
-      "word": "IBIS",
-      "type": 0
-    },
-    {
-      "word": "IRES",
-      "type": 0
-    },
-    {
-      "word": "ORES",
-      "type": 0
-    },
-    {
-      "word": "PROG",
-      "type": 0
-    },
-    {
-      "word": "REGS",
-      "type": 0
-    },
-    {
-      "word": "RUST",
-      "type": 0
-    },
-    {
-      "word": "SIRE",
-      "type": 0
-    },
-    {
-      "word": "TEGS",
-      "type": 0
-    },
-    {
-      "word": "TYRE",
-      "type": 0
-    },
-    {
-      "word": "URGE",
-      "type": 0
-    },
-    {
-      "word": "YORE",
-      "type": 0
-    },
-    {
-      "word": "BISES",
-      "type": 0
-    },
-    {
-      "word": "ERSES",
-      "type": 0
-    },
-    {
-      "word": "GORES",
-      "type": 0
-    },
-    {
-      "word": "PREST",
-      "type": 0
-    },
-    {
-      "word": "PRISE",
-      "type": 0
-    },
-    {
-      "word": "RESTS",
-      "type": 0
-    },
-    {
-      "word": "RISER",
-      "type": 0
-    },
-    {
-      "word": "RISES",
-      "type": 0
-    },
-    {
-      "word": "RUSTS",
-      "type": 0
-    },
-    {
-      "word": "SERRY",
-      "type": 0
-    },
-    {
-      "word": "SIRES",
-      "type": 0
-    },
-    {
-      "word": "SISES",
-      "type": 0
-    },
-    {
-      "word": "SURGE",
-      "type": 0
-    },
-    {
-      "word": "TERSE",
-      "type": 0
-    },
-    {
-      "word": "URGER",
-      "type": 0
-    },
-    {
-      "word": "YORES",
-      "type": 0
-    },
-    {
-      "word": "ESTRUS",
-      "type": 0
-    },
-    {
-      "word": "IBISES",
-      "type": 0
-    },
-    {
-      "word": "PRESTS",
-      "type": 0
-    },
-    {
-      "word": "PRISES",
-      "type": 0
-    },
-    {
-      "word": "SURGER",
-      "type": 0
-    },
-    {
-      "word": "TERSER",
-      "type": 0
-    },
-    {
-      "word": "URGERS",
-      "type": 0
-    },
-    {
-      "word": "RESISTS",
-      "type": 0
-    },
-    {
-      "word": "SURGERS",
-      "type": 0
-    },
-    {
-      "word": "TERSEST",
+      "word": "WAYS",
       "type": 0
     }
   ],
-  "letters": "URGET,STSRY,ISERO,BIRPG",
-  "obstacles": []
+  "letters": "AYEO,WSAD,BUBE",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

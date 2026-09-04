@@ -1,247 +1,90 @@
 {
   "id": 1995,
-  "width": 5,
-  "height": 4,
+  "width": 3,
+  "height": 3,
   "target_words": [
     {
-      "word": "ALL",
+      "word": "AND",
       "type": 0
     },
     {
-      "word": "ARE",
+      "word": "ANT",
       "type": 0
     },
     {
-      "word": "BAR",
+      "word": "FAN",
       "type": 0
     },
     {
-      "word": "LAB",
+      "word": "FAR",
       "type": 0
     },
     {
-      "word": "RAG",
+      "word": "MAT",
       "type": 0
     },
     {
-      "word": "RED",
+      "word": "MOD",
       "type": 0
     },
     {
-      "word": "BALL",
+      "word": "RAN",
       "type": 0
     },
     {
-      "word": "BANG",
+      "word": "RAFT",
+      "type": 2
+    },
+    {
+      "word": "RANT",
       "type": 0
     },
     {
-      "word": "BRAD",
+      "word": "DRAFT",
       "type": 0
     },
     {
-      "word": "RARE",
-      "type": 0
+      "word": "FANDOM",
+      "type": 2
     },
     {
-      "word": "CHANGE",
-      "type": 0
-    },
-    {
-      "word": "BARRIER",
-      "type": 0
-    },
-    {
-      "word": "CHANGED",
-      "type": 0
+      "word": "RANDOM",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "ARB",
+      "word": "AFT",
       "type": 0
     },
     {
-      "word": "ARC",
-      "type": 0
-    },
-    {
-      "word": "BAH",
-      "type": 0
-    },
-    {
-      "word": "BAL",
-      "type": 0
-    },
-    {
-      "word": "BAN",
-      "type": 0
-    },
-    {
-      "word": "BRA",
-      "type": 0
-    },
-    {
-      "word": "DAG",
-      "type": 0
-    },
-    {
-      "word": "ERA",
-      "type": 0
-    },
-    {
-      "word": "ERR",
-      "type": 0
-    },
-    {
-      "word": "GAD",
-      "type": 0
-    },
-    {
-      "word": "GAR",
-      "type": 0
-    },
-    {
-      "word": "GED",
-      "type": 0
-    },
-    {
-      "word": "LAR",
-      "type": 0
-    },
-    {
-      "word": "NAB",
-      "type": 0
-    },
-    {
-      "word": "NAH",
-      "type": 0
-    },
-    {
-      "word": "RAD",
-      "type": 0
-    },
-    {
-      "word": "REG",
-      "type": 0
-    },
-    {
-      "word": "REI",
-      "type": 0
-    },
-    {
-      "word": "ABRI",
-      "type": 0
-    },
-    {
-      "word": "ALGA",
-      "type": 0
-    },
-    {
-      "word": "ARCH",
-      "type": 0
-    },
-    {
-      "word": "BARE",
-      "type": 0
-    },
-    {
-      "word": "BRAG",
-      "type": 0
-    },
-    {
-      "word": "BRED",
-      "type": 0
-    },
-    {
-      "word": "BRIE",
-      "type": 0
-    },
-    {
-      "word": "CRAB",
-      "type": 0
-    },
-    {
-      "word": "DARB",
-      "type": 0
-    },
-    {
-      "word": "DARE",
-      "type": 0
-    },
-    {
-      "word": "GARB",
-      "type": 0
-    },
-    {
-      "word": "HANG",
-      "type": 0
-    },
-    {
-      "word": "ANGER",
-      "type": 0
-    },
-    {
-      "word": "BARER",
-      "type": 0
-    },
-    {
-      "word": "BRIER",
-      "type": 0
-    },
-    {
-      "word": "CHANG",
-      "type": 0
-    },
-    {
-      "word": "GLARE",
-      "type": 0
-    },
-    {
-      "word": "LABRA",
-      "type": 0
-    },
-    {
-      "word": "LARCH",
-      "type": 0
-    },
-    {
-      "word": "REGNA",
-      "type": 0
-    },
-    {
-      "word": "ABRADE",
-      "type": 0
-    },
-    {
-      "word": "AGLARE",
-      "type": 0
-    },
-    {
-      "word": "BANGED",
-      "type": 0
-    },
-    {
-      "word": "BANGER",
-      "type": 0
-    },
-    {
-      "word": "HANGED",
-      "type": 0
-    },
-    {
-      "word": "HANGER",
-      "type": 0
-    },
-    {
-      "word": "BARCHAN",
-      "type": 0
-    },
-    {
-      "word": "CHANGER",
+      "word": "RAND",
       "type": 0
     }
   ],
-  "letters": "NABRI,GHCRE,ERBAR,DAGLL",
-  "obstacles": []
+  "letters": "FTA,ANM,RDO",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 9,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 2,
+          "y": 2
+        }
+      ]
+    }
+  ]
 }

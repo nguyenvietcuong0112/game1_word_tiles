@@ -1,231 +1,122 @@
 {
   "id": 2060,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "AWE",
+      "word": "APE",
       "type": 0
     },
     {
-      "word": "CAT",
+      "word": "BEE",
       "type": 0
     },
     {
-      "word": "MAC",
+      "word": "BIN",
       "type": 0
     },
     {
-      "word": "RIP",
+      "word": "BOY",
       "type": 0
     },
     {
-      "word": "SAW",
+      "word": "CAB",
       "type": 0
     },
     {
-      "word": "WAS",
+      "word": "CAP",
       "type": 0
     },
     {
-      "word": "CAMP",
+      "word": "BEER",
       "type": 0
     },
     {
-      "word": "MATH",
+      "word": "BEET",
       "type": 0
     },
     {
-      "word": "RING",
+      "word": "CAPE",
       "type": 0
     },
     {
-      "word": "TIPS",
+      "word": "OBEY",
       "type": 0
     },
     {
-      "word": "RINGS",
+      "word": "PEER",
       "type": 0
     },
     {
-      "word": "WELCH",
-      "type": 0
-    },
-    {
-      "word": "SPRING",
+      "word": "CABIN",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AMI",
+      "word": "BEY",
       "type": 0
     },
     {
-      "word": "AMP",
+      "word": "BON",
       "type": 0
     },
     {
-      "word": "ASP",
+      "word": "NIB",
       "type": 0
     },
     {
-      "word": "CAM",
+      "word": "PEE",
       "type": 0
     },
     {
-      "word": "IMP",
+      "word": "PRE",
       "type": 0
     },
     {
-      "word": "MAT",
-      "type": 0
-    },
-    {
-      "word": "MIR",
-      "type": 0
-    },
-    {
-      "word": "NIP",
-      "type": 0
-    },
-    {
-      "word": "PIN",
-      "type": 0
-    },
-    {
-      "word": "PIT",
-      "type": 0
-    },
-    {
-      "word": "RIM",
-      "type": 0
-    },
-    {
-      "word": "RIN",
-      "type": 0
-    },
-    {
-      "word": "TAM",
-      "type": 0
-    },
-    {
-      "word": "TIP",
-      "type": 0
-    },
-    {
-      "word": "WAW",
-      "type": 0
-    },
-    {
-      "word": "AMIR",
-      "type": 0
-    },
-    {
-      "word": "CLEW",
-      "type": 0
-    },
-    {
-      "word": "GRIN",
-      "type": 0
-    },
-    {
-      "word": "GRIP",
-      "type": 0
-    },
-    {
-      "word": "IMPI",
-      "type": 0
-    },
-    {
-      "word": "PIMA",
-      "type": 0
-    },
-    {
-      "word": "PIMP",
-      "type": 0
-    },
-    {
-      "word": "PING",
-      "type": 0
-    },
-    {
-      "word": "PITA",
-      "type": 0
-    },
-    {
-      "word": "PITH",
-      "type": 0
-    },
-    {
-      "word": "RIPS",
-      "type": 0
-    },
-    {
-      "word": "SPIT",
-      "type": 0
-    },
-    {
-      "word": "TAMP",
-      "type": 0
-    },
-    {
-      "word": "TIRL",
-      "type": 0
-    },
-    {
-      "word": "WASP",
-      "type": 0
-    },
-    {
-      "word": "WRIT",
-      "type": 0
-    },
-    {
-      "word": "CAMPI",
-      "type": 0
-    },
-    {
-      "word": "PINGS",
-      "type": 0
-    },
-    {
-      "word": "THRIP",
-      "type": 0
-    },
-    {
-      "word": "IMPING",
-      "type": 0
-    },
-    {
-      "word": "RIPSAW",
-      "type": 0
-    },
-    {
-      "word": "THRIPS",
-      "type": 0
-    },
-    {
-      "word": "CAMPING",
-      "type": 0
-    },
-    {
-      "word": "IMPINGS",
-      "type": 0
-    },
-    {
-      "word": "PIMPING",
-      "type": 0
-    },
-    {
-      "word": "TAMPING",
-      "type": 0
-    },
-    {
-      "word": "CAMPINGS",
+      "word": "RET",
       "type": 0
     }
   ],
-  "letters": "CATHC,PMIRL,IRPWE,NGSAW",
-  "obstacles": []
+  "letters": "NOYT,IBEE,CAPR",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 8,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,34 +1,22 @@
 {
   "id": 1091,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ASS",
+      "word": "FUSS",
       "type": 0
     },
     {
-      "word": "MIB",
+      "word": "LIMB",
+      "type": 2
+    },
+    {
+      "word": "LIST",
       "type": 0
     },
     {
-      "word": "SAT",
-      "type": 0
-    },
-    {
-      "word": "SAW",
-      "type": 0
-    },
-    {
-      "word": "SEA",
-      "type": 0
-    },
-    {
-      "word": "SEC",
-      "type": 0
-    },
-    {
-      "word": "WAS",
+      "word": "MILD",
       "type": 0
     },
     {
@@ -36,152 +24,64 @@
       "type": 0
     },
     {
-      "word": "VISA",
-      "type": 0
-    },
-    {
-      "word": "WATCH",
-      "type": 0
-    },
-    {
-      "word": "MISSING",
-      "type": 0
-    }
-  ],
-  "extra_words": [
-    {
-      "word": "BIS",
-      "type": 0
-    },
-    {
-      "word": "EAT",
-      "type": 0
-    },
-    {
-      "word": "MIS",
-      "type": 0
-    },
-    {
-      "word": "SAE",
-      "type": 0
-    },
-    {
-      "word": "SIB",
-      "type": 0
-    },
-    {
-      "word": "SIM",
-      "type": 0
-    },
-    {
-      "word": "SIN",
-      "type": 0
-    },
-    {
-      "word": "TAE",
-      "type": 0
-    },
-    {
-      "word": "TAS",
-      "type": 0
-    },
-    {
-      "word": "TAW",
-      "type": 0
-    },
-    {
-      "word": "VIS",
-      "type": 0
-    },
-    {
-      "word": "WAE",
-      "type": 0
-    },
-    {
-      "word": "WAT",
-      "type": 0
-    },
-    {
-      "word": "EATS",
-      "type": 0
-    },
-    {
       "word": "MIST",
       "type": 0
     },
     {
-      "word": "SAWS",
+      "word": "BLISS",
       "type": 0
     },
     {
-      "word": "SEAS",
+      "word": "FUSSY",
       "type": 0
     },
     {
-      "word": "SEAT",
+      "word": "MISTY",
       "type": 0
     },
     {
-      "word": "SECT",
-      "type": 0
-    },
-    {
-      "word": "SING",
-      "type": 0
-    },
-    {
-      "word": "STAW",
-      "type": 0
-    },
-    {
-      "word": "SWAT",
-      "type": 0
-    },
-    {
-      "word": "TASS",
-      "type": 0
-    },
-    {
-      "word": "TAWS",
-      "type": 0
-    },
-    {
-      "word": "WAES",
-      "type": 0
-    },
-    {
-      "word": "WATS",
-      "type": 0
-    },
-    {
-      "word": "SEATS",
-      "type": 0
-    },
-    {
-      "word": "SECTS",
-      "type": 0
-    },
-    {
-      "word": "SWATS",
-      "type": 0
-    },
-    {
-      "word": "TAWSE",
-      "type": 0
-    },
-    {
-      "word": "EASING",
-      "type": 0
-    },
-    {
-      "word": "SWATCH",
-      "type": 0
-    },
-    {
-      "word": "CEASING",
-      "type": 0
+      "word": "BLISSFUL",
+      "type": 2
     }
   ],
-  "letters": "BVIN,ISSG,MTAW,HCES",
-  "obstacles": []
+  "extra_words": [
+    {
+      "word": "LILT",
+      "type": 1
+    },
+    {
+      "word": "LUST",
+      "type": 0
+    },
+    {
+      "word": "LUSTY",
+      "type": 0
+    },
+    {
+      "word": "MISSY",
+      "type": 0
+    },
+    {
+      "word": "SILT",
+      "type": 1
+    }
+  ],
+  "letters": "BLTY,MISS,DLUF",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

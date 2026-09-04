@@ -1,199 +1,106 @@
 {
   "id": 1334,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ART",
+      "word": "EAR",
       "type": 0
     },
     {
-      "word": "ASP",
+      "word": "EYE",
       "type": 0
     },
     {
-      "word": "ASS",
+      "word": "RYE",
       "type": 0
     },
     {
-      "word": "HAS",
+      "word": "SEA",
       "type": 0
     },
     {
-      "word": "INS",
+      "word": "YES",
       "type": 0
     },
     {
-      "word": "ITS",
+      "word": "PREY",
       "type": 0
     },
     {
-      "word": "SPA",
+      "word": "REAL",
       "type": 0
     },
     {
-      "word": "ARTS",
+      "word": "REAR",
       "type": 0
     },
     {
-      "word": "PASS",
+      "word": "SEAL",
       "type": 0
     },
     {
-      "word": "PAST",
-      "type": 0
-    },
-    {
-      "word": "TRAIN",
+      "word": "MERRY",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AIN",
+      "word": "EYES",
       "type": 0
     },
     {
-      "word": "AIT",
+      "word": "MERE",
       "type": 0
     },
     {
-      "word": "APT",
+      "word": "PRE",
       "type": 0
     },
     {
-      "word": "NIT",
-      "type": 0
-    },
-    {
-      "word": "PAP",
-      "type": 0
-    },
-    {
-      "word": "PAS",
-      "type": 0
-    },
-    {
-      "word": "RAH",
-      "type": 0
-    },
-    {
-      "word": "RAS",
-      "type": 0
-    },
-    {
-      "word": "SAP",
-      "type": 0
-    },
-    {
-      "word": "SHA",
-      "type": 0
-    },
-    {
-      "word": "TIN",
-      "type": 0
-    },
-    {
-      "word": "AINS",
-      "type": 0
-    },
-    {
-      "word": "AITS",
-      "type": 0
-    },
-    {
-      "word": "ASPS",
-      "type": 0
-    },
-    {
-      "word": "HART",
-      "type": 0
-    },
-    {
-      "word": "HAST",
-      "type": 0
-    },
-    {
-      "word": "NITS",
-      "type": 0
-    },
-    {
-      "word": "PAPA",
-      "type": 0
-    },
-    {
-      "word": "PAPS",
-      "type": 0
-    },
-    {
-      "word": "RAIN",
-      "type": 0
-    },
-    {
-      "word": "SAPS",
-      "type": 0
-    },
-    {
-      "word": "SASS",
-      "type": 0
-    },
-    {
-      "word": "SNIT",
-      "type": 0
-    },
-    {
-      "word": "SPAS",
-      "type": 0
-    },
-    {
-      "word": "TINS",
-      "type": 0
-    },
-    {
-      "word": "TSAR",
-      "type": 0
-    },
-    {
-      "word": "HARTS",
-      "type": 0
-    },
-    {
-      "word": "PAPAS",
-      "type": 0
-    },
-    {
-      "word": "RAINS",
-      "type": 0
-    },
-    {
-      "word": "SNITS",
-      "type": 0
-    },
-    {
-      "word": "TIARA",
-      "type": 0
-    },
-    {
-      "word": "TRASS",
-      "type": 0
-    },
-    {
-      "word": "STRAIN",
-      "type": 0
-    },
-    {
-      "word": "TIARAS",
-      "type": 0
-    },
-    {
-      "word": "TRAINS",
-      "type": 0
-    },
-    {
-      "word": "STRAINS",
+      "word": "PRES",
       "type": 0
     }
   ],
-  "letters": "SPSA,NPAP,ITSS,ARAH",
-  "obstacles": []
+  "letters": "ARYE,EREA,MPSL",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

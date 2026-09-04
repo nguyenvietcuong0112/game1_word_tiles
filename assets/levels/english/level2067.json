@@ -1,227 +1,98 @@
 {
   "id": 2067,
-  "width": 5,
-  "height": 4,
+  "width": 3,
+  "height": 3,
   "target_words": [
     {
-      "word": "ACT",
+      "word": "ERA",
       "type": 0
     },
     {
-      "word": "DIG",
+      "word": "JAM",
       "type": 0
     },
     {
-      "word": "HAD",
+      "word": "JAR",
       "type": 0
     },
     {
-      "word": "ITS",
+      "word": "MAN",
       "type": 0
     },
     {
-      "word": "SPY",
+      "word": "ORE",
+      "type": 2
+    },
+    {
+      "word": "RAM",
       "type": 0
     },
     {
-      "word": "ACTS",
+      "word": "RAN",
       "type": 0
     },
     {
-      "word": "GAIN",
+      "word": "AREA",
       "type": 0
     },
     {
-      "word": "SIGN",
+      "word": "MANE",
+      "type": 2
+    },
+    {
+      "word": "MARE",
       "type": 0
     },
     {
-      "word": "AGAIN",
+      "word": "ARENA",
       "type": 0
     },
     {
-      "word": "ACADEMY",
+      "word": "MAJOR",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ACE",
+      "word": "AERO",
       "type": 0
     },
     {
-      "word": "AGA",
+      "word": "ARE",
       "type": 0
     },
     {
-      "word": "AHA",
+      "word": "MARA",
       "type": 0
     },
     {
-      "word": "AIN",
-      "type": 0
-    },
-    {
-      "word": "AIT",
-      "type": 0
-    },
-    {
-      "word": "CAD",
-      "type": 0
-    },
-    {
-      "word": "DAG",
-      "type": 0
-    },
-    {
-      "word": "DAH",
-      "type": 0
-    },
-    {
-      "word": "DIS",
-      "type": 0
-    },
-    {
-      "word": "GAD",
-      "type": 0
-    },
-    {
-      "word": "GID",
-      "type": 0
-    },
-    {
-      "word": "HAG",
-      "type": 0
-    },
-    {
-      "word": "INS",
-      "type": 0
-    },
-    {
-      "word": "MED",
-      "type": 0
-    },
-    {
-      "word": "NIT",
-      "type": 0
-    },
-    {
-      "word": "PSI",
-      "type": 0
-    },
-    {
-      "word": "STY",
-      "type": 0
-    },
-    {
-      "word": "TIN",
-      "type": 0
-    },
-    {
-      "word": "TIT",
-      "type": 0
-    },
-    {
-      "word": "ACED",
-      "type": 0
-    },
-    {
-      "word": "AINS",
-      "type": 0
-    },
-    {
-      "word": "AITS",
-      "type": 0
-    },
-    {
-      "word": "CADE",
-      "type": 0
-    },
-    {
-      "word": "CAIN",
-      "type": 0
-    },
-    {
-      "word": "DACE",
-      "type": 0
-    },
-    {
-      "word": "DEMY",
-      "type": 0
-    },
-    {
-      "word": "GADI",
-      "type": 0
-    },
-    {
-      "word": "GAIT",
-      "type": 0
-    },
-    {
-      "word": "HADE",
-      "type": 0
-    },
-    {
-      "word": "NITS",
-      "type": 0
-    },
-    {
-      "word": "SNIT",
-      "type": 0
-    },
-    {
-      "word": "TING",
-      "type": 0
-    },
-    {
-      "word": "TINS",
-      "type": 0
-    },
-    {
-      "word": "TINY",
-      "type": 0
-    },
-    {
-      "word": "ACTIN",
-      "type": 0
-    },
-    {
-      "word": "CAINS",
-      "type": 0
-    },
-    {
-      "word": "GADIS",
-      "type": 0
-    },
-    {
-      "word": "GAINS",
-      "type": 0
-    },
-    {
-      "word": "GAITS",
-      "type": 0
-    },
-    {
-      "word": "SNITS",
-      "type": 0
-    },
-    {
-      "word": "STING",
-      "type": 0
-    },
-    {
-      "word": "ACTING",
-      "type": 0
-    },
-    {
-      "word": "ACTINS",
-      "type": 0
-    },
-    {
-      "word": "DIGNITY",
+      "word": "NAM",
       "type": 0
     }
   ],
-  "letters": "YSTYP,MTINS,ECAGI,DAHAD",
-  "obstacles": []
+  "letters": "MAN,ARE,JOA",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "required_words": 8,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 2,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

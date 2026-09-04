@@ -1,195 +1,90 @@
 {
   "id": 2073,
   "width": 5,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ACT",
+      "word": "AIM",
       "type": 0
     },
     {
-      "word": "ADS",
+      "word": "BUS",
       "type": 0
     },
     {
-      "word": "AMP",
+      "word": "EEL",
       "type": 0
     },
     {
-      "word": "CAN",
+      "word": "ELF",
       "type": 0
     },
     {
-      "word": "DUN",
+      "word": "FEE",
       "type": 0
     },
     {
-      "word": "LAT",
+      "word": "HUB",
       "type": 0
     },
     {
-      "word": "PAL",
+      "word": "BUST",
       "type": 0
     },
     {
-      "word": "PAT",
+      "word": "FEEL",
       "type": 0
     },
     {
-      "word": "SPA",
+      "word": "FLEE",
       "type": 0
     },
     {
-      "word": "ACTS",
+      "word": "MEEK",
+      "type": 2
+    },
+    {
+      "word": "WAKE",
       "type": 0
     },
     {
-      "word": "CALM",
+      "word": "HUSTLE",
       "type": 0
     },
     {
-      "word": "SCAN",
+      "word": "SUBTLE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AAS",
-      "type": 0
-    },
-    {
-      "word": "ALS",
-      "type": 0
-    },
-    {
-      "word": "ATT",
-      "type": 0
-    },
-    {
-      "word": "CAD",
-      "type": 0
-    },
-    {
-      "word": "DAL",
-      "type": 0
-    },
-    {
-      "word": "LAC",
-      "type": 0
-    },
-    {
-      "word": "LAD",
-      "type": 0
-    },
-    {
-      "word": "LAP",
-      "type": 0
-    },
-    {
-      "word": "MAS",
-      "type": 0
-    },
-    {
-      "word": "TAP",
-      "type": 0
-    },
-    {
-      "word": "ACTA",
-      "type": 0
-    },
-    {
-      "word": "ALMA",
-      "type": 0
-    },
-    {
-      "word": "AMPS",
-      "type": 0
-    },
-    {
-      "word": "CADS",
-      "type": 0
-    },
-    {
-      "word": "CLAP",
-      "type": 0
-    },
-    {
-      "word": "DALS",
-      "type": 0
-    },
-    {
-      "word": "LACS",
-      "type": 0
-    },
-    {
-      "word": "LADS",
-      "type": 0
-    },
-    {
-      "word": "LAPS",
-      "type": 0
-    },
-    {
-      "word": "LATS",
-      "type": 0
-    },
-    {
-      "word": "MAST",
-      "type": 0
-    },
-    {
-      "word": "PATS",
-      "type": 0
-    },
-    {
-      "word": "SAMP",
-      "type": 0
-    },
-    {
-      "word": "SCAD",
-      "type": 0
-    },
-    {
-      "word": "SPAT",
-      "type": 0
-    },
-    {
-      "word": "TALC",
-      "type": 0
-    },
-    {
-      "word": "TAPS",
-      "type": 0
-    },
-    {
-      "word": "ALMAS",
-      "type": 0
-    },
-    {
-      "word": "CLAPS",
-      "type": 0
-    },
-    {
-      "word": "MASTS",
-      "type": 0
-    },
-    {
-      "word": "SAMPS",
-      "type": 0
-    },
-    {
-      "word": "SCADS",
-      "type": 0
-    },
-    {
-      "word": "SPATS",
-      "type": 0
-    },
-    {
-      "word": "TALCS",
+      "word": "BUSTLE",
       "type": 0
     }
   ],
-  "letters": "PMAAP,SLSTS,DACTS,UNLAP",
-  "obstacles": []
+  "letters": "STLEK,UBFEA,HAIMW",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 1,
+          "y": 1
+        }
+      ]
+    },
+    {
+      "required_words": 8,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 1
+        }
+      ]
+    }
+  ]
 }

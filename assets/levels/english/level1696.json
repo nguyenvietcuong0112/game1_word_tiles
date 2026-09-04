@@ -1,227 +1,118 @@
 {
   "id": 1696,
-  "width": 4,
-  "height": 4,
+  "width": 3,
+  "height": 3,
   "target_words": [
     {
-      "word": "ARE",
+      "word": "AGE",
       "type": 0
     },
     {
-      "word": "ART",
+      "word": "GEL",
       "type": 0
     },
     {
-      "word": "RED",
+      "word": "GEM",
       "type": 0
     },
     {
-      "word": "SEE",
+      "word": "HAM",
       "type": 0
     },
     {
-      "word": "THE",
+      "word": "GAME",
       "type": 0
     },
     {
-      "word": "HART",
+      "word": "HOME",
       "type": 0
     },
     {
-      "word": "NEST",
+      "word": "LIME",
       "type": 0
     },
     {
-      "word": "THEM",
+      "word": "MAGE",
+      "type": 2
+    },
+    {
+      "word": "MILE",
       "type": 0
     },
     {
-      "word": "THEN",
+      "word": "SOME",
       "type": 0
     },
     {
-      "word": "THESE",
+      "word": "IMAGE",
       "type": 0
     },
     {
-      "word": "TRAIN",
-      "type": 0
+      "word": "HOMAGE",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "AIN",
+      "word": "LEG",
       "type": 0
     },
     {
-      "word": "DEE",
+      "word": "LIMA",
       "type": 0
     },
     {
-      "word": "EME",
+      "word": "LIMO",
+      "type": 2
+    },
+    {
+      "word": "MAG",
       "type": 0
     },
     {
-      "word": "ERA",
+      "word": "MEG",
       "type": 0
     },
     {
-      "word": "HEM",
+      "word": "MEGA",
       "type": 0
     },
     {
-      "word": "HEN",
+      "word": "MIL",
       "type": 0
     },
     {
-      "word": "HES",
+      "word": "OMEGA",
       "type": 0
     },
     {
-      "word": "HIE",
-      "type": 0
-    },
-    {
-      "word": "HIN",
-      "type": 0
-    },
-    {
-      "word": "RAH",
-      "type": 0
-    },
-    {
-      "word": "REE",
-      "type": 0
-    },
-    {
-      "word": "REI",
-      "type": 0
-    },
-    {
-      "word": "SEN",
-      "type": 0
-    },
-    {
-      "word": "DEEM",
-      "type": 0
-    },
-    {
-      "word": "DEES",
-      "type": 0
-    },
-    {
-      "word": "EMES",
-      "type": 0
-    },
-    {
-      "word": "HARE",
-      "type": 0
-    },
-    {
-      "word": "HEED",
-      "type": 0
-    },
-    {
-      "word": "HEME",
-      "type": 0
-    },
-    {
-      "word": "HEST",
-      "type": 0
-    },
-    {
-      "word": "HIED",
-      "type": 0
-    },
-    {
-      "word": "MEED",
-      "type": 0
-    },
-    {
-      "word": "RAIN",
-      "type": 0
-    },
-    {
-      "word": "REDS",
-      "type": 0
-    },
-    {
-      "word": "REES",
-      "type": 0
-    },
-    {
-      "word": "REIN",
-      "type": 0
-    },
-    {
-      "word": "SEED",
-      "type": 0
-    },
-    {
-      "word": "SEER",
-      "type": 0
-    },
-    {
-      "word": "SEME",
-      "type": 0
-    },
-    {
-      "word": "THEE",
-      "type": 0
-    },
-    {
-      "word": "THIN",
-      "type": 0
-    },
-    {
-      "word": "TREE",
-      "type": 0
-    },
-    {
-      "word": "EMEER",
-      "type": 0
-    },
-    {
-      "word": "HARED",
-      "type": 0
-    },
-    {
-      "word": "HEEDS",
-      "type": 0
-    },
-    {
-      "word": "HEMES",
-      "type": 0
-    },
-    {
-      "word": "MEEDS",
-      "type": 0
-    },
-    {
-      "word": "THEME",
-      "type": 0
-    },
-    {
-      "word": "THINE",
-      "type": 0
-    },
-    {
-      "word": "TREES",
-      "type": 0
-    },
-    {
-      "word": "HAREEM",
-      "type": 0
-    },
-    {
-      "word": "THEMES",
-      "type": 0
-    },
-    {
-      "word": "STHENIA",
+      "word": "SOMA",
       "type": 0
     }
   ],
-  "letters": "EMTS,SEHE,DEIN,TRAH",
-  "obstacles": []
+  "letters": "SIL,OME,HAG",
+  "obstacles": [
+    {
+      "required_words": 6,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "required_words": 9,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 2,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

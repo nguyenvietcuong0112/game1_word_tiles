@@ -1,227 +1,118 @@
 {
   "id": 1787,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
+    {
+      "word": "AID",
+      "type": 0
+    },
+    {
+      "word": "AIM",
+      "type": 0
+    },
     {
       "word": "AND",
       "type": 0
     },
     {
-      "word": "IMP",
+      "word": "CAN",
       "type": 0
     },
     {
-      "word": "JAR",
+      "word": "DIM",
       "type": 0
     },
     {
-      "word": "PAN",
+      "word": "RID",
       "type": 0
     },
     {
-      "word": "PER",
+      "word": "DIRT",
       "type": 0
     },
     {
-      "word": "SEE",
+      "word": "MINI",
       "type": 0
     },
     {
-      "word": "DEAN",
+      "word": "MINT",
       "type": 0
     },
     {
-      "word": "JEEP",
-      "type": 0
-    },
-    {
-      "word": "MEAN",
-      "type": 0
-    },
-    {
-      "word": "SEEN",
-      "type": 0
-    },
-    {
-      "word": "EMPIRE",
-      "type": 0
+      "word": "CANDID",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "APE",
+      "word": "AINT",
       "type": 0
     },
     {
-      "word": "ARS",
+      "word": "CAIN",
       "type": 0
     },
     {
-      "word": "ERN",
+      "word": "DID",
       "type": 0
     },
     {
-      "word": "IRE",
+      "word": "DIN",
       "type": 0
     },
     {
-      "word": "JEE",
+      "word": "DINT",
+      "type": 1
+    },
+    {
+      "word": "MID",
       "type": 0
     },
     {
-      "word": "MED",
-      "type": 0
-    },
-    {
-      "word": "NAE",
-      "type": 0
-    },
-    {
-      "word": "NAP",
-      "type": 0
-    },
-    {
-      "word": "NEE",
-      "type": 0
-    },
-    {
-      "word": "PAS",
-      "type": 0
-    },
-    {
-      "word": "PEE",
-      "type": 0
-    },
-    {
-      "word": "PES",
-      "type": 0
-    },
-    {
-      "word": "RAJ",
-      "type": 0
-    },
-    {
-      "word": "REE",
-      "type": 0
-    },
-    {
-      "word": "REP",
-      "type": 0
-    },
-    {
-      "word": "RES",
-      "type": 0
-    },
-    {
-      "word": "RIP",
-      "type": 0
-    },
-    {
-      "word": "SAE",
-      "type": 0
-    },
-    {
-      "word": "SAP",
-      "type": 0
-    },
-    {
-      "word": "SER",
-      "type": 0
-    },
-    {
-      "word": "AJEE",
-      "type": 0
-    },
-    {
-      "word": "APER",
-      "type": 0
-    },
-    {
-      "word": "APES",
-      "type": 0
-    },
-    {
-      "word": "ARSE",
-      "type": 0
-    },
-    {
-      "word": "EASE",
-      "type": 0
-    },
-    {
-      "word": "ERNE",
-      "type": 0
-    },
-    {
-      "word": "IMPI",
-      "type": 0
-    },
-    {
-      "word": "IRES",
-      "type": 0
-    },
-    {
-      "word": "JARS",
-      "type": 0
-    },
-    {
-      "word": "JEER",
-      "type": 0
-    },
-    {
-      "word": "JEES",
-      "type": 0
-    },
-    {
-      "word": "NAPE",
-      "type": 0
-    },
-    {
-      "word": "NEEP",
-      "type": 0
-    },
-    {
-      "word": "PASE",
-      "type": 0
-    },
-    {
-      "word": "PEEN",
-      "type": 0
-    },
-    {
-      "word": "PERI",
-      "type": 0
-    },
-    {
-      "word": "PIRN",
-      "type": 0
-    },
-    {
-      "word": "RIPE",
-      "type": 0
-    },
-    {
-      "word": "SAND",
-      "type": 0
-    },
-    {
-      "word": "NAPES",
-      "type": 0
-    },
-    {
-      "word": "RIPES",
-      "type": 0
-    },
-    {
-      "word": "REPAND",
-      "type": 0
-    },
-    {
-      "word": "EMPIRES",
+      "word": "MIDI",
       "type": 0
     }
   ],
-  "letters": "DEMI,NAPI,RSER,AJEN",
-  "obstacles": []
+  "letters": "NDID,AINI,CMTR",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

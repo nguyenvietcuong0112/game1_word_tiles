@@ -1,115 +1,131 @@
 {
   "id": 1479,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ARS",
+      "word": "DIM",
       "type": 0
     },
     {
-      "word": "ASP",
+      "word": "NIT",
       "type": 0
     },
     {
-      "word": "BAR",
+      "word": "TIE",
       "type": 0
     },
     {
-      "word": "BIO",
+      "word": "MINT",
       "type": 0
     },
     {
-      "word": "BOB",
+      "word": "OMIT",
       "type": 0
     },
     {
-      "word": "CUR",
+      "word": "TINT",
+      "type": 2
+    },
+    {
+      "word": "UNIT",
       "type": 0
     },
     {
-      "word": "ORS",
+      "word": "MOVIE",
       "type": 0
     },
     {
-      "word": "PAS",
-      "type": 0
-    },
-    {
-      "word": "SAP",
-      "type": 0
-    },
-    {
-      "word": "BARS",
-      "type": 0
+      "word": "TIMID",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "BUR",
+      "word": "DIN",
       "type": 0
     },
     {
-      "word": "CUB",
+      "word": "DINT",
+      "type": 1
+    },
+    {
+      "word": "MID",
       "type": 0
     },
     {
-      "word": "OBI",
+      "word": "MIDI",
       "type": 0
     },
     {
-      "word": "ORA",
+      "word": "MITT",
+      "type": 1
+    },
+    {
+      "word": "MOT",
       "type": 0
     },
     {
-      "word": "RUB",
+      "word": "MOTT",
+      "type": 1
+    },
+    {
+      "word": "MOTTE",
       "type": 0
     },
     {
-      "word": "SAU",
+      "word": "TIN",
       "type": 0
     },
     {
-      "word": "ASPS",
+      "word": "UNI",
       "type": 0
     },
     {
-      "word": "AURA",
+      "word": "VIE",
       "type": 0
     },
     {
-      "word": "BURA",
+      "word": "VIET",
       "type": 0
     },
     {
-      "word": "BURS",
-      "type": 0
-    },
-    {
-      "word": "CURS",
-      "type": 0
-    },
-    {
-      "word": "OBIA",
-      "type": 0
-    },
-    {
-      "word": "URSA",
-      "type": 0
-    },
-    {
-      "word": "AURAR",
-      "type": 0
-    },
-    {
-      "word": "BURSA",
-      "type": 0
-    },
-    {
-      "word": "RABBI",
-      "type": 0
+      "word": "VOMIT",
+      "type": 2
     }
   ],
-  "letters": "PASP,CURS,BBAR,OBIO",
-  "obstacles": []
+  "letters": "UNTE,DITI,IMOV",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

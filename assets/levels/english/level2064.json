@@ -1,219 +1,114 @@
 {
   "id": 2064,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "EYE",
+      "word": "JAM",
       "type": 0
     },
     {
-      "word": "HER",
+      "word": "MAT",
       "type": 0
     },
     {
-      "word": "LEE",
+      "word": "OAR",
       "type": 0
     },
     {
-      "word": "SHE",
+      "word": "OUR",
       "type": 0
     },
     {
-      "word": "THE",
+      "word": "OUT",
       "type": 0
     },
     {
-      "word": "WET",
+      "word": "RAM",
       "type": 0
     },
     {
-      "word": "YET",
+      "word": "TAR",
       "type": 0
     },
     {
-      "word": "HERE",
+      "word": "AURA",
       "type": 0
     },
     {
-      "word": "NESS",
+      "word": "AUTO",
       "type": 0
     },
     {
-      "word": "SENT",
+      "word": "BOAR",
+      "type": 2
+    },
+    {
+      "word": "BOUT",
       "type": 0
     },
     {
-      "word": "TYPE",
-      "type": 0
-    },
-    {
-      "word": "THERE",
+      "word": "ABOUT",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "EEL",
+      "word": "JOT",
       "type": 0
     },
     {
-      "word": "ELS",
+      "word": "MARA",
+      "type": 2
+    },
+    {
+      "word": "RAT",
       "type": 0
     },
     {
-      "word": "ERE",
-      "type": 0
-    },
-    {
-      "word": "ERS",
-      "type": 0
-    },
-    {
-      "word": "ESS",
-      "type": 0
-    },
-    {
-      "word": "LEY",
-      "type": 0
-    },
-    {
-      "word": "PEE",
-      "type": 0
-    },
-    {
-      "word": "PYE",
-      "type": 0
-    },
-    {
-      "word": "RES",
-      "type": 0
-    },
-    {
-      "word": "SEN",
-      "type": 0
-    },
-    {
-      "word": "SER",
-      "type": 0
-    },
-    {
-      "word": "TEE",
-      "type": 0
-    },
-    {
-      "word": "TEW",
-      "type": 0
-    },
-    {
-      "word": "TYE",
-      "type": 0
-    },
-    {
-      "word": "WEE",
-      "type": 0
-    },
-    {
-      "word": "YEP",
-      "type": 0
-    },
-    {
-      "word": "YEW",
-      "type": 0
-    },
-    {
-      "word": "EELS",
-      "type": 0
-    },
-    {
-      "word": "ESES",
-      "type": 0
-    },
-    {
-      "word": "HERS",
-      "type": 0
-    },
-    {
-      "word": "LEET",
-      "type": 0
-    },
-    {
-      "word": "PEEL",
-      "type": 0
-    },
-    {
-      "word": "SERE",
-      "type": 0
-    },
-    {
-      "word": "SERS",
-      "type": 0
-    },
-    {
-      "word": "TEEL",
-      "type": 0
-    },
-    {
-      "word": "TEWS",
-      "type": 0
-    },
-    {
-      "word": "TYEE",
-      "type": 0
-    },
-    {
-      "word": "WEEL",
-      "type": 0
-    },
-    {
-      "word": "YEWS",
-      "type": 0
-    },
-    {
-      "word": "HERES",
-      "type": 0
-    },
-    {
-      "word": "PEELS",
-      "type": 0
-    },
-    {
-      "word": "SENTE",
-      "type": 0
-    },
-    {
-      "word": "SLEEP",
-      "type": 0
-    },
-    {
-      "word": "SLEET",
-      "type": 0
-    },
-    {
-      "word": "TEELS",
-      "type": 0
-    },
-    {
-      "word": "TYPEY",
-      "type": 0
-    },
-    {
-      "word": "RESENT",
-      "type": 0
-    },
-    {
-      "word": "SLEEPY",
-      "type": 0
-    },
-    {
-      "word": "THERES",
-      "type": 0
-    },
-    {
-      "word": "WETNESS",
+      "word": "RUT",
       "type": 0
     }
   ],
-  "letters": "ETNES,YEWSE,EELSR,PYTHE",
-  "obstacles": []
+  "letters": "ARAM,OUTA,BAOJ",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 9,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

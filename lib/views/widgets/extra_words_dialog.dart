@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../controllers/game_controller.dart';
 import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
-import '../../theme/app_theme.dart';
+import '../common/wood_widgets.dart';
 import 'app_popup.dart';
 
 class ExtraWordsDialog extends StatefulWidget {
@@ -62,112 +62,60 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
     final canClaim = bankCount >= 10;
     final foundWords = widget.controller.foundExtraWords;
 
-    return Dialog(
-      backgroundColor: Colors.transparent,
-      insetPadding: EdgeInsets.symmetric(horizontal: 24.w),
-      child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
-        decoration: BoxDecoration(
-          color: AppColors.cardPeach,
-          borderRadius: BorderRadius.circular(28.r),
-          border: Border.all(color: AppColors.borderSubtle, width: 2.0),
-          boxShadow: const [
-            BoxShadow(
-              color: Color(0xFFE8DAC8),
-              offset: Offset(0, 4.0),
-              blurRadius: 0,
-            ),
-          ],
-        ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            // Header: Title & Close Button
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                SizedBox(width: 32.r),
-                Text(
-                  'Extra Words',
-                  style: GoogleFonts.fredoka(
-                    fontSize: 24.sp,
-                    fontWeight: FontWeight.w900,
-                    color: AppColors.headerBrown,
-                    letterSpacing: 0.5,
-                  ),
-                ),
-                InkWell(
-                  onTap: () => Navigator.of(context).pop(),
-                  borderRadius: BorderRadius.circular(16.r),
-                  child: Container(
-                    width: 32.r,
-                    height: 32.r,
-                    decoration: BoxDecoration(
-                      color: AppColors.cardPeachLight,
-                      shape: BoxShape.circle,
-                      border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                    ),
-                    child: const Center(
-                      child: Icon(
-                        Icons.close_rounded,
-                        color: AppColors.headerBrown,
-                        size: 20,
-                      ),
-                    ),
-                  ),
+    return WoodSignboardDialog(
+      title: 'EXTRA WORDS',
+      onClose: () => Navigator.of(context).pop(),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          SizedBox(height: 6.h),
+
+          // Graphic Illustration: 3D Scrabble / Word Tiles Tray
+          _buildLetterTrayIllustration(),
+          SizedBox(height: 14.h),
+
+          // "Found This Level:" Card
+          Container(
+            decoration: BoxDecoration(
+              color: const Color(0xFFFBF2E4),
+              borderRadius: BorderRadius.circular(18.r),
+              border: Border.all(color: const Color(0xFF421A08), width: 1.5),
+              boxShadow: const [
+                BoxShadow(
+                  color: Color(0xFF2E1205),
+                  offset: Offset(0, 2.0),
+                  blurRadius: 0,
                 ),
               ],
             ),
-            SizedBox(height: 14.h),
-
-            // Graphic Illustration: 3D Scrabble / Word Tiles Tray
-            _buildLetterTrayIllustration(),
-            SizedBox(height: 16.h),
-
-            // "Found This Level:" Card
-            Container(
-              decoration: BoxDecoration(
-                color: AppColors.cardWhite,
-                borderRadius: BorderRadius.circular(20.r),
-                border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                boxShadow: const [
-                  BoxShadow(
-                    color: Color(0xFFE8DAC8),
-                    offset: Offset(0, 2.0),
-                    blurRadius: 0,
-                  ),
-                ],
-              ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(16.r),
               child: Column(
                 children: [
                   // Woodcraft Header Pill
                   Container(
                     width: double.infinity,
-                    padding: EdgeInsets.symmetric(vertical: 8.h),
-                    decoration: BoxDecoration(
-                      gradient: const LinearGradient(
-                        colors: [Color(0xFFCA9370), AppColors.btnFaceBrown],
+                    padding: EdgeInsets.symmetric(vertical: 6.h),
+                    decoration: const BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [Color(0xFFE29A5B), Color(0xFF8F4D20)],
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
-                      ),
-                      borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(18.r),
-                        topRight: Radius.circular(18.r),
                       ),
                     ),
                     child: Center(
                       child: Text(
                         'Found This Level:',
                         style: GoogleFonts.fredoka(
-                          fontSize: 14.sp,
-                          fontWeight: FontWeight.w800,
-                          color: Colors.white,
-                          letterSpacing: 0.5,
+                          fontSize: 13.sp,
+                          fontWeight: FontWeight.w900,
+                          color: const Color(0xFFA3E635),
+                          letterSpacing: 0.8,
                           shadows: const [
                             Shadow(
-                              color: AppColors.btnShadowBrown,
-                              offset: Offset(0, 1.0),
+                              color: Color(0xFF2E1205),
+                              offset: Offset(0, 1.2),
                             ),
                           ],
                         ),
@@ -178,8 +126,8 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                   // Words List Container
                   Container(
                     width: double.infinity,
-                    constraints: BoxConstraints(minHeight: 80.h, maxHeight: 130.h),
-                    padding: EdgeInsets.all(12.r),
+                    constraints: BoxConstraints(minHeight: 70.h, maxHeight: 120.h),
+                    padding: EdgeInsets.all(10.r),
                     child: foundWords.isEmpty
                         ? Center(
                             child: Text(
@@ -187,8 +135,8 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                               textAlign: TextAlign.center,
                               style: GoogleFonts.fredoka(
                                 fontSize: 12.sp,
-                                color: AppColors.textMuted,
-                                fontWeight: FontWeight.w500,
+                                color: const Color(0xFF7A4A28),
+                                fontWeight: FontWeight.w600,
                                 height: 1.3,
                               ),
                             ),
@@ -200,16 +148,15 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                               alignment: WrapAlignment.center,
                               children: foundWords.map((word) {
                                 return Container(
-                                  padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 5.h),
+                                  padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 4.h),
                                   decoration: BoxDecoration(
-                                    color: AppColors.cardPeachLight,
-                                    borderRadius: BorderRadius.circular(10.r),
-                                    border: Border.all(color: AppColors.borderSubtle, width: 1.2),
+                                    color: const Color(0xFFFFFDF9),
+                                    borderRadius: BorderRadius.circular(8.r),
+                                    border: Border.all(color: const Color(0xFF421A08), width: 1.2),
                                     boxShadow: const [
                                       BoxShadow(
-                                        color: Color(0xFFE8DAC8),
-                                        offset: Offset(0, 1.0),
-                                        blurRadius: 0,
+                                        color: Color(0xFF2E1205),
+                                        offset: Offset(0, 1.2),
                                       ),
                                     ],
                                   ),
@@ -218,7 +165,7 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                                     style: GoogleFonts.fredoka(
                                       fontSize: 13.sp,
                                       fontWeight: FontWeight.w900,
-                                      color: AppColors.headerBrown,
+                                      color: const Color(0xFF421A08),
                                       letterSpacing: 1.0,
                                     ),
                                   ),
@@ -230,12 +177,12 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                 ],
               ),
             ),
-            SizedBox(height: 16.h),
+          ),
+          SizedBox(height: 14.h),
 
-            // Progress Bar & 10 Coins Reward
-            _buildProgressBar(bankCount, canClaim),
-          ],
-        ),
+          // Progress Bar & 10 Coins Reward
+          _buildProgressBar(bankCount, canClaim),
+        ],
       ),
     );
   }
@@ -247,15 +194,15 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
     ];
 
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 12.h),
+      padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 10.h),
       decoration: BoxDecoration(
-        color: const Color(0xFF8B4D26),
-        borderRadius: BorderRadius.circular(20.r),
-        border: Border.all(color: const Color(0xFF5C2E14), width: 2.0),
+        color: const Color(0xFF59270E),
+        borderRadius: BorderRadius.circular(18.r),
+        border: Border.all(color: const Color(0xFF421A08), width: 1.8),
         boxShadow: const [
           BoxShadow(
-            color: Color(0xFF421E0B),
-            offset: Offset(0, 3.5),
+            color: Color(0xFF2E1205),
+            offset: Offset(0, 3.0),
             blurRadius: 0,
           ),
         ],
@@ -276,7 +223,7 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                     border: Border.all(color: const Color(0xFFE6D6C4), width: 1.0),
                     boxShadow: const [
                       BoxShadow(
-                        color: Color(0xFF5C2E14),
+                        color: Color(0xFF381605),
                         offset: Offset(0, 1.5),
                         blurRadius: 0,
                       ),
@@ -307,12 +254,12 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
     return Container(
       padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 8.h),
       decoration: BoxDecoration(
-        color: AppColors.cardWhite,
-        borderRadius: BorderRadius.circular(22.r),
-        border: Border.all(color: AppColors.borderSubtle, width: 1.5),
+        color: const Color(0xFFFBF2E4),
+        borderRadius: BorderRadius.circular(20.r),
+        border: Border.all(color: const Color(0xFF421A08), width: 1.5),
         boxShadow: const [
           BoxShadow(
-            color: Color(0xFFE8DAC8),
+            color: Color(0xFF2E1205),
             offset: Offset(0, 2.0),
             blurRadius: 0,
           ),
@@ -347,9 +294,9 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                 Container(
                   height: 22.h,
                   decoration: BoxDecoration(
-                    color: AppColors.cardPeachLight,
+                    color: const Color(0xFFE2C7A8),
                     borderRadius: BorderRadius.circular(12.r),
-                    border: Border.all(color: AppColors.borderSubtle, width: 1.0),
+                    border: Border.all(color: const Color(0xFF421A08), width: 1.0),
                   ),
                 ),
 
@@ -360,7 +307,7 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                     height: 22.h,
                     decoration: BoxDecoration(
                       gradient: const LinearGradient(
-                        colors: [Color(0xFFCA9370), AppColors.btnFaceBrown],
+                        colors: [Color(0xFF86EFAC), Color(0xFF15803D)],
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                       ),
@@ -377,7 +324,7 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                       style: GoogleFonts.fredoka(
                         fontSize: 13.sp,
                         fontWeight: FontWeight.w900,
-                        color: count > 4 ? Colors.white : AppColors.headerBrown,
+                        color: count > 4 ? Colors.white : const Color(0xFF421A08),
                         letterSpacing: 0.5,
                       ),
                     ),
@@ -390,46 +337,22 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
 
           // Reward Claim or Coin Stack Badge
           canClaim
-              ? InkWell(
+              ? WoodCtaButton(
+                  text: 'CLAIM',
+                  isGreen: true,
+                  height: 34.h,
+                  fontSize: 13.sp,
+                  padding: EdgeInsets.symmetric(horizontal: 14.w),
                   onTap: _claimReward,
-                  borderRadius: BorderRadius.circular(14.r),
-                  child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 7.h),
-                    decoration: BoxDecoration(
-                      gradient: const LinearGradient(
-                        colors: [Color(0xFFCA9370), AppColors.btnFaceBrown],
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                      ),
-                      borderRadius: BorderRadius.circular(14.r),
-                      border: Border.all(color: AppColors.btnBorderBrown, width: 1.5),
-                      boxShadow: const [
-                        BoxShadow(
-                          color: AppColors.btnShadowBrown,
-                          offset: Offset(0, 1.5),
-                          blurRadius: 0,
-                        ),
-                      ],
-                    ),
-                    child: Text(
-                      'CLAIM',
-                      style: GoogleFonts.fredoka(
-                        fontWeight: FontWeight.w900,
-                        fontSize: 12.sp,
-                        color: Colors.white,
-                        letterSpacing: 0.5,
-                      ),
-                    ),
-                  )
-                      .animate(onPlay: (c) => c.repeat(reverse: true))
-                      .scale(begin: const Offset(1.0, 1.0), end: const Offset(1.06, 1.06), duration: 600.ms),
                 )
+                  .animate(onPlay: (c) => c.repeat(reverse: true))
+                  .scale(begin: const Offset(1.0, 1.0), end: const Offset(1.06, 1.06), duration: 600.ms)
               : Stack(
                   alignment: Alignment.bottomRight,
                   children: [
                     Container(
                       padding: EdgeInsets.symmetric(horizontal: 6.w, vertical: 4.h),
-                      child: Text('🪙', style: TextStyle(fontSize: 24.sp)),
+                      child: WoodGameIcons.coin(size: 26.sp),
                     ),
                     Container(
                       padding: EdgeInsets.symmetric(horizontal: 5.w, vertical: 1.h),

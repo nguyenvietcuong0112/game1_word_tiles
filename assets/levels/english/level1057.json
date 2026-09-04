@@ -1,87 +1,114 @@
 {
   "id": 1057,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "BOO",
+      "word": "ILL",
       "type": 0
     },
     {
-      "word": "BOP",
+      "word": "LID",
       "type": 0
     },
     {
-      "word": "GEL",
+      "word": "NOW",
       "type": 0
     },
     {
-      "word": "GOO",
+      "word": "OWE",
       "type": 0
     },
     {
-      "word": "LEA",
+      "word": "OWL",
       "type": 0
     },
     {
-      "word": "LEG",
+      "word": "VOW",
       "type": 0
     },
     {
-      "word": "PIE",
+      "word": "DILL",
       "type": 0
     },
     {
-      "word": "PIG",
+      "word": "HILL",
       "type": 0
     },
     {
-      "word": "CLUB",
+      "word": "WELL",
       "type": 0
     },
     {
-      "word": "RULE",
+      "word": "NOVEL",
+      "type": 0
+    },
+    {
+      "word": "VOWEL",
+      "type": 0
+    },
+    {
+      "word": "NOVELTY",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ABO",
+      "word": "HID",
       "type": 0
     },
     {
-      "word": "BUR",
+      "word": "WELT",
+      "type": 1
+    },
+    {
+      "word": "WON",
       "type": 0
     },
     {
-      "word": "EGO",
-      "type": 0
-    },
-    {
-      "word": "GIE",
-      "type": 0
-    },
-    {
-      "word": "GIP",
-      "type": 0
-    },
-    {
-      "word": "RUB",
-      "type": 0
-    },
-    {
-      "word": "LURE",
-      "type": 0
-    },
-    {
-      "word": "UREA",
-      "type": 0
-    },
-    {
-      "word": "BOOGIE",
+      "word": "WOVE",
       "type": 0
     }
   ],
-  "letters": "OPIE,BCGO,ULEO,REAB",
-  "obstacles": []
+  "letters": "VELT,OWLY,NHID",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 9,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

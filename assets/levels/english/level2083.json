@@ -1,171 +1,102 @@
 {
   "id": 2083,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "DOT",
+      "word": "BOW",
       "type": 0
     },
     {
-      "word": "END",
+      "word": "LOB",
       "type": 0
     },
     {
-      "word": "ERS",
+      "word": "LOW",
       "type": 0
     },
     {
-      "word": "ITS",
+      "word": "TWO",
       "type": 0
     },
     {
-      "word": "LEE",
+      "word": "LICK",
       "type": 0
     },
     {
-      "word": "MID",
+      "word": "SAIL",
       "type": 0
     },
     {
-      "word": "OUT",
+      "word": "SLOW",
       "type": 0
     },
     {
-      "word": "EDIT",
+      "word": "WICK",
       "type": 0
     },
     {
-      "word": "TRIM",
+      "word": "SLICK",
       "type": 0
     },
     {
-      "word": "TITLE",
+      "word": "SYMBOL",
       "type": 0
     },
     {
-      "word": "TITLES",
-      "type": 0
+      "word": "SYMBOLIC",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "DEE",
+      "word": "AIL",
       "type": 0
     },
     {
-      "word": "DIM",
-      "type": 0
-    },
-    {
-      "word": "DIT",
-      "type": 0
-    },
-    {
-      "word": "EEL",
-      "type": 0
-    },
-    {
-      "word": "ELM",
-      "type": 0
-    },
-    {
-      "word": "LEI",
-      "type": 0
-    },
-    {
-      "word": "MIR",
-      "type": 0
-    },
-    {
-      "word": "ODE",
-      "type": 0
-    },
-    {
-      "word": "RIM",
-      "type": 0
-    },
-    {
-      "word": "SEL",
-      "type": 0
-    },
-    {
-      "word": "TIE",
-      "type": 0
-    },
-    {
-      "word": "TIT",
-      "type": 0
-    },
-    {
-      "word": "TOD",
-      "type": 0
-    },
-    {
-      "word": "DIEL",
-      "type": 0
-    },
-    {
-      "word": "EIDE",
-      "type": 0
-    },
-    {
-      "word": "ERST",
-      "type": 0
-    },
-    {
-      "word": "IMID",
-      "type": 0
-    },
-    {
-      "word": "LEST",
-      "type": 0
-    },
-    {
-      "word": "MITT",
-      "type": 0
-    },
-    {
-      "word": "NERD",
-      "type": 0
-    },
-    {
-      "word": "REND",
-      "type": 0
-    },
-    {
-      "word": "STIR",
-      "type": 0
-    },
-    {
-      "word": "TIDE",
-      "type": 0
-    },
-    {
-      "word": "TIRL",
-      "type": 0
-    },
-    {
-      "word": "TITI",
-      "type": 0
-    },
-    {
-      "word": "TOUT",
-      "type": 0
-    },
-    {
-      "word": "IMIDE",
-      "type": 0
-    },
-    {
-      "word": "IMIDO",
-      "type": 0
-    },
-    {
-      "word": "TIMID",
-      "type": 0
+      "word": "AILS",
+      "type": 1
     }
   ],
-  "letters": "ELRTU,STITO,RDMID,ENLEE",
-  "obstacles": []
+  "letters": "BOWT,MLIC,YSAK",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

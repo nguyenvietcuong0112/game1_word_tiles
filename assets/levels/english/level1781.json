@@ -1,135 +1,114 @@
 {
   "id": 1781,
-  "width": 4,
-  "height": 4,
+  "width": 5,
+  "height": 3,
   "target_words": [
     {
-      "word": "ART",
+      "word": "BEE",
       "type": 0
     },
     {
-      "word": "GEL",
+      "word": "CRY",
       "type": 0
     },
     {
-      "word": "LEG",
+      "word": "DYE",
       "type": 0
     },
     {
-      "word": "RAT",
+      "word": "ORE",
+      "type": 2
+    },
+    {
+      "word": "ROT",
       "type": 0
     },
     {
-      "word": "TAO",
+      "word": "RYE",
       "type": 0
     },
     {
-      "word": "TRY",
+      "word": "TORE",
       "type": 0
     },
     {
-      "word": "EDGE",
+      "word": "TOTE",
+      "type": 2
+    },
+    {
+      "word": "CRYPTO",
       "type": 0
     },
     {
-      "word": "PUMP",
-      "type": 0
-    },
-    {
-      "word": "TILE",
-      "type": 0
+      "word": "DECREE",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "ATT",
+      "word": "BEY",
       "type": 0
     },
     {
-      "word": "LIT",
+      "word": "CREE",
       "type": 0
     },
     {
-      "word": "MOA",
+      "word": "CRYPT",
+      "type": 1
+    },
+    {
+      "word": "RET",
       "type": 0
     },
     {
-      "word": "OAR",
-      "type": 0
+      "word": "ROTE",
+      "type": 1
     },
     {
-      "word": "OAT",
-      "type": 0
-    },
-    {
-      "word": "PED",
-      "type": 0
-    },
-    {
-      "word": "PEG",
-      "type": 0
-    },
-    {
-      "word": "TAR",
-      "type": 0
-    },
-    {
-      "word": "TAU",
-      "type": 0
-    },
-    {
-      "word": "TIL",
-      "type": 0
-    },
-    {
-      "word": "UMP",
-      "type": 0
-    },
-    {
-      "word": "YOM",
-      "type": 0
-    },
-    {
-      "word": "GELT",
-      "type": 0
-    },
-    {
-      "word": "LEPT",
-      "type": 0
-    },
-    {
-      "word": "MOAT",
-      "type": 0
-    },
-    {
-      "word": "PELT",
-      "type": 0
-    },
-    {
-      "word": "TART",
-      "type": 0
-    },
-    {
-      "word": "TILT",
-      "type": 0
-    },
-    {
-      "word": "LEPTA",
-      "type": 0
-    },
-    {
-      "word": "TAUPE",
-      "type": 0
-    },
-    {
-      "word": "UMPED",
-      "type": 0
-    },
-    {
-      "word": "PUMPED",
+      "word": "TOR",
       "type": 0
     }
   ],
-  "letters": "YOMP,RAUE,TTPD,ILEG",
-  "obstacles": []
+  "letters": "BEECE,RYDRE,CPTOT",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 4,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

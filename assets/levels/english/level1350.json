@@ -1,56 +1,22 @@
 {
   "id": 1350,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ARE",
+      "word": "ABS",
       "type": 0
     },
     {
-      "word": "ART",
+      "word": "BEE",
       "type": 0
     },
     {
-      "word": "BAR",
+      "word": "CAB",
       "type": 0
     },
     {
-      "word": "BIT",
-      "type": 0
-    },
-    {
-      "word": "SHE",
-      "type": 0
-    },
-    {
-      "word": "TIE",
-      "type": 0
-    },
-    {
-      "word": "AREA",
-      "type": 0
-    },
-    {
-      "word": "TIPS",
-      "type": 0
-    },
-    {
-      "word": "SHARE",
-      "type": 0
-    },
-    {
-      "word": "BARRIER",
-      "type": 0
-    }
-  ],
-  "extra_words": [
-    {
-      "word": "AAH",
-      "type": 0
-    },
-    {
-      "word": "BAT",
+      "word": "COB",
       "type": 0
     },
     {
@@ -58,59 +24,7 @@
       "type": 0
     },
     {
-      "word": "ERA",
-      "type": 0
-    },
-    {
-      "word": "HEP",
-      "type": 0
-    },
-    {
-      "word": "PEA",
-      "type": 0
-    },
-    {
-      "word": "PEH",
-      "type": 0
-    },
-    {
-      "word": "PIT",
-      "type": 0
-    },
-    {
-      "word": "RAH",
-      "type": 0
-    },
-    {
-      "word": "RAT",
-      "type": 0
-    },
-    {
-      "word": "REI",
-      "type": 0
-    },
-    {
-      "word": "SHA",
-      "type": 0
-    },
-    {
-      "word": "TAB",
-      "type": 0
-    },
-    {
-      "word": "TAE",
-      "type": 0
-    },
-    {
-      "word": "TAR",
-      "type": 0
-    },
-    {
-      "word": "TIP",
-      "type": 0
-    },
-    {
-      "word": "AAHS",
+      "word": "EEL",
       "type": 0
     },
     {
@@ -118,67 +32,84 @@
       "type": 0
     },
     {
-      "word": "HARE",
+      "word": "BELT",
       "type": 0
     },
     {
-      "word": "HEAT",
+      "word": "BACON",
       "type": 0
     },
     {
-      "word": "PEAT",
-      "type": 0
-    },
-    {
-      "word": "PEHS",
-      "type": 0
-    },
-    {
-      "word": "PITA",
-      "type": 0
-    },
-    {
-      "word": "SHEA",
-      "type": 0
-    },
-    {
-      "word": "SPIT",
-      "type": 0
-    },
-    {
-      "word": "TART",
-      "type": 0
-    },
-    {
-      "word": "TIER",
-      "type": 0
-    },
-    {
-      "word": "AREAE",
-      "type": 0
-    },
-    {
-      "word": "ARTIER",
-      "type": 0
-    },
-    {
-      "word": "PEATIER",
-      "type": 0
-    },
-    {
-      "word": "TARRIER",
+      "word": "LEAVE",
       "type": 0
     }
   ],
-  "letters": "TARR,IBTI,PEAE,SHAR",
+  "extra_words": [
+    {
+      "word": "BON",
+      "type": 0
+    },
+    {
+      "word": "CABS",
+      "type": 0
+    },
+    {
+      "word": "CON",
+      "type": 0
+    },
+    {
+      "word": "CONS",
+      "type": 0
+    },
+    {
+      "word": "EAVE",
+      "type": 1
+    },
+    {
+      "word": "EELS",
+      "type": 0
+    },
+    {
+      "word": "SNOB",
+      "type": 0
+    }
+  ],
+  "letters": "NSLT,OBEA,CAEV",
   "obstacles": [
     {
-      "required_words": 5,
+      "required_words": 3,
       "id": 1,
       "type": 0,
       "cells": [
         {
           "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
           "y": 0
         }
       ]

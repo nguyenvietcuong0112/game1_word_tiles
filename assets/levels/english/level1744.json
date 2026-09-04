@@ -1,143 +1,103 @@
 {
   "id": 1744,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "BAN",
+      "word": "PAR",
       "type": 0
     },
     {
-      "word": "CAT",
+      "word": "ROB",
       "type": 0
     },
     {
-      "word": "ITS",
+      "word": "RUB",
       "type": 0
     },
     {
-      "word": "SRI",
+      "word": "BLUR",
+      "type": 2
+    },
+    {
+      "word": "BULB",
       "type": 0
     },
     {
-      "word": "WAN",
+      "word": "RAIL",
       "type": 0
     },
     {
-      "word": "BANG",
+      "word": "RULE",
       "type": 0
     },
     {
-      "word": "CATS",
+      "word": "BUBBLE",
       "type": 0
     },
     {
-      "word": "SWAN",
-      "type": 0
-    },
-    {
-      "word": "WANT",
-      "type": 0
-    },
-    {
-      "word": "WANTS",
+      "word": "RUBBLE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ANT",
+      "word": "AIL",
       "type": 0
     },
     {
-      "word": "AWA",
+      "word": "BORA",
+      "type": 2
+    },
+    {
+      "word": "LIAR",
       "type": 0
     },
     {
-      "word": "GIT",
+      "word": "LUBE",
       "type": 0
     },
     {
-      "word": "NAB",
-      "type": 0
+      "word": "PAIL",
+      "type": 1
     },
     {
-      "word": "NAW",
-      "type": 0
-    },
-    {
-      "word": "RIG",
-      "type": 0
-    },
-    {
-      "word": "WAB",
-      "type": 0
-    },
-    {
-      "word": "ANTS",
-      "type": 0
-    },
-    {
-      "word": "BANS",
-      "type": 0
-    },
-    {
-      "word": "GITS",
-      "type": 0
-    },
-    {
-      "word": "GNAW",
-      "type": 0
-    },
-    {
-      "word": "RIGS",
-      "type": 0
-    },
-    {
-      "word": "SCAT",
-      "type": 0
-    },
-    {
-      "word": "SNAW",
-      "type": 0
-    },
-    {
-      "word": "STIR",
-      "type": 0
-    },
-    {
-      "word": "SWAB",
-      "type": 0
-    },
-    {
-      "word": "WANS",
-      "type": 0
-    },
-    {
-      "word": "ANGST",
-      "type": 0
-    },
-    {
-      "word": "BANGS",
-      "type": 0
-    },
-    {
-      "word": "GNAWS",
-      "type": 0
-    },
-    {
-      "word": "NAWAB",
-      "type": 0
-    },
-    {
-      "word": "STIRS",
-      "type": 0
-    },
-    {
-      "word": "SWANG",
+      "word": "RAP",
       "type": 0
     }
   ],
-  "letters": "ACNA,TSSW,IGNA,RSTB",
-  "obstacles": []
+  "letters": "ILBE,ARUL,POBB",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

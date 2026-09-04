@@ -1,159 +1,122 @@
 {
   "id": 1428,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ANY",
+      "word": "APE",
       "type": 0
     },
     {
-      "word": "GOO",
+      "word": "PAW",
       "type": 0
     },
     {
-      "word": "HON",
+      "word": "PEA",
       "type": 0
     },
     {
-      "word": "MAE",
+      "word": "SAW",
       "type": 0
     },
     {
-      "word": "MAN",
+      "word": "SEA",
       "type": 0
     },
     {
-      "word": "NAM",
+      "word": "SIP",
       "type": 0
     },
     {
-      "word": "REG",
+      "word": "EASE",
       "type": 0
     },
     {
-      "word": "HONG",
+      "word": "PEEP",
       "type": 0
     },
     {
-      "word": "MANY",
+      "word": "SAKE",
       "type": 0
     },
     {
-      "word": "REGS",
+      "word": "WAKE",
       "type": 0
     },
     {
-      "word": "AMINO",
+      "word": "AWAKE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AMA",
+      "word": "APIS",
+      "type": 1
+    },
+    {
+      "word": "ASIA",
       "type": 0
     },
     {
-      "word": "AMI",
+      "word": "PEAS",
       "type": 0
     },
     {
-      "word": "ANI",
+      "word": "PEE",
       "type": 0
     },
     {
-      "word": "EGO",
+      "word": "PISA",
       "type": 0
     },
     {
-      "word": "ERS",
+      "word": "WAKES",
       "type": 0
     },
     {
-      "word": "NIM",
-      "type": 0
-    },
-    {
-      "word": "NOH",
-      "type": 0
-    },
-    {
-      "word": "NOO",
-      "type": 0
-    },
-    {
-      "word": "OOH",
-      "type": 0
-    },
-    {
-      "word": "REI",
-      "type": 0
-    },
-    {
-      "word": "AMIE",
-      "type": 0
-    },
-    {
-      "word": "AMIN",
-      "type": 0
-    },
-    {
-      "word": "GERM",
-      "type": 0
-    },
-    {
-      "word": "GOON",
-      "type": 0
-    },
-    {
-      "word": "IMAM",
-      "type": 0
-    },
-    {
-      "word": "MAMA",
-      "type": 0
-    },
-    {
-      "word": "MINA",
-      "type": 0
-    },
-    {
-      "word": "REAM",
-      "type": 0
-    },
-    {
-      "word": "REIN",
-      "type": 0
-    },
-    {
-      "word": "ANIMA",
-      "type": 0
-    },
-    {
-      "word": "GOONY",
-      "type": 0
-    },
-    {
-      "word": "HONGS",
-      "type": 0
-    },
-    {
-      "word": "MAMIE",
-      "type": 0
-    },
-    {
-      "word": "GOONIE",
-      "type": 0
-    },
-    {
-      "word": "NAMING",
-      "type": 0
-    },
-    {
-      "word": "REAMING",
+      "word": "WAS",
       "type": 0
     }
   ],
-  "letters": "MRSG,AEGO,MINO,ANYH",
-  "obstacles": []
+  "letters": "EPIA,EASE,PWAK",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

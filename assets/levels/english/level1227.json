@@ -1,91 +1,102 @@
 {
   "id": 1227,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ALL",
+      "word": "LIE",
       "type": 0
     },
     {
-      "word": "AMP",
+      "word": "SEE",
       "type": 0
     },
     {
-      "word": "GOA",
+      "word": "WAY",
       "type": 0
     },
     {
-      "word": "ILL",
+      "word": "EASE",
       "type": 0
     },
     {
-      "word": "JAW",
+      "word": "EASY",
       "type": 0
     },
     {
-      "word": "LAT",
+      "word": "FREE",
       "type": 0
     },
     {
-      "word": "GOAL",
+      "word": "REAL",
       "type": 0
     },
     {
-      "word": "MAIL",
+      "word": "ALWAYS",
       "type": 0
     },
     {
-      "word": "PILL",
+      "word": "GREASE",
       "type": 0
     },
     {
-      "word": "TALL",
+      "word": "GREASY",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AIL",
+      "word": "FREES",
       "type": 0
     },
     {
-      "word": "ALA",
-      "type": 0
+      "word": "SEER",
+      "type": 2
     },
     {
-      "word": "ALP",
-      "type": 0
-    },
-    {
-      "word": "AWL",
-      "type": 0
-    },
-    {
-      "word": "LIP",
-      "type": 0
-    },
-    {
-      "word": "PIA",
-      "type": 0
-    },
-    {
-      "word": "LALL",
-      "type": 0
-    },
-    {
-      "word": "PLAT",
-      "type": 0
-    },
-    {
-      "word": "TALA",
-      "type": 0
-    },
-    {
-      "word": "MAILL",
+      "word": "WAYS",
       "type": 0
     }
   ],
-  "letters": "JAOA,PWGL,ILLA,AMPT",
-  "obstacles": []
+  "letters": "GESY,REAA,FILW",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

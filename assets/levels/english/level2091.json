@@ -1,199 +1,106 @@
 {
   "id": 2091,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ADD",
+      "word": "BUS",
       "type": 0
     },
     {
-      "word": "AID",
+      "word": "COB",
       "type": 0
     },
     {
-      "word": "AIR",
+      "word": "CUB",
       "type": 0
     },
     {
-      "word": "ARC",
+      "word": "CUE",
       "type": 0
     },
     {
-      "word": "DEV",
+      "word": "SUE",
       "type": 0
     },
     {
-      "word": "RUN",
+      "word": "USE",
       "type": 0
     },
     {
-      "word": "WAR",
+      "word": "WET",
       "type": 0
     },
     {
-      "word": "WAY",
+      "word": "COVE",
       "type": 0
     },
     {
-      "word": "WIN",
+      "word": "CUBE",
       "type": 0
     },
     {
-      "word": "DEAD",
+      "word": "OVER",
       "type": 0
     },
     {
-      "word": "LEAD",
+      "word": "USER",
       "type": 0
     },
     {
-      "word": "WINDS",
+      "word": "COVER",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AWN",
+      "word": "CUBES",
       "type": 0
     },
     {
-      "word": "DEL",
-      "type": 0
-    },
-    {
-      "word": "ELD",
-      "type": 0
-    },
-    {
-      "word": "ELS",
-      "type": 0
-    },
-    {
-      "word": "LEA",
-      "type": 0
-    },
-    {
-      "word": "LED",
-      "type": 0
-    },
-    {
-      "word": "LEV",
-      "type": 0
-    },
-    {
-      "word": "NAE",
-      "type": 0
-    },
-    {
-      "word": "RAW",
-      "type": 0
-    },
-    {
-      "word": "RAY",
-      "type": 0
-    },
-    {
-      "word": "RIA",
-      "type": 0
-    },
-    {
-      "word": "RID",
-      "type": 0
-    },
-    {
-      "word": "RYA",
-      "type": 0
-    },
-    {
-      "word": "WRY",
-      "type": 0
-    },
-    {
-      "word": "YAR",
-      "type": 0
-    },
-    {
-      "word": "YAW",
-      "type": 0
-    },
-    {
-      "word": "ARIA",
-      "type": 0
-    },
-    {
-      "word": "ARID",
-      "type": 0
-    },
-    {
-      "word": "AWRY",
-      "type": 0
-    },
-    {
-      "word": "CRAW",
-      "type": 0
-    },
-    {
-      "word": "DEAN",
-      "type": 0
-    },
-    {
-      "word": "DELS",
-      "type": 0
-    },
-    {
-      "word": "LEAN",
-      "type": 0
-    },
-    {
-      "word": "SLED",
-      "type": 0
-    },
-    {
-      "word": "UNAI",
-      "type": 0
-    },
-    {
-      "word": "VELD",
-      "type": 0
-    },
-    {
-      "word": "WIND",
-      "type": 0
-    },
-    {
-      "word": "YAWN",
-      "type": 0
-    },
-    {
-      "word": "DEAIR",
-      "type": 0
-    },
-    {
-      "word": "NAIRA",
-      "type": 0
-    },
-    {
-      "word": "RIDDLE",
-      "type": 0
-    },
-    {
-      "word": "RUNWAY",
-      "type": 0
-    },
-    {
-      "word": "WIDDLE",
-      "type": 0
-    },
-    {
-      "word": "RIDDLED",
-      "type": 0
-    },
-    {
-      "word": "WIDDLED",
-      "type": 0
+      "word": "REBUS",
+      "type": 2
     }
   ],
-  "letters": "YRUWI,AWNVN,RIAED,CDDLS",
-  "obstacles": []
+  "letters": "WSER,EUBE,TCOV",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 8,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,72 +1,68 @@
 {
   "id": 1507,
-  "width": 4,
-  "height": 4,
+  "width": 5,
+  "height": 3,
   "target_words": [
     {
-      "word": "AGE",
+      "word": "ALL",
       "type": 0
     },
     {
-      "word": "BUT",
+      "word": "ANT",
       "type": 0
     },
     {
-      "word": "NET",
+      "word": "LOB",
       "type": 0
     },
     {
-      "word": "NOW",
+      "word": "SOB",
       "type": 0
     },
     {
-      "word": "ONE",
+      "word": "INTO",
       "type": 0
     },
     {
-      "word": "OUT",
+      "word": "LOAN",
       "type": 0
     },
     {
-      "word": "REG",
+      "word": "REIN",
+      "type": 2
+    },
+    {
+      "word": "VEIN",
       "type": 0
     },
     {
-      "word": "TAG",
-      "type": 0
+      "word": "INTERN",
+      "type": 2
     },
     {
-      "word": "TEN",
-      "type": 0
-    },
-    {
-      "word": "OUTS",
-      "type": 0
-    },
-    {
-      "word": "OUTER",
+      "word": "LANTERN",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "EAT",
+      "word": "ANTE",
       "type": 0
     },
     {
-      "word": "ERE",
+      "word": "BOT",
       "type": 0
     },
     {
-      "word": "ERS",
+      "word": "INTER",
       "type": 0
     },
     {
-      "word": "GAE",
-      "type": 0
+      "word": "INTERNS",
+      "type": 2
     },
     {
-      "word": "GAT",
+      "word": "LANTERNS",
       "type": 0
     },
     {
@@ -74,138 +70,53 @@
       "type": 0
     },
     {
-      "word": "TAE",
-      "type": 0
+      "word": "TERN",
+      "type": 1
     },
     {
-      "word": "TEA",
-      "type": 0
-    },
-    {
-      "word": "TUB",
-      "type": 0
-    },
-    {
-      "word": "UTS",
-      "type": 0
-    },
-    {
-      "word": "WON",
-      "type": 0
-    },
-    {
-      "word": "AGER",
-      "type": 0
-    },
-    {
-      "word": "BUTE",
-      "type": 0
-    },
-    {
-      "word": "BUTS",
-      "type": 0
-    },
-    {
-      "word": "BUTT",
-      "type": 0
-    },
-    {
-      "word": "ENOW",
-      "type": 0
-    },
-    {
-      "word": "ERST",
-      "type": 0
-    },
-    {
-      "word": "GAEN",
-      "type": 0
-    },
-    {
-      "word": "NEAT",
-      "type": 0
-    },
-    {
-      "word": "NETT",
-      "type": 0
-    },
-    {
-      "word": "RETS",
-      "type": 0
-    },
-    {
-      "word": "STUB",
-      "type": 0
-    },
-    {
-      "word": "TEAT",
-      "type": 0
-    },
-    {
-      "word": "TENT",
-      "type": 0
-    },
-    {
-      "word": "TRET",
-      "type": 0
-    },
-    {
-      "word": "TUBS",
-      "type": 0
-    },
-    {
-      "word": "WONT",
-      "type": 0
-    },
-    {
-      "word": "BUTTE",
-      "type": 0
-    },
-    {
-      "word": "EAGER",
-      "type": 0
-    },
-    {
-      "word": "NETTS",
-      "type": 0
-    },
-    {
-      "word": "STERE",
-      "type": 0
-    },
-    {
-      "word": "TRETS",
-      "type": 0
-    },
-    {
-      "word": "NETTER",
-      "type": 0
-    },
-    {
-      "word": "NEUTER",
-      "type": 0
-    },
-    {
-      "word": "OUTERS",
-      "type": 0
-    },
-    {
-      "word": "EAGERER",
-      "type": 0
-    },
-    {
-      "word": "NETTERS",
-      "type": 0
-    },
-    {
-      "word": "NEUTERS",
-      "type": 0
-    },
-    {
-      "word": "TENTAGE",
-      "type": 0
+      "word": "VEAL",
+      "type": 1
     }
   ],
-  "letters": "RSBW,ETUO,RTEN,EGAT",
-  "obstacles": []
+  "letters": "LOBOS,LANTN,VEIER",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 4,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        }
+      ]
+    }
+  ]
 }

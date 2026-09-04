@@ -1,248 +1,119 @@
 {
   "id": 2030,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "BIG",
+      "word": "AGO",
       "type": 0
     },
     {
-      "word": "DEN",
+      "word": "DUO",
       "type": 0
     },
     {
-      "word": "LIB",
+      "word": "EAR",
       "type": 0
     },
     {
-      "word": "RED",
+      "word": "GOT",
       "type": 0
     },
     {
-      "word": "RES",
+      "word": "RAG",
       "type": 0
     },
     {
-      "word": "SKI",
+      "word": "RIG",
       "type": 0
     },
     {
-      "word": "COED",
+      "word": "BEAR",
       "type": 0
     },
     {
-      "word": "DESK",
+      "word": "BRAG",
+      "type": 2
+    },
+    {
+      "word": "DEAR",
       "type": 0
     },
     {
-      "word": "DOSE",
-      "type": 0
-    },
-    {
-      "word": "RIDE",
-      "type": 0
-    },
-    {
-      "word": "ROSE",
+      "word": "ZEBRA",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "DIN",
+      "word": "BRA",
       "type": 0
     },
     {
-      "word": "DOR",
+      "word": "BRIG",
       "type": 0
     },
     {
-      "word": "DOS",
+      "word": "BRIT",
       "type": 0
     },
     {
-      "word": "GIB",
+      "word": "GAR",
       "type": 0
     },
     {
-      "word": "IRE",
+      "word": "GARB",
+      "type": 1
+    },
+    {
+      "word": "OUD",
       "type": 0
     },
     {
-      "word": "ODE",
-      "type": 0
+      "word": "TOGA",
+      "type": 2
     },
     {
-      "word": "OES",
-      "type": 0
-    },
-    {
-      "word": "OSE",
-      "type": 0
-    },
-    {
-      "word": "RID",
-      "type": 0
-    },
-    {
-      "word": "RIN",
-      "type": 0
-    },
-    {
-      "word": "ROD",
-      "type": 0
-    },
-    {
-      "word": "SEN",
-      "type": 0
-    },
-    {
-      "word": "SER",
-      "type": 0
-    },
-    {
-      "word": "SOD",
-      "type": 0
-    },
-    {
-      "word": "DINE",
-      "type": 0
-    },
-    {
-      "word": "DIRE",
-      "type": 0
-    },
-    {
-      "word": "ESES",
-      "type": 0
-    },
-    {
-      "word": "GIBS",
-      "type": 0
-    },
-    {
-      "word": "GILD",
-      "type": 0
-    },
-    {
-      "word": "IDES",
-      "type": 0
-    },
-    {
-      "word": "IRED",
-      "type": 0
-    },
-    {
-      "word": "IRES",
-      "type": 0
-    },
-    {
-      "word": "LIBS",
-      "type": 0
-    },
-    {
-      "word": "NIDE",
-      "type": 0
-    },
-    {
-      "word": "ODES",
-      "type": 0
-    },
-    {
-      "word": "OSES",
-      "type": 0
-    },
-    {
-      "word": "REDE",
-      "type": 0
-    },
-    {
-      "word": "RODE",
-      "type": 0
-    },
-    {
-      "word": "DINES",
-      "type": 0
-    },
-    {
-      "word": "DOSED",
-      "type": 0
-    },
-    {
-      "word": "DOSES",
-      "type": 0
-    },
-    {
-      "word": "NIDED",
-      "type": 0
-    },
-    {
-      "word": "NIDES",
-      "type": 0
-    },
-    {
-      "word": "REDED",
-      "type": 0
-    },
-    {
-      "word": "REDES",
-      "type": 0
-    },
-    {
-      "word": "RIDES",
-      "type": 0
-    },
-    {
-      "word": "ROSED",
-      "type": 0
-    },
-    {
-      "word": "ROSES",
-      "type": 0
-    },
-    {
-      "word": "SEDER",
-      "type": 0
-    },
-    {
-      "word": "SERIN",
-      "type": 0
-    },
-    {
-      "word": "GILDED",
-      "type": 0
-    },
-    {
-      "word": "SERINE",
-      "type": 0
-    },
-    {
-      "word": "ESERINE",
-      "type": 0
-    },
-    {
-      "word": "SERINES",
-      "type": 0
-    },
-    {
-      "word": "ESERINES",
+      "word": "ZED",
       "type": 0
     }
   ],
-  "letters": "COKIG,RESBI,IDEDL,NESOR",
+  "letters": "BRIT,EAGO,ZEDU",
   "obstacles": [
     {
-      "required_words": 5,
+      "required_words": 4,
       "id": 1,
       "type": 0,
       "cells": [
         {
           "x": 0,
-          "y": 0
+          "y": 2
         },
         {
-          "x": 1,
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
           "y": 0
         }
       ]

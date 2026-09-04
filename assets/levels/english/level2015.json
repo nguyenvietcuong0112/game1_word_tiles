@@ -1,34 +1,30 @@
 {
   "id": 2015,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "DIS",
+      "word": "BAG",
       "type": 0
     },
     {
-      "word": "ELM",
+      "word": "BAT",
       "type": 0
     },
     {
-      "word": "FLU",
+      "word": "NOT",
       "type": 0
     },
     {
-      "word": "HES",
+      "word": "NUN",
       "type": 0
     },
     {
-      "word": "ITS",
+      "word": "SUN",
       "type": 0
     },
     {
-      "word": "LIT",
-      "type": 0
-    },
-    {
-      "word": "TOM",
+      "word": "TAG",
       "type": 0
     },
     {
@@ -36,116 +32,139 @@
       "type": 0
     },
     {
-      "word": "LEAF",
+      "word": "NINE",
       "type": 0
     },
     {
-      "word": "SELF",
+      "word": "STUN",
+      "type": 2
+    },
+    {
+      "word": "TUNE",
       "type": 0
     },
     {
-      "word": "SUCH",
+      "word": "BATON",
       "type": 0
     },
     {
-      "word": "CUSTOM",
-      "type": 0
-    },
-    {
-      "word": "CUSTOMS",
+      "word": "BONUS",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "CIS",
+      "word": "BAGS",
       "type": 0
     },
     {
-      "word": "ELF",
+      "word": "BATS",
       "type": 0
     },
     {
-      "word": "HAE",
+      "word": "BON",
       "type": 0
     },
     {
-      "word": "ICH",
+      "word": "BOT",
       "type": 0
     },
     {
-      "word": "ISM",
+      "word": "BOTS",
       "type": 0
     },
     {
-      "word": "LEA",
+      "word": "GAB",
       "type": 0
     },
     {
-      "word": "MOT",
+      "word": "NESS",
+      "type": 2
+    },
+    {
+      "word": "NUT",
       "type": 0
     },
     {
-      "word": "OMS",
+      "word": "NUTS",
       "type": 0
     },
     {
-      "word": "SEL",
+      "word": "ONUS",
+      "type": 1
+    },
+    {
+      "word": "SEN",
       "type": 0
     },
     {
-      "word": "SIC",
+      "word": "STAB",
       "type": 0
     },
     {
-      "word": "TIL",
+      "word": "STAG",
       "type": 0
     },
     {
-      "word": "CIST",
+      "word": "TAB",
       "type": 0
     },
     {
-      "word": "FLUS",
+      "word": "TAGS",
       "type": 0
     },
     {
-      "word": "ISMS",
+      "word": "TON",
       "type": 0
     },
     {
-      "word": "LITS",
+      "word": "TUNES",
       "type": 0
     },
     {
-      "word": "LUST",
-      "type": 0
-    },
-    {
-      "word": "MOTS",
-      "type": 0
-    },
-    {
-      "word": "TOMS",
-      "type": 0
-    },
-    {
-      "word": "LUCID",
-      "type": 0
-    },
-    {
-      "word": "SULFA",
-      "type": 0
-    },
-    {
-      "word": "DISTIL",
-      "type": 0
-    },
-    {
-      "word": "DISUSE",
+      "word": "UNI",
       "type": 0
     }
   ],
-  "letters": "LDMLE,IICHA,TSULF,OMSEH",
-  "obstacles": []
+  "letters": "GSSE,ATUN,BONI",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 8,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

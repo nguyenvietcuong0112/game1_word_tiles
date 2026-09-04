@@ -1,103 +1,118 @@
 {
   "id": 1584,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "BET",
+      "word": "AWE",
       "type": 0
     },
     {
-      "word": "JAM",
+      "word": "HAM",
       "type": 0
     },
     {
-      "word": "LEA",
+      "word": "LAW",
       "type": 0
     },
     {
-      "word": "MAE",
+      "word": "HALO",
       "type": 0
     },
     {
-      "word": "MET",
+      "word": "HALT",
       "type": 0
     },
     {
-      "word": "TOE",
+      "word": "HOST",
       "type": 0
     },
     {
-      "word": "TOM",
+      "word": "LOST",
       "type": 0
     },
     {
-      "word": "BYTE",
+      "word": "MALT",
+      "type": 2
+    },
+    {
+      "word": "SLAM",
       "type": 0
     },
     {
-      "word": "COME",
-      "type": 0
+      "word": "SWAM",
+      "type": 2
     },
     {
-      "word": "MULE",
-      "type": 0
-    },
-    {
-      "word": "TEMP",
-      "type": 0
+      "word": "WALTZ",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "AMU",
+      "word": "HAW",
       "type": 0
     },
     {
-      "word": "COT",
+      "word": "HEW",
       "type": 0
     },
     {
-      "word": "LUM",
+      "word": "HOLT",
       "type": 0
     },
     {
-      "word": "MOC",
+      "word": "LAWS",
+      "type": 2
+    },
+    {
+      "word": "MAW",
       "type": 0
     },
     {
-      "word": "MOT",
-      "type": 0
-    },
-    {
-      "word": "COMP",
-      "type": 0
-    },
-    {
-      "word": "COTE",
-      "type": 0
-    },
-    {
-      "word": "MOTE",
-      "type": 0
-    },
-    {
-      "word": "TOME",
-      "type": 0
-    },
-    {
-      "word": "COMET",
-      "type": 0
-    },
-    {
-      "word": "CLEOME",
-      "type": 0
-    },
-    {
-      "word": "COMPEL",
-      "type": 0
+      "word": "SLAMS",
+      "type": 2
     }
   ],
-  "letters": "EAMU,LJCL,YTOE,BEMP",
-  "obstacles": []
+  "letters": "SMSZ,WALT,EHOS",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

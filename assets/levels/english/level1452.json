@@ -1,34 +1,26 @@
 {
   "id": 1452,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "AID",
+      "word": "ALL",
       "type": 0
     },
     {
-      "word": "AVE",
+      "word": "ILL",
       "type": 0
     },
     {
-      "word": "DEE",
+      "word": "LAY",
       "type": 0
     },
     {
-      "word": "HER",
+      "word": "LIE",
       "type": 0
     },
     {
-      "word": "INK",
-      "type": 0
-    },
-    {
-      "word": "VAR",
-      "type": 0
-    },
-    {
-      "word": "LINK",
+      "word": "OIL",
       "type": 0
     },
     {
@@ -36,15 +28,15 @@
       "type": 0
     },
     {
-      "word": "RAIN",
+      "word": "ROLL",
       "type": 0
     },
     {
-      "word": "RICK",
-      "type": 0
+      "word": "ALLOY",
+      "type": 2
     },
     {
-      "word": "BRICK",
+      "word": "LOYAL",
       "type": 0
     }
   ],
@@ -54,106 +46,54 @@
       "type": 0
     },
     {
-      "word": "AIN",
-      "type": 0
-    },
-    {
-      "word": "DIN",
-      "type": 0
-    },
-    {
-      "word": "ICK",
-      "type": 0
-    },
-    {
-      "word": "ILK",
-      "type": 0
-    },
-    {
-      "word": "IRE",
-      "type": 0
-    },
-    {
-      "word": "LID",
-      "type": 0
-    },
-    {
-      "word": "LIN",
-      "type": 0
-    },
-    {
-      "word": "NIL",
-      "type": 0
-    },
-    {
-      "word": "VEE",
-      "type": 0
-    },
-    {
-      "word": "AIDE",
-      "type": 0
-    },
-    {
-      "word": "BLIN",
-      "type": 0
-    },
-    {
-      "word": "CIRE",
-      "type": 0
-    },
-    {
-      "word": "DINK",
-      "type": 0
-    },
-    {
-      "word": "HERB",
-      "type": 0
-    },
-    {
-      "word": "ILIA",
-      "type": 0
-    },
-    {
       "word": "LIAR",
+      "type": 2
+    },
+    {
+      "word": "LOLL",
       "type": 0
     },
     {
-      "word": "LICK",
+      "word": "ORAL",
       "type": 0
     },
     {
-      "word": "LIRE",
-      "type": 0
-    },
-    {
-      "word": "NIDE",
-      "type": 0
-    },
-    {
-      "word": "RAID",
-      "type": 0
-    },
-    {
-      "word": "RAVE",
-      "type": 0
-    },
-    {
-      "word": "VAIL",
-      "type": 0
-    },
-    {
-      "word": "VAIN",
-      "type": 0
-    },
-    {
-      "word": "BLINK",
-      "type": 0
-    },
-    {
-      "word": "CILIA",
-      "type": 0
+      "word": "YALL",
+      "type": 2
     }
   ],
-  "letters": "EEHE,VDBR,AILI,RNKC",
-  "obstacles": []
+  "letters": "ILOY,OLLA,RAIE",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,167 +1,87 @@
 {
   "id": 1607,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ACE",
+      "word": "FIG",
       "type": 0
     },
     {
-      "word": "KID",
+      "word": "GAS",
       "type": 0
     },
     {
-      "word": "OHM",
+      "word": "EAST",
       "type": 0
     },
     {
-      "word": "SEC",
+      "word": "FIST",
       "type": 0
     },
     {
-      "word": "USE",
+      "word": "GIFT",
       "type": 0
     },
     {
-      "word": "YES",
+      "word": "SAFE",
       "type": 0
     },
     {
-      "word": "DOES",
+      "word": "SIFT",
+      "type": 2
+    },
+    {
+      "word": "SOFT",
       "type": 0
     },
     {
-      "word": "KIDS",
+      "word": "FEAST",
       "type": 0
     },
     {
-      "word": "MOOD",
-      "type": 0
-    },
-    {
-      "word": "USED",
-      "type": 0
-    },
-    {
-      "word": "ACCUSED",
+      "word": "ASSIST",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AYE",
+      "word": "ASS",
       "type": 0
     },
     {
-      "word": "CAY",
+      "word": "FIGS",
+      "type": 2
+    },
+    {
+      "word": "GIFTS",
       "type": 0
     },
     {
-      "word": "DOE",
+      "word": "GIST",
       "type": 0
     },
     {
-      "word": "ESS",
-      "type": 0
-    },
-    {
-      "word": "HOD",
-      "type": 0
-    },
-    {
-      "word": "HOE",
-      "type": 0
-    },
-    {
-      "word": "IDS",
-      "type": 0
-    },
-    {
-      "word": "MHO",
-      "type": 0
-    },
-    {
-      "word": "MOO",
-      "type": 0
-    },
-    {
-      "word": "ODE",
-      "type": 0
-    },
-    {
-      "word": "ODS",
-      "type": 0
-    },
-    {
-      "word": "OES",
-      "type": 0
-    },
-    {
-      "word": "OOH",
-      "type": 0
-    },
-    {
-      "word": "ACES",
-      "type": 0
-    },
-    {
-      "word": "AYES",
-      "type": 0
-    },
-    {
-      "word": "CESS",
-      "type": 0
-    },
-    {
-      "word": "CUSS",
-      "type": 0
-    },
-    {
-      "word": "DIKE",
-      "type": 0
-    },
-    {
-      "word": "DOOM",
-      "type": 0
-    },
-    {
-      "word": "HODS",
-      "type": 0
-    },
-    {
-      "word": "HOES",
-      "type": 0
-    },
-    {
-      "word": "IDES",
-      "type": 0
-    },
-    {
-      "word": "ODES",
-      "type": 0
-    },
-    {
-      "word": "DIKES",
-      "type": 0
-    },
-    {
-      "word": "MOODS",
-      "type": 0
-    },
-    {
-      "word": "ACCUSE",
-      "type": 0
-    },
-    {
-      "word": "CESSED",
-      "type": 0
-    },
-    {
-      "word": "YESSED",
+      "word": "SAG",
       "type": 0
     }
   ],
-  "letters": "ACCU,YESS,HODE,MOIK",
-  "obstacles": []
+  "letters": "EAST,FGIF,ASSO",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 1
+        }
+      ]
+    }
+  ]
 }

@@ -1,99 +1,106 @@
 {
   "id": 1143,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ALS",
+      "word": "SEA",
       "type": 0
     },
     {
-      "word": "LAS",
+      "word": "SHE",
       "type": 0
     },
     {
-      "word": "LAW",
+      "word": "SUM",
       "type": 0
     },
     {
-      "word": "GOAL",
+      "word": "USE",
       "type": 0
     },
     {
-      "word": "GOOD",
+      "word": "ACHE",
       "type": 0
     },
     {
-      "word": "LAWS",
+      "word": "EACH",
       "type": 0
     },
     {
-      "word": "GOALS",
+      "word": "MUSE",
       "type": 0
     },
     {
-      "word": "GOODS",
+      "word": "SHED",
       "type": 0
     },
     {
-      "word": "JEALOUS",
+      "word": "ELUDE",
+      "type": 0
+    },
+    {
+      "word": "SCHEDULE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AWL",
+      "word": "ACHED",
       "type": 0
     },
     {
-      "word": "DOL",
+      "word": "LEACH",
+      "type": 2
+    },
+    {
+      "word": "SHEA",
       "type": 0
     },
     {
-      "word": "GOA",
-      "type": 0
-    },
-    {
-      "word": "GOO",
-      "type": 0
-    },
-    {
-      "word": "LOO",
-      "type": 0
-    },
-    {
-      "word": "ODS",
-      "type": 0
-    },
-    {
-      "word": "SAL",
-      "type": 0
-    },
-    {
-      "word": "WAE",
-      "type": 0
-    },
-    {
-      "word": "AWLS",
-      "type": 0
-    },
-    {
-      "word": "DOLS",
-      "type": 0
-    },
-    {
-      "word": "GOAS",
-      "type": 0
-    },
-    {
-      "word": "SALS",
-      "type": 0
-    },
-    {
-      "word": "SLAW",
+      "word": "SUMS",
       "type": 0
     }
   ],
-  "letters": "GSUO,OASL,OLWA,DSJE",
-  "obstacles": []
+  "letters": "SHED,MCAU,USEL",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,195 +1,98 @@
 {
   "id": 1956,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ACT",
+      "word": "INK",
       "type": 0
     },
     {
-      "word": "ARC",
+      "word": "INN",
       "type": 0
     },
     {
-      "word": "CAM",
+      "word": "KIN",
       "type": 0
     },
     {
-      "word": "MAC",
+      "word": "MUD",
       "type": 0
     },
     {
-      "word": "MAR",
+      "word": "OWN",
       "type": 0
     },
     {
-      "word": "OUT",
+      "word": "DOWN",
       "type": 0
     },
     {
-      "word": "RAD",
+      "word": "DUMP",
+      "type": 2
+    },
+    {
+      "word": "MINK",
       "type": 0
     },
     {
-      "word": "RAM",
+      "word": "PUMP",
       "type": 0
     },
     {
-      "word": "VIS",
-      "type": 0
-    },
-    {
-      "word": "ACTS",
-      "type": 0
-    },
-    {
-      "word": "MALE",
-      "type": 0
-    },
-    {
-      "word": "MARC",
-      "type": 0
-    },
-    {
-      "word": "MACRO",
-      "type": 0
+      "word": "PUMPKIN",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "ALE",
+      "word": "IMP",
       "type": 0
     },
     {
-      "word": "AMU",
-      "type": 0
-    },
-    {
-      "word": "CEL",
-      "type": 0
-    },
-    {
-      "word": "LAC",
-      "type": 0
-    },
-    {
-      "word": "LAM",
-      "type": 0
-    },
-    {
-      "word": "MOA",
-      "type": 0
-    },
-    {
-      "word": "MOL",
-      "type": 0
-    },
-    {
-      "word": "MUT",
-      "type": 0
-    },
-    {
-      "word": "OAR",
-      "type": 0
-    },
-    {
-      "word": "OLE",
-      "type": 0
-    },
-    {
-      "word": "ORA",
-      "type": 0
-    },
-    {
-      "word": "ORC",
-      "type": 0
-    },
-    {
-      "word": "ROE",
-      "type": 0
-    },
-    {
-      "word": "UTS",
-      "type": 0
-    },
-    {
-      "word": "ALEC",
-      "type": 0
-    },
-    {
-      "word": "CALO",
-      "type": 0
-    },
-    {
-      "word": "CRAM",
-      "type": 0
-    },
-    {
-      "word": "LOAM",
-      "type": 0
-    },
-    {
-      "word": "LOUT",
-      "type": 0
-    },
-    {
-      "word": "MARL",
-      "type": 0
-    },
-    {
-      "word": "MOLA",
-      "type": 0
-    },
-    {
-      "word": "MOLE",
-      "type": 0
-    },
-    {
-      "word": "MUTS",
-      "type": 0
-    },
-    {
-      "word": "OLEO",
-      "type": 0
-    },
-    {
-      "word": "ORAD",
-      "type": 0
-    },
-    {
-      "word": "ORCA",
-      "type": 0
-    },
-    {
-      "word": "OUTS",
-      "type": 0
-    },
-    {
-      "word": "ROAM",
-      "type": 0
-    },
-    {
-      "word": "STUM",
-      "type": 0
-    },
-    {
-      "word": "AMOLE",
-      "type": 0
-    },
-    {
-      "word": "CELOM",
-      "type": 0
-    },
-    {
-      "word": "LOUTS",
-      "type": 0
-    },
-    {
-      "word": "MARCEL",
+      "word": "KINK",
       "type": 0
     }
   ],
-  "letters": "AROEC,DCALR,VTMOA,ISTUM",
-  "obstacles": []
+  "letters": "KINN,PMKW,PUDO",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

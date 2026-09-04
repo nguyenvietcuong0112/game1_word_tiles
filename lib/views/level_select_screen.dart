@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
 import '../theme/app_theme.dart';
+import 'common/app_background.dart';
+import 'common/wood_widgets.dart';
 import 'game_screen.dart';
 
 class LevelSelectScreen extends StatefulWidget {
@@ -77,57 +79,20 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
     final langName = LevelLoader.languageDisplayNames[widget.language] ?? widget.language;
 
     return Scaffold(
-      backgroundColor: AppColors.bgCanvas,
-      body: SafeArea(
-        child: Column(
+      backgroundColor: Colors.transparent,
+      body: AppBackground(
+        child: SafeArea(
+          child: Column(
           children: [
             // Header
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 12.h),
               child: Row(
                 children: [
-                  // 3D Cocoa-Caramel Back Button (Matching Reference Image)
-                  InkWell(
+                  WoodCarvedIconButton(
+                    size: 44.r,
+                    assetPath: WoodGameIcons.btnBack,
                     onTap: () => Navigator.pop(context),
-                    borderRadius: BorderRadius.circular(24.r),
-                    child: Container(
-                      width: 44.r,
-                      height: 44.r,
-                      decoration: BoxDecoration(
-                        color: AppColors.btnRingBg,
-                        shape: BoxShape.circle,
-                        border: Border.all(color: AppColors.btnRingBorder, width: 1.5),
-                        boxShadow: const [
-                          BoxShadow(
-                            color: AppColors.btnRingShadow,
-                            offset: Offset(0, 2.0),
-                            blurRadius: 0,
-                          ),
-                        ],
-                      ),
-                      padding: const EdgeInsets.all(4.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: AppColors.btnFaceBrown,
-                          shape: BoxShape.circle,
-                          border: Border.all(color: AppColors.btnBorderBrown, width: 1.5),
-                          boxShadow: const [
-                            BoxShadow(
-                              color: AppColors.btnShadowBrown,
-                              offset: Offset(0, 1.5),
-                              blurRadius: 0,
-                            ),
-                          ],
-                        ),
-                        child: const Center(
-                          child: Icon(
-                            Icons.chevron_left_rounded,
-                            color: Colors.white,
-                            size: 26,
-                          ),
-                        ),
-                      ),
-                    ),
                   ),
                   SizedBox(width: 14.w),
                   Expanded(
@@ -140,73 +105,55 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
                             fontSize: 20.sp,
                             fontWeight: FontWeight.w900,
                             letterSpacing: 0.8,
-                            color: AppColors.headerBrown,
+                            color: WoodenStyle.carvedDark,
                           ),
                         ),
                         Text(
                           langName,
                           style: GoogleFonts.fredoka(
                             fontSize: 14.sp,
-                            color: AppColors.subHeaderBrown,
+                            color: const Color(0xFF7A4A28),
                             fontWeight: FontWeight.w700,
                           ),
                         ),
                       ],
                     ),
                   ),
-                  // Stars Pill
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 7.h),
-                    decoration: BoxDecoration(
-                      color: AppColors.cardWhite,
-                      borderRadius: BorderRadius.circular(20.r),
-                      border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                      boxShadow: const [
-                        BoxShadow(
-                          color: Color(0xFFE8DAC8),
-                          offset: Offset(0, 1.5),
-                          blurRadius: 0,
-                        ),
-                      ],
-                    ),
-                    child: Row(
-                      children: [
-                        const Icon(Icons.star_rounded, color: Color(0xFFF59E0B), size: 18),
-                        SizedBox(width: 4.w),
-                        Text(
-                          '${_starsMap.values.fold<int>(0, (sum, s) => sum + s)}',
-                          style: GoogleFonts.fredoka(fontWeight: FontWeight.w900, color: AppColors.textDark, fontSize: 14.sp),
-                        ),
-                      ],
-                    ),
-                  ),
-                  SizedBox(width: 8.w),
+                  // Total Stars Pill
+                  // Container(
+                  //   padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 6.h),
+                  //   decoration: BoxDecoration(
+                  //     color: const Color(0xFFFFF7EA),
+                  //     borderRadius: BorderRadius.circular(20.r),
+                  //     border: Border.all(color: WoodenStyle.woodBevel, width: 1.5),
+                  //     boxShadow: const [
+                  //       BoxShadow(
+                  //         color: WoodenStyle.woodExtrusion,
+                  //         offset: Offset(0, 1.8),
+                  //         blurRadius: 0,
+                  //       ),
+                  //     ],
+                  //   ),
+                  //   child: Row(
+                  //     children: [
+                  //       WoodenStar(isEarned: true, size: 18.r),
+                  //       SizedBox(width: 4.w),
+                  //       Text(
+                  //         '${_starsMap.values.fold<int>(0, (sum, s) => sum + s)}',
+                  //         style: GoogleFonts.fredoka(
+                  //           fontWeight: FontWeight.w900,
+                  //           color: WoodenStyle.carvedDark,
+                  //           fontSize: 14.sp,
+                  //         ),
+                  //       ),
+                  //     ],
+                  //   ),
+                  // ),
+                  // SizedBox(width: 8.w),
 
-                  // Coins Pill
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 7.h),
-                    decoration: BoxDecoration(
-                      color: AppColors.cardWhite,
-                      borderRadius: BorderRadius.circular(20.r),
-                      border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                      boxShadow: const [
-                        BoxShadow(
-                          color: Color(0xFFE8DAC8),
-                          offset: Offset(0, 1.5),
-                          blurRadius: 0,
-                        ),
-                      ],
-                    ),
-                    child: Row(
-                      children: [
-                        const Text('🪙', style: TextStyle(fontSize: 14)),
-                        SizedBox(width: 4.w),
-                        Text(
-                          '${GameStorage.getCoins()}',
-                          style: GoogleFonts.fredoka(fontWeight: FontWeight.w900, color: AppColors.textDark, fontSize: 14.sp),
-                        ),
-                      ],
-                    ),
+                  // Coins Counter
+                  WoodenCurrency(
+                    coins: GameStorage.getCoins(),
                   ),
                 ],
               ),
@@ -245,8 +192,9 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
           ],
         ),
       ),
-    );
-  }
+    ),
+  );
+}
 }
 
 class _LevelCard extends StatelessWidget {
@@ -266,79 +214,112 @@ class _LevelCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = AppColors.getTileThemeForPosition(levelNumber ~/ 5, levelNumber % 5);
-
-    final Color faceColor = isCurrent
-        ? AppColors.btnFaceBrown
-        : (isUnlocked ? theme.face : const Color(0xFFF2E8DC));
-
-    final Color bevelColor = isCurrent
-        ? AppColors.btnShadowBrown
-        : (isUnlocked ? theme.bevel : const Color(0xFFDECFC0));
-
-    final textColor = isCurrent ? Colors.white : (isUnlocked ? AppColors.textDark : AppColors.textMuted);
-
     return InkWell(
       onTap: isUnlocked ? onTap : null,
       borderRadius: BorderRadius.circular(18.r),
       child: Container(
         decoration: BoxDecoration(
-          color: faceColor,
           borderRadius: BorderRadius.circular(18.r),
           border: Border.all(
-            color: isCurrent ? AppColors.btnBorderBrown : (isUnlocked ? theme.bevel : const Color(0xFFDECFC0)),
+            color: isCurrent
+                ? WoodenStyle.woodExtrusion
+                : (isUnlocked ? WoodenStyle.woodBevel : const Color(0xFFD4C2AE)),
             width: 1.8,
           ),
           boxShadow: [
             BoxShadow(
-              color: bevelColor,
-              offset: const Offset(0, 2.0),
+              color: isCurrent
+                  ? WoodenStyle.woodExtrusion
+                  : (isUnlocked ? WoodenStyle.woodExtrusion : const Color(0xFFC7B5A0)),
+              offset: const Offset(0, 2.5),
               blurRadius: 0,
             ),
           ],
         ),
-        child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(16.r),
+          child: Stack(
+            alignment: Alignment.center,
             children: [
-              if (!isUnlocked)
-                const Icon(Icons.lock_rounded, size: 20, color: Color(0xFFA6907E))
-              else ...[
-                Text(
-                  '$levelNumber',
-                  style: GoogleFonts.fredoka(
-                    fontSize: 18.sp,
-                    fontWeight: FontWeight.w900,
-                    color: textColor,
-                    height: 1.0,
-                    shadows: isCurrent
-                        ? const [
-                            Shadow(
-                              color: AppColors.btnShadowBrown,
-                              offset: Offset(0, 1.5),
-                            ),
-                          ]
-                        : null,
+              // Base Gradient
+              Positioned.fill(
+                child: Container(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: isCurrent
+                          ? const [
+                              WoodenStyle.woodHighlight,
+                              WoodenStyle.woodTop,
+                              WoodenStyle.woodMid,
+                            ]
+                          : (isUnlocked
+                              ? const [Color(0xFFFFF7EA), Color(0xFFF3DFBE), Color(0xFFE2C498)]
+                              : const [Color(0xFFF0E5D8), Color(0xFFE2D4C4)]),
+                    ),
                   ),
                 ),
-                SizedBox(height: 4.h),
-                // Stars (Reflects exact stars earned: 1, 2, or 3)
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: List.generate(3, (i) {
-                    final hasStar = isUnlocked && (i < stars);
-                    return Icon(
-                      Icons.star_rounded,
-                      size: 13.r,
-                      color: hasStar
-                          ? AppColors.honeyGold
-                          : (isCurrent
-                              ? Colors.white.withValues(alpha: 0.35)
-                              : const Color(0xFFD6C8B8)),
-                    );
-                  }),
+              ),
+
+              // Wood Grain Texture Overlay
+              if (isUnlocked)
+                Positioned.fill(
+                  child: Opacity(
+                    opacity: isCurrent ? 0.38 : 0.22,
+                    child: Image.asset(
+                      'assets/images/golden_wood_texture.webp',
+                      fit: BoxFit.cover,
+                      errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
+                    ),
+                  ),
                 ),
-              ],
+
+              // Center Content
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  if (!isUnlocked)
+                    Image.asset(
+                      WoodGameIcons.btnLock,
+                      width: 24.r,
+                      height: 24.r,
+                      fit: BoxFit.contain,
+                    )
+                  else ...[
+                    Text(
+                      '$levelNumber',
+                      style: GoogleFonts.fredoka(
+                        fontSize: 18.sp,
+                        fontWeight: FontWeight.w900,
+                        color: isCurrent ? const Color(0xFFAEF82C) : WoodenStyle.carvedDark,
+                        height: 1.0,
+                        shadows: [
+                          Shadow(
+                            color: isCurrent ? WoodenStyle.woodExtrusion : WoodenStyle.carvedShadowLight,
+                            offset: const Offset(0, 1.2),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 4.h),
+                    // Stars (Reflects exact stars earned: 1, 2, or 3)
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: List.generate(3, (i) {
+                        final hasStar = isUnlocked && (i < stars);
+                        return Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 1.w),
+                          child: WoodenStar(
+                            isEarned: hasStar,
+                            size: 13.r,
+                          ),
+                        );
+                      }),
+                    ),
+                  ],
+                ],
+              ),
             ],
           ),
         ),

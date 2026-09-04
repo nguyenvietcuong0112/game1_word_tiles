@@ -1,135 +1,79 @@
 {
   "id": 2029,
-  "width": 5,
-  "height": 4,
+  "width": 3,
+  "height": 3,
   "target_words": [
     {
-      "word": "DUE",
+      "word": "PAR",
       "type": 0
     },
     {
-      "word": "EGG",
+      "word": "RAT",
       "type": 0
     },
     {
-      "word": "SEC",
+      "word": "RAY",
       "type": 0
     },
     {
-      "word": "SEE",
+      "word": "POST",
       "type": 0
     },
     {
-      "word": "DECK",
+      "word": "PRAY",
       "type": 0
     },
     {
-      "word": "EDGE",
+      "word": "STAR",
       "type": 0
     },
     {
-      "word": "EURO",
+      "word": "STAY",
       "type": 0
     },
     {
-      "word": "SEED",
+      "word": "ARRAY",
       "type": 0
     },
     {
-      "word": "CROSS",
-      "type": 0
-    },
-    {
-      "word": "EDGES",
-      "type": 0
+      "word": "STARRY",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "CEE",
+      "word": "PARR",
       "type": 0
     },
     {
-      "word": "DEE",
+      "word": "RAP",
       "type": 0
     },
     {
-      "word": "ESS",
+      "word": "RATS",
       "type": 0
     },
     {
-      "word": "GEE",
+      "word": "TAR",
       "type": 0
     },
     {
-      "word": "ORC",
-      "type": 0
-    },
-    {
-      "word": "ROE",
-      "type": 0
-    },
-    {
-      "word": "RUE",
-      "type": 0
-    },
-    {
-      "word": "SEG",
-      "type": 0
-    },
-    {
-      "word": "CESS",
-      "type": 0
-    },
-    {
-      "word": "CRUD",
-      "type": 0
-    },
-    {
-      "word": "DEES",
-      "type": 0
-    },
-    {
-      "word": "DURO",
-      "type": 0
-    },
-    {
-      "word": "ECRU",
-      "type": 0
-    },
-    {
-      "word": "GEED",
-      "type": 0
-    },
-    {
-      "word": "ORCS",
-      "type": 0
-    },
-    {
-      "word": "RUDD",
-      "type": 0
-    },
-    {
-      "word": "SECS",
-      "type": 0
-    },
-    {
-      "word": "DECKS",
-      "type": 0
-    },
-    {
-      "word": "DUROS",
-      "type": 0
-    },
-    {
-      "word": "EUROS",
-      "type": 0
-    },
-    {
-      "word": "CROSSE",
-      "type": 0
+      "word": "TARRY",
+      "type": 1
     }
   ],
-  "letters": "EUDDE,ORCGC,SCDGK,SEEES",
-  "obstacles": []
+  "letters": "TAY,SRR,OPA",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 1,
+          "y": 1
+        }
+      ]
+    }
+  ]
 }

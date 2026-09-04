@@ -1,179 +1,91 @@
 {
   "id": 1961,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ABS",
+      "word": "EEL",
       "type": 0
     },
     {
-      "word": "ACT",
+      "word": "OIL",
       "type": 0
     },
     {
-      "word": "ARC",
+      "word": "ORE",
+      "type": 2
+    },
+    {
+      "word": "ROT",
       "type": 0
     },
     {
-      "word": "BRA",
+      "word": "SUE",
       "type": 0
     },
     {
-      "word": "BUT",
+      "word": "REEL",
       "type": 0
     },
     {
-      "word": "CAB",
+      "word": "TOIL",
+      "type": 2
+    },
+    {
+      "word": "TORE",
       "type": 0
     },
     {
-      "word": "CAR",
-      "type": 0
-    },
-    {
-      "word": "RAN",
-      "type": 0
-    },
-    {
-      "word": "KING",
-      "type": 0
-    },
-    {
-      "word": "RANK",
-      "type": 0
-    },
-    {
-      "word": "TANK",
-      "type": 0
-    },
-    {
-      "word": "RANKING",
-      "type": 0
+      "word": "BASIL",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "ANI",
+      "word": "BILE",
       "type": 0
     },
     {
-      "word": "ARB",
-      "type": 0
+      "word": "LEER",
+      "type": 1
     },
     {
-      "word": "KIN",
-      "type": 0
-    },
-    {
-      "word": "RAT",
-      "type": 0
-    },
-    {
-      "word": "TAN",
-      "type": 0
-    },
-    {
-      "word": "TAR",
-      "type": 0
-    },
-    {
-      "word": "TAU",
-      "type": 0
-    },
-    {
-      "word": "TUB",
-      "type": 0
-    },
-    {
-      "word": "TUI",
-      "type": 0
-    },
-    {
-      "word": "UTA",
-      "type": 0
-    },
-    {
-      "word": "ACTA",
-      "type": 0
-    },
-    {
-      "word": "ARBS",
-      "type": 0
-    },
-    {
-      "word": "BRAN",
-      "type": 0
-    },
-    {
-      "word": "BRAT",
-      "type": 0
-    },
-    {
-      "word": "CABS",
-      "type": 0
-    },
-    {
-      "word": "CARB",
-      "type": 0
-    },
-    {
-      "word": "GNAR",
-      "type": 0
-    },
-    {
-      "word": "GNAT",
-      "type": 0
-    },
-    {
-      "word": "KINA",
-      "type": 0
-    },
-    {
-      "word": "KNAR",
-      "type": 0
-    },
-    {
-      "word": "NARC",
-      "type": 0
-    },
-    {
-      "word": "RANG",
-      "type": 0
-    },
-    {
-      "word": "RANI",
-      "type": 0
-    },
-    {
-      "word": "SCAR",
-      "type": 0
-    },
-    {
-      "word": "TANG",
-      "type": 0
-    },
-    {
-      "word": "TAUT",
-      "type": 0
-    },
-    {
-      "word": "TUBS",
-      "type": 0
-    },
-    {
-      "word": "BRANK",
-      "type": 0
-    },
-    {
-      "word": "CARAT",
-      "type": 0
-    },
-    {
-      "word": "TANKING",
+      "word": "TOR",
       "type": 0
     }
   ],
-  "letters": "NKING,ATUAT,RBBRC,ACSBA",
-  "obstacles": []
+  "letters": "ASUE,BILE,TORE",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

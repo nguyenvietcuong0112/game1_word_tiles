@@ -1,14 +1,22 @@
 {
   "id": 1866,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "CUP",
+      "word": "ACE",
       "type": 0
     },
     {
-      "word": "DIS",
+      "word": "AND",
+      "type": 0
+    },
+    {
+      "word": "ARC",
+      "type": 0
+    },
+    {
+      "word": "CAT",
       "type": 0
     },
     {
@@ -16,137 +24,92 @@
       "type": 0
     },
     {
-      "word": "INK",
+      "word": "MAT",
       "type": 0
     },
     {
-      "word": "INN",
+      "word": "ROD",
       "type": 0
     },
     {
-      "word": "MAY",
+      "word": "EARN",
       "type": 0
     },
     {
-      "word": "MED",
+      "word": "MACE",
+      "type": 2
+    },
+    {
+      "word": "MEAD",
+      "type": 2
+    },
+    {
+      "word": "TAME",
       "type": 0
     },
     {
-      "word": "MUD",
-      "type": 0
-    },
-    {
-      "word": "SIN",
-      "type": 0
-    },
-    {
-      "word": "CLEAR",
-      "type": 0
-    },
-    {
-      "word": "NUCLEAR",
+      "word": "MACRO",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AMP",
+      "word": "CAM",
       "type": 0
     },
     {
-      "word": "AUK",
+      "word": "CAME",
       "type": 0
     },
     {
-      "word": "DIN",
+      "word": "DARN",
       "type": 0
     },
     {
-      "word": "EMU",
+      "word": "RAD",
       "type": 0
     },
     {
-      "word": "LEA",
-      "type": 0
-    },
-    {
-      "word": "MEL",
-      "type": 0
-    },
-    {
-      "word": "PUN",
-      "type": 0
-    },
-    {
-      "word": "RYA",
-      "type": 0
-    },
-    {
-      "word": "UNS",
-      "type": 0
-    },
-    {
-      "word": "YAM",
-      "type": 0
-    },
-    {
-      "word": "DINK",
-      "type": 0
-    },
-    {
-      "word": "INNS",
-      "type": 0
-    },
-    {
-      "word": "LEAR",
-      "type": 0
-    },
-    {
-      "word": "MAAR",
-      "type": 0
-    },
-    {
-      "word": "MAUD",
-      "type": 0
-    },
-    {
-      "word": "PLEA",
-      "type": 0
-    },
-    {
-      "word": "PUNS",
-      "type": 0
-    },
-    {
-      "word": "SINK",
-      "type": 0
-    },
-    {
-      "word": "YAUD",
-      "type": 0
-    },
-    {
-      "word": "AMPLE",
-      "type": 0
-    },
-    {
-      "word": "LEARY",
-      "type": 0
-    },
-    {
-      "word": "DINKUM",
-      "type": 0
+      "word": "ROAN",
+      "type": 1
     }
   ],
-  "letters": "RAELC,YAMPU,DUKNN,EMDIS",
+  "letters": "TDOA,ACRN,MEAD",
   "obstacles": [
     {
-      "required_words": 2,
+      "required_words": 3,
       "id": 1,
       "type": 0,
       "cells": [
         {
           "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 9,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
           "y": 0
         }
       ]

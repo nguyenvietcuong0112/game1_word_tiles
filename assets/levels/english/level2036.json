@@ -1,239 +1,114 @@
 {
   "id": 2036,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "AWE",
+      "word": "AND",
       "type": 0
     },
     {
-      "word": "ERS",
+      "word": "BET",
       "type": 0
     },
     {
-      "word": "THE",
+      "word": "BIN",
       "type": 0
     },
     {
-      "word": "BEST",
+      "word": "END",
       "type": 0
     },
     {
-      "word": "HEAT",
+      "word": "INN",
       "type": 0
     },
     {
-      "word": "HOST",
+      "word": "NET",
       "type": 0
     },
     {
-      "word": "REST",
+      "word": "BEND",
       "type": 0
     },
     {
-      "word": "RULE",
+      "word": "BIND",
       "type": 0
     },
     {
-      "word": "RULES",
+      "word": "HAND",
       "type": 0
     },
     {
-      "word": "THOSE",
+      "word": "NINE",
       "type": 0
     },
     {
-      "word": "THEATER",
+      "word": "TEND",
+      "type": 0
+    },
+    {
+      "word": "BEHIND",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ABO",
+      "word": "BENIN",
+      "type": 2
+    },
+    {
+      "word": "HIND",
+      "type": 1
+    },
+    {
+      "word": "NIB",
       "type": 0
     },
     {
-      "word": "ATE",
-      "type": 0
-    },
-    {
-      "word": "BAH",
-      "type": 0
-    },
-    {
-      "word": "BEL",
-      "type": 0
-    },
-    {
-      "word": "BOS",
-      "type": 0
-    },
-    {
-      "word": "EAT",
-      "type": 0
-    },
-    {
-      "word": "ELS",
-      "type": 0
-    },
-    {
-      "word": "ETA",
-      "type": 0
-    },
-    {
-      "word": "HAH",
-      "type": 0
-    },
-    {
-      "word": "HAW",
-      "type": 0
-    },
-    {
-      "word": "HEW",
-      "type": 0
-    },
-    {
-      "word": "HOB",
-      "type": 0
-    },
-    {
-      "word": "OBE",
-      "type": 0
-    },
-    {
-      "word": "OSE",
-      "type": 0
-    },
-    {
-      "word": "REB",
-      "type": 0
-    },
-    {
-      "word": "RES",
-      "type": 0
-    },
-    {
-      "word": "RET",
-      "type": 0
-    },
-    {
-      "word": "RUE",
-      "type": 0
-    },
-    {
-      "word": "SEL",
-      "type": 0
-    },
-    {
-      "word": "SER",
-      "type": 0
-    },
-    {
-      "word": "SOB",
-      "type": 0
-    },
-    {
-      "word": "TAE",
-      "type": 0
-    },
-    {
-      "word": "THO",
-      "type": 0
-    },
-    {
-      "word": "TWA",
-      "type": 0
-    },
-    {
-      "word": "WAB",
-      "type": 0
-    },
-    {
-      "word": "ABOS",
-      "type": 0
-    },
-    {
-      "word": "BAHT",
-      "type": 0
-    },
-    {
-      "word": "BELS",
-      "type": 0
-    },
-    {
-      "word": "HOSE",
-      "type": 0
-    },
-    {
-      "word": "LEST",
-      "type": 0
-    },
-    {
-      "word": "OBES",
-      "type": 0
-    },
-    {
-      "word": "RUER",
-      "type": 0
-    },
-    {
-      "word": "SELS",
-      "type": 0
-    },
-    {
-      "word": "SERS",
-      "type": 0
-    },
-    {
-      "word": "SLUE",
-      "type": 0
-    },
-    {
-      "word": "SLUR",
-      "type": 0
-    },
-    {
-      "word": "THAW",
-      "type": 0
-    },
-    {
-      "word": "THEW",
-      "type": 0
-    },
-    {
-      "word": "EATER",
-      "type": 0
-    },
-    {
-      "word": "HOSEL",
-      "type": 0
-    },
-    {
-      "word": "RULER",
-      "type": 0
-    },
-    {
-      "word": "SOBER",
-      "type": 0
-    },
-    {
-      "word": "HEATER",
-      "type": 0
-    },
-    {
-      "word": "HOSELS",
-      "type": 0
-    },
-    {
-      "word": "RULERS",
-      "type": 0
-    },
-    {
-      "word": "SOBERS",
+      "word": "TEN",
       "type": 0
     }
   ],
-  "letters": "ATEUR,EWRLS,HABER,THOST",
-  "obstacles": []
+  "letters": "ANDT,HINE,EBNB",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

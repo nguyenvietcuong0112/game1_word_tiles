@@ -1,119 +1,111 @@
 {
   "id": 1857,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
       "word": "ALL",
       "type": 0
     },
     {
-      "word": "ANT",
+      "word": "ILL",
       "type": 0
     },
     {
-      "word": "ARS",
+      "word": "OIL",
       "type": 0
     },
     {
-      "word": "ASK",
+      "word": "RAM",
       "type": 0
     },
     {
-      "word": "BIT",
+      "word": "TAN",
       "type": 0
     },
     {
-      "word": "LAS",
+      "word": "COIL",
       "type": 0
     },
     {
-      "word": "ALPS",
+      "word": "CORN",
       "type": 0
     },
     {
-      "word": "ALSO",
+      "word": "MALL",
       "type": 0
     },
     {
-      "word": "ASKS",
+      "word": "MALT",
+      "type": 2
+    },
+    {
+      "word": "CORAL",
       "type": 0
     },
     {
-      "word": "DUAL",
-      "type": 0
-    },
-    {
-      "word": "SANS",
+      "word": "MORAL",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ALP",
+      "word": "ALTA",
       "type": 0
     },
     {
-      "word": "ALS",
+      "word": "AMOR",
+      "type": 1
+    },
+    {
+      "word": "COMA",
       "type": 0
     },
     {
-      "word": "LAR",
+      "word": "COMO",
       "type": 0
     },
     {
-      "word": "SAL",
+      "word": "MALTA",
       "type": 0
     },
     {
-      "word": "SKA",
+      "word": "MORA",
+      "type": 1
+    },
+    {
+      "word": "MORN",
       "type": 0
     },
     {
-      "word": "SOT",
+      "word": "ORAL",
       "type": 0
     },
     {
-      "word": "TOT",
+      "word": "ROM",
       "type": 0
     },
     {
-      "word": "ALLS",
-      "type": 0
-    },
-    {
-      "word": "LARS",
-      "type": 0
-    },
-    {
-      "word": "LAUD",
-      "type": 0
-    },
-    {
-      "word": "SALL",
-      "type": 0
-    },
-    {
-      "word": "SALS",
-      "type": 0
-    },
-    {
-      "word": "SANTO",
-      "type": 0
-    },
-    {
-      "word": "SKALD",
-      "type": 0
-    },
-    {
-      "word": "SLANT",
-      "type": 0
-    },
-    {
-      "word": "SANTOS",
+      "word": "ROMA",
       "type": 0
     }
   ],
-  "letters": "SUDBI,RALPT,SKLSO,ASANT",
-  "obstacles": []
+  "letters": "ILLT,OMAA,CORN",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 1
+        }
+      ]
+    }
+  ]
 }

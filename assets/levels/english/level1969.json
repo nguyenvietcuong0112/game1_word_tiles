@@ -1,22 +1,22 @@
 {
   "id": 1969,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "BAR",
+      "word": "AID",
       "type": 0
     },
     {
-      "word": "CAR",
+      "word": "DAD",
       "type": 0
     },
     {
-      "word": "OWN",
+      "word": "LAD",
       "type": 0
     },
     {
-      "word": "RAW",
+      "word": "LID",
       "type": 0
     },
     {
@@ -24,53 +24,41 @@
       "type": 0
     },
     {
-      "word": "ROW",
+      "word": "ROD",
       "type": 0
     },
     {
-      "word": "SAW",
+      "word": "HAIL",
       "type": 0
     },
     {
-      "word": "WAR",
+      "word": "RAID",
       "type": 0
     },
     {
-      "word": "WAS",
+      "word": "RAIL",
       "type": 0
     },
     {
-      "word": "BORE",
+      "word": "BRAID",
       "type": 0
     },
     {
-      "word": "CASA",
-      "type": 0
-    },
-    {
-      "word": "BEIGE",
-      "type": 0
-    },
-    {
-      "word": "BROWN",
+      "word": "HARBOR",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ABO",
+      "word": "AIL",
       "type": 0
     },
     {
-      "word": "ARB",
+      "word": "ARBOR",
       "type": 0
     },
     {
-      "word": "AWN",
-      "type": 0
-    },
-    {
-      "word": "BOW",
+      "word": "BHAI",
       "type": 0
     },
     {
@@ -78,118 +66,38 @@
       "type": 0
     },
     {
-      "word": "BRO",
+      "word": "BRAH",
       "type": 0
     },
     {
-      "word": "CAW",
-      "type": 0
-    },
-    {
-      "word": "GEE",
-      "type": 0
-    },
-    {
-      "word": "GIE",
-      "type": 0
-    },
-    {
-      "word": "ORA",
-      "type": 0
-    },
-    {
-      "word": "ORB",
-      "type": 0
-    },
-    {
-      "word": "ORE",
-      "type": 0
-    },
-    {
-      "word": "RAS",
-      "type": 0
-    },
-    {
-      "word": "REE",
-      "type": 0
-    },
-    {
-      "word": "REI",
-      "type": 0
-    },
-    {
-      "word": "ROE",
-      "type": 0
-    },
-    {
-      "word": "SAC",
-      "type": 0
-    },
-    {
-      "word": "WOE",
-      "type": 0
-    },
-    {
-      "word": "AWNS",
-      "type": 0
-    },
-    {
-      "word": "BARB",
-      "type": 0
-    },
-    {
-      "word": "BORA",
-      "type": 0
-    },
-    {
-      "word": "BRAS",
-      "type": 0
-    },
-    {
-      "word": "BRAW",
-      "type": 0
-    },
-    {
-      "word": "BROW",
-      "type": 0
-    },
-    {
-      "word": "CARB",
-      "type": 0
-    },
-    {
-      "word": "OBOE",
-      "type": 0
-    },
-    {
-      "word": "OWNS",
-      "type": 0
-    },
-    {
-      "word": "SAWN",
-      "type": 0
-    },
-    {
-      "word": "BORAS",
-      "type": 0
-    },
-    {
-      "word": "BRAWN",
-      "type": 0
-    },
-    {
-      "word": "CAROB",
-      "type": 0
-    },
-    {
-      "word": "BRAWNS",
-      "type": 0
-    },
-    {
-      "word": "BROWNS",
-      "type": 0
+      "word": "LIAR",
+      "type": 2
     }
   ],
-  "letters": "BABOR,BROEE,CAWGI,ASNBE",
-  "obstacles": []
+  "letters": "OROD,BHDA,RAIL",
+  "obstacles": [
+    {
+      "required_words": 7,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

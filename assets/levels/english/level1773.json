@@ -1,211 +1,139 @@
 {
   "id": 1773,
-  "width": 4,
-  "height": 4,
+  "width": 5,
+  "height": 3,
   "target_words": [
     {
-      "word": "BOT",
+      "word": "CAR",
       "type": 0
     },
     {
-      "word": "NEW",
+      "word": "CAT",
       "type": 0
     },
     {
-      "word": "PAN",
+      "word": "OAK",
       "type": 0
     },
     {
-      "word": "THE",
+      "word": "ROT",
       "type": 0
     },
     {
-      "word": "TOM",
+      "word": "TAR",
       "type": 0
     },
     {
-      "word": "THEN",
+      "word": "ATOM",
       "type": 0
     },
     {
-      "word": "TREE",
+      "word": "CORK",
+      "type": 2
+    },
+    {
+      "word": "FROM",
       "type": 0
     },
     {
-      "word": "WANT",
+      "word": "TORN",
       "type": 0
     },
     {
-      "word": "WENT",
-      "type": 0
-    },
-    {
-      "word": "WERE",
-      "type": 0
-    },
-    {
-      "word": "THREE",
-      "type": 0
+      "word": "MORNING",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "ANE",
+      "word": "ARK",
       "type": 0
     },
     {
-      "word": "ANT",
+      "word": "FRAT",
       "type": 0
     },
     {
-      "word": "AWE",
+      "word": "FRO",
       "type": 0
     },
     {
-      "word": "AWN",
+      "word": "MORN",
       "type": 0
     },
     {
-      "word": "ERE",
-      "type": 0
-    },
-    {
-      "word": "ETH",
-      "type": 0
-    },
-    {
-      "word": "HEN",
-      "type": 0
-    },
-    {
-      "word": "MOB",
-      "type": 0
+      "word": "MORNIN",
+      "type": 2
     },
     {
       "word": "MOT",
       "type": 0
     },
     {
-      "word": "NAP",
+      "word": "OMNI",
+      "type": 1
+    },
+    {
+      "word": "ORATOR",
       "type": 0
     },
     {
-      "word": "NAW",
+      "word": "RAT",
       "type": 0
     },
     {
-      "word": "NEE",
+      "word": "ROM",
       "type": 0
     },
     {
-      "word": "PAW",
-      "type": 0
+      "word": "TACO",
+      "type": 2
     },
     {
-      "word": "REE",
-      "type": 0
+      "word": "TARO",
+      "type": 2
     },
     {
-      "word": "RET",
-      "type": 0
-    },
-    {
-      "word": "TEW",
-      "type": 0
-    },
-    {
-      "word": "WAN",
-      "type": 0
-    },
-    {
-      "word": "WAP",
-      "type": 0
-    },
-    {
-      "word": "WEE",
-      "type": 0
-    },
-    {
-      "word": "WEN",
-      "type": 0
-    },
-    {
-      "word": "WET",
-      "type": 0
-    },
-    {
-      "word": "ANEW",
-      "type": 0
-    },
-    {
-      "word": "AWEE",
-      "type": 0
-    },
-    {
-      "word": "PANE",
-      "type": 0
-    },
-    {
-      "word": "PANT",
-      "type": 0
-    },
-    {
-      "word": "PAWN",
-      "type": 0
-    },
-    {
-      "word": "RENT",
-      "type": 0
-    },
-    {
-      "word": "THEE",
-      "type": 0
-    },
-    {
-      "word": "TRET",
-      "type": 0
-    },
-    {
-      "word": "WANE",
-      "type": 0
-    },
-    {
-      "word": "WEEN",
-      "type": 0
-    },
-    {
-      "word": "WERT",
-      "type": 0
-    },
-    {
-      "word": "ANTRE",
-      "type": 0
-    },
-    {
-      "word": "PANTO",
-      "type": 0
-    },
-    {
-      "word": "PAWER",
-      "type": 0
-    },
-    {
-      "word": "REWAN",
-      "type": 0
-    },
-    {
-      "word": "THREW",
-      "type": 0
-    },
-    {
-      "word": "TREEN",
-      "type": 0
-    },
-    {
-      "word": "PAWNEE",
+      "word": "TOR",
       "type": 0
     }
   ],
-  "letters": "BWET,OTRH,MNEE,PAWN",
-  "obstacles": []
+  "letters": "AKGNI,ORFRN,CATOM",
+  "obstacles": [
+    {
+      "required_words": 6,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 4,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

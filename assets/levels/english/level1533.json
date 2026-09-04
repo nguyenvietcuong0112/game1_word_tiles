@@ -1,243 +1,130 @@
 {
   "id": 1533,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "FOR",
+      "word": "ACE",
       "type": 0
     },
     {
-      "word": "LET",
+      "word": "HAM",
       "type": 0
     },
     {
-      "word": "OFF",
+      "word": "OWN",
       "type": 0
     },
     {
-      "word": "SIM",
+      "word": "TEA",
       "type": 0
     },
     {
-      "word": "TEL",
+      "word": "WOE",
       "type": 0
     },
     {
-      "word": "TOO",
+      "word": "ACRE",
       "type": 0
     },
     {
-      "word": "WAS",
+      "word": "HOME",
       "type": 0
     },
     {
-      "word": "WAX",
+      "word": "MACE",
+      "type": 2
+    },
+    {
+      "word": "MEOW",
       "type": 0
     },
     {
-      "word": "ROOM",
+      "word": "TEAM",
       "type": 0
     },
     {
-      "word": "SOMA",
+      "word": "CAMEO",
       "type": 0
     },
     {
-      "word": "STORE",
+      "word": "CREAM",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AFF",
+      "word": "CAM",
       "type": 0
     },
     {
-      "word": "AMI",
+      "word": "CAME",
       "type": 0
     },
     {
-      "word": "ERS",
+      "word": "CAMO",
       "type": 0
     },
     {
-      "word": "MIS",
+      "word": "HON",
       "type": 0
     },
     {
-      "word": "MOO",
+      "word": "MON",
       "type": 0
     },
     {
-      "word": "MOS",
+      "word": "NOM",
       "type": 0
     },
     {
-      "word": "OOT",
-      "type": 0
-    },
-    {
-      "word": "ORE",
-      "type": 0
-    },
-    {
-      "word": "ORS",
-      "type": 0
+      "word": "NOME",
+      "type": 1
     },
     {
       "word": "RET",
       "type": 0
-    },
-    {
-      "word": "ROT",
-      "type": 0
-    },
-    {
-      "word": "SAW",
-      "type": 0
-    },
-    {
-      "word": "SAX",
-      "type": 0
-    },
-    {
-      "word": "TOR",
-      "type": 0
-    },
-    {
-      "word": "WIS",
-      "type": 0
-    },
-    {
-      "word": "AMIS",
-      "type": 0
-    },
-    {
-      "word": "AXLE",
-      "type": 0
-    },
-    {
-      "word": "FOOT",
-      "type": 0
-    },
-    {
-      "word": "FORE",
-      "type": 0
-    },
-    {
-      "word": "LETS",
-      "type": 0
-    },
-    {
-      "word": "MISO",
-      "type": 0
-    },
-    {
-      "word": "MOOR",
-      "type": 0
-    },
-    {
-      "word": "MOOT",
-      "type": 0
-    },
-    {
-      "word": "OFFS",
-      "type": 0
-    },
-    {
-      "word": "OOTS",
-      "type": 0
-    },
-    {
-      "word": "RETS",
-      "type": 0
-    },
-    {
-      "word": "ROOF",
-      "type": 0
-    },
-    {
-      "word": "ROTE",
-      "type": 0
-    },
-    {
-      "word": "ROTS",
-      "type": 0
-    },
-    {
-      "word": "SIMA",
-      "type": 0
-    },
-    {
-      "word": "SOFA",
-      "type": 0
-    },
-    {
-      "word": "SOOT",
-      "type": 0
-    },
-    {
-      "word": "TOFF",
-      "type": 0
-    },
-    {
-      "word": "TOOM",
-      "type": 0
-    },
-    {
-      "word": "TORE",
-      "type": 0
-    },
-    {
-      "word": "TORS",
-      "type": 0
-    },
-    {
-      "word": "AFOOT",
-      "type": 0
-    },
-    {
-      "word": "FOOTS",
-      "type": 0
-    },
-    {
-      "word": "MOORS",
-      "type": 0
-    },
-    {
-      "word": "MOOTS",
-      "type": 0
-    },
-    {
-      "word": "SOOTS",
-      "type": 0
-    },
-    {
-      "word": "TORSI",
-      "type": 0
-    },
-    {
-      "word": "TORSO",
-      "type": 0
-    },
-    {
-      "word": "FOOTER",
-      "type": 0
-    },
-    {
-      "word": "MOOTER",
-      "type": 0
-    },
-    {
-      "word": "FOOTERS",
-      "type": 0
-    },
-    {
-      "word": "MOOTERS",
-      "type": 0
     }
   ],
-  "letters": "AFFS,MOOT,ISRE,WAXL",
-  "obstacles": []
+  "letters": "RCEO,EAMW,THON",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 8,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

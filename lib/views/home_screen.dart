@@ -6,6 +6,8 @@ import '../services/audio_manager.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
 import '../theme/app_theme.dart';
+import 'common/app_background.dart';
+import 'common/wood_widgets.dart';
 import 'game_screen.dart';
 import 'language_selection_screen.dart';
 import 'level_select_screen.dart';
@@ -121,151 +123,49 @@ class _HomeScreenState extends State<HomeScreen> {
     final shouldExit = await showDialog<bool>(
       context: context,
       barrierDismissible: true,
-      builder: (ctx) => Dialog(
-        backgroundColor: Colors.transparent,
-        insetPadding: EdgeInsets.symmetric(horizontal: 28.w),
-        child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 26.h),
-          decoration: BoxDecoration(
-            color: AppColors.cardWhite,
-            borderRadius: BorderRadius.circular(28.r),
-            border: Border.all(color: AppColors.borderSubtle, width: 2.0),
-            boxShadow: const [
-              BoxShadow(
-                color: Color(0xFFE8DAC8),
-                offset: Offset(0, 4.0),
-                blurRadius: 0,
+      builder: (ctx) => WoodSignboardDialog(
+        title: 'WANT TO EXIT?',
+        onClose: () => Navigator.of(ctx).pop(false),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            SizedBox(height: 8.h),
+            Text(
+              'Are you sure you want to exit the app?',
+              textAlign: TextAlign.center,
+              style: GoogleFonts.fredoka(
+                fontSize: 15.sp,
+                fontWeight: FontWeight.w600,
+                color: const Color(0xFFFFE8CC),
+                height: 1.35,
               ),
-            ],
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Container(
-                width: 60.r,
-                height: 60.r,
-                decoration: BoxDecoration(
-                  color: AppColors.butterCream,
-                  shape: BoxShape.circle,
-                  border: Border.all(color: const Color(0xFFFDE68A), width: 2.0),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Color(0xFFFCD34D),
-                      offset: Offset(0, 2),
-                      blurRadius: 0,
-                    ),
-                  ],
-                ),
-                child: const Center(
-                  child: Text('👋', style: TextStyle(fontSize: 28)),
-                ),
-              ),
-              SizedBox(height: 18.h),
-              Text(
-                'Exit Game?',
-                style: GoogleFonts.fredoka(
-                  fontSize: 22.sp,
-                  fontWeight: FontWeight.w900,
-                  color: AppColors.textDark,
-                  letterSpacing: 0.5,
-                ),
-              ),
-              SizedBox(height: 8.h),
-              Text(
-                'Are you sure you want to exit the app? Hope to see you back soon!',
-                textAlign: TextAlign.center,
-                style: GoogleFonts.fredoka(
-                  fontSize: 14.sp,
-                  fontWeight: FontWeight.w500,
-                  color: AppColors.textMuted,
-                  height: 1.4,
-                ),
-              ),
-              SizedBox(height: 24.h),
-              Row(
-                children: [
-                  Expanded(
-                    child: InkWell(
-                      onTap: () {
-                        AudioManager.playTileSelect(pitchIndex: 1);
-                        Navigator.of(ctx).pop(true);
-                      },
-                      borderRadius: BorderRadius.circular(20.r),
-                      child: Container(
-                        padding: EdgeInsets.symmetric(vertical: 14.h),
-                        decoration: BoxDecoration(
-                          color: AppColors.cardPeachLight,
-                          borderRadius: BorderRadius.circular(20.r),
-                          border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                          boxShadow: const [
-                            BoxShadow(
-                              color: Color(0xFFE8DAC8),
-                              offset: Offset(0, 2.0),
-                              blurRadius: 0,
-                            ),
-                          ],
-                        ),
-                        child: Center(
-                          child: Text(
-                            'Exit',
-                            style: GoogleFonts.fredoka(
-                              fontSize: 15.sp,
-                              fontWeight: FontWeight.w900,
-                              color: AppColors.headerBrown,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
+            ),
+            SizedBox(height: 22.h),
+            Row(
+              children: [
+                Expanded(
+                  child: WoodCtaButton(
+                    text: 'YES',
+                    isGreen: true,
+                    onTap: () {
+                      AudioManager.playTileSelect(pitchIndex: 1);
+                      Navigator.of(ctx).pop(true);
+                    },
                   ),
-                  SizedBox(width: 12.w),
-                  Expanded(
-                    flex: 2,
-                    child: InkWell(
-                      onTap: () {
-                        AudioManager.playBooster();
-                        Navigator.of(ctx).pop(false);
-                      },
-                      borderRadius: BorderRadius.circular(20.r),
-                      child: Container(
-                        padding: EdgeInsets.symmetric(vertical: 14.h),
-                        decoration: BoxDecoration(
-                          gradient: const LinearGradient(
-                            colors: [
-                              Color(0xFFCA9370),
-                              AppColors.btnFaceBrown,
-                            ],
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                          ),
-                          borderRadius: BorderRadius.circular(20.r),
-                          border: Border.all(color: AppColors.btnBorderBrown, width: 1.8),
-                          boxShadow: const [
-                            BoxShadow(
-                              color: AppColors.btnShadowBrown,
-                              offset: Offset(0, 2.5),
-                              blurRadius: 0,
-                            ),
-                          ],
-                        ),
-                        child: Center(
-                          child: Text(
-                            'Stay',
-                            style: GoogleFonts.fredoka(
-                              fontSize: 16.sp,
-                              fontWeight: FontWeight.w900,
-                              color: Colors.white,
-                              letterSpacing: 0.5,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
+                ),
+                SizedBox(width: 14.w),
+                Expanded(
+                  child: WoodCtaButton(
+                    text: 'NO',
+                    onTap: () {
+                      AudioManager.playBooster();
+                      Navigator.of(ctx).pop(false);
+                    },
                   ),
-                ],
-              ),
-            ],
-          ),
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
@@ -299,36 +199,33 @@ class _HomeScreenState extends State<HomeScreen> {
         _handleExitAppConfirmation();
       },
       child: Scaffold(
-        backgroundColor: AppColors.bgCanvas,
-        body: Stack(
-          children: [
-            _buildAmbientBackground(),
-            SafeArea(
-              child: _isLoading
-                  ? const Center(child: CircularProgressIndicator(color: AppColors.terracotta))
-                  : Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 16.h),
-                      child: Column(
-                        children: [
-                          _buildTopBar(langFlag, langNameOnly),
-                          const Spacer(flex: 1),
-                          _buildHeroLogo(),
-                          const Spacer(flex: 1),
-                          _buildProgressCard(
-                            levelNumber,
-                            nextMilestone,
-                            progressInMilestone,
-                            langNameOnly,
-                            langFlag,
-                          ),
-                          const Spacer(flex: 2),
-                          _buildPlayButton(levelNumber),
-                          SizedBox(height: 16.h),
-                        ],
-                      ),
+        backgroundColor: Colors.transparent,
+        body: AppBackground(
+          child: SafeArea(
+            child: _isLoading
+                ? const Center(child: CircularProgressIndicator(color: AppColors.terracotta))
+                : Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 16.h),
+                    child: Column(
+                      children: [
+                        _buildTopBar(langFlag, langNameOnly),
+                        const Spacer(flex: 1),
+                        _buildHeroLogo(),
+                        const Spacer(flex: 1),
+                        _buildProgressCard(
+                          levelNumber,
+                          nextMilestone,
+                          progressInMilestone,
+                          langNameOnly,
+                          langFlag,
+                        ),
+                        const Spacer(flex: 2),
+                        _buildPlayButton(levelNumber),
+                        SizedBox(height: 16.h),
+                      ],
                     ),
-            ),
-          ],
+                  ),
+          ),
         ),
       ),
     );
@@ -342,122 +239,93 @@ class _HomeScreenState extends State<HomeScreen> {
           onTap: _openLanguageSelect,
           borderRadius: BorderRadius.circular(22.r),
           child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 8.h),
             decoration: BoxDecoration(
-              color: AppColors.cardWhite,
               borderRadius: BorderRadius.circular(22.r),
-              border: Border.all(color: AppColors.borderSubtle, width: 1.5),
+              border: Border.all(color: WoodenStyle.woodBevel, width: 1.8),
               boxShadow: const [
                 BoxShadow(
-                  color: Color(0xFFE8DAC8),
-                  offset: Offset(0, 1.5),
+                  color: WoodenStyle.woodExtrusion,
+                  offset: Offset(0, 2.5),
                   blurRadius: 0,
                 ),
               ],
             ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(langFlag, style: TextStyle(fontSize: 18.sp)),
-                SizedBox(width: 6.w),
-                Text(
-                  langNameOnly,
-                  style: GoogleFonts.fredoka(
-                    fontWeight: FontWeight.w700,
-                    fontSize: 14.sp,
-                    color: AppColors.textDark,
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(20.r),
+              child: Stack(
+                children: [
+                  Positioned.fill(
+                    child: Container(
+                      decoration: const BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          colors: [
+                            Color(0xFF4A2007),
+                            Color(0xFF381401),
+                            Color(0xFF260C00),
+                          ],
+                        ),
+                      ),
+                    ),
                   ),
-                ),
-                SizedBox(width: 4.w),
-                const Icon(Icons.arrow_drop_down_rounded, size: 18, color: AppColors.terracotta),
-              ],
+                  Positioned.fill(
+                    child: Opacity(
+                      opacity: 0.22,
+                      child: Image.asset(
+                        'assets/images/golden_wood_texture.webp',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 8.h),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(langFlag, style: TextStyle(fontSize: 18.sp)),
+                        SizedBox(width: 6.w),
+                        Text(
+                          langNameOnly,
+                          style: GoogleFonts.fredoka(
+                            fontWeight: FontWeight.w900,
+                            fontSize: 14.sp,
+                            color: Colors.white,
+                            shadows: const [
+                              Shadow(
+                                color: Color(0xFF1F0900),
+                                offset: Offset(0, 1.2),
+                                blurRadius: 1,
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(width: 4.w),
+                        const Icon(
+                          Icons.arrow_drop_down_rounded,
+                          size: 20,
+                          color: Color(0xFFFFBA52),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            InkWell(
+            WoodenCurrency(
+              coins: _coins,
               onTap: _openShop,
-              borderRadius: BorderRadius.circular(22.r),
-              child: Container(
-                padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 8.h),
-                decoration: BoxDecoration(
-                  color: AppColors.cardWhite,
-                  borderRadius: BorderRadius.circular(22.r),
-                  border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Color(0xFFE8DAC8),
-                      offset: Offset(0, 1.5),
-                      blurRadius: 0,
-                    ),
-                  ],
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    Text('🪙', style: TextStyle(fontSize: 18.sp)),
-                    SizedBox(width: 6.w),
-                    Text(
-                      '$_coins',
-                      style: GoogleFonts.fredoka(
-                        fontWeight: FontWeight.w900,
-                        fontSize: 15.sp,
-                        color: AppColors.textDark,
-                      ),
-                    ),
-                    SizedBox(width: 6.w),
-                    Container(
-                      padding: const EdgeInsets.all(2),
-                      decoration: const BoxDecoration(
-                        color: AppColors.terracotta,
-                        shape: BoxShape.circle,
-                      ),
-                      child: const Icon(Icons.add_rounded, size: 14, color: Colors.white),
-                    ),
-                  ],
-                ),
-              ),
             ),
             SizedBox(width: 10.w),
-            InkWell(
+            WoodCarvedIconButton(
+              size: 44.r,
+              assetPath: WoodGameIcons.btnSettings,
               onTap: _openSettings,
-              borderRadius: BorderRadius.circular(24.r),
-              child: Container(
-                width: 44.r,
-                height: 44.r,
-                decoration: BoxDecoration(
-                  color: AppColors.btnRingBg,
-                  shape: BoxShape.circle,
-                  border: Border.all(color: AppColors.btnRingBorder, width: 1.5),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: AppColors.btnRingShadow,
-                      offset: Offset(0, 2.0),
-                      blurRadius: 0,
-                    ),
-                  ],
-                ),
-                padding: EdgeInsets.all(4.w),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: AppColors.btnFaceBrown,
-                    shape: BoxShape.circle,
-                    border: Border.all(color: AppColors.btnBorderBrown, width: 1.5),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: AppColors.btnShadowBrown,
-                        offset: Offset(0, 1.5),
-                        blurRadius: 0,
-                      ),
-                    ],
-                  ),
-                  child: const Center(
-                    child: Icon(Icons.settings_rounded, size: 20, color: Colors.white),
-                  ),
-                ),
-              ),
             ),
           ],
         ),
@@ -470,80 +338,150 @@ class _HomeScreenState extends State<HomeScreen> {
       mainAxisSize: MainAxisSize.min,
       children: [
         Container(
-          padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 4.5.h),
+          padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 5.h),
           decoration: BoxDecoration(
-            color: AppColors.cardPeachLight,
+            color: const Color(0xFF381401),
             borderRadius: BorderRadius.circular(16.r),
-            border: Border.all(color: AppColors.borderSubtle, width: 1.5),
+            border: Border.all(color: WoodenStyle.woodBevel, width: 1.5),
+            boxShadow: const [
+              BoxShadow(
+                color: WoodenStyle.woodExtrusion,
+                offset: Offset(0, 1.8),
+              ),
+            ],
           ),
           child: Text(
-            '✨ WOODCRAFT WORD TILES ✨',
+            '✨ CASUAL WORD PUZZLE ✨',
             style: GoogleFonts.fredoka(
               fontSize: 11.sp,
-              fontWeight: FontWeight.w700,
+              fontWeight: FontWeight.w900,
               letterSpacing: 1.5,
-              color: AppColors.headerBrown,
+              color: const Color(0xFFFFBA52),
+              shadows: const [
+                Shadow(
+                  color: Color(0xFF1F0900),
+                  offset: Offset(0, 1),
+                ),
+              ],
             ),
           ),
         ),
         SizedBox(height: 14.h),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: ['W', 'O', 'R', 'D'].asMap().entries.map((e) {
-            final isHighlight = e.key == 0;
-            return _buildWoodLogoTile(
-              e.value,
-              isHighlight: isHighlight,
-            );
+          children: ['W', 'O', 'R', 'D'].map((letter) {
+            return _buildWoodLogoTile(letter, size: 52.r);
           }).toList(),
         ),
-        SizedBox(height: 7.h),
+        SizedBox(height: 8.h),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: ['T', 'I', 'L', 'E', 'S'].asMap().entries.map((e) {
-            final isHighlight = e.key == 0;
-            return _buildWoodLogoTile(
-              e.value,
-              isHighlight: isHighlight,
-              isSmaller: true,
-            );
+          children: ['T', 'I', 'L', 'E', 'S'].map((letter) {
+            return _buildWoodLogoTile(letter, size: 46.r);
           }).toList(),
         ),
       ],
     ).animate().scale(duration: 400.ms, curve: Curves.easeOutBack);
   }
 
-  Widget _buildWoodLogoTile(String letter, {bool isHighlight = false, bool isSmaller = false}) {
-    final size = isSmaller ? 42.0.r : 48.0.r;
-    final bgColor = isHighlight ? AppColors.btnFaceBrown : AppColors.cardWhite;
-    final borderColor = isHighlight ? AppColors.btnBorderBrown : AppColors.borderSubtle;
-    final bevelColor = isHighlight ? AppColors.btnShadowBrown : const Color(0xFFDEC5AE);
-    final textColor = isHighlight ? Colors.white : AppColors.headerBrown;
+  Widget _buildWoodLogoTile(String letter, {required double size}) {
+    final double radius = size * 0.26;
 
     return Container(
-      width: size,
-      height: size + 2.h,
       margin: EdgeInsets.symmetric(horizontal: 3.5.w),
+      width: size,
+      height: size,
       decoration: BoxDecoration(
-        color: bgColor,
-        borderRadius: BorderRadius.circular(14.r),
-        border: Border.all(color: borderColor, width: 1.8),
-        boxShadow: [
+        borderRadius: BorderRadius.circular(radius),
+        border: Border.all(
+          color: const Color(0xFF6B2B04),
+          width: 1.8,
+        ),
+        boxShadow: const [
           BoxShadow(
-            color: bevelColor,
-            offset: const Offset(0, 2.0),
+            color: Color(0xFF421500),
+            offset: Offset(0, 3.5),
             blurRadius: 0,
+          ),
+          BoxShadow(
+            color: Color(0x35000000),
+            offset: Offset(0, 5),
+            blurRadius: 6,
           ),
         ],
       ),
-      child: Center(
-        child: Text(
-          letter,
-          style: GoogleFonts.fredoka(
-            fontSize: 22.sp,
-            fontWeight: FontWeight.w900,
-            color: textColor,
-          ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(radius * 0.88),
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            // Rich Golden Honey Oak Plank Gradient
+            Positioned.fill(
+              child: Container(
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      Color(0xFFFFD868),
+                      Color(0xFFF3942B),
+                      Color(0xFFD97213),
+                      Color(0xFFAC4B04),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            // Subtle Wood Grain Texture
+            Positioned.fill(
+              child: Opacity(
+                opacity: 0.28,
+                child: Image.asset(
+                  'assets/images/golden_wood_texture.webp',
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+            // Specular Highlight Rim on top edge
+            Positioned(
+              top: 0,
+              left: 6,
+              right: 6,
+              height: 1.5,
+              child: Container(
+                color: Colors.white.withValues(alpha: 0.55),
+              ),
+            ),
+            // Carved Letter with 3D Depth
+            Center(
+              child: Text(
+                letter,
+                style: GoogleFonts.fredoka(
+                  fontSize: size * 0.58,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.white,
+                  height: 1.0,
+                  shadows: const [
+                    Shadow(
+                      color: Color(0xFF5A1C00),
+                      offset: Offset(0, 2.0),
+                      blurRadius: 0,
+                    ),
+                    Shadow(
+                      color: Color(0xFF2E0C00),
+                      offset: Offset(0, 3.5),
+                      blurRadius: 1,
+                    ),
+                    Shadow(
+                      color: Color(0x44000000),
+                      offset: Offset(0, 5.0),
+                      blurRadius: 4,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );
@@ -561,163 +499,202 @@ class _HomeScreenState extends State<HomeScreen> {
       borderRadius: BorderRadius.circular(24.r),
       child: Container(
         width: double.infinity,
-        padding: EdgeInsets.all(18.r),
         decoration: BoxDecoration(
-          color: AppColors.cardWhite,
           borderRadius: BorderRadius.circular(24.r),
-          border: Border.all(color: AppColors.borderSubtle, width: 1.8),
+          border: Border.all(color: WoodenStyle.woodBevel, width: 2.2),
           boxShadow: const [
             BoxShadow(
-              color: Color(0xFFE8DAC8),
-              offset: Offset(0, 2.5),
+              color: WoodenStyle.woodExtrusion,
+              offset: Offset(0, 4.0),
               blurRadius: 0,
+            ),
+            BoxShadow(
+              color: Color(0x33000000),
+              offset: Offset(0, 8),
+              blurRadius: 12,
             ),
           ],
         ),
-        child: Column(
-          children: [
-            Row(
-              children: [
-                // Milestone Trophy Icon Box
-                Container(
-                  width: 50.r,
-                  height: 50.r,
-                  decoration: BoxDecoration(
-                    color: AppColors.btnRingBg,
-                    shape: BoxShape.circle,
-                    border: Border.all(color: AppColors.borderSubtle, width: 1.8),
-                  ),
-                  child: const Center(
-                    child: Text('🏆', style: TextStyle(fontSize: 24)),
-                  ),
-                ),
-                SizedBox(width: 14.w),
-
-                // Level Info
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            'Level $levelNumber',
-                            style: GoogleFonts.fredoka(
-                              fontSize: 18.sp,
-                              fontWeight: FontWeight.w700,
-                              color: AppColors.textDark,
-                            ),
-                          ),
-                          Text(
-                            'Goal: Level $nextMilestone',
-                            style: GoogleFonts.fredoka(
-                              fontSize: 12.sp,
-                              fontWeight: FontWeight.w900,
-                              color: AppColors.headerBrown,
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(height: 2.h),
-                      Text(
-                        '$langFlag $langNameOnly • ⭐ $_totalStars Stars',
-                        style: GoogleFonts.fredoka(
-                          fontSize: 12.sp,
-                          color: AppColors.textMuted,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                SizedBox(width: 8.w),
-                const Icon(Icons.arrow_forward_ios_rounded, size: 14, color: AppColors.headerBrown),
-              ],
-            ),
-            SizedBox(height: 14.h),
-
-            // Progress Bar to Next Milestone
-            ClipRRect(
-              borderRadius: BorderRadius.circular(10.r),
-              child: Stack(
-                children: [
-                  Container(
-                    height: 10.h,
-                    width: double.infinity,
-                    color: AppColors.cardPeachLight,
-                  ),
-                  FractionallySizedBox(
-                    widthFactor: progressInMilestone == 0.0 ? 1.0 : progressInMilestone,
-                    child: Container(
-                      height: 10.h,
-                      decoration: BoxDecoration(
-                        gradient: const LinearGradient(
-                          colors: [Color(0xFFCA9370), AppColors.btnFaceBrown],
-                        ),
-                        borderRadius: BorderRadius.circular(10.r),
-                      ),
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(21.r),
+          child: Stack(
+            children: [
+              // Rich Roasted Chocolate Wood Background
+              Positioned.fill(
+                child: Container(
+                  decoration: const BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Color(0xFF481F07),
+                        Color(0xFF381401),
+                        Color(0xFF260C00),
+                      ],
                     ),
                   ),
-                ],
+                ),
               ),
-            ),
-          ],
+              // Subtle Wood Grain Texture
+              Positioned.fill(
+                child: Opacity(
+                  opacity: 0.22,
+                  child: Image.asset(
+                    'assets/images/golden_wood_texture.webp',
+                    fit: BoxFit.cover,
+                  ),
+                ),
+              ),
+              // Top Highlight Rim
+              Positioned(
+                top: 0,
+                left: 12,
+                right: 12,
+                height: 1.2,
+                child: Container(
+                  color: Colors.white.withValues(alpha: 0.25),
+                ),
+              ),
+              // Content
+              Padding(
+                padding: EdgeInsets.all(18.r),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        // Milestone Trophy Icon Box
+                        Container(
+                          width: 50.r,
+                          height: 50.r,
+                          decoration: BoxDecoration(
+                            gradient: const LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                Color(0xFF2E0F00),
+                                Color(0xFF1A0600),
+                              ],
+                            ),
+                            shape: BoxShape.circle,
+                            border: Border.all(color: WoodenStyle.woodHighlight, width: 1.8),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: Color(0xFF120400),
+                                offset: Offset(0, 2),
+                              ),
+                            ],
+                          ),
+                          child: Center(
+                            child: WoodGameIcons.trophy(size: 28.r),
+                          ),
+                        ),
+                        SizedBox(width: 14.w),
+
+                        // Level Info
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    'Level $levelNumber',
+                                    style: GoogleFonts.fredoka(
+                                      fontSize: 19.sp,
+                                      fontWeight: FontWeight.w900,
+                                      color: Colors.white,
+                                      shadows: const [
+                                        Shadow(
+                                          color: Color(0xFF1F0900),
+                                          offset: Offset(0, 1.5),
+                                          blurRadius: 1,
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Container(
+                                    padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 3.h),
+                                    decoration: BoxDecoration(
+                                      color: const Color(0xFF2A0E01),
+                                      borderRadius: BorderRadius.circular(10.r),
+                                      border: Border.all(color: const Color(0xFF7A2F02), width: 1.2),
+                                    ),
+                                    child: Text(
+                                      'Goal: Level $nextMilestone',
+                                      style: GoogleFonts.fredoka(
+                                        fontSize: 11.sp,
+                                        fontWeight: FontWeight.w900,
+                                        color: const Color(0xFFFFBA52),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              SizedBox(height: 4.h),
+                              Text(
+                                '$langFlag $langNameOnly • ⭐ $_totalStars Stars',
+                                style: GoogleFonts.fredoka(
+                                  fontSize: 12.5.sp,
+                                  color: Colors.white.withValues(alpha: 0.85),
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        SizedBox(width: 8.w),
+                        // Forward Arrow Button
+                        Container(
+                          width: 28.r,
+                          height: 28.r,
+                          decoration: BoxDecoration(
+                            color: WoodenStyle.woodTop,
+                            shape: BoxShape.circle,
+                            border: Border.all(color: WoodenStyle.woodExtrusion, width: 1.2),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: WoodenStyle.woodExtrusion,
+                                offset: Offset(0, 1.5),
+                              ),
+                            ],
+                          ),
+                          child: const Center(
+                            child: Icon(
+                              Icons.arrow_forward_ios_rounded,
+                              size: 12,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 14.h),
+
+                    // Progress Bar to Next Milestone
+                    WoodenProgressBar(
+                      progress: progressInMilestone == 0.0 ? 1.0 : progressInMilestone,
+                      height: 14.h,
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
   }
 
   Widget _buildPlayButton(int levelNumber) {
-    return InkWell(
+    return WoodenButton(
+      text: 'PLAY LEVEL $levelNumber',
+      icon: Icons.play_arrow_rounded,
+      textColor: Colors.white,
+      variant: WoodenButtonVariant.primary,
+      height: 60.h,
+      fontSize: 22.sp,
       onTap: _playCurrentLevel,
-      borderRadius: BorderRadius.circular(30.r),
-      child: Container(
-        width: double.infinity,
-        padding: EdgeInsets.symmetric(vertical: 18.h),
-        decoration: BoxDecoration(
-          gradient: const LinearGradient(
-            colors: [
-              Color(0xFFCA9370),
-              AppColors.btnFaceBrown,
-            ],
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          ),
-          borderRadius: BorderRadius.circular(30.r),
-          border: Border.all(color: AppColors.btnBorderBrown, width: 2.2),
-          boxShadow: const [
-            BoxShadow(
-              color: AppColors.btnShadowBrown,
-              offset: Offset(0, 3.0),
-              blurRadius: 0,
-            ),
-          ],
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(Icons.play_arrow_rounded, color: Colors.white, size: 34.r),
-            SizedBox(width: 8.w),
-            Text(
-              'PLAY LEVEL $levelNumber',
-              style: GoogleFonts.fredoka(
-                fontSize: 22.sp,
-                fontWeight: FontWeight.w900,
-                color: Colors.white,
-                letterSpacing: 1.8,
-                shadows: const [
-                  Shadow(
-                    color: AppColors.btnShadowBrown,
-                    offset: Offset(0, 1.5),
-                    blurRadius: 0,
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
     ).animate(onPlay: (c) => c.repeat(reverse: true)).scale(
           begin: const Offset(1.0, 1.0),
           end: const Offset(1.03, 1.03),
@@ -725,54 +702,4 @@ class _HomeScreenState extends State<HomeScreen> {
           curve: Curves.easeInOut,
         );
   }
-
-  Widget _buildAmbientBackground() {
-    return Positioned.fill(
-      child: IgnorePointer(
-        child: CustomPaint(
-          painter: _BackgroundTilesPainter(),
-        ),
-      ),
-    );
-  }
-}
-
-class _BackgroundTilesPainter extends CustomPainter {
-  @override
-  void paint(Canvas canvas, Size size) {
-    final positions = [
-      Offset(size.width * 0.12, size.height * 0.15),
-      Offset(size.width * 0.85, size.height * 0.18),
-      Offset(size.width * 0.10, size.height * 0.55),
-      Offset(size.width * 0.88, size.height * 0.62),
-      Offset(size.width * 0.22, size.height * 0.88),
-      Offset(size.width * 0.78, size.height * 0.90),
-    ];
-
-    final paint = Paint()
-      ..color = const Color(0xFFDEC5AE).withValues(alpha: 0.18)
-      ..style = PaintingStyle.fill;
-
-    final borderPaint = Paint()
-      ..color = const Color(0xFFDEC5AE).withValues(alpha: 0.28)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.2;
-
-    for (final pos in positions) {
-      final rect = RRect.fromRectAndRadius(
-        Rect.fromCenter(
-          center: pos,
-          width: 44,
-          height: 44,
-        ),
-        const Radius.circular(14),
-      );
-
-      canvas.drawRRect(rect, paint);
-      canvas.drawRRect(rect, borderPaint);
-    }
-  }
-
-  @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }

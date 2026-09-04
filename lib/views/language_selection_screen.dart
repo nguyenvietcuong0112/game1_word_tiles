@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../services/audio_manager.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
-import '../theme/app_theme.dart';
+import 'common/app_background.dart';
+import 'common/wood_widgets.dart';
 
 class LanguageSelectionScreen extends StatefulWidget {
   final String currentLanguage;
@@ -30,6 +32,7 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
   }
 
   void _confirmSelection() async {
+    AudioManager.playTileSelect(pitchIndex: 4);
     if (_tempSelectedLanguage != widget.currentLanguage) {
       await GameStorage.setSelectedLanguage(_tempSelectedLanguage);
       widget.onLanguageSelected(_tempSelectedLanguage);
@@ -44,257 +47,253 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
     final languages = LevelLoader.supportedLanguages;
 
     return Scaffold(
-      backgroundColor: AppColors.bgCanvas,
-      body: SafeArea(
-        child: Column(
-          children: [
-            // Top Bar
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 12.h),
-              child: Row(
-                children: [
-                  // 3D Cocoa-Caramel Back Button
-                  InkWell(
-                    onTap: () => Navigator.pop(context),
-                    borderRadius: BorderRadius.circular(24.r),
-                    child: Container(
-                      width: 44.r,
-                      height: 44.r,
-                      decoration: BoxDecoration(
-                        color: AppColors.btnRingBg,
-                        shape: BoxShape.circle,
-                        border: Border.all(color: AppColors.btnRingBorder, width: 1.5),
-                        boxShadow: const [
-                          BoxShadow(
-                            color: AppColors.btnRingShadow,
-                            offset: Offset(0, 2.0),
-                            blurRadius: 0,
-                          ),
-                        ],
-                      ),
-                      padding: const EdgeInsets.all(4.0),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          color: AppColors.btnFaceBrown,
-                          shape: BoxShape.circle,
-                          border: Border.all(color: AppColors.btnBorderBrown, width: 1.5),
-                          boxShadow: const [
-                            BoxShadow(
-                              color: AppColors.btnShadowBrown,
-                              offset: Offset(0, 1.5),
-                              blurRadius: 0,
-                            ),
-                          ],
-                        ),
-                        child: const Center(
-                          child: Icon(
-                            Icons.chevron_left_rounded,
-                            color: Colors.white,
-                            size: 26,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  SizedBox(width: 14.w),
-                  Text(
-                    'SELECT LANGUAGE',
-                    style: GoogleFonts.fredoka(
-                      fontSize: 20.sp,
-                      fontWeight: FontWeight.w900,
-                      letterSpacing: 0.8,
-                      color: AppColors.headerBrown,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-
-            // Description Header
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 8.h),
-              child: Container(
-                width: double.infinity,
-                padding: EdgeInsets.all(14.r),
-                decoration: BoxDecoration(
-                  color: AppColors.cardWhite,
-                  borderRadius: BorderRadius.circular(16.r),
-                  border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                ),
+      backgroundColor: Colors.transparent,
+      body: AppBackground(
+        child: SafeArea(
+          child: Column(
+            children: [
+              // Top Navigation Bar
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 12.h),
                 child: Row(
                   children: [
-                    const Text('🌍', style: TextStyle(fontSize: 24)),
-                    SizedBox(width: 12.w),
-                    Expanded(
-                      child: Text(
-                        'Choose your preferred language for all word puzzles and progression.',
-                        style: GoogleFonts.fredoka(
-                          fontSize: 12.sp,
-                          color: AppColors.textDark,
-                          fontWeight: FontWeight.w500,
-                          height: 1.4,
-                        ),
+                    WoodCarvedIconButton(
+                      size: 44.r,
+                      assetPath: WoodGameIcons.btnBack,
+                      onTap: () {
+                        AudioManager.playTileSelect(pitchIndex: 1);
+                        Navigator.pop(context);
+                      },
+                    ),
+                    SizedBox(width: 14.w),
+                    Text(
+                      'SELECT LANGUAGE',
+                      style: GoogleFonts.fredoka(
+                        fontSize: 22.sp,
+                        fontWeight: FontWeight.w900,
+                        letterSpacing: 1.0,
+                        color: Colors.white,
+                        shadows: const [
+                          Shadow(
+                            color: WoodenStyle.woodExtrusion,
+                            offset: Offset(0, 2),
+                            blurRadius: 1,
+                          ),
+                          Shadow(
+                            color: Color(0xFF1F0900),
+                            offset: Offset(0, 3),
+                            blurRadius: 2,
+                          ),
+                        ],
                       ),
                     ),
                   ],
                 ),
               ),
-            ),
+              SizedBox(height: 6.h),
 
-            // Language List
-            Expanded(
-              child: ListView.builder(
-                padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
-                itemCount: languages.length,
-                itemBuilder: (context, index) {
-                  final lang = languages[index];
-                  final isSelected = lang == _tempSelectedLanguage;
-                  final displayName = LevelLoader.languageDisplayNames[lang] ?? lang;
-                  final maxUnlocked = GameStorage.getMaxUnlockedLevelIndex(lang) + 1;
+              // Language List
+              Expanded(
+                child: ListView.builder(
+                  padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
+                  itemCount: languages.length,
+                  itemBuilder: (context, index) {
+                    final lang = languages[index];
+                    final isSelected = lang == _tempSelectedLanguage;
+                    final displayName = LevelLoader.languageDisplayNames[lang] ?? lang;
+                    final maxUnlocked = GameStorage.getMaxUnlockedLevelIndex(lang) + 1;
+                    final parts = displayName.split(' ');
+                    final flag = parts.length > 1 ? parts.last : '🌐';
+                    final langName = parts.first;
 
-                  return Padding(
-                    padding: EdgeInsets.only(bottom: 12.h),
-                    child: InkWell(
-                      onTap: () {
-                        setState(() {
-                          _tempSelectedLanguage = lang;
-                        });
-                      },
-                      borderRadius: BorderRadius.circular(20.r),
-                      child: AnimatedContainer(
-                        duration: const Duration(milliseconds: 180),
-                        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 14.h),
-                        decoration: BoxDecoration(
-                          color: isSelected ? AppColors.cardPeachLight : AppColors.cardWhite,
-                          borderRadius: BorderRadius.circular(20.r),
-                          border: Border.all(
-                            color: isSelected ? AppColors.btnFaceBrown : AppColors.borderSubtle,
-                            width: isSelected ? 2.0 : 1.5,
+                    return Padding(
+                      padding: EdgeInsets.only(bottom: 12.h),
+                      child: InkWell(
+                        onTap: () {
+                          AudioManager.playTileSelect(pitchIndex: 3);
+                          setState(() {
+                            _tempSelectedLanguage = lang;
+                          });
+                        },
+                        borderRadius: BorderRadius.circular(20.r),
+                        child: AnimatedContainer(
+                          duration: const Duration(milliseconds: 180),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20.r),
+                            border: Border.all(
+                              color: isSelected ? WoodenStyle.woodHighlight : WoodenStyle.woodBevel,
+                              width: isSelected ? 2.2 : 1.8,
+                            ),
+                            boxShadow: [
+                              BoxShadow(
+                                color: WoodenStyle.woodExtrusion,
+                                offset: Offset(0, isSelected ? 3.5 : 2.5),
+                                blurRadius: 0,
+                              ),
+                              if (isSelected)
+                                const BoxShadow(
+                                  color: Color(0x33F3942B),
+                                  offset: Offset(0, 4),
+                                  blurRadius: 8,
+                                ),
+                            ],
                           ),
-                          boxShadow: const [
-                            BoxShadow(
-                              color: Color(0xFFE8DAC8),
-                              offset: Offset(0, 1.5),
-                              blurRadius: 0,
-                            ),
-                          ],
-                        ),
-                        child: Row(
-                          children: [
-                            // Flag / Icon Box
-                            Container(
-                              width: 44.r,
-                              height: 44.r,
-                              decoration: BoxDecoration(
-                                color: AppColors.cardWhite,
-                                shape: BoxShape.circle,
-                                border: Border.all(color: AppColors.borderSubtle, width: 1.2),
-                              ),
-                              child: Center(
-                                child: Text(
-                                  displayName.split(' ').length > 1 ? displayName.split(' ').last : '🌐',
-                                  style: TextStyle(fontSize: 22.sp),
-                                ),
-                              ),
-                            ),
-                            SizedBox(width: 14.w),
-
-                            // Language Info
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    displayName.split(' ').first,
-                                    style: GoogleFonts.fredoka(
-                                      fontWeight: FontWeight.w900,
-                                      fontSize: 16.sp,
-                                      color: isSelected ? AppColors.headerBrown : AppColors.textDark,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(18.r),
+                            child: Stack(
+                              children: [
+                                // Background
+                                Positioned.fill(
+                                  child: Container(
+                                    decoration: BoxDecoration(
+                                      gradient: isSelected
+                                          ? const LinearGradient(
+                                              begin: Alignment.topCenter,
+                                              end: Alignment.bottomCenter,
+                                              colors: [
+                                                Color(0xFFFFC062),
+                                                Color(0xFFE5871F),
+                                                Color(0xFFB55208),
+                                              ],
+                                            )
+                                          : const LinearGradient(
+                                              begin: Alignment.topCenter,
+                                              end: Alignment.bottomCenter,
+                                              colors: [
+                                                Color(0xFF4A2007),
+                                                Color(0xFF381401),
+                                                Color(0xFF260C00),
+                                              ],
+                                            ),
                                     ),
                                   ),
-                                  SizedBox(height: 2.h),
-                                  Text(
-                                    'Progress: Level $maxUnlocked',
-                                    style: GoogleFonts.fredoka(
-                                      fontSize: 12.sp,
-                                      color: AppColors.textMuted,
-                                      fontWeight: FontWeight.w500,
+                                ),
+                                // Wood Grain
+                                Positioned.fill(
+                                  child: Opacity(
+                                    opacity: isSelected ? 0.32 : 0.20,
+                                    child: Image.asset(
+                                      'assets/images/golden_wood_texture.webp',
+                                      fit: BoxFit.cover,
                                     ),
                                   ),
-                                ],
-                              ),
-                            ),
-
-                            // Radio Check Indicator
-                            Container(
-                              width: 24.r,
-                              height: 24.r,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: isSelected ? AppColors.btnFaceBrown : Colors.transparent,
-                                border: Border.all(
-                                  color: isSelected ? AppColors.btnFaceBrown : AppColors.borderSubtle,
-                                  width: 2.0,
                                 ),
-                              ),
-                              child: isSelected
-                                   ? const Icon(Icons.check_rounded, size: 16, color: Colors.white)
-                                  : null,
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  );
-                },
-              ),
-            ),
+                                // Highlight specular rim
+                                if (isSelected)
+                                  Positioned(
+                                    top: 0,
+                                    left: 12,
+                                    right: 12,
+                                    height: 1.2,
+                                    child: Container(
+                                      color: Colors.white.withValues(alpha: 0.4),
+                                    ),
+                                  ),
+                                // Content
+                                Padding(
+                                  padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 14.h),
+                                  child: Row(
+                                    children: [
+                                      // Flag / Icon Box
+                                      Container(
+                                        width: 44.r,
+                                        height: 44.r,
+                                        decoration: BoxDecoration(
+                                          color: isSelected ? const Color(0xFF2A0E01) : const Color(0xFF220A00),
+                                          shape: BoxShape.circle,
+                                          border: Border.all(
+                                            color: isSelected ? WoodenStyle.woodHighlight : WoodenStyle.woodBevel,
+                                            width: 1.4,
+                                          ),
+                                        ),
+                                        child: Center(
+                                          child: Text(flag, style: TextStyle(fontSize: 22.sp)),
+                                        ),
+                                      ),
+                                      SizedBox(width: 14.w),
 
-            // Bottom Confirm Button
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 16.h),
-              child: InkWell(
-                onTap: _confirmSelection,
-                borderRadius: BorderRadius.circular(24.r),
-                child: Container(
-                  width: double.infinity,
-                  padding: EdgeInsets.symmetric(vertical: 16.h),
-                  decoration: BoxDecoration(
-                    gradient: const LinearGradient(
-                      colors: [Color(0xFFCA9370), AppColors.btnFaceBrown],
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                    ),
-                    borderRadius: BorderRadius.circular(24.r),
-                    border: Border.all(color: AppColors.btnBorderBrown, width: 1.8),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: AppColors.btnShadowBrown,
-                        offset: Offset(0, 2.0),
-                        blurRadius: 0,
-                      ),
-                    ],
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const Icon(Icons.check_circle_outline_rounded, color: Colors.white, size: 22),
-                      SizedBox(width: 8.w),
-                      Text(
-                        'CONFIRM SELECTION',
-                        style: GoogleFonts.fredoka(
-                          fontSize: 16.sp,
-                          fontWeight: FontWeight.w900,
-                          color: Colors.white,
-                          letterSpacing: 1.2,
+                                      // Language Info
+                                      Expanded(
+                                        child: Column(
+                                          crossAxisAlignment: CrossAxisAlignment.start,
+                                          children: [
+                                            Text(
+                                              langName,
+                                              style: GoogleFonts.fredoka(
+                                                fontWeight: FontWeight.w900,
+                                                fontSize: 16.sp,
+                                                color: Colors.white,
+                                                shadows: [
+                                                  Shadow(
+                                                    color: isSelected ? const Color(0xFF4A1800) : const Color(0xFF1F0900),
+                                                    offset: const Offset(0, 1.2),
+                                                    blurRadius: 1,
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+                                            SizedBox(height: 2.h),
+                                            Text(
+                                              'Progress: Level $maxUnlocked',
+                                              style: GoogleFonts.fredoka(
+                                                fontSize: 12.sp,
+                                                color: isSelected
+                                                    ? Colors.white.withValues(alpha: 0.9)
+                                                    : const Color(0xFFFFD48F),
+                                                fontWeight: FontWeight.w600,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+
+                                      // Radio Check Indicator
+                                      if (isSelected)
+                                        Image.asset(
+                                          WoodGameIcons.btnCheck,
+                                          width: 28.r,
+                                          height: 28.r,
+                                        )
+                                      else
+                                        Container(
+                                          width: 24.r,
+                                          height: 24.r,
+                                          decoration: BoxDecoration(
+                                            color: const Color(0xFF220A00),
+                                            shape: BoxShape.circle,
+                                            border: Border.all(
+                                              color: WoodenStyle.woodBevel,
+                                              width: 2.0,
+                                            ),
+                                          ),
+                                        ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
                         ),
                       ),
-                    ],
-                  ),
+                    );
+                  },
                 ),
-              ).animate().scale(duration: 150.ms, curve: Curves.easeOut),
-            ),
-          ],
+              ),
+
+              // Bottom Confirm Button
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 16.h),
+                child: WoodenButton(
+                  text: 'CONFIRM SELECTION',
+                  icon: Icons.check_circle_rounded,
+                  variant: WoodenButtonVariant.primary,
+                  height: 56.h,
+                  fontSize: 18.sp,
+                  onTap: _confirmSelection,
+                ).animate().scale(duration: 150.ms, curve: Curves.easeOut),
+              ),
+            ],
+          ),
         ),
       ),
     );

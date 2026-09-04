@@ -1,127 +1,75 @@
 {
   "id": 1386,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "BRO",
+      "word": "EGO",
       "type": 0
     },
     {
-      "word": "COW",
+      "word": "FIT",
       "type": 0
     },
     {
-      "word": "FOR",
+      "word": "GOT",
       "type": 0
     },
     {
-      "word": "OUT",
+      "word": "TIE",
       "type": 0
     },
     {
-      "word": "ROW",
+      "word": "USE",
       "type": 0
     },
     {
-      "word": "SOL",
+      "word": "SUIT",
       "type": 0
     },
     {
-      "word": "SUN",
+      "word": "SURE",
       "type": 0
     },
     {
-      "word": "FORT",
+      "word": "SURF",
       "type": 0
     },
     {
-      "word": "TUNE",
+      "word": "USER",
       "type": 0
     },
     {
-      "word": "FORTUNE",
-      "type": 0
+      "word": "FRUIT",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "COR",
+      "word": "RUSE",
       "type": 0
     },
     {
-      "word": "LOO",
-      "type": 0
-    },
-    {
-      "word": "NUS",
-      "type": 0
-    },
-    {
-      "word": "NUT",
-      "type": 0
-    },
-    {
-      "word": "OFT",
-      "type": 0
-    },
-    {
-      "word": "ORB",
-      "type": 0
-    },
-    {
-      "word": "ORT",
-      "type": 0
-    },
-    {
-      "word": "OWL",
-      "type": 0
-    },
-    {
-      "word": "ROC",
-      "type": 0
-    },
-    {
-      "word": "TUN",
-      "type": 0
-    },
-    {
-      "word": "BROW",
-      "type": 0
-    },
-    {
-      "word": "COWL",
-      "type": 0
-    },
-    {
-      "word": "COWS",
-      "type": 0
-    },
-    {
-      "word": "FORB",
-      "type": 0
-    },
-    {
-      "word": "ROCS",
-      "type": 0
-    },
-    {
-      "word": "ROWS",
-      "type": 0
-    },
-    {
-      "word": "SCOW",
-      "type": 0
-    },
-    {
-      "word": "BROWS",
-      "type": 0
-    },
-    {
-      "word": "SCOWL",
-      "type": 0
+      "word": "TRES",
+      "type": 1
     }
   ],
-  "letters": "RBRO,OCTF,WSUN,LOOE",
-  "obstacles": []
+  "letters": "ITIE,URFT,SEGO",
+  "obstacles": [
+    {
+      "required_words": 5,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 1
+        }
+      ]
+    }
+  ]
 }

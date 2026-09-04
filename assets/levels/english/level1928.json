@@ -1,223 +1,90 @@
 {
   "id": 1928,
-  "width": 5,
-  "height": 4,
+  "width": 3,
+  "height": 3,
   "target_words": [
     {
-      "word": "ACT",
+      "word": "BEE",
       "type": 0
     },
     {
-      "word": "AND",
+      "word": "EEL",
       "type": 0
     },
     {
-      "word": "HAD",
+      "word": "ELK",
       "type": 0
     },
     {
-      "word": "SEA",
+      "word": "INK",
       "type": 0
     },
     {
-      "word": "SPA",
+      "word": "LIE",
       "type": 0
     },
     {
-      "word": "FACT",
+      "word": "BEEP",
       "type": 0
     },
     {
-      "word": "HAND",
+      "word": "KEEL",
+      "type": 2
+    },
+    {
+      "word": "KEEP",
+      "type": 2
+    },
+    {
+      "word": "LEEK",
       "type": 0
     },
     {
-      "word": "READ",
+      "word": "LINK",
       "type": 0
     },
     {
-      "word": "REAR",
+      "word": "PEEK",
       "type": 0
     },
     {
-      "word": "REST",
-      "type": 0
-    },
-    {
-      "word": "RUTH",
-      "type": 0
-    },
-    {
-      "word": "GUEST",
+      "word": "BLINK",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AHA",
+      "word": "NIL",
       "type": 0
     },
     {
-      "word": "ARC",
-      "type": 0
-    },
-    {
-      "word": "ARF",
-      "type": 0
-    },
-    {
-      "word": "DAH",
-      "type": 0
-    },
-    {
-      "word": "DAP",
-      "type": 0
-    },
-    {
-      "word": "EAR",
-      "type": 0
-    },
-    {
-      "word": "ERG",
-      "type": 0
-    },
-    {
-      "word": "FAN",
-      "type": 0
-    },
-    {
-      "word": "GUT",
-      "type": 0
-    },
-    {
-      "word": "HAP",
-      "type": 0
-    },
-    {
-      "word": "NAH",
-      "type": 0
-    },
-    {
-      "word": "PAD",
-      "type": 0
-    },
-    {
-      "word": "PAH",
-      "type": 0
-    },
-    {
-      "word": "PAR",
-      "type": 0
-    },
-    {
-      "word": "RAD",
-      "type": 0
-    },
-    {
-      "word": "RAP",
-      "type": 0
-    },
-    {
-      "word": "RES",
-      "type": 0
-    },
-    {
-      "word": "RUE",
-      "type": 0
-    },
-    {
-      "word": "RUG",
-      "type": 0
-    },
-    {
-      "word": "RUT",
-      "type": 0
-    },
-    {
-      "word": "SER",
-      "type": 0
-    },
-    {
-      "word": "TUG",
-      "type": 0
-    },
-    {
-      "word": "UGH",
-      "type": 0
-    },
-    {
-      "word": "APSE",
-      "type": 0
-    },
-    {
-      "word": "DAPS",
-      "type": 0
-    },
-    {
-      "word": "FRAE",
-      "type": 0
-    },
-    {
-      "word": "FRAP",
-      "type": 0
-    },
-    {
-      "word": "FRUG",
-      "type": 0
-    },
-    {
-      "word": "HAPS",
-      "type": 0
-    },
-    {
-      "word": "RAPS",
-      "type": 0
-    },
-    {
-      "word": "REAP",
-      "type": 0
-    },
-    {
-      "word": "RUER",
-      "type": 0
-    },
-    {
-      "word": "RUES",
-      "type": 0
-    },
-    {
-      "word": "SEAR",
-      "type": 0
-    },
-    {
-      "word": "SPAE",
-      "type": 0
-    },
-    {
-      "word": "SPAR",
-      "type": 0
-    },
-    {
-      "word": "TURF",
-      "type": 0
-    },
-    {
-      "word": "CRAPS",
-      "type": 0
-    },
-    {
-      "word": "FRAPS",
-      "type": 0
-    },
-    {
-      "word": "REAPS",
-      "type": 0
-    },
-    {
-      "word": "TREAD",
+      "word": "PEE",
       "type": 0
     }
   ],
-  "letters": "HACTH,AFRUG,NDAER,HAPST",
-  "obstacles": []
+  "letters": "PEL,BEK,LIN",
+  "obstacles": [
+    {
+      "required_words": 6,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 2,
+          "y": 2
+        }
+      ]
+    },
+    {
+      "required_words": 9,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

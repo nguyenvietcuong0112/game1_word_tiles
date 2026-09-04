@@ -1,228 +1,111 @@
 {
   "id": 1225,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "GAP",
+      "word": "MET",
       "type": 0
     },
     {
-      "word": "MOC",
+      "word": "ORE",
+      "type": 2
+    },
+    {
+      "word": "ROE",
       "type": 0
     },
     {
-      "word": "NIL",
+      "word": "MINT",
       "type": 0
     },
     {
-      "word": "RAN",
+      "word": "ROSE",
       "type": 0
     },
     {
-      "word": "RAT",
+      "word": "SORE",
       "type": 0
     },
     {
-      "word": "TAG",
+      "word": "SORT",
+      "type": 2
+    },
+    {
+      "word": "INTRO",
       "type": 0
     },
     {
-      "word": "TAN",
+      "word": "METRO",
       "type": 0
     },
     {
-      "word": "GANG",
-      "type": 0
-    },
-    {
-      "word": "STAR",
-      "type": 0
-    },
-    {
-      "word": "AGING",
+      "word": "IMMERSE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ANI",
+      "word": "EROS",
+      "type": 1
+    },
+    {
+      "word": "MEIN",
       "type": 0
     },
     {
-      "word": "ARS",
+      "word": "METRE",
       "type": 0
     },
     {
-      "word": "GAN",
+      "word": "METRES",
       "type": 0
     },
     {
-      "word": "GAR",
-      "type": 0
+      "word": "METROS",
+      "type": 1
     },
     {
-      "word": "GAT",
-      "type": 0
-    },
-    {
-      "word": "GIN",
-      "type": 0
-    },
-    {
-      "word": "LIN",
-      "type": 0
-    },
-    {
-      "word": "NAG",
-      "type": 0
-    },
-    {
-      "word": "OMS",
-      "type": 0
-    },
-    {
-      "word": "RAG",
-      "type": 0
-    },
-    {
-      "word": "TAR",
-      "type": 0
-    },
-    {
-      "word": "AGIN",
-      "type": 0
-    },
-    {
-      "word": "ANGA",
-      "type": 0
-    },
-    {
-      "word": "GARS",
-      "type": 0
-    },
-    {
-      "word": "GATS",
-      "type": 0
-    },
-    {
-      "word": "GNAR",
-      "type": 0
-    },
-    {
-      "word": "GNAT",
-      "type": 0
-    },
-    {
-      "word": "GRAN",
-      "type": 0
-    },
-    {
-      "word": "GRAT",
-      "type": 0
-    },
-    {
-      "word": "LINT",
-      "type": 0
-    },
-    {
-      "word": "MOCS",
-      "type": 0
-    },
-    {
-      "word": "PRAT",
-      "type": 0
-    },
-    {
-      "word": "RAGI",
-      "type": 0
-    },
-    {
-      "word": "RANG",
-      "type": 0
-    },
-    {
-      "word": "RANI",
-      "type": 0
-    },
-    {
-      "word": "RATS",
-      "type": 0
-    },
-    {
-      "word": "STAG",
-      "type": 0
-    },
-    {
-      "word": "TANG",
-      "type": 0
-    },
-    {
-      "word": "TARP",
-      "type": 0
-    },
-    {
-      "word": "TARS",
-      "type": 0
-    },
-    {
-      "word": "GLINT",
-      "type": 0
-    },
-    {
-      "word": "GNARS",
-      "type": 0
-    },
-    {
-      "word": "GNATS",
-      "type": 0
-    },
-    {
-      "word": "LINTS",
-      "type": 0
-    },
-    {
-      "word": "PRANG",
-      "type": 0
-    },
-    {
-      "word": "PRATS",
-      "type": 0
-    },
-    {
-      "word": "STANG",
-      "type": 0
-    },
-    {
-      "word": "GLINTS",
-      "type": 0
-    },
-    {
-      "word": "RAGING",
-      "type": 0
-    },
-    {
-      "word": "RATLIN",
-      "type": 0
-    },
-    {
-      "word": "STAGING",
-      "type": 0
+      "word": "TRES",
+      "type": 1
     }
   ],
-  "letters": "APCO,GRSM,NATN,IGLI",
+  "letters": "NTRE,IEOS,MMER",
   "obstacles": [
     {
-      "required_words": 5,
+      "required_words": 3,
       "id": 1,
       "type": 0,
       "cells": [
         {
-          "x": 0,
-          "y": 0
+          "x": 3,
+          "y": 2
         },
         {
-          "x": 1,
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
           "y": 0
         }
       ]

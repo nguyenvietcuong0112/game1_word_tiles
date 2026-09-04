@@ -1,191 +1,79 @@
 {
   "id": 2084,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "MED",
+      "word": "BEE",
       "type": 0
     },
     {
-      "word": "PEE",
+      "word": "CAB",
       "type": 0
     },
     {
-      "word": "PER",
+      "word": "RIB",
       "type": 0
     },
     {
-      "word": "TOO",
+      "word": "ROB",
       "type": 0
     },
     {
-      "word": "BOOT",
+      "word": "ROE",
       "type": 0
     },
     {
-      "word": "CAST",
+      "word": "SIR",
       "type": 0
     },
     {
-      "word": "DEEP",
+      "word": "CRIB",
+      "type": 2
+    },
+    {
+      "word": "IRIS",
+      "type": 2
+    },
+    {
+      "word": "ROBE",
       "type": 0
     },
     {
-      "word": "RIDE",
+      "word": "CRISIS",
       "type": 0
     },
     {
-      "word": "BOOTS",
-      "type": 0
-    },
-    {
-      "word": "COAST",
-      "type": 0
-    },
-    {
-      "word": "SPEED",
+      "word": "SCRIBE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ASP",
-      "type": 0
+      "word": "ORCS",
+      "type": 2
     },
     {
-      "word": "BOO",
-      "type": 0
-    },
-    {
-      "word": "COO",
-      "type": 0
-    },
-    {
-      "word": "COT",
-      "type": 0
-    },
-    {
-      "word": "DEE",
-      "type": 0
-    },
-    {
-      "word": "IRE",
-      "type": 0
-    },
-    {
-      "word": "OBE",
-      "type": 0
-    },
-    {
-      "word": "OOT",
-      "type": 0
-    },
-    {
-      "word": "PED",
-      "type": 0
-    },
-    {
-      "word": "REB",
-      "type": 0
-    },
-    {
-      "word": "REP",
-      "type": 0
-    },
-    {
-      "word": "RID",
-      "type": 0
-    },
-    {
-      "word": "SAC",
-      "type": 0
-    },
-    {
-      "word": "ACME",
-      "type": 0
-    },
-    {
-      "word": "COTS",
-      "type": 0
-    },
-    {
-      "word": "DEED",
-      "type": 0
-    },
-    {
-      "word": "DEEM",
-      "type": 0
-    },
-    {
-      "word": "DIRE",
-      "type": 0
-    },
-    {
-      "word": "MEED",
-      "type": 0
-    },
-    {
-      "word": "OAST",
-      "type": 0
-    },
-    {
-      "word": "OOTS",
-      "type": 0
-    },
-    {
-      "word": "PEED",
-      "type": 0
-    },
-    {
-      "word": "PEEP",
-      "type": 0
-    },
-    {
-      "word": "PERI",
-      "type": 0
-    },
-    {
-      "word": "REPP",
-      "type": 0
-    },
-    {
-      "word": "SCOT",
-      "type": 0
-    },
-    {
-      "word": "SPED",
-      "type": 0
-    },
-    {
-      "word": "ASCOT",
-      "type": 0
-    },
-    {
-      "word": "DEEPS",
-      "type": 0
-    },
-    {
-      "word": "PEEPS",
-      "type": 0
-    },
-    {
-      "word": "REPPS",
-      "type": 0
-    },
-    {
-      "word": "REBOOT",
-      "type": 0
-    },
-    {
-      "word": "REPPED",
-      "type": 0
-    },
-    {
-      "word": "REBOOTS",
+      "word": "SCAB",
       "type": 0
     }
   ],
-  "letters": "IREBO,DDPTO,EEPSC,PMCAO",
-  "obstacles": []
+  "letters": "SIBE,IROE,SCAB",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

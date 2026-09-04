@@ -1,167 +1,111 @@
 {
   "id": 1948,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ART",
+      "word": "APT",
       "type": 0
     },
     {
-      "word": "EAR",
+      "word": "ERA",
       "type": 0
     },
     {
-      "word": "HIT",
+      "word": "MAT",
       "type": 0
     },
     {
-      "word": "KIT",
+      "word": "POT",
       "type": 0
     },
     {
-      "word": "MET",
+      "word": "RAM",
       "type": 0
     },
     {
-      "word": "RIB",
+      "word": "RAT",
       "type": 0
     },
     {
-      "word": "RIG",
+      "word": "TAP",
       "type": 0
     },
     {
-      "word": "ITEM",
+      "word": "AREA",
       "type": 0
     },
     {
-      "word": "KING",
+      "word": "MARE",
       "type": 0
     },
     {
-      "word": "HIKING",
+      "word": "RAMP",
       "type": 0
     },
     {
-      "word": "MERELY",
+      "word": "REAP",
+      "type": 2
+    },
+    {
+      "word": "TAME",
+      "type": 2
+    },
+    {
+      "word": "TYPO",
+      "type": 0
+    },
+    {
+      "word": "EMPTY",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AIT",
+      "word": "AMP",
       "type": 0
     },
     {
-      "word": "EME",
+      "word": "ARE",
       "type": 0
     },
     {
-      "word": "ERE",
+      "word": "TAMER",
+      "type": 2
+    },
+    {
+      "word": "TAMPA",
+      "type": 2
+    },
+    {
+      "word": "TAR",
       "type": 0
     },
     {
-      "word": "GHI",
-      "type": 0
+      "word": "TARE",
+      "type": 1
     },
     {
-      "word": "HIN",
-      "type": 0
-    },
-    {
-      "word": "KEA",
-      "type": 0
-    },
-    {
-      "word": "KIN",
-      "type": 0
-    },
-    {
-      "word": "MEL",
-      "type": 0
-    },
-    {
-      "word": "REI",
-      "type": 0
-    },
-    {
-      "word": "REM",
-      "type": 0
-    },
-    {
-      "word": "RET",
-      "type": 0
-    },
-    {
-      "word": "BIER",
-      "type": 0
-    },
-    {
-      "word": "GIRT",
-      "type": 0
-    },
-    {
-      "word": "HIKE",
-      "type": 0
-    },
-    {
-      "word": "KITE",
-      "type": 0
-    },
-    {
-      "word": "MERE",
-      "type": 0
-    },
-    {
-      "word": "RELY",
-      "type": 0
-    },
-    {
-      "word": "TIKE",
-      "type": 0
-    },
-    {
-      "word": "TIKI",
-      "type": 0
-    },
-    {
-      "word": "TRIG",
-      "type": 0
-    },
-    {
-      "word": "YLEM",
-      "type": 0
-    },
-    {
-      "word": "EKING",
-      "type": 0
-    },
-    {
-      "word": "KITER",
-      "type": 0
-    },
-    {
-      "word": "REMET",
-      "type": 0
-    },
-    {
-      "word": "RETIA",
-      "type": 0
-    },
-    {
-      "word": "TRAIK",
-      "type": 0
-    },
-    {
-      "word": "TRIER",
-      "type": 0
-    },
-    {
-      "word": "TRAIKING",
+      "word": "TOP",
       "type": 0
     }
   ],
-  "letters": "EARIB,KITER,IHRME,NGIYL",
-  "obstacles": []
+  "letters": "APTO,EMYP,RATA",
+  "obstacles": [
+    {
+      "required_words": 7,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 1,
+          "y": 1
+        },
+        {
+          "x": 2,
+          "y": 1
+        }
+      ]
+    }
+  ]
 }

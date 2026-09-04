@@ -1,235 +1,130 @@
 {
   "id": 1806,
-  "width": 4,
-  "height": 4,
+  "width": 5,
+  "height": 3,
   "target_words": [
     {
-      "word": "END",
+      "word": "EAR",
       "type": 0
     },
     {
-      "word": "LEE",
+      "word": "FOR",
       "type": 0
     },
     {
-      "word": "RED",
+      "word": "GUT",
       "type": 0
     },
     {
-      "word": "SEE",
+      "word": "LAP",
       "type": 0
     },
     {
-      "word": "BOSS",
+      "word": "RUG",
       "type": 0
     },
     {
-      "word": "ELSE",
+      "word": "GEAR",
       "type": 0
     },
     {
-      "word": "NEED",
+      "word": "OPAL",
+      "type": 2
+    },
+    {
+      "word": "POLO",
       "type": 0
     },
     {
-      "word": "SEEN",
+      "word": "LAUGH",
       "type": 0
     },
     {
-      "word": "TREE",
+      "word": "POLAR",
       "type": 0
     },
     {
-      "word": "DESERT",
-      "type": 0
+      "word": "LAUGHTER",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "BOS",
+      "word": "LOP",
       "type": 0
     },
     {
-      "word": "BOT",
+      "word": "ORAL",
       "type": 0
     },
     {
-      "word": "DEE",
+      "word": "PAL",
       "type": 0
     },
     {
-      "word": "EEL",
+      "word": "PALO",
       "type": 0
     },
     {
-      "word": "ELD",
+      "word": "RET",
       "type": 0
     },
     {
-      "word": "ELS",
+      "word": "RUT",
       "type": 0
     },
     {
-      "word": "ERE",
+      "word": "RUTH",
       "type": 0
     },
     {
-      "word": "ESS",
-      "type": 0
+      "word": "TERRA",
+      "type": 2
     },
     {
-      "word": "NEE",
-      "type": 0
-    },
-    {
-      "word": "REE",
-      "type": 0
-    },
-    {
-      "word": "RES",
-      "type": 0
-    },
-    {
-      "word": "SER",
-      "type": 0
-    },
-    {
-      "word": "SOB",
-      "type": 0
-    },
-    {
-      "word": "SOT",
-      "type": 0
-    },
-    {
-      "word": "BRED",
-      "type": 0
-    },
-    {
-      "word": "BREE",
-      "type": 0
-    },
-    {
-      "word": "DERE",
-      "type": 0
-    },
-    {
-      "word": "EELS",
-      "type": 0
-    },
-    {
-      "word": "ESES",
-      "type": 0
-    },
-    {
-      "word": "LEER",
-      "type": 0
-    },
-    {
-      "word": "LEES",
-      "type": 0
-    },
-    {
-      "word": "LEND",
-      "type": 0
-    },
-    {
-      "word": "REDE",
-      "type": 0
-    },
-    {
-      "word": "REEL",
-      "type": 0
-    },
-    {
-      "word": "SEEL",
-      "type": 0
-    },
-    {
-      "word": "SERE",
-      "type": 0
-    },
-    {
-      "word": "SOBS",
-      "type": 0
-    },
-    {
-      "word": "TOSS",
-      "type": 0
-    },
-    {
-      "word": "BREDE",
-      "type": 0
-    },
-    {
-      "word": "ENDER",
-      "type": 0
-    },
-    {
-      "word": "REDES",
-      "type": 0
-    },
-    {
-      "word": "REELS",
-      "type": 0
-    },
-    {
-      "word": "SEDER",
-      "type": 0
-    },
-    {
-      "word": "SERED",
-      "type": 0
-    },
-    {
-      "word": "SERER",
-      "type": 0
-    },
-    {
-      "word": "TREEN",
-      "type": 0
-    },
-    {
-      "word": "BOSSED",
-      "type": 0
-    },
-    {
-      "word": "BOSSES",
-      "type": 0
-    },
-    {
-      "word": "BREDES",
-      "type": 0
-    },
-    {
-      "word": "LEERED",
-      "type": 0
-    },
-    {
-      "word": "LENDER",
-      "type": 0
-    },
-    {
-      "word": "NEEDER",
-      "type": 0
-    },
-    {
-      "word": "OBSESS",
-      "type": 0
-    },
-    {
-      "word": "TOSSED",
-      "type": 0
-    },
-    {
-      "word": "TOSSES",
-      "type": 0
-    },
-    {
-      "word": "SLENDER",
+      "word": "TUG",
       "type": 0
     }
   ],
-  "letters": "REDN,TREE,OBSL,SSED",
-  "obstacles": []
+  "letters": "FORRE,OLAUT,PAEGH",
+  "obstacles": [
+    {
+      "required_words": 4,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 4,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        },
+        {
+          "x": 4,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 1,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        }
+      ]
+    }
+  ]
 }

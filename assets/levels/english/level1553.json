@@ -1,167 +1,103 @@
 {
   "id": 1553,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ABS",
+      "word": "HIT",
       "type": 0
     },
     {
-      "word": "AGO",
+      "word": "MOM",
       "type": 0
     },
     {
-      "word": "AIR",
+      "word": "OUT",
       "type": 0
     },
     {
-      "word": "BIS",
+      "word": "BOUT",
       "type": 0
     },
     {
-      "word": "GOA",
+      "word": "FUME",
+      "type": 2
+    },
+    {
+      "word": "MOTH",
       "type": 0
     },
     {
-      "word": "SIR",
+      "word": "TOUT",
       "type": 0
     },
     {
-      "word": "SRI",
+      "word": "MOTTO",
       "type": 0
     },
     {
-      "word": "RING",
-      "type": 0
-    },
-    {
-      "word": "RISK",
+      "word": "BOTTOM",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AIS",
+      "word": "BOT",
       "type": 0
     },
     {
-      "word": "GAR",
+      "word": "EMU",
       "type": 0
     },
     {
-      "word": "GOR",
+      "word": "MOT",
       "type": 0
     },
     {
-      "word": "KAB",
-      "type": 0
+      "word": "MOTT",
+      "type": 1
     },
     {
-      "word": "OAR",
-      "type": 0
+      "word": "OTTO",
+      "type": 1
     },
     {
-      "word": "ORA",
-      "type": 0
-    },
-    {
-      "word": "RAG",
-      "type": 0
-    },
-    {
-      "word": "RIA",
-      "type": 0
-    },
-    {
-      "word": "RIB",
-      "type": 0
-    },
-    {
-      "word": "RIN",
-      "type": 0
-    },
-    {
-      "word": "SIB",
-      "type": 0
-    },
-    {
-      "word": "SKA",
-      "type": 0
-    },
-    {
-      "word": "ABRI",
-      "type": 0
-    },
-    {
-      "word": "AIRS",
-      "type": 0
-    },
-    {
-      "word": "BISK",
-      "type": 0
-    },
-    {
-      "word": "BRIS",
-      "type": 0
-    },
-    {
-      "word": "ISBA",
-      "type": 0
-    },
-    {
-      "word": "KABS",
-      "type": 0
-    },
-    {
-      "word": "RIBS",
-      "type": 0
-    },
-    {
-      "word": "SIBS",
-      "type": 0
-    },
-    {
-      "word": "SIRS",
-      "type": 0
-    },
-    {
-      "word": "SOAR",
-      "type": 0
-    },
-    {
-      "word": "SRIS",
-      "type": 0
-    },
-    {
-      "word": "ABRIS",
-      "type": 0
-    },
-    {
-      "word": "BRIAR",
-      "type": 0
-    },
-    {
-      "word": "BRISK",
-      "type": 0
-    },
-    {
-      "word": "ARIOSI",
-      "type": 0
-    },
-    {
-      "word": "GORING",
-      "type": 0
-    },
-    {
-      "word": "OARING",
-      "type": 0
-    },
-    {
-      "word": "SOARING",
-      "type": 0
+      "word": "TOME",
+      "type": 2
     }
   ],
-  "letters": "ORIN,GAOG,BISK,SRBA",
-  "obstacles": []
+  "letters": "EMOM,FUTH,BOTI",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

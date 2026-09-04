@@ -1,191 +1,106 @@
 {
   "id": 1683,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "AIR",
+      "word": "ANT",
       "type": 0
     },
     {
-      "word": "NET",
+      "word": "ART",
       "type": 0
     },
     {
-      "word": "NOT",
+      "word": "CAR",
       "type": 0
     },
     {
-      "word": "ONE",
+      "word": "RAN",
       "type": 0
     },
     {
-      "word": "RED",
+      "word": "VAN",
       "type": 0
     },
     {
-      "word": "TOE",
+      "word": "CART",
       "type": 0
     },
     {
-      "word": "WAY",
+      "word": "NOVA",
       "type": 0
     },
     {
-      "word": "WED",
+      "word": "RANK",
       "type": 0
     },
     {
-      "word": "IDEA",
+      "word": "RANT",
       "type": 0
     },
     {
-      "word": "NOTE",
-      "type": 0
-    },
-    {
-      "word": "WIRE",
-      "type": 0
+      "word": "RACCOON",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "AID",
+      "word": "AVANT",
       "type": 0
     },
     {
-      "word": "AWE",
+      "word": "AVON",
       "type": 0
     },
     {
-      "word": "DEN",
-      "type": 0
+      "word": "COON",
+      "type": 1
     },
     {
-      "word": "DEW",
-      "type": 0
-    },
-    {
-      "word": "IRE",
-      "type": 0
-    },
-    {
-      "word": "RIA",
-      "type": 0
-    },
-    {
-      "word": "RID",
-      "type": 0
-    },
-    {
-      "word": "TED",
-      "type": 0
-    },
-    {
-      "word": "TEN",
-      "type": 0
-    },
-    {
-      "word": "TON",
-      "type": 0
-    },
-    {
-      "word": "YAW",
-      "type": 0
-    },
-    {
-      "word": "AIDE",
-      "type": 0
-    },
-    {
-      "word": "AWED",
-      "type": 0
-    },
-    {
-      "word": "DENE",
-      "type": 0
-    },
-    {
-      "word": "DIRE",
-      "type": 0
-    },
-    {
-      "word": "IRED",
-      "type": 0
-    },
-    {
-      "word": "IRID",
-      "type": 0
-    },
-    {
-      "word": "NETT",
-      "type": 0
-    },
-    {
-      "word": "OTTO",
-      "type": 0
-    },
-    {
-      "word": "REDE",
-      "type": 0
-    },
-    {
-      "word": "RIDE",
-      "type": 0
-    },
-    {
-      "word": "TOED",
-      "type": 0
-    },
-    {
-      "word": "TONE",
-      "type": 0
-    },
-    {
-      "word": "AIDER",
-      "type": 0
-    },
-    {
-      "word": "AIRED",
-      "type": 0
-    },
-    {
-      "word": "DEAIR",
-      "type": 0
-    },
-    {
-      "word": "NETTY",
-      "type": 0
-    },
-    {
-      "word": "NOTED",
-      "type": 0
-    },
-    {
-      "word": "REDIA",
-      "type": 0
-    },
-    {
-      "word": "TONED",
-      "type": 0
-    },
-    {
-      "word": "WIRED",
-      "type": 0
-    },
-    {
-      "word": "YAWED",
-      "type": 0
-    },
-    {
-      "word": "DENOTE",
-      "type": 0
-    },
-    {
-      "word": "REDIAE",
-      "type": 0
+      "word": "NANO",
+      "type": 2
     }
   ],
-  "letters": "AENO,IDET,REOT,IWAY",
-  "obstacles": []
+  "letters": "OONK,CVAN,CART",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

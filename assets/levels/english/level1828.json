@@ -1,119 +1,91 @@
 {
   "id": 1828,
-  "width": 5,
-  "height": 4,
+  "width": 3,
+  "height": 3,
   "target_words": [
     {
-      "word": "RAT",
+      "word": "ALE",
       "type": 0
     },
     {
-      "word": "SOL",
+      "word": "ALL",
       "type": 0
     },
     {
-      "word": "SON",
+      "word": "COP",
       "type": 0
     },
     {
-      "word": "TAR",
+      "word": "EEL",
       "type": 0
     },
     {
-      "word": "VAR",
+      "word": "CALL",
       "type": 0
     },
     {
-      "word": "VAT",
+      "word": "COLA",
       "type": 0
     },
     {
-      "word": "COIN",
+      "word": "COPE",
       "type": 0
     },
     {
-      "word": "CORN",
+      "word": "PEEL",
+      "type": 2
+    },
+    {
+      "word": "POLE",
       "type": 0
     },
     {
-      "word": "NEON",
+      "word": "POLL",
       "type": 0
     },
     {
-      "word": "VAULT",
-      "type": 0
-    },
-    {
-      "word": "CORNING",
+      "word": "LOCAL",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ATT",
+      "word": "COL",
       "type": 0
     },
     {
-      "word": "COR",
+      "word": "COLE",
       "type": 0
     },
     {
-      "word": "ENS",
+      "word": "LOP",
       "type": 0
     },
     {
-      "word": "EON",
+      "word": "LOPE",
+      "type": 1
+    },
+    {
+      "word": "PEE",
       "type": 0
     },
     {
-      "word": "NOS",
-      "type": 0
-    },
-    {
-      "word": "ORS",
-      "type": 0
-    },
-    {
-      "word": "ROC",
-      "type": 0
-    },
-    {
-      "word": "TAV",
-      "type": 0
-    },
-    {
-      "word": "VAU",
-      "type": 0
-    },
-    {
-      "word": "GRAT",
-      "type": 0
-    },
-    {
-      "word": "INRO",
-      "type": 0
-    },
-    {
-      "word": "ULVA",
-      "type": 0
-    },
-    {
-      "word": "VINO",
-      "type": 0
-    },
-    {
-      "word": "RAVIN",
-      "type": 0
-    },
-    {
-      "word": "VINOS",
-      "type": 0
-    },
-    {
-      "word": "RAVING",
+      "word": "PELL",
       "type": 0
     }
   ],
-  "letters": "RATVA,GVTLU,NINOE,CORSN",
-  "obstacles": []
+  "letters": "PEE,OLL,CAL",
+  "obstacles": [
+    {
+      "required_words": 6,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 1,
+          "y": 1
+        }
+      ]
+    }
+  ]
 }

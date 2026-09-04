@@ -1,247 +1,110 @@
 {
   "id": 1899,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "AID",
+      "word": "ALE",
       "type": 0
     },
     {
-      "word": "AIM",
+      "word": "LED",
       "type": 0
     },
     {
-      "word": "ASS",
+      "word": "SAD",
       "type": 0
     },
     {
-      "word": "HUB",
+      "word": "ABLE",
       "type": 0
     },
     {
-      "word": "LIE",
+      "word": "BLED",
       "type": 0
     },
     {
-      "word": "MED",
+      "word": "LAVA",
       "type": 0
     },
     {
-      "word": "MID",
+      "word": "LOVE",
       "type": 0
     },
     {
-      "word": "SIT",
+      "word": "OVAL",
       "type": 0
     },
     {
-      "word": "WED",
+      "word": "SAVE",
       "type": 0
     },
     {
-      "word": "DIAL",
-      "type": 0
-    },
-    {
-      "word": "SEMI",
-      "type": 0
-    },
-    {
-      "word": "MEDIA",
-      "type": 0
+      "word": "VALUABLE",
+      "type": 2
     }
   ],
   "extra_words": [
     {
-      "word": "AIL",
+      "word": "ABLED",
       "type": 0
     },
     {
-      "word": "ALS",
+      "word": "DAVOS",
       "type": 0
     },
     {
-      "word": "DEW",
+      "word": "LOVED",
       "type": 0
     },
     {
-      "word": "DIM",
+      "word": "SAVED",
       "type": 0
     },
     {
-      "word": "EDH",
-      "type": 0
-    },
-    {
-      "word": "EME",
-      "type": 0
-    },
-    {
-      "word": "ESS",
-      "type": 0
-    },
-    {
-      "word": "EWE",
-      "type": 0
-    },
-    {
-      "word": "HUE",
-      "type": 0
-    },
-    {
-      "word": "MEW",
-      "type": 0
-    },
-    {
-      "word": "SEW",
-      "type": 0
-    },
-    {
-      "word": "TIS",
-      "type": 0
-    },
-    {
-      "word": "WIS",
-      "type": 0
-    },
-    {
-      "word": "WIT",
-      "type": 0
-    },
-    {
-      "word": "AIDE",
-      "type": 0
-    },
-    {
-      "word": "AILS",
-      "type": 0
-    },
-    {
-      "word": "ALME",
-      "type": 0
-    },
-    {
-      "word": "DEME",
-      "type": 0
-    },
-    {
-      "word": "DIME",
-      "type": 0
-    },
-    {
-      "word": "EMES",
-      "type": 0
-    },
-    {
-      "word": "EMEU",
-      "type": 0
-    },
-    {
-      "word": "EWES",
-      "type": 0
-    },
-    {
-      "word": "HUED",
-      "type": 0
-    },
-    {
-      "word": "IDEM",
-      "type": 0
-    },
-    {
-      "word": "LAID",
-      "type": 0
-    },
-    {
-      "word": "MESA",
-      "type": 0
-    },
-    {
-      "word": "MESS",
-      "type": 0
-    },
-    {
-      "word": "SAIL",
-      "type": 0
-    },
-    {
-      "word": "SASS",
-      "type": 0
-    },
-    {
-      "word": "SEME",
-      "type": 0
-    },
-    {
-      "word": "WISE",
-      "type": 0
-    },
-    {
-      "word": "WISS",
-      "type": 0
-    },
-    {
-      "word": "AIMED",
-      "type": 0
-    },
-    {
-      "word": "ALIAS",
-      "type": 0
-    },
-    {
-      "word": "ALMES",
-      "type": 0
-    },
-    {
-      "word": "DEMES",
-      "type": 0
-    },
-    {
-      "word": "DIALS",
-      "type": 0
-    },
-    {
-      "word": "DIMES",
-      "type": 0
-    },
-    {
-      "word": "MESAS",
-      "type": 0
-    },
-    {
-      "word": "MEWED",
-      "type": 0
-    },
-    {
-      "word": "SAILS",
-      "type": 0
-    },
-    {
-      "word": "SEWED",
-      "type": 0
-    },
-    {
-      "word": "WISES",
-      "type": 0
-    },
-    {
-      "word": "MEDIAE",
-      "type": 0
-    },
-    {
-      "word": "MEDIAL",
-      "type": 0
-    },
-    {
-      "word": "ALIASES",
-      "type": 0
-    },
-    {
-      "word": "MEDIALS",
+      "word": "VALE",
       "type": 0
     }
   ],
-  "letters": "EAIDH,ILMEU,ASEWB,SSSIT",
-  "obstacles": []
+  "letters": "BLED,AAVA,ULOS",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

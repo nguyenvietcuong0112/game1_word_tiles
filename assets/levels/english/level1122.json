@@ -1,147 +1,110 @@
 {
   "id": 1122,
-  "width": 4,
-  "height": 4,
+  "width": 5,
+  "height": 3,
   "target_words": [
     {
-      "word": "AIR",
+      "word": "EEL",
       "type": 0
     },
     {
-      "word": "ASS",
+      "word": "LET",
       "type": 0
     },
     {
-      "word": "NOT",
+      "word": "NOD",
       "type": 0
     },
     {
-      "word": "SEC",
+      "word": "OWL",
       "type": 0
     },
     {
-      "word": "BASS",
+      "word": "TWO",
       "type": 0
     },
     {
-      "word": "TONY",
+      "word": "URN",
       "type": 0
     },
     {
-      "word": "PRINT",
+      "word": "GOOD",
       "type": 0
     },
     {
-      "word": "SAINT",
+      "word": "TEEN",
       "type": 0
     },
     {
-      "word": "PRINTS",
+      "word": "TURN",
+      "type": 0
+    },
+    {
+      "word": "WOOD",
+      "type": 0
+    },
+    {
+      "word": "DOODLE",
+      "type": 0
+    },
+    {
+      "word": "NOODLE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ABS",
+      "word": "DON",
       "type": 0
     },
     {
-      "word": "AIN",
+      "word": "GOO",
       "type": 0
     },
     {
-      "word": "BAS",
-      "type": 0
-    },
-    {
-      "word": "ONS",
-      "type": 0
-    },
-    {
-      "word": "RIA",
-      "type": 0
-    },
-    {
-      "word": "RIN",
-      "type": 0
-    },
-    {
-      "word": "SAB",
-      "type": 0
-    },
-    {
-      "word": "SPY",
-      "type": 0
-    },
-    {
-      "word": "SRI",
-      "type": 0
-    },
-    {
-      "word": "SYN",
-      "type": 0
-    },
-    {
-      "word": "TON",
-      "type": 0
-    },
-    {
-      "word": "AIRS",
-      "type": 0
-    },
-    {
-      "word": "AIRT",
-      "type": 0
-    },
-    {
-      "word": "ESPY",
-      "type": 0
-    },
-    {
-      "word": "RIAS",
-      "type": 0
-    },
-    {
-      "word": "SABS",
-      "type": 0
-    },
-    {
-      "word": "SAIN",
-      "type": 0
-    },
-    {
-      "word": "SECT",
-      "type": 0
-    },
-    {
-      "word": "SNOT",
-      "type": 0
-    },
-    {
-      "word": "TONS",
-      "type": 0
-    },
-    {
-      "word": "AIRTS",
-      "type": 0
-    },
-    {
-      "word": "STRIA",
-      "type": 0
-    },
-    {
-      "word": "ESTRIN",
-      "type": 0
-    },
-    {
-      "word": "SAINTS",
-      "type": 0
-    },
-    {
-      "word": "SPRINT",
+      "word": "RUT",
       "type": 0
     }
   ],
-  "letters": "ESTN,CPRI,TYSA,ONSB",
-  "obstacles": []
+  "letters": "GDLEE,OOWTN,NODUR",
+  "obstacles": [
+    {
+      "required_words": 6,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 1
+        }
+      ]
+    },
+    {
+      "required_words": 9,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

@@ -1,163 +1,126 @@
 {
   "id": 1547,
-  "width": 4,
-  "height": 4,
+  "width": 5,
+  "height": 3,
   "target_words": [
     {
-      "word": "ADD",
+      "word": "BET",
       "type": 0
     },
     {
-      "word": "ADS",
+      "word": "BIT",
       "type": 0
     },
     {
-      "word": "HAD",
+      "word": "MEN",
       "type": 0
     },
     {
-      "word": "MAP",
+      "word": "PIE",
       "type": 0
     },
     {
-      "word": "PRO",
+      "word": "TOO",
       "type": 0
     },
     {
-      "word": "BOAT",
+      "word": "BITE",
       "type": 0
     },
     {
-      "word": "DEAD",
-      "type": 0
+      "word": "OMEN",
+      "type": 2
     },
     {
-      "word": "ADDED",
-      "type": 0
+      "word": "RIOT",
+      "type": 2
     },
     {
-      "word": "MAMBO",
+      "word": "ROOT",
+      "type": 2
+    },
+    {
+      "word": "BECOME",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AHA",
+      "word": "COME",
       "type": 0
     },
     {
-      "word": "BOA",
+      "word": "COMP",
       "type": 0
     },
     {
-      "word": "DAH",
+      "word": "COT",
       "type": 0
     },
     {
-      "word": "DAP",
+      "word": "COTE",
+      "type": 1
+    },
+    {
+      "word": "ECO",
       "type": 0
     },
     {
-      "word": "HAE",
+      "word": "MOT",
       "type": 0
     },
     {
-      "word": "HAO",
-      "type": 0
+      "word": "MOTE",
+      "type": 1
     },
     {
-      "word": "HAP",
-      "type": 0
+      "word": "TIBET",
+      "type": 2
     },
     {
-      "word": "HAT",
-      "type": 0
-    },
-    {
-      "word": "OAT",
-      "type": 0
-    },
-    {
-      "word": "PAD",
-      "type": 0
-    },
-    {
-      "word": "PAH",
-      "type": 0
-    },
-    {
-      "word": "PAM",
-      "type": 0
-    },
-    {
-      "word": "ROB",
-      "type": 0
-    },
-    {
-      "word": "SHA",
-      "type": 0
-    },
-    {
-      "word": "TAO",
-      "type": 0
-    },
-    {
-      "word": "AMBO",
-      "type": 0
-    },
-    {
-      "word": "DAHS",
-      "type": 0
-    },
-    {
-      "word": "HAED",
-      "type": 0
-    },
-    {
-      "word": "HATS",
-      "type": 0
-    },
-    {
-      "word": "OATS",
-      "type": 0
-    },
-    {
-      "word": "PADS",
-      "type": 0
-    },
-    {
-      "word": "PROA",
-      "type": 0
-    },
-    {
-      "word": "SHAD",
-      "type": 0
-    },
-    {
-      "word": "SHAT",
-      "type": 0
-    },
-    {
-      "word": "TAHR",
-      "type": 0
-    },
-    {
-      "word": "BOATS",
-      "type": 0
-    },
-    {
-      "word": "DEADS",
-      "type": 0
-    },
-    {
-      "word": "HADST",
-      "type": 0
-    },
-    {
-      "word": "PADDED",
+      "word": "TOME",
       "type": 0
     }
   ],
-  "letters": "DEDM,DAPA,SHRM,TAOB",
-  "obstacles": []
+  "letters": "COMEN,ETPIR,BITOO",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 2
+        },
+        {
+          "x": 4,
+          "y": 1
+        }
+      ]
+    },
+    {
+      "required_words": 6,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

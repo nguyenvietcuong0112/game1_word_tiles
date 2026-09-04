@@ -1,216 +1,135 @@
 {
   "id": 1950,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "ADS",
+      "word": "ANT",
       "type": 0
     },
     {
-      "word": "AGE",
+      "word": "FOR",
       "type": 0
     },
     {
-      "word": "GUN",
+      "word": "RAN",
       "type": 0
     },
     {
-      "word": "MAN",
+      "word": "FIVE",
       "type": 0
     },
     {
-      "word": "GAGE",
+      "word": "FONT",
+      "type": 2
+    },
+    {
+      "word": "IRON",
       "type": 0
     },
     {
-      "word": "GEAR",
+      "word": "RANT",
       "type": 0
     },
     {
-      "word": "GUNS",
+      "word": "RIFE",
+      "type": 2
+    },
+    {
+      "word": "RIFT",
       "type": 0
     },
     {
-      "word": "NAME",
+      "word": "VEST",
       "type": 0
     },
     {
-      "word": "NEAR",
+      "word": "DRIFT",
       "type": 0
     },
     {
-      "word": "ORAL",
-      "type": 0
-    },
-    {
-      "word": "LARGE",
-      "type": 0
-    },
-    {
-      "word": "ENLARGE",
+      "word": "DRIVE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "AGA",
+      "word": "ANTS",
       "type": 0
     },
     {
-      "word": "AMU",
+      "word": "DRIVES",
       "type": 0
     },
     {
-      "word": "ANA",
+      "word": "FEST",
       "type": 0
     },
     {
-      "word": "ANE",
+      "word": "FIVES",
       "type": 0
     },
     {
-      "word": "DAG",
+      "word": "FONTS",
       "type": 0
     },
     {
-      "word": "EAR",
+      "word": "FORD",
+      "type": 2
+    },
+    {
+      "word": "NOR",
       "type": 0
     },
     {
-      "word": "EMU",
+      "word": "NORD",
+      "type": 1
+    },
+    {
+      "word": "RANTS",
       "type": 0
     },
     {
-      "word": "GAD",
-      "type": 0
-    },
-    {
-      "word": "GAG",
-      "type": 0
-    },
-    {
-      "word": "GAN",
-      "type": 0
-    },
-    {
-      "word": "GEM",
-      "type": 0
-    },
-    {
-      "word": "GEN",
-      "type": 0
-    },
-    {
-      "word": "GUM",
-      "type": 0
-    },
-    {
-      "word": "LAR",
-      "type": 0
-    },
-    {
-      "word": "MUG",
-      "type": 0
-    },
-    {
-      "word": "MUN",
-      "type": 0
-    },
-    {
-      "word": "NAG",
-      "type": 0
-    },
-    {
-      "word": "NAM",
-      "type": 0
-    },
-    {
-      "word": "ORA",
-      "type": 0
-    },
-    {
-      "word": "ROE",
-      "type": 0
-    },
-    {
-      "word": "UNS",
-      "type": 0
-    },
-    {
-      "word": "ALGA",
-      "type": 0
-    },
-    {
-      "word": "ALOE",
-      "type": 0
-    },
-    {
-      "word": "DAGS",
-      "type": 0
-    },
-    {
-      "word": "GADS",
-      "type": 0
-    },
-    {
-      "word": "GAGA",
-      "type": 0
-    },
-    {
-      "word": "GAGS",
-      "type": 0
-    },
-    {
-      "word": "GANE",
-      "type": 0
-    },
-    {
-      "word": "MANS",
-      "type": 0
-    },
-    {
-      "word": "MEOU",
-      "type": 0
-    },
-    {
-      "word": "MUGS",
-      "type": 0
-    },
-    {
-      "word": "MUNS",
-      "type": 0
-    },
-    {
-      "word": "NAGS",
-      "type": 0
-    },
-    {
-      "word": "SNUG",
-      "type": 0
-    },
-    {
-      "word": "ALGUM",
-      "type": 0
-    },
-    {
-      "word": "ANEAR",
-      "type": 0
+      "word": "RIVE",
+      "type": 1
     }
   ],
-  "letters": "GEARG,ANLOE,GAGUM,SDSNA",
+  "letters": "ANTS,ROFE,DRIV",
   "obstacles": [
     {
-      "required_words": 3,
+      "required_words": 4,
       "id": 1,
       "type": 0,
       "cells": [
         {
           "x": 0,
-          "y": 0
+          "y": 2
         },
         {
-          "x": 1,
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 8,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
           "y": 0
         }
       ]

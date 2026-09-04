@@ -1,183 +1,138 @@
 {
   "id": 2112,
-  "width": 5,
-  "height": 4,
+  "width": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "CAR",
+      "word": "APE",
       "type": 0
     },
     {
-      "word": "CAT",
+      "word": "APP",
       "type": 0
     },
     {
-      "word": "EGO",
+      "word": "PAN",
       "type": 0
     },
     {
-      "word": "FOG",
+      "word": "PAR",
       "type": 0
     },
     {
-      "word": "NOR",
+      "word": "RAN",
       "type": 0
     },
     {
-      "word": "NOW",
+      "word": "SEE",
       "type": 0
     },
     {
-      "word": "ROW",
+      "word": "SPA",
       "type": 0
     },
     {
-      "word": "WON",
+      "word": "PANE",
       "type": 0
     },
     {
-      "word": "KNOW",
+      "word": "RANG",
       "type": 0
     },
     {
-      "word": "ROOM",
+      "word": "SPAN",
       "type": 0
     },
     {
-      "word": "TOBACCO",
+      "word": "SPAR",
+      "type": 0
+    },
+    {
+      "word": "RANGE",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ABO",
+      "word": "ANG",
       "type": 0
     },
     {
-      "word": "ARF",
+      "word": "APES",
       "type": 0
     },
     {
-      "word": "BOT",
+      "word": "APPS",
       "type": 0
     },
     {
-      "word": "CAB",
+      "word": "GRAN",
       "type": 0
     },
     {
-      "word": "COB",
+      "word": "NAP",
       "type": 0
     },
     {
-      "word": "COG",
+      "word": "NAPS",
+      "type": 2
+    },
+    {
+      "word": "PANG",
       "type": 0
     },
     {
-      "word": "COT",
+      "word": "PEE",
       "type": 0
     },
     {
-      "word": "FRO",
+      "word": "RAP",
       "type": 0
     },
     {
-      "word": "KEG",
-      "type": 0
-    },
-    {
-      "word": "MOA",
-      "type": 0
-    },
-    {
-      "word": "MOO",
-      "type": 0
-    },
-    {
-      "word": "OAR",
-      "type": 0
-    },
-    {
-      "word": "OAT",
-      "type": 0
-    },
-    {
-      "word": "OCA",
-      "type": 0
-    },
-    {
-      "word": "OFT",
-      "type": 0
-    },
-    {
-      "word": "OKE",
-      "type": 0
-    },
-    {
-      "word": "ORA",
-      "type": 0
-    },
-    {
-      "word": "RAT",
-      "type": 0
-    },
-    {
-      "word": "TAO",
-      "type": 0
-    },
-    {
-      "word": "TAR",
-      "type": 0
-    },
-    {
-      "word": "WOO",
-      "type": 0
-    },
-    {
-      "word": "BOTA",
-      "type": 0
-    },
-    {
-      "word": "COFT",
-      "type": 0
-    },
-    {
-      "word": "COKE",
-      "type": 0
-    },
-    {
-      "word": "FRAT",
-      "type": 0
-    },
-    {
-      "word": "FROW",
-      "type": 0
-    },
-    {
-      "word": "MOAT",
-      "type": 0
-    },
-    {
-      "word": "MOOR",
-      "type": 0
-    },
-    {
-      "word": "RATO",
-      "type": 0
-    },
-    {
-      "word": "TACO",
-      "type": 0
-    },
-    {
-      "word": "TARO",
-      "type": 0
-    },
-    {
-      "word": "WONK",
-      "type": 0
+      "word": "RAPS",
+      "type": 2
     }
   ],
-  "letters": "WONKE,ORFOG,OATCC,MCOBA",
-  "obstacles": []
+  "letters": "EAEE,EPNG,SPAR",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 0,
+          "y": 2
+        },
+        {
+          "x": 0,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        }
+      ]
+    },
+    {
+      "required_words": 7,
+      "id": 2,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }

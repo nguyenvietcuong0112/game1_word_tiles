@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import '../models/level_model.dart';
+import '../services/analytics_service.dart';
 import '../services/audio_manager.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
@@ -318,6 +319,13 @@ class GameController extends ChangeNotifier {
 
     AudioManager.playVictory();
     _showFeedback('🎉 $victoryCelebrationText +$coinsReward 🪙', Colors.amberAccent);
+
+    // Log Firebase Analytics Event
+    AnalyticsService.logLevelComplete(
+      level: levelNumber,
+      language: language,
+      stars: starsEarned,
+    );
   }
 
   /// Get next unsolved target word for tutorial
@@ -381,6 +389,7 @@ class GameController extends ChangeNotifier {
           final costStr = hasItem ? ' (Free Item)' : ' (-80 🪙)';
           _showFeedback('💡 Hint: "${target.word}"$costStr', const Color(0xFF69F0AE));
           AudioManager.playWordMatch();
+          AnalyticsService.logBoosterUsed(boosterType: 'hint', level: levelNumber);
           notifyListeners();
           return true;
         }
@@ -430,6 +439,7 @@ class GameController extends ChangeNotifier {
       _decrementWordTiles(word, path);
 
       AudioManager.playBooster();
+      AnalyticsService.logBoosterUsed(boosterType: 'rocket', level: levelNumber);
       final costStr = hasItem ? ' (Free Item)' : ' (-240 🪙)';
       _showFeedback('🚀 Rocket Cleared: "$word"!$costStr', const Color(0xFF69F0AE));
 

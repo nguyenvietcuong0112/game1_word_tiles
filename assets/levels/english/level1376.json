@@ -1,18 +1,22 @@
 {
   "id": 1376,
   "width": 4,
-  "height": 4,
+  "height": 3,
   "target_words": [
     {
-      "word": "AIR",
+      "word": "MOP",
       "type": 0
     },
     {
-      "word": "ASS",
+      "word": "OPT",
       "type": 0
     },
     {
-      "word": "SAT",
+      "word": "PEN",
+      "type": 0
+    },
+    {
+      "word": "SEA",
       "type": 0
     },
     {
@@ -20,220 +24,68 @@
       "type": 0
     },
     {
-      "word": "SHE",
+      "word": "OPEN",
       "type": 0
     },
     {
-      "word": "SIR",
+      "word": "SEAM",
+      "type": 2
+    },
+    {
+      "word": "SPENT",
       "type": 0
     },
     {
-      "word": "PASS",
-      "type": 0
-    },
-    {
-      "word": "SAFE",
-      "type": 0
-    },
-    {
-      "word": "SETS",
-      "type": 0
-    },
-    {
-      "word": "FRIES",
-      "type": 0
-    },
-    {
-      "word": "PATCH",
+      "word": "AMBIENT",
       "type": 0
     }
   ],
   "extra_words": [
     {
-      "word": "ATE",
-      "type": 0
+      "word": "BIEN",
+      "type": 1
     },
     {
-      "word": "EFS",
-      "type": 0
+      "word": "MOPE",
+      "type": 1
     },
     {
-      "word": "ESS",
-      "type": 0
-    },
-    {
-      "word": "ETA",
-      "type": 0
-    },
-    {
-      "word": "FAS",
-      "type": 0
-    },
-    {
-      "word": "FEH",
-      "type": 0
-    },
-    {
-      "word": "FET",
-      "type": 0
-    },
-    {
-      "word": "HES",
-      "type": 0
-    },
-    {
-      "word": "HET",
-      "type": 0
-    },
-    {
-      "word": "PAS",
-      "type": 0
-    },
-    {
-      "word": "PAT",
-      "type": 0
-    },
-    {
-      "word": "RIA",
-      "type": 0
-    },
-    {
-      "word": "SAP",
-      "type": 0
-    },
-    {
-      "word": "SEI",
-      "type": 0
-    },
-    {
-      "word": "TAP",
-      "type": 0
-    },
-    {
-      "word": "TAS",
-      "type": 0
-    },
-    {
-      "word": "ATES",
-      "type": 0
-    },
-    {
-      "word": "CHEF",
-      "type": 0
-    },
-    {
-      "word": "ETAS",
-      "type": 0
-    },
-    {
-      "word": "ETCH",
-      "type": 0
-    },
-    {
-      "word": "FAIR",
-      "type": 0
-    },
-    {
-      "word": "FEHS",
-      "type": 0
-    },
-    {
-      "word": "FESS",
-      "type": 0
-    },
-    {
-      "word": "FETA",
-      "type": 0
-    },
-    {
-      "word": "FETS",
-      "type": 0
-    },
-    {
-      "word": "HETS",
-      "type": 0
-    },
-    {
-      "word": "IRIS",
-      "type": 0
-    },
-    {
-      "word": "PASE",
-      "type": 0
-    },
-    {
-      "word": "PATE",
-      "type": 0
-    },
-    {
-      "word": "PATS",
-      "type": 0
-    },
-    {
-      "word": "RIAS",
-      "type": 0
-    },
-    {
-      "word": "SATE",
-      "type": 0
-    },
-    {
-      "word": "SEIS",
-      "type": 0
-    },
-    {
-      "word": "SETA",
-      "type": 0
-    },
-    {
-      "word": "SHES",
-      "type": 0
-    },
-    {
-      "word": "TASS",
-      "type": 0
-    },
-    {
-      "word": "CHEFS",
-      "type": 0
-    },
-    {
-      "word": "CHESS",
-      "type": 0
-    },
-    {
-      "word": "FETAS",
-      "type": 0
-    },
-    {
-      "word": "FETCH",
-      "type": 0
-    },
-    {
-      "word": "PATES",
-      "type": 0
-    },
-    {
-      "word": "SATES",
-      "type": 0
-    },
-    {
-      "word": "TASSIE",
-      "type": 0
-    },
-    {
-      "word": "FAIRIES",
-      "type": 0
-    },
-    {
-      "word": "PATCHES",
-      "type": 0
-    },
-    {
-      "word": "PATSIES",
+      "word": "PENT",
       "type": 0
     }
   ],
-  "letters": "SHCP,SETA,AFSS,IRIE",
-  "obstacles": []
+  "letters": "BIEN,MOPT,AESE",
+  "obstacles": [
+    {
+      "required_words": 3,
+      "id": 1,
+      "type": 0,
+      "cells": [
+        {
+          "x": 3,
+          "y": 2
+        },
+        {
+          "x": 3,
+          "y": 1
+        },
+        {
+          "x": 0,
+          "y": 0
+        },
+        {
+          "x": 1,
+          "y": 0
+        },
+        {
+          "x": 2,
+          "y": 0
+        },
+        {
+          "x": 3,
+          "y": 0
+        }
+      ]
+    }
+  ]
 }
