@@ -125,7 +125,7 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
 
     return LayoutBuilder(
       builder: (context, constraints) {
-        const double trayPadding = 18.0;
+        const double trayPadding = 32.0; // 6*2 outer + 8*2 inner + borders
         const double outerSafety = 6.0;
 
         final availableW = max(0.0, constraints.maxWidth - trayPadding - outerSafety);

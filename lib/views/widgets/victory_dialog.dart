@@ -80,9 +80,12 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                 Text(
                   'Level ${widget.controller.levelNumber} Completed! 🎉',
                   style: GoogleFonts.fredoka(
-                    fontSize: 16.sp,
-                    color: const Color(0xFFFFE8CC),
+                    fontSize: 17.sp,
+                    color: Colors.white,
                     fontWeight: FontWeight.w700,
+                    shadows: const [
+                      Shadow(color: Color(0xFF1F0900), offset: Offset(0, 1.5)),
+                    ],
                   ),
                 ),
                 SizedBox(height: 16.h),
@@ -113,12 +116,13 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                           ? '⭐ ⭐  GREAT JOB!'
                           : '⭐  LEVEL CLEARED!'),
                   style: GoogleFonts.fredoka(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w900,
-                    color: widget.controller.starsEarned == 3
-                        ? const Color(0xFFFDE047)
-                        : const Color(0xFFFFD1A4),
-                    letterSpacing: 1.0,
+                    color: Colors.white,
+                    letterSpacing: 1.2,
+                    shadows: const [
+                      Shadow(color: Color(0xFF1F0900), offset: Offset(0, 1.5)),
+                    ],
                   ),
                 ),
                 SizedBox(height: 14.h),

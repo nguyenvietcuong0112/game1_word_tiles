@@ -672,10 +672,10 @@ class _HomeScreenState extends State<HomeScreen> {
                     SizedBox(height: 14.h),
 
                     // Progress Bar to Next Milestone
-                    WoodenProgressBar(
-                      progress: progressInMilestone == 0.0 ? 1.0 : progressInMilestone,
-                      height: 14.h,
-                    ),
+                    // WoodenProgressBar(
+                    //   progress: progressInMilestone == 0.0 ? 1.0 : progressInMilestone,
+                    //   height: 14.h,
+                    // ),
                   ],
                 ),
               ),

@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 /// Reusable full-screen warm ambient woodcraft game background
 class AppBackground extends StatelessWidget {
   final Widget child;
+  final double woodOpacity;
 
   const AppBackground({
     super.key,
     required this.child,
+    this.woodOpacity = 1.0,
   });
 
   @override
@@ -29,12 +31,15 @@ class AppBackground extends StatelessWidget {
           ),
         ),
 
-        // High-Quality Ambient Stage Floor Lighting
+        // High-Quality Ambient Stage Floor Lighting (Softened with opacity)
         Positioned.fill(
-          child: Image.asset(
-            'assets/images/wood_game_bg.webp',
-            fit: BoxFit.cover,
-            errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
+          child: Opacity(
+            opacity: woodOpacity,
+            child: Image.asset(
+              'assets/images/wood_game_bg.webp',
+              fit: BoxFit.cover,
+              errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
+            ),
           ),
         ),
 

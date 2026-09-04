@@ -297,7 +297,7 @@ class _GameScreenState extends State<GameScreen> {
                       Expanded(
                         flex: 5,
                         child: AnimatedOpacity(
-                          opacity: isCountTutorialActive ? 0.15 : 1.0,
+                          opacity: isCountTutorialActive ? 0.0 : 1.0,
                           duration: const Duration(milliseconds: 250),
                           child: IgnorePointer(
                             ignoring: isCountTutorialActive,
@@ -306,7 +306,7 @@ class _GameScreenState extends State<GameScreen> {
                         ),
                       ),
                       AnimatedOpacity( 
-                        opacity: isCountTutorialActive ? 0.15 : 1.0,
+                        opacity: isCountTutorialActive ? 0.0 : 1.0,
                         duration: const Duration(milliseconds: 250),
                         child: IgnorePointer(
                           ignoring: isCountTutorialActive,
@@ -315,7 +315,10 @@ class _GameScreenState extends State<GameScreen> {
                       ),
                       Expanded(
                         flex: 4,
-                        child: BoardWidget(controller: _controller!),
+                        child: IgnorePointer(
+                          ignoring: isCountTutorialActive,
+                          child: BoardWidget(controller: _controller!),
+                        ),
                       ),
                       AnimatedOpacity(
                         opacity: isCountTutorialActive ? 0.20 : 1.0,
@@ -420,35 +423,45 @@ class _GameScreenState extends State<GameScreen> {
             height: 52.h,
             alignment: Alignment.center,
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 18.w, vertical: 8.h),
+              padding: EdgeInsets.symmetric(horizontal: 22.w, vertical: 8.h),
               decoration: BoxDecoration(
                 color: feedbackColor,
-                borderRadius: BorderRadius.circular(16.r),
-                border: Border.all(color: WoodenStyle.woodExtrusion, width: 1.8),
+                borderRadius: BorderRadius.circular(18.r),
+                border: Border.all(color: WoodenStyle.woodExtrusion, width: 2.0),
                 boxShadow: const [
                   BoxShadow(
                     color: WoodenStyle.woodExtrusion,
-                    offset: Offset(0, 2.5),
+                    offset: Offset(0, 3.0),
                     blurRadius: 0,
+                  ),
+                  BoxShadow(
+                    color: Color(0x33000000),
+                    offset: Offset(0, 4),
+                    blurRadius: 6,
                   ),
                 ],
               ),
               child: Text(
                 feedback,
                 style: GoogleFonts.fredoka(
-                  fontSize: 15.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w900,
                   color: Colors.white,
-                  letterSpacing: 1.0,
+                  letterSpacing: 1.2,
                   shadows: const [
-                    Shadow(color: Color(0xFF380703), offset: Offset(0, 1.2)),
+                    Shadow(color: Color(0xFF260C00), offset: Offset(0, 1.5)),
                   ],
                 ),
               ),
             )
-                .animate()
-                .scale(duration: 150.ms, curve: Curves.easeOutBack)
-                .shake(duration: 300.ms),
+                .animate(key: ValueKey(feedback))
+                .scale(
+                  duration: 200.ms,
+                  curve: Curves.easeOutBack,
+                  begin: const Offset(0.75, 0.75),
+                  end: const Offset(1.0, 1.0),
+                )
+                .shake(duration: 250.ms),
           );
         }
 
@@ -459,7 +472,17 @@ class _GameScreenState extends State<GameScreen> {
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 22.w, vertical: 8.h),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20.r),
+                gradient: const LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    WoodenStyle.woodHighlight,
+                    WoodenStyle.woodTop,
+                    WoodenStyle.woodMid,
+                    WoodenStyle.woodDark,
+                  ],
+                ),
+                borderRadius: BorderRadius.circular(18.r),
                 border: Border.all(color: WoodenStyle.woodBevel, width: 2.0),
                 boxShadow: const [
                   BoxShadow(
@@ -467,59 +490,24 @@ class _GameScreenState extends State<GameScreen> {
                     offset: Offset(0, 3.0),
                     blurRadius: 0,
                   ),
+                  BoxShadow(
+                    color: Color(0x33000000),
+                    offset: Offset(0, 4),
+                    blurRadius: 6,
+                  ),
                 ],
               ),
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(18.r),
-                child: Stack(
-                  alignment: Alignment.center,
-                  children: [
-                    Positioned.fill(
-                      child: Container(
-                        decoration: const BoxDecoration(
-                          gradient: LinearGradient(
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                            colors: [
-                              WoodenStyle.woodHighlight,
-                              WoodenStyle.woodTop,
-                              WoodenStyle.woodMid,
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                    Positioned.fill(
-                      child: Opacity(
-                        opacity: 0.35,
-                        child: Image.asset(
-                          'assets/images/golden_wood_texture.webp',
-                          fit: BoxFit.cover,
-                          errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 2.h),
-                      child: Text(
-                        word,
-                        style: GoogleFonts.fredoka(
-                          fontSize: 19.sp,
-                          fontWeight: FontWeight.w900,
-                          color: WoodenStyle.carvedDark,
-                          letterSpacing: 2.5,
-                          shadows: const [
-                            Shadow(
-                              color: WoodenStyle.carvedShadowLight,
-                              offset: Offset(0, 1.5),
-                            ),
-                            Shadow(
-                              color: Color(0xFF1F0900),
-                              offset: Offset(0, -1.0),
-                            ),
-                          ],
-                        ),
-                      ),
+              child: Text(
+                word,
+                style: GoogleFonts.fredoka(
+                  fontSize: 20.sp,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.white,
+                  letterSpacing: 2.5,
+                  shadows: const [
+                    Shadow(
+                      color: Color(0xFF260C00),
+                      offset: Offset(0, 1.8),
                     ),
                   ],
                 ),

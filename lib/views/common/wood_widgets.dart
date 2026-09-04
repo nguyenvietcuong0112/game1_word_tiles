@@ -1645,8 +1645,11 @@ class WoodBoardTray extends StatelessWidget {
               ),
             ),
 
-            // Inner Grid Content
-            child,
+            // Inner Grid Content with uniform balanced padding
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: child,
+            ),
           ],
         ),
       ),

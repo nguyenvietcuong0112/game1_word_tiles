@@ -51,6 +51,48 @@ class GameController extends ChangeNotifier {
     'WORDSTORM!',
   ];
 
+  static const List<String> matchFeedbackPhrases = [
+    'NICE!',
+    'AWESOME!',
+    'GOOD!',
+    'GREAT!',
+    'SUPER!',
+    'BRILLIANT!',
+    'FANTASTIC!',
+    'WONDERFUL!',
+    'PERFECT!',
+    'AMAZING!',
+    'EXCELLENT!',
+    'WELL DONE!',
+    'SPLENDID!',
+    'SWEET!',
+    'WOW!',
+    'BINGO!',
+  ];
+
+  static const List<Color> matchFeedbackColors = [
+    Color(0xFF10B981), // Emerald Mint
+    Color(0xFF3B82F6), // Ocean Blue
+    Color(0xFFF59E0B), // Golden Amber
+    Color(0xFF8B5CF6), // Royal Purple
+    Color(0xFFEC4899), // Hot Pink / Rose
+    Color(0xFF06B6D4), // Cyan Turquoise
+    Color(0xFFF97316), // Vivid Orange
+    Color(0xFF84CC16), // Lime Green
+    Color(0xFF6366F1), // Indigo
+    Color(0xFF14B8A6), // Teal
+  ];
+
+  final Random _feedbackRandom = Random();
+
+  String _getRandomMatchPhrase() {
+    return matchFeedbackPhrases[_feedbackRandom.nextInt(matchFeedbackPhrases.length)];
+  }
+
+  Color _getRandomMatchColor() {
+    return matchFeedbackColors[_feedbackRandom.nextInt(matchFeedbackColors.length)];
+  }
+
   GameController({
     required this.language,
     required this.levelId,
@@ -177,7 +219,7 @@ class GameController extends ChangeNotifier {
     if (matchedTarget != null) {
       final targetKey = matchedTarget.word;
       if (solvedTargetWords.contains(targetKey)) {
-        _showFeedback('Already found "$targetKey"!', Colors.amber);
+        _showFeedback('Already found!', Colors.amber);
         AudioManager.playInvalid();
         return;
       }
@@ -185,7 +227,7 @@ class GameController extends ChangeNotifier {
       // Solved new target word!
       solvedTargetWords.add(targetKey);
       AudioManager.playWordMatch();
-      _showFeedback('Awesome! "$targetKey"', const Color(0xFF69F0AE));
+      _showFeedback(_getRandomMatchPhrase(), _getRandomMatchColor());
 
       // Decrement optimal tile badge counts with 0-leftover guarantee
       _decrementWordTiles(targetKey, currentPath);
@@ -222,7 +264,7 @@ class GameController extends ChangeNotifier {
     if (matchedExtra != null) {
       final extraKey = matchedExtra.word;
       if (foundExtraWords.contains(extraKey)) {
-        _showFeedback('Extra word "$extraKey" already found!', Colors.amber);
+        _showFeedback('Already found!', Colors.amber);
         AudioManager.playInvalid();
       } else {
         foundExtraWords.add(extraKey);
@@ -233,7 +275,7 @@ class GameController extends ChangeNotifier {
           _showFeedback('🎁 Extra Words Bank Full! (10/10)', const Color(0xFFFFD54F));
         } else {
           AudioManager.playExtraWord();
-          _showFeedback('✨ Extra Word: "$extraKey"! ($bankCount/10)', const Color(0xFFFFD54F));
+          _showFeedback('✨ EXTRA WORD! ($bankCount/10)', const Color(0xFFFFD54F));
         }
       }
       return;
@@ -242,7 +284,7 @@ class GameController extends ChangeNotifier {
     // 3. Invalid word
     invalidAttemptsCount++;
     AudioManager.playInvalid();
-    _showFeedback('"$rawWord" is not on the board', Colors.redAccent.shade100);
+    _showFeedback('Not on the board', Colors.redAccent.shade100);
   }
 
   void _checkObstacleUnlocks() {
