@@ -135,10 +135,17 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ),
 
               Expanded(
-                child: ListView(
-                  padding: EdgeInsets.all(20.w),
-                  children: [
-                    // Language Selection
+                child: LayoutBuilder(
+                  builder: (context, constraints) {
+                    return SingleChildScrollView(
+                      padding: EdgeInsets.all(20.w),
+                      child: ConstrainedBox(
+                        constraints: BoxConstraints(minHeight: constraints.maxHeight - 40.w),
+                        child: IntrinsicHeight(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              // Language Selection
                     _buildSectionHeader('GAME LANGUAGE'),
                     _buildWoodCard(
                       onTap: () {
@@ -413,30 +420,29 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 32.h),
-
+                    const Spacer(),
+                    SizedBox(height: 16.h),
                     // About
                     Center(
                       child: Text(
                         'Word Tiles Casual Puzzle\nVersion 1.0.0',
                         textAlign: TextAlign.center,
                         style: GoogleFonts.fredoka(
-                          color: Colors.white.withValues(alpha: 0.8),
+                          color: Colors.white,
                           fontSize: 13.sp,
                           height: 1.5,
-                          shadows: const [
-                            Shadow(
-                              color: WoodenStyle.woodExtrusion,
-                              offset: Offset(0, 1),
-                              blurRadius: 1,
-                            ),
-                          ],
                         ),
                       ),
                     ),
+                    SizedBox(height: 8.h),
                   ],
                 ),
               ),
+            ),
+          );
+        },
+      ),
+    ),
             ],
           ),
         ),

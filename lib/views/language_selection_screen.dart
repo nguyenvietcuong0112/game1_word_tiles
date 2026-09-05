@@ -115,11 +115,11 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                             _tempSelectedLanguage = lang;
                           });
                         },
-                        borderRadius: BorderRadius.circular(20.r),
+                        borderRadius: BorderRadius.circular(16.r),
                         child: AnimatedContainer(
                           duration: const Duration(milliseconds: 180),
                           decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20.r),
+                            borderRadius: BorderRadius.circular(16.r),
                             border: Border.all(
                               color: isSelected ? WoodenStyle.woodHighlight : WoodenStyle.woodBevel,
                               width: isSelected ? 2.2 : 1.8,
@@ -139,7 +139,7 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                             ],
                           ),
                           child: ClipRRect(
-                            borderRadius: BorderRadius.circular(18.r),
+                            borderRadius: BorderRadius.circular(13.8.r),
                             child: Stack(
                               children: [
                                 // Background
@@ -161,10 +161,9 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                                               begin: Alignment.topCenter,
                                               end: Alignment.bottomCenter,
                                               colors: [
-                                                Color(0xFFD97E25),
-                                                Color(0xFFBF6212),
-                                                Color(0xFFA64F0A),
-                                                Color(0xFF853B04),
+                                                Color(0xFFFFF7EA),
+                                                Color(0xFFF3DFBE),
+                                                Color(0xFFE2C498),
                                               ],
                                             ),
                                     ),
@@ -173,7 +172,7 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                                 // Wood Grain
                                 Positioned.fill(
                                   child: Opacity(
-                                    opacity: isSelected ? 0.32 : 0.25,
+                                    opacity: isSelected ? 0.32 : 0.22,
                                     child: Image.asset(
                                       'assets/images/golden_wood_texture.webp',
                                       fit: BoxFit.cover,
@@ -196,7 +195,7 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                                   padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 14.h),
                                   child: Row(
                                     children: [
-                                      // Flag / Icon Box
+                                      // Flag / Icon Box (Squircle)
                                       Container(
                                         width: 44.r,
                                         height: 44.r,
@@ -209,7 +208,7 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                                               Color(0xFF381401),
                                             ],
                                           ),
-                                          shape: BoxShape.circle,
+                                          borderRadius: BorderRadius.circular(12.r),
                                           border: Border.all(
                                             color: isSelected
                                                 ? GoldenWoodColors.woodHighlight
@@ -239,14 +238,21 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                                               style: GoogleFonts.fredoka(
                                                 fontWeight: FontWeight.w900,
                                                 fontSize: 16.sp,
-                                                color: Colors.white,
-                                                shadows: const [
-                                                  Shadow(
-                                                    color: Color(0xFF1F0900),
-                                                    offset: Offset(0, 1.2),
-                                                    blurRadius: 1,
-                                                  ),
-                                                ],
+                                                color: isSelected ? Colors.white : WoodenStyle.carvedDark,
+                                                shadows: isSelected
+                                                    ? const [
+                                                        Shadow(
+                                                          color: Color(0xFF1F0900),
+                                                          offset: Offset(0, 1.2),
+                                                          blurRadius: 1,
+                                                        ),
+                                                      ]
+                                                    : const [
+                                                        Shadow(
+                                                          color: Color(0x60FFFFFF),
+                                                          offset: Offset(0, 1.0),
+                                                        ),
+                                                      ],
                                               ),
                                             ),
                                             SizedBox(height: 2.h),
@@ -254,15 +260,24 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                                               'Progress: Level $maxUnlocked',
                                               style: GoogleFonts.fredoka(
                                                 fontSize: 12.sp,
-                                                color: Colors.white.withValues(alpha: 0.9),
+                                                color: isSelected
+                                                    ? Colors.white.withValues(alpha: 0.95)
+                                                    : const Color(0xFF6B310A),
                                                 fontWeight: FontWeight.w600,
-                                                shadows: const [
-                                                  Shadow(
-                                                    color: Color(0xFF1F0900),
-                                                    offset: Offset(0, 1.0),
-                                                    blurRadius: 1,
-                                                  ),
-                                                ],
+                                                shadows: isSelected
+                                                    ? const [
+                                                        Shadow(
+                                                          color: Color(0xFF1F0900),
+                                                          offset: Offset(0, 1.0),
+                                                          blurRadius: 1,
+                                                        ),
+                                                      ]
+                                                    : const [
+                                                        Shadow(
+                                                          color: Color(0x40FFFFFF),
+                                                          offset: Offset(0, 1.0),
+                                                        ),
+                                                      ],
                                               ),
                                             ),
                                           ],
@@ -282,10 +297,10 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                                           height: 24.r,
                                           decoration: BoxDecoration(
                                             color: const Color(0xFF421500),
-                                            shape: BoxShape.circle,
+                                            borderRadius: BorderRadius.circular(7.r),
                                             border: Border.all(
                                               color: GoldenWoodColors.woodBevel,
-                                              width: 2.0,
+                                              width: 1.8,
                                             ),
                                             boxShadow: const [
                                               BoxShadow(

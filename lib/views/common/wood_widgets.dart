@@ -974,7 +974,7 @@ class _WoodPlankButtonState extends State<WoodPlankButton> {
         width: widget.width,
         height: defaultH,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(22.r),
+          borderRadius: BorderRadius.circular(16.r),
           border: Border.all(
             color: widget.isGreen
                 ? GoldenWoodColors.greenBorder
@@ -1002,7 +1002,7 @@ class _WoodPlankButtonState extends State<WoodPlankButton> {
           ],
         ),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(19.r),
+          borderRadius: BorderRadius.circular(13.8.r),
           child: Stack(
             fit: StackFit.passthrough,
             alignment: Alignment.center,
@@ -1208,7 +1208,7 @@ class WoodProgressBar extends StatelessWidget {
     final clamped = progress.clamp(0.0, 1.0);
 
     return Container(
-      width: width,
+      width: width ?? double.infinity,
       height: height,
       padding: const EdgeInsets.all(2.5),
       decoration: BoxDecoration(
@@ -1227,121 +1227,132 @@ class WoodProgressBar extends StatelessWidget {
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(height * 0.5 - 2),
-        child: Stack(
-          alignment: Alignment.centerLeft,
-          children: [
-            // Outer Frame Golden Wood Texture
-            Positioned.fill(
-              child: Container(
-                decoration: const BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter,
-                    colors: [
-                      GoldenWoodColors.woodTop,
-                      GoldenWoodColors.woodMid,
-                      GoldenWoodColors.woodDark,
-                    ],
-                  ),
-                ),
-              ),
-            ),
+        child: LayoutBuilder(
+          builder: (context, constraints) {
+            final double totalWidth = constraints.maxWidth;
+            final double innerWidth = (totalWidth - 5.0).clamp(0.0, double.infinity);
+            final double fillWidth = innerWidth * clamped;
 
-            // Inner Recessed Dark Groove Slot
-            Positioned.fill(
-              child: Padding(
-                padding: const EdgeInsets.all(2.0),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: GoldenWoodColors.grooveDark,
-                    borderRadius: BorderRadius.circular(height * 0.4),
-                    border: Border.all(color: GoldenWoodColors.grooveBorder, width: 1.0),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Color(0x66000000),
-                        offset: Offset(0, 1.5),
-                        blurRadius: 1,
+            return Stack(
+              alignment: Alignment.centerLeft,
+              children: [
+                // Outer Frame Golden Wood Texture
+                Positioned.fill(
+                  child: Container(
+                    decoration: const BoxDecoration(
+                      gradient: LinearGradient(
+                        begin: Alignment.topCenter,
+                        end: Alignment.bottomCenter,
+                        colors: [
+                          GoldenWoodColors.woodTop,
+                          GoldenWoodColors.woodMid,
+                          GoldenWoodColors.woodDark,
+                        ],
                       ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-
-            // Glowing Juicy Lime Green Capsule Fill
-            Padding(
-              padding: const EdgeInsets.all(2.5),
-              child: FractionallySizedBox(
-                widthFactor: clamped,
-                child: Container(
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(height * 0.4),
-                    border: Border.all(color: GoldenWoodColors.greenBorder, width: 1.0),
-                    gradient: const LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
-                      colors: [
-                        GoldenWoodColors.greenGlowTop,
-                        GoldenWoodColors.greenMid,
-                        GoldenWoodColors.greenDark,
-                      ],
                     ),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Color(0x886DCB0C),
-                        blurRadius: 4,
-                        spreadRadius: 1,
-                      ),
-                    ],
                   ),
-                  child: Stack(
-                    children: [
-                      // Top Gloss highlight on green bar
-                      Positioned(
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        height: height * 0.40,
-                        child: Container(
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              begin: Alignment.topCenter,
-                              end: Alignment.bottomCenter,
-                              colors: [
-                                Colors.white.withValues(alpha: 0.6),
-                                Colors.white.withValues(alpha: 0.0),
-                              ],
-                            ),
+                ),
+
+                // Inner Recessed Dark Groove Slot
+                Positioned.fill(
+                  child: Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: GoldenWoodColors.grooveDark,
+                        borderRadius: BorderRadius.circular(height * 0.4),
+                        border: Border.all(color: GoldenWoodColors.grooveBorder, width: 1.0),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Color(0x66000000),
+                            offset: Offset(0, 1.5),
+                            blurRadius: 1,
                           ),
-                        ),
+                        ],
                       ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-
-            // Optional Progress Text
-            if (text != null)
-              Positioned.fill(
-                child: Center(
-                  child: Text(
-                    text!,
-                    style: GoogleFonts.fredoka(
-                      fontSize: (height * 0.55).sp,
-                      fontWeight: FontWeight.w900,
-                      color: Colors.white,
-                      shadows: const [
-                        Shadow(
-                          color: Color(0xFF1E5001),
-                          offset: Offset(0, 1.2),
-                        ),
-                      ],
                     ),
                   ),
                 ),
-              ),
-          ],
+
+                // Glowing Juicy Lime Green Capsule Fill - ANCHORED STRICTLY TO LEFT
+                if (clamped > 0.005)
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 2.5),
+                      child: Container(
+                        width: fillWidth,
+                        height: (height - 5.0).clamp(0.0, double.infinity),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(height * 0.4),
+                          border: Border.all(color: GoldenWoodColors.greenBorder, width: 1.0),
+                          gradient: const LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            colors: [
+                              GoldenWoodColors.greenGlowTop,
+                              GoldenWoodColors.greenMid,
+                              GoldenWoodColors.greenDark,
+                            ],
+                          ),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Color(0x886DCB0C),
+                              blurRadius: 4,
+                              spreadRadius: 1,
+                            ),
+                          ],
+                        ),
+                        child: Stack(
+                          children: [
+                            // Top Gloss highlight on green bar
+                            Positioned(
+                              top: 0,
+                              left: 0,
+                              right: 0,
+                              height: height * 0.40,
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    colors: [
+                                      Colors.white.withValues(alpha: 0.6),
+                                      Colors.white.withValues(alpha: 0.0),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+
+                // Optional Progress Text
+                if (text != null)
+                  Positioned.fill(
+                    child: Center(
+                      child: Text(
+                        text!,
+                        style: GoogleFonts.fredoka(
+                          fontSize: (height * 0.55).sp,
+                          fontWeight: FontWeight.w900,
+                          color: Colors.white,
+                          shadows: const [
+                            Shadow(
+                              color: Color(0xFF1E5001),
+                              offset: Offset(0, 1.2),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+              ],
+            );
+          },
         ),
       ),
     );
@@ -1379,7 +1390,7 @@ class WoodSignboardDialog extends StatelessWidget {
             width: width ?? double.infinity,
             margin: EdgeInsets.only(top: 24.h),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(24.r),
+              borderRadius: BorderRadius.circular(18.r),
               border: Border.all(
                 color: GoldenWoodColors.woodBevel,
                 width: 2.8,
@@ -1399,7 +1410,7 @@ class WoodSignboardDialog extends StatelessWidget {
               ],
             ),
             child: ClipRRect(
-              borderRadius: BorderRadius.circular(21.r),
+              borderRadius: BorderRadius.circular(15.2.r),
               child: Stack(
                 children: [
                   // Outer Board Honey Oak Wood
@@ -1437,7 +1448,7 @@ class WoodSignboardDialog extends StatelessWidget {
                     padding: EdgeInsets.fromLTRB(10.w, 28.h, 10.w, 10.h),
                     child: Container(
                       decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(18.r),
+                        borderRadius: BorderRadius.circular(14.r),
                         border: Border.all(
                           color: GoldenWoodColors.grooveBorder,
                           width: 2.0,
@@ -1451,7 +1462,7 @@ class WoodSignboardDialog extends StatelessWidget {
                         ],
                       ),
                       child: ClipRRect(
-                        borderRadius: BorderRadius.circular(16.r),
+                        borderRadius: BorderRadius.circular(12.r),
                         child: Stack(
                           children: [
                             // Dark Roasted Inset Face
@@ -1489,20 +1500,20 @@ class WoodSignboardDialog extends StatelessWidget {
                             ),
                           ],
                         ),
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
-        ),
 
           // 2. Top Curved Title Plank ("MENU" / Title from reference)
           Positioned(
             top: 0,
             child: Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20.r),
+                borderRadius: BorderRadius.circular(14.r),
                 border: Border.all(
                   color: GoldenWoodColors.woodBevel,
                   width: 2.2,
@@ -1516,7 +1527,7 @@ class WoodSignboardDialog extends StatelessWidget {
                 ],
               ),
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(18.r),
+                borderRadius: BorderRadius.circular(12.r),
                 child: Stack(
                   alignment: Alignment.center,
                   children: [
@@ -1692,7 +1703,7 @@ class WoodPlankContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final r = borderRadius ?? BorderRadius.circular(20.r);
+    final r = borderRadius ?? BorderRadius.circular(16.r);
 
     return Container(
       width: width,
@@ -1933,7 +1944,7 @@ class WoodenBadge extends StatelessWidget {
       onTap: onTap,
       child: Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20.r),
+          borderRadius: BorderRadius.circular(14.r),
           border: Border.all(color: WoodenStyle.woodBevel, width: 1.8),
           boxShadow: const [
             BoxShadow(
@@ -1944,7 +1955,7 @@ class WoodenBadge extends StatelessWidget {
           ],
         ),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(18.r),
+          borderRadius: BorderRadius.circular(12.r),
           child: Stack(
             alignment: Alignment.center,
             children: [
@@ -2014,20 +2025,25 @@ class WoodenBadge extends StatelessWidget {
 class WoodenCurrency extends StatelessWidget {
   final int coins;
   final VoidCallback? onTap;
+  final double? height;
 
   const WoodenCurrency({
     super.key,
     required this.coins,
     this.onTap,
+    this.height,
   });
 
   @override
   Widget build(BuildContext context) {
+    final double effectiveRadius = 14.r;
+
     return GestureDetector(
       onTap: onTap,
       child: Container(
+        height: height,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20.r),
+          borderRadius: BorderRadius.circular(effectiveRadius),
           border: Border.all(color: WoodenStyle.woodBevel, width: 1.6),
           boxShadow: const [
             BoxShadow(
@@ -2038,7 +2054,7 @@ class WoodenCurrency extends StatelessWidget {
           ],
         ),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(18.r),
+          borderRadius: BorderRadius.circular(effectiveRadius - 2),
           child: Stack(
             alignment: Alignment.center,
             children: [
@@ -2077,7 +2093,7 @@ class WoodenCurrency extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 6.h),
+                padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: height != null ? 0 : 6.h),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [

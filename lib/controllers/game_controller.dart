@@ -261,6 +261,21 @@ class GameController extends ChangeNotifier {
       }
     }
 
+    // 2b. Dynamic Safeguard for Plural/Singular:
+    // If player swiped 'W' and 'W+S' is a target/extra word on this level,
+    // or player swiped 'W' ending with 'S' and singular 'W' is a target/extra word on this level:
+    if (matchedExtra == null) {
+      final hasPluralOnBoard = level.targetWords.any((tw) => tw.word == '${word}S') ||
+          level.extraWords.any((ew) => ew.word == '${word}S');
+      final hasSingularOnBoard = word.endsWith('S') && word.length >= 4 &&
+          (level.targetWords.any((tw) => tw.word == word.substring(0, word.length - 1)) ||
+              level.extraWords.any((ew) => ew.word == word.substring(0, word.length - 1)));
+
+      if (hasPluralOnBoard || hasSingularOnBoard) {
+        matchedExtra = TargetWord(word: word, type: 0);
+      }
+    }
+
     if (matchedExtra != null) {
       final extraKey = matchedExtra.word;
       if (foundExtraWords.contains(extraKey)) {

@@ -232,15 +232,18 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildTopBar(String langFlag, String langNameOnly) {
+    final double headerHeight = 44.h;
+
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         InkWell(
           onTap: _openLanguageSelect,
-          borderRadius: BorderRadius.circular(22.r),
+          borderRadius: BorderRadius.circular(14.r),
           child: Container(
+            height: headerHeight,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(22.r),
+              borderRadius: BorderRadius.circular(14.r),
               border: Border.all(color: WoodenStyle.woodBevel, width: 1.8),
               boxShadow: const [
                 BoxShadow(
@@ -251,8 +254,9 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
             child: ClipRRect(
-              borderRadius: BorderRadius.circular(20.r),
+              borderRadius: BorderRadius.circular(12.r),
               child: Stack(
+                alignment: Alignment.center,
                 children: [
                   Positioned.fill(
                     child: Container(
@@ -288,7 +292,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 8.h),
+                    padding: EdgeInsets.symmetric(horizontal: 14.w),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
@@ -329,10 +333,11 @@ class _HomeScreenState extends State<HomeScreen> {
             WoodenCurrency(
               coins: _coins,
               onTap: _openShop,
+              height: headerHeight,
             ),
             SizedBox(width: 10.w),
             WoodCarvedIconButton(
-              size: 44.r,
+              size: headerHeight,
               assetPath: WoodGameIcons.btnSettings,
               onTap: _openSettings,
             ),
@@ -491,11 +496,11 @@ class _HomeScreenState extends State<HomeScreen> {
   ) {
     return InkWell(
       onTap: _openLevelSelect,
-      borderRadius: BorderRadius.circular(24.r),
+      borderRadius: BorderRadius.circular(16.r),
       child: Container(
         width: double.infinity,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(24.r),
+          borderRadius: BorderRadius.circular(16.r),
           border: Border.all(color: WoodenStyle.woodBevel, width: 2.2),
           boxShadow: const [
             BoxShadow(
@@ -511,7 +516,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
         child: ClipRRect(
-          borderRadius: BorderRadius.circular(21.r),
+          borderRadius: BorderRadius.circular(13.8.r),
           child: Stack(
             children: [
               // Rich Golden Honey Oak Wood Background
@@ -558,7 +563,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   children: [
                     Row(
                       children: [
-                        // Milestone Trophy Icon Box
+                        // Milestone Trophy Icon Box (Squircle Carved Wooden Tile)
                         Container(
                           width: 50.r,
                           height: 50.r,
@@ -571,7 +576,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 Color(0xFF381401),
                               ],
                             ),
-                            shape: BoxShape.circle,
+                            borderRadius: BorderRadius.circular(14.r),
                             border: Border.all(color: GoldenWoodColors.woodHighlight, width: 1.8),
                             boxShadow: const [
                               BoxShadow(
@@ -618,7 +623,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 3.h),
                                     decoration: BoxDecoration(
                                       color: const Color(0xFF4A1E05),
-                                      borderRadius: BorderRadius.circular(10.r),
+                                      borderRadius: BorderRadius.circular(8.r),
                                       border: Border.all(color: const Color(0xFF8C3E08), width: 1.2),
                                       boxShadow: const [
                                         BoxShadow(
@@ -658,7 +663,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ),
                         SizedBox(width: 8.w),
-                        // Forward Arrow Button
+                        // Forward Arrow Button (Squircle Carved Wooden Block)
                         Container(
                           width: 30.r,
                           height: 30.r,
@@ -671,7 +676,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 Color(0xFF381401),
                               ],
                             ),
-                            shape: BoxShape.circle,
+                            borderRadius: BorderRadius.circular(9.r),
                             border: Border.all(color: GoldenWoodColors.woodHighlight, width: 1.4),
                             boxShadow: const [
                               BoxShadow(
@@ -693,10 +698,6 @@ class _HomeScreenState extends State<HomeScreen> {
                     SizedBox(height: 14.h),
 
                     // Progress Bar to Next Milestone
-                    WoodenProgressBar(
-                      progress: progressInMilestone == 0.0 ? 1.0 : progressInMilestone,
-                      height: 14.h,
-                    ),
                   ],
                 ),
               ),
@@ -710,12 +711,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildPlayButton(int levelNumber) {
     return WoodenButton(
       text: 'PLAY LEVEL $levelNumber',
-      iconWidget: Image.asset(
-        WoodGameIcons.btnPlay,
-        width: 38.r,
-        height: 38.r,
-        fit: BoxFit.contain,
-      ),
+      textColor: Colors.white,
       variant: WoodenButtonVariant.primary,
       height: 64.h,
       fontSize: 22.sp,

@@ -127,11 +127,10 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                 ),
                 SizedBox(height: 14.h),
 
-                // Coins Reward Badge in Wood Style
+                // Coins Reward Badge in Wood Style (Single Wood Badge)
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 8.h),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20.r),
+                    borderRadius: BorderRadius.circular(14.r),
                     border: Border.all(color: WoodenStyle.woodBevel, width: 1.8),
                     boxShadow: const [
                       BoxShadow(
@@ -142,7 +141,7 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                     ],
                   ),
                   child: ClipRRect(
-                    borderRadius: BorderRadius.circular(18.r),
+                    borderRadius: BorderRadius.circular(12.r),
                     child: Stack(
                       alignment: Alignment.center,
                       children: [
@@ -161,12 +160,33 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                             ),
                           ),
                         ),
+                        // Wood Grain Texture Overlay
+                        Positioned.fill(
+                          child: Opacity(
+                            opacity: 0.25,
+                            child: Image.asset(
+                              'assets/images/golden_wood_texture.webp',
+                              fit: BoxFit.cover,
+                              errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
+                            ),
+                          ),
+                        ),
+                        // Top Specular Highlight Rim
+                        Positioned(
+                          top: 0,
+                          left: 8,
+                          right: 8,
+                          height: 1.2,
+                          child: Container(
+                            color: Colors.white.withValues(alpha: 0.5),
+                          ),
+                        ),
                         Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 4.h),
+                          padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 7.h),
                           child: Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              WoodGameIcons.coin(size: 24.sp),
+                              WoodGameIcons.coin(size: 22.sp),
                               SizedBox(width: 8.w),
                               Text(
                                 '+${widget.controller.coinsReward} COINS',
@@ -175,6 +195,12 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                                   fontWeight: FontWeight.w900,
                                   color: WoodenStyle.carvedDark,
                                   letterSpacing: 1.0,
+                                  shadows: const [
+                                    Shadow(
+                                      color: Color(0x60FFFFFF),
+                                      offset: Offset(0, 1.0),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ],
