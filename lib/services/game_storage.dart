@@ -16,6 +16,8 @@ class GameStorage {
     return _prefs.getString('selected_language') ?? 'english';
   }
 
+  static String getLanguage() => getSelectedLanguage();
+
   static Future<void> setSelectedLanguage(String lang) async {
     await _prefs.setString('selected_language', lang);
   }
@@ -176,6 +178,8 @@ class GameStorage {
     return _prefs.getBool('sound_enabled') ?? true;
   }
 
+  static bool isSoundEnabled() => getSoundEnabled();
+
   static Future<void> setSoundEnabled(bool enabled) async {
     await _prefs.setBool('sound_enabled', enabled);
   }
@@ -183,6 +187,8 @@ class GameStorage {
   static bool getHapticEnabled() {
     return _prefs.getBool('haptic_enabled') ?? true;
   }
+
+  static bool isHapticEnabled() => getHapticEnabled();
 
   static Future<void> setHapticEnabled(bool enabled) async {
     await _prefs.setBool('haptic_enabled', enabled);

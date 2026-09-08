@@ -1,9 +1,9 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import '../../controllers/game_controller.dart';
 import '../../services/game_storage.dart';
 import '../../theme/app_theme.dart';
-import '../common/wood_widgets.dart';
 import 'shatter_particle_overlay.dart';
 import 'tile_widget.dart';
 import 'tutorial_overlay.dart';
@@ -125,11 +125,11 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
 
     return LayoutBuilder(
       builder: (context, constraints) {
-        const double trayPadding = 32.0; // 6*2 outer + 8*2 inner + borders
-        const double outerSafety = 6.0;
+        const double containerPadding = 20.0;
+        const double borderAndMargin = 12.0;
 
-        final availableW = max(0.0, constraints.maxWidth - trayPadding - outerSafety);
-        final availableH = max(0.0, constraints.maxHeight - trayPadding - outerSafety);
+        final availableW = max(0.0, constraints.maxWidth - containerPadding - borderAndMargin);
+        final availableH = max(0.0, constraints.maxHeight - containerPadding - borderAndMargin);
 
         final sizeByWidth = width > 0 ? availableW / width : 58.0;
         final sizeByHeight = height > 0 ? availableH / height : 58.0;
@@ -139,13 +139,28 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
         final boardHeight = height * _tileSize;
 
         return Center(
-          child: FittedBox(
-            fit: BoxFit.scaleDown,
-            child: RepaintBoundary(
-              child: WoodBoardTray(
-                child: SizedBox(
-                  width: boardWidth,
-                  height: boardHeight,
+          child: RepaintBoundary(
+            child: Container(
+              padding: const EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: AppColors.cardPeach,
+                borderRadius: BorderRadius.circular(24),
+                border: Border.all(
+                  color: AppColors.borderSubtle,
+                  width: 1.8,
+                ),
+                boxShadow: const [
+                  // 3D Tray Bevel Bottom
+                  BoxShadow(
+                    color: Color(0xFFE8D7C4),
+                    offset: Offset(0, 2.5),
+                    blurRadius: 0,
+                  ),
+                ],
+              ),
+              child: SizedBox(
+                width: boardWidth,
+                height: boardHeight,
                 child: GestureDetector(
                   onPanStart: (details) => _handleTouch(details.globalPosition, true),
                   onPanUpdate: (details) => _handleTouch(details.globalPosition, false),
@@ -196,7 +211,7 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: List.generate(height, (r) {
-                                return Row(
+                                final rowWidget = Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: List.generate(width, (c) {
                                     final tile = widget.controller.grid[r][c];
@@ -205,24 +220,28 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
                                     final isCountSpotlight = firstCountPt != null &&
                                         firstCountPt.x == c &&
                                         firstCountPt.y == r;
-                                    final tileWidget = TileWidget(
+                                    return TileWidget(
                                       tile: tile,
                                       isSelected: isSelected,
                                       isHinted: isHinted,
                                       isCountSpotlight: isCountSpotlight,
                                       size: _tileSize,
                                     );
-
-                                    // Dim other tiles when count tutorial spotlight is active
-                                    if (firstCountPt != null && !isCountSpotlight) {
-                                      return Opacity(
-                                        opacity: 0.30,
-                                        child: tileWidget,
-                                      );
-                                    }
-                                    return tileWidget;
                                   }),
                                 );
+
+                                return rowWidget
+                                    .animate(
+                                      key: ValueKey('lvl-${widget.controller.levelNumber}-r$r'),
+                                      delay: (20 * r).ms,
+                                    )
+                                    .fadeIn(duration: 180.ms)
+                                    .scale(
+                                      begin: const Offset(0.88, 0.88),
+                                      end: const Offset(1.0, 1.0),
+                                      duration: 250.ms,
+                                      curve: Curves.easeOutBack,
+                                    );
                               }),
                             ),
                           );
@@ -233,7 +252,9 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
                       ListenableBuilder(
                         listenable: _shatterController,
                         builder: (context, _) {
-                          if (_shatterController.shards.isEmpty && _shatterController.sparkles.isEmpty) {
+                          if (_shatterController.shards.isEmpty &&
+                              _shatterController.shockwaves.isEmpty &&
+                              _shatterController.sparkles.isEmpty) {
                             return const SizedBox.shrink();
                           }
                           return Positioned.fill(
@@ -242,6 +263,7 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
                                 child: CustomPaint(
                                   painter: TileShatterPainter(
                                     shards: _shatterController.shards,
+                                    shockwaves: _shatterController.shockwaves,
                                     sparkles: _shatterController.sparkles,
                                   ),
                                 ),
@@ -251,7 +273,7 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
                         },
                       ),
 
-                      // 4. In-Game Tutorial Animated Hand Guide (Level 1 only, hides during active swipe)
+                      // 4. In-Game Tutorial Animated Hand Guide (Level 1 only, hides during active swipe or count tutorial)
                       ListenableBuilder(
                         listenable: widget.controller,
                         builder: (context, _) {
@@ -284,10 +306,9 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
               ),
             ),
           ),
-        ),
-      );
-    },
-  );
+        );
+      },
+    );
   }
 }
 

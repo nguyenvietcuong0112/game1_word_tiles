@@ -2,19 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AppColors {
-  // 1. Backgrounds (Warm Cream / Clean Wood Canvas)
-  static const Color bgCanvas = Color(0xFFFFF9F0);
-  static const Color bgCanvasSecondary = Color(0xFFFAF2E6);
-  static const Color bgSkyGradientStart = Color(0xFFFFF9F0);
-  static const Color bgSkyGradientEnd = Color(0xFFF3E8DA);
-  static const Color cardPeach = Color(0xFFF8E7D5);
-  static const Color cardPeachLight = Color(0xFFFDF4EA);
+  // 1. Backgrounds (Warm Sandalwood & Rich Linen Canvas with High Contrast)
+  static const Color bgCanvas = Color(0xFFEADBCE);
+  static const Color bgCanvasSecondary = Color(0xFFDECBB8);
+  static const Color bgSkyGradientStart = Color(0xFFEDE0D1);
+  static const Color bgSkyGradientEnd = Color(0xFFDAC7B2);
+  static const Color cardPeach = Color(0xFFF5EBE1);
+  static const Color cardPeachLight = Color(0xFFFCF7F0);
   static const Color cardWhite = Color(0xFFFFFFFF);
 
-  // 2. Outlines & Borders (Clean Warm Birch Wood Borders)
-  static const Color borderDark = Color(0xFF5C2E14);
-  static const Color borderSubtle = Color(0xFFD6C8B8);
-  static const Color borderSelected = Color(0xFFA66640);
+  // 2. Outlines & Borders (Warm Wood Grain & Cocoa Borders)
+  static const Color borderDark = Color(0xFFB89B7E);
+  static const Color borderSubtle = Color(0xFFD9C6B0);
+  static const Color borderSelected = Color(0xFF854B26);
 
   // 3. Primary Accents - Rich Roasted Cocoa Caramel (Punchy, High Contrast Action Color)
   static const Color terracotta = Color(0xFFA66640); // Rich Roasted Cocoa Face
@@ -113,6 +113,64 @@ class AppColors {
     final index = (row + col) % woodTileThemes.length;
     return woodTileThemes[index];
   }
+
+  // 7. Danger & Close Accents (Glossy Red)
+  static const Color danger = Color(0xFFEF4444);
+  static const Color dangerLight = Color(0xFFFF6B6B);
+  static const Color dangerDark = Color(0xFFDC2626);
+  static const Color dangerBorder = Color(0xFFB91C1C);
+  static const Color dangerShadow = Color(0xFF991B1B);
+
+  // 8. Card & Dialog Surface Shadows
+  static const Color shadowBevel = Color(0xFFE8DAC8);
+  static const Color shadowBevelDark = Color(0xFFD4C2AE);
+  static const Color scrim = Color(0x73000000);
+}
+
+class AppShadows {
+  static const List<BoxShadow> card3d = [
+    BoxShadow(
+      color: AppColors.shadowBevel,
+      offset: Offset(0, 3.5),
+      blurRadius: 0,
+    ),
+  ];
+
+  static const List<BoxShadow> dialog3d = [
+    BoxShadow(
+      color: Color(0x33000000),
+      offset: Offset(0, 8.0),
+      blurRadius: 20,
+      spreadRadius: 2,
+    ),
+    BoxShadow(
+      color: AppColors.shadowBevelDark,
+      offset: Offset(0, 4.0),
+      blurRadius: 0,
+    ),
+  ];
+
+  static List<BoxShadow> btn3d(Color shadowColor, {double depth = 2.5}) => [
+    BoxShadow(
+      color: shadowColor,
+      offset: Offset(0, depth),
+      blurRadius: 0,
+    ),
+  ];
+}
+
+class AppBorders {
+  static Border get subtle => Border.all(color: AppColors.borderSubtle, width: 1.5);
+  static Border get strong => Border.all(color: AppColors.borderSubtle, width: 2.0);
+  static Border get boldDark => Border.all(color: AppColors.borderDark, width: 2.0);
+}
+
+class AppRadius {
+  static final BorderRadius sm = BorderRadius.circular(12);
+  static final BorderRadius md = BorderRadius.circular(18);
+  static final BorderRadius lg = BorderRadius.circular(24);
+  static final BorderRadius xl = BorderRadius.circular(28);
+  static final BorderRadius pill = BorderRadius.circular(999);
 }
 
 class TileColorTheme {

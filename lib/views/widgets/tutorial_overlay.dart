@@ -1,12 +1,11 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-
 import '../../services/game_storage.dart';
-import '../common/wood_widgets.dart';
+import '../../theme/app_theme.dart';
+import '../../widgets/common/game_button.dart';
 
 /// 3D Animated Hand Guide moving over the tiles inside the board with active trail & tile illumination
 class TutorialHandGuide extends StatefulWidget {
@@ -23,8 +22,7 @@ class TutorialHandGuide extends StatefulWidget {
   State<TutorialHandGuide> createState() => _TutorialHandGuideState();
 }
 
-class _TutorialHandGuideState extends State<TutorialHandGuide>
-    with SingleTickerProviderStateMixin {
+class _TutorialHandGuideState extends State<TutorialHandGuide> with SingleTickerProviderStateMixin {
   late AnimationController _controller;
 
   @override
@@ -40,10 +38,8 @@ class _TutorialHandGuideState extends State<TutorialHandGuide>
   void didUpdateWidget(covariant TutorialHandGuide oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.path != widget.path) {
-      _controller.duration = Duration(
-        milliseconds: max(1600, widget.path.length * 700),
-      );
-      _controller.reset(); 
+      _controller.duration = Duration(milliseconds: max(1600, widget.path.length * 700));
+      _controller.reset();
       _controller.repeat();
     }
   }
@@ -96,13 +92,8 @@ class _TutorialHandGuideState extends State<TutorialHandGuide>
             );
           }
 
-          final handOpacity = t > 0.88
-              ? (1.0 - ((t - 0.88) / 0.12))
-              : (t < 0.08 ? (t / 0.08) : 1.0);
-          final visitedSubpath = widget.path.sublist(
-            0,
-            min(activeIndex + 1, widget.path.length),
-          );
+          final handOpacity = t > 0.88 ? (1.0 - ((t - 0.88) / 0.12)) : (t < 0.08 ? (t / 0.08) : 1.0);
+          final visitedSubpath = widget.path.sublist(0, min(activeIndex + 1, widget.path.length));
 
           return Stack(
             clipBehavior: Clip.none,
@@ -118,16 +109,13 @@ class _TutorialHandGuideState extends State<TutorialHandGuide>
                     opacity: handOpacity * 0.45,
                     child: Container(
                       decoration: BoxDecoration(
-                        color: const Color(0xFFFFB300).withValues(alpha: 0.35),
-                        borderRadius: BorderRadius.circular(16.r),
-                        border: Border.all(
-                          color: const Color(0xFFFFD54F),
-                          width: 2.2,
-                        ),
+                        color: AppColors.btnFaceBrown,
+                        borderRadius: BorderRadius.circular(16),
+                        border: Border.all(color: Colors.white, width: 2.0),
                         boxShadow: const [
                           BoxShadow(
-                            color: Color(0x99F58A07),
-                            blurRadius: 10,
+                            color: Color(0x66BA805D),
+                            blurRadius: 8,
                             spreadRadius: 2,
                           ),
                         ],
@@ -158,17 +146,14 @@ class _TutorialHandGuideState extends State<TutorialHandGuide>
                     width: 36.r,
                     height: 36.r,
                     decoration: BoxDecoration(
-                      color: const Color(0xFFF58A07).withValues(alpha: 0.5),
+                      color: AppColors.btnFaceBrown.withValues(alpha: 0.4),
                       shape: BoxShape.circle,
-                      border: Border.all(
-                        color: const Color(0xFFFFE082),
-                        width: 2.5,
-                      ),
+                      border: Border.all(color: Colors.white, width: 2.5),
                       boxShadow: const [
                         BoxShadow(
-                          color: Color(0xAAF58A07),
-                          blurRadius: 12,
-                          spreadRadius: 3,
+                          color: Color(0x66BA805D),
+                          blurRadius: 10,
+                          spreadRadius: 2,
                         ),
                       ],
                     ),
@@ -195,7 +180,10 @@ class _TutorialHandGuideState extends State<TutorialHandGuide>
                           ),
                         ],
                       ),
-                      child: Text('👆', style: TextStyle(fontSize: 42.sp)),
+                      child: Text(
+                        '👆',
+                        style: TextStyle(fontSize: 42.sp),
+                      ),
                     ),
                   ),
                 ),
@@ -228,31 +216,25 @@ class _TutorialTrailPainter extends CustomPainter {
     if (path.isEmpty || opacity <= 0) return;
 
     final paintGlow = Paint()
-      ..color = const Color(0xFFF58A07).withValues(alpha: 0.65 * opacity)
+      ..color = const Color(0x88BA805D).withValues(alpha: 0.5 * opacity)
       ..strokeWidth = 14.0
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
 
     final paintCore = Paint()
-      ..color = Colors.white.withValues(alpha: 0.95 * opacity)
+      ..color = Colors.white.withValues(alpha: 0.9 * opacity)
       ..strokeWidth = 5.0
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
 
     final trail = Path();
-    final p0 = Offset(
-      (path[0].x + 0.5) * tileSize,
-      (path[0].y + 0.5) * tileSize,
-    );
+    final p0 = Offset((path[0].x + 0.5) * tileSize, (path[0].y + 0.5) * tileSize);
     trail.moveTo(p0.dx, p0.dy);
 
     for (int i = 1; i < visitedCount && i < path.length; i++) {
-      final pi = Offset(
-        (path[i].x + 0.5) * tileSize,
-        (path[i].y + 0.5) * tileSize,
-      );
+      final pi = Offset((path[i].x + 0.5) * tileSize, (path[i].y + 0.5) * tileSize);
       trail.lineTo(pi.dx, pi.dy);
     }
     trail.lineTo(currentTip.dx, currentTip.dy);
@@ -265,6 +247,7 @@ class _TutorialTrailPainter extends CustomPainter {
   bool shouldRepaint(covariant _TutorialTrailPainter oldDelegate) => true;
 }
 
+/// Modal Dialog explaining letter usage count with spotlight emphasis
 /// Modal Dialog explaining letter usage count with spotlight emphasis on 1 single letter tile
 class TileCountTutorialModal extends StatelessWidget {
   final String sampleLetter;
@@ -280,190 +263,145 @@ class TileCountTutorialModal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Positioned.fill(
-      child: Align(
-        alignment: const Alignment(0.0, -0.2), // Positioned at 2/5 of screen height, centered horizontally
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 24.w),
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(22.r),
-              border: Border.all(
-                color: GoldenWoodColors.woodBevel,
-                width: 2.2, 
-              ),
-              boxShadow: const [
-                BoxShadow(
-                  color: GoldenWoodColors.woodExtrusion,
-                  offset: Offset(0, 5.0),
+    return Align(
+      alignment: const Alignment(0, -0.38),
+      child: Container(
+        margin: EdgeInsets.symmetric(horizontal: 28.w),
+        padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 20.h),
+        decoration: BoxDecoration(
+          color: AppColors.cardWhite,
+          borderRadius: BorderRadius.circular(28.r),
+          border: Border.all(color: AppColors.borderSubtle, width: 2.0),
+          boxShadow: const [
+            BoxShadow(
+              color: Color(0x33000000),
+              offset: Offset(0, 8.0),
+              blurRadius: 20,
+              spreadRadius: 2,
+            ),
+            BoxShadow(
+              color: Color(0xFFD4C2AE),
+              offset: Offset(0, 4.0),
+              blurRadius: 0,
+            ),
+          ],
+        ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                // 3D Single Letter Tile Preview with Count Badge
+                Container(
+                  width: 72.r,
+                  height: 72.r,
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFFFFDF9),
+                    borderRadius: BorderRadius.circular(20.r),
+                    border: Border.all(color: const Color(0xFFE11D48), width: 2.5),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color(0x55E11D48),
+                        blurRadius: 12,
+                        spreadRadius: 2,
+                      ),
+                      BoxShadow(
+                        color: Color(0xFFBE123C),
+                        offset: Offset(0, 3.0),
+                        blurRadius: 0,
+                      ),
+                    ],
+                  ),
+                  child: Stack(
+                    children: [
+                      Center(
+                        child: Text(
+                          sampleLetter,
+                          style: GoogleFonts.fredoka(
+                            fontSize: 40.sp,
+                            fontWeight: FontWeight.w900,
+                            color: AppColors.headerBrown,
+                            height: 1.0,
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        bottom: 3,
+                        right: 3,
+                        child: Container(
+                          width: 26.r,
+                          height: 26.r,
+                          decoration: BoxDecoration(
+                            color: const Color(0xFFE11D48),
+                            shape: BoxShape.circle,
+                            border: Border.all(color: Colors.white, width: 2.0),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: Color(0xFFBE123C),
+                                offset: Offset(0, 1.5),
+                                blurRadius: 0,
+                              ),
+                            ],
+                          ),
+                          child: Center(
+                            child: Text(
+                              '$count',
+                              style: GoogleFonts.fredoka(
+                                fontSize: 15.sp,
+                                fontWeight: FontWeight.w900,
+                                color: Colors.white,
+                                height: 1.0,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-                BoxShadow(
-                  color: Color(0x66000000),
-                  offset: Offset(0, 10),
-                  blurRadius: 20,
-                  spreadRadius: 2,
+                SizedBox(height: 16.h),
+
+                // Explanation Text
+                RichText(
+                  textAlign: TextAlign.center,
+                  text: TextSpan(
+                    style: GoogleFonts.fredoka(
+                      fontSize: 16.sp,
+                      fontWeight: FontWeight.w600,
+                      color: AppColors.textDark,
+                      height: 1.4,
+                    ),
+                    children: [
+                      const TextSpan(text: 'This '),
+                      const TextSpan(
+                        text: 'number',
+                        style: TextStyle(
+                          color: Color(0xFFE11D48),
+                          fontWeight: FontWeight.w900,
+                        ),
+                      ),
+                      const TextSpan(text: ' shows\neach letter\'s usage count.'),
+                    ],
+                  ),
+                ),
+                SizedBox(height: 22.h),
+
+                // "Got it!" 3D Green CTA Button
+                SizedBox(
+                  width: 140.w,
+                  child: GameButton.success(
+                    text: 'Got it!',
+                    size: GameButtonSize.medium,
+                    onTap: () async {
+                      await GameStorage.setCountTutorialShown(true);
+                      onDismiss();
+                    },
+                  ),
                 ),
               ],
             ),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(19.r),
-              child: Stack(
-                children: [
-                  // Bright Golden Honey Wood Face Background
-                  Positioned.fill(
-                    child: Container(
-                      decoration: const BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [
-                            GoldenWoodColors.woodHighlight,
-                            GoldenWoodColors.woodTop,
-                            GoldenWoodColors.woodMid,
-                            GoldenWoodColors.woodDark,
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-
-                  // Wood Grain on Inset
-                  Positioned.fill(
-                    child: Opacity(
-                      opacity: 0.38,
-                      child: Image.asset(
-                        'assets/images/golden_wood_texture.webp',
-                        fit: BoxFit.cover,
-                        errorBuilder: (
-                          context,
-                          error,
-                          stackTrace,
-                        ) => const SizedBox.shrink(),
-                      ),
-                    ),
-                  ),
-
-                  // Content Column 
-                  Padding(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: 20.w,
-                      vertical: 20.h,
-                    ),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        // Header Title Badge (Carved dark wood badge on bright wood)
-                        Container(
-                          padding: EdgeInsets.symmetric(
-                            horizontal: 16.w,
-                            vertical: 4.h,
-                          ),
-                          decoration: BoxDecoration(
-                            color: GoldenWoodColors.woodExtrusion,
-                            borderRadius: BorderRadius.circular(
-                              12.r,
-                            ),
-                            border: Border.all(
-                              color: GoldenWoodColors.woodHighlight,
-                              width: 1.5,
-                            ),
-                            boxShadow: const [
-                              BoxShadow(
-                                color: Color(0x66000000),
-                                offset: Offset(0, 2.0),
-                              ),
-                            ],
-                          ),
-                          child: Text(
-                            'HOW TO PLAY',
-                            style: GoogleFonts.fredoka(
-                              fontSize: 13.sp,
-                              fontWeight: FontWeight.w900,
-                              color: const Color(0xFFFFE8CC),
-                              letterSpacing: 1.5,
-                              shadows: const [
-                                Shadow(
-                                  color: Color(0xFF1F0900),
-                                  offset: Offset(0, 1.5),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        SizedBox(height: 16.h),
-
-                        // Authentic 3D Wooden Tile Preview with Count Badge
-                        WoodenTile(
-                          letter: sampleLetter,
-                          count: count,
-                          state: WoodenTileState.normal,
-                          size: 68.r,
-                        ),
-                        SizedBox(height: 16.h),
-
-                        // Explanation Text
-                        RichText(
-                          textAlign: TextAlign.center,
-                          text: TextSpan(
-                            style: GoogleFonts.fredoka(
-                              fontSize: 16.sp,
-                              fontWeight: FontWeight.w700,
-                              color: Colors.white,
-                              height: 1.35,
-                              shadows: const [
-                                Shadow(
-                                  color: Color(0xFF381401),
-                                  offset: Offset(0, 1.5),
-                                  blurRadius: 2,
-                                ),
-                              ],
-                            ),
-                            children: [
-                              const TextSpan(text: 'This '),
-                              const TextSpan(
-                                text: 'number',
-                                style: TextStyle(
-                                  color: Color(0xFFFFDF00),
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              ),
-                              const TextSpan(
-                                text: ' shows how many times\nthis letter can be used!',
-                              ),
-                            ],
-                          ),
-                        ),
-                        SizedBox(height: 16.h),
-
-                        // "Got it!" Wooden Plank Action Button
-                        WoodenButton(
-                          text: 'GOT IT!',
-                          variant: WoodenButtonVariant.action,
-                          textColor: Colors.white,
-                          width: 190.w,
-                          height: 52.h,
-                          fontSize: 20.sp,
-                          onTap: () async {
-                            await GameStorage.setCountTutorialShown(
-                              true,
-                            );
-                            onDismiss();
-                          },
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-            ).animate().scale(
-              duration: 250.ms,
-              curve: Curves.easeOutBack,
-              begin: const Offset(0.85, 0.85),
-              end: const Offset(1.0, 1.0),
-            ),
-          ),
-        ),
-      ),
+          )
+              .animate()
+              .scale(begin: const Offset(0.7, 0.7), end: const Offset(1.0, 1.0), duration: 350.ms, curve: Curves.easeOutBack)
+              .fadeIn(duration: 250.ms),
     );
   }
 }

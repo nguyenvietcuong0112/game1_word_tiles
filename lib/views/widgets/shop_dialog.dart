@@ -4,7 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../services/game_storage.dart';
 import '../../theme/app_theme.dart';
-import '../common/wood_widgets.dart';
+import '../../widgets/common/game_button.dart';
+import '../../widgets/common/game_dialog.dart';
 import 'app_popup.dart';
 
 class ShopDialog extends StatefulWidget {
@@ -108,159 +109,157 @@ class _ShopDialogState extends State<ShopDialog> {
     final canClaimDaily = GameStorage.canClaimDailyGift();
     final remainingCooldown = GameStorage.getRemainingDailyGiftCooldown();
 
-    return WoodSignboardDialog(
-      title: 'COIN SHOP',
-      onClose: () => Navigator.pop(context),
-      child: SingleChildScrollView(
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            // Balance Pill
-            Container(
-              padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 6.h),
-              decoration: BoxDecoration(
-                color: const Color(0xFFFFF7EA),
-                borderRadius: BorderRadius.circular(16.r),
-                border: Border.all(color: WoodenStyle.woodBevel, width: 1.5),
-                boxShadow: const [
-                  BoxShadow(
-                    color: WoodenStyle.woodExtrusion,
-                    offset: Offset(0, 1.8),
-                  ),
-                ],
+    return GameDialog(
+      showCloseButton: true,
+      backgroundColor: AppColors.cardPeach,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          // Header Row: Title & Coins Pill
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Text(
+                'Coin Shop & Gifts',
+                style: GoogleFonts.fredoka(
+                  fontWeight: FontWeight.w900,
+                  fontSize: 20.sp,
+                  color: AppColors.headerBrown,
+                ),
               ),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    'BALANCE: ',
-                    style: GoogleFonts.fredoka(fontWeight: FontWeight.w900, color: WoodenStyle.carvedDark, fontSize: 13.sp),
-                  ),
-                  WoodGameIcons.coin(size: 18.sp),
-                  SizedBox(width: 5.w),
-                  Text(
-                    '$coins',
-                    style: GoogleFonts.fredoka(fontWeight: FontWeight.w900, color: WoodenStyle.carvedDark, fontSize: 15.sp),
-                  ),
-                ],
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 5.h),
+                decoration: BoxDecoration(
+                  color: AppColors.cardPeachLight,
+                  borderRadius: BorderRadius.circular(16.r),
+                  border: Border.all(color: AppColors.borderSubtle, width: 1.5),
+                ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Text('🪙', style: TextStyle(fontSize: 14)),
+                    SizedBox(width: 5.w),
+                    Text(
+                      '$coins',
+                      style: GoogleFonts.fredoka(
+                        fontWeight: FontWeight.w900,
+                        color: AppColors.textDark,
+                        fontSize: 14.sp,
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            ),
-            SizedBox(height: 12.h),
+            ],
+          ),
+          SizedBox(height: 14.h),
 
-            // Inventory preview
-            Container(
-              padding: EdgeInsets.all(12.r),
-              decoration: BoxDecoration(
-                color: AppColors.cardWhite,
-                borderRadius: BorderRadius.circular(18.r),
-                border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                boxShadow: const [
-                  BoxShadow(
-                    color: Color(0xFFE8DAC8),
-                    offset: Offset(0, 1.5),
-                    blurRadius: 0,
-                  ),
-                ],
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Row(children: [
-                    WoodGameIcons.hint(size: 20.sp),
+          // Inventory Preview
+          Container(
+            padding: EdgeInsets.all(12.r),
+            decoration: BoxDecoration(
+              color: AppColors.cardWhite,
+              borderRadius: BorderRadius.circular(18.r),
+              border: Border.all(color: AppColors.borderSubtle, width: 1.5),
+              boxShadow: const [
+                BoxShadow(
+                  color: Color(0xFFE8DAC8),
+                  offset: Offset(0, 1.5),
+                  blurRadius: 0,
+                ),
+              ],
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Row(
+                  children: [
+                    const Icon(Icons.lightbulb_outline_rounded, color: AppColors.terracotta, size: 20),
                     SizedBox(width: 6.w),
                     Text(
                       '$hints Hints',
-                      style: GoogleFonts.fredoka(fontSize: 13.sp, fontWeight: FontWeight.bold, color: AppColors.textDark),
+                      style: GoogleFonts.fredoka(
+                        fontSize: 13.sp,
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.textDark,
+                      ),
                     ),
-                  ]),
-                  Container(width: 1.5, height: 20.h, color: AppColors.borderSubtle),
-                  Row(children: [
-                    WoodGameIcons.rocket(size: 20.sp),
+                  ],
+                ),
+                Container(width: 1.5, height: 20.h, color: AppColors.borderSubtle),
+                Row(
+                  children: [
+                    const Icon(Icons.rocket_launch_outlined, color: AppColors.terracotta, size: 20),
                     SizedBox(width: 6.w),
                     Text(
                       '$rockets Rockets',
-                      style: GoogleFonts.fredoka(fontSize: 13.sp, fontWeight: FontWeight.bold, color: AppColors.textDark),
+                      style: GoogleFonts.fredoka(
+                        fontSize: 13.sp,
+                        fontWeight: FontWeight.bold,
+                        color: AppColors.textDark,
+                      ),
                     ),
-                  ]),
-                ],
-              ),
+                  ],
+                ),
+              ],
             ),
-            SizedBox(height: 14.h),
+          ),
+          SizedBox(height: 14.h),
 
-            // Daily Free Gift Card (24h Countdown Logic)
-            Container(
-              padding: EdgeInsets.all(14.r),
-              decoration: BoxDecoration(
-                color: AppColors.cardWhite,
-                borderRadius: BorderRadius.circular(20.r),
-                border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                boxShadow: const [
-                  BoxShadow(
-                    color: Color(0xFFE8DAC8),
-                    offset: Offset(0, 2.0),
-                    blurRadius: 0,
-                  ),
-                ],
-              ),
-              child: Row(
-                children: [
-                  WoodGameIcons.shop(size: 30.sp),
-                  SizedBox(width: 8.w),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Daily Free Gift',
-                          style: GoogleFonts.fredoka(fontWeight: FontWeight.w900, color: AppColors.textDark, fontSize: 14.sp),
+          // Daily Free Gift Card (24h Countdown Logic)
+          Container(
+            padding: EdgeInsets.all(14.r),
+            decoration: BoxDecoration(
+              color: AppColors.cardWhite,
+              borderRadius: BorderRadius.circular(20.r),
+              border: Border.all(color: AppColors.borderSubtle, width: 1.5),
+              boxShadow: const [
+                BoxShadow(
+                  color: Color(0xFFE8DAC8),
+                  offset: Offset(0, 2.0),
+                  blurRadius: 0,
+                ),
+              ],
+            ),
+            child: Row(
+              children: [
+                const Text('🎁', style: TextStyle(fontSize: 24)),
+                SizedBox(width: 8.w),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Daily Free Gift',
+                        style: GoogleFonts.fredoka(
+                          fontWeight: FontWeight.w900,
+                          color: AppColors.textDark,
+                          fontSize: 14.sp,
                         ),
-                        Text(
-                          canClaimDaily
-                              ? '+100 🪙, +1 💡, +1 🚀'
-                              : 'Next gift: ${_formatDuration(remainingCooldown)}',
-                          style: GoogleFonts.fredoka(
-                            fontSize: 11.sp,
-                            color: canClaimDaily ? AppColors.textMuted : AppColors.terracotta,
-                            fontWeight: FontWeight.w500,
-                          ),
+                      ),
+                      Text(
+                        canClaimDaily
+                            ? '+100 🪙, +1 💡, +1 🚀'
+                            : 'Next: ${_formatDuration(remainingCooldown)}',
+                        style: GoogleFonts.fredoka(
+                          fontSize: 11.sp,
+                          color: canClaimDaily ? AppColors.textMuted : AppColors.terracotta,
+                          fontWeight: FontWeight.w500,
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
-                  canClaimDaily
-                      ? InkWell(
+                ),
+                SizedBox(
+                  width: 86.w,
+                  child: canClaimDaily
+                      ? GameButton.primary(
+                          size: GameButtonSize.small,
+                          text: 'CLAIM',
                           onTap: _claimFreeReward,
-                          borderRadius: BorderRadius.circular(14.r),
-                          child: Container(
-                            padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 8.h),
-                            decoration: BoxDecoration(
-                              gradient: const LinearGradient(
-                                colors: [Color(0xFFCA9370), AppColors.btnFaceBrown],
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                              ),
-                              borderRadius: BorderRadius.circular(14.r),
-                              border: Border.all(color: AppColors.btnBorderBrown, width: 1.5),
-                              boxShadow: const [
-                                BoxShadow(
-                                  color: AppColors.btnShadowBrown,
-                                  offset: Offset(0, 1.5),
-                                  blurRadius: 0,
-                                ),
-                              ],
-                            ),
-                            child: Text(
-                              'CLAIM',
-                              style: GoogleFonts.fredoka(
-                                fontWeight: FontWeight.w900,
-                                fontSize: 12.sp,
-                                color: Colors.white,
-                                letterSpacing: 0.5,
-                              ),
-                            ),
-                          ),
                         )
-                      : InkWell(
+                      : GameButton.secondary(
+                          size: GameButtonSize.small,
                           onTap: () {
                             AppPopup.show(
                               context,
@@ -269,63 +268,47 @@ class _ShopDialogState extends State<ShopDialog> {
                               icon: '⏳',
                             );
                           },
-                          borderRadius: BorderRadius.circular(14.r),
-                          child: Container(
-                            padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 8.h),
-                            decoration: BoxDecoration(
-                              color: AppColors.cardPeachLight,
-                              borderRadius: BorderRadius.circular(14.r),
-                              border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                              boxShadow: const [
-                                BoxShadow(
-                                  color: Color(0xFFE8DAC8),
-                                  offset: Offset(0, 1.5),
-                                  blurRadius: 0,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              const Icon(Icons.timer_outlined, size: 12, color: AppColors.textMuted),
+                              SizedBox(width: 3.w),
+                              Text(
+                                _formatDuration(remainingCooldown),
+                                style: GoogleFonts.fredoka(
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 10.sp,
+                                  color: AppColors.textMuted,
                                 ),
-                              ],
-                            ),
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                const Icon(Icons.timer_outlined, size: 14, color: AppColors.textMuted),
-                                SizedBox(width: 4.w),
-                                Text(
-                                  _formatDuration(remainingCooldown),
-                                  style: GoogleFonts.fredoka(
-                                    fontWeight: FontWeight.w700,
-                                    fontSize: 11.sp,
-                                    color: AppColors.textMuted,
-                                  ),
-                                ),
-                              ],
-                            ),
+                              ),
+                            ],
                           ),
                         ),
-                ],
-              ),
+                ),
+              ],
             ),
-            SizedBox(height: 12.h),
+          ),
+          SizedBox(height: 12.h),
 
-            // Booster Pack 1
-            _buildShopItem(
-              title: 'Explorer Pack',
-              desc: '3x 💡 Hints + 1x 🚀 Rocket',
-              icon: '🎒',
-              cost: 300,
-              onBuy: () => _buyBoosterPack('Explorer Pack', 300, 3, 1),
-            ),
-            SizedBox(height: 10.h),
+          // Booster Pack 1
+          _buildShopItem(
+            title: 'Explorer Pack',
+            desc: '3x 💡 Hints + 1x 🚀 Rocket',
+            icon: '🎒',
+            cost: 300,
+            onBuy: () => _buyBoosterPack('Explorer Pack', 300, 3, 1),
+          ),
+          SizedBox(height: 10.h),
 
-            // Booster Pack 2
-            _buildShopItem(
-              title: 'Master Pack',
-              desc: '8x 💡 Hints + 4x 🚀 Rockets',
-              icon: '👑',
-              cost: 800,
-              onBuy: () => _buyBoosterPack('Master Pack', 800, 8, 4),
-            ),
-          ],
-        ),
+          // Booster Pack 2
+          _buildShopItem(
+            title: 'Master Pack',
+            desc: '8x 💡 Hints + 4x 🚀 Rockets',
+            icon: '👑',
+            cost: 800,
+            onBuy: () => _buyBoosterPack('Master Pack', 800, 8, 4),
+          ),
+        ],
       ),
     );
   }
@@ -361,41 +344,33 @@ class _ShopDialogState extends State<ShopDialog> {
               children: [
                 Text(
                   title,
-                  style: GoogleFonts.fredoka(fontWeight: FontWeight.w900, fontSize: 13.sp, color: AppColors.textDark),
+                  style: GoogleFonts.fredoka(
+                    fontWeight: FontWeight.w900,
+                    fontSize: 13.sp,
+                    color: AppColors.textDark,
+                  ),
                 ),
                 SizedBox(height: 2.h),
                 Text(
                   desc,
-                  style: GoogleFonts.fredoka(fontSize: 11.sp, color: AppColors.textMuted, fontWeight: FontWeight.w500),
+                  style: GoogleFonts.fredoka(
+                    fontSize: 11.sp,
+                    color: AppColors.textMuted,
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ],
             ),
           ),
-          InkWell(
-            onTap: onBuy,
-            borderRadius: BorderRadius.circular(14.r),
-            child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 7.h),
-              decoration: BoxDecoration(
-                gradient: const LinearGradient(
-                  colors: [Color(0xFFCA9370), AppColors.btnFaceBrown],
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                ),
-                borderRadius: BorderRadius.circular(14.r),
-                border: Border.all(color: AppColors.btnBorderBrown, width: 1.5),
-                boxShadow: const [
-                  BoxShadow(
-                    color: AppColors.btnShadowBrown,
-                    offset: Offset(0, 1.5),
-                    blurRadius: 0,
-                  ),
-                ],
-              ),
+          SizedBox(
+            width: 86.w,
+            child: GameButton.primary(
+              size: GameButtonSize.small,
+              onTap: onBuy,
               child: Row(
-                mainAxisSize: MainAxisSize.min,
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  WoodGameIcons.coin(size: 14.sp),
+                  const Text('🪙', style: TextStyle(fontSize: 12)),
                   SizedBox(width: 4.w),
                   Text(
                     '$cost',

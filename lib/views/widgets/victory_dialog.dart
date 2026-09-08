@@ -4,7 +4,9 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../controllers/game_controller.dart';
-import '../common/wood_widgets.dart';
+import '../../theme/app_theme.dart';
+import '../../widgets/common/game_button.dart';
+import '../../widgets/common/game_icon_button.dart';
 
 class VictoryOverlay extends StatefulWidget {
   final GameController controller;
@@ -69,37 +71,71 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
           ),
         ),
 
-        // 3. Victory Wood Signboard Dialog Card
+        // 3. Victory Dialog Card (Spring entrance from top)
         Center(
-          child: WoodSignboardDialog(
-            title: widget.controller.victoryCelebrationText,
+          child: Container(
+            margin: EdgeInsets.symmetric(horizontal: 28.w),
+            padding: EdgeInsets.all(28.r),
+            decoration: BoxDecoration(
+              color: AppColors.cardPeach,
+              borderRadius: BorderRadius.circular(32.r),
+              border: Border.all(color: AppColors.borderSubtle, width: 2.0),
+              boxShadow: const [
+                BoxShadow(
+                  color: Color(0xFFD4C2AE),
+                  offset: Offset(0, 4.0),
+                  blurRadius: 0,
+                ),
+              ],
+            ),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
+                // Celebration Title (Large, Bold, Woodcraft Style)
+                Text(
+                  widget.controller.victoryCelebrationText,
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.fredoka(
+                    fontSize: 28.sp,
+                    fontWeight: FontWeight.w900,
+                    color: AppColors.headerBrown,
+                    letterSpacing: 2.0,
+                  ),
+                ),
+
                 SizedBox(height: 6.h),
                 Text(
                   'Level ${widget.controller.levelNumber} Completed! 🎉',
                   style: GoogleFonts.fredoka(
-                    fontSize: 17.sp,
-                    color: Colors.white,
+                    fontSize: 16.sp,
+                    color: AppColors.textDark,
                     fontWeight: FontWeight.w700,
-                    shadows: const [
-                      Shadow(color: Color(0xFF1F0900), offset: Offset(0, 1.5)),
-                    ],
                   ),
                 ),
-                SizedBox(height: 16.h),
+                SizedBox(height: 20.h),
 
-                // 3 Stars Row (3D Wooden Stars with Staggered Animation)
+                // 3 Stars Row (3D Glowing Gold Stars with Staggered Animation)
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: List.generate(3, (index) {
                     final isEarned = index < widget.controller.starsEarned;
                     return Container(
                       margin: EdgeInsets.symmetric(horizontal: 6.w),
-                      child: WoodenStar(
-                        isEarned: isEarned,
-                        size: 56.r,
+                      child: Icon(
+                        Icons.star_rounded,
+                        size: 58.r,
+                        color: isEarned
+                            ? const Color(0xFFF59E0B)
+                            : const Color(0xFFE2E8F0),
+                        shadows: isEarned
+                            ? [
+                                const Shadow(
+                                  color: Color(0xFFD97706),
+                                  offset: Offset(0, 2.0),
+                                  blurRadius: 0,
+                                ),
+                              ]
+                            : null,
                       ),
                     )
                         .animate(delay: (150 * index).ms)
@@ -116,123 +152,69 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                           ? '⭐ ⭐  GREAT JOB!'
                           : '⭐  LEVEL CLEARED!'),
                   style: GoogleFonts.fredoka(
-                    fontSize: 14.sp,
+                    fontSize: 13.sp,
                     fontWeight: FontWeight.w900,
-                    color: Colors.white,
-                    letterSpacing: 1.2,
-                    shadows: const [
-                      Shadow(color: Color(0xFF1F0900), offset: Offset(0, 1.5)),
-                    ],
+                    color: widget.controller.starsEarned == 3
+                        ? const Color(0xFFD97706)
+                        : (widget.controller.starsEarned == 2
+                            ? AppColors.headerBrown
+                            : AppColors.textMuted),
+                    letterSpacing: 1.0,
                   ),
                 ),
-                SizedBox(height: 14.h),
+                SizedBox(height: 16.h),
 
-                // Coins Reward Badge in Wood Style (Single Wood Badge)
+                // Coins Reward Badge
                 Container(
+                  padding: EdgeInsets.symmetric(horizontal: 22.w, vertical: 10.h),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(14.r),
-                    border: Border.all(color: WoodenStyle.woodBevel, width: 1.8),
+                    color: AppColors.cardWhite,
+                    borderRadius: BorderRadius.circular(22.r),
+                    border: Border.all(color: AppColors.borderSubtle, width: 1.5),
                     boxShadow: const [
                       BoxShadow(
-                        color: WoodenStyle.woodExtrusion,
-                        offset: Offset(0, 2.5),
+                        color: Color(0xFFE8DAC8),
+                        offset: Offset(0, 1.5),
                         blurRadius: 0,
                       ),
                     ],
                   ),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(12.r),
-                    child: Stack(
-                      alignment: Alignment.center,
-                      children: [
-                        Positioned.fill(
-                          child: Container(
-                            decoration: const BoxDecoration(
-                              gradient: LinearGradient(
-                                begin: Alignment.topCenter,
-                                end: Alignment.bottomCenter,
-                                colors: [
-                                  Color(0xFFFFF7EA),
-                                  Color(0xFFF3DFBE),
-                                  Color(0xFFE2C498),
-                                ],
-                              ),
-                            ),
-                          ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Text('🪙', style: TextStyle(fontSize: 24)),
+                      SizedBox(width: 8.w),
+                      Text(
+                        '+${widget.controller.coinsReward} COINS',
+                        style: GoogleFonts.fredoka(
+                          fontSize: 18.sp,
+                          fontWeight: FontWeight.w900,
+                          color: AppColors.textDark,
+                          letterSpacing: 1.0,
                         ),
-                        // Wood Grain Texture Overlay
-                        Positioned.fill(
-                          child: Opacity(
-                            opacity: 0.25,
-                            child: Image.asset(
-                              'assets/images/golden_wood_texture.webp',
-                              fit: BoxFit.cover,
-                              errorBuilder: (context, error, stackTrace) => const SizedBox.shrink(),
-                            ),
-                          ),
-                        ),
-                        // Top Specular Highlight Rim
-                        Positioned(
-                          top: 0,
-                          left: 8,
-                          right: 8,
-                          height: 1.2,
-                          child: Container(
-                            color: Colors.white.withValues(alpha: 0.5),
-                          ),
-                        ),
-                        Padding(
-                          padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 7.h),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              WoodGameIcons.coin(size: 22.sp),
-                              SizedBox(width: 8.w),
-                              Text(
-                                '+${widget.controller.coinsReward} COINS',
-                                style: GoogleFonts.fredoka(
-                                  fontSize: 16.sp,
-                                  fontWeight: FontWeight.w900,
-                                  color: WoodenStyle.carvedDark,
-                                  letterSpacing: 1.0,
-                                  shadows: const [
-                                    Shadow(
-                                      color: Color(0x60FFFFFF),
-                                      offset: Offset(0, 1.0),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 )
                     .animate(delay: 450.ms)
                     .scale(curve: Curves.easeOutBack),
-                SizedBox(height: 22.h),
+                SizedBox(height: 26.h),
 
                 // Action Buttons
                 Row(
                   children: [
-                    // Replay Wooden Carved Button (100% matched to reference)
-                    WoodCarvedIconButton(
-                      size: 52.r,
-                      assetPath: WoodGameIcons.btnRestart,
+                    // Replay Button (Unified 3D Cocoa-Caramel Round Button)
+                    GameIconButton.replay(
                       onTap: widget.onReplay,
                     ),
                     SizedBox(width: 14.w),
 
-                    // Next Level Button (Vibrant Green Wood CTA)
+                    // Next Level Button (3D Cocoa Caramel CTA)
                     Expanded(
-                      child: WoodenButton(
+                      child: GameButton.primary(
+                        size: GameButtonSize.large,
                         text: 'CONTINUE',
-                        icon: Icons.arrow_forward_rounded,
-                        variant: WoodenButtonVariant.action,
-                        height: 52.h,
-                        fontSize: 17.sp,
+                        trailingIcon: const Icon(Icons.arrow_forward_rounded, size: 22, color: Colors.white),
                         onTap: widget.onNextLevel,
                       ),
                     ),
