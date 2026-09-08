@@ -448,6 +448,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             SizedBox(height: 14.h),
 
+
             // Progress Bar to Next Milestone
             ClipRRect(
               borderRadius: BorderRadius.circular(10.r),

@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:funtap_global_sdk/funtap_global_sdk.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../services/audio_manager.dart';
@@ -41,6 +42,8 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
   }
 
   Future<void> _startLoadingPipeline() async {
+    final startTime = DateTime.now();
+
     // 1. Start smooth visual progress
     _progressTimer = Timer.periodic(const Duration(milliseconds: 30), (timer) {
       if (!mounted) {
@@ -55,6 +58,8 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
         }
       });
     });
+
+    FGSDK.logLoadingStart('splash');
 
     // 2. Perform async initializations
     try {
@@ -78,7 +83,28 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
       _statusText = _loadingMessages.last;
     });
 
+    final loadDuration = DateTime.now().difference(startTime).inMilliseconds / 1000.0;
+    FGSDK.logLoadingEnd('splash', true, loadDuration);
+
     await Future.delayed(const Duration(milliseconds: 400));
+
+    if (!mounted) return;
+
+    // Show Interstitial ad at splash
+    try {
+      final lang = GameStorage.getSelectedLanguage();
+      final level = GameStorage.getCurrentLevelIndex(lang) + 1;
+      debugPrint('[Splash] Showing Interstitial ad (placement: splash, level: $level)...');
+      await FGSDK.showInterstitial('splash', 'classic', level).timeout(
+        const Duration(seconds: 5),
+        onTimeout: () {
+          debugPrint('[Splash] Interstitial ad timed out or not available.');
+        },
+      );
+      debugPrint('[Splash] Interstitial ad finished/dismissed.');
+    } catch (e) {
+      debugPrint('[Splash] Interstitial error: $e');
+    }
 
     if (!mounted) return;
     Navigator.of(context).pushReplacement(
