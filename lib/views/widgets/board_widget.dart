@@ -220,17 +220,21 @@ class BoardWidgetState extends State<BoardWidget> with SingleTickerProviderState
                 child: Container(
                   padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
-                    color: isBoardDimmed ? const Color(0xFF1B1D27) : AppColors.cardPeach,
-                    borderRadius: BorderRadius.circular(24),
+                    color: isBoardDimmed
+                        ? const Color(0xFF1B1D27).withValues(alpha: 0.85)
+                        : const Color(0xFF14387C).withValues(alpha: 0.85),
+                    borderRadius: BorderRadius.circular(26),
                     border: Border.all(
-                      color: isBoardDimmed ? const Color(0xFF323646) : AppColors.borderSubtle,
-                      width: 1.8,
+                      color: isBoardDimmed
+                          ? const Color(0xFF323646)
+                          : Colors.white.withValues(alpha: 0.95),
+                      width: 2.2,
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: isBoardDimmed ? const Color(0xFF0F1016) : const Color(0xFFE8D7C4),
-                        offset: const Offset(0, 2.5),
-                        blurRadius: 0,
+                        color: Colors.black.withValues(alpha: 0.28),
+                        offset: const Offset(0, 4),
+                        blurRadius: 8,
                       ),
                     ],
                   ),

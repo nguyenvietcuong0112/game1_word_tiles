@@ -10,6 +10,12 @@ import 'remote_config_service.dart';
 class AdsManager {
   AdsManager._();
 
+  /// Master switch to enable or disable ads across the entire app.
+  /// - Set to `false` to completely disable all ads (Banner, Interstitial, Resume/AOA, Rewarded).
+  /// - When `false`, rewarded buttons automatically grant rewards directly (ideal for testing/development).
+  /// - Set to `true` when ready to serve production ads.
+  static bool enableAds = false;
+
   static DateTime? _lastInterOrResumeTime;
   static bool _isShowingAd = false;
   static bool _adWasClicked = false;
@@ -26,6 +32,11 @@ class AdsManager {
 
   /// Initializes AdsManager, listens to reward completions and remote config updates
   static void init() {
+    if (!enableAds) {
+      debugPrint('[AdsManager] Ads are disabled (enableAds = false). Skipping ads initialization.');
+      return;
+    }
+
     RemoteConfigService.listenToUpdates();
     RemoteConfigService.fetchConfigs();
 
@@ -88,6 +99,12 @@ class AdsManager {
     required int levelNumber,
     required VoidCallback onCompleted,
   }) async {
+    if (!enableAds) {
+      debugPrint('[AdsManager] Ads disabled (enableAds = false) -> skipping Endgame Interstitial.');
+      onCompleted();
+      return;
+    }
+
     final threshold = RemoteConfigService.interLevelX;
     final isLevelEligible = levelNumber >= threshold;
     final isIntervalPassed = isCooldownPassed();
@@ -146,6 +163,12 @@ class AdsManager {
     required int levelNumber,
     required VoidCallback onCompleted,
   }) async {
+    if (!enableAds) {
+      debugPrint('[AdsManager] Ads disabled (enableAds = false) -> skipping Replay ad.');
+      onCompleted();
+      return;
+    }
+
     final isIntervalPassed = isCooldownPassed();
     debugPrint('[AdsManager] showInterReplay -> Cooldown passed: $isIntervalPassed');
 
@@ -224,6 +247,12 @@ class AdsManager {
     required int levelNumber,
     required Function(bool success) onRewardResult,
   }) async {
+    if (!enableAds) {
+      debugPrint('[AdsManager] Ads disabled (enableAds = false) -> granting reward directly for $placement.');
+      onRewardResult(true);
+      return;
+    }
+
     if (mockRewardResult != null) {
       onRewardResult(mockRewardResult!);
       return;
@@ -286,6 +315,8 @@ class AdsManager {
   /// - Shares Ads_interval (25s) cooldown with Inter ads.
   /// - Format determined by Ads_resume: false = AOA, true = Inter.
   static Future<void> handleAppResume({int currentLevel = 1}) async {
+    if (!enableAds) return;
+
     if (_isShowingAd) {
       debugPrint('[AdsManager] Resume ad skipped: ad is already showing.');
       return;
@@ -356,6 +387,7 @@ class AdsManager {
 
   /// Shows Banner ad on non-gameplay screens (HomeScreen, LevelSelectScreen)
   static void showBanner(String placement, {int level = 1}) {
+    if (!enableAds) return;
     try {
       debugPrint('[AdsManager] showBanner: placement=$placement, level=$level');
       FGSDK.showBanner(placement, 'classic', level);
@@ -366,6 +398,7 @@ class AdsManager {
 
   /// Hides Banner ad when entering gameplay (GameScreen)
   static void hideBanner() {
+    if (!enableAds) return;
     try {
       debugPrint('[AdsManager] hideBanner');
       FGSDK.hideBanner();

@@ -79,7 +79,7 @@ class _TargetWordsBarState extends State<TargetWordsBar> {
             final isTutorialTarget = !isSolved && tutorialTargetWord == tw.word;
 
             return Padding(
-              padding: EdgeInsets.symmetric(vertical: words.length > 4 ? 3.0.h : 4.5.h),
+              padding: EdgeInsets.symmetric(vertical: words.length > 4 ? 2.0.h : 2.5.h),
               child: _TargetWordRow(
                 targetWord: tw,
                 isSolved: isSolved,
@@ -133,7 +133,7 @@ class _TargetWordRow extends StatelessWidget {
           return Container(
             width: boxSize,
             height: boxSize,
-            margin: EdgeInsets.symmetric(horizontal: 3.5.w),
+            margin: EdgeInsets.symmetric(horizontal: 1.5.w),
             decoration: BoxDecoration(
               gradient: const LinearGradient(
                 begin: Alignment.topCenter,
@@ -179,13 +179,13 @@ class _TargetWordRow extends StatelessWidget {
         return Container(
           width: boxSize,
           height: boxSize,
-          margin: EdgeInsets.symmetric(horizontal: 3.0.w),
+          margin: EdgeInsets.symmetric(horizontal: 1.5.w),
           decoration: BoxDecoration(
-            color: isTutorialTarget ? const Color(0xFFFFFDF9) : AppColors.cardWhite,
+            color: isTutorialTarget ? const Color(0xFFFFF9F0) : const Color(0xFFF6E7D8),
             borderRadius: BorderRadius.circular(14.r),
             border: Border.all(
-              color: isTutorialTarget ? AppColors.btnFaceBrown : AppColors.borderSubtle,
-              width: isTutorialTarget ? 2.0 : 1.5,
+              color: isTutorialTarget ? AppColors.btnFaceBrown : const Color(0xFFDEC5AE),
+              width: isTutorialTarget ? 2.0 : 1.2,
             ),
             boxShadow: [
               if (isTutorialTarget)
@@ -195,21 +195,11 @@ class _TargetWordRow extends StatelessWidget {
                   spreadRadius: 1,
                 ),
               const BoxShadow(
-                color: Color(0xFFE8DAC8),
-                offset: Offset(0, 1.5),
+                color: Color(0xFFDEC5AE),
+                offset: Offset(0, 2.0),
                 blurRadius: 0,
               ),
             ],
-          ),
-          child: Center(
-            child: Container(
-              width: isTutorialTarget ? 10.r : 8.r,
-              height: isTutorialTarget ? 10.r : 8.r,
-              decoration: BoxDecoration(
-                color: isTutorialTarget ? AppColors.btnFaceBrown : AppColors.borderDark,
-                borderRadius: BorderRadius.circular(5.r),
-              ),
-            ),
           ),
         );
       }),

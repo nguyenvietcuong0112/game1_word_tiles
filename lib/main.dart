@@ -70,7 +70,7 @@ class _WordTilesAppState extends State<WordTilesApp> with WidgetsBindingObserver
       splitScreenMode: true,
       builder: (context, child) {
         return MaterialApp(
-          title: 'Word Tiles',
+          title: 'Wordnect: Connect Words',
           debugShowCheckedModeBanner: false,
           theme: AppThemes.lightTheme,
           home: const LoadingScreen(),

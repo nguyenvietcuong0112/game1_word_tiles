@@ -12,6 +12,7 @@ import '../widgets/common/game_dialog.dart';
 import '../widgets/common/game_icon_button.dart';
 import '../widgets/common/game_scaffold.dart';
 import 'language_selection_screen.dart';
+import 'level_select_screen.dart';
 
 class SettingsScreen extends StatefulWidget {
   final VoidCallback onLanguageChanged;
@@ -211,6 +212,118 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ),
                   SizedBox(height: 24.h),
 
+                  // Level Selection
+                  _buildSectionHeader('LEVELS'),
+                  Material(
+                    color: AppColors.cardPeach,
+                    borderRadius: BorderRadius.circular(20.r),
+                    child: InkWell(
+                      onTap: () {
+                        AudioManager.playTileSelect(pitchIndex: 2);
+                        Navigator.push(
+                          context,
+                          GamePageRoute(
+                            child: LevelSelectScreen(
+                              language: _language,
+                            ),
+                          ),
+                        ).then((_) => widget.onLanguageChanged());
+                      },
+                      borderRadius: BorderRadius.circular(20.r),
+                      child: Container(
+                        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20.r),
+                          border: Border.all(color: AppColors.borderSubtle, width: 1.5),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Color(0xFFE8DAC8),
+                              offset: Offset(0, 1.5),
+                              blurRadius: 0,
+                            ),
+                          ],
+                        ),
+                        child: Row(
+                          children: [
+                            Container(
+                              width: 48.r,
+                              height: 48.r,
+                              decoration: BoxDecoration(
+                                color: AppColors.cardWhite,
+                                borderRadius: BorderRadius.circular(14.r),
+                                border: Border.all(color: AppColors.borderSubtle, width: 1.2),
+                              ),
+                              child: const Center(
+                                child: Text('🗺️', style: TextStyle(fontSize: 26)),
+                              ),
+                            ),
+                            SizedBox(width: 14.w),
+                            Expanded(
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text(
+                                    'Select Level',
+                                    style: GoogleFonts.fredoka(
+                                      fontWeight: FontWeight.w900,
+                                      fontSize: 16.sp,
+                                      color: AppColors.textDark,
+                                    ),
+                                  ),
+                                  SizedBox(height: 2.h),
+                                  Text(
+                                    'Replay completed levels',
+                                    style: GoogleFonts.fredoka(
+                                      fontSize: 12.sp,
+                                      color: AppColors.textMuted,
+                                      fontWeight: FontWeight.w500,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 7.h),
+                              decoration: BoxDecoration(
+                                color: AppColors.btnFaceBrown,
+                                borderRadius: BorderRadius.circular(12.r),
+                                border: Border.all(color: AppColors.btnBorderBrown, width: 1.5),
+                                boxShadow: const [
+                                  BoxShadow(
+                                    color: AppColors.btnShadowBrown,
+                                    offset: Offset(0, 1.5),
+                                    blurRadius: 0,
+                                  ),
+                                ],
+                              ),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Text(
+                                    'VIEW',
+                                    style: GoogleFonts.fredoka(
+                                      fontSize: 11.sp,
+                                      fontWeight: FontWeight.w900,
+                                      color: Colors.white,
+                                      letterSpacing: 0.5,
+                                    ),
+                                  ),
+                                  SizedBox(width: 4.w),
+                                  const Icon(
+                                    Icons.arrow_forward_ios_rounded,
+                                    size: 10,
+                                    color: Colors.white,
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(height: 24.h),
+
                   // Audio & Haptics
                   _buildSectionHeader('AUDIO & FEEDBACK'),
                   Material(
@@ -289,7 +402,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   // About
                   Center(
                     child: Text(
-                      'Word Tiles Casual Puzzle\nVersion 1.0.0',
+                      'Wordnect: Connect Words\nVersion 1.0.0',
                       textAlign: TextAlign.center,
                       style: GoogleFonts.fredoka(color: AppColors.textMuted, fontSize: 13.sp, height: 1.5),
                     ),

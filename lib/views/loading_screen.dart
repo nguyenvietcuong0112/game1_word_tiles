@@ -176,7 +176,7 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
 
                       // Game Title
                       Text(
-                        'WORD TILES',
+                        'WORDNECT',
                         style: GoogleFonts.fredoka(
                           fontSize: 38,
                           fontWeight: FontWeight.w900,

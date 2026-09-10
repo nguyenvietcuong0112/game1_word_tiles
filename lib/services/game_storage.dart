@@ -5,13 +5,19 @@ import 'package:shared_preferences/shared_preferences.dart';
 class GameStorage {
   static late SharedPreferences _prefs;
   static bool _isInitialized = false;
+  static bool get isInitialized => _isInitialized;
 
   static int? _cachedCoins;
   static final ValueNotifier<int> coinsNotifier = ValueNotifier<int>(250);
 
   static int? _cachedExtraWordsChestCount;
+  static final ValueNotifier<int> extraWordsNotifier = ValueNotifier<int>(0);
+
   static int? _cachedHintCount;
+  static final ValueNotifier<int> hintCountNotifier = ValueNotifier<int>(2);
+
   static int? _cachedRocketCount;
+  static final ValueNotifier<int> rocketCountNotifier = ValueNotifier<int>(1);
 
   static bool? _cachedTutorialCompleted;
   static bool? _cachedCountTutorialShown;
@@ -20,15 +26,19 @@ class GameStorage {
   static bool? _cachedExtraWordsTutorialShown;
 
   static Future<void> init() async {
-    if (_isInitialized) return;
     _prefs = await SharedPreferences.getInstance();
     _isInitialized = true;
     _cachedCoins = _prefs.getInt('player_coins') ?? 250;
     coinsNotifier.value = _cachedCoins!;
 
     _cachedExtraWordsChestCount = _prefs.getInt('extra_words_chest_count') ?? 0;
+    extraWordsNotifier.value = _cachedExtraWordsChestCount!;
+
     _cachedHintCount = _prefs.getInt('inventory_hint_count') ?? 2;
+    hintCountNotifier.value = _cachedHintCount!;
+
     _cachedRocketCount = _prefs.getInt('inventory_rocket_count') ?? 1;
+    rocketCountNotifier.value = _cachedRocketCount!;
 
     _cachedTutorialCompleted = _prefs.getBool('tutorial_completed') ?? false;
     _cachedCountTutorialShown = _prefs.getBool('count_tutorial_shown') ?? false;
@@ -123,6 +133,7 @@ class GameStorage {
 
   static Future<void> setExtraWordsChestCount(int count) async {
     _cachedExtraWordsChestCount = count;
+    extraWordsNotifier.value = count;
     await _prefs.setInt('extra_words_chest_count', count);
   }
 
@@ -152,6 +163,7 @@ class GameStorage {
     final current = getHintCount();
     final updated = current + amount;
     _cachedHintCount = updated;
+    hintCountNotifier.value = updated;
     await _prefs.setInt('inventory_hint_count', updated);
   }
 
@@ -160,6 +172,7 @@ class GameStorage {
     if (current > 0) {
       final updated = current - 1;
       _cachedHintCount = updated;
+      hintCountNotifier.value = updated;
       await _prefs.setInt('inventory_hint_count', updated);
       return true;
     }
@@ -174,6 +187,7 @@ class GameStorage {
     final current = getRocketCount();
     final updated = current + amount;
     _cachedRocketCount = updated;
+    rocketCountNotifier.value = updated;
     await _prefs.setInt('inventory_rocket_count', updated);
   }
 
@@ -182,6 +196,7 @@ class GameStorage {
     if (current > 0) {
       final updated = current - 1;
       _cachedRocketCount = updated;
+      rocketCountNotifier.value = updated;
       await _prefs.setInt('inventory_rocket_count', updated);
       return true;
     }

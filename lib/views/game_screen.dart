@@ -5,7 +5,6 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../controllers/game_controller.dart';
-import '../models/chapter_model.dart';
 import '../services/ads_manager.dart';
 import '../services/analytics_service.dart';
 import '../services/audio_manager.dart';
@@ -13,14 +12,11 @@ import '../services/game_storage.dart';
 import '../services/level_loader.dart';
 import '../theme/app_theme.dart';
 import '../utils/game_transitions.dart';
-import '../widgets/common/game_background.dart';
 import '../widgets/common/game_button.dart';
 import '../widgets/common/game_dialog.dart';
-import '../widgets/common/game_icon_button.dart';
 import '../widgets/common/game_scaffold.dart';
 import 'level_select_screen.dart';
 import 'settings_screen.dart';
-import 'widgets/artwork/background_change_animation.dart';
 import 'widgets/board_widget.dart';
 import 'widgets/booster_bar.dart';
 import 'widgets/bouncy_button.dart';
@@ -54,12 +50,11 @@ class _GameScreenState extends State<GameScreen> {
   bool _isLoading = true;
   String? _errorMessage;
   late int _currentLevelIndex;
-  ChapterTheme? _previousChapterTheme;
-  bool _isChapterTransitioning = false;
 
   int _lastSolvedWordsCount = 0;
   bool _lastIsWon = false;
   List<Point<int>>? _lastFailSafeHintPath;
+  int _lastExtraFoundCount = 0;
 
   @override
   void initState() {
@@ -84,13 +79,16 @@ class _GameScreenState extends State<GameScreen> {
     final isWon = _controller!.isWon;
     final solvedCount = _controller!.solvedTargetWords.length;
     final failSafePath = _controller!.failSafeHintPath;
+    final extraFoundCount = _controller!.foundExtraWords.length;
 
     if (isWon != _lastIsWon ||
         solvedCount != _lastSolvedWordsCount ||
-        failSafePath != _lastFailSafeHintPath) {
+        failSafePath != _lastFailSafeHintPath ||
+        extraFoundCount != _lastExtraFoundCount) {
       _lastIsWon = isWon;
       _lastSolvedWordsCount = solvedCount;
       _lastFailSafeHintPath = failSafePath;
+      _lastExtraFoundCount = extraFoundCount;
       setState(() {});
     }
   }
@@ -133,6 +131,7 @@ class _GameScreenState extends State<GameScreen> {
       _lastSolvedWordsCount = 0;
       _lastIsWon = false;
       _lastFailSafeHintPath = null;
+      _lastExtraFoundCount = 0;
       _controller!.addListener(_onGameControllerStateChanged);
 
       AnalyticsService.logLevelStart(
@@ -150,17 +149,7 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   void _nextLevel() {
-    final currentTheme = _controller?.chapterTheme ??
-        ChapterTheme.forChapter(ChapterInfo.forLevel(_currentLevelIndex + 1).chapterNumber);
-    final nextLevelNum = _currentLevelIndex + 2;
-    final nextChapterInfo = ChapterInfo.forLevel(nextLevelNum);
-    final isChapterTransition = nextChapterInfo.chapterNumber != currentTheme.chapterNumber;
-
     setState(() {
-      if (isChapterTransition) {
-        _previousChapterTheme = currentTheme;
-        _isChapterTransitioning = true;
-      }
       _currentLevelIndex++;
     });
     _loadGame(showLoading: false);
@@ -218,16 +207,7 @@ class _GameScreenState extends State<GameScreen> {
     AdsManager.hideBanner();
 
     if (selectedIndex != null && selectedIndex != _currentLevelIndex && mounted) {
-      final currentTheme = _controller?.chapterTheme ??
-          ChapterTheme.forChapter(ChapterInfo.forLevel(_currentLevelIndex + 1).chapterNumber);
-      final nextChapterInfo = ChapterInfo.forLevel(selectedIndex + 1);
-      final isChapterTransition = nextChapterInfo.chapterNumber != currentTheme.chapterNumber;
-
       setState(() {
-        if (isChapterTransition) {
-          _previousChapterTheme = currentTheme;
-          _isChapterTransitioning = true;
-        }
         _currentLevelIndex = selectedIndex;
       });
       _loadGame();
@@ -251,29 +231,12 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   Widget _buildBackground() {
-    final currentTheme = _controller?.chapterTheme ??
-        ChapterTheme.forChapter(ChapterInfo.forLevel(_currentLevelIndex + 1).chapterNumber);
-
-    return BackgroundChangeAnimation(
-      isTransitioning: _isChapterTransitioning,
-      previousBackground: _previousChapterTheme != null
-          ? GameBackground(
-              variant: GameBackgroundVariant.gameplay,
-              chapterTheme: _previousChapterTheme,
-            )
-          : null,
-      currentBackground: GameBackground(
-        variant: GameBackgroundVariant.gameplay,
-        chapterTheme: currentTheme,
-      ),
-      onTransitionComplete: () {
-        if (mounted) {
-          setState(() {
-            _isChapterTransitioning = false;
-            _previousChapterTheme = null;
-          });
-        }
-      },
+    return Image.asset(
+      'assets/images/bg_home.png',
+      fit: BoxFit.cover,
+      width: double.infinity,
+      height: double.infinity,
+      alignment: Alignment.center,
     );
   }
 
@@ -281,6 +244,7 @@ class _GameScreenState extends State<GameScreen> {
   Widget build(BuildContext context) {
     if (_isLoading && _controller == null) {
       return GameScaffold(
+        useSafeArea: false,
         background: _buildBackground(),
         body: const Center(
           child: CircularProgressIndicator(color: AppColors.btnFaceBrown),
@@ -341,6 +305,7 @@ class _GameScreenState extends State<GameScreen> {
     final isDarkScrimTut = isLevel1Tut || isCountTut || isReverseTut || isHintTut || isExtraWordsTut;
 
     return GameScaffold(
+      useSafeArea: false,
       background: _buildBackground(),
       onWillPop: () async {
         await _handleBackConfirmation();
@@ -382,17 +347,47 @@ class _GameScreenState extends State<GameScreen> {
                         duration: const Duration(milliseconds: 250),
                         child: _buildHeader(),
                       ),
-                      // TargetWordsBar (dimmed when tutorial is active)
+                      // TargetWordsBar with Side Buttons (Gift & Star Progress)
                       Expanded(
-                        flex: 6,
-                        child: Center(
-                          child: SingleChildScrollView(
-                            child: AnimatedOpacity(
-                              opacity: isDarkScrimTut ? 0.20 : 1.0,
-                              duration: const Duration(milliseconds: 250),
-                              child: TargetWordsBar(controller: _controller!),
+                        flex: 5,
+                        child: Stack(
+                          alignment: Alignment.center,
+                          children: [
+                            Center(
+                              child: SingleChildScrollView(
+                                child: AnimatedOpacity(
+                                  opacity: isDarkScrimTut ? 0.20 : 1.0,
+                                  duration: const Duration(milliseconds: 250),
+                                  child: TargetWordsBar(controller: _controller!),
+                                ),
+                              ),
                             ),
-                          ),
+                            // Left Gift Box Button
+                            Positioned(
+                              top: 8.h,
+                              left: 16.w,
+                              child: AnimatedOpacity(
+                                opacity: isDarkScrimTut ? 0.20 : 1.0,
+                                duration: const Duration(milliseconds: 250),
+                                child: _buildGiftButton(),
+                              ),
+                            ),
+                            // Right Star / Extra Words Button
+                            Positioned(
+                              top: 8.h,
+                              right: 16.w,
+                              child: AnimatedOpacity(
+                                opacity: isDarkScrimTut ? 0.20 : 1.0,
+                                duration: const Duration(milliseconds: 250),
+                                child: ExtraWordsButton(
+                                  key: _extraWordsBtnKey,
+                                  extraCount: GameStorage.getExtraWordsChestCount(),
+                                  onTap: _openExtraWords,
+                                  isSpotlighted: isExtraWordsTut,
+                                ),
+                              ),
+                            ),
+                          ],
                         ),
                       ),
                       AnimatedOpacity(
@@ -402,16 +397,19 @@ class _GameScreenState extends State<GameScreen> {
                       ),
                       // BoardWidget (Dimmed only on Level 5 & Level 7, full 100% on Level 1, 2, 4)
                       Expanded(
-                        flex: 4,
-                        child: AnimatedOpacity(
-                          opacity: (isHintTut || isExtraWordsTut) ? 0.20 : 1.0,
-                          duration: const Duration(milliseconds: 250),
-                          child: BoardWidget(
-                            key: _boardKey,
-                            controller: _controller!,
+                        flex: 5,
+                        child: Center(
+                          child: AnimatedOpacity(
+                            opacity: (isHintTut || isExtraWordsTut) ? 0.20 : 1.0,
+                            duration: const Duration(milliseconds: 250),
+                            child: BoardWidget(
+                              key: _boardKey,
+                              controller: _controller!,
+                            ),
                           ),
                         ),
                       ),
+                      SizedBox(height: 10.h),
                       // BoosterBar (Spotlighted on Level 5 & Level 7, dimmed on other tutorials)
                       AnimatedOpacity(
                         opacity: (isDarkScrimTut && !isHintTut && !isExtraWordsTut) ? 0.20 : 1.0,
@@ -443,7 +441,7 @@ class _GameScreenState extends State<GameScreen> {
                               TextSpan(
                                 text: '"$nextWord"',
                                 style: const TextStyle(
-                                  color: Color(0xFFE11D48),
+                                  color: Color(0xFFDD4C8E),
                                   fontWeight: FontWeight.w900,
                                 ),
                               ),
@@ -454,7 +452,7 @@ class _GameScreenState extends State<GameScreen> {
                               TextSpan(
                                 text: '"$nextWord"',
                                 style: const TextStyle(
-                                  color: Color(0xFFE11D48),
+                                  color: Color(0xFFDD4C8E),
                                   fontWeight: FontWeight.w900,
                                 ),
                               ),
@@ -477,7 +475,7 @@ class _GameScreenState extends State<GameScreen> {
                     TextSpan(
                       text: 'backwards',
                       style: TextStyle(
-                        color: Color(0xFFE11D48),
+                        color: Color(0xFFDD4C8E),
                         fontWeight: FontWeight.w900,
                       ),
                     ),
@@ -519,92 +517,163 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   Widget _buildHeader() {
-    return ValueListenableBuilder<int>(
-      valueListenable: GameStorage.coinsNotifier,
-      builder: (context, coins, _) {
-        return Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return SafeArea(
+      bottom: false,
+      child: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
+        child: SizedBox(
+          height: 44.h,
+          child: Stack(
+            alignment: Alignment.center,
             children: [
-              Row(
-                children: [
-                  GameIconButton.back(
-                    context,
-                    onTap: _handleBackConfirmation,
-                  ),
-                  SizedBox(width: 10.w),
-                  GameIconButton.settings(
-                    onTap: _openSettings,
-                  ),
-                ],
-              ),
-              BouncyButton(
-                onTap: _openLevelSelect,
-                child: Container(
-                  padding: EdgeInsets.symmetric(
-                      horizontal: 16.w, vertical: 6.h),
-                  decoration: BoxDecoration(
-                    color: AppColors.cardWhite,
-                    borderRadius: BorderRadius.circular(16.r),
-                    border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Color(0xFFE8DAC8),
-                        offset: Offset(0, 1.5),
-                        blurRadius: 0,
-                      ),
-                    ],
-                  ),
+              // 1. Perfectly centered Level Text
+              Center(
+                child: BouncyButton(
+                  onTap: _openLevelSelect,
                   child: Text(
                     'LEVEL ${_controller!.levelNumber}',
                     style: GoogleFonts.fredoka(
-                      fontSize: 16.sp,
+                      fontSize: 22.sp,
                       fontWeight: FontWeight.w900,
-                      color: AppColors.headerBrown,
-                      letterSpacing: 1.2,
+                      color: Colors.white,
+                      letterSpacing: 0.8,
+                      shadows: const [
+                        Shadow(
+                          color: Colors.black38,
+                          offset: Offset(0, 1.5),
+                          blurRadius: 4,
+                        ),
+                      ],
                     ),
                   ),
                 ),
               ),
-              BouncyButton(
-                onTap: _openShop,
-                child: Container(
-                  padding: EdgeInsets.symmetric(
-                      horizontal: 12.w, vertical: 6.h),
-                  decoration: BoxDecoration(
-                    color: AppColors.cardWhite,
-                    borderRadius: BorderRadius.circular(20.r),
-                    border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Color(0xFFE8DAC8),
-                        offset: Offset(0, 1.5),
-                        blurRadius: 0,
-                      ),
-                    ],
-                  ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text('🪙', style: TextStyle(fontSize: 16.sp)),
-                      SizedBox(width: 4.w),
-                      Text(
-                        '$coins',
-                        style: GoogleFonts.fredoka(
-                          fontSize: 14.sp,
-                          fontWeight: FontWeight.w900,
-                          color: AppColors.textDark,
-                        ),
-                      ),
-                    ],
+              // 2. Left Coins Capsule
+              Align(
+                alignment: Alignment.centerLeft,
+                child: _buildCoinCapsule(),
+              ),
+              // 3. Right Settings Button
+              Align(
+                alignment: Alignment.centerRight,
+                child: BouncyButton(
+                  onTap: _openSettings,
+                  child: Image.asset(
+                    'assets/icons/icon_setting.png',
+                    width: 44.r,
+                    height: 44.r,
                   ),
                 ),
               ),
             ],
           ),
-        );
-      },
+        ),
+      ),
+    );
+  }
+
+  Widget _buildCoinCapsule() {
+    return BouncyButton(
+      onTap: _openShop,
+      child: SizedBox(
+        height: 44.h,
+        child: IntrinsicWidth(
+          child: Stack(
+            alignment: Alignment.centerLeft,
+            children: [
+              Container(
+                margin: EdgeInsets.only(left: 18.w),
+                height: 34.h,
+                constraints: BoxConstraints(minWidth: 78.w),
+                padding: EdgeInsets.only(left: 20.w, right: 14.w),
+                decoration: BoxDecoration(
+                  color: const Color(0xFF26499D),
+                  borderRadius: BorderRadius.circular(18.r),
+                  border: Border.all(color: Colors.white, width: 2.2),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: 0.25),
+                      offset: const Offset(0, 2),
+                      blurRadius: 4,
+                    ),
+                  ],
+                ),
+                alignment: Alignment.center,
+                child: ValueListenableBuilder<int>(
+                  valueListenable: GameStorage.coinsNotifier,
+                  builder: (context, coins, _) {
+                    return Text(
+                      '$coins',
+                      style: GoogleFonts.fredoka(
+                        color: Colors.white,
+                        fontSize: 17.sp,
+                        fontWeight: FontWeight.w900,
+                        letterSpacing: 0.5,
+                      ),
+                    );
+                  },
+                ),
+              ),
+              Image.asset(
+                'assets/icons/icon_coin.png',
+                width: 44.r,
+                height: 44.r,
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildGiftButton() {
+    return BouncyButton(
+      onTap: _openGiftReward,
+      child: SizedBox(
+        width: 54.r,
+        height: 64.r,
+        child: Stack(
+          alignment: Alignment.topCenter,
+          clipBehavior: Clip.none,
+          children: [
+            Positioned(
+              top: 0,
+              child: Image.asset(
+                'assets/icons/icon_gift_box.png',
+                width: 48.r,
+                height: 48.r,
+                fit: BoxFit.contain,
+              ),
+            ),
+            Positioned(
+              top: -2.h,
+              right: 0,
+              child: Image.asset(
+                'assets/icons/icon_notice.png',
+                width: 20.r,
+                height: 20.r,
+                fit: BoxFit.contain,
+              ),
+            ),
+            Positioned(
+              bottom: 5.h,
+              child: GreenPillBadge.text(text: 'GIFT'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  void _openGiftReward() {
+    AudioManager.playTileSelect(pitchIndex: 4);
+    GameStorage.addCoins(50);
+    GameDialog.showAlert(
+      context,
+      icon: '🎁',
+      title: 'Special Gift!',
+      message: 'You received 50 bonus coins from the Gift Box!',
+      buttonText: 'Awesome!',
     );
   }
 

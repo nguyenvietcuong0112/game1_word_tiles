@@ -1,9 +1,9 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../controllers/game_controller.dart';
 import '../../services/game_storage.dart';
-import '../../theme/app_theme.dart';
 import 'booster_unlock_dialog.dart';
 import 'bouncy_button.dart';
 
@@ -30,390 +30,253 @@ class BoosterBar extends StatefulWidget {
 }
 
 class _BoosterBarState extends State<BoosterBar> {
-  int _lastBoostersUsedCount = 0;
-  int _lastExtraWordsCount = 0;
-  bool _lastIsWon = false;
-
   @override
   void initState() {
     super.initState();
-    _lastBoostersUsedCount = widget.controller.boostersUsedCount;
-    _lastExtraWordsCount = widget.controller.foundExtraWords.length;
-    _lastIsWon = widget.controller.isWon;
-    widget.controller.addListener(_onControllerChanged);
+    widget.controller.addListener(_rebuild);
+    GameStorage.hintCountNotifier.addListener(_rebuild);
+    GameStorage.rocketCountNotifier.addListener(_rebuild);
+    GameStorage.coinsNotifier.addListener(_rebuild);
   }
 
   @override
   void didUpdateWidget(covariant BoosterBar oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.controller != widget.controller) {
-      oldWidget.controller.removeListener(_onControllerChanged);
-      _lastBoostersUsedCount = widget.controller.boostersUsedCount;
-      _lastExtraWordsCount = widget.controller.foundExtraWords.length;
-      _lastIsWon = widget.controller.isWon;
-      widget.controller.addListener(_onControllerChanged);
+      oldWidget.controller.removeListener(_rebuild);
+      widget.controller.addListener(_rebuild);
     }
   }
 
   @override
   void dispose() {
-    widget.controller.removeListener(_onControllerChanged);
+    widget.controller.removeListener(_rebuild);
+    GameStorage.hintCountNotifier.removeListener(_rebuild);
+    GameStorage.rocketCountNotifier.removeListener(_rebuild);
+    GameStorage.coinsNotifier.removeListener(_rebuild);
     super.dispose();
   }
 
-  void _onControllerChanged() {
-    final boostersUsed = widget.controller.boostersUsedCount;
-    final extraWords = widget.controller.foundExtraWords.length;
-    final isWon = widget.controller.isWon;
-    if (boostersUsed != _lastBoostersUsedCount ||
-        extraWords != _lastExtraWordsCount ||
-        isWon != _lastIsWon) {
-      _lastBoostersUsedCount = boostersUsed;
-      _lastExtraWordsCount = extraWords;
-      _lastIsWon = isWon;
-      setState(() {});
-    }
+  void _rebuild() {
+    if (mounted) setState(() {});
   }
 
   @override
   Widget build(BuildContext context) {
     final controller = widget.controller;
+    final bottomInset = MediaQuery.paddingOf(context).bottom;
+
+    // Dimensions matching mockup media_1789032593898.png:
+    // Menu bar sits at bottom with height 54.h + bottomInset
+    // Booster cards are 58.r tall. Exactly 50% (29.r) sits above menu_bar on the background,
+    // and 50% (29.r) sits below the top edge of menu_bar.
+    final cardHeight = 58.r;
+    final halfOverlap = cardHeight / 2; // 29.r
+    final menuBarHeight = 54.h + bottomInset;
+    final totalHeight = halfOverlap + menuBarHeight;
+
     if (!controller.isBoosterBarVisible) {
-      return const SizedBox.shrink();
-    }
-
-    final extraCount = GameStorage.getExtraWordsChestCount();
-    final hintCount = GameStorage.getHintCount();
-    final rocketCount = GameStorage.getRocketCount();
-
-    // Level 5 - 6: Only Hint is unlocked, centered at bottom
-    if (!controller.isRocketUnlocked) {
-      return Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.end,
-          children: [
-            _buildBoosterBtn(
-              emoji: '💡',
-              inventoryCount: hintCount,
-              isSpotlighted: widget.isHintSpotlighted,
-              onTap: () async {
-                if (hintCount > 0) {
-                  controller.useHint();
-                  setState(() {});
-                } else {
-                  await BoosterUnlockDialog.show(
-                    context,
-                    boosterType: BoosterType.hint,
-                    controller: controller,
-                  );
-                  if (mounted) setState(() {});
-                }
-              },
-            ),
-          ],
+      return SizedBox(
+        width: double.infinity,
+        height: menuBarHeight,
+        child: Image.asset(
+          'assets/images/menu_bar.png',
+          width: double.infinity,
+          height: menuBarHeight,
+          fit: BoxFit.fill,
         ),
       );
     }
 
-    // Level 7+: Full Booster Suite (Extra Words, Hint, Rocket, Shop)
-    final bool isAnySpotlighted = widget.isHintSpotlighted || widget.isExtraWordsSpotlighted;
+    final hintCount = GameStorage.getHintCount();
+    final rocketCount = GameStorage.getRocketCount();
 
-    return Padding(
-      padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.end,
+    return SizedBox(
+      width: double.infinity,
+      height: totalHeight,
+      child: Stack(
+        clipBehavior: Clip.none,
+        alignment: Alignment.bottomCenter,
         children: [
-          // 1. Extra Words Button (Custom 3D Wordcraft Tile Stack)
-          if (controller.isExtraWordsUnlocked)
-            Opacity(
-              opacity: (isAnySpotlighted && !widget.isExtraWordsSpotlighted) ? 0.35 : 1.0,
-              child: ExtraWordsButton(
-                key: widget.extraWordsBtnKey,
-                extraCount: extraCount,
-                isSpotlighted: widget.isExtraWordsSpotlighted,
-                onTap: () async {
-                  widget.onOpenExtraWords?.call();
-                  if (mounted) setState(() {});
-                },
-              ),
-            ),
-
-          // 2. Hint Booster 💡
-          Opacity(
-            opacity: (isAnySpotlighted && !widget.isHintSpotlighted) ? 0.35 : 1.0,
-            child: _buildBoosterBtn(
-              emoji: '💡',
-              inventoryCount: hintCount,
-              isSpotlighted: widget.isHintSpotlighted,
-              onTap: () async {
-                if (hintCount > 0) {
-                  controller.useHint();
-                  setState(() {});
-                } else {
-                  await BoosterUnlockDialog.show(
-                    context,
-                    boosterType: BoosterType.hint,
-                    controller: controller,
-                  );
-                  if (mounted) setState(() {});
-                }
-              },
+          // 1. Menu bar asset at the bottom (NO custom code/container color)
+          Positioned(
+            left: 0,
+            right: 0,
+            bottom: 0,
+            height: menuBarHeight,
+            child: Image.asset(
+              'assets/images/menu_bar.png',
+              width: double.infinity,
+              height: menuBarHeight,
+              fit: BoxFit.fill,
             ),
           ),
 
-          // 3. Rocket Booster 🚀
-          if (controller.isRocketUnlocked)
-            Opacity(
-              opacity: isAnySpotlighted ? 0.35 : 1.0,
-              child: _buildBoosterBtn(
-                emoji: '🚀',
-                inventoryCount: rocketCount,
-                onTap: () async {
-                  if (rocketCount > 0) {
-                    controller.useRocket();
-                    setState(() {});
-                  } else {
-                    await BoosterUnlockDialog.show(
-                      context,
-                      boosterType: BoosterType.rocket,
-                      controller: controller,
-                    );
-                    if (mounted) setState(() {});
-                  }
-                },
-              ),
+          // 2. Booster buttons row - aligned so cards are 50% on background, 50% on menu bar
+          Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // 1. Hint Booster 💡
+                _buildHintBooster(hintCount: hintCount),
+                SizedBox(width: 18.w),
+                // 2. Rocket Booster 🚀
+                _buildRocketBooster(rocketCount: rocketCount),
+              ],
             ),
-
-          // 4. Shop / Chest 🎁
-          if (controller.isShopUnlocked)
-            Opacity(
-              opacity: isAnySpotlighted ? 0.35 : 1.0,
-              child: _buildSpecialActionBtn(
-                emoji: '🎁',
-                label: 'SHOP',
-                onTap: () async {
-                  widget.onOpenShop?.call();
-                  if (mounted) setState(() {});
-                },
-              ),
-            ),
+          ),
         ],
       ),
     );
   }
 
-  Widget _buildBoosterBtn({
-    required String emoji,
-    required int inventoryCount,
-    required VoidCallback onTap,
-    bool isSpotlighted = false,
-  }) {
-    final bool hasItems = inventoryCount > 0;
+  Widget _buildHintBooster({required int hintCount}) {
+    final controller = widget.controller;
+    final isSpotlighted = widget.isHintSpotlighted;
 
     return BouncyButton(
-      onTap: onTap,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          // 3D Circular Button with optional Spotlight Halo
-          Container(
-            decoration: isSpotlighted
-                ? BoxDecoration(
-                    shape: BoxShape.circle,
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.white.withValues(alpha: 0.95),
-                        blurRadius: 18,
-                        spreadRadius: 4,
-                      ),
-                      BoxShadow(
-                        color: const Color(0xFFFBBF24).withValues(alpha: 0.75),
-                        blurRadius: 28,
-                        spreadRadius: 8,
-                      ),
-                    ],
-                  )
-                : null,
-            child: Container(
+      onTap: () async {
+        if (hintCount > 0) {
+          controller.useHint();
+        } else {
+          await BoosterUnlockDialog.show(
+            context,
+            boosterType: BoosterType.hint,
+            controller: controller,
+          );
+        }
+      },
+      child: SizedBox(
+        width: 66.r,
+        height: 70.r,
+        child: Stack(
+          alignment: Alignment.topCenter,
+          clipBehavior: Clip.none,
+          children: [
+            // White Rounded Square Card (58.r x 58.r)
+            Container(
               width: 58.r,
               height: 58.r,
               decoration: BoxDecoration(
-                color: AppColors.btnRingBg,
-                shape: BoxShape.circle,
-                border: Border.all(
-                  color: isSpotlighted ? Colors.white : AppColors.btnRingBorder,
-                  width: isSpotlighted ? 2.6 : 1.8,
-                ),
-                boxShadow: const [
-                  BoxShadow(
-                    color: AppColors.btnRingShadow,
-                    offset: Offset(0, 2.0),
-                    blurRadius: 0,
-                  ),
-                ],
-              ),
-              padding: const EdgeInsets.all(4.5),
-              child: Container(
-                decoration: BoxDecoration(
-                  color: AppColors.cardWhite,
-                  shape: BoxShape.circle,
-                  border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Color(0xFFE8DAC8),
-                      offset: Offset(0, 1.5),
-                      blurRadius: 0,
-                    ),
-                  ],
-                ),
-                child: Center(
-                  child: Text(
-                    emoji,
-                    style: TextStyle(fontSize: 25.sp),
-                  ),
-                ),
-              ),
-            ),
-          ),
-
-          // Attached 3D Badge: shows $inventoryCount if > 0, else 'FREE'
-          Transform.translate(
-            offset: Offset(0, -6.h),
-            child: Container(
-              padding: EdgeInsets.symmetric(
-                horizontal: hasItems ? 12.w : 10.w,
-                vertical: 3.h,
-              ),
-              decoration: BoxDecoration(
-                color: hasItems ? AppColors.btnFaceBrown : const Color(0xFF1E8216),
-                borderRadius: BorderRadius.circular(14.r),
-                border: Border.all(
-                  color: hasItems ? AppColors.btnBorderBrown : const Color(0xFF146C0B),
-                  width: 1.5,
-                ),
+                color: const Color(0xFFF8FAFC),
+                borderRadius: BorderRadius.circular(16.r),
+                border: Border.all(color: Colors.white, width: 1.5),
                 boxShadow: [
-                  BoxShadow(
-                    color: hasItems ? AppColors.btnShadowBrown : const Color(0xFF0E4B07),
-                    offset: const Offset(0, 1.5),
+                  if (isSpotlighted)
+                    BoxShadow(
+                      color: Colors.amber.withValues(alpha: 0.8),
+                      blurRadius: 18,
+                      spreadRadius: 4,
+                    ),
+                  const BoxShadow(
+                    color: Color(0xFFCBD5E1),
+                    offset: Offset(0, 2.5),
                     blurRadius: 0,
                   ),
-                ],
-              ),
-              child: hasItems
-                  ? Text(
-                      '$inventoryCount',
-                      style: GoogleFonts.fredoka(
-                        fontSize: 12.sp,
-                        fontWeight: FontWeight.w900,
-                        color: Colors.white,
-                        height: 1.0,
-                      ),
-                    )
-                  : Text(
-                      'FREE',
-                      style: GoogleFonts.fredoka(
-                        fontSize: 11.sp,
-                        fontWeight: FontWeight.w900,
-                        color: Colors.white,
-                        height: 1.0,
-                      ),
-                    ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildSpecialActionBtn({
-    required String emoji,
-    required String label,
-    required VoidCallback? onTap,
-    Color? badgeColor,
-    Color? badgeTextColor,
-  }) {
-    return BouncyButton(
-      onTap: onTap,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Container(
-            width: 58.r,
-            height: 58.r,
-            decoration: BoxDecoration(
-              color: AppColors.btnRingBg,
-              shape: BoxShape.circle,
-              border: Border.all(color: AppColors.btnRingBorder, width: 1.8),
-              boxShadow: const [
-                BoxShadow(
-                  color: AppColors.btnRingShadow,
-                  offset: Offset(0, 2.0),
-                  blurRadius: 0,
-                ),
-              ],
-            ),
-            padding: const EdgeInsets.all(4.5),
-            child: Container(
-              decoration: BoxDecoration(
-                color: AppColors.cardWhite,
-                shape: BoxShape.circle,
-                border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                boxShadow: const [
                   BoxShadow(
-                    color: Color(0xFFE8DAC8),
-                    offset: Offset(0, 1.5),
-                    blurRadius: 0,
+                    color: Colors.black.withValues(alpha: 0.15),
+                    offset: const Offset(0, 3),
+                    blurRadius: 5,
                   ),
                 ],
               ),
               child: Center(
-                child: Text(
-                  emoji,
-                  style: TextStyle(fontSize: 24.sp),
+                child: Image.asset(
+                  'assets/icons/icon_hint.png',
+                  width: 38.r,
+                  height: 38.r,
+                  fit: BoxFit.contain,
                 ),
               ),
             ),
-          ),
-          Transform.translate(
-            offset: Offset(0, -6.h),
-            child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 3.h),
+
+            // Attached badge in bottom-right corner:
+            Positioned(
+              bottom: 2.h,
+              right: 0,
+              child: hintCount > 0
+                  ? OrangeCountBadge(count: hintCount)
+                  : GreenPillBadge.coinPrice(coins: 80),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+ 
+  Widget _buildRocketBooster({required int rocketCount}) {
+    final controller = widget.controller;
+
+    return BouncyButton(
+      onTap: () async {
+        if (rocketCount > 0) {
+          controller.useRocket();
+        } else {
+          await BoosterUnlockDialog.show(
+            context,
+            boosterType: BoosterType.rocket,
+            controller: controller,
+          );
+        }
+      },
+      child: SizedBox(
+        width: 66.r,
+        height: 70.r,
+        child: Stack(
+          alignment: Alignment.topCenter,
+          clipBehavior: Clip.none,
+          children: [
+            // White Rounded Square Card (58.r x 58.r)
+            Container(
+              width: 58.r,
+              height: 58.r,
               decoration: BoxDecoration(
-                color: badgeColor ?? AppColors.btnFaceBrown,
-                borderRadius: BorderRadius.circular(14.r),
-                border: Border.all(
-                  color: badgeColor != null ? Colors.transparent : AppColors.btnBorderBrown,
-                  width: 1.4,
-                ),
+                color: const Color(0xFFF8FAFC),
+                borderRadius: BorderRadius.circular(16.r),
+                border: Border.all(color: Colors.white, width: 1.5),
                 boxShadow: [
-                  BoxShadow(
-                    color: badgeColor != null ? badgeColor.withValues(alpha: 0.5) : AppColors.btnShadowBrown,
-                    offset: const Offset(0, 1.5),
+                  const BoxShadow(
+                    color: Color(0xFFCBD5E1),
+                    offset: Offset(0, 2.5),
                     blurRadius: 0,
+                  ),
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: 0.15),
+                    offset: const Offset(0, 3),
+                    blurRadius: 5,
                   ),
                 ],
               ),
-              child: Text(
-                label,
-                style: GoogleFonts.fredoka(
-                  fontSize: 11.sp,
-                  fontWeight: FontWeight.w900,
-                  color: badgeTextColor ?? Colors.white,
-                  height: 1.0,
+              child: Center(
+                child: Image.asset(
+                  'assets/icons/icon_rocket.png',
+                  width: 38.r,
+                  height: 38.r,
+                  fit: BoxFit.contain,
                 ),
               ),
             ),
-          ),
-        ],
+
+            // Attached badge in bottom-right corner:
+            Positioned(
+              bottom: 2.h,
+              right: 0,
+              child: rocketCount > 0
+                  ? OrangeCountBadge(count: rocketCount)
+                  : GreenPillBadge.coinPrice(coins: 240),
+            ),
+          ],
+        ),
       ),
     );
   }
 }
 
-/// Clean, 100% Unified Circular Extra Words Action Button with Punch Bounce Animation
+/// Star Progress / Extra Words circular button matching mockup exactly
 class ExtraWordsButton extends StatefulWidget {
   final int extraCount;
   final VoidCallback? onTap;
@@ -443,15 +306,15 @@ class ExtraWordsButtonState extends State<ExtraWordsButton> with SingleTickerPro
     );
     _scaleAnim = TweenSequence<double>([
       TweenSequenceItem(
-        tween: Tween<double>(begin: 1.0, end: 1.32).chain(CurveTween(curve: Curves.easeOutBack)),
+        tween: Tween<double>(begin: 1.0, end: 1.35).chain(CurveTween(curve: Curves.easeOutBack)),
         weight: 35,
       ),
       TweenSequenceItem(
-        tween: Tween<double>(begin: 1.32, end: 0.92).chain(CurveTween(curve: Curves.easeInOut)),
+        tween: Tween<double>(begin: 1.35, end: 0.90).chain(CurveTween(curve: Curves.easeInOut)),
         weight: 35,
       ),
       TweenSequenceItem(
-        tween: Tween<double>(begin: 0.92, end: 1.0).chain(CurveTween(curve: Curves.easeOut)),
+        tween: Tween<double>(begin: 0.90, end: 1.0).chain(CurveTween(curve: Curves.easeOut)),
         weight: 30,
       ),
     ]).animate(_bounceController);
@@ -469,7 +332,8 @@ class ExtraWordsButtonState extends State<ExtraWordsButton> with SingleTickerPro
 
   @override
   Widget build(BuildContext context) {
-    final bool isReadyToClaim = widget.extraCount >= 10;
+    final progress = ((widget.extraCount % 10) / 10.0).clamp(0.0, 1.0);
+    final displayValue = widget.extraCount;
 
     return AnimatedBuilder(
       animation: _scaleAnim,
@@ -482,124 +346,332 @@ class ExtraWordsButtonState extends State<ExtraWordsButton> with SingleTickerPro
       },
       child: BouncyButton(
         onTap: widget.onTap,
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            // 3D Circular Ring Button with optional Spotlight Halo
-            Container(
-              decoration: widget.isSpotlighted
-                  ? BoxDecoration(
-                      shape: BoxShape.circle,
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.white.withValues(alpha: 0.95),
-                          blurRadius: 18,
-                          spreadRadius: 4,
-                        ),
-                        BoxShadow(
-                          color: const Color(0xFFA855F7).withValues(alpha: 0.75),
-                          blurRadius: 28,
-                          spreadRadius: 8,
-                        ),
-                      ],
-                    )
-                  : null,
-              child: Container(
-                width: 58.r,
-                height: 58.r,
-                decoration: BoxDecoration(
-                  color: AppColors.btnRingBg,
-                  shape: BoxShape.circle,
-                  border: Border.all(
-                    color: widget.isSpotlighted ? Colors.white : AppColors.btnRingBorder,
-                    width: widget.isSpotlighted ? 2.6 : 1.8,
-                  ),
-                  boxShadow: const [
+        child: Container(
+              width: 48.r,
+              height: 48.r,
+              decoration: BoxDecoration(
+                color: const Color(0xFF0F2A66),
+                shape: BoxShape.circle,
+                border: Border.all(color: Colors.white, width: 2.5),
+                boxShadow: [
+                  if (widget.isSpotlighted)
                     BoxShadow(
-                      color: AppColors.btnRingShadow,
-                      offset: Offset(0, 2.0),
-                      blurRadius: 0,
+                      color: Colors.amber.withValues(alpha: 0.8),
+                      blurRadius: 18,
+                      spreadRadius: 4,
                     ),
-                  ],
-                ),
-                padding: const EdgeInsets.all(4.5),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: AppColors.cardWhite,
-                    shape: BoxShape.circle,
-                    border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Color(0xFFE8DAC8),
-                        offset: Offset(0, 1.5),
-                        blurRadius: 0,
-                      ),
-                    ],
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: 0.25),
+                    offset: const Offset(0, 2),
+                    blurRadius: 4,
                   ),
-                  child: Center(
-                    child: Text(
-                      '📖',
-                      style: TextStyle(fontSize: 25.sp),
-                    ),
-                  ),
-                ),
+                ],
               ),
-            ),
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  // Inside green progress arc hugging inner rim of white border
+                  if (progress > 0)
+                    Positioned.fill(
+                      child: Padding(
+                        padding: const EdgeInsets.all(0.8),
+                        child: CustomPaint(
+                          painter: _StarProgressArcPainter(
+                            progress: progress,
+                            color: const Color(0xFF4ADE80),
+                            strokeWidth: 3.5,
+                          ),
+                        ),
+                      ),
+                    ),
 
-            // Attached 3D Status Pill (Shows $extraCount/10 or CLAIM!)
-            Transform.translate(
-              offset: Offset(0, -6.h),
-              child: Container(
-                padding: EdgeInsets.symmetric(
-                  horizontal: isReadyToClaim ? 8.w : 10.w,
-                  vertical: 3.h,
-                ),
-                decoration: BoxDecoration(
-                  gradient: isReadyToClaim
-                      ? const LinearGradient(
-                          colors: [Color(0xFF34D399), Color(0xFF059669)],
-                        )
-                      : null,
-                  color: isReadyToClaim ? null : AppColors.btnFaceBrown,
-                  borderRadius: BorderRadius.circular(14.r),
-                  border: Border.all(
-                    color: isReadyToClaim ? const Color(0xFF047857) : AppColors.btnBorderBrown,
-                    width: 1.4,
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                      color: isReadyToClaim
-                          ? const Color(0x88059669)
-                          : AppColors.btnShadowBrown,
-                      offset: const Offset(0, 1.5),
-                      blurRadius: isReadyToClaim ? 4 : 0,
-                    ),
-                  ],
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    if (isReadyToClaim)
-                      Padding(
-                        padding: EdgeInsets.only(right: 2.w),
-                        child: const Text('🎁', style: TextStyle(fontSize: 10)),
-                      ),
-                    Text(
-                      isReadyToClaim ? 'CLAIM!' : '${widget.extraCount}/10',
-                      style: GoogleFonts.fredoka(
-                        fontSize: 11.sp,
-                        fontWeight: FontWeight.w900,
-                        color: Colors.white,
-                        height: 1.0,
-                      ),
-                    ),
+              // Centered Yellow Star
+              Image.asset(
+                'assets/icons/icon_star.png',
+                width: 28.r,
+                height: 28.r,
+                fit: BoxFit.contain,
+              ),
+
+              // Number with dark navy cartoon outline matching reference exactly
+              Text(
+                '$displayValue',
+                style: GoogleFonts.fredoka(
+                  fontSize: 15.sp,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.white,
+                  shadows: const [
+                    Shadow(offset: Offset(-1.2, -1.2), color: Color(0xFF0F2A66)),
+                    Shadow(offset: Offset(1.2, -1.2), color: Color(0xFF0F2A66)),
+                    Shadow(offset: Offset(-1.2, 1.2), color: Color(0xFF0F2A66)),
+                    Shadow(offset: Offset(1.2, 1.2), color: Color(0xFF0F2A66)),
+                    Shadow(offset: Offset(0, -1.5), color: Color(0xFF0F2A66)),
+                    Shadow(offset: Offset(0, 1.5), color: Color(0xFF0F2A66)),
+                    Shadow(offset: Offset(-1.5, 0), color: Color(0xFF0F2A66)),
+                    Shadow(offset: Offset(1.5, 0), color: Color(0xFF0F2A66)),
                   ],
                 ),
               ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Custom painter for the green progress arc inside the star button rim
+class _StarProgressArcPainter extends CustomPainter {
+  final double progress;
+  final Color color;
+  final double strokeWidth;
+
+  const _StarProgressArcPainter({
+    required this.progress,
+    required this.color,
+    required this.strokeWidth,
+  });
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    if (progress <= 0) return;
+
+    final paint = Paint()
+      ..color = color
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = strokeWidth
+      ..strokeCap = StrokeCap.butt;
+
+    final center = Offset(size.width / 2, size.height / 2);
+    final radius = (size.width - strokeWidth) / 2;
+
+    // Start at -pi / 2 (top / 12 o'clock), sweep clockwise
+    final sweepAngle = 2 * pi * progress.clamp(0.0, 1.0);
+    canvas.drawArc(
+      Rect.fromCircle(center: center, radius: radius),
+      -pi / 2,
+      sweepAngle,
+      false,
+      paint,
+    );
+  }
+
+  @override
+  bool shouldRepaint(covariant _StarProgressArcPainter oldDelegate) {
+    return oldDelegate.progress != progress ||
+        oldDelegate.color != color ||
+        oldDelegate.strokeWidth != strokeWidth;
+  }
+}
+
+/// 3D Vector-rendered Orange Circular Badge for remaining booster counts.
+class OrangeCountBadge extends StatelessWidget {
+  final int count;
+  final double size;
+
+  const OrangeCountBadge({
+    super.key,
+    required this.count,
+    this.size = 25.0,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: size.r,
+      height: size.r,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        gradient: const LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color(0xFFFCB63D), // top sunny amber
+            Color(0xFFE58826), // bottom warm orange
+          ],
+        ),
+        border: Border.all(
+          color: const Color(0xFF8B3612), // cartoon warm russet outline
+          width: 1.2,
+        ),
+        boxShadow: const [
+          BoxShadow(
+            color: Color(0xFF9E4216), // 3D bottom bevel
+            offset: Offset(0, 1.5),
+            blurRadius: 0,
+          ),
+          BoxShadow(
+            color: Color(0x33000000),
+            offset: Offset(0, 2),
+            blurRadius: 2.5,
+          ),
+        ],
+      ),
+      child: Center(
+        child: Text(
+          '$count',
+          style: GoogleFonts.fredoka(
+            fontSize: (size * 0.54).sp,
+            fontWeight: FontWeight.w900,
+            color: Colors.white,
+            height: 1.0,
+            shadows: const [
+              Shadow(offset: Offset(-0.8, -0.8), color: Color(0xFF1E3A6E)),
+              Shadow(offset: Offset(0.8, -0.8), color: Color(0xFF1E3A6E)),
+              Shadow(offset: Offset(-0.8, 0.8), color: Color(0xFF1E3A6E)),
+              Shadow(offset: Offset(0.8, 0.8), color: Color(0xFF1E3A6E)),
+              Shadow(offset: Offset(0, 1.2), color: Color(0xFF1E3A6E)),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// 3D Vector-rendered Green Pill Badge for booster prices and action buttons.
+class GreenPillBadge extends StatelessWidget {
+  final Widget child;
+  final EdgeInsetsGeometry? padding;
+
+  const GreenPillBadge({
+    super.key,
+    required this.child,
+    this.padding,
+  });
+
+  /// Factory constructor for displaying a coin price (e.g. [coin] 80 or [coin] 240)
+  factory GreenPillBadge.coinPrice({
+    Key? key,
+    required int coins,
+    double? coinSize,
+    double? fontSize,
+  }) {
+    return GreenPillBadge(
+      key: key,
+      padding: EdgeInsets.symmetric(horizontal: 6.w, vertical: 2.h),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Image.asset(
+            'assets/icons/icon_coin.png',
+            width: coinSize ?? 13.5.r,
+            height: coinSize ?? 13.5.r,
+          ),
+          SizedBox(width: 2.5.w),
+          Text(
+            '$coins',
+            style: GoogleFonts.fredoka(
+              fontSize: fontSize ?? 12.sp,
+              fontWeight: FontWeight.w900,
+              color: Colors.white,
+              height: 1.0,
+              shadows: const [
+                Shadow(
+                  color: Color(0xFF238E13),
+                  offset: Offset(0, 1.0),
+                  blurRadius: 0,
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Factory constructor for displaying text (e.g. 'GIFT')
+  factory GreenPillBadge.text({
+    Key? key,
+    required String text,
+    double? fontSize,
+    EdgeInsetsGeometry? padding,
+  }) {
+    return GreenPillBadge(
+      key: key,
+      padding: padding ?? EdgeInsets.symmetric(horizontal: 7.w, vertical: 2.5.h),
+      child: Text(
+        text,
+        style: GoogleFonts.fredoka(
+          fontSize: fontSize ?? 10.sp,
+          fontWeight: FontWeight.w900,
+          color: Colors.white,
+          letterSpacing: 0.5,
+          height: 1.0,
+          shadows: const [
+            Shadow(
+              color: Color(0xFF238E13),
+              offset: Offset(0, 1.0),
+              blurRadius: 0,
             ),
           ],
         ),
       ),
     );
   }
+
+  /// Factory constructor for displaying a count number (e.g. 1, 2, 3...)
+  factory GreenPillBadge.count({
+    Key? key,
+    required int count,
+    double? fontSize,
+  }) {
+    return GreenPillBadge(
+      key: key,
+      padding: EdgeInsets.symmetric(horizontal: 7.w, vertical: 2.5.h),
+      child: Text(
+        '$count',
+        style: GoogleFonts.fredoka(
+          fontSize: fontSize ?? 12.sp,
+          fontWeight: FontWeight.w900,
+          color: Colors.white,
+          height: 1.0,
+          shadows: const [
+            Shadow(
+              color: Color(0xFF238E13),
+              offset: Offset(0, 1.0),
+              blurRadius: 0,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: padding ?? EdgeInsets.symmetric(horizontal: 6.w, vertical: 2.h),
+      decoration: BoxDecoration(
+        gradient: const LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color(0xFF6DE853), // bright fresh lime-green
+            Color(0xFF45D028), // warm vibrant grass-green
+          ],
+        ),
+        borderRadius: BorderRadius.circular(100),
+        border: Border.all(
+          color: const Color(0xFF3AB81E), // natural soft green border, NOT dark forest green
+          width: 1.0,
+        ),
+        boxShadow: const [
+          BoxShadow(
+            color: Color(0xFF238E13), // 3D bottom bevel
+            offset: Offset(0, 1.6),
+            blurRadius: 0,
+          ),
+          BoxShadow(
+            color: Color(0x2A000000),
+            offset: Offset(0, 1.5),
+            blurRadius: 2,
+          ),
+        ],
+      ),
+      child: child,
+    );
+  }
 }
+

@@ -33,8 +33,7 @@ class TileWidget extends StatelessWidget {
       );
     }
 
-    final double tileSize = size * 0.94;
-    final theme = AppColors.getTileThemeForPosition(tile.row, tile.col);
+    final double tileSize = size * 0.95;
 
     // 1. Locked Obstacle Tile (3D Frosted Crystal Ice & Lock)
     if (tile.isObstacleLocked) {
@@ -122,25 +121,33 @@ class TileWidget extends StatelessWidget {
         ? AppColors.btnFaceBrown
         : (isHinted
             ? AppColors.honeyGold
-            : (isDimmedTile ? const Color(0xFF2D2E38) : theme.face));
+            : (isHighlighted
+                ? const Color(0xFFCA7CFB)
+                : (isDimmedTile ? const Color(0xFF2D2E38) : const Color(0xFFFFF3E3))));
 
     final Color bevelColor = isSelected
         ? AppColors.btnShadowBrown
         : (isHinted
             ? AppColors.goldAccent
-            : (isDimmedTile ? const Color(0xFF1F2028) : theme.bevel));
+            : (isHighlighted
+                ? const Color(0xFFA855F7)
+                : (isDimmedTile ? const Color(0xFF1F2028) : const Color(0xFFD4A574))));
 
     final Color textColor = isSelected
         ? Colors.white
         : (isHinted
             ? Colors.white
-            : (isDimmedTile ? const Color(0xFF64748B) : AppColors.textDark));
+            : (isHighlighted
+                ? Colors.white
+                : (isDimmedTile ? const Color(0xFF64748B) : const Color(0xFF2C2523))));
 
     final Color borderColor = isCountSpotlight
         ? const Color(0xFFE11D48)
         : (isSelected
             ? AppColors.btnBorderBrown
-            : (isDimmedTile ? const Color(0xFF333544) : theme.bevel));
+            : (isHighlighted
+                ? const Color(0xFFF3E8FF)
+                : (isDimmedTile ? const Color(0xFF333544) : const Color(0xFFDEC5AE))));
 
     Widget tileBox = AnimatedOpacity(
       duration: const Duration(milliseconds: 200),
@@ -150,10 +157,10 @@ class TileWidget extends StatelessWidget {
         height: tileSize,
         decoration: BoxDecoration(
           color: faceColor,
-          borderRadius: BorderRadius.circular(18),
+          borderRadius: BorderRadius.circular(16),
           border: Border.all(
             color: borderColor,
-            width: (isSelected || isCountSpotlight) ? 2.5 : 1.5,
+            width: (isSelected || isCountSpotlight || isHighlighted) ? 2.2 : 1.2,
           ),
           boxShadow: [
             if (isCountSpotlight)
@@ -161,6 +168,12 @@ class TileWidget extends StatelessWidget {
                 color: Color(0x66E11D48),
                 blurRadius: 10,
                 spreadRadius: 2,
+              ),
+            if (isHighlighted)
+              const BoxShadow(
+                color: Color(0x66CA7CFB),
+                blurRadius: 8,
+                spreadRadius: 1,
               ),
             // 3D Extrusion Bevel Shadow
             BoxShadow(
@@ -178,7 +191,7 @@ class TileWidget extends StatelessWidget {
         ),
             child: Stack(
               children: [
-                // Center Bold Letter with 3D Drop
+                // Center Bold Letter
                 Center(
                   child: Padding(
                     padding: const EdgeInsets.only(bottom: 2),
@@ -198,13 +211,15 @@ class TileWidget extends StatelessWidget {
                                   blurRadius: 0,
                                 ),
                               ]
-                            : [
-                                Shadow(
-                                  color: Colors.white.withValues(alpha: 0.8),
-                                  offset: const Offset(0, 1.0),
-                                  blurRadius: 0,
-                                ),
-                              ],
+                            : (isHighlighted
+                                ? [
+                                    const Shadow(
+                                      color: Color(0xFF7E22CE),
+                                      offset: Offset(0, 1.5),
+                                      blurRadius: 0,
+                                    ),
+                                  ]
+                                : null),
                       ),
                     ),
                   ),
@@ -213,8 +228,8 @@ class TileWidget extends StatelessWidget {
                 // Subscript Tile Usage Badge (If > 0)
                 if (tile.count > 0)
                   Positioned(
-                    bottom: 2,
-                    right: 2,
+                    bottom: isCountSpotlight ? 2 : 4,
+                    right: isCountSpotlight ? 2 : 6,
                     child: isCountSpotlight
                         ? Container(
                             width: size * 0.36,
@@ -243,30 +258,15 @@ class TileWidget extends StatelessWidget {
                               ),
                             ),
                           )
-                        : Container(
-                            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
-                            decoration: BoxDecoration(
+                        : Text(
+                            '${tile.count}',
+                            style: GoogleFonts.fredoka(
+                              fontSize: size * 0.22,
+                              fontWeight: FontWeight.w900,
                               color: isSelected
-                                  ? Colors.black.withValues(alpha: 0.20)
-                                  : const Color(0xFFEADBC8).withValues(alpha: 0.50),
-                              borderRadius: BorderRadius.circular(6),
-                              border: Border.all(
-                                color: isSelected
-                                    ? Colors.white.withValues(alpha: 0.5)
-                                    : AppColors.borderDark.withValues(alpha: 0.35),
-                                width: 1.0,
-                              ),
-                            ),
-                            child: Text(
-                              '${tile.count}',
-                              style: GoogleFonts.fredoka(
-                                fontSize: size * 0.21,
-                                fontWeight: FontWeight.w800,
-                                color: isSelected
-                                    ? Colors.white
-                                    : AppColors.textDark.withValues(alpha: 0.85),
-                                height: 1.0,
-                              ),
+                                  ? Colors.white
+                                  : const Color(0xFF2C2523),
+                              height: 1.0,
                             ),
                           ),
                   ),

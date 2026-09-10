@@ -4,8 +4,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../services/game_storage.dart';
-import '../../theme/app_theme.dart';
-import '../../widgets/common/game_button.dart';
+import 'bouncy_button.dart';
 
 /// 3D Animated Hand Guide moving over the tiles inside the board with active trail & tile illumination
 class TutorialHandGuide extends StatefulWidget {
@@ -98,7 +97,7 @@ class _TutorialHandGuideState extends State<TutorialHandGuide> with SingleTicker
           return Stack(
             clipBehavior: Clip.none,
             children: [
-              // 1. Highlight visited tiles with warm glowing face
+              // 1. Highlight visited tiles with lavender glowing face (matching screenshot 1)
               ...visitedSubpath.map((pt) {
                 return Positioned(
                   left: pt.x * widget.tileSize + 3,
@@ -106,15 +105,15 @@ class _TutorialHandGuideState extends State<TutorialHandGuide> with SingleTicker
                   width: widget.tileSize - 6,
                   height: widget.tileSize - 6,
                   child: Opacity(
-                    opacity: handOpacity * 0.45,
+                    opacity: handOpacity * 0.55,
                     child: Container(
                       decoration: BoxDecoration(
-                        color: AppColors.btnFaceBrown,
+                        color: const Color(0xFFCA7CFB),
                         borderRadius: BorderRadius.circular(16),
                         border: Border.all(color: Colors.white, width: 2.0),
                         boxShadow: const [
                           BoxShadow(
-                            color: Color(0x66BA805D),
+                            color: Color(0x66CA7CFB),
                             blurRadius: 8,
                             spreadRadius: 2,
                           ),
@@ -125,7 +124,7 @@ class _TutorialHandGuideState extends State<TutorialHandGuide> with SingleTicker
                 );
               }),
 
-              // 2. Animated Swipe Trail line connecting visited points to current hand fingertip
+              // 2. Animated Lavender Swipe Trail line connecting visited points to hand tip
               CustomPaint(
                 painter: _TutorialTrailPainter(
                   path: widget.path,
@@ -146,12 +145,12 @@ class _TutorialHandGuideState extends State<TutorialHandGuide> with SingleTicker
                     width: 36.r,
                     height: 36.r,
                     decoration: BoxDecoration(
-                      color: AppColors.btnFaceBrown.withValues(alpha: 0.4),
+                      color: const Color(0xFFCA7CFB).withValues(alpha: 0.45),
                       shape: BoxShape.circle,
                       border: Border.all(color: Colors.white, width: 2.5),
                       boxShadow: const [
                         BoxShadow(
-                          color: Color(0x66BA805D),
+                          color: Color(0x66CA7CFB),
                           blurRadius: 10,
                           spreadRadius: 2,
                         ),
@@ -161,30 +160,15 @@ class _TutorialHandGuideState extends State<TutorialHandGuide> with SingleTicker
                 ),
               ),
 
-              // 4. Hand Cursor Icon (👆)
+              // 4. Stylized Cartoon Glove Hand Cursor
               Positioned(
-                left: currentOffset.dx - 12.r,
-                top: currentOffset.dy - 6.r,
+                left: currentOffset.dx - 14.r,
+                top: currentOffset.dy - 12.r,
                 child: Opacity(
                   opacity: handOpacity,
-                  child: Transform.rotate(
-                    angle: -0.2,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        boxShadow: [
-                          BoxShadow(
-                            color: Colors.black.withValues(alpha: 0.3),
-                            offset: const Offset(2, 4),
-                            blurRadius: 6,
-                          ),
-                        ],
-                      ),
-                      child: Text(
-                        '👆',
-                        style: TextStyle(fontSize: 42.sp),
-                      ),
-                    ),
+                  child: CustomPaint(
+                    size: Size(46.r, 46.r),
+                    painter: const _CartoonGlovePainter(),
                   ),
                 ),
               ),
@@ -194,6 +178,90 @@ class _TutorialHandGuideState extends State<TutorialHandGuide> with SingleTicker
       ),
     );
   }
+}
+
+class _CartoonGlovePainter extends CustomPainter {
+  const _CartoonGlovePainter();
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final w = size.width;
+    final h = size.height;
+
+    // 1. Soft drop shadow
+    final shadowPaint = Paint()
+      ..color = const Color(0x44000000)
+      ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 3.5);
+
+    final cuffPath = Path()
+      ..addOval(Rect.fromCenter(
+        center: Offset(w * 0.68, h * 0.74),
+        width: w * 0.40,
+        height: h * 0.28,
+      ));
+
+    final glovePath = Path()
+      ..moveTo(w * 0.16, h * 0.14) // Fingertip pointing up-left
+      ..cubicTo(w * 0.10, h * 0.08, w * 0.24, h * 0.02, w * 0.32, h * 0.10)
+      ..lineTo(w * 0.48, h * 0.30) // Index finger base
+      ..cubicTo(w * 0.64, h * 0.24, w * 0.76, h * 0.34, w * 0.73, h * 0.46) // Middle
+      ..cubicTo(w * 0.82, h * 0.48, w * 0.82, h * 0.62, w * 0.70, h * 0.70) // Ring & pinky
+      ..lineTo(w * 0.58, h * 0.76) // Wrist outer
+      ..lineTo(w * 0.42, h * 0.66) // Wrist inner
+      ..cubicTo(w * 0.30, h * 0.60, w * 0.22, h * 0.48, w * 0.26, h * 0.38) // Thumb
+      ..cubicTo(w * 0.28, h * 0.32, w * 0.38, h * 0.34, w * 0.38, h * 0.42)
+      ..lineTo(w * 0.28, h * 0.26)
+      ..close();
+
+    canvas.drawPath(glovePath.shift(const Offset(2.0, 3.5)), shadowPaint);
+    canvas.drawPath(cuffPath.shift(const Offset(2.0, 3.5)), shadowPaint);
+
+    // 2. Glove white body
+    final gloveFill = Paint()
+      ..color = Colors.white
+      ..style = PaintingStyle.fill;
+    canvas.drawPath(glovePath, gloveFill);
+
+    // 3. Crisp outline
+    final strokePaint = Paint()
+      ..color = const Color(0xFFCBD5E1)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 2.0
+      ..strokeJoin = StrokeJoin.round;
+    canvas.drawPath(glovePath, strokePaint);
+
+    // 4. Finger creases
+    final creasePaint = Paint()
+      ..color = const Color(0xFF94A3B8)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1.6
+      ..strokeCap = StrokeCap.round;
+    canvas.drawLine(Offset(w * 0.48, h * 0.38), Offset(w * 0.60, h * 0.40), creasePaint);
+    canvas.drawLine(Offset(w * 0.52, h * 0.50), Offset(w * 0.64, h * 0.52), creasePaint);
+
+    // 5. Light cyan-blue 3D rolled cuff
+    final cuffFill = Paint()
+      ..color = const Color(0xFFE0F2FE)
+      ..style = PaintingStyle.fill;
+    canvas.drawPath(cuffPath, cuffFill);
+
+    final cuffBorder = Paint()
+      ..color = const Color(0xFF7DD3FC)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 2.0;
+    canvas.drawPath(cuffPath, cuffBorder);
+
+    final cuffInner = Path()
+      ..addOval(Rect.fromCenter(
+        center: Offset(w * 0.68, h * 0.74),
+        width: w * 0.24,
+        height: h * 0.16,
+      ));
+    canvas.drawPath(cuffInner, Paint()..color = const Color(0xFFBAE6FD));
+  }
+
+  @override
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }
 
 class _TutorialTrailPainter extends CustomPainter {
@@ -216,14 +284,14 @@ class _TutorialTrailPainter extends CustomPainter {
     if (path.isEmpty || opacity <= 0) return;
 
     final paintGlow = Paint()
-      ..color = const Color(0x88BA805D).withValues(alpha: 0.5 * opacity)
+      ..color = const Color(0xFFCA7CFB).withValues(alpha: 0.55 * opacity)
       ..strokeWidth = 14.0
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
       ..style = PaintingStyle.stroke;
 
     final paintCore = Paint()
-      ..color = Colors.white.withValues(alpha: 0.9 * opacity)
+      ..color = Colors.white.withValues(alpha: 0.95 * opacity)
       ..strokeWidth = 5.0
       ..strokeCap = StrokeCap.round
       ..strokeJoin = StrokeJoin.round
@@ -247,6 +315,118 @@ class _TutorialTrailPainter extends CustomPainter {
   bool shouldRepaint(covariant _TutorialTrailPainter oldDelegate) => true;
 }
 
+/// Unified In-Game Speech Bubble Card using btn_tutorial asset
+class TutorialSpeechBubble extends StatelessWidget {
+  final List<InlineSpan> spans;
+  final Widget? actionButton;
+  final double maxWidth;
+
+  const TutorialSpeechBubble({
+    super.key,
+    required this.spans,
+    this.actionButton,
+    this.maxWidth = 310,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        // Speech Bubble Pill (using btn_tutorial.png)
+        Container(
+          constraints: BoxConstraints(
+            minWidth: 260.w,
+            maxWidth: maxWidth.w,
+            minHeight: 68.h,
+          ),
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage('assets/images/btn_tutorial.png'),
+              fit: BoxFit.fill,
+            ),
+          ),
+          padding: EdgeInsets.symmetric(horizontal: 26.w, vertical: 14.h),
+          alignment: Alignment.center,
+          child: RichText(
+            textAlign: TextAlign.center,
+            text: TextSpan(
+              style: GoogleFonts.fredoka(
+                fontSize: 16.sp,
+                fontWeight: FontWeight.w700,
+                color: const Color(0xFF342820),
+                height: 1.35,
+              ),
+              children: spans,
+            ),
+          ),
+        ),
+        if (actionButton != null) ...[
+          SizedBox(height: 10.h),
+          actionButton!,
+        ],
+      ],
+    )
+        .animate()
+        .scale(
+          begin: const Offset(0.8, 0.8),
+          end: const Offset(1.0, 1.0),
+          duration: 320.ms,
+          curve: Curves.easeOutBack,
+        )
+        .fadeIn(duration: 220.ms);
+  }
+}
+
+/// "Got it!" 3D Green CTA Button using btn_green asset
+class TutorialGotItButton extends StatelessWidget {
+  final VoidCallback onTap;
+  final String text;
+
+  const TutorialGotItButton({
+    super.key,
+    required this.onTap,
+    this.text = 'Got it!',
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return BouncyButton(
+      onTap: onTap,
+      child: Container(
+        width: 120.w,
+        height: 44.h,
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/images/btn_green.png'),
+            fit: BoxFit.fill,
+          ),
+        ),
+        alignment: Alignment.center,
+        child: Padding(
+          padding: EdgeInsets.only(bottom: 3.h),
+          child: Text(
+            text,
+            style: GoogleFonts.fredoka(
+              fontSize: 18.sp,
+              fontWeight: FontWeight.w900,
+              color: Colors.white,
+              letterSpacing: 0.5,
+              shadows: const [
+                Shadow(
+                  color: Color(0xFF136B10),
+                  offset: Offset(0, 1.8),
+                  blurRadius: 0,
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 /// Centered Floating Tooltip Card for Swipe Guidance (Level 1, Level 4, Fail-Safe)
 class SwipeTutorialCard extends StatelessWidget {
   final List<InlineSpan> spans;
@@ -259,50 +439,15 @@ class SwipeTutorialCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: const Alignment(0, -0.05),
+      alignment: const Alignment(0, -0.22),
       child: IgnorePointer(
-        child: Container(
-          margin: EdgeInsets.symmetric(horizontal: 28.w),
-          padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 14.h),
-          decoration: BoxDecoration(
-            color: AppColors.cardWhite,
-            borderRadius: BorderRadius.circular(24.r),
-            border: Border.all(color: AppColors.borderSubtle, width: 2.0),
-            boxShadow: const [
-              BoxShadow(
-                color: Color(0x33000000),
-                offset: Offset(0, 6.0),
-                blurRadius: 16,
-              ),
-              BoxShadow(
-                color: Color(0xFFD4C2AE),
-                offset: Offset(0, 3.5),
-                blurRadius: 0,
-              ),
-            ],
-          ),
-          child: RichText(
-            textAlign: TextAlign.center,
-            text: TextSpan(
-              style: GoogleFonts.fredoka(
-                fontSize: 16.sp,
-                fontWeight: FontWeight.w700,
-                color: AppColors.textDark,
-                height: 1.35,
-              ),
-              children: spans,
-            ),
-          ),
-        )
-            .animate()
-            .scale(begin: const Offset(0.8, 0.8), end: const Offset(1.0, 1.0), duration: 300.ms, curve: Curves.easeOutBack)
-            .fadeIn(duration: 200.ms),
+        child: TutorialSpeechBubble(spans: spans),
       ),
     );
   }
 }
 
-/// Modal Dialog explaining letter usage count with spotlight emphasis on the real board tile
+/// Modal Dialog explaining letter usage count with spotlight emphasis on the real board tile (Level 2)
 class TileCountTutorialModal extends StatelessWidget {
   final String? sampleLetter;
   final int? count;
@@ -318,137 +463,34 @@ class TileCountTutorialModal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: const Alignment(0, -0.05),
-      child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 32.w),
-        padding: EdgeInsets.symmetric(horizontal: 24.w, vertical: 22.h),
-        decoration: BoxDecoration(
-          color: AppColors.cardWhite,
-          borderRadius: BorderRadius.circular(28.r),
-          border: Border.all(color: AppColors.borderSubtle, width: 2.0),
-          boxShadow: const [
-            BoxShadow(
-              color: Color(0x33000000),
-              offset: Offset(0, 8.0),
-              blurRadius: 20,
-              spreadRadius: 2,
+      alignment: const Alignment(0, -0.22),
+      child: TutorialSpeechBubble(
+        spans: const [
+          TextSpan(text: 'This '),
+          TextSpan(
+            text: 'number',
+            style: TextStyle(
+              color: Color(0xFFDD4C8E),
+              fontWeight: FontWeight.w900,
             ),
-            BoxShadow(
-              color: Color(0xFFD4C2AE),
-              offset: Offset(0, 4.0),
-              blurRadius: 0,
-            ),
-          ],
+          ),
+          TextSpan(text: ' shows\neach letter\'s usage count.'),
+        ],
+        actionButton: TutorialGotItButton(
+          onTap: () async {
+            await GameStorage.setCountTutorialShown(true);
+            onDismiss();
+          },
         ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            // Explanation Text with Highlighted "number"
-            RichText(
-              textAlign: TextAlign.center,
-              text: TextSpan(
-                style: GoogleFonts.fredoka(
-                  fontSize: 17.sp,
-                  fontWeight: FontWeight.w700,
-                  color: AppColors.textDark,
-                  height: 1.4,
-                ),
-                children: const [
-                  TextSpan(text: 'This '),
-                  TextSpan(
-                    text: 'number',
-                    style: TextStyle(
-                      color: Color(0xFFE11D48),
-                      fontWeight: FontWeight.w900,
-                    ),
-                  ),
-                  TextSpan(text: ' shows\neach letter\'s usage count.'),
-                ],
-              ),
-            ),
-            if (sampleLetter != null && count != null) ...[
-              SizedBox(height: 14.h),
-              Container(
-                width: 56.r,
-                height: 56.r,
-                decoration: BoxDecoration(
-                  color: AppColors.cardWhite,
-                  borderRadius: BorderRadius.circular(16.r),
-                  border: Border.all(color: AppColors.borderSubtle, width: 2.0),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Color(0xFFD4C2AE),
-                      offset: Offset(0, 3.0),
-                      blurRadius: 0,
-                    ),
-                  ],
-                ),
-                child: Stack(
-                  children: [
-                    Center(
-                      child: Text(
-                        sampleLetter!,
-                        style: GoogleFonts.fredoka(
-                          fontSize: 26.sp,
-                          fontWeight: FontWeight.w900,
-                          color: AppColors.textDark,
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      right: 4.w,
-                      bottom: 4.h,
-                      child: Container(
-                        width: 20.r,
-                        height: 20.r,
-                        decoration: const BoxDecoration(
-                          color: Color(0xFFE11D48),
-                          shape: BoxShape.circle,
-                        ),
-                        child: Center(
-                          child: Text(
-                            '$count',
-                            style: GoogleFonts.fredoka(
-                              fontSize: 12.sp,
-                              fontWeight: FontWeight.w900,
-                              color: Colors.white,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-            SizedBox(height: 18.h),
-
-            // "Got it!" 3D Green CTA Button
-            SizedBox(
-              width: 140.w,
-              child: GameButton.success(
-                text: 'Got it!',
-                size: GameButtonSize.medium,
-                onTap: () async {
-                  await GameStorage.setCountTutorialShown(true);
-                  onDismiss();
-                },
-              ),
-            ),
-          ],
-        ),
-      )
-          .animate()
-          .scale(begin: const Offset(0.7, 0.7), end: const Offset(1.0, 1.0), duration: 350.ms, curve: Curves.easeOutBack)
-          .fadeIn(duration: 250.ms),
+      ),
     );
   }
 }
 
-/// 3D Animated White Arrow bouncing vertically
+/// 3D Animated White/Cyan Arrow bouncing vertically (Level 5 & Level 7)
 class TutorialArrowPointer extends StatefulWidget {
   final double size;
-  const TutorialArrowPointer({super.key, this.size = 36});
+  const TutorialArrowPointer({super.key, this.size = 38});
 
   @override
   State<TutorialArrowPointer> createState() => _TutorialArrowPointerState();
@@ -489,13 +531,15 @@ class _TutorialArrowPointerState extends State<TutorialArrowPointer>
       },
       child: CustomPaint(
         size: Size(widget.size, widget.size * 1.1),
-        painter: _TutorialArrowCustomPainter(),
+        painter: const _TutorialArrowCustomPainter(),
       ),
     );
   }
 }
 
 class _TutorialArrowCustomPainter extends CustomPainter {
+  const _TutorialArrowCustomPainter();
+
   @override
   void paint(Canvas canvas, Size size) {
     final w = size.width;
@@ -515,23 +559,23 @@ class _TutorialArrowCustomPainter extends CustomPainter {
     canvas.drawPath(
       path.shift(const Offset(0, 3.5)),
       Paint()
-        ..color = const Color(0xFFC7B198)
+        ..color = const Color(0xFF8DBCC7)
         ..style = PaintingStyle.fill,
     );
 
-    // White surface face
+    // Cyan-white surface face (matching screenshot 2)
     canvas.drawPath(
       path,
       Paint()
-        ..color = const Color(0xFFFFFDF9)
+        ..color = const Color(0xFFF1FCFE)
         ..style = PaintingStyle.fill,
     );
 
-    // Subtle edge border
+    // 3D edge border
     canvas.drawPath(
       path,
       Paint()
-        ..color = const Color(0xFFE5D5C5)
+        ..color = const Color(0xFFBBE5EE)
         ..style = PaintingStyle.stroke
         ..strokeWidth = 2.0
         ..strokeJoin = StrokeJoin.round,
@@ -542,71 +586,7 @@ class _TutorialArrowCustomPainter extends CustomPainter {
   bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }
 
-/// Unified In-Game Speech Bubble Card
-class TutorialSpeechBubble extends StatelessWidget {
-  final List<InlineSpan> spans;
-  final Widget? actionButton;
-  final double maxWidth;
-
-  const TutorialSpeechBubble({
-    super.key,
-    required this.spans,
-    this.actionButton,
-    this.maxWidth = 280,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      constraints: BoxConstraints(maxWidth: maxWidth.w),
-      padding: EdgeInsets.symmetric(horizontal: 22.w, vertical: 16.h),
-      decoration: BoxDecoration(
-        color: AppColors.cardWhite,
-        borderRadius: BorderRadius.circular(26.r),
-        border: Border.all(color: AppColors.borderSubtle, width: 2.0),
-        boxShadow: const [
-          BoxShadow(
-            color: Color(0x33000000),
-            offset: Offset(0, 8.0),
-            blurRadius: 20,
-            spreadRadius: 2,
-          ),
-          BoxShadow(
-            color: Color(0xFFD4C2AE),
-            offset: Offset(0, 4.0),
-            blurRadius: 0,
-          ),
-        ],
-      ),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          RichText(
-            textAlign: TextAlign.center,
-            text: TextSpan(
-              style: GoogleFonts.fredoka(
-                fontSize: 16.sp,
-                fontWeight: FontWeight.w600,
-                color: AppColors.textDark,
-                height: 1.4,
-              ),
-              children: spans,
-            ),
-          ),
-          if (actionButton != null) ...[
-            SizedBox(height: 14.h),
-            actionButton!,
-          ],
-        ],
-      ),
-    )
-        .animate()
-        .scale(begin: const Offset(0.7, 0.7), end: const Offset(1.0, 1.0), duration: 350.ms, curve: Curves.easeOutBack)
-        .fadeIn(duration: 250.ms);
-  }
-}
-
-/// Level 5 Hint Booster Tutorial Overlay
+/// Level 5 Hint Booster Tutorial Overlay (matching screenshot 2)
 class HintBoosterTutorialOverlay extends StatelessWidget {
   final VoidCallback onDismiss;
 
@@ -615,7 +595,7 @@ class HintBoosterTutorialOverlay extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: const Alignment(0, -0.05),
+      alignment: const Alignment(0, -0.18),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
@@ -623,28 +603,23 @@ class HintBoosterTutorialOverlay extends StatelessWidget {
             spans: const [
               TextSpan(text: 'If you get stuck\ntry tapping '),
               TextSpan(
-                text: '"Hint Button"',
+                text: '“Hint Button”',
                 style: TextStyle(
-                  color: Color(0xFFE11D48),
+                  color: Color(0xFF8F34D0),
                   fontWeight: FontWeight.w900,
                 ),
               ),
               TextSpan(text: '.'),
             ],
-            actionButton: SizedBox(
-              width: 140.w,
-              child: GameButton.success(
-                text: 'Got it!',
-                size: GameButtonSize.medium,
-                onTap: () async {
-                  await GameStorage.setHintTutorialShown(true);
-                  onDismiss();
-                },
-              ),
+            actionButton: TutorialGotItButton(
+              onTap: () async {
+                await GameStorage.setHintTutorialShown(true);
+                onDismiss();
+              },
             ),
           ),
-          SizedBox(height: 20.h),
-          const TutorialArrowPointer(size: 38),
+          SizedBox(height: 38.h),
+          const TutorialArrowPointer(size: 40),
         ],
       ),
     );
@@ -660,37 +635,32 @@ class ExtraWordsTutorialOverlay extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Align(
-      alignment: const Alignment(0, -0.05),
+      alignment: const Alignment(0, -0.18),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
           TutorialSpeechBubble(
             spans: const [
               TextSpan(
-                text: '"Extra Words"',
+                text: '“Extra Words”',
                 style: TextStyle(
-                  color: Color(0xFF9333EA),
+                  color: Color(0xFF8F34D0),
                   fontWeight: FontWeight.w900,
                 ),
               ),
               TextSpan(text: ' found are\nlisted in this section.'),
             ],
-            actionButton: SizedBox(
-              width: 140.w,
-              child: GameButton.success(
-                text: 'Got it!',
-                size: GameButtonSize.medium,
-                onTap: () async {
-                  await GameStorage.setExtraWordsTutorialShown(true);
-                  onDismiss();
-                },
-              ),
+            actionButton: TutorialGotItButton(
+              onTap: () async {
+                await GameStorage.setExtraWordsTutorialShown(true);
+                onDismiss();
+              },
             ),
           ),
-          SizedBox(height: 20.h),
+          SizedBox(height: 24.h),
           Transform.rotate(
             angle: 0.35,
-            child: const TutorialArrowPointer(size: 38),
+            child: const TutorialArrowPointer(size: 40),
           ),
         ],
       ),
