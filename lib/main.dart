@@ -19,11 +19,9 @@ void main() async {
     DeviceOrientation.portraitDown,
   ]);
 
-  SystemChrome.setSystemUIOverlayStyle(
-    const SystemUiOverlayStyle(
-      statusBarColor: Colors.transparent,
-      statusBarIconBrightness: Brightness.light,
-    ),
+  // Enable immersive sticky mode: completely hide top status bar and bottom navigation bar on all devices
+  await SystemChrome.setEnabledSystemUIMode(
+    SystemUiMode.immersiveSticky,
   );
 
   runApp(const WordTilesApp());
@@ -59,6 +57,7 @@ class _WordTilesAppState extends State<WordTilesApp> with WidgetsBindingObserver
     } else if (state == AppLifecycleState.resumed) {
       AudioManager.resumeBgm();
       AdsManager.handleAppResume();
+      SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
     }
   }
 

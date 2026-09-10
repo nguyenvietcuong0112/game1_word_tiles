@@ -13,15 +13,14 @@ import '../services/level_loader.dart';
 import '../theme/app_theme.dart';
 import '../utils/game_transitions.dart';
 import '../widgets/common/game_button.dart';
-import '../widgets/common/game_dialog.dart';
 import '../widgets/common/game_scaffold.dart';
 import 'level_select_screen.dart';
-import 'settings_screen.dart';
 import 'widgets/board_widget.dart';
 import 'widgets/booster_bar.dart';
 import 'widgets/bouncy_button.dart';
 import 'widgets/extra_word_fly_effect.dart';
 import 'widgets/extra_words_dialog.dart';
+import 'widgets/settings_dialog.dart';
 import 'widgets/shop_dialog.dart';
 import 'widgets/target_words_bar.dart';
 import 'widgets/tutorial_overlay.dart';
@@ -161,14 +160,16 @@ class _GameScreenState extends State<GameScreen> {
 
   void _openSettings() {
     AudioManager.playTileSelect(pitchIndex: 4);
-    Navigator.push(
-      context,
-      GamePageRoute(
-        child: SettingsScreen(
-          onLanguageChanged: () {
-            _loadGame();
-          },
-        ),
+    showGameDialog(
+      context: context,
+      builder: (context) => SettingsDialog(
+        isHomeScreen: false,
+        onRestartLevel: () {
+          _replayLevel();
+        },
+        onGoHome: () {
+          Navigator.of(context).popUntil((route) => route.isFirst);
+        },
       ),
     );
   }
@@ -211,22 +212,6 @@ class _GameScreenState extends State<GameScreen> {
         _currentLevelIndex = selectedIndex;
       });
       _loadGame();
-    }
-  }
-
-  Future<void> _handleBackConfirmation() async {
-    AudioManager.playTileSelect(pitchIndex: 2);
-    final shouldResume = await GameDialog.showConfirm(
-      context,
-      icon: '⏸️',
-      title: 'Pause Game',
-      message: 'Do you want to pause the game and return to the main menu?',
-      cancelText: 'Quit',
-      confirmText: 'Resume',
-    );
-
-    if (shouldResume == false && mounted) {
-      Navigator.of(context).popUntil((route) => route.isFirst);
     }
   }
 
@@ -302,15 +287,17 @@ class _GameScreenState extends State<GameScreen> {
         _controller!.levelNumber == 7 &&
         !GameStorage.isExtraWordsTutorialShown();
 
-    final isDarkScrimTut = isLevel1Tut || isCountTut || isReverseTut || isHintTut || isExtraWordsTut;
+    final isRocketTut = !_controller!.isWon &&
+        _controller!.levelNumber == 7 &&
+        !isExtraWordsTut &&
+        !GameStorage.isRocketTutorialShown();
+
+    final isDarkScrimTut = isLevel1Tut || isCountTut || isReverseTut || isHintTut || isExtraWordsTut || isRocketTut;
 
     return GameScaffold(
       useSafeArea: false,
       background: _buildBackground(),
-      onWillPop: () async {
-        await _handleBackConfirmation();
-        return false;
-      },
+      canPop: false,
       body: Stack(
         children: [
               // Dark background scrim behind gameplay when any tutorial is active
@@ -351,6 +338,7 @@ class _GameScreenState extends State<GameScreen> {
                       Expanded(
                         flex: 5,
                         child: Stack(
+                          clipBehavior: Clip.none,
                           alignment: Alignment.center,
                           children: [
                             Center(
@@ -372,17 +360,23 @@ class _GameScreenState extends State<GameScreen> {
                                 child: _buildGiftButton(),
                               ),
                             ),
-                            // Right Star / Extra Words Button
+                            // Right Star / Extra Words Button (Spotlighted and lit up on Level 7)
                             Positioned(
                               top: 8.h,
                               right: 16.w,
                               child: AnimatedOpacity(
-                                opacity: isDarkScrimTut ? 0.20 : 1.0,
+                                opacity: (isDarkScrimTut && !isExtraWordsTut) ? 0.20 : 1.0,
                                 duration: const Duration(milliseconds: 250),
                                 child: ExtraWordsButton(
                                   key: _extraWordsBtnKey,
                                   extraCount: GameStorage.getExtraWordsChestCount(),
-                                  onTap: _openExtraWords,
+                                  onTap: () {
+                                    if (isExtraWordsTut) {
+                                      GameStorage.setExtraWordsTutorialShown(true);
+                                      setState(() {});
+                                    }
+                                    _openExtraWords();
+                                  },
                                   isSpotlighted: isExtraWordsTut,
                                 ),
                               ),
@@ -395,12 +389,12 @@ class _GameScreenState extends State<GameScreen> {
                         duration: const Duration(milliseconds: 250),
                         child: _buildPreviewAndFeedback(),
                       ),
-                      // BoardWidget (Dimmed only on Level 5 & Level 7, full 100% on Level 1, 2, 4)
+                      // BoardWidget (Dimmed on Level 5 & Level 7 tutorials, full 100% on Level 1, 2, 4)
                       Expanded(
                         flex: 5,
                         child: Center(
                           child: AnimatedOpacity(
-                            opacity: (isHintTut || isExtraWordsTut) ? 0.20 : 1.0,
+                            opacity: (isHintTut || isExtraWordsTut || isRocketTut) ? 0.20 : 1.0,
                             duration: const Duration(milliseconds: 250),
                             child: BoardWidget(
                               key: _boardKey,
@@ -410,17 +404,32 @@ class _GameScreenState extends State<GameScreen> {
                         ),
                       ),
                       SizedBox(height: 10.h),
-                      // BoosterBar (Spotlighted on Level 5 & Level 7, dimmed on other tutorials)
+                      // BoosterBar (Spotlighted on Level 5 Hint & Level 7 Rocket, dimmed on other tutorials including Extra Words)
                       AnimatedOpacity(
-                        opacity: (isDarkScrimTut && !isHintTut && !isExtraWordsTut) ? 0.20 : 1.0,
+                        opacity: (isDarkScrimTut && !isHintTut && !isRocketTut) ? 0.20 : 1.0,
                         duration: const Duration(milliseconds: 250),
-                        child: BoosterBar(
-                          controller: _controller!,
-                          onOpenShop: _openShop,
-                          onOpenExtraWords: _openExtraWords,
-                          isHintSpotlighted: isHintTut,
-                          isExtraWordsSpotlighted: isExtraWordsTut,
-                          extraWordsBtnKey: _extraWordsBtnKey,
+                        child: IgnorePointer(
+                          ignoring: isDarkScrimTut && !isHintTut && !isRocketTut,
+                          child: BoosterBar(
+                            controller: _controller!,
+                            onOpenShop: _openShop,
+                            onOpenExtraWords: _openExtraWords,
+                            onHintTap: () {
+                              if (isHintTut) {
+                                GameStorage.setHintTutorialShown(true);
+                                setState(() {});
+                              }
+                            },
+                            onRocketTap: () {
+                              if (isRocketTut) {
+                                GameStorage.setRocketTutorialShown(true);
+                                setState(() {});
+                              }
+                            },
+                            isHintSpotlighted: isHintTut,
+                            isRocketSpotlighted: isRocketTut,
+                            extraWordsBtnKey: _extraWordsBtnKey,
+                          ),
                         ),
                       ),
                     ],
@@ -492,6 +501,12 @@ class _GameScreenState extends State<GameScreen> {
               // Level 7 Extra Words Tutorial Overlay
               if (isExtraWordsTut)
                 ExtraWordsTutorialOverlay(
+                  onDismiss: () => setState(() {}),
+                ),
+
+              // Level 7 Rocket Booster Tutorial Overlay
+              if (isRocketTut)
+                RocketBoosterTutorialOverlay(
                   onDismiss: () => setState(() {}),
                 ),
 
@@ -574,7 +589,7 @@ class _GameScreenState extends State<GameScreen> {
 
   Widget _buildCoinCapsule() {
     return BouncyButton(
-      onTap: _openShop,
+      // onTap: _openShop,
       child: SizedBox(
         height: 44.h,
         child: IntrinsicWidth(
@@ -627,8 +642,9 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   Widget _buildGiftButton() {
+    final canClaim = GameStorage.canClaimDailyGift();
     return BouncyButton(
-      onTap: _openGiftReward,
+      onTap: _openShop,
       child: SizedBox(
         width: 54.r,
         height: 64.r,
@@ -645,16 +661,17 @@ class _GameScreenState extends State<GameScreen> {
                 fit: BoxFit.contain,
               ),
             ),
-            Positioned(
-              top: -2.h,
-              right: 0,
-              child: Image.asset(
-                'assets/icons/icon_notice.png',
-                width: 20.r,
-                height: 20.r,
-                fit: BoxFit.contain,
+            if (canClaim)
+              Positioned(
+                top: -2.h,
+                right: 0,
+                child: Image.asset(
+                  'assets/icons/icon_notice.png',
+                  width: 20.r,
+                  height: 20.r,
+                  fit: BoxFit.contain,
+                ),
               ),
-            ),
             Positioned(
               bottom: 5.h,
               child: GreenPillBadge.text(text: 'GIFT'),
@@ -662,18 +679,6 @@ class _GameScreenState extends State<GameScreen> {
           ],
         ),
       ),
-    );
-  }
-
-  void _openGiftReward() {
-    AudioManager.playTileSelect(pitchIndex: 4);
-    GameStorage.addCoins(50);
-    GameDialog.showAlert(
-      context,
-      icon: '🎁',
-      title: 'Special Gift!',
-      message: 'You received 50 bonus coins from the Gift Box!',
-      buttonText: 'Awesome!',
     );
   }
 

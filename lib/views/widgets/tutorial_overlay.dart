@@ -490,7 +490,13 @@ class TileCountTutorialModal extends StatelessWidget {
 /// 3D Animated White/Cyan Arrow bouncing vertically (Level 5 & Level 7)
 class TutorialArrowPointer extends StatefulWidget {
   final double size;
-  const TutorialArrowPointer({super.key, this.size = 38});
+  final bool pointingUp;
+
+  const TutorialArrowPointer({
+    super.key,
+    this.size = 38,
+    this.pointingUp = false,
+  });
 
   @override
   State<TutorialArrowPointer> createState() => _TutorialArrowPointerState();
@@ -525,35 +531,50 @@ class _TutorialArrowPointerState extends State<TutorialArrowPointer>
       animation: _animation,
       builder: (context, child) {
         return Transform.translate(
-          offset: Offset(0, _animation.value),
+          offset: Offset(0, widget.pointingUp ? -_animation.value : _animation.value),
           child: child,
         );
       },
       child: CustomPaint(
         size: Size(widget.size, widget.size * 1.1),
-        painter: const _TutorialArrowCustomPainter(),
+        painter: _TutorialArrowCustomPainter(pointingUp: widget.pointingUp),
       ),
     );
   }
 }
 
 class _TutorialArrowCustomPainter extends CustomPainter {
-  const _TutorialArrowCustomPainter();
+  final bool pointingUp;
+
+  const _TutorialArrowCustomPainter({this.pointingUp = false});
 
   @override
   void paint(Canvas canvas, Size size) {
     final w = size.width;
     final h = size.height;
 
-    final path = Path()
-      ..moveTo(w * 0.30, 0)
-      ..lineTo(w * 0.70, 0)
-      ..lineTo(w * 0.70, h * 0.52)
-      ..lineTo(w * 0.95, h * 0.52)
-      ..lineTo(w * 0.50, h)
-      ..lineTo(w * 0.05, h * 0.52)
-      ..lineTo(w * 0.30, h * 0.52)
-      ..close();
+    final path = Path();
+    if (pointingUp) {
+      path
+        ..moveTo(w * 0.30, h)
+        ..lineTo(w * 0.70, h)
+        ..lineTo(w * 0.70, h * 0.48)
+        ..lineTo(w * 0.95, h * 0.48)
+        ..lineTo(w * 0.50, 0)
+        ..lineTo(w * 0.05, h * 0.48)
+        ..lineTo(w * 0.30, h * 0.48)
+        ..close();
+    } else {
+      path
+        ..moveTo(w * 0.30, 0)
+        ..lineTo(w * 0.70, 0)
+        ..lineTo(w * 0.70, h * 0.52)
+        ..lineTo(w * 0.95, h * 0.52)
+        ..lineTo(w * 0.50, h)
+        ..lineTo(w * 0.05, h * 0.52)
+        ..lineTo(w * 0.30, h * 0.52)
+        ..close();
+    }
 
     // Soft drop shadow
     canvas.drawPath(
@@ -563,7 +584,7 @@ class _TutorialArrowCustomPainter extends CustomPainter {
         ..style = PaintingStyle.fill,
     );
 
-    // Cyan-white surface face (matching screenshot 2)
+    // Cyan-white surface face (matching reference design)
     canvas.drawPath(
       path,
       Paint()
@@ -583,7 +604,8 @@ class _TutorialArrowCustomPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
+  bool shouldRepaint(covariant _TutorialArrowCustomPainter oldDelegate) =>
+      oldDelegate.pointingUp != pointingUp;
 }
 
 /// Level 5 Hint Booster Tutorial Overlay (matching screenshot 2)
@@ -596,31 +618,24 @@ class HintBoosterTutorialOverlay extends StatelessWidget {
   Widget build(BuildContext context) {
     return Align(
       alignment: const Alignment(0, -0.18),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          TutorialSpeechBubble(
-            spans: const [
-              TextSpan(text: 'If you get stuck\ntry tapping '),
-              TextSpan(
-                text: '“Hint Button”',
-                style: TextStyle(
-                  color: Color(0xFF8F34D0),
-                  fontWeight: FontWeight.w900,
-                ),
-              ),
-              TextSpan(text: '.'),
-            ],
-            actionButton: TutorialGotItButton(
-              onTap: () async {
-                await GameStorage.setHintTutorialShown(true);
-                onDismiss();
-              },
+      child: TutorialSpeechBubble(
+        spans: const [
+          TextSpan(text: 'If you get stuck\ntry tapping '),
+          TextSpan(
+            text: '“Hint Button”',
+            style: TextStyle(
+              color: Color(0xFF8F34D0),
+              fontWeight: FontWeight.w900,
             ),
           ),
-          SizedBox(height: 38.h),
-          const TutorialArrowPointer(size: 40),
+          TextSpan(text: '.'),
         ],
+        actionButton: TutorialGotItButton(
+          onTap: () async {
+            await GameStorage.setHintTutorialShown(true);
+            onDismiss();
+          },
+        ),
       ),
     );
   }
@@ -636,33 +651,56 @@ class ExtraWordsTutorialOverlay extends StatelessWidget {
   Widget build(BuildContext context) {
     return Align(
       alignment: const Alignment(0, -0.18),
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          TutorialSpeechBubble(
-            spans: const [
-              TextSpan(
-                text: '“Extra Words”',
-                style: TextStyle(
-                  color: Color(0xFF8F34D0),
-                  fontWeight: FontWeight.w900,
-                ),
-              ),
-              TextSpan(text: ' found are\nlisted in this section.'),
-            ],
-            actionButton: TutorialGotItButton(
-              onTap: () async {
-                await GameStorage.setExtraWordsTutorialShown(true);
-                onDismiss();
-              },
+      child: TutorialSpeechBubble(
+        spans: const [
+          TextSpan(
+            text: '“Extra Words”',
+            style: TextStyle(
+              color: Color(0xFF8F34D0),
+              fontWeight: FontWeight.w900,
             ),
           ),
-          SizedBox(height: 24.h),
-          Transform.rotate(
-            angle: 0.35,
-            child: const TutorialArrowPointer(size: 40),
-          ),
+          TextSpan(text: ' found are\nlisted in this section.'),
         ],
+        actionButton: TutorialGotItButton(
+          onTap: () async {
+            await GameStorage.setExtraWordsTutorialShown(true);
+            onDismiss();
+          },
+        ),
+      ),
+    );
+  }
+}
+
+/// Level 7 Rocket Booster Tutorial Overlay
+class RocketBoosterTutorialOverlay extends StatelessWidget {
+  final VoidCallback onDismiss;
+
+  const RocketBoosterTutorialOverlay({super.key, required this.onDismiss});
+
+  @override
+  Widget build(BuildContext context) {
+    return Align(
+      alignment: const Alignment(0, -0.18),
+      child: TutorialSpeechBubble(
+        spans: const [
+          TextSpan(text: 'Blast words away\nby tapping '),
+          TextSpan(
+            text: '“Rocket”',
+            style: TextStyle(
+              color: Color(0xFF8F34D0),
+              fontWeight: FontWeight.w900,
+            ),
+          ),
+          TextSpan(text: '!'),
+        ],
+        actionButton: TutorialGotItButton(
+          onTap: () async {
+            await GameStorage.setRocketTutorialShown(true);
+            onDismiss();
+          },
+        ),
       ),
     );
   }

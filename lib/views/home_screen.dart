@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../services/ads_manager.dart';
@@ -6,11 +7,11 @@ import '../services/audio_manager.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
 import '../utils/game_transitions.dart';
-import '../widgets/common/game_dialog.dart';
+import 'widgets/exit_game_dialog.dart';
 import '../widgets/common/game_scaffold.dart';
 import 'game_screen.dart';
-import 'settings_screen.dart';
 import 'widgets/bouncy_button.dart';
+import 'widgets/settings_dialog.dart';
 import 'widgets/shop_dialog.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -63,14 +64,13 @@ class _HomeScreenState extends State<HomeScreen> {
 
   void _openSettings() {
     AudioManager.playTileSelect(pitchIndex: 4);
-    Navigator.push(
-      context,
-      GamePageRoute(
-        child: SettingsScreen(
-          onLanguageChanged: () {
-            _loadState();
-          },
-        ),
+    showGameDialog(
+      context: context,
+      builder: (context) => SettingsDialog(
+        isHomeScreen: true,
+        onLanguageChanged: () {
+          _loadState();
+        },
       ),
     ).then((_) => _loadState());
   }
@@ -87,21 +87,12 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Future<void> _handleExitAppConfirmation() async {
     AudioManager.playTileSelect(pitchIndex: 2);
-    final shouldStay = await GameDialog.showConfirm(
+    ExitGameDialog.show(
       context,
-      icon: '👋',
-      title: 'Exit Game?',
-      message: 'Are you sure you want to exit the app? Hope to see you back soon!',
-      cancelText: 'Exit',
-      confirmText: 'Stay',
+      onExit: () {
+        SystemNavigator.pop();
+      },
     );
-
-    if (shouldStay == false && mounted) {
-      final navigator = Navigator.of(context);
-      if (navigator.canPop()) {
-        navigator.pop();
-      }
-    }
   }
 
   @override

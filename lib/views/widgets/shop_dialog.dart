@@ -1,12 +1,11 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
-import '../../services/ads_manager.dart';
+import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
-import '../../theme/app_theme.dart';
-import '../../widgets/common/game_button.dart';
-import '../../widgets/common/game_dialog.dart';
+import '../../theme/app_typography.dart';
 import 'app_popup.dart';
 
 class ShopDialog extends StatefulWidget {
@@ -58,17 +57,18 @@ class _ShopDialogState extends State<ShopDialog> {
       return;
     }
 
+    AudioManager.playTileSelect(pitchIndex: 5);
     await GameStorage.addCoins(100);
     await GameStorage.addHintCount(1);
     await GameStorage.addRocketCount(1);
     await GameStorage.setLastDailyGiftClaimTime(DateTime.now().millisecondsSinceEpoch);
     widget.onUpdated();
-    setState(() {});
     if (mounted) {
+      setState(() {});
       AppPopup.show(
         context,
-        title: 'Daily Gift Claimed!',
-        message: 'You received +100 🪙, +1 💡 Hint, and +1 🚀 Rocket!\nNext gift in 24 hours.',
+        title: 'Free Pack Claimed!',
+        message: 'You received +1 💡 Hint, +1 🚀 Rocket, and +100 🪙 coins!\nNext free pack in 24 hours.',
         icon: '🎁',
       );
     }
@@ -77,11 +77,12 @@ class _ShopDialogState extends State<ShopDialog> {
   void _buyBoosterPack(String name, int coinsCost, int hints, int rockets) async {
     final success = await GameStorage.spendCoins(coinsCost);
     if (success) {
+      AudioManager.playTileSelect(pitchIndex: 5);
       await GameStorage.addHintCount(hints);
       await GameStorage.addRocketCount(rockets);
       widget.onUpdated();
-      setState(() {});
       if (mounted) {
+        setState(() {});
         AppPopup.show(
           context,
           title: 'Pack Unlocked!',
@@ -90,6 +91,7 @@ class _ShopDialogState extends State<ShopDialog> {
         );
       }
     } else {
+      AudioManager.playTileSelect(pitchIndex: 1);
       if (mounted) {
         AppPopup.show(
           context,
@@ -102,401 +104,498 @@ class _ShopDialogState extends State<ShopDialog> {
     }
   }
 
-  bool _isLoadingAd = false;
-
-  void _claimRewardedAdBoosters() {
-    if (_isLoadingAd) return;
-    setState(() => _isLoadingAd = true);
-
-    AdsManager.showBoosterReward(
-      boosterType: 'shop_gift',
-      levelNumber: 1,
-      onRewardResult: (success) async {
-        if (!mounted) return;
-        setState(() => _isLoadingAd = false);
-
-        if (success) {
-          await GameStorage.addCoins(50);
-          await GameStorage.addHintCount(1);
-          if (!mounted) return;
-          widget.onUpdated();
-          setState(() {});
-          AppPopup.show(
-            context,
-            title: 'Reward Claimed! 🎁',
-            message: 'You received +50 🪙 coins and +1 💡 Hint!',
-            icon: '🎉',
-          );
-        } else {
-          ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(
-              content: Text(
-                'Ad not completed. Could not claim reward.',
-                style: TextStyle(fontWeight: FontWeight.w600),
-              ),
-              duration: Duration(seconds: 2),
-            ),
-          );
-        }
-      },
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
-    final coins = GameStorage.getCoins();
-    final hints = GameStorage.getHintCount();
-    final rockets = GameStorage.getRocketCount();
     final canClaimDaily = GameStorage.canClaimDailyGift();
     final remainingCooldown = GameStorage.getRemainingDailyGiftCooldown();
 
-    return GameDialog(
-      showCloseButton: true,
-      backgroundColor: AppColors.cardPeach,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          // Header Row: Title & Coins Pill
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return Dialog(
+      backgroundColor: Colors.transparent,
+      insetPadding: EdgeInsets.symmetric(horizontal: 16.w),
+      child: Center(
+        child: SizedBox(
+          width: 338.w,
+          child: Stack(
+            clipBehavior: Clip.none,
+            alignment: Alignment.topCenter,
             children: [
-              Text(
-                'Coin Shop & Gifts',
-                style: GoogleFonts.fredoka(
-                  fontWeight: FontWeight.w900,
-                  fontSize: 20.sp,
-                  color: AppColors.headerBrown,
-                ),
-              ),
+              // Outer Thick White Bezel Frame with Soft 3D Shadow
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 5.h),
+                width: double.infinity,
                 decoration: BoxDecoration(
-                  color: AppColors.cardPeachLight,
-                  borderRadius: BorderRadius.circular(16.r),
-                  border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                ),
-                child: Row(
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const Text('🪙', style: TextStyle(fontSize: 14)),
-                    SizedBox(width: 5.w),
-                    Text(
-                      '$coins',
-                      style: GoogleFonts.fredoka(
-                        fontWeight: FontWeight.w900,
-                        color: AppColors.textDark,
-                        fontSize: 14.sp,
-                      ),
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(38.r),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Color(0x38000000),
+                      offset: Offset(0, 14),
+                      blurRadius: 28,
+                      spreadRadius: 2,
+                    ),
+                    BoxShadow(
+                      color: Color(0xFF7FA3BA),
+                      offset: Offset(0, 4),
+                      blurRadius: 0,
                     ),
                   ],
                 ),
-              ),
-            ],
-          ),
-          SizedBox(height: 14.h),
-
-          // Inventory Preview
-          Container(
-            padding: EdgeInsets.all(12.r),
-            decoration: BoxDecoration(
-              color: AppColors.cardWhite,
-              borderRadius: BorderRadius.circular(18.r),
-              border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-              boxShadow: const [
-                BoxShadow(
-                  color: Color(0xFFE8DAC8),
-                  offset: Offset(0, 1.5),
-                  blurRadius: 0,
-                ),
-              ],
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Row(
-                  children: [
-                    const Icon(Icons.lightbulb_outline_rounded, color: AppColors.terracotta, size: 20),
-                    SizedBox(width: 6.w),
-                    Text(
-                      '$hints Hints',
-                      style: GoogleFonts.fredoka(
-                        fontSize: 13.sp,
-                        fontWeight: FontWeight.bold,
-                        color: AppColors.textDark,
-                      ),
-                    ),
-                  ],
-                ),
-                Container(width: 1.5, height: 20.h, color: AppColors.borderSubtle),
-                Row(
-                  children: [
-                    const Icon(Icons.rocket_launch_outlined, color: AppColors.terracotta, size: 20),
-                    SizedBox(width: 6.w),
-                    Text(
-                      '$rockets Rockets',
-                      style: GoogleFonts.fredoka(
-                        fontSize: 13.sp,
-                        fontWeight: FontWeight.bold,
-                        color: AppColors.textDark,
-                      ),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          ),
-          SizedBox(height: 14.h),
-
-          // Daily Free Gift Card (24h Countdown Logic)
-          Container(
-            padding: EdgeInsets.all(14.r),
-            decoration: BoxDecoration(
-              color: AppColors.cardWhite,
-              borderRadius: BorderRadius.circular(20.r),
-              border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-              boxShadow: const [
-                BoxShadow(
-                  color: Color(0xFFE8DAC8),
-                  offset: Offset(0, 2.0),
-                  blurRadius: 0,
-                ),
-              ],
-            ),
-            child: Row(
-              children: [
-                const Text('🎁', style: TextStyle(fontSize: 24)),
-                SizedBox(width: 8.w),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Daily Free Gift',
-                        style: GoogleFonts.fredoka(
-                          fontWeight: FontWeight.w900,
-                          color: AppColors.textDark,
-                          fontSize: 14.sp,
-                        ),
-                      ),
-                      Text(
-                        canClaimDaily
-                            ? '+100 🪙, +1 💡, +1 🚀'
-                            : 'Next: ${_formatDuration(remainingCooldown)}',
-                        style: GoogleFonts.fredoka(
-                          fontSize: 11.sp,
-                          color: canClaimDaily ? AppColors.textMuted : AppColors.terracotta,
-                          fontWeight: FontWeight.w500,
-                        ),
-                      ),
-                    ],
+                padding: EdgeInsets.all(8.r),
+                // Inner Dialog Surface: Solid Slate-Blue background that makes cards POP OUT
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: const Color(0xFFA0C3D9),
+                    borderRadius: BorderRadius.circular(24.r),
                   ),
-                ),
-                SizedBox(
-                  width: 86.w,
-                  child: canClaimDaily
-                      ? GameButton.primary(
-                          size: GameButtonSize.small,
-                          text: 'CLAIM',
+                  margin: EdgeInsets.only(top: 36.h,bottom: 4.h),
+                  padding: EdgeInsets.fromLTRB(10.w, 10.h, 10.w, 10.h),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      // 1. Free Pack (Raised 3D Card with 2-bottom-corner rounded bar)
+                      _buildRaisedPackCard(
+                        barBgAsset: 'assets/images/bar_free.png',
+                        title: 'Free Pack',
+                        titleOutlineColor: const Color(0xFF023E8A),
+                        giftIcon: 'assets/icons/icon_gift_box.png',
+                        rewardBgColor: const Color(0xFFB2D4EA),
+                        rewardTopBorderColor: const Color(0xFF87A7BE),
+                        hintCount: '1',
+                        rocketCount: '1',
+                        actionButton: _Green3DButton(
                           onTap: _claimFreeReward,
-                        )
-                      : GameButton.secondary(
-                          size: GameButtonSize.small,
-                          onTap: () {
-                            AppPopup.show(
-                              context,
-                              title: 'Daily Gift Cooldown',
-                              message: 'Your next daily reward is ready in ${_formatDuration(remainingCooldown)}.',
-                              icon: '⏳',
-                            );
-                          },
+                          isPulsing: canClaimDaily,
+                          bgAsset: canClaimDaily
+                              ? 'assets/images/btn_green.png'
+                              : 'assets/images/btn_grey.png',
+                          child: canClaimDaily
+                              ? const CartoonText(
+                                  text: 'Free',
+                                  fontSize: 18,
+                                  textColor: Colors.white,
+                                  outlineColor: Color(0xFF155484),
+                                  strokeWidth: 3.0,
+                                  shadowOffset: 1.2,
+                                )
+                              : CartoonText(
+                                  text: _formatDuration(remainingCooldown),
+                                  fontSize: 14,
+                                  textColor: Colors.white,
+                                  outlineColor: const Color(0xFF155484),
+                                  strokeWidth: 2.8,
+                                  shadowOffset: 1.0,
+                                ),
+                        ),
+                      ),
+                      SizedBox(height: 12.h),
+
+                      // 2. Explorer Pack (Raised 3D Card with 2-bottom-corner rounded bar)
+                      _buildRaisedPackCard(
+                        barBgAsset: 'assets/images/bar_explorer.png',
+                        title: 'Explorer Pack',
+                        titleOutlineColor: const Color(0xFF380662),
+                        giftIcon: 'assets/icons/icon_gift_explore.png',
+                        rewardBgColor: const Color(0xFFF0D0FF),
+                        rewardTopBorderColor: const Color(0xFFD0A8E5),
+                        hintCount: '3',
+                        rocketCount: '1',
+                        actionButton: _Green3DButton(
+                          onTap: () => _buyBoosterPack('Explorer Pack', 300, 3, 1),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.min,
                             children: [
-                              const Icon(Icons.timer_outlined, size: 12, color: AppColors.textMuted),
-                              SizedBox(width: 3.w),
-                              Text(
-                                _formatDuration(remainingCooldown),
-                                style: GoogleFonts.fredoka(
-                                  fontWeight: FontWeight.w700,
-                                  fontSize: 10.sp,
-                                  color: AppColors.textMuted,
-                                ),
+                              Image.asset(
+                                'assets/icons/icon_coin.png',
+                                width: 22.r,
+                                height: 22.r,
+                                fit: BoxFit.contain,
+                              ),
+                              SizedBox(width: 4.w),
+                              const CartoonText(
+                                text: '300',
+                                fontSize: 18,
+                                textColor: Colors.white,
+                                outlineColor: Color(0xFF155484),
+                                strokeWidth: 3.0,
+                                shadowOffset: 1.2,
                               ),
                             ],
                           ),
                         ),
-                ),
-              ],
-            ),
-          ),
-          SizedBox(height: 10.h),
-
-          // Rewarded Video Ad Card
-          Container(
-            padding: EdgeInsets.all(12.r),
-            decoration: BoxDecoration(
-              color: AppColors.cardWhite,
-              borderRadius: BorderRadius.circular(18.r),
-              border: Border.all(color: const Color(0xFFFDE68A), width: 1.5),
-              boxShadow: const [
-                BoxShadow(
-                  color: Color(0xFFE8DAC8),
-                  offset: Offset(0, 1.5),
-                  blurRadius: 0,
-                ),
-              ],
-            ),
-            child: Row(
-              children: [
-                const Text('🎬', style: TextStyle(fontSize: 24)),
-                SizedBox(width: 8.w),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        'Watch Video',
-                        style: GoogleFonts.fredoka(
-                          fontWeight: FontWeight.w900,
-                          fontSize: 13.sp,
-                          color: AppColors.textDark,
-                        ),
                       ),
-                      SizedBox(height: 2.h),
-                      Text(
-                        '+50 🪙 & +1 💡 Hint',
-                        style: GoogleFonts.fredoka(
-                          fontSize: 11.sp,
-                          color: const Color(0xFFD97706),
-                          fontWeight: FontWeight.w600,
+                      SizedBox(height: 12.h),
+
+                      // 3. Master Pack (Raised 3D Card with 2-bottom-corner rounded bar)
+                      _buildRaisedPackCard(
+                        barBgAsset: 'assets/images/bar_master.png',
+                        title: 'Master Pack',
+                        titleOutlineColor: const Color(0xFF660608),
+                        giftIcon: 'assets/icons/icon_gift_master.png',
+                        rewardBgColor: const Color(0xFFFBC4D7),
+                        rewardTopBorderColor: const Color(0xFFDF9BAF),
+                        hintCount: '8',
+                        rocketCount: '4',
+                        actionButton: _Green3DButton(
+                          onTap: () => _buyBoosterPack('Master Pack', 800, 8, 4),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Image.asset(
+                                'assets/icons/icon_coin.png',
+                                width: 22.r,
+                                height: 22.r,
+                                fit: BoxFit.contain,
+                              ),
+                              SizedBox(width: 4.w),
+                              const CartoonText(
+                                text: '800',
+                                fontSize: 18,
+                                textColor: Colors.white,
+                                outlineColor: Color(0xFF155484),
+                                strokeWidth: 3.0,
+                                shadowOffset: 1.2,
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ],
                   ),
                 ),
-                SizedBox(
-                  width: 86.w,
-                  child: GameButton.gold(
-                    size: GameButtonSize.small,
-                    isLoading: _isLoadingAd,
-                    onTap: _isLoadingAd ? null : _claimRewardedAdBoosters,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Icon(Icons.play_arrow_rounded, size: 14, color: Colors.white),
-                        SizedBox(width: 3.w),
-                        Text(
-                          'FREE',
-                          style: GoogleFonts.fredoka(
-                            fontSize: 11.sp,
-                            fontWeight: FontWeight.w900,
-                            color: Colors.white,
-                          ),
+              ),
+
+              // Header Pill Banner: "Daily & Gift" using btn_gift.png
+              Positioned(
+                top: -20.h,
+                child: Container(
+                  width: 236.w,
+                  height: 52.h,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage('assets/images/btn_gift.png'),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.only(bottom: 3.h),
+                  child: const CartoonText(
+                    text: 'Daily & Gift',
+                    fontSize: 23,
+                    textColor: Colors.white,
+                    outlineColor: Color(0xFF084E94),
+                    strokeWidth: 3.6,
+                    shadowOffset: 1.8,
+                  ),
+                ),
+              ),
+
+              // Floating 3D Red Circular Close "X" Button using icon_close.png (overflows corner as in mockup)
+              Positioned(
+                top: -10.h,
+                right: -13.w,
+                child: _CloseButton(
+                  onTap: () => Navigator.of(context).pop(),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    )
+        .animate()
+        .scale(
+          begin: const Offset(0.78, 0.78),
+          end: const Offset(1.0, 1.0),
+          duration: 260.ms,
+          curve: Curves.easeOutBack,
+        )
+        .fadeIn(duration: 180.ms);
+  }
+
+  /// Builds a prominent raised 3D Card that seamlessly joins the white body and bottom bar
+  Widget _buildRaisedPackCard({
+    required String barBgAsset,
+    required String title,
+    required Color titleOutlineColor,
+    required String giftIcon,
+    required Color rewardBgColor,
+    required Color rewardTopBorderColor,
+    required String hintCount,
+    required String rocketCount,
+    required Widget actionButton,
+  }) {
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(18.r),
+        boxShadow: const [
+          // 3D Drop shadow making the card pop out from the slate-blue background
+          BoxShadow(
+            color: Color(0x32000000),
+            offset: Offset(0, 4),
+            blurRadius: 6,
+            spreadRadius: 0,
+          ),
+        ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(18.r),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            // Upper Box: Crisp Pure White Card Body with Gift Icon & Sunken Reward Capsule
+            Container(
+              color: Colors.white,
+              padding: EdgeInsets.fromLTRB(14.w, 10.h, 12.w, 10.h),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  // Gift Box Icon with subtle floating shadow
+                  Container(
+                    decoration: const BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Color(0x18000000),
+                          offset: Offset(0, 4),
+                          blurRadius: 6,
                         ),
                       ],
                     ),
+                    child: Image.asset(
+                      giftIcon,
+                      width: 64.r,
+                      height: 64.r,
+                      fit: BoxFit.contain,
+                    ),
                   ),
-                ),
-              ],
-            ),
-          ),
-          SizedBox(height: 10.h),
-
-          // Booster Pack 1
-          _buildShopItem(
-            title: 'Explorer Pack',
-            desc: '3x 💡 Hints + 1x 🚀 Rocket',
-            icon: '🎒',
-            cost: 300,
-            onBuy: () => _buyBoosterPack('Explorer Pack', 300, 3, 1),
-          ),
-          SizedBox(height: 10.h),
-
-          // Booster Pack 2
-          _buildShopItem(
-            title: 'Master Pack',
-            desc: '8x 💡 Hints + 4x 🚀 Rockets',
-            icon: '👑',
-            cost: 800,
-            onBuy: () => _buyBoosterPack('Master Pack', 800, 8, 4),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildShopItem({
-    required String title,
-    required String desc,
-    required String icon,
-    required int cost,
-    required VoidCallback onBuy,
-  }) {
-    return Container(
-      padding: EdgeInsets.all(12.r),
-      decoration: BoxDecoration(
-        color: AppColors.cardWhite,
-        borderRadius: BorderRadius.circular(18.r),
-        border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-        boxShadow: const [
-          BoxShadow(
-            color: Color(0xFFE8DAC8),
-            offset: Offset(0, 2.0),
-            blurRadius: 0,
-          ),
-        ],
-      ),
-      child: Row(
-        children: [
-          Text(icon, style: TextStyle(fontSize: 26.sp)),
-          SizedBox(width: 8.w),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  title,
-                  style: GoogleFonts.fredoka(
-                    fontWeight: FontWeight.w900,
-                    fontSize: 13.sp,
-                    color: AppColors.textDark,
-                  ),
-                ),
-                SizedBox(height: 2.h),
-                Text(
-                  desc,
-                  style: GoogleFonts.fredoka(
-                    fontSize: 11.sp,
-                    color: AppColors.textMuted,
-                    fontWeight: FontWeight.w500,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          SizedBox(
-            width: 86.w,
-            child: GameButton.primary(
-              size: GameButtonSize.small,
-              onTap: onBuy,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  const Text('🪙', style: TextStyle(fontSize: 12)),
-                  SizedBox(width: 4.w),
-                  Text(
-                    '$cost',
-                    style: GoogleFonts.fredoka(
-                      fontSize: 12.sp,
-                      fontWeight: FontWeight.w900,
-                      color: Colors.white,
+                  // Sunken/Engraved Reward Capsule
+                  Container(
+                    width: 148.w,
+                    height: 52.h,
+                    decoration: BoxDecoration(
+                      color: rewardBgColor,
+                      borderRadius: BorderRadius.circular(16.r),
+                      border: Border.all(color: rewardTopBorderColor, width: 1.5),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withValues(alpha: 0.08),
+                          offset: const Offset(0, 2),
+                          blurRadius: 3,
+                        ),
+                      ],
+                    ),
+                    padding: EdgeInsets.symmetric(horizontal: 10.w),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        _buildRewardItem(
+                          iconAsset: 'assets/icons/icon_hint.png',
+                          count: hintCount,
+                        ),
+                        _buildRewardItem(
+                          iconAsset: 'assets/icons/icon_rocket.png',
+                          count: rocketCount,
+                        ),
+                      ],
                     ),
                   ),
                 ],
               ),
             ),
+
+            // Bottom Bar: Seamlessly fits with the white container above it!
+            Container(
+              height: 54.h,
+              width: double.infinity,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage(barBgAsset),
+                  fit: BoxFit.fill,
+                ),
+              ),
+              padding: EdgeInsets.fromLTRB(16.w, 8.h, 12.w, 8.h),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Expanded(
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: FittedBox(
+                        fit: BoxFit.scaleDown,
+                        child: CartoonText(
+                          text: title,
+                          fontSize: 19,
+                          textColor: Colors.white,
+                          outlineColor: titleOutlineColor,
+                          strokeWidth: 3.2,
+                          shadowOffset: 1.4,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 8.w),
+                  actionButton,
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildRewardItem({
+    required String iconAsset,
+    required String count,
+  }) {
+    return SizedBox(
+      width: 50.r,
+      height: 50.r,
+      child: Stack(
+        clipBehavior: Clip.none,
+        alignment: Alignment.center,
+        children: [
+          Positioned(
+            top: 2.h,
+            child: Image.asset(
+              iconAsset,
+              width: 36.r,
+              height: 36.r,
+              fit: BoxFit.contain,
+            ),
+          ),
+          Positioned(
+            bottom: 0,
+            right: 0,
+            child: CartoonText(
+              text: 'X$count',
+              fontSize: 13,
+              textColor: Colors.white,
+              outlineColor: const Color(0xFF155484),
+              strokeWidth: 2.8,
+              shadowOffset: 1.0,
+            ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// Tactile 3D Pack Button using btn_green.png / btn_grey.png asset
+class _Green3DButton extends StatefulWidget {
+  final Widget child;
+  final VoidCallback onTap;
+  final bool isPulsing;
+  final String bgAsset;
+
+  const _Green3DButton({
+    required this.child,
+    required this.onTap,
+    this.isPulsing = false,
+    this.bgAsset = 'assets/images/btn_green.png',
+  });
+
+  @override
+  State<_Green3DButton> createState() => _Green3DButtonState();
+}
+
+class _Green3DButtonState extends State<_Green3DButton> {
+  bool _isPressed = false;
+
+  @override
+  Widget build(BuildContext context) {
+    Widget button = GestureDetector(
+      onTapDown: (_) {
+        setState(() => _isPressed = true);
+        if (GameStorage.isHapticEnabled()) {
+          HapticFeedback.lightImpact();
+        }
+      },
+      onTapUp: (_) {
+        setState(() => _isPressed = false);
+        widget.onTap();
+      },
+      onTapCancel: () {
+        setState(() => _isPressed = false);
+      },
+      child: AnimatedContainer(
+        duration: const Duration(milliseconds: 60),
+        width: 88.w,
+        height: 36.h,
+        margin: EdgeInsets.only(
+          top: _isPressed ? 2.h : 0,
+          bottom: _isPressed ? 0 : 2.h,
+        ),
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(widget.bgAsset),
+            fit: BoxFit.fill,
+          ),
+        ),
+        alignment: Alignment.center,
+        padding: EdgeInsets.only(bottom: _isPressed ? 0 : 2.h),
+        child: FittedBox(
+          fit: BoxFit.scaleDown,
+          child: widget.child,
+        ),
+      ),
+    );
+
+    if (widget.isPulsing) {
+      button = button
+          .animate(onPlay: (c) => c.repeat(reverse: true))
+          .scaleXY(begin: 1.0, end: 1.05, duration: 800.ms, curve: Curves.easeInOut);
+    }
+
+    return button;
+  }
+}
+
+/// Tactile Close Button using user-provided icon_close.png asset
+class _CloseButton extends StatefulWidget {
+  final VoidCallback onTap;
+
+  const _CloseButton({required this.onTap});
+
+  @override
+  State<_CloseButton> createState() => _CloseButtonState();
+}
+
+class _CloseButtonState extends State<_CloseButton> {
+  bool _isPressed = false;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTapDown: (_) {
+        setState(() => _isPressed = true);
+        if (GameStorage.isHapticEnabled()) {
+          HapticFeedback.lightImpact();
+        }
+      },
+      onTapUp: (_) {
+        setState(() => _isPressed = false);
+        AudioManager.playTileSelect(pitchIndex: 1);
+        widget.onTap();
+      },
+      onTapCancel: () {
+        setState(() => _isPressed = false);
+      },
+      child: AnimatedScale(
+        scale: _isPressed ? 0.88 : 1.0,
+        duration: const Duration(milliseconds: 70),
+        curve: Curves.easeOut,
+        child: Image.asset(
+          'assets/icons/icon_close.png',
+          width: 44.r,
+          height: 44.r,
+          fit: BoxFit.contain,
+        ),
       ),
     );
   }

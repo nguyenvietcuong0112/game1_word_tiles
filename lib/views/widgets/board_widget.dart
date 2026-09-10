@@ -209,8 +209,9 @@ class BoardWidgetState extends State<BoardWidget> with SingleTickerProviderState
                   widget.controller.levelNumber == 5) {
                 isBoardDimmed = true;
               }
-              // 6. Level 7 Extra Words Tutorial
-              else if (!GameStorage.isExtraWordsTutorialShown() &&
+              // 6. Level 7 Extra Words & Rocket Tutorials
+              else if ((!GameStorage.isExtraWordsTutorialShown() ||
+                        !GameStorage.isRocketTutorialShown()) &&
                   !widget.controller.isWon &&
                   widget.controller.levelNumber == 7) {
                 isBoardDimmed = true;

@@ -277,7 +277,7 @@ class AudioManager {
   }
 
   static void startBgm() {
-    if (!GameStorage.getSoundEnabled()) return;
+    if (!GameStorage.isMusicEnabled()) return;
     try {
       if (!_isBgmPlaying) {
         if (_useSoloud && _soloudBgm != null) {
@@ -305,7 +305,7 @@ class AudioManager {
   }
 
   static void resumeBgm() {
-    if (!GameStorage.getSoundEnabled()) return;
+    if (!GameStorage.isMusicEnabled()) return;
     try {
       if (_isBgmPaused) {
         if (_useSoloud && _soloudBgmHandle != null) {
@@ -318,6 +318,18 @@ class AudioManager {
         startBgm();
       }
     } catch (_) {}
+  }
+
+  static void setMusicEnabled(bool enabled) {
+    if (enabled) {
+      if (_isBgmPaused) {
+        resumeBgm();
+      } else {
+        startBgm();
+      }
+    } else {
+      pauseBgm();
+    }
   }
 
   static void stopBgm() {

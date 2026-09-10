@@ -6,13 +6,16 @@ import '../../controllers/game_controller.dart';
 import '../../services/game_storage.dart';
 import 'booster_unlock_dialog.dart';
 import 'bouncy_button.dart';
+import 'tutorial_overlay.dart';
 
 class BoosterBar extends StatefulWidget {
   final GameController controller;
   final VoidCallback? onOpenShop;
   final VoidCallback? onOpenExtraWords;
+  final VoidCallback? onHintTap;
+  final VoidCallback? onRocketTap;
   final bool isHintSpotlighted;
-  final bool isExtraWordsSpotlighted;
+  final bool isRocketSpotlighted;
   final GlobalKey<ExtraWordsButtonState>? extraWordsBtnKey;
 
   const BoosterBar({
@@ -20,8 +23,10 @@ class BoosterBar extends StatefulWidget {
     required this.controller,
     this.onOpenShop,
     this.onOpenExtraWords,
+    this.onHintTap,
+    this.onRocketTap,
     this.isHintSpotlighted = false,
-    this.isExtraWordsSpotlighted = false,
+    this.isRocketSpotlighted = false,
     this.extraWordsBtnKey,
   });
 
@@ -75,21 +80,26 @@ class _BoosterBarState extends State<BoosterBar> {
     final menuBarHeight = 54.h + bottomInset;
     final totalHeight = halfOverlap + menuBarHeight;
 
+    // Levels 1-4: No boosters unlocked yet. Do NOT show booster bar or menu_bar
     if (!controller.isBoosterBarVisible) {
-      return SizedBox(
-        width: double.infinity,
-        height: menuBarHeight,
-        child: Image.asset(
-          'assets/images/menu_bar.png',
-          width: double.infinity,
-          height: menuBarHeight,
-          fit: BoxFit.fill,
-        ),
-      );
+      return const SizedBox.shrink();
     }
 
     final hintCount = GameStorage.getHintCount();
     final rocketCount = GameStorage.getRocketCount();
+
+    // Levels 5 & 6: Only Hint is unlocked (Rocket unlocks at Level 7).
+    // Display Hint button alone, centered at the bottom, without Rocket and without menu_bar.
+    if (!controller.isRocketUnlocked) {
+      return SizedBox(
+        width: double.infinity,
+        height: totalHeight,
+        child: Align(
+          alignment: Alignment.topCenter,
+          child: _buildHintBooster(hintCount: hintCount),
+        ),
+      );
+    }
 
     return SizedBox(
       width: double.infinity,
@@ -140,6 +150,7 @@ class _BoosterBarState extends State<BoosterBar> {
 
     return BouncyButton(
       onTap: () async {
+        widget.onHintTap?.call();
         if (hintCount > 0) {
           controller.useHint();
         } else {
@@ -202,6 +213,15 @@ class _BoosterBarState extends State<BoosterBar> {
                   ? OrangeCountBadge(count: hintCount)
                   : GreenPillBadge.coinPrice(coins: 80),
             ),
+
+            // Downward arrow pointer positioned directly above the Hint icon
+            if (isSpotlighted)
+              Positioned(
+                top: -60.h,
+                child: const IgnorePointer(
+                  child: TutorialArrowPointer(size: 38),
+                ),
+              ),
           ],
         ),
       ),
@@ -210,9 +230,11 @@ class _BoosterBarState extends State<BoosterBar> {
  
   Widget _buildRocketBooster({required int rocketCount}) {
     final controller = widget.controller;
+    final isSpotlighted = widget.isRocketSpotlighted;
 
     return BouncyButton(
       onTap: () async {
+        widget.onRocketTap?.call();
         if (rocketCount > 0) {
           controller.useRocket();
         } else {
@@ -237,8 +259,23 @@ class _BoosterBarState extends State<BoosterBar> {
               decoration: BoxDecoration(
                 color: const Color(0xFFF8FAFC),
                 borderRadius: BorderRadius.circular(16.r),
-                border: Border.all(color: Colors.white, width: 1.5),
+                border: Border.all(
+                  color: isSpotlighted ? const Color(0xFFFFD700) : Colors.white,
+                  width: isSpotlighted ? 2.5 : 1.5,
+                ),
                 boxShadow: [
+                  if (isSpotlighted) ...[
+                    BoxShadow(
+                      color: const Color(0xFFFF9900).withValues(alpha: 0.9),
+                      blurRadius: 20,
+                      spreadRadius: 5,
+                    ),
+                    BoxShadow(
+                      color: Colors.white.withValues(alpha: 0.8),
+                      blurRadius: 8,
+                      spreadRadius: 2,
+                    ),
+                  ],
                   const BoxShadow(
                     color: Color(0xFFCBD5E1),
                     offset: Offset(0, 2.5),
@@ -269,6 +306,15 @@ class _BoosterBarState extends State<BoosterBar> {
                   ? OrangeCountBadge(count: rocketCount)
                   : GreenPillBadge.coinPrice(coins: 240),
             ),
+
+            // Downward arrow pointer positioned directly above the Rocket icon
+            if (isSpotlighted)
+              Positioned(
+                top: -60.h,
+                child: const IgnorePointer(
+                  child: TutorialArrowPointer(size: 38),
+                ),
+              ),
           ],
         ),
       ),
@@ -346,20 +392,33 @@ class ExtraWordsButtonState extends State<ExtraWordsButton> with SingleTickerPro
       },
       child: BouncyButton(
         onTap: widget.onTap,
-        child: Container(
+        child: Stack(
+          alignment: Alignment.center,
+          clipBehavior: Clip.none,
+          children: [
+            Container(
               width: 48.r,
               height: 48.r,
               decoration: BoxDecoration(
                 color: const Color(0xFF0F2A66),
                 shape: BoxShape.circle,
-                border: Border.all(color: Colors.white, width: 2.5),
+                border: Border.all(
+                  color: widget.isSpotlighted ? const Color(0xFFFFD700) : Colors.white,
+                  width: 2.5,
+                ),
                 boxShadow: [
-                  if (widget.isSpotlighted)
+                  if (widget.isSpotlighted) ...[
                     BoxShadow(
-                      color: Colors.amber.withValues(alpha: 0.8),
-                      blurRadius: 18,
-                      spreadRadius: 4,
+                      color: const Color(0xFFFFD700).withValues(alpha: 0.95),
+                      blurRadius: 22,
+                      spreadRadius: 6,
                     ),
+                    BoxShadow(
+                      color: Colors.white.withValues(alpha: 0.85),
+                      blurRadius: 10,
+                      spreadRadius: 2,
+                    ),
+                  ],
                   BoxShadow(
                     color: Colors.black.withValues(alpha: 0.25),
                     offset: const Offset(0, 2),
@@ -385,35 +444,46 @@ class ExtraWordsButtonState extends State<ExtraWordsButton> with SingleTickerPro
                       ),
                     ),
 
-              // Centered Yellow Star
-              Image.asset(
-                'assets/icons/icon_star.png',
-                width: 28.r,
-                height: 28.r,
-                fit: BoxFit.contain,
-              ),
+                  // Centered Yellow Star
+                  Image.asset(
+                    'assets/icons/icon_star.png',
+                    width: 28.r,
+                    height: 28.r,
+                    fit: BoxFit.contain,
+                  ),
 
-              // Number with dark navy cartoon outline matching reference exactly
-              Text(
-                '$displayValue',
-                style: GoogleFonts.fredoka(
-                  fontSize: 15.sp,
-                  fontWeight: FontWeight.w900,
-                  color: Colors.white,
-                  shadows: const [
-                    Shadow(offset: Offset(-1.2, -1.2), color: Color(0xFF0F2A66)),
-                    Shadow(offset: Offset(1.2, -1.2), color: Color(0xFF0F2A66)),
-                    Shadow(offset: Offset(-1.2, 1.2), color: Color(0xFF0F2A66)),
-                    Shadow(offset: Offset(1.2, 1.2), color: Color(0xFF0F2A66)),
-                    Shadow(offset: Offset(0, -1.5), color: Color(0xFF0F2A66)),
-                    Shadow(offset: Offset(0, 1.5), color: Color(0xFF0F2A66)),
-                    Shadow(offset: Offset(-1.5, 0), color: Color(0xFF0F2A66)),
-                    Shadow(offset: Offset(1.5, 0), color: Color(0xFF0F2A66)),
-                  ],
+                  // Number with dark navy cartoon outline matching reference exactly
+                  Text(
+                    '$displayValue',
+                    style: GoogleFonts.fredoka(
+                      fontSize: 15.sp,
+                      fontWeight: FontWeight.w900,
+                      color: Colors.white,
+                      shadows: const [
+                        Shadow(offset: Offset(-1.2, -1.2), color: Color(0xFF0F2A66)),
+                        Shadow(offset: Offset(1.2, -1.2), color: Color(0xFF0F2A66)),
+                        Shadow(offset: Offset(-1.2, 1.2), color: Color(0xFF0F2A66)),
+                        Shadow(offset: Offset(1.2, 1.2), color: Color(0xFF0F2A66)),
+                        Shadow(offset: Offset(0, -1.5), color: Color(0xFF0F2A66)),
+                        Shadow(offset: Offset(0, 1.5), color: Color(0xFF0F2A66)),
+                        Shadow(offset: Offset(-1.5, 0), color: Color(0xFF0F2A66)),
+                        Shadow(offset: Offset(1.5, 0), color: Color(0xFF0F2A66)),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            // Upward arrow pointer positioned directly below the Extra Words star icon
+            if (widget.isSpotlighted)
+              Positioned(
+                bottom: -52.h,
+                child: const IgnorePointer(
+                  child: TutorialArrowPointer(size: 38, pointingUp: true),
                 ),
               ),
-            ],
-          ),
+          ],
         ),
       ),
     );

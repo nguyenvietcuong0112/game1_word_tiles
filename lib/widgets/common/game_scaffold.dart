@@ -11,6 +11,7 @@ class GameScaffold extends StatelessWidget {
   final ChapterTheme? chapterTheme;
   final Widget? background;
   final Future<bool> Function()? onWillPop;
+  final bool? canPop;
   final bool useSafeArea;
   final Color? backgroundColor;
 
@@ -21,6 +22,7 @@ class GameScaffold extends StatelessWidget {
     this.chapterTheme,
     this.background,
     this.onWillPop,
+    this.canPop,
     this.useSafeArea = true,
     this.backgroundColor,
   });
@@ -41,14 +43,16 @@ class GameScaffold extends StatelessWidget {
       ],
     );
 
-    if (onWillPop != null) {
+    if (canPop != null || onWillPop != null) {
       content = PopScope(
-        canPop: false,
+        canPop: canPop ?? false,
         onPopInvokedWithResult: (didPop, result) async {
           if (didPop) return;
-          final shouldPop = await onWillPop!();
-          if (shouldPop && context.mounted) {
-            Navigator.of(context).pop();
+          if (onWillPop != null) {
+            final shouldPop = await onWillPop!();
+            if (shouldPop && context.mounted) {
+              Navigator.of(context).pop();
+            }
           }
         },
         child: content,

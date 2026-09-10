@@ -225,8 +225,7 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                       ),
                     ),
 
-                    const Spacer(flex: 12),
-
+                    SizedBox(height: 0.05.sh,),
                     // Center: Golden Crown & Congrats graphic with glowing light aura
                     Stack(
                       alignment: Alignment.center,
@@ -261,7 +260,7 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                           end: const Offset(1.0, 1.0),
                         ),
 
-                    const Spacer(flex: 8),
+                    SizedBox(height: 0.05.sh,),
 
                     // Message Capsule: "This level was no match for you!"
                     Container(
@@ -294,7 +293,7 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                         .fadeIn(duration: 400.ms, delay: 200.ms)
                         .slideY(begin: 0.2, end: 0, curve: Curves.easeOutBack),
 
-                    const Spacer(flex: 12),
+                    SizedBox(height: 0.1.sh,),
 
                     // Chapter Progress Bar with Coin Reward Stack
                     SizedBox(
@@ -363,29 +362,32 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                           // Gold Coin Stack Anchor at Right Edge
                           Positioned(
                             right: 0,
-                            top: -14.h,
-                            child: Column(
-                              mainAxisSize: MainAxisSize.min,
+                            top: -4.h,
+                            child: Stack(
+                              clipBehavior: Clip.none, // <--- THÊM DÒNG NÀY ĐỂ KHÔNG BỊ CẮT
                               children: [
                                 Image.asset(
                                   'assets/icons/icon_coin_victory.png',
-                                  width: 48.w,
+                                  width: 55.w,
                                   fit: BoxFit.contain,
                                 ),
-                                SizedBox(height: 1.h),
-                                Text(
-                                  '${widget.controller.coinsReward}',
-                                  style: GoogleFonts.fredoka(
-                                    fontSize: 16.sp,
-                                    fontWeight: FontWeight.w900,
-                                    color: Colors.white,
-                                    shadows: const [
-                                      Shadow(
-                                        color: Color(0xFF0D2540),
-                                        offset: Offset(0, 1.5),
-                                        blurRadius: 3,
-                                      ),
-                                    ],
+                                Positioned(
+                                  right: 5,
+                                  bottom: -8,
+                                  child: Text(
+                                    '${widget.controller.coinsReward}',
+                                    style: GoogleFonts.fredoka(
+                                      fontSize: 16.sp,
+                                      fontWeight: FontWeight.w900,
+                                      color: Colors.white,
+                                      shadows: const [
+                                        Shadow(
+                                          color: Color(0xFF0D2540),
+                                          offset: Offset(0, 1.5),
+                                          blurRadius: 3,
+                                        ),
+                                      ],
+                                    ),
                                   ),
                                 ),
                               ],
@@ -395,7 +397,7 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                       ),
                     ).animate().fadeIn(duration: 400.ms, delay: 350.ms),
 
-                    const Spacer(flex: 18),
+                    SizedBox(height: 0.1.sh,),
 
                     // Bottom Action Row: Yellow "Level X" Button + Green Ad Coins Button
                     Padding(
@@ -407,7 +409,7 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                             child: BouncyButton(
                               onTap: _handleContinue,
                               child: SizedBox(
-                                height: 56.h,
+                                height: 70.h,
                                 child: Stack(
                                   alignment: Alignment.center,
                                   children: [
@@ -456,7 +458,7 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                             child: BouncyButton(
                               onTap: _isLoadingReward || _claimedDouble ? null : _claimDoubleCoins,
                               child: SizedBox(
-                                height: 56.h,
+                                height: 70.h,
                                 child: Stack(
                                   alignment: Alignment.center,
                                   children: [
@@ -535,7 +537,6 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                       ),
                     ).animate().fadeIn(duration: 400.ms, delay: 450.ms),
 
-                    SizedBox(height: 28.h),
                   ],
                 ),
               ),

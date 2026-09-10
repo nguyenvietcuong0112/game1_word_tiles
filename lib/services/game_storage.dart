@@ -24,6 +24,7 @@ class GameStorage {
   static bool? _cachedReverseTutorialShown;
   static bool? _cachedHintTutorialShown;
   static bool? _cachedExtraWordsTutorialShown;
+  static bool? _cachedRocketTutorialShown;
 
   static Future<void> init() async {
     _prefs = await SharedPreferences.getInstance();
@@ -45,6 +46,7 @@ class GameStorage {
     _cachedReverseTutorialShown = _prefs.getBool('reverse_tutorial_shown') ?? false;
     _cachedHintTutorialShown = _prefs.getBool('hint_tutorial_shown') ?? false;
     _cachedExtraWordsTutorialShown = _prefs.getBool('extra_words_tutorial_shown') ?? false;
+    _cachedRocketTutorialShown = _prefs.getBool('rocket_tutorial_shown') ?? false;
   }
 
   // Selected Language
@@ -230,7 +232,17 @@ class GameStorage {
     return totalDuration - elapsed;
   }
 
-  // Sound & Haptic Settings
+  // Sound, Music & Haptic Settings
+  static bool getMusicEnabled() {
+    return _prefs.getBool('music_enabled') ?? true;
+  }
+
+  static bool isMusicEnabled() => getMusicEnabled();
+
+  static Future<void> setMusicEnabled(bool enabled) async {
+    await _prefs.setBool('music_enabled', enabled);
+  }
+
   static bool getSoundEnabled() {
     return _prefs.getBool('sound_enabled') ?? true;
   }
@@ -297,6 +309,15 @@ class GameStorage {
     await _prefs.setBool('extra_words_tutorial_shown', shown);
   }
 
+  static bool isRocketTutorialShown() {
+    return _cachedRocketTutorialShown ?? _prefs.getBool('rocket_tutorial_shown') ?? false;
+  }
+
+  static Future<void> setRocketTutorialShown(bool shown) async {
+    _cachedRocketTutorialShown = shown;
+    await _prefs.setBool('rocket_tutorial_shown', shown);
+  }
+
   // Ads Interstitial Gatekeeper
   static bool hasShownFirstInter() {
     return _prefs.getBool('has_shown_first_inter') ?? false;
@@ -316,6 +337,7 @@ class GameStorage {
     await _prefs.remove('reverse_tutorial_shown');
     await _prefs.remove('hint_tutorial_shown');
     await _prefs.remove('extra_words_tutorial_shown');
+    await _prefs.remove('rocket_tutorial_shown');
     await _prefs.remove('has_shown_first_inter');
 
     _cachedTutorialCompleted = false;
@@ -323,5 +345,6 @@ class GameStorage {
     _cachedReverseTutorialShown = false;
     _cachedHintTutorialShown = false;
     _cachedExtraWordsTutorialShown = false;
+    _cachedRocketTutorialShown = false;
   }
 }
