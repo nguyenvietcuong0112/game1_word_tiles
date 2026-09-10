@@ -306,7 +306,7 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                           // Progress Bar Track Capsule
                           Container(
                             width: 226.w,
-                            height: 22.h,
+                            height: 30.h,
                             padding: EdgeInsets.all(2.5.r),
                             decoration: BoxDecoration(
                               color: const Color(0xFF041026).withValues(alpha: 0.92),
