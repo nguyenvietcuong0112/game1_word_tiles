@@ -7,50 +7,89 @@ import '../../models/level_model.dart';
 import '../../services/game_storage.dart';
 import '../../theme/app_theme.dart';
 
-class TargetWordsBar extends StatelessWidget {
+class TargetWordsBar extends StatefulWidget {
   final GameController controller;
 
   const TargetWordsBar({super.key, required this.controller});
 
   @override
+  State<TargetWordsBar> createState() => _TargetWordsBarState();
+}
+
+class _TargetWordsBarState extends State<TargetWordsBar> {
+  int _lastSolvedCount = 0;
+  bool _lastIsWon = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _lastSolvedCount = widget.controller.solvedTargetWords.length;
+    _lastIsWon = widget.controller.isWon;
+    widget.controller.addListener(_onControllerChanged);
+  }
+
+  @override
+  void didUpdateWidget(covariant TargetWordsBar oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.controller != widget.controller) {
+      oldWidget.controller.removeListener(_onControllerChanged);
+      _lastSolvedCount = widget.controller.solvedTargetWords.length;
+      _lastIsWon = widget.controller.isWon;
+      widget.controller.addListener(_onControllerChanged);
+    }
+  }
+
+  @override
+  void dispose() {
+    widget.controller.removeListener(_onControllerChanged);
+    super.dispose();
+  }
+
+  void _onControllerChanged() {
+    final solvedCount = widget.controller.solvedTargetWords.length;
+    final isWon = widget.controller.isWon;
+    if (solvedCount != _lastSolvedCount || isWon != _lastIsWon) {
+      _lastSolvedCount = solvedCount;
+      _lastIsWon = isWon;
+      setState(() {});
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return ListenableBuilder(
-      listenable: controller,
-      builder: (context, _) {
-        final words = controller.level.targetWords;
-        final maxLen = words.fold<int>(0, (maxVal, tw) => tw.word.length > maxVal ? tw.word.length : maxVal);
-        final tutorialTargetWord = (!GameStorage.isTutorialCompleted() &&
-                controller.levelNumber == 1 &&
-                !controller.isWon &&
-                controller.solvedTargetWords.length < 2)
-            ? controller.getNextUnsolvedTargetWord()
-            : null;
+    final controller = widget.controller;
+    final words = controller.level.targetWords;
+    final maxLen = words.fold<int>(0, (maxVal, tw) => tw.word.length > maxVal ? tw.word.length : maxVal);
+    final tutorialTargetWord = (!GameStorage.isTutorialCompleted() &&
+            controller.levelNumber == 1 &&
+            !controller.isWon &&
+            controller.solvedTargetWords.length < 2)
+        ? controller.getNextUnsolvedTargetWord()
+        : null;
 
-        return RepaintBoundary(
-          child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
-            alignment: Alignment.center,
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: words.map((tw) {
-                final isSolved = controller.solvedTargetWords.contains(tw.word);
-                final isTutorialTarget = !isSolved && tutorialTargetWord == tw.word;
+    return RepaintBoundary(
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
+        alignment: Alignment.center,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: words.map((tw) {
+            final isSolved = controller.solvedTargetWords.contains(tw.word);
+            final isTutorialTarget = !isSolved && tutorialTargetWord == tw.word;
 
-                return Padding(
-                  padding: EdgeInsets.symmetric(vertical: words.length > 4 ? 3.0.h : 4.5.h),
-                  child: _TargetWordRow(
-                    targetWord: tw,
-                    isSolved: isSolved,
-                    isTutorialTarget: isTutorialTarget,
-                    maxWordLength: maxLen,
-                  ),
-                );
-              }).toList(),
-            ),
-          ),
-        );
-      },
+            return Padding(
+              padding: EdgeInsets.symmetric(vertical: words.length > 4 ? 3.0.h : 4.5.h),
+              child: _TargetWordRow(
+                targetWord: tw,
+                isSolved: isSolved,
+                isTutorialTarget: isTutorialTarget,
+                maxWordLength: maxLen,
+              ),
+            );
+          }).toList(),
+        ),
+      ),
     );
   }
 }

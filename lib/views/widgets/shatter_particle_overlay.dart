@@ -288,6 +288,26 @@ class TileShatterPainter extends CustomPainter {
     required this.sparkles,
   });
 
+  static final Paint _ringPaint = Paint()..style = PaintingStyle.stroke;
+  static final Paint _flashPaint = Paint()..style = PaintingStyle.fill;
+  static final Paint _shadowPaint = Paint()..style = PaintingStyle.fill;
+  static final Paint _bubblePaint = Paint()..style = PaintingStyle.fill;
+  static final Paint _glossPaint = Paint()..style = PaintingStyle.fill;
+  static final Paint _rimPaint = Paint()
+    ..style = PaintingStyle.stroke
+    ..strokeJoin = StrokeJoin.round;
+  static final Paint _facePaint = Paint()..style = PaintingStyle.fill;
+  static final Paint _highlightPaint = Paint()
+    ..style = PaintingStyle.stroke
+    ..strokeCap = StrokeCap.round;
+  static final Paint _glowPaint = Paint()
+    ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 2.5);
+  static final Paint _starPaint = Paint()..style = PaintingStyle.fill;
+  static final Paint _corePaint = Paint()..style = PaintingStyle.fill;
+  static final Path _shardPath = Path();
+  static final Path _highlightPath = Path();
+  static final Path _starPath = Path();
+
   @override
   void paint(Canvas canvas, Size size) {
     if (shards.isEmpty && shockwaves.isEmpty && sparkles.isEmpty) return;
@@ -299,17 +319,14 @@ class TileShatterPainter extends CustomPainter {
       final opacity = (1.0 - t).clamp(0.0, 1.0);
 
       // Expanding golden ring
-      final ringPaint = Paint()
+      _ringPaint
         ..color = sw.color.withValues(alpha: opacity * 0.75)
-        ..style = PaintingStyle.stroke
         ..strokeWidth = (1.0 - t) * 3.5 + 0.5;
-      canvas.drawCircle(Offset(sw.x, sw.y), currentRadius, ringPaint);
+      canvas.drawCircle(Offset(sw.x, sw.y), currentRadius, _ringPaint);
 
       // Warm radial center flash
-      final flashPaint = Paint()
-        ..color = sw.color.withValues(alpha: opacity * 0.20)
-        ..style = PaintingStyle.fill;
-      canvas.drawCircle(Offset(sw.x, sw.y), currentRadius * 0.60, flashPaint);
+      _flashPaint.color = sw.color.withValues(alpha: opacity * 0.20);
+      canvas.drawCircle(Offset(sw.x, sw.y), currentRadius * 0.60, _flashPaint);
     }
 
     // 2. Draw Shards & Pop Beads
@@ -327,77 +344,62 @@ class TileShatterPainter extends CustomPainter {
         final r = shard.size * 0.5;
 
         // Soft drop shadow
-        final shadowPaint = Paint()
-          ..color = Colors.black.withValues(alpha: opacity * 0.18)
-          ..style = PaintingStyle.fill;
-        canvas.drawCircle(const Offset(0, 1.8), r, shadowPaint);
+        _shadowPaint.color = Colors.black.withValues(alpha: opacity * 0.18);
+        canvas.drawCircle(const Offset(0, 1.8), r, _shadowPaint);
 
         // Main Bubble Face
-        final bubblePaint = Paint()
-          ..color = shard.faceColor.withValues(alpha: opacity)
-          ..style = PaintingStyle.fill;
-        canvas.drawCircle(Offset.zero, r, bubblePaint);
+        _bubblePaint.color = shard.faceColor.withValues(alpha: opacity);
+        canvas.drawCircle(Offset.zero, r, _bubblePaint);
 
         // Specular Gloss Highlight Dot
-        final glossPaint = Paint()
-          ..color = Colors.white.withValues(alpha: opacity * 0.90)
-          ..style = PaintingStyle.fill;
-        canvas.drawCircle(Offset(-r * 0.32, -r * 0.32), r * 0.30, glossPaint);
+        _glossPaint.color = Colors.white.withValues(alpha: opacity * 0.90);
+        canvas.drawCircle(Offset(-r * 0.32, -r * 0.32), r * 0.30, _glossPaint);
 
         // Crisp White Rim
-        final rimPaint = Paint()
+        _rimPaint
           ..color = Colors.white.withValues(alpha: opacity * 0.55)
-          ..style = PaintingStyle.stroke
           ..strokeWidth = 1.0;
-        canvas.drawCircle(Offset.zero, r, rimPaint);
+        canvas.drawCircle(Offset.zero, r, _rimPaint);
       } else {
         // --- Glossy Gem / Ceramic Fragment ---
         canvas.scale(shard.size * shard.aspectRatio, shard.size);
 
-        final path = Path();
+        _shardPath.reset();
         if (shard.normalizedVertices.isNotEmpty) {
-          path.moveTo(shard.normalizedVertices[0].dx, shard.normalizedVertices[0].dy);
+          _shardPath.moveTo(shard.normalizedVertices[0].dx, shard.normalizedVertices[0].dy);
           for (int i = 1; i < shard.normalizedVertices.length; i++) {
-            path.lineTo(shard.normalizedVertices[i].dx, shard.normalizedVertices[i].dy);
+            _shardPath.lineTo(shard.normalizedVertices[i].dx, shard.normalizedVertices[i].dy);
           }
-          path.close();
+          _shardPath.close();
         }
 
         // Soft clean drop shadow (NO dirty brown bevel!)
-        final shadowPaint = Paint()
-          ..color = Colors.black.withValues(alpha: opacity * 0.16)
-          ..style = PaintingStyle.fill;
+        _shadowPaint.color = Colors.black.withValues(alpha: opacity * 0.16);
         canvas.save();
         canvas.translate(0, 0.18);
-        canvas.drawPath(path, shadowPaint);
+        canvas.drawPath(_shardPath, _shadowPaint);
         canvas.restore();
 
         // Main Gem Face
-        final facePaint = Paint()
-          ..color = shard.faceColor.withValues(alpha: opacity)
-          ..style = PaintingStyle.fill;
-        canvas.drawPath(path, facePaint);
+        _facePaint.color = shard.faceColor.withValues(alpha: opacity);
+        canvas.drawPath(_shardPath, _facePaint);
 
         // Specular Gloss Highlight along top
         if (shard.normalizedVertices.length >= 2) {
-          final highlightPath = Path()
-            ..moveTo(shard.normalizedVertices[0].dx, shard.normalizedVertices[0].dy)
-            ..lineTo(shard.normalizedVertices[1].dx, shard.normalizedVertices[1].dy);
-          final highlightPaint = Paint()
+          _highlightPath.reset();
+          _highlightPath.moveTo(shard.normalizedVertices[0].dx, shard.normalizedVertices[0].dy);
+          _highlightPath.lineTo(shard.normalizedVertices[1].dx, shard.normalizedVertices[1].dy);
+          _highlightPaint
             ..color = Colors.white.withValues(alpha: opacity * 0.90)
-            ..style = PaintingStyle.stroke
-            ..strokeWidth = 0.18
-            ..strokeCap = StrokeCap.round;
-          canvas.drawPath(highlightPath, highlightPaint);
+            ..strokeWidth = 0.18;
+          canvas.drawPath(_highlightPath, _highlightPaint);
         }
 
         // Crisp White Crystal Edge Rim (Clean, bright, non-woody)
-        final rimPaint = Paint()
+        _rimPaint
           ..color = Colors.white.withValues(alpha: opacity * 0.65)
-          ..style = PaintingStyle.stroke
-          ..strokeWidth = 0.10
-          ..strokeJoin = StrokeJoin.round;
-        canvas.drawPath(path, rimPaint);
+          ..strokeWidth = 0.10;
+        canvas.drawPath(_shardPath, _rimPaint);
       }
 
       canvas.restore();
@@ -414,7 +416,7 @@ class TileShatterPainter extends CustomPainter {
       canvas.rotate(sparkle.rotation);
 
       // 4-pointed Star Sparkle Path
-      final starPath = Path();
+      _starPath.reset();
       final r = currentSize;
       final innerR = currentSize * 0.28;
 
@@ -423,31 +425,25 @@ class TileShatterPainter extends CustomPainter {
         final innerAngle = outerAngle + pi / 4;
 
         if (i == 0) {
-          starPath.moveTo(cos(outerAngle) * r, sin(outerAngle) * r);
+          _starPath.moveTo(cos(outerAngle) * r, sin(outerAngle) * r);
         } else {
-          starPath.lineTo(cos(outerAngle) * r, sin(outerAngle) * r);
+          _starPath.lineTo(cos(outerAngle) * r, sin(outerAngle) * r);
         }
-        starPath.lineTo(cos(innerAngle) * innerR, sin(innerAngle) * innerR);
+        _starPath.lineTo(cos(innerAngle) * innerR, sin(innerAngle) * innerR);
       }
-      starPath.close();
+      _starPath.close();
 
       // Outer glow aura
-      final glowPaint = Paint()
-        ..color = sparkle.color.withValues(alpha: opacity * 0.55)
-        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 2.5);
-      canvas.drawCircle(Offset.zero, currentSize * 0.85, glowPaint);
+      _glowPaint.color = sparkle.color.withValues(alpha: opacity * 0.55);
+      canvas.drawCircle(Offset.zero, currentSize * 0.85, _glowPaint);
 
       // Star body
-      final starPaint = Paint()
-        ..color = sparkle.color.withValues(alpha: opacity)
-        ..style = PaintingStyle.fill;
-      canvas.drawPath(starPath, starPaint);
+      _starPaint.color = sparkle.color.withValues(alpha: opacity);
+      canvas.drawPath(_starPath, _starPaint);
 
       // Diamond core highlight
-      final corePaint = Paint()
-        ..color = Colors.white.withValues(alpha: opacity * 0.90)
-        ..style = PaintingStyle.fill;
-      canvas.drawCircle(Offset.zero, currentSize * 0.22, corePaint);
+      _corePaint.color = Colors.white.withValues(alpha: opacity * 0.90);
+      canvas.drawCircle(Offset.zero, currentSize * 0.22, _corePaint);
 
       canvas.restore();
     }

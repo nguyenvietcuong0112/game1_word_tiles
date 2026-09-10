@@ -1,14 +1,40 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class GameStorage {
   static late SharedPreferences _prefs;
   static bool _isInitialized = false;
 
+  static int? _cachedCoins;
+  static final ValueNotifier<int> coinsNotifier = ValueNotifier<int>(250);
+
+  static int? _cachedExtraWordsChestCount;
+  static int? _cachedHintCount;
+  static int? _cachedRocketCount;
+
+  static bool? _cachedTutorialCompleted;
+  static bool? _cachedCountTutorialShown;
+  static bool? _cachedReverseTutorialShown;
+  static bool? _cachedHintTutorialShown;
+  static bool? _cachedExtraWordsTutorialShown;
+
   static Future<void> init() async {
     if (_isInitialized) return;
     _prefs = await SharedPreferences.getInstance();
     _isInitialized = true;
+    _cachedCoins = _prefs.getInt('player_coins') ?? 250;
+    coinsNotifier.value = _cachedCoins!;
+
+    _cachedExtraWordsChestCount = _prefs.getInt('extra_words_chest_count') ?? 0;
+    _cachedHintCount = _prefs.getInt('inventory_hint_count') ?? 2;
+    _cachedRocketCount = _prefs.getInt('inventory_rocket_count') ?? 1;
+
+    _cachedTutorialCompleted = _prefs.getBool('tutorial_completed') ?? false;
+    _cachedCountTutorialShown = _prefs.getBool('count_tutorial_shown') ?? false;
+    _cachedReverseTutorialShown = _prefs.getBool('reverse_tutorial_shown') ?? false;
+    _cachedHintTutorialShown = _prefs.getBool('hint_tutorial_shown') ?? false;
+    _cachedExtraWordsTutorialShown = _prefs.getBool('extra_words_tutorial_shown') ?? false;
   }
 
   // Selected Language
@@ -66,18 +92,25 @@ class GameStorage {
 
   // Coins (Start with 250 coins so player can test boosters)
   static int getCoins() {
-    return _prefs.getInt('player_coins') ?? 250;
+    _cachedCoins ??= _prefs.getInt('player_coins') ?? 250;
+    return _cachedCoins!;
   }
 
   static Future<void> addCoins(int amount) async {
     final current = getCoins();
-    await _prefs.setInt('player_coins', current + amount);
+    final updated = current + amount;
+    _cachedCoins = updated;
+    coinsNotifier.value = updated;
+    await _prefs.setInt('player_coins', updated);
   }
 
   static Future<bool> spendCoins(int amount) async {
     final current = getCoins();
     if (current >= amount) {
-      await _prefs.setInt('player_coins', current - amount);
+      final updated = current - amount;
+      _cachedCoins = updated;
+      coinsNotifier.value = updated;
+      await _prefs.setInt('player_coins', updated);
       return true;
     }
     return false;
@@ -85,10 +118,11 @@ class GameStorage {
 
   // Extra Words Bank (Milestone: 10 words = 10 Coins Reward)
   static int getExtraWordsChestCount() {
-    return _prefs.getInt('extra_words_chest_count') ?? 0;
+    return _cachedExtraWordsChestCount ?? _prefs.getInt('extra_words_chest_count') ?? 0;
   }
 
   static Future<void> setExtraWordsChestCount(int count) async {
+    _cachedExtraWordsChestCount = count;
     await _prefs.setInt('extra_words_chest_count', count);
   }
 
@@ -111,36 +145,44 @@ class GameStorage {
 
   // Free Booster Inventory: 💡 Hint (80 Coins) & 🚀 Rocket (240 Coins)
   static int getHintCount() {
-    return _prefs.getInt('inventory_hint_count') ?? 2;
+    return _cachedHintCount ?? _prefs.getInt('inventory_hint_count') ?? 2;
   }
 
   static Future<void> addHintCount(int amount) async {
     final current = getHintCount();
-    await _prefs.setInt('inventory_hint_count', current + amount);
+    final updated = current + amount;
+    _cachedHintCount = updated;
+    await _prefs.setInt('inventory_hint_count', updated);
   }
 
   static Future<bool> useHintItem() async {
     final current = getHintCount();
     if (current > 0) {
-      await _prefs.setInt('inventory_hint_count', current - 1);
+      final updated = current - 1;
+      _cachedHintCount = updated;
+      await _prefs.setInt('inventory_hint_count', updated);
       return true;
     }
     return false;
   }
 
   static int getRocketCount() {
-    return _prefs.getInt('inventory_rocket_count') ?? 1;
+    return _cachedRocketCount ?? _prefs.getInt('inventory_rocket_count') ?? 1;
   }
 
   static Future<void> addRocketCount(int amount) async {
     final current = getRocketCount();
-    await _prefs.setInt('inventory_rocket_count', current + amount);
+    final updated = current + amount;
+    _cachedRocketCount = updated;
+    await _prefs.setInt('inventory_rocket_count', updated);
   }
 
   static Future<bool> useRocketItem() async {
     final current = getRocketCount();
     if (current > 0) {
-      await _prefs.setInt('inventory_rocket_count', current - 1);
+      final updated = current - 1;
+      _cachedRocketCount = updated;
+      await _prefs.setInt('inventory_rocket_count', updated);
       return true;
     }
     return false;
@@ -196,42 +238,47 @@ class GameStorage {
 
   // In-Game Tutorial Progress
   static bool isTutorialCompleted() {
-    return _prefs.getBool('tutorial_completed') ?? false;
+    return _cachedTutorialCompleted ?? _prefs.getBool('tutorial_completed') ?? false;
   }
 
   static Future<void> setTutorialCompleted(bool completed) async {
+    _cachedTutorialCompleted = completed;
     await _prefs.setBool('tutorial_completed', completed);
   }
 
   static bool isCountTutorialShown() {
-    return _prefs.getBool('count_tutorial_shown') ?? false;
+    return _cachedCountTutorialShown ?? _prefs.getBool('count_tutorial_shown') ?? false;
   }
 
   static Future<void> setCountTutorialShown(bool shown) async {
+    _cachedCountTutorialShown = shown;
     await _prefs.setBool('count_tutorial_shown', shown);
   }
 
   static bool isReverseTutorialShown() {
-    return _prefs.getBool('reverse_tutorial_shown') ?? false;
+    return _cachedReverseTutorialShown ?? _prefs.getBool('reverse_tutorial_shown') ?? false;
   }
 
   static Future<void> setReverseTutorialShown(bool shown) async {
+    _cachedReverseTutorialShown = shown;
     await _prefs.setBool('reverse_tutorial_shown', shown);
   }
 
   static bool isHintTutorialShown() {
-    return _prefs.getBool('hint_tutorial_shown') ?? false;
+    return _cachedHintTutorialShown ?? _prefs.getBool('hint_tutorial_shown') ?? false;
   }
 
   static Future<void> setHintTutorialShown(bool shown) async {
+    _cachedHintTutorialShown = shown;
     await _prefs.setBool('hint_tutorial_shown', shown);
   }
 
   static bool isExtraWordsTutorialShown() {
-    return _prefs.getBool('extra_words_tutorial_shown') ?? false;
+    return _cachedExtraWordsTutorialShown ?? _prefs.getBool('extra_words_tutorial_shown') ?? false;
   }
 
   static Future<void> setExtraWordsTutorialShown(bool shown) async {
+    _cachedExtraWordsTutorialShown = shown;
     await _prefs.setBool('extra_words_tutorial_shown', shown);
   }
 
@@ -255,5 +302,11 @@ class GameStorage {
     await _prefs.remove('hint_tutorial_shown');
     await _prefs.remove('extra_words_tutorial_shown');
     await _prefs.remove('has_shown_first_inter');
+
+    _cachedTutorialCompleted = false;
+    _cachedCountTutorialShown = false;
+    _cachedReverseTutorialShown = false;
+    _cachedHintTutorialShown = false;
+    _cachedExtraWordsTutorialShown = false;
   }
 }

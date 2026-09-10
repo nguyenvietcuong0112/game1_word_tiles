@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -56,6 +57,10 @@ class _GameScreenState extends State<GameScreen> {
   ChapterTheme? _previousChapterTheme;
   bool _isChapterTransitioning = false;
 
+  int _lastSolvedWordsCount = 0;
+  bool _lastIsWon = false;
+  List<Point<int>>? _lastFailSafeHintPath;
+
   @override
   void initState() {
     super.initState();
@@ -69,8 +74,25 @@ class _GameScreenState extends State<GameScreen> {
   @override
   void dispose() {
     _confettiController.dispose();
+    _controller?.removeListener(_onGameControllerStateChanged);
     _controller?.dispose();
     super.dispose();
+  }
+
+  void _onGameControllerStateChanged() {
+    if (!mounted || _controller == null) return;
+    final isWon = _controller!.isWon;
+    final solvedCount = _controller!.solvedTargetWords.length;
+    final failSafePath = _controller!.failSafeHintPath;
+
+    if (isWon != _lastIsWon ||
+        solvedCount != _lastSolvedWordsCount ||
+        failSafePath != _lastFailSafeHintPath) {
+      _lastIsWon = isWon;
+      _lastSolvedWordsCount = solvedCount;
+      _lastFailSafeHintPath = failSafePath;
+      setState(() {});
+    }
   }
 
   Future<void> _loadGame({bool showLoading = true}) async {
@@ -99,12 +121,19 @@ class _GameScreenState extends State<GameScreen> {
 
       await GameStorage.setCurrentLevelIndex(widget.language, _currentLevelIndex);
 
+      _controller?.removeListener(_onGameControllerStateChanged);
+      _controller?.dispose();
+
       _controller = GameController(
         language: widget.language,
         levelId: levelId,
         levelNumber: _currentLevelIndex + 1,
         level: level,
       );
+      _lastSolvedWordsCount = 0;
+      _lastIsWon = false;
+      _lastFailSafeHintPath = null;
+      _controller!.addListener(_onGameControllerStateChanged);
 
       AnalyticsService.logLevelStart(
         level: _currentLevelIndex + 1,
@@ -280,48 +309,45 @@ class _GameScreenState extends State<GameScreen> {
       );
     }
 
+    final isLevel1Tut = !_controller!.isWon &&
+        !GameStorage.isTutorialCompleted() &&
+        _controller!.levelNumber == 1 &&
+        _controller!.solvedTargetWords.length < 2;
+
+    final isCountTut = !_controller!.isWon &&
+        _controller!.levelNumber == 2 &&
+        !GameStorage.isCountTutorialShown() &&
+        _controller!.getFirstTileWithCountGreaterThanOne() != null;
+
+    final isReverseTut = !_controller!.isWon &&
+        _controller!.levelNumber == 4 &&
+        !GameStorage.isReverseTutorialShown() &&
+        _controller!.solvedTargetWords.isEmpty;
+
+    if (_controller!.levelNumber == 4 &&
+        _controller!.solvedTargetWords.isNotEmpty &&
+        !GameStorage.isReverseTutorialShown()) {
+      GameStorage.setReverseTutorialShown(true);
+    }
+
+    final isHintTut = !_controller!.isWon &&
+        _controller!.levelNumber == 5 &&
+        !GameStorage.isHintTutorialShown();
+
+    final isExtraWordsTut = !_controller!.isWon &&
+        _controller!.levelNumber == 7 &&
+        !GameStorage.isExtraWordsTutorialShown();
+
+    final isDarkScrimTut = isLevel1Tut || isCountTut || isReverseTut || isHintTut || isExtraWordsTut;
+
     return GameScaffold(
       background: _buildBackground(),
       onWillPop: () async {
         await _handleBackConfirmation();
         return false;
       },
-      body: ListenableBuilder(
-        listenable: _controller!,
-        builder: (context, _) {
-          final isLevel1Tut = !_controller!.isWon &&
-              !GameStorage.isTutorialCompleted() &&
-              _controller!.levelNumber == 1 &&
-              _controller!.solvedTargetWords.length < 2;
-
-          final isCountTut = !_controller!.isWon &&
-              _controller!.levelNumber == 2 &&
-              !GameStorage.isCountTutorialShown() &&
-              _controller!.getFirstTileWithCountGreaterThanOne() != null;
-
-          final isReverseTut = !_controller!.isWon &&
-              _controller!.levelNumber == 4 &&
-              !GameStorage.isReverseTutorialShown() &&
-              _controller!.solvedTargetWords.isEmpty;
-
-          if (_controller!.levelNumber == 4 &&
-              _controller!.solvedTargetWords.isNotEmpty &&
-              !GameStorage.isReverseTutorialShown()) {
-            GameStorage.setReverseTutorialShown(true);
-          }
-
-          final isHintTut = !_controller!.isWon &&
-              _controller!.levelNumber == 5 &&
-              !GameStorage.isHintTutorialShown();
-
-          final isExtraWordsTut = !_controller!.isWon &&
-              _controller!.levelNumber == 7 &&
-              !GameStorage.isExtraWordsTutorialShown();
-
-          final isDarkScrimTut = isLevel1Tut || isCountTut || isReverseTut || isHintTut || isExtraWordsTut;
-
-          return Stack(
-            children: [
+      body: Stack(
+        children: [
               // Dark background scrim behind gameplay when any tutorial is active
               if (isDarkScrimTut)
                 Positioned.fill(
@@ -488,18 +514,14 @@ class _GameScreenState extends State<GameScreen> {
                 ),
               ),
             ],
-          );
-        },
-      ),
+          ),
     );
   }
 
   Widget _buildHeader() {
-    return ListenableBuilder(
-      listenable: _controller!,
-      builder: (context, _) {
-        final coins = GameStorage.getCoins();
-
+    return ValueListenableBuilder<int>(
+      valueListenable: GameStorage.coinsNotifier,
+      builder: (context, coins, _) {
         return Padding(
           padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
           child: Row(

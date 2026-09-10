@@ -7,7 +7,7 @@ import '../../theme/app_theme.dart';
 import 'booster_unlock_dialog.dart';
 import 'bouncy_button.dart';
 
-class BoosterBar extends StatelessWidget {
+class BoosterBar extends StatefulWidget {
   final GameController controller;
   final VoidCallback? onOpenShop;
   final VoidCallback? onOpenExtraWords;
@@ -26,124 +26,182 @@ class BoosterBar extends StatelessWidget {
   });
 
   @override
+  State<BoosterBar> createState() => _BoosterBarState();
+}
+
+class _BoosterBarState extends State<BoosterBar> {
+  int _lastBoostersUsedCount = 0;
+  int _lastExtraWordsCount = 0;
+  bool _lastIsWon = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _lastBoostersUsedCount = widget.controller.boostersUsedCount;
+    _lastExtraWordsCount = widget.controller.foundExtraWords.length;
+    _lastIsWon = widget.controller.isWon;
+    widget.controller.addListener(_onControllerChanged);
+  }
+
+  @override
+  void didUpdateWidget(covariant BoosterBar oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.controller != widget.controller) {
+      oldWidget.controller.removeListener(_onControllerChanged);
+      _lastBoostersUsedCount = widget.controller.boostersUsedCount;
+      _lastExtraWordsCount = widget.controller.foundExtraWords.length;
+      _lastIsWon = widget.controller.isWon;
+      widget.controller.addListener(_onControllerChanged);
+    }
+  }
+
+  @override
+  void dispose() {
+    widget.controller.removeListener(_onControllerChanged);
+    super.dispose();
+  }
+
+  void _onControllerChanged() {
+    final boostersUsed = widget.controller.boostersUsedCount;
+    final extraWords = widget.controller.foundExtraWords.length;
+    final isWon = widget.controller.isWon;
+    if (boostersUsed != _lastBoostersUsedCount ||
+        extraWords != _lastExtraWordsCount ||
+        isWon != _lastIsWon) {
+      _lastBoostersUsedCount = boostersUsed;
+      _lastExtraWordsCount = extraWords;
+      _lastIsWon = isWon;
+      setState(() {});
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return ListenableBuilder(
-      listenable: controller,
-      builder: (context, _) {
-        if (!controller.isBoosterBarVisible) {
-          return const SizedBox.shrink();
-        }
+    final controller = widget.controller;
+    if (!controller.isBoosterBarVisible) {
+      return const SizedBox.shrink();
+    }
 
-        final extraCount = GameStorage.getExtraWordsChestCount();
-        final hintCount = GameStorage.getHintCount();
-        final rocketCount = GameStorage.getRocketCount();
+    final extraCount = GameStorage.getExtraWordsChestCount();
+    final hintCount = GameStorage.getHintCount();
+    final rocketCount = GameStorage.getRocketCount();
 
-        // Level 5 - 6: Only Hint is unlocked, centered at bottom
-        if (!controller.isRocketUnlocked) {
-          return Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                _buildBoosterBtn(
-                  emoji: '💡',
-                  inventoryCount: hintCount,
-                  isSpotlighted: isHintSpotlighted,
-                  onTap: () {
-                    if (hintCount > 0) {
-                      controller.useHint();
-                    } else {
-                      BoosterUnlockDialog.show(
-                        context,
-                        boosterType: BoosterType.hint,
-                        controller: controller,
-                      );
-                    }
-                  },
-                ),
-              ],
+    // Level 5 - 6: Only Hint is unlocked, centered at bottom
+    if (!controller.isRocketUnlocked) {
+      return Padding(
+        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            _buildBoosterBtn(
+              emoji: '💡',
+              inventoryCount: hintCount,
+              isSpotlighted: widget.isHintSpotlighted,
+              onTap: () async {
+                if (hintCount > 0) {
+                  controller.useHint();
+                  setState(() {});
+                } else {
+                  await BoosterUnlockDialog.show(
+                    context,
+                    boosterType: BoosterType.hint,
+                    controller: controller,
+                  );
+                  if (mounted) setState(() {});
+                }
+              },
             ),
-          );
-        }
+          ],
+        ),
+      );
+    }
 
-        // Level 7+: Full Booster Suite (Extra Words, Hint, Rocket, Shop)
-        final bool isAnySpotlighted = isHintSpotlighted || isExtraWordsSpotlighted;
+    // Level 7+: Full Booster Suite (Extra Words, Hint, Rocket, Shop)
+    final bool isAnySpotlighted = widget.isHintSpotlighted || widget.isExtraWordsSpotlighted;
 
-        return Padding(
-          padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              // 1. Extra Words Button (Custom 3D Wordcraft Tile Stack)
-              if (controller.isExtraWordsUnlocked)
-                Opacity(
-                  opacity: (isAnySpotlighted && !isExtraWordsSpotlighted) ? 0.35 : 1.0,
-                  child: ExtraWordsButton(
-                    key: extraWordsBtnKey,
-                    extraCount: extraCount,
-                    isSpotlighted: isExtraWordsSpotlighted,
-                    onTap: onOpenExtraWords,
-                  ),
-                ),
-
-              // 2. Hint Booster 💡
-              Opacity(
-                opacity: (isAnySpotlighted && !isHintSpotlighted) ? 0.35 : 1.0,
-                child: _buildBoosterBtn(
-                  emoji: '💡',
-                  inventoryCount: hintCount,
-                  isSpotlighted: isHintSpotlighted,
-                  onTap: () {
-                    if (hintCount > 0) {
-                      controller.useHint();
-                    } else {
-                      BoosterUnlockDialog.show(
-                        context,
-                        boosterType: BoosterType.hint,
-                        controller: controller,
-                      );
-                    }
-                  },
-                ),
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.end,
+        children: [
+          // 1. Extra Words Button (Custom 3D Wordcraft Tile Stack)
+          if (controller.isExtraWordsUnlocked)
+            Opacity(
+              opacity: (isAnySpotlighted && !widget.isExtraWordsSpotlighted) ? 0.35 : 1.0,
+              child: ExtraWordsButton(
+                key: widget.extraWordsBtnKey,
+                extraCount: extraCount,
+                isSpotlighted: widget.isExtraWordsSpotlighted,
+                onTap: () async {
+                  widget.onOpenExtraWords?.call();
+                  if (mounted) setState(() {});
+                },
               ),
+            ),
 
-              // 3. Rocket Booster 🚀
-              if (controller.isRocketUnlocked)
-                Opacity(
-                  opacity: isAnySpotlighted ? 0.35 : 1.0,
-                  child: _buildBoosterBtn(
-                    emoji: '🚀',
-                    inventoryCount: rocketCount,
-                    onTap: () {
-                      if (rocketCount > 0) {
-                        controller.useRocket();
-                      } else {
-                        BoosterUnlockDialog.show(
-                          context,
-                          boosterType: BoosterType.rocket,
-                          controller: controller,
-                        );
-                      }
-                    },
-                  ),
-                ),
-
-              // 4. Shop / Chest 🎁
-              if (controller.isShopUnlocked)
-                Opacity(
-                  opacity: isAnySpotlighted ? 0.35 : 1.0,
-                  child: _buildSpecialActionBtn(
-                    emoji: '🎁',
-                    label: 'SHOP',
-                    onTap: onOpenShop,
-                  ),
-                ),
-            ],
+          // 2. Hint Booster 💡
+          Opacity(
+            opacity: (isAnySpotlighted && !widget.isHintSpotlighted) ? 0.35 : 1.0,
+            child: _buildBoosterBtn(
+              emoji: '💡',
+              inventoryCount: hintCount,
+              isSpotlighted: widget.isHintSpotlighted,
+              onTap: () async {
+                if (hintCount > 0) {
+                  controller.useHint();
+                  setState(() {});
+                } else {
+                  await BoosterUnlockDialog.show(
+                    context,
+                    boosterType: BoosterType.hint,
+                    controller: controller,
+                  );
+                  if (mounted) setState(() {});
+                }
+              },
+            ),
           ),
-        );
-      },
+
+          // 3. Rocket Booster 🚀
+          if (controller.isRocketUnlocked)
+            Opacity(
+              opacity: isAnySpotlighted ? 0.35 : 1.0,
+              child: _buildBoosterBtn(
+                emoji: '🚀',
+                inventoryCount: rocketCount,
+                onTap: () async {
+                  if (rocketCount > 0) {
+                    controller.useRocket();
+                    setState(() {});
+                  } else {
+                    await BoosterUnlockDialog.show(
+                      context,
+                      boosterType: BoosterType.rocket,
+                      controller: controller,
+                    );
+                    if (mounted) setState(() {});
+                  }
+                },
+              ),
+            ),
+
+          // 4. Shop / Chest 🎁
+          if (controller.isShopUnlocked)
+            Opacity(
+              opacity: isAnySpotlighted ? 0.35 : 1.0,
+              child: _buildSpecialActionBtn(
+                emoji: '🎁',
+                label: 'SHOP',
+                onTap: () async {
+                  widget.onOpenShop?.call();
+                  if (mounted) setState(() {});
+                },
+              ),
+            ),
+        ],
+      ),
     );
   }
 

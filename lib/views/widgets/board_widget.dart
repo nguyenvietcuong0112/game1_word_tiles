@@ -272,7 +272,7 @@ class BoardWidgetState extends State<BoardWidget> with SingleTickerProviderState
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: List.generate(height, (r) {
-                                final rowWidget = Row(
+                                return Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: List.generate(width, (c) {
                                     final pt = Point(c, r);
@@ -301,21 +301,18 @@ class BoardWidgetState extends State<BoardWidget> with SingleTickerProviderState
                                     );
                                   }),
                                 );
-
-                                return rowWidget
-                                    .animate(
-                                      key: ValueKey('lvl-${widget.controller.levelNumber}-r$r'),
-                                      delay: (20 * r).ms,
-                                    )
-                                    .fadeIn(duration: 180.ms)
-                                    .scale(
-                                      begin: const Offset(0.88, 0.88),
-                                      end: const Offset(1.0, 1.0),
-                                      duration: 250.ms,
-                                      curve: Curves.easeOutBack,
-                                    );
                               }),
-                            ),
+                            )
+                                .animate(
+                                  key: ValueKey('board-grid-${widget.controller.levelNumber}'),
+                                )
+                                .fadeIn(duration: 200.ms)
+                                .scale(
+                                  begin: const Offset(0.92, 0.92),
+                                  end: const Offset(1.0, 1.0),
+                                  duration: 260.ms,
+                                  curve: Curves.easeOutBack,
+                                ),
                           ),
 
                       // 3. 3D Tile Shatter Particles & Sparkles Layer (60-120 FPS GPU Canvas)
@@ -417,66 +414,73 @@ class SwipeLinePainter extends CustomPainter {
     required this.tileSize,
   });
 
+  static final Paint _glowPaint = Paint()
+    ..strokeCap = StrokeCap.round
+    ..strokeJoin = StrokeJoin.round
+    ..style = PaintingStyle.stroke;
+
+  static final Paint _trackPaint = Paint()
+    ..color = AppColors.terracotta
+    ..strokeCap = StrokeCap.round
+    ..strokeJoin = StrokeJoin.round
+    ..style = PaintingStyle.stroke;
+
+  static final Paint _shinePaint = Paint()
+    ..strokeCap = StrokeCap.round
+    ..strokeJoin = StrokeJoin.round
+    ..style = PaintingStyle.stroke;
+
+  static final Paint _nodePaint = Paint()
+    ..color = AppColors.butterCream
+    ..style = PaintingStyle.fill;
+
+  static final Paint _nodeBorderPaint = Paint()
+    ..color = AppColors.terracottaDark
+    ..style = PaintingStyle.stroke
+    ..strokeWidth = 2.0;
+
+  static final Path _drawPath = Path();
+
   @override
   void paint(Canvas canvas, Size size) {
     if (path.isEmpty) return;
 
-    final drawPath = Path();
+    _drawPath.reset();
     for (int i = 0; i < path.length; i++) {
       final pt = path[i];
       final center = Offset((pt.x + 0.5) * tileSize, (pt.y + 0.5) * tileSize);
       if (i == 0) {
-        drawPath.moveTo(center.dx, center.dy);
+        _drawPath.moveTo(center.dx, center.dy);
       } else {
-        drawPath.lineTo(center.dx, center.dy);
+        _drawPath.lineTo(center.dx, center.dy);
       }
     }
 
     if (livePos != null) {
-      drawPath.lineTo(livePos!.dx, livePos!.dy);
+      _drawPath.lineTo(livePos!.dx, livePos!.dy);
     }
 
     // 1. Wide Honey Gold Radiant Glow
-    final glowPaint = Paint()
+    _glowPaint
       ..color = AppColors.honeyGold.withValues(alpha: 0.45)
-      ..strokeWidth = tileSize * 0.50
-      ..strokeCap = StrokeCap.round
-      ..strokeJoin = StrokeJoin.round
-      ..style = PaintingStyle.stroke;
-    canvas.drawPath(drawPath, glowPaint);
+      ..strokeWidth = tileSize * 0.50;
+    canvas.drawPath(_drawPath, _glowPaint);
 
     // 2. Main Vibrant Terracotta Peach Ribbon
-    final trackPaint = Paint()
-      ..color = AppColors.terracotta
-      ..strokeWidth = tileSize * 0.32
-      ..strokeCap = StrokeCap.round
-      ..strokeJoin = StrokeJoin.round
-      ..style = PaintingStyle.stroke;
-    canvas.drawPath(drawPath, trackPaint);
+    _trackPaint.strokeWidth = tileSize * 0.32;
+    canvas.drawPath(_drawPath, _trackPaint);
 
     // 3. Inner Gloss Laser Beam Highlight
-    final shinePaint = Paint()
+    _shinePaint
       ..color = Colors.white.withValues(alpha: 0.85)
-      ..strokeWidth = tileSize * 0.12
-      ..strokeCap = StrokeCap.round
-      ..strokeJoin = StrokeJoin.round
-      ..style = PaintingStyle.stroke;
-    canvas.drawPath(drawPath, shinePaint);
+      ..strokeWidth = tileSize * 0.12;
+    canvas.drawPath(_drawPath, _shinePaint);
 
     // 4. Sparkle Golden Node Beads at each connected tile center
-    final nodePaint = Paint()
-      ..color = AppColors.butterCream
-      ..style = PaintingStyle.fill;
-
-    final nodeBorderPaint = Paint()
-      ..color = AppColors.terracottaDark
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 2.0;
-
     for (final pt in path) {
       final center = Offset((pt.x + 0.5) * tileSize, (pt.y + 0.5) * tileSize);
-      canvas.drawCircle(center, tileSize * 0.16, nodePaint);
-      canvas.drawCircle(center, tileSize * 0.16, nodeBorderPaint);
+      canvas.drawCircle(center, tileSize * 0.16, _nodePaint);
+      canvas.drawCircle(center, tileSize * 0.16, _nodeBorderPaint);
     }
   }
 

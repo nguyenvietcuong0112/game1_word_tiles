@@ -65,27 +65,29 @@ class GameBackground extends StatelessWidget {
       );
     }
 
-    return Container(
-      width: double.infinity,
-      height: double.infinity,
-      decoration: BoxDecoration(gradient: gradient),
-      child: Stack(
-        fit: StackFit.expand,
-        children: [
-          if (variant != GameBackgroundVariant.clean)
-            Positioned.fill(
-              child: IgnorePointer(
-                child: CustomPaint(
-                  painter: _AmbientWoodTilesPainter(
-                    isGameplay: variant == GameBackgroundVariant.gameplay || isMountain || theme != null,
-                    isMountain: isMountain,
-                    ambientColor: theme?.ambientColor,
+    return RepaintBoundary(
+      child: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: BoxDecoration(gradient: gradient),
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            if (variant != GameBackgroundVariant.clean)
+              Positioned.fill(
+                child: IgnorePointer(
+                  child: CustomPaint(
+                    painter: _AmbientWoodTilesPainter(
+                      isGameplay: variant == GameBackgroundVariant.gameplay || isMountain || theme != null,
+                      isMountain: isMountain,
+                      ambientColor: theme?.ambientColor,
+                    ),
                   ),
                 ),
               ),
-            ),
-          ?child,
-        ],
+            ?child,
+          ],
+        ),
       ),
     );
   }
@@ -95,6 +97,11 @@ class _AmbientWoodTilesPainter extends CustomPainter {
   final bool isGameplay;
   final bool isMountain;
   final Color? ambientColor;
+
+  static final Paint _fillPaint = Paint()..style = PaintingStyle.fill;
+  static final Paint _borderPaint = Paint()
+    ..style = PaintingStyle.stroke
+    ..strokeWidth = 1.2;
 
   const _AmbientWoodTilesPainter({
     required this.isGameplay,
@@ -127,14 +134,8 @@ class _AmbientWoodTilesPainter extends CustomPainter {
 
     final tileColor = ambientColor ?? (isMountain ? const Color(0xFF6DA584) : const Color(0xFFDEC5AE));
 
-    final fillPaint = Paint()
-      ..color = tileColor.withValues(alpha: isGameplay ? 0.10 : 0.18)
-      ..style = PaintingStyle.fill;
-
-    final borderPaint = Paint()
-      ..color = tileColor.withValues(alpha: isGameplay ? 0.16 : 0.28)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.2;
+    _fillPaint.color = tileColor.withValues(alpha: isGameplay ? 0.10 : 0.18);
+    _borderPaint.color = tileColor.withValues(alpha: isGameplay ? 0.16 : 0.28);
 
     for (final pos in positions) {
       final rect = RRect.fromRectAndRadius(
@@ -146,8 +147,8 @@ class _AmbientWoodTilesPainter extends CustomPainter {
         const Radius.circular(14),
       );
 
-      canvas.drawRRect(rect, fillPaint);
-      canvas.drawRRect(rect, borderPaint);
+      canvas.drawRRect(rect, _fillPaint);
+      canvas.drawRRect(rect, _borderPaint);
     }
   }
 
