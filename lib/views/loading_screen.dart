@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:funtap_global_sdk/funtap_global_sdk.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -7,8 +8,6 @@ import '../services/ads_manager.dart';
 import '../services/audio_manager.dart';
 import '../services/game_storage.dart';
 import '../services/remote_config_service.dart';
-import '../theme/app_theme.dart';
-import '../widgets/common/game_scaffold.dart';
 import 'home_screen.dart';
 
 class LoadingScreen extends StatefulWidget {
@@ -20,16 +19,7 @@ class LoadingScreen extends StatefulWidget {
 
 class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProviderStateMixin {
   double _progress = 0.0;
-  String _statusText = 'Loading dictionaries...';
   Timer? _progressTimer;
-
-  final List<String> _loadingMessages = [
-    'Loading dictionaries...',
-    'Initializing audio engine...',
-    'Preparing puzzle levels...',
-    'Polishing word tiles...',
-    'Ready to play!',
-  ];
 
   @override
   void initState() {
@@ -55,8 +45,6 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
       setState(() {
         if (_progress < 0.90) {
           _progress += 0.02;
-          final msgIndex = ((_progress / 0.90) * (_loadingMessages.length - 2)).floor().clamp(0, _loadingMessages.length - 2);
-          _statusText = _loadingMessages[msgIndex];
         }
       });
     });
@@ -94,7 +82,6 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
     // Complete to 100%
     setState(() {
       _progress = 1.0;
-      _statusText = _loadingMessages.last;
     });
 
     final loadDuration = DateTime.now().difference(startTime).inMilliseconds / 1000.0;
@@ -119,186 +106,150 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
 
   @override
   Widget build(BuildContext context) {
-    return GameScaffold(
-      body: Center(
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 36),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      const Spacer(flex: 3),
+    return Scaffold(
+      backgroundColor: const Color(0xFF6B42A6),
+      body: Stack(
+        fit: StackFit.expand,
+        children: [
+          // 1. Full-bleed background with floating tiles and bottom scrabble tiles
+          Positioned.fill(
+            child: Image.asset(
+              'assets/images/bg_loading_splash.png',
+              fit: BoxFit.cover,
+            ),
+          ),
 
-                      // Modern Pastel 512x512 Logo with Soft Clay Shadow & Pop-in
-                      Container(
-                        width: 190,
-                        height: 190,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(44),
-                          boxShadow: [
-                            BoxShadow(
-                              color: AppColors.terracotta.withValues(alpha: 0.20),
-                              blurRadius: 30,
-                              spreadRadius: 4,
-                              offset: const Offset(0, 12),
-                            ),
-                            BoxShadow(
-                              color: const Color(0xFF78350F).withValues(alpha: 0.10),
-                              blurRadius: 15,
-                              offset: const Offset(0, 6),
-                            ),
+          // 2. Fore-layer interactive UI: Glowing Logo + Loading... + Progress Capsule
+          SafeArea(
+            child: Column(
+              children: [
+                const Spacer(flex: 32),
+
+                // Center Word Connect Logo with ambient radial glow
+                Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    // Soft warm radial light halo
+                    Container(
+                      width: 290.w,
+                      height: 180.h,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        gradient: RadialGradient(
+                          colors: [
+                            Colors.white.withValues(alpha: 0.35),
+                            Colors.white.withValues(alpha: 0.0),
                           ],
                         ),
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(44),
-                          child: Image.asset(
-                            'assets/images/app_logo.png',
-                            fit: BoxFit.cover,
-                          ),
-                        ),
-                      )
-                          .animate()
-                          .scale(
-                            duration: 700.ms,
-                            curve: Curves.elasticOut,
-                            begin: const Offset(0.3, 0.3),
-                            end: const Offset(1.0, 1.0),
-                          )
-                          .then()
-                          .animate(onPlay: (c) => c.repeat(reverse: true))
-                          .scale(
-                            duration: 2000.ms,
-                            begin: const Offset(1.0, 1.0),
-                            end: const Offset(1.03, 1.03),
-                            curve: Curves.easeInOut,
-                          ),
+                      ),
+                    ),
 
-                      const SizedBox(height: 28),
+                    // Logo Artwork
+                    Image.asset(
+                      'assets/icons/logo_loading_splash.png',
+                      width: 310.w,
+                      fit: BoxFit.contain,
+                    ),
+                  ],
+                )
+                    .animate()
+                    .scale(
+                      duration: 650.ms,
+                      curve: Curves.elasticOut,
+                      begin: const Offset(0.4, 0.4),
+                      end: const Offset(1.0, 1.0),
+                    )
+                    .then()
+                    .animate(onPlay: (c) => c.repeat(reverse: true))
+                    .scale(
+                      duration: 2200.ms,
+                      begin: const Offset(1.0, 1.0),
+                      end: const Offset(1.025, 1.025),
+                      curve: Curves.easeInOut,
+                    ),
 
-                      // Game Title
-                      Text(
-                        'WORDNECT',
-                        style: GoogleFonts.fredoka(
-                          fontSize: 38,
-                          fontWeight: FontWeight.w900,
-                          letterSpacing: 2.0,
-                          color: const Color(0xFF1E293B),
-                          shadows: [
-                            Shadow(
-                              color: AppColors.terracotta.withValues(alpha: 0.25),
-                              offset: const Offset(0, 3),
-                              blurRadius: 6,
-                            ),
-                          ],
-                        ),
-                      )
-                          .animate()
-                          .fadeIn(duration: 600.ms, delay: 200.ms)
-                          .slideY(begin: 0.3, end: 0, curve: Curves.easeOutBack),
+                const Spacer(flex: 18),
 
-                      const SizedBox(height: 6),
-
-                      // Subtitle
-                      Container(
-                        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 4),
-                        decoration: BoxDecoration(
-                          color: AppColors.cardPeachLight,
-                          borderRadius: BorderRadius.circular(14),
-                          border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                        ),
-                        child: Text(
-                          '✨ CONNECT LETTERS • FIND WORDS ✨',
-                          style: GoogleFonts.fredoka(
-                            fontSize: 12,
-                            fontWeight: FontWeight.w700,
-                            letterSpacing: 1.5,
-                            color: AppColors.terracotta,
-                          ),
-                        ),
-                      ).animate().fadeIn(duration: 600.ms, delay: 350.ms),
-
-                      const Spacer(flex: 3),
-
-                      // Animated Pastel Progress Bar Container
-                      Container(
-                        width: double.infinity,
-                        height: 22,
-                        padding: const EdgeInsets.all(3.5),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          borderRadius: BorderRadius.circular(20),
-                          border: Border.all(
-                            color: AppColors.borderSubtle,
-                            width: 2,
-                          ),
-                          boxShadow: [
-                            BoxShadow(
-                              color: AppColors.terracotta.withValues(alpha: 0.12),
-                              blurRadius: 12,
-                              offset: const Offset(0, 4),
-                            ),
-                          ],
-                        ),
-                        child: LayoutBuilder(
-                          builder: (context, constraints) {
-                            final maxWidth = constraints.maxWidth;
-                            final currentWidth = (maxWidth * _progress.clamp(0.0, 1.0));
-                            return AnimatedContainer(
-                              duration: const Duration(milliseconds: 120),
-                              width: currentWidth,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(16),
-                                gradient: const LinearGradient(
-                                  colors: [
-                                    Color(0xFFFB923C), // Pastel warm orange
-                                    Color(0xFFF97316),
-                                    Color(0xFFEA580C),
-                                  ],
-                                ),
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: AppColors.terracotta.withValues(alpha: 0.3),
-                                    blurRadius: 3,
-                                  ),
-                                ],
-                              ),
-                            );
-                          },
-                        ),
-                      ).animate().fadeIn(duration: 500.ms, delay: 400.ms),
-
-                      const SizedBox(height: 14),
-
-                      // Loading Status & Percentage
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Expanded(
-                            child: Text(
-                              _statusText,
-                              style: GoogleFonts.fredoka(
-                                fontSize: 13,
-                                fontWeight: FontWeight.w500,
-                                color: const Color(0xFF64748B),
-                              ),
-                              overflow: TextOverflow.ellipsis,
-                            ),
-                          ),
-                          Text(
-                            '${(_progress * 100).toInt()}%',
-                            style: GoogleFonts.fredoka(
-                              fontSize: 15,
-                              fontWeight: FontWeight.w700,
-                              color: AppColors.terracotta,
-                            ),
-                          ),
-                        ],
-                      ).animate().fadeIn(duration: 500.ms, delay: 450.ms),
-
-                      const Spacer(flex: 1),
+                // Loading... status label
+                Text(
+                  'Loading...',
+                  style: GoogleFonts.fredoka(
+                    fontSize: 17.sp,
+                    fontWeight: FontWeight.w700,
+                    color: Colors.white,
+                    letterSpacing: 0.5,
+                    shadows: const [
+                      Shadow(
+                        color: Color(0x99000000),
+                        offset: Offset(0, 1.5),
+                        blurRadius: 4,
+                      ),
                     ],
                   ),
-                ),
-              ),
+                ).animate().fadeIn(duration: 400.ms),
+
+                SizedBox(height: 10.h),
+
+                // Sleek Capsule Progress Bar
+                Container(
+                  width: 246.w,
+                  height: 20.h,
+                  padding: EdgeInsets.all(2.5.r),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF2C2D38),
+                    borderRadius: BorderRadius.circular(10.r),
+                    border: Border.all(
+                      color: const Color(0xFFF3ECE4),
+                      width: 2.5,
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: 0.35),
+                        offset: const Offset(0, 2.5),
+                        blurRadius: 5,
+                      ),
+                    ],
+                  ),
+                  child: LayoutBuilder(
+                    builder: (context, constraints) {
+                      final maxW = constraints.maxWidth;
+                      final barW = (maxW * _progress.clamp(0.0, 1.0));
+                      return Align(
+                        alignment: Alignment.centerLeft,
+                        child: AnimatedContainer(
+                          duration: const Duration(milliseconds: 100),
+                          width: barW,
+                          height: double.infinity,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(7.r),
+                            gradient: const LinearGradient(
+                              colors: [
+                                Color(0xFF5FE86D), // bright top lime highlight
+                                Color(0xFF32D34E), // rich emerald green
+                                Color(0xFF1EAE3A), // deep green base
+                              ],
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                            ),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: Color(0x664ADE80),
+                                blurRadius: 4,
+                              ),
+                            ],
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ).animate().fadeIn(duration: 500.ms),
+
+                const Spacer(flex: 38),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
