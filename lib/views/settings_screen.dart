@@ -99,17 +99,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     borderRadius: BorderRadius.circular(20.r),
                     child: InkWell(
                       onTap: () {
-                        Navigator.push(
+                        LanguageSelectionScreen.show(
                           context,
-                          GamePageRoute(
-                            child: LanguageSelectionScreen(
-                              currentLanguage: _language,
-                              onLanguageSelected: (newLang) {
-                                setState(() => _language = newLang);
-                                widget.onLanguageChanged();
-                              },
-                            ),
-                          ),
+                          currentLanguage: _language,
+                          onLanguageSelected: (newLang) {
+                            setState(() => _language = newLang);
+                            widget.onLanguageChanged();
+                          },
                         );
                       },
                       borderRadius: BorderRadius.circular(20.r),

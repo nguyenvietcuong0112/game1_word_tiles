@@ -7,7 +7,6 @@ import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
 import '../../services/level_loader.dart';
 import '../../theme/app_typography.dart';
-import '../../utils/game_transitions.dart';
 import '../language_selection_screen.dart';
 
 class SettingsDialog extends StatefulWidget {
@@ -67,17 +66,13 @@ class _SettingsDialogState extends State<SettingsDialog> {
 
   void _openLanguageSelection() async {
     AudioManager.playTileSelect(pitchIndex: 4);
-    await Navigator.push(
+    await LanguageSelectionScreen.show(
       context,
-      GamePageRoute(
-        child: LanguageSelectionScreen(
-          currentLanguage: _currentLanguage,
-          onLanguageSelected: (newLang) {
-            setState(() => _currentLanguage = newLang);
-            widget.onLanguageChanged?.call();
-          },
-        ),
-      ),
+      currentLanguage: _currentLanguage,
+      onLanguageSelected: (newLang) {
+        setState(() => _currentLanguage = newLang);
+        widget.onLanguageChanged?.call();
+      },
     );
     if (mounted) {
       setState(() {
