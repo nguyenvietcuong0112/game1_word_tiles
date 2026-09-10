@@ -19,7 +19,10 @@ class TargetWordsBar extends StatelessWidget {
       builder: (context, _) {
         final words = controller.level.targetWords;
         final maxLen = words.fold<int>(0, (maxVal, tw) => tw.word.length > maxVal ? tw.word.length : maxVal);
-        final tutorialTargetWord = (!GameStorage.isTutorialCompleted() && controller.levelNumber == 1 && !controller.isWon)
+        final tutorialTargetWord = (!GameStorage.isTutorialCompleted() &&
+                controller.levelNumber == 1 &&
+                !controller.isWon &&
+                controller.solvedTargetWords.length < 2)
             ? controller.getNextUnsolvedTargetWord()
             : null;
 

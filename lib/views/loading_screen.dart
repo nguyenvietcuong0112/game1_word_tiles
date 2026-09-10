@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:funtap_global_sdk/funtap_global_sdk.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import '../services/ads_manager.dart';
 import '../services/audio_manager.dart';
 import '../services/game_storage.dart';
+import '../services/remote_config_service.dart';
 import '../theme/app_theme.dart';
 import '../widgets/common/game_scaffold.dart';
 import 'home_screen.dart';
@@ -71,8 +73,20 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
       AudioManager.startBgm();
     } catch (_) {}
 
-    // Small delay to ensure smooth, pleasant animation
-    await Future.delayed(const Duration(milliseconds: 1400));
+    // Initialize AdsManager & RemoteConfig
+    try {
+      AdsManager.init();
+      // Wait for Remote Config to be ready from cloud if possible (max 1500ms)
+      final rcStartTime = DateTime.now();
+      while (!await FGSDK.isRemoteConfigReady() &&
+          DateTime.now().difference(rcStartTime).inMilliseconds < 1500) {
+        await Future.delayed(const Duration(milliseconds: 100));
+      }
+      await RemoteConfigService.fetchConfigs();
+    } catch (_) {}
+
+    // Small delay to ensure smooth, pleasant animation (bounded by 10s max)
+    await Future.delayed(const Duration(milliseconds: 800));
 
     if (!mounted) return;
     _progressTimer?.cancel();
@@ -86,25 +100,7 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
     final loadDuration = DateTime.now().difference(startTime).inMilliseconds / 1000.0;
     FGSDK.logLoadingEnd('splash', true, loadDuration);
 
-    await Future.delayed(const Duration(milliseconds: 400));
-
-    if (!mounted) return;
-
-    // Show Interstitial ad at splash
-    try {
-      final lang = GameStorage.getSelectedLanguage();
-      final level = GameStorage.getCurrentLevelIndex(lang) + 1;
-      debugPrint('[Splash] Showing Interstitial ad (placement: splash, level: $level)...');
-      await FGSDK.showInterstitial('splash', 'classic', level).timeout(
-        const Duration(seconds: 5),
-        onTimeout: () {
-          debugPrint('[Splash] Interstitial ad timed out or not available.');
-        },
-      );
-      debugPrint('[Splash] Interstitial ad finished/dismissed.');
-    } catch (e) {
-      debugPrint('[Splash] Interstitial error: $e');
-    }
+    await Future.delayed(const Duration(milliseconds: 300));
 
     if (!mounted) return;
     Navigator.of(context).pushReplacement(

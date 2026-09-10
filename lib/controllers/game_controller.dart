@@ -27,8 +27,21 @@ class GameController extends ChangeNotifier {
   String victoryCelebrationText = 'LEVEL COMPLETE!';
 
   int invalidAttemptsCount = 0;
+  int consecutiveFailedSwipes = 0;
+  List<Point<int>>? failSafeHintPath;
   int boostersUsedCount = 0;
   final DateTime levelStartTime = DateTime.now();
+
+  // Chapter & Level progression
+  int get chapterNumber => ((levelNumber - 1) ~/ 5) + 1;
+  int get levelInChapter => ((levelNumber - 1) % 5) + 1;
+
+  // Progressive Feature & Booster Unlocks
+  bool get isBoosterBarVisible => levelNumber >= 5;
+  bool get isHintUnlocked => levelNumber >= 5;
+  bool get isRocketUnlocked => levelNumber >= 7;
+  bool get isExtraWordsUnlocked => levelNumber >= 7;
+  bool get isShopUnlocked => levelNumber >= 7;
 
   List<Point<int>>? highlightedHintPath;
   Timer? _hintTimer;
@@ -226,6 +239,8 @@ class GameController extends ChangeNotifier {
 
       // Solved new target word!
       solvedTargetWords.add(targetKey);
+      consecutiveFailedSwipes = 0;
+      failSafeHintPath = null;
       AudioManager.playWordMatch();
       _showFeedback(_getRandomMatchPhrase(), _getRandomMatchColor());
 
@@ -298,6 +313,13 @@ class GameController extends ChangeNotifier {
 
     // 3. Invalid word
     invalidAttemptsCount++;
+    consecutiveFailedSwipes++;
+    if (levelNumber <= 10 && consecutiveFailedSwipes >= 5) {
+      final nextWord = getNextUnsolvedTargetWord();
+      if (nextWord != null) {
+        failSafeHintPath = getTutorialPathForWord(nextWord);
+      }
+    }
     AudioManager.playInvalid();
     _showFeedback('Not on the board', Colors.redAccent.shade100);
   }
@@ -366,6 +388,14 @@ class GameController extends ChangeNotifier {
     }
 
     GameStorage.addCoins(coinsReward);
+    AnalyticsService.logEarnResource(
+      level: levelNumber,
+      itemType: 'currency',
+      itemName: 'coin',
+      amount: coinsReward.toDouble(),
+      earnPlacement: 'level_win',
+      balance: GameStorage.getCoins().toDouble(),
+    );
 
     // Save progress
     GameStorage.saveLevelStars(language, levelId, starsEarned);
@@ -431,6 +461,15 @@ class GameController extends ChangeNotifier {
         AudioManager.playInvalid();
         return false;
       }
+      AnalyticsService.logSpendResource(
+        level: levelNumber,
+        itemType: 'currency',
+        itemName: 'coin',
+        amount: hintCost.toDouble(),
+        spendPlacement: 'ingame_booster',
+        spendReason: 'hint',
+        balance: GameStorage.getCoins().toDouble(),
+      );
     }
 
     for (final target in level.targetWords) {
@@ -473,6 +512,15 @@ class GameController extends ChangeNotifier {
         AudioManager.playInvalid();
         return false;
       }
+      AnalyticsService.logSpendResource(
+        level: levelNumber,
+        itemType: 'currency',
+        itemName: 'coin',
+        amount: rocketCost.toDouble(),
+        spendPlacement: 'ingame_booster',
+        spendReason: 'rocket',
+        balance: GameStorage.getCoins().toDouble(),
+      );
     }
 
     // Find the longest unsolved target word

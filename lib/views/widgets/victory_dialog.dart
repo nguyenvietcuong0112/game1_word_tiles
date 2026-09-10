@@ -4,9 +4,12 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../controllers/game_controller.dart';
+import '../../services/ads_manager.dart';
+import '../../services/game_storage.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/common/game_button.dart';
 import '../../widgets/common/game_icon_button.dart';
+import 'chapter_transition_dialog.dart';
 
 class VictoryOverlay extends StatefulWidget {
   final GameController controller;
@@ -26,6 +29,8 @@ class VictoryOverlay extends StatefulWidget {
 
 class _VictoryOverlayState extends State<VictoryOverlay> {
   late ConfettiController _confettiController;
+  bool _claimedDouble = false;
+  bool _isLoadingReward = false;
 
   @override
   void initState() {
@@ -38,6 +43,70 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
   void dispose() {
     _confettiController.dispose();
     super.dispose();
+  }
+
+  void _handleContinue() {
+    AdsManager.showInterEndgame(
+      levelNumber: widget.controller.levelNumber,
+      onCompleted: () {
+        if (!mounted) return;
+        if (widget.controller.levelNumber == 5) {
+          ChapterTransitionDialog.show(
+            context,
+            onStartChapter: widget.onNextLevel,
+          );
+        } else {
+          widget.onNextLevel();
+        }
+      },
+    );
+  }
+
+  void _handleReplay() {
+    AdsManager.showInterReplay(
+      levelNumber: widget.controller.levelNumber,
+      onCompleted: () {
+        if (!mounted) return;
+        widget.onReplay();
+      },
+    );
+  }
+
+  void _claimDoubleCoins() {
+    setState(() => _isLoadingReward = true);
+
+    AdsManager.showDoubleCoinReward(
+      levelNumber: widget.controller.levelNumber,
+      onRewardResult: (success) {
+        if (!mounted) return;
+        setState(() => _isLoadingReward = false);
+        if (success) {
+          final bonusCoins = widget.controller.coinsReward;
+          GameStorage.addCoins(bonusCoins);
+          setState(() => _claimedDouble = true);
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                '🎉 Awesome! +$bonusCoins bonus coins added!',
+                style: GoogleFonts.fredoka(fontWeight: FontWeight.w700),
+              ),
+              backgroundColor: const Color(0xFF059669),
+              duration: const Duration(seconds: 2),
+            ),
+          );
+        } else {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                'Ad not completed. Could not claim double coins.',
+                style: GoogleFonts.fredoka(fontWeight: FontWeight.w600),
+              ),
+              duration: const Duration(seconds: 2),
+            ),
+          );
+        }
+      },
+    );
   }
 
   @override
@@ -93,7 +162,9 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
               children: [
                 // Celebration Title (Large, Bold, Woodcraft Style)
                 Text(
-                  widget.controller.victoryCelebrationText,
+                  widget.controller.levelNumber == 5
+                      ? 'Congrats!'
+                      : widget.controller.victoryCelebrationText,
                   textAlign: TextAlign.center,
                   style: GoogleFonts.fredoka(
                     fontSize: 28.sp,
@@ -105,7 +176,9 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
 
                 SizedBox(height: 6.h),
                 Text(
-                  'Level ${widget.controller.levelNumber} Completed! 🎉',
+                  widget.controller.levelNumber == 5
+                      ? 'Chapter 1 Completed! 🎉'
+                      : 'Level ${widget.controller.levelNumber} Completed! 🎉',
                   style: GoogleFonts.fredoka(
                     fontSize: 16.sp,
                     color: AppColors.textDark,
@@ -164,13 +237,13 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                 ),
                 SizedBox(height: 16.h),
 
-                // Coins Reward Badge
+                // Coin Reward Badge
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 22.w, vertical: 10.h),
                   decoration: BoxDecoration(
-                    color: AppColors.cardWhite,
-                    borderRadius: BorderRadius.circular(22.r),
-                    border: Border.all(color: AppColors.borderSubtle, width: 1.5),
+                    color: AppColors.cardPeachLight,
+                    borderRadius: BorderRadius.circular(24.r),
+                    border: Border.all(color: AppColors.borderSubtle, width: 2.0),
                     boxShadow: const [
                       BoxShadow(
                         color: Color(0xFFE8DAC8),
@@ -198,25 +271,68 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                 )
                     .animate(delay: 450.ms)
                     .scale(curve: Curves.easeOutBack),
-                SizedBox(height: 26.h),
+                SizedBox(height: 14.h),
+
+                // 2X Coins with Reward Ad Button
+                if (!_claimedDouble)
+                  GameButton.gold(
+                    size: GameButtonSize.medium,
+                    text: _isLoadingReward ? 'LOADING...' : 'CLAIM 2X COINS',
+                    icon: const Icon(Icons.play_circle_fill_rounded, size: 20, color: Colors.white),
+                    trailingIcon: const Text('🪙', style: TextStyle(fontSize: 18)),
+                    onTap: _isLoadingReward ? null : _claimDoubleCoins,
+                  ).animate(delay: 500.ms).fadeIn().scale(curve: Curves.easeOutBack)
+                else
+                  Container(
+                    padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 6.h),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFD1FAE5),
+                      borderRadius: BorderRadius.circular(16.r),
+                      border: Border.all(color: const Color(0xFF6EE7B7)),
+                    ),
+                    child: Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        const Icon(Icons.check_circle_rounded, color: Color(0xFF059669), size: 18),
+                        SizedBox(width: 6.w),
+                        Text(
+                          '2X COIN CLAIMED! (+${widget.controller.coinsReward})',
+                          style: GoogleFonts.fredoka(
+                            fontSize: 13.sp,
+                            fontWeight: FontWeight.w700,
+                            color: const Color(0xFF065F46),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                SizedBox(height: 20.h),
 
                 // Action Buttons
                 Row(
                   children: [
-                    // Replay Button (Unified 3D Cocoa-Caramel Round Button)
+                    // Replay Button (with Replay Ad check)
                     GameIconButton.replay(
-                      onTap: widget.onReplay,
+                      onTap: _handleReplay,
                     ),
                     SizedBox(width: 14.w),
 
-                    // Next Level Button (3D Cocoa Caramel CTA)
+                    // Next Level Button (with Endgame Inter check)
                     Expanded(
-                      child: GameButton.primary(
-                        size: GameButtonSize.large,
-                        text: 'CONTINUE',
-                        trailingIcon: const Icon(Icons.arrow_forward_rounded, size: 22, color: Colors.white),
-                        onTap: widget.onNextLevel,
-                      ),
+                      child: widget.controller.levelNumber == 5
+                          ? GameButton.success(
+                              size: GameButtonSize.large,
+                              text: 'NEXT CHAPTER',
+                              trailingIcon: const Icon(Icons.arrow_forward_rounded, size: 22, color: Colors.white),
+                              onTap: _handleContinue,
+                            )
+                          : GameButton.primary(
+                              size: GameButtonSize.large,
+                              text: 'CONTINUE',
+                              trailingIcon: const Icon(Icons.arrow_forward_rounded, size: 22, color: Colors.white),
+                              onTap: _handleContinue,
+                            ),
                     ),
                   ],
                 ),

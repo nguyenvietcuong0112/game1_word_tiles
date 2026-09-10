@@ -5,10 +5,12 @@ enum GameBackgroundVariant {
   standard,
   gameplay,
   clean,
+  mountainRoad,
 }
 
 /// Unified Ambient Game Background for Word Tiles.
-/// Features a warm sandalwood linen canvas with subtle 3D birch wood ambient tiles.
+/// Features a warm sandalwood linen canvas with subtle 3D birch wood ambient tiles,
+/// and lush mountain road atmosphere for Chapter 2.
 class GameBackground extends StatelessWidget {
   final Widget? child;
   final GameBackgroundVariant variant;
@@ -21,21 +23,34 @@ class GameBackground extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isMountain = variant == GameBackgroundVariant.mountainRoad;
+
+    final gradient = isMountain
+        ? const LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color(0xFF2D5542), // Alpine Forest Mist
+              Color(0xFF3F6F57), // Verdant Canopy
+              Color(0xFF264736), // Deep Pine Shadow
+            ],
+            stops: [0.0, 0.50, 1.0],
+          )
+        : const LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              AppColors.bgSkyGradientStart,
+              AppColors.bgCanvas,
+              AppColors.bgCanvasSecondary,
+            ],
+            stops: [0.0, 0.45, 1.0],
+          );
+
     return Container(
       width: double.infinity,
       height: double.infinity,
-      decoration: const BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            AppColors.bgSkyGradientStart,
-            AppColors.bgCanvas,
-            AppColors.bgCanvasSecondary,
-          ],
-          stops: [0.0, 0.45, 1.0],
-        ),
-      ),
+      decoration: BoxDecoration(gradient: gradient),
       child: Stack(
         fit: StackFit.expand,
         children: [
@@ -44,7 +59,8 @@ class GameBackground extends StatelessWidget {
               child: IgnorePointer(
                 child: CustomPaint(
                   painter: _AmbientWoodTilesPainter(
-                    isGameplay: variant == GameBackgroundVariant.gameplay,
+                    isGameplay: variant == GameBackgroundVariant.gameplay || isMountain,
+                    isMountain: isMountain,
                   ),
                 ),
               ),
@@ -58,8 +74,12 @@ class GameBackground extends StatelessWidget {
 
 class _AmbientWoodTilesPainter extends CustomPainter {
   final bool isGameplay;
+  final bool isMountain;
 
-  const _AmbientWoodTilesPainter({required this.isGameplay});
+  const _AmbientWoodTilesPainter({
+    required this.isGameplay,
+    this.isMountain = false,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -84,12 +104,14 @@ class _AmbientWoodTilesPainter extends CustomPainter {
       ];
     }
 
+    final tileColor = isMountain ? const Color(0xFF6DA584) : const Color(0xFFDEC5AE);
+
     final fillPaint = Paint()
-      ..color = const Color(0xFFDEC5AE).withValues(alpha: isGameplay ? 0.12 : 0.18)
+      ..color = tileColor.withValues(alpha: isGameplay ? 0.10 : 0.18)
       ..style = PaintingStyle.fill;
 
     final borderPaint = Paint()
-      ..color = const Color(0xFFDEC5AE).withValues(alpha: isGameplay ? 0.18 : 0.28)
+      ..color = tileColor.withValues(alpha: isGameplay ? 0.16 : 0.28)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 1.2;
 
@@ -110,5 +132,5 @@ class _AmbientWoodTilesPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _AmbientWoodTilesPainter oldDelegate) =>
-      oldDelegate.isGameplay != isGameplay;
+      oldDelegate.isGameplay != isGameplay || oldDelegate.isMountain != isMountain;
 }

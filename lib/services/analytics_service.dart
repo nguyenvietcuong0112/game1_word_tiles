@@ -2,6 +2,7 @@ import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/foundation.dart';
+import 'package:funtap_global_sdk/funtap_global_sdk.dart';
 import '../firebase_options.dart';
 
 class AnalyticsService {
@@ -42,6 +43,12 @@ class AnalyticsService {
     required int level,
     required String language,
   }) async {
+    // 1. FGSDK Level Start Tracking
+    try {
+      FGSDK.logLevelStart(level, 1, 0, 'classic');
+    } catch (_) {}
+
+    // 2. Firebase Analytics
     if (!_isInitialized) return;
     try {
       await _analytics?.logEvent(
@@ -63,6 +70,20 @@ class AnalyticsService {
     required int stars,
     int? timeSpentSeconds,
   }) async {
+    // 1. FGSDK Level End (Win) Tracking
+    try {
+      FGSDK.logLevelEnd(
+        level,
+        1,
+        0,
+        'classic',
+        (timeSpentSeconds ?? 30).toDouble(),
+        true,
+        'win',
+      );
+    } catch (_) {}
+
+    // 2. Firebase Analytics
     if (!_isInitialized) return;
     try {
       await _analytics?.logEvent(
@@ -84,6 +105,20 @@ class AnalyticsService {
     required int level,
     required String language,
   }) async {
+    // 1. FGSDK Level End (Lose) Tracking
+    try {
+      FGSDK.logLevelEnd(
+        level,
+        1,
+        1,
+        'classic',
+        0.0,
+        false,
+        'lose',
+      );
+    } catch (_) {}
+
+    // 2. Firebase Analytics
     if (!_isInitialized) return;
     try {
       await _analytics?.logEvent(
@@ -96,6 +131,56 @@ class AnalyticsService {
     } catch (e) {
       debugPrint('[Analytics] logLevelFail error: $e');
     }
+  }
+
+  /// Log Resource Earned (Coins, Boosters)
+  static void logEarnResource({
+    required int level,
+    required String itemType,
+    required String itemName,
+    required double amount,
+    required String earnPlacement,
+    required double balance,
+  }) {
+    try {
+      FGSDK.logEarnResource(
+        'classic',
+        level,
+        itemType,
+        itemName,
+        amount,
+        earnPlacement,
+        itemName,
+        '',
+        balance,
+      );
+    } catch (_) {}
+  }
+
+  /// Log Resource Spent (Coins, Boosters)
+  static void logSpendResource({
+    required int level,
+    required String itemType,
+    required String itemName,
+    required double amount,
+    required String spendPlacement,
+    required String spendReason,
+    required double balance,
+  }) {
+    try {
+      FGSDK.logSpendResource(
+        'classic',
+        level,
+        itemType,
+        itemName,
+        amount,
+        spendPlacement,
+        spendReason,
+        itemName,
+        '',
+        balance,
+      );
+    } catch (_) {}
   }
 
   /// Log Booster Used (Hint, Shuffle, Undo, etc.)

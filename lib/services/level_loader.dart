@@ -142,7 +142,17 @@ class LevelLoader {
     final width = height > 0 ? level.letterGrid[0].length : 0;
 
     // 1. Calculate how many times each cell is needed
-    final cellUsageCounts = _calculateCellUsageCounts(level);
+    final Map<Point<int>, int> cellUsageCounts;
+    if (level.countsGrid != null) {
+      cellUsageCounts = {};
+      for (int r = 0; r < level.countsGrid!.length; r++) {
+        for (int c = 0; c < level.countsGrid![r].length; c++) {
+          cellUsageCounts[Point(c, r)] = level.countsGrid![r][c];
+        }
+      }
+    } else {
+      cellUsageCounts = _calculateCellUsageCounts(level);
+    }
 
     // 2. Map obstacles to cells
     final obstacleMap = <String, int>{};

@@ -9,6 +9,8 @@ class TileWidget extends StatelessWidget {
   final bool isSelected;
   final bool isHinted;
   final bool isCountSpotlight;
+  final bool isTutorialHighlighted;
+  final bool isDimmed;
   final double size;
 
   const TileWidget({
@@ -17,6 +19,8 @@ class TileWidget extends StatelessWidget {
     required this.isSelected,
     required this.isHinted,
     this.isCountSpotlight = false,
+    this.isTutorialHighlighted = false,
+    this.isDimmed = false,
     this.size = 64,
   });
 
@@ -111,53 +115,67 @@ class TileWidget extends StatelessWidget {
     }
 
     // 2. Playable 3D Natural Wood Letter Tile
+    final bool isHighlighted = isTutorialHighlighted;
+    final bool isDimmedTile = isDimmed && !isHighlighted && !isCountSpotlight;
+
     final Color faceColor = isSelected
         ? AppColors.btnFaceBrown
-        : (isHinted ? AppColors.honeyGold : theme.face);
+        : (isHinted
+            ? AppColors.honeyGold
+            : (isDimmedTile ? const Color(0xFF2D2E38) : theme.face));
 
     final Color bevelColor = isSelected
         ? AppColors.btnShadowBrown
-        : (isHinted ? AppColors.goldAccent : theme.bevel);
+        : (isHinted
+            ? AppColors.goldAccent
+            : (isDimmedTile ? const Color(0xFF1F2028) : theme.bevel));
 
     final Color textColor = isSelected
         ? Colors.white
-        : (isHinted ? Colors.white : AppColors.textDark);
+        : (isHinted
+            ? Colors.white
+            : (isDimmedTile ? const Color(0xFF64748B) : AppColors.textDark));
 
     final Color borderColor = isCountSpotlight
         ? const Color(0xFFE11D48)
-        : (isSelected ? AppColors.btnBorderBrown : theme.bevel);
+        : (isSelected
+            ? AppColors.btnBorderBrown
+            : (isDimmedTile ? const Color(0xFF333544) : theme.bevel));
 
-    Widget tileBox = Container(
-      width: tileSize,
-      height: tileSize,
-      decoration: BoxDecoration(
-              color: isCountSpotlight ? const Color(0xFFFFFDF9) : faceColor,
-              borderRadius: BorderRadius.circular(18),
-              border: Border.all(
-                color: borderColor,
-                width: (isSelected || isCountSpotlight) ? 2.5 : 1.5,
+    Widget tileBox = AnimatedOpacity(
+      duration: const Duration(milliseconds: 200),
+      opacity: isDimmedTile ? 0.30 : 1.0,
+      child: Container(
+        width: tileSize,
+        height: tileSize,
+        decoration: BoxDecoration(
+          color: faceColor,
+          borderRadius: BorderRadius.circular(18),
+          border: Border.all(
+            color: borderColor,
+            width: (isSelected || isCountSpotlight) ? 2.5 : 1.5,
+          ),
+          boxShadow: [
+            if (isCountSpotlight)
+              const BoxShadow(
+                color: Color(0x66E11D48),
+                blurRadius: 10,
+                spreadRadius: 2,
               ),
-              boxShadow: [
-                if (isCountSpotlight)
-                  const BoxShadow(
-                    color: Color(0x66E11D48),
-                    blurRadius: 10,
-                    spreadRadius: 2,
-                  ),
-                // 3D Extrusion Bevel Shadow
-                BoxShadow(
-                  color: isCountSpotlight ? const Color(0xFFBE123C) : bevelColor,
-                  offset: Offset(0, isSelected ? 3.0 : 2.0),
-                  blurRadius: 0,
-                ),
-                if (isSelected)
-                  BoxShadow(
-                    color: AppColors.btnShadowBrown.withValues(alpha: 0.35),
-                    offset: const Offset(0, 4.0),
-                    blurRadius: 4,
-                  ),
-              ],
+            // 3D Extrusion Bevel Shadow
+            BoxShadow(
+              color: isCountSpotlight ? const Color(0xFFBE123C) : bevelColor,
+              offset: Offset(0, isSelected ? 3.0 : 2.0),
+              blurRadius: 0,
             ),
+            if (isSelected)
+              BoxShadow(
+                color: AppColors.btnShadowBrown.withValues(alpha: 0.35),
+                offset: const Offset(0, 4.0),
+                blurRadius: 4,
+              ),
+          ],
+        ),
             child: Stack(
               children: [
                 // Center Bold Letter with 3D Drop
@@ -254,7 +272,8 @@ class TileWidget extends StatelessWidget {
                   ),
               ],
             ),
-          );
+          ),
+        );
 
     if (isCountSpotlight) {
       tileBox = tileBox

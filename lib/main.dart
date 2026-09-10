@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'services/ads_manager.dart';
 import 'services/analytics_service.dart';
 import 'services/audio_manager.dart';
 import 'theme/app_theme.dart';
@@ -57,6 +58,7 @@ class _WordTilesAppState extends State<WordTilesApp> with WidgetsBindingObserver
       AudioManager.pauseBgm();
     } else if (state == AppLifecycleState.resumed) {
       AudioManager.resumeBgm();
+      AdsManager.handleAppResume();
     }
   }
 

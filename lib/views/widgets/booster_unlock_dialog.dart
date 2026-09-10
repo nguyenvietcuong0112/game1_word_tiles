@@ -4,6 +4,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../controllers/game_controller.dart';
+import '../../services/ads_manager.dart';
 import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
 import '../../theme/app_theme.dart';
@@ -106,29 +107,57 @@ class _BoosterUnlockDialogState extends State<BoosterUnlockDialog> {
     }
   }
 
+  bool _isLoadingAd = false;
+
   void _onClaimFreeAd() async {
-    // "Làm UI trước, ads gắn sau" -> Directly grant +1 free booster for now
-    if (widget.boosterType == BoosterType.hint) {
-      await GameStorage.addHintCount(1);
-    } else {
-      await GameStorage.addRocketCount(1);
-    }
+    if (_isLoadingAd) return;
+    setState(() => _isLoadingAd = true);
 
-    AudioManager.playWordMatch();
-    if (!mounted) return;
-    if (Navigator.of(context).canPop()) {
-      Navigator.of(context).pop();
-    }
-    widget.onPurchased?.call();
+    final boosterName = widget.boosterType == BoosterType.hint ? 'hint' : 'rocket';
+    final currentLevel = widget.controller?.levelNumber ?? 1;
 
-    // If currently in an active game, execute 1 booster for instant satisfaction!
-    if (widget.controller != null) {
-      if (widget.boosterType == BoosterType.hint) {
-        widget.controller!.useHint();
-      } else {
-        widget.controller!.useRocket();
-      }
-    }
+    AdsManager.showBoosterReward(
+      boosterType: boosterName,
+      levelNumber: currentLevel,
+      onRewardResult: (success) async {
+        if (!mounted) return;
+        setState(() => _isLoadingAd = false);
+
+        if (success) {
+          if (widget.boosterType == BoosterType.hint) {
+            await GameStorage.addHintCount(1);
+          } else {
+            await GameStorage.addRocketCount(1);
+          }
+
+          if (!mounted) return;
+          AudioManager.playWordMatch();
+          if (Navigator.of(context).canPop()) {
+            Navigator.of(context).pop();
+          }
+          widget.onPurchased?.call();
+
+          // If currently in an active game, execute 1 booster for instant satisfaction!
+          if (widget.controller != null) {
+            if (widget.boosterType == BoosterType.hint) {
+              widget.controller!.useHint();
+            } else {
+              widget.controller!.useRocket();
+            }
+          }
+        } else {
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                'Ad not completed. Could not claim free booster.',
+                style: GoogleFonts.fredoka(fontWeight: FontWeight.w600),
+              ),
+              duration: const Duration(seconds: 2),
+            ),
+          );
+        }
+      },
+    );
   }
 
   Widget _buildHeroArtwork() {
@@ -324,7 +353,8 @@ class _BoosterUnlockDialogState extends State<BoosterUnlockDialog> {
           // 4. Option 2: Watch Ad / Free x1 (Standard 3D Gold Amber GameButton)
           GameButton.gold(
             size: GameButtonSize.large,
-            onTap: _onClaimFreeAd,
+            isLoading: _isLoadingAd,
+            onTap: _isLoadingAd ? null : _onClaimFreeAd,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

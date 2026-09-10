@@ -211,6 +211,39 @@ class GameStorage {
     await _prefs.setBool('count_tutorial_shown', shown);
   }
 
+  static bool isReverseTutorialShown() {
+    return _prefs.getBool('reverse_tutorial_shown') ?? false;
+  }
+
+  static Future<void> setReverseTutorialShown(bool shown) async {
+    await _prefs.setBool('reverse_tutorial_shown', shown);
+  }
+
+  static bool isHintTutorialShown() {
+    return _prefs.getBool('hint_tutorial_shown') ?? false;
+  }
+
+  static Future<void> setHintTutorialShown(bool shown) async {
+    await _prefs.setBool('hint_tutorial_shown', shown);
+  }
+
+  static bool isExtraWordsTutorialShown() {
+    return _prefs.getBool('extra_words_tutorial_shown') ?? false;
+  }
+
+  static Future<void> setExtraWordsTutorialShown(bool shown) async {
+    await _prefs.setBool('extra_words_tutorial_shown', shown);
+  }
+
+  // Ads Interstitial Gatekeeper
+  static bool hasShownFirstInter() {
+    return _prefs.getBool('has_shown_first_inter') ?? false;
+  }
+
+  static Future<void> setHasShownFirstInter(bool shown) async {
+    await _prefs.setBool('has_shown_first_inter', shown);
+  }
+
   // Reset Progress
   static Future<void> resetLanguageProgress(String language) async {
     await _prefs.remove('current_level_index_$language');
@@ -218,5 +251,9 @@ class GameStorage {
     await _prefs.remove('level_stars_$language');
     await _prefs.remove('tutorial_completed');
     await _prefs.remove('count_tutorial_shown');
+    await _prefs.remove('reverse_tutorial_shown');
+    await _prefs.remove('hint_tutorial_shown');
+    await _prefs.remove('extra_words_tutorial_shown');
+    await _prefs.remove('has_shown_first_inter');
   }
 }

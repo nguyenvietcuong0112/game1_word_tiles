@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../services/ads_manager.dart';
 import '../services/audio_manager.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
@@ -32,6 +33,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
     _sound = GameStorage.isSoundEnabled();
     _haptic = GameStorage.isHapticEnabled();
     _language = GameStorage.getLanguage();
+    final currentLvl = GameStorage.getMaxUnlockedLevelIndex(_language);
+    AdsManager.showBanner('bottom', level: currentLvl + 1);
   }
 
   void _resetProgress() async {
@@ -291,6 +294,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       style: GoogleFonts.fredoka(color: AppColors.textMuted, fontSize: 13.sp, height: 1.5),
                     ),
                   ),
+                  SizedBox(height: 55.h),
                 ],
               ),
             ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../services/ads_manager.dart';
 import '../services/audio_manager.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
@@ -56,6 +57,8 @@ class _HomeScreenState extends State<HomeScreen> {
       _totalStars = totalStars;
       _isLoading = false;
     });
+
+    AdsManager.showBanner('bottom', level: currentLvl + 1);
   }
 
   void _playCurrentLevel() {
@@ -176,7 +179,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                   const Spacer(flex: 2),
                   _buildPlayButton(levelNumber),
-                  SizedBox(height: 16.h),
+                  SizedBox(height: 60.h),
                 ],
               ),
             ),

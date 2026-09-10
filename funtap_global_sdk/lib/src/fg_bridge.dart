@@ -87,12 +87,20 @@ class FGBridge {
 
   static void _send(String m, Map<String, Object?>? args, String? cb) {
     ensureInstalled();
-    if (_unavailable) return;
+    if (_unavailable) {
+      if (cb != null) {
+        _cbMap.remove(cb)?.complete(null);
+      }
+      return;
+    }
     final payload = jsonEncode({'m': m, 'args': args ?? const {}, 'cb': cb});
     // Fire-and-forget: kết quả (nếu có) về qua EventChannel theo `cb`.
     _method.invokeMethod<void>('send', payload).catchError((Object e) {
       if (e is MissingPluginException) {
         _markUnavailable(e);
+        if (cb != null) {
+          _cbMap.remove(cb)?.complete(null);
+        }
       } else {
         debugPrint('[FGSDK] send $m lỗi: $e');
       }

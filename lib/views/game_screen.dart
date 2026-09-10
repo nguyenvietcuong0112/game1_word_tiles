@@ -4,6 +4,8 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../controllers/game_controller.dart';
+import '../services/ads_manager.dart';
+import '../services/analytics_service.dart';
 import '../services/audio_manager.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
@@ -49,6 +51,7 @@ class _GameScreenState extends State<GameScreen> {
   @override
   void initState() {
     super.initState();
+    AdsManager.hideBanner();
     _currentLevelIndex = widget.levelIndex;
     _confettiController =
         ConfettiController(duration: const Duration(seconds: 2));
@@ -91,6 +94,11 @@ class _GameScreenState extends State<GameScreen> {
         levelId: levelId,
         levelNumber: _currentLevelIndex + 1,
         level: level,
+      );
+
+      AnalyticsService.logLevelStart(
+        level: _currentLevelIndex + 1,
+        language: widget.language,
       );
 
       setState(() => _isLoading = false);
@@ -158,6 +166,8 @@ class _GameScreenState extends State<GameScreen> {
       ),
     );
 
+    AdsManager.hideBanner();
+
     if (selectedIndex != null && selectedIndex != _currentLevelIndex && mounted) {
       setState(() {
         _currentLevelIndex = selectedIndex;
@@ -214,8 +224,10 @@ class _GameScreenState extends State<GameScreen> {
       );
     }
 
+    final isMountainChapter = _controller?.chapterNumber == 2;
+
     return GameScaffold(
-      backgroundVariant: GameBackgroundVariant.gameplay,
+      backgroundVariant: isMountainChapter ? GameBackgroundVariant.mountainRoad : GameBackgroundVariant.gameplay,
       onWillPop: () async {
         await _handleBackConfirmation();
         return false;
@@ -223,12 +235,49 @@ class _GameScreenState extends State<GameScreen> {
       body: ListenableBuilder(
         listenable: _controller!,
         builder: (context, _) {
-          final isCountTutorialActive = !_controller!.isWon &&
+          final isLevel1Tut = !_controller!.isWon &&
+              !GameStorage.isTutorialCompleted() &&
+              _controller!.levelNumber == 1 &&
+              _controller!.solvedTargetWords.length < 2;
+
+          final isCountTut = !_controller!.isWon &&
+              _controller!.levelNumber == 2 &&
               !GameStorage.isCountTutorialShown() &&
               _controller!.getFirstTileWithCountGreaterThanOne() != null;
 
+          final isReverseTut = !_controller!.isWon &&
+              _controller!.levelNumber == 4 &&
+              !GameStorage.isReverseTutorialShown() &&
+              _controller!.solvedTargetWords.isEmpty;
+
+          if (_controller!.levelNumber == 4 &&
+              _controller!.solvedTargetWords.isNotEmpty &&
+              !GameStorage.isReverseTutorialShown()) {
+            GameStorage.setReverseTutorialShown(true);
+          }
+
+          final isHintTut = !_controller!.isWon &&
+              _controller!.levelNumber == 5 &&
+              !GameStorage.isHintTutorialShown();
+
+          final isExtraWordsTut = !_controller!.isWon &&
+              _controller!.levelNumber == 7 &&
+              !GameStorage.isExtraWordsTutorialShown();
+
+          final isDarkScrimTut = isLevel1Tut || isCountTut || isReverseTut || isHintTut || isExtraWordsTut;
+
           return Stack(
             children: [
+              // Dark background scrim behind gameplay when any tutorial is active
+              if (isDarkScrimTut)
+                Positioned.fill(
+                  child: IgnorePointer(
+                    child: Container(
+                      color: Colors.black.withValues(alpha: 0.55),
+                    ),
+                  ),
+                ),
+
               // Main Playing Interface with Smooth Level Transition
               AnimatedSwitcher(
                 duration: const Duration(milliseconds: 260),
@@ -247,19 +296,19 @@ class _GameScreenState extends State<GameScreen> {
                   key: ValueKey('level-$_currentLevelIndex'),
                   child: Column(
                     children: [
-                      // Header (dimmed when count tutorial is active)
+                      // Header (dimmed when tutorial is active)
                       AnimatedOpacity(
-                        opacity: isCountTutorialActive ? 0.20 : 1.0,
+                        opacity: isDarkScrimTut ? 0.20 : 1.0,
                         duration: const Duration(milliseconds: 250),
                         child: _buildHeader(),
                       ),
-                      // TargetWordsBar (dimmed when count tutorial is active)
+                      // TargetWordsBar (dimmed when tutorial is active)
                       Expanded(
                         flex: 6,
                         child: Center(
                           child: SingleChildScrollView(
                             child: AnimatedOpacity(
-                              opacity: isCountTutorialActive ? 0.20 : 1.0,
+                              opacity: isDarkScrimTut ? 0.20 : 1.0,
                               duration: const Duration(milliseconds: 250),
                               child: TargetWordsBar(controller: _controller!),
                             ),
@@ -267,23 +316,29 @@ class _GameScreenState extends State<GameScreen> {
                         ),
                       ),
                       AnimatedOpacity(
-                        opacity: isCountTutorialActive ? 0.20 : 1.0,
+                        opacity: isDarkScrimTut ? 0.20 : 1.0,
                         duration: const Duration(milliseconds: 250),
                         child: _buildPreviewAndFeedback(),
                       ),
-                      // BoardWidget (ALWAYS 100% CLEAR - KHÔNG BỊ OPACITY)
+                      // BoardWidget (Dimmed only on Level 5 & Level 7, full 100% on Level 1, 2, 4)
                       Expanded(
                         flex: 4,
-                        child: BoardWidget(controller: _controller!),
+                        child: AnimatedOpacity(
+                          opacity: (isHintTut || isExtraWordsTut) ? 0.20 : 1.0,
+                          duration: const Duration(milliseconds: 250),
+                          child: BoardWidget(controller: _controller!),
+                        ),
                       ),
-                      // BoosterBar (dimmed when count tutorial is active)
+                      // BoosterBar (Spotlighted on Level 5 & Level 7, dimmed on other tutorials)
                       AnimatedOpacity(
-                        opacity: isCountTutorialActive ? 0.20 : 1.0,
+                        opacity: (isDarkScrimTut && !isHintTut && !isExtraWordsTut) ? 0.20 : 1.0,
                         duration: const Duration(milliseconds: 250),
                         child: BoosterBar(
                           controller: _controller!,
                           onOpenShop: _openShop,
                           onOpenExtraWords: _openExtraWords,
+                          isHintSpotlighted: isHintTut,
+                          isExtraWordsSpotlighted: isExtraWordsTut,
                         ),
                       ),
                     ],
@@ -291,18 +346,71 @@ class _GameScreenState extends State<GameScreen> {
                 ),
               ),
 
-              // Tile Usage Count Explanation Modal (Only shown once when count > 1, spotlighting 1 single letter)
-              if (isCountTutorialActive)
+              // Level 1: Centered Floating Swipe Tutorial Card (Step 1 & Step 2)
+              if (isLevel1Tut)
                 Builder(
                   builder: (_) {
-                    final pt = _controller!.getFirstTileWithCountGreaterThanOne()!;
-                    final tile = _controller!.grid[pt.y][pt.x];
-                    return TileCountTutorialModal(
-                      sampleLetter: tile.letter,
-                      count: tile.count,
-                      onDismiss: () => setState(() {}),
+                    final solvedCount = _controller!.solvedTargetWords.length;
+                    final nextWord = _controller!.getNextUnsolvedTargetWord() ?? 'SUN';
+                    return SwipeTutorialCard(
+                      spans: solvedCount == 1
+                          ? [
+                              const TextSpan(text: 'You can go left, right, up, or down.\nSwipe the Word '),
+                              TextSpan(
+                                text: '"$nextWord"',
+                                style: const TextStyle(
+                                  color: Color(0xFFE11D48),
+                                  fontWeight: FontWeight.w900,
+                                ),
+                              ),
+                              const TextSpan(text: '.'),
+                            ]
+                          : [
+                              const TextSpan(text: 'Swipe the Word '),
+                              TextSpan(
+                                text: '"$nextWord"',
+                                style: const TextStyle(
+                                  color: Color(0xFFE11D48),
+                                  fontWeight: FontWeight.w900,
+                                ),
+                              ),
+                            ],
                     );
                   },
+                ),
+
+              // Level 2: Centered Tile Usage Count Explanation Modal
+              if (isCountTut)
+                TileCountTutorialModal(
+                  onDismiss: () => setState(() {}),
+                ),
+
+              // Level 4: Centered Reverse Swipe Tutorial Card
+              if (isReverseTut)
+                const SwipeTutorialCard(
+                  spans: [
+                    TextSpan(text: 'You can also swipe\nwords '),
+                    TextSpan(
+                      text: 'backwards',
+                      style: TextStyle(
+                        color: Color(0xFFE11D48),
+                        fontWeight: FontWeight.w900,
+                      ),
+                    ),
+                    TextSpan(text: '.'),
+                  ],
+                ),
+
+              // Level 5 Hint Booster Tutorial Overlay
+              if (isHintTut)
+                HintBoosterTutorialOverlay(
+                  onDismiss: () => setState(() {}),
+                ),
+
+              // Level 7 Extra Words Tutorial Overlay
+              if (isExtraWordsTut)
+                ExtraWordsTutorialOverlay(
+                  onDismiss: () => setState(() {}),
                 ),
 
               // Single Unified 120fps Victory Orchestration (Dark Scrim + Gold WELL DONE + Victory Card + Confetti)
@@ -482,77 +590,6 @@ class _GameScreenState extends State<GameScreen> {
               ),
             ).animate().scale(duration: 100.ms, curve: Curves.easeOut),
           );
-        }
-
-        // In-Game Tutorial Banner (Level 1 only, placed seamlessly between TargetWords and Board)
-        if (!GameStorage.isTutorialCompleted() && _controller!.levelNumber == 1 && !_controller!.isWon) {
-          final nextWord = _controller!.getNextUnsolvedTargetWord();
-          if (nextWord != null) {
-            final isStep2 = _controller!.solvedTargetWords.isNotEmpty;
-            return Container(
-              height: 52.h,
-              alignment: Alignment.center,
-              child: Container(
-                padding: EdgeInsets.symmetric(horizontal: 18.w, vertical: 8.h),
-                decoration: BoxDecoration(
-                  color: AppColors.cardWhite,
-                  borderRadius: BorderRadius.circular(20.r),
-                  border: Border.all(color: AppColors.borderSubtle, width: 1.8),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Color(0xFFE8DAC8),
-                      offset: Offset(0, 2.0),
-                      blurRadius: 0,
-                    ),
-                  ],
-                ),
-                child: isStep2
-                    ? RichText(
-                        textAlign: TextAlign.center,
-                        text: TextSpan(
-                          style: GoogleFonts.fredoka(
-                            fontSize: 13.sp,
-                            fontWeight: FontWeight.w700,
-                            color: AppColors.textDark,
-                          ),
-                          children: [
-                            const TextSpan(text: 'Swipe in any direction: '),
-                            TextSpan(
-                              text: '"$nextWord"',
-                              style: const TextStyle(
-                                color: AppColors.btnFaceBrown,
-                                fontWeight: FontWeight.w900,
-                              ),
-                            ),
-                          ],
-                        ),
-                      )
-                    : RichText(
-                        textAlign: TextAlign.center,
-                        text: TextSpan(
-                          style: GoogleFonts.fredoka(
-                            fontSize: 14.sp,
-                            fontWeight: FontWeight.w700,
-                            color: AppColors.textDark,
-                          ),
-                          children: [
-                            const TextSpan(text: 'Swipe the Word '),
-                            TextSpan(
-                              text: '"$nextWord"',
-                              style: const TextStyle(
-                                color: AppColors.btnFaceBrown,
-                                fontWeight: FontWeight.w900,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-              )
-                  .animate()
-                  .scale(duration: 250.ms, curve: Curves.easeOutBack)
-                  .shimmer(duration: 1600.ms, color: Colors.white.withValues(alpha: 0.5)),
-            );
-          }
         }
 
         return SizedBox(height: 52.h);

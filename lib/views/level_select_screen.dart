@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../services/ads_manager.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
 import '../theme/app_theme.dart';
@@ -44,6 +45,8 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
     _starsMap = GameStorage.getLevelStars(widget.language);
 
     setState(() => _isLoading = false);
+
+    AdsManager.showBanner('bottom', level: _maxUnlockedIndex + 1);
 
     // Scroll to currently unlocked level
     WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -177,7 +180,7 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
                   ? const Center(child: CircularProgressIndicator(color: AppColors.terracotta))
                   : GridView.builder(
                       controller: _scrollController,
-                      padding: EdgeInsets.all(16.w),
+                      padding: EdgeInsets.fromLTRB(16.w, 16.h, 16.w, 65.h),
                       gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                         crossAxisCount: 5,
                         crossAxisSpacing: 8.w,

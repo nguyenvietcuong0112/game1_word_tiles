@@ -275,23 +275,28 @@ class _GameButtonState extends State<GameButton> with SingleTickerProviderStateM
             widget.icon!,
             SizedBox(width: 8.w),
           ],
-          Text(
-            widget.text ?? '',
-            textAlign: TextAlign.center,
-            style: GoogleFonts.fredoka(
-              fontSize: fontSize,
-              fontWeight: FontWeight.w900,
-              color: textColor,
-              letterSpacing: 0.8,
-              shadows: widget.variant != GameButtonVariant.secondary
-                  ? [
-                      Shadow(
-                        color: shadowColor,
-                        offset: const Offset(0, 1.2),
-                        blurRadius: 0,
-                      ),
-                    ]
-                  : null,
+          Flexible(
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                widget.text ?? '',
+                textAlign: TextAlign.center,
+                style: GoogleFonts.fredoka(
+                  fontSize: fontSize,
+                  fontWeight: FontWeight.w900,
+                  color: textColor,
+                  letterSpacing: 0.8,
+                  shadows: widget.variant != GameButtonVariant.secondary
+                      ? [
+                          Shadow(
+                            color: shadowColor,
+                            offset: const Offset(0, 1.2),
+                            blurRadius: 0,
+                          ),
+                        ]
+                      : null,
+                ),
+              ),
             ),
           ),
           if (widget.trailingIcon != null) ...[

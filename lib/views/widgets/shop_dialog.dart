@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../../services/ads_manager.dart';
 import '../../services/game_storage.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/common/game_button.dart';
@@ -99,6 +100,46 @@ class _ShopDialogState extends State<ShopDialog> {
         );
       }
     }
+  }
+
+  bool _isLoadingAd = false;
+
+  void _claimRewardedAdBoosters() {
+    if (_isLoadingAd) return;
+    setState(() => _isLoadingAd = true);
+
+    AdsManager.showBoosterReward(
+      boosterType: 'shop_gift',
+      levelNumber: 1,
+      onRewardResult: (success) async {
+        if (!mounted) return;
+        setState(() => _isLoadingAd = false);
+
+        if (success) {
+          await GameStorage.addCoins(50);
+          await GameStorage.addHintCount(1);
+          if (!mounted) return;
+          widget.onUpdated();
+          setState(() {});
+          AppPopup.show(
+            context,
+            title: 'Reward Claimed! 🎁',
+            message: 'You received +50 🪙 coins and +1 💡 Hint!',
+            icon: '🎉',
+          );
+        } else {
+          ScaffoldMessenger.of(context).showSnackBar(
+            const SnackBar(
+              content: Text(
+                'Ad not completed. Could not claim reward.',
+                style: TextStyle(fontWeight: FontWeight.w600),
+              ),
+              duration: Duration(seconds: 2),
+            ),
+          );
+        }
+      },
+    );
   }
 
   @override
@@ -288,7 +329,78 @@ class _ShopDialogState extends State<ShopDialog> {
               ],
             ),
           ),
-          SizedBox(height: 12.h),
+          SizedBox(height: 10.h),
+
+          // Rewarded Video Ad Card
+          Container(
+            padding: EdgeInsets.all(12.r),
+            decoration: BoxDecoration(
+              color: AppColors.cardWhite,
+              borderRadius: BorderRadius.circular(18.r),
+              border: Border.all(color: const Color(0xFFFDE68A), width: 1.5),
+              boxShadow: const [
+                BoxShadow(
+                  color: Color(0xFFE8DAC8),
+                  offset: Offset(0, 1.5),
+                  blurRadius: 0,
+                ),
+              ],
+            ),
+            child: Row(
+              children: [
+                const Text('🎬', style: TextStyle(fontSize: 24)),
+                SizedBox(width: 8.w),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Watch Video',
+                        style: GoogleFonts.fredoka(
+                          fontWeight: FontWeight.w900,
+                          fontSize: 13.sp,
+                          color: AppColors.textDark,
+                        ),
+                      ),
+                      SizedBox(height: 2.h),
+                      Text(
+                        '+50 🪙 & +1 💡 Hint',
+                        style: GoogleFonts.fredoka(
+                          fontSize: 11.sp,
+                          color: const Color(0xFFD97706),
+                          fontWeight: FontWeight.w600,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  width: 86.w,
+                  child: GameButton.gold(
+                    size: GameButtonSize.small,
+                    isLoading: _isLoadingAd,
+                    onTap: _isLoadingAd ? null : _claimRewardedAdBoosters,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        const Icon(Icons.play_arrow_rounded, size: 14, color: Colors.white),
+                        SizedBox(width: 3.w),
+                        Text(
+                          'FREE',
+                          style: GoogleFonts.fredoka(
+                            fontSize: 11.sp,
+                            fontWeight: FontWeight.w900,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          SizedBox(height: 10.h),
 
           // Booster Pack 1
           _buildShopItem(

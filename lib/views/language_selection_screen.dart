@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../services/ads_manager.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
 import '../theme/app_theme.dart';
@@ -29,6 +30,8 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
   void initState() {
     super.initState();
     _tempSelectedLanguage = widget.currentLanguage;
+    final currentLvl = GameStorage.getMaxUnlockedLevelIndex(widget.currentLanguage);
+    AdsManager.showBanner('bottom', level: currentLvl + 1);
   }
 
   void _confirmSelection() async {
@@ -188,6 +191,7 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                 onTap: _confirmSelection,
               ),
             ),
+            SizedBox(height: 55.h),
           ],
         ),
     );

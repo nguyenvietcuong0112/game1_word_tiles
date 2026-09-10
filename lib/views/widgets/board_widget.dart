@@ -139,92 +139,144 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
         final boardHeight = height * _tileSize;
 
         return Center(
-          child: RepaintBoundary(
-            child: Container(
-              padding: const EdgeInsets.all(10),
-              decoration: BoxDecoration(
-                color: AppColors.cardPeach,
-                borderRadius: BorderRadius.circular(24),
-                border: Border.all(
-                  color: AppColors.borderSubtle,
-                  width: 1.8,
-                ),
-                boxShadow: const [
-                  // 3D Tray Bevel Bottom
-                  BoxShadow(
-                    color: Color(0xFFE8D7C4),
-                    offset: Offset(0, 2.5),
-                    blurRadius: 0,
-                  ),
-                ],
-              ),
-              child: SizedBox(
-                width: boardWidth,
-                height: boardHeight,
-                child: GestureDetector(
-                  onPanStart: (details) => _handleTouch(details.globalPosition, true),
-                  onPanUpdate: (details) => _handleTouch(details.globalPosition, false),
-                  onPanEnd: (_) => _handleTouchEnd(),
-                  onPanCancel: () => _handleTouchEnd(),
-                  child: Stack(
-                    key: _gridKey,
-                    clipBehavior: Clip.none,
-                    children: [
-                      // 1. Glowing Laser Swipe Trail (120 FPS)
-                      ListenableBuilder(
-                        listenable: widget.controller,
-                        builder: (context, _) {
-                          if (widget.controller.currentPath.isEmpty) {
-                            return const SizedBox.shrink();
-                          }
+          child: ListenableBuilder(
+            listenable: widget.controller,
+            builder: (context, _) {
+              // Check active tutorial guidance
+              List<Point<int>>? tutorialHighlightPath;
+              Point<int>? countSpotlightPt;
+              bool isBoardDimmed = false;
 
-                          return Positioned.fill(
-                            child: IgnorePointer(
-                              child: RepaintBoundary(
-                                child: ValueListenableBuilder<Offset?>(
-                                  valueListenable: _touchPosNotifier,
-                                  builder: (context, touchPos, _) {
-                                    return CustomPaint(
-                                      painter: SwipeLinePainter(
-                                        path: widget.controller.currentPath,
-                                        livePos: touchPos,
-                                        tileSize: _tileSize,
-                                      ),
-                                    );
-                                  },
+              // 1. Fail-Safe Dynamic Hint (Levels 1-10 after 5 failed swipes)
+              if (widget.controller.levelNumber <= 10 &&
+                  widget.controller.failSafeHintPath != null &&
+                  widget.controller.failSafeHintPath!.isNotEmpty) {
+                tutorialHighlightPath = widget.controller.failSafeHintPath;
+                isBoardDimmed = false;
+              }
+              // 2. Level 1 Tutorial (Steps 1 & 2 only)
+              else if (!GameStorage.isTutorialCompleted() &&
+                  widget.controller.levelNumber == 1 &&
+                  widget.controller.solvedTargetWords.length < 2) {
+                final nextWord = widget.controller.getNextUnsolvedTargetWord();
+                if (nextWord != null) {
+                  tutorialHighlightPath = widget.controller.getTutorialPathForWord(nextWord);
+                  isBoardDimmed = true;
+                }
+              }
+              // 3. Level 2 Count Tutorial
+              else if (!GameStorage.isCountTutorialShown() &&
+                  !widget.controller.isWon &&
+                  widget.controller.levelNumber == 2) {
+                countSpotlightPt = widget.controller.getFirstTileWithCountGreaterThanOne();
+                if (countSpotlightPt != null) {
+                  isBoardDimmed = true;
+                }
+              }
+              // 4. Level 4 Reverse Swipe Tutorial
+              else if (!GameStorage.isReverseTutorialShown() &&
+                  widget.controller.levelNumber == 4 &&
+                  widget.controller.solvedTargetWords.isEmpty) {
+                final firstWord = widget.controller.level.targetWords.isNotEmpty
+                    ? widget.controller.level.targetWords.first.word
+                    : 'CAR';
+                tutorialHighlightPath = widget.controller.getTutorialPathForWord(firstWord);
+                isBoardDimmed = true;
+              }
+              // 5. Level 5 Hint Booster Tutorial
+              else if (!GameStorage.isHintTutorialShown() &&
+                  !widget.controller.isWon &&
+                  widget.controller.levelNumber == 5) {
+                isBoardDimmed = true;
+              }
+              // 6. Level 7 Extra Words Tutorial
+              else if (!GameStorage.isExtraWordsTutorialShown() &&
+                  !widget.controller.isWon &&
+                  widget.controller.levelNumber == 7) {
+                isBoardDimmed = true;
+              }
+
+              return RepaintBoundary(
+                child: Container(
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: isBoardDimmed ? const Color(0xFF1B1D27) : AppColors.cardPeach,
+                    borderRadius: BorderRadius.circular(24),
+                    border: Border.all(
+                      color: isBoardDimmed ? const Color(0xFF323646) : AppColors.borderSubtle,
+                      width: 1.8,
+                    ),
+                    boxShadow: [
+                      BoxShadow(
+                        color: isBoardDimmed ? const Color(0xFF0F1016) : const Color(0xFFE8D7C4),
+                        offset: const Offset(0, 2.5),
+                        blurRadius: 0,
+                      ),
+                    ],
+                  ),
+                  child: SizedBox(
+                    width: boardWidth,
+                    height: boardHeight,
+                    child: GestureDetector(
+                      onPanStart: (details) => _handleTouch(details.globalPosition, true),
+                      onPanUpdate: (details) => _handleTouch(details.globalPosition, false),
+                      onPanEnd: (_) => _handleTouchEnd(),
+                      onPanCancel: () => _handleTouchEnd(),
+                      child: Stack(
+                        key: _gridKey,
+                        clipBehavior: Clip.none,
+                        children: [
+                          // 1. Glowing Laser Swipe Trail (120 FPS)
+                          if (widget.controller.currentPath.isNotEmpty)
+                            Positioned.fill(
+                              child: IgnorePointer(
+                                child: RepaintBoundary(
+                                  child: ValueListenableBuilder<Offset?>(
+                                    valueListenable: _touchPosNotifier,
+                                    builder: (context, touchPos, _) {
+                                      return CustomPaint(
+                                        painter: SwipeLinePainter(
+                                          path: widget.controller.currentPath,
+                                          livePos: touchPos,
+                                          tileSize: _tileSize,
+                                        ),
+                                      );
+                                    },
+                                  ),
                                 ),
                               ),
                             ),
-                          );
-                        },
-                      ),
 
-                      // 2. Grid of 3D Pastel Tiles
-                      ListenableBuilder(
-                        listenable: widget.controller,
-                        builder: (context, _) {
-                          final firstCountPt = (!GameStorage.isCountTutorialShown() && !widget.controller.isWon)
-                              ? widget.controller.getFirstTileWithCountGreaterThanOne()
-                              : null;
-
-                          return RepaintBoundary(
+                          // 2. Grid of 3D Pastel Tiles
+                          RepaintBoundary(
                             child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: List.generate(height, (r) {
                                 final rowWidget = Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: List.generate(width, (c) {
+                                    final pt = Point(c, r);
                                     final tile = widget.controller.grid[r][c];
-                                    final isSelected = widget.controller.currentPath.contains(Point(c, r));
-                                    final isHinted = widget.controller.highlightedHintPath?.contains(Point(c, r)) ?? false;
-                                    final isCountSpotlight = firstCountPt != null &&
-                                        firstCountPt.x == c &&
-                                        firstCountPt.y == r;
+                                    final isSelected = widget.controller.currentPath.contains(pt);
+                                    final isHinted = (widget.controller.highlightedHintPath?.contains(pt) ?? false) ||
+                                        (widget.controller.failSafeHintPath?.contains(pt) ?? false);
+                                    final isTutorialHighlighted = tutorialHighlightPath != null &&
+                                        tutorialHighlightPath.contains(pt);
+                                    final isCountSpotlight = countSpotlightPt != null &&
+                                        countSpotlightPt.x == c &&
+                                        countSpotlightPt.y == r;
+                                    final isDimmed = isBoardDimmed &&
+                                        !isTutorialHighlighted &&
+                                        !isCountSpotlight &&
+                                        !isSelected;
+
                                     return TileWidget(
                                       tile: tile,
                                       isSelected: isSelected,
                                       isHinted: isHinted,
                                       isCountSpotlight: isCountSpotlight,
+                                      isTutorialHighlighted: isTutorialHighlighted,
+                                      isDimmed: isDimmed,
                                       size: _tileSize,
                                     );
                                   }),
@@ -244,9 +296,7 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
                                     );
                               }),
                             ),
-                          );
-                        },
-                      ),
+                          ),
 
                       // 3. 3D Tile Shatter Particles & Sparkles Layer (60-120 FPS GPU Canvas)
                       ListenableBuilder(
@@ -273,28 +323,50 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
                         },
                       ),
 
-                      // 4. In-Game Tutorial Animated Hand Guide (Level 1 only, hides during active swipe or count tutorial)
+                      // 4. In-Game Tutorial & Fail-Safe Animated Hand Guide
                       ListenableBuilder(
                         listenable: widget.controller,
                         builder: (context, _) {
                           if (widget.controller.isWon ||
                               widget.controller.isWinning ||
-                              GameStorage.isTutorialCompleted() ||
-                              !GameStorage.isCountTutorialShown() ||
-                              widget.controller.levelNumber != 1 ||
                               widget.controller.currentPath.isNotEmpty) {
                             return const SizedBox.shrink();
                           }
 
-                          final nextWord = widget.controller.getNextUnsolvedTargetWord();
-                          if (nextWord == null) return const SizedBox.shrink();
+                          List<Point<int>>? guidePath;
 
-                          final path = widget.controller.getTutorialPathForWord(nextWord);
-                          if (path == null || path.isEmpty) return const SizedBox.shrink();
+                          // Priority 1: Fail-Safe Dynamic Hint (Levels 1-10 after 5 failed swipes)
+                          if (widget.controller.levelNumber <= 10 &&
+                              widget.controller.failSafeHintPath != null &&
+                              widget.controller.failSafeHintPath!.isNotEmpty) {
+                            guidePath = widget.controller.failSafeHintPath;
+                          }
+                          // Priority 2: Level 1 Tutorial (Steps 1 & 2 only: SUN and ICE, Step 3 JOB is free play)
+                          else if (!GameStorage.isTutorialCompleted() &&
+                              widget.controller.levelNumber == 1 &&
+                              widget.controller.solvedTargetWords.length < 2) {
+                            final nextWord = widget.controller.getNextUnsolvedTargetWord();
+                            if (nextWord != null) {
+                              guidePath = widget.controller.getTutorialPathForWord(nextWord);
+                            }
+                          }
+                          // Priority 3: Level 4 Reverse Swipe Tutorial
+                          else if (!GameStorage.isReverseTutorialShown() &&
+                              widget.controller.levelNumber == 4 &&
+                              widget.controller.solvedTargetWords.isEmpty) {
+                            final firstWord = widget.controller.level.targetWords.isNotEmpty
+                                ? widget.controller.level.targetWords.first.word
+                                : 'CAR';
+                            guidePath = widget.controller.getTutorialPathForWord(firstWord);
+                          }
+
+                          if (guidePath == null || guidePath.isEmpty) {
+                            return const SizedBox.shrink();
+                          }
 
                           return Positioned.fill(
                             child: TutorialHandGuide(
-                              path: path,
+                              path: guidePath,
                               tileSize: _tileSize,
                             ),
                           );
@@ -305,10 +377,12 @@ class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStat
                 ),
               ),
             ),
-          ),
-        );
-      },
+          );
+        },
+      ),
     );
+  },
+);
   }
 }
 

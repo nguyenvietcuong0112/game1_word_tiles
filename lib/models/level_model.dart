@@ -107,6 +107,7 @@ class LevelModel {
   final List<TargetWord> targetWords;
   final List<TargetWord> extraWords;
   final List<List<String>> letterGrid;
+  final List<List<int>>? countsGrid;
   final List<ObstacleModel> obstacles;
 
   const LevelModel({
@@ -116,6 +117,7 @@ class LevelModel {
     required this.targetWords,
     required this.extraWords,
     required this.letterGrid,
+    this.countsGrid,
     required this.obstacles,
   });
 
@@ -123,6 +125,16 @@ class LevelModel {
     final lettersRaw = (json['letters'] as String? ?? '').toUpperCase();
     final rows = lettersRaw.split(',');
     final grid = rows.map((r) => r.split('')).toList();
+
+    final countsRaw = json['counts'] as String?;
+    List<List<int>>? countsGrid;
+    if (countsRaw != null && countsRaw.trim().isNotEmpty) {
+      countsGrid = countsRaw
+          .trim()
+          .split(',')
+          .map((r) => r.trim().split('').map((c) => int.tryParse(c) ?? 1).toList())
+          .toList();
+    }
 
     return LevelModel(
       id: json['id'] as int,
@@ -135,6 +147,7 @@ class LevelModel {
           .map((w) => TargetWord.fromJson(w as Map<String, dynamic>))
           .toList(),
       letterGrid: grid,
+      countsGrid: countsGrid,
       obstacles: (json['obstacles'] as List? ?? [])
           .map((o) => ObstacleModel.fromJson(o as Map<String, dynamic>))
           .toList(),

@@ -11,12 +11,16 @@ class BoosterBar extends StatelessWidget {
   final GameController controller;
   final VoidCallback? onOpenShop;
   final VoidCallback? onOpenExtraWords;
+  final bool isHintSpotlighted;
+  final bool isExtraWordsSpotlighted;
 
   const BoosterBar({
     super.key,
     required this.controller,
     this.onOpenShop,
     this.onOpenExtraWords,
+    this.isHintSpotlighted = false,
+    this.isExtraWordsSpotlighted = false,
   });
 
   @override
@@ -24,9 +28,45 @@ class BoosterBar extends StatelessWidget {
     return ListenableBuilder(
       listenable: controller,
       builder: (context, _) {
+        if (!controller.isBoosterBarVisible) {
+          return const SizedBox.shrink();
+        }
+
         final extraCount = GameStorage.getExtraWordsChestCount();
         final hintCount = GameStorage.getHintCount();
         final rocketCount = GameStorage.getRocketCount();
+
+        // Level 5 - 6: Only Hint is unlocked, centered at bottom
+        if (!controller.isRocketUnlocked) {
+          return Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                _buildBoosterBtn(
+                  emoji: '💡',
+                  inventoryCount: hintCount,
+                  isSpotlighted: isHintSpotlighted,
+                  onTap: () {
+                    if (hintCount > 0) {
+                      controller.useHint();
+                    } else {
+                      BoosterUnlockDialog.show(
+                        context,
+                        boosterType: BoosterType.hint,
+                        controller: controller,
+                      );
+                    }
+                  },
+                ),
+              ],
+            ),
+          );
+        }
+
+        // Level 7+: Full Booster Suite (Extra Words, Hint, Rocket, Shop)
+        final bool isAnySpotlighted = isHintSpotlighted || isExtraWordsSpotlighted;
 
         return Padding(
           padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
@@ -35,51 +75,68 @@ class BoosterBar extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               // 1. Extra Words Button (Custom 3D Wordcraft Tile Stack)
-              _buildExtraWordsBtn(
-                extraCount: extraCount,
-                onTap: onOpenExtraWords,
-              ),
+              if (controller.isExtraWordsUnlocked)
+                Opacity(
+                  opacity: (isAnySpotlighted && !isExtraWordsSpotlighted) ? 0.35 : 1.0,
+                  child: _buildExtraWordsBtn(
+                    extraCount: extraCount,
+                    isSpotlighted: isExtraWordsSpotlighted,
+                    onTap: onOpenExtraWords,
+                  ),
+                ),
 
               // 2. Hint Booster 💡
-              _buildBoosterBtn(
-                emoji: '💡',
-                inventoryCount: hintCount,
-                onTap: () {
-                  if (hintCount > 0) {
-                    controller.useHint();
-                  } else {
-                    BoosterUnlockDialog.show(
-                      context,
-                      boosterType: BoosterType.hint,
-                      controller: controller,
-                    );
-                  }
-                },
+              Opacity(
+                opacity: (isAnySpotlighted && !isHintSpotlighted) ? 0.35 : 1.0,
+                child: _buildBoosterBtn(
+                  emoji: '💡',
+                  inventoryCount: hintCount,
+                  isSpotlighted: isHintSpotlighted,
+                  onTap: () {
+                    if (hintCount > 0) {
+                      controller.useHint();
+                    } else {
+                      BoosterUnlockDialog.show(
+                        context,
+                        boosterType: BoosterType.hint,
+                        controller: controller,
+                      );
+                    }
+                  },
+                ),
               ),
 
               // 3. Rocket Booster 🚀
-              _buildBoosterBtn(
-                emoji: '🚀',
-                inventoryCount: rocketCount,
-                onTap: () {
-                  if (rocketCount > 0) {
-                    controller.useRocket();
-                  } else {
-                    BoosterUnlockDialog.show(
-                      context,
-                      boosterType: BoosterType.rocket,
-                      controller: controller,
-                    );
-                  }
-                },
-              ),
+              if (controller.isRocketUnlocked)
+                Opacity(
+                  opacity: isAnySpotlighted ? 0.35 : 1.0,
+                  child: _buildBoosterBtn(
+                    emoji: '🚀',
+                    inventoryCount: rocketCount,
+                    onTap: () {
+                      if (rocketCount > 0) {
+                        controller.useRocket();
+                      } else {
+                        BoosterUnlockDialog.show(
+                          context,
+                          boosterType: BoosterType.rocket,
+                          controller: controller,
+                        );
+                      }
+                    },
+                  ),
+                ),
 
               // 4. Shop / Chest 🎁
-              _buildSpecialActionBtn(
-                emoji: '🎁',
-                label: 'SHOP',
-                onTap: onOpenShop,
-              ),
+              if (controller.isShopUnlocked)
+                Opacity(
+                  opacity: isAnySpotlighted ? 0.35 : 1.0,
+                  child: _buildSpecialActionBtn(
+                    emoji: '🎁',
+                    label: 'SHOP',
+                    onTap: onOpenShop,
+                  ),
+                ),
             ],
           ),
         );
@@ -91,6 +148,7 @@ class BoosterBar extends StatelessWidget {
     required String emoji,
     required int inventoryCount,
     required VoidCallback onTap,
+    bool isSpotlighted = false,
   }) {
     final bool hasItems = inventoryCount > 0;
 
@@ -99,40 +157,62 @@ class BoosterBar extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          // 3D Circular Button
+          // 3D Circular Button with optional Spotlight Halo
           Container(
-            width: 58.r,
-            height: 58.r,
-            decoration: BoxDecoration(
-              color: AppColors.btnRingBg,
-              shape: BoxShape.circle,
-              border: Border.all(color: AppColors.btnRingBorder, width: 1.8),
-              boxShadow: const [
-                BoxShadow(
-                  color: AppColors.btnRingShadow,
-                  offset: Offset(0, 2.0),
-                  blurRadius: 0,
-                ),
-              ],
-            ),
-            padding: const EdgeInsets.all(4.5),
+            decoration: isSpotlighted
+                ? BoxDecoration(
+                    shape: BoxShape.circle,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.white.withValues(alpha: 0.95),
+                        blurRadius: 18,
+                        spreadRadius: 4,
+                      ),
+                      BoxShadow(
+                        color: const Color(0xFFFBBF24).withValues(alpha: 0.75),
+                        blurRadius: 28,
+                        spreadRadius: 8,
+                      ),
+                    ],
+                  )
+                : null,
             child: Container(
+              width: 58.r,
+              height: 58.r,
               decoration: BoxDecoration(
-                color: AppColors.cardWhite,
+                color: AppColors.btnRingBg,
                 shape: BoxShape.circle,
-                border: Border.all(color: AppColors.borderSubtle, width: 1.5),
+                border: Border.all(
+                  color: isSpotlighted ? Colors.white : AppColors.btnRingBorder,
+                  width: isSpotlighted ? 2.6 : 1.8,
+                ),
                 boxShadow: const [
                   BoxShadow(
-                    color: Color(0xFFE8DAC8),
-                    offset: Offset(0, 1.5),
+                    color: AppColors.btnRingShadow,
+                    offset: Offset(0, 2.0),
                     blurRadius: 0,
                   ),
                 ],
               ),
-              child: Center(
-                child: Text(
-                  emoji,
-                  style: TextStyle(fontSize: 25.sp),
+              padding: const EdgeInsets.all(4.5),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: AppColors.cardWhite,
+                  shape: BoxShape.circle,
+                  border: Border.all(color: AppColors.borderSubtle, width: 1.5),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Color(0xFFE8DAC8),
+                      offset: Offset(0, 1.5),
+                      blurRadius: 0,
+                    ),
+                  ],
+                ),
+                child: Center(
+                  child: Text(
+                    emoji,
+                    style: TextStyle(fontSize: 25.sp),
+                  ),
                 ),
               ),
             ),
@@ -191,6 +271,7 @@ class BoosterBar extends StatelessWidget {
   Widget _buildExtraWordsBtn({
     required int extraCount,
     required VoidCallback? onTap,
+    bool isSpotlighted = false,
   }) {
     final bool isReadyToClaim = extraCount >= 10;
 
@@ -199,40 +280,62 @@ class BoosterBar extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          // 3D Circular Ring Button (Exact same size & shape as other 3 buttons)
+          // 3D Circular Ring Button with optional Spotlight Halo
           Container(
-            width: 58.r,
-            height: 58.r,
-            decoration: BoxDecoration(
-              color: AppColors.btnRingBg,
-              shape: BoxShape.circle,
-              border: Border.all(color: AppColors.btnRingBorder, width: 1.8),
-              boxShadow: const [
-                BoxShadow(
-                  color: AppColors.btnRingShadow,
-                  offset: Offset(0, 2.0),
-                  blurRadius: 0,
-                ),
-              ],
-            ),
-            padding: const EdgeInsets.all(4.5),
+            decoration: isSpotlighted
+                ? BoxDecoration(
+                    shape: BoxShape.circle,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.white.withValues(alpha: 0.95),
+                        blurRadius: 18,
+                        spreadRadius: 4,
+                      ),
+                      BoxShadow(
+                        color: const Color(0xFFA855F7).withValues(alpha: 0.75),
+                        blurRadius: 28,
+                        spreadRadius: 8,
+                      ),
+                    ],
+                  )
+                : null,
             child: Container(
+              width: 58.r,
+              height: 58.r,
               decoration: BoxDecoration(
-                color: AppColors.cardWhite,
+                color: AppColors.btnRingBg,
                 shape: BoxShape.circle,
-                border: Border.all(color: AppColors.borderSubtle, width: 1.5),
+                border: Border.all(
+                  color: isSpotlighted ? Colors.white : AppColors.btnRingBorder,
+                  width: isSpotlighted ? 2.6 : 1.8,
+                ),
                 boxShadow: const [
                   BoxShadow(
-                    color: Color(0xFFE8DAC8),
-                    offset: Offset(0, 1.5),
+                    color: AppColors.btnRingShadow,
+                    offset: Offset(0, 2.0),
                     blurRadius: 0,
                   ),
                 ],
               ),
-              child: Center(
-                child: Text(
-                  '📖',
-                  style: TextStyle(fontSize: 25.sp),
+              padding: const EdgeInsets.all(4.5),
+              child: Container(
+                decoration: BoxDecoration(
+                  color: AppColors.cardWhite,
+                  shape: BoxShape.circle,
+                  border: Border.all(color: AppColors.borderSubtle, width: 1.5),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Color(0xFFE8DAC8),
+                      offset: Offset(0, 1.5),
+                      blurRadius: 0,
+                    ),
+                  ],
+                ),
+                child: Center(
+                  child: Text(
+                    '📖',
+                    style: TextStyle(fontSize: 25.sp),
+                  ),
                 ),
               ),
             ),
