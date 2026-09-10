@@ -1,11 +1,24 @@
 import 'dart:async';
 import 'dart:math';
 import 'package:flutter/material.dart';
+import '../models/chapter_model.dart';
 import '../models/level_model.dart';
 import '../services/analytics_service.dart';
 import '../services/audio_manager.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
+
+class ExtraWordFlyEvent {
+  final String word;
+  final List<Point<int>> path;
+  final int bankCount;
+
+  const ExtraWordFlyEvent({
+    required this.word,
+    required this.path,
+    required this.bankCount,
+  });
+}
 
 class GameController extends ChangeNotifier {
   final String language;
@@ -16,6 +29,8 @@ class GameController extends ChangeNotifier {
   late List<List<LetterTile>> grid;
   final Set<String> solvedTargetWords = {};
   final Set<String> foundExtraWords = {};
+
+  final ValueNotifier<ExtraWordFlyEvent?> extraWordFlyNotifier = ValueNotifier<ExtraWordFlyEvent?>(null);
 
   final List<Point<int>> currentPath = [];
   String currentWord = '';
@@ -32,9 +47,13 @@ class GameController extends ChangeNotifier {
   int boostersUsedCount = 0;
   final DateTime levelStartTime = DateTime.now();
 
-  // Chapter & Level progression
-  int get chapterNumber => ((levelNumber - 1) ~/ 5) + 1;
-  int get levelInChapter => ((levelNumber - 1) % 5) + 1;
+  // Chapter & Level progression (Chapter 1: 5 levels, Chapter 2+: 10 levels)
+  ChapterInfo get chapterInfo => ChapterInfo.forLevel(levelNumber);
+  int get chapterNumber => chapterInfo.chapterNumber;
+  int get levelInChapter => chapterInfo.levelInChapter;
+  int get totalLevelsInChapter => chapterInfo.totalLevelsInChapter;
+  bool get isLastLevelOfChapter => chapterInfo.isChapterCompleted;
+  ChapterTheme get chapterTheme => ChapterTheme.forChapter(chapterNumber);
 
   // Progressive Feature & Booster Unlocks
   bool get isBoosterBarVisible => levelNumber >= 5;
@@ -267,48 +286,56 @@ class GameController extends ChangeNotifier {
       return;
     }
 
-    // 2. Extra / Bonus word
-    TargetWord? matchedExtra;
-    for (final ew in level.extraWords) {
-      if (ew.word.trim().toUpperCase() == word) {
-        matchedExtra = ew;
-        break;
-      }
-    }
-
-    // 2b. Dynamic Safeguard for Plural/Singular:
-    // If player swiped 'W' and 'W+S' is a target/extra word on this level,
-    // or player swiped 'W' ending with 'S' and singular 'W' is a target/extra word on this level:
-    if (matchedExtra == null) {
-      final hasPluralOnBoard = level.targetWords.any((tw) => tw.word == '${word}S') ||
-          level.extraWords.any((ew) => ew.word == '${word}S');
-      final hasSingularOnBoard = word.endsWith('S') && word.length >= 4 &&
-          (level.targetWords.any((tw) => tw.word == word.substring(0, word.length - 1)) ||
-              level.extraWords.any((ew) => ew.word == word.substring(0, word.length - 1)));
-
-      if (hasPluralOnBoard || hasSingularOnBoard) {
-        matchedExtra = TargetWord(word: word, type: 0);
-      }
-    }
-
-    if (matchedExtra != null) {
-      final extraKey = matchedExtra.word;
-      if (foundExtraWords.contains(extraKey)) {
-        _showFeedback('Already found!', Colors.amber);
-        AudioManager.playInvalid();
-      } else {
-        foundExtraWords.add(extraKey);
-        final bankCount = GameStorage.addExtraWordToBank();
-
-        if (bankCount >= 10) {
-          AudioManager.playVictory();
-          _showFeedback('🎁 Extra Words Bank Full! (10/10)', const Color(0xFFFFD54F));
-        } else {
-          AudioManager.playExtraWord();
-          _showFeedback('✨ EXTRA WORD! ($bankCount/10)', const Color(0xFFFFD54F));
+    // 2. Extra / Bonus word (Only active from Level 7+ when Extra Words feature is unlocked)
+    if (isExtraWordsUnlocked) {
+      TargetWord? matchedExtra;
+      for (final ew in level.extraWords) {
+        if (ew.word.trim().toUpperCase() == word) {
+          matchedExtra = ew;
+          break;
         }
       }
-      return;
+
+      // 2b. Dynamic Safeguard for Plural/Singular:
+      // If player swiped 'W' and 'W+S' is a target/extra word on this level,
+      // or player swiped 'W' ending with 'S' and singular 'W' is a target/extra word on this level:
+      if (matchedExtra == null) {
+        final hasPluralOnBoard = level.targetWords.any((tw) => tw.word == '${word}S') ||
+            level.extraWords.any((ew) => ew.word == '${word}S');
+        final hasSingularOnBoard = word.endsWith('S') && word.length >= 4 &&
+            (level.targetWords.any((tw) => tw.word == word.substring(0, word.length - 1)) ||
+                level.extraWords.any((ew) => ew.word == word.substring(0, word.length - 1)));
+
+        if (hasPluralOnBoard || hasSingularOnBoard) {
+          matchedExtra = TargetWord(word: word, type: 0);
+        }
+      }
+
+      if (matchedExtra != null) {
+        final extraKey = matchedExtra.word;
+        if (foundExtraWords.contains(extraKey)) {
+          _showFeedback('Already found!', Colors.amber);
+          AudioManager.playInvalid();
+        } else {
+          foundExtraWords.add(extraKey);
+          final bankCount = GameStorage.addExtraWordToBank();
+
+          extraWordFlyNotifier.value = ExtraWordFlyEvent(
+            word: extraKey,
+            path: List<Point<int>>.from(currentPath),
+            bankCount: bankCount,
+          );
+
+          if (bankCount >= 10) {
+            AudioManager.playVictory();
+            _showFeedback('🎁 Extra Words Bank Full! (10/10)', const Color(0xFFFFD54F));
+          } else {
+            AudioManager.playExtraWord();
+            _showFeedback('✨ EXTRA WORD! ($bankCount/10)', const Color(0xFFFFD54F));
+          }
+        }
+        return;
+      }
     }
 
     // 3. Invalid word
@@ -729,6 +756,7 @@ class GameController extends ChangeNotifier {
 
   @override
   void dispose() {
+    extraWordFlyNotifier.dispose();
     _hintTimer?.cancel();
     _feedbackTimer?.cancel();
     _victoryTimer?.cancel();

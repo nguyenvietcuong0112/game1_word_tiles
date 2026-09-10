@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../models/chapter_model.dart';
 import '../../theme/app_theme.dart';
 
 enum GameBackgroundVariant {
@@ -10,42 +11,59 @@ enum GameBackgroundVariant {
 
 /// Unified Ambient Game Background for Word Tiles.
 /// Features a warm sandalwood linen canvas with subtle 3D birch wood ambient tiles,
-/// and lush mountain road atmosphere for Chapter 2.
+/// and rich thematic visual atmosphere matching the current chapter.
 class GameBackground extends StatelessWidget {
   final Widget? child;
   final GameBackgroundVariant variant;
+  final ChapterTheme? chapterTheme;
 
   const GameBackground({
     super.key,
     this.child,
     this.variant = GameBackgroundVariant.standard,
+    this.chapterTheme,
   });
 
   @override
   Widget build(BuildContext context) {
-    final isMountain = variant == GameBackgroundVariant.mountainRoad;
+    final theme = chapterTheme;
+    final isMountain = variant == GameBackgroundVariant.mountainRoad || theme?.chapterNumber == 2;
 
-    final gradient = isMountain
-        ? const LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Color(0xFF2D5542), // Alpine Forest Mist
-              Color(0xFF3F6F57), // Verdant Canopy
-              Color(0xFF264736), // Deep Pine Shadow
-            ],
-            stops: [0.0, 0.50, 1.0],
-          )
-        : const LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              AppColors.bgSkyGradientStart,
-              AppColors.bgCanvas,
-              AppColors.bgCanvasSecondary,
-            ],
-            stops: [0.0, 0.45, 1.0],
-          );
+    final Gradient gradient;
+    if (theme != null && theme.chapterNumber != 1) {
+      gradient = LinearGradient(
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: [
+          theme.skyGradient.first.withValues(alpha: 0.85),
+          theme.skyGradient[1].withValues(alpha: 0.90),
+          theme.skyGradient.last,
+        ],
+        stops: const [0.0, 0.45, 1.0],
+      );
+    } else if (isMountain) {
+      gradient = const LinearGradient(
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: [
+          Color(0xFF2D5542), // Alpine Forest Mist
+          Color(0xFF3F6F57), // Verdant Canopy
+          Color(0xFF264736), // Deep Pine Shadow
+        ],
+        stops: [0.0, 0.50, 1.0],
+      );
+    } else {
+      gradient = const LinearGradient(
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: [
+          AppColors.bgSkyGradientStart,
+          AppColors.bgCanvas,
+          AppColors.bgCanvasSecondary,
+        ],
+        stops: [0.0, 0.45, 1.0],
+      );
+    }
 
     return Container(
       width: double.infinity,
@@ -59,8 +77,9 @@ class GameBackground extends StatelessWidget {
               child: IgnorePointer(
                 child: CustomPaint(
                   painter: _AmbientWoodTilesPainter(
-                    isGameplay: variant == GameBackgroundVariant.gameplay || isMountain,
+                    isGameplay: variant == GameBackgroundVariant.gameplay || isMountain || theme != null,
                     isMountain: isMountain,
+                    ambientColor: theme?.ambientColor,
                   ),
                 ),
               ),
@@ -75,10 +94,12 @@ class GameBackground extends StatelessWidget {
 class _AmbientWoodTilesPainter extends CustomPainter {
   final bool isGameplay;
   final bool isMountain;
+  final Color? ambientColor;
 
   const _AmbientWoodTilesPainter({
     required this.isGameplay,
     this.isMountain = false,
+    this.ambientColor,
   });
 
   @override
@@ -104,7 +125,7 @@ class _AmbientWoodTilesPainter extends CustomPainter {
       ];
     }
 
-    final tileColor = isMountain ? const Color(0xFF6DA584) : const Color(0xFFDEC5AE);
+    final tileColor = ambientColor ?? (isMountain ? const Color(0xFF6DA584) : const Color(0xFFDEC5AE));
 
     final fillPaint = Paint()
       ..color = tileColor.withValues(alpha: isGameplay ? 0.10 : 0.18)
@@ -132,5 +153,8 @@ class _AmbientWoodTilesPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _AmbientWoodTilesPainter oldDelegate) =>
-      oldDelegate.isGameplay != isGameplay || oldDelegate.isMountain != isMountain;
+      oldDelegate.isGameplay != isGameplay ||
+      oldDelegate.isMountain != isMountain ||
+      oldDelegate.ambientColor != ambientColor;
 }
+

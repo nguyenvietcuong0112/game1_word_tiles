@@ -4,6 +4,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../controllers/game_controller.dart';
+import '../models/chapter_model.dart';
 import '../services/ads_manager.dart';
 import '../services/analytics_service.dart';
 import '../services/audio_manager.dart';
@@ -18,9 +19,11 @@ import '../widgets/common/game_icon_button.dart';
 import '../widgets/common/game_scaffold.dart';
 import 'level_select_screen.dart';
 import 'settings_screen.dart';
+import 'widgets/artwork/background_change_animation.dart';
 import 'widgets/board_widget.dart';
 import 'widgets/booster_bar.dart';
 import 'widgets/bouncy_button.dart';
+import 'widgets/extra_word_fly_effect.dart';
 import 'widgets/extra_words_dialog.dart';
 import 'widgets/shop_dialog.dart';
 import 'widgets/target_words_bar.dart';
@@ -42,11 +45,16 @@ class GameScreen extends StatefulWidget {
 }
 
 class _GameScreenState extends State<GameScreen> {
+  final GlobalKey<BoardWidgetState> _boardKey = GlobalKey<BoardWidgetState>();
+  final GlobalKey<ExtraWordsButtonState> _extraWordsBtnKey = GlobalKey<ExtraWordsButtonState>();
+
   GameController? _controller;
   late ConfettiController _confettiController;
   bool _isLoading = true;
   String? _errorMessage;
   late int _currentLevelIndex;
+  ChapterTheme? _previousChapterTheme;
+  bool _isChapterTransitioning = false;
 
   @override
   void initState() {
@@ -65,11 +73,13 @@ class _GameScreenState extends State<GameScreen> {
     super.dispose();
   }
 
-  Future<void> _loadGame() async {
-    setState(() {
-      _isLoading = true;
-      _errorMessage = null;
-    });
+  Future<void> _loadGame({bool showLoading = true}) async {
+    if (showLoading) {
+      setState(() {
+        _isLoading = true;
+        _errorMessage = null;
+      });
+    }
 
     try {
       final levelIds = await LevelLoader.loadLevelList(widget.language);
@@ -111,10 +121,20 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   void _nextLevel() {
+    final currentTheme = _controller?.chapterTheme ??
+        ChapterTheme.forChapter(ChapterInfo.forLevel(_currentLevelIndex + 1).chapterNumber);
+    final nextLevelNum = _currentLevelIndex + 2;
+    final nextChapterInfo = ChapterInfo.forLevel(nextLevelNum);
+    final isChapterTransition = nextChapterInfo.chapterNumber != currentTheme.chapterNumber;
+
     setState(() {
+      if (isChapterTransition) {
+        _previousChapterTheme = currentTheme;
+        _isChapterTransitioning = true;
+      }
       _currentLevelIndex++;
     });
-    _loadGame();
+    _loadGame(showLoading: false);
   }
 
   void _replayLevel() {
@@ -169,7 +189,16 @@ class _GameScreenState extends State<GameScreen> {
     AdsManager.hideBanner();
 
     if (selectedIndex != null && selectedIndex != _currentLevelIndex && mounted) {
+      final currentTheme = _controller?.chapterTheme ??
+          ChapterTheme.forChapter(ChapterInfo.forLevel(_currentLevelIndex + 1).chapterNumber);
+      final nextChapterInfo = ChapterInfo.forLevel(selectedIndex + 1);
+      final isChapterTransition = nextChapterInfo.chapterNumber != currentTheme.chapterNumber;
+
       setState(() {
+        if (isChapterTransition) {
+          _previousChapterTheme = currentTheme;
+          _isChapterTransitioning = true;
+        }
         _currentLevelIndex = selectedIndex;
       });
       _loadGame();
@@ -192,12 +221,39 @@ class _GameScreenState extends State<GameScreen> {
     }
   }
 
+  Widget _buildBackground() {
+    final currentTheme = _controller?.chapterTheme ??
+        ChapterTheme.forChapter(ChapterInfo.forLevel(_currentLevelIndex + 1).chapterNumber);
+
+    return BackgroundChangeAnimation(
+      isTransitioning: _isChapterTransitioning,
+      previousBackground: _previousChapterTheme != null
+          ? GameBackground(
+              variant: GameBackgroundVariant.gameplay,
+              chapterTheme: _previousChapterTheme,
+            )
+          : null,
+      currentBackground: GameBackground(
+        variant: GameBackgroundVariant.gameplay,
+        chapterTheme: currentTheme,
+      ),
+      onTransitionComplete: () {
+        if (mounted) {
+          setState(() {
+            _isChapterTransitioning = false;
+            _previousChapterTheme = null;
+          });
+        }
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    if (_isLoading) {
-      return const GameScaffold(
-        backgroundVariant: GameBackgroundVariant.gameplay,
-        body: Center(
+    if (_isLoading && _controller == null) {
+      return GameScaffold(
+        background: _buildBackground(),
+        body: const Center(
           child: CircularProgressIndicator(color: AppColors.btnFaceBrown),
         ),
       );
@@ -205,7 +261,7 @@ class _GameScreenState extends State<GameScreen> {
 
     if (_errorMessage != null || _controller == null) {
       return GameScaffold(
-        backgroundVariant: GameBackgroundVariant.gameplay,
+        background: _buildBackground(),
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -224,10 +280,8 @@ class _GameScreenState extends State<GameScreen> {
       );
     }
 
-    final isMountainChapter = _controller?.chapterNumber == 2;
-
     return GameScaffold(
-      backgroundVariant: isMountainChapter ? GameBackgroundVariant.mountainRoad : GameBackgroundVariant.gameplay,
+      background: _buildBackground(),
       onWillPop: () async {
         await _handleBackConfirmation();
         return false;
@@ -326,7 +380,10 @@ class _GameScreenState extends State<GameScreen> {
                         child: AnimatedOpacity(
                           opacity: (isHintTut || isExtraWordsTut) ? 0.20 : 1.0,
                           duration: const Duration(milliseconds: 250),
-                          child: BoardWidget(controller: _controller!),
+                          child: BoardWidget(
+                            key: _boardKey,
+                            controller: _controller!,
+                          ),
                         ),
                       ),
                       // BoosterBar (Spotlighted on Level 5 & Level 7, dimmed on other tutorials)
@@ -339,6 +396,7 @@ class _GameScreenState extends State<GameScreen> {
                           onOpenExtraWords: _openExtraWords,
                           isHintSpotlighted: isHintTut,
                           isExtraWordsSpotlighted: isExtraWordsTut,
+                          extraWordsBtnKey: _extraWordsBtnKey,
                         ),
                       ),
                     ],
@@ -420,6 +478,15 @@ class _GameScreenState extends State<GameScreen> {
                   onNextLevel: _nextLevel,
                   onReplay: _replayLevel,
                 ),
+
+              // Flying Extra Word Jump Animation & Visual FX Layer
+              Positioned.fill(
+                child: ExtraWordFlyOverlay(
+                  controller: _controller!,
+                  boardKey: _boardKey,
+                  extraWordsBtnKey: _extraWordsBtnKey,
+                ),
+              ),
             ],
           );
         },

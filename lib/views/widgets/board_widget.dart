@@ -14,16 +14,36 @@ class BoardWidget extends StatefulWidget {
   const BoardWidget({super.key, required this.controller});
 
   @override
-  State<BoardWidget> createState() => _BoardWidgetState();
+  State<BoardWidget> createState() => BoardWidgetState();
 }
 
-class _BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStateMixin {
+class BoardWidgetState extends State<BoardWidget> with SingleTickerProviderStateMixin {
   final GlobalKey _gridKey = GlobalKey();
   final ValueNotifier<Offset?> _touchPosNotifier = ValueNotifier<Offset?>(null);
   late final TileShatterController _shatterController;
   final Set<String> _previouslyClearedTileKeys = {};
 
   double _tileSize = 64.0;
+
+  /// Get the global screen coordinates for the centroid of a path of tiles.
+  /// If the path is empty, returns the global center of the board grid.
+  Offset? getGlobalCenterForPath(List<Point<int>> path) {
+    final RenderBox? renderBox = _gridKey.currentContext?.findRenderObject() as RenderBox?;
+    if (renderBox == null || !renderBox.hasSize) return null;
+
+    if (path.isEmpty) {
+      final size = renderBox.size;
+      return renderBox.localToGlobal(Offset(size.width / 2, size.height / 2));
+    }
+
+    double sumX = 0;
+    double sumY = 0;
+    for (final pt in path) {
+      sumX += (pt.x + 0.5) * _tileSize;
+      sumY += (pt.y + 0.5) * _tileSize;
+    }
+    return renderBox.localToGlobal(Offset(sumX / path.length, sumY / path.length));
+  }
 
   @override
   void initState() {

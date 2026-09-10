@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../models/chapter_model.dart';
 import '../../theme/app_theme.dart';
 import 'game_background.dart';
 
@@ -7,6 +8,8 @@ import 'game_background.dart';
 class GameScaffold extends StatelessWidget {
   final Widget body;
   final GameBackgroundVariant backgroundVariant;
+  final ChapterTheme? chapterTheme;
+  final Widget? background;
   final Future<bool> Function()? onWillPop;
   final bool useSafeArea;
   final Color? backgroundColor;
@@ -15,6 +18,8 @@ class GameScaffold extends StatelessWidget {
     super.key,
     required this.body,
     this.backgroundVariant = GameBackgroundVariant.standard,
+    this.chapterTheme,
+    this.background,
     this.onWillPop,
     this.useSafeArea = true,
     this.backgroundColor,
@@ -22,9 +27,18 @@ class GameScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Widget content = GameBackground(
-      variant: backgroundVariant,
-      child: useSafeArea ? SafeArea(child: body) : body,
+    final backgroundWidget = background ??
+        GameBackground(
+          variant: backgroundVariant,
+          chapterTheme: chapterTheme,
+        );
+
+    Widget content = Stack(
+      fit: StackFit.expand,
+      children: [
+        backgroundWidget,
+        useSafeArea ? SafeArea(child: body) : body,
+      ],
     );
 
     if (onWillPop != null) {
@@ -47,3 +61,4 @@ class GameScaffold extends StatelessWidget {
     );
   }
 }
+

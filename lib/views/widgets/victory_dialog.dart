@@ -9,7 +9,7 @@ import '../../services/game_storage.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/common/game_button.dart';
 import '../../widgets/common/game_icon_button.dart';
-import 'chapter_transition_dialog.dart';
+import 'artwork/next_chapter_menu_view.dart';
 
 class VictoryOverlay extends StatefulWidget {
   final GameController controller;
@@ -50,10 +50,11 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
       levelNumber: widget.controller.levelNumber,
       onCompleted: () {
         if (!mounted) return;
-        if (widget.controller.levelNumber == 5) {
-          ChapterTransitionDialog.show(
+        if (widget.controller.isLastLevelOfChapter) {
+          NextChapterMenuView.show(
             context,
-            onStartChapter: widget.onNextLevel,
+            completedChapterNumber: widget.controller.chapterNumber,
+            onNextChapter: widget.onNextLevel,
           );
         } else {
           widget.onNextLevel();
@@ -143,8 +144,8 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
         // 3. Victory Dialog Card (Spring entrance from top)
         Center(
           child: Container(
-            margin: EdgeInsets.symmetric(horizontal: 28.w),
-            padding: EdgeInsets.all(28.r),
+            margin: EdgeInsets.symmetric(horizontal: 24.w),
+            padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
             decoration: BoxDecoration(
               color: AppColors.cardPeach,
               borderRadius: BorderRadius.circular(32.r),
@@ -157,35 +158,32 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
                 ),
               ],
             ),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                // Celebration Title (Large, Bold, Woodcraft Style)
-                Text(
-                  widget.controller.levelNumber == 5
-                      ? 'Congrats!'
-                      : widget.controller.victoryCelebrationText,
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.fredoka(
-                    fontSize: 28.sp,
-                    fontWeight: FontWeight.w900,
-                    color: AppColors.headerBrown,
-                    letterSpacing: 2.0,
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  // Celebration Title (Large, Bold, Woodcraft Style)
+                  Text(
+                    widget.controller.victoryCelebrationText,
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.fredoka(
+                      fontSize: 26.sp,
+                      fontWeight: FontWeight.w900,
+                      color: AppColors.headerBrown,
+                      letterSpacing: 2.0,
+                    ),
                   ),
-                ),
 
-                SizedBox(height: 6.h),
-                Text(
-                  widget.controller.levelNumber == 5
-                      ? 'Chapter 1 Completed! 🎉'
-                      : 'Level ${widget.controller.levelNumber} Completed! 🎉',
-                  style: GoogleFonts.fredoka(
-                    fontSize: 16.sp,
-                    color: AppColors.textDark,
-                    fontWeight: FontWeight.w700,
+                  SizedBox(height: 4.h),
+                  Text(
+                    'Level ${widget.controller.levelNumber} Completed! 🎉',
+                    style: GoogleFonts.fredoka(
+                      fontSize: 15.sp,
+                      color: AppColors.textDark,
+                      fontWeight: FontWeight.w700,
+                    ),
                   ),
-                ),
-                SizedBox(height: 20.h),
+                  SizedBox(height: 18.h),
 
                 // 3 Stars Row (3D Glowing Gold Stars with Staggered Animation)
                 Row(
@@ -320,31 +318,25 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
 
                     // Next Level Button (with Endgame Inter check)
                     Expanded(
-                      child: widget.controller.levelNumber == 5
-                          ? GameButton.success(
-                              size: GameButtonSize.large,
-                              text: 'NEXT CHAPTER',
-                              trailingIcon: const Icon(Icons.arrow_forward_rounded, size: 22, color: Colors.white),
-                              onTap: _handleContinue,
-                            )
-                          : GameButton.primary(
-                              size: GameButtonSize.large,
-                              text: 'CONTINUE',
-                              trailingIcon: const Icon(Icons.arrow_forward_rounded, size: 22, color: Colors.white),
-                              onTap: _handleContinue,
-                            ),
+                      child: GameButton.primary(
+                        size: GameButtonSize.large,
+                        text: 'CONTINUE',
+                        trailingIcon: const Icon(Icons.arrow_forward_rounded, size: 22, color: Colors.white),
+                        onTap: _handleContinue,
+                      ),
                     ),
                   ],
                 ),
               ],
             ),
-          )
-              .animate()
-              .fadeIn(duration: 250.ms)
-              .slideY(begin: -0.3, end: 0.0, duration: 400.ms, curve: Curves.easeOutBack)
-              .scale(begin: const Offset(0.85, 0.85), end: const Offset(1.0, 1.0), duration: 400.ms, curve: Curves.easeOutBack),
-        ),
-      ],
-    );
+          ),
+        )
+            .animate()
+            .fadeIn(duration: 250.ms)
+            .slideY(begin: -0.3, end: 0.0, duration: 400.ms, curve: Curves.easeOutBack)
+            .scale(begin: const Offset(0.85, 0.85), end: const Offset(1.0, 1.0), duration: 400.ms, curve: Curves.easeOutBack),
+      ),
+    ],
+  );
   }
 }
