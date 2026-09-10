@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
@@ -5,10 +6,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../controllers/game_controller.dart';
 import '../../services/ads_manager.dart';
+import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
-import '../../theme/app_theme.dart';
-import '../../widgets/common/game_button.dart';
-import '../../widgets/common/game_icon_button.dart';
+import '../../utils/game_transitions.dart';
+import '../widgets/bouncy_button.dart';
+import '../widgets/shop_dialog.dart';
 import 'artwork/next_chapter_menu_view.dart';
 
 class VictoryOverlay extends StatefulWidget {
@@ -35,7 +37,7 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
   @override
   void initState() {
     super.initState();
-    _confettiController = ConfettiController(duration: const Duration(seconds: 3));
+    _confettiController = ConfettiController(duration: const Duration(seconds: 4));
     _confettiController.play();
   }
 
@@ -63,16 +65,6 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
     );
   }
 
-  void _handleReplay() {
-    AdsManager.showInterReplay(
-      levelNumber: widget.controller.levelNumber,
-      onCompleted: () {
-        if (!mounted) return;
-        widget.onReplay();
-      },
-    );
-  }
-
   void _claimDoubleCoins() {
     setState(() => _isLoadingReward = true);
 
@@ -88,7 +80,7 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(
-                '🎉 Awesome! +$bonusCoins bonus coins added!',
+                '🎉 +$bonusCoins coins added!',
                 style: GoogleFonts.fredoka(fontWeight: FontWeight.w700),
               ),
               backgroundColor: const Color(0xFF059669),
@@ -99,7 +91,7 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(
-                'Ad not completed. Could not claim double coins.',
+                'Ad not completed.',
                 style: GoogleFonts.fredoka(fontWeight: FontWeight.w600),
               ),
               duration: const Duration(seconds: 2),
@@ -110,233 +102,447 @@ class _VictoryOverlayState extends State<VictoryOverlay> {
     );
   }
 
+  void _openShop() {
+    AudioManager.playTileSelect(pitchIndex: 4);
+    showGameDialog(
+      context: context,
+      builder: (_) => ShopDialog(
+        onUpdated: () => setState(() {}),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        // 1. Hardware-Accelerated Smooth Dark Scrim
-        Positioned.fill(
-          child: Container(
-            color: Colors.black.withValues(alpha: 0.65),
-          ).animate().fadeIn(duration: 250.ms),
-        ),
+    final chapterInfo = widget.controller.chapterInfo;
+    final currentLvlInChapter = min(chapterInfo.levelInChapter, chapterInfo.totalLevelsInChapter);
+    final totalLevelsInChapter = chapterInfo.totalLevelsInChapter;
+    final progressFraction = (currentLvlInChapter / totalLevelsInChapter).clamp(0.0, 1.0);
 
-        // 2. Celebratory Confetti Explosion
-        Align(
-          alignment: Alignment.topCenter,
-          child: ConfettiWidget(
-            confettiController: _confettiController,
-            blastDirectionality: BlastDirectionality.explosive,
-            shouldLoop: false,
-            colors: const [
-              Color(0xFFBA805D),
-              Color(0xFFE5A638),
-              Color(0xFF5B8E67),
-              Color(0xFFDEC5AE),
-              Color(0xFF5C2E14),
-              Color(0xFFFFFDF9),
-            ],
-            numberOfParticles: 35,
-            gravity: 0.15,
-          ),
-        ),
-
-        // 3. Victory Dialog Card (Spring entrance from top)
-        Center(
-          child: Container(
-            margin: EdgeInsets.symmetric(horizontal: 24.w),
-            padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
-            decoration: BoxDecoration(
-              color: AppColors.cardPeach,
-              borderRadius: BorderRadius.circular(32.r),
-              border: Border.all(color: AppColors.borderSubtle, width: 2.0),
-              boxShadow: const [
-                BoxShadow(
-                  color: Color(0xFFD4C2AE),
-                  offset: Offset(0, 4.0),
-                  blurRadius: 0,
+    return Positioned.fill(
+      child: Material(
+        color: Colors.transparent,
+        child: Stack(
+          children: [
+            // 1. Deep Ocean Navy / Dark Blue Fullscreen Gradient
+            Positioned.fill(
+              child: Container(
+                decoration: const BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      Color(0xFF020E24),
+                      Color(0xFF02173B),
+                      Color(0xFF01091A),
+                    ],
+                  ),
                 ),
-              ],
+              ),
             ),
-            child: SingleChildScrollView(
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  // Celebration Title (Large, Bold, Woodcraft Style)
-                  Text(
-                    widget.controller.victoryCelebrationText,
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.fredoka(
-                      fontSize: 26.sp,
-                      fontWeight: FontWeight.w900,
-                      color: AppColors.headerBrown,
-                      letterSpacing: 2.0,
-                    ),
-                  ),
 
-                  SizedBox(height: 4.h),
-                  Text(
-                    'Level ${widget.controller.levelNumber} Completed! 🎉',
-                    style: GoogleFonts.fredoka(
-                      fontSize: 15.sp,
-                      color: AppColors.textDark,
-                      fontWeight: FontWeight.w700,
-                    ),
-                  ),
-                  SizedBox(height: 18.h),
+            // 2. Celebratory Confetti Cascade (Vibrant arcade colors)
+            Align(
+              alignment: Alignment.topCenter,
+              child: ConfettiWidget(
+                confettiController: _confettiController,
+                blastDirectionality: BlastDirectionality.explosive,
+                shouldLoop: false,
+                colors: const [
+                  Color(0xFF00E5FF), // Cyan
+                  Color(0xFFFF4081), // Pink
+                  Color(0xFFFFD700), // Gold
+                  Color(0xFF00E676), // Green
+                  Color(0xFFFF9100), // Orange
+                  Colors.white,
+                ],
+                numberOfParticles: 35,
+                gravity: 0.12,
+              ),
+            ),
 
-                // 3 Stars Row (3D Glowing Gold Stars with Staggered Animation)
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: List.generate(3, (index) {
-                    final isEarned = index < widget.controller.starsEarned;
-                    return Container(
-                      margin: EdgeInsets.symmetric(horizontal: 6.w),
-                      child: Icon(
-                        Icons.star_rounded,
-                        size: 58.r,
-                        color: isEarned
-                            ? const Color(0xFFF59E0B)
-                            : const Color(0xFFE2E8F0),
-                        shadows: isEarned
-                            ? [
-                                const Shadow(
-                                  color: Color(0xFFD97706),
-                                  offset: Offset(0, 2.0),
-                                  blurRadius: 0,
+            // 3. Foreground Layout
+            SafeArea(
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.w),
+                child: Column(
+                  children: [
+                    SizedBox(height: 8.h),
+
+                    // Top Bar: Coins Capsule on Left
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: BouncyButton(
+                        onTap: _openShop,
+                        child: SizedBox(
+                          height: 44.h,
+                          child: IntrinsicWidth(
+                            child: Stack(
+                              alignment: Alignment.centerLeft,
+                              children: [
+                                Container(
+                                  margin: EdgeInsets.only(left: 18.w),
+                                  height: 34.h,
+                                  constraints: BoxConstraints(minWidth: 78.w),
+                                  padding: EdgeInsets.only(left: 20.w, right: 14.w),
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFF041026).withValues(alpha: 0.9),
+                                    borderRadius: BorderRadius.circular(18.r),
+                                    border: Border.all(color: Colors.white, width: 2.2),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.black.withValues(alpha: 0.3),
+                                        offset: const Offset(0, 2),
+                                        blurRadius: 4,
+                                      ),
+                                    ],
+                                  ),
+                                  alignment: Alignment.center,
+                                  child: ValueListenableBuilder<int>(
+                                    valueListenable: GameStorage.coinsNotifier,
+                                    builder: (context, coins, _) {
+                                      return Text(
+                                        '$coins',
+                                        style: GoogleFonts.fredoka(
+                                          color: Colors.white,
+                                          fontSize: 17.sp,
+                                          fontWeight: FontWeight.w900,
+                                          letterSpacing: 0.5,
+                                        ),
+                                      );
+                                    },
+                                  ),
                                 ),
-                              ]
-                            : null,
-                      ),
-                    )
-                        .animate(delay: (150 * index).ms)
-                        .scale(begin: const Offset(0, 0), end: const Offset(1, 1), duration: 350.ms, curve: Curves.elasticOut);
-                  }),
-                ),
-                SizedBox(height: 8.h),
-
-                // Star Rating Performance Label
-                Text(
-                  widget.controller.starsEarned == 3
-                      ? '⭐ ⭐ ⭐  PERFECT!'
-                      : (widget.controller.starsEarned == 2
-                          ? '⭐ ⭐  GREAT JOB!'
-                          : '⭐  LEVEL CLEARED!'),
-                  style: GoogleFonts.fredoka(
-                    fontSize: 13.sp,
-                    fontWeight: FontWeight.w900,
-                    color: widget.controller.starsEarned == 3
-                        ? const Color(0xFFD97706)
-                        : (widget.controller.starsEarned == 2
-                            ? AppColors.headerBrown
-                            : AppColors.textMuted),
-                    letterSpacing: 1.0,
-                  ),
-                ),
-                SizedBox(height: 16.h),
-
-                // Coin Reward Badge
-                Container(
-                  padding: EdgeInsets.symmetric(horizontal: 22.w, vertical: 10.h),
-                  decoration: BoxDecoration(
-                    color: AppColors.cardPeachLight,
-                    borderRadius: BorderRadius.circular(24.r),
-                    border: Border.all(color: AppColors.borderSubtle, width: 2.0),
-                    boxShadow: const [
-                      BoxShadow(
-                        color: Color(0xFFE8DAC8),
-                        offset: Offset(0, 1.5),
-                        blurRadius: 0,
-                      ),
-                    ],
-                  ),
-                  child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      const Text('🪙', style: TextStyle(fontSize: 24)),
-                      SizedBox(width: 8.w),
-                      Text(
-                        '+${widget.controller.coinsReward} COINS',
-                        style: GoogleFonts.fredoka(
-                          fontSize: 18.sp,
-                          fontWeight: FontWeight.w900,
-                          color: AppColors.textDark,
-                          letterSpacing: 1.0,
-                        ),
-                      ),
-                    ],
-                  ),
-                )
-                    .animate(delay: 450.ms)
-                    .scale(curve: Curves.easeOutBack),
-                SizedBox(height: 14.h),
-
-                // 2X Coins with Reward Ad Button
-                if (!_claimedDouble)
-                  GameButton.gold(
-                    size: GameButtonSize.medium,
-                    text: _isLoadingReward ? 'LOADING...' : 'CLAIM 2X COINS',
-                    icon: const Icon(Icons.play_circle_fill_rounded, size: 20, color: Colors.white),
-                    trailingIcon: const Text('🪙', style: TextStyle(fontSize: 18)),
-                    onTap: _isLoadingReward ? null : _claimDoubleCoins,
-                  ).animate(delay: 500.ms).fadeIn().scale(curve: Curves.easeOutBack)
-                else
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 6.h),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFFD1FAE5),
-                      borderRadius: BorderRadius.circular(16.r),
-                      border: Border.all(color: const Color(0xFF6EE7B7)),
-                    ),
-                    child: Row(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        const Icon(Icons.check_circle_rounded, color: Color(0xFF059669), size: 18),
-                        SizedBox(width: 6.w),
-                        Text(
-                          '2X COIN CLAIMED! (+${widget.controller.coinsReward})',
-                          style: GoogleFonts.fredoka(
-                            fontSize: 13.sp,
-                            fontWeight: FontWeight.w700,
-                            color: const Color(0xFF065F46),
+                                Image.asset(
+                                  'assets/icons/icon_coin.png',
+                                  width: 44.r,
+                                  height: 44.r,
+                                ),
+                              ],
+                            ),
                           ),
                         ),
-                      ],
-                    ),
-                  ),
-
-                SizedBox(height: 20.h),
-
-                // Action Buttons
-                Row(
-                  children: [
-                    // Replay Button (with Replay Ad check)
-                    GameIconButton.replay(
-                      onTap: _handleReplay,
-                    ),
-                    SizedBox(width: 14.w),
-
-                    // Next Level Button (with Endgame Inter check)
-                    Expanded(
-                      child: GameButton.primary(
-                        size: GameButtonSize.large,
-                        text: 'CONTINUE',
-                        trailingIcon: const Icon(Icons.arrow_forward_rounded, size: 22, color: Colors.white),
-                        onTap: _handleContinue,
                       ),
                     ),
+
+                    const Spacer(flex: 12),
+
+                    // Center: Golden Crown & Congrats graphic with glowing light aura
+                    Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        // Soft golden/white radial ambient glow
+                        Container(
+                          width: 280.w,
+                          height: 180.h,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            gradient: RadialGradient(
+                              colors: [
+                                const Color(0xFFFFE082).withValues(alpha: 0.35),
+                                Colors.transparent,
+                              ],
+                            ),
+                          ),
+                        ),
+                        // Crown graphic
+                        Image.asset(
+                          'assets/icons/icon_congrats.png',
+                          width: 290.w,
+                          fit: BoxFit.contain,
+                        ),
+                      ],
+                    )
+                        .animate()
+                        .scale(
+                          duration: 600.ms,
+                          curve: Curves.elasticOut,
+                          begin: const Offset(0.3, 0.3),
+                          end: const Offset(1.0, 1.0),
+                        ),
+
+                    const Spacer(flex: 8),
+
+                    // Message Capsule: "This level was no match for you!"
+                    Container(
+                      constraints: BoxConstraints(maxWidth: 240.w),
+                      padding: EdgeInsets.symmetric(horizontal: 22.w, vertical: 12.h),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF041026).withValues(alpha: 0.92),
+                        borderRadius: BorderRadius.circular(28.r),
+                        border: Border.all(color: Colors.white, width: 2.2),
+                        boxShadow: [
+                          BoxShadow(
+                            color: Colors.black.withValues(alpha: 0.4),
+                            offset: const Offset(0, 3),
+                            blurRadius: 6,
+                          ),
+                        ],
+                      ),
+                      child: Text(
+                        'This level was\nno match for you!',
+                        textAlign: TextAlign.center,
+                        style: GoogleFonts.fredoka(
+                          fontSize: 16.sp,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.white,
+                          height: 1.25,
+                        ),
+                      ),
+                    )
+                        .animate()
+                        .fadeIn(duration: 400.ms, delay: 200.ms)
+                        .slideY(begin: 0.2, end: 0, curve: Curves.easeOutBack),
+
+                    const Spacer(flex: 12),
+
+                    // Chapter Progress Bar with Coin Reward Stack
+                    SizedBox(
+                      width: 250.w,
+                      child: Stack(
+                        clipBehavior: Clip.none,
+                        alignment: Alignment.centerLeft,
+                        children: [
+                          // Progress Bar Track Capsule
+                          Container(
+                            width: 226.w,
+                            height: 22.h,
+                            padding: EdgeInsets.all(2.5.r),
+                            decoration: BoxDecoration(
+                              color: const Color(0xFF041026).withValues(alpha: 0.92),
+                              borderRadius: BorderRadius.circular(11.r),
+                              border: Border.all(color: Colors.white, width: 2.0),
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.black.withValues(alpha: 0.35),
+                                  offset: const Offset(0, 2),
+                                  blurRadius: 4,
+                                ),
+                              ],
+                            ),
+                            child: LayoutBuilder(
+                              builder: (context, constraints) {
+                                final maxW = constraints.maxWidth;
+                                return Stack(
+                                  children: [
+                                    // Green Progress Fill
+                                    Align(
+                                      alignment: Alignment.centerLeft,
+                                      child: Container(
+                                        width: maxW * progressFraction,
+                                        height: double.infinity,
+                                        decoration: BoxDecoration(
+                                          borderRadius: BorderRadius.circular(8.r),
+                                          gradient: const LinearGradient(
+                                            colors: [
+                                              Color(0xFF3EEC62),
+                                              Color(0xFF23D046),
+                                            ],
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    // Centered "2/5" Text
+                                    Center(
+                                      child: Text(
+                                        '$currentLvlInChapter/$totalLevelsInChapter',
+                                        style: GoogleFonts.fredoka(
+                                          fontSize: 14.sp,
+                                          fontWeight: FontWeight.w900,
+                                          color: Colors.white,
+                                          letterSpacing: 0.5,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                );
+                              },
+                            ),
+                          ),
+
+                          // Gold Coin Stack Anchor at Right Edge
+                          Positioned(
+                            right: 0,
+                            top: -14.h,
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Image.asset(
+                                  'assets/icons/icon_coin_victory.png',
+                                  width: 48.w,
+                                  fit: BoxFit.contain,
+                                ),
+                                SizedBox(height: 1.h),
+                                Text(
+                                  '${widget.controller.coinsReward}',
+                                  style: GoogleFonts.fredoka(
+                                    fontSize: 16.sp,
+                                    fontWeight: FontWeight.w900,
+                                    color: Colors.white,
+                                    shadows: const [
+                                      Shadow(
+                                        color: Color(0xFF0D2540),
+                                        offset: Offset(0, 1.5),
+                                        blurRadius: 3,
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ).animate().fadeIn(duration: 400.ms, delay: 350.ms),
+
+                    const Spacer(flex: 18),
+
+                    // Bottom Action Row: Yellow "Level X" Button + Green Ad Coins Button
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 4.w),
+                      child: Row(
+                        children: [
+                          // Left Button: Yellow Next Level
+                          Expanded(
+                            child: BouncyButton(
+                              onTap: _handleContinue,
+                              child: SizedBox(
+                                height: 56.h,
+                                child: Stack(
+                                  alignment: Alignment.center,
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/btn_yellow.png',
+                                      width: double.infinity,
+                                      height: double.infinity,
+                                      fit: BoxFit.fill,
+                                    ),
+                                    Stack(
+                                      alignment: Alignment.center,
+                                      children: [
+                                        // Blue Stroke Outline
+                                        Text(
+                                          'Level ${widget.controller.levelNumber + 1}',
+                                          style: GoogleFonts.fredoka(
+                                            fontSize: 22.sp,
+                                            fontWeight: FontWeight.w900,
+                                            foreground: Paint()
+                                              ..style = PaintingStyle.stroke
+                                              ..strokeWidth = 3.5
+                                              ..color = const Color(0xFF245F8A),
+                                          ),
+                                        ),
+                                        // White Letter Fill
+                                        Text(
+                                          'Level ${widget.controller.levelNumber + 1}',
+                                          style: GoogleFonts.fredoka(
+                                            fontSize: 22.sp,
+                                            fontWeight: FontWeight.w900,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+
+                          SizedBox(width: 14.w),
+
+                          // Right Button: Green Watch Ad for Double Coins
+                          Expanded(
+                            child: BouncyButton(
+                              onTap: _isLoadingReward || _claimedDouble ? null : _claimDoubleCoins,
+                              child: SizedBox(
+                                height: 56.h,
+                                child: Stack(
+                                  alignment: Alignment.center,
+                                  children: [
+                                    Image.asset(
+                                      'assets/images/btn_green.png',
+                                      width: double.infinity,
+                                      height: double.infinity,
+                                      fit: BoxFit.fill,
+                                    ),
+                                    if (_isLoadingReward)
+                                      SizedBox(
+                                        width: 22.r,
+                                        height: 22.r,
+                                        child: const CircularProgressIndicator(
+                                          strokeWidth: 2.5,
+                                          valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                                        ),
+                                      )
+                                    else if (_claimedDouble)
+                                      Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        children: [
+                                          const Icon(Icons.check_circle_rounded, color: Colors.white, size: 22),
+                                          SizedBox(width: 6.w),
+                                          Text(
+                                            'Claimed!',
+                                            style: GoogleFonts.fredoka(
+                                              fontSize: 18.sp,
+                                              fontWeight: FontWeight.w900,
+                                              color: Colors.white,
+                                            ),
+                                          ),
+                                        ],
+                                      )
+                                    else
+                                      Row(
+                                        mainAxisSize: MainAxisSize.min,
+                                        children: [
+                                          Image.asset(
+                                            'assets/icons/icon_ads.png',
+                                            width: 32.r,
+                                            height: 32.r,
+                                            fit: BoxFit.contain,
+                                          ),
+                                          SizedBox(width: 6.w),
+                                          Image.asset(
+                                            'assets/icons/icon_coin.png',
+                                            width: 22.r,
+                                            height: 22.r,
+                                            fit: BoxFit.contain,
+                                          ),
+                                          SizedBox(width: 4.w),
+                                          Text(
+                                            '${widget.controller.coinsReward}',
+                                            style: GoogleFonts.fredoka(
+                                              fontSize: 22.sp,
+                                              fontWeight: FontWeight.w900,
+                                              color: Colors.white,
+                                              shadows: const [
+                                                Shadow(
+                                                  color: Color(0xFF135025),
+                                                  offset: Offset(0, 1.5),
+                                                  blurRadius: 2,
+                                                ),
+                                              ],
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ).animate().fadeIn(duration: 400.ms, delay: 450.ms),
+
+                    SizedBox(height: 28.h),
                   ],
                 ),
-              ],
+              ),
             ),
-          ),
-        )
-            .animate()
-            .fadeIn(duration: 250.ms)
-            .slideY(begin: -0.3, end: 0.0, duration: 400.ms, curve: Curves.easeOutBack)
-            .scale(begin: const Offset(0.85, 0.85), end: const Offset(1.0, 1.0), duration: 400.ms, curve: Curves.easeOutBack),
+          ],
+        ),
       ),
-    ],
-  );
+    );
   }
 }
