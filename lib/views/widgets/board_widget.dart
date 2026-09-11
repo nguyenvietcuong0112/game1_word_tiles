@@ -86,6 +86,7 @@ class BoardWidgetState extends State<BoardWidget> with SingleTickerProviderState
                 center: center,
                 tileSize: _tileSize,
                 theme: theme,
+                primaryColor: widget.controller.chapterTheme.primaryColor,
               );
             }
           }
@@ -222,20 +223,30 @@ class BoardWidgetState extends State<BoardWidget> with SingleTickerProviderState
                   padding: const EdgeInsets.all(10),
                   decoration: BoxDecoration(
                     color: isBoardDimmed
-                        ? const Color(0xFF1B1D27).withValues(alpha: 0.85)
-                        : const Color(0xFF14387C).withValues(alpha: 0.85),
+                        ? const Color(0xFF1B1D27).withValues(alpha: 0.60)
+                        : const Color(0xFF14387C).withValues(alpha: 0.52),
                     borderRadius: BorderRadius.circular(26),
                     border: Border.all(
                       color: isBoardDimmed
                           ? const Color(0xFF323646)
-                          : Colors.white.withValues(alpha: 0.95),
+                          : Colors.white,
                       width: 2.2,
                     ),
                     boxShadow: [
+                      // 1. Solid Dark Blue 3D Bottom Bevel Lip
                       BoxShadow(
-                        color: Colors.black.withValues(alpha: 0.28),
-                        offset: const Offset(0, 4),
-                        blurRadius: 8,
+                        color: isBoardDimmed
+                            ? const Color(0xFF0F1118)
+                            : const Color(0xFF0B2D64).withValues(alpha: 0.90),
+                        offset: const Offset(0, 5.5),
+                        blurRadius: 0,
+                      ),
+                      // 2. Ambient Soft Drop Shadow
+                      BoxShadow(
+                        color: Colors.black.withValues(alpha: 0.35),
+                        offset: const Offset(0, 9),
+                        blurRadius: 12,
+                        spreadRadius: 1,
                       ),
                     ],
                   ),
@@ -264,6 +275,7 @@ class BoardWidgetState extends State<BoardWidget> with SingleTickerProviderState
                                           path: widget.controller.currentPath,
                                           livePos: touchPos,
                                           tileSize: _tileSize,
+                                          lineColor: widget.controller.chapterTheme.primaryColor,
                                         ),
                                       );
                                     },
@@ -303,6 +315,7 @@ class BoardWidgetState extends State<BoardWidget> with SingleTickerProviderState
                                       isTutorialHighlighted: isTutorialHighlighted,
                                       isDimmed: isDimmed,
                                       size: _tileSize,
+                                      chapterTheme: widget.controller.chapterTheme,
                                     );
                                   }),
                                 );
@@ -412,11 +425,13 @@ class SwipeLinePainter extends CustomPainter {
   final List<Point<int>> path;
   final Offset? livePos;
   final double tileSize;
+  final Color? lineColor;
 
   SwipeLinePainter({
     required this.path,
     this.livePos,
     required this.tileSize,
+    this.lineColor,
   });
 
   static final Paint _glowPaint = Paint()
@@ -425,7 +440,6 @@ class SwipeLinePainter extends CustomPainter {
     ..style = PaintingStyle.stroke;
 
   static final Paint _trackPaint = Paint()
-    ..color = AppColors.terracotta
     ..strokeCap = StrokeCap.round
     ..strokeJoin = StrokeJoin.round
     ..style = PaintingStyle.stroke;
@@ -465,14 +479,16 @@ class SwipeLinePainter extends CustomPainter {
       _drawPath.lineTo(livePos!.dx, livePos!.dy);
     }
 
-    // 1. Wide Honey Gold Radiant Glow
+    // 1. Wide Radiant Glow
     _glowPaint
-      ..color = AppColors.honeyGold.withValues(alpha: 0.45)
+      ..color = (lineColor ?? AppColors.honeyGold).withValues(alpha: 0.45)
       ..strokeWidth = tileSize * 0.50;
     canvas.drawPath(_drawPath, _glowPaint);
 
-    // 2. Main Vibrant Terracotta Peach Ribbon
-    _trackPaint.strokeWidth = tileSize * 0.32;
+    // 2. Main Vibrant Chapter Colored Ribbon
+    _trackPaint
+      ..color = lineColor ?? AppColors.terracotta
+      ..strokeWidth = tileSize * 0.32;
     canvas.drawPath(_drawPath, _trackPaint);
 
     // 3. Inner Gloss Laser Beam Highlight
@@ -493,7 +509,8 @@ class SwipeLinePainter extends CustomPainter {
   bool shouldRepaint(covariant SwipeLinePainter oldDelegate) {
     return oldDelegate.path != path ||
         oldDelegate.livePos != livePos ||
-        oldDelegate.tileSize != tileSize;
+        oldDelegate.tileSize != tileSize ||
+        oldDelegate.lineColor != lineColor;
   }
 }
 

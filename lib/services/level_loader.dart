@@ -6,7 +6,6 @@ import '../models/level_model.dart';
 class LevelLoader {
   static const List<String> supportedLanguages = [
     'english',
-    'vietnamese',
     'german',
     'french',
     'italian',
@@ -18,7 +17,6 @@ class LevelLoader {
 
   static final Map<String, String> languageDisplayNames = {
     'english': 'English 🇺🇸',
-    'vietnamese': 'Tiếng Việt 🇻🇳',
     'german': 'Deutsch 🇩🇪',
     'french': 'Français 🇫🇷',
     'italian': 'Italiano 🇮🇹',
@@ -30,7 +28,6 @@ class LevelLoader {
 
   static const Map<String, int> totalLevelsPerLanguage = {
     'english': 2471,
-    'vietnamese': 1500,
     'german': 1500,
     'french': 1500,
     'italian': 1500,

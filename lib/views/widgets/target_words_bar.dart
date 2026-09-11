@@ -3,9 +3,9 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../controllers/game_controller.dart';
+import '../../models/chapter_model.dart';
 import '../../models/level_model.dart';
 import '../../services/game_storage.dart';
-import '../../theme/app_theme.dart';
 
 class TargetWordsBar extends StatefulWidget {
   final GameController controller;
@@ -85,6 +85,7 @@ class _TargetWordsBarState extends State<TargetWordsBar> {
                 isSolved: isSolved,
                 isTutorialTarget: isTutorialTarget,
                 maxWordLength: maxLen,
+                chapterTheme: controller.chapterTheme,
               ),
             );
           }).toList(),
@@ -99,12 +100,14 @@ class _TargetWordRow extends StatelessWidget {
   final bool isSolved;
   final bool isTutorialTarget;
   final int maxWordLength;
+  final ChapterTheme chapterTheme;
 
   const _TargetWordRow({
     required this.targetWord,
     required this.isSolved,
     required this.isTutorialTarget,
     required this.maxWordLength,
+    required this.chapterTheme,
   });
 
   @override
@@ -129,24 +132,40 @@ class _TargetWordRow extends StatelessWidget {
       children: List.generate(word.length, (index) {
         final char = word[index];
 
+        final theme = chapterTheme;
+
         if (isSolved) {
+          final light = theme.lightColor;
+          final face = theme.primaryColor;
+          final border = theme.borderColor;
+          final bevel = theme.bevelColor;
+          final textCol = theme.textColor;
+
           return Container(
             width: boxSize,
             height: boxSize,
             margin: EdgeInsets.symmetric(horizontal: 1.5.w),
             decoration: BoxDecoration(
-              gradient: const LinearGradient(
+              gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                colors: [AppColors.terracottaLight, AppColors.btnFaceBrown],
+                colors: [light, face],
               ),
               borderRadius: BorderRadius.circular(14.r),
-              border: Border.all(color: AppColors.btnBorderBrown, width: 1.8),
-              boxShadow: const [
+              border: Border.all(color: border, width: 1.8),
+              boxShadow: [
+                // 1. Solid 3D Bevel Lip (Độ dày gạch)
                 BoxShadow(
-                  color: AppColors.btnShadowBrown,
-                  offset: Offset(0, 2.0),
+                  color: bevel,
+                  offset: const Offset(0, 3.0),
                   blurRadius: 0,
+                ),
+                // 2. Soft Ambient Drop Shadow (Bóng đổ mềm nổi lên)
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.22),
+                  offset: const Offset(0, 4.0),
+                  blurRadius: 3.5,
+                  spreadRadius: 0.5,
                 ),
               ],
             ),
@@ -158,11 +177,11 @@ class _TargetWordRow extends StatelessWidget {
                   style: GoogleFonts.fredoka(
                     fontSize: boxSize * 0.62,
                     fontWeight: FontWeight.w900,
-                    color: Colors.white,
+                    color: textCol,
                     height: 1.0,
                     shadows: [
                       Shadow(
-                        color: const Color(0xFF6B3818).withValues(alpha: 0.8),
+                        color: bevel.withValues(alpha: 0.8),
                         offset: const Offset(0, 1.2),
                       ),
                     ],
@@ -181,11 +200,11 @@ class _TargetWordRow extends StatelessWidget {
           height: boxSize,
           margin: EdgeInsets.symmetric(horizontal: 1.5.w),
           decoration: BoxDecoration(
-            color: isTutorialTarget ? const Color(0xFFFFF9F0) : const Color(0xFFF6E7D8),
+            color: isTutorialTarget ? const Color(0xFFFFF9F0) : const Color(0xFFFBF1E6),
             borderRadius: BorderRadius.circular(14.r),
             border: Border.all(
-              color: isTutorialTarget ? AppColors.btnFaceBrown : const Color(0xFFDEC5AE),
-              width: isTutorialTarget ? 2.0 : 1.2,
+              color: isTutorialTarget ? theme.primaryColor : Colors.white.withValues(alpha: 0.65),
+              width: isTutorialTarget ? 2.0 : 1.0,
             ),
             boxShadow: [
               if (isTutorialTarget)
@@ -194,10 +213,18 @@ class _TargetWordRow extends StatelessWidget {
                   blurRadius: 6,
                   spreadRadius: 1,
                 ),
+              // 1. Solid 3D Bevel Lip (Độ dày gạch màu cam đào)
               const BoxShadow(
-                color: Color(0xFFDEC5AE),
-                offset: Offset(0, 2.0),
+                color: Color(0xFFEEB596),
+                offset: Offset(0, 3.0),
                 blurRadius: 0,
+              ),
+              // 2. Soft Ambient Drop Shadow (Bóng đổ mềm hắt xuống nền)
+              BoxShadow(
+                color: Colors.black.withValues(alpha: 0.18),
+                offset: const Offset(0, 4.0),
+                blurRadius: 3.5,
+                spreadRadius: 0.5,
               ),
             ],
           ),

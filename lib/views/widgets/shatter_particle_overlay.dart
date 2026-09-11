@@ -128,6 +128,7 @@ class TileShatterController extends ChangeNotifier {
     required Offset center,
     required double tileSize,
     TileColorTheme? theme,
+    Color? primaryColor,
   }) {
     // 1. Expanding Golden Energy Shockwave (Amber Gold)
     shockwaves.add(
@@ -135,22 +136,33 @@ class TileShatterController extends ChangeNotifier {
         x: center.dx,
         y: center.dy,
         maxRadius: tileSize * 0.85,
-        color: const Color(0xFFE5A638), // Warm Amber Honey Gold (AppColors.honeyGold)
+        color: (primaryColor ?? const Color(0xFFE5A638)),
         maxLife: 0.26,
       ),
     );
 
-    // 2. Button-Brown Cocoa & Caramel Palette (Dominant 75%+)
-    // Directly matching the rich 3D brown buttons (Play, Header, Boosters)
-    final List<Color> buttonBrownPalette = [
-      AppColors.btnFaceBrown, // 0xFFA66640 - Rich Roasted Cocoa Button Face
-      const Color(0xFFCA9370), // Warm Caramel Highlight (Play button gradient top)
-      AppColors.terracottaLight, // 0xFFBD7C54 - Caramel Terra
-      AppColors.btnBorderBrown, // 0xFF8F522C - Roasted Cocoa
-      const Color(0xFF9E5C35), // Warm Roasted Chestnut
-      const Color(0xFFB57048), // Amber Cocoa
-      AppColors.btnShadowBrown, // 0xFF7B411D - Deep Chocolate Brown
-    ];
+    // 2. Primary Palette (Dominant 75%+)
+    // Matches the chapter theme color or default rich 3D cocoa buttons
+    final List<Color> particlePalette;
+    if (primaryColor != null) {
+      final hsl = HSLColor.fromColor(primaryColor);
+      particlePalette = [
+        primaryColor,
+        hsl.withLightness((hsl.lightness + 0.15).clamp(0.0, 1.0)).toColor(),
+        hsl.withLightness((hsl.lightness - 0.15).clamp(0.0, 1.0)).toColor(),
+        hsl.withLightness((hsl.lightness - 0.25).clamp(0.0, 1.0)).toColor(),
+      ];
+    } else {
+      particlePalette = [
+        AppColors.btnFaceBrown, // 0xFFA66640 - Rich Roasted Cocoa Button Face
+        const Color(0xFFCA9370), // Warm Caramel Highlight (Play button gradient top)
+        AppColors.terracottaLight, // 0xFFBD7C54 - Caramel Terra
+        AppColors.btnBorderBrown, // 0xFF8F522C - Roasted Cocoa
+        const Color(0xFF9E5C35), // Warm Roasted Chestnut
+        const Color(0xFFB57048), // Amber Cocoa
+        AppColors.btnShadowBrown, // 0xFF7B411D - Deep Chocolate Brown
+      ];
+    }
 
     // Warm Gold & Cream Accents (25%) for high-contrast popping glints
     final List<Color> accentPalette = [
@@ -182,9 +194,9 @@ class TileShatterController extends ChangeNotifier {
       }
 
       final maxLife = 0.50 + _random.nextDouble() * 0.30;
-      // Dominant 75% button brown, 25% warm gold & cream accent
+      // Dominant 75% main palette, 25% warm gold & cream accent
       final Color color = (_random.nextDouble() < 0.75)
-          ? buttonBrownPalette[_random.nextInt(buttonBrownPalette.length)]
+          ? particlePalette[_random.nextInt(particlePalette.length)]
           : accentPalette[_random.nextInt(accentPalette.length)];
 
       shards.add(

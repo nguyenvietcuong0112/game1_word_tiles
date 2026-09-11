@@ -5,6 +5,7 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../controllers/game_controller.dart';
+import '../models/chapter_model.dart';
 import '../services/ads_manager.dart';
 import '../services/analytics_service.dart';
 import '../services/audio_manager.dart';
@@ -222,12 +223,25 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   Widget _buildBackground() {
-    return Image.asset(
-      'assets/images/bg_home.png',
-      fit: BoxFit.cover,
-      width: double.infinity,
-      height: double.infinity,
-      alignment: Alignment.center,
+    final chapterNumber = _controller?.chapterNumber ?? 1;
+    final bgPath = ChapterTheme.getImagePath(chapterNumber);
+
+    return AnimatedSwitcher(
+      duration: const Duration(milliseconds: 600),
+      child: Image.asset(
+        bgPath,
+        key: ValueKey<String>(bgPath),
+        fit: BoxFit.cover,
+        width: double.infinity,
+        height: double.infinity,
+        alignment: Alignment.center,
+        errorBuilder: (context, error, stackTrace) => Image.asset(
+          'assets/images/bg_home.webp',
+          fit: BoxFit.cover,
+          width: double.infinity,
+          height: double.infinity,
+        ),
+      ),
     );
   }
 
@@ -580,7 +594,7 @@ class _GameScreenState extends State<GameScreen> {
                 child: BouncyButton(
                   onTap: _openSettings,
                   child: Image.asset(
-                    'assets/icons/icon_setting.png',
+                    'assets/icons/icon_setting.webp',
                     width: 44.r,
                     height: 44.r,
                   ),
@@ -636,7 +650,7 @@ class _GameScreenState extends State<GameScreen> {
                 ),
               ),
               Image.asset(
-                'assets/icons/icon_coin.png',
+                'assets/icons/icon_coin.webp',
                 width: 44.r,
                 height: 44.r,
               ),
@@ -661,7 +675,7 @@ class _GameScreenState extends State<GameScreen> {
             Positioned(
               top: 0,
               child: Image.asset(
-                'assets/icons/icon_gift_box.png',
+                'assets/icons/icon_gift_box.webp',
                 width: 48.r,
                 height: 48.r,
                 fit: BoxFit.contain,
@@ -672,7 +686,7 @@ class _GameScreenState extends State<GameScreen> {
                 top: -2.h,
                 right: 0,
                 child: Image.asset(
-                  'assets/icons/icon_notice.png',
+                  'assets/icons/icon_notice.webp',
                   width: 20.r,
                   height: 20.r,
                   fit: BoxFit.contain,
@@ -694,7 +708,8 @@ class _GameScreenState extends State<GameScreen> {
       builder: (context, _) {
         final word = _controller!.currentWord;
         final feedback = _controller!.feedbackMessage;
-        final feedbackColor = _controller!.feedbackColor ?? AppColors.btnFaceBrown;
+        final theme = _controller!.chapterTheme;
+        final feedbackColor = _controller!.feedbackColor ?? theme.primaryColor;
 
         if (feedback != null) {
           return Container(
@@ -737,13 +752,13 @@ class _GameScreenState extends State<GameScreen> {
             child: Container(
               padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 8.h),
               decoration: BoxDecoration(
-                color: AppColors.btnFaceBrown,
+                color: theme.primaryColor,
                 borderRadius: BorderRadius.circular(20.r),
-                border: Border.all(color: AppColors.btnBorderBrown, width: 2.0),
-                boxShadow: const [
+                border: Border.all(color: theme.borderColor, width: 2.0),
+                boxShadow: [
                   BoxShadow(
-                    color: AppColors.btnShadowBrown,
-                    offset: Offset(0, 2.5),
+                    color: theme.bevelColor,
+                    offset: const Offset(0, 2.5),
                     blurRadius: 0,
                   ),
                 ],
@@ -753,7 +768,7 @@ class _GameScreenState extends State<GameScreen> {
                 style: GoogleFonts.fredoka(
                   fontSize: 18.sp,
                   fontWeight: FontWeight.w900,
-                  color: Colors.white,
+                  color: theme.textColor,
                   letterSpacing: 2.0,
                 ),
               ),

@@ -138,7 +138,7 @@ class _SettingsDialogState extends State<SettingsDialog> {
                         children: [
                           // Music Row
                           _buildSettingRow(
-                            iconAsset: 'assets/icons/icon_music.png',
+                            iconAsset: 'assets/icons/icon_music.webp',
                             label: 'Music',
                             value: _musicEnabled,
                             onChanged: _toggleMusic,
@@ -147,7 +147,7 @@ class _SettingsDialogState extends State<SettingsDialog> {
 
                           // Sound Row
                           _buildSettingRow(
-                            iconAsset: 'assets/icons/icon_sound.png',
+                            iconAsset: 'assets/icons/icon_sound.webp',
                             label: 'Sound',
                             value: _soundEnabled,
                             onChanged: _toggleSound,
@@ -156,7 +156,7 @@ class _SettingsDialogState extends State<SettingsDialog> {
 
                           // Vibration Row
                           _buildSettingRow(
-                            iconAsset: 'assets/icons/icon_vibration.png',
+                            iconAsset: 'assets/icons/icon_vibration.webp',
                             label: 'Vibration',
                             value: _hapticEnabled,
                             onChanged: _toggleHaptic,
@@ -219,7 +219,7 @@ class _SettingsDialogState extends State<SettingsDialog> {
                   height: 48.h,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('assets/icons/bg_btn_setting.png'),
+                      image: AssetImage('assets/icons/bg_btn_setting.webp'),
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -409,7 +409,7 @@ class _SettingToggleSwitch extends StatelessWidget {
           children: [
             // Track: box_on_off.png
             Image.asset(
-              'assets/icons/box_on_off.png',
+              'assets/icons/box_on_off.webp',
               width: 58.w,
               height: 18.h,
               fit: BoxFit.fill,
@@ -420,7 +420,7 @@ class _SettingToggleSwitch extends StatelessWidget {
               curve: Curves.easeInOutBack,
               alignment: value ? Alignment.centerRight : Alignment.centerLeft,
               child: Image.asset(
-                value ? 'assets/icons/btn_on.png' : 'assets/icons/btn_off.png',
+                value ? 'assets/icons/btn_on.webp' : 'assets/icons/btn_off.webp',
                 width: 32.r,
                 height: 32.r,
                 fit: BoxFit.contain,
@@ -548,7 +548,7 @@ class _CloseButtonState extends State<_CloseButton> {
         duration: const Duration(milliseconds: 70),
         curve: Curves.easeOut,
         child: Image.asset(
-          'assets/icons/icon_close.png',
+          'assets/icons/icon_close.webp',
           width: 44.r,
           height: 44.r,
           fit: BoxFit.contain,

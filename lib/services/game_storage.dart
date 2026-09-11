@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'level_loader.dart';
 
 class GameStorage {
   static late SharedPreferences _prefs;
@@ -51,7 +52,11 @@ class GameStorage {
 
   // Selected Language
   static String getSelectedLanguage() {
-    return _prefs.getString('selected_language') ?? 'english';
+    final lang = _prefs.getString('selected_language') ?? 'english';
+    if (!LevelLoader.supportedLanguages.contains(lang)) {
+      return 'english';
+    }
+    return lang;
   }
 
   static String getLanguage() => getSelectedLanguage();
@@ -149,7 +154,7 @@ class GameStorage {
   static Future<bool> claimExtraWordsBankReward() async {
     final current = getExtraWordsChestCount();
     if (current >= 10) {
-      await addCoins(10);
+      await addCoins(50);
       await setExtraWordsChestCount(0);
       return true;
     }

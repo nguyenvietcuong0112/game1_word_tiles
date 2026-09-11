@@ -180,7 +180,7 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                     alignment: Alignment.center,
                     children: [
                       Image.asset(
-                        'assets/icons/bg_btn_setting.png',
+                        'assets/icons/bg_btn_setting.webp',
                         width: 216.w,
                         height: 58.h,
                         fit: BoxFit.fill,
@@ -494,7 +494,7 @@ class _CloseButtonState extends State<_CloseButton> {
         duration: const Duration(milliseconds: 70),
         curve: Curves.easeOut,
         child: Image.asset(
-          'assets/icons/icon_close.png',
+          'assets/icons/icon_close.webp',
           width: 44.r,
           height: 44.r,
           fit: BoxFit.contain,

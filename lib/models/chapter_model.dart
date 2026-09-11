@@ -1,5 +1,6 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import '../services/chapter_loader.dart';
 
 /// Information about a chapter and the level's position within it.
 class ChapterInfo {
@@ -18,6 +19,8 @@ class ChapterInfo {
     required this.startLevel,
     required this.endLevel,
   });
+
+  String get chapterImage => ChapterTheme.getImagePath(chapterNumber);
 
   /// Map levelNumber to ChapterInfo:
   /// - Chapter 1: Levels 1 - 5 (5 levels)
@@ -73,7 +76,9 @@ class ChapterTheme {
   final List<Color> foregroundGradient;
   final Color sunColor;
   final Color ambientColor;
+  final Color primaryColor;
   final int rewardCoins;
+  static const int totalChapterImages = 18;
 
   const ChapterTheme({
     required this.chapterNumber,
@@ -85,8 +90,39 @@ class ChapterTheme {
     required this.foregroundGradient,
     required this.sunColor,
     required this.ambientColor,
+    this.primaryColor = const Color(0xFF3D6BFF),
     this.rewardCoins = 50,
   });
+
+  /// Light highlight tint (e.g. for gradients on buttons & solved target word boxes)
+  Color get lightColor {
+    final hsl = HSLColor.fromColor(primaryColor);
+    return hsl.withLightness((hsl.lightness + 0.12).clamp(0.0, 1.0)).toColor();
+  }
+
+  /// Dark 3D bevel bottom lip and shadow
+  Color get bevelColor {
+    final hsl = HSLColor.fromColor(primaryColor);
+    return hsl.withLightness((hsl.lightness - 0.18).clamp(0.0, 1.0)).toColor();
+  }
+
+  /// Crisp outline border
+  Color get borderColor {
+    final hsl = HSLColor.fromColor(primaryColor);
+    return hsl.withLightness((hsl.lightness - 0.10).clamp(0.0, 1.0)).toColor();
+  }
+
+  /// High-contrast text color: deep walnut for bright Yellow (#FEDD39), crisp white for vibrant colors
+  Color get textColor =>
+      primaryColor.computeLuminance() > 0.55 ? const Color(0xFF381E0F) : Colors.white;
+
+  /// Path to chapter artwork image (1..18 with automatic looping from chapters.json)
+  String get imageAsset => getImagePath(chapterNumber);
+
+  /// Get chapter image asset path for any chapter number (loops over chapters in chapters.json)
+  static String getImagePath(int chapterNumber) {
+    return ChapterLoader.getImagePath(chapterNumber);
+  }
 
   static const List<ChapterTheme> _allThemes = [
     // Chapter 1: Fuji Lake 🗻
@@ -170,23 +206,27 @@ class ChapterTheme {
   ];
 
   static ChapterTheme forChapter(int chapterNumber) {
-    if (chapterNumber <= 0) return _allThemes.first;
-    final index = (chapterNumber - 1) % _allThemes.length;
-    final base = _allThemes[index];
-    if (chapterNumber <= _allThemes.length) return base;
+    final effectiveNum = chapterNumber <= 0 ? 1 : chapterNumber;
+    final jsonChapter = ChapterLoader.getChapter(effectiveNum);
+    final themeIndex = (effectiveNum - 1) % _allThemes.length;
+    final baseTheme = _allThemes[themeIndex];
 
-    // For later chapters (> 6), procedurally cycle with chapter number in title
+    final isJsonLoaded = ChapterLoader.chapters.isNotEmpty;
+    final title = isJsonLoaded ? jsonChapter.title : baseTheme.title;
+    final subtitle = isJsonLoaded ? jsonChapter.subtitle : baseTheme.subtitle;
+
     return ChapterTheme(
-      chapterNumber: chapterNumber,
-      title: '${base.title} $chapterNumber',
-      subtitle: base.subtitle,
-      emoji: base.emoji,
-      skyGradient: base.skyGradient,
-      mountainGradient: base.mountainGradient,
-      foregroundGradient: base.foregroundGradient,
-      sunColor: base.sunColor,
-      ambientColor: base.ambientColor,
-      rewardCoins: base.rewardCoins,
+      chapterNumber: effectiveNum,
+      title: title,
+      subtitle: subtitle,
+      emoji: baseTheme.emoji,
+      skyGradient: baseTheme.skyGradient,
+      mountainGradient: baseTheme.mountainGradient,
+      foregroundGradient: baseTheme.foregroundGradient,
+      sunColor: baseTheme.sunColor,
+      ambientColor: baseTheme.ambientColor,
+      primaryColor: jsonChapter.primaryColor,
+      rewardCoins: jsonChapter.rewardCoins,
     );
   }
 }

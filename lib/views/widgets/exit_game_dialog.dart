@@ -96,7 +96,7 @@ class ExitGameDialog extends StatelessWidget {
                         children: [
                           // Alert/Notice Icon
                           Image.asset(
-                            'assets/icons/icon_notice.png',
+                            'assets/icons/icon_notice.webp',
                             width: 58.r,
                             height: 58.r,
                             fit: BoxFit.contain,
@@ -187,7 +187,7 @@ class ExitGameDialog extends StatelessWidget {
                   height: 48.h,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('assets/icons/bg_btn_setting.png'),
+                      image: AssetImage('assets/icons/bg_btn_setting.webp'),
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -356,7 +356,7 @@ class _CloseButtonState extends State<_CloseButton> {
         duration: const Duration(milliseconds: 70),
         curve: Curves.easeOut,
         child: Image.asset(
-          'assets/icons/icon_close.png',
+          'assets/icons/icon_close.webp',
           width: 44.r,
           height: 44.r,
           fit: BoxFit.contain,

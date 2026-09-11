@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../../models/chapter_model.dart';
 import '../../models/level_model.dart';
 import '../../theme/app_theme.dart';
 
@@ -12,6 +13,7 @@ class TileWidget extends StatelessWidget {
   final bool isTutorialHighlighted;
   final bool isDimmed;
   final double size;
+  final ChapterTheme? chapterTheme;
 
   const TileWidget({
     super.key,
@@ -22,6 +24,7 @@ class TileWidget extends StatelessWidget {
     this.isTutorialHighlighted = false,
     this.isDimmed = false,
     this.size = 64,
+    this.chapterTheme,
   });
 
   @override
@@ -33,37 +36,44 @@ class TileWidget extends StatelessWidget {
       );
     }
 
-    final double tileSize = size * 0.95;
+    // Fixed uniform gap between tiles across all rows & columns
+    final double tileGap = size < 40 ? 3.0 : 4.0;
+    final double bevelDepth = isSelected ? 3.5 : 3.0;
+    final double tileWidth = size - tileGap;
+    final double tileHeight = size - tileGap - bevelDepth;
 
     // 1. Locked Obstacle Tile (3D Frosted Crystal Ice & Lock)
     if (tile.isObstacleLocked) {
       return SizedBox(
         width: size,
         height: size,
-        child: Center(
-          child: Container(
-            width: tileSize,
-            height: tileSize,
-            decoration: BoxDecoration(
-              gradient: const LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Color(0xFFF0F9FF),
-                  Color(0xFFBAE6FD),
-                  Color(0xFF7DD3FC),
+        child: Align(
+          alignment: Alignment.topCenter,
+          child: Padding(
+            padding: EdgeInsets.only(top: tileGap / 2),
+            child: Container(
+              width: tileWidth,
+              height: tileHeight,
+              decoration: BoxDecoration(
+                gradient: const LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    Color(0xFFF0F9FF),
+                    Color(0xFFBAE6FD),
+                    Color(0xFF7DD3FC),
+                  ],
+                ),
+                borderRadius: BorderRadius.circular(16),
+                border: Border.all(color: const Color(0xFF0284C7), width: 1.8),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Color(0xFF0369A1),
+                    offset: Offset(0, 3.0),
+                    blurRadius: 0,
+                  ),
                 ],
               ),
-              borderRadius: BorderRadius.circular(18),
-              border: Border.all(color: const Color(0xFF0284C7), width: 1.8),
-              boxShadow: const [
-                BoxShadow(
-                  color: Color(0xFF0369A1),
-                  offset: Offset(0, 2.5),
-                  blurRadius: 0,
-                ),
-              ],
-            ),
             child: Stack(
               children: [
                 // Lock Icon & Required Count
@@ -110,31 +120,37 @@ class TileWidget extends StatelessWidget {
             ),
           ),
         ),
-      );
-    }
+      ),
+    );
+  }
 
     // 2. Playable 3D Natural Wood Letter Tile
     final bool isHighlighted = isTutorialHighlighted;
     final bool isDimmedTile = isDimmed && !isHighlighted && !isCountSpotlight;
 
+    final selectedFace = chapterTheme?.primaryColor ?? AppColors.btnFaceBrown;
+    final selectedBevel = chapterTheme?.bevelColor ?? AppColors.btnShadowBrown;
+    final selectedBorder = chapterTheme?.borderColor ?? AppColors.btnBorderBrown;
+    final selectedText = chapterTheme?.textColor ?? Colors.white;
+
     final Color faceColor = isSelected
-        ? AppColors.btnFaceBrown
+        ? selectedFace
         : (isHinted
             ? AppColors.honeyGold
             : (isHighlighted
                 ? const Color(0xFFCA7CFB)
-                : (isDimmedTile ? const Color(0xFF2D2E38) : const Color(0xFFFFF3E3))));
+                : (isDimmedTile ? const Color(0xFF2D2E38) : const Color(0xFFFBF1E6))));
 
     final Color bevelColor = isSelected
-        ? AppColors.btnShadowBrown
+        ? selectedBevel
         : (isHinted
             ? AppColors.goldAccent
             : (isHighlighted
                 ? const Color(0xFFA855F7)
-                : (isDimmedTile ? const Color(0xFF1F2028) : const Color(0xFFD4A574))));
+                : (isDimmedTile ? const Color(0xFF1F2028) : const Color(0xFFEEB596))));
 
     final Color textColor = isSelected
-        ? Colors.white
+        ? selectedText
         : (isHinted
             ? Colors.white
             : (isHighlighted
@@ -144,23 +160,23 @@ class TileWidget extends StatelessWidget {
     final Color borderColor = isCountSpotlight
         ? const Color(0xFFE11D48)
         : (isSelected
-            ? AppColors.btnBorderBrown
+            ? selectedBorder
             : (isHighlighted
                 ? const Color(0xFFF3E8FF)
-                : (isDimmedTile ? const Color(0xFF333544) : const Color(0xFFDEC5AE))));
+                : (isDimmedTile ? const Color(0xFF333544) : Colors.white.withValues(alpha: 0.65))));
 
     Widget tileBox = AnimatedOpacity(
       duration: const Duration(milliseconds: 200),
       opacity: isDimmedTile ? 0.30 : 1.0,
       child: Container(
-        width: tileSize,
-        height: tileSize,
+        width: tileWidth,
+        height: tileHeight,
         decoration: BoxDecoration(
           color: faceColor,
           borderRadius: BorderRadius.circular(16),
           border: Border.all(
             color: borderColor,
-            width: (isSelected || isCountSpotlight || isHighlighted) ? 2.2 : 1.2,
+            width: (isSelected || isCountSpotlight || isHighlighted) ? 2.2 : 1.0,
           ),
           boxShadow: [
             if (isCountSpotlight)
@@ -175,18 +191,19 @@ class TileWidget extends StatelessWidget {
                 blurRadius: 8,
                 spreadRadius: 1,
               ),
-            // 3D Extrusion Bevel Shadow
+            // 1. Solid 3D Extrusion Bevel Shadow (Độ dày gạch)
             BoxShadow(
               color: isCountSpotlight ? const Color(0xFFBE123C) : bevelColor,
-              offset: Offset(0, isSelected ? 3.0 : 2.0),
+              offset: Offset(0, bevelDepth),
               blurRadius: 0,
             ),
-            if (isSelected)
-              BoxShadow(
-                color: AppColors.btnShadowBrown.withValues(alpha: 0.35),
-                offset: const Offset(0, 4.0),
-                blurRadius: 4,
-              ),
+            // 2. Soft Ambient Drop Shadow (Bóng đổ mềm nổi lên nền)
+            BoxShadow(
+              color: Colors.black.withValues(alpha: isSelected ? 0.35 : 0.20),
+              offset: Offset(0, bevelDepth + 1.5),
+              blurRadius: 3.5,
+              spreadRadius: 0.2,
+            ),
           ],
         ),
             child: Stack(
@@ -296,8 +313,12 @@ class TileWidget extends StatelessWidget {
     return SizedBox(
       width: size,
       height: size,
-      child: Center(
-        child: tileBox,
+      child: Align(
+        alignment: Alignment.topCenter,
+        child: Padding(
+          padding: EdgeInsets.only(top: tileGap / 2),
+          child: tileBox,
+        ),
       ),
     );
   }

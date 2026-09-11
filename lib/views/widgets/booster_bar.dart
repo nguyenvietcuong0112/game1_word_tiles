@@ -115,7 +115,7 @@ class _BoosterBarState extends State<BoosterBar> {
             bottom: 0,
             height: menuBarHeight,
             child: Image.asset(
-              'assets/images/menu_bar.png',
+              'assets/images/menu_bar.webp',
               width: double.infinity,
               height: menuBarHeight,
               fit: BoxFit.fill,
@@ -197,7 +197,7 @@ class _BoosterBarState extends State<BoosterBar> {
               ),
               child: Center(
                 child: Image.asset(
-                  'assets/icons/icon_hint.png',
+                  'assets/icons/icon_hint.webp',
                   width: 38.r,
                   height: 38.r,
                   fit: BoxFit.contain,
@@ -290,7 +290,7 @@ class _BoosterBarState extends State<BoosterBar> {
               ),
               child: Center(
                 child: Image.asset(
-                  'assets/icons/icon_rocket.png',
+                  'assets/icons/icon_rocket.webp',
                   width: 38.r,
                   height: 38.r,
                   fit: BoxFit.contain,
@@ -446,7 +446,7 @@ class ExtraWordsButtonState extends State<ExtraWordsButton> with SingleTickerPro
 
                   // Centered Yellow Star
                   Image.asset(
-                    'assets/icons/icon_star.png',
+                    'assets/icons/icon_star.webp',
                     width: 28.r,
                     height: 28.r,
                     fit: BoxFit.contain,
@@ -625,7 +625,7 @@ class GreenPillBadge extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Image.asset(
-            'assets/icons/icon_coin.png',
+            'assets/icons/icon_coin.webp',
             width: coinSize ?? 13.5.r,
             height: coinSize ?? 13.5.r,
           ),

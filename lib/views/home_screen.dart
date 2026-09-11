@@ -102,7 +102,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return GameScaffold(
       useSafeArea: false,
       background: Image.asset(
-        'assets/images/bg_home.png',
+        'assets/images/bg_home.webp',
         fit: BoxFit.cover,
         width: double.infinity,
         height: double.infinity,
@@ -187,7 +187,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             // Overlapping gold crown coin icon
             Image.asset(
-              'assets/icons/icon_coin.png',
+              'assets/icons/icon_coin.webp',
               width: 44.r,
               height: 44.r,
             ),
@@ -201,7 +201,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return BouncyButton(
       onTap: _openSettings,
       child: Image.asset(
-        'assets/icons/icon_setting.png',
+        'assets/icons/icon_setting.webp',
         width: 44.r,
         height: 44.r,
       ),
@@ -210,7 +210,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   Widget _buildLogo() {
     return Image.asset(
-      'assets/images/logo_home.png',
+      'assets/images/logo_home.webp',
       width: 300.w,
       fit: BoxFit.contain,
     );
@@ -225,7 +225,7 @@ class _HomeScreenState extends State<HomeScreen> {
           alignment: Alignment.center,
           children: [
             Image.asset(
-              'assets/images/btn_yellow.png',
+              'assets/images/btn_yellow.webp',
               width: 240.w,
               fit: BoxFit.contain,
             ),

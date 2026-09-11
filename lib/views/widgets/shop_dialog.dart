@@ -153,10 +153,10 @@ class _ShopDialogState extends State<ShopDialog> {
                     children: [
                       // 1. Free Pack (Raised 3D Card with 2-bottom-corner rounded bar)
                       _buildRaisedPackCard(
-                        barBgAsset: 'assets/images/bar_free.png',
+                        barBgAsset: 'assets/images/bar_free.webp',
                         title: 'Free Pack',
                         titleOutlineColor: const Color(0xFF023E8A),
-                        giftIcon: 'assets/icons/icon_gift_box.png',
+                        giftIcon: 'assets/icons/icon_gift_box.webp',
                         rewardBgColor: const Color(0xFFB2D4EA),
                         rewardTopBorderColor: const Color(0xFF87A7BE),
                         hintCount: '1',
@@ -165,8 +165,8 @@ class _ShopDialogState extends State<ShopDialog> {
                           onTap: _claimFreeReward,
                           isPulsing: canClaimDaily,
                           bgAsset: canClaimDaily
-                              ? 'assets/images/btn_green.png'
-                              : 'assets/images/btn_grey.png',
+                              ? 'assets/images/btn_green.webp'
+                              : 'assets/images/btn_grey.webp',
                           child: canClaimDaily
                               ? const CartoonText(
                                   text: 'Free',
@@ -190,10 +190,10 @@ class _ShopDialogState extends State<ShopDialog> {
 
                       // 2. Explorer Pack (Raised 3D Card with 2-bottom-corner rounded bar)
                       _buildRaisedPackCard(
-                        barBgAsset: 'assets/images/bar_explorer.png',
+                        barBgAsset: 'assets/images/bar_explorer.webp',
                         title: 'Explorer Pack',
                         titleOutlineColor: const Color(0xFF380662),
-                        giftIcon: 'assets/icons/icon_gift_explore.png',
+                        giftIcon: 'assets/icons/icon_gift_explore.webp',
                         rewardBgColor: const Color(0xFFF0D0FF),
                         rewardTopBorderColor: const Color(0xFFD0A8E5),
                         hintCount: '3',
@@ -205,7 +205,7 @@ class _ShopDialogState extends State<ShopDialog> {
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Image.asset(
-                                'assets/icons/icon_coin.png',
+                                'assets/icons/icon_coin.webp',
                                 width: 22.r,
                                 height: 22.r,
                                 fit: BoxFit.contain,
@@ -227,10 +227,10 @@ class _ShopDialogState extends State<ShopDialog> {
 
                       // 3. Master Pack (Raised 3D Card with 2-bottom-corner rounded bar)
                       _buildRaisedPackCard(
-                        barBgAsset: 'assets/images/bar_master.png',
+                        barBgAsset: 'assets/images/bar_master.webp',
                         title: 'Master Pack',
                         titleOutlineColor: const Color(0xFF660608),
-                        giftIcon: 'assets/icons/icon_gift_master.png',
+                        giftIcon: 'assets/icons/icon_gift_master.webp',
                         rewardBgColor: const Color(0xFFFBC4D7),
                         rewardTopBorderColor: const Color(0xFFDF9BAF),
                         hintCount: '8',
@@ -242,7 +242,7 @@ class _ShopDialogState extends State<ShopDialog> {
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Image.asset(
-                                'assets/icons/icon_coin.png',
+                                'assets/icons/icon_coin.webp',
                                 width: 22.r,
                                 height: 22.r,
                                 fit: BoxFit.contain,
@@ -273,7 +273,7 @@ class _ShopDialogState extends State<ShopDialog> {
                   height: 52.h,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage('assets/images/btn_gift.png'),
+                      image: AssetImage('assets/images/btn_gift.webp'),
                       fit: BoxFit.fill,
                     ),
                   ),
@@ -392,11 +392,11 @@ class _ShopDialogState extends State<ShopDialog> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         _buildRewardItem(
-                          iconAsset: 'assets/icons/icon_hint.png',
+                          iconAsset: 'assets/icons/icon_hint.webp',
                           count: hintCount,
                         ),
                         _buildRewardItem(
-                          iconAsset: 'assets/icons/icon_rocket.png',
+                          iconAsset: 'assets/icons/icon_rocket.webp',
                           count: rocketCount,
                         ),
                       ],
@@ -497,7 +497,7 @@ class _Green3DButton extends StatefulWidget {
     required this.child,
     required this.onTap,
     this.isPulsing = false,
-    this.bgAsset = 'assets/images/btn_green.png',
+    this.bgAsset = 'assets/images/btn_green.webp',
   });
 
   @override
@@ -591,7 +591,7 @@ class _CloseButtonState extends State<_CloseButton> {
         duration: const Duration(milliseconds: 70),
         curve: Curves.easeOut,
         child: Image.asset(
-          'assets/icons/icon_close.png',
+          'assets/icons/icon_close.webp',
           width: 44.r,
           height: 44.r,
           fit: BoxFit.contain,

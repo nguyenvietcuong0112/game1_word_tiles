@@ -6,6 +6,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../services/ads_manager.dart';
 import '../services/audio_manager.dart';
+import '../services/chapter_loader.dart';
 import '../services/game_storage.dart';
 import '../services/remote_config_service.dart';
 import 'home_screen.dart';
@@ -54,6 +55,7 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
     // 2. Perform async initializations
     try {
       await GameStorage.init();
+      await ChapterLoader.init();
     } catch (_) {}
 
     try {
@@ -114,7 +116,7 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
           // 1. Full-bleed background with floating tiles and bottom scrabble tiles
           Positioned.fill(
             child: Image.asset(
-              'assets/images/bg_loading_splash.png',
+              'assets/images/bg_loading_splash.webp',
               fit: BoxFit.cover,
             ),
           ),
@@ -146,7 +148,7 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
 
                     // Logo Artwork
                     Image.asset(
-                      'assets/icons/logo_loading_splash.png',
+                      'assets/icons/logo_loading_splash.webp',
                       width: 310.w,
                       fit: BoxFit.contain,
                     ),

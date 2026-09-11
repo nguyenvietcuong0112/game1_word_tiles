@@ -342,7 +342,7 @@ class TutorialSpeechBubble extends StatelessWidget {
           ),
           decoration: const BoxDecoration(
             image: DecorationImage(
-              image: AssetImage('assets/images/btn_tutorial.png'),
+              image: AssetImage('assets/images/btn_tutorial.webp'),
               fit: BoxFit.fill,
             ),
           ),
@@ -398,7 +398,7 @@ class TutorialGotItButton extends StatelessWidget {
         height: 44.h,
         decoration: const BoxDecoration(
           image: DecorationImage(
-            image: AssetImage('assets/images/btn_green.png'),
+            image: AssetImage('assets/images/btn_green.webp'),
             fit: BoxFit.fill,
           ),
         ),

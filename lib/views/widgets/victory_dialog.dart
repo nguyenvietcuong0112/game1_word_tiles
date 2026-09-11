@@ -14,6 +14,11 @@ import '../../utils/game_transitions.dart';
 import '../widgets/bouncy_button.dart';
 import '../widgets/shop_dialog.dart';
 
+enum VictoryStep {
+  congrats,
+  chapterPreview,
+}
+
 class VictoryOverlay extends StatefulWidget {
   final GameController controller;
   final VoidCallback onNextLevel;
@@ -32,14 +37,16 @@ class VictoryOverlay extends StatefulWidget {
 
 class _VictoryOverlayState extends State<VictoryOverlay>
     with SingleTickerProviderStateMixin {
+  VictoryStep _currentStep = VictoryStep.congrats;
   late ConfettiController _confettiController;
-  late AnimationController _chapterSlideController;
+  late AnimationController _previewSlideController;
   late Animation<Offset> _oldCardSlideAnimation;
-  late Animation<Offset> _newCardSlideAnimation;
   late Animation<double> _oldCardFadeAnimation;
+  late Animation<Offset> _newCardSlideAnimation;
   late Animation<double> _newCardFadeAnimation;
 
-  Timer? _slideStartTimer;
+  Timer? _previewSlideTimer;
+  Timer? _previewSoundTimer;
   Timer? _autoAdvanceTimer;
   bool _hasNavigated = false;
   bool _claimedDouble = false;
@@ -51,69 +58,50 @@ class _VictoryOverlayState extends State<VictoryOverlay>
     _confettiController = ConfettiController(duration: const Duration(seconds: 4));
     _confettiController.play();
 
-    _chapterSlideController = AnimationController(
+    _previewSlideController = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 750),
-    );
-
-    final curved = CurvedAnimation(
-      parent: _chapterSlideController,
-      curve: Curves.easeInOutCubic,
+      duration: const Duration(milliseconds: 1000),
     );
 
     _oldCardSlideAnimation = Tween<Offset>(
       begin: Offset.zero,
-      end: const Offset(-1.3, 0.0),
-    ).animate(curved);
-
-    _newCardSlideAnimation = Tween<Offset>(
-      begin: const Offset(1.3, 0.0),
-      end: Offset.zero,
-    ).animate(curved);
+      end: const Offset(-1.2, 0.0),
+    ).animate(CurvedAnimation(
+      parent: _previewSlideController,
+      curve: Curves.easeInOutCubic,
+    ));
 
     _oldCardFadeAnimation = Tween<double>(
       begin: 1.0,
       end: 0.0,
     ).animate(CurvedAnimation(
-      parent: _chapterSlideController,
-      curve: const Interval(0.0, 0.7, curve: Curves.easeOut),
+      parent: _previewSlideController,
+      curve: const Interval(0.2, 0.8, curve: Curves.easeIn),
+    ));
+
+    _newCardSlideAnimation = Tween<Offset>(
+      begin: const Offset(1.2, 0.0),
+      end: Offset.zero,
+    ).animate(CurvedAnimation(
+      parent: _previewSlideController,
+      curve: Curves.easeInOutCubic,
     ));
 
     _newCardFadeAnimation = Tween<double>(
       begin: 0.0,
       end: 1.0,
     ).animate(CurvedAnimation(
-      parent: _chapterSlideController,
-      curve: const Interval(0.3, 1.0, curve: Curves.easeIn),
+      parent: _previewSlideController,
+      curve: const Interval(0.2, 0.8, curve: Curves.easeOut),
     ));
-
-    if (widget.controller.isLastLevelOfChapter) {
-      final oldChapter = widget.controller.chapterNumber;
-      final theme = ChapterTheme.forChapter(oldChapter);
-      GameStorage.addCoins(theme.rewardCoins);
-
-      // Slide anim from old chapter -> new chapter after 900ms
-      _slideStartTimer = Timer(const Duration(milliseconds: 900), () {
-        if (mounted) {
-          AudioManager.playTileSelect(pitchIndex: 5);
-          _chapterSlideController.forward();
-        }
-      });
-
-      // Auto advance to next level after ~3.8 seconds total
-      _autoAdvanceTimer = Timer(const Duration(milliseconds: 3800), () {
-        if (mounted) {
-          _handleContinue();
-        }
-      });
-    }
   }
 
   @override
   void dispose() {
-    _slideStartTimer?.cancel();
+    _previewSlideTimer?.cancel();
+    _previewSoundTimer?.cancel();
     _autoAdvanceTimer?.cancel();
-    _chapterSlideController.dispose();
+    _previewSlideController.dispose();
     _confettiController.dispose();
     super.dispose();
   }
@@ -121,7 +109,8 @@ class _VictoryOverlayState extends State<VictoryOverlay>
   void _handleContinue() {
     if (_hasNavigated) return;
     _hasNavigated = true;
-    _slideStartTimer?.cancel();
+    _previewSlideTimer?.cancel();
+    _previewSoundTimer?.cancel();
     _autoAdvanceTimer?.cancel();
 
     AdsManager.showInterEndgame(
@@ -131,6 +120,34 @@ class _VictoryOverlayState extends State<VictoryOverlay>
         widget.onNextLevel();
       },
     );
+  }
+
+  void _goToChapterPreview() {
+    AudioManager.playTileSelect(pitchIndex: 4);
+    final theme = ChapterTheme.forChapter(widget.controller.chapterNumber);
+    GameStorage.addCoins(theme.rewardCoins);
+
+    setState(() {
+      _currentStep = VictoryStep.chapterPreview;
+    });
+
+    _previewSlideTimer = Timer(const Duration(milliseconds: 400), () {
+      if (mounted) {
+        _previewSlideController.forward();
+      }
+    });
+
+    _previewSoundTimer = Timer(const Duration(milliseconds: 1200), () {
+      if (mounted) {
+        AudioManager.playTileSelect(pitchIndex: 5);
+      }
+    });
+
+    _autoAdvanceTimer = Timer(const Duration(milliseconds: 3200), () {
+      if (mounted) {
+        _handleContinue();
+      }
+    });
   }
 
   void _claimDoubleCoins() {
@@ -225,7 +242,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
                   ),
                 ),
                 Image.asset(
-                  'assets/icons/icon_coin.png',
+                  'assets/icons/icon_coin.webp',
                   width: 44.r,
                   height: 44.r,
                 ),
@@ -396,7 +413,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Image.asset(
-                    'assets/icons/icon_coin.png',
+                    'assets/icons/icon_coin.webp',
                     width: 18.r,
                     height: 18.r,
                   ),
@@ -532,7 +549,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
                     alignment: Alignment.center,
                     children: [
                       Image.asset(
-                        'assets/images/btn_yellow.png',
+                        'assets/images/btn_yellow.webp',
                         width: double.infinity,
                         height: double.infinity,
                         fit: BoxFit.fill,
@@ -583,6 +600,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
   }
 
   Widget _buildNormalVictoryView() {
+    final isChapterMilestone = widget.controller.isLastLevelOfChapter;
     final chapterInfo = widget.controller.chapterInfo;
     final currentLvlInChapter = min(chapterInfo.levelInChapter, chapterInfo.totalLevelsInChapter);
     final totalLevelsInChapter = chapterInfo.totalLevelsInChapter;
@@ -613,7 +631,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
               ),
             ),
             Image.asset(
-              'assets/icons/icon_congrats.png',
+              'assets/icons/icon_congrats.webp',
               width: 290.w,
               fit: BoxFit.contain,
             ),
@@ -734,7 +752,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
                   clipBehavior: Clip.none,
                   children: [
                     Image.asset(
-                      'assets/icons/icon_coin_victory.png',
+                      'assets/icons/icon_coin_victory.webp',
                       width: 55.w,
                       fit: BoxFit.contain,
                     ),
@@ -771,17 +789,17 @@ class _VictoryOverlayState extends State<VictoryOverlay>
           padding: EdgeInsets.symmetric(horizontal: 4.w),
           child: Row(
             children: [
-              // Left Button: Yellow Next Level
+              // Left Button: Yellow Next Level or Next Chapter
               Expanded(
                 child: BouncyButton(
-                  onTap: _handleContinue,
+                  onTap: isChapterMilestone ? _goToChapterPreview : _handleContinue,
                   child: SizedBox(
                     height: 70.h,
                     child: Stack(
                       alignment: Alignment.center,
                       children: [
                         Image.asset(
-                          'assets/images/btn_yellow.png',
+                          'assets/images/btn_yellow.webp',
                           width: double.infinity,
                           height: double.infinity,
                           fit: BoxFit.fill,
@@ -791,21 +809,25 @@ class _VictoryOverlayState extends State<VictoryOverlay>
                           children: [
                             // Blue Stroke Outline
                             Text(
-                              'Level ${widget.controller.levelNumber + 1}',
+                              isChapterMilestone
+                                  ? 'Next Chapter'
+                                  : 'Level ${widget.controller.levelNumber + 1}',
                               style: GoogleFonts.fredoka(
-                                fontSize: 22.sp,
+                                fontSize: isChapterMilestone ? 20.sp : 22.sp,
                                 fontWeight: FontWeight.w900,
                                 foreground: Paint()
                                   ..style = PaintingStyle.stroke
                                   ..strokeWidth = 3.5
                                   ..color = const Color(0xFF245F8A),
+                              ),
                             ),
-                          ),
                             // White Letter Fill
                             Text(
-                              'Level ${widget.controller.levelNumber + 1}',
+                              isChapterMilestone
+                                  ? 'Next Chapter'
+                                  : 'Level ${widget.controller.levelNumber + 1}',
                               style: GoogleFonts.fredoka(
-                                fontSize: 22.sp,
+                                fontSize: isChapterMilestone ? 20.sp : 22.sp,
                                 fontWeight: FontWeight.w900,
                                 color: Colors.white,
                               ),
@@ -830,7 +852,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
                       alignment: Alignment.center,
                       children: [
                         Image.asset(
-                          'assets/images/btn_green.png',
+                          'assets/images/btn_green.webp',
                           width: double.infinity,
                           height: double.infinity,
                           fit: BoxFit.fill,
@@ -865,14 +887,14 @@ class _VictoryOverlayState extends State<VictoryOverlay>
                             mainAxisSize: MainAxisSize.min,
                             children: [
                               Image.asset(
-                                'assets/icons/icon_ads.png',
+                                'assets/icons/icon_ads.webp',
                                 width: 32.r,
                                 height: 32.r,
                                 fit: BoxFit.contain,
                               ),
                               SizedBox(width: 6.w),
                               Image.asset(
-                                'assets/icons/icon_coin.png',
+                                'assets/icons/icon_coin.webp',
                                 width: 22.r,
                                 height: 22.r,
                                 fit: BoxFit.contain,
@@ -958,7 +980,9 @@ class _VictoryOverlayState extends State<VictoryOverlay>
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20.w),
                 child: isChapterMilestone
-                    ? _buildChapterVictoryView()
+                    ? (_currentStep == VictoryStep.congrats
+                        ? _buildNormalVictoryView()
+                        : _buildChapterVictoryView())
                     : _buildNormalVictoryView(),
               ),
             ),
