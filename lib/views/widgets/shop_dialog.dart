@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../services/ads_manager.dart';
 import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
 import '../../theme/app_typography.dart';
@@ -43,6 +44,8 @@ class _ShopDialogState extends State<ShopDialog> {
     return '$hours:$minutes:$seconds';
   }
 
+  bool _isLoadingRewardAd = false;
+
   void _claimFreeReward() async {
     if (!GameStorage.canClaimDailyGift()) {
       final remaining = GameStorage.getRemainingDailyGiftCooldown();
@@ -57,21 +60,31 @@ class _ShopDialogState extends State<ShopDialog> {
       return;
     }
 
-    AudioManager.playTileSelect(pitchIndex: 5);
-    await GameStorage.addCoins(100);
-    await GameStorage.addHintCount(1);
-    await GameStorage.addRocketCount(1);
-    await GameStorage.setLastDailyGiftClaimTime(DateTime.now().millisecondsSinceEpoch);
-    widget.onUpdated();
-    if (mounted) {
-      setState(() {});
-      AppPopup.show(
-        context,
-        title: 'Free Pack Claimed!',
-        message: 'You received +1 💡 Hint, +1 🚀 Rocket, and +100 🪙 coins!\nNext free pack in 24 hours.',
-        icon: '🎁',
-      );
-    }
+    if (_isLoadingRewardAd) return;
+    setState(() => _isLoadingRewardAd = true);
+
+    final lang = GameStorage.getSelectedLanguage();
+    final currentLevel = GameStorage.getMaxUnlockedLevelIndex(lang) + 1;
+
+    await AdsManager.showDailyFreePackReward(
+      levelNumber: currentLevel,
+      onRewardResult: (success) async {
+        if (!mounted) return;
+        setState(() => _isLoadingRewardAd = false);
+
+        if (success) {
+          AudioManager.playTileSelect(pitchIndex: 5);
+          await GameStorage.addCoins(100);
+          await GameStorage.addHintCount(1);
+          await GameStorage.addRocketCount(1);
+          await GameStorage.setLastDailyGiftClaimTime(DateTime.now().millisecondsSinceEpoch);
+          widget.onUpdated();
+          if (mounted) {
+            setState(() {});
+          }
+        }
+      },
+    );
   }
 
   void _buyBoosterPack(String name, int coinsCost, int hints, int rockets) async {
@@ -163,18 +176,31 @@ class _ShopDialogState extends State<ShopDialog> {
                         rocketCount: '1',
                         actionButton: _Green3DButton(
                           onTap: _claimFreeReward,
-                          isPulsing: canClaimDaily,
+                          isPulsing: canClaimDaily && !_isLoadingRewardAd,
                           bgAsset: canClaimDaily
                               ? 'assets/images/btn_green.webp'
                               : 'assets/images/btn_grey.webp',
                           child: canClaimDaily
-                              ? const CartoonText(
-                                  text: 'Free',
-                                  fontSize: 18,
-                                  textColor: Colors.white,
-                                  outlineColor: Color(0xFF155484),
-                                  strokeWidth: 3.0,
-                                  shadowOffset: 1.2,
+                              ? Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    Image.asset(
+                                      'assets/icons/icon_ads.webp',
+                                      width: 18.r,
+                                      height: 18.r,
+                                      fit: BoxFit.contain,
+                                    ),
+                                    SizedBox(width: 4.w),
+                                    const CartoonText(
+                                      text: 'Free',
+                                      fontSize: 17,
+                                      textColor: Colors.white,
+                                      outlineColor: Color(0xFF155484),
+                                      strokeWidth: 3.0,
+                                      shadowOffset: 1.2,
+                                    ),
+                                  ],
                                 )
                               : CartoonText(
                                   text: _formatDuration(remainingCooldown),

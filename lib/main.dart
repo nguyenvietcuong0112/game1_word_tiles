@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -10,21 +11,22 @@ import 'views/loading_screen.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Initialize Firebase, Analytics, and Crashlytics
-  await AnalyticsService.initialize();
-
-  // Set portrait orientation
-  await SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp,
-    DeviceOrientation.portraitDown,
+  // Set portrait orientation & immersive sticky mode in parallel
+  await Future.wait([
+    SystemChrome.setPreferredOrientations([
+      DeviceOrientation.portraitUp,
+      DeviceOrientation.portraitDown,
+    ]),
+    SystemChrome.setEnabledSystemUIMode(
+      SystemUiMode.immersiveSticky,
+    ),
   ]);
 
-  // Enable immersive sticky mode: completely hide top status bar and bottom navigation bar on all devices
-  await SystemChrome.setEnabledSystemUIMode(
-    SystemUiMode.immersiveSticky,
-  );
-
+  // Run app immediately so the native launcher splash screen dismisses instantly
   runApp(const WordTilesApp());
+
+  // Initialize Firebase, Analytics, and Crashlytics asynchronously in background
+  unawaited(AnalyticsService.initialize());
 }
 
 class WordTilesApp extends StatefulWidget {

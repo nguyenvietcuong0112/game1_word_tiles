@@ -1,3 +1,7 @@
+import java.text.SimpleDateFormat
+import java.util.Date
+import com.android.build.gradle.internal.api.BaseVariantOutputImpl
+
 plugins {
     id("com.android.application")
     // START: FlutterFire Configuration
@@ -38,6 +42,37 @@ android {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig = signingConfigs.getByName("debug")
+        }
+    }
+
+    applicationVariants.all {
+        val variant = this
+        outputs.all {
+            val output = this
+            if (output is BaseVariantOutputImpl) {
+                val date = SimpleDateFormat("yyyyMMdd").format(Date())
+                val vName = variant.versionName ?: flutter.versionName
+                val vCode = variant.versionCode ?: flutter.versionCode
+                output.outputFileName = "FW27_Mobgame_v${vName}_c${vCode}_${date}.apk"
+            }
+        }
+    }
+}
+
+tasks.matching { it.name.startsWith("bundle") && it.name.endsWith("Bundle") }.configureEach {
+    doLast {
+        val date = SimpleDateFormat("yyyyMMdd").format(Date())
+        val vName = android.defaultConfig.versionName ?: flutter.versionName
+        val vCode = android.defaultConfig.versionCode ?: flutter.versionCode
+        val bundleDir = layout.buildDirectory.dir("outputs/bundle").get().asFile
+        if (bundleDir.exists()) {
+            bundleDir.walkTopDown().filter { it.extension == "aab" }.forEach { aabFile ->
+                if (!aabFile.name.startsWith("FW27_Mobgame")) {
+                    val targetName = "FW27_Mobgame_v${vName}_c${vCode}_${date}.aab"
+                    val targetFile = File(aabFile.parentFile, targetName)
+                    aabFile.copyTo(targetFile, overwrite = true)
+                }
+            }
         }
     }
 }

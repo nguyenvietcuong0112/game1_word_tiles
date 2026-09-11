@@ -239,6 +239,18 @@ class AdsManager {
     );
   }
 
+  /// Shows Rewarded ad for Daily Gift / Free Pack in Daily & Gift dialog.
+  static Future<void> showDailyFreePackReward({
+    required int levelNumber,
+    required Function(bool success) onRewardResult,
+  }) async {
+    await _showRewardAdInternal(
+      placement: 'daily_free_pack',
+      levelNumber: levelNumber,
+      onRewardResult: onRewardResult,
+    );
+  }
+
   @visibleForTesting
   static bool? mockRewardResult;
 
