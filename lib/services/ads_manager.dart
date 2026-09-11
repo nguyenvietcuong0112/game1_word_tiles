@@ -14,7 +14,7 @@ class AdsManager {
   /// - Set to `false` to completely disable all ads (Banner, Interstitial, Resume/AOA, Rewarded).
   /// - When `false`, rewarded buttons automatically grant rewards directly (ideal for testing/development).
   /// - Set to `true` when ready to serve production ads.
-  static bool enableAds = true;
+  static bool enableAds = false;
 
   static DateTime? _lastInterOrResumeTime;
   static bool _isShowingAd = false;

@@ -41,8 +41,8 @@ class GameScreen extends StatefulWidget {
 }
 
 class _GameScreenState extends State<GameScreen> {
-  final GlobalKey<BoardWidgetState> _boardKey = GlobalKey<BoardWidgetState>();
-  final GlobalKey<ExtraWordsButtonState> _extraWordsBtnKey = GlobalKey<ExtraWordsButtonState>();
+  GlobalKey<BoardWidgetState> _boardKey = GlobalKey<BoardWidgetState>();
+  GlobalKey<ExtraWordsButtonState> _extraWordsBtnKey = GlobalKey<ExtraWordsButtonState>();
 
   GameController? _controller;
   late ConfettiController _confettiController;
@@ -150,11 +150,17 @@ class _GameScreenState extends State<GameScreen> {
   void _nextLevel() {
     setState(() {
       _currentLevelIndex++;
+      _boardKey = GlobalKey<BoardWidgetState>();
+      _extraWordsBtnKey = GlobalKey<ExtraWordsButtonState>();
     });
     _loadGame(showLoading: false);
   }
 
   void _replayLevel() {
+    setState(() {
+      _boardKey = GlobalKey<BoardWidgetState>();
+      _extraWordsBtnKey = GlobalKey<ExtraWordsButtonState>();
+    });
     _loadGame();
   }
 
