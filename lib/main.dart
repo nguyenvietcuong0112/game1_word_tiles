@@ -29,6 +29,8 @@ void main() async {
   unawaited(AnalyticsService.initialize());
 }
 
+final RouteObserver<ModalRoute<void>> routeObserver = RouteObserver<ModalRoute<void>>();
+
 class WordTilesApp extends StatefulWidget {
   const WordTilesApp({super.key});
 
@@ -74,6 +76,7 @@ class _WordTilesAppState extends State<WordTilesApp> with WidgetsBindingObserver
           title: 'Wordnect: Connect Words',
           debugShowCheckedModeBanner: false,
           theme: AppThemes.lightTheme,
+          navigatorObservers: [routeObserver],
           home: const LoadingScreen(),
         );
       },

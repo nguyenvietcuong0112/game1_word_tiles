@@ -15,6 +15,7 @@ import '../theme/app_theme.dart';
 import '../utils/game_transitions.dart';
 import '../widgets/common/game_button.dart';
 import '../widgets/common/game_scaffold.dart';
+import 'home_screen.dart';
 import 'level_select_screen.dart';
 import 'widgets/board_widget.dart';
 import 'widgets/booster_bar.dart';
@@ -317,7 +318,16 @@ class _GameScreenState extends State<GameScreen> {
     return GameScaffold(
       useSafeArea: false,
       background: _buildBackground(),
-      canPop: false,
+      onWillPop: () async {
+        if (Navigator.of(context).canPop()) {
+          return true;
+        } else {
+          Navigator.of(context).pushReplacement(
+            MaterialPageRoute(builder: (_) => const HomeScreen()),
+          );
+          return false;
+        }
+      },
       body: Stack(
         children: [
               // Dark background scrim behind gameplay when any tutorial is active
@@ -622,7 +632,7 @@ class _GameScreenState extends State<GameScreen> {
                 constraints: BoxConstraints(minWidth: 78.w),
                 padding: EdgeInsets.only(left: 20.w, right: 14.w),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF26499D),
+                  color:  Color(0xFF000000).withOpacity(0.1),
                   borderRadius: BorderRadius.circular(18.r),
                   border: Border.all(color: Colors.white, width: 2.2),
                   boxShadow: [

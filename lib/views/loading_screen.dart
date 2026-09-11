@@ -8,7 +8,9 @@ import '../services/ads_manager.dart';
 import '../services/audio_manager.dart';
 import '../services/chapter_loader.dart';
 import '../services/game_storage.dart';
+import '../services/level_loader.dart';
 import '../services/remote_config_service.dart';
+import 'game_screen.dart';
 import 'home_screen.dart';
 
 class LoadingScreen extends StatefulWidget {
@@ -92,18 +94,50 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
     await Future.delayed(const Duration(milliseconds: 300));
 
     if (!mounted) return;
-    Navigator.of(context).pushReplacement(
-      PageRouteBuilder(
-        transitionDuration: const Duration(milliseconds: 600),
-        pageBuilder: (context, animation, secondaryAnimation) => const HomeScreen(),
-        transitionsBuilder: (context, animation, secondaryAnimation, child) {
-          return FadeTransition(
-            opacity: CurvedAnimation(parent: animation, curve: Curves.easeInOut),
-            child: child,
-          );
-        },
-      ),
-    );
+    final nav = Navigator.of(context);
+    final isFirstSession = GameStorage.isFirstSession();
+
+    if (isFirstSession) {
+      await GameStorage.markFirstSessionCompleted();
+      final lang = GameStorage.getSelectedLanguage();
+      final count = LevelLoader.totalLevelsPerLanguage[lang] ?? 1000;
+      final currentLvl = GameStorage.getMaxUnlockedLevelIndex(lang).clamp(0, count > 0 ? count - 1 : 0);
+
+      nav.pushReplacement(
+        PageRouteBuilder(
+          pageBuilder: (context, animation, secondaryAnimation) => const HomeScreen(isFirstSessionStart: true),
+          transitionDuration: Duration.zero,
+        ),
+      );
+      nav.push(
+        PageRouteBuilder(
+          transitionDuration: const Duration(milliseconds: 600),
+          pageBuilder: (context, animation, secondaryAnimation) => GameScreen(
+            language: lang,
+            levelIndex: currentLvl,
+          ),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(
+              opacity: CurvedAnimation(parent: animation, curve: Curves.easeInOut),
+              child: child,
+            );
+          },
+        ),
+      );
+    } else {
+      nav.pushReplacement(
+        PageRouteBuilder(
+          transitionDuration: const Duration(milliseconds: 600),
+          pageBuilder: (context, animation, secondaryAnimation) => const HomeScreen(),
+          transitionsBuilder: (context, animation, secondaryAnimation, child) {
+            return FadeTransition(
+              opacity: CurvedAnimation(parent: animation, curve: Curves.easeInOut),
+              child: child,
+            );
+          },
+        ),
+      );
+    }
   }
 
   @override

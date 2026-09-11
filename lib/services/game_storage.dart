@@ -26,6 +26,7 @@ class GameStorage {
   static bool? _cachedHintTutorialShown;
   static bool? _cachedExtraWordsTutorialShown;
   static bool? _cachedRocketTutorialShown;
+  static bool? _cachedHasCompletedFirstSession;
 
   static Future<void> init() async {
     _prefs = await SharedPreferences.getInstance();
@@ -48,6 +49,7 @@ class GameStorage {
     _cachedHintTutorialShown = _prefs.getBool('hint_tutorial_shown') ?? false;
     _cachedExtraWordsTutorialShown = _prefs.getBool('extra_words_tutorial_shown') ?? false;
     _cachedRocketTutorialShown = _prefs.getBool('rocket_tutorial_shown') ?? false;
+    _cachedHasCompletedFirstSession = _prefs.getBool('has_completed_first_session') ?? false;
   }
 
   // Selected Language
@@ -259,6 +261,7 @@ class GameStorage {
   }
 
   static bool getHapticEnabled() {
+    if (!_isInitialized) return true;
     return _prefs.getBool('haptic_enabled') ?? true;
   }
 
@@ -330,6 +333,22 @@ class GameStorage {
 
   static Future<void> setHasShownFirstInter(bool shown) async {
     await _prefs.setBool('has_shown_first_inter', shown);
+  }
+
+  // First Session Management
+  static bool isFirstSession() {
+    return !(_cachedHasCompletedFirstSession ?? _prefs.getBool('has_completed_first_session') ?? false);
+  }
+
+  static Future<void> markFirstSessionCompleted() async {
+    _cachedHasCompletedFirstSession = true;
+    await _prefs.setBool('has_completed_first_session', true);
+  }
+
+  @visibleForTesting
+  static Future<void> resetFirstSessionForTesting() async {
+    _cachedHasCompletedFirstSession = false;
+    await _prefs.remove('has_completed_first_session');
   }
 
   // Reset Progress

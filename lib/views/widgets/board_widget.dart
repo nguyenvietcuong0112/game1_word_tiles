@@ -220,35 +220,13 @@ class BoardWidgetState extends State<BoardWidget> with SingleTickerProviderState
 
               return RepaintBoundary(
                 child: Container(
-                  padding: const EdgeInsets.all(10),
+                  padding: const EdgeInsets.fromLTRB(12, 10, 12, 14),
                   decoration: BoxDecoration(
-                    color: isBoardDimmed
-                        ? const Color(0xFF1B1D27).withValues(alpha: 0.60)
-                        : const Color(0xFF14387C).withValues(alpha: 0.52),
-                    borderRadius: BorderRadius.circular(26),
-                    border: Border.all(
-                      color: isBoardDimmed
-                          ? const Color(0xFF323646)
-                          : Colors.white,
-                      width: 2.2,
+                    image: DecorationImage(
+                      image: const AssetImage('assets/images/bg_card_board.png'),
+                      fit: BoxFit.fill,
+                      opacity: isBoardDimmed ? 0.6 : 1.0,
                     ),
-                    boxShadow: [
-                      // 1. Solid Dark Blue 3D Bottom Bevel Lip
-                      BoxShadow(
-                        color: isBoardDimmed
-                            ? const Color(0xFF0F1118)
-                            : const Color(0xFF0B2D64).withValues(alpha: 0.90),
-                        offset: const Offset(0, 5.5),
-                        blurRadius: 0,
-                      ),
-                      // 2. Ambient Soft Drop Shadow
-                      BoxShadow(
-                        color: Colors.black.withValues(alpha: 0.35),
-                        offset: const Offset(0, 9),
-                        blurRadius: 12,
-                        spreadRadius: 1,
-                      ),
-                    ],
                   ),
                   child: SizedBox(
                     width: boardWidth,

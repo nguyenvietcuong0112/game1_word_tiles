@@ -175,10 +175,10 @@ class _SettingsDialogState extends State<SettingsDialog> {
                       _buildAction3DButton(
                         label: 'Home',
                         icon: Icons.home,
-                        faceColor: const Color(0xFF42D623),
-                        bevelColor: const Color(0xFF229713),
-                        borderColor: const Color(0xFF0F5A06),
-                        outlineColor: const Color(0xFF0E5606),
+                        faceColor: const Color(0xFF46dc28),
+                        bevelColor: const Color(0xFF2DC419),
+                        borderColor: const Color(0xFF19BA05),
+                        outlineColor: const Color(0xFF179A09),
                         onTap: () {
                           AudioManager.playTileSelect(pitchIndex: 2);
                           if (widget.onGoHome != null) {

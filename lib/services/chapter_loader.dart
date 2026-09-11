@@ -72,11 +72,11 @@ class ChapterLoader {
   }
 
   /// Default color mapping for chapters 1..18 adhering strictly to:
-  /// - Yellow (#FEDD39) ONLY for Chapter 7 & Chapter 17 (chapter_7.webp & chapter_17.webp)
+  /// - Yellow (#FEDD39) ONLY for Chapter 7 & Chapter 17 (chapter_1.webp & chapter_17.webp)
   /// - The other 7 colors repeat in sequence: Blue, Brown, Green, Orange, Pink, Purple, Red
   static String defaultColorForChapter(int chapterNumber) {
     final idx = chapterNumber <= 0 ? 1 : ((chapterNumber - 1) % 18) + 1;
-    if (idx == 7 || idx == 17) {
+    if (idx == 1 || idx == 17) {
       return '#FEDD39';
     }
     const mapping = {
