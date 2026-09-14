@@ -185,7 +185,7 @@ class _GameIconButtonState extends State<GameIconButton> with SingleTickerProvid
           dimension = 44.r;
           break;
         case GameIconButtonSize.dialogClose:
-          dimension = 36.r;
+          dimension = 42.r;
           break;
         case GameIconButtonSize.large:
           dimension = 54.r;
@@ -199,35 +199,12 @@ class _GameIconButtonState extends State<GameIconButton> with SingleTickerProvid
     Widget buttonContent;
 
     if (widget.variant == GameIconButtonVariant.danger) {
-      // Glossy 3D Red Badge (for dialog top-right close "X")
-      buttonContent = Container(
+      // 3D Red Circular Close "X" Button using game asset icon_close.webp
+      buttonContent = Image.asset(
+        'assets/icons/icon_close.webp',
         width: dimension,
         height: dimension,
-        decoration: BoxDecoration(
-          gradient: const LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [Color(0xFFFF5252), Color(0xFFE53935)],
-          ),
-          shape: BoxShape.circle,
-          border: Border.all(
-            color: Colors.white,
-            width: 2.5,
-          ),
-          boxShadow: const [
-            BoxShadow(
-              color: Color(0x44000000),
-              offset: Offset(0, 3),
-              blurRadius: 5,
-            ),
-            BoxShadow(
-              color: AppColors.dangerShadow,
-              offset: Offset(0, 2),
-              blurRadius: 0,
-            ),
-          ],
-        ),
-        child: Center(child: widget.icon),
+        fit: BoxFit.contain,
       );
     } else if (widget.variant == GameIconButtonVariant.neutral) {
       // Soft Birch / Cream Ring

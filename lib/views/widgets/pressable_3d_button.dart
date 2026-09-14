@@ -17,6 +17,7 @@ class Pressable3DButton extends StatefulWidget {
   final double bevelOffset;
   final double borderWidth;
   final EdgeInsetsGeometry? padding;
+  final bool scaleDown;
 
   const Pressable3DButton({
     super.key,
@@ -31,6 +32,7 @@ class Pressable3DButton extends StatefulWidget {
     this.bevelOffset = 4.0,
     this.borderWidth = 1.0,
     this.padding,
+    this.scaleDown = true,
   });
 
   @override
@@ -93,12 +95,14 @@ class _Pressable3DButtonState extends State<Pressable3DButton> {
             ),
           ],
         ),
-        alignment: Alignment.center,
+        alignment: widget.scaleDown ? Alignment.center : null,
         padding: widget.padding ?? EdgeInsets.only(bottom: _isPressed ? 0 : 2.h),
-        child: FittedBox(
-          fit: BoxFit.scaleDown,
-          child: widget.child,
-        ),
+        child: widget.scaleDown
+            ? FittedBox(
+                fit: BoxFit.scaleDown,
+                child: widget.child,
+              )
+            : widget.child,
       ),
     );
   }

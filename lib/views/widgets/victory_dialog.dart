@@ -21,6 +21,120 @@ enum VictoryStep {
   chapterPreview,
 }
 
+/// Helper model & generator for rich celebratory messages on victory.
+/// Combines global percentile stats with skill-based compliments.
+class VictoryMessage {
+  final String prefix;
+  final String? highlight;
+  final String suffix;
+
+  const VictoryMessage({
+    required this.prefix,
+    this.highlight,
+    this.suffix = '',
+  });
+
+  static VictoryMessage generate({
+    required int levelNumber,
+    required bool isChapterMilestone,
+    Random? random,
+  }) {
+    final rng = random ?? Random();
+
+    if (isChapterMilestone) {
+      return const VictoryMessage(
+        prefix: 'Chapter Conquered!\n',
+        highlight: 'Top 1%',
+        suffix: ' Elite Master!',
+      );
+    }
+
+    // Dynamic percentile scaling with level:
+    // Level 1-3: ~55-65%
+    // Level 4-10: ~68-79%
+    // Level 11-25: ~80-89%
+    // Level 26-50: ~90-95%
+    // Level 51+: ~96-99%
+    int basePercentile;
+    if (levelNumber <= 3) {
+      basePercentile = 55 + (levelNumber * 3) + rng.nextInt(3);
+    } else if (levelNumber <= 10) {
+      basePercentile = 68 + ((levelNumber - 3) * 1.5).round() + rng.nextInt(3);
+    } else if (levelNumber <= 25) {
+      basePercentile = 80 + ((levelNumber - 10) * 0.6).round() + rng.nextInt(3);
+    } else if (levelNumber <= 50) {
+      basePercentile = 90 + ((levelNumber - 25) * 0.2).round() + rng.nextInt(2);
+    } else {
+      basePercentile = min(99, 96 + rng.nextInt(4));
+    }
+    final percentile = basePercentile.clamp(50, 99);
+    final topPercent = max(1, 100 - percentile);
+
+    final templates = <VictoryMessage>[
+      // Global Brain / Percentile Templates
+      VictoryMessage(
+        prefix: 'Smarter than ',
+        highlight: '$percentile%',
+        suffix: '\nof players worldwide!',
+      ),
+      VictoryMessage(
+        prefix: 'You outsmarted\n',
+        highlight: '$percentile%',
+        suffix: ' of the world!',
+      ),
+      VictoryMessage(
+        prefix: 'Top ',
+        highlight: '$topPercent%',
+        suffix: ' brain power!\nPure genius!',
+      ),
+      VictoryMessage(
+        prefix: 'Ahead of ',
+        highlight: '$percentile%',
+        suffix: ' of\npeople on Earth!',
+      ),
+      VictoryMessage(
+        prefix: 'Only ',
+        highlight: '$topPercent%',
+        suffix: ' could solve\nthis so fast!',
+      ),
+      VictoryMessage(
+        prefix: 'Sharp mind!\nTop ',
+        highlight: '$topPercent%',
+        suffix: ' worldwide!',
+      ),
+
+      // Arcade / Compliment Templates
+      const VictoryMessage(
+        prefix: 'This level was\n',
+        highlight: 'no match',
+        suffix: ' for you!',
+      ),
+      const VictoryMessage(
+        prefix: 'Pure genius!\n',
+        highlight: 'You nailed it!',
+      ),
+      const VictoryMessage(
+        prefix: 'Wordsmith master\n',
+        highlight: 'at work!',
+      ),
+      const VictoryMessage(
+        prefix: 'Too easy for a\n',
+        highlight: 'pro like you!',
+      ),
+      const VictoryMessage(
+        prefix: 'Unstoppable streak!\n',
+        highlight: 'Flawless play!',
+      ),
+      const VictoryMessage(
+        prefix: 'Spot on!\n',
+        highlight: 'That was impressive!',
+      ),
+    ];
+
+    return templates[rng.nextInt(templates.length)];
+  }
+}
+
 class VictoryOverlay extends StatefulWidget {
   final GameController controller;
   final VoidCallback onNextLevel;
@@ -46,6 +160,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
   late Animation<double> _oldCardFadeAnimation;
   late Animation<Offset> _newCardSlideAnimation;
   late Animation<double> _newCardFadeAnimation;
+  late final VictoryMessage _victoryMessage;
 
   Timer? _previewSlideTimer;
   Timer? _previewSoundTimer;
@@ -57,6 +172,10 @@ class _VictoryOverlayState extends State<VictoryOverlay>
   @override
   void initState() {
     super.initState();
+    _victoryMessage = VictoryMessage.generate(
+      levelNumber: widget.controller.levelNumber,
+      isChapterMilestone: widget.controller.isLastLevelOfChapter,
+    );
     _confettiController = ConfettiController(duration: const Duration(seconds: 4));
     _confettiController.play();
 
@@ -626,10 +745,10 @@ class _VictoryOverlayState extends State<VictoryOverlay>
 
         SizedBox(height: 0.05.sh),
 
-        // Message Capsule: "This level was no match for you!"
+        // Message Capsule: Dynamic celebratory message with % percentile or skill compliments
         Container(
-          constraints: BoxConstraints(maxWidth: 240.w),
-          padding: EdgeInsets.symmetric(horizontal: 22.w, vertical: 12.h),
+          constraints: BoxConstraints(maxWidth: 270.w),
+          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 12.h),
           decoration: BoxDecoration(
             color: const Color(0xFF041026).withValues(alpha: 0.92),
             borderRadius: BorderRadius.circular(28.r),
@@ -642,15 +761,35 @@ class _VictoryOverlayState extends State<VictoryOverlay>
               ),
             ],
           ),
-          child: Text(
-            'This level was\nno match for you!',
-            textAlign: TextAlign.center,
-            style: GoogleFonts.fredoka(
-              fontSize: 16.sp,
-              fontWeight: FontWeight.w700,
-              color: Colors.white,
-              height: 1.25,
+          child: Text.rich(
+            TextSpan(
+              style: GoogleFonts.fredoka(
+                fontSize: 16.sp,
+                fontWeight: FontWeight.w700,
+                color: Colors.white,
+                height: 1.25,
+              ),
+              children: [
+                TextSpan(text: _victoryMessage.prefix),
+                if (_victoryMessage.highlight != null)
+                  TextSpan(
+                    text: _victoryMessage.highlight,
+                    style: TextStyle(
+                      color: const Color(0xFFFFD700),
+                      fontWeight: FontWeight.w900,
+                      shadows: [
+                        Shadow(
+                          color: const Color(0xFFFF9100).withValues(alpha: 0.6),
+                          blurRadius: 4,
+                        ),
+                      ],
+                    ),
+                  ),
+                if (_victoryMessage.suffix.isNotEmpty)
+                  TextSpan(text: _victoryMessage.suffix),
+              ],
             ),
+            textAlign: TextAlign.center,
           ),
         )
             .animate()

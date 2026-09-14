@@ -87,7 +87,7 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                SizedBox(height: 28.h),
+                SizedBox(height: 50.h),
 
                 // Top Illustration: Blue letter tiles tray
                 Padding(
@@ -236,6 +236,7 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                   padding: EdgeInsets.fromLTRB(16.w, 0, 16.w, 16.h),
                   child: _buildProgressBar(bankCount, canClaim),
                 ),
+                SizedBox(height: 16.h),
               ],
             ),
           ),
@@ -290,8 +291,8 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
 
           // 3. Floating Red Circular Close Button
           Positioned(
-            top: -10.h,
-            right: 0.w,
+            top: -15.h,
+            right: -10.w,
             child: GameIconButton.close(
               context,
               size: GameIconButtonSize.dialogClose,
