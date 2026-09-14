@@ -305,12 +305,11 @@ class _GameScreenState extends State<GameScreen> {
         !GameStorage.isHintTutorialShown();
 
     final isExtraWordsTut = !_controller!.isWon &&
-        _controller!.levelNumber == 7 &&
+        _controller!.levelNumber == 6 &&
         !GameStorage.isExtraWordsTutorialShown();
 
     final isRocketTut = !_controller!.isWon &&
         _controller!.levelNumber == 7 &&
-        !isExtraWordsTut &&
         !GameStorage.isRocketTutorialShown();
 
     final isDarkScrimTut = isLevel1Tut || isCountTut || isReverseTut || isHintTut || isExtraWordsTut || isRocketTut;
@@ -366,7 +365,7 @@ class _GameScreenState extends State<GameScreen> {
                       ),
                       // TargetWordsBar with Side Buttons (Gift & Star Progress)
                       Expanded(
-                        flex: 5,
+                        flex: 7,
                         child: Stack(
                           clipBehavior: Clip.none,
                           alignment: Alignment.center,
@@ -380,37 +379,39 @@ class _GameScreenState extends State<GameScreen> {
                                 ),
                               ),
                             ),
-                            // Left Gift Box Button
-                            Positioned(
-                              top: 8.h,
-                              left: 16.w,
-                              child: AnimatedOpacity(
-                                opacity: isDarkScrimTut ? 0.20 : 1.0,
-                                duration: const Duration(milliseconds: 250),
-                                child: _buildGiftButton(),
-                              ),
-                            ),
-                            // Right Star / Extra Words Button (Spotlighted and lit up on Level 7)
-                            Positioned(
-                              top: 8.h,
-                              right: 16.w,
-                              child: AnimatedOpacity(
-                                opacity: (isDarkScrimTut && !isExtraWordsTut) ? 0.20 : 1.0,
-                                duration: const Duration(milliseconds: 250),
-                                child: ExtraWordsButton(
-                                  key: _extraWordsBtnKey,
-                                  extraCount: GameStorage.getExtraWordsChestCount(),
-                                  onTap: () {
-                                    if (isExtraWordsTut) {
-                                      GameStorage.setExtraWordsTutorialShown(true);
-                                      setState(() {});
-                                    }
-                                    _openExtraWords();
-                                  },
-                                  isSpotlighted: isExtraWordsTut,
+                            // Left Gift Box Button (Hidden on Level 1)
+                            if (_controller!.levelNumber > 1)
+                              Positioned(
+                                top: 8.h,
+                                left: 16.w,
+                                child: AnimatedOpacity(
+                                  opacity: isDarkScrimTut ? 0.20 : 1.0,
+                                  duration: const Duration(milliseconds: 250),
+                                  child: _buildGiftButton(),
                                 ),
                               ),
-                            ),
+                            // Right Star / Extra Words Button (Only shown when Extra Words is unlocked: Level >= 6)
+                            if (_controller!.isExtraWordsUnlocked)
+                              Positioned(
+                                top: 8.h,
+                                right: 16.w,
+                                child: AnimatedOpacity(
+                                  opacity: (isDarkScrimTut && !isExtraWordsTut) ? 0.20 : 1.0,
+                                  duration: const Duration(milliseconds: 250),
+                                  child: ExtraWordsButton(
+                                    key: _extraWordsBtnKey,
+                                    extraCount: GameStorage.getExtraWordsChestCount(),
+                                    onTap: () {
+                                      if (isExtraWordsTut) {
+                                        GameStorage.setExtraWordsTutorialShown(true);
+                                        setState(() {});
+                                      }
+                                      _openExtraWords();
+                                    },
+                                    isSpotlighted: isExtraWordsTut,
+                                  ),
+                                ),
+                              ),
                           ],
                         ),
                       ),
@@ -549,19 +550,22 @@ class _GameScreenState extends State<GameScreen> {
                 ),
 
               // Flying Extra Word Jump Animation & Visual FX Layer
-              Positioned.fill(
-                child: ExtraWordFlyOverlay(
-                  controller: _controller!,
-                  boardKey: _boardKey,
-                  extraWordsBtnKey: _extraWordsBtnKey,
+              if (_controller!.isExtraWordsUnlocked)
+                Positioned.fill(
+                  child: ExtraWordFlyOverlay(
+                    controller: _controller!,
+                    boardKey: _boardKey,
+                    extraWordsBtnKey: _extraWordsBtnKey,
+                  ),
                 ),
-              ),
             ],
           ),
     );
   }
 
   Widget _buildHeader() {
+    final showIcons = _controller != null && _controller!.levelNumber > 1;
+
     return SafeArea(
       bottom: false,
       child: Padding(
@@ -593,23 +597,25 @@ class _GameScreenState extends State<GameScreen> {
                   ),
                 ),
               ),
-              // 2. Left Coins Capsule
-              Align(
-                alignment: Alignment.centerLeft,
-                child: _buildCoinCapsule(),
-              ),
-              // 3. Right Settings Button
-              Align(
-                alignment: Alignment.centerRight,
-                child: BouncyButton(
-                  onTap: _openSettings,
-                  child: Image.asset(
-                    'assets/icons/icon_setting.webp',
-                    width: 44.r,
-                    height: 44.r,
+              // 2. Left Coins Capsule (Hidden on Level 1)
+              if (showIcons)
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: _buildCoinCapsule(),
+                ),
+              // 3. Right Settings Button (Hidden on Level 1)
+              if (showIcons)
+                Align(
+                  alignment: Alignment.centerRight,
+                  child: BouncyButton(
+                    onTap: _openSettings,
+                    child: Image.asset(
+                      'assets/icons/icon_setting.webp',
+                      width: 44.r,
+                      height: 44.r,
+                    ),
                   ),
                 ),
-              ),
             ],
           ),
         ),
@@ -632,7 +638,7 @@ class _GameScreenState extends State<GameScreen> {
                 constraints: BoxConstraints(minWidth: 78.w),
                 padding: EdgeInsets.only(left: 20.w, right: 14.w),
                 decoration: BoxDecoration(
-                  color:  Color(0xFF000000).withOpacity(0.1),
+                  color: const Color(0xFF000000).withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(18.r),
                   border: Border.all(color: Colors.white, width: 2.2),
                   boxShadow: [

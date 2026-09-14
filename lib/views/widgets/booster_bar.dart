@@ -211,7 +211,7 @@ class _BoosterBarState extends State<BoosterBar> {
               right: 0,
               child: hintCount > 0
                   ? OrangeCountBadge(count: hintCount)
-                  : GreenPillBadge.coinPrice(coins: 80),
+                  : const GreenPlusBadge(),
             ),
 
             // Downward arrow pointer positioned directly above the Hint icon
@@ -304,7 +304,7 @@ class _BoosterBarState extends State<BoosterBar> {
               right: 0,
               child: rocketCount > 0
                   ? OrangeCountBadge(count: rocketCount)
-                  : GreenPillBadge.coinPrice(coins: 240),
+                  : const GreenPlusBadge(),
             ),
 
             // Downward arrow pointer positioned directly above the Rocket icon
@@ -591,6 +591,83 @@ class OrangeCountBadge extends StatelessWidget {
               Shadow(offset: Offset(-0.8, 0.8), color: Color(0xFF1E3A6E)),
               Shadow(offset: Offset(0.8, 0.8), color: Color(0xFF1E3A6E)),
               Shadow(offset: Offset(0, 1.2), color: Color(0xFF1E3A6E)),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// 3D Vector-rendered Green Plus Badge for when free boosters are depleted (count == 0).
+class GreenPlusBadge extends StatelessWidget {
+  final double size;
+
+  const GreenPlusBadge({
+    super.key,
+    this.size = 25.0,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: size.r,
+      height: size.r,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        gradient: const LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color(0xFFFCB63D), // top sunny amber
+            Color(0xFFE58826), // bottom warm orange
+          ],
+        ),
+        border: Border.all(
+          color: const Color(0xFF8B3612), // cartoon warm russet outline
+          width: 1.2,
+        ),
+        boxShadow: const [
+          BoxShadow(
+            color: Color(0xFF9E4216), // 3D bottom bevel
+            offset: Offset(0, 1.5),
+            blurRadius: 0,
+          ),
+          BoxShadow(
+            color: Color(0x33000000),
+            offset: Offset(0, 2),
+            blurRadius: 2.5,
+          ),
+        ],
+      ),
+      padding: EdgeInsets.all(2.0.r),
+      child: Container(
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          gradient: const LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color(0xFF76E846), // bright fresh lime green
+              Color(0xFF3EB818), // warm grass green
+            ],
+          ),
+          border: Border.all(
+            color: const Color(0xFF28870E),
+            width: 0.8,
+          ),
+        ),
+        child: Center(
+          child: Icon(
+            Icons.add_rounded,
+            color: Colors.white,
+            size: (size * 0.64).r,
+            shadows: const [
+              Shadow(
+                color: Color(0xFF1D6809),
+                offset: Offset(0, 1.0),
+                blurRadius: 0,
+              ),
             ],
           ),
         ),

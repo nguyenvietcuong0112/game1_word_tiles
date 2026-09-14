@@ -27,7 +27,7 @@ class LevelLoader {
   };
 
   static const Map<String, int> totalLevelsPerLanguage = {
-    'english': 2471,
+    'english': 1500,
     'german': 1500,
     'french': 1500,
     'italian': 1500,
@@ -44,9 +44,17 @@ class LevelLoader {
   }
 
   /// Load a specific level by language and level Number (e.g. level1.json, level2.json, ...)
-  /// Load a specific level by language and level Number (e.g. level1.json, level2.json, ...)
   static Future<LevelModel?> loadLevel(String language, int levelNumber) async {
-    // 1. Try level{levelNumber}.json (e.g. assets/levels/english/level1.json)
+    // 1. Try generated_levels first (e.g. assets/generated_levels/english/level1.json)
+    try {
+      final jsonPath = 'assets/generated_levels/$language/level$levelNumber.json';
+      final jsonString = await rootBundle.loadString(jsonPath);
+      final jsonMap = jsonDecode(jsonString) as Map<String, dynamic>;
+      final raw = LevelModel.fromJson(jsonMap);
+      return harmonizeLevel(raw);
+    } catch (_) {}
+
+    // 2. Try level{levelNumber}.json in assets/levels (e.g. assets/levels/english/level1.json)
     try {
       final jsonPath = 'assets/levels/$language/level$levelNumber.json';
       final jsonString = await rootBundle.loadString(jsonPath);
@@ -55,7 +63,7 @@ class LevelLoader {
       return harmonizeLevel(raw);
     } catch (_) {}
 
-    // 2. Try {levelNumber}.json
+    // 3. Try {levelNumber}.json in assets/levels
     try {
       final jsonPath = 'assets/levels/$language/$levelNumber.json';
       final jsonString = await rootBundle.loadString(jsonPath);

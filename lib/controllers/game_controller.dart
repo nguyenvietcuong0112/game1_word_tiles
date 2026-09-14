@@ -59,7 +59,7 @@ class GameController extends ChangeNotifier {
   bool get isBoosterBarVisible => levelNumber >= 5;
   bool get isHintUnlocked => levelNumber >= 5;
   bool get isRocketUnlocked => levelNumber >= 7;
-  bool get isExtraWordsUnlocked => levelNumber >= 7;
+  bool get isExtraWordsUnlocked => levelNumber >= 6;
   bool get isShopUnlocked => levelNumber >= 7;
 
   List<Point<int>>? highlightedHintPath;
