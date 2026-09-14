@@ -28,6 +28,15 @@ class GameStorage {
   static bool? _cachedRocketTutorialShown;
   static bool? _cachedHasCompletedFirstSession;
 
+  static bool? _cachedInfiniteBoosters;
+  static final ValueNotifier<bool> infiniteBoostersNotifier = ValueNotifier<bool>(false);
+
+  static bool? _cachedDevOverlay;
+  static final ValueNotifier<bool> devOverlayNotifier = ValueNotifier<bool>(true);
+
+  static bool? _cachedHideGameplayUI;
+  static final ValueNotifier<bool> hideGameplayUINotifier = ValueNotifier<bool>(false);
+
   static Future<void> init() async {
     _prefs = await SharedPreferences.getInstance();
     _isInitialized = true;
@@ -50,6 +59,15 @@ class GameStorage {
     _cachedExtraWordsTutorialShown = _prefs.getBool('extra_words_tutorial_shown') ?? false;
     _cachedRocketTutorialShown = _prefs.getBool('rocket_tutorial_shown') ?? false;
     _cachedHasCompletedFirstSession = _prefs.getBool('has_completed_first_session') ?? false;
+
+    _cachedInfiniteBoosters = _prefs.getBool('cheat_infinite_boosters') ?? false;
+    infiniteBoostersNotifier.value = _cachedInfiniteBoosters!;
+
+    _cachedDevOverlay = _prefs.getBool('cheat_dev_overlay_enabled') ?? true;
+    devOverlayNotifier.value = _cachedDevOverlay!;
+
+    _cachedHideGameplayUI = _prefs.getBool('cheat_hide_gameplay_ui') ?? false;
+    hideGameplayUINotifier.value = _cachedHideGameplayUI!;
   }
 
   // Selected Language
@@ -123,6 +141,13 @@ class GameStorage {
     await _prefs.setInt('player_coins', updated);
   }
 
+  static Future<void> setCoins(int amount) async {
+    final updated = amount.clamp(0, 9999999);
+    _cachedCoins = updated;
+    coinsNotifier.value = updated;
+    await _prefs.setInt('player_coins', updated);
+  }
+
   static Future<bool> spendCoins(int amount) async {
     final current = getCoins();
     if (current >= amount) {
@@ -170,13 +195,21 @@ class GameStorage {
 
   static Future<void> addHintCount(int amount) async {
     final current = getHintCount();
-    final updated = current + amount;
+    final updated = (current + amount).clamp(0, 9999);
+    _cachedHintCount = updated;
+    hintCountNotifier.value = updated;
+    await _prefs.setInt('inventory_hint_count', updated);
+  }
+
+  static Future<void> setHintCount(int amount) async {
+    final updated = amount.clamp(0, 9999);
     _cachedHintCount = updated;
     hintCountNotifier.value = updated;
     await _prefs.setInt('inventory_hint_count', updated);
   }
 
   static Future<bool> useHintItem() async {
+    if (isInfiniteBoostersEnabled()) return true;
     final current = getHintCount();
     if (current > 0) {
       final updated = current - 1;
@@ -194,13 +227,21 @@ class GameStorage {
 
   static Future<void> addRocketCount(int amount) async {
     final current = getRocketCount();
-    final updated = current + amount;
+    final updated = (current + amount).clamp(0, 9999);
+    _cachedRocketCount = updated;
+    rocketCountNotifier.value = updated;
+    await _prefs.setInt('inventory_rocket_count', updated);
+  }
+
+  static Future<void> setRocketCount(int amount) async {
+    final updated = amount.clamp(0, 9999);
     _cachedRocketCount = updated;
     rocketCountNotifier.value = updated;
     await _prefs.setInt('inventory_rocket_count', updated);
   }
 
   static Future<bool> useRocketItem() async {
+    if (isInfiniteBoostersEnabled()) return true;
     final current = getRocketCount();
     if (current > 0) {
       final updated = current - 1;
@@ -370,5 +411,87 @@ class GameStorage {
     _cachedHintTutorialShown = false;
     _cachedExtraWordsTutorialShown = false;
     _cachedRocketTutorialShown = false;
+  }
+
+  // ==========================================
+  // CHEAT & DEV TOOLS METHODS
+  // ==========================================
+
+  static bool isInfiniteBoostersEnabled() {
+    _cachedInfiniteBoosters ??= _prefs.getBool('cheat_infinite_boosters') ?? false;
+    return _cachedInfiniteBoosters!;
+  }
+
+  static Future<void> setInfiniteBoostersEnabled(bool enabled) async {
+    _cachedInfiniteBoosters = enabled;
+    infiniteBoostersNotifier.value = enabled;
+    await _prefs.setBool('cheat_infinite_boosters', enabled);
+  }
+
+  static bool isDevOverlayEnabled() {
+    _cachedDevOverlay ??= _prefs.getBool('cheat_dev_overlay_enabled') ?? true;
+    return _cachedDevOverlay!;
+  }
+
+  static Future<void> setDevOverlayEnabled(bool enabled) async {
+    _cachedDevOverlay = enabled;
+    devOverlayNotifier.value = enabled;
+    await _prefs.setBool('cheat_dev_overlay_enabled', enabled);
+  }
+
+  /// Force-set current and max unlocked level progression (1-based levelNumber)
+  static Future<void> forceSetLevelProgression(String language, int levelNumber) async {
+    final maxCount = LevelLoader.totalLevelsPerLanguage[language] ?? 1500;
+    final index = (levelNumber - 1).clamp(0, maxCount - 1);
+    await setCurrentLevelIndex(language, index);
+    await _prefs.setInt('max_unlocked_level_index_$language', index);
+  }
+
+  /// Unlock all levels for given language
+  static Future<void> unlockAllLevels(String language) async {
+    final maxIndex = (LevelLoader.totalLevelsPerLanguage[language] ?? 1500) - 1;
+    await _prefs.setInt('max_unlocked_level_index_$language', maxIndex);
+  }
+
+  /// Clear daily gift timer so user can claim immediately
+  static Future<void> resetDailyGiftCooldown() async {
+    await _prefs.remove('last_daily_gift_claim_ms');
+  }
+
+  static bool isGameplayUIHidden() {
+    _cachedHideGameplayUI ??= _prefs.getBool('cheat_hide_gameplay_ui') ?? false;
+    return _cachedHideGameplayUI!;
+  }
+
+  static Future<void> setGameplayUIHidden(bool hidden) async {
+    _cachedHideGameplayUI = hidden;
+    hideGameplayUINotifier.value = hidden;
+    await _prefs.setBool('cheat_hide_gameplay_ui', hidden);
+  }
+
+  /// Wipe all game data and reset to fresh installation state
+  static Future<void> resetAllData() async {
+    await _prefs.clear();
+    _cachedCoins = 250;
+    coinsNotifier.value = 250;
+    _cachedExtraWordsChestCount = 0;
+    extraWordsNotifier.value = 0;
+    _cachedHintCount = 2;
+    hintCountNotifier.value = 2;
+    _cachedRocketCount = 1;
+    rocketCountNotifier.value = 1;
+    _cachedTutorialCompleted = false;
+    _cachedCountTutorialShown = false;
+    _cachedReverseTutorialShown = false;
+    _cachedHintTutorialShown = false;
+    _cachedExtraWordsTutorialShown = false;
+    _cachedRocketTutorialShown = false;
+    _cachedHasCompletedFirstSession = false;
+    _cachedInfiniteBoosters = false;
+    infiniteBoostersNotifier.value = false;
+    _cachedDevOverlay = true;
+    devOverlayNotifier.value = true;
+    _cachedHideGameplayUI = false;
+    hideGameplayUINotifier.value = false;
   }
 }

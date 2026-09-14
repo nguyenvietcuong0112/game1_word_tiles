@@ -5,9 +5,10 @@ import 'package:google_fonts/google_fonts.dart';
 import '../../controllers/game_controller.dart';
 import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
+import '../../theme/app_typography.dart';
 import '../../utils/game_transitions.dart';
-import '../../widgets/common/game_icon_button.dart';
-import 'app_popup.dart';
+import 'bouncy_button.dart';
+import 'pressable_3d_button.dart';
 
 class ExtraWordsDialog extends StatefulWidget {
   final GameController controller;
@@ -42,16 +43,15 @@ class ExtraWordsDialog extends StatefulWidget {
 class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
   void _claimReward() async {
     final success = await GameStorage.claimExtraWordsBankReward();
-    if (success) {
+    if (success) { 
       AudioManager.playVictory();
       widget.onUpdated();
       setState(() {});
       if (mounted) {
-        AppPopup.show(
-          context,
-          title: 'Extra Words Reward Claimed!',
-          message: 'You received +50 🪙 for finding 10 extra bonus words!\nKeep finding hidden words!',
-          icon: '🎁',
+        showGameDialog(
+          context: context,
+          barrierDismissible: true,
+          builder: (ctx) => const _ExtraWordsRewardClaimDialog(),
         );
       }
     }
@@ -65,25 +65,35 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
 
     return Dialog(
       backgroundColor: Colors.transparent,
-      insetPadding: EdgeInsets.symmetric(horizontal: 24.w),
-      child: Stack(
-        clipBehavior: Clip.none,
-        alignment: Alignment.topCenter,
-        children: [
-          // 1. Main White Card Frame
-          Container(
-            constraints: BoxConstraints(maxWidth: 340.w),
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(30.r),
-              boxShadow: const [
-                BoxShadow(
-                  color: Color(0x33000000),
-                  offset: Offset(0, 10),
-                  blurRadius: 25,
+      insetPadding: EdgeInsets.symmetric(horizontal: 20.w),
+      child: Center(
+        child: SizedBox(
+          width: 336.w,
+          child: Stack(
+            clipBehavior: Clip.none,
+            alignment: Alignment.topCenter,
+            children: [
+              // 1. Main White Card Frame
+              Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(30.r),
+                  border: Border.all(color: const Color(0xFFE5EFF5), width: 3.0),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Color(0x38000000),
+                      offset: Offset(0, 12),
+                      blurRadius: 24,
+                      spreadRadius: 2,
+                    ),
+                    BoxShadow(
+                      color: Color(0xFFB0C9DA),
+                      offset: Offset(0, 4),
+                      blurRadius: 0,
+                    ),
+                  ],
                 ),
-              ],
-            ),
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
@@ -231,21 +241,20 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                 ),
                 SizedBox(height: 16.h),
 
-                // Bottom Progress Bar & 50 Coins Reward
+                // Bottom Progress Bar & 50 Coins Reward (Full width inside card)
                 Padding(
-                  padding: EdgeInsets.fromLTRB(16.w, 0, 16.w, 16.h),
+                  padding: EdgeInsets.fromLTRB(16.w, 0, 16.w, 18.h),
                   child: _buildProgressBar(bankCount, canClaim),
                 ),
-                SizedBox(height: 16.h),
               ],
             ),
           ),
 
           // 2. Purple Pill Header Badge ("Extra Words")
           Positioned(
-            top: -16.h,
+            top: -18.h,
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 26.w, vertical: 6.h),
+              padding: EdgeInsets.symmetric(horizontal: 28.w, vertical: 6.h),
               decoration: BoxDecoration(
                 gradient: const LinearGradient(
                   begin: Alignment.topCenter,
@@ -256,7 +265,7 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                   ],
                 ),
                 borderRadius: BorderRadius.circular(22.r),
-                border: Border.all(color: Colors.white, width: 2.0),
+                border: Border.all(color: Colors.white, width: 2.2),
                 boxShadow: const [
                   BoxShadow(
                     color: Color(0xFF4B3AA8),
@@ -270,37 +279,39 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                   ),
                 ],
               ),
-              child: Text(
-                'Extra Words',
-                style: GoogleFonts.fredoka(
-                  fontSize: 22.sp,
-                  fontWeight: FontWeight.w900,
-                  color: Colors.white,
-                  letterSpacing: 0.5,
-                  shadows: const [
-                    Shadow(
-                      color: Color(0xFF3D2E95),
-                      offset: Offset(0, 1.5),
-                      blurRadius: 1.0,
-                    ),
-                  ],
-                ),
+              child: const CartoonText(
+                text: 'Extra Words',
+                fontSize: 22,
+                textColor: Colors.white,
+                outlineColor: Color(0xFF3D2E95),
+                strokeWidth: 3.4,
+                shadowOffset: 1.5,
               ),
             ),
           ),
 
-          // 3. Floating Red Circular Close Button
+          // 3. Floating 3D Red Circular Close "X" Button
           Positioned(
             top: -15.h,
-            right: -10.w,
-            child: GameIconButton.close(
-              context,
-              size: GameIconButtonSize.dialogClose,
+            right: -13.w,
+            child: BouncyButton(
+              onTap: () {
+                AudioManager.playTileSelect(pitchIndex: 1);
+                Navigator.of(context).pop();
+              },
+              child: Image.asset(
+                'assets/icons/icon_close.webp',
+                width: 44.r,
+                height: 44.r,
+                fit: BoxFit.contain,
+              ),
             ),
           ),
         ],
       ),
-    )
+    ),
+  ),
+)
         .animate()
         .scale(
           begin: const Offset(0.85, 0.85),
@@ -315,174 +326,371 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
 
     return GestureDetector(
       onTap: canClaim ? _claimReward : null,
-      child: Stack(
-        clipBehavior: Clip.none,
-        alignment: Alignment.centerLeft,
-        children: [
-          // Capsule Track
-          Container(
-            height: 24.h,
-            margin: EdgeInsets.only(right: 22.w),
-            decoration: BoxDecoration(
-              color: const Color(0xFF3E4850),
-              borderRadius: BorderRadius.circular(12.r),
-              border: Border.all(color: Colors.white, width: 1.5),
-              boxShadow: const [
-                BoxShadow(
-                  color: Color(0x22000000),
-                  offset: Offset(0, 2),
-                  blurRadius: 3,
+      behavior: HitTestBehavior.opaque,
+      child: SizedBox(
+        width: double.infinity,
+        height: 52.h,
+        child: Stack(
+          clipBehavior: Clip.none,
+          alignment: Alignment.centerLeft,
+          children: [
+            // Capsule Track (stretches full width, continues underneath coins)
+            Container(
+              height: 32.h,
+              width: double.infinity,
+              margin: EdgeInsets.only(right: 18.w),
+              decoration: BoxDecoration(
+                color: const Color(0xFF2C3B35),
+                borderRadius: BorderRadius.circular(16.r),
+                border: Border.all(color: Colors.white, width: 2.5),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Color(0x33000000),
+                    offset: Offset(0, 3),
+                    blurRadius: 4,
+                  ),
+                  BoxShadow(
+                    color: Color(0xFF9EACB6),
+                    offset: Offset(0, 2),
+                    blurRadius: 0,
+                  ),
+                ],
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(13.5.r),
+                child: Stack(
+                  children: [
+                    // Vibrant Bright Green Progress Fill
+                    if (progress > 0)
+                      FractionallySizedBox(
+                        alignment: Alignment.centerLeft,
+                        widthFactor: progress,
+                        child: Container(
+                          decoration: const BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                Color(0xFF3EEC62),
+                                Color(0xFF1FCF44),
+                              ],
+                            ),
+                          ),
+                        ),
+                      ),
+
+                    // Centered Progress Text (e.g. 6/10) with dark navy stroke
+                    Positioned.fill(
+                      child: Center(
+                        child: CartoonText(
+                          text: '$count/10',
+                          fontSize: 16.sp,
+                          textColor: Colors.white,
+                          outlineColor: const Color(0xFF1E3A8A),
+                          strokeWidth: 3.2,
+                          shadowOffset: 1.0,
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-              ],
+              ),
             ),
-            child: Stack(
-              children: [
-                // Green Progress Fill
-                if (progress > 0)
-                  FractionallySizedBox(
-                    alignment: Alignment.centerLeft,
-                    widthFactor: progress,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        gradient: const LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [
-                            Color(0xFF26DE50),
-                            Color(0xFF19B83E),
+
+            // Coin Stack with "50" badge on the right end
+            Positioned(
+              right: -6.w,
+              child: Stack(
+                clipBehavior: Clip.none,
+                alignment: Alignment.center,
+                children: [
+                  Image.asset(
+                    'assets/icons/icon_coin_victory.webp',
+                    width: 52.r,
+                    height: 52.r,
+                    fit: BoxFit.contain,
+                  ),
+                  Positioned(
+                    right: 0,
+                    bottom: -2.h,
+                    child: CartoonText(
+                      text: '50',
+                      fontSize: 16.sp,
+                      textColor: Colors.white,
+                      outlineColor: const Color(0xFF1E3A8A),
+                      strokeWidth: 3.2,
+                      shadowOffset: 1.0,
+                    ),
+                  ),
+
+                  // Claim Badge Animation when claimable
+                  if (canClaim)
+                    Positioned(
+                      top: -12.h,
+                      child: Container(
+                        padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 2.h),
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            colors: [Color(0xFFFFD54F), Color(0xFFFFB300)],
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                          ),
+                          borderRadius: BorderRadius.circular(10.r),
+                          border: Border.all(color: Colors.white, width: 1.2),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Color(0xFFB45309),
+                              offset: Offset(0, 1.8),
+                              blurRadius: 0,
+                            ),
+                            BoxShadow(
+                              color: Color(0x33000000),
+                              offset: Offset(0, 2),
+                              blurRadius: 3,
+                            ),
                           ],
                         ),
-                        borderRadius: BorderRadius.circular(12.r),
-                      ),
+                        child: Text(
+                          'CLAIM!',
+                          style: GoogleFonts.fredoka(
+                            fontSize: 10.sp,
+                            fontWeight: FontWeight.w900,
+                            color: const Color(0xFF78350F),
+                          ),
+                        ),
+                      )
+                          .animate(onPlay: (c) => c.repeat(reverse: true))
+                          .scale(
+                            begin: const Offset(1.0, 1.0),
+                            end: const Offset(1.15, 1.15),
+                            duration: 450.ms,
+                            curve: Curves.easeInOut,
+                          ),
                     ),
-                  ),
-
-                // Centered Progress Count (e.g. 6/10)
-                Positioned.fill(
-                  child: Center(
-                    child: Text(
-                      '$count/10',
-                      style: GoogleFonts.fredoka(
-                        fontSize: 14.sp,
-                        fontWeight: FontWeight.w900,
-                        color: Colors.white,
-                        letterSpacing: 0.5,
-                        shadows: const [
-                          Shadow(
-                            color: Color(0xFF1E3A8A),
-                            offset: Offset(0, 1.2),
-                            blurRadius: 1,
-                          ),
-                          Shadow(
-                            color: Color(0xFF1E3A8A),
-                            offset: Offset(1.2, 0),
-                            blurRadius: 1,
-                          ),
-                          Shadow(
-                            color: Color(0xFF1E3A8A),
-                            offset: Offset(-1.2, 0),
-                            blurRadius: 1,
-                          ),
-                          Shadow(
-                            color: Color(0xFF1E3A8A),
-                            offset: Offset(0, -1.2),
-                            blurRadius: 1,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-
-          // Coin Stack with "50" badge on the right
-          Positioned(
-            right: -6.w,
-            child: Stack(
-              clipBehavior: Clip.none,
-              alignment: Alignment.center,
-              children: [
-                Image.asset(
-                  'assets/icons/icon_coin_victory.webp',
-                  width: 48.r,
-                  height: 48.r,
-                  fit: BoxFit.contain,
-                ),
-                Positioned(
-                  right: -2.w,
-                  bottom: -4.h,
-                  child: Text(
-                    '50',
-                    style: GoogleFonts.fredoka(
-                      fontSize: 16.sp,
-                      fontWeight: FontWeight.w900,
-                      color: Colors.white,
-                      shadows: const [
-                        Shadow(
-                          color: Color(0xFF1E3A8A),
-                          offset: Offset(0, 1.5),
-                          blurRadius: 1,
-                        ),
-                        Shadow(
-                          color: Color(0xFF1E3A8A),
-                          offset: Offset(1.5, 0),
-                          blurRadius: 1,
-                        ),
-                        Shadow(
-                          color: Color(0xFF1E3A8A),
-                          offset: Offset(-1.5, 0),
-                          blurRadius: 1,
-                        ),
-                        Shadow(
-                          color: Color(0xFF1E3A8A),
-                          offset: Offset(0, -1.5),
-                          blurRadius: 1,
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                // Claim Badge Animation when claimable
-                if (canClaim)
-                  Positioned(
-                    top: -8.h,
-                    child: Container(
-                      padding: EdgeInsets.symmetric(horizontal: 6.w, vertical: 1.h),
-                      decoration: BoxDecoration(
-                        color: const Color(0xFFFFCC00),
-                        borderRadius: BorderRadius.circular(8.r),
-                        border: Border.all(color: Colors.white, width: 1.0),
-                        boxShadow: const [
-                          BoxShadow(
-                            color: Color(0xFFB45309),
-                            offset: Offset(0, 1.5),
-                            blurRadius: 0,
-                          ),
-                        ],
-                      ),
-                      child: Text(
-                        'CLAIM!',
-                        style: GoogleFonts.fredoka(
-                          fontSize: 9.sp,
-                          fontWeight: FontWeight.w900,
-                          color: const Color(0xFF78350F),
-                        ),
-                      ),
-                    )
-                        .animate(onPlay: (c) => c.repeat(reverse: true))
-                        .scale(
-                          begin: const Offset(1.0, 1.0),
-                          end: const Offset(1.15, 1.15),
-                          duration: 500.ms,
-                        ),
-                  ),
-              ],
-            ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
+  }
+}
+
+/// 3D Cartoon Reward Claim Dialog for Extra Words
+class _ExtraWordsRewardClaimDialog extends StatelessWidget {
+  const _ExtraWordsRewardClaimDialog();
+
+  @override
+  Widget build(BuildContext context) {
+    return Dialog(
+      backgroundColor: Colors.transparent,
+      insetPadding: EdgeInsets.symmetric(horizontal: 20.w),
+      child: Center(
+        child: SizedBox(
+          width: 336.w,
+          child: Stack(
+            clipBehavior: Clip.none,
+            alignment: Alignment.topCenter,
+            children: [
+              // Outer White Card with Soft 3D Shadow
+              Container(
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(30.r),
+                  border: Border.all(color: const Color(0xFFE5EFF5), width: 3.0),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Color(0x38000000),
+                      offset: Offset(0, 12),
+                      blurRadius: 24,
+                      spreadRadius: 2,
+                    ),
+                    BoxShadow(
+                      color: Color(0xFFB0C9DA),
+                      offset: Offset(0, 4),
+                      blurRadius: 0,
+                    ),
+                  ],
+                ),
+                padding: EdgeInsets.fromLTRB(16.w, 36.h, 16.w, 18.h),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    // Sunken Pastel Showcase Panel
+                    Container(
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        color: const Color(0xFFD5E7F3),
+                        borderRadius: BorderRadius.circular(20.r),
+                        border: Border.all(color: const Color(0xFFBED7E8), width: 1.5),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Color(0x12000000),
+                            offset: Offset(0, 2),
+                            blurRadius: 4,
+                          ),
+                        ],
+                      ),
+                      padding: EdgeInsets.symmetric(vertical: 18.h, horizontal: 16.w),
+                      child: Column(
+                        children: [
+                          // Hero Coin Stack with gentle celebration animation
+                          Image.asset(
+                            'assets/icons/icon_coin_victory.webp',
+                            width: 82.r,
+                            height: 82.r,
+                            fit: BoxFit.contain,
+                          )
+                              .animate(onPlay: (c) => c.repeat(reverse: true))
+                              .scale(
+                                begin: const Offset(0.95, 0.95),
+                                end: const Offset(1.05, 1.05),
+                                duration: 1200.ms,
+                                curve: Curves.easeInOut,
+                              ),
+                          SizedBox(height: 12.h),
+
+                          // Reward Amount Badge Pill (+50 Coins)
+                          Container(
+                            padding: EdgeInsets.symmetric(horizontal: 14.w, vertical: 6.h),
+                            decoration: BoxDecoration(
+                              color: const Color(0xFF132A1F),
+                              borderRadius: BorderRadius.circular(16.r),
+                              border: Border.all(
+                                color: const Color(0xFF3EEC62).withValues(alpha: 0.8),
+                                width: 1.5,
+                              ),
+                              boxShadow: const [
+                                BoxShadow(
+                                  color: Color(0x20000000),
+                                  offset: Offset(0, 2),
+                                  blurRadius: 3,
+                                ),
+                              ],
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Image.asset(
+                                  'assets/icons/icon_coin.webp',
+                                  width: 22.r,
+                                  height: 22.r,
+                                  fit: BoxFit.contain,
+                                ),
+                                SizedBox(width: 6.w),
+                                CartoonText(
+                                  text: '+50 COINS',
+                                  fontSize: 18.sp,
+                                  textColor: const Color(0xFFFFD700),
+                                  outlineColor: const Color(0xFF78350F),
+                                  strokeWidth: 2.8,
+                                  shadowOffset: 1.2,
+                                ),
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 10.h),
+
+                          // Description
+                          Text(
+                            'Congratulations!\nYou found 10 hidden extra words!\nKeep finding bonus words for more coins!',
+                            textAlign: TextAlign.center,
+                            style: GoogleFonts.fredoka(
+                              fontSize: 13.sp,
+                              fontWeight: FontWeight.w600,
+                              color: const Color(0xFF3B4868),
+                              height: 1.35,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    SizedBox(height: 18.h),
+
+                    // Big Vivid Green 3D Pressable Button
+                    Pressable3DButton(
+                      width: double.infinity,
+                      height: 52.h,
+                      scaleDown: false,
+                      borderRadius: 18,
+                      bevelOffset: 4.5,
+                      borderWidth: 1.2,
+                      faceColor: const Color(0xFF46dc28),
+                      bevelColor: const Color(0xFF2DC419),
+                      borderColor: const Color(0xFF19BA05),
+                      onTap: () {
+                        AudioManager.playTileSelect(pitchIndex: 5);
+                        Navigator.of(context).pop();
+                      },
+                      child: CartoonText(
+                        text: 'COLLECT',
+                        fontSize: 20.sp,
+                        textColor: Colors.white,
+                        outlineColor: const Color(0xFF179A09),
+                        strokeWidth: 3.2,
+                        shadowOffset: 1.5,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              // Header Pill: "REWARD!" with bg_btn_setting.webp
+              Positioned(
+                top: -20.h,
+                child: Container(
+                  width: 220.w,
+                  height: 48.h,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage('assets/icons/bg_btn_setting.webp'),
+                      fit: BoxFit.fill,
+                    ),
+                  ),
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.only(bottom: 2.h),
+                  child: const CartoonText(
+                    text: 'REWARD!',
+                    fontSize: 22,
+                    textColor: Colors.white,
+                    outlineColor: Color(0xFF380662),
+                    strokeWidth: 3.4,
+                    shadowOffset: 1.6,
+                  ),
+                ),
+              ),
+
+              // Floating 3D Red Circular Close "X" Button
+              Positioned(
+                top: -15.h,
+                right: -13.w,
+                child: BouncyButton(
+                  onTap: () {
+                    AudioManager.playTileSelect(pitchIndex: 1);
+                    Navigator.of(context).pop();
+                  },
+                  child: Image.asset(
+                    'assets/icons/icon_close.webp',
+                    width: 44.r,
+                    height: 44.r,
+                    fit: BoxFit.contain,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    )
+        .animate()
+        .scale(
+          begin: const Offset(0.78, 0.78),
+          end: const Offset(1.0, 1.0),
+          duration: 260.ms,
+          curve: Curves.easeOutBack,
+        )
+        .fadeIn(duration: 180.ms);
   }
 }

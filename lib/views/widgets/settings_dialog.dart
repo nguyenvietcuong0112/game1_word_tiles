@@ -7,13 +7,21 @@ import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
 import '../../services/level_loader.dart';
 import '../../theme/app_typography.dart';
+import '../../controllers/game_controller.dart';
 import '../language_selection_screen.dart';
+import 'bouncy_button.dart';
+import 'cheat_menu_dialog.dart';
 
 class SettingsDialog extends StatefulWidget {
   final bool isHomeScreen;
   final VoidCallback? onLanguageChanged;
   final VoidCallback? onRestartLevel;
   final VoidCallback? onGoHome;
+  final GameController? controller;
+  final ValueChanged<int>? onJumpToLevel;
+  final VoidCallback? onNextLevel;
+  final VoidCallback? onInstantWin;
+  final VoidCallback? onSolveWord;
 
   const SettingsDialog({
     super.key,
@@ -21,6 +29,11 @@ class SettingsDialog extends StatefulWidget {
     this.onLanguageChanged,
     this.onRestartLevel,
     this.onGoHome,
+    this.controller,
+    this.onJumpToLevel,
+    this.onNextLevel,
+    this.onInstantWin,
+    this.onSolveWord,
   });
 
   @override
@@ -211,6 +224,13 @@ class _SettingsDialogState extends State<SettingsDialog> {
                 ),
               ),
 
+              // DEV Icon Badge Button (Top-Left corner)
+              Positioned(
+                top: -12.h,
+                left: -6.w,
+                child: _buildDevBadgeButton(),
+              ),
+
               // Header Pill: "Setting" with bg_btn_setting.png
               Positioned(
                 top: -20.h,
@@ -257,6 +277,69 @@ class _SettingsDialogState extends State<SettingsDialog> {
           curve: Curves.easeOutBack,
         )
         .fadeIn(duration: 180.ms);
+  }
+
+  Widget _buildDevBadgeButton() {
+    return BouncyButton(
+      onTap: () {
+        AudioManager.playTileSelect(pitchIndex: 4);
+        Navigator.of(context).pop();
+        CheatMenuDialog.show(
+          context,
+          controller: widget.controller,
+          onJumpToLevel: widget.onJumpToLevel,
+          onNextLevel: widget.onNextLevel,
+          onInstantWin: widget.onInstantWin,
+          onSolveWord: widget.onSolveWord,
+          onUpdated: () {
+            widget.onLanguageChanged?.call();
+          },
+        );
+      },
+      child: Container(
+        padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 6.h),
+        decoration: BoxDecoration(
+          gradient: const LinearGradient(
+            colors: [Color(0xFF0284C7), Color(0xFF0F172A)],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+          ),
+          borderRadius: BorderRadius.circular(20.r),
+          border: Border.all(
+            color: const Color(0xFF38BDF8),
+            width: 1.8,
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: const Color(0xFF38BDF8).withValues(alpha: 0.45),
+              blurRadius: 6,
+              spreadRadius: 1,
+            ),
+            const BoxShadow(
+              color: Colors.black54,
+              offset: Offset(0, 3),
+              blurRadius: 5,
+            ),
+          ],
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Text('⚡', style: TextStyle(fontSize: 14)),
+            SizedBox(width: 4.w),
+            Text(
+              'DEV',
+              style: GoogleFonts.fredoka(
+                color: Colors.white,
+                fontSize: 13.sp,
+                fontWeight: FontWeight.w900,
+                letterSpacing: 0.8,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   /// Builds a single toggle row: icon + label + animated on/off switch

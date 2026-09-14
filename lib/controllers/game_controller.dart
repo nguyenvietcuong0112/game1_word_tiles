@@ -594,6 +594,55 @@ class GameController extends ChangeNotifier {
     return false;
   }
 
+  /// Dev/Cheat: Instantly solve all remaining words and trigger victory
+  void cheatInstantWin() {
+    if (isWon) return;
+    for (final tw in level.targetWords) {
+      if (!solvedTargetWords.contains(tw.word)) {
+        solvedTargetWords.add(tw.word);
+      }
+    }
+    for (final row in grid) {
+      for (final tile in row) {
+        tile.count = 0;
+        tile.isCleared = true;
+      }
+    }
+    _victoryTimer?.cancel();
+    _handleVictory();
+    notifyListeners();
+  }
+
+  /// Dev/Cheat: Automatically solve the next unsolved target word
+  void cheatSolveNextWord() {
+    if (isWon || isWinning) return;
+    TargetWord? targetToSolve;
+    for (final target in level.targetWords) {
+      if (!solvedTargetWords.contains(target.word)) {
+        targetToSolve = target;
+        break;
+      }
+    }
+
+    if (targetToSolve != null) {
+      final word = targetToSolve.word;
+      solvedTargetWords.add(word);
+      final path = _findValidActivePath(word) ?? [];
+      _decrementWordTiles(word, path);
+      AudioManager.playWordMatch();
+      _showFeedback('⚡ Cheat Solved: "$word"!', const Color(0xFFFFD54F));
+      _checkObstacleUnlocks();
+
+      if (solvedTargetWords.length >= level.targetWords.length) {
+        _victoryTimer?.cancel();
+        _handleVictory();
+      }
+      notifyListeners();
+    } else {
+      cheatInstantWin();
+    }
+  }
+
   /// Checks if all remaining unsolved target words have at least one valid path on the board
   bool _areAllRemainingWordsSolvable(Set<String> solvedWords) {
     for (final tw in level.targetWords) {

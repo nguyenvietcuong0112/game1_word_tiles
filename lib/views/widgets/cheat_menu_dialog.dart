@@ -1,0 +1,724 @@
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:flutter_animate/flutter_animate.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
+import '../../controllers/game_controller.dart';
+import '../../services/audio_manager.dart';
+import '../../services/game_storage.dart';
+import '../../services/level_loader.dart';
+
+class CheatMenuDialog extends StatefulWidget {
+  final String? language;
+  final GameController? controller;
+  final ValueChanged<int>? onJumpToLevel;
+  final VoidCallback? onNextLevel;
+  final VoidCallback? onInstantWin;
+  final VoidCallback? onSolveWord;
+  final VoidCallback? onUpdated;
+
+  const CheatMenuDialog({
+    super.key,
+    this.language,
+    this.controller,
+    this.onJumpToLevel,
+    this.onNextLevel,
+    this.onInstantWin,
+    this.onSolveWord,
+    this.onUpdated,
+  });
+
+  static Future<void> show(
+    BuildContext context, {
+    String? language,
+    GameController? controller,
+    ValueChanged<int>? onJumpToLevel,
+    VoidCallback? onNextLevel,
+    VoidCallback? onInstantWin,
+    VoidCallback? onSolveWord,
+    VoidCallback? onUpdated,
+  }) {
+    return showDialog(
+      context: context,
+      barrierDismissible: true,
+      builder: (ctx) => CheatMenuDialog(
+        language: language,
+        controller: controller,
+        onJumpToLevel: onJumpToLevel,
+        onNextLevel: onNextLevel,
+        onInstantWin: onInstantWin,
+        onSolveWord: onSolveWord,
+        onUpdated: onUpdated,
+      ),
+    );
+  }
+
+  @override
+  State<CheatMenuDialog> createState() => _CheatMenuDialogState();
+}
+
+class _CheatMenuDialogState extends State<CheatMenuDialog> {
+  late final TextEditingController _levelTextController;
+  late String _lang;
+  bool _isInfiniteBoosters = false;
+  bool _isHideGameplayUI = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _lang = widget.language ?? GameStorage.getLanguage();
+    _isInfiniteBoosters = GameStorage.isInfiniteBoostersEnabled();
+    _isHideGameplayUI = GameStorage.isGameplayUIHidden();
+
+    final initialLvl = widget.controller?.levelNumber ?? (GameStorage.getCurrentLevelIndex(_lang) + 1);
+    _levelTextController = TextEditingController(text: '$initialLvl');
+  }
+
+  @override
+  void dispose() {
+    _levelTextController.dispose();
+    super.dispose();
+  }
+
+  void _notifyUpdate() {
+    setState(() {});
+    widget.onUpdated?.call();
+  }
+
+  void _showFeedbackToast(String msg) {
+    ScaffoldMessenger.of(context).hideCurrentSnackBar();
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(msg, style: GoogleFonts.fredoka(fontWeight: FontWeight.w600)),
+        backgroundColor: const Color(0xFF1E293B),
+        duration: const Duration(milliseconds: 1400),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final currentCoins = GameStorage.getCoins();
+    final hintCount = GameStorage.getHintCount();
+    final rocketCount = GameStorage.getRocketCount();
+    final extraCount = GameStorage.getExtraWordsChestCount();
+    final totalLevels = LevelLoader.totalLevelsPerLanguage[_lang] ?? 1500;
+
+    return Dialog(
+      backgroundColor: Colors.transparent,
+      insetPadding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 24.h),
+      child: Center(
+        child: Container(
+          width: 350.w,
+          constraints: BoxConstraints(maxHeight: 0.85.sh),
+          decoration: BoxDecoration(
+            color: const Color(0xFF0F172A),
+            borderRadius: BorderRadius.circular(24.r),
+            border: Border.all(color: const Color(0xFF38BDF8), width: 2.5),
+            boxShadow: [
+              BoxShadow(
+                color: const Color(0xFF38BDF8).withValues(alpha: 0.3),
+                blurRadius: 16,
+                spreadRadius: 2,
+              ),
+              const BoxShadow(
+                color: Colors.black87,
+                blurRadius: 20,
+                offset: Offset(0, 10),
+              ),
+            ],
+          ),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              _buildHeader(),
+              Flexible(
+                child: SingleChildScrollView(
+                  padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      // --- Section 1: Level Navigation ---
+                      _buildSectionTitle('🎮 LEVEL NAVIGATION & CHEATS'),
+                      SizedBox(height: 8.h),
+                      _buildLevelJumpRow(totalLevels),
+                      SizedBox(height: 8.h),
+                      _buildQuickLevelChips(),
+                      if (widget.controller != null) ...[
+                        SizedBox(height: 10.h),
+                        _buildIngameActions(),
+                      ],
+                      SizedBox(height: 16.h),
+
+                      // --- Section 2: Coins ---
+                      _buildSectionTitle('💰 COINS & ECONOMY (Current: $currentCoins 🪙)'),
+                      SizedBox(height: 8.h),
+                      _buildCoinsRow(),
+                      SizedBox(height: 16.h),
+
+                      // --- Section 3: Boosters ---
+                      _buildSectionTitle('💡 BOOSTERS (Hint: $hintCount | Rocket: $rocketCount)'),
+                      SizedBox(height: 8.h),
+                      _buildBoostersRow(),
+                      SizedBox(height: 6.h),
+                      _buildInfiniteBoosterSwitch(),
+                      SizedBox(height: 16.h),
+
+                      // --- Section 4: Extra Words & Daily Gift ---
+                      _buildSectionTitle('🎁 REWARDS & CHESTS (Extra: $extraCount/10)'),
+                      SizedBox(height: 8.h),
+                      _buildRewardsRow(),
+                      SizedBox(height: 16.h),
+
+                      // --- Section 5: Progression & Reset ---
+                      _buildSectionTitle('🔓 PROGRESSION & DEV SETTINGS'),
+                      SizedBox(height: 8.h),
+                      _buildProgressionRow(),
+                      SizedBox(height: 16.h),
+
+                      // --- Section 6: UI & Display Cheats ---
+                      _buildSectionTitle('👁️ UI & DISPLAY CHEATS'),
+                      SizedBox(height: 8.h),
+                      _buildHideGameplayUISwitch(),
+                      SizedBox(height: 12.h),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    ).animate().scale(duration: 200.ms, curve: Curves.easeOutBack);
+  }
+
+  Widget _buildHeader() {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
+      decoration: BoxDecoration(
+        color: const Color(0xFF1E293B),
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(21.r),
+          topRight: Radius.circular(21.r),
+        ),
+        border: const Border(
+          bottom: BorderSide(color: Color(0xFF334155), width: 1.5),
+        ),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Expanded(
+            child: Row(
+              children: [
+                const Text('⚡', style: TextStyle(fontSize: 22)),
+                SizedBox(width: 8.w),
+                Flexible(
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      'DEV & CHEAT MENU',
+                      style: GoogleFonts.fredoka(
+                        color: const Color(0xFF38BDF8),
+                        fontSize: 18.sp,
+                        fontWeight: FontWeight.w900,
+                        letterSpacing: 0.5,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          GestureDetector(
+            onTap: () => Navigator.of(context).pop(),
+            child: Container(
+              padding: EdgeInsets.all(4.r),
+              decoration: const BoxDecoration(
+                color: Color(0xFF334155),
+                shape: BoxShape.circle,
+              ),
+              child: const Icon(Icons.close_rounded, color: Colors.white, size: 20),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildSectionTitle(String title) {
+    return Text(
+      title,
+      style: GoogleFonts.fredoka(
+        color: const Color(0xFF94A3B8),
+        fontSize: 11.sp,
+        fontWeight: FontWeight.w800,
+        letterSpacing: 0.5,
+      ),
+    );
+  }
+
+  Widget _buildLevelJumpRow(int totalLevels) {
+    return Row(
+      children: [
+        Expanded(
+          child: Container(
+            height: 40.h,
+            padding: EdgeInsets.symmetric(horizontal: 10.w),
+            decoration: BoxDecoration(
+              color: const Color(0xFF1E293B),
+              borderRadius: BorderRadius.circular(10.r),
+              border: Border.all(color: const Color(0xFF475569)),
+            ),
+            alignment: Alignment.center,
+            child: TextField(
+              controller: _levelTextController,
+              keyboardType: TextInputType.number,
+              inputFormatters: [FilteringTextInputFormatter.digitsOnly],
+              style: GoogleFonts.fredoka(color: Colors.white, fontSize: 16.sp, fontWeight: FontWeight.bold),
+              decoration: InputDecoration(
+                border: InputBorder.none,
+                isDense: true,
+                hintText: '1 - $totalLevels',
+                hintStyle: GoogleFonts.fredoka(color: Colors.white38, fontSize: 13.sp),
+                contentPadding: EdgeInsets.zero,
+              ),
+            ),
+          ),
+        ),
+        SizedBox(width: 8.w),
+        _buildActionButton(
+          label: 'JUMP 🚀',
+          color: const Color(0xFF0284C7),
+          onTap: () {
+            final targetLvl = int.tryParse(_levelTextController.text.trim()) ?? 1;
+            final clamped = targetLvl.clamp(1, totalLevels);
+            GameStorage.forceSetLevelProgression(_lang, clamped);
+            Navigator.of(context).pop();
+            widget.onJumpToLevel?.call(clamped);
+            _showFeedbackToast('Jumped to Level $clamped!');
+          },
+        ),
+      ],
+    );
+  }
+
+  Widget _buildQuickLevelChips() {
+    final chips = [1, 5, 6, 10, 50, 100];
+    return Wrap(
+      spacing: 6.w,
+      runSpacing: 6.h,
+      children: chips.map((lvl) {
+        return GestureDetector(
+          onTap: () {
+            _levelTextController.text = '$lvl';
+            GameStorage.forceSetLevelProgression(_lang, lvl);
+            Navigator.of(context).pop();
+            widget.onJumpToLevel?.call(lvl);
+            _showFeedbackToast('Jumped to Level $lvl!');
+          },
+          child: Container(
+            padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 4.h),
+            decoration: BoxDecoration(
+              color: const Color(0xFF1E293B),
+              borderRadius: BorderRadius.circular(8.r),
+              border: Border.all(color: const Color(0xFF334155)),
+            ),
+            child: Text(
+              'Lvl $lvl',
+              style: GoogleFonts.fredoka(
+                color: const Color(0xFFE2E8F0),
+                fontSize: 12.sp,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
+          ),
+        );
+      }).toList(),
+    );
+  }
+
+  Widget _buildIngameActions() {
+    return Row(
+      children: [
+        Expanded(
+          child: _buildActionButton(
+            label: 'Solve 1 Word 🎯',
+            color: const Color(0xFF8B5CF6),
+            onTap: () {
+              Navigator.of(context).pop();
+              widget.controller?.cheatSolveNextWord();
+              widget.onSolveWord?.call();
+              _showFeedbackToast('Target word solved!');
+            },
+          ),
+        ),
+        SizedBox(width: 8.w),
+        Expanded(
+          child: _buildActionButton(
+            label: 'Instant Win 🏆',
+            color: const Color(0xFF10B981),
+            onTap: () {
+              Navigator.of(context).pop();
+              widget.controller?.cheatInstantWin();
+              widget.onInstantWin?.call();
+              _showFeedbackToast('Level cleared!');
+            },
+          ),
+        ),
+        SizedBox(width: 8.w),
+        Expanded(
+          child: _buildActionButton(
+            label: 'Skip Level ⚡',
+            color: const Color(0xFFF59E0B),
+            onTap: () {
+              Navigator.of(context).pop();
+              widget.onNextLevel?.call();
+              _showFeedbackToast('Advancing to next level...');
+            },
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildCoinsRow() {
+    return Row(
+      children: [
+        Expanded(
+          child: _buildActionButton(
+            label: '+1,000 🪙',
+            color: const Color(0xFF059669),
+            onTap: () async {
+              await GameStorage.addCoins(1000);
+              _notifyUpdate();
+              _showFeedbackToast('+1,000 Coins added!');
+            },
+          ),
+        ),
+        SizedBox(width: 6.w),
+        Expanded(
+          child: _buildActionButton(
+            label: '+10,000 🪙',
+            color: const Color(0xFF047857),
+            onTap: () async {
+              await GameStorage.addCoins(10000);
+              _notifyUpdate();
+              _showFeedbackToast('+10,000 Coins added!');
+            },
+          ),
+        ),
+        SizedBox(width: 6.w),
+        Expanded(
+          child: _buildActionButton(
+            label: '+99,999 🪙',
+            color: const Color(0xFF065F46),
+            onTap: () async {
+              await GameStorage.addCoins(99999);
+              _notifyUpdate();
+              _showFeedbackToast('+99,999 Coins added!');
+            },
+          ),
+        ),
+        SizedBox(width: 6.w),
+        _buildActionButton(
+          label: '0 🪙',
+          color: const Color(0xFFDC2626),
+          onTap: () async {
+            await GameStorage.setCoins(0);
+            _notifyUpdate();
+            _showFeedbackToast('Coins reset to 0!');
+          },
+        ),
+      ],
+    );
+  }
+
+  Widget _buildBoostersRow() {
+    return Row(
+      children: [
+        Expanded(
+          child: _buildActionButton(
+            label: '+10 💡 Hint',
+            color: const Color(0xFFD97706),
+            onTap: () async {
+              await GameStorage.addHintCount(10);
+              _notifyUpdate();
+              _showFeedbackToast('+10 Hints added!');
+            },
+          ),
+        ),
+        SizedBox(width: 8.w),
+        Expanded(
+          child: _buildActionButton(
+            label: '+10 🚀 Rocket',
+            color: const Color(0xFFEA580C),
+            onTap: () async {
+              await GameStorage.addRocketCount(10);
+              _notifyUpdate();
+              _showFeedbackToast('+10 Rockets added!');
+            },
+          ),
+        ),
+        SizedBox(width: 8.w),
+        Expanded(
+          child: _buildActionButton(
+            label: 'All 999 🔥',
+            color: const Color(0xFFB45309),
+            onTap: () async {
+              await GameStorage.setHintCount(999);
+              await GameStorage.setRocketCount(999);
+              _notifyUpdate();
+              _showFeedbackToast('Hints & Rockets set to 999!');
+            },
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildInfiniteBoosterSwitch() {
+    return Container(
+      decoration: BoxDecoration(
+        color: const Color(0xFF1E293B),
+        borderRadius: BorderRadius.circular(10.r),
+        border: Border.all(color: const Color(0xFF334155)),
+      ),
+      padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 4.h),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Expanded(
+            child: Row(
+              children: [
+                const Text('♾️', style: TextStyle(fontSize: 16)),
+                SizedBox(width: 8.w),
+                Flexible(
+                  child: Text(
+                    'Infinite Boosters (Free & Unlimited)',
+                    style: GoogleFonts.fredoka(
+                      color: Colors.white,
+                      fontSize: 12.sp,
+                      fontWeight: FontWeight.w700,
+                    ),
+                    overflow: TextOverflow.ellipsis,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Switch(
+            value: _isInfiniteBoosters,
+            activeThumbColor: const Color(0xFF38BDF8),
+            onChanged: (val) async {
+              setState(() => _isInfiniteBoosters = val);
+              await GameStorage.setInfiniteBoostersEnabled(val);
+              _notifyUpdate();
+              _showFeedbackToast(val ? 'Infinite boosters enabled (∞)!' : 'Infinite boosters disabled');
+            },
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildRewardsRow() {
+    return Row(
+      children: [
+        Expanded(
+          child: _buildActionButton(
+            label: 'Fill Extra (10/10) ⭐',
+            color: const Color(0xFF6366F1),
+            onTap: () async {
+              await GameStorage.setExtraWordsChestCount(10);
+              _notifyUpdate();
+              _showFeedbackToast('Extra Words Chest filled to 10/10!');
+            },
+          ),
+        ),
+        SizedBox(width: 8.w),
+        Expanded(
+          child: _buildActionButton(
+            label: 'Reset Daily Gift 🎁',
+            color: const Color(0xFFEC4899),
+            onTap: () async {
+              await GameStorage.resetDailyGiftCooldown();
+              _notifyUpdate();
+              _showFeedbackToast('Daily Gift cooldown cleared! Ready to claim.');
+            },
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildProgressionRow() {
+    return Row(
+      children: [
+        Expanded(
+          child: _buildActionButton(
+            label: 'Unlock All Levels 🔓',
+            color: const Color(0xFF2563EB),
+            onTap: () async {
+              await GameStorage.unlockAllLevels(_lang);
+              _notifyUpdate();
+              _showFeedbackToast('All levels unlocked for $_lang!');
+            },
+          ),
+        ),
+        SizedBox(width: 8.w),
+        Expanded(
+          child: _buildActionButton(
+            label: 'Reset All Data 🗑️',
+            color: const Color(0xFFB91C1C),
+            onTap: () async {
+              final confirm = await showDialog<bool>(
+                context: context,
+                builder: (ctx) => AlertDialog(
+                  backgroundColor: const Color(0xFF1E293B),
+                  title: Text('Reset All Data?', style: GoogleFonts.fredoka(color: Colors.white, fontWeight: FontWeight.bold)),
+                  content: Text(
+                    'This will reset coins, levels, boosters, and preferences to fresh install state.',
+                    style: GoogleFonts.fredoka(color: Colors.white70),
+                  ),
+                  actions: [
+                    TextButton(
+                      onPressed: () => Navigator.of(ctx).pop(false),
+                      child: Text('Cancel', style: GoogleFonts.fredoka(color: Colors.white54)),
+                    ),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
+                      onPressed: () => Navigator.of(ctx).pop(true),
+                      child: Text('Reset', style: GoogleFonts.fredoka(color: Colors.white)),
+                    ),
+                  ],
+                ),
+              );
+
+              if (confirm == true) {
+                await GameStorage.resetAllData();
+                _notifyUpdate();
+                if (mounted) {
+                  Navigator.of(context).pop();
+                }
+                _showFeedbackToast('Game data completely reset!');
+              }
+            },
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _buildHideGameplayUISwitch() {
+    return Container(
+      decoration: BoxDecoration(
+        color: const Color(0xFF1E293B),
+        borderRadius: BorderRadius.circular(10.r),
+        border: Border.all(color: const Color(0xFF334155)),
+      ),
+      padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 6.h),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Expanded(
+            child: Row(
+              children: [
+                const Text('👁️', style: TextStyle(fontSize: 16)),
+                SizedBox(width: 8.w),
+                Flexible(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        'Hide In-Game UI (All HUD & Boosters)',
+                        style: GoogleFonts.fredoka(
+                          color: Colors.white,
+                          fontSize: 12.sp,
+                          fontWeight: FontWeight.w700,
+                        ),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      Text(
+                        'Hides Coins, Gift, Settings, Star & Boosters',
+                        style: GoogleFonts.fredoka(
+                          color: const Color(0xFF94A3B8),
+                          fontSize: 10.sp,
+                          fontWeight: FontWeight.w500,
+                        ),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Switch(
+            value: _isHideGameplayUI,
+            activeThumbColor: const Color(0xFF38BDF8),
+            onChanged: (val) async {
+              setState(() => _isHideGameplayUI = val);
+              await GameStorage.setGameplayUIHidden(val);
+              _notifyUpdate();
+              _showFeedbackToast(
+                val
+                    ? 'In-Game UI & Boosters hidden! (Long-press LEVEL to open settings)'
+                    : 'In-Game UI restored!',
+              );
+            },
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildActionButton({
+    required String label,
+    required Color color,
+    required VoidCallback onTap,
+  }) {
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: () {
+          AudioManager.playTileSelect(pitchIndex: 4);
+          onTap();
+        },
+        borderRadius: BorderRadius.circular(10.r),
+        child: Ink(
+          height: 38.h,
+          decoration: BoxDecoration(
+            color: color,
+            borderRadius: BorderRadius.circular(10.r),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withValues(alpha: 0.25),
+                offset: const Offset(0, 2),
+                blurRadius: 3,
+              ),
+            ],
+          ),
+          child: Center(
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 6.w),
+              child: FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  label,
+                  style: GoogleFonts.fredoka(
+                    color: Colors.white,
+                    fontSize: 13.sp,
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: 0.3,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}

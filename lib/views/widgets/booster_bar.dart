@@ -42,6 +42,7 @@ class _BoosterBarState extends State<BoosterBar> {
     GameStorage.hintCountNotifier.addListener(_rebuild);
     GameStorage.rocketCountNotifier.addListener(_rebuild);
     GameStorage.coinsNotifier.addListener(_rebuild);
+    GameStorage.infiniteBoostersNotifier.addListener(_rebuild);
   }
 
   @override
@@ -59,6 +60,7 @@ class _BoosterBarState extends State<BoosterBar> {
     GameStorage.hintCountNotifier.removeListener(_rebuild);
     GameStorage.rocketCountNotifier.removeListener(_rebuild);
     GameStorage.coinsNotifier.removeListener(_rebuild);
+    GameStorage.infiniteBoostersNotifier.removeListener(_rebuild);
     super.dispose();
   }
 
@@ -147,11 +149,13 @@ class _BoosterBarState extends State<BoosterBar> {
   Widget _buildHintBooster({required int hintCount}) {
     final controller = widget.controller;
     final isSpotlighted = widget.isHintSpotlighted;
+    final isInfinite = GameStorage.isInfiniteBoostersEnabled();
+    final hasBooster = isInfinite || hintCount > 0;
 
     return BouncyButton(
       onTap: () async {
         widget.onHintTap?.call();
-        if (hintCount > 0) {
+        if (hasBooster) {
           controller.useHint();
         } else {
           await BoosterUnlockDialog.show(
@@ -209,8 +213,8 @@ class _BoosterBarState extends State<BoosterBar> {
             Positioned(
               bottom: 2.h,
               right: 0,
-              child: hintCount > 0
-                  ? OrangeCountBadge(count: hintCount)
+              child: hasBooster
+                  ? OrangeCountBadge(count: hintCount, label: isInfinite ? '∞' : null)
                   : const GreenPlusBadge(),
             ),
 
@@ -231,11 +235,13 @@ class _BoosterBarState extends State<BoosterBar> {
   Widget _buildRocketBooster({required int rocketCount}) {
     final controller = widget.controller;
     final isSpotlighted = widget.isRocketSpotlighted;
+    final isInfinite = GameStorage.isInfiniteBoostersEnabled();
+    final hasBooster = isInfinite || rocketCount > 0;
 
     return BouncyButton(
       onTap: () async {
         widget.onRocketTap?.call();
-        if (rocketCount > 0) {
+        if (hasBooster) {
           controller.useRocket();
         } else {
           await BoosterUnlockDialog.show(
@@ -259,14 +265,11 @@ class _BoosterBarState extends State<BoosterBar> {
               decoration: BoxDecoration(
                 color: const Color(0xFFF8FAFC),
                 borderRadius: BorderRadius.circular(16.r),
-                border: Border.all(
-                  color: isSpotlighted ? const Color(0xFFFFD700) : Colors.white,
-                  width: isSpotlighted ? 2.5 : 1.5,
-                ),
+                border: Border.all(color: Colors.white, width: 1.5),
                 boxShadow: [
                   if (isSpotlighted) ...[
                     BoxShadow(
-                      color: const Color(0xFFFF9900).withValues(alpha: 0.9),
+                      color: Colors.amber.withValues(alpha: 0.8),
                       blurRadius: 20,
                       spreadRadius: 5,
                     ),
@@ -302,8 +305,8 @@ class _BoosterBarState extends State<BoosterBar> {
             Positioned(
               bottom: 2.h,
               right: 0,
-              child: rocketCount > 0
-                  ? OrangeCountBadge(count: rocketCount)
+              child: hasBooster
+                  ? OrangeCountBadge(count: rocketCount, label: isInfinite ? '∞' : null)
                   : const GreenPlusBadge(),
             ),
 
@@ -534,24 +537,33 @@ class _StarProgressArcPainter extends CustomPainter {
   }
 }
 
-/// 3D Vector-rendered Orange Circular Badge for remaining booster counts.
+/// 3D Vector-rendered Orange Circular/Pill Badge for remaining booster counts.
+/// Dynamically expands horizontally for multi-digit counts (e.g. 10, 99, 999, ∞) without wrapping.
 class OrangeCountBadge extends StatelessWidget {
   final int count;
+  final String? label;
   final double size;
 
   const OrangeCountBadge({
     super.key,
     required this.count,
+    this.label,
     this.size = 25.0,
   });
 
   @override
   Widget build(BuildContext context) {
+    final text = label ?? '$count';
+    final isMultiDigit = text.length > 1;
+
     return Container(
-      width: size.r,
       height: size.r,
+      constraints: BoxConstraints(
+        minWidth: size.r,
+      ),
+      padding: EdgeInsets.symmetric(horizontal: isMultiDigit ? 6.w : 0),
       decoration: BoxDecoration(
-        shape: BoxShape.circle,
+        borderRadius: BorderRadius.circular(size.r / 2),
         gradient: const LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
@@ -577,22 +589,24 @@ class OrangeCountBadge extends StatelessWidget {
           ),
         ],
       ),
-      child: Center(
-        child: Text(
-          '$count',
-          style: GoogleFonts.fredoka(
-            fontSize: (size * 0.54).sp,
-            fontWeight: FontWeight.w900,
-            color: Colors.white,
-            height: 1.0,
-            shadows: const [
-              Shadow(offset: Offset(-0.8, -0.8), color: Color(0xFF1E3A6E)),
-              Shadow(offset: Offset(0.8, -0.8), color: Color(0xFF1E3A6E)),
-              Shadow(offset: Offset(-0.8, 0.8), color: Color(0xFF1E3A6E)),
-              Shadow(offset: Offset(0.8, 0.8), color: Color(0xFF1E3A6E)),
-              Shadow(offset: Offset(0, 1.2), color: Color(0xFF1E3A6E)),
-            ],
-          ),
+      alignment: Alignment.center,
+      child: Text(
+        text,
+        maxLines: 1,
+        softWrap: false,
+        textAlign: TextAlign.center,
+        style: GoogleFonts.fredoka(
+          fontSize: (size * (text.length >= 3 ? 0.46 : 0.54)).sp,
+          fontWeight: FontWeight.w900,
+          color: Colors.white,
+          height: 1.0,
+          shadows: const [
+            Shadow(offset: Offset(-0.8, -0.8), color: Color(0xFF1E3A6E)),
+            Shadow(offset: Offset(0.8, -0.8), color: Color(0xFF1E3A6E)),
+            Shadow(offset: Offset(-0.8, 0.8), color: Color(0xFF1E3A6E)),
+            Shadow(offset: Offset(0.8, 0.8), color: Color(0xFF1E3A6E)),
+            Shadow(offset: Offset(0, 1.2), color: Color(0xFF1E3A6E)),
+          ],
         ),
       ),
     );

@@ -166,12 +166,41 @@ class _GameScreenState extends State<GameScreen> {
     _loadGame();
   }
 
+  void _cheatJumpToLevel(int targetLevelNumber) {
+    final maxCount = LevelLoader.totalLevelsPerLanguage[widget.language] ?? 1500;
+    final index = (targetLevelNumber - 1).clamp(0, maxCount - 1);
+    GameStorage.setCurrentLevelIndex(widget.language, index);
+    GameStorage.setMaxUnlockedLevelIndex(widget.language, index);
+    setState(() {
+      _currentLevelIndex = index;
+      _boardKey = GlobalKey<BoardWidgetState>();
+      _extraWordsBtnKey = GlobalKey<ExtraWordsButtonState>();
+    });
+    _loadGame();
+  }
+
+  void _cheatNextLevel() {
+    final maxCount = LevelLoader.totalLevelsPerLanguage[widget.language] ?? 1500;
+    final nextIndex = (_currentLevelIndex + 1).clamp(0, maxCount - 1);
+    GameStorage.setCurrentLevelIndex(widget.language, nextIndex);
+    GameStorage.setMaxUnlockedLevelIndex(widget.language, nextIndex);
+    setState(() {
+      _currentLevelIndex = nextIndex;
+      _boardKey = GlobalKey<BoardWidgetState>();
+      _extraWordsBtnKey = GlobalKey<ExtraWordsButtonState>();
+    });
+    _loadGame(showLoading: false);
+  }
+
   void _openSettings() {
     AudioManager.playTileSelect(pitchIndex: 4);
     showGameDialog(
       context: context,
       builder: (context) => SettingsDialog(
         isHomeScreen: false,
+        controller: _controller,
+        onJumpToLevel: _cheatJumpToLevel,
+        onNextLevel: _cheatNextLevel,
         onRestartLevel: () {
           _replayLevel();
         },
@@ -366,53 +395,58 @@ class _GameScreenState extends State<GameScreen> {
                       // TargetWordsBar with Side Buttons (Gift & Star Progress)
                       Expanded(
                         flex: 7,
-                        child: Stack(
-                          clipBehavior: Clip.none,
-                          alignment: Alignment.center,
-                          children: [
-                            Center(
-                              child: SingleChildScrollView(
-                                child: AnimatedOpacity(
-                                  opacity: isDarkScrimTut ? 0.20 : 1.0,
-                                  duration: const Duration(milliseconds: 250),
-                                  child: TargetWordsBar(controller: _controller!),
-                                ),
-                              ),
-                            ),
-                            // Left Gift Box Button (Hidden on Level 1)
-                            if (_controller!.levelNumber > 1)
-                              Positioned(
-                                top: 8.h,
-                                left: 16.w,
-                                child: AnimatedOpacity(
-                                  opacity: isDarkScrimTut ? 0.20 : 1.0,
-                                  duration: const Duration(milliseconds: 250),
-                                  child: _buildGiftButton(),
-                                ),
-                              ),
-                            // Right Star / Extra Words Button (Only shown when Extra Words is unlocked: Level >= 6)
-                            if (_controller!.isExtraWordsUnlocked)
-                              Positioned(
-                                top: 8.h,
-                                right: 16.w,
-                                child: AnimatedOpacity(
-                                  opacity: (isDarkScrimTut && !isExtraWordsTut) ? 0.20 : 1.0,
-                                  duration: const Duration(milliseconds: 250),
-                                  child: ExtraWordsButton(
-                                    key: _extraWordsBtnKey,
-                                    extraCount: GameStorage.getExtraWordsChestCount(),
-                                    onTap: () {
-                                      if (isExtraWordsTut) {
-                                        GameStorage.setExtraWordsTutorialShown(true);
-                                        setState(() {});
-                                      }
-                                      _openExtraWords();
-                                    },
-                                    isSpotlighted: isExtraWordsTut,
+                        child: ValueListenableBuilder<bool>(
+                          valueListenable: GameStorage.hideGameplayUINotifier,
+                          builder: (context, hideUI, _) {
+                            return Stack(
+                              clipBehavior: Clip.none,
+                              alignment: Alignment.center,
+                              children: [
+                                Center(
+                                  child: SingleChildScrollView(
+                                    child: AnimatedOpacity(
+                                      opacity: isDarkScrimTut ? 0.20 : 1.0,
+                                      duration: const Duration(milliseconds: 250),
+                                      child: TargetWordsBar(controller: _controller!),
+                                    ),
                                   ),
                                 ),
-                              ),
-                          ],
+                                // Left Gift Box Button (Hidden on Level 1 or when cheat hide UI is active)
+                                if (_controller!.levelNumber > 1 && !hideUI)
+                                  Positioned(
+                                    top: 8.h,
+                                    left: 16.w,
+                                    child: AnimatedOpacity(
+                                      opacity: isDarkScrimTut ? 0.20 : 1.0,
+                                      duration: const Duration(milliseconds: 250),
+                                      child: _buildGiftButton(),
+                                    ),
+                                  ),
+                                // Right Star / Extra Words Button (Only shown when Extra Words is unlocked and not hidden by cheat)
+                                if (_controller!.isExtraWordsUnlocked && !hideUI)
+                                  Positioned(
+                                    top: 8.h,
+                                    right: 16.w,
+                                    child: AnimatedOpacity(
+                                      opacity: (isDarkScrimTut && !isExtraWordsTut) ? 0.20 : 1.0,
+                                      duration: const Duration(milliseconds: 250),
+                                      child: ExtraWordsButton(
+                                        key: _extraWordsBtnKey,
+                                        extraCount: GameStorage.getExtraWordsChestCount(),
+                                        onTap: () {
+                                          if (isExtraWordsTut) {
+                                            GameStorage.setExtraWordsTutorialShown(true);
+                                            setState(() {});
+                                          }
+                                          _openExtraWords();
+                                        },
+                                        isSpotlighted: isExtraWordsTut,
+                                      ),
+                                    ),
+                                  ),
+                              ],
+                            );
+                          },
                         ),
                       ),
                       AnimatedOpacity(
@@ -434,34 +468,45 @@ class _GameScreenState extends State<GameScreen> {
                           ),
                         ),
                       ),
-                      SizedBox(height: 10.h),
-                      // BoosterBar (Spotlighted on Level 5 Hint & Level 7 Rocket, dimmed on other tutorials including Extra Words)
-                      AnimatedOpacity(
-                        opacity: (isDarkScrimTut && !isHintTut && !isRocketTut) ? 0.20 : 1.0,
-                        duration: const Duration(milliseconds: 250),
-                        child: IgnorePointer(
-                          ignoring: isDarkScrimTut && !isHintTut && !isRocketTut,
-                          child: BoosterBar(
-                            controller: _controller!,
-                            onOpenShop: _openShop,
-                            onOpenExtraWords: _openExtraWords,
-                            onHintTap: () {
-                              if (isHintTut) {
-                                GameStorage.setHintTutorialShown(true);
-                                setState(() {});
-                              }
-                            },
-                            onRocketTap: () {
-                              if (isRocketTut) {
-                                GameStorage.setRocketTutorialShown(true);
-                                setState(() {});
-                              }
-                            },
-                            isHintSpotlighted: isHintTut,
-                            isRocketSpotlighted: isRocketTut,
-                            extraWordsBtnKey: _extraWordsBtnKey,
-                          ),
-                        ),
+                      // BoosterBar (Spotlighted on Level 5 Hint & Level 7 Rocket, dimmed on other tutorials, hidden by cheat)
+                      ValueListenableBuilder<bool>(
+                        valueListenable: GameStorage.hideGameplayUINotifier,
+                        builder: (context, hideUI, _) {
+                          if (hideUI) return const SizedBox.shrink();
+                          return Column(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              SizedBox(height: 10.h),
+                              AnimatedOpacity(
+                                opacity: (isDarkScrimTut && !isHintTut && !isRocketTut) ? 0.20 : 1.0,
+                                duration: const Duration(milliseconds: 250),
+                                child: IgnorePointer(
+                                  ignoring: isDarkScrimTut && !isHintTut && !isRocketTut,
+                                  child: BoosterBar(
+                                    controller: _controller!,
+                                    onOpenShop: _openShop,
+                                    onOpenExtraWords: _openExtraWords,
+                                    onHintTap: () {
+                                      if (isHintTut) {
+                                        GameStorage.setHintTutorialShown(true);
+                                        setState(() {});
+                                      }
+                                    },
+                                    onRocketTap: () {
+                                      if (isRocketTut) {
+                                        GameStorage.setRocketTutorialShown(true);
+                                        setState(() {});
+                                      }
+                                    },
+                                    isHintSpotlighted: isHintTut,
+                                    isRocketSpotlighted: isRocketTut,
+                                    extraWordsBtnKey: _extraWordsBtnKey,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          );
+                        },
                       ),
                     ],
                   ),
@@ -566,60 +611,68 @@ class _GameScreenState extends State<GameScreen> {
   Widget _buildHeader() {
     final showIcons = _controller != null && _controller!.levelNumber > 1;
 
-    return SafeArea(
-      bottom: false,
-      child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
-        child: SizedBox(
-          height: 44.h,
-          child: Stack(
-            alignment: Alignment.center,
-            children: [
-              // 1. Perfectly centered Level Text
-              Center(
-                child: BouncyButton(
-                  onTap: _openLevelSelect,
-                  child: Text(
-                    'LEVEL ${_controller!.levelNumber}',
-                    style: GoogleFonts.fredoka(
-                      fontSize: 22.sp,
-                      fontWeight: FontWeight.w900,
-                      color: Colors.white,
-                      letterSpacing: 0.8,
-                      shadows: const [
-                        Shadow(
-                          color: Colors.black38,
-                          offset: Offset(0, 1.5),
-                          blurRadius: 4,
+    return ValueListenableBuilder<bool>(
+      valueListenable: GameStorage.hideGameplayUINotifier,
+      builder: (context, hideUI, _) {
+        return SafeArea(
+          bottom: false,
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
+            child: SizedBox(
+              height: 44.h,
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  // 1. Perfectly centered Level Text (tap for level select, long-press for settings/cheat)
+                  Center(
+                    child: GestureDetector(
+                      onLongPress: _openSettings,
+                      child: BouncyButton(
+                        onTap: _openLevelSelect,
+                        child: Text(
+                          'LEVEL ${_controller!.levelNumber}',
+                          style: GoogleFonts.fredoka(
+                            fontSize: 22.sp,
+                            fontWeight: FontWeight.w900,
+                            color: Colors.white,
+                            letterSpacing: 0.8,
+                            shadows: const [
+                              Shadow(
+                                color: Colors.black38,
+                                offset: Offset(0, 1.5),
+                                blurRadius: 4,
+                              ),
+                            ],
+                          ),
                         ),
-                      ],
+                      ),
                     ),
                   ),
-                ),
+                  // 2. Left Coins Capsule (Hidden on Level 1 or when cheat hide UI is active)
+                  if (showIcons && !hideUI)
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: _buildCoinCapsule(),
+                    ),
+                  // 3. Right Settings Button (Hidden on Level 1 or when cheat hide UI is active)
+                  if (showIcons && !hideUI)
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: BouncyButton(
+                        onTap: _openSettings,
+                        child: Image.asset(
+                          'assets/icons/icon_setting.webp',
+                          width: 44.r,
+                          height: 44.r,
+                        ),
+                      ),
+                    ),
+                ],
               ),
-              // 2. Left Coins Capsule (Hidden on Level 1)
-              if (showIcons)
-                Align(
-                  alignment: Alignment.centerLeft,
-                  child: _buildCoinCapsule(),
-                ),
-              // 3. Right Settings Button (Hidden on Level 1)
-              if (showIcons)
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: BouncyButton(
-                    onTap: _openSettings,
-                    child: Image.asset(
-                      'assets/icons/icon_setting.webp',
-                      width: 44.r,
-                      height: 44.r,
-                    ),
-                  ),
-                ),
-            ],
+            ),
           ),
-        ),
-      ),
+        );
+      },
     );
   }
 

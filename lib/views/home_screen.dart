@@ -93,6 +93,22 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
     ).then((_) => _loadState());
   }
 
+  void _jumpToLevel(int targetLevelNumber) {
+    final maxCount = LevelLoader.totalLevelsPerLanguage[_language] ?? 1500;
+    final index = (targetLevelNumber - 1).clamp(0, maxCount - 1);
+    GameStorage.setCurrentLevelIndex(_language, index);
+    GameStorage.setMaxUnlockedLevelIndex(_language, index);
+    Navigator.push(
+      context,
+      GamePageRoute(
+        child: GameScreen(
+          language: _language,
+          levelIndex: index,
+        ),
+      ),
+    ).then((_) => _loadState());
+  }
+
   void _openSettings() {
     AudioManager.playTileSelect(pitchIndex: 4);
     showGameDialog(
@@ -102,6 +118,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
         onLanguageChanged: () {
           _loadState();
         },
+        onJumpToLevel: _jumpToLevel,
       ),
     ).then((_) => _loadState());
   }
