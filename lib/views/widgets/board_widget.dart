@@ -45,6 +45,17 @@ class BoardWidgetState extends State<BoardWidget> with SingleTickerProviderState
     return renderBox.localToGlobal(Offset(sumX / path.length, sumY / path.length));
   }
 
+  /// Returns whether a global screen position falls inside the board's letter grid.
+  bool isPointInsideGrid(Offset globalPos) {
+    final RenderBox? renderBox = _gridKey.currentContext?.findRenderObject() as RenderBox?;
+    if (renderBox == null || !renderBox.hasSize) return false;
+    final localPos = renderBox.globalToLocal(globalPos);
+    return localPos.dx >= 0 &&
+        localPos.dx <= renderBox.size.width &&
+        localPos.dy >= 0 &&
+        localPos.dy <= renderBox.size.height;
+  }
+
   @override
   void initState() {
     super.initState();

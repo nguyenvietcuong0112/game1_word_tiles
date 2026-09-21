@@ -1,7 +1,7 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import '../../theme/app_typography.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../controllers/game_controller.dart';
 import '../../services/game_storage.dart';
 import 'booster_unlock_dialog.dart';
@@ -458,7 +458,7 @@ class ExtraWordsButtonState extends State<ExtraWordsButton> with SingleTickerPro
                   // Number with dark navy cartoon outline matching reference exactly
                   Text(
                     '$displayValue',
-                    style: GoogleFonts.fredoka(
+                    style: AppTypography.font(
                       fontSize: 15.sp,
                       fontWeight: FontWeight.w900,
                       color: Colors.white,
@@ -595,7 +595,7 @@ class OrangeCountBadge extends StatelessWidget {
         maxLines: 1,
         softWrap: false,
         textAlign: TextAlign.center,
-        style: GoogleFonts.fredoka(
+        style: AppTypography.font(
           fontSize: (size * (text.length >= 3 ? 0.46 : 0.54)).sp,
           fontWeight: FontWeight.w900,
           color: Colors.white,
@@ -723,7 +723,7 @@ class GreenPillBadge extends StatelessWidget {
           SizedBox(width: 2.5.w),
           Text(
             '$coins',
-            style: GoogleFonts.fredoka(
+            style: AppTypography.font(
               fontSize: fontSize ?? 12.sp,
               fontWeight: FontWeight.w900,
               color: Colors.white,
@@ -754,7 +754,7 @@ class GreenPillBadge extends StatelessWidget {
       padding: padding ?? EdgeInsets.symmetric(horizontal: 7.w, vertical: 2.5.h),
       child: Text(
         text,
-        style: GoogleFonts.fredoka(
+        style: AppTypography.font(
           fontSize: fontSize ?? 10.sp,
           fontWeight: FontWeight.w900,
           color: Colors.white,
@@ -783,7 +783,7 @@ class GreenPillBadge extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 7.w, vertical: 2.5.h),
       child: Text(
         '$count',
-        style: GoogleFonts.fredoka(
+        style: AppTypography.font(
           fontSize: fontSize ?? 12.sp,
           fontWeight: FontWeight.w900,
           color: Colors.white,

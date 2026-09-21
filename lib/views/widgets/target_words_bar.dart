@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import '../../theme/app_typography.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../controllers/game_controller.dart';
 import '../../models/chapter_model.dart';
 import '../../models/level_model.dart';
@@ -174,7 +174,7 @@ class _TargetWordRow extends StatelessWidget {
                 padding: const EdgeInsets.only(bottom: 2),
                 child: Text(
                   char,
-                  style: GoogleFonts.fredoka(
+                  style: AppTypography.font(
                     fontSize: boxSize * 0.62,
                     fontWeight: FontWeight.w900,
                     color: textCol,

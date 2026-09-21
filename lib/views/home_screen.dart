@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../main.dart';
 import '../services/ads_manager.dart';
 import '../services/audio_manager.dart';
@@ -15,7 +14,7 @@ import 'game_screen.dart';
 import 'widgets/bouncy_button.dart';
 import 'widgets/pressable_3d_button.dart';
 import 'widgets/settings_dialog.dart';
-import 'widgets/shop_dialog.dart';
+import 'shop_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   final bool isFirstSessionStart;
@@ -125,12 +124,15 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
 
   void _openShop() {
     AudioManager.playTileSelect(pitchIndex: 4);
-    showGameDialog(
-      context: context,
-      builder: (context) => ShopDialog(
-        onUpdated: () => _loadState(),
+    Navigator.push(
+      context,
+      GamePageRoute(
+        child: ShopScreen(
+          currentLevel: _currentLevelIndex + 1,
+          onClosed: _loadState,
+        ),
       ),
-    );
+    ).then((_) => _loadState());
   }
 
   Future<void> _handleExitAppConfirmation() async {
@@ -203,8 +205,8 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
             Container(
               margin: EdgeInsets.only(left: 18.w),
               height: 34.h,
-              constraints: BoxConstraints(minWidth: 78.w),
-              padding: EdgeInsets.only(left: 20.w, right: 14.w),
+              constraints: BoxConstraints(minWidth: 96.w),
+              padding: EdgeInsets.only(left: 25.w, right: 6.w),
               decoration: BoxDecoration(
                 color: const Color(0xFF000000).withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(18.r),
@@ -218,19 +220,26 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
                 ],
               ),
               alignment: Alignment.center,
-              child: ValueListenableBuilder<int>(
-                valueListenable: GameStorage.coinsNotifier,
-                builder: (context, coins, _) {
-                  return Text(
-                    '$coins',
-                    style: GoogleFonts.fredoka(
-                      color: Colors.white,
-                      fontSize: 17.sp,
-                      fontWeight: FontWeight.w900,
-                      letterSpacing: 0.5,
-                    ),
-                  );
-                },
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  ValueListenableBuilder<int>(
+                    valueListenable: GameStorage.coinsNotifier,
+                    builder: (context, coins, _) {
+                      return Text(
+                        '$coins',
+                        style: AppTypography.font(
+                          color: Colors.white,
+                          fontSize: 16.sp,
+                          fontWeight: FontWeight.w900,
+                          letterSpacing: 0.5,
+                        ),
+                      );
+                    },
+                  ),
+                  SizedBox(width: 8.w),
+                  _buildPlusBadge(),
+                ],
               ),
             ),
             // Overlapping gold crown coin icon
@@ -241,6 +250,50 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
             ),
           ],
         ),
+      ),
+    );
+  }
+
+  Widget _buildPlusBadge() {
+    return Container(
+      width: 24.r,
+      height: 24.r,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        gradient: const LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color(0xFF5CEB38),
+            Color(0xFF28A811),
+          ],
+        ),
+        border: Border.all(color: Colors.white, width: 1.8),
+        boxShadow: const [
+          BoxShadow(
+            color: Color(0x38000000),
+            offset: Offset(0, 1.5),
+            blurRadius: 2,
+          ),
+          BoxShadow(
+            color: Color(0xFF1E820D),
+            offset: Offset(0, 1.5),
+            blurRadius: 0,
+          ),
+        ],
+      ),
+      alignment: Alignment.center,
+      child: const Icon(
+        Icons.add_rounded,
+        color: Colors.white,
+        size: 17,
+        shadows: [
+          Shadow(
+            color: Color(0xFF0E5606),
+            offset: Offset(0, 1),
+            blurRadius: 1,
+          ),
+        ],
       ),
     );
   }

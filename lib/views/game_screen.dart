@@ -1,9 +1,9 @@
 import 'dart:math';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
+import '../theme/app_typography.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../controllers/game_controller.dart';
 import '../models/chapter_model.dart';
 import '../services/ads_manager.dart';
@@ -11,6 +11,7 @@ import '../services/analytics_service.dart';
 import '../services/audio_manager.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
+import '../services/remote_config_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/game_transitions.dart';
 import '../widgets/common/game_button.dart';
@@ -24,6 +25,7 @@ import 'widgets/extra_word_fly_effect.dart';
 import 'widgets/extra_words_dialog.dart';
 import 'widgets/settings_dialog.dart';
 import 'widgets/shop_dialog.dart';
+import 'shop_screen.dart';
 import 'widgets/target_words_bar.dart';
 import 'widgets/tutorial_overlay.dart';
 import 'widgets/victory_dialog.dart';
@@ -222,6 +224,19 @@ class _GameScreenState extends State<GameScreen> {
 
   void _openShop() {
     AudioManager.playTileSelect(pitchIndex: 4);
+    Navigator.push(
+      context,
+      GamePageRoute(
+        child: ShopScreen(
+          currentLevel: widget.levelIndex + 1,
+          onClosed: () => setState(() {}),
+        ),
+      ),
+    ).then((_) => setState(() {}));
+  }
+
+  void _openDailyGift() {
+    AudioManager.playTileSelect(pitchIndex: 4);
     showGameDialog(
       context: context,
       builder: (_) => ShopDialog(
@@ -273,6 +288,12 @@ class _GameScreenState extends State<GameScreen> {
         ),
       ),
     );
+  }
+
+  bool _isTouchInsideBoard(Offset globalPos) {
+    final state = _boardKey.currentState;
+    if (state == null) return false;
+    return state.isPointInsideGrid(globalPos);
   }
 
   @override
@@ -361,10 +382,8 @@ class _GameScreenState extends State<GameScreen> {
               // Dark background scrim behind gameplay when any tutorial is active
               if (isDarkScrimTut)
                 Positioned.fill(
-                  child: IgnorePointer(
-                    child: Container(
-                      color: Colors.black.withValues(alpha: 0.55),
-                    ),
+                  child: Container(
+                    color: Colors.black.withValues(alpha: 0.55),
                   ),
                 ),
 
@@ -513,77 +532,123 @@ class _GameScreenState extends State<GameScreen> {
                 ),
               ),
 
-              // Level 1: Centered Floating Swipe Tutorial Card (Step 1 & Step 2)
+              // Level 1: Centered Floating Swipe Tutorial Card (Step 1 & Step 2) with Tap-Outside-to-Dismiss
               if (isLevel1Tut)
-                Builder(
-                  builder: (_) {
-                    final solvedCount = _controller!.solvedTargetWords.length;
-                    final nextWord = _controller!.getNextUnsolvedTargetWord() ?? 'SUN';
-                    return SwipeTutorialCard(
-                      spans: solvedCount == 1
-                          ? [
-                              const TextSpan(text: 'You can go left, right, up, or down.\nSwipe the Word '),
-                              TextSpan(
-                                text: '"$nextWord"',
-                                style: const TextStyle(
-                                  color: Color(0xFFDD4C8E),
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              ),
-                              const TextSpan(text: '.'),
-                            ]
-                          : [
-                              const TextSpan(text: 'Swipe the Word '),
-                              TextSpan(
-                                text: '"$nextWord"',
-                                style: const TextStyle(
-                                  color: Color(0xFFDD4C8E),
-                                  fontWeight: FontWeight.w900,
-                                ),
-                              ),
-                            ],
-                    );
-                  },
+                Positioned.fill(
+                  child: Listener(
+                    behavior: HitTestBehavior.translucent,
+                    onPointerDown: (PointerDownEvent event) async {
+                      if (!RemoteConfigService.tutorialTapOutsideClose) {
+                        debugPrint('[Level1Tut] Tap outside ignored: tutorialTapOutsideClose is false');
+                        return;
+                      }
+                      if (_isTouchInsideBoard(event.position)) return;
+                      debugPrint('[Level1Tut] Tap outside board detected -> dismissing tutorial');
+                      await GameStorage.setTutorialCompleted(true);
+                      if (mounted) setState(() {});
+                    },
+                    child: Builder(
+                      builder: (_) {
+                        final solvedCount = _controller!.solvedTargetWords.length;
+                        final nextWord = _controller!.getNextUnsolvedTargetWord() ?? 'SUN';
+                        return SwipeTutorialCard(
+                          spans: solvedCount == 1
+                              ? [
+                                  const TextSpan(text: 'You can go left, right, up, or down.\nSwipe the Word '),
+                                  TextSpan(
+                                    text: '"$nextWord"',
+                                    style: const TextStyle(
+                                      color: Color(0xFFDD4C8E),
+                                      fontWeight: FontWeight.w900,
+                                    ),
+                                  ),
+                                  const TextSpan(text: '.'),
+                                ]
+                              : [
+                                  const TextSpan(text: 'Swipe the Word '),
+                                  TextSpan(
+                                    text: '"$nextWord"',
+                                    style: const TextStyle(
+                                      color: Color(0xFFDD4C8E),
+                                      fontWeight: FontWeight.w900,
+                                    ),
+                                  ),
+                                ],
+                          onDismiss: () async {
+                            await GameStorage.setTutorialCompleted(true);
+                            if (mounted) setState(() {});
+                          },
+                        );
+                      },
+                    ),
+                  ),
                 ),
 
               // Level 2: Centered Tile Usage Count Explanation Modal
               if (isCountTut)
-                TileCountTutorialModal(
-                  onDismiss: () => setState(() {}),
+                Positioned.fill(
+                  child: TileCountTutorialModal(
+                    onDismiss: () => setState(() {}),
+                  ),
                 ),
 
-              // Level 4: Centered Reverse Swipe Tutorial Card
+              // Level 4: Centered Reverse Swipe Tutorial Card with Tap-Outside-to-Dismiss
               if (isReverseTut)
-                const SwipeTutorialCard(
-                  spans: [
-                    TextSpan(text: 'You can also swipe\nwords '),
-                    TextSpan(
-                      text: 'backwards',
-                      style: TextStyle(
-                        color: Color(0xFFDD4C8E),
-                        fontWeight: FontWeight.w900,
-                      ),
+                Positioned.fill(
+                  child: Listener(
+                    behavior: HitTestBehavior.translucent,
+                    onPointerDown: (PointerDownEvent event) async {
+                      if (!RemoteConfigService.tutorialTapOutsideClose) {
+                        debugPrint('[Level4Tut] Tap outside ignored: tutorialTapOutsideClose is false');
+                        return;
+                      }
+                      if (_isTouchInsideBoard(event.position)) return;
+                      debugPrint('[Level4Tut] Tap outside board detected -> dismissing reverse tutorial');
+                      await GameStorage.setReverseTutorialShown(true);
+                      if (mounted) setState(() {});
+                    },
+                    child: SwipeTutorialCard(
+                      spans: const [
+                        TextSpan(text: 'You can also swipe\nwords '),
+                        TextSpan(
+                          text: 'backwards',
+                          style: TextStyle(
+                            color: Color(0xFFDD4C8E),
+                            fontWeight: FontWeight.w900,
+                          ),
+                        ),
+                        TextSpan(text: '.'),
+                      ],
+                      onDismiss: () async {
+                        await GameStorage.setReverseTutorialShown(true);
+                        if (mounted) setState(() {});
+                      },
                     ),
-                    TextSpan(text: '.'),
-                  ],
+                  ),
                 ),
 
               // Level 5 Hint Booster Tutorial Overlay
               if (isHintTut)
-                HintBoosterTutorialOverlay(
-                  onDismiss: () => setState(() {}),
+                Positioned.fill(
+                  child: HintBoosterTutorialOverlay(
+                    onDismiss: () => setState(() {}),
+                  ),
                 ),
 
-              // Level 7 Extra Words Tutorial Overlay
+              // Level 6 Extra Words Tutorial Overlay
               if (isExtraWordsTut)
-                ExtraWordsTutorialOverlay(
-                  onDismiss: () => setState(() {}),
+                Positioned.fill(
+                  child: ExtraWordsTutorialOverlay(
+                    onDismiss: () => setState(() {}),
+                  ),
                 ),
 
               // Level 7 Rocket Booster Tutorial Overlay
               if (isRocketTut)
-                RocketBoosterTutorialOverlay(
-                  onDismiss: () => setState(() {}),
+                Positioned.fill(
+                  child: RocketBoosterTutorialOverlay(
+                    onDismiss: () => setState(() {}),
+                  ),
                 ),
 
               // Single Unified 120fps Victory Orchestration (Dark Scrim + Gold WELL DONE + Victory Card + Confetti)
@@ -631,7 +696,7 @@ class _GameScreenState extends State<GameScreen> {
                         onTap: _openLevelSelect,
                         child: Text(
                           'LEVEL ${_controller!.levelNumber}',
-                          style: GoogleFonts.fredoka(
+                          style: AppTypography.font(
                             fontSize: 22.sp,
                             fontWeight: FontWeight.w900,
                             color: Colors.white,
@@ -678,7 +743,7 @@ class _GameScreenState extends State<GameScreen> {
 
   Widget _buildCoinCapsule() {
     return BouncyButton(
-      // onTap: _openShop,
+      onTap: _openShop,
       child: SizedBox(
         height: 44.h,
         child: IntrinsicWidth(
@@ -688,8 +753,8 @@ class _GameScreenState extends State<GameScreen> {
               Container(
                 margin: EdgeInsets.only(left: 18.w),
                 height: 34.h,
-                constraints: BoxConstraints(minWidth: 78.w),
-                padding: EdgeInsets.only(left: 20.w, right: 14.w),
+                constraints: BoxConstraints(minWidth: 96.w),
+                padding: EdgeInsets.only(left: 25.w, right: 6.w),
                 decoration: BoxDecoration(
                   color: const Color(0xFF000000).withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(18.r),
@@ -703,19 +768,26 @@ class _GameScreenState extends State<GameScreen> {
                   ],
                 ),
                 alignment: Alignment.center,
-                child: ValueListenableBuilder<int>(
-                  valueListenable: GameStorage.coinsNotifier,
-                  builder: (context, coins, _) {
-                    return Text(
-                      '$coins',
-                      style: GoogleFonts.fredoka(
-                        color: Colors.white,
-                        fontSize: 17.sp,
-                        fontWeight: FontWeight.w900,
-                        letterSpacing: 0.5,
-                      ),
-                    );
-                  },
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    ValueListenableBuilder<int>(
+                      valueListenable: GameStorage.coinsNotifier,
+                      builder: (context, coins, _) {
+                        return Text(
+                          '$coins',
+                          style: AppTypography.font(
+                            color: Colors.white,
+                            fontSize: 16.sp,
+                            fontWeight: FontWeight.w900,
+                            letterSpacing: 0.5,
+                          ),
+                        );
+                      },
+                    ),
+                    SizedBox(width: 8.w),
+                    _buildPlusBadge(),
+                  ],
                 ),
               ),
               Image.asset(
@@ -730,10 +802,54 @@ class _GameScreenState extends State<GameScreen> {
     );
   }
 
+  Widget _buildPlusBadge() {
+    return Container(
+      width: 24.r,
+      height: 24.r,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        gradient: const LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color(0xFF5CEB38),
+            Color(0xFF28A811),
+          ],
+        ),
+        border: Border.all(color: Colors.white, width: 1.8),
+        boxShadow: const [
+          BoxShadow(
+            color: Color(0x38000000),
+            offset: Offset(0, 1.5),
+            blurRadius: 2,
+          ),
+          BoxShadow(
+            color: Color(0xFF1E820D),
+            offset: Offset(0, 1.5),
+            blurRadius: 0,
+          ),
+        ],
+      ),
+      alignment: Alignment.center,
+      child: const Icon(
+        Icons.add_rounded,
+        color: Colors.white,
+        size: 17,
+        shadows: [
+          Shadow(
+            color: Color(0xFF0E5606),
+            offset: Offset(0, 1),
+            blurRadius: 1,
+          ),
+        ],
+      ),
+    );
+  }
+
   Widget _buildGiftButton() {
     final canClaim = GameStorage.canClaimDailyGift();
     return BouncyButton(
-      onTap: _openShop,
+      onTap: _openDailyGift,
       child: SizedBox(
         width: 54.r,
         height: 64.r,
@@ -800,7 +916,7 @@ class _GameScreenState extends State<GameScreen> {
               ),
               child: Text(
                 feedback,
-                style: GoogleFonts.fredoka(
+                style: AppTypography.font(
                   fontSize: 15.sp,
                   fontWeight: FontWeight.w900,
                   color: Colors.white,
@@ -834,7 +950,7 @@ class _GameScreenState extends State<GameScreen> {
               ),
               child: Text(
                 word,
-                style: GoogleFonts.fredoka(
+                style: AppTypography.font(
                   fontSize: 18.sp,
                   fontWeight: FontWeight.w900,
                   color: theme.textColor,

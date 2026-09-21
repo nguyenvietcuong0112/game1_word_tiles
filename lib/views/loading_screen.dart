@@ -1,13 +1,14 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import '../theme/app_typography.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:funtap_global_sdk/funtap_global_sdk.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../services/ads_manager.dart';
 import '../services/audio_manager.dart';
 import '../services/chapter_loader.dart';
 import '../services/game_storage.dart';
+import '../services/iap_manager.dart';
 import '../services/level_loader.dart';
 import '../services/remote_config_service.dart';
 import 'game_screen.dart';
@@ -75,6 +76,11 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
         await Future.delayed(const Duration(milliseconds: 100));
       }
       await RemoteConfigService.fetchConfigs();
+    } catch (_) {}
+
+    // Initialize IAP manager in background
+    try {
+      unawaited(IapManager.init());
     } catch (_) {}
 
     // Small delay to ensure smooth, pleasant animation (bounded by 10s max)
@@ -209,7 +215,7 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
                 // Loading... status label
                 Text(
                   'Loading...',
-                  style: GoogleFonts.fredoka(
+                  style: AppTypography.font(
                     fontSize: 17.sp,
                     fontWeight: FontWeight.w700,
                     color: Colors.white,

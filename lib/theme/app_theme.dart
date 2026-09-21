@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class AppColors {
   // 1. Backgrounds (Warm Sandalwood & Rich Linen Canvas with High Contrast)
@@ -199,8 +198,13 @@ class AppThemes {
       ),
     );
 
+    final textTheme = base.textTheme.apply(
+      fontFamily: 'MikadoBold',
+      fontFamilyFallback: const ['Fredoka', 'Roboto', 'sans-serif'],
+    );
+
     return base.copyWith(
-      textTheme: GoogleFonts.fredokaTextTheme(base.textTheme),
+      textTheme: textTheme,
     );
   }
 }

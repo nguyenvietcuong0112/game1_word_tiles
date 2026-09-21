@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import '../../theme/app_typography.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../models/chapter_model.dart';
 import '../../models/level_model.dart';
 import '../../theme/app_theme.dart';
@@ -92,7 +92,7 @@ class TileWidget extends StatelessWidget {
                         ),
                         child: Text(
                           '${tile.obstacleRequiredWords}',
-                          style: GoogleFonts.fredoka(
+                          style: AppTypography.font(
                             fontSize: 12,
                             fontWeight: FontWeight.w900,
                             color: const Color(0xFF0369A1),
@@ -109,7 +109,7 @@ class TileWidget extends StatelessWidget {
                   right: 6,
                   child: Text(
                     tile.letter,
-                    style: GoogleFonts.fredoka(
+                    style: AppTypography.font(
                       fontSize: 11,
                       fontWeight: FontWeight.w900,
                       color: const Color(0xFF0284C7).withValues(alpha: 0.4),
@@ -214,7 +214,7 @@ class TileWidget extends StatelessWidget {
                     padding: const EdgeInsets.only(bottom: 2),
                     child: Text(
                       tile.letter,
-                      style: GoogleFonts.fredoka(
+                      style: AppTypography.font(
                         fontSize: size * 0.60,
                         fontWeight: FontWeight.w900,
                         color: isCountSpotlight ? AppColors.headerBrown : textColor,
@@ -266,7 +266,7 @@ class TileWidget extends StatelessWidget {
                             child: Center(
                               child: Text(
                                 '${tile.count}',
-                                style: GoogleFonts.fredoka(
+                                style: AppTypography.font(
                                   fontSize: size * 0.22,
                                   fontWeight: FontWeight.w900,
                                   color: Colors.white,
@@ -277,7 +277,7 @@ class TileWidget extends StatelessWidget {
                           )
                         : Text(
                             '${tile.count}',
-                            style: GoogleFonts.fredoka(
+                            style: AppTypography.font(
                               fontSize: size * 0.22,
                               fontWeight: FontWeight.w900,
                               color: isSelected

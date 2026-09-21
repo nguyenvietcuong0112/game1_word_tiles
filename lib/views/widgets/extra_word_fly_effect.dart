@@ -1,9 +1,9 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import '../../theme/app_typography.dart';
 import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../controllers/game_controller.dart';
 import '../../services/audio_manager.dart';
 import 'board_widget.dart';
@@ -438,7 +438,7 @@ class _FlyingWordBadge extends StatelessWidget {
           SizedBox(width: 5.w),
           Text(
             word,
-            style: GoogleFonts.fredoka(
+            style: AppTypography.font(
               fontSize: 17.sp,
               fontWeight: FontWeight.w900,
               color: Colors.white,

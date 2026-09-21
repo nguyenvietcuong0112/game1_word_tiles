@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import '../../theme/app_typography.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../services/game_storage.dart';
 import '../../theme/app_theme.dart';
 
@@ -281,7 +281,7 @@ class _GameButtonState extends State<GameButton> with SingleTickerProviderStateM
               child: Text(
                 widget.text ?? '',
                 textAlign: TextAlign.center,
-                style: GoogleFonts.fredoka(
+                style: AppTypography.font(
                   fontSize: fontSize,
                   fontWeight: FontWeight.w900,
                   color: textColor,

@@ -1,9 +1,10 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
+import '../../theme/app_typography.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../services/game_storage.dart';
+import '../../services/remote_config_service.dart';
 import 'bouncy_button.dart';
 
 /// 3D Animated Hand Guide moving over the tiles inside the board with active trail & tile illumination
@@ -351,7 +352,7 @@ class TutorialSpeechBubble extends StatelessWidget {
           child: RichText(
             textAlign: TextAlign.center,
             text: TextSpan(
-              style: GoogleFonts.fredoka(
+              style: AppTypography.font(
                 fontSize: 16.sp,
                 fontWeight: FontWeight.w700,
                 color: const Color(0xFF342820),
@@ -407,7 +408,7 @@ class TutorialGotItButton extends StatelessWidget {
           padding: EdgeInsets.only(bottom: 3.h),
           child: Text(
             text,
-            style: GoogleFonts.fredoka(
+            style: AppTypography.font(
               fontSize: 18.sp,
               fontWeight: FontWeight.w900,
               color: Colors.white,
@@ -430,17 +431,23 @@ class TutorialGotItButton extends StatelessWidget {
 /// Centered Floating Tooltip Card for Swipe Guidance (Level 1, Level 4, Fail-Safe)
 class SwipeTutorialCard extends StatelessWidget {
   final List<InlineSpan> spans;
+  final VoidCallback? onDismiss;
 
   const SwipeTutorialCard({
     super.key,
     required this.spans,
+    this.onDismiss,
   });
 
   @override
   Widget build(BuildContext context) {
     return Align(
       alignment: const Alignment(0, -0.22),
-      child: IgnorePointer(
+      child: GestureDetector(
+        onTap: () {
+          if (!RemoteConfigService.tutorialTapOutsideClose) return;
+          onDismiss?.call();
+        },
         child: TutorialSpeechBubble(spans: spans),
       ),
     );
@@ -462,25 +469,44 @@ class TileCountTutorialModal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: const Alignment(0, -0.22),
-      child: TutorialSpeechBubble(
-        spans: const [
-          TextSpan(text: 'This '),
-          TextSpan(
-            text: 'number',
-            style: TextStyle(
-              color: Color(0xFFDD4C8E),
-              fontWeight: FontWeight.w900,
+    return GestureDetector(
+      behavior: HitTestBehavior.opaque,
+      onTap: () async {
+        if (!RemoteConfigService.tutorialTapOutsideClose) {
+          debugPrint('[TutorialOverlay] Tap outside ignored: tutorialTapOutsideClose is false');
+          return;
+        }
+        debugPrint('[TutorialOverlay] Tap outside: dismissing count tutorial modal');
+        await GameStorage.setCountTutorialShown(true);
+        onDismiss();
+      },
+      child: Container(
+        color: Colors.transparent,
+        width: double.infinity,
+        height: double.infinity,
+        alignment: const Alignment(0, -0.22),
+        child: GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onTap: () {}, // Prevent taps inside the bubble from dismissing
+          child: TutorialSpeechBubble(
+            spans: const [
+              TextSpan(text: 'This '),
+              TextSpan(
+                text: 'number',
+                style: TextStyle(
+                  color: Color(0xFFDD4C8E),
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+              TextSpan(text: ' shows\neach letter\'s usage count.'),
+            ],
+            actionButton: TutorialGotItButton(
+              onTap: () async {
+                await GameStorage.setCountTutorialShown(true);
+                onDismiss();
+              },
             ),
           ),
-          TextSpan(text: ' shows\neach letter\'s usage count.'),
-        ],
-        actionButton: TutorialGotItButton(
-          onTap: () async {
-            await GameStorage.setCountTutorialShown(true);
-            onDismiss();
-          },
         ),
       ),
     );
@@ -616,32 +642,51 @@ class HintBoosterTutorialOverlay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: const Alignment(0, -0.18),
-      child: TutorialSpeechBubble(
-        spans: const [
-          TextSpan(text: 'If you get stuck\ntry tapping '),
-          TextSpan(
-            text: '“Hint Button”',
-            style: TextStyle(
-              color: Color(0xFF8F34D0),
-              fontWeight: FontWeight.w900,
+    return GestureDetector(
+      behavior: HitTestBehavior.opaque,
+      onTap: () async {
+        if (!RemoteConfigService.tutorialTapOutsideClose) {
+          debugPrint('[TutorialOverlay] Tap outside ignored: tutorialTapOutsideClose is false');
+          return;
+        }
+        debugPrint('[TutorialOverlay] Tap outside: dismissing hint tutorial overlay');
+        await GameStorage.setHintTutorialShown(true);
+        onDismiss();
+      },
+      child: Container(
+        color: Colors.transparent,
+        width: double.infinity,
+        height: double.infinity,
+        alignment: const Alignment(0, -0.18),
+        child: GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onTap: () {}, // Prevent taps inside the bubble from dismissing
+          child: TutorialSpeechBubble(
+            spans: const [
+              TextSpan(text: 'If you get stuck\ntry tapping '),
+              TextSpan(
+                text: '“Hint Button”',
+                style: TextStyle(
+                  color: Color(0xFF8F34D0),
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+              TextSpan(text: '.'),
+            ],
+            actionButton: TutorialGotItButton(
+              onTap: () async {
+                await GameStorage.setHintTutorialShown(true);
+                onDismiss();
+              },
             ),
           ),
-          TextSpan(text: '.'),
-        ],
-        actionButton: TutorialGotItButton(
-          onTap: () async {
-            await GameStorage.setHintTutorialShown(true);
-            onDismiss();
-          },
         ),
       ),
     );
   }
 }
 
-/// Level 7 Extra Words Tutorial Overlay
+/// Level 6 Extra Words Tutorial Overlay
 class ExtraWordsTutorialOverlay extends StatelessWidget {
   final VoidCallback onDismiss;
 
@@ -649,24 +694,43 @@ class ExtraWordsTutorialOverlay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: const Alignment(0, -0.18),
-      child: TutorialSpeechBubble(
-        spans: const [
-          TextSpan(
-            text: '“Extra Words”',
-            style: TextStyle(
-              color: Color(0xFF8F34D0),
-              fontWeight: FontWeight.w900,
+    return GestureDetector(
+      behavior: HitTestBehavior.opaque,
+      onTap: () async {
+        if (!RemoteConfigService.tutorialTapOutsideClose) {
+          debugPrint('[TutorialOverlay] Tap outside ignored: tutorialTapOutsideClose is false');
+          return;
+        }
+        debugPrint('[TutorialOverlay] Tap outside: dismissing extra words tutorial overlay');
+        await GameStorage.setExtraWordsTutorialShown(true);
+        onDismiss();
+      },
+      child: Container(
+        color: Colors.transparent,
+        width: double.infinity,
+        height: double.infinity,
+        alignment: const Alignment(0, -0.18),
+        child: GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onTap: () {}, // Prevent taps inside the bubble from dismissing
+          child: TutorialSpeechBubble(
+            spans: const [
+              TextSpan(
+                text: '“Extra Words”',
+                style: TextStyle(
+                  color: Color(0xFF8F34D0),
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+              TextSpan(text: ' found are\nlisted in this section.'),
+            ],
+            actionButton: TutorialGotItButton(
+              onTap: () async {
+                await GameStorage.setExtraWordsTutorialShown(true);
+                onDismiss();
+              },
             ),
           ),
-          TextSpan(text: ' found are\nlisted in this section.'),
-        ],
-        actionButton: TutorialGotItButton(
-          onTap: () async {
-            await GameStorage.setExtraWordsTutorialShown(true);
-            onDismiss();
-          },
         ),
       ),
     );
@@ -681,25 +745,44 @@ class RocketBoosterTutorialOverlay extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: const Alignment(0, -0.18),
-      child: TutorialSpeechBubble(
-        spans: const [
-          TextSpan(text: 'Blast words away\nby tapping '),
-          TextSpan(
-            text: '“Rocket”',
-            style: TextStyle(
-              color: Color(0xFF8F34D0),
-              fontWeight: FontWeight.w900,
+    return GestureDetector(
+      behavior: HitTestBehavior.opaque,
+      onTap: () async {
+        if (!RemoteConfigService.tutorialTapOutsideClose) {
+          debugPrint('[TutorialOverlay] Tap outside ignored: tutorialTapOutsideClose is false');
+          return;
+        }
+        debugPrint('[TutorialOverlay] Tap outside: dismissing rocket tutorial overlay');
+        await GameStorage.setRocketTutorialShown(true);
+        onDismiss();
+      },
+      child: Container(
+        color: Colors.transparent,
+        width: double.infinity,
+        height: double.infinity,
+        alignment: const Alignment(0, -0.18),
+        child: GestureDetector(
+          behavior: HitTestBehavior.opaque,
+          onTap: () {}, // Prevent taps inside the bubble from dismissing
+          child: TutorialSpeechBubble(
+            spans: const [
+              TextSpan(text: 'Blast words away\nby tapping '),
+              TextSpan(
+                text: '“Rocket”',
+                style: TextStyle(
+                  color: Color(0xFF8F34D0),
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
+              TextSpan(text: '!'),
+            ],
+            actionButton: TutorialGotItButton(
+              onTap: () async {
+                await GameStorage.setRocketTutorialShown(true);
+                onDismiss();
+              },
             ),
           ),
-          TextSpan(text: '!'),
-        ],
-        actionButton: TutorialGotItButton(
-          onTap: () async {
-            await GameStorage.setRocketTutorialShown(true);
-            onDismiss();
-          },
         ),
       ),
     );

@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../controllers/game_controller.dart';
 import '../../services/ads_manager.dart';
 import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
 import '../../theme/app_typography.dart';
 import '../../utils/game_transitions.dart';
+import '../shop_screen.dart';
+import 'app_popup.dart';
 import 'bouncy_button.dart';
 import 'pressable_3d_button.dart';
 
@@ -28,6 +29,7 @@ class BoosterUnlockDialog extends StatefulWidget {
     this.onPurchased,
   });
 
+  /// Displays the BoosterUnlockDialog with spring scale transition
   static Future<void> show(
     BuildContext context, {
     required BoosterType boosterType,
@@ -65,18 +67,20 @@ class _BoosterUnlockDialogState extends State<BoosterUnlockDialog> {
     if (playerCoins < _coinsCost) {
       AudioManager.playInvalid();
       if (!mounted) return;
-      ScaffoldMessenger.of(context).hideCurrentSnackBar();
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            'Not enough coins! Need $_coinsCost 🪙',
-            style: GoogleFonts.fredoka(fontWeight: FontWeight.w700),
-          ),
-          backgroundColor: const Color(0xFFEF4444),
-          duration: const Duration(seconds: 2),
-          behavior: SnackBarBehavior.floating,
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-        ),
+      AppPopup.show(
+        context,
+        title: 'Not Enough Coins!',
+        message: 'You need $_coinsCost 🪙 to unlock $_bundleCount $_boosterName.\nVisit the Shop to get more coins!',
+        icon: '🪙',
+        buttonText: 'Go to Shop',
+        secondaryButtonText: 'Cancel',
+        onAction: () {
+          Navigator.of(context).push(
+            GamePageRoute(
+              child: const ShopScreen(),
+            ),
+          );
+        },
       );
       return;
     }
@@ -128,14 +132,14 @@ class _BoosterUnlockDialogState extends State<BoosterUnlockDialog> {
             await GameStorage.addRocketCount(1);
           }
 
-          if (!mounted) return;
           AudioManager.playWordMatch();
+          if (!mounted) return;
           if (Navigator.of(context).canPop()) {
             Navigator.of(context).pop();
           }
           widget.onPurchased?.call();
 
-          // If currently in an active game, execute 1 booster for instant satisfaction!
+          // Automatically trigger the rewarded booster in the level
           if (widget.controller != null) {
             if (widget.boosterType == BoosterType.hint) {
               widget.controller!.useHint();
@@ -144,14 +148,12 @@ class _BoosterUnlockDialogState extends State<BoosterUnlockDialog> {
             }
           }
         } else {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(
-                'Ad not completed. Could not claim free booster.',
-                style: GoogleFonts.fredoka(fontWeight: FontWeight.w600),
-              ),
-              duration: const Duration(seconds: 2),
-            ),
+          AppPopup.show(
+            context,
+            title: 'Ad Unavailable',
+            message: 'Unable to load rewarded video right now. Please check your connection and try again!',
+            icon: '❌',
+            isError: true,
           );
         }
       },
@@ -160,17 +162,16 @@ class _BoosterUnlockDialogState extends State<BoosterUnlockDialog> {
 
   @override
   Widget build(BuildContext context) {
-    return Dialog(
-      backgroundColor: Colors.transparent,
-      insetPadding: EdgeInsets.symmetric(horizontal: 20.w),
-      child: Center(
+    return Center(
+      child: Material(
+        color: Colors.transparent,
         child: SizedBox(
-          width: 336.w,
+          width: 326.w,
           child: Stack(
             clipBehavior: Clip.none,
             alignment: Alignment.topCenter,
             children: [
-              // Outer White Card with Soft 3D Shadow (Matching Settings Dialog)
+              // 1. Outer White Card with 3D Drop Shadow
               Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
@@ -195,41 +196,68 @@ class _BoosterUnlockDialogState extends State<BoosterUnlockDialog> {
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    // Coin Pill at top-right
+                    // Coin Pill at top-right (Tap to open Shop)
                     Align(
                       alignment: Alignment.centerRight,
-                      child: Container(
-                        height: 28.h,
-                        padding: EdgeInsets.symmetric(horizontal: 10.w),
-                        decoration: BoxDecoration(
-                          color: const Color(0xFFD5E7F3),
-                          borderRadius: BorderRadius.circular(14.r),
-                          border: Border.all(color: const Color(0xFFBED7E8), width: 1.2),
-                        ),
-                        child: ValueListenableBuilder<int>(
-                          valueListenable: GameStorage.coinsNotifier,
-                          builder: (context, coins, _) {
-                            return Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                Image.asset(
-                                  'assets/icons/icon_coin.webp',
-                                  width: 18.r,
-                                  height: 18.r,
-                                  fit: BoxFit.contain,
-                                ),
-                                SizedBox(width: 4.w),
-                                Text(
-                                  '$coins',
-                                  style: GoogleFonts.fredoka(
-                                    fontSize: 13.sp,
-                                    fontWeight: FontWeight.w900,
-                                    color: const Color(0xFF2C3E50),
+                      child: BouncyButton(
+                        onTap: () {
+                          Navigator.of(context).push(
+                            GamePageRoute(child: const ShopScreen()),
+                          );
+                        },
+                        child: Container(
+                          height: 28.h,
+                          padding: EdgeInsets.fromLTRB(10.w, 0, 4.w, 0),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFFD5E7F3),
+                            borderRadius: BorderRadius.circular(14.r),
+                            border: Border.all(color: const Color(0xFFBED7E8), width: 1.2),
+                          ),
+                          child: ValueListenableBuilder<int>(
+                            valueListenable: GameStorage.coinsNotifier,
+                            builder: (context, coins, _) {
+                              return Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  Image.asset(
+                                    'assets/icons/icon_coin.webp',
+                                    width: 18.r,
+                                    height: 18.r,
+                                    fit: BoxFit.contain,
                                   ),
-                                ),
-                              ],
-                            );
-                          },
+                                  SizedBox(width: 4.w),
+                                  Text(
+                                    '$coins',
+                                    style: AppTypography.font(
+                                      fontSize: 13.sp,
+                                      fontWeight: FontWeight.w900,
+                                      color: const Color(0xFF2C3E50),
+                                    ),
+                                  ),
+                                  SizedBox(width: 4.w),
+                                  Container(
+                                    width: 18.r,
+                                    height: 18.r,
+                                    decoration: BoxDecoration(
+                                      shape: BoxShape.circle,
+                                      gradient: const LinearGradient(
+                                        begin: Alignment.topCenter,
+                                        end: Alignment.bottomCenter,
+                                        colors: [Color(0xFF5CEB38), Color(0xFF28A811)],
+                                      ),
+                                      border: Border.all(color: Colors.white, width: 1.2),
+                                    ),
+                                    alignment: Alignment.center,
+                                    child: const Icon(
+                                      Icons.add_rounded,
+                                      color: Colors.white,
+                                      size: 13,
+                                    ),
+                                  ),
+                                ],
+                              );
+                            },
+                          ),
                         ),
                       ),
                     ),
@@ -282,7 +310,7 @@ class _BoosterUnlockDialogState extends State<BoosterUnlockDialog> {
                             child: Text(
                               _description,
                               textAlign: TextAlign.center,
-                              style: GoogleFonts.fredoka(
+                              style: AppTypography.font(
                                 fontSize: 13.sp,
                                 fontWeight: FontWeight.w700,
                                 color: const Color(0xFF3B4868),
@@ -300,7 +328,7 @@ class _BoosterUnlockDialogState extends State<BoosterUnlockDialog> {
                             builder: (context, count, _) {
                               return Text(
                                 'In Inventory: $count available',
-                                style: GoogleFonts.fredoka(
+                                style: AppTypography.font(
                                   fontSize: 12.sp,
                                   fontWeight: FontWeight.w600,
                                   color: const Color(0xFF5A6E85),
@@ -464,7 +492,7 @@ class _BoosterUnlockDialogState extends State<BoosterUnlockDialog> {
                   padding: EdgeInsets.only(bottom: 2.h),
                   child: Text(
                     '$_boosterName Booster',
-                    style: GoogleFonts.fredoka(
+                    style: AppTypography.font(
                       fontSize: 20.sp,
                       fontWeight: FontWeight.w900,
                       color: Colors.white,

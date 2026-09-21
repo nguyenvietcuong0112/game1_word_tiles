@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import '../../theme/app_typography.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../widgets/common/game_button.dart';
 
 class ChapterTransitionDialog extends StatelessWidget {
@@ -50,7 +50,7 @@ class ChapterTransitionDialog extends StatelessWidget {
             // "Chapters" Title
             Text(
               'Chapters',
-              style: GoogleFonts.fredoka(
+              style: AppTypography.font(
                 fontSize: 26.sp,
                 fontWeight: FontWeight.w900,
                 color: Colors.white,
@@ -151,7 +151,7 @@ class ChapterTransitionDialog extends StatelessWidget {
                 SizedBox(height: 10.h),
                 Text(
                   'Chapter $chapterNum',
-                  style: GoogleFonts.fredoka(
+                  style: AppTypography.font(
                     fontSize: 14.sp,
                     fontWeight: FontWeight.w700,
                     color: Colors.white,
@@ -160,7 +160,7 @@ class ChapterTransitionDialog extends StatelessWidget {
                 SizedBox(height: 2.h),
                 Text(
                   title,
-                  style: GoogleFonts.fredoka(
+                  style: AppTypography.font(
                     fontSize: 12.sp,
                     color: const Color(0xFFCBD5E1),
                   ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import '../../../theme/app_typography.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../../models/chapter_model.dart';
 import '../../../theme/app_theme.dart';
 import 'particle_fireworks_overlay.dart';
@@ -137,7 +137,7 @@ class _LevelEndArtworkViewState extends State<LevelEndArtworkView> with SingleTi
                         SizedBox(width: 4.w),
                         Text(
                           widget.theme.title,
-                          style: GoogleFonts.fredoka(
+                          style: AppTypography.font(
                             fontSize: 11.sp,
                             fontWeight: FontWeight.w700,
                             color: Colors.white,
@@ -278,7 +278,7 @@ class IncrementLevelEndProgress extends StatelessWidget {
               Expanded(
                 child: Text(
                   'Chapter $chapterNumber Progress',
-                  style: GoogleFonts.fredoka(
+                  style: AppTypography.font(
                     fontSize: 13.sp,
                     fontWeight: FontWeight.w700,
                     color: AppColors.headerBrown,
@@ -289,7 +289,7 @@ class IncrementLevelEndProgress extends StatelessWidget {
               SizedBox(width: 8.w),
               Text(
                 '$current / $total',
-                style: GoogleFonts.fredoka(
+                style: AppTypography.font(
                   fontSize: 13.sp,
                   fontWeight: FontWeight.w900,
                   color: const Color(0xFF10B981),

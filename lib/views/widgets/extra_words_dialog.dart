@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../controllers/game_controller.dart';
 import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
@@ -63,10 +62,9 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
     final canClaim = bankCount >= 10;
     final foundWords = widget.controller.foundExtraWords;
 
-    return Dialog(
-      backgroundColor: Colors.transparent,
-      insetPadding: EdgeInsets.symmetric(horizontal: 20.w),
-      child: Center(
+    return Center(
+      child: Material(
+        color: Colors.transparent,
         child: SizedBox(
           width: 336.w,
           child: Stack(
@@ -127,7 +125,7 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                       // Header Title
                       Text(
                         'Found this level:',
-                        style: GoogleFonts.fredoka(
+                        style: AppTypography.font(
                           fontSize: 16.sp,
                           fontWeight: FontWeight.w700,
                           color: const Color(0xFF4A5F7D),
@@ -184,7 +182,7 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                             ? Text(
                                 'Find hidden bonus words\non the board!',
                                 textAlign: TextAlign.center,
-                                style: GoogleFonts.fredoka(
+                                style: AppTypography.font(
                                   fontSize: 12.sp,
                                   color: const Color(0xFF758CA7),
                                   fontWeight: FontWeight.w500,
@@ -224,7 +222,7 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                                       ),
                                       child: Text(
                                         word,
-                                        style: GoogleFonts.fredoka(
+                                        style: AppTypography.font(
                                           fontSize: 13.sp,
                                           fontWeight: FontWeight.w800,
                                           color: const Color(0xFF3B506D),
@@ -452,7 +450,7 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                         ),
                         child: Text(
                           'CLAIM!',
-                          style: GoogleFonts.fredoka(
+                          style: AppTypography.font(
                             fontSize: 10.sp,
                             fontWeight: FontWeight.w900,
                             color: const Color(0xFF78350F),
@@ -483,10 +481,9 @@ class _ExtraWordsRewardClaimDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Dialog(
-      backgroundColor: Colors.transparent,
-      insetPadding: EdgeInsets.symmetric(horizontal: 20.w),
-      child: Center(
+    return Center(
+      child: Material(
+        color: Colors.transparent,
         child: SizedBox(
           width: 336.w,
           child: Stack(
@@ -597,7 +594,7 @@ class _ExtraWordsRewardClaimDialog extends StatelessWidget {
                           Text(
                             'Congratulations!\nYou found 10 hidden extra words!\nKeep finding bonus words for more coins!',
                             textAlign: TextAlign.center,
-                            style: GoogleFonts.fredoka(
+                            style: AppTypography.font(
                               fontSize: 13.sp,
                               fontWeight: FontWeight.w600,
                               color: const Color(0xFF3B4868),

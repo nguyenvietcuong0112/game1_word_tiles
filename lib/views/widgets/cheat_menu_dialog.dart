@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import '../../theme/app_typography.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../controllers/game_controller.dart';
 import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
 import '../../services/level_loader.dart';
+import '../../services/remote_config_service.dart';
 
 class CheatMenuDialog extends StatefulWidget {
   final String? language;
@@ -62,6 +63,7 @@ class _CheatMenuDialogState extends State<CheatMenuDialog> {
   late String _lang;
   bool _isInfiniteBoosters = false;
   bool _isHideGameplayUI = false;
+  bool _isTutorialTapOutside = false;
 
   @override
   void initState() {
@@ -69,6 +71,7 @@ class _CheatMenuDialogState extends State<CheatMenuDialog> {
     _lang = widget.language ?? GameStorage.getLanguage();
     _isInfiniteBoosters = GameStorage.isInfiniteBoostersEnabled();
     _isHideGameplayUI = GameStorage.isGameplayUIHidden();
+    _isTutorialTapOutside = RemoteConfigService.tutorialTapOutsideClose;
 
     final initialLvl = widget.controller?.levelNumber ?? (GameStorage.getCurrentLevelIndex(_lang) + 1);
     _levelTextController = TextEditingController(text: '$initialLvl');
@@ -89,7 +92,7 @@ class _CheatMenuDialogState extends State<CheatMenuDialog> {
     ScaffoldMessenger.of(context).hideCurrentSnackBar();
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
-        content: Text(msg, style: GoogleFonts.fredoka(fontWeight: FontWeight.w600)),
+        content: Text(msg, style: AppTypography.font(fontWeight: FontWeight.w600)),
         backgroundColor: const Color(0xFF1E293B),
         duration: const Duration(milliseconds: 1400),
       ),
@@ -104,10 +107,9 @@ class _CheatMenuDialogState extends State<CheatMenuDialog> {
     final extraCount = GameStorage.getExtraWordsChestCount();
     final totalLevels = LevelLoader.totalLevelsPerLanguage[_lang] ?? 1500;
 
-    return Dialog(
-      backgroundColor: Colors.transparent,
-      insetPadding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 24.h),
-      child: Center(
+    return Center(
+      child: Material(
+        color: Colors.transparent,
         child: Container(
           width: 350.w,
           constraints: BoxConstraints(maxHeight: 0.85.sh),
@@ -180,6 +182,8 @@ class _CheatMenuDialogState extends State<CheatMenuDialog> {
                       _buildSectionTitle('👁️ UI & DISPLAY CHEATS'),
                       SizedBox(height: 8.h),
                       _buildHideGameplayUISwitch(),
+                      SizedBox(height: 8.h),
+                      _buildTutorialTapOutsideSwitch(),
                       SizedBox(height: 12.h),
                     ],
                   ),
@@ -218,7 +222,7 @@ class _CheatMenuDialogState extends State<CheatMenuDialog> {
                     fit: BoxFit.scaleDown,
                     child: Text(
                       'DEV & CHEAT MENU',
-                      style: GoogleFonts.fredoka(
+                      style: AppTypography.font(
                         color: const Color(0xFF38BDF8),
                         fontSize: 18.sp,
                         fontWeight: FontWeight.w900,
@@ -249,7 +253,7 @@ class _CheatMenuDialogState extends State<CheatMenuDialog> {
   Widget _buildSectionTitle(String title) {
     return Text(
       title,
-      style: GoogleFonts.fredoka(
+      style: AppTypography.font(
         color: const Color(0xFF94A3B8),
         fontSize: 11.sp,
         fontWeight: FontWeight.w800,
@@ -275,12 +279,12 @@ class _CheatMenuDialogState extends State<CheatMenuDialog> {
               controller: _levelTextController,
               keyboardType: TextInputType.number,
               inputFormatters: [FilteringTextInputFormatter.digitsOnly],
-              style: GoogleFonts.fredoka(color: Colors.white, fontSize: 16.sp, fontWeight: FontWeight.bold),
+              style: AppTypography.font(color: Colors.white, fontSize: 16.sp, fontWeight: FontWeight.bold),
               decoration: InputDecoration(
                 border: InputBorder.none,
                 isDense: true,
                 hintText: '1 - $totalLevels',
-                hintStyle: GoogleFonts.fredoka(color: Colors.white38, fontSize: 13.sp),
+                hintStyle: AppTypography.font(color: Colors.white38, fontSize: 13.sp),
                 contentPadding: EdgeInsets.zero,
               ),
             ),
@@ -326,7 +330,7 @@ class _CheatMenuDialogState extends State<CheatMenuDialog> {
             ),
             child: Text(
               'Lvl $lvl',
-              style: GoogleFonts.fredoka(
+              style: AppTypography.font(
                 color: const Color(0xFFE2E8F0),
                 fontSize: 12.sp,
                 fontWeight: FontWeight.w700,
@@ -496,7 +500,7 @@ class _CheatMenuDialogState extends State<CheatMenuDialog> {
                 Flexible(
                   child: Text(
                     'Infinite Boosters (Free & Unlimited)',
-                    style: GoogleFonts.fredoka(
+                    style: AppTypography.font(
                       color: Colors.white,
                       fontSize: 12.sp,
                       fontWeight: FontWeight.w700,
@@ -576,20 +580,20 @@ class _CheatMenuDialogState extends State<CheatMenuDialog> {
                 context: context,
                 builder: (ctx) => AlertDialog(
                   backgroundColor: const Color(0xFF1E293B),
-                  title: Text('Reset All Data?', style: GoogleFonts.fredoka(color: Colors.white, fontWeight: FontWeight.bold)),
+                  title: Text('Reset All Data?', style: AppTypography.font(color: Colors.white, fontWeight: FontWeight.bold)),
                   content: Text(
                     'This will reset coins, levels, boosters, and preferences to fresh install state.',
-                    style: GoogleFonts.fredoka(color: Colors.white70),
+                    style: AppTypography.font(color: Colors.white70),
                   ),
                   actions: [
                     TextButton(
                       onPressed: () => Navigator.of(ctx).pop(false),
-                      child: Text('Cancel', style: GoogleFonts.fredoka(color: Colors.white54)),
+                      child: Text('Cancel', style: AppTypography.font(color: Colors.white54)),
                     ),
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(backgroundColor: Colors.red),
                       onPressed: () => Navigator.of(ctx).pop(true),
-                      child: Text('Reset', style: GoogleFonts.fredoka(color: Colors.white)),
+                      child: Text('Reset', style: AppTypography.font(color: Colors.white)),
                     ),
                   ],
                 ),
@@ -633,7 +637,7 @@ class _CheatMenuDialogState extends State<CheatMenuDialog> {
                     children: [
                       Text(
                         'Hide In-Game UI (All HUD & Boosters)',
-                        style: GoogleFonts.fredoka(
+                        style: AppTypography.font(
                           color: Colors.white,
                           fontSize: 12.sp,
                           fontWeight: FontWeight.w700,
@@ -642,7 +646,7 @@ class _CheatMenuDialogState extends State<CheatMenuDialog> {
                       ),
                       Text(
                         'Hides Coins, Gift, Settings, Star & Boosters',
-                        style: GoogleFonts.fredoka(
+                        style: AppTypography.font(
                           color: const Color(0xFF94A3B8),
                           fontSize: 10.sp,
                           fontWeight: FontWeight.w500,
@@ -666,6 +670,69 @@ class _CheatMenuDialogState extends State<CheatMenuDialog> {
                 val
                     ? 'In-Game UI & Boosters hidden! (Long-press LEVEL to open settings)'
                     : 'In-Game UI restored!',
+              );
+            },
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildTutorialTapOutsideSwitch() {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 8.h),
+      decoration: BoxDecoration(
+        color: const Color(0xFF1E293B),
+        borderRadius: BorderRadius.circular(12.r),
+        border: Border.all(color: const Color(0xFF334155)),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Expanded(
+            child: Row(
+              children: [
+                const Text('👆', style: TextStyle(fontSize: 18)),
+                SizedBox(width: 8.w),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Tap Outside Closes Tutorial',
+                        style: AppTypography.font(
+                          color: Colors.white,
+                          fontSize: 13.sp,
+                          fontWeight: FontWeight.w700,
+                        ),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      Text(
+                        'Remote Config: tutorial_tap_outside_close',
+                        style: AppTypography.font(
+                          color: const Color(0xFF94A3B8),
+                          fontSize: 10.sp,
+                          fontWeight: FontWeight.w500,
+                        ),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Switch(
+            value: _isTutorialTapOutside,
+            activeThumbColor: const Color(0xFF38BDF8),
+            onChanged: (val) async {
+              setState(() => _isTutorialTapOutside = val);
+              await GameStorage.setTutorialTapOutsideOverride(val);
+              _notifyUpdate();
+              _showFeedbackToast(
+                val
+                    ? 'Tutorial tap-outside close ENABLED!'
+                    : 'Tutorial tap-outside close DISABLED!',
               );
             },
           ),
@@ -707,7 +774,7 @@ class _CheatMenuDialogState extends State<CheatMenuDialog> {
                 fit: BoxFit.scaleDown,
                 child: Text(
                   label,
-                  style: GoogleFonts.fredoka(
+                  style: AppTypography.font(
                     color: Colors.white,
                     fontSize: 13.sp,
                     fontWeight: FontWeight.w800,

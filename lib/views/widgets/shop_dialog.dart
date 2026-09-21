@@ -7,6 +7,8 @@ import '../../services/ads_manager.dart';
 import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
 import '../../theme/app_typography.dart';
+import '../../utils/game_transitions.dart';
+import '../shop_screen.dart';
 import 'app_popup.dart';
 
 class ShopDialog extends StatefulWidget {
@@ -73,15 +75,28 @@ class _ShopDialogState extends State<ShopDialog> {
         setState(() => _isLoadingRewardAd = false);
 
         if (success) {
-          AudioManager.playTileSelect(pitchIndex: 5);
-          await GameStorage.addCoins(100);
+          AudioManager.playTileSelect(pitchIndex: 4);
           await GameStorage.addHintCount(1);
           await GameStorage.addRocketCount(1);
           await GameStorage.setLastDailyGiftClaimTime(DateTime.now().millisecondsSinceEpoch);
           widget.onUpdated();
           if (mounted) {
             setState(() {});
+            AppPopup.show(
+              context,
+              title: 'Reward Claimed!',
+              message: 'You received 1 Free Hint 💡 and 1 Free Rocket 🚀!',
+              icon: '🎁',
+            );
           }
+        } else {
+          AppPopup.show(
+            context,
+            title: 'Ad Unavailable',
+            message: 'Could not load rewarded video right now. Please try again later!',
+            icon: '❌',
+            isError: true,
+          );
         }
       },
     );
@@ -104,14 +119,22 @@ class _ShopDialogState extends State<ShopDialog> {
         );
       }
     } else {
-      AudioManager.playTileSelect(pitchIndex: 1);
+      AudioManager.playInvalid();
       if (mounted) {
         AppPopup.show(
           context,
           title: 'Not Enough Coins!',
-          message: 'You need $coinsCost 🪙 to purchase $name. Complete more levels or claim daily gifts!',
-          icon: '❌',
-          isError: true,
+          message: 'You need $coinsCost 🪙 to purchase $name.\nVisit the Shop to get more coins!',
+          icon: '🪙',
+          buttonText: 'Go to Shop',
+          secondaryButtonText: 'Cancel',
+          onAction: () {
+            Navigator.of(context).push(
+              GamePageRoute(
+                child: const ShopScreen(),
+              ),
+            );
+          },
         );
       }
     }
@@ -122,10 +145,9 @@ class _ShopDialogState extends State<ShopDialog> {
     final canClaimDaily = GameStorage.canClaimDailyGift();
     final remainingCooldown = GameStorage.getRemainingDailyGiftCooldown();
 
-    return Dialog(
-      backgroundColor: Colors.transparent,
-      insetPadding: EdgeInsets.symmetric(horizontal: 16.w),
-      child: Center(
+    return Center(
+      child: Material(
+        color: Colors.transparent,
         child: SizedBox(
           width: 338.w,
           child: Stack(
@@ -178,7 +200,7 @@ class _ShopDialogState extends State<ShopDialog> {
                           onTap: _claimFreeReward,
                           isPulsing: canClaimDaily && !_isLoadingRewardAd,
                           bgAsset: canClaimDaily
-                              ? 'assets/images/btn_green.webp'
+                              ? 'assets/images/btn_green_victory.png'
                               : 'assets/images/btn_grey.webp',
                           child: canClaimDaily
                               ? Row(
@@ -523,7 +545,7 @@ class _Green3DButton extends StatefulWidget {
     required this.child,
     required this.onTap,
     this.isPulsing = false,
-    this.bgAsset = 'assets/images/btn_green.webp',
+    this.bgAsset = 'assets/images/btn_green_victory.png',
   });
 
   @override
@@ -552,7 +574,7 @@ class _Green3DButtonState extends State<_Green3DButton> {
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 60),
         width: 88.w,
-        height: 36.h,
+        height: 38.h,
         margin: EdgeInsets.only(
           top: _isPressed ? 2.h : 0,
           bottom: _isPressed ? 0 : 2.h,

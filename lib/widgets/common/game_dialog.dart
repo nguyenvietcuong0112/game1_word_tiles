@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../theme/app_theme.dart';
 import '../../theme/app_typography.dart';
 import '../../utils/game_transitions.dart';
+import '../../views/widgets/app_popup.dart';
 import 'game_button.dart';
 import 'game_icon_button.dart';
 
@@ -43,84 +43,26 @@ class GameDialog extends StatelessWidget {
     this.maxWidth,
   });
 
-  /// Factory helper for standard Info/Alert popups (replaces legacy AppPopup)
+  /// Factory helper for standard Info/Alert popups (delegates to the modern 3D AppPopup)
   static Future<void> showAlert(
     BuildContext context, {
     required String title,
     required String message,
     String icon = '✨',
+    String? iconAsset,
     String buttonText = 'OK',
     VoidCallback? onClose,
     bool isError = false,
   }) {
-    return showGameDialog(
-      context: context,
-      barrierDismissible: true,
-      builder: (ctx) => GameDialog(
-        headerStyle: GameDialogHeaderStyle.badge,
-        showCloseButton: false,
-        badgeIcon: Container(
-          width: 58.r,
-          height: 58.r,
-          decoration: BoxDecoration(
-            color: isError ? Colors.redAccent.withValues(alpha: 0.12) : AppColors.cardWhite,
-            shape: BoxShape.circle,
-            border: Border.all(
-              color: isError ? Colors.redAccent : AppColors.borderSubtle,
-              width: 1.8,
-            ),
-            boxShadow: const [
-              BoxShadow(
-                color: Color(0xFFE8DAC8),
-                offset: Offset(0, 1.5),
-                blurRadius: 0,
-              ),
-            ],
-          ),
-          child: Center(
-            child: Text(
-              icon,
-              style: TextStyle(fontSize: 28.sp),
-            ),
-          ),
-        ),
-        actions: [
-          GameButton(
-            variant: isError ? GameButtonVariant.danger : GameButtonVariant.primary,
-            text: buttonText,
-            onTap: () {
-              Navigator.of(ctx, rootNavigator: true).pop();
-              onClose?.call();
-            },
-          ),
-        ],
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              title,
-              textAlign: TextAlign.center,
-              style: GoogleFonts.fredoka(
-                fontSize: 19.sp,
-                fontWeight: FontWeight.w900,
-                color: isError ? Colors.red.shade800 : AppColors.headerBrown,
-                letterSpacing: 0.5,
-              ),
-            ),
-            SizedBox(height: 8.h),
-            Text(
-              message,
-              textAlign: TextAlign.center,
-              style: GoogleFonts.fredoka(
-                fontSize: 13.sp,
-                color: AppColors.textMuted,
-                fontWeight: FontWeight.w500,
-                height: 1.4,
-              ),
-            ),
-          ],
-        ),
-      ),
+    return AppPopup.show(
+      context,
+      title: title,
+      message: message,
+      icon: icon,
+      iconAsset: iconAsset,
+      buttonText: buttonText,
+      onClose: onClose,
+      isError: isError,
     );
   }
 
@@ -187,7 +129,7 @@ class GameDialog extends StatelessWidget {
             Text(
               title,
               textAlign: TextAlign.center,
-              style: GoogleFonts.fredoka(
+              style: AppTypography.font(
                 fontSize: 21.sp,
                 fontWeight: FontWeight.w900,
                 color: AppColors.textDark,
@@ -198,7 +140,7 @@ class GameDialog extends StatelessWidget {
             Text(
               message,
               textAlign: TextAlign.center,
-              style: GoogleFonts.fredoka(
+              style: AppTypography.font(
                 fontSize: 14.sp,
                 fontWeight: FontWeight.w500,
                 color: AppColors.textMuted,
@@ -213,10 +155,10 @@ class GameDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Dialog(
-      backgroundColor: Colors.transparent,
-      insetPadding: EdgeInsets.symmetric(horizontal: 24.w),
-      child: Stack(
+    return Center(
+      child: Material(
+        color: Colors.transparent,
+        child: Stack(
         clipBehavior: Clip.none,
         alignment: Alignment.topCenter,
         children: [
@@ -291,7 +233,8 @@ class GameDialog extends StatelessWidget {
             ),
         ],
       ),
-    )
+    ),
+  )
         .animate()
         .scale(
           begin: const Offset(0.85, 0.85),
@@ -339,7 +282,7 @@ class GameDialog extends StatelessWidget {
         children: [
           Text(
             title ?? '',
-            style: GoogleFonts.fredoka(
+            style: AppTypography.font(
               fontSize: 20.sp,
               fontWeight: FontWeight.w900,
               color: AppColors.headerBrown,

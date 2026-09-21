@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../services/audio_manager.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
@@ -69,10 +68,9 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
   Widget build(BuildContext context) {
     final languages = LevelLoader.supportedLanguages;
 
-    return Dialog(
-      backgroundColor: Colors.transparent,
-      insetPadding: EdgeInsets.symmetric(horizontal: 20.w),
-      child: Center(
+    return Center(
+      child: Material(
+        color: Colors.transparent,
         child: SizedBox(
           width: 336.w,
           child: Stack(
@@ -326,7 +324,7 @@ class _LanguageItemCardState extends State<_LanguageItemCard> {
                   children: [
                     Text(
                       widget.name,
-                      style: GoogleFonts.fredoka(
+                      style: AppTypography.font(
                         fontSize: 16.sp,
                         fontWeight: isSelected ? FontWeight.w800 : FontWeight.w700,
                         color: const Color(0xFF1E3A5F),
@@ -335,7 +333,7 @@ class _LanguageItemCardState extends State<_LanguageItemCard> {
                     SizedBox(height: 1.h),
                     Text(
                       'Progress: Level ${widget.progressLevel}',
-                      style: GoogleFonts.fredoka(
+                      style: AppTypography.font(
                         fontSize: 12.sp,
                         fontWeight: FontWeight.w600,
                         color: isSelected ? const Color(0xFF16A34A) : const Color(0xFF5A7B9A),

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
 import '../../theme/app_typography.dart';
@@ -107,7 +106,7 @@ class ExitGameDialog extends StatelessWidget {
                           Text(
                             'Are you sure you want to exit?',
                             textAlign: TextAlign.center,
-                            style: GoogleFonts.fredoka(
+                            style: AppTypography.font(
                               fontSize: 16.sp,
                               fontWeight: FontWeight.w700,
                               color: const Color(0xFF1E3A5F),
@@ -120,7 +119,7 @@ class ExitGameDialog extends StatelessWidget {
                           Text(
                             'Your progress is always saved!',
                             textAlign: TextAlign.center,
-                            style: GoogleFonts.fredoka(
+                            style: AppTypography.font(
                               fontSize: 12.sp,
                               fontWeight: FontWeight.w500,
                               color: const Color(0xFF5A7B9A),

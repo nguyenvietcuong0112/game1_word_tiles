@@ -37,6 +37,9 @@ class GameStorage {
   static bool? _cachedHideGameplayUI;
   static final ValueNotifier<bool> hideGameplayUINotifier = ValueNotifier<bool>(false);
 
+  static bool? _cachedNoAdsPurchased;
+  static final ValueNotifier<bool> noAdsNotifier = ValueNotifier<bool>(false);
+
   static Future<void> init() async {
     _prefs = await SharedPreferences.getInstance();
     _isInitialized = true;
@@ -68,6 +71,9 @@ class GameStorage {
 
     _cachedHideGameplayUI = _prefs.getBool('cheat_hide_gameplay_ui') ?? false;
     hideGameplayUINotifier.value = _cachedHideGameplayUI!;
+
+    _cachedNoAdsPurchased = _prefs.getBool('is_no_ads_purchased') ?? false;
+    noAdsNotifier.value = _cachedNoAdsPurchased!;
   }
 
   // Selected Language
@@ -367,6 +373,18 @@ class GameStorage {
     await _prefs.setBool('rocket_tutorial_shown', shown);
   }
 
+  // No Ads Status
+  static bool isNoAdsPurchased() {
+    _cachedNoAdsPurchased ??= _prefs.getBool('is_no_ads_purchased') ?? false;
+    return _cachedNoAdsPurchased!;
+  }
+
+  static Future<void> setNoAdsPurchased(bool value) async {
+    _cachedNoAdsPurchased = value;
+    noAdsNotifier.value = value;
+    await _prefs.setBool('is_no_ads_purchased', value);
+  }
+
   // Ads Interstitial Gatekeeper
   static bool hasShownFirstInter() {
     return _prefs.getBool('has_shown_first_inter') ?? false;
@@ -469,6 +487,25 @@ class GameStorage {
     await _prefs.setBool('cheat_hide_gameplay_ui', hidden);
   }
 
+  static bool? _cachedTutorialTapOutsideOverride;
+
+  static bool? getTutorialTapOutsideOverride() {
+    if (_cachedTutorialTapOutsideOverride != null) return _cachedTutorialTapOutsideOverride;
+    if (_prefs.containsKey('cheat_tutorial_tap_outside')) {
+      _cachedTutorialTapOutsideOverride = _prefs.getBool('cheat_tutorial_tap_outside');
+    }
+    return _cachedTutorialTapOutsideOverride;
+  }
+
+  static Future<void> setTutorialTapOutsideOverride(bool? value) async {
+    _cachedTutorialTapOutsideOverride = value;
+    if (value == null) {
+      await _prefs.remove('cheat_tutorial_tap_outside');
+    } else {
+      await _prefs.setBool('cheat_tutorial_tap_outside', value);
+    }
+  }
+
   /// Wipe all game data and reset to fresh installation state
   static Future<void> resetAllData() async {
     await _prefs.clear();
@@ -493,5 +530,8 @@ class GameStorage {
     devOverlayNotifier.value = true;
     _cachedHideGameplayUI = false;
     hideGameplayUINotifier.value = false;
+    _cachedTutorialTapOutsideOverride = null;
+    _cachedNoAdsPurchased = false;
+    noAdsNotifier.value = false;
   }
 }

@@ -4,7 +4,7 @@ description: "A new Flutter project."
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.0+1
+version: 1.0.1+101
 
 environment:
   sdk: ^3.13.0
@@ -41,6 +41,7 @@ flutter:
     - assets/icons/
     - assets/audio/
     - assets/chapter/
+    - assets/font/
     - assets/levels/english/
     - assets/levels/portuguese/
     - assets/levels/russian/
@@ -49,6 +50,11 @@ flutter:
     - assets/levels/german/
     - assets/levels/french/
     - assets/levels/italian/
+
+  fonts:
+    - family: MikadoBold
+      fonts:
+        - asset: assets/font/mikadobold.otf
 
 flutter_launcher_icons:
   android: "ic_launcher"

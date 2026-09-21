@@ -14,11 +14,15 @@ class AdsManager {
   /// - Set to `false` to completely disable all ads (Banner, Interstitial, Resume/AOA, Rewarded).
   /// - When `false`, rewarded buttons automatically grant rewards directly (ideal for testing/development).
   /// - Set to `true` when ready to serve production ads.
-  static bool enableAds = false;
+  static bool enableAds = true;
 
   static DateTime? _lastInterOrResumeTime;
   static bool _isShowingAd = false;
+  static DateTime? _showingAdStartTime;
   static bool _adWasClicked = false;
+  static bool _isRewardedLoaded = false;
+  static Timer? _retryLoadTimer;
+  static int _rewardedRetryAttempt = 0;
   static final List<StreamSubscription> _subscriptions = [];
 
   /// Check if the ad manager is currently displaying an ad
@@ -26,6 +30,9 @@ class AdsManager {
 
   /// Check if user has just clicked an ad (and might be in external store)
   static bool get adWasClicked => _adWasClicked;
+
+  /// Whether a rewarded ad is confirmed loaded and ready
+  static bool get isRewardedLoaded => _isRewardedLoaded;
 
   /// Time since last Inter or Resume ad was closed
   static DateTime? get lastInterOrResumeTime => _lastInterOrResumeTime;
@@ -59,6 +66,22 @@ class AdsManager {
       _adWasClicked = true;
     }));
 
+    // Track rewarded ad loading lifecycle
+    _subscriptions.add(FGSDK.onRewardedLoaded.listen((info) {
+      debugPrint('[AdsManager] onRewardedLoaded: placement=${info.placement}');
+      _isRewardedLoaded = true;
+      _cancelRetryTimer();
+    }));
+    _subscriptions.add(FGSDK.onRewardedFailedToLoad.listen((info) {
+      debugPrint('[AdsManager] onRewardedFailedToLoad: placement=${info.placement}');
+      _isRewardedLoaded = false;
+      _scheduleRewardedRetry();
+    }));
+    _subscriptions.add(FGSDK.onRewardedClosed.listen((info) {
+      _isRewardedLoaded = false;
+      preloadRewarded();
+    }));
+
     // Track banner lifecycle events
     _subscriptions.add(FGSDK.onBannerLoaded.listen((info) {
       debugPrint('[AdsManager] onBannerLoaded: placement=${info.placement}, network=${info.networkName}, adId=${info.adId}');
@@ -75,9 +98,36 @@ class AdsManager {
     }));
 
     // Preload rewarded ad
+    preloadRewarded();
+  }
+
+  /// Safely triggers a background preload for Rewarded Ad
+  static void preloadRewarded() {
+    if (!enableAds) return;
     try {
+      debugPrint('[AdsManager] Preloading Rewarded ad...');
       FGSDK.loadRewarded();
-    } catch (_) {}
+    } catch (e) {
+      debugPrint('[AdsManager] Error preloading rewarded ad: $e');
+    }
+  }
+
+  static void _scheduleRewardedRetry() {
+    if (!enableAds) return;
+    _retryLoadTimer?.cancel();
+    final delaySeconds = (5 * (1 << _rewardedRetryAttempt.clamp(0, 3))).clamp(5, 30);
+    _retryLoadTimer = Timer(Duration(seconds: delaySeconds), () {
+      if (!enableAds) return;
+      debugPrint('[AdsManager] Retrying rewarded ad preload (attempt: $_rewardedRetryAttempt, delay: ${delaySeconds}s)...');
+      _rewardedRetryAttempt++;
+      preloadRewarded();
+    });
+  }
+
+  static void _cancelRetryTimer() {
+    _retryLoadTimer?.cancel();
+    _retryLoadTimer = null;
+    _rewardedRetryAttempt = 0;
   }
 
   /// Whether the minimum interval (cooldown) has elapsed since last Inter / Resume ad
@@ -101,6 +151,12 @@ class AdsManager {
   }) async {
     if (!enableAds) {
       debugPrint('[AdsManager] Ads disabled (enableAds = false) -> skipping Endgame Interstitial.');
+      onCompleted();
+      return;
+    }
+
+    if (GameStorage.isNoAdsPurchased()) {
+      debugPrint('[AdsManager] User has purchased No Ads -> skipping Endgame Interstitial.');
       onCompleted();
       return;
     }
@@ -165,6 +221,12 @@ class AdsManager {
   }) async {
     if (!enableAds) {
       debugPrint('[AdsManager] Ads disabled (enableAds = false) -> skipping Replay ad.');
+      onCompleted();
+      return;
+    }
+
+    if (GameStorage.isNoAdsPurchased()) {
+      debugPrint('[AdsManager] User has purchased No Ads -> skipping Replay ad.');
       onCompleted();
       return;
     }
@@ -261,30 +323,79 @@ class AdsManager {
   }) async {
     if (!enableAds) {
       debugPrint('[AdsManager] Ads disabled (enableAds = false) -> granting reward directly for $placement.');
+      _recordAdCompleted();
       onRewardResult(true);
       return;
     }
 
     if (mockRewardResult != null) {
+      if (mockRewardResult == true) {
+        _recordAdCompleted();
+      }
       onRewardResult(mockRewardResult!);
       return;
     }
 
+    // 1. Anti-deadlock guard: prevent permanent lock if a previous ad call was somehow orphaned
     if (_isShowingAd) {
+      if (_showingAdStartTime != null &&
+          DateTime.now().difference(_showingAdStartTime!).inSeconds > 45) {
+        debugPrint('[AdsManager] Clearing hung _isShowingAd state after 45s.');
+        _isShowingAd = false;
+      } else {
+        debugPrint('[AdsManager] Ad is already displaying or loading. Ignoring call.');
+        onRewardResult(false);
+        return;
+      }
+    }
+
+    _isShowingAd = true;
+    _showingAdStartTime = DateTime.now();
+    _adWasClicked = false;
+
+    // 2. Check if Rewarded Ad is already loaded and ready
+    bool isReady = false;
+    try {
+      isReady = await FGSDK.isRewardedReady().timeout(
+        const Duration(milliseconds: 1500),
+        onTimeout: () => false,
+      );
+    } catch (_) {
+      isReady = false;
+    }
+
+    // 3. If not ready, request on-demand load and wait up to 5 seconds
+    if (!isReady) {
+      debugPrint('[AdsManager] Rewarded ad not ready. Requesting on-demand load & waiting up to 5s...');
+      preloadRewarded();
+      try {
+        await FGSDK.onRewardedLoaded.first.timeout(const Duration(seconds: 5));
+        isReady = true;
+        debugPrint('[AdsManager] Rewarded ad loaded successfully on-demand!');
+      } catch (e) {
+        debugPrint('[AdsManager] On-demand ad load timed out or failed: $e');
+      }
+    }
+
+    // 4. If still not ready after waiting (e.g. offline / network unavailable)
+    if (!isReady) {
+      debugPrint('[AdsManager] Rewarded ad unavailable (offline or load failed). Releasing state.');
+      _isShowingAd = false;
+      _showingAdStartTime = null;
       onRewardResult(false);
       return;
     }
 
-    _isShowingAd = true;
-    _adWasClicked = false;
     bool rewardEarned = false;
-
     final completer = Completer<void>();
     StreamSubscription? closeSub;
     StreamSubscription? failSub;
     StreamSubscription? rewardSub;
+    StreamSubscription? showSub;
+    Timer? watchdogTimer;
 
     void finishAd() {
+      watchdogTimer?.cancel();
       if (!completer.isCompleted) {
         completer.complete();
       }
@@ -296,6 +407,22 @@ class AdsManager {
       rewardEarned = true;
     });
 
+    // 6-second watchdog: if ad doesn't actually display on screen within 6 seconds, abort gracefully
+    watchdogTimer = Timer(const Duration(seconds: 6), () {
+      debugPrint('[AdsManager] Watchdog: Rewarded ad did not display within 6s. Aborting.');
+      finishAd();
+    });
+
+    // Once displayed, cancel 6s watchdog and give up to 120s for user to watch video
+    showSub = FGSDK.onRewardedShown.listen((_) {
+      debugPrint('[AdsManager] onRewardedShown: Ad started playing.');
+      watchdogTimer?.cancel();
+      watchdogTimer = Timer(const Duration(seconds: 120), () {
+        debugPrint('[AdsManager] Watchdog: Rewarded ad playback exceeded 120s.');
+        finishAd();
+      });
+    });
+
     try {
       debugPrint('[AdsManager] Showing Rewarded ad (placement: $placement, level: $levelNumber)...');
       await Future.any([
@@ -305,16 +432,21 @@ class AdsManager {
     } catch (e) {
       debugPrint('[AdsManager] Error showing rewarded ad: $e');
     } finally {
+      watchdogTimer?.cancel();
       await closeSub.cancel();
       await failSub.cancel();
       await rewardSub.cancel();
+      await showSub.cancel();
       _isShowingAd = false;
+      _showingAdStartTime = null;
+
+      if (rewardEarned) {
+        _recordAdCompleted();
+      }
       onRewardResult(rewardEarned);
 
-      // Preload next rewarded ad
-      try {
-        FGSDK.loadRewarded();
-      } catch (_) {}
+      // Preload next rewarded ad in background
+      preloadRewarded();
     }
   }
 
@@ -322,12 +454,17 @@ class AdsManager {
 
   /// Handles App Lifecycle Resume from background.
   /// Rule:
+  /// - Preloads Rewarded Ad so it is ready if user toggled network in settings.
   /// - Blocked if returning from an ad click / external store.
   /// - Blocked until user has seen first Inter (GameStorage.hasShownFirstInter() == true).
   /// - Shares Ads_interval (25s) cooldown with Inter ads.
   /// - Format determined by Ads_resume: false = AOA, true = Inter.
   static Future<void> handleAppResume({int currentLevel = 1}) async {
-    if (!enableAds) return;
+    // 1. Always attempt to preload Rewarded Ad on App Resume
+    // (Crucial: when user switches out to enable WiFi/Cellular data in settings/control center and comes back)
+    preloadRewarded();
+
+    if (!enableAds || GameStorage.isNoAdsPurchased()) return;
 
     if (_isShowingAd) {
       debugPrint('[AdsManager] Resume ad skipped: ad is already showing.');
@@ -399,7 +536,7 @@ class AdsManager {
 
   /// Shows Banner ad on non-gameplay screens (HomeScreen, LevelSelectScreen)
   static void showBanner(String placement, {int level = 1}) {
-    if (!enableAds) return;
+    if (!enableAds || GameStorage.isNoAdsPurchased()) return;
     try {
       debugPrint('[AdsManager] showBanner: placement=$placement, level=$level');
       FGSDK.showBanner(placement, 'classic', level);
@@ -432,9 +569,14 @@ class AdsManager {
     DateTime? lastAdTime,
     bool? isShowingAd,
     bool? adWasClicked,
+    bool? isRewardedLoaded,
   }) {
     if (lastAdTime != null) _lastInterOrResumeTime = lastAdTime;
-    if (isShowingAd != null) _isShowingAd = isShowingAd;
+    if (isShowingAd != null) {
+      _isShowingAd = isShowingAd;
+      _showingAdStartTime = isShowingAd ? DateTime.now() : null;
+    }
     if (adWasClicked != null) _adWasClicked = adWasClicked;
+    if (isRewardedLoaded != null) _isRewardedLoaded = isRewardedLoaded;
   }
 }

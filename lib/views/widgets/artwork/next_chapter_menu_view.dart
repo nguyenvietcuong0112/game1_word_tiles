@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import '../../../theme/app_typography.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../../models/chapter_model.dart';
 import '../../../services/audio_manager.dart';
 import '../../../services/game_storage.dart';
@@ -121,7 +121,7 @@ class _NextChapterMenuViewState extends State<NextChapterMenuView> {
                     Text(
                       'CHAPTER ${completedTheme.chapterNumber} COMPLETE!',
                       textAlign: TextAlign.center,
-                      style: GoogleFonts.fredoka(
+                      style: AppTypography.font(
                         fontSize: 22.sp,
                         fontWeight: FontWeight.w900,
                         color: Colors.white,
@@ -132,7 +132,7 @@ class _NextChapterMenuViewState extends State<NextChapterMenuView> {
                     Text(
                       '${completedTheme.title} ${completedTheme.emoji} Mastered',
                       textAlign: TextAlign.center,
-                      style: GoogleFonts.fredoka(
+                      style: AppTypography.font(
                         fontSize: 14.sp,
                         color: const Color(0xFFFDE68A),
                         fontWeight: FontWeight.w600,
@@ -196,7 +196,7 @@ class _NextChapterMenuViewState extends State<NextChapterMenuView> {
                           SizedBox(width: 8.w),
                           Text(
                             '+${completedTheme.rewardCoins} COINS REWARD!',
-                            style: GoogleFonts.fredoka(
+                            style: AppTypography.font(
                               fontSize: 14.sp,
                               fontWeight: FontWeight.w900,
                               color: Colors.white,
@@ -215,7 +215,7 @@ class _NextChapterMenuViewState extends State<NextChapterMenuView> {
                     // Next Chapter Teaser
                     Text(
                       'Next Up: ${nextTheme.title} ${nextTheme.emoji}',
-                      style: GoogleFonts.fredoka(
+                      style: AppTypography.font(
                         fontSize: 13.sp,
                         color: const Color(0xFF94A3B8),
                         fontWeight: FontWeight.w600,

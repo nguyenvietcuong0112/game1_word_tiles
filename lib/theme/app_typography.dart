@@ -1,13 +1,44 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'app_theme.dart';
 
 /// Centralized Typography tokens for Word Tiles.
-/// All text styles use Fredoka with crisp scaling via ScreenUtil.
+/// All text styles use Mikado Bold with crisp scaling via ScreenUtil.
 class AppTypography {
+  static const String fontFamily = 'MikadoBold';
+  static const List<String> fontFamilyFallback = ['Fredoka', 'Roboto', 'sans-serif'];
+
+  /// Universal TextStyle generator using Mikado Bold.
+  static TextStyle font({
+    double? fontSize,
+    FontWeight? fontWeight,
+    Color? color,
+    double? letterSpacing,
+    double? height,
+    Paint? foreground,
+    List<Shadow>? shadows,
+    TextDecoration? decoration,
+    Color? decorationColor,
+    TextDecorationStyle? decorationStyle,
+  }) {
+    return TextStyle(
+      fontFamily: fontFamily,
+      fontFamilyFallback: fontFamilyFallback,
+      fontSize: fontSize,
+      fontWeight: fontWeight ?? FontWeight.bold,
+      color: color,
+      letterSpacing: letterSpacing,
+      height: height,
+      foreground: foreground,
+      shadows: shadows,
+      decoration: decoration,
+      decorationColor: decorationColor,
+      decorationStyle: decorationStyle,
+    );
+  }
+
   static TextStyle titleHero({Color color = AppColors.headerBrown}) =>
-      GoogleFonts.fredoka(
+      font(
         fontSize: 28.sp,
         fontWeight: FontWeight.w900,
         letterSpacing: 1.5,
@@ -15,7 +46,7 @@ class AppTypography {
       );
 
   static TextStyle titleLarge({Color color = AppColors.headerBrown}) =>
-      GoogleFonts.fredoka(
+      font(
         fontSize: 22.sp,
         fontWeight: FontWeight.w900,
         letterSpacing: 0.8,
@@ -23,21 +54,21 @@ class AppTypography {
       );
 
   static TextStyle titleMedium({Color color = AppColors.textDark}) =>
-      GoogleFonts.fredoka(
+      font(
         fontSize: 18.sp,
         fontWeight: FontWeight.w800,
         color: color,
       );
 
   static TextStyle titleSmall({Color color = AppColors.textDark}) =>
-      GoogleFonts.fredoka(
+      font(
         fontSize: 15.sp,
         fontWeight: FontWeight.w700,
         color: color,
       );
 
   static TextStyle bodyLarge({Color color = AppColors.textMuted}) =>
-      GoogleFonts.fredoka(
+      font(
         fontSize: 14.sp,
         fontWeight: FontWeight.w500,
         color: color,
@@ -45,7 +76,7 @@ class AppTypography {
       );
 
   static TextStyle bodyMedium({Color color = AppColors.textMuted}) =>
-      GoogleFonts.fredoka(
+      font(
         fontSize: 13.sp,
         fontWeight: FontWeight.w500,
         color: color,
@@ -53,14 +84,14 @@ class AppTypography {
       );
 
   static TextStyle bodySmall({Color color = AppColors.textMuted}) =>
-      GoogleFonts.fredoka(
+      font(
         fontSize: 11.sp,
         fontWeight: FontWeight.w500,
         color: color,
       );
 
   static TextStyle buttonLarge({Color color = Colors.white}) =>
-      GoogleFonts.fredoka(
+      font(
         fontSize: 20.sp,
         fontWeight: FontWeight.w900,
         letterSpacing: 1.4,
@@ -68,7 +99,7 @@ class AppTypography {
       );
 
   static TextStyle buttonMedium({Color color = Colors.white}) =>
-      GoogleFonts.fredoka(
+      font(
         fontSize: 15.sp,
         fontWeight: FontWeight.w900,
         letterSpacing: 0.8,
@@ -76,7 +107,7 @@ class AppTypography {
       );
 
   static TextStyle buttonSmall({Color color = Colors.white}) =>
-      GoogleFonts.fredoka(
+      font(
         fontSize: 12.sp,
         fontWeight: FontWeight.w800,
         letterSpacing: 0.5,
@@ -123,7 +154,7 @@ class CartoonText extends StatelessWidget {
               child: Text(
                 text,
                 textAlign: textAlign,
-                style: GoogleFonts.fredoka(
+                style: AppTypography.font(
                   fontSize: fontSize,
                   fontWeight: FontWeight.w900,
                   height: 1.2,
@@ -140,7 +171,7 @@ class CartoonText extends StatelessWidget {
           Text(
             text,
             textAlign: textAlign,
-            style: GoogleFonts.fredoka(
+            style: AppTypography.font(
               fontSize: fontSize,
               fontWeight: FontWeight.w900,
               height: 1.2,
@@ -156,7 +187,7 @@ class CartoonText extends StatelessWidget {
           Text(
             text,
             textAlign: textAlign,
-            style: GoogleFonts.fredoka(
+            style: AppTypography.font(
               fontSize: fontSize,
               fontWeight: FontWeight.w900,
               height: 1.2,

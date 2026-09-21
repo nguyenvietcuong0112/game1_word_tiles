@@ -4,7 +4,6 @@ import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../../controllers/game_controller.dart';
 import '../../models/chapter_model.dart';
 import '../../services/ads_manager.dart';
@@ -13,8 +12,7 @@ import '../../services/game_storage.dart';
 import '../../theme/app_typography.dart';
 import '../../utils/game_transitions.dart';
 import '../widgets/bouncy_button.dart';
-import 'pressable_3d_button.dart';
-import '../widgets/shop_dialog.dart';
+import '../shop_screen.dart';
 
 enum VictoryStep {
   congrats,
@@ -227,12 +225,19 @@ class _VictoryOverlayState extends State<VictoryOverlay>
     super.dispose();
   }
 
-  void _handleContinue() {
+  void _handleContinue({bool skipAd = false}) {
     if (_hasNavigated) return;
     _hasNavigated = true;
     _previewSlideTimer?.cancel();
     _previewSoundTimer?.cancel();
     _autoAdvanceTimer?.cancel();
+
+    // If user already watched rewarded ad on this victory dialog, NEVER show an interstitial ad
+    if (skipAd || _claimedDouble) {
+      debugPrint('[VictoryDialog] Rewarded ad was watched -> skipping Endgame Interstitial.');
+      widget.onNextLevel();
+      return;
+    }
 
     AdsManager.showInterEndgame(
       levelNumber: widget.controller.levelNumber,
@@ -264,7 +269,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
       }
     });
 
-    _autoAdvanceTimer = Timer(const Duration(milliseconds: 3200), () {
+    _autoAdvanceTimer = Timer(const Duration(milliseconds: 2200), () {
       if (mounted) {
         _handleContinue();
       }
@@ -272,6 +277,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
   }
 
   void _claimDoubleCoins() {
+    if (_isLoadingReward || _claimedDouble) return;
     setState(() => _isLoadingReward = true);
 
     AdsManager.showDoubleCoinReward(
@@ -283,22 +289,37 @@ class _VictoryOverlayState extends State<VictoryOverlay>
           final bonusCoins = widget.controller.coinsReward;
           GameStorage.addCoins(bonusCoins);
           setState(() => _claimedDouble = true);
+          AudioManager.playWordMatch();
+
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(
                 '🎉 +$bonusCoins coins added!',
-                style: GoogleFonts.fredoka(fontWeight: FontWeight.w700),
+                style: AppTypography.font(fontWeight: FontWeight.w700),
               ),
               backgroundColor: const Color(0xFF059669),
-              duration: const Duration(seconds: 2),
+              duration: const Duration(seconds: 1),
             ),
           );
+
+          // Auto-advance after watching rewarded ad:
+          // If chapter milestone: transition to Chapter Preview (which awards chapter bonus & auto-advances to next level)
+          // If normal level: advance directly to next level without any interstitial ad
+          final isChapterMilestone = widget.controller.isLastLevelOfChapter;
+          Future.delayed(const Duration(milliseconds: 600), () {
+            if (!mounted) return;
+            if (isChapterMilestone) {
+              _goToChapterPreview();
+            } else {
+              _handleContinue(skipAd: true);
+            }
+          });
         } else {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(
-                'Ad not completed.',
-                style: GoogleFonts.fredoka(fontWeight: FontWeight.w600),
+                'Ad not available. Please check your connection and try again.',
+                style: AppTypography.font(fontWeight: FontWeight.w600),
               ),
               duration: const Duration(seconds: 2),
             ),
@@ -310,12 +331,15 @@ class _VictoryOverlayState extends State<VictoryOverlay>
 
   void _openShop() {
     AudioManager.playTileSelect(pitchIndex: 4);
-    showGameDialog(
-      context: context,
-      builder: (_) => ShopDialog(
-        onUpdated: () => setState(() {}),
+    Navigator.push(
+      context,
+      GamePageRoute(
+        child: ShopScreen(
+          currentLevel: widget.controller.levelNumber,
+          onClosed: () => setState(() {}),
+        ),
       ),
-    );
+    ).then((_) => setState(() {}));
   }
 
   Widget _buildTopBar() {
@@ -352,7 +376,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
                     builder: (context, coins, _) {
                       return Text(
                         '$coins',
-                        style: GoogleFonts.fredoka(
+                        style: AppTypography.font(
                           color: Colors.white,
                           fontSize: 17.sp,
                           fontWeight: FontWeight.w900,
@@ -438,7 +462,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
                     isCompleted ? 'CHAPTER ${theme.chapterNumber} COMPLETED' : 'NEW CHAPTER UNLOCKED!',
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: GoogleFonts.fredoka(
+                    style: AppTypography.font(
                       color: Colors.white,
                       fontSize: 11.sp,
                       fontWeight: FontWeight.w900,
@@ -499,7 +523,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
                   theme.title,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: GoogleFonts.fredoka(
+                  style: AppTypography.font(
                     fontSize: 20.sp,
                     fontWeight: FontWeight.w900,
                     color: Colors.white,
@@ -511,7 +535,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
           SizedBox(height: 2.h),
           Text(
             theme.subtitle,
-            style: GoogleFonts.fredoka(
+            style: AppTypography.font(
               fontSize: 13.sp,
               fontWeight: FontWeight.w600,
               color: Colors.white70,
@@ -544,7 +568,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
                       '+$bonusCoins Chapter Bonus!',
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style: GoogleFonts.fredoka(
+                      style: AppTypography.font(
                         fontSize: 12.sp,
                         fontWeight: FontWeight.w800,
                         color: const Color(0xFFFFD700),
@@ -578,7 +602,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
         Text(
           'CHAPTER COMPLETE!',
           textAlign: TextAlign.center,
-          style: GoogleFonts.fredoka(
+          style: AppTypography.font(
             fontSize: 26.sp,
             fontWeight: FontWeight.w900,
             color: const Color(0xFFFFD700),
@@ -601,7 +625,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
         SizedBox(height: 4.h),
         Text(
           'Next chapter unlocked!',
-          style: GoogleFonts.fredoka(
+          style: AppTypography.font(
             fontSize: 15.sp,
             fontWeight: FontWeight.w600,
             color: Colors.white.withValues(alpha: 0.85),
@@ -661,29 +685,40 @@ class _VictoryOverlayState extends State<VictoryOverlay>
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Pressable3DButton(
-                onTap: _handleContinue,
-                width: double.infinity,
-                height: 64.h,
-                borderRadius: 20,
-                bevelOffset: 5.0,
-                borderWidth: 1.2,
-                faceColor: const Color(0xFF46dc28),
-                bevelColor: const Color(0xFF2DC419),
-                borderColor: const Color(0xFF19BA05),
-                child: CartoonText(
-                  text: 'Level ${widget.controller.levelNumber + 1}',
-                  fontSize: 22.sp,
-                  textColor: Colors.white,
-                  outlineColor: const Color(0xFF179A09),
-                  strokeWidth: 3.5,
-                  shadowOffset: 1.5,
+              Center(
+                child: SizedBox(
+                  width: 170.w,
+                  child: BouncyButton(
+                    onTap: _handleContinue,
+                    child: SizedBox(
+                      height: 68.h,
+                      child: Stack(
+                        alignment: Alignment.center,
+                        children: [
+                          Image.asset(
+                            'assets/images/btn_green_victory.png',
+                            width: double.infinity,
+                            height: double.infinity,
+                            fit: BoxFit.fill,
+                          ),
+                          CartoonText(
+                            text: 'Level ${widget.controller.levelNumber + 1}',
+                            fontSize: 22.sp,
+                            textColor: Colors.white,
+                            outlineColor: const Color(0xFF0E5606),
+                            strokeWidth: 3.5,
+                            shadowOffset: 1.5,
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                 ),
               ),
               SizedBox(height: 6.h),
               Text(
                 'Auto-advancing to next level...',
-                style: GoogleFonts.fredoka(
+                style: AppTypography.font(
                   fontSize: 12.sp,
                   fontWeight: FontWeight.w600,
                   color: Colors.white54,
@@ -763,7 +798,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
           ),
           child: Text.rich(
             TextSpan(
-              style: GoogleFonts.fredoka(
+              style: AppTypography.font(
                 fontSize: 16.sp,
                 fontWeight: FontWeight.w700,
                 color: Colors.white,
@@ -848,7 +883,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
                         Center(
                           child: Text(
                             '$currentLvlInChapter/$totalLevelsInChapter',
-                            style: GoogleFonts.fredoka(
+                            style: AppTypography.font(
                               fontSize: 14.sp,
                               fontWeight: FontWeight.w900,
                               color: Colors.white,
@@ -879,7 +914,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
                       bottom: -8,
                       child: Text(
                         '${widget.controller.coinsReward}',
-                        style: GoogleFonts.fredoka(
+                        style: AppTypography.font(
                           fontSize: 16.sp,
                           fontWeight: FontWeight.w900,
                           color: Colors.white,
@@ -907,24 +942,39 @@ class _VictoryOverlayState extends State<VictoryOverlay>
             final showRewardButton = widget.controller.levelNumber >= 8;
 
             Widget buildNextLevelBtn() {
-              return Pressable3DButton(
-                onTap: isChapterMilestone ? _goToChapterPreview : _handleContinue,
-                height: 64.h,
-                borderRadius: 20,
-                bevelOffset: 5.0,
-                borderWidth: 1.2,
-                faceColor: const Color(0xFF42D623),
-                bevelColor: const Color(0xFF229713),
-                borderColor: const Color(0xFF0F5A06),
-                child: CartoonText(
-                  text: isChapterMilestone
-                      ? 'Next Chapter'
-                      : 'Level ${widget.controller.levelNumber + 1}',
-                  fontSize: isChapterMilestone ? 20.sp : 22.sp,
-                  textColor: Colors.white,
-                  outlineColor: const Color(0xFF0E5606),
-                  strokeWidth: 3.5,
-                  shadowOffset: 1.5,
+              return BouncyButton(
+                onTap: _isLoadingReward
+                    ? null
+                    : (isChapterMilestone ? _goToChapterPreview : _handleContinue),
+                child: SizedBox(
+                  height: 68.h,
+                  child: Stack(
+                    alignment: Alignment.center,
+                    children: [
+                      Image.asset(
+                        'assets/images/btn_green_victory.png',
+                        width: double.infinity,
+                        height: double.infinity,
+                        fit: BoxFit.fill,
+                      ),
+                      Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 10.w),
+                        child: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          child: CartoonText(
+                            text: isChapterMilestone
+                                ? 'Next Chapter'
+                                : 'Level ${widget.controller.levelNumber + 1}',
+                            fontSize: isChapterMilestone ? 19.sp : 22.sp,
+                            textColor: Colors.white,
+                            outlineColor: const Color(0xFF0E5606),
+                            strokeWidth: 3.5,
+                            shadowOffset: 1.5,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               );
             }
@@ -933,85 +983,74 @@ class _VictoryOverlayState extends State<VictoryOverlay>
               return BouncyButton(
                 onTap: _isLoadingReward || _claimedDouble ? null : _claimDoubleCoins,
                 child: SizedBox(
-                  height: 70.h,
+                  height: 68.h,
                   child: Stack(
                     alignment: Alignment.center,
                     children: [
                       Image.asset(
-                        'assets/images/btn_yellow.webp',
+                        'assets/images/btn_blue_victory.png',
                         width: double.infinity,
                         height: double.infinity,
                         fit: BoxFit.fill,
                       ),
-                      if (_isLoadingReward)
-                        SizedBox(
-                          width: 22.r,
-                          height: 22.r,
-                          child: const CircularProgressIndicator(
-                            strokeWidth: 2.5,
-                            valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
-                          ),
-                        )
-                      else if (_claimedDouble)
-                        Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            const Icon(Icons.check_circle_rounded, color: Colors.white, size: 22),
-                            SizedBox(width: 6.w),
-                            Text(
-                              'Claimed!',
-                              style: GoogleFonts.fredoka(
-                                fontSize: 18.sp,
-                                fontWeight: FontWeight.w900,
-                                color: Colors.white,
-                              ),
-                            ),
-                          ],
-                        )
-                      else
-                        Row(
-                          mainAxisSize: MainAxisSize.min,
-                          children: [
-                            Image.asset(
-                              'assets/icons/icon_ads.webp',
-                              width: 32.r,
-                              height: 32.r,
-                              fit: BoxFit.contain,
-                            ),
-                            SizedBox(width: 6.w),
-                            Image.asset(
-                              'assets/icons/icon_coin.webp',
-                              width: 22.r,
-                              height: 22.r,
-                              fit: BoxFit.contain,
-                            ),
-                            SizedBox(width: 4.w),
-                            Stack(
-                              alignment: Alignment.center,
-                              children: [
-                                Text(
-                                  '${widget.controller.coinsReward}',
-                                  style: GoogleFonts.fredoka(
-                                    fontSize: 22.sp,
-                                    fontWeight: FontWeight.w900,
-                                    foreground: Paint()
-                                      ..style = PaintingStyle.stroke
-                                      ..strokeWidth = 3.5
-                                      ..color = const Color(0xFF245F8A),
+                      Padding(
+                        padding: EdgeInsets.symmetric(horizontal: 10.w),
+                        child: FittedBox(
+                          fit: BoxFit.scaleDown,
+                          child: _isLoadingReward
+                              ? SizedBox(
+                                  width: 22.r,
+                                  height: 22.r,
+                                  child: const CircularProgressIndicator(
+                                    strokeWidth: 2.5,
+                                    valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
                                   ),
-                                ),
-                                Text(
-                                  '${widget.controller.coinsReward}',
-                                  style: GoogleFonts.fredoka(
-                                    fontSize: 22.sp,
-                                    fontWeight: FontWeight.w900,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
+                                )
+                              : _claimedDouble
+                                  ? Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        const Icon(Icons.check_circle_rounded, color: Colors.white, size: 22),
+                                        SizedBox(width: 6.w),
+                                        Text(
+                                          'Claimed!',
+                                          style: AppTypography.font(
+                                            fontSize: 18.sp,
+                                            fontWeight: FontWeight.w900,
+                                            color: Colors.white,
+                                          ),
+                                        ),
+                                      ],
+                                    )
+                                  : Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        Image.asset(
+                                          'assets/icons/icon_ads.webp',
+                                          width: 32.r,
+                                          height: 32.r,
+                                          fit: BoxFit.contain,
+                                        ),
+                                        SizedBox(width: 6.w),
+                                        Image.asset(
+                                          'assets/icons/icon_coin.webp',
+                                          width: 22.r,
+                                          height: 22.r,
+                                          fit: BoxFit.contain,
+                                        ),
+                                        SizedBox(width: 4.w),
+                                        CartoonText(
+                                          text: '${widget.controller.coinsReward}',
+                                          fontSize: 22.sp,
+                                          textColor: Colors.white,
+                                          outlineColor: const Color(0xFF0F4778),
+                                          strokeWidth: 3.5,
+                                          shadowOffset: 1.5,
+                                        ),
+                                      ],
+                                    ),
                         ),
+                      ),
                     ],
                   ),
                 ),
@@ -1021,7 +1060,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
             if (!showRewardButton) {
               return Center(
                 child: SizedBox(
-                  width: 240.w,
+                  width: isChapterMilestone ? 185.w : 170.w,
                   child: buildNextLevelBtn(),
                 ),
               );

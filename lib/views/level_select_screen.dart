@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import '../theme/app_typography.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../services/ads_manager.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
@@ -9,6 +9,8 @@ import '../utils/game_transitions.dart';
 import '../widgets/common/game_icon_button.dart';
 import '../widgets/common/game_scaffold.dart';
 import 'game_screen.dart';
+import 'shop_screen.dart';
+import 'widgets/bouncy_button.dart';
 
 class LevelSelectScreen extends StatefulWidget {
   final String language;
@@ -98,7 +100,7 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
                     children: [
                       Text(
                         'SELECT LEVEL',
-                          style: GoogleFonts.fredoka(
+                          style: AppTypography.font(
                             fontSize: 20.sp,
                             fontWeight: FontWeight.w900,
                             letterSpacing: 0.8,
@@ -107,7 +109,7 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
                         ),
                         Text(
                           langName,
-                          style: GoogleFonts.fredoka(
+                          style: AppTypography.font(
                             fontSize: 14.sp,
                             color: AppColors.subHeaderBrown,
                             fontWeight: FontWeight.w700,
@@ -137,37 +139,79 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
                         SizedBox(width: 4.w),
                         Text(
                           '${_starsMap.values.fold<int>(0, (sum, s) => sum + s)}',
-                          style: GoogleFonts.fredoka(fontWeight: FontWeight.w900, color: AppColors.textDark, fontSize: 14.sp),
+                          style: AppTypography.font(fontWeight: FontWeight.w900, color: AppColors.textDark, fontSize: 14.sp),
                         ),
                       ],
                     ),
                   ),
                   SizedBox(width: 8.w),
 
-                  // Coins Pill
-                  Container(
-                    padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 7.h),
-                    decoration: BoxDecoration(
-                      color: AppColors.cardWhite,
-                      borderRadius: BorderRadius.circular(20.r),
-                      border: Border.all(color: AppColors.borderSubtle, width: 1.5),
-                      boxShadow: const [
-                        BoxShadow(
-                          color: Color(0xFFE8DAC8),
-                          offset: Offset(0, 1.5),
-                          blurRadius: 0,
-                        ),
-                      ],
-                    ),
-                    child: Row(
-                      children: [
-                        const Text('🪙', style: TextStyle(fontSize: 14)),
-                        SizedBox(width: 4.w),
-                        Text(
-                          '${GameStorage.getCoins()}',
-                          style: GoogleFonts.fredoka(fontWeight: FontWeight.w900, color: AppColors.textDark, fontSize: 14.sp),
-                        ),
-                      ],
+                  // Coins Pill (Tap to open Shop)
+                  BouncyButton(
+                    onTap: () {
+                      Navigator.of(context).push(
+                        GamePageRoute(child: const ShopScreen()),
+                      );
+                    },
+                    child: Container(
+                      padding: EdgeInsets.fromLTRB(10.w, 4.h, 4.w, 4.h),
+                      decoration: BoxDecoration(
+                        color: AppColors.cardWhite,
+                        borderRadius: BorderRadius.circular(20.r),
+                        border: Border.all(color: AppColors.borderSubtle, width: 1.5),
+                        boxShadow: const [
+                          BoxShadow(
+                            color: Color(0xFFE8DAC8),
+                            offset: Offset(0, 1.5),
+                            blurRadius: 0,
+                          ),
+                        ],
+                      ),
+                      child: ValueListenableBuilder<int>(
+                        valueListenable: GameStorage.coinsNotifier,
+                        builder: (context, coins, _) {
+                          return Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Image.asset(
+                                'assets/icons/icon_coin.webp',
+                                width: 18.r,
+                                height: 18.r,
+                                fit: BoxFit.contain,
+                              ),
+                              SizedBox(width: 4.w),
+                              Text(
+                                '$coins',
+                                style: AppTypography.font(
+                                  fontWeight: FontWeight.w900,
+                                  color: AppColors.textDark,
+                                  fontSize: 14.sp,
+                                ),
+                              ),
+                              SizedBox(width: 4.w),
+                              Container(
+                                width: 18.r,
+                                height: 18.r,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  gradient: const LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    colors: [Color(0xFF5CEB38), Color(0xFF28A811)],
+                                  ),
+                                  border: Border.all(color: Colors.white, width: 1.2),
+                                ),
+                                alignment: Alignment.center,
+                                child: const Icon(
+                                  Icons.add_rounded,
+                                  color: Colors.white,
+                                  size: 13,
+                                ),
+                              ),
+                            ],
+                          );
+                        },
+                      ),
                     ),
                   ),
                 ],
@@ -267,7 +311,7 @@ class _LevelCard extends StatelessWidget {
               else ...[
                 Text(
                   '$levelNumber',
-                  style: GoogleFonts.fredoka(
+                  style: AppTypography.font(
                     fontSize: 18.sp,
                     fontWeight: FontWeight.w900,
                     color: textColor,
