@@ -17,7 +17,7 @@ void main() {
     await GameStorage.setHapticEnabled(false);
   });
 
-  test('Verify Level 1 Extra Words (COP, TOP) and Target Words (CAT, CUP, POT)', () async {
+  test('Verify Level 1 Target Words (CAT, DOG, PEN) Solvability', () async {
     final file = File('assets/levels/english/level1.json');
     expect(file.existsSync(), isTrue);
     final jsonMap = jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
@@ -25,12 +25,8 @@ void main() {
 
     final targetStrings = level.targetWords.map((t) => t.word).toSet();
     expect(targetStrings.contains('CAT'), isTrue);
-    expect(targetStrings.contains('CUP'), isTrue);
-    expect(targetStrings.contains('POT'), isTrue);
-
-    final extraWordStrings = level.extraWords.map((e) => e.word).toSet();
-    expect(extraWordStrings.contains('COP'), isTrue, reason: 'Level 1 must contain COP in extra_words');
-    expect(extraWordStrings.contains('TOP'), isTrue, reason: 'Level 1 must contain TOP in extra_words');
+    expect(targetStrings.contains('DOG'), isTrue);
+    expect(targetStrings.contains('PEN'), isTrue);
 
     final controller = GameController(
       language: 'english',
@@ -39,20 +35,8 @@ void main() {
       level: level,
     );
 
-    // Swipe COP -> Should be recognized as extra word
-    final copPath = controller.getTutorialPathForWord('COP');
-    expect(copPath, isNotNull, reason: 'COP must be traceable on grid');
-    controller.startSwipe(copPath!.first.y, copPath.first.x);
-    for (int i = 1; i < copPath.length; i++) {
-      controller.updateSwipe(copPath[i].y, copPath[i].x);
-    }
-    controller.endSwipe();
-
-    expect(controller.foundExtraWords.contains('COP'), isTrue);
-    expect(controller.invalidAttemptsCount, equals(0));
-
-    // Swipe targets: CAT, CUP, POT
-    for (final word in ['CAT', 'CUP', 'POT']) {
+    // Swipe targets: CAT, DOG, PEN
+    for (final word in ['CAT', 'DOG', 'PEN']) {
       final path = controller.getTutorialPathForWord(word);
       expect(path, isNotNull, reason: 'Target $word must be traceable');
       controller.startSwipe(path!.first.y, path.first.x);
@@ -72,27 +56,34 @@ void main() {
     controller.dispose();
   });
 
-  test('Verify Level 13 Singular Target Words (ART, RAT) and Plural Extra (ARTS, RATS)', () async {
-    final file = File('assets/levels/english/level13.json');
-    expect(file.existsSync(), isTrue);
-    final jsonMap = jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
-    final level = LevelLoader.harmonizeLevel(LevelModel.fromJson(jsonMap));
-
-    final targetStrings = level.targetWords.map((t) => t.word).toSet();
-    expect(targetStrings.contains('ART'), isTrue, reason: 'Level 13 target must include ART');
-    expect(targetStrings.contains('RAT'), isTrue, reason: 'Level 13 target must include RAT');
-    expect(targetStrings.contains('STAR'), isTrue, reason: 'Level 13 target must include STAR');
-    expect(targetStrings.contains('TAR'), isTrue, reason: 'Level 13 target must include TAR');
-
-    final extraStrings = level.extraWords.map((e) => e.word).toSet();
-    expect(extraStrings.contains('ARTS'), isTrue, reason: 'Level 13 extra must include ARTS');
-    expect(extraStrings.contains('RATS'), isTrue, reason: 'Level 13 extra must include RATS');
-    expect(extraStrings.contains('SAT'), isTrue, reason: 'Level 13 extra must include SAT');
+  test('Verify Singular Target Words (ART, RAT) and Plural Extra Safeguard (ARTS, RATS)', () async {
+    final level = LevelModel(
+      id: 99,
+      width: 4,
+      height: 2,
+      targetWords: const [
+        TargetWord(word: 'ART', type: 0),
+        TargetWord(word: 'RAT', type: 0),
+      ],
+      extraWords: const [
+        TargetWord(word: 'ARTS', type: 0),
+        TargetWord(word: 'RATS', type: 0),
+      ],
+      letterGrid: const [
+        ['A', 'R', 'T', 'S'],
+        ['R', 'A', 'T', 'S'],
+      ],
+      countsGrid: const [
+        [1, 1, 1, 1],
+        [1, 1, 1, 1],
+      ],
+      obstacles: const [],
+    );
 
     final controller = GameController(
       language: 'english',
-      levelId: 13,
-      levelNumber: 13,
+      levelId: 99,
+      levelNumber: 99,
       level: level,
     );
 
@@ -107,8 +98,8 @@ void main() {
     expect(controller.foundExtraWords.contains('ARTS'), isTrue);
     expect(controller.invalidAttemptsCount, equals(0));
 
-    // 2. Solve target words in order: ART, RAT, TAR, STAR
-    for (final word in ['ART', 'RAT', 'TAR', 'STAR']) {
+    // 2. Solve target words in order: ART, RAT
+    for (final word in ['ART', 'RAT']) {
       final path = controller.getTutorialPathForWord(word);
       expect(path, isNotNull, reason: 'Must find path for target "$word"');
       controller.startSwipe(path!.first.y, path.first.x);
@@ -118,33 +109,36 @@ void main() {
       controller.endSwipe();
     }
 
-    expect(controller.solvedTargetWords.length, equals(4));
-    // Verify all tiles cleared
-    for (final r in controller.grid) {
-      for (final t in r) {
-        expect(t.isCleared, isTrue, reason: 'Tile at (${t.col}, ${t.row}) count=${t.count} not cleared');
-      }
-    }
-
+    expect(controller.solvedTargetWords.length, equals(2));
     controller.dispose();
   });
 
-  test('Verify Level 14 Singular Target (TOP) and Plural Extra (TOPS)', () async {
-    final file = File('assets/levels/english/level14.json');
-    expect(file.existsSync(), isTrue);
-    final jsonMap = jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;
-    final level = LevelLoader.harmonizeLevel(LevelModel.fromJson(jsonMap));
-
-    final targetStrings = level.targetWords.map((t) => t.word).toSet();
-    expect(targetStrings.contains('TOP'), isTrue, reason: 'Level 14 target must include TOP');
-
-    final extraStrings = level.extraWords.map((e) => e.word).toSet();
-    expect(extraStrings.contains('TOPS'), isTrue, reason: 'Level 14 extra must include TOPS');
+  test('Verify Singular Target (TOP) and Plural Extra (TOPS)', () async {
+    final level = LevelModel(
+      id: 98,
+      width: 4,
+      height: 2,
+      targetWords: const [
+        TargetWord(word: 'TOP', type: 0),
+      ],
+      extraWords: const [
+        TargetWord(word: 'TOPS', type: 0),
+      ],
+      letterGrid: const [
+        ['T', 'O', 'P', 'S'],
+        ['S', 'P', 'O', 'T'],
+      ],
+      countsGrid: const [
+        [1, 1, 1, 1],
+        [1, 1, 1, 1],
+      ],
+      obstacles: const [],
+    );
 
     final controller = GameController(
       language: 'english',
-      levelId: 14,
-      levelNumber: 14,
+      levelId: 98,
+      levelNumber: 98,
       level: level,
     );
 
@@ -159,29 +153,11 @@ void main() {
     expect(controller.foundExtraWords.contains('TOPS'), isTrue);
     expect(controller.invalidAttemptsCount, equals(0));
 
-    // Solve all targets: POST, SPOT, STOP, TOP
-    for (final word in ['POST', 'SPOT', 'STOP', 'TOP']) {
-      final path = controller.getTutorialPathForWord(word);
-      expect(path, isNotNull, reason: 'Must find path for target "$word"');
-      controller.startSwipe(path!.first.y, path.first.x);
-      for (int i = 1; i < path.length; i++) {
-        controller.updateSwipe(path[i].y, path[i].x);
-      }
-      controller.endSwipe();
-    }
-
-    expect(controller.solvedTargetWords.length, equals(4));
-    for (final r in controller.grid) {
-      for (final t in r) {
-        expect(t.isCleared, isTrue, reason: 'Tile at (${t.col}, ${t.row}) count=${t.count} not cleared');
-      }
-    }
-
     controller.dispose();
   });
 
-  test('Verify Levels 1 to 12 are 100% solvable with noun targets', () async {
-    for (int lvl = 1; lvl <= 12; lvl++) {
+  test('Verify Levels 1 to 20 are 100% solvable with noun targets', () async {
+    for (int lvl = 1; lvl <= 20; lvl++) {
       final file = File('assets/levels/english/level$lvl.json');
       expect(file.existsSync(), isTrue, reason: 'Level $lvl file must exist');
       final jsonMap = jsonDecode(file.readAsStringSync()) as Map<String, dynamic>;

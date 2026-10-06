@@ -3,6 +3,8 @@ import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../controllers/game_controller.dart';
 import '../../services/ads_manager.dart';
+import '../../services/analytics_service.dart';
+import '../../services/app_localization.dart';
 import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
 import '../../theme/app_typography.dart';
@@ -53,11 +55,11 @@ class BoosterUnlockDialog extends StatefulWidget {
 
 class _BoosterUnlockDialogState extends State<BoosterUnlockDialog> {
   String get _boosterName =>
-      widget.boosterType == BoosterType.hint ? 'Hint' : 'Rocket';
+      widget.boosterType == BoosterType.hint ? AppLocalization.tr('hint') : AppLocalization.tr('rocket');
 
   String get _description => widget.boosterType == BoosterType.hint
-      ? 'Reveals a letter to help you find words!'
-      : 'Blasts and clears a hidden word instantly!';
+      ? AppLocalization.tr('hint_desc')
+      : AppLocalization.tr('rocket_desc');
 
   int get _coinsCost => widget.boosterType == BoosterType.hint ? 180 : 450;
   int get _bundleCount => 3;
@@ -69,11 +71,11 @@ class _BoosterUnlockDialogState extends State<BoosterUnlockDialog> {
       if (!mounted) return;
       AppPopup.show(
         context,
-        title: 'Not Enough Coins!',
-        message: 'You need $_coinsCost 🪙 to unlock $_bundleCount $_boosterName.\nVisit the Shop to get more coins!',
+        title: AppLocalization.tr('not_enough_coins'),
+        message: AppLocalization.tr('not_enough_coins_msg', args: [_coinsCost, _bundleCount, _boosterName]),
         icon: '🪙',
-        buttonText: 'Go to Shop',
-        secondaryButtonText: 'Cancel',
+        buttonText: AppLocalization.tr('go_to_shop'),
+        secondaryButtonText: AppLocalization.tr('cancel'),
         onAction: () {
           Navigator.of(context).push(
             GamePageRoute(
@@ -85,12 +87,35 @@ class _BoosterUnlockDialogState extends State<BoosterUnlockDialog> {
       return;
     }
 
+    final boosterName = widget.boosterType == BoosterType.hint ? 'hint' : 'rocket';
+    final currentLevel = widget.controller?.levelNumber ?? 1;
+
     await GameStorage.spendCoins(_coinsCost);
+    AnalyticsService.logSpendResource(
+      level: currentLevel,
+      type: 'currency',
+      name: 'gold',
+      amount: _coinsCost.toDouble(),
+      reason: 'exchange',
+      balance: GameStorage.getCoins().toDouble(),
+    );
+
     if (widget.boosterType == BoosterType.hint) {
       await GameStorage.addHintCount(_bundleCount);
     } else {
       await GameStorage.addRocketCount(_bundleCount);
     }
+
+    AnalyticsService.logEarnResource(
+      level: currentLevel,
+      type: 'booster',
+      name: boosterName,
+      amount: _bundleCount.toDouble(),
+      reason: 'exchange',
+      balance: widget.boosterType == BoosterType.hint
+          ? GameStorage.getHintCount().toDouble()
+          : GameStorage.getRocketCount().toDouble(),
+    );
 
     AudioManager.playWordMatch();
     if (!mounted) return;
@@ -128,8 +153,24 @@ class _BoosterUnlockDialogState extends State<BoosterUnlockDialog> {
         if (success) {
           if (widget.boosterType == BoosterType.hint) {
             await GameStorage.addHintCount(1);
+            AnalyticsService.logEarnResource(
+              level: currentLevel,
+              type: 'booster',
+              name: 'hint',
+              amount: 1,
+              reason: 'ads',
+              balance: GameStorage.getHintCount().toDouble(),
+            );
           } else {
             await GameStorage.addRocketCount(1);
+            AnalyticsService.logEarnResource(
+              level: currentLevel,
+              type: 'booster',
+              name: 'rocket',
+              amount: 1,
+              reason: 'ads',
+              balance: GameStorage.getRocketCount().toDouble(),
+            );
           }
 
           AudioManager.playWordMatch();
@@ -461,7 +502,7 @@ class _BoosterUnlockDialogState extends State<BoosterUnlockDialog> {
                                       ),
                                       SizedBox(width: 6.w),
                                       CartoonText(
-                                        text: 'FREE',
+                                        text: AppLocalization.tr('free').toUpperCase(),
                                         fontSize: 18.sp,
                                         strokeWidth: 2.8,
                                         outlineColor: const Color(0xFF8B4513),
@@ -491,7 +532,7 @@ class _BoosterUnlockDialogState extends State<BoosterUnlockDialog> {
                   alignment: Alignment.center,
                   padding: EdgeInsets.only(bottom: 2.h),
                   child: Text(
-                    '$_boosterName Booster',
+                    AppLocalization.tr('booster_title', args: [_boosterName]),
                     style: AppTypography.font(
                       fontSize: 20.sp,
                       fontWeight: FontWeight.w900,

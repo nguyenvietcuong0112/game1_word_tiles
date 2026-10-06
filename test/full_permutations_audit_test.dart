@@ -7,17 +7,18 @@ import 'package:word_tiles_flutter/services/game_storage.dart';
 import 'package:word_tiles_flutter/services/level_loader.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-List<List<T>> generatePermutations<T>(List<T> list) {
-  if (list.length <= 1) return [list];
-  final result = <List<T>>[];
+Iterable<List<T>> generatePermutations<T>(List<T> list) sync* {
+  if (list.length <= 1) {
+    yield list;
+    return;
+  }
   for (int i = 0; i < list.length; i++) {
     final current = list[i];
     final remaining = List<T>.from(list)..removeAt(i);
     for (final perm in generatePermutations(remaining)) {
-      result.add([current, ...perm]);
+      yield [current, ...perm];
     }
   }
-  return result;
 }
 
 void main() {
@@ -39,9 +40,8 @@ void main() {
       final level = LevelLoader.harmonizeLevel(rawLevel);
 
       final words = level.targetWords.map((t) => t.word).toList();
-      final perms = generatePermutations(words);
-      // Limit to 6 permutations for performance if many words
-      final testPerms = perms.length > 6 ? perms.take(6).toList() : perms;
+      // Limit to 6 permutations for performance
+      final testPerms = generatePermutations(words).take(6).toList();
 
       for (final p in testPerms) {
         final controller = GameController(
@@ -85,8 +85,7 @@ void main() {
       final level = LevelLoader.harmonizeLevel(rawLevel);
 
       final words = level.targetWords.map((t) => t.word).toList();
-      final perms = generatePermutations(words);
-      final testPerms = perms.length > 6 ? perms.take(6).toList() : perms;
+      final testPerms = generatePermutations(words).take(6).toList();
 
       for (final p in testPerms) {
         final controller = GameController(

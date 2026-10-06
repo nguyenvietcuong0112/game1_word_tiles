@@ -57,16 +57,14 @@ class DefaultFirebaseOptions {
     projectId: 'fw27-mobgame',
     storageBucket: 'fw27-mobgame.firebasestorage.app',
   );
-
   static const FirebaseOptions ios = FirebaseOptions(
     apiKey: 'AIzaSyDn04DUjcD8fhMlal1nmu4Mssda5hUrUhw',
-    appId: '1:949964208375:ios:3278ec1301c49d1cda3bf2',
+    appId: '1:949964208375:ios:fe0ee35d3e9f094cda3bf2',
     messagingSenderId: '949964208375',
     projectId: 'fw27-mobgame',
     storageBucket: 'fw27-mobgame.firebasestorage.app',
-    iosBundleId: 'com.wordtiles.wordTilesFlutter',
+    iosBundleId: 'com.fw.word.connect.puzzle',
   );
-
   static const FirebaseOptions macos = FirebaseOptions(
     apiKey: 'AIzaSyDn04DUjcD8fhMlal1nmu4Mssda5hUrUhw',
     appId: '1:949964208375:ios:3278ec1301c49d1cda3bf2',

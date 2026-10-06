@@ -46,6 +46,11 @@ class GameController extends ChangeNotifier {
   List<Point<int>>? failSafeHintPath;
   int boostersUsedCount = 0;
   final DateTime levelStartTime = DateTime.now();
+  double adDurationSeconds = 0.0;
+
+  void addAdDuration(double seconds) {
+    adDurationSeconds += seconds;
+  }
 
   // Chapter & Level progression (Chapter 1: 5 levels, Chapter 2+: 10 levels)
   ChapterInfo get chapterInfo => ChapterInfo.forLevel(levelNumber);
@@ -263,6 +268,11 @@ class GameController extends ChangeNotifier {
       AudioManager.playWordMatch();
       _showFeedback(_getRandomMatchPhrase(), _getRandomMatchColor());
 
+      // If tutorial level 1 and this is the first solved word:
+      if (levelNumber == 1 && solvedTargetWords.length == 1) {
+        AnalyticsService.logTutorial(name: 'action_1', value: 4);
+      }
+
       // Decrement optimal tile badge counts with 0-leftover guarantee
       _decrementWordTiles(targetKey, currentPath);
 
@@ -417,28 +427,51 @@ class GameController extends ChangeNotifier {
     GameStorage.addCoins(coinsReward);
     AnalyticsService.logEarnResource(
       level: levelNumber,
-      itemType: 'currency',
-      itemName: 'coin',
+      type: 'currency',
+      name: 'gold',
       amount: coinsReward.toDouble(),
-      earnPlacement: 'level_win',
+      reason: 'win_level',
       balance: GameStorage.getCoins().toDouble(),
     );
+
+    // AppsFlyer af_level_achieved: fire only once per level when achieving a new level
+    final previousMaxUnlocked = GameStorage.getMaxUnlockedLevelIndex(language);
+    if (!GameStorage.isLevelAchievedLogged(levelNumber) && levelNumber > previousMaxUnlocked) {
+      AnalyticsService.logAfLevelAchieved(level: levelNumber);
+      unawaited(GameStorage.setLevelAchievedLogged(levelNumber));
+    }
 
     // Save progress
     GameStorage.saveLevelStars(language, levelId, starsEarned);
     GameStorage.setMaxUnlockedLevelIndex(language, levelNumber);
+    unawaited(GameStorage.incrementWinStreak());
+    AnalyticsService.updateUserProperties(level: levelNumber);
+
     if (levelNumber == 1) {
       GameStorage.setTutorialCompleted(true);
+      AnalyticsService.logTutorial(name: 'tut_finish', value: 5);
     }
 
     AudioManager.playVictory();
     _showFeedback('🎉 $victoryCelebrationText +$coinsReward 🪙', Colors.amberAccent);
 
-    // Log Firebase Analytics Event
-    AnalyticsService.logLevelComplete(
+    // Calculate accurate play duration (excluding ad time)
+    final durationSec = (DateTime.now().difference(levelStartTime).inMilliseconds / 1000.0) - adDurationSeconds;
+    final playDuration = durationSec > 0 ? durationSec : 0.0;
+    final playCount = GameStorage.getLevelPlayCount(language, levelNumber);
+    final loseCount = GameStorage.getLevelLoseCount(language, levelNumber);
+
+    // Log level_end event according to Tracking Specification
+    AnalyticsService.logLevelEnd(
       level: levelNumber,
-      language: language,
-      stars: starsEarned,
+      playCount: playCount > 0 ? playCount : 1,
+      loseCount: loseCount,
+      playDuration: playDuration,
+      totalItems: level.targetWords.length,
+      clearedItems: solvedTargetWords.length,
+      success: true,
+      reason: 'win',
+      adDuration: adDurationSeconds,
     );
   }
 
@@ -480,7 +513,16 @@ class GameController extends ChangeNotifier {
 
     // Try using inventory item first
     final hasItem = await GameStorage.useHintItem();
-    if (!hasItem) {
+    if (hasItem) {
+      AnalyticsService.logSpendResource(
+        level: levelNumber,
+        type: 'booster',
+        name: 'hint',
+        amount: 1,
+        reason: 'ingame',
+        balance: GameStorage.getHintCount().toDouble(),
+      );
+    } else {
       const hintCost = 80;
       final hasCoins = await GameStorage.spendCoins(hintCost);
       if (!hasCoins) {
@@ -490,11 +532,10 @@ class GameController extends ChangeNotifier {
       }
       AnalyticsService.logSpendResource(
         level: levelNumber,
-        itemType: 'currency',
-        itemName: 'coin',
+        type: 'currency',
+        name: 'gold',
         amount: hintCost.toDouble(),
-        spendPlacement: 'ingame_booster',
-        spendReason: 'hint',
+        reason: 'ingame',
         balance: GameStorage.getCoins().toDouble(),
       );
     }
@@ -512,7 +553,6 @@ class GameController extends ChangeNotifier {
           final costStr = hasItem ? ' (Free Item)' : ' (-80 🪙)';
           _showFeedback('💡 Hint: "${target.word}"$costStr', const Color(0xFF69F0AE));
           AudioManager.playWordMatch();
-          AnalyticsService.logBoosterUsed(boosterType: 'hint', level: levelNumber);
           notifyListeners();
           return true;
         }
@@ -531,7 +571,16 @@ class GameController extends ChangeNotifier {
 
     // Try using inventory item first
     final hasItem = await GameStorage.useRocketItem();
-    if (!hasItem) {
+    if (hasItem) {
+      AnalyticsService.logSpendResource(
+        level: levelNumber,
+        type: 'booster',
+        name: 'rocket',
+        amount: 1,
+        reason: 'ingame',
+        balance: GameStorage.getRocketCount().toDouble(),
+      );
+    } else {
       const rocketCost = 240;
       final hasCoins = await GameStorage.spendCoins(rocketCost);
       if (!hasCoins) {
@@ -541,11 +590,10 @@ class GameController extends ChangeNotifier {
       }
       AnalyticsService.logSpendResource(
         level: levelNumber,
-        itemType: 'currency',
-        itemName: 'coin',
+        type: 'currency',
+        name: 'gold',
         amount: rocketCost.toDouble(),
-        spendPlacement: 'ingame_booster',
-        spendReason: 'rocket',
+        reason: 'ingame',
         balance: GameStorage.getCoins().toDouble(),
       );
     }

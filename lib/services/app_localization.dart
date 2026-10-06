@@ -1,0 +1,604 @@
+import 'dart:ui';
+import '../services/game_storage.dart';
+import '../services/level_loader.dart';
+
+/// Centralized Localization service for Word Tiles casual game UI.
+/// Supports the 8 gameplay languages:
+/// - English (en)
+/// - German / Deutsch (de)
+/// - French / Français (fr)
+/// - Italian / Italiano (it)
+/// - Spanish / Español (es)
+/// - Portuguese / Português (pt)
+/// - Russian / Русский (ru)
+/// - Turkish / Türkçe (tr)
+class AppLocalization {
+  /// Detects device system language and maps it to a supported game language.
+  /// Falls back to 'english' if not detected or unsupported.
+  static String detectDeviceLanguage() {
+    try {
+      final code = PlatformDispatcher.instance.locale.languageCode.toLowerCase();
+      return codeToLanguage(code);
+    } catch (_) {
+      return 'english';
+    }
+  }
+
+  /// Maps 2-letter ISO language code to game language identifier.
+  static String codeToLanguage(String code) {
+    switch (code) {
+      case 'de':
+        return 'german';
+      case 'fr':
+        return 'french';
+      case 'it':
+        return 'italian';
+      case 'es':
+        return 'spanish';
+      case 'pt':
+        return 'portuguese';
+      case 'ru':
+        return 'russian';
+      case 'tr':
+        return 'turkish';
+      case 'en':
+      default:
+        return 'english';
+    }
+  }
+
+  /// Maps game language identifier to 2-letter ISO code.
+  static String languageToCode(String lang) {
+    switch (lang) {
+      case 'german':
+        return 'de';
+      case 'french':
+        return 'fr';
+      case 'italian':
+        return 'it';
+      case 'spanish':
+        return 'es';
+      case 'portuguese':
+        return 'pt';
+      case 'russian':
+        return 'ru';
+      case 'turkish':
+        return 'tr';
+      case 'english':
+      default:
+        return 'en';
+    }
+  }
+
+  /// Returns the current active language from GameStorage.
+  static String get currentLanguage {
+    try {
+      return GameStorage.getSelectedLanguage();
+    } catch (_) {
+      return 'english';
+    }
+  }
+
+  /// Translates a key for the current or specified language, with optional format args `{0}`, `{1}`, etc.
+  static String tr(String key, {List<dynamic>? args, String? language}) {
+    final lang = language ?? currentLanguage;
+    final langMap = _localizedValues[lang] ?? _localizedValues['english']!;
+    var text = langMap[key] ?? _localizedValues['english']![key] ?? key;
+
+    if (args != null && args.isNotEmpty) {
+      for (int i = 0; i < args.length; i++) {
+        text = text.replaceAll('{$i}', args[i].toString());
+      }
+    }
+    return text;
+  }
+
+  // ─────────────────────────────────────────────────────────────────────────
+  // Localized dictionaries for all 8 languages
+  // ─────────────────────────────────────────────────────────────────────────
+  static final Map<String, Map<String, String>> _localizedValues = {
+    // 1. English 🇺🇸
+    'english': {
+      'ok': 'OK',
+      'confirm': 'Confirm',
+      'cancel': 'Cancel',
+      'close': 'Close',
+      'exit': 'Exit',
+      'stay': 'Stay',
+      'play': 'Play',
+      'level': 'Level',
+      'level_n': 'Level {0}',
+      'loading': 'Loading...',
+      'free': 'Free',
+      'claim': 'Claim',
+      'settings': 'Setting',
+      'music': 'Music',
+      'sound': 'Sound',
+      'vibration': 'Vibration',
+      'language': 'Language',
+      'home': 'Home',
+      'restart': 'Restart',
+      'restore_purchases': 'Restore Purchases',
+      'version': 'Version {0}',
+      'exit_title': 'Exit Game',
+      'exit_confirm': 'Are you sure you want to exit?',
+      'exit_reassurance': 'Your progress is always saved!',
+      'progress_level': 'Progress: Level {0}',
+      'select_level': 'SELECT LEVEL',
+      'target_words': 'TARGET WORDS',
+      'extra_words': 'Extra Words',
+      'extra_words_desc': 'Find extra words not in the puzzle to fill up your bonus jar!',
+      'collect_to_open': 'Collect 10 words to open!',
+      'reward_claimed': 'Reward Claimed!',
+      'words_found': 'Words Found:',
+      'hint': 'Hint',
+      'rocket': 'Rocket',
+      'shuffle': 'Shuffle',
+      'unlock_booster': 'Unlock Booster',
+      'booster_title': '{0} Booster',
+      'hint_desc': 'Reveals a letter to help you find words!',
+      'rocket_desc': 'Blasts and clears a hidden word instantly!',
+      'not_enough_coins': 'Not Enough Coins!',
+      'not_enough_coins_msg': 'You need {0} 🪙 to unlock {1} {2}.\nVisit the Shop to get more coins!',
+      'go_to_shop': 'Go to Shop',
+      'level_completed': 'Level Completed!',
+      'chapter_conquered': 'Chapter Conquered!',
+      'next_level': 'Next Level',
+      'next_chapter': 'Next Chapter',
+      'double_coins': 'Double Coins',
+      'ad_not_available': 'Ad not available. Please check your connection and try again.',
+      'shop': 'Shop',
+      'special_offers': 'SPECIAL BUNDLES',
+      'remove_ads': 'REMOVE ADS',
+      'coin_packs': 'COIN SHOP',
+      'daily_gift': 'Daily & Gift',
+      'daily_gift_cooldown': 'Daily Gift Cooldown',
+      'next_free_reward_in': 'Your next free reward is available in {0}.',
+      'purchased': 'Purchased',
+      'got_it': 'Got it!',
+      'tut_swipe_connect': 'Swipe letters to make words!',
+      'unknown_error': 'Unknown error',
+    },
+
+    // 2. German / Deutsch 🇩🇪
+    'german': {
+      'ok': 'OK',
+      'confirm': 'Bestätigen',
+      'cancel': 'Abbrechen',
+      'close': 'Schließen',
+      'exit': 'Beenden',
+      'stay': 'Bleiben',
+      'play': 'Spielen',
+      'level': 'Level',
+      'level_n': 'Level {0}',
+      'loading': 'Lädt...',
+      'free': 'Kostenlos',
+      'claim': 'Einsammeln',
+      'settings': 'Einstellungen',
+      'music': 'Musik',
+      'sound': 'Sound',
+      'vibration': 'Vibration',
+      'language': 'Sprache',
+      'home': 'Start',
+      'restart': 'Neustart',
+      'restore_purchases': 'Käufe wiederherstellen',
+      'version': 'Version {0}',
+      'exit_title': 'Spiel beenden',
+      'exit_confirm': 'Möchtest du das Spiel wirklich beenden?',
+      'exit_reassurance': 'Dein Fortschritt wird gespeichert!',
+      'progress_level': 'Fortschritt: Level {0}',
+      'select_level': 'LEVEL WÄHLEN',
+      'target_words': 'ZIELWÖRTER',
+      'extra_words': 'Extrawörter',
+      'extra_words_desc': 'Finde zusätzliche Wörter, um dein Bonusglas zu füllen!',
+      'collect_to_open': 'Sammle 10 Wörter zum Öffnen!',
+      'reward_claimed': 'Belohnung erhalten!',
+      'words_found': 'Gefundene Wörter:',
+      'hint': 'Hinweis',
+      'rocket': 'Rakete',
+      'shuffle': 'Mischen',
+      'unlock_booster': 'Booster freischalten',
+      'booster_title': '{0}-Booster',
+      'hint_desc': 'Deckt einen Buchstaben auf, um Wörter zu finden!',
+      'rocket_desc': 'Sprengt und löst ein verstecktes Wort sofort!',
+      'not_enough_coins': 'Nicht genug Münzen!',
+      'not_enough_coins_msg': 'Du brauchst {0} 🪙, um {1} {2} freizuschalten.\nBesuche den Shop für mehr Münzen!',
+      'go_to_shop': 'Zum Shop',
+      'level_completed': 'Level geschafft!',
+      'chapter_conquered': 'Kapitel gemeistert!',
+      'next_level': 'Nächstes Level',
+      'next_chapter': 'Nächstes Kapitel',
+      'double_coins': 'Doppelte Münzen',
+      'ad_not_available': 'Werbung nicht verfügbar. Bitte überprüfe deine Verbindung und versuche es erneut.',
+      'shop': 'Shop',
+      'special_offers': 'SONDERANGEBOTE',
+      'remove_ads': 'KEINE WERBUNG',
+      'coin_packs': 'MÜNZPAKETE',
+      'daily_gift': 'Tägliches Geschenk',
+      'daily_gift_cooldown': 'Geschenk-Wartezeit',
+      'next_free_reward_in': 'Deine nächste Belohnung ist verfügbar in {0}.',
+      'purchased': 'Gekauft',
+      'got_it': 'Verstanden!',
+      'tut_swipe_connect': 'Wische über Buchstaben, um Wörter zu bilden!',
+      'unknown_error': 'Unbekannter Fehler',
+    },
+
+    // 3. French / Français 🇫🇷
+    'french': {
+      'ok': 'OK',
+      'confirm': 'Confirmer',
+      'cancel': 'Annuler',
+      'close': 'Fermer',
+      'exit': 'Quitter',
+      'stay': 'Rester',
+      'play': 'Jouer',
+      'level': 'Niveau',
+      'level_n': 'Niveau {0}',
+      'loading': 'Chargement...',
+      'free': 'Gratuit',
+      'claim': 'Récupérer',
+      'settings': 'Paramètres',
+      'music': 'Musique',
+      'sound': 'Son',
+      'vibration': 'Vibration',
+      'language': 'Langue',
+      'home': 'Accueil',
+      'restart': 'Recommencer',
+      'restore_purchases': 'Restaurer les achats',
+      'version': 'Version {0}',
+      'exit_title': 'Quitter le jeu',
+      'exit_confirm': 'Voulez-vous vraiment quitter ?',
+      'exit_reassurance': 'Votre progression est enregistrée !',
+      'progress_level': 'Progression : Niveau {0}',
+      'select_level': 'CHOISIR LE NIVEAU',
+      'target_words': 'MOTS CIBLES',
+      'extra_words': 'Mots bonus',
+      'extra_words_desc': 'Trouvez des mots bonus hors de la grille pour remplir votre bocal !',
+      'collect_to_open': 'Collectez 10 mots pour ouvrir !',
+      'reward_claimed': 'Récompense obtenue !',
+      'words_found': 'Mots trouvés :',
+      'hint': 'Indice',
+      'rocket': 'Fusée',
+      'shuffle': 'Mélanger',
+      'unlock_booster': 'Débloquer le booster',
+      'booster_title': 'Booster {0}',
+      'hint_desc': 'Révèle une lettre pour vous aider à trouver des mots !',
+      'rocket_desc': 'Fait exploser et résout un mot caché instantanément !',
+      'not_enough_coins': 'Pas assez de pièces !',
+      'not_enough_coins_msg': 'Vous avez besoin de {0} 🪙 pour débloquer {1} {2}.\nVisitez la boutique pour plus de pièces !',
+      'go_to_shop': 'Aller à la boutique',
+      'level_completed': 'Niveau terminé !',
+      'chapter_conquered': 'Chapitre conquis !',
+      'next_level': 'Niveau suivant',
+      'next_chapter': 'Chapitre suivant',
+      'double_coins': 'Doubler les pièces',
+      'ad_not_available': 'Publicité indisponible. Vérifiez votre connexion et réessayez.',
+      'shop': 'Boutique',
+      'special_offers': 'OFFRES SPÉCIALES',
+      'remove_ads': 'SANS PUBS',
+      'coin_packs': 'PACKS DE PIÈCES',
+      'daily_gift': 'Cadeau quotidien',
+      'daily_gift_cooldown': 'Cadeau en attente',
+      'next_free_reward_in': 'Votre prochaine récompense sera disponible dans {0}.',
+      'purchased': 'Acheté',
+      'got_it': 'Compris !',
+      'tut_swipe_connect': 'Glissez sur les lettres pour former des mots !',
+      'unknown_error': 'Erreur inconnue',
+    },
+
+    // 4. Italian / Italiano 🇮🇹
+    'italian': {
+      'ok': 'OK',
+      'confirm': 'Conferma',
+      'cancel': 'Annulla',
+      'close': 'Chiudi',
+      'exit': 'Esci',
+      'stay': 'Resta',
+      'play': 'Gioca',
+      'level': 'Livello',
+      'level_n': 'Livello {0}',
+      'loading': 'Caricamento...',
+      'free': 'Gratis',
+      'claim': 'Riscatta',
+      'settings': 'Impostazioni',
+      'music': 'Musica',
+      'sound': 'Suono',
+      'vibration': 'Vibrazione',
+      'language': 'Lingua',
+      'home': 'Home',
+      'restart': 'Riavvia',
+      'restore_purchases': 'Ripristina acquisti',
+      'version': 'Versione {0}',
+      'exit_title': 'Esci dal gioco',
+      'exit_confirm': 'Sei sicuro di voler uscire?',
+      'exit_reassurance': 'I tuoi progressi sono salvati!',
+      'progress_level': 'Progressi: Livello {0}',
+      'select_level': 'SCEGLI LIVELLO',
+      'target_words': 'PAROLE OBIETTIVO',
+      'extra_words': 'Parole extra',
+      'extra_words_desc': 'Trova parole extra fuori dallo schema per riempire il barattolo!',
+      'collect_to_open': 'Raccogli 10 parole per aprire!',
+      'reward_claimed': 'Ricompensa ottenuta!',
+      'words_found': 'Parole trovate:',
+      'hint': 'Indizio',
+      'rocket': 'Razzo',
+      'shuffle': 'Mescola',
+      'unlock_booster': 'Sblocca potenziamento',
+      'booster_title': 'Potenziamento {0}',
+      'hint_desc': 'Rivela una lettera per aiutarti a trovare le parole!',
+      'rocket_desc': 'Fa esplodere ed elimina una parola nascosta all\'istante!',
+      'not_enough_coins': 'Monete insufficienti!',
+      'not_enough_coins_msg': 'Ti servono {0} 🪙 per sbloccare {1} {2}.\nVisita il Negozio per averne di più!',
+      'go_to_shop': 'Vai al Negozio',
+      'level_completed': 'Livello completato!',
+      'chapter_conquered': 'Capitolo conquistato!',
+      'next_level': 'Prossimo livello',
+      'next_chapter': 'Prossimo capitolo',
+      'double_coins': 'Raddoppia monete',
+      'ad_not_available': 'Annuncio non disponibile. Controlla la connessione e riprova.',
+      'shop': 'Negozio',
+      'special_offers': 'OFFERTE SPECIALI',
+      'remove_ads': 'RIMUOVI PUBBLICITÀ',
+      'coin_packs': 'PACCHETTI MONETE',
+      'daily_gift': 'Regalo giornaliero',
+      'daily_gift_cooldown': 'Attesa regalo giornaliero',
+      'next_free_reward_in': 'La tua prossima ricompensa sarà disponibile tra {0}.',
+      'purchased': 'Acquistato',
+      'got_it': 'Ho capito!',
+      'tut_swipe_connect': 'Scorri sulle lettere per formare parole!',
+      'unknown_error': 'Errore sconosciuto',
+    },
+
+    // 5. Spanish / Español 🇪🇸
+    'spanish': {
+      'ok': 'OK',
+      'confirm': 'Confirmar',
+      'cancel': 'Cancelar',
+      'close': 'Cerrar',
+      'exit': 'Salir',
+      'stay': 'Quedarse',
+      'play': 'Jugar',
+      'level': 'Nivel',
+      'level_n': 'Nivel {0}',
+      'loading': 'Cargando...',
+      'free': 'Gratis',
+      'claim': 'Reclamar',
+      'settings': 'Ajustes',
+      'music': 'Música',
+      'sound': 'Sonido',
+      'vibration': 'Vibración',
+      'language': 'Idioma',
+      'home': 'Inicio',
+      'restart': 'Reiniciar',
+      'restore_purchases': 'Restaurar compras',
+      'version': 'Versión {0}',
+      'exit_title': 'Salir del juego',
+      'exit_confirm': '¿Seguro que quieres salir?',
+      'exit_reassurance': '¡Tu progreso está guardado!',
+      'progress_level': 'Progreso: Nivel {0}',
+      'select_level': 'SELECCIONAR NIVEL',
+      'target_words': 'PALABRAS OBJETIVO',
+      'extra_words': 'Palabras extra',
+      'extra_words_desc': '¡Encuentra palabras adicionales para llenar tu frasco de bonificación!',
+      'collect_to_open': '¡Reúne 10 palabras para abrir!',
+      'reward_claimed': '¡Recompensa reclamada!',
+      'words_found': 'Palabras encontradas:',
+      'hint': 'Pista',
+      'rocket': 'Cohete',
+      'shuffle': 'Mezclar',
+      'unlock_booster': 'Desbloquear potenciador',
+      'booster_title': 'Potenciador {0}',
+      'hint_desc': '¡Revela una letra para ayudarte a encontrar palabras!',
+      'rocket_desc': '¡Explota y despeja una palabra oculta al instante!',
+      'not_enough_coins': '¡Monedas insuficientes!',
+      'not_enough_coins_msg': '¡Necesitas {0} 🪙 para desbloquear {1} {2}!\n¡Visita la tienda para conseguir más monedas!',
+      'go_to_shop': 'Ir a la tienda',
+      'level_completed': '¡Nivel completado!',
+      'chapter_conquered': '¡Capítulo superado!',
+      'next_level': 'Siguiente nivel',
+      'next_chapter': 'Siguiente capítulo',
+      'double_coins': 'Monedas dobles',
+      'ad_not_available': 'Anuncio no disponible. Verifica tu conexión e inténtalo de nuevo.',
+      'shop': 'Tienda',
+      'special_offers': 'OFERTAS ESPECIALES',
+      'remove_ads': 'QUITAR ANUNCIOS',
+      'coin_packs': 'PAQUETES DE MONEDAS',
+      'daily_gift': 'Regalo diario',
+      'daily_gift_cooldown': 'Regalo diario en espera',
+      'next_free_reward_in': 'Tu próxima recompensa gratuita estará disponible en {0}.',
+      'purchased': 'Comprado',
+      'got_it': '¡Entendido!',
+      'tut_swipe_connect': '¡Desliza las letras para formar palabras!',
+      'unknown_error': 'Error desconocido',
+    },
+
+    // 6. Portuguese / Português 🇵🇹
+    'portuguese': {
+      'ok': 'OK',
+      'confirm': 'Confirmar',
+      'cancel': 'Cancelar',
+      'close': 'Fechar',
+      'exit': 'Sair',
+      'stay': 'Ficar',
+      'play': 'Jogar',
+      'level': 'Nível',
+      'level_n': 'Nível {0}',
+      'loading': 'Carregando...',
+      'free': 'Grátis',
+      'claim': 'Resgatar',
+      'settings': 'Configurações',
+      'music': 'Música',
+      'sound': 'Som',
+      'vibration': 'Vibração',
+      'language': 'Idioma',
+      'home': 'Início',
+      'restart': 'Reiniciar',
+      'restore_purchases': 'Restaurar compras',
+      'version': 'Versão {0}',
+      'exit_title': 'Sair do jogo',
+      'exit_confirm': 'Tem certeza de que deseja sair?',
+      'exit_reassurance': 'Seu progresso está salvo!',
+      'progress_level': 'Progresso: Nível {0}',
+      'select_level': 'SELECIONAR NÍVEL',
+      'target_words': 'PALAVRAS-ALVO',
+      'extra_words': 'Palavras extras',
+      'extra_words_desc': 'Encontre palavras extras fora do painel para encher seu pote de bônus!',
+      'collect_to_open': 'Colete 10 palavras para abrir!',
+      'reward_claimed': 'Recompensa resgatada!',
+      'words_found': 'Palavras encontradas:',
+      'hint': 'Dica',
+      'rocket': 'Foguete',
+      'shuffle': 'Embaralhar',
+      'unlock_booster': 'Desbloquear reforço',
+      'booster_title': 'Reforço {0}',
+      'hint_desc': 'Revela uma letra para ajudar a encontrar palavras!',
+      'rocket_desc': 'Explode e limpa uma palavra oculta instantaneamente!',
+      'not_enough_coins': 'Moedas insuficientes!',
+      'not_enough_coins_msg': 'Você precisa de {0} 🪙 para desbloquear {1} {2}.\nVisite a Loja para obter mais moedas!',
+      'go_to_shop': 'Ir para a Loja',
+      'level_completed': 'Nível concluído!',
+      'chapter_conquered': 'Capítulo conquistado!',
+      'next_level': 'Próximo nível',
+      'next_chapter': 'Próximo capítulo',
+      'double_coins': 'Moedas em dobro',
+      'ad_not_available': 'Anúncio indisponível. Verifique sua conexão e tente novamente.',
+      'shop': 'Loja',
+      'special_offers': 'OFERTAS ESPECIAIS',
+      'remove_ads': 'SEM ANÚNCIOS',
+      'coin_packs': 'PACOTES DE MOEDAS',
+      'daily_gift': 'Presente diário',
+      'daily_gift_cooldown': 'Tempo de espera do presente',
+      'next_free_reward_in': 'Sua próxima recompensa gratuita estará disponível em {0}.',
+      'purchased': 'Comprado',
+      'got_it': 'Entendi!',
+      'tut_swipe_connect': 'Deslize pelas letras para formar palavras!',
+      'unknown_error': 'Erro desconhecido',
+    },
+
+    // 7. Russian / Русский 🇷🇺
+    'russian': {
+      'ok': 'ОК',
+      'confirm': 'Подтвердить',
+      'cancel': 'Отмена',
+      'close': 'Закрыть',
+      'exit': 'Выход',
+      'stay': 'Остаться',
+      'play': 'Играть',
+      'level': 'Уровень',
+      'level_n': 'Уровень {0}',
+      'loading': 'Загрузка...',
+      'free': 'Бесплатно',
+      'claim': 'Забрать',
+      'settings': 'Настройки',
+      'music': 'Музыка',
+      'sound': 'Звук',
+      'vibration': 'Вибрация',
+      'language': 'Язык',
+      'home': 'Главная',
+      'restart': 'Заново',
+      'restore_purchases': 'Восстановить покупки',
+      'version': 'Версия {0}',
+      'exit_title': 'Выход из игры',
+      'exit_confirm': 'Вы уверены, что хотите выйти?',
+      'exit_reassurance': 'Ваш прогресс всегда сохранён!',
+      'progress_level': 'Прогресс: Уровень {0}',
+      'select_level': 'ВЫБОР УРОВНЯ',
+      'target_words': 'ЦЕЛЕВЫЕ СЛОВА',
+      'extra_words': 'Доп. слова',
+      'extra_words_desc': 'Находите дополнительные слова вне сетки, чтобы наполнить банку бонусов!',
+      'collect_to_open': 'Соберите 10 слов, чтобы открыть!',
+      'reward_claimed': 'Награда получена!',
+      'words_found': 'Найденные слова:',
+      'hint': 'Подсказка',
+      'rocket': 'Ракета',
+      'shuffle': 'Перемешать',
+      'unlock_booster': 'Разблокировать бустер',
+      'booster_title': 'Бустер {0}',
+      'hint_desc': 'Открывает букву, чтобы помочь найти слово!',
+      'rocket_desc': 'Взрывает и убирает скрытое слово мгновенно!',
+      'not_enough_coins': 'Недостаточно монет!',
+      'not_enough_coins_msg': 'Вам нужно {0} 🪙, чтобы разблокировать {1} {2}.\nЗагляните в магазин за монетами!',
+      'go_to_shop': 'В магазин',
+      'level_completed': 'Уровень пройден!',
+      'chapter_conquered': 'Глава пройдена!',
+      'next_level': 'След. уровень',
+      'next_chapter': 'След. глава',
+      'double_coins': 'Удвоить монеты',
+      'ad_not_available': 'Реклама недоступна. Проверьте соединение и попробуйте снова.',
+      'shop': 'Магазин',
+      'special_offers': 'СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ',
+      'remove_ads': 'БЕЗ РЕКЛАМЫ',
+      'coin_packs': 'НАБОРЫ МОНЕТ',
+      'daily_gift': 'Ежедневный подарок',
+      'daily_gift_cooldown': 'Ожидание подарка',
+      'next_free_reward_in': 'Следующая бесплатная награда будет доступна через {0}.',
+      'purchased': 'Куплено',
+      'got_it': 'Понятно!',
+      'tut_swipe_connect': 'Соединяйте буквы, чтобы составить слова!',
+      'unknown_error': 'Неизвестная ошибка',
+    },
+
+    // 8. Turkish / Türkçe 🇹🇷
+    'turkish': {
+      'ok': 'Tamam',
+      'confirm': 'Onayla',
+      'cancel': 'İptal',
+      'close': 'Kapat',
+      'exit': 'Çıkış',
+      'stay': 'Kal',
+      'play': 'Oyna',
+      'level': 'Seviye',
+      'level_n': 'Seviye {0}',
+      'loading': 'Yükleniyor...',
+      'free': 'Ücretsiz',
+      'claim': 'Al',
+      'settings': 'Ayarlar',
+      'music': 'Müzik',
+      'sound': 'Ses',
+      'vibration': 'Titreşim',
+      'language': 'Dil',
+      'home': 'Ana Sayfa',
+      'restart': 'Yeniden Başlat',
+      'restore_purchases': 'Satın Alımları Geri Yükle',
+      'version': 'Sürüm {0}',
+      'exit_title': 'Oyundan Çık',
+      'exit_confirm': 'Çıkmak istediğinizden emin misiniz?',
+      'exit_reassurance': 'İlerlemeniz kaydedildi!',
+      'progress_level': 'İlerleme: Seviye {0}',
+      'select_level': 'SEVİYE SEÇ',
+      'target_words': 'HEDEF KELİMELER',
+      'extra_words': 'Ekstra Kelimeler',
+      'extra_words_desc': 'Bonus kavanozunu doldurmak için bulmaca dışındaki ekstra kelimeleri bulun!',
+      'collect_to_open': 'Açmak için 10 kelime toplayın!',
+      'reward_claimed': 'Ödül Alındı!',
+      'words_found': 'Bulunan Kelimeler:',
+      'hint': 'İpucu',
+      'rocket': 'Roket',
+      'shuffle': 'Karıştır',
+      'unlock_booster': 'Güçlendiriciyi Aç',
+      'booster_title': '{0} Güçlendirici',
+      'hint_desc': 'Kelimeleri bulmanıza yardımcı olacak bir harf açar!',
+      'rocket_desc': 'Gizli bir kelimeyi anında patlatıp temizler!',
+      'not_enough_coins': 'Yetersiz Jeton!',
+      'not_enough_coins_msg': '{1} {2} kilidini açmak için {0} 🪙 gerekiyor.\nDaha fazla jeton için Mağazayı ziyaret edin!',
+      'go_to_shop': 'Mağazaya Git',
+      'level_completed': 'Seviye Tamamlandı!',
+      'chapter_conquered': 'Bölüm Tamamlandı!',
+      'next_level': 'Sonraki Seviye',
+      'next_chapter': 'Sonraki Bölüm',
+      'double_coins': 'İki Kat Jeton',
+      'ad_not_available': 'Reklam mevcut değil. Lütfen bağlantınızı kontrol edip tekrar deneyin.',
+      'shop': 'Mağaza',
+      'special_offers': 'ÖZEL TEKLİFLER',
+      'remove_ads': 'REKLAMLARI KALDIR',
+      'coin_packs': 'JETON PAKETLERİ',
+      'daily_gift': 'Günlük Hediye',
+      'daily_gift_cooldown': 'Günlük Hediye Bekleme Süresi',
+      'next_free_reward_in': 'Bir sonraki ücretsiz ödülünüz {0} içinde hazır.',
+      'purchased': 'Satın Alındı',
+      'got_it': 'Anladım!',
+      'tut_swipe_connect': 'Kelimeler oluşturmak için harfleri kaydırın!',
+      'unknown_error': 'Bilinmeyen hata',
+    },
+  };
+}

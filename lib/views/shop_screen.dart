@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../models/iap_product_model.dart';
 import '../services/audio_manager.dart';
+import '../services/app_localization.dart';
 import '../services/game_storage.dart';
 import '../services/iap_manager.dart';
 import '../theme/app_typography.dart';
@@ -108,7 +109,7 @@ class _ShopScreenState extends State<ShopScreen> {
                       // SECTION 1: SPECIAL OFFERS & BUNDLES
                       // ══════════════════════════════════════════════════════
                       _buildSectionHeader(
-                        title: 'SPECIAL BUNDLES',
+                        title: AppLocalization.tr('special_offers'),
                         icon: '🎁',
                         subtitle: 'Limited packages with bonus coins & boosters',
                       ),
@@ -176,7 +177,7 @@ class _ShopScreenState extends State<ShopScreen> {
                       // SECTION 2: COIN SHOP (All 6 Tiers Unified)
                       // ══════════════════════════════════════════════════════
                       _buildSectionHeader(
-                        title: 'COIN SHOP',
+                        title: AppLocalization.tr('coin_packs'),
                         icon: '🪙',
                         subtitle: 'Use coins to buy hints, rockets & continues',
                       ),
@@ -213,7 +214,7 @@ class _ShopScreenState extends State<ShopScreen> {
                             size: 19.r,
                           ),
                           label: Text(
-                            'Restore Purchases',
+                            AppLocalization.tr('restore_purchases'),
                             style: AppTypography.font(
                               color: Colors.white.withValues(alpha: 0.9),
                               fontSize: 15.sp,
@@ -285,11 +286,11 @@ class _ShopScreenState extends State<ShopScreen> {
         ),
 
         // Centered "Shop" Title
-        const CartoonText(
-          text: 'Shop',
+        CartoonText(
+          text: AppLocalization.tr('shop'),
           fontSize: 32,
           textColor: Colors.white,
-          outlineColor: Color(0xFF061A47),
+          outlineColor: const Color(0xFF061A47),
           strokeWidth: 4.5,
           shadowOffset: 2.2,
         ),

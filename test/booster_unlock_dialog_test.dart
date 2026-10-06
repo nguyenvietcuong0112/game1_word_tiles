@@ -2,13 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:word_tiles_flutter/services/ads_manager.dart';
 import 'package:word_tiles_flutter/services/game_storage.dart';
+import 'package:word_tiles_flutter/theme/app_typography.dart';
+import 'package:word_tiles_flutter/views/widgets/app_popup.dart';
 import 'package:word_tiles_flutter/views/widgets/booster_unlock_dialog.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
   setUp(() async {
+    AdsManager.mockRewardResult = true;
     SharedPreferences.setMockInitialValues({
       'player_coins': 500,
       'inventory_hint_count': 0,
@@ -127,4 +131,43 @@ void main() {
     expect(find.text('x1'), findsWidgets);
     expect(find.text('FREE'), findsWidgets);
   });
+
+  testWidgets('Buying booster with insufficient coins shows AppPopup with Go to Shop', (tester) async {
+    // Set coins to 50 (insufficient for 180 coins hint)
+    final coins = GameStorage.getCoins();
+    await GameStorage.addCoins(50 - coins);
+    expect(GameStorage.getCoins(), equals(50));
+
+    await tester.pumpWidget(
+      buildTestWidget(
+        const BoosterUnlockDialog(
+          boosterType: BoosterType.hint,
+        ),
+      ),
+    );
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 300));
+
+    // Tap 180 coins button
+    final priceButton = find.text('180').last;
+    await tester.tap(priceButton);
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 300));
+
+    // AppPopup should appear with 'Not Enough Coins!' and 'Go to Shop'
+    expect(find.byType(AppPopup), findsOneWidget);
+    expect(
+      find.byWidgetPredicate((w) => w is CartoonText && w.text == 'Not Enough Coins!'),
+      findsOneWidget,
+    );
+    expect(
+      find.byWidgetPredicate((w) => w is CartoonText && w.text == 'Go to Shop'),
+      findsOneWidget,
+    );
+    expect(
+      find.byWidgetPredicate((w) => w is CartoonText && w.text == 'Cancel'),
+      findsOneWidget,
+    );
+  });
 }
+

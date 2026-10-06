@@ -1,7 +1,23 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url = uri("https://artifacts.applovin.com/android") }
+    }
+    dependencies {
+        classpath("com.applovin.quality:AppLovinQualityServiceGradlePlugin:+")
+    }
+}
+
 allprojects {
     repositories {
         google()
         mavenCentral()
+        maven { url = uri("https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea") }
+        maven { url = uri("https://artifact.bytedance.com/repository/pangle") }
+        maven { url = uri("https://android-sdk.is.com/") }
+        maven { url = uri("https://artifactory.bidmachine.io/bidmachine") }
+        maven { url = uri("https://artifacts.applovin.com/android") }
     }
 }
 

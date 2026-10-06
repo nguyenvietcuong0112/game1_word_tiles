@@ -1,61 +1,64 @@
-import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/foundation.dart';
 import 'package:funtap_global_sdk/funtap_global_sdk.dart';
 import '../firebase_options.dart';
+import 'game_storage.dart';
 
+/// Centralized Analytics Service for Word Tiles.
+/// Strict adherence to Client Event Tracking Specification (Google Sheet):
+/// All events are routed exclusively through FGSDK to prevent DUPLICATE events on Firebase Analytics.
 class AnalyticsService {
-  static FirebaseAnalytics? _analytics;
   static bool _isInitialized = false;
+  static bool get isInitialized => _isInitialized;
 
-  static FirebaseAnalytics? get analytics => _analytics;
-
-  /// Initialize Firebase Core, Analytics, and Crashlytics
+  /// Initialize Firebase Core & Crashlytics for error reporting.
+  /// (Analytics events are dispatched via FGSDK native pipeline to prevent duplicates).
   static Future<void> initialize() async {
     try {
       await Firebase.initializeApp(
         options: DefaultFirebaseOptions.currentPlatform,
       );
 
-      _analytics = FirebaseAnalytics.instance;
-
       // Pass all uncaught "fatal" errors from the framework to Crashlytics
       FlutterError.onError = (errorDetails) {
         FirebaseCrashlytics.instance.recordFlutterFatalError(errorDetails);
       };
 
-      // Pass all uncaught asynchronous errors that aren't handled by the Flutter framework to Crashlytics
+      // Pass all uncaught asynchronous errors to Crashlytics
       PlatformDispatcher.instance.onError = (error, stack) {
         FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
         return true;
       };
 
       _isInitialized = true;
-      debugPrint('[Firebase] Initialized successfully.');
+      debugPrint('[AnalyticsService] Initialized Firebase & Crashlytics successfully.');
     } catch (e, stack) {
-      debugPrint('[Firebase] Init failed: $e\n$stack');
+      debugPrint('[AnalyticsService] Init failed: $e\n$stack');
     }
   }
 
-  /// Log Level Started Event
-  static Future<void> logLevelStart({
+  // ── 1. level_start ────────────────────────────────────────────────────────
+  /// Trigger khi user bắt đầu chơi 1 level.
+  /// Params: level (Number), play_count (Number), lose_count (Number), play_mode (String = "default")
+  static void logLevelStart({
     required int level,
-    required String language,
-  }) async {
-    // 1. FGSDK Level Start Tracking
+    int playCount = 1,
+    int loseCount = 0,
+    String playMode = 'default',
+  }) {
     try {
-      FGSDK.logLevelStart(level, 1, 0, 'classic');
-    } catch (_) {}
-
-    // 2. Firebase Analytics
-    if (!_isInitialized) return;
-    try {
-      await _analytics?.logEvent(
-        name: 'level_start',
-        parameters: {
-          'level_number': level,
-          'language': language,
+      debugPrint('[Analytics] logLevelStart: level=$level, playCount=$playCount, loseCount=$loseCount, mode=$playMode');
+      FGSDK.logLevelStart(
+        level,
+        playCount,
+        loseCount,
+        playMode,
+        extra: {
+          'level': level,
+          'play_count': playCount,
+          'lose_count': loseCount,
+          'play_mode': playMode,
         },
       );
     } catch (e) {
@@ -63,208 +66,393 @@ class AnalyticsService {
     }
   }
 
-  /// Log Level Completed Event
-  static Future<void> logLevelComplete({
+  // ── 2. level_end ──────────────────────────────────────────────────────────
+  /// Trigger khi user kết thúc màn chơi.
+  /// Params: level, play_mode, play_count, lose_count, play_duration, total_items, cleared_items, success, reason, ad_duration
+  static void logLevelEnd({
     required int level,
-    required String language,
-    required int stars,
+    int playCount = 1,
+    int loseCount = 0,
+    required double playDuration,
+    required int totalItems,
+    required int clearedItems,
+    required bool success,
+    required String reason,
+    double adDuration = 0.0,
+    String playMode = 'default',
+  }) {
+    try {
+      debugPrint('[Analytics] logLevelEnd: level=$level, success=$success, duration=${playDuration.toStringAsFixed(1)}s, items=$clearedItems/$totalItems, reason=$reason, adDuration=${adDuration.toStringAsFixed(1)}s');
+      FGSDK.logLevelEnd(
+        level,
+        playCount,
+        loseCount,
+        playMode,
+        playDuration,
+        success,
+        reason,
+        extra: {
+          'level': level,
+          'play_mode': playMode,
+          'play_count': playCount,
+          'lose_count': loseCount,
+          'play_duration': playDuration.toInt(),
+          'total_items': totalItems,
+          'cleared_items': clearedItems,
+          'success': success,
+          'reason': reason,
+          'ad_duration': adDuration.toInt(),
+        },
+      );
+    } catch (e) {
+      debugPrint('[Analytics] logLevelEnd error: $e');
+    }
+  }
+
+  // Backward compatibility alias for existing callers
+  static void logLevelComplete({
+    required int level,
+    int playCount = 1,
+    int loseCount = 0,
+    double playDuration = 30.0,
+    int totalItems = 1,
+    int clearedItems = 1,
+    double adDuration = 0.0,
+    String reason = 'win',
+    String? language,
+    int? stars,
     int? timeSpentSeconds,
-  }) async {
-    // 1. FGSDK Level End (Win) Tracking
-    try {
-      FGSDK.logLevelEnd(
-        level,
-        1,
-        0,
-        'classic',
-        (timeSpentSeconds ?? 30).toDouble(),
-        true,
-        'win',
-      );
-    } catch (_) {}
-
-    // 2. Firebase Analytics
-    if (!_isInitialized) return;
-    try {
-      await _analytics?.logEvent(
-        name: 'level_complete',
-        parameters: {
-          'level_number': level,
-          'language': language,
-          'stars': stars,
-          'time_spent_sec': ?timeSpentSeconds,
-        },
-      );
-    } catch (e) {
-      debugPrint('[Analytics] logLevelComplete error: $e');
-    }
+  }) {
+    logLevelEnd(
+      level: level,
+      playCount: playCount,
+      loseCount: loseCount,
+      playDuration: timeSpentSeconds != null ? timeSpentSeconds.toDouble() : playDuration,
+      totalItems: totalItems,
+      clearedItems: clearedItems,
+      success: true,
+      reason: reason,
+      adDuration: adDuration,
+    );
   }
 
-  /// Log Level Failed / Retried Event
-  static Future<void> logLevelFail({
+  // ── 3. level_exit ─────────────────────────────────────────────────────────
+  /// Trigger khi user đang trong level và thoát game vì lý do bất kì (vuốt về home, kill app, back ra menu...)
+  /// Params: level, play_mode, play_count, lose_count, play_duration, total_items, cleared_items, reason
+  static void logLevelExit({
     required int level,
-    required String language,
-  }) async {
-    // 1. FGSDK Level End (Lose) Tracking
+    int playCount = 1,
+    int loseCount = 0,
+    required double playDuration,
+    required int totalItems,
+    required int clearedItems,
+    required String reason,
+    String playMode = 'default',
+  }) {
     try {
-      FGSDK.logLevelEnd(
-        level,
-        1,
-        1,
-        'classic',
-        0.0,
-        false,
-        'lose',
-      );
-    } catch (_) {}
-
-    // 2. Firebase Analytics
-    if (!_isInitialized) return;
-    try {
-      await _analytics?.logEvent(
-        name: 'level_fail',
-        parameters: {
-          'level_number': level,
-          'language': language,
-        },
-      );
+      debugPrint('[Analytics] logLevelExit: level=$level, reason=$reason, items=$clearedItems/$totalItems, duration=${playDuration.toStringAsFixed(1)}s');
+      FGSDK.logEvent('level_exit', params: {
+        'level': level,
+        'play_mode': playMode,
+        'play_count': playCount,
+        'lose_count': loseCount,
+        'play_duration': playDuration.toInt(),
+        'total_items': totalItems,
+        'cleared_items': clearedItems,
+        'reason': reason,
+      });
     } catch (e) {
-      debugPrint('[Analytics] logLevelFail error: $e');
+      debugPrint('[Analytics] logLevelExit error: $e');
     }
   }
 
-  /// Log Resource Earned (Coins, Boosters)
+  // ── 4. level_reopen ───────────────────────────────────────────────────────
+  /// Trigger khi user quay trở lại game (level được load lại).
+  /// Params: level, play_mode, play_count, lose_count, total_items, cleared_items
+  static void logLevelReopen({
+    required int level,
+    int playCount = 1,
+    int loseCount = 0,
+    required int totalItems,
+    required int clearedItems,
+    String playMode = 'default',
+  }) {
+    try {
+      debugPrint('[Analytics] logLevelReopen: level=$level, items=$clearedItems/$totalItems');
+      FGSDK.logEvent('level_reopen', params: {
+        'level': level,
+        'play_mode': playMode,
+        'play_count': playCount,
+        'lose_count': loseCount,
+        'total_items': totalItems,
+        'cleared_items': clearedItems,
+      });
+    } catch (e) {
+      debugPrint('[Analytics] logLevelReopen error: $e');
+    }
+  }
+
+  // ── 5. iap_show ───────────────────────────────────────────────────────────
+  /// Trigger khi màn/banner/popup về IAP được show ra.
+  /// Params: play_mode, level, location (home_icon, home_shop, home_popup, ingame_booster, ingame_popup), type (shop/pack), product_id
+  static void logIAPShow({
+    required int level,
+    required String location,
+    required String type,
+    required String productId,
+    String playMode = 'default',
+  }) {
+    try {
+      debugPrint('[Analytics] logIAPShow: location=$location, type=$type, productId=$productId');
+      FGSDK.logIAPShow(playMode, level, location, type, productId);
+    } catch (e) {
+      debugPrint('[Analytics] logIAPShow error: $e');
+    }
+  }
+
+  // ── 6. iap_click ──────────────────────────────────────────────────────────
+  /// Trigger khi người chơi click mua 1 gói IAP.
+  /// Params: play_mode, level, location, type, product_id
+  static void logIAPClick({
+    required int level,
+    required String location,
+    required String type,
+    required String productId,
+    String playMode = 'default',
+  }) {
+    try {
+      debugPrint('[Analytics] logIAPClick: location=$location, type=$type, productId=$productId');
+      FGSDK.logIAPClick(playMode, level, location, type, productId);
+    } catch (e) {
+      debugPrint('[Analytics] logIAPClick error: $e');
+    }
+  }
+
+  // ── 7. resource_source ────────────────────────────────────────────────────
+  /// Trigger khi user nhận được tài nguyên bất kỳ.
+  /// Params: play_mode, level, type (currency / booster), name (gold, hint, rocket), amount, reason (win_level, daily_reward, purchase, exchange, ads), balance
   static void logEarnResource({
     required int level,
-    required String itemType,
-    required String itemName,
+    String? type,
+    String? name,
     required double amount,
-    required String earnPlacement,
+    required String reason,
     required double balance,
+    String playMode = 'default',
+    // Compatibility aliases with old parameters
+    String? itemType,
+    String? itemName,
+    String? earnPlacement,
   }) {
     try {
+      final actualType = type ?? itemType ?? 'currency';
+      final actualName = name ?? itemName ?? 'gold';
+      final actualReason = reason.isNotEmpty ? reason : (earnPlacement ?? 'win_level');
+
+      debugPrint('[Analytics] resource_source: +$amount $actualName (type=$actualType, reason=$actualReason, balance=$balance)');
       FGSDK.logEarnResource(
-        'classic',
+        playMode,
         level,
-        itemType,
-        itemName,
+        actualType,
+        actualName,
         amount,
-        earnPlacement,
-        itemName,
+        actualReason,
+        actualName,
         '',
         balance,
+        extra: {'reason': actualReason, 'type': actualType},
       );
-    } catch (_) {}
+      if (actualType == 'currency' || actualName == 'gold') {
+        updateUserProperties(level: level);
+      }
+    } catch (e) {
+      debugPrint('[Analytics] logEarnResource error: $e');
+    }
   }
 
-  /// Log Resource Spent (Coins, Boosters)
+  // ── 8. resource_sink ──────────────────────────────────────────────────────
+  /// Trigger khi user sử dụng tài nguyên bất kỳ.
+  /// Params: play_mode, level, type (currency / booster), name (gold, hint, rocket), amount, reason (ingame, exchange, revive), balance
   static void logSpendResource({
     required int level,
-    required String itemType,
-    required String itemName,
+    String? type,
+    String? name,
     required double amount,
-    required String spendPlacement,
-    required String spendReason,
+    required String reason,
     required double balance,
+    String playMode = 'default',
+    // Compatibility aliases with old parameters
+    String? itemType,
+    String? itemName,
+    String? spendPlacement,
+    String? spendReason,
   }) {
     try {
+      final actualType = type ?? itemType ?? 'currency';
+      final actualName = name ?? itemName ?? 'gold';
+      final actualReason = reason.isNotEmpty ? reason : (spendReason ?? spendPlacement ?? 'ingame');
+
+      debugPrint('[Analytics] resource_sink: -$amount $actualName (type=$actualType, reason=$actualReason, balance=$balance)');
       FGSDK.logSpendResource(
-        'classic',
+        playMode,
         level,
-        itemType,
-        itemName,
+        actualType,
+        actualName,
         amount,
-        spendPlacement,
-        spendReason,
-        itemName,
+        actualReason,
+        actualReason,
+        actualName,
         '',
         balance,
+        extra: {'reason': actualReason, 'type': actualType},
       );
-    } catch (_) {}
+      if (actualType == 'currency' || actualName == 'gold') {
+        updateUserProperties(level: level);
+      }
+    } catch (e) {
+      debugPrint('[Analytics] logSpendResource error: $e');
+    }
   }
 
-  /// Log Booster Used (Hint, Shuffle, Undo, etc.)
-  static Future<void> logBoosterUsed({
+  // ── 9. tut_action ─────────────────────────────────────────────────────────
+  /// Trigger khi user thực hiện action theo tutorial.
+  /// name: ftue_loading_start (1), ftue_loading_end (2), tut_start (3), action_1 (4), tut_finish (5)
+  /// value: thứ tự action (1, 2, 3...)
+  static void logTutorial({
+    required String name,
+    required int value,
+  }) {
+    try {
+      debugPrint('[Analytics] tut_action: name=$name, value=$value');
+      FGSDK.logTutorial(name, value.toString(), extra: {'name': name, 'value': value});
+      if (name == 'tut_finish') {
+        FGSDK.logTutorial('success', '1');
+      }
+    } catch (e) {
+      debugPrint('[Analytics] logTutorial error: $e');
+    }
+  }
+
+  // ── 10. loading_start ─────────────────────────────────────────────────────
+  /// Trigger khi bắt đầu tiến trình load data/API/content game.
+  /// Param: placement (vd: "splash")
+  static void logLoadingStart({String placement = 'splash'}) {
+    try {
+      debugPrint('[Analytics] loading_start: placement=$placement');
+      FGSDK.logLoadingStart(placement);
+    } catch (e) {
+      debugPrint('[Analytics] logLoadingStart error: $e');
+    }
+  }
+
+  // ── 11. loading_finish ────────────────────────────────────────────────────
+  /// Trigger khi kết thúc tiến trình load data/API/content game.
+  /// Params: placement, success, value (thời gian load tính bằng giây)
+  static void logLoadingFinish({
+    String placement = 'splash',
+    bool success = true,
+    required double value,
+  }) {
+    try {
+      debugPrint('[Analytics] loading_finish: placement=$placement, success=$success, value=${value.toStringAsFixed(2)}s');
+      FGSDK.logLoadingEnd(
+        placement,
+        success,
+        value,
+        extra: {
+          'success': success.toString(),
+          'value': value,
+        },
+      );
+    } catch (e) {
+      debugPrint('[Analytics] logLoadingFinish error: $e');
+    }
+  }
+
+  // Compatibility helper for booster usage tracking
+  static void logBoosterUsed({
     required String boosterType,
     required int level,
-  }) async {
-    if (!_isInitialized) return;
+  }) {
+    // Already mapped into resource_sink
+  }
+
+  // ── User Properties (Sheet 1 & Sheet 3) ───────────────────────────────────
+  /// Cập nhật User Properties theo chuẩn Sheet:
+  /// - current_level: Level hiện tại khi user thực sự bắt đầu chơi
+  /// - current_mode: Mode chơi hiện tại ("default")
+  /// - connection_type: Tình trạng kết nối ("online", "offline")
+  /// - is_iap_user_n: Đã mua IAP hay chưa (0 hoặc 1)
+  /// - iap_count_n: Số lần mua IAP (0, 1, 2...)
+  /// - win_streak_n: Chuỗi thắng liên tiếp (0, 1, 2...)
+  /// - lose_streak_n: Chuỗi thua liên tiếp (0, 1, 2...)
+  /// - balance_coin_n: Số lượng coin hiện có
+  static void updateUserProperties({int? level}) {
     try {
-      await _analytics?.logEvent(
-        name: 'booster_used',
-        parameters: {
-          'booster_type': boosterType,
-          'level_number': level,
-        },
-      );
+      final lang = GameStorage.getSelectedLanguage();
+      final currentLvl = level ?? (GameStorage.getCurrentLevelIndex(lang) + 1);
+      final coins = GameStorage.getCoins();
+      final isIap = GameStorage.isIapUser() ? 1 : 0;
+      final iapCount = GameStorage.getIapCount();
+      final winStreak = GameStorage.getWinStreak();
+      final loseStreak = GameStorage.getLoseStreak();
+
+      final props = {
+        'current_level': currentLvl,
+        'current_mode': 'default',
+        'connection_type': 'online',
+        'is_iap_user_n': isIap,
+        'iap_count_n': iapCount,
+        'win_streak_n': winStreak,
+        'lose_streak_n': loseStreak,
+        'balance_coin_n': coins,
+      };
+
+      debugPrint('[Analytics] setUserProperties: $props');
+      FGSDK.setUserProperties(props);
     } catch (e) {
-      debugPrint('[Analytics] logBoosterUsed error: $e');
+      debugPrint('[Analytics] updateUserProperties error: $e');
     }
   }
 
-  /// Log Extra Bonus Word Found
-  static Future<void> logExtraWordFound({
-    required String word,
-    required int totalCount,
-  }) async {
-    if (!_isInitialized) return;
+  // ── AppsFlyer Events (Sheet 2) ────────────────────────────────────────────
+  /// Trigger khi ấn nút bất kỳ theo logic hiển thị Interstitial của game
+  static void logAfIntersLogicGame() {
     try {
-      await _analytics?.logEvent(
-        name: 'extra_word_found',
-        parameters: {
-          'word': word,
-          'total_count': totalCount,
-        },
+      debugPrint('[Analytics] af_inters_logicgame (AppsFlyer)');
+      FGSDK.logEvent(
+        'af_inters_logicgame',
+        providers: [FGProviderType.appsFlyer],
       );
     } catch (e) {
-      debugPrint('[Analytics] logExtraWordFound error: $e');
+      debugPrint('[Analytics] logAfIntersLogicGame error: $e');
     }
   }
 
-  /// Log Language Selected
-  static Future<void> logLanguageSelected({
-    required String language,
-  }) async {
-    if (!_isInitialized) return;
+  /// Trigger khi ấn nút bất kỳ theo logic hiển thị Rewarded của game
+  static void logAfRewardedLogicGame() {
     try {
-      await _analytics?.logEvent(
-        name: 'language_selected',
-        parameters: {
-          'language': language,
-        },
+      debugPrint('[Analytics] af_rewarded_logicgame (AppsFlyer)');
+      FGSDK.logEvent(
+        'af_rewarded_logicgame',
+        providers: [FGProviderType.appsFlyer],
       );
     } catch (e) {
-      debugPrint('[Analytics] logLanguageSelected error: $e');
+      debugPrint('[Analytics] logAfRewardedLogicGame error: $e');
     }
   }
 
-  /// Log Shop Purchase
-  static Future<void> logShopPurchase({
-    required String itemId,
-    required int cost,
-  }) async {
-    if (!_isInitialized) return;
+  /// Trigger khi hoàn thành level lần đầu tiên (param: level: level id)
+  static void logAfLevelAchieved({required int level}) {
     try {
-      await _analytics?.logEvent(
-        name: 'spend_virtual_currency',
-        parameters: {
-          'item_name': itemId,
-          'value': cost,
-          'virtual_currency_name': 'coins',
-        },
+      debugPrint('[Analytics] af_level_achieved: level=$level (AppsFlyer)');
+      FGSDK.logEvent(
+        'af_level_achieved',
+        params: {'level': level},
+        providers: [FGProviderType.appsFlyer],
       );
     } catch (e) {
-      debugPrint('[Analytics] logShopPurchase error: $e');
-    }
-  }
-
-  /// Log Screen View
-  static Future<void> logScreenView(String screenName) async {
-    if (!_isInitialized) return;
-    try {
-      await _analytics?.logScreenView(screenName: screenName);
-    } catch (e) {
-      debugPrint('[Analytics] logScreenView error: $e');
+      debugPrint('[Analytics] logAfLevelAchieved error: $e');
     }
   }
 }

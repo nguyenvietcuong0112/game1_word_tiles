@@ -3,8 +3,8 @@ description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
-
-version: 1.0.1+101
+# Version dành cho iOS (chỉnh ở đây khi build iOS bằng Xcode / Archive)
+version: 1.0.2+102
 
 environment:
   sdk: ^3.13.0
@@ -35,6 +35,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  config:
+    disable-swift-package-manager: true
 
   assets:
     - assets/images/

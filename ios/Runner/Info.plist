@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AppLovinSdkKey</key>
+	<string>UveqekOCl9KX2vr_pPcKksAfavCvdDo6SKup4CArLZgqBOMc7n1olIcWugw3gexsimiopaBhA55sNDfZQq0LCl</string>
+	<key>AppsFlyerDevKey</key>
+	<string>cfgYFoj97okaEbzqp8q5w5</string>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
 	<key>CFBundleDevelopmentRegion</key>
@@ -22,60 +26,38 @@
 	<string>$(FLUTTER_BUILD_NAME)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>$(FLUTTER_BUILD_NUMBER)</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
-	<key>UIApplicationSceneManifest</key>
-	<dict>
-		<key>UIApplicationSupportsMultipleScenes</key>
-		<false/>
-		<key>UISceneConfigurations</key>
+	<key>CFBundleURLTypes</key>
+	<array>
 		<dict>
-			<key>UIWindowSceneSessionRoleApplication</key>
+			<key>CFBundleURLSchemes</key>
 			<array>
-				<dict>
-					<key>UISceneClassName</key>
-					<string>UIWindowScene</string>
-					<key>UISceneConfigurationName</key>
-					<string>flutter</string>
-					<key>UISceneDelegateClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
-					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
-				</dict>
+				<string>glf35d397a1ebbaa9804dd17a3f475e16b</string>
 			</array>
 		</dict>
-	</dict>
-	<key>UIApplicationSupportsIndirectInputEvents</key>
-	<true/>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UIStatusBarHidden</key>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>FacebookAdvertiserIDCollectionEnabled</key>
 	<true/>
-	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<key>FacebookAutoLogAppEventsEnabled</key>
+	<true/>
+	<key>FirebaseAppDelegateProxyEnabled</key>
 	<false/>
+	<key>FirebaseCrashlyticsCollectionEnabled</key>
+	<true/>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-6221062690273747~4561692924</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
 	<key>NSUserTrackingUsageDescription</key>
 	<string>Your data will be used to deliver personalized ads to you (without revealing your personal infomation)</string>
-	<key>AppLovinSdkKey</key>
-	<string>UveqekOCl9KX2vr_pPcKksAfavCvdDo6SKup4CArLZgqBOMc7n1olIcWugw3gexsimiopaBhA55sNDfZQq0LCl</string>
-	<key>GADApplicationIdentifier</key>
-	<string>ca-app-pub-3940256099942544~1458602516</string>
 	<key>SKAdNetworkItems</key>
 	<array>
 		<dict>
@@ -247,5 +229,66 @@
 			<string>zq4928m375.skadnetwork</string>
 		</dict>
 	</array>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneClassName</key>
+					<string>UIWindowScene</string>
+					<key>UISceneConfigurationName</key>
+					<string>flutter</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UILocalNotificationSettings</key>
+	<array>
+		<string>alert</string>
+		<string>badge</string>
+		<string>sound</string>
+	</array>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIStatusBarHidden</key>
+	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIUserNotificationSettings</key>
+	<array>
+		<string>alert</string>
+		<string>badge</string>
+		<string>sound</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>

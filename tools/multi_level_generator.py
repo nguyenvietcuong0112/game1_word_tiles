@@ -110,8 +110,14 @@ class MultiLevelGenerator:
                 if obstacle_data:
                     obstacles.append(obstacle_data)
 
-            # 7. Validate level is 100% solvable
-            if self._validate_solvable(grid, target_words, obstacles):
+            # 7. Validate level is 100% solvable and compute exact counts
+            solvable, cell_counts = self._validate_solvable_and_get_counts(grid, target_words, obstacles)
+            if solvable:
+                counts_rows = []
+                for r in range(height):
+                    counts_rows.append("".join(str(cell_counts.get((r, c), 1)) for c in range(width)))
+                counts_str = ",".join(counts_rows)
+
                 return {
                     "id": level_id,
                     "width": width,
@@ -119,6 +125,7 @@ class MultiLevelGenerator:
                     "target_words": [{"word": w, "type": 0} for w in target_words],
                     "extra_words": [{"word": w, "type": 0} for w in extra_words],
                     "letters": letters_str,
+                    "counts": counts_str,
                     "obstacles": obstacles,
                 }
 
@@ -303,8 +310,10 @@ class MultiLevelGenerator:
             }
         return None
 
-    def _validate_solvable(self, grid: List[List[str]], target_words: List[str], obstacles: List[dict]) -> bool:
-        """Simulate solving the level to ensure 100% deadlock-free solvability."""
+    def _validate_solvable_and_get_counts(
+        self, grid: List[List[str]], target_words: List[str], obstacles: List[dict]
+    ) -> Tuple[bool, Dict[Tuple[int, int], int]]:
+        """Simulate solving the level to ensure 100% deadlock-free solvability and return counts."""
         height = len(grid)
         width = len(grid[0])
 
@@ -312,7 +321,7 @@ class MultiLevelGenerator:
         for w in target_words:
             paths = self._find_all_paths_for_word(grid, w)
             if not paths:
-                return False
+                return False, {}
             word_paths[w] = paths
 
         # Calculate cell usage
@@ -341,7 +350,8 @@ class MultiLevelGenerator:
                         return True
             return False
 
-        return can_solve_from_state(tuple(target_words), dict(cell_counts))
+        is_solvable = can_solve_from_state(tuple(target_words), dict(cell_counts))
+        return is_solvable, dict(cell_counts)
 
     def _find_all_paths_for_word(self, grid: List[List[str]], word: str) -> List[List[Tuple[int, int]]]:
         height = len(grid)
@@ -369,20 +379,34 @@ class MultiLevelGenerator:
 
 
 def get_level_config(level_num: int) -> dict:
-    """Return parameters tuned for smooth casual progression."""
-    if level_num <= 10:
-        return {"width": 3, "height": 2, "min_targets": 3, "max_targets": 4, "min_len": 3, "max_len": 4, "obstacle": False}
-    elif level_num <= 30:
-        return {"width": 3, "height": 3, "min_targets": 4, "max_targets": 5, "min_len": 3, "max_len": 4, "obstacle": False}
+    """Return parameters tuned for smooth casual progression with varied grid layouts.
+    First 20 levels are protected handcrafted easy levels.
+    Difficulty gradually increases from level 21 onward.
+    """
+    if level_num <= 20:
+        # Protected handcrafted easy range (Levels 1 - 20)
+        return {"width": 3, "height": 3, "min_targets": 3, "max_targets": 4, "min_len": 3, "max_len": 4, "obstacle": False}
+    elif level_num <= 35:
+        shape = [(4, 2), (4, 3), (3, 4)][(level_num - 21) % 3]
+        return {"width": shape[0], "height": shape[1], "min_targets": 4, "max_targets": 5, "min_len": 3, "max_len": 5, "obstacle": False}
+    elif level_num <= 60:
+        shape = [(4, 3), (3, 4), (4, 4)][level_num % 3]
+        return {"width": shape[0], "height": shape[1], "min_targets": 4, "max_targets": 6, "min_len": 3, "max_len": 5, "obstacle": False}
     elif level_num <= 100:
-        return {"width": 3, "height": 3, "min_targets": 4, "max_targets": 6, "min_len": 3, "max_len": 5, "obstacle": False}
+        shape = [(4, 3), (3, 4), (4, 4), (5, 3)][level_num % 4]
+        return {"width": shape[0], "height": shape[1], "min_targets": 5, "max_targets": 6, "min_len": 3, "max_len": 5, "obstacle": level_num % 15 == 0}
     elif level_num <= 300:
-        return {"width": 4, "height": 3, "min_targets": 5, "max_targets": 7, "min_len": 3, "max_len": 5, "obstacle": False}
+        shape = [(4, 4), (5, 3), (4, 3), (5, 4)][level_num % 4]
+        return {"width": shape[0], "height": shape[1], "min_targets": 5, "max_targets": 7, "min_len": 3, "max_len": 6, "obstacle": level_num % 10 == 0}
     elif level_num <= 600:
-        return {"width": 4, "height": 3, "min_targets": 6, "max_targets": 8, "min_len": 3, "max_len": 6, "obstacle": False}
+        shape = [(4, 4), (5, 3), (4, 3), (3, 5)][level_num % 4]
+        return {"width": shape[0], "height": shape[1], "min_targets": 6, "max_targets": 8, "min_len": 3, "max_len": 6, "obstacle": level_num % 8 == 0}
     elif level_num <= 1000:
-        return {"width": 4, "height": 4, "min_targets": 7, "max_targets": 9, "min_len": 3, "max_len": 6, "obstacle": level_num % 10 == 0}
+        shape = [(4, 4), (5, 4), (4, 5), (5, 3)][level_num % 4]
+        return {"width": shape[0], "height": shape[1], "min_targets": 7, "max_targets": 9, "min_len": 3, "max_len": 6, "obstacle": level_num % 8 == 0}
     elif level_num <= 1800:
-        return {"width": 4, "height": 4, "min_targets": 8, "max_targets": 11, "min_len": 3, "max_len": 7, "obstacle": level_num % 5 == 0}
+        shape = [(5, 4), (4, 5), (4, 4), (5, 5)][level_num % 4]
+        return {"width": shape[0], "height": shape[1], "min_targets": 8, "max_targets": 11, "min_len": 3, "max_len": 7, "obstacle": level_num % 5 == 0}
     else:
-        return {"width": 5, "height": 4, "min_targets": 9, "max_targets": 13, "min_len": 3, "max_len": 7, "obstacle": level_num % 4 == 0}
+        shape = [(5, 4), (5, 5), (4, 5)][level_num % 3]
+        return {"width": shape[0], "height": shape[1], "min_targets": 9, "max_targets": 13, "min_len": 3, "max_len": 7, "obstacle": level_num % 4 == 0}

@@ -7,6 +7,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../controllers/game_controller.dart';
 import '../../models/chapter_model.dart';
 import '../../services/ads_manager.dart';
+import '../../services/analytics_service.dart';
+import '../../services/app_localization.dart';
 import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
 import '../../theme/app_typography.dart';
@@ -252,6 +254,14 @@ class _VictoryOverlayState extends State<VictoryOverlay>
     AudioManager.playTileSelect(pitchIndex: 4);
     final theme = ChapterTheme.forChapter(widget.controller.chapterNumber);
     GameStorage.addCoins(theme.rewardCoins);
+    AnalyticsService.logEarnResource(
+      level: widget.controller.levelNumber,
+      type: 'currency',
+      name: 'gold',
+      amount: theme.rewardCoins.toDouble(),
+      reason: 'win_level',
+      balance: GameStorage.getCoins().toDouble(),
+    );
 
     setState(() {
       _currentStep = VictoryStep.chapterPreview;
@@ -288,6 +298,14 @@ class _VictoryOverlayState extends State<VictoryOverlay>
         if (success) {
           final bonusCoins = widget.controller.coinsReward;
           GameStorage.addCoins(bonusCoins);
+          AnalyticsService.logEarnResource(
+            level: widget.controller.levelNumber,
+            type: 'currency',
+            name: 'gold',
+            amount: bonusCoins.toDouble(),
+            reason: 'ads',
+            balance: GameStorage.getCoins().toDouble(),
+          );
           setState(() => _claimedDouble = true);
           AudioManager.playWordMatch();
 
@@ -702,7 +720,7 @@ class _VictoryOverlayState extends State<VictoryOverlay>
                             fit: BoxFit.fill,
                           ),
                           CartoonText(
-                            text: 'Level ${widget.controller.levelNumber + 1}',
+                            text: AppLocalization.tr('level_n', args: [widget.controller.levelNumber + 1]),
                             fontSize: 22.sp,
                             textColor: Colors.white,
                             outlineColor: const Color(0xFF0E5606),
@@ -963,8 +981,8 @@ class _VictoryOverlayState extends State<VictoryOverlay>
                           fit: BoxFit.scaleDown,
                           child: CartoonText(
                             text: isChapterMilestone
-                                ? 'Next Chapter'
-                                : 'Level ${widget.controller.levelNumber + 1}',
+                                ? AppLocalization.tr('next_chapter')
+                                : AppLocalization.tr('level_n', args: [widget.controller.levelNumber + 1]),
                             fontSize: isChapterMilestone ? 19.sp : 22.sp,
                             textColor: Colors.white,
                             outlineColor: const Color(0xFF0E5606),

@@ -2,11 +2,15 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'level_loader.dart';
+import 'app_localization.dart';
 
 class GameStorage {
   static late SharedPreferences _prefs;
   static bool _isInitialized = false;
   static bool get isInitialized => _isInitialized;
+
+  static String? _cachedLanguage;
+  static final ValueNotifier<String> languageNotifier = ValueNotifier<String>('english');
 
   static int? _cachedCoins;
   static final ValueNotifier<int> coinsNotifier = ValueNotifier<int>(250);
@@ -74,21 +78,48 @@ class GameStorage {
 
     _cachedNoAdsPurchased = _prefs.getBool('is_no_ads_purchased') ?? false;
     noAdsNotifier.value = _cachedNoAdsPurchased!;
+
+    final hasUserSelected = _prefs.getBool('has_user_selected_language') ?? false;
+    if (!hasUserSelected && !_prefs.containsKey('selected_language')) {
+      final detected = AppLocalization.detectDeviceLanguage();
+      await _prefs.setString('selected_language', detected);
+      _cachedLanguage = detected;
+    } else {
+      final saved = _prefs.getString('selected_language') ?? 'english';
+      _cachedLanguage = LevelLoader.supportedLanguages.contains(saved) ? saved : 'english';
+    }
+    languageNotifier.value = _cachedLanguage!;
   }
 
   // Selected Language
   static String getSelectedLanguage() {
-    final lang = _prefs.getString('selected_language') ?? 'english';
-    if (!LevelLoader.supportedLanguages.contains(lang)) {
-      return 'english';
+    if (_cachedLanguage != null && LevelLoader.supportedLanguages.contains(_cachedLanguage)) {
+      return _cachedLanguage!;
     }
-    return lang;
+    if (_isInitialized) {
+      final lang = _prefs.getString('selected_language');
+      if (lang != null && LevelLoader.supportedLanguages.contains(lang)) {
+        _cachedLanguage = lang;
+        return lang;
+      }
+    }
+    final detected = AppLocalization.detectDeviceLanguage();
+    _cachedLanguage = detected;
+    return detected;
   }
 
   static String getLanguage() => getSelectedLanguage();
 
-  static Future<void> setSelectedLanguage(String lang) async {
-    await _prefs.setString('selected_language', lang);
+  static Future<void> setSelectedLanguage(String lang, {bool isUserAction = true}) async {
+    final validLang = LevelLoader.supportedLanguages.contains(lang) ? lang : 'english';
+    if (_isInitialized) {
+      await _prefs.setString('selected_language', validLang);
+      if (isUserAction) {
+        await _prefs.setBool('has_user_selected_language', true);
+      }
+    }
+    _cachedLanguage = validLang;
+    languageNotifier.value = validLang;
   }
 
   // Current Level Index in Progression List (0-indexed)
@@ -110,6 +141,80 @@ class GameStorage {
     if (index > current) {
       await _prefs.setInt('max_unlocked_level_index_$language', index);
     }
+  }
+
+  // Level Play Count (play_count tracking for analytics)
+  static int getLevelPlayCount(String language, int level) {
+    return _prefs.getInt('level_play_count_${language}_$level') ?? 0;
+  }
+
+  static Future<int> incrementLevelPlayCount(String language, int level) async {
+    final count = getLevelPlayCount(language, level) + 1;
+    await _prefs.setInt('level_play_count_${language}_$level', count);
+    return count;
+  }
+
+  // Level Lose Count (lose_count tracking for analytics)
+  static int getLevelLoseCount(String language, int level) {
+    return _prefs.getInt('level_lose_count_${language}_$level') ?? 0;
+  }
+
+  static Future<int> incrementLevelLoseCount(String language, int level) async {
+    final count = getLevelLoseCount(language, level) + 1;
+    await _prefs.setInt('level_lose_count_${language}_$level', count);
+    return count;
+  }
+
+  // IAP Tracking
+  static int getIapCount() {
+    return _prefs.getInt('iap_purchase_count') ?? 0;
+  }
+
+  static Future<int> incrementIapCount() async {
+    final count = getIapCount() + 1;
+    await _prefs.setInt('iap_purchase_count', count);
+    return count;
+  }
+
+  static bool isIapUser() {
+    return getIapCount() > 0 || isNoAdsPurchased();
+  }
+
+  // Win / Lose Streak Tracking
+  static int getWinStreak() {
+    return _prefs.getInt('analytics_win_streak') ?? 0;
+  }
+
+  static Future<int> incrementWinStreak() async {
+    final streak = getWinStreak() + 1;
+    await _prefs.setInt('analytics_win_streak', streak);
+    await _prefs.setInt('analytics_lose_streak', 0);
+    return streak;
+  }
+
+  static int getLoseStreak() {
+    return _prefs.getInt('analytics_lose_streak') ?? 0;
+  }
+
+  static Future<int> incrementLoseStreak() async {
+    final streak = getLoseStreak() + 1;
+    await _prefs.setInt('analytics_lose_streak', streak);
+    await _prefs.setInt('analytics_win_streak', 0);
+    return streak;
+  }
+
+  static Future<void> resetStreaks() async {
+    await _prefs.setInt('analytics_win_streak', 0);
+    await _prefs.setInt('analytics_lose_streak', 0);
+  }
+
+  // AppsFlyer af_level_achieved Tracking (chỉ bắn 1 lần / level)
+  static bool isLevelAchievedLogged(int level) {
+    return _prefs.getBool('af_level_achieved_$level') ?? false;
+  }
+
+  static Future<void> setLevelAchievedLogged(int level, [bool value = true]) async {
+    await _prefs.setBool('af_level_achieved_$level', value);
   }
 
   // Level Stars (Map of Level ID -> Stars 1-3)

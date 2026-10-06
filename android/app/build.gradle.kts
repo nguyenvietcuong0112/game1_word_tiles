@@ -20,9 +20,16 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
+
+// ============================================================================
+// Android Versioning: Tăng số này khi build Android bằng Android Studio / IDE
+// ============================================================================
+val androidVersionCode = 103
+val androidVersionName = "1.0.3"
+
 android {
     namespace = "com.fw.word.connect.puzzle"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
@@ -37,12 +44,9 @@ android {
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = 24
         targetSdk = flutter.targetSdkVersion
-        // Uses the version code from pubspec.yaml. When using split APKs, 1000 * ABI_VERSION
-        // is added automatically by Flutter. (https://developer.android.com/studio/build/configure-apk-splits#configure-APK-versions)
-        // You can force using the value of versionCode by specifying the `-P force-version-code-ignoring-abi=true`
-        // flag during build.
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
+        
+        versionCode = androidVersionCode
+        versionName = androidVersionName
     }
 
     signingConfigs {
@@ -75,8 +79,8 @@ android {
             val output = this
             if (output is BaseVariantOutputImpl) {
                 val date = SimpleDateFormat("yyyyMMdd").format(Date())
-                val vName = variant.versionName ?: flutter.versionName
-                val vCode = variant.versionCode ?: flutter.versionCode
+                val vName = variant.versionName ?: androidVersionName
+                val vCode = variant.versionCode ?: androidVersionCode
                 output.outputFileName = "FW27_Mobgame_v${vName}_c${vCode}_${date}.apk"
             }
         }
@@ -86,8 +90,8 @@ android {
 tasks.matching { it.name.startsWith("bundle") && it.name.endsWith("Bundle") }.configureEach {
     doLast {
         val date = SimpleDateFormat("yyyyMMdd").format(Date())
-        val vName = android.defaultConfig.versionName ?: flutter.versionName
-        val vCode = android.defaultConfig.versionCode ?: flutter.versionCode
+        val vName = android.defaultConfig.versionName ?: androidVersionName
+        val vCode = android.defaultConfig.versionCode ?: androidVersionCode
         val bundleDir = layout.buildDirectory.dir("outputs/bundle").get().asFile
         if (bundleDir.exists()) {
             bundleDir.walkTopDown().filter { it.extension == "aab" }.forEach { aabFile ->
@@ -110,3 +114,22 @@ kotlin {
 flutter {
     source = "../.."
 }
+
+dependencies {
+    // AppLovin MAX Mediation Adapters (14 networks for Game Client)
+    implementation("com.applovin.mediation:google-adapter:+")
+    implementation("com.applovin.mediation:google-ad-manager-adapter:+")
+    implementation("com.applovin.mediation:facebook-adapter:+")
+    implementation("com.applovin.mediation:mintegral-adapter:+")
+    implementation("com.applovin.mediation:unityads-adapter:+")
+    implementation("com.applovin.mediation:fyber-adapter:+")
+    implementation("com.applovin.mediation:vungle-adapter:+")
+    implementation("com.applovin.mediation:bytedance-adapter:+")
+    implementation("com.applovin.mediation:ironsource-adapter:+")
+    implementation("com.applovin.mediation:inmobi-adapter:+")
+    implementation("com.applovin.mediation:yandex-adapter:+")
+    implementation("com.applovin.mediation:bigoads-adapter:+")
+    implementation("com.applovin.mediation:bidmachine-adapter:+")
+    implementation("com.applovin.mediation:moloco-adapter:+")
+}
+

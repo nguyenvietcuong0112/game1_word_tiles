@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../main.dart';
 import '../services/ads_manager.dart';
 import '../services/audio_manager.dart';
+import '../services/app_localization.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
 import '../theme/app_typography.dart';
@@ -36,8 +37,15 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
   @override
   void initState() {
     super.initState();
+    GameStorage.languageNotifier.addListener(_onLanguageChanged);
     _loadState(showBanner: !widget.isFirstSessionStart);
     AudioManager.startBgm();
+  }
+
+  void _onLanguageChanged() {
+    if (mounted) {
+      _loadState(showBanner: false);
+    }
   }
 
   @override
@@ -51,6 +59,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
 
   @override
   void dispose() {
+    GameStorage.languageNotifier.removeListener(_onLanguageChanged);
     routeObserver.unsubscribe(this);
     super.dispose();
   }
@@ -329,7 +338,7 @@ class _HomeScreenState extends State<HomeScreen> with RouteAware {
       bevelColor: const Color(0xFF2DC419),
       borderColor: const Color(0xFF19BA05),
       child: CartoonText(
-        text: 'Level $levelNumber',
+        text: AppLocalization.tr('level_n', args: [levelNumber]),
         fontSize: 32.sp,
         textColor: Colors.white,
         outlineColor: const Color(0xFF179A09),

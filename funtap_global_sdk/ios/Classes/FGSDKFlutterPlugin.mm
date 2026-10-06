@@ -10,8 +10,11 @@
 //
 #import "FGSDKFlutterPlugin.h"
 
-#import <FGSDK/FGSDKIOS.h>
-#import <FGSDK/FGBridgeCoreIOS.h>
+// Lõi SDK nằm CÙNG pod (source pod từ 1.0.4) → import theo tên file, không phải
+// <FGSDK/...> kiểu framework riêng. CocoaPods gom public header của pod vào một chỗ
+// nên quoted import tìm thấy; dùng angle-bracket ở đây sẽ lỗi "module FGSDK not found".
+#import "FGSDKIOS.h"
+#import "FGBridgeCoreIOS.h"
 
 /// Event phát sinh TRƯỚC khi Dart kịp `listen` được đệm lại rồi flush (SDK init sớm
 /// có thể bắn init_sdk / remoteconfig.fetched trước khi widget tree gắn stream).

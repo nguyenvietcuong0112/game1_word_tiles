@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:funtap_global_sdk/funtap_global_sdk.dart';
+import 'analytics_service.dart';
 import 'game_storage.dart';
 import 'remote_config_service.dart';
 
@@ -21,6 +22,9 @@ class AdsManager {
   static DateTime? _showingAdStartTime;
   static bool _adWasClicked = false;
   static bool _isRewardedLoaded = false;
+  static bool _isIapInProgress = false;
+  static bool _suppressNextResumeAd = false;
+  static DateTime? _lastIapTime;
   static Timer? _retryLoadTimer;
   static int _rewardedRetryAttempt = 0;
   static final List<StreamSubscription> _subscriptions = [];
@@ -36,6 +40,33 @@ class AdsManager {
 
   /// Time since last Inter or Resume ad was closed
   static DateTime? get lastInterOrResumeTime => _lastInterOrResumeTime;
+
+  /// Check if an IAP checkout flow is currently active
+  static bool get isIapInProgress => _isIapInProgress;
+
+  /// Check if the next App Resume ad is suppressed due to an IAP checkout flow
+  static bool get suppressNextResumeAd => _suppressNextResumeAd;
+
+  /// Time when the last IAP flow completed
+  static DateTime? get lastIapTime => _lastIapTime;
+
+  /// Notify AdsManager that an in-app purchase flow has started or ended
+  static void setIapInProgress(bool inProgress) {
+    _isIapInProgress = inProgress;
+    if (inProgress) {
+      _suppressNextResumeAd = true;
+    }
+  }
+
+  /// Notifies that an IAP transaction / checkout flow has completed (success, cancel, or fail).
+  /// Strictly enforces ad suppression so NO App Open or Interstitial ad will show when returning from Google Play/App Store.
+  static void onIapFlowFinished({bool success = false}) {
+    _isIapInProgress = false;
+    _suppressNextResumeAd = true;
+    _lastIapTime = DateTime.now();
+    _recordAdCompleted(); // Resets the 25s cooldown timer
+    debugPrint('[AdsManager] IAP flow finished (success: $success). Suppressing resume/open ads.');
+  }
 
   /// Initializes AdsManager, listens to reward completions and remote config updates
   static void init() {
@@ -95,6 +126,24 @@ class AdsManager {
     _subscriptions.add(FGSDK.onBannerClicked.listen((info) {
       debugPrint('[AdsManager] onBannerClicked: placement=${info.placement}');
       _adWasClicked = true;
+    }));
+
+    // Track IAP events to suppress App Open and Resume ads during and after checkout
+    _subscriptions.add(FGSDK.onPurchaseProcessing.listen((_) {
+      debugPrint('[AdsManager] onPurchaseProcessing -> setting _isIapInProgress = true');
+      setIapInProgress(true);
+    }));
+    _subscriptions.add(FGSDK.onPurchaseCompleted.listen((_) {
+      debugPrint('[AdsManager] onPurchaseCompleted -> onIapFlowFinished(success: true)');
+      onIapFlowFinished(success: true);
+    }));
+    _subscriptions.add(FGSDK.onPurchaseFailed.listen((_) {
+      debugPrint('[AdsManager] onPurchaseFailed -> onIapFlowFinished(success: false)');
+      onIapFlowFinished(success: false);
+    }));
+    _subscriptions.add(FGSDK.onRestorePurchasesCompleted.listen((_) {
+      debugPrint('[AdsManager] onRestorePurchasesCompleted -> onIapFlowFinished');
+      onIapFlowFinished();
     }));
 
     // Preload rewarded ad
@@ -192,6 +241,7 @@ class AdsManager {
     failSub = FGSDK.onInterstitialFailedToShow.listen((_) => finishAd());
 
     try {
+      AnalyticsService.logAfIntersLogicGame();
       debugPrint('[AdsManager] Showing Interstitial (placement: endgame, level: $levelNumber)...');
       await Future.any([
         FGSDK.showInterstitial('endgame', 'classic', levelNumber),
@@ -257,6 +307,7 @@ class AdsManager {
     failSub = FGSDK.onInterstitialFailedToShow.listen((_) => finishAd());
 
     try {
+      AnalyticsService.logAfIntersLogicGame();
       debugPrint('[AdsManager] Showing ad for replay (isNative: $isNative, level: $levelNumber)...');
       await Future.any([
         FGSDK.showInterstitial('replay', 'classic', levelNumber),
@@ -424,6 +475,7 @@ class AdsManager {
     });
 
     try {
+      AnalyticsService.logAfRewardedLogicGame();
       debugPrint('[AdsManager] Showing Rewarded ad (placement: $placement, level: $levelNumber)...');
       await Future.any([
         FGSDK.showRewarded(placement, 'classic', levelNumber),
@@ -465,6 +517,23 @@ class AdsManager {
     preloadRewarded();
 
     if (!enableAds || GameStorage.isNoAdsPurchased()) return;
+
+    if (_isIapInProgress) {
+      debugPrint('[AdsManager] Resume ad skipped: IAP purchase flow is currently in progress.');
+      return;
+    }
+
+    if (_suppressNextResumeAd) {
+      debugPrint('[AdsManager] Resume ad skipped: returning from IAP checkout flow.');
+      _suppressNextResumeAd = false;
+      return;
+    }
+
+    if (_lastIapTime != null &&
+        DateTime.now().difference(_lastIapTime!).inSeconds < 60) {
+      debugPrint('[AdsManager] Resume ad skipped: recently completed IAP flow within 60s.');
+      return;
+    }
 
     if (_isShowingAd) {
       debugPrint('[AdsManager] Resume ad skipped: ad is already showing.');
@@ -512,6 +581,7 @@ class AdsManager {
 
     try {
       if (showInterInsteadOfAoa) {
+        AnalyticsService.logAfIntersLogicGame();
         debugPrint('[AdsManager] Showing Resume Inter ad (level: $currentLevel)...');
         await Future.any([
           FGSDK.showInterstitial('resume', 'classic', currentLevel),
@@ -519,8 +589,12 @@ class AdsManager {
         ]);
       } else {
         debugPrint('[AdsManager] Showing Resume AOA ad (level: $currentLevel)...');
-        FGSDK.showAppOpen('resume', 'classic', currentLevel);
-        await completer.future.timeout(const Duration(seconds: 15), onTimeout: () {});
+        try {
+          FGSDK.showAppOpen('resume', 'classic', currentLevel);
+          await completer.future.timeout(const Duration(seconds: 15), onTimeout: () {});
+        } catch (e) {
+          debugPrint('[AdsManager] Error showing resume AOA: $e');
+        }
       }
       _recordAdCompleted();
     } catch (e) {
@@ -570,6 +644,9 @@ class AdsManager {
     bool? isShowingAd,
     bool? adWasClicked,
     bool? isRewardedLoaded,
+    bool? isIapInProgress,
+    bool? suppressNextResumeAd,
+    DateTime? lastIapTime,
   }) {
     if (lastAdTime != null) _lastInterOrResumeTime = lastAdTime;
     if (isShowingAd != null) {
@@ -578,5 +655,8 @@ class AdsManager {
     }
     if (adWasClicked != null) _adWasClicked = adWasClicked;
     if (isRewardedLoaded != null) _isRewardedLoaded = isRewardedLoaded;
+    if (isIapInProgress != null) _isIapInProgress = isIapInProgress;
+    if (suppressNextResumeAd != null) _suppressNextResumeAd = suppressNextResumeAd;
+    if (lastIapTime != null) _lastIapTime = lastIapTime;
   }
 }

@@ -29,6 +29,8 @@ class BouncyButtonState extends State<BouncyButton> with SingleTickerProviderSta
   late AnimationController _controller;
   late Animation<double> _scaleAnimation;
 
+  bool _isDisposed = false;
+
   double get currentScale => _scaleAnimation.value;
   AnimationController get controller => _controller;
 
@@ -55,26 +57,37 @@ class BouncyButtonState extends State<BouncyButton> with SingleTickerProviderSta
 
   @override
   void dispose() {
+    _isDisposed = true;
     _controller.dispose();
     super.dispose();
   }
 
   void _onPointerDown(PointerDownEvent event) {
-    if (widget.onTap == null) return;
-    _controller.forward();
+    if (_isDisposed || !mounted || widget.onTap == null) return;
+    try {
+      _controller.forward();
+    } catch (_) {}
     if (GameStorage.isHapticEnabled()) {
       HapticFeedback.lightImpact();
     }
   }
 
   void _onPointerUp(PointerUpEvent event) {
-    if (widget.onTap == null) return;
-    _controller.reverse();
+    if (_isDisposed || !mounted || widget.onTap == null) return;
+    try {
+      if (_controller.isAnimating || _controller.value > 0.0) {
+        _controller.reverse();
+      }
+    } catch (_) {}
   }
 
   void _onPointerCancel(PointerCancelEvent event) {
-    if (widget.onTap == null) return;
-    _controller.reverse();
+    if (_isDisposed || !mounted || widget.onTap == null) return;
+    try {
+      if (_controller.isAnimating || _controller.value > 0.0) {
+        _controller.reverse();
+      }
+    } catch (_) {}
   }
 
   @override

@@ -10,6 +10,12 @@
 //   keystore       → android/<file> + android/key.properties (convention Flutter)
 //   admob app id   → chèn manifestPlaceholder FGSDK_ADMOB_APP_ID vào android/app/build.gradle[.kts]
 //
+// Phần iOS làm thêm 2 việc mà Android không cần (bên Android AAR/assets tự lo):
+//   Info.plist            → Facebook / AppsFlyer / ATT / GADApplicationIdentifier / URL scheme
+//                           / SKAdNetwork — map field PORT verbatim từ extension Cocos 3.x
+//   Runner.xcodeproj      → đăng ký fg_main_config.json + GoogleService-Info.plist vào
+//                           "Copy Bundle Resources" (không có thì mainBundle không thấy file)
+//
 // Endpoint DÙNG CHUNG với Unity / Cocos: GET <baseUrl>/api/sdk/bundle, header X-API-Key.
 //
 // Dùng:  node fetch-config-flutter.js --key <APIKEY> [--url https://fgtool.funtapglobal.com]
@@ -152,6 +158,288 @@ function protectGitignore(projectRoot, log) {
     log.push('OK .gitignore += chan keystore/key.properties/API key/google-services');
 }
 
+// ═══ iOS: Info.plist ══════════════════════════════════════════════════════════
+// Mirror `writeAdmobAppId` bên Android: giá trị lấy TỪ CONFIG nên phải làm ở bước fetch.
+// Map field PORT verbatim từ bản Cocos 3.x (`source/ios/iosutils.ts::patchInfoPlist`)
+// để 3 engine ra cùng một Info.plist — khác nhau chỉ là chỗ đọc file.
+//
+// Node thuần (bat copy file này ra root project, KHÔNG npm install) → tự parse/serialize
+// XML plist thay vì dùng lib `plist`. Chỉ đụng key của SDK, key khác giữ nguyên.
+
+function plistDecode(s) {
+    return String(s).replace(/&lt;/g, '<').replace(/&gt;/g, '>')
+        .replace(/&quot;/g, '"').replace(/&apos;/g, "'").replace(/&amp;/g, '&');
+}
+function plistEncode(s) {
+    return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+// <dict> → object thường (giữ thứ tự key), <array> → Array, <string> → string,
+// <true/><false/> → boolean; integer/real/data/date bọc {__t,v} để ghi lại y nguyên.
+function plistParse(xml) {
+    var i = 0;
+    function skipJunk() {
+        for (;;) {
+            while (i < xml.length && /\s/.test(xml.charAt(i))) i++;
+            if (xml.substr(i, 2) === '<?') { i = xml.indexOf('?>', i) + 2; continue; }
+            if (xml.substr(i, 4) === '<!--') { i = xml.indexOf('-->', i) + 3; continue; }
+            if (xml.substr(i, 2) === '<!') { i = xml.indexOf('>', i) + 1; continue; }
+            break;
+        }
+    }
+    function tag() {
+        skipJunk();
+        if (xml.charAt(i) !== '<') throw new Error('plist: mong doi tag tai ' + i);
+        var end = xml.indexOf('>', i);
+        if (end < 0) throw new Error('plist: tag khong dong');
+        var raw = xml.slice(i + 1, end);
+        i = end + 1;
+        var self = raw.charAt(raw.length - 1) === '/';
+        if (self) raw = raw.slice(0, -1);
+        var close = raw.charAt(0) === '/';
+        if (close) raw = raw.slice(1);
+        return { name: raw.split(/\s/)[0], self: self, close: close };
+    }
+    function textUntil(name) {
+        var at = xml.indexOf('</' + name, i);
+        if (at < 0) throw new Error('plist: thieu </' + name + '>');
+        var t = xml.slice(i, at);
+        i = xml.indexOf('>', at) + 1;
+        return t;
+    }
+    function value(t) {
+        switch (t.name) {
+            case 'dict': {
+                var obj = {};
+                if (t.self) return obj;
+                for (;;) {
+                    var k = tag();
+                    if (k.close && k.name === 'dict') return obj;
+                    if (k.name !== 'key') throw new Error('plist: trong <dict> phai la <key>');
+                    var kn = plistDecode(k.self ? '' : textUntil('key'));
+                    obj[kn] = value(tag());
+                }
+            }
+            case 'array': {
+                var arr = [];
+                if (t.self) return arr;
+                for (;;) {
+                    var e = tag();
+                    if (e.close && e.name === 'array') return arr;
+                    arr.push(value(e));
+                }
+            }
+            case 'string': return t.self ? '' : plistDecode(textUntil('string'));
+            case 'true': case 'false':
+                if (!t.self) textUntil(t.name);
+                return t.name === 'true';
+            default:
+                return { __t: t.name, v: t.self ? '' : textUntil(t.name) };
+        }
+    }
+    var root = tag();
+    if (root.name !== 'plist') throw new Error('plist: khong thay <plist>');
+    return value(tag());
+}
+
+function plistBuild(v) {
+    function node(x, d) {
+        var pad = new Array(d + 1).join('\t');
+        if (x === true) return pad + '<true/>';
+        if (x === false) return pad + '<false/>';
+        if (typeof x === 'string') return pad + '<string>' + plistEncode(x) + '</string>';
+        if (Array.isArray(x)) {
+            if (!x.length) return pad + '<array/>';
+            var items = x.map(function (e) { return node(e, d + 1); });
+            return pad + '<array>\n' + items.join('\n') + '\n' + pad + '</array>';
+        }
+        if (x && typeof x === 'object' && x.__t) {
+            return pad + '<' + x.__t + '>' + x.v + '</' + x.__t + '>';
+        }
+        var keys = Object.keys(x || {});
+        if (!keys.length) return pad + '<dict/>';
+        var body = keys.map(function (k) {
+            return pad + '\t<key>' + plistEncode(k) + '</key>\n' + node(x[k], d + 1);
+        });
+        return pad + '<dict>\n' + body.join('\n') + '\n' + pad + '</dict>';
+    }
+    return [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">',
+        '<plist version="1.0">',
+        node(v, 0),
+        '</plist>',
+        ''
+    ].join('\n');
+}
+
+function backupOnce(file) {
+    var b = file + '.fgsdkbak';
+    if (!fs.existsSync(b) && fs.existsSync(file)) fs.copyFileSync(file, b);
+}
+
+function patchInfoPlist(projectRoot, iosCfg, log) {
+    var file = path.join(projectRoot, 'ios', 'Runner', 'Info.plist');
+    if (!fs.existsSync(file)) { log.push('!! Khong thay ios/Runner/Info.plist -> bo qua patch iOS'); return; }
+    if (!iosCfg) { log.push('!! config KHONG co muc "ios" -> bo qua Info.plist'); return; }
+
+    var data;
+    try { data = plistParse(fs.readFileSync(file, 'utf-8')); }
+    catch (e) { log.push('!! Doc Info.plist loi (' + e.message + ') -> sua tay'); return; }
+
+    var fb = iosCfg.facebook_configs || {};
+    var af = iosCfg.appsflyer_configs || {};
+    var ads = iosCfg.main_ads_config || {};
+    var privacy = iosCfg.privacy_configs || {};
+    var appKey = iosCfg.app_key || '';
+
+    // Facebook (§9.5)
+    if (fb.app_id) data.FacebookAppID = fb.app_id;
+    if (fb.client_token) data.FacebookClientToken = fb.client_token;
+    if (fb.app_name) data.FacebookDisplayName = fb.app_name;
+    data.FacebookAutoLogAppEventsEnabled = true;
+    data.FacebookAdvertiserIDCollectionEnabled = true;
+
+    // URL scheme: fb<app_id> (Facebook) + gl<app_key> (deeplink SDK §12)
+    if (!Array.isArray(data.CFBundleURLTypes)) data.CFBundleURLTypes = [];
+    var hasScheme = function (scheme) {
+        return data.CFBundleURLTypes.some(function (t) {
+            return t && Array.isArray(t.CFBundleURLSchemes) && t.CFBundleURLSchemes.indexOf(scheme) !== -1;
+        });
+    };
+    if (fb.app_id && !hasScheme('fb' + fb.app_id)) data.CFBundleURLTypes.push({ CFBundleURLSchemes: ['fb' + fb.app_id] });
+    if (appKey && !hasScheme('gl' + appKey)) data.CFBundleURLTypes.push({ CFBundleURLSchemes: ['gl' + appKey] });
+
+    // LSApplicationQueriesSchemes (Facebook)
+    if (!Array.isArray(data.LSApplicationQueriesSchemes)) data.LSApplicationQueriesSchemes = [];
+    ['fbapi', 'fb-messenger-share-api', 'fbauth2', 'fbshareextension'].forEach(function (s) {
+        if (data.LSApplicationQueriesSchemes.indexOf(s) === -1) data.LSApplicationQueriesSchemes.push(s);
+    });
+
+    // AppsFlyer (§9.4)
+    if (af.DevKey) data.AppsFlyerDevKey = af.DevKey;
+    if (af.AppId) data.AppleAppID = af.AppId;
+
+    // ATT (§6.1/§6.2) — mô tả xin quyền tracking
+    if (privacy.users_tracking_usage_description) {
+        data.NSUserTrackingUsageDescription = privacy.users_tracking_usage_description;
+    }
+
+    // AdMob app id (§8 backfill) — bên Android là manifestPlaceholder, iOS là key này.
+    if (ads.google_admob_app_id) data.GADApplicationIdentifier = ads.google_admob_app_id;
+    else log.push('!! config ios.main_ads_config KHONG co google_admob_app_id -> quang cao backfill se dung app id TEST');
+
+    // Background modes + Firebase/notification: giữ đúng giá trị proven của bản Cocos.
+    // ⚠️ FirebaseAppDelegateProxyEnabled=false: Firebase KHÔNG swizzle AppDelegate — plugin tự
+    //    forward openURL (FGSDKFlutterPlugin addApplicationDelegate).
+    if (!Array.isArray(data.UIBackgroundModes)) data.UIBackgroundModes = [];
+    ['fetch', 'remote-notification'].forEach(function (m) {
+        if (data.UIBackgroundModes.indexOf(m) === -1) data.UIBackgroundModes.push(m);
+    });
+    if (data.FirebaseCrashlyticsCollectionEnabled === undefined) data.FirebaseCrashlyticsCollectionEnabled = true;
+    if (data.FirebaseAppDelegateProxyEnabled === undefined) data.FirebaseAppDelegateProxyEnabled = false;
+    if (!data.UILocalNotificationSettings) data.UILocalNotificationSettings = ['alert', 'badge', 'sound'];
+    if (!data.UIUserNotificationSettings) data.UIUserNotificationSettings = ['alert', 'badge', 'sound'];
+
+    // SKAdNetworkItems — seed 2 ID như bản Cocos proven. VERIFY(mac): bổ sung theo network bật.
+    if (!Array.isArray(data.SKAdNetworkItems)) data.SKAdNetworkItems = [];
+    ['cstr6suwn9.skadnetwork', '4pfyvq9l8r.skadnetwork'].forEach(function (id) {
+        var had = data.SKAdNetworkItems.some(function (it) { return it && it.SKAdNetworkIdentifier === id; });
+        if (!had) data.SKAdNetworkItems.push({ SKAdNetworkIdentifier: id });
+    });
+
+    var out = plistBuild(data);
+    if (fs.readFileSync(file, 'utf-8') === out) { log.push('-- Info.plist (unchanged)'); return; }
+    backupOnce(file);
+    fs.writeFileSync(file, out, 'utf-8');
+    log.push('OK Info.plist <- Facebook/AppsFlyer/ATT/AdMob/URL scheme/SKAdNetwork');
+}
+
+// ═══ iOS: đăng ký resource vào Runner.xcodeproj ═══════════════════════════════
+// Android chỉ cần copy file vào assets/ là APK mang theo; iOS thì file PHẢI nằm trong
+// "Copy Bundle Resources" của target, không thì `[NSBundle mainBundle] pathForResource:`
+// trả nil → FGSDKIOS bỏ init vì "thiếu fg_main_config.json". Trước đây README bảo dev tự
+// kéo vào Xcode — giờ patch thẳng project.pbxproj (format OpenStep, đủ đều để sửa an toàn).
+function pbxFileType(name) {
+    if (/\.json$/i.test(name)) return 'text.json';
+    if (/\.plist$/i.test(name)) return 'text.plist.xml';
+    return 'text';
+}
+function pbxNewUuid(src) {
+    for (;;) {
+        var u = '';
+        for (var i = 0; i < 24; i++) u += '0123456789ABCDEF'.charAt(Math.floor(Math.random() * 16));
+        if (src.indexOf(u) === -1) return u;
+    }
+}
+// Chèn 1 dòng vào cuối danh sách `files = ( … );` / `children = ( … );` của 1 block.
+function pbxInsertInList(src, blockStart, listKey, line) {
+    var at = src.indexOf(listKey + ' = (', blockStart);
+    if (at < 0) return null;
+    var close = src.indexOf(');', at);
+    if (close < 0) return null;
+    // `);` nam sau indent cua chinh no -> lui ve dau dong de chen truoc, khoi dinh indent.
+    var lineStart = src.lastIndexOf('\n', close) + 1;
+    return src.slice(0, lineStart) + line + src.slice(lineStart);
+}
+
+function registerIosResources(projectRoot, names, log) {
+    var pbx = path.join(projectRoot, 'ios', 'Runner.xcodeproj', 'project.pbxproj');
+    if (!fs.existsSync(pbx)) { log.push('!! Khong thay ios/Runner.xcodeproj/project.pbxproj -> add tay trong Xcode'); return; }
+    var src = fs.readFileSync(pbx, 'utf-8');
+    var orig = src;
+
+    // (a) Resources build phase CUA TARGET Runner (project con co target RunnerTests, phase rong).
+    var mTarget = /[0-9A-F]{24} \/\* Runner \*\/ = \{\s*isa = PBXNativeTarget;[\s\S]*?buildPhases = \(([\s\S]*?)\);/.exec(src);
+    var phaseUuid = mTarget && (/([0-9A-F]{24}) \/\* Resources \*\//.exec(mTarget[1]) || [])[1];
+    // (b) group Runner (co `path = Runner;`) — de file hien trong navigator, path tuong doi ios/Runner/.
+    var groupStart = -1;
+    var reGroup = /([0-9A-F]{24}) \/\* Runner \*\/ = \{\s*isa = PBXGroup;/g, mg;
+    while ((mg = reGroup.exec(src)) !== null) {
+        var blockEnd = src.indexOf('\n\t\t};', mg.index);
+        if (blockEnd > 0 && src.slice(mg.index, blockEnd).indexOf('path = Runner;') !== -1) { groupStart = mg.index; break; }
+    }
+    if (!phaseUuid || groupStart < 0) {
+        log.push('!! Khong doc duoc cau truc Runner.xcodeproj -> keo file vao target Runner bang tay trong Xcode');
+        return;
+    }
+
+    names.forEach(function (name) {
+        if (!fs.existsSync(path.join(projectRoot, 'ios', 'Runner', name))) return;
+        if (src.indexOf('/* ' + name + ' in Resources */') !== -1) { log.push('-- ' + name + ' da trong Runner target (bo qua)'); return; }
+
+        var fileRef = pbxNewUuid(src);
+        var buildFile = pbxNewUuid(src + fileRef);
+
+        var refLine = '\t\t' + fileRef + ' /* ' + name + ' */ = {isa = PBXFileReference; lastKnownFileType = '
+            + pbxFileType(name) + '; path = ' + name + '; sourceTree = "<group>"; };\n';
+        var bfLine = '\t\t' + buildFile + ' /* ' + name + ' in Resources */ = {isa = PBXBuildFile; fileRef = '
+            + fileRef + ' /* ' + name + ' */; };\n';
+
+        // Chen ngay truoc dong `/* End ... section */` (dong nay o cot 0, item thi thut 2 tab).
+        var withRef = src.replace('/* End PBXFileReference section */', refLine + '/* End PBXFileReference section */');
+        withRef = withRef.replace('/* End PBXBuildFile section */', bfLine + '/* End PBXBuildFile section */');
+        // Chen 2 dong tren lam lech index -> dinh vi lai group Runner trong chuoi moi.
+        var reG = /([0-9A-F]{24}) \/\* Runner \*\/ = \{\s*isa = PBXGroup;/g, m2;
+        var gStart = -1;
+        while ((m2 = reG.exec(withRef)) !== null) {
+            var e2 = withRef.indexOf('\n\t\t};', m2.index);
+            if (e2 > 0 && withRef.slice(m2.index, e2).indexOf('path = Runner;') !== -1) { gStart = m2.index; break; }
+        }
+        var next = pbxInsertInList(withRef, gStart, 'children', '\t\t\t\t' + fileRef + ' /* ' + name + ' */,\n');
+        if (next) withRef = next;
+
+        var pStart = withRef.indexOf(phaseUuid + ' /* Resources */ = {');
+        next = pbxInsertInList(withRef, pStart, 'files', '\t\t\t\t' + buildFile + ' /* ' + name + ' in Resources */,\n');
+        if (!next) { log.push('!! Khong chen duoc ' + name + ' vao Resources phase -> add tay'); return; }
+
+        src = next;
+        log.push('OK ' + name + ' -> Runner target (Copy Bundle Resources)');
+    });
+
+    if (src !== orig) { backupOnce(pbx); fs.writeFileSync(pbx, src, 'utf-8'); }
+}
+
 // ── Ghi bundle ra file ────────────────────────────────────────────────────────
 function writeBundle(bundle, projectRoot) {
     var log = [];
@@ -176,6 +464,9 @@ function writeBundle(bundle, projectRoot) {
         var appId = '';
         try { appId = cfg.android.main_ads_config.google_admob_app_id || ''; } catch (e) { /* ignore */ }
         writeAdmobAppId(projectRoot, appId, log);
+
+        // iOS: tương đương writeAdmobAppId — key phụ thuộc config nên phải patch ở đây.
+        patchInfoPlist(projectRoot, cfg.ios, log);
     }
 
     var android = files.googleServices && files.googleServices.android;
@@ -189,8 +480,14 @@ function writeBundle(bundle, projectRoot) {
         var w3 = writeBytesIfChanged(path.join(iosRunner, ios.filename),
             Buffer.from(ios.contentBase64, 'base64'));
         log.push((w3 ? 'OK ' : '-- ') + ios.filename + ' -> ios/Runner/');
-        log.push('   (nho add file nay vao Xcode project Runner neu chua co)');
     }
+
+    // iOS bundle chi mang file da nam trong "Copy Bundle Resources" -> tu dang ky vao xcodeproj.
+    registerIosResources(projectRoot, [
+        'fg_main_config.json',
+        (ios && ios.filename) || 'GoogleService-Info.plist',
+        'iap_packs.json'
+    ], log);
 
     var ks = files.keystore;
     if (ks && ks.contentBase64 && ks.filename) {

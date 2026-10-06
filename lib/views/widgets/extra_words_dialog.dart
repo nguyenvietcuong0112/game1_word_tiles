@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../controllers/game_controller.dart';
+import '../../services/analytics_service.dart';
+import '../../services/app_localization.dart';
 import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
 import '../../theme/app_typography.dart';
@@ -44,6 +46,14 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
     final success = await GameStorage.claimExtraWordsBankReward();
     if (success) { 
       AudioManager.playVictory();
+      AnalyticsService.logEarnResource(
+        level: widget.controller.levelNumber,
+        type: 'currency',
+        name: 'gold',
+        amount: 50,
+        reason: 'win_level',
+        balance: GameStorage.getCoins().toDouble(),
+      );
       widget.onUpdated();
       setState(() {});
       if (mounted) {
@@ -277,11 +287,11 @@ class _ExtraWordsDialogState extends State<ExtraWordsDialog> {
                   ),
                 ],
               ),
-              child: const CartoonText(
-                text: 'Extra Words',
+              child: CartoonText(
+                text: AppLocalization.tr('extra_words'),
                 fontSize: 22,
                 textColor: Colors.white,
-                outlineColor: Color(0xFF3D2E95),
+                outlineColor: const Color(0xFF3D2E95),
                 strokeWidth: 3.4,
                 shadowOffset: 1.5,
               ),

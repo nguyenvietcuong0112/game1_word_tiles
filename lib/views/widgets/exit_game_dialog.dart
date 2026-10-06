@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../services/audio_manager.dart';
+import '../../services/app_localization.dart';
 import '../../services/game_storage.dart';
 import '../../theme/app_typography.dart';
 import '../../utils/game_transitions.dart';
@@ -104,7 +105,7 @@ class ExitGameDialog extends StatelessWidget {
 
                           // Question Title
                           Text(
-                            'Are you sure you want to exit?',
+                            AppLocalization.tr('exit_confirm'),
                             textAlign: TextAlign.center,
                             style: AppTypography.font(
                               fontSize: 16.sp,
@@ -117,7 +118,7 @@ class ExitGameDialog extends StatelessWidget {
 
                           // Subtitle reassurance
                           Text(
-                            'Your progress is always saved!',
+                            AppLocalization.tr('exit_reassurance'),
                             textAlign: TextAlign.center,
                             style: AppTypography.font(
                               fontSize: 12.sp,
@@ -137,7 +138,7 @@ class ExitGameDialog extends StatelessWidget {
                         // Red 3D Exit Button
                         Expanded(
                           child: _Pressable3DButton(
-                            label: 'Exit',
+                            label: AppLocalization.tr('exit'),
                             icon: Icons.exit_to_app_rounded,
                             faceColor: const Color(0xFFFF3F3F),
                             bevelColor: const Color(0xFFD11F24),
@@ -159,7 +160,7 @@ class ExitGameDialog extends StatelessWidget {
                         // Green 3D Stay Button
                         Expanded(
                           child: _Pressable3DButton(
-                            label: 'Stay',
+                            label: AppLocalization.tr('stay'),
                             icon: Icons.play_arrow_rounded,
                             faceColor: const Color(0xFF42D623),
                             bevelColor: const Color(0xFF229713),
@@ -192,8 +193,8 @@ class ExitGameDialog extends StatelessWidget {
                   ),
                   alignment: Alignment.center,
                   padding: EdgeInsets.only(bottom: 2.h),
-                  child: const CartoonText(
-                    text: 'Exit Game',
+                  child: CartoonText(
+                    text: AppLocalization.tr('exit_title'),
                     fontSize: 21,
                     textColor: Colors.white,
                     outlineColor: Color(0xFF380662),

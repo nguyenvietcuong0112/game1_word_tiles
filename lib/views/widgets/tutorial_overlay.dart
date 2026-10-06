@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../theme/app_typography.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../services/app_localization.dart';
 import '../../services/game_storage.dart';
 import '../../services/remote_config_service.dart';
 import 'bouncy_button.dart';
@@ -382,16 +383,17 @@ class TutorialSpeechBubble extends StatelessWidget {
 /// "Got it!" 3D Green CTA Button using btn_green asset
 class TutorialGotItButton extends StatelessWidget {
   final VoidCallback onTap;
-  final String text;
+  final String? text;
 
   const TutorialGotItButton({
     super.key,
     required this.onTap,
-    this.text = 'Got it!',
+    this.text,
   });
 
   @override
   Widget build(BuildContext context) {
+    final displayText = text ?? AppLocalization.tr('got_it');
     return BouncyButton(
       onTap: onTap,
       child: Container(
@@ -407,7 +409,7 @@ class TutorialGotItButton extends StatelessWidget {
         child: Padding(
           padding: EdgeInsets.only(bottom: 3.h),
           child: Text(
-            text,
+            displayText,
             style: AppTypography.font(
               fontSize: 18.sp,
               fontWeight: FontWeight.w900,

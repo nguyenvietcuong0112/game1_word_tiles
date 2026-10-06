@@ -1,10 +1,13 @@
 import 'dart:async';
+import 'dart:io';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import '../theme/app_typography.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:funtap_global_sdk/funtap_global_sdk.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../services/ads_manager.dart';
+import '../services/analytics_service.dart';
 import '../services/audio_manager.dart';
 import '../services/chapter_loader.dart';
 import '../services/game_storage.dart';
@@ -53,12 +56,16 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
       });
     });
 
-    FGSDK.logLoadingStart('splash');
+    AnalyticsService.logLoadingStart(placement: 'splash');
 
     // 2. Perform async initializations
     try {
       await GameStorage.init();
       await ChapterLoader.init();
+      AnalyticsService.updateUserProperties();
+      if (GameStorage.isFirstSession()) {
+        AnalyticsService.logTutorial(name: 'ftue_loading_start', value: 1);
+      }
     } catch (_) {}
 
     try {
@@ -66,7 +73,26 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
       AudioManager.startBgm();
     } catch (_) {}
 
-    // Initialize AdsManager & RemoteConfig
+    // Wait for SDK initialization and Consent completion (UMP / ATT) before loading gameplay.
+    // This ensures:
+    // 1. The Consent popup is presented and completed over the LoadingScreen.
+    // 2. The user has finished tapping consent before entering GameScreen.
+    // 3. Early game tracking events (level_start, FTUE tutorials) are not lost or blocked.
+    final isTest = !kIsWeb && Platform.environment.containsKey('FLUTTER_TEST');
+    if (!isTest && !kIsWeb && (defaultTargetPlatform == TargetPlatform.android || defaultTargetPlatform == TargetPlatform.iOS)) {
+      final consentWaitStart = DateTime.now();
+      while (!await FGSDK.isInit()) {
+        if (!mounted) return;
+        // Safety timeout (45s) in case of unexpected native stall or offline edge cases
+        if (DateTime.now().difference(consentWaitStart).inSeconds > 45) {
+          debugPrint('[LoadingScreen] Consent / isInit wait reached 45s timeout, continuing.');
+          break;
+        }
+        await Future.delayed(const Duration(milliseconds: 100));
+      }
+    }
+
+    // Initialize AdsManager & RemoteConfig once SDK & Consent are ready
     try {
       AdsManager.init();
       // Wait for Remote Config to be ready from cloud if possible (max 1500ms)
@@ -83,8 +109,8 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
       unawaited(IapManager.init());
     } catch (_) {}
 
-    // Small delay to ensure smooth, pleasant animation (bounded by 10s max)
-    await Future.delayed(const Duration(milliseconds: 800));
+    // Small delay to ensure smooth, pleasant animation
+    await Future.delayed(const Duration(milliseconds: 500));
 
     if (!mounted) return;
     _progressTimer?.cancel();
@@ -95,7 +121,10 @@ class _LoadingScreenState extends State<LoadingScreen> with SingleTickerProvider
     });
 
     final loadDuration = DateTime.now().difference(startTime).inMilliseconds / 1000.0;
-    FGSDK.logLoadingEnd('splash', true, loadDuration);
+    AnalyticsService.logLoadingFinish(placement: 'splash', success: true, value: loadDuration);
+    if (GameStorage.isFirstSession()) {
+      AnalyticsService.logTutorial(name: 'ftue_loading_end', value: 2);
+    }
 
     await Future.delayed(const Duration(milliseconds: 300));
 

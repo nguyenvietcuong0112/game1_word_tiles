@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../services/audio_manager.dart';
+import '../services/app_localization.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
 import '../theme/app_typography.dart';
@@ -156,7 +157,7 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
 
                     // Confirm 3D Button
                     _Pressable3DButton(
-                      label: 'Confirm',
+                      label: AppLocalization.tr('confirm'),
                       icon: Icons.check_circle_rounded,
                       faceColor: const Color(0xFF23D046),
                       bevelColor: const Color(0xFF135025),
@@ -185,11 +186,11 @@ class _LanguageSelectionScreenState extends State<LanguageSelectionScreen> {
                       ),
                       Padding(
                         padding: EdgeInsets.only(bottom: 4.h),
-                        child: const CartoonText(
-                          text: 'Language',
+                        child: CartoonText(
+                          text: AppLocalization.tr('language'),
                           fontSize: 23,
                           textColor: Colors.white,
-                          outlineColor: Color(0xFF380662),
+                          outlineColor: const Color(0xFF380662),
                           strokeWidth: 3.8,
                           shadowOffset: 1.4,
                         ),
@@ -332,7 +333,7 @@ class _LanguageItemCardState extends State<_LanguageItemCard> {
                     ),
                     SizedBox(height: 1.h),
                     Text(
-                      'Progress: Level ${widget.progressLevel}',
+                      AppLocalization.tr('progress_level', args: [widget.progressLevel]),
                       style: AppTypography.font(
                         fontSize: 12.sp,
                         fontWeight: FontWeight.w600,

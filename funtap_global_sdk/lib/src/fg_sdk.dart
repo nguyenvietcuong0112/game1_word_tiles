@@ -41,6 +41,12 @@ class FGSDK {
   /// SDK đã init xong chưa. `false` thường do thiếu `fg_main_config.json`.
   static Future<bool> isInit() => _bool('isInit');
 
+  /// Mở **Mediation Debugger** của AppLovin MAX — màn hình QA soi adapter / ad unit /
+  /// waterfall ngay trên máy thật (mirror `MaxSdk.ShowMediationDebugger()` bên Unity).
+  ///
+  /// Chỉ dùng khi test. MAX chưa init thì native bỏ qua, không crash.
+  static void showMediationDebugger() => FGBridge.voidCall('showMediationDebugger');
+
   // ── Tracking ───────────────────────────────────────────────────────────────
 
   /// Bắn 1 event tuỳ ý.

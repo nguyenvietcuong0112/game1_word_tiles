@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../theme/app_typography.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../services/ads_manager.dart';
+import '../services/app_localization.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
 import '../theme/app_theme.dart';
@@ -99,14 +100,14 @@ class _LevelSelectScreenState extends State<LevelSelectScreen> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'SELECT LEVEL',
-                          style: AppTypography.font(
-                            fontSize: 20.sp,
-                            fontWeight: FontWeight.w900,
-                            letterSpacing: 0.8,
-                            color: AppColors.headerBrown,
-                          ),
+                        AppLocalization.tr('select_level'),
+                        style: AppTypography.font(
+                          fontSize: 20.sp,
+                          fontWeight: FontWeight.w900,
+                          letterSpacing: 0.8,
+                          color: AppColors.headerBrown,
                         ),
+                      ),
                         Text(
                           langName,
                           style: AppTypography.font(

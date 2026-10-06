@@ -8,6 +8,7 @@ import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
 import '../../services/level_loader.dart';
 import '../../services/remote_config_service.dart';
+import 'package:funtap_global_sdk/funtap_global_sdk.dart';
 
 class CheatMenuDialog extends StatefulWidget {
   final String? language;
@@ -39,6 +40,9 @@ class CheatMenuDialog extends StatefulWidget {
     VoidCallback? onSolveWord,
     VoidCallback? onUpdated,
   }) {
+    if (!RemoteConfigService.cheatEnabled) {
+      return Future.value();
+    }
     return showDialog(
       context: context,
       barrierDismissible: true,
@@ -184,6 +188,12 @@ class _CheatMenuDialogState extends State<CheatMenuDialog> {
                       _buildHideGameplayUISwitch(),
                       SizedBox(height: 8.h),
                       _buildTutorialTapOutsideSwitch(),
+                      SizedBox(height: 16.h),
+
+                      // --- Section 7: Ads & MAX Mediation Debugger ---
+                      _buildSectionTitle('📢 ADS & MEDIATION DEBUGGER'),
+                      SizedBox(height: 8.h),
+                      _buildMaxDebuggerButton(),
                       SizedBox(height: 12.h),
                     ],
                   ),
@@ -785,6 +795,97 @@ class _CheatMenuDialogState extends State<CheatMenuDialog> {
             ),
           ),
         ),
+      ),
+    );
+  }
+
+  Widget _buildMaxDebuggerButton() {
+    return Container(
+      decoration: BoxDecoration(
+        color: const Color(0xFF1E293B),
+        borderRadius: BorderRadius.circular(10.r),
+        border: Border.all(color: const Color(0xFF334155)),
+      ),
+      padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 10.h),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              const Text('🚀', style: TextStyle(fontSize: 16)),
+              SizedBox(width: 8.w),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'MAX Mediation Debugger',
+                      style: AppTypography.font(
+                        color: Colors.white,
+                        fontSize: 13.sp,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    Text(
+                      'AppLovin MAX ad network mediation diagnostics',
+                      style: AppTypography.font(
+                        color: const Color(0xFF94A3B8),
+                        fontSize: 10.sp,
+                        fontWeight: FontWeight.w500,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: 10.h),
+          Material(
+            color: Colors.transparent,
+            child: InkWell(
+              onTap: () {
+                AudioManager.playTileSelect(pitchIndex: 5);
+                FGSDK.showMediationDebugger();
+                _showFeedbackToast('Opening MAX Mediation Debugger...');
+              },
+              borderRadius: BorderRadius.circular(8.r),
+              child: Ink(
+                height: 38.h,
+                decoration: BoxDecoration(
+                  gradient: const LinearGradient(
+                    colors: [Color(0xFFE11D48), Color(0xFFBE123C)],
+                  ),
+                  borderRadius: BorderRadius.circular(8.r),
+                  boxShadow: [
+                    BoxShadow(
+                      color: const Color(0xFFE11D48).withValues(alpha: 0.35),
+                      offset: const Offset(0, 2),
+                      blurRadius: 4,
+                    ),
+                  ],
+                ),
+                child: Center(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Icon(Icons.bug_report_rounded, color: Colors.white, size: 18),
+                      SizedBox(width: 6.w),
+                      Text(
+                        'OPEN MEDIATION DEBUGGER',
+                        style: AppTypography.font(
+                          color: Colors.white,
+                          fontSize: 12.sp,
+                          fontWeight: FontWeight.w800,
+                          letterSpacing: 0.5,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

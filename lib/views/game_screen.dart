@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:math';
 import 'package:confetti/confetti.dart';
 import 'package:flutter/material.dart';
@@ -8,6 +9,7 @@ import '../controllers/game_controller.dart';
 import '../models/chapter_model.dart';
 import '../services/ads_manager.dart';
 import '../services/analytics_service.dart';
+import '../services/app_localization.dart';
 import '../services/audio_manager.dart';
 import '../services/game_storage.dart';
 import '../services/level_loader.dart';
@@ -44,7 +46,7 @@ class GameScreen extends StatefulWidget {
   State<GameScreen> createState() => _GameScreenState();
 }
 
-class _GameScreenState extends State<GameScreen> {
+class _GameScreenState extends State<GameScreen> with WidgetsBindingObserver {
   GlobalKey<BoardWidgetState> _boardKey = GlobalKey<BoardWidgetState>();
   GlobalKey<ExtraWordsButtonState> _extraWordsBtnKey = GlobalKey<ExtraWordsButtonState>();
 
@@ -59,9 +61,75 @@ class _GameScreenState extends State<GameScreen> {
   List<Point<int>>? _lastFailSafeHintPath;
   int _lastExtraFoundCount = 0;
 
+  bool _hasEndedThisLevel = false;
+
+  void _logLevelEnd({required String reason}) {
+    if (_controller == null || _controller!.isWon || _hasEndedThisLevel) return;
+    _hasEndedThisLevel = true;
+    final lvl = _currentLevelIndex + 1;
+    final playCount = GameStorage.getLevelPlayCount(widget.language, lvl);
+    var loseCount = GameStorage.getLevelLoseCount(widget.language, lvl);
+    final durationSec = (DateTime.now().difference(_controller!.levelStartTime).inMilliseconds / 1000.0) - _controller!.adDurationSeconds;
+    final playDuration = durationSec > 0 ? durationSec : 0.0;
+
+    if (reason == 'quit' || reason == 'restart') {
+      unawaited(GameStorage.incrementLevelLoseCount(widget.language, lvl));
+      unawaited(GameStorage.incrementLoseStreak());
+      loseCount++;
+      AnalyticsService.updateUserProperties(level: lvl);
+    }
+
+    AnalyticsService.logLevelEnd(
+      level: lvl,
+      playCount: playCount > 0 ? playCount : 1,
+      loseCount: loseCount,
+      playDuration: playDuration,
+      totalItems: _controller!.level.targetWords.length,
+      clearedItems: _controller!.solvedTargetWords.length,
+      success: false,
+      reason: reason,
+      adDuration: _controller!.adDurationSeconds,
+    );
+  }
+
+  void _logLevelBackground() {
+    if (_controller == null || _controller!.isWon || _hasEndedThisLevel) return;
+    final lvl = _currentLevelIndex + 1;
+    final playCount = GameStorage.getLevelPlayCount(widget.language, lvl);
+    final loseCount = GameStorage.getLevelLoseCount(widget.language, lvl);
+    final durationSec = (DateTime.now().difference(_controller!.levelStartTime).inMilliseconds / 1000.0) - _controller!.adDurationSeconds;
+    final playDuration = durationSec > 0 ? durationSec : 0.0;
+
+    AnalyticsService.logLevelExit(
+      level: lvl,
+      playCount: playCount > 0 ? playCount : 1,
+      loseCount: loseCount,
+      playDuration: playDuration,
+      totalItems: _controller!.level.targetWords.length,
+      clearedItems: _controller!.solvedTargetWords.length,
+      reason: 'background',
+    );
+  }
+
+  void _logLevelReopen() {
+    if (_controller == null || _controller!.isWon || _hasEndedThisLevel) return;
+    final lvl = _currentLevelIndex + 1;
+    final playCount = GameStorage.getLevelPlayCount(widget.language, lvl);
+    final loseCount = GameStorage.getLevelLoseCount(widget.language, lvl);
+
+    AnalyticsService.logLevelReopen(
+      level: lvl,
+      playCount: playCount > 0 ? playCount : 1,
+      loseCount: loseCount,
+      totalItems: _controller!.level.targetWords.length,
+      clearedItems: _controller!.solvedTargetWords.length,
+    );
+  }
+
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addObserver(this);
     AdsManager.hideBanner();
     _currentLevelIndex = widget.levelIndex;
     _confettiController =
@@ -71,10 +139,21 @@ class _GameScreenState extends State<GameScreen> {
 
   @override
   void dispose() {
+    _logLevelEnd(reason: 'quit');
+    WidgetsBinding.instance.removeObserver(this);
     _confettiController.dispose();
     _controller?.removeListener(_onGameControllerStateChanged);
     _controller?.dispose();
     super.dispose();
+  }
+
+  @override
+  void didChangeAppLifecycleState(AppLifecycleState state) {
+    if (state == AppLifecycleState.paused || state == AppLifecycleState.detached) {
+      _logLevelBackground();
+    } else if (state == AppLifecycleState.resumed) {
+      _logLevelReopen();
+    }
   }
 
   void _onGameControllerStateChanged() {
@@ -135,12 +214,23 @@ class _GameScreenState extends State<GameScreen> {
       _lastIsWon = false;
       _lastFailSafeHintPath = null;
       _lastExtraFoundCount = 0;
+      _hasEndedThisLevel = false;
       _controller!.addListener(_onGameControllerStateChanged);
 
+      final currentLvlNumber = _currentLevelIndex + 1;
+      final playCount = await GameStorage.incrementLevelPlayCount(widget.language, currentLvlNumber);
+      final loseCount = GameStorage.getLevelLoseCount(widget.language, currentLvlNumber);
+
       AnalyticsService.logLevelStart(
-        level: _currentLevelIndex + 1,
-        language: widget.language,
+        level: currentLvlNumber,
+        playCount: playCount,
+        loseCount: loseCount,
       );
+      AnalyticsService.updateUserProperties(level: currentLvlNumber);
+
+      if (_currentLevelIndex == 0 && !GameStorage.isTutorialCompleted()) {
+        AnalyticsService.logTutorial(name: 'tut_start', value: 3);
+      }
 
       setState(() => _isLoading = false);
     } catch (e) {
@@ -161,6 +251,7 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   void _replayLevel() {
+    _logLevelEnd(reason: 'restart');
     setState(() {
       _boardKey = GlobalKey<BoardWidgetState>();
       _extraWordsBtnKey = GlobalKey<ExtraWordsButtonState>();
@@ -169,6 +260,7 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   void _cheatJumpToLevel(int targetLevelNumber) {
+    _logLevelEnd(reason: 'quit');
     final maxCount = LevelLoader.totalLevelsPerLanguage[widget.language] ?? 1500;
     final index = (targetLevelNumber - 1).clamp(0, maxCount - 1);
     GameStorage.setCurrentLevelIndex(widget.language, index);
@@ -182,6 +274,7 @@ class _GameScreenState extends State<GameScreen> {
   }
 
   void _cheatNextLevel() {
+    _logLevelEnd(reason: 'quit');
     final maxCount = LevelLoader.totalLevelsPerLanguage[widget.language] ?? 1500;
     final nextIndex = (_currentLevelIndex + 1).clamp(0, maxCount - 1);
     GameStorage.setCurrentLevelIndex(widget.language, nextIndex);
@@ -207,6 +300,7 @@ class _GameScreenState extends State<GameScreen> {
           _replayLevel();
         },
         onGoHome: () {
+          _logLevelEnd(reason: 'quit');
           Navigator.of(context).popUntil((route) => route.isFirst);
         },
       ),
@@ -260,6 +354,7 @@ class _GameScreenState extends State<GameScreen> {
     AdsManager.hideBanner();
 
     if (selectedIndex != null && selectedIndex != _currentLevelIndex && mounted) {
+      _logLevelEnd(reason: 'quit');
       setState(() {
         _currentLevelIndex = selectedIndex;
       });
@@ -368,6 +463,7 @@ class _GameScreenState extends State<GameScreen> {
       useSafeArea: false,
       background: _buildBackground(),
       onWillPop: () async {
+        _logLevelEnd(reason: 'quit');
         if (Navigator.of(context).canPop()) {
           return true;
         } else {
@@ -679,59 +775,78 @@ class _GameScreenState extends State<GameScreen> {
     return ValueListenableBuilder<bool>(
       valueListenable: GameStorage.hideGameplayUINotifier,
       builder: (context, hideUI, _) {
+        final shouldShowIcons = showIcons && !hideUI;
+
         return SafeArea(
           bottom: false,
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 8.h),
             child: SizedBox(
               height: 44.h,
-              child: Stack(
-                alignment: Alignment.center,
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  // 1. Perfectly centered Level Text (tap for level select, long-press for settings/cheat)
-                  Center(
-                    child: GestureDetector(
-                      onLongPress: _openSettings,
-                      child: BouncyButton(
-                        onTap: _openLevelSelect,
-                        child: Text(
-                          'LEVEL ${_controller!.levelNumber}',
-                          style: AppTypography.font(
-                            fontSize: 22.sp,
-                            fontWeight: FontWeight.w900,
-                            color: Colors.white,
-                            letterSpacing: 0.8,
-                            shadows: const [
-                              Shadow(
-                                color: Colors.black38,
-                                offset: Offset(0, 1.5),
-                                blurRadius: 4,
+                  // 1. Left slot: Coin Capsule (Flex 3, left-aligned)
+                  Expanded(
+                    flex: 3,
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: shouldShowIcons
+                          ? _buildCoinCapsule()
+                          : const SizedBox.shrink(),
+                    ),
+                  ),
+
+                  // 2. Center slot: Perfectly centered Level Text (Flex 4, center-aligned, FittedBox guarded)
+                  Expanded(
+                    flex: 4,
+                    child: Center(
+                      child: GestureDetector(
+                        onLongPress: _openSettings,
+                        child: BouncyButton(
+                          onTap: _openLevelSelect,
+                          child: FittedBox(
+                            fit: BoxFit.scaleDown,
+                            child: Text(
+                              '${AppLocalization.tr('level').toUpperCase()} ${_controller?.levelNumber ?? widget.levelIndex + 1}',
+                              maxLines: 1,
+                              style: AppTypography.font(
+                                fontSize: 20.sp,
+                                fontWeight: FontWeight.w900,
+                                color: Colors.white,
+                                letterSpacing: 0.8,
+                                shadows: const [
+                                  Shadow(
+                                    color: Colors.black38,
+                                    offset: Offset(0, 1.5),
+                                    blurRadius: 4,
+                                  ),
+                                ],
                               ),
-                            ],
+                            ),
                           ),
                         ),
                       ),
                     ),
                   ),
-                  // 2. Left Coins Capsule (Hidden on Level 1 or when cheat hide UI is active)
-                  if (showIcons && !hideUI)
-                    Align(
-                      alignment: Alignment.centerLeft,
-                      child: _buildCoinCapsule(),
-                    ),
-                  // 3. Right Settings Button (Hidden on Level 1 or when cheat hide UI is active)
-                  if (showIcons && !hideUI)
-                    Align(
+
+                  // 3. Right slot: Settings Button (Flex 3, right-aligned)
+                  Expanded(
+                    flex: 3,
+                    child: Align(
                       alignment: Alignment.centerRight,
-                      child: BouncyButton(
-                        onTap: _openSettings,
-                        child: Image.asset(
-                          'assets/icons/icon_setting.webp',
-                          width: 44.r,
-                          height: 44.r,
-                        ),
-                      ),
+                      child: shouldShowIcons
+                          ? BouncyButton(
+                              onTap: _openSettings,
+                              child: Image.asset(
+                                'assets/icons/icon_setting.webp',
+                                width: 40.r,
+                                height: 40.r,
+                              ),
+                            )
+                          : const SizedBox.shrink(),
                     ),
+                  ),
                 ],
               ),
             ),
@@ -741,24 +856,37 @@ class _GameScreenState extends State<GameScreen> {
     );
   }
 
+  String _formatCoins(int count) {
+    if (count >= 1000000) {
+      final m = count / 1000000;
+      return '${m.toStringAsFixed(m >= 10 ? 0 : 1)}M';
+    } else if (count >= 100000) {
+      final k = count / 1000;
+      return '${k.toStringAsFixed(0)}K';
+    }
+    return '$count';
+  }
+
   Widget _buildCoinCapsule() {
     return BouncyButton(
       onTap: _openShop,
       child: SizedBox(
-        height: 44.h,
-        child: IntrinsicWidth(
+        height: 38.h,
+        child: FittedBox(
+          fit: BoxFit.scaleDown,
+          alignment: Alignment.centerLeft,
           child: Stack(
             alignment: Alignment.centerLeft,
             children: [
               Container(
-                margin: EdgeInsets.only(left: 18.w),
-                height: 34.h,
-                constraints: BoxConstraints(minWidth: 96.w),
-                padding: EdgeInsets.only(left: 25.w, right: 6.w),
+                margin: EdgeInsets.only(left: 14.w),
+                height: 32.h,
+                constraints: BoxConstraints(minWidth: 64.w),
+                padding: EdgeInsets.only(left: 22.w, right: 6.w),
                 decoration: BoxDecoration(
-                  color: const Color(0xFF000000).withValues(alpha: 0.1),
-                  borderRadius: BorderRadius.circular(18.r),
-                  border: Border.all(color: Colors.white, width: 2.2),
+                  color: const Color(0xFF000000).withValues(alpha: 0.15),
+                  borderRadius: BorderRadius.circular(16.r),
+                  border: Border.all(color: Colors.white, width: 2.0),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.black.withValues(alpha: 0.25),
@@ -775,25 +903,26 @@ class _GameScreenState extends State<GameScreen> {
                       valueListenable: GameStorage.coinsNotifier,
                       builder: (context, coins, _) {
                         return Text(
-                          '$coins',
+                          _formatCoins(coins),
+                          maxLines: 1,
                           style: AppTypography.font(
                             color: Colors.white,
-                            fontSize: 16.sp,
+                            fontSize: 14.sp,
                             fontWeight: FontWeight.w900,
-                            letterSpacing: 0.5,
+                            letterSpacing: 0.3,
                           ),
                         );
                       },
                     ),
-                    SizedBox(width: 8.w),
+                    SizedBox(width: 5.w),
                     _buildPlusBadge(),
                   ],
                 ),
               ),
               Image.asset(
                 'assets/icons/icon_coin.webp',
-                width: 44.r,
-                height: 44.r,
+                width: 38.r,
+                height: 38.r,
               ),
             ],
           ),
@@ -804,8 +933,8 @@ class _GameScreenState extends State<GameScreen> {
 
   Widget _buildPlusBadge() {
     return Container(
-      width: 24.r,
-      height: 24.r,
+      width: 20.r,
+      height: 20.r,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         gradient: const LinearGradient(
@@ -816,7 +945,7 @@ class _GameScreenState extends State<GameScreen> {
             Color(0xFF28A811),
           ],
         ),
-        border: Border.all(color: Colors.white, width: 1.8),
+        border: Border.all(color: Colors.white, width: 1.5),
         boxShadow: const [
           BoxShadow(
             color: Color(0x38000000),
@@ -831,11 +960,11 @@ class _GameScreenState extends State<GameScreen> {
         ],
       ),
       alignment: Alignment.center,
-      child: const Icon(
+      child: Icon(
         Icons.add_rounded,
         color: Colors.white,
-        size: 17,
-        shadows: [
+        size: 14.r,
+        shadows: const [
           Shadow(
             color: Color(0xFF0E5606),
             offset: Offset(0, 1),

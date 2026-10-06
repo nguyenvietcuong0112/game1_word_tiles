@@ -65,6 +65,7 @@ class IapManager {
         debugPrint('[IapManager] Detected existing No Ads purchase from store.');
         await GameStorage.setNoAdsPurchased(true);
         FGSDK.activateRemoveAds();
+        AnalyticsService.updateUserProperties();
       }
     } catch (e) {
       debugPrint('[IapManager] checkPurchasedNonConsumables error: $e');
@@ -98,18 +99,14 @@ class IapManager {
   }
 
   /// Logs shop impression tracking
-  static void logShopImpression({int level = 1}) {
+  static void logShopImpression({int level = 1, String location = 'home_shop'}) {
     try {
-      for (final p in IapProduct.allProducts) {
-        if (p.isAdsReward) continue;
-        FGSDK.logIAPShow(
-          'classic',
-          level,
-          'shop',
-          p.category == IapCategory.bundle ? 'bundle' : 'iap',
-          p.productId,
-        );
-      }
+      AnalyticsService.logIAPShow(
+        level: level,
+        location: location,
+        type: 'shop',
+        productId: 'all_shop',
+      );
     } catch (_) {}
   }
 
@@ -119,6 +116,7 @@ class IapManager {
     IapProduct product, {
     int level = 1,
     VoidCallback? onPurchased,
+    String location = 'home_shop',
   }) async {
     // 1. Gold 0 (Free Ads Reward)
     if (product.isAdsReward) {
@@ -128,15 +126,16 @@ class IapManager {
 
     // 2. IAP Products via FGSDK
     try {
-      FGSDK.logIAPClick(
-        'classic',
-        level,
-        'shop',
-        product.category == IapCategory.bundle ? 'bundle' : 'iap',
-        product.productId,
+      AnalyticsService.logIAPClick(
+        level: level,
+        location: location,
+        type: 'pack',
+        productId: product.productId,
       );
     } catch (_) {}
 
+    AdsManager.setIapInProgress(true);
+    bool purchaseSuccess = false;
     try {
       debugPrint('[IapManager] Requesting FGSDK.buyProduct for: ${product.productId}');
       final res = await FGSDK.buyProduct(
@@ -148,6 +147,12 @@ class IapManager {
       debugPrint('[IapManager] FGSDK.buyProduct finished: ok=${res.ok}, tx=${res.transactionId}');
 
       if (res.ok) {
+        purchaseSuccess = true;
+        if (product.isNoAds) {
+          await GameStorage.setNoAdsPurchased(true);
+          FGSDK.activateRemoveAds();
+          AdsManager.hideBanner();
+        }
         if (context.mounted) {
           await _grantRewards(context, product, level: level);
           onPurchased?.call();
@@ -180,6 +185,8 @@ class IapManager {
         );
       }
       return false;
+    } finally {
+      AdsManager.onIapFlowFinished(success: purchaseSuccess);
     }
   }
 
@@ -196,10 +203,10 @@ class IapManager {
       await GameStorage.addCoins(product.coins);
       AnalyticsService.logEarnResource(
         level: level,
-        itemType: 'coin',
-        itemName: 'coin',
+        type: 'currency',
+        name: 'gold',
         amount: product.coins.toDouble(),
-        earnPlacement: 'iap_${product.enumId}',
+        reason: 'purchase',
         balance: GameStorage.getCoins().toDouble(),
       );
     }
@@ -209,10 +216,10 @@ class IapManager {
       await GameStorage.addHintCount(product.hints);
       AnalyticsService.logEarnResource(
         level: level,
-        itemType: 'booster',
-        itemName: 'hint',
+        type: 'booster',
+        name: 'hint',
         amount: product.hints.toDouble(),
-        earnPlacement: 'iap_${product.enumId}',
+        reason: 'purchase',
         balance: GameStorage.getHintCount().toDouble(),
       );
     }
@@ -221,10 +228,10 @@ class IapManager {
       await GameStorage.addRocketCount(product.rockets);
       AnalyticsService.logEarnResource(
         level: level,
-        itemType: 'booster',
-        itemName: 'rocket',
+        type: 'booster',
+        name: 'rocket',
         amount: product.rockets.toDouble(),
-        earnPlacement: 'iap_${product.enumId}',
+        reason: 'purchase',
         balance: GameStorage.getRocketCount().toDouble(),
       );
     }
@@ -235,6 +242,10 @@ class IapManager {
       FGSDK.activateRemoveAds();
       AdsManager.hideBanner();
     }
+
+    // Increment IAP count & update user properties
+    await GameStorage.incrementIapCount();
+    AnalyticsService.updateUserProperties(level: level);
 
     // Build reward message
     final items = <String>[];
@@ -270,10 +281,10 @@ class IapManager {
           await GameStorage.addCoins(product.coins);
           AnalyticsService.logEarnResource(
             level: level,
-            itemType: 'coin',
-            itemName: 'coin',
+            type: 'currency',
+            name: 'gold',
             amount: product.coins.toDouble(),
-            earnPlacement: 'ads_reward_gold_0',
+            reason: 'ads',
             balance: GameStorage.getCoins().toDouble(),
           );
           onPurchased?.call();
@@ -292,8 +303,11 @@ class IapManager {
 
   /// Restores previous purchases (Required for iOS App Store)
   static Future<void> restorePurchases(BuildContext context) async {
+    AdsManager.setIapInProgress(true);
+    bool restoreSuccess = false;
     try {
       final restored = await FGSDK.restorePurchases();
+      restoreSuccess = restored;
       final isNoAds = await FGSDK.productIsPurchased(IapProduct.noAds.productId);
       final isNoAdsBundle = await FGSDK.productIsPurchased(IapProduct.noAdsBundle.productId);
 
@@ -332,6 +346,8 @@ class IapManager {
           isError: true,
         );
       }
+    } finally {
+      AdsManager.onIapFlowFinished(success: restoreSuccess);
     }
   }
 

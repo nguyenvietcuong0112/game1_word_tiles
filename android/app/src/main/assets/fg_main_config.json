@@ -92,23 +92,23 @@
     "main_ads_config": {
       "primaryAdUnitConfig": {
         "Interstitial": {
-          "AdUnitID": "",
+          "AdUnitID": "46a806c28e991ab8",
           "IsAutoLoad": true,
           "EnableAds": true
         },
         "Rewarded": {
-          "AdUnitID": "",
+          "AdUnitID": "8bdc6f7af1c55def",
           "IsAutoLoad": true,
           "EnableAds": true
         },
         "Banner": {
-          "AdUnitID": "",
+          "AdUnitID": "e75a3b66602eb874",
           "IsAutoLoad": true,
           "EnableAds": true
         },
         "AppOpen": {
           "AdUnitID": "",
-          "IsAutoLoad": true,
+          "IsAutoLoad": false,
           "EnableAds": true
         },
         "MRec": {
@@ -117,8 +117,41 @@
           "EnableAds": false
         }
       },
+      "backfillConfig": {
+        "Interstitial": {
+          "Enable": true,
+          "AdUnitID": "ca-app-pub-6221062690273747/2259797367",
+          "IsAutoLoad": true,
+          "AdType": 0
+        },
+        "MRec": {
+          "Enable": false,
+          "AdUnitID": "",
+          "IsAutoLoad": false,
+          "AdType": 1
+        },
+        "Banner": {
+          "Enable": true,
+          "AdUnitID": "ca-app-pub-6221062690273747/7128980660",
+          "IsAutoLoad": true,
+          "AdType": 2
+        },
+        "Rewarded": {
+          "Enable": false,
+          "AdUnitID": "",
+          "IsAutoLoad": false,
+          "AdType": 3
+        },
+        "AppOpen": {
+          "Enable": true,
+          "AdUnitID": "ca-app-pub-6221062690273747/4556069471",
+          "IsAutoLoad": true,
+          "AdType": 4
+        }
+      },
+      "primaryProvider": 0,
       "max_sdk_key": "UveqekOCl9KX2vr_pPcKksAfavCvdDo6SKup4CArLZgqBOMc7n1olIcWugw3gexsimiopaBhA55sNDfZQq0LCl",
-      "google_admob_app_id": ""
+      "google_admob_app_id": "ca-app-pub-6221062690273747~4561692924"
     },
     "facebook_configs": {
       "app_id": "",
@@ -134,7 +167,7 @@
       "terms_of_service_url": "https://mobgame.mobi/terms-of-service",
       "users_tracking_usage_description": "Your data will be used to deliver personalized ads to you (without revealing your personal infomation)"
     },
-    "MediationType": 0,
+    "MediationType": 2,
     "base_api_domain": "https://api-lego.mobgame.mobi",
     "app_key": "f35d397a1ebbaa9804dd17a3f475e16b",
     "game_code": "G_BDUNTLFB",

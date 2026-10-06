@@ -340,20 +340,34 @@ class LevelGenerator:
 
 
 def get_level_config(level_num: int) -> dict:
-    """Return parameters tuned for smooth casual progression."""
-    if level_num <= 10:
-        return {"width": 3, "height": 2, "min_targets": 3, "max_targets": 4, "min_len": 3, "max_len": 4, "obstacle": False}
-    elif level_num <= 30:
-        return {"width": 3, "height": 3, "min_targets": 4, "max_targets": 5, "min_len": 3, "max_len": 4, "obstacle": False}
+    """Return parameters tuned for smooth casual progression with varied grid layouts.
+    First 20 levels are protected handcrafted easy levels.
+    Difficulty gradually increases from level 21 onward.
+    """
+    if level_num <= 20:
+        # Protected handcrafted range (Levels 1 - 20)
+        return {"width": 3, "height": 3, "min_targets": 3, "max_targets": 4, "min_len": 3, "max_len": 4, "obstacle": False}
+    elif level_num <= 35:
+        shape = [(4, 2), (4, 3), (3, 4)][(level_num - 21) % 3]
+        return {"width": shape[0], "height": shape[1], "min_targets": 4, "max_targets": 5, "min_len": 3, "max_len": 5, "obstacle": False}
+    elif level_num <= 60:
+        shape = [(4, 3), (3, 4), (4, 4)][level_num % 3]
+        return {"width": shape[0], "height": shape[1], "min_targets": 4, "max_targets": 6, "min_len": 3, "max_len": 5, "obstacle": False}
     elif level_num <= 100:
-        return {"width": 3, "height": 3, "min_targets": 4, "max_targets": 6, "min_len": 3, "max_len": 5, "obstacle": False}
+        shape = [(4, 3), (3, 4), (4, 4), (5, 3)][level_num % 4]
+        return {"width": shape[0], "height": shape[1], "min_targets": 5, "max_targets": 6, "min_len": 3, "max_len": 5, "obstacle": level_num % 15 == 0}
     elif level_num <= 300:
-        return {"width": 4, "height": 3, "min_targets": 5, "max_targets": 7, "min_len": 3, "max_len": 5, "obstacle": False}
+        shape = [(4, 4), (5, 3), (4, 3), (5, 4)][level_num % 4]
+        return {"width": shape[0], "height": shape[1], "min_targets": 5, "max_targets": 7, "min_len": 3, "max_len": 6, "obstacle": level_num % 10 == 0}
     elif level_num <= 600:
-        return {"width": 4, "height": 3, "min_targets": 6, "max_targets": 8, "min_len": 3, "max_len": 6, "obstacle": False}
+        shape = [(4, 4), (5, 3), (4, 3), (3, 5)][level_num % 4]
+        return {"width": shape[0], "height": shape[1], "min_targets": 6, "max_targets": 8, "min_len": 3, "max_len": 6, "obstacle": level_num % 8 == 0}
     elif level_num <= 1000:
-        return {"width": 4, "height": 4, "min_targets": 7, "max_targets": 9, "min_len": 3, "max_len": 6, "obstacle": level_num % 10 == 0}
+        shape = [(4, 4), (5, 4), (4, 5), (5, 3)][level_num % 4]
+        return {"width": shape[0], "height": shape[1], "min_targets": 7, "max_targets": 9, "min_len": 3, "max_len": 6, "obstacle": level_num % 8 == 0}
     elif level_num <= 1800:
-        return {"width": 4, "height": 4, "min_targets": 8, "max_targets": 11, "min_len": 3, "max_len": 7, "obstacle": level_num % 5 == 0}
+        shape = [(5, 4), (4, 5), (4, 4), (5, 5)][level_num % 4]
+        return {"width": shape[0], "height": shape[1], "min_targets": 8, "max_targets": 11, "min_len": 3, "max_len": 7, "obstacle": level_num % 5 == 0}
     else:
-        return {"width": 5, "height": 4, "min_targets": 9, "max_targets": 13, "min_len": 3, "max_len": 7, "obstacle": level_num % 4 == 0}
+        shape = [(5, 4), (5, 5), (4, 5)][level_num % 3]
+        return {"width": shape[0], "height": shape[1], "min_targets": 9, "max_targets": 13, "min_len": 3, "max_len": 7, "obstacle": level_num % 4 == 0}

@@ -4,6 +4,8 @@ import 'package:flutter/services.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../services/ads_manager.dart';
+import '../../services/analytics_service.dart';
+import '../../services/app_localization.dart';
 import '../../services/audio_manager.dart';
 import '../../services/game_storage.dart';
 import '../../theme/app_typography.dart';
@@ -54,8 +56,8 @@ class _ShopDialogState extends State<ShopDialog> {
       if (mounted) {
         AppPopup.show(
           context,
-          title: 'Daily Gift Cooldown',
-          message: 'Your next free reward is available in ${_formatDuration(remaining)}.',
+          title: AppLocalization.tr('daily_gift_cooldown'),
+          message: AppLocalization.tr('next_free_reward_in', args: [_formatDuration(remaining)]),
           icon: '⏳',
         );
       }
@@ -79,6 +81,24 @@ class _ShopDialogState extends State<ShopDialog> {
           await GameStorage.addHintCount(1);
           await GameStorage.addRocketCount(1);
           await GameStorage.setLastDailyGiftClaimTime(DateTime.now().millisecondsSinceEpoch);
+
+          AnalyticsService.logEarnResource(
+            level: currentLevel,
+            type: 'booster',
+            name: 'hint',
+            amount: 1,
+            reason: 'daily_reward',
+            balance: GameStorage.getHintCount().toDouble(),
+          );
+          AnalyticsService.logEarnResource(
+            level: currentLevel,
+            type: 'booster',
+            name: 'rocket',
+            amount: 1,
+            reason: 'daily_reward',
+            balance: GameStorage.getRocketCount().toDouble(),
+          );
+
           widget.onUpdated();
           if (mounted) {
             setState(() {});
@@ -108,6 +128,42 @@ class _ShopDialogState extends State<ShopDialog> {
       AudioManager.playTileSelect(pitchIndex: 5);
       await GameStorage.addHintCount(hints);
       await GameStorage.addRocketCount(rockets);
+
+      final lang = GameStorage.getSelectedLanguage();
+      final currentLevel = GameStorage.getMaxUnlockedLevelIndex(lang) + 1;
+
+      // 1. resource_sink: coins spent
+      AnalyticsService.logSpendResource(
+        level: currentLevel,
+        type: 'currency',
+        name: 'gold',
+        amount: coinsCost.toDouble(),
+        reason: 'exchange',
+        balance: GameStorage.getCoins().toDouble(),
+      );
+
+      // 2. resource_source: boosters received
+      if (hints > 0) {
+        AnalyticsService.logEarnResource(
+          level: currentLevel,
+          type: 'booster',
+          name: 'hint',
+          amount: hints.toDouble(),
+          reason: 'exchange',
+          balance: GameStorage.getHintCount().toDouble(),
+        );
+      }
+      if (rockets > 0) {
+        AnalyticsService.logEarnResource(
+          level: currentLevel,
+          type: 'booster',
+          name: 'rocket',
+          amount: rockets.toDouble(),
+          reason: 'exchange',
+          balance: GameStorage.getRocketCount().toDouble(),
+        );
+      }
+
       widget.onUpdated();
       if (mounted) {
         setState(() {});
@@ -327,11 +383,11 @@ class _ShopDialogState extends State<ShopDialog> {
                   ),
                   alignment: Alignment.center,
                   padding: EdgeInsets.only(bottom: 3.h),
-                  child: const CartoonText(
-                    text: 'Daily & Gift',
+                  child: CartoonText(
+                    text: AppLocalization.tr('daily_gift'),
                     fontSize: 23,
                     textColor: Colors.white,
-                    outlineColor: Color(0xFF084E94),
+                    outlineColor: const Color(0xFF084E94),
                     strokeWidth: 3.6,
                     shadowOffset: 1.8,
                   ),
